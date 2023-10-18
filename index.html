@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
-            background-color: #f4f4f4;
+            background-color: #5c5c5c;
         }
 
         .profile-container {
@@ -55,8 +55,27 @@
         }
 
         .profile-details dd {
-            margin-left: 20px;
-            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            display: flex;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin: 0 20px; /* Increased spacing from 10px to 20px on both sides */
+            justify-content: center; /* Center the items horizontally */
+            align-items: center; /* Center the items vertically */
+        }
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;  /* This will horizontally center the links */
+        }
+
+        .social-media a {
+            margin: 0 20px; /* This will give 20px spacing on the left and right of each link */
+            text-decoration: none;
+            font-size: 13px;
         }
     </style>
 </head>
@@ -67,9 +86,12 @@
         </div>
         <div class="profile-name">Mohammad Movahedi</div>
         <div class="profile-description">PhD Candidate @ FSU RIDER Center | Sustainable Infrastructure Management</div>
-        <dl class="profile-details">
-            <dt>Email:</dt>
-            <dd><a href="mailto:mmovahedi@fsu.edu" target="_blank">mmovahedi@fsu.edu</a></dd>
+        <dl class="social-media">
+
+            <a href="mailto:mmovahedi@fsu.edu" target="_blank">Email</a>
+            <a href="https://github.com/m-movahedi" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/m-movahedi" target="_blank">LinkedIn</a>
+            
         </dl>
     </div>
 </body>
