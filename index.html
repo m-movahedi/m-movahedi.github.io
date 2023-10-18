@@ -1,7 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+
+        .profile-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .profile-name {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .profile-description {
+            text-align: center;
+            margin-top: 10px;
+            color: #777;
+        }
+
+        .profile-details {
+            margin-top: 20px;
+        }
+
+        .profile-details dt {
+            font-weight: bold;
+        }
+
+        .profile-details dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="profile-container">
+        <div class="profile-img">
+            <img src="https://github.com/m-movahedi/m-movahedi.github.io/blob/main/Profile%20Picture.jpg?raw=true" alt="Profile Image">
+        </div>
+        <div class="profile-name">Mohammad Movahedi</div>
+        <div class="profile-description">PhD Candidate @ FSU RIDER Center | Sustainable Infrastructure Management</div>
+        <dl class="profile-details">
+            <dt>Email:</dt>
+            <dd><a href="mailto:mmovahedi@fsu.edu" target="_blank">mmovahedi@fsu.edu</a></dd>
+        </dl>
+    </div>
 </body>
 </html>
+
