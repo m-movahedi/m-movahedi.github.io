@@ -79,6 +79,8 @@
             text-decoration: none;
             font-size: 13px;
         }
+
+
         .about-me {
             display: flex;
             flex-direction: column;
@@ -92,14 +94,86 @@
         .about-me h1 {
             margin: 10px 0 10px 0;
             text-align: left;
-			width: 80%;
+			width: 90%;
             font-size: 18px;
             color: #333;
         }
         .about-me p {
             align-items: left;
             text-align: justify;
-            max-width: 80%;
+            max-width: 90%;
+        }
+
+        .toggle-drawer {
+            margin: 20px 10px 20px 10px;
+            text-align: left;
+			width: 100%;
+            font-size: 18px;
+            color: #000000;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 20px;
+                        
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-drawer:hover {
+            background-color: #141414;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .drawer-content {
+            max-height: 0;
+            overflow: hidden;
+            align-items: center;
+            text-align: justify;
+            margin: 5px 5% 5px 5%;
+            width: 90%;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        .drawer.open .drawer-content {
+            max-height: 800px; /* Adjust if needed */
+        }
+
+
+        .logo-container {
+            display: flex;
+            align-items: center; /* Vertically aligns the items in the center */
+            gap: 10px; /* Space between the image and the title */
+        }
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+
+        .logo-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .logo-title {
+            font-size: 15px; /* Adjust this value as needed */
+            font-weight: bold; /* Adjust this value as needed */
+            margin-bottom: 5px;
+        }
+        .logo-subtitle {
+            font-size: 14px; /* Adjust this value as needed */
+            color: #000000; /* Adjust this value as needed */
+        }
+        .description {
+            margin: 20px 10px 20px 10px;
+            margin-bottom: 16px; /* Gives some space between the logo/title section and the description */
+            font-size: 14px; /* Adjust as needed */
+            color: #444; /* Adjust as needed */
         }
     </style>
 </head>
@@ -123,11 +197,164 @@
         <section class="about-me">
         <h1>About me</h1>
          <p>As a Graduate Research Assistant at RIDER Center, I conduct multi-disciplinary research on various subjects related to sustainable built environment, automation in construction, data-driven decision-making, and transportation systems analysis.</p>
-<p>I am also a Ph.D. candidate in Civil Engineering at Florida State University, where I apply my knowledge and skills in Intelligent Transportation Systems, AI, and large-scale decision-making to address complex and dynamic problems in the context of transportation systems. </p>
-</section>
+        <p>I am also a Ph.D. candidate in Civil Engineering at Florida State University, where I apply my knowledge and skills in Intelligent Transportation Systems, AI, and large-scale decision-making to address complex and dynamic problems in the context of transportation systems. </p>
+        </section>
+
+        <button class="toggle-drawer" data-target="about-me">Education</button>
+        <section class="drawer" id="about-me">
+            <div class="drawer-content">
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Florida_State_University_seal.svg/150px-Florida_State_University_seal.svg.png" alt="Logo Image">
+                    </div>
+                        <div>
+                        <span class="logo-title">Florida State University</span>
+                        <br>
+                        <span class="logo-subtitle">Ph.D., Civil Engineering
+                            (Jan 2022 - May 2025)
+                            </span>
+                        </div>
+                </div>  
+                <div class="description">
+                    Dissertation Title: “A Holistic Approach to Long-term Building Maintenance Planning under Uncertainty to Maximize Recoverable Material Yields”
+                </div>
+                
+                
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/88/IUST_logo_color.png" alt="Logo Image">
+                    </div>
+                        <div>
+                        <span class="logo-title">Iran University of Science and Technology</span>
+                        <br>
+                        <span class="logo-subtitle">M.Sc., Transportation and Highway Engineering
+                            (Sep 2017 - Sep 2020)
+                            </span>
+                        </div>
+                </div>
+                <div class="description">
+                    Thesis Title: "Network-wide Adaptive Traffic Signal Control Using Reinforcement Learning"
+                    <br>
+                    Supervisors: Dr. Neda Kamboozia, Prof. Hassan Ziari
+                </div>
+            
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Aalto_University_logo_tri-lingual_version.png" alt="Logo Image">
+                    </div>
+                        <div>
+                        <span class="logo-title">Aalto University</span>
+                        <br>
+                        <span class="logo-subtitle">Summer School on Transportation
+                            (Sep 2020)
+                            </span>
+                        </div>
+                </div>
+                <div class="description">
+                    Theme: Integrated, Customized, and Automated Mobility Future.
+                </div>
+            
+
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="https://o4af.com/wp-content/uploads/jobsearch-user-files/Yazd-University-logo.png" alt="Logo Image">
+                    </div>
+                        <div>
+                        <span class="logo-title">Yazd University</span>
+                        <br>
+                        <span class="logo-subtitle">B.Sc., Civil Engineering
+                            (Sep 2012 - Aug 2017)
+                            </span>
+                        </div>
+                </div>
+                <div class="description">
+                    I was a founder member of the students’ committee of the civil engineering department on concrete technology. I was the writer and editor of the structural and environmental sections of the department’s journal.
+                </div>
+
+            </div>
         
-    </div>
-    
+        </section>
+
+        <!-- Another Drawer Section (Example) -->
+        <button class="toggle-drawer" data-target="another-section">Experience</button>
+        <section class="drawer" id="another-section">
+            <div class="drawer-content">
+                
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="https://media.licdn.com/dms/image/C4E0BAQE-UQ8_oXCs4Q/company-logo_100_100/0/1672866176979/riderdotengineer_logo?e=1705536000&v=beta&t=txuQaiNthtjdKKa8H3iiQDTP5kD-WXsbM-_Zpc81H6c" alt="Logo Image">
+                    </div>
+                        <div>
+                        <span class="logo-title">Graduate Research Assistant</span>
+                        <br>
+                        <span class="logo-subtitle">RIDER Center · Full-time
+                            (Jan 2022 - Present)
+                            </span>
+                        </div>
+                </div>
+                <div class="description">
+                    Sustainable Infrastructure Management Lab
+                    <br>
+                    • Conduct multi-disciplinary research on various subjects including sustainable built environment, automation in construction, data-driven decision-making, transportation systems analysis, system-of-systems conceptual analysis, reinforcement learning agent-based modeling, housing and transportation planning, and supply chain analysis.
+                    <br>
+                    • Engaged in partnership-driven research, collaborating closely with stakeholders from both the public and private sectors. Ensured that research objectives and methodologies were directly relevant to community challenges and needs.
+                </div>
+
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="https://media.licdn.com/dms/image/C560BAQFSZLI3-RdlLQ/company-logo_200_200/0/1587792019103/irianaco_logo?e=1705536000&v=beta&t=DDbXWOdSl92MypXrogwHTth27cH8Q_fg8pJ8cNpIjjo" alt="Logo Image">
+                    </div>
+                        <div>
+                        <span class="logo-title">Data Analyst and Transportation Planner</span>
+                        <br>
+                        <span class="logo-subtitle">IRIANA Consulting Engineers. · Full-time
+                            (May 2019 - Dec 2021)
+                            </span>
+                        </div>
+                </div>
+                <div class="description">
+                    • Contributing to a variety of transportation planning to ensure the development of efficient and sustainable transportation systems including Comprehensive Transportation Master Plans (CTMP).
+                    <br>
+                    • Conducting studies to understand the demographic and economic factors influencing transportation needs.
+                    <br>
+                    • Development of user-centric software tailored for transportation consulting firms.
+                    <br>
+                    • Advanced traffic simulations to model and analyze transportation patterns, predict potential bottlenecks and recommend optimal infrastructure adjustments.
+                    <br>
+                    • Conducting Road safety audit (RSA) to evaluate transportation projects for potential safety hazards for all road users, from pedestrians to vehicular traffic.
+                </div>
+
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/88/IUST_logo_color.png" alt="Logo Image">
+                    </div>
+                        <div>
+                        <span class="logo-title">Research And Teaching Assistant</span>
+                        <br>
+                        <span class="logo-subtitle">Iran University of Science and Technology · Part-time
+                            (Sep 2018 - Sep 2020) 
+                            </span>
+                        </div>
+                </div>
+                <div class="description">
+                    • Conducting multi-disciplinary research on the application of Intelligent Transportation Systems (ITS), AI in traffic management, and large-scale decision-making in the context of transportation systems.
+                    <br>
+                    • Teaching Highway Geometric Design to over 100 students, emphasizing practical applications and real-world relevance.
+                    <br>
+                    • Facilitated hands-on training sessions on industry-leading tools such as Autodesk Civil 3D and Infraworks, empowering students to effectively utilize these platforms in professional settings.                </div>
+
+            </div>
+        </section>
+
+
+        <script>
+            document.querySelectorAll('.toggle-drawer').forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetDrawer = document.getElementById(targetId);
+                    targetDrawer.classList.toggle('open');
+                });
+            });
+        </script>
 </body>
 </html>
-
