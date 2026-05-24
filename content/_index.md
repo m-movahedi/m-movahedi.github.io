@@ -1,5 +1,6 @@
 ---
 title: "Home"
+hideTitle: true
 ---
 
 # Mohammad Movahedi
