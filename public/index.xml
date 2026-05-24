@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mohammad movahedi</title>
-    <link>http://localhost:57329//</link>
+    <link>//localhost:57329/m-movahedi.github.io/</link>
     <description>Recent content on Mohammad movahedi</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:57329//index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:57329/m-movahedi.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
