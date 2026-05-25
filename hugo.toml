@@ -6,6 +6,9 @@ enableEmoji = true
 
 [params]
   description = "Construction & Infrastructure Management Researcher"
+  avatarURL = "/images/profile.png"
+  avatarAltText = "Mohammad Movahedi"
+  avatarSize = "size-m"
   showBackToTopButton = true
   customHeadHTML = '''
 <link rel="icon" type="image/png" href="/favicon.png">

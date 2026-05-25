@@ -3,13 +3,13 @@ title: "Home"
 hideTitle: true
 ---
 
-<div><p align="center">
+
+<p align="center">
   <img src="/images/profile.png"
        alt="Mohammad Movahedi"
        width="220"
        style="border-radius:50%;">
-</p></div>
-
+</p>
 
 Construction & Infrastructure Management Researcher.
 
