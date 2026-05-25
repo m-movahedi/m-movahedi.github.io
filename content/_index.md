@@ -16,8 +16,3 @@ My research focuses on data-driven methods for understanding, managing, and impr
 - Urban mobility systems
 - Data-driven decision support
 - Construction and infrastructure management
-
-## Contact
-
-- Email: eng.mohammadmovahedi@gmail.com
-- GitHub: https://github.com/m-movahedi
