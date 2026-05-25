@@ -4,6 +4,7 @@ title = "Mohammad Movahedi"
 theme = "gokarna-hugo"
 
 [[menu.main]]
+identifier = "blog"
 name = "Blog"
 url = "/blog/"
-weight = 3
+weight = 1
