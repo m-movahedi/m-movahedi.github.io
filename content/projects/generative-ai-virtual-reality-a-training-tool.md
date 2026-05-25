@@ -39,6 +39,11 @@ You can find more information about this framework at the following links:
       font-weight:600;
       display:inline-block;
      ">
+     <img src="\themes\gokarna-hugo\static\svg\icons\github.svg"
+         width="18"
+         height="18"
+         style="filter: invert(1);">
+
      GitHub Repository
   </a>
 
