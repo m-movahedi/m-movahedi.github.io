@@ -4,8 +4,6 @@ hideTitle: true
 ---
 
 
-Construction & Infrastructure Management Researcher.
-
 I am a PhD candidate working on transportation planning, infrastructure systems, traffic engineering, urban mobility, and asset management.
 
 My research focuses on data-driven methods for understanding, managing, and improving transportation and infrastructure systems.
