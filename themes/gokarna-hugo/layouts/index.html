@@ -6,7 +6,9 @@
         {{ end }}
 	</div>
 
+    {{ if not .Params.hideTitle }}
     <h1>{{ .Site.Title }}</h1>
+    {{ end }}
     {{ if isset .Site.Params "description" }}
         <h2>{{ .Site.Params.Description }}</h2>
     {{ end }}
