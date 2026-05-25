@@ -37,8 +37,8 @@ In this project, the minor mode refers to the walking routes planned in part of 
 In this case, the routing problem is not finding a way but finding an optimal sequence that visits all the stations with the lowest cost. The problem is a well-known graph routing problem, also known as the traveling salesman problem.
 
 
-<div style="margin-top:40px; display:flex; gap:12px; flex-wrap:wrap;">
-  <center>
+<div style="margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+
   <a href="https://github.com/m-movahedi/Sightseeing-Tour-Planning"
      style="
       padding:10px 18px;
@@ -49,9 +49,11 @@ In this case, the routing problem is not finding a way but finding an optimal se
       font-weight:600;
       display:inline-block;
      ">
+
      GitHub Repository
+
   </a>
-  </center>
+
 </div>
 
 
