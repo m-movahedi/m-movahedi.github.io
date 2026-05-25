@@ -4,6 +4,7 @@ hideTitle: true
 menus : ['main', 'footer']
 ---
 
+Hi
 I am a PhD candidate at FSU working on transportation planning, civil engineering, urban planning, traffic engineering, and infrastructure asset management.
 
 
