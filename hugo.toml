@@ -9,3 +9,4 @@ theme = "gokarna-hugo"
         name = "Blog"
         url = "/blog/"
         weight = 1
+        
