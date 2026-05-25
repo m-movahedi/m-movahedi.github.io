@@ -17,9 +17,9 @@ Sometime in late 2023, when the generative-ai community suddenly shifted their f
 
 In a conference paper titled “Generative Artificial Intelligence and Virtual Reality: Emerging Future of the Building Component Inspection Training”, presented in CIB WBC CIB 2025, I described this framework in details. The framework integrates generative artificial intelligence (Gen AI) with virtual reality (VR) to create a more immersive and effective training environment for building maintenance and operations. Traditional training methods often rely on static visuals and text, limiting inspectors’ exposure to the diverse and complex conditions found in real-world scenarios. In contrast, the proposed approach leverages Gen AI to generate realistic textures of deteriorating building components, which are then embedded into an interactive VR environment. This enables trainees to engage in hands-on, immersive practice, improving their ability to identify and assess conditions accurately. The framework aims to reduce subjectivity in inspections and enhance knowledge transfer. A hypothetical case study demonstrates the framework’s potential, highlighting its broader applicability not only in building maintenance but also in other domains that require precise, objective evaluations.
 
-<figure>
+<figure >
 <center>
-<img src="/images/Movahedi2025Example.png" alt="An example" />
+<img src="/images/Movahedi2025Example.png" alt="An example" style="background-color: white; padding: 0px; display: inline-block;"/>
 <figcaption> An example of the proposed concept </figcaption>
 </center>
 </figure>
