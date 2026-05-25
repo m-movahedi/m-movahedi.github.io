@@ -10,7 +10,6 @@ hideTitle: true
        style="border-radius:50%;">
 </p>
 
-# Mohammad Movahedi
 
 Construction & Infrastructure Management Researcher.
 
