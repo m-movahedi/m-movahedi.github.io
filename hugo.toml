@@ -6,7 +6,6 @@ enableEmoji = true
 
 [params]
   description = "Construction & Infrastructure Management Researcher"
-  footer = "All rights are reserved. © 2017-2026 / Mohammad Movahedi"
   showBackToTopButton = true
   customHeadHTML = '''
 <link rel="icon" type="image/png" href="/favicon.png">
