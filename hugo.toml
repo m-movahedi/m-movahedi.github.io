@@ -1,8 +1,46 @@
 baseURL = "https://m-movahedi.github.io/"
-languageCode = "en-us"
+locale = "en-US"
 title = "Mohammad Movahedi"
 theme = "gokarna-hugo"
+enableEmoji = true
+
 [params]
-customHeadHTML = '''
+  description = "Construction & Infrastructure Management Researcher"
+  footer = "All rights are reserved. © 2017-2026 / Mohammad Movahedi"
+  showBackToTopButton = true
+  customHeadHTML = '''
 <link rel="icon" type="image/png" href="/favicon.png">
 '''
+
+  socialIcons = [
+    {name = "github", url = "https://github.com/m-movahedi"},
+    {name = "twitter", url = "https://x.com/"},
+    {name = "linkedin", url = "https://www.linkedin.com/"},
+    {name = "email", url = "mailto:eng.mohammadmovahedi@gmail.com"}
+  ]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Background"
+    url = "/background/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
