@@ -1,12 +1,12 @@
 +++
-title = "NHERI GSC Reconnaissance RSR Meeting"
+title = "NHERI GSC Simulation and Computational Methods RSR Meeting"
 date = "2026-02-20"
 draft = false
 type = "post"
 +++
 # MScalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA
 
-I hosted SoungEil Houng as part of the ongoing NHERI GSC webinar series on simulation and statistical methods in natural hazard research.
+I hosted SoungEil Houng as part of the ongoing NHERI GSC webinar series on simulation and computational methods in natural hazard research.
 
 SoungEil Houng is a Ph.D. candidate in the Department of Civil and Environmental Engineering at UC Berkeley. Prior to beginning his doctoral studies, he gained professional experience in seismic hazard analysis for nuclear power plant sites in South Korea. He holds master’s degrees in both Seismology and Civil and Environmental Engineering, as well as a bachelor’s degree in Earth System Sciences. His research interests include seismic hazard and risk analysis, with a particular focus on developing scalable computational frameworks for large-scale regional risk assessments.
 
