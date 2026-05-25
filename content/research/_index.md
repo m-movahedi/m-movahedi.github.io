@@ -1,6 +1,6 @@
 ---
 menus : ['main', 'footer']
-title: "Projects"
+title: "Research"
 draft: false
 ---
 

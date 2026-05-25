@@ -63,8 +63,8 @@ gtag('config', 'G-1WZSE8DHZ9');
     weight = 3
 
   [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
+    name = "Researchs"
+    url = "/research/"
     weight = 4
 
   [[menu.main]]
