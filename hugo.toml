@@ -2,3 +2,7 @@ baseURL = "https://m-movahedi.github.io/"
 languageCode = "en-us"
 title = "Mohammad Movahedi"
 theme = "gokarna-hugo"
+[params]
+customHeadHTML = '''
+<link rel="icon" type="image/png" href="/favicon.png">
+'''
