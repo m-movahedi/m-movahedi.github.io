@@ -1,6 +1,7 @@
 ---
 title: "Home"
 hideTitle: true
+menus : ['main', 'footer']
 ---
 
 # Mohammad Movahedi
