@@ -3,10 +3,3 @@ languageCode = "en-us"
 title = "Mohammad Movahedi"
 theme = "gokarna-hugo"
 
-[menus]
-    [[menu.main]]
-        identifier = "blog"
-        name = "Blog"
-        url = "/blog/"
-        weight = 1
-        
