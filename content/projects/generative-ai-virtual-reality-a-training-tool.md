@@ -27,6 +27,12 @@ In a conference paper titled “Generative Artificial Intelligence and Virtual R
 
 <br>
 You can find more information about this framework at the following links:
+
+<button>
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20" alt="GitHub Logo">
+  GitHub
+</button>
+
 <div style="margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
 
   <a href="https://github.com/m-movahedi/Gen-AI-VR-Asset-Generator"
