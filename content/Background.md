@@ -7,7 +7,7 @@ title: "Background"
 <div style="display:flex; gap:24px; align-items:flex-start; margin-bottom:40px;">
 
 <div style="min-width:140px;">
-<img src="/images/fsu.png" width="120">
+<img src="https://brand.fsu.edu/sites/g/files/upcbnu4656/files/brand/fsu-wordmark/FSU_wordmark_2CLR_GAR_RGB.svg" width="120">
 </div>
 
 <div>
