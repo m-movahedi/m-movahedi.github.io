@@ -1,6 +1,6 @@
 +++
 title = "NHERI GSC Reconnaissance RSR Meeting: Marshal Fire, Colorado"
-date = "2026-01-17"
+date = "2025-01-17"
 draft = false
 type = "post"
 +++
