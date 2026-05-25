@@ -10,6 +10,9 @@ Tourism plays an important role in the growth of urban economies. Attractions li
 
 The path to an efficient sightseeing tour plan requires both demand evaluation and route planning. This post will discuss only the route planning stage. In most sightseeing tours, there are two active transportation modes working alongside each other: a major mode that usually provides users with a lift to special stations and a minor mode that connects these stations to the desired attractions.
 
+<iframe src="https://github.com/m-movahedi/Sightseeing-Tour-Planning/blob/master/Output/html_output.html
+" title="The framework's output"></iframe>
+
 # Major Mode
 The major mode usually follows certain criteria, which can later be interpreted into a cost function, some of which can be named as:
 
@@ -30,3 +33,5 @@ In this project, the minor mode refers to the walking routes planned in part of 
 In this case, the routing problem is not finding a way but finding an optimal sequence that visits all the stations with the lowest cost. The problem is a well-known graph routing problem, also known as the traveling salesman problem.
 
 Sightseeing Tour Planner by Mohammad Movahedi is licensed under CC BY-NC-SA 4.0 CC
+
+
