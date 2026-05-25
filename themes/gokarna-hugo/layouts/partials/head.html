@@ -58,4 +58,7 @@
     {{ if .Site.Params.CustomHeadHTML }}
     {{ .Site.Params.CustomHeadHTML | safeHTML }}
     {{ end }}
+
+    {{ $custom := resources.Get "css/custom.css" | minify }}
+    <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
 </head>

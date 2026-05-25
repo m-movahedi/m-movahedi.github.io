@@ -1,0 +1,11 @@
+<div class="institute-card">
+  <div class="institute-logo">
+    <img src="{{ .Get "logo" }}" alt="{{ .Get "title" }}">
+  </div>
+
+  <div class="institute-content">
+    <h3>{{ .Get "title" }}</h3>
+    <p><strong>{{ .Get "subtitle" }}</strong></p>
+    <p>{{ .Inner }}</p>
+  </div>
+</div>
