@@ -28,10 +28,7 @@ In a conference paper titled “Generative Artificial Intelligence and Virtual R
 <br>
 You can find more information about this framework at the following links:
 
-<button>
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20" alt="GitHub Logo">
-  GitHub
-</button>
+
 
 <div style="margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
 
@@ -45,8 +42,7 @@ You can find more information about this framework at the following links:
       font-weight:600;
       display:inline-block;
      ">
-     
-     GitHub Repository
+     GitHub Repository    
   </a>
 
  <a href="https://www.youtube.com/watch?v=uEgWkT4K-gU"

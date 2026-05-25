@@ -16,6 +16,13 @@
       <description>&lt;p&gt;Hello :)&lt;/p&gt;</description>
     </item>
     <item>
+      <title>NHERI GSC Simulation and Computational Methods RSR Meeting</title>
+      <link>http://localhost:1313/webinars/nheri_rsr_spring2026/</link>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/webinars/nheri_rsr_spring2026/</guid>
+      <description>&lt;h1 id=&#34;mscalable-scenario-based-earthquake-risk-modeling-via-linearized-ground-motionfragility-coupling-and-probabilistic-pca&#34;&gt;MScalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA&lt;/h1&gt;&#xA;&lt;p&gt;I hosted SoungEil Houng as part of the ongoing NHERI GSC webinar series on simulation and computational methods in natural hazard research.&lt;/p&gt;&#xA;&lt;p&gt;SoungEil Houng is a Ph.D. candidate in the Department of Civil and Environmental Engineering at UC Berkeley. Prior to beginning his doctoral studies, he gained professional experience in seismic hazard analysis for nuclear power plant sites in South Korea. He holds master’s degrees in both Seismology and Civil and Environmental Engineering, as well as a bachelor’s degree in Earth System Sciences. His research interests include seismic hazard and risk analysis, with a particular focus on developing scalable computational frameworks for large-scale regional risk assessments.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Generative AI &#43; Virtual Reality: A training tool</title>
       <link>http://localhost:1313/projects/generative-ai-virtual-reality-a-training-tool/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
@@ -23,7 +30,14 @@
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Sometime in late 2023, when the generative-ai community suddenly shifted their focus to picture and video generation, I started developing a framework to first generate textures of materials based on the description that the inspection guidelines provide. This concept quickly evolves into a a framework to generate auditory and visual cues for 3D objects.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;&lt;center&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/Movahedi2025Framework.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xA;&lt;figcaption&gt; The proposed framework &lt;/figcaption&gt;&#xA;&lt;/center&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;In a conference paper titled “Generative Artificial Intelligence and Virtual Reality: Emerging Future of the Building Component Inspection Training”, presented in CIB WBC CIB 2025, I described this framework in details. The framework integrates generative artificial intelligence (Gen AI) with virtual reality (VR) to create a more immersive and effective training environment for building maintenance and operations. Traditional training methods often rely on static visuals and text, limiting inspectors’ exposure to the diverse and complex conditions found in real-world scenarios. In contrast, the proposed approach leverages Gen AI to generate realistic textures of deteriorating building components, which are then embedded into an interactive VR environment. This enables trainees to engage in hands-on, immersive practice, improving their ability to identify and assess conditions accurately. The framework aims to reduce subjectivity in inspections and enhance knowledge transfer. A hypothetical case study demonstrates the framework’s potential, highlighting its broader applicability not only in building maintenance but also in other domains that require precise, objective evaluations.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Sightseeing Tour Planning</title>
+      <title>NHERI GSC Reconnaissance RSR Meeting</title>
+      <link>http://localhost:1313/webinars/nheri_rsr_spring2025/</link>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/webinars/nheri_rsr_spring2025/</guid>
+      <description>&lt;h1 id=&#34;marshal-fire-colorado-field-reconnaissance-overvirew&#34;&gt;Marshal Fire, Colorado: Field Reconnaissance Overvirew&lt;/h1&gt;&#xA;&lt;p&gt;I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.&lt;/p&gt;&#xA;&lt;p&gt;Dr. Brad Wham is a civil and geotechnical engineering researcher specializing in lifeline infrastructure resilience, pipeline performance, and earthquake engineering. Based at the University of Nevada, Reno, he leads research that informs the design and protection of buried utilities against extreme ground deformation events.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tehran Sightseeing Tour Planning</title>
       <link>http://localhost:1313/projects/sightseeing-tour-planning/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/sightseeing-tour-planning/</guid>
