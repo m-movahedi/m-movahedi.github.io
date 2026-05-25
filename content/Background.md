@@ -4,12 +4,24 @@ title: "Background"
 
 ## Educational Background
 
+<div style="display:flex; gap:24px; align-items:flex-start; margin-bottom:40px;">
+
+<div style="min-width:140px;">
+<img src="/images/fsu.png" width="120">
+</div>
+
+<div>
+
 ### Florida State University
 
 **Ph.D., Civil Engineering**  
 *Jan 2022 – Present*
 
-Dissertation Title: “A Holistic Approach to Long-term Building Maintenance Planning under Uncertainty to Maximize Recoverable Material Yields”
+Dissertation Title:  
+“A Holistic Approach to Long-term Building Maintenance Planning under Uncertainty to Maximize Recoverable Material Yields”
+
+</div>
+</div>
 
 ### Florida State University
 
