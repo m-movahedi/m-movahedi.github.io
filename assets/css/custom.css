@@ -145,3 +145,7 @@
     width: 100%;
   }
 }
+
+:root {
+    --accent-color: #f79d00;
+}
