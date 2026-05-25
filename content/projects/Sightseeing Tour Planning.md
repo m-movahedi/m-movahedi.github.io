@@ -10,10 +10,12 @@ Tourism plays an important role in the growth of urban economies. Attractions li
 
 The path to an efficient sightseeing tour plan requires both demand evaluation and route planning. This post will discuss only the route planning stage. In most sightseeing tours, there are two active transportation modes working alongside each other: a major mode that usually provides users with a lift to special stations and a minor mode that connects these stations to the desired attractions.
 
-<iframe src="https://github.com/m-movahedi/Sightseeing-Tour-Planning/blob/master/Output/html_output.html
-    width="100%"
-    height="700"
-    style="border:none; border-radius:12px;"></iframe>
+<iframe
+  src="/projects/sightseeing-tour/html_output.html"
+  width="100%"
+  height="700"
+  style="border:none;">
+</iframe>
 
 # Major Mode
 The major mode usually follows certain criteria, which can later be interpreted into a cost function, some of which can be named as:
