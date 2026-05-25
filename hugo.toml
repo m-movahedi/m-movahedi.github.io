@@ -31,19 +31,5 @@ enableEmoji = true
     url = "/blog/"
     weight = 2
 
-  [[menu.main]]
-    name = "Background"
-    url = "/background/"
-    weight = 3
-
-  [[menu.main]]
-    name = "Publications"
-    url = "/publications/"
-    weight = 4
-
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 5
 
  
