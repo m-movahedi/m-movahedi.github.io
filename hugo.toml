@@ -12,6 +12,11 @@ enableEmoji = true
   showBackToTopButton = true
   customHeadHTML = '''
 <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 '''
 
   socialIcons = [
@@ -19,6 +24,7 @@ enableEmoji = true
     {name = "twitter", url = "https://x.com/m_movahedi_"},
     {name = "linkedin", url = "https://www.linkedin.com/in/m-movahedi"},
     {name = "google", url = "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en"},
+    {name = "researchgate", url = "https://www.researchgate.net/profile/Mohammad-Movahedi-3"},
     {name = "email", url = "mailto:eng.mohammadmovahedi@gmail.com"}
   ]
 
