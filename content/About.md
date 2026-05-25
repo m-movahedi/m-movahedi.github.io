@@ -21,4 +21,4 @@ My research focuses on sustainable infrastructure systems, intelligent transport
 
 <br>
 
-**Keywords:** Generative AI Planning Transportation Systems Virtual Reality
+**Keywords:** Generative AI, Planning, Transportation Systems, Virtual Reality
