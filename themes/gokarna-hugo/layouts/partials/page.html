@@ -1,8 +1,10 @@
 <div class="post container">
 
+    {{ if not .Params.hideTitle }}
     <div class="post-header-section">
         <h1>{{ or (.Params.H1 | markdownify) (.Title | markdownify) }}</h1>
     </div>
+    {{ end }}
 
     <div class="post-content">
         {{ .Content }}
