@@ -14,8 +14,9 @@ enableEmoji = true
 
   socialIcons = [
     {name = "github", url = "https://github.com/m-movahedi"},
-    {name = "twitter", url = "https://x.com/"},
-    {name = "linkedin", url = "https://www.linkedin.com/"},
+    {name = "twitter", url = "https://x.com/m_movahedi_"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/m-movahedi"},
+    {name = "google", url = "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en"},
     {name = "email", url = "mailto:eng.mohammadmovahedi@gmail.com"}
   ]
 
