@@ -4,13 +4,6 @@ hideTitle: true
 ---
 
 
-<p align="center">
-  <img src="/images/profile.png"
-       alt="Mohammad Movahedi"
-       width="220"
-       style="border-radius:50%;">
-</p>
-
 Construction & Infrastructure Management Researcher.
 
 I am a PhD candidate working on transportation planning, infrastructure systems, traffic engineering, urban mobility, and asset management.

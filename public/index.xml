@@ -1,30 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Mohammad Movahedi</title><link>https://m-movahedi.github.io/</link><description>Recent content in Home on Mohammad Movahedi</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://m-movahedi.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>My First Post</title><link>https://m-movahedi.github.io/blog/my-first-post/</link><pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.github.io/blog/my-first-post/</guid><description>&lt;p&gt;Hello :)&lt;/p&gt;</description></item><item><title>Projects 1</title><link>https://m-movahedi.github.io/projects/project-1/</link><pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.github.io/projects/project-1/</guid><description>&lt;p&gt;Hello :)&lt;/p&gt;</description></item><item><title>About</title><link>https://m-movahedi.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://m-movahedi.github.io/about/</guid><description>&lt;center&gt; &lt;h1&gt; Exploring the Journey of a PhD Candidate at FSU RIDER Center: Insights into Sustainable Infrastructure Management&lt;/h1&gt; &lt;/center&gt;
-&lt;center&gt; &lt;strong&gt; Mohammad Movahedi &lt;/strong&gt; &lt;/center&gt;
-&lt;p&gt;Ph.D. Candidate, Department of Civil and Environmental Engineering
-FAMU-FSU College of Engineering, Tallahassee, Florida, 32310, Email: &lt;a href="mailto:info@m-movahedi.com"&gt;info@m-movahedi.com&lt;/a&gt;&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;Abstract-&lt;/strong&gt; As a Graduate Research Assistant at RIDER Center, I conduct multi-disciplinary research on various subjects related to sustainable built environment, automation in construction, data-driven decision-making, and transportation systems analysis. I am also a Ph.D. candidate in Civil Engineering at Florida State University, where I apply my knowledge and skills in Intelligent Transportation Systems, AI, and large-scale decision-making to address complex and dynamic problems in the context of transportation systems.
-My research focuses on sustainable infrastructure systems, intelligent transportation systems, reinforcement learning applications, and transportation planning under uncertainty.&lt;/p&gt;</description></item><item><title>Background</title><link>https://m-movahedi.github.io/background/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://m-movahedi.github.io/background/</guid><description>&lt;h2 id="educational-background"&gt;Educational Background&lt;/h2&gt;
-&lt;div style="display:flex; gap:24px; align-items:flex-start; margin-bottom:40px;"&gt;
-&lt;div style="min-width:140px;"&gt;
-&lt;img src="https://brand.fsu.edu/sites/g/files/upcbnu4656/files/brand/fsu-wordmark/FSU_wordmark_2CLR_GAR_RGB.svg" width="120"&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;h3 id="florida-state-university"&gt;Florida State University&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Ph.D., Civil Engineering&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Jan 2022 – Present&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Dissertation Title:&lt;br&gt;
-“A Holistic Approach to Long-term Building Maintenance Planning under Uncertainty to Maximize Recoverable Material Yields”&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id="florida-state-university-1"&gt;Florida State University&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;M.Eng., Civil Engineering&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Jan 2022 – Jan 2024&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id="iran-university-of-science-and-technology"&gt;Iran University of Science and Technology&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;M.Sc., Transportation and Highway Engineering&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Sep 2017 – Sep 2020&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Thesis Title: “Network-wide Adaptive Traffic Signal Control Using Reinforcement Learning”&lt;/p&gt;
-&lt;h3 id="aalto-university"&gt;Aalto University&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Summer School on Transportation&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Sep 2020&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Mohammad Movahedi</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/blog/my-first-post/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/my-first-post/</guid>
+      <description>&lt;p&gt;Hello :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects 1</title>
+      <link>http://localhost:1313/projects/project-1/</link>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project-1/</guid>
+      <description>&lt;p&gt;Hello :)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;center&gt; &lt;h1&gt; Exploring the Journey of a PhD Candidate at FSU RIDER Center: Insights into Sustainable Infrastructure Management&lt;/h1&gt; &lt;/center&gt;&#xD;&#xA;&lt;center&gt; &lt;strong&gt; Mohammad Movahedi &lt;/strong&gt; &lt;/center&gt;&#xD;&#xA;&lt;p&gt;Ph.D. Candidate, Department of Civil and Environmental Engineering&#xA;FAMU-FSU College of Engineering, Tallahassee, Florida, 32310, Email: &lt;a href=&#34;mailto:info@m-movahedi.com&#34;&gt;info@m-movahedi.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;br&gt;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;Abstract-&lt;/strong&gt; As a Graduate Research Assistant at RIDER Center, I conduct multi-disciplinary research on various subjects related to sustainable built environment, automation in construction, data-driven decision-making, and transportation systems analysis. I am also a Ph.D. candidate in Civil Engineering at Florida State University, where I apply my knowledge and skills in Intelligent Transportation Systems, AI, and large-scale decision-making to address complex and dynamic problems in the context of transportation systems.&#xA;My research focuses on sustainable infrastructure systems, intelligent transportation systems, reinforcement learning applications, and transportation planning under uncertainty.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Background</title>
+      <link>http://localhost:1313/background/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/background/</guid>
+      <description>&lt;h2 id=&#34;educational-background&#34;&gt;Educational Background&lt;/h2&gt;&#xA;&lt;div style=&#34;display:flex; gap:24px; align-items:flex-start; margin-bottom:40px;&#34;&gt;&#xD;&#xA;&lt;div style=&#34;min-width:140px;&#34;&gt;&#xD;&#xA;&lt;img src=&#34;https://brand.fsu.edu/sites/g/files/upcbnu4656/files/brand/fsu-wordmark/FSU_wordmark_2CLR_GAR_RGB.svg&#34; width=&#34;120&#34;&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div&gt;&#xD;&#xA;&lt;h3 id=&#34;florida-state-university&#34;&gt;Florida State University&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ph.D., Civil Engineering&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Jan 2022 – Present&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Dissertation Title:&lt;br&gt;&#xA;“A Holistic Approach to Long-term Building Maintenance Planning under Uncertainty to Maximize Recoverable Material Yields”&lt;/p&gt;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h3 id=&#34;florida-state-university-1&#34;&gt;Florida State University&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;M.Eng., Civil Engineering&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Jan 2022 – Jan 2024&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;iran-university-of-science-and-technology&#34;&gt;Iran University of Science and Technology&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;M.Sc., Transportation and Highway Engineering&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Sep 2017 – Sep 2020&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Thesis Title: “Network-wide Adaptive Traffic Signal Control Using Reinforcement Learning”&lt;/p&gt;&#xA;&lt;h3 id=&#34;aalto-university&#34;&gt;Aalto University&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summer School on Transportation&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;Sep 2020&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
