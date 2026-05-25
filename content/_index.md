@@ -1,6 +1,6 @@
 ---
 title: "Home"
-hideTitle: true
+hideTitle: false
 ---
 
 
