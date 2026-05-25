@@ -1,26 +1,30 @@
 ---
 title: "Home"
 hideTitle: true
-menus : ['main', 'footer']
 ---
 
-I am a PhD candidate at FSU working on transportation planning, civil engineering, urban planning, traffic engineering, and infrastructure asset management.
+# Mohammad Movahedi
 
+Construction & Infrastructure Management Researcher.
 
-My research focuses on data-driven methods for understanding, managing, and improving transportation systems.
+I am a PhD candidate working on transportation planning, infrastructure systems, traffic engineering, urban mobility, and asset management.
 
-## Research interests
+My research focuses on data-driven methods for understanding, managing, and improving transportation and infrastructure systems.
+
+## Research Interests
 
 - Transportation planning
 - Traffic engineering
-- Urban mobility
 - Infrastructure asset management
+- Urban mobility systems
 - Data-driven decision support
+- Construction and infrastructure management
 
-## About
+## Current Work
 
 I use this website to share my research, projects, publications, teaching, and selected writing.
 
 ## Contact
 
-Email: eng.mohammadmovahedi@gmail.com
+- Email: eng.mohammadmovahedi@gmail.com
+- GitHub: https://github.com/m-movahedi
