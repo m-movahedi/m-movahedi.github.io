@@ -4,7 +4,7 @@ date = "2026-02-20"
 draft = false
 type = "post"
 +++
-# MScalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA
+# Scalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA
 
 I hosted SoungEil Houng as part of the ongoing NHERI GSC webinar series on simulation and computational methods in natural hazard research.
 
