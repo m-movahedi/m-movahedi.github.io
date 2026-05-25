@@ -1,28 +1,19 @@
 +++
 title = "NHERI GSC Reconnaissance RSR Meeting"
-date = "2025-01-17"
+date = "2026-02-20"
 draft = false
 type = "post"
 +++
-# Marshal Fire, Colorado: Field Reconnaissance Overvirew
+# MScalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA
 
-I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.
+I hosted SoungEil Houng as part of the ongoing NHERI GSC webinar series on simulation and statistical methods in natural hazard research.
 
-Dr. Brad Wham is a civil and geotechnical engineering researcher specializing in lifeline infrastructure resilience, pipeline performance, and earthquake engineering. Based at the University of Nevada, Reno, he leads research that informs the design and protection of buried utilities against extreme ground deformation events.
+SoungEil Houng is a Ph.D. candidate in the Department of Civil and Environmental Engineering at UC Berkeley. Prior to beginning his doctoral studies, he gained professional experience in seismic hazard analysis for nuclear power plant sites in South Korea. He holds master’s degrees in both Seismology and Civil and Environmental Engineering, as well as a bachelor’s degree in Earth System Sciences. His research interests include seismic hazard and risk analysis, with a particular focus on developing scalable computational frameworks for large-scale regional risk assessments.
 
-Dr. Wham's work examines how buried pipelines respond to seismic and geotechnical hazards such as earthquakes, landslides, and tunneling. Through full-scale testing and computational modeling, his studies have advanced understanding of jointed and polymer pipe behavior under large ground movements, providing data crucial for modern infrastructure design standards.
+The Disaster Risk Analysis Lab at UC Berkeley, led by Professor Luis Ceferino, develops probabilistic models and decision-support tools to improve the resilience of infrastructure systems under extreme events. The group’s research integrates risk analysis, structural and network modeling, artificial intelligence, and uncertainty quantification, with applications to earthquakes, hurricanes, and cascading infrastructure disruptions.
+
+His research introduces a scalable framework for regional earthquake risk modeling that significantly reduces the computational demands of simulating damage across large building portfolios. By reformulating the traditional ground-motion and fragility workflow into a low-dimensional probabilistic model using exact linearization and probabilistic PCA, the method enables much faster simulations while maintaining high accuracy. Validation studies in San Francisco and the Bay Area showed that the framework closely reproduces benchmark damage and loss estimates while reducing computational complexity from O(N³) to O(N²). The approach achieved simulation speeds up to 110 times faster for large urban portfolios, making high-resolution regional seismic risk assessment far more practical for large-scale applications.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J1F5gAZ-bc0?si=tn2BmkgDlV8YF-7r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 You can watch the talk on the NHERI ECO YouTube channel.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mal16gA7I00?si=t7yLHezkcEEwKxDZ&amp;start=978" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-# Hurricane Otis Post-Disaster Assessment
-
-I hosted Juan Antonio Balderrama Garcia Mendez, Associate Professor of Instruction at The University of Texas at Arlington, as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.
-
-In this talk, he discussed how his team assessed the impacts of Hurricane Otis, a Category 5 hurricane that made devastating landfall near the Mexican city of Acapulco in October 2023.
-
-Dr. Balderrama is an associate professor of electrical engineering at The University of Texas at Arlington. His academic work focuses on advancing performance-based wind design, risk-consistent structural engineering, and interdisciplinary approaches to infrastructure resilience. 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mal16gA7I00?si=zEuZXshHXWs68WB7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
