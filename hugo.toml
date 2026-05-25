@@ -58,8 +58,8 @@ gtag('config', 'G-1WZSE8DHZ9');
     weight = 2
 
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Webinars"
+    url = "/Webinars/"
     weight = 3
 
   [[menu.main]]
@@ -72,5 +72,9 @@ gtag('config', 'G-1WZSE8DHZ9');
     url = "/blog/"
     weight = 5
 
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
 
  
