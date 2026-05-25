@@ -1,4 +1,5 @@
 ---
+menus : ['main', 'footer']
 title: "Blog"
 type: "posts"
 ---
