@@ -7,9 +7,8 @@ hideTitle: true
      alt="Mohammad Movahedi"
      width="220"
      style="border-radius:50%; margin-bottom:20px;">
-     
-# Mohammad Movahedi
 
+![image](/images/profile.png)
 
 Construction & Infrastructure Management Researcher.
 
@@ -25,10 +24,6 @@ My research focuses on data-driven methods for understanding, managing, and impr
 - Urban mobility systems
 - Data-driven decision support
 - Construction and infrastructure management
-
-## Current Work
-
-I use this website to share my research, projects, publications, teaching, and selected writing.
 
 ## Contact
 
