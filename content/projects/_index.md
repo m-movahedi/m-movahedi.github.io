@@ -1,8 +1,8 @@
 ---
 menus : ['main', 'footer']
 title: "Projects"
-type: "posts"
 draft: false
+view: "grid"
 ---
 
 Notes, essays, and updates.

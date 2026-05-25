@@ -1,7 +1,7 @@
 ---
 menus : ['main', 'footer']
 title: "Webinars"
-type: "posts"
+view: "timeline"
 draft: false
 ---
 

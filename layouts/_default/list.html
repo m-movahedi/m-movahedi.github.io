@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+{{ if eq .Params.view "grid" }}
+
+<div class="blog-grid">
+  {{ range .Pages }}
+  <a class="blog-card" href="{{ .RelPermalink }}">
+    <div class="blog-card-content">
+      <h2>{{ .Title }}</h2>
+      {{ with .Date }}<p class="blog-date">{{ .Format "Jan 2, 2006" }}</p>{{ end }}
+      {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </a>
+  {{ end }}
+</div>
+
+{{ else if eq .Params.view "timeline" }}
+
+<div class="timeline">
+
+  {{ range $index, $page := .Pages.ByDate.Reverse }}
+
+  <div class="timeline-row {{ if modBool $index 2 }}right{{ else }}left{{ end }}">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="{{ .RelPermalink }}">
+
+        <div class="timeline-date">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </div>
+
+        <h2>{{ .Title }}</h2>
+
+        {{ with .Summary }}
+        <p>{{ . }}</p>
+        {{ end }}
+
+      </a>
+    </div>
+
+  </div>
+
+  {{ end }}
+
+</div>
+
+{{ else }}
+
+<div class="container list-posts">
+  {{ range .Pages.GroupByDate "2006" }}
+  <h2 class="posts-year">{{ .Key }}</h2>
+  {{ range .Pages }}
+  {{ partial "list-posts.html" . }}
+  {{ end }}
+  {{ end }}
+</div>
+
+{{ end }}
+
+{{ end }}

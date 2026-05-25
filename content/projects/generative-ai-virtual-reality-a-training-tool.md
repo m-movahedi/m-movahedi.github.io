@@ -4,7 +4,6 @@ date = "2025-07-08"
 draft = false
 type = "post"
 +++
-# Introduction
 
 Sometime in late 2023, when the generative-ai community suddenly shifted their focus to picture and video generation, I started developing a framework to first generate textures of materials based on the description that the inspection guidelines provide. This concept quickly evolves into a a framework to generate auditory and visual cues for 3D objects.
 
