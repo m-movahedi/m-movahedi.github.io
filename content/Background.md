@@ -133,11 +133,11 @@ title: "Background"
     <p><strong>IRIANA Consulting Engineers</strong></p>
     <p><em>Full-time (May 2019 – Dec 2021)</em></p>
     <ul>
-      <li>Contributed to transportation planning projects, including Comprehensive Transportation Master Plans.</li>
-      <li>Conducted demographic and economic transportation studies.</li>
-      <li>Developed user-centric software for transportation consulting firms.</li>
-      <li>Used traffic simulations to analyze patterns, bottlenecks, and infrastructure adjustments.</li>
-      <li>Conducted Road Safety Audits for all road users.</li>
+    <li>Contributing to a variety of transportation planning to ensure the development of efficient and sustainable transportation systems including Comprehensive Transportation Master Plans (CTMP).</li>
+    <li>Conducting studies to understand the demographic and economic factors influencing transportation needs.</li>
+    <li>Development of user-centric software tailored for transportation consulting firms.</li>
+    <li>Advanced traffic simulations to model and analyze transportation patterns, predict potential bottlenecks and recommend optimal infrastructure adjustments.</li>
+    <li>Conducting Road safety audit (RSA) to evaluate transportation projects for potential safety hazards for all road users, from pedestrians to vehicular traffic.</li>
     </ul>
   </div>
   </td>
