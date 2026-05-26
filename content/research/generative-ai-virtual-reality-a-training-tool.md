@@ -1,7 +1,7 @@
 +++
 title = "Generative AI + Virtual Reality: A training tool"
 date = "2025-07-08"
-draft = false
+draft = true
 type = "post"
 +++
 
