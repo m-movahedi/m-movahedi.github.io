@@ -111,8 +111,8 @@ title: "Background"
     <p><strong>RIDER Center | Sustainable Infrastructure Management Lab</strong></p>
     <p><em>Full-time (Jan 2022 – Present)</em></p>
     <ul>
-      <li>Conduct multi-disciplinary research on sustainable built environment, automation in construction, data-driven decision-making, transportation systems analysis, reinforcement learning agent-based modeling, housing and transportation planning, and supply chain analysis.</li>
-      <li>Engaged in partnership-driven research with public and private sector stakeholders.</li>
+      <li>Conduct multi-disciplinary research on various subjects including sustainable built environment, automation in construction, data-driven decision-making, transportation systems analysis, system-of-systems conceptual analysis, reinforcement learning agent-based modeling, housing and transportation planning, and supply chain analysis.</li>
+      <li>Engaged in partnership-driven research, collaborating closely with stakeholders from both the public and private sectors. Ensured that research objectives and methodologies were directly relevant to community challenges and needs.</li>
     </ul>
   </div>
   </td>
@@ -133,11 +133,11 @@ title: "Background"
     <p><strong>IRIANA Consulting Engineers</strong></p>
     <p><em>Full-time (May 2019 – Dec 2021)</em></p>
     <ul>
-    <li>Contributing to a variety of transportation planning to ensure the development of efficient and sustainable transportation systems including Comprehensive Transportation Master Plans (CTMP).</li>
+    <li>Contributing to a variety of transportation planning to ensure the development of efficient and sustainable transportation systems, including Comprehensive Transportation Master Plans (CTMP).</li>
     <li>Conducting studies to understand the demographic and economic factors influencing transportation needs.</li>
     <li>Development of user-centric software tailored for transportation consulting firms.</li>
     <li>Advanced traffic simulations to model and analyze transportation patterns, predict potential bottlenecks and recommend optimal infrastructure adjustments.</li>
-    <li>Conducting Road safety audit (RSA) to evaluate transportation projects for potential safety hazards for all road users, from pedestrians to vehicular traffic.</li>
+    <li>Conducting Road Safety Audit (RSA) to evaluate transportation projects for potential safety hazards for all road users, from pedestrians to vehicular traffic.</li>
     </ul>
   </div>
   </td>
