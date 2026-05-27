@@ -25,7 +25,7 @@ The major mode usually follows certain criteria, which can later be interpreted 
 - The exposure of users to historical or leisure-inducing land use. (in either meters or seconds)
 - Economic impact (usually in carbon dioxide equivalent)
 
-The easiest way to embed such an idea is to calculate a matrix with arrays Rij presenting the cost of the cheapest route when the agent travels from the origin i to the destination j. The problem of finding such routes calls for a different post. In this case, we assume we have an algorithm that returns this route. It is obvious that the Rij would not be equal to the Rji as the cheapest route may differ.
+The easiest way to embed such an idea is to calculate a matrix with arrays Rij presenting the cost of the cheapest route when the agent travels from the origin i to the destination j. The problem of finding such routes calls for a different post. In this case, we assume we have an algorithm that returns this route. It is obvious that the Rij would not be equal to the Rji, as the cheapest route may differ.
 
 # Minor Mode
 
