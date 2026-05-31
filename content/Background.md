@@ -160,6 +160,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         <details class="cv-slider">
           <summary>Published</summary>
           <ol class="cv-publication-list">
+            <li>A. Baldwin, M. Movahedi, and J. Choi, "Large-Language Model-Based Framework for Simulating Community Behavior in Policy Evaluation: Application to Community Debris Management," <em>Construction Research Congress</em>, 2026.</li>
             <li>R. Khayamim, M. Movahedi, O. Alisan, S. Ozkul, M. A. Dulebenets, and E. E. Ozguven, "Enhancing Electric Vehicle Evacuation Resilience Through Mobile Charging Infrastructure: A MCDA Approach for Hurricane-Prone Regions," <em>Transportation Research Board 105th Annual Meeting</em>, 2026.</li>
             <li>M. Movahedi, C. Bravo, and J. Choi, "Generative Artificial Intelligence and Virtual Reality: Emerging Future of the Building Component Inspection Training," <em>23rd CIB World Building Congress</em>, 2025. DOI: <a href="https://doi.org/10.7771/3067-4883.1429">10.7771/3067-4883.1429</a>.</li>
             <li>S. Seo, D. Choi, C. Koo, M. Movahedi, and J. Choi, "A Prediction Model for Greenhouse Gas Emissions and Patterns across Boundary Scopes in the Construction Phase: Utilizing Explainable Machine Learning," <em>23rd CIB World Building Congress</em>, 2025. DOI: <a href="https://doi.org/10.7771/3067-4883.1908">10.7771/3067-4883.1908</a>.</li>
@@ -169,7 +170,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
             <li>M. Sadeghi, H. Zangoei, and M. Movahedi, "Determination of Non-Recurring Traffic Bottlenecks Caused by Accidents Using Open Data," 2020.</li>
             <li>M. Movahedi, M. Movahedi, A. M. Amiri, and H. Behbahani, "Young Drivers' Attitude toward Aggressive Driving Distracted by Passengers," 2018.</li>
             <li>M. Movahedi, M. M. Barakchi, H. Zangoei, and R. Mohammadi, "Use of Construction Demolition Waste in Pavement in Context of Sustainability Indexing Standards," 2017.</li>
-             <li>A. Baldwin, M. Movahedi, and J. Choi, "Large-Language Model-Based Framework for Simulating Community Behavior in Policy Evaluation: Application to Community Debris Management," <em>Construction Research Congress</em>, 2026.</li>
+            
           </ol>
         </details>
 
