@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="post container">
+  <div class="post-content">
+    {{ .RawContent | safeHTML }}
+  </div>
+  {{ if .Site.Params.ShowBackToTopButton }}
+    {{ partial "back-to-top.html" . }}
+  {{ end }}
+</div>
+{{ end }}

@@ -2,10 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mohammad Movahedi</title>
-    <link>https://m-movahedi.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="https://m-movahedi.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI-Driven Infrastructure Management</title>
+      <link>http://localhost:1313/tags/ai-driven-infrastructure-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ai-driven-infrastructure-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Asset Management</title>
+      <link>http://localhost:1313/tags/asset-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/asset-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Circular Construction</title>
+      <link>http://localhost:1313/tags/circular-construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/circular-construction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Driven Decision Support</title>
+      <link>http://localhost:1313/tags/data-driven-decision-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-driven-decision-support/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digital Twins</title>
+      <link>http://localhost:1313/tags/digital-twins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/digital-twins/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Disaster Resilience</title>
+      <link>http://localhost:1313/tags/disaster-resilience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/disaster-resilience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Human-Technology Interaction</title>
+      <link>http://localhost:1313/tags/human-technology-interaction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/human-technology-interaction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Intelligent Transportation</title>
+      <link>http://localhost:1313/tags/intelligent-transportation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/intelligent-transportation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post-Disaster Recovery</title>
+      <link>http://localhost:1313/tags/post-disaster-recovery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/post-disaster-recovery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Smart Cities</title>
+      <link>http://localhost:1313/tags/smart-cities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/smart-cities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sustainable Built Environments</title>
+      <link>http://localhost:1313/tags/sustainable-built-environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sustainable-built-environments/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtual Reality</title>
+      <link>http://localhost:1313/tags/virtual-reality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/virtual-reality/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

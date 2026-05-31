@@ -1,169 +1,392 @@
 ---
 title: "Background"
+hideTitle: true
+type: "cv"
+description: "Mohammad Movahedi's academic CV: research, publications, sponsored projects, teaching, awards, and service."
+tags:
+  - "AI-driven infrastructure management"
+  - "Digital twins"
+  - "Sustainable built environments"
+  - "Circular construction"
+  - "Asset management"
+  - "Disaster resilience"
+  - "Post-disaster recovery"
+  - "Virtual reality"
+  - "Data-driven decision support"
+  - "Human-technology interaction"
+  - "Smart cities"
+  - "Intelligent transportation"
 ---
 
-<h2>Educational Background</h2>
+<div class="cv-page">
+  <section class="cv-hero">
+    <div class="cv-eyebrow">Academic Résumé</div>
+    <h1>Mohammad Movahedi, EIT</h1>
+    <p><strong>Ph.D. Candidate in Civil Engineering</strong><br>
+    FAMU-FSU College of Engineering, Florida State University</p>
+    <p class="cv-meta">Construction and infrastructure management researcher working at the intersection of AI, digital twins, sustainable built environments, disaster resilience, and intelligent transportation.</p>
+    <div class="cv-actions">
+      <a class="cv-button" href="mailto:eng.mohammadmovahedi@gmail.com">Email</a>
+      <a class="cv-button" href="https://scholar.google.com/citations?user=BXiu1y0AAAAJ&amp;hl=en">Google Scholar</a>
+      <a class="cv-button" href="https://www.linkedin.com/in/m-movahedi">LinkedIn</a>
+      <a class="cv-button" href="https://github.com/m-movahedi">GitHub</a>
+      <a class="cv-button" href="https://www.researchgate.net/profile/Mohammad-Movahedi-3">ResearchGate</a>
+    </div>
+  </section>
 
-
-<div class="background-item">
-  <table style="width:100%; border-collapse:collapse;">
-  <tr>
-    <td style="width:20%; vertical-align:middle;">
-  <img src="https://brand.fsu.edu/sites/g/files/upcbnu4656/files/brand/fsu-wordmark/FSU_wordmark_2CLR_GAR_RGB.svg" alt="Florida State University" width="120">
-  </td>
-  <td style="vertical-align:middle;">
-  <div>
-    <h3>Florida State University</h3>
-    <p><strong>Ph.D., Civil Engineering</strong> (Jan 2022 – Present)</p>
-    <p>Dissertation Title: “A Holistic Approach to Long-term Building Maintenance Planning under Uncertainty to Maximize Recoverable Material Yields”</p>
+  <div class="cv-stats" aria-label="CV highlights">
+    <div class="cv-stat"><strong>3</strong><span>💼 professional roles</span></div>
+    <div class="cv-stat"><strong>12+</strong><span>📜 published works</span></div>
+    <div class="cv-stat"><strong>10</strong><span>🏗️ major projects</span></div>
+    <div class="cv-stat"><strong>11</strong><span>🏆 awards</span></div>
   </div>
-  </td>
-  </tr>
-  </table>
+
+  <div class="cv-tabs" role="tablist" aria-label="CV sections">
+    <button class="cv-tab" id="cv-tab-overview" type="button" role="tab" aria-selected="true" aria-controls="cv-panel-overview">Overview</button>
+    <button class="cv-tab" id="cv-tab-research" type="button" role="tab" aria-selected="false" aria-controls="cv-panel-research" tabindex="-1">Research</button>
+    <button class="cv-tab" id="cv-tab-teaching" type="button" role="tab" aria-selected="false" aria-controls="cv-panel-teaching" tabindex="-1">Teaching</button>
+    <button class="cv-tab" id="cv-tab-leadership" type="button" role="tab" aria-selected="false" aria-controls="cv-panel-leadership" tabindex="-1">Leadership</button>
+  </div>
+
+  <section class="cv-tab-panel" id="cv-panel-overview" role="tabpanel" aria-labelledby="cv-tab-overview">
+    <h2>Profile</h2>
+    <div class="cv-card">
+      <ul>
+        <li>Ph.D. candidate specializing in AI-driven construction and infrastructure management, digital twins, and sustainable built environments.</li>
+        <li>Published research in venues including <em>IEEE Transactions on Intelligent Transportation Systems</em> and the ASCE <em>Journal of Management in Engineering</em>.</li>
+        <li>Grant-writing experience across NSF, U.S. DOT, private-sector, and university opportunities, including contributions to an awarded NSF CAREER project.</li>
+        <li>Teaching and mentorship experience as a teaching assistant, guest lecturer, and mentor to undergraduate and NSF REU researchers.</li>
+      </ul>
+    </div>
+
+    <h2 class="cv-section-heading">Research Interests</h2>
+    <div class="cv-tag-list">
+      <a class="cv-tag" href="/tags/ai-driven-infrastructure-management/">AI-driven infrastructure management</a>
+      <a class="cv-tag" href="/tags/digital-twins/">Digital twins</a>
+      <a class="cv-tag" href="/tags/sustainable-built-environments/">Sustainable built environments</a>
+      <a class="cv-tag" href="/tags/circular-construction/">Circular construction</a>
+      <a class="cv-tag" href="/tags/asset-management/">Asset management</a>
+      <a class="cv-tag" href="/tags/disaster-resilience/">Disaster resilience</a>
+      <a class="cv-tag" href="/tags/post-disaster-recovery/">Post-disaster recovery</a>
+      <a class="cv-tag" href="/tags/virtual-reality/">Virtual reality</a>
+      <a class="cv-tag" href="/tags/data-driven-decision-support/">Data-driven decision support</a>
+      <a class="cv-tag" href="/tags/human-technology-interaction/">Human-technology interaction</a>
+      <a class="cv-tag" href="/tags/smart-cities/">Smart cities</a>
+      <a class="cv-tag" href="/tags/intelligent-transportation/">Intelligent transportation</a>
+    </div>
+
+    <h2 class="cv-section-heading">Professional Experience</h2>
+    <details class="cv-slider" open>
+      <summary>
+        <span class="cv-entry-header"><span><strong>Graduate Research Assistant</strong>RIDER Research Center, Sustainable Infrastructure Management Lab</span><span class="cv-period">Jan 2022 - Present</span></span>
+      </summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li>Conduct multidisciplinary research in sustainable built environments, construction automation, data-driven decision-making, transportation systems, reinforcement learning, housing recovery, and supply chains.</li>
+          <li>Collaborate with public- and private-sector stakeholders to align research methods with community challenges and decision needs.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="cv-slider">
+      <summary>
+        <span class="cv-entry-header"><span><strong>Transportation Data Analyst and Planner</strong>ID&amp;P Consultants, Tehran, Iran</span><span class="cv-period">May 2019 - Dec 2021</span></span>
+      </summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li>Contributed to freight, comprehensive transportation, and airport master plans.</li>
+          <li>Conducted demographic and economic studies, built user-centered planning software, developed traffic simulations, and integrated multimodal safety audits into master planning.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="cv-slider">
+      <summary>
+        <span class="cv-entry-header"><span><strong>R&amp;D Researcher</strong>Ramona Research Institute, Tehran, Iran</span><span class="cv-period">May 2019 - Dec 2021</span></span>
+      </summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li>Support a GIS-based software solution for road-sign design and maintenance.</li>
+          <li>Collaborated with cross-functional teams to gather requirements and optimize features for end users.</li>
+        </ul>
+      </div>
+    </details>
+
+    <h2 class="cv-section-heading">Education</h2>
+    <details class="cv-slider" open>
+      <summary><span class="cv-entry-header"><span><strong>Florida State University</strong>Ph.D. in Civil Engineering</span><span class="cv-period">Jan 2022 - May 2026 (expected)</span></span></summary>
+      <div class="cv-slider-body"><p>Construction and Infrastructure Management. Dissertation: <em>A Holistic Approach to Long-Term Building Maintenance Planning under Uncertainty to Maximize Recoverable Material Yields</em>.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Florida State University</strong>Master of Engineering in Civil Engineering</span><span class="cv-period">Jan 2022 - Apr 2024</span></span></summary>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Iran University of Science and Technology</strong>Master of Science in Transportation Engineering</span><span class="cv-period">Sep 2017 - Sep 2020</span></span></summary>
+      <div class="cv-slider-body">
+        <p>Thesis: <em>Adaptive Grid-Wide Traffic Signal Control with Reinforcement Learning</em>.</p>
+        <p>Research project: automated pavement distress, right-of-way violation, and safety-hazard detection from street-view images using Mask R-CNN.</p>
+      </div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Yazd University</strong>Bachelor of Science in Civil Engineering</span><span class="cv-period">Sep 2012 - Sep 2017</span></span></summary>
+    </details>
+  </section>
+
+  <section class="cv-tab-panel" id="cv-panel-research" role="tabpanel" aria-labelledby="cv-tab-research" hidden>
+    <h2>Publications</h2>
+    <details class="cv-slider" open>
+      <summary>Journal Papers</summary>
+      <div class="cv-slider-body">
+        <details class="cv-slider" open>
+          <summary>Published</summary>
+          <ol class="cv-publication-list">
+            <li>M. Movahedi and J. Choi, "The Crossroads of LLM and Traffic Control: A Study on Large Language Models in Adaptive Traffic Signal Control," <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024. DOI: <a href="https://doi.org/10.1109/TITS.2024.3498735">10.1109/TITS.2024.3498735</a>.</li>
+            <li>W. Hill, H. Jalloul, M. Movahedi, and J. Choi, "Sustainable Management of the Built Environment from the Life Cycle Perspective," <em>Journal of Management in Engineering</em>, 2023. DOI: <a href="https://doi.org/10.1061/jmenea.meeng-4759">10.1061/jmenea.meeng-4759</a>.</li>
+          </ol>
+        </details>
+        <details class="cv-slider">
+          <summary>Under Review</summary>
+          <ol class="cv-publication-list">
+            <li>M. Movahedi, N. Nickdoost, and J. Choi, "Uncovering Community Debris Disposal Behavior During Post-Disaster Recovery: A Case Study of Illegal Dumping After Hurricane Ian," submitted to <em>Natural Hazards Review</em>, 2025.</li>
+            <li>R. Khayamim, M. Movahedi, M. A. Dulebenets, and E. E. Ozguven, "Robust Mobile Vehicle Charging Solutions for Natural Disasters: A Multi-Criteria Resilience Analysis in Florida," submitted to <em>Journal of Transport Geography</em>, 2025.</li>
+            <li>N. Nickdoost, M. Movahedi, and J. Choi, "Quantifying Transportation Resilience Across Florida: Development of the Florida Index for Transportation (FIT)," 2026.</li>
+          </ol>
+        </details>
+        <details class="cv-slider">
+          <summary>In Preparation</summary>
+          <ol class="cv-publication-list">
+            <li>N. Nickdoost, M. Movahedi, and J. Choi, "Illegal Dumping as a Post-Disaster Behavior: Evidence from Hurricane Ian," 2026.</li>
+
+            <li>A. Baldwin, M. Movahedi, and J. Choi, "LLM-Enabled Community Role-Play for Policy Testing in Post-Hurricane Recovery," 2026.</li>
+            <li>M. Movahedi and J. Choi, "Continuous-State Deterioration Modeling through Deep Neural Networks with Mixture Heads," 2026.</li>
+            <li>M. Movahedi and J. Choi, "Advanced Case-Based Reasoning for Sustainable Demolition Management and Resource Recovery," 2026.</li>
+            <li>M. Movahedi, R. Khayamim, J. Choi, and M. A. Dulebenets, "Enhancing Transportation System Robustness: The Impact of Weather-Induced Traffic Incidents on Hurricane Evacuation," 2026.</li>
+          </ol>
+        </details>
+      </div>
+    </details>
+
+    <details class="cv-slider">
+      <summary>Conference Papers</summary>
+      <div class="cv-slider-body">
+        <details class="cv-slider" open>
+          <summary>Published</summary>
+          <ol class="cv-publication-list">
+            <li>R. Khayamim, M. Movahedi, O. Alisan, S. Ozkul, M. A. Dulebenets, and E. E. Ozguven, "Enhancing Electric Vehicle Evacuation Resilience Through Mobile Charging Infrastructure: A MCDA Approach for Hurricane-Prone Regions," <em>Transportation Research Board 105th Annual Meeting</em>, 2026.</li>
+            <li>M. Movahedi, C. Bravo, and J. Choi, "Generative Artificial Intelligence and Virtual Reality: Emerging Future of the Building Component Inspection Training," <em>23rd CIB World Building Congress</em>, 2025. DOI: <a href="https://doi.org/10.7771/3067-4883.1429">10.7771/3067-4883.1429</a>.</li>
+            <li>S. Seo, D. Choi, C. Koo, M. Movahedi, and J. Choi, "A Prediction Model for Greenhouse Gas Emissions and Patterns across Boundary Scopes in the Construction Phase: Utilizing Explainable Machine Learning," <em>23rd CIB World Building Congress</em>, 2025. DOI: <a href="https://doi.org/10.7771/3067-4883.1908">10.7771/3067-4883.1908</a>.</li>
+            <li>M. Movahedi, R. Khayamim, J. Choi, and E. E. Ozguven, "Network Robustness Analysis of Electric Vehicle Charging Infrastructure During Extreme Weather Conditions: A Case Study of Hurricane Ian," <em>International Conference on Transportation and Development</em>, 2024. DOI: <a href="https://doi.org/10.1061/9780784485538.058">10.1061/9780784485538.058</a>.</li>
+            <li>M. Movahedi, J. Choi, S. Seo, and C. Koo, "Assessment of Estimation Methods for Demolition Waste Volume and Cost," <em>Construction Research Congress</em>, 2024. DOI: <a href="https://doi.org/10.1061/9780784485286.033">10.1061/9780784485286.033</a>.</li>
+            <li>M. Movahedi, N. Kamboozia, and H. Ziari, "A Novel Approach to the Network-wide Adaptive Traffic Signal Control Using Reinforcement Learning," 2020.</li>
+            <li>M. Sadeghi, H. Zangoei, and M. Movahedi, "Determination of Non-Recurring Traffic Bottlenecks Caused by Accidents Using Open Data," 2020.</li>
+            <li>M. Movahedi, M. Movahedi, A. M. Amiri, and H. Behbahani, "Young Drivers' Attitude toward Aggressive Driving Distracted by Passengers," 2018.</li>
+            <li>M. Movahedi, M. M. Barakchi, H. Zangoei, and R. Mohammadi, "Use of Construction Demolition Waste in Pavement in Context of Sustainability Indexing Standards," 2017.</li>
+             <li>A. Baldwin, M. Movahedi, and J. Choi, "Large-Language Model-Based Framework for Simulating Community Behavior in Policy Evaluation: Application to Community Debris Management," <em>Construction Research Congress</em>, 2026.</li>
+          </ol>
+        </details>
+
+      </div>
+    </details>
+
+    <details class="cv-slider">
+      <summary>Project Reports</summary>
+      <div class="cv-slider-body">
+        <ol class="cv-publication-list">
+          <li>Data collection from field investigations during debris removal operations after Hurricane Ian, DesignSafe-CI, 2024. DOI: <a href="https://doi.org/10.17603/ds2-m7zs-xr98">10.17603/ds2-m7zs-xr98</a>.</li>
+          <li>RAPID: investigating illegal dumping during debris collection operations following Hurricane Ian, DesignSafe-CI, 2024.</li>
+          <li>Inter-regional mitigation planning coordination and integration of social vulnerability and housing assessment, 2024.</li>
+          <li>Florida Index for Transportation robustness assessment reports: trend analysis, robustness analysis, statistical analysis, and literature review, 2022-2023.</li>
+        </ol>
+      </div>
+    </details>
+
+    <h2 class="cv-section-heading">Sponsored Research</h2>
+    <details class="cv-slider" open>
+      <summary>CDBG-MIT: Post-Disaster Community Resilience <span class="cv-kicker">Florida DEO, MT037</span></summary>
+      <div class="cv-slider-body"><p>Reviewed post-disaster plans, modeled housing-reconstruction supply-chain resilience, studied disaster-related homelessness, formulated mitigation strategies, and collaborated with agencies and recovery experts.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary>NSF CAREER: Sustainable Material Harvesting <span class="cv-kicker">NSF, CBET-2238612</span></summary>
+      <div class="cv-slider-body"><p>Led demolition-site data collection, developed an advanced case-based reasoning model and a POMDP maintenance-planning framework, formulated 150+ component deterioration models, and collaborated with USACE and private contractors.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary>Florida Index for Transportation, Phase 2 <span class="cv-kicker">FDOT, BDV30 977-01</span></summary>
+      <div class="cv-slider-body"><p>Sourced and validated infrastructure data, led sensitivity and uncertainty analysis, interpreted composite-index outcomes, documented findings, and engaged FDOT stakeholders.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary>RAPID: Illegal Dumping after Hurricane Ian <span class="cv-kicker">NSF, 2305113</span></summary>
+      <div class="cv-slider-body"><p>Organized behavioral questionnaire analysis, mapped debris generation and dumping patterns through field studies, and investigated debris trajectories at temporary debris-management sites.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary>SUMMEER: Extreme Event Reconnaissance <span class="cv-kicker">NSF, 2014330</span></summary>
+      <div class="cv-slider-body"><p>Coordinated collection of perishable post-disaster data and developed strategies to reuse and recycle disaster debris.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary>Earlier Transportation and Infrastructure Projects</summary>
+      <div class="cv-slider-body">
+        <details class="cv-slider"><summary>COVID-19 Travel Behavior in Iran</summary><div class="cv-slider-body"><p>Designed a TPB-based questionnaire, built a collection website and database, validated records with Python, and analyzed changing travel patterns with hybrid choice models.</p></div></details>
+        <details class="cv-slider"><summary>Malayer Comprehensive Transportation Master Plan</summary><div class="cv-slider-body"><p>Managed transportation data collection with 150+ associates and 63,500+ survey responses, developed an Android collection app and geodatabase, and modeled transportation scenarios with TransCAD.</p></div></details>
+        <details class="cv-slider"><summary>Street-View Pavement Inspection</summary><div class="cv-slider-body"><p>Developed a Mask R-CNN computer-vision workflow and an interactive web panel for network-level pavement inspection.</p></div></details>
+        <details class="cv-slider"><summary>Adaptive Traffic Signal Control</summary><div class="cv-slider-body"><p>Built a 168-hour SUMO simulation and evaluated multi-agent DQN controllers for a 20-square-kilometer study area.</p></div></details>
+        <details class="cv-slider"><summary>City Operational Management</summary><div class="cv-slider-body"><p>Developed software-supported frameworks for sightseeing tour buses and accessible curbside parking, and contributed to complete-street planning and design.</p></div></details>
+      </div>
+    </details>
+
+    <h2 class="cv-section-heading">Grant Writing</h2>
+    <details class="cv-slider">
+      <summary>Proposal Portfolio</summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li>NSF CAREER sustainable material harvesting proposal: awarded $509,999.</li>
+          <li>Research proposals addressing disaster debris tracking, demolition-waste estimation, fraud elimination in disaster-affected communities, and illegal-dumping susceptibility mapping.</li>
+          <li>LLM-driven persona-based intervention planning for sustainable waste-management behavior.</li>
+          <li>Four awarded conference travel grants for ASCE and CIB participation.</li>
+        </ul>
+      </div>
+    </details>
+
+    <h2 class="cv-section-heading">Presentations and Awards</h2>
+    <details class="cv-slider">
+      <summary>Selected Presentations and Posters</summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li>Generative AI and VR for building-component inspection training, CIB World Building Congress, May 2025.</li>
+          <li>Sustainable building maintenance and material recovery, CIB Doctoral School, March 2025.</li>
+          <li>Electric-vehicle charging robustness during extreme weather, ASCE ICTD, June 2024.</li>
+          <li>Demolition-waste volume and cost estimation methods, Construction Research Congress, March 2024.</li>
+          <li>AI and traffic-control poster, ITE Book Scholarship Competition, November 2024.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="cv-slider" open>
+      <summary>Awards</summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li>Future Faculty Award, FAMU-FSU College of Engineering, Florida State University, April 2026.</li>
+          <li>Congress of Graduate Students Travel Award, Florida State University, March 2026.</li>
+          <li>Congress of Graduate Students Travel Award, Florida State University, May 2025.</li>
+          <li>2nd place, NHERI Graduate Student Council Data Challenge, May 2025.</li>
+          <li>1st place, ITE Book Scholarship Competition, November 2024.</li>
+          <li>Civil and Environmental Engineering Graduate Research Excellence Award, October 2024.</li>
+          <li>Editor's Choice, ASCE <em>Journal of Management in Engineering</em>, October 2024.</li>
+          <li>Congress of Graduate Students Travel Award, Florida State University, June 2024.</li>
+          <li>2nd place, American Airlines Data Science Challenge second round, May 2024.</li>
+          <li>2nd place, American Airlines Data Science Challenge first round, April 2024.</li>
+          <li>Congress of Graduate Students Travel Award, Florida State University, February 2024.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section class="cv-tab-panel" id="cv-panel-teaching" role="tabpanel" aria-labelledby="cv-tab-teaching" hidden>
+    <h2>Teaching Experience</h2>
+    <details class="cv-slider" open>
+      <summary><span class="cv-entry-header"><span><strong>Guest Lecturer</strong>FAMU-FSU College of Engineering, EESI Program</span><span class="cv-period">Mar 2025</span></span></summary>
+      <div class="cv-slider-body"><p>Presented Monte Carlo simulation applications in civil engineering to undergraduate EESI students.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Guest Lecturer</strong>FAMU-FSU College of Engineering</span><span class="cv-period">Nov 2024</span></span></summary>
+      <div class="cv-slider-body"><p>Presented circular-economy opportunities in post-disaster redevelopment for Infrastructure System of Systems Analysis and Planning.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Graduate Teaching Assistant</strong>FAMU-FSU College of Engineering</span><span class="cv-period">Aug 2023 - Apr 2024</span></span></summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li>Supported Construction Engineering, Highway Geometric Design, and Transportation Engineering for 150+ undergraduate students.</li>
+          <li>Led teaching sessions, graded assignments and exams, and provided one-on-one support.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Graduate Teaching Assistant</strong>Iran University of Science and Technology</span><span class="cv-period">Sep 2018 - Sep 2020</span></span></summary>
+      <div class="cv-slider-body"><p>Taught Highway Geometric Design across four semesters to 120 undergraduate students and designed a project-based learning curriculum.</p></div>
+    </details>
+
+    <h2 class="cv-section-heading">Mentoring</h2>
+    <details class="cv-slider" open>
+      <summary><span class="cv-entry-header"><span><strong>NSF REU Mentor</strong>Florida State University</span><span class="cv-period">May 2024 - Aug 2025</span></span></summary>
+      <div class="cv-slider-body"><p>Mentored two NSF REU students in construction automation, research design, coding, scientific communication, vehicle-activity identification, and dead reckoning.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Undergraduate Research Mentor</strong>Florida State University</span><span class="cv-period">Aug 2023 - Present</span></span></summary>
+      <div class="cv-slider-body"><p>Mentored six students in asset management, including virtual-reality and generative-AI applications.</p></div>
+    </details>
+
+    <h2 class="cv-section-heading">Workshops and Outreach</h2>
+    <details class="cv-slider">
+      <summary>Organized Workshops and Demonstrations</summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li>Be an Engineer Summer Camp, July 2025: introduced high-school students to VR applications for demolition and construction automation.</li>
+          <li>RIDER Open House, 2023-2025: demonstrated VR, generative AI, sustainable demolition, and asset-management applications.</li>
+          <li>Tallahassee Science Festival, November 2024: engaged 200+ participants with interactive sustainable-demolition and automation demonstrations.</li>
+          <li>Workshop on Sustainable Demolition, October 2024: engaged 30+ university and industry participants.</li>
+          <li>Demolition Material Harvesting Educational Workshop, April 2024: supported discussions and course-module development with participants from six universities.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section class="cv-tab-panel" id="cv-panel-leadership" role="tabpanel" aria-labelledby="cv-tab-leadership" hidden>
+    <h2>Service and Leadership</h2>
+    <details class="cv-slider" open>
+      <summary><span class="cv-entry-header"><span><strong>Vice President</strong>ITE FAMU-FSU Student Chapter</span><span class="cv-period">Aug 2024 - Present</span></span></summary>
+      <div class="cv-slider-body"><p>Organized workshops, networking events, career-development initiatives, and the North Florida ITE Graduate Research Poster Competition. The chapter received 2025 Momentum Awards at district and international levels.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Vice President and Founding Member</strong>Civil and Environmental Engineering Graduate Student Association</span><span class="cv-period">Aug 2024 - May 2025</span></span></summary>
+      <div class="cv-slider-body"><p>Helped establish the association and organized professional-development workshops, networking events, and a department-wide research poster competition.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Research Subcommittee Representative</strong>NSF NHERI Graduate Student Council</span><span class="cv-period">Aug 2024 - Present</span></span></summary>
+      <div class="cv-slider-body"><p>Served as Reconnaissance, Simulation, and Computational Methods representative; contributed to grant-writing efforts; and organized workshops and research presentations.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Board Member</strong>Florida State University Iranian Student Association</span><span class="cv-period">Aug 2022 - Aug 2023</span></span></summary>
+      <div class="cv-slider-body"><p>Organized seven cultural events to promote community engagement and cross-cultural understanding.</p></div>
+    </details>
+    <details class="cv-slider">
+      <summary><span class="cv-entry-header"><span><strong>Peer Reviewer</strong>Academic journals and conferences</span><span class="cv-period">May 2023 - Present</span></span></summary>
+      <div class="cv-slider-body">
+        <ul>
+          <li><em>IEEE Transactions on Intelligent Transportation Systems</em></li>
+          <li><em>Transport</em>, <em>Infrastructure Asset Management</em>, and <em>Smart Infrastructure and Construction</em> (ICE)</li>
+          <li><em>Multimodal Transportation</em> (Elsevier)</li>
+          <li>Transportation Research Board Annual Meeting</li>
+        </ul>
+      </div>
+    </details>
+  </section>
 </div>
 
-<div class="background-item">
-  <table style="width:100%; border-collapse:collapse;">
-  <tr>
-    <td style="width:20%; vertical-align:middle;">
-  <img src="https://brand.fsu.edu/sites/g/files/upcbnu4656/files/brand/fsu-wordmark/FSU_wordmark_2CLR_GAR_RGB.svg" alt="Florida State University" width="120">
-  </td>
-  <td style="vertical-align:middle;">
-  <div>
-    <h3>Florida State University</h3>
-    <p><strong>M.Eng., Civil Engineering</strong> (Jan 2022 – Jan 2024)</p>
-    
-  </div>
-  </td>
-  </tr>
-  </table>
-</div>
+<script>
+(() => {
+  const tabs = [...document.querySelectorAll(".cv-tab")];
+  const panels = [...document.querySelectorAll(".cv-tab-panel")];
 
-<div class="background-item">
-  <table style="width:100%; border-collapse:collapse;">
-  <tr>
-    <td style="width:20%; vertical-align:middle;">
-  <img src="https://upload.wikimedia.org/wikipedia/en/8/88/IUST_logo_color.png" alt="IUST" width="120">
-  </td>
-  <td style="vertical-align:middle;">
-  <div>
-    <h3>Iran University of Science and Technology</h3>
-    <p><strong>M.Sc., Transportation and Highway Engineering</strong> (Sep 2017 – Sep 2020)</p>
-    <p>Thesis Title: “Network-wide Adaptive Traffic Signal Control Using Reinforcement Learning”</p>
-    <p>Supervisors: Dr. Neda Kamboozia, Prof. Hassan Ziari</p>
-    
-  </div>
-  </td>
-  </tr>
-  </table>
-</div>
+  const selectTab = (tab) => {
+    tabs.forEach((item) => {
+      const selected = item === tab;
+      item.setAttribute("aria-selected", selected);
+      item.tabIndex = selected ? 0 : -1;
+    });
 
-<div class="background-item">
-  <table style="width:100%; border-collapse:collapse;">
-  <tr>
-    <td style="width:20%; vertical-align:middle;">
-  <img src="/images/Aalto.png" alt="Aalto University" width="120">
-  </td>
-  <td style="vertical-align:middle;">
-  <div>
-    <h3>Aalto University</h3>
-    <p><strong>Summer School on Transportation</strong> (Sep 2020)</p>
-    <p>Theme: Integrated, Customized, and Automated Mobility Future.</p>
-  </div>
-  </td>
-  </tr>
-  </table>
-</div>
+    panels.forEach((panel) => {
+      panel.hidden = panel.id !== tab.getAttribute("aria-controls");
+    });
+  };
 
-<div class="background-item">
-  <table style="width:100%; border-collapse:collapse;">
-  <tr>
-    <td style="width:20%; vertical-align:middle;">
-  <img src="/images/Yazd.png" alt="Yazd University" width="120">
-  </td>
-  <td style="vertical-align:middle;">
-  <div>
-    <h3>Yazd University</h3>
-    <p><strong>B.Sc., Civil Engineering</strong> (Sep 2012 – Aug 2017)</p>
-    <p>I was a founder member of the students’ committee of the civil engineering department on concrete technology. I was the writer and editor of the structural and environmental sections of the department’s journal.</p>
-  </div>
-  </td>
-  </tr>
-  </table>
-</div>
-
-
-
-
-<hr>
-
-<h2>Work Background</h2>
-
-<div class="background-item">
-  <table style="width:100%; border-collapse:collapse;">
-  <tr>
-    <td style="width:20%; vertical-align:middle;">
-  <img src="https://rider.eng.famu.fsu.edu/sites/g/files/upcbnu3036/files/footer_logos/rider-logo-final2.png" alt="RIDER Center" width="120">
-  </td>
-  <td style="vertical-align:middle;">
-  <div>
-    <h3>Graduate Research Assistant</h3>
-    <p><strong>RIDER Center | Sustainable Infrastructure Management Lab</strong></p>
-    <p><em>Full-time (Jan 2022 – Present)</em></p>
-    <ul>
-      <li>Conduct multi-disciplinary research on various subjects including sustainable built environment, automation in construction, data-driven decision-making, transportation systems analysis, system-of-systems conceptual analysis, reinforcement learning agent-based modeling, housing and transportation planning, and supply chain analysis.</li>
-      <li>Engaged in partnership-driven research, collaborating closely with stakeholders from both the public and private sectors. Ensured that research objectives and methodologies were directly relevant to community challenges and needs.</li>
-    </ul>
-  </div>
-  </td>
-  </tr>
-  </table>
-</div>
-
-
-<div class="background-item">
-  <table style="width:100%; border-collapse:collapse;">
-  <tr>
-    <td style="width:20%; vertical-align:middle;">
-  <img src="/images/IRIANA.png" alt="IRIANA Consulting Engineers" width="120">
-  </td>
-  <td style="vertical-align:middle;">
-  <div>
-    <h3>Data Analyst and Transportation Planner</h3>
-    <p><strong>IRIANA Consulting Engineers</strong></p>
-    <p><em>Full-time (May 2019 – Dec 2021)</em></p>
-    <ul>
-    <li>Contributing to a variety of transportation planning to ensure the development of efficient and sustainable transportation systems, including Comprehensive Transportation Master Plans (CTMP).</li>
-    <li>Conducting studies to understand the demographic and economic factors influencing transportation needs.</li>
-    <li>Development of user-centric software tailored for transportation consulting firms.</li>
-    <li>Advanced traffic simulations to model and analyze transportation patterns, predict potential bottlenecks and recommend optimal infrastructure adjustments.</li>
-    <li>Conducting Road Safety Audit (RSA) to evaluate transportation projects for potential safety hazards for all road users, from pedestrians to vehicular traffic.</li>
-    </ul>
-  </div>
-  </td>
-  </tr>
-  </table>
-</div>
-
-
-<div class="background-item">
-  <table style="width:100%; border-collapse:collapse;">
-  <tr>
-    <td style="width:20%; vertical-align:middle;">
-  <img src="https://upload.wikimedia.org/wikipedia/en/8/88/IUST_logo_color.png" alt="Iran University of Science and Technology" width="120">
-  </td>
-  <td style="vertical-align:middle;">
-  <div>
-    <h3>Graduate Research & Teaching Assistant</h3>
-    <p><strong>Iran University of Science and Technology</strong></p>
-    <p><em>Part-time (Sep 2018 – Sep 2020)</em></p>
-    <ul>
-      <li>Conducted research on Intelligent Transportation Systems, AI in traffic management, and large-scale transportation decision-making.</li>
-      <li>Taught Highway Geometric Design to over 100 students.</li>
-      <li>Facilitated training on Autodesk Civil 3D and InfraWorks.</li>
-    </ul>
-  </div>
-  </td>
-  </tr>
-  </table>
-</div>
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => selectTab(tab));
+    tab.addEventListener("keydown", (event) => {
+      if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+      const nextIndex = event.key === "Home"
+        ? 0
+        : event.key === "End"
+          ? tabs.length - 1
+          : (index + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+      tabs[nextIndex].focus();
+      selectTab(tabs[nextIndex]);
+    });
+  });
+})();
+</script>
