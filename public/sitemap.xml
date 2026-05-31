@@ -31,15 +31,11 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/ai-driven-infrastructure-management/</loc>
-  </url><url>
     <loc>http://localhost:1313/tags/asset-management/</loc>
   </url><url>
     <loc>http://localhost:1313/background/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/circular-construction/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/data-driven-decision-support/</loc>
   </url><url>
@@ -47,7 +43,7 @@
   </url><url>
     <loc>http://localhost:1313/tags/disaster-resilience/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/human-technology-interaction/</loc>
+    <loc>http://localhost:1313/tags/infrastructure-management/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/intelligent-transportation/</loc>
   </url><url>
@@ -55,9 +51,13 @@
   </url><url>
     <loc>http://localhost:1313/tags/smart-cities/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/sustainable-built-environments/</loc>
+    <loc>http://localhost:1313/tags/sustainable-built-environment/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/traffic-modeling/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/transportation-planning/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/virtual-reality/</loc>
   </url>

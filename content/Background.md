@@ -4,18 +4,19 @@ hideTitle: true
 type: "cv"
 description: "Mohammad Movahedi's academic CV: research, publications, sponsored projects, teaching, awards, and service."
 tags:
-  - "AI-driven infrastructure management"
+  - "Infrastructure management"
   - "Digital twins"
-  - "Sustainable built environments"
-  - "Circular construction"
+  - "Sustainable built environment"
   - "Asset management"
   - "Disaster resilience"
   - "Post-disaster recovery"
   - "Virtual reality"
   - "Data-driven decision support"
-  - "Human-technology interaction"
   - "Smart cities"
   - "Intelligent transportation"
+  - "Transportation planning"
+  - "Traffic Modeling"
+  - "Generative-AI"
 ---
 
 <div class="cv-page">
@@ -61,18 +62,21 @@ tags:
 
     <h2 class="cv-section-heading">Research Interests</h2>
     <div class="cv-tag-list">
-      <a class="cv-tag" href="/tags/ai-driven-infrastructure-management/">AI-driven infrastructure management</a>
-      <a class="cv-tag" href="/tags/digital-twins/">Digital twins</a>
-      <a class="cv-tag" href="/tags/sustainable-built-environments/">Sustainable built environments</a>
-      <a class="cv-tag" href="/tags/circular-construction/">Circular construction</a>
+      <a class="cv-tag" href="/tags/infrastructure-management/">Infrastructure management</a>
+      <a class="cv-tag" href="/tags/infrastructure-planning/">Infrastructure planning</a>
+      <a class="cv-tag" href="/tags/intelligent-transportation/">Intelligent transportation</a>
+      <a class="cv-tag" href="/tags/transportation-planning/">Transportation planning</a>
+      <a class="cv-tag" href="/tags/data-driven-decision-support/">Data-driven decision support</a>
       <a class="cv-tag" href="/tags/asset-management/">Asset management</a>
+      <a class="cv-tag" href="/tags/traffic-modeling/">Traffic Modeling</a>
+      <a class="cv-tag" href="/tags/smart-cities/">Smart cities</a>
+
       <a class="cv-tag" href="/tags/disaster-resilience/">Disaster resilience</a>
       <a class="cv-tag" href="/tags/post-disaster-recovery/">Post-disaster recovery</a>
+      <a class="cv-tag" href="/tags/sustainable-built-environment/">Sustainable built environment</a>
+      <a class="cv-tag" href="/tags/digital-twins/">Digital twins</a>
       <a class="cv-tag" href="/tags/virtual-reality/">Virtual reality</a>
-      <a class="cv-tag" href="/tags/data-driven-decision-support/">Data-driven decision support</a>
-      <a class="cv-tag" href="/tags/human-technology-interaction/">Human-technology interaction</a>
-      <a class="cv-tag" href="/tags/smart-cities/">Smart cities</a>
-      <a class="cv-tag" href="/tags/intelligent-transportation/">Intelligent transportation</a>
+      <a class="cv-tag" href="/tags/generative-ai/">Generative-AI</a>
     </div>
 
     <h2 class="cv-section-heading">Professional Experience</h2>

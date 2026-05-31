@@ -1,9 +1,13 @@
-+++
-title = "Generative AI + Virtual Reality: A training tool"
-date = "2025-07-08"
-draft = false
-type = "post"
-+++
+---
+title : "Generative AI + Virtual Reality: A training tool"
+date : "2025-07-08"
+draft : false
+type : "post"
+tags:
+  - "Asset management"
+  - "Virtual reality"
+  - "Generative-AI"
+---
 
 Sometime in late 2023, when the generative AI community suddenly shifted its focus to picture and video generation, I started developing a framework to first generate textures of materials based on the description that the inspection guidelines provide. This concept quickly evolves into a framework to generate auditory and visual cues for 3D objects.
 
