@@ -1,9 +1,11 @@
-+++
-title = "Tehran Sightseeing Tour Planning"
-date = "2024-08-07"
-draft = false
-type = "post"
-+++
+---
+title : "Tehran Sightseeing Tour Planning"
+date : "2024-08-07"
+draft : false
+type : "post"
+tags:
+  - "Transportation planning"
+---
 
 Tourism plays an important role in the growth of urban economies. Attractions like historical buildings that capture the essence of life, streets with the hallmarks of the past, and monuments that act as mementos can be lucrative for local businesses and fruitful for the city's culture.
 
