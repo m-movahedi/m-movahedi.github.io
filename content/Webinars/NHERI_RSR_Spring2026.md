@@ -7,8 +7,18 @@ tags:
   - "Disaster resilience"
   - "post-disaster-recovery"
 ---
-# NHERI GSC Simulation and Computational Methods RSR Meeting
-## Scalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA
+<div class="layout-container">
+  <div class="left-section">
+    <img src="https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg" alt="Description of image" class="side-image" style="width:70px">
+  </div>
+  <div class="right-section">
+    <h3>NHERI Graduate Student Council</h3>
+    <h2>Simulation and Computational Methods RSR Meeting</h2>
+  </div>
+</div>
+
+
+# Scalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA
 
 I hosted SoungEil Houng as part of the ongoing NHERI GSC webinar series on simulation and computational methods in natural hazard research.
 

@@ -7,7 +7,16 @@ tags:
   - "Disaster resilience"
   - "post-disaster-recovery"
 ---
-# NHERI GSC Reconnaissance RSR Meeting
+<div class="layout-container">
+  <div class="left-section">
+    <img src="https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg" alt="Description of image" class="side-image" style="width:70px">
+  </div>
+  <div class="right-section">
+    <h3>NHERI Graduate Student Council</h3>
+    <h2>Reconnaissance RSR Meeting</h2>
+  </div>
+</div>
+
 ## Marshal Fire, Colorado: Field Reconnaissance Overvirew
 
 I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.

@@ -352,3 +352,29 @@
     text-align: left;
   }
 }
+
+.layout-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.left-section {
+  flex: 0 0 auto;
+}
+
+.right-section {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.left-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.right-section h2,
+.right-section h3 {
+  margin: 0;
+}

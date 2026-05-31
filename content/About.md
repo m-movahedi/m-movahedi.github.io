@@ -10,7 +10,7 @@ hideTitle: true
 <center> <strong> Mohammad Movahedi </strong> </center>
 
 Ph.D. Candidate, Department of Civil and Environmental Engineering
-FAMU-FSU College of Engineering, Tallahassee, Florida, 32310, Email: info@m-movahedi.com
+FAMU-FSU College of Engineering, Tallahassee, Florida, 32310
 
 <br>
 <br>
