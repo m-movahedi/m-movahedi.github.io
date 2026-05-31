@@ -1,5 +1,5 @@
 ---
-title : "NHERI GSC Reconnaissance RSR Meeting"
+title : "NHERI GSC RSR: Marshal Fire, Colorado: Field Reconnaissance Overvirew"
 date : "2025-01-17"
 draft : false
 type : "post"
@@ -7,7 +7,8 @@ tags:
   - "Disaster resilience"
   - "post-disaster-recovery"
 ---
-# Marshal Fire, Colorado: Field Reconnaissance Overvirew
+# NHERI GSC Reconnaissance RSR Meeting
+## Marshal Fire, Colorado: Field Reconnaissance Overvirew
 
 I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.
 
