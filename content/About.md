@@ -21,7 +21,22 @@ My research focuses on sustainable infrastructure systems, intelligent transport
 
 <br>
 
-**Keywords:** Generative AI, Planning, Transportation Systems, Virtual Reality
+**Keywords:** <div class="cv-tag-list">
+      <a class="cv-tag" href="/tags/infrastructure-management/">Infrastructure management</a>
+      <a class="cv-tag" href="/tags/infrastructure-planning/">Infrastructure planning</a>
+      <a class="cv-tag" href="/tags/intelligent-transportation/">Intelligent transportation</a>
+      <a class="cv-tag" href="/tags/Transportation-planning/">Transportation planning</a>
+      <a class="cv-tag" href="/tags/data-driven-decision-support/">Data-driven decision support</a>
+      <a class="cv-tag" href="/tags/asset-management/">Asset management</a>
+      <a class="cv-tag" href="/tags/traffic-modeling/">Traffic Modeling</a>
+      <a class="cv-tag" href="/tags/smart-cities/">Smart cities</a>
+      <a class="cv-tag" href="/tags/disaster-resilience/">Disaster resilience</a>
+      <a class="cv-tag" href="/tags/post-disaster-recovery/">Post-disaster recovery</a>
+      <a class="cv-tag" href="/tags/sustainable-built-environment/">Sustainable built environment</a>
+      <a class="cv-tag" href="/tags/digital-twins/">Digital twins</a>
+      <a class="cv-tag" href="/tags/virtual-reality/">Virtual reality</a>
+      <a class="cv-tag" href="/tags/generative-ai/">Generative-AI</a>
+    </div>
 
 ## References
 
