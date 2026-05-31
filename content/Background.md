@@ -66,7 +66,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
     </div>
 
     <h2 class="cv-section-heading">Professional Experience</h2>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary>
         <span class="cv-entry-header"><span><strong>Graduate Research Assistant</strong>RIDER Research Center, Sustainable Infrastructure Management Lab</span><span class="cv-period">Jan 2022 - Present</span></span>
       </summary>
@@ -101,7 +101,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
     </details>
 
     <h2 class="cv-section-heading">Education</h2>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary><span class="cv-entry-header"><span><strong>Florida State University</strong>Ph.D. in Civil Engineering</span><span class="cv-period">Jan 2022 - May 2026 (expected)</span></span></summary>
       <div class="cv-slider-body"><p>Construction and Infrastructure Management. Dissertation: <em>A Holistic Approach to Long-Term Building Maintenance Planning under Uncertainty to Maximize Recoverable Material Yields</em>.</p></div>
     </details>
@@ -122,10 +122,10 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
 
   <section class="cv-tab-panel" id="cv-panel-research" role="tabpanel" aria-labelledby="cv-tab-research" hidden>
     <h2>Publications</h2>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary>Journal Papers</summary>
       <div class="cv-slider-body">
-        <details class="cv-slider" open>
+        <details class="cv-slider">
           <summary>Published</summary>
           <ol class="cv-publication-list">
             <li>M. Movahedi and J. Choi, "The Crossroads of LLM and Traffic Control: A Study on Large Language Models in Adaptive Traffic Signal Control," <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024. DOI: <a href="https://doi.org/10.1109/TITS.2024.3498735">10.1109/TITS.2024.3498735</a>.</li>
@@ -157,7 +157,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
     <details class="cv-slider">
       <summary>Conference Papers</summary>
       <div class="cv-slider-body">
-        <details class="cv-slider" open>
+        <details class="cv-slider">
           <summary>Published</summary>
           <ol class="cv-publication-list">
             <li>R. Khayamim, M. Movahedi, O. Alisan, S. Ozkul, M. A. Dulebenets, and E. E. Ozguven, "Enhancing Electric Vehicle Evacuation Resilience Through Mobile Charging Infrastructure: A MCDA Approach for Hurricane-Prone Regions," <em>Transportation Research Board 105th Annual Meeting</em>, 2026.</li>
@@ -189,7 +189,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
     </details>
 
     <h2 class="cv-section-heading">Sponsored Research</h2>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary>CDBG-MIT: Post-Disaster Community Resilience <span class="cv-kicker">Florida DEO, MT037</span></summary>
       <div class="cv-slider-body"><p>Reviewed post-disaster plans, modeled housing-reconstruction supply-chain resilience, studied disaster-related homelessness, formulated mitigation strategies, and collaborated with agencies and recovery experts.</p></div>
     </details>
@@ -221,10 +221,10 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
     </details>
 
     <h2 class="cv-section-heading">Grant Writing</h2>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary>Research Proposals</summary>
       <div class="cv-slider-body">
-        <details class="cv-slider" open>
+        <details class="cv-slider">
           <summary>NSF CAREER: Sustainable Material Harvesting in Civil Engineering <span class="cv-kicker">Funded: $509,999 | NSF | 2022</span></summary>
           <div class="cv-slider-body">
             <p><em>A Building Lifecycle Approach to Maximize Recyclable and Reusable Demolition Waste</em></p>
@@ -326,7 +326,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         </ul>
       </div>
     </details>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary>Awards</summary>
       <div class="cv-slider-body">
         <ul>
@@ -348,7 +348,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
 
   <section class="cv-tab-panel" id="cv-panel-teaching" role="tabpanel" aria-labelledby="cv-tab-teaching" hidden>
     <h2>Teaching Experience</h2>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary><span class="cv-entry-header"><span><strong>Guest Lecturer</strong>FAMU-FSU College of Engineering, EESI Program</span><span class="cv-period">Mar 2025</span></span></summary>
       <div class="cv-slider-body"><p>Presented Monte Carlo simulation applications in civil engineering to undergraduate EESI students.</p></div>
     </details>
@@ -371,7 +371,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
     </details>
 
     <h2 class="cv-section-heading">Mentoring</h2>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary><span class="cv-entry-header"><span><strong>NSF REU Mentor</strong>Florida State University</span><span class="cv-period">May 2024 - Aug 2025</span></span></summary>
       <div class="cv-slider-body"><p>Mentored two NSF REU students in construction automation, research design, coding, scientific communication, vehicle-activity identification, and dead reckoning.</p></div>
     </details>
@@ -397,7 +397,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
 
   <section class="cv-tab-panel" id="cv-panel-leadership" role="tabpanel" aria-labelledby="cv-tab-leadership" hidden>
     <h2>Service and Leadership</h2>
-    <details class="cv-slider" open>
+    <details class="cv-slider">
       <summary><span class="cv-entry-header"><span><strong>Vice President</strong>ITE FAMU-FSU Student Chapter</span><span class="cv-period">Aug 2024 - Present</span></span></summary>
       <div class="cv-slider-body"><p>Organized workshops, networking events, career-development initiatives, and the North Florida ITE Graduate Research Poster Competition. The chapter received 2025 Momentum Awards at district and international levels.</p></div>
     </details>
