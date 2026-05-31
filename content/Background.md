@@ -65,7 +65,7 @@ tags:
       <a class="cv-tag" href="/tags/infrastructure-management/">Infrastructure management</a>
       <a class="cv-tag" href="/tags/infrastructure-planning/">Infrastructure planning</a>
       <a class="cv-tag" href="/tags/intelligent-transportation/">Intelligent transportation</a>
-      <a class="cv-tag" href="/tags/transportation-planning/">Transportation planning</a>
+      <a class="cv-tag" href="/tags/Transportation-planning/">Transportation planning</a>
       <a class="cv-tag" href="/tags/data-driven-decision-support/">Data-driven decision support</a>
       <a class="cv-tag" href="/tags/asset-management/">Asset management</a>
       <a class="cv-tag" href="/tags/traffic-modeling/">Traffic Modeling</a>
