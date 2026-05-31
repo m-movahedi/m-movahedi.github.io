@@ -3,20 +3,6 @@ title: "Background"
 hideTitle: true
 type: "cv"
 description: "Mohammad Movahedi's academic CV: research, publications, sponsored projects, teaching, awards, and service."
-tags:
-  - "Infrastructure management"
-  - "Digital twins"
-  - "Sustainable built environment"
-  - "Asset management"
-  - "Disaster resilience"
-  - "Post-disaster recovery"
-  - "Virtual reality"
-  - "Data-driven decision support"
-  - "Smart cities"
-  - "Intelligent transportation"
-  - "Transportation planning"
-  - "Traffic Modeling"
-  - "Generative-AI"
 ---
 
 <div class="cv-page">
