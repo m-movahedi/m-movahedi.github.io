@@ -30,10 +30,31 @@
       <description></description>
     </item>
     <item>
+      <title>Disaster-Resilience</title>
+      <link>http://localhost:1313/tags/disaster-resilience/</link>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/disaster-resilience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post-Disaster-Recovery</title>
+      <link>http://localhost:1313/tags/post-disaster-recovery/</link>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/post-disaster-recovery/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Transportation Planning</title>
       <link>http://localhost:1313/tags/transportation-planning/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/transportation-planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Disaster Esilience</title>
+      <link>http://localhost:1313/tags/disaster-esilience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/disaster-esilience/</guid>
       <description></description>
     </item>
   </channel>

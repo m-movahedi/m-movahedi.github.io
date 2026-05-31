@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Disaster Esilience on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/disaster-esilience/</link>
+    <description>Recent content in Disaster Esilience on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 17 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/disaster-esilience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NHERI GSC Reconnaissance RSR Meeting</title>
+      <link>http://localhost:1313/webinars/nheri_rsr_spring2025/</link>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/webinars/nheri_rsr_spring2025/</guid>
+      <description>&lt;h1 id=&#34;marshal-fire-colorado-field-reconnaissance-overvirew&#34;&gt;Marshal Fire, Colorado: Field Reconnaissance Overvirew&lt;/h1&gt;&#xA;&lt;p&gt;I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.&lt;/p&gt;&#xA;&lt;p&gt;Dr. Brad Wham is a civil and geotechnical engineering researcher specializing in lifeline infrastructure resilience, pipeline performance, and earthquake engineering. Based at the University of Nevada, Reno, he leads research that informs the design and protection of buried utilities against extreme ground deformation events.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
