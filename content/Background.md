@@ -191,6 +191,10 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
 
     <h2 class="cv-section-heading">Sponsored Research</h2>
     <details class="cv-slider">
+      <summary>Persona-Based Hurricane Evacuation Travel Demand Analysis to Support Transportation Planning in Rural Communities<span class="cv-kicker">FDOT, 69A3552348321</span></summary>
+      <div class="cv-slider-body"><p>Developing a large-language-model (LLM)–based persona-analysis tool to simulate hurricane evacuation travel behavior in rural Florida Panhandlecommunities.</p></div>
+    </details>
+    <details class="cv-slider">
       <summary>CDBG-MIT: Post-Disaster Community Resilience <span class="cv-kicker">Florida DEO, MT037</span></summary>
       <div class="cv-slider-body"><p>Reviewed post-disaster plans, modeled housing-reconstruction supply-chain resilience, studied disaster-related homelessness, formulated mitigation strategies, and collaborated with agencies and recovery experts.</p></div>
     </details>
