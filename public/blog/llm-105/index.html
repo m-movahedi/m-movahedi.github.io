@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>LLM 105: Evaluation, Benchmarks, and Measuring Usefulness</title>
+    <meta name="description" content="In LLM 104, we looked at agents, tools, memory, and guardrails. That raises the question every serious LLM system eventually faces: how do we know if it is …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/blog/llm-105/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LLM 105: Evaluation, Benchmarks, and Measuring Usefulness">
+    <meta property="og:description" content="In LLM 104, we looked at agents, tools, memory, and guardrails. That raises the question every serious LLM system eventually faces: how do we know if it is …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LLM 105: Evaluation, Benchmarks, and Measuring Usefulness">
+    <meta name="twitter:description" content="In LLM 104, we looked at agents, tools, memory, and guardrails. That raises the question every serious LLM system eventually faces: how do we know if it is …">
+    <meta property="twitter:domain" content="http://localhost:1313/blog/llm-105/">
+    <meta property="twitter:url" content="http://localhost:1313/blog/llm-105/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/blog/llm-105/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>LLM 105: Evaluation, Benchmarks, and Measuring Usefulness</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 5, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>In LLM 104, we looked at agents, tools, memory, and guardrails. That raises the question every serious LLM system eventually faces: <strong>how do we know if it is actually good?</strong></p>
+<p>Evaluation is harder than it looks. A model can sound fluent while being wrong. A RAG system can cite sources while missing the best evidence. An agent can complete a task but take too many steps, use the wrong tools, or create avoidable risk. Good evaluation is not just a leaderboard score. It is a measurement plan tied to the task you care about.</p>
+<style>
+  .llm105-note,
+  .llm105-card,
+  .llm105-panel,
+  .llm105-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+  }
+
+  .llm105-note,
+  .llm105-papers {
+    margin: 1.3rem 0;
+    padding: 1rem 1.1rem;
+  }
+
+  .llm105-card,
+  .llm105-panel {
+    padding: 0.95rem;
+  }
+
+  .llm105-note p,
+  .llm105-card p,
+  .llm105-panel p {
+    margin: 0.35rem 0;
+  }
+
+  .llm105-flow,
+  .llm105-grid,
+  .llm105-two-col {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.25rem 0;
+  }
+
+  .llm105-flow {
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+  }
+
+  .llm105-grid {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+  }
+
+  .llm105-two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .llm105-card strong,
+  .llm105-panel strong,
+  .llm105-papers strong {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .llm105-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm105-papers li {
+    margin: 0.35rem 0;
+  }
+
+  .llm105-code {
+    border-left: 4px solid rgba(70, 125, 200, 0.75);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin: 1.1rem 0;
+    padding: 0.8rem 1rem;
+    white-space: pre-wrap;
+  }
+
+  .llm105-score-row {
+    align-items: center;
+    display: grid;
+    gap: 0.65rem;
+    grid-template-columns: 120px 1fr 44px;
+    margin: 0.55rem 0;
+  }
+
+  .llm105-bar {
+    background: rgba(90, 140, 210, 0.16);
+    border-radius: 999px;
+    height: 12px;
+    overflow: hidden;
+  }
+
+  .llm105-bar span {
+    background: rgba(70, 125, 200, 0.78);
+    display: block;
+    height: 100%;
+  }
+
+  .llm105-small {
+    font-size: 0.9rem;
+    opacity: 0.78;
+  }
+
+  @media (max-width: 900px) {
+    .llm105-flow,
+    .llm105-grid,
+    .llm105-two-col {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<h2 id="1-evaluation-starts-with-the-use-case">1. Evaluation Starts with the Use Case</h2>
+<p>The first mistake is asking, &ldquo;Which model is best?&rdquo; before asking, &ldquo;Best for what?&rdquo;</p>
+<p>For a research assistant, quality might mean faithful summaries with citations. For a coding assistant, it might mean passing tests. For a customer support bot, it might mean resolving issues without escalation. For an evacuation planning assistant, it might mean correctly extracting assumptions, constraints, data sources, and uncertainty from planning documents.</p>
+<div class="llm105-grid">
+  <div class="llm105-card">
+    <strong>Capability</strong>
+    <p>Can the system do the task?</p>
+  </div>
+  <div class="llm105-card">
+    <strong>Reliability</strong>
+    <p>Does it work repeatedly across realistic inputs?</p>
+  </div>
+  <div class="llm105-card">
+    <strong>Usefulness</strong>
+    <p>Does it improve the user's workflow?</p>
+  </div>
+</div>
+<p>An evaluation should be built around representative tasks, not just abstract prompts. If the actual workflow involves messy PDFs, incomplete tables, acronyms, and domain-specific definitions, the evaluation should include those.</p>
+<div class="llm105-note">
+  <p><strong>Practical rule:</strong> evaluate the system in the shape it will be used. A clean benchmark can be useful, but it is not a substitute for task-specific testing.</p>
+</div>
+<div class="llm105-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2211.09110">Liang et al. (2022), "Holistic Evaluation of Language Models"</a>: introduces HELM, emphasizing broad, transparent evaluation across scenarios and metrics.</li>
+    <li><a href="https://arxiv.org/abs/2303.18223">Zhao et al. (2023), "A Survey of Large Language Models"</a>: useful background for the many dimensions of LLM capability, training, adaptation, and evaluation.</li>
+  </ul>
+</div>
+<h2 id="2-benchmarks-are-useful-but-incomplete">2. Benchmarks Are Useful but Incomplete</h2>
+<p>Benchmarks give us shared measurement. They make it possible to compare models on common tasks. But benchmarks can also be overfit, contaminated, narrow, or disconnected from your actual use case.</p>
+<div class="llm105-two-col">
+  <div class="llm105-panel">
+    <strong>What benchmarks help with</strong>
+    <p>Fast comparison across models.</p>
+    <p>Broad signals about capability.</p>
+    <p>Regression testing over time.</p>
+  </div>
+  <div class="llm105-panel">
+    <strong>What benchmarks miss</strong>
+    <p>Your documents, users, and constraints.</p>
+    <p>Long workflows and tool use.</p>
+    <p>Local definitions of success and risk.</p>
+  </div>
+</div>
+<p>This is why benchmark results should be treated as a starting point. They tell you which models may be worth testing, not which system will work in your domain.</p>
+<div class="llm105-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2009.03300">Hendrycks et al. (2020), "Measuring Massive Multitask Language Understanding"</a>: introduced MMLU, a widely used benchmark across many subjects.</li>
+    <li><a href="https://arxiv.org/abs/2206.04615">Srivastava et al. (2022), "Beyond the Imitation Game Benchmark"</a>: BIG-bench, a large collaborative benchmark for probing language model capabilities.</li>
+    <li><a href="https://arxiv.org/abs/2109.07958">Lin, Hilton, and Evans (2021), "TruthfulQA"</a>: evaluates whether models imitate common human falsehoods.</li>
+  </ul>
+</div>
+<h2 id="3-build-a-local-evaluation-set">3. Build a Local Evaluation Set</h2>
+<p>For a real LLM application, a small local evaluation set is gold. It should contain examples that look like the work users actually do.</p>
+<p>For a research or planning assistant, examples might include:</p>
+<ul>
+<li>summarizing one paper with citations;</li>
+<li>comparing two methods sections;</li>
+<li>extracting variables from a survey instrument;</li>
+<li>answering a question from a long report;</li>
+<li>identifying missing evidence;</li>
+<li>refusing to invent numbers;</li>
+<li>using a tool to compute a simple result;</li>
+<li>catching a contradiction between two sources.</li>
+</ul>
+<div class="llm105-code">Example evaluation item
+<p>Input:
+Summarize the key behavioral factors in this evacuation paper.</p>
+<p>Expected traits:</p>
+<ul>
+<li>Mentions risk perception, warning source, household constraints, and prior experience if supported.</li>
+<li>Cites page or section references.</li>
+<li>Does not invent sample size or coefficient values.</li>
+<li>Flags missing or unclear evidence.</div></li>
+</ul>
+<p>You do not need hundreds of examples to start. A carefully designed set of 30-50 examples can reveal much more than a pile of generic prompts.</p>
+<div class="llm105-note">
+  <p><strong>Good evaluation data feels slightly annoying.</strong> It includes edge cases, ambiguous wording, missing information, and examples where the correct behavior is to say "not enough evidence."</p>
+</div>
+<h2 id="4-human-evaluation-still-matters">4. Human Evaluation Still Matters</h2>
+<p>Humans are expensive, inconsistent, and slow. They are also still essential. Some qualities cannot be fully reduced to automatic metrics: usefulness, clarity, nuance, trust, appropriateness, and whether the answer helped the user think.</p>
+<p>A simple human rubric can be more useful than a complicated score:</p>
+<div class="llm105-panel">
+  <strong>Example 1-5 rubric</strong>
+  <div class="llm105-score-row"><span>Correctness</span><div class="llm105-bar"><span style="width: 88%;"></span></div><span>1-5</span></div>
+  <div class="llm105-score-row"><span>Grounding</span><div class="llm105-bar"><span style="width: 82%;"></span></div><span>1-5</span></div>
+  <div class="llm105-score-row"><span>Clarity</span><div class="llm105-bar"><span style="width: 74%;"></span></div><span>1-5</span></div>
+  <div class="llm105-score-row"><span>Usefulness</span><div class="llm105-bar"><span style="width: 79%;"></span></div><span>1-5</span></div>
+  <p class="llm105-small">The bars are illustrative. The important part is that reviewers use the same definitions.</p>
+</div>
+<p>Human evaluation becomes stronger when reviewers see clear criteria, examples of each score level, and instructions for resolving uncertainty.</p>
+<h2 id="5-llm-as-a-judge">5. LLM-as-a-Judge</h2>
+<p>One popular approach is using a stronger LLM to evaluate model outputs. This can scale evaluation quickly, especially for drafts, summaries, and conversation quality. But an LLM judge is still a model. It can be biased toward longer answers, familiar phrasing, confident style, or outputs from models it recognizes.</p>
+<p>Use LLM judges as part of the evaluation stack, not as the entire stack.</p>
+<div class="llm105-flow" role="img" aria-label="LLM as judge workflow">
+  <div class="llm105-card">
+    <strong>Prompt</strong>
+    <p>Define the task and rubric.</p>
+  </div>
+  <div class="llm105-card">
+    <strong>Outputs</strong>
+    <p>Compare candidate answers.</p>
+  </div>
+  <div class="llm105-card">
+    <strong>Judge</strong>
+    <p>Score with explanation.</p>
+  </div>
+  <div class="llm105-card">
+    <strong>Audit</strong>
+    <p>Sample human review.</p>
+  </div>
+  <div class="llm105-card">
+    <strong>Calibrate</strong>
+    <p>Adjust rubric and prompts.</p>
+  </div>
+</div>
+<p>Good practice includes blind comparisons, short rubrics, checking judge agreement with humans, and periodically reviewing judge failures.</p>
+<div class="llm105-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2306.05685">Zheng et al. (2023), "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena"</a>: a key paper on using LLM judges and pairwise preference evaluation.</li>
+    <li><a href="https://arxiv.org/abs/2303.16634">Liu et al. (2023), "G-Eval"</a>: studies GPT-4-based evaluation for natural language generation with better alignment to human judgments.</li>
+  </ul>
+</div>
+<h2 id="6-evaluating-rag-systems">6. Evaluating RAG Systems</h2>
+<p>RAG evaluation needs two separate questions:</p>
+<ol>
+<li>Did retrieval find the right evidence?</li>
+<li>Did generation use that evidence faithfully?</li>
+</ol>
+<p>If the answer is wrong, you need to know where the failure happened. Did the retriever miss the source? Did the reranker bury it? Did the model ignore it? Did the prompt ask for more certainty than the evidence supports?</p>
+<div class="llm105-grid">
+  <div class="llm105-card">
+    <strong>Context recall</strong>
+    <p>Was the needed evidence retrieved?</p>
+  </div>
+  <div class="llm105-card">
+    <strong>Faithfulness</strong>
+    <p>Is the answer supported by the retrieved context?</p>
+  </div>
+  <div class="llm105-card">
+    <strong>Citation quality</strong>
+    <p>Do citations point to the right source?</p>
+  </div>
+</div>
+<p>For a RAG assistant, I would test questions where the answer is present, absent, ambiguous, contradicted across sources, or spread across multiple documents. The &ldquo;absent&rdquo; cases are especially important because they test whether the system can avoid bluffing.</p>
+<div class="llm105-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2309.15217">Es et al. (2023), "RAGAS"</a>: proposes automated reference-free evaluation metrics for RAG systems.</li>
+    <li><a href="https://arxiv.org/abs/2312.10997">Gao et al. (2023), "Retrieval-Augmented Generation for Large Language Models: A Survey"</a>: covers RAG system variants and evaluation challenges.</li>
+  </ul>
+</div>
+<h2 id="7-evaluating-agents">7. Evaluating Agents</h2>
+<p>Agents require process evaluation. The final answer may look fine while the agent took unnecessary actions, ignored tool output, or got lucky after a bad plan.</p>
+<p>Track:</p>
+<ul>
+<li>task success;</li>
+<li>tool-call correctness;</li>
+<li>number of steps;</li>
+<li>cost and latency;</li>
+<li>recovery from errors;</li>
+<li>permission boundary violations;</li>
+<li>human interventions;</li>
+<li>auditability of the trace.</li>
+</ul>
+<div class="llm105-code">Agent trace review
+<p>Goal: Create a literature summary.
+Step 1: Search papers. Good.
+Step 2: Select sources. Missed two relevant papers.
+Step 3: Draft summary. Mostly grounded.
+Step 4: Add citations. One citation unsupported.
+Outcome: Useful draft, but retrieval and citation checks need improvement.</div></p>
+<p>The baseline matters. If a deterministic script plus one LLM call solves the task more reliably than an agent loop, the simpler system wins.</p>
+<div class="llm105-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2210.03629">Yao et al. (2022), "ReAct"</a>: useful for understanding action-observation traces in agent workflows.</li>
+    <li><a href="https://arxiv.org/abs/2308.11432">Wang et al. (2023), "A Survey on Large Language Model based Autonomous Agents"</a>: surveys agent components and evaluation considerations.</li>
+  </ul>
+</div>
+<h2 id="8-regression-testing">8. Regression Testing</h2>
+<p>LLM systems change. Models update, prompts change, retrieval indexes refresh, documents move, tools break, and user expectations evolve. Regression testing helps catch behavior that quietly got worse.</p>
+<p>Useful regression tests include:</p>
+<ul>
+<li>fixed prompts with expected traits;</li>
+<li>RAG questions with known supporting chunks;</li>
+<li>tool-use tasks with expected calls;</li>
+<li>refusal or uncertainty cases;</li>
+<li>citation checks;</li>
+<li>cost and latency thresholds;</li>
+<li>adversarial or malformed inputs.</li>
+</ul>
+<div class="llm105-note">
+  <p><strong>Evaluation is not a one-time report.</strong> It is a monitoring habit. Every important model, prompt, retrieval, or tool change should be tested against examples you care about.</p>
+</div>
+<h2 id="9-a-practical-evaluation-plan">9. A Practical Evaluation Plan</h2>
+<p>For a serious but manageable LLM evaluation, I would start here:</p>
+<ol>
+<li><strong>Define the task.</strong> Write down what the system is supposed to do.</li>
+<li><strong>List failure modes.</strong> Hallucination, bad citations, missed retrieval, wrong tool calls, unsafe actions.</li>
+<li><strong>Create 30-50 local examples.</strong> Include normal cases and edge cases.</li>
+<li><strong>Write a rubric.</strong> Keep it short enough that reviewers actually use it.</li>
+<li><strong>Separate components.</strong> Evaluate retrieval, generation, and tool use independently.</li>
+<li><strong>Run human review.</strong> Sample outputs and calibrate the rubric.</li>
+<li><strong>Add automated checks.</strong> Use exact tests where possible and LLM judges where helpful.</li>
+<li><strong>Track cost and latency.</strong> A better answer that is too slow or expensive may not be useful.</li>
+<li><strong>Repeat after changes.</strong> Treat evaluation as part of development.</li>
+</ol>
+<div class="llm105-note">
+  <p>The best evaluation is not the fanciest one. It is the one that catches the failures your users would actually care about before those failures reach them.</p>
+</div>
+<p>In the next post, we can look at fine-tuning and adaptation: when prompting is enough, when RAG is enough, and when it makes sense to update model behavior with training data.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post-Disaster-Recovery on Mohammad Movahedi</title>
-    <link>http://localhost:1313/tags/post-disaster-recovery/</link>
+    <link>https://m-movahedi.com/tags/post-disaster-recovery/</link>
     <description>Recent content in Post-Disaster-Recovery on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 20 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/post-disaster-recovery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://m-movahedi.com/tags/post-disaster-recovery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NHERI GSC RSR: Scalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA</title>
-      <link>http://localhost:1313/webinars/nheri_rsr_spring2026/</link>
+      <link>https://m-movahedi.com/webinars/nheri_rsr_spring2026/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/webinars/nheri_rsr_spring2026/</guid>
+      <guid>https://m-movahedi.com/webinars/nheri_rsr_spring2026/</guid>
       <description>&lt;div class=&#34;layout-container&#34;&gt;&#xA;  &lt;div class=&#34;left-section&#34;&gt;&#xA;    &lt;img src=&#34;https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg&#34; alt=&#34;Description of image&#34; class=&#34;side-image&#34; style=&#34;width:70px&#34;&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;right-section&#34;&gt;&#xA;    &lt;h3&gt;NHERI Graduate Student Council&lt;/h3&gt;&#xA;    &lt;h2&gt;Simulation and Computational Methods RSR Meeting&lt;/h2&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;scalable-scenario-based-earthquake-risk-modeling-via-linearized-ground-motionfragility-coupling-and-probabilistic-pca&#34;&gt;Scalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA&lt;/h1&gt;&#xA;&lt;p&gt;I hosted SoungEil Houng as part of the ongoing NHERI GSC webinar series on simulation and computational methods in natural hazard research.&lt;/p&gt;&#xA;&lt;p&gt;SoungEil Houng is a Ph.D. candidate in the Department of Civil and Environmental Engineering at UC Berkeley. Prior to beginning his doctoral studies, he gained professional experience in seismic hazard analysis for nuclear power plant sites in South Korea. He holds master’s degrees in both Seismology and Civil and Environmental Engineering, as well as a bachelor’s degree in Earth System Sciences. His research interests include seismic hazard and risk analysis, with a particular focus on developing scalable computational frameworks for large-scale regional risk assessments.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>NHERI GSC RSR: Marshal Fire, Colorado: Field Reconnaissance Overvirew</title>
-      <link>http://localhost:1313/webinars/nheri_rsr_spring2025/</link>
+      <title>NHERI GSC RSR: Hurricane Otis Post-Disaster Assessment</title>
+      <link>https://m-movahedi.com/webinars/nheri_rsr_spring2025-2/</link>
       <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/webinars/nheri_rsr_spring2025/</guid>
+      <guid>https://m-movahedi.com/webinars/nheri_rsr_spring2025-2/</guid>
+      <description>&lt;div class=&#34;layout-container&#34;&gt;&#xA;  &lt;div class=&#34;left-section&#34;&gt;&#xA;    &lt;img src=&#34;https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg&#34; alt=&#34;Description of image&#34; class=&#34;side-image&#34; style=&#34;width:70px&#34;&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;right-section&#34;&gt;&#xA;    &lt;h3&gt;NHERI Graduate Student Council&lt;/h3&gt;&#xA;    &lt;h2&gt;Reconnaissance RSR Meeting&lt;/h2&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h1 id=&#34;hurricane-otis-post-disaster-assessment&#34;&gt;Hurricane Otis Post-Disaster Assessment&lt;/h1&gt;&#xA;&lt;p&gt;I hosted Juan Antonio Balderrama Garcia Mendez, Associate Professor of Instruction at The University of Texas at Arlington, as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.&lt;/p&gt;&#xA;&lt;p&gt;In this talk, he discussed how his team assessed the impacts of Hurricane Otis, a Category 5 hurricane that made devastating landfall near the Mexican city of Acapulco in October 2023.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NHERI GSC RSR: Marshal Fire, Colorado: Field Reconnaissance Overvirew</title>
+      <link>https://m-movahedi.com/webinars/nheri_rsr_spring2025/</link>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://m-movahedi.com/webinars/nheri_rsr_spring2025/</guid>
       <description>&lt;div class=&#34;layout-container&#34;&gt;&#xA;  &lt;div class=&#34;left-section&#34;&gt;&#xA;    &lt;img src=&#34;https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg&#34; alt=&#34;Description of image&#34; class=&#34;side-image&#34; style=&#34;width:70px&#34;&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;right-section&#34;&gt;&#xA;    &lt;h3&gt;NHERI Graduate Student Council&lt;/h3&gt;&#xA;    &lt;h2&gt;Reconnaissance RSR Meeting&lt;/h2&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;marshal-fire-colorado-field-reconnaissance-overvirew&#34;&gt;Marshal Fire, Colorado: Field Reconnaissance Overvirew&lt;/h2&gt;&#xA;&lt;p&gt;I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.&lt;/p&gt;&#xA;&lt;p&gt;Dr. Brad Wham is a civil and geotechnical engineering researcher specializing in lifeline infrastructure resilience, pipeline performance, and earthquake engineering. Based at the University of Nevada, Reno, he leads research that informs the design and protection of buried utilities against extreme ground deformation events.&lt;/p&gt;</description>
     </item>
   </channel>

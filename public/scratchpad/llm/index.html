@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Introduction to LLM</title>
+    <meta name="description" content="This scratchpad collects the LLM introduction series, from transformer basics to responsible deployment.
+">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://m-movahedi.com/scratchpad/llm/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Introduction to LLM">
+    <meta property="og:description" content="This scratchpad collects the LLM introduction series, from transformer basics to responsible deployment.
+">
+    <meta property="og:image" content="https://m-movahedi.com/images/profile.png">
+    <meta property="og:image:secure_url" content="https://m-movahedi.com/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Introduction to LLM">
+    <meta name="twitter:description" content="This scratchpad collects the LLM introduction series, from transformer basics to responsible deployment.
+">
+    <meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/llm/">
+    <meta property="twitter:url" content="https://m-movahedi.com/scratchpad/llm/">
+    <meta name="twitter:image" content="https://m-movahedi.com/images/profile.png">
+
+    
+    <link rel="canonical" href="https://m-movahedi.com/scratchpad/llm/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+    <link rel="alternate" type="application/rss+xml" href="https://m-movahedi.com/scratchpad/llm/index.xml" title="Mohammad Movahedi">
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://m-movahedi.com/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://m-movahedi.com/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+
+<h1>Introduction to LLM</h1>
+
+
+
+<div class="horizontal-timeline" aria-label="Introduction to LLM timeline">
+  
+  
+  
+
+  
+  
+  
+
+  <div class="horizontal-timeline-row ">
+    
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="/scratchpad/llm/llm-101/">
+
+        <h2>LLM 101: Transformers, Training, and Inference</h2>
+
+      </a>
+    </article>
+    
+    <span class="horizontal-timeline-arrow" data-mobile-arrow="↓" aria-hidden="true">
+      →
+    </span>
+    
+    
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="/scratchpad/llm/llm-102/">
+
+        <h2>LLM 102: Prompting, Context, RAG, and Hallucinations</h2>
+
+      </a>
+    </article>
+    
+    <span class="horizontal-timeline-arrow" data-mobile-arrow="↓" aria-hidden="true">
+      →
+    </span>
+    
+    
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="/scratchpad/llm/llm-103/">
+
+        <h2>LLM 103: Retrieval-Augmented Generation in Practice</h2>
+
+      </a>
+    </article>
+    
+    
+  </div>
+
+  
+  
+  
+
+  <div class="horizontal-timeline-row reverse">
+    
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="/scratchpad/llm/llm-104/">
+
+        <h2>LLM 104: Agents, Tools, Memory, and Guardrails</h2>
+
+      </a>
+    </article>
+    
+    <span class="horizontal-timeline-arrow" data-mobile-arrow="↓" aria-hidden="true">
+      ←
+    </span>
+    
+    
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="/scratchpad/llm/llm-105/">
+
+        <h2>LLM 105: Evaluation, Benchmarks, and Measuring Usefulness</h2>
+
+      </a>
+    </article>
+    
+    <span class="horizontal-timeline-arrow" data-mobile-arrow="↓" aria-hidden="true">
+      ←
+    </span>
+    
+    
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="/scratchpad/llm/llm-106/">
+
+        <h2>LLM 106: Fine-Tuning, Adaptation, and When to Train</h2>
+
+      </a>
+    </article>
+    
+    
+  </div>
+
+  
+  
+  
+
+  <div class="horizontal-timeline-row ">
+    
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="/scratchpad/llm/llm-107/">
+
+        <h2>LLM 107: Deployment, Cost, Latency, and Monitoring</h2>
+
+      </a>
+    </article>
+    
+    <span class="horizontal-timeline-arrow" data-mobile-arrow="↓" aria-hidden="true">
+      →
+    </span>
+    
+    
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="/scratchpad/llm/llm-108/">
+
+        <h2>LLM 108: Safety, Privacy, Bias, and Responsible Use</h2>
+
+      </a>
+    </article>
+    
+    
+  </div>
+
+  
+</div>
+
+
+
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

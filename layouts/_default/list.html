@@ -42,6 +42,37 @@
 
 </div>
 
+{{ else if eq .Params.view "horizontal-timeline" }}
+
+<div class="horizontal-timeline" aria-label="{{ .Title }} timeline">
+  {{ $pages := .Pages.ByDate }}
+  {{ $perRow := 3 }}
+  {{ $rowCount := div (add (len $pages) (sub $perRow 1)) $perRow }}
+
+  {{ range $rowIndex := seq 0 (sub $rowCount 1) }}
+  {{ $start := mul $rowIndex $perRow }}
+  {{ $rowPages := first $perRow (after $start $pages) }}
+
+  <div class="horizontal-timeline-row {{ if eq (mod $rowIndex 2) 1 }}reverse{{ end }}">
+    {{ range $pageIndex, $page := $rowPages }}
+    <article class="horizontal-timeline-item">
+      <a class="horizontal-timeline-card" href="{{ .RelPermalink }}">
+
+        <h2>{{ .Title }}</h2>
+
+      </a>
+    </article>
+    {{ if lt $pageIndex (sub (len $rowPages) 1) }}
+    <span class="horizontal-timeline-arrow" data-mobile-arrow="↓" aria-hidden="true">
+      {{ if eq (mod $rowIndex 2) 1 }}←{{ else }}→{{ end }}
+    </span>
+    {{ end }}
+    {{ end }}
+  </div>
+
+  {{ end }}
+</div>
+
 {{ else }}
 
 <div class="container list-posts">

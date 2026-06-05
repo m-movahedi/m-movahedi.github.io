@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>LLM 102: Prompting, Context, RAG, and Hallucinations</title>
+    <meta name="description" content="In the first post, we looked at transformers, token prediction, training, inference, and model parameters. That gives us the machinery. Now we can ask a more …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchbook/llm-102/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LLM 102: Prompting, Context, RAG, and Hallucinations">
+    <meta property="og:description" content="In the first post, we looked at transformers, token prediction, training, inference, and model parameters. That gives us the machinery. Now we can ask a more …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LLM 102: Prompting, Context, RAG, and Hallucinations">
+    <meta name="twitter:description" content="In the first post, we looked at transformers, token prediction, training, inference, and model parameters. That gives us the machinery. Now we can ask a more …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchbook/llm-102/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchbook/llm-102/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchbook/llm-102/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchbook/" aria-label="" > Scratchpad </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchbook/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>LLM 102: Prompting, Context, RAG, and Hallucinations</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 2, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>In the first post, we looked at transformers, token prediction, training, inference, and model parameters. That gives us the machinery. Now we can ask a more practical question: <strong>how do people actually use LLMs well?</strong></p>
+<p>This post focuses on the layer between the model and the user: prompting, context windows, retrieval-augmented generation, tool use, and hallucinations. These ideas matter because the raw model is only part of an LLM system. The prompt, surrounding context, retrieved evidence, decoding settings, and external tools all shape the final answer.</p>
+<style>
+  .llm102-note,
+  .llm102-card,
+  .llm102-panel,
+  .llm102-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+  }
+
+  .llm102-note,
+  .llm102-papers {
+    margin: 1.3rem 0;
+    padding: 1rem 1.1rem;
+  }
+
+  .llm102-note p,
+  .llm102-card p,
+  .llm102-panel p {
+    margin: 0.35rem 0;
+  }
+
+  .llm102-grid,
+  .llm102-flow,
+  .llm102-two-col {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.25rem 0;
+  }
+
+  .llm102-grid {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+  }
+
+  .llm102-flow {
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+  }
+
+  .llm102-two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .llm102-card,
+  .llm102-panel {
+    padding: 0.95rem;
+  }
+
+  .llm102-card strong,
+  .llm102-panel strong,
+  .llm102-papers strong {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .llm102-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm102-papers li {
+    margin: 0.35rem 0;
+  }
+
+  .llm102-prompt {
+    border-left: 4px solid rgba(70, 125, 200, 0.75);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin: 1.1rem 0;
+    padding: 0.8rem 1rem;
+    white-space: pre-wrap;
+  }
+
+  .llm102-meter {
+    background: rgba(90, 140, 210, 0.16);
+    border-radius: 999px;
+    height: 18px;
+    margin: 0.65rem 0;
+    overflow: hidden;
+  }
+
+  .llm102-meter span {
+    background: rgba(70, 125, 200, 0.78);
+    display: block;
+    height: 100%;
+  }
+
+  .llm102-small {
+    font-size: 0.9rem;
+    opacity: 0.78;
+  }
+
+  @media (max-width: 850px) {
+    .llm102-grid,
+    .llm102-flow,
+    .llm102-two-col {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<h2 id="1-prompting-is-interface-design">1. Prompting Is Interface Design</h2>
+<p>A prompt is not just a question. It is the model&rsquo;s immediate operating environment. It can include the user&rsquo;s request, system instructions, examples, formatting rules, retrieved documents, tool outputs, and prior conversation.</p>
+<p>For simple tasks, a short prompt can be enough. For harder tasks, good prompting makes the task explicit:</p>
+<div class="llm102-prompt">Task: Summarize the evacuation study for a transportation planning audience.
+Audience: Graduate students with basic statistics background.
+Output: 5 bullet points, each with one concrete implication.
+Constraint: Do not invent numbers. If a number is missing, say so.</div>
+<p>This kind of prompt does four useful things. It states the task, names the audience, defines the output format, and places a boundary around unsupported claims. It does not make the model perfect, but it reduces ambiguity.</p>
+<div class="llm102-grid">
+  <div class="llm102-card">
+    <strong>Role</strong>
+    <p>Who should the model write for?</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Task</strong>
+    <p>What should it actually do?</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Evidence</strong>
+    <p>What sources may it use?</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Format</strong>
+    <p>What should the answer look like?</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Constraints</strong>
+    <p>What should it avoid?</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Check</strong>
+    <p>How should uncertainty be handled?</p>
+  </div>
+</div>
+<div class="llm102-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2005.14165">Brown et al. (2020), "Language Models are Few-Shot Learners"</a>: showed how examples inside the prompt can steer model behavior without updating weights.</li>
+    <li><a href="https://arxiv.org/abs/2201.11903">Wei et al. (2022), "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"</a>: introduced a major prompting pattern for eliciting intermediate reasoning on multi-step tasks.</li>
+    <li><a href="https://arxiv.org/abs/2205.11916">Kojima et al. (2022), "Large Language Models are Zero-Shot Reasoners"</a>: showed that simple prompt phrasing can improve reasoning behavior without examples.</li>
+  </ul>
+</div>
+<h2 id="2-in-context-learning-is-not-fine-tuning">2. In-Context Learning Is Not Fine-Tuning</h2>
+<p>When you include examples in a prompt, the model may infer the pattern and continue it. This is called <strong>in-context learning</strong>. The model&rsquo;s weights are not changed. The examples are temporary context.</p>
+<p>Fine-tuning is different. Fine-tuning updates model weights using training data. It is useful when you need durable behavior across many future prompts, a specialized style, or domain-specific output conventions.</p>
+<div class="llm102-two-col">
+  <div class="llm102-panel">
+    <strong>In-context learning</strong>
+    <p>Examples are placed in the prompt.</p>
+    <p>No parameter update happens.</p>
+    <p>Good for rapid adaptation and prototypes.</p>
+  </div>
+  <div class="llm102-panel">
+    <strong>Fine-tuning</strong>
+    <p>Examples become training data.</p>
+    <p>Parameters are updated.</p>
+    <p>Good for durable task behavior.</p>
+  </div>
+</div>
+<p>The practical rule is simple: try prompting first, add retrieval when factual grounding matters, and consider fine-tuning when the same behavior must repeat reliably at scale.</p>
+<div class="llm102-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2005.14165">Brown et al. (2020), "Language Models are Few-Shot Learners"</a>: the central reference for few-shot prompting and in-context learning in GPT-style models.</li>
+    <li><a href="https://arxiv.org/abs/2109.01652">Wei et al. (2021), "Finetuned Language Models Are Zero-Shot Learners"</a>: the FLAN paper, important for instruction tuning across many tasks.</li>
+    <li><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: explains why post-training can make models more helpful and instruction-following.</li>
+  </ul>
+</div>
+<h2 id="3-context-windows-are-working-memory">3. Context Windows Are Working Memory</h2>
+<p>The <strong>context window</strong> is the amount of text the model can consider at once. It includes system instructions, user messages, previous turns, retrieved documents, tool results, and generated output.</p>
+<p>Longer context is useful, but it is not magic. A model may technically accept a long document while still missing important information in the middle, mixing unrelated sections, or over-weighting the most recent text.</p>
+<div class="llm102-panel">
+  <strong>Example context budget</strong>
+  <p>System instructions</p>
+  <div class="llm102-meter"><span style="width: 15%;"></span></div>
+  <p>Conversation history</p>
+  <div class="llm102-meter"><span style="width: 32%;"></span></div>
+  <p>Retrieved documents</p>
+  <div class="llm102-meter"><span style="width: 48%;"></span></div>
+  <p>Space for answer</p>
+  <div class="llm102-meter"><span style="width: 18%;"></span></div>
+  <p class="llm102-small">These are illustrative slices, not a fixed formula.</p>
+</div>
+<p>Good context design is selective. Put the most relevant evidence close to the question. Remove stale conversation when it no longer helps. Summarize long histories. Do not paste a giant pile of documents and hope the model sorts everything out.</p>
+<div class="llm102-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2307.03172">Liu et al. (2023), "Lost in the Middle"</a>: shows that models often use information better when it appears near the beginning or end of context than in the middle.</li>
+    <li><a href="https://arxiv.org/abs/2205.14135">Dao et al. (2022), "FlashAttention"</a>: important background for why efficient attention matters when context length grows.</li>
+  </ul>
+</div>
+<h2 id="4-retrieval-augmented-generation">4. Retrieval-Augmented Generation</h2>
+<p>Retrieval-Augmented Generation, usually called <strong>RAG</strong>, connects a language model to an external knowledge source. Instead of relying only on what is stored in the model&rsquo;s parameters, the system retrieves relevant text and places it into the prompt.</p>
+<div class="llm102-flow" role="img" aria-label="RAG pipeline from user question to grounded answer">
+  <div class="llm102-card">
+    <strong>Question</strong>
+    <p>The user asks something.</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Retrieve</strong>
+    <p>Search finds relevant chunks.</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Rank</strong>
+    <p>The system chooses useful evidence.</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Generate</strong>
+    <p>The LLM answers using context.</p>
+  </div>
+  <div class="llm102-card">
+    <strong>Cite</strong>
+    <p>The answer points back to sources.</p>
+  </div>
+</div>
+<p>RAG is especially useful when the answer depends on current, private, local, or domain-specific information. A model may know general evacuation planning concepts, but your project documents, survey instruments, data tables, and meeting notes need retrieval.</p>
+<p>RAG also introduces new failure modes. The retriever can miss the right document. The ranking step can include irrelevant chunks. The model can ignore evidence or cite the wrong passage. A good RAG system therefore needs evaluation, not just a vector database.</p>
+<div class="llm102-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2005.11401">Lewis et al. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"</a>: the core RAG paper that combines parametric generation with non-parametric retrieval.</li>
+    <li><a href="https://arxiv.org/abs/2002.08909">Guu et al. (2020), "REALM"</a>: an important retrieval-augmented pretraining paper for open-domain question answering.</li>
+    <li><a href="https://arxiv.org/abs/2312.10997">Gao et al. (2023), "Retrieval-Augmented Generation for Large Language Models: A Survey"</a>: a broad survey of naive, advanced, and modular RAG systems.</li>
+  </ul>
+</div>
+<h2 id="5-tools-extend-the-model">5. Tools Extend the Model</h2>
+<p>Some tasks should not be solved by language generation alone. Arithmetic, database queries, web search, code execution, scheduling, mapping, and file operations are better handled by tools.</p>
+<p>In a tool-using system, the model decides when to call an external function, passes arguments, receives the result, and then continues generating. The model is still producing text, but the system gives it ways to act.</p>
+<div class="llm102-prompt">User: What is the total bridge inspection cost from this table?
+Model: I should calculate this rather than estimate.
+Tool call: sum(column="inspection_cost")
+Tool result: 184250
+Model: The total inspection cost is $184,250.</div>
+<p>The point is not to make the model sound smarter. The point is to move fragile work into systems that can be checked.</p>
+<div class="llm102-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2210.03629">Yao et al. (2022), "ReAct"</a>: combines reasoning traces with actions such as searching or interacting with an environment.</li>
+    <li><a href="https://arxiv.org/abs/2302.04761">Schick et al. (2023), "Toolformer"</a>: explores how language models can learn to call APIs and incorporate tool results.</li>
+    <li><a href="https://arxiv.org/abs/2211.10435">Gao et al. (2022), "PAL: Program-aided Language Models"</a>: shows how LLMs can write programs as intermediate steps and let a runtime compute the answer.</li>
+  </ul>
+</div>
+<h2 id="6-hallucinations-are-grounding-failures">6. Hallucinations Are Grounding Failures</h2>
+<p>A hallucination is generated content that sounds plausible but is unsupported, false, or disconnected from the available evidence. This is not just a &ldquo;bug&rdquo; in the conversational sense. It follows naturally from the training objective: the model is rewarded for likely continuations, not for independently verifying reality.</p>
+<p>Hallucinations often appear when:</p>
+<ul>
+<li>the prompt asks for information outside the model&rsquo;s knowledge;</li>
+<li>the user requests citations the model has not actually retrieved;</li>
+<li>the context contains conflicting evidence;</li>
+<li>the model is asked to infer too much from too little;</li>
+<li>the output format rewards confidence over uncertainty.</li>
+</ul>
+<div class="llm102-note">
+  <p><strong>Practical mitigation:</strong> give the model evidence, ask it to separate facts from assumptions, require citations for factual claims, and make "I do not know" an acceptable answer.</p>
+</div>
+<p>RAG, tools, and careful prompting can reduce hallucinations, but they do not eliminate them. The more important habit is to treat the LLM as a probabilistic assistant inside a verification workflow.</p>
+<div class="llm102-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2109.07958">Lin, Hilton, and Evans (2021), "TruthfulQA"</a>: a benchmark for measuring whether models reproduce common falsehoods.</li>
+    <li><a href="https://arxiv.org/abs/2303.08896">Manakul, Liusie, and Gales (2023), "SelfCheckGPT"</a>: a black-box approach to detecting hallucinations by checking consistency across sampled outputs.</li>
+    <li><a href="https://dl.acm.org/doi/10.1145/3442188.3445922">Bender et al. (2021), "On the Dangers of Stochastic Parrots"</a>: an influential critique of risks around scale, data, bias, and over-attributing understanding to fluent text.</li>
+  </ul>
+</div>
+<h2 id="7-a-practical-workflow">7. A Practical Workflow</h2>
+<p>For many real tasks, I would think about LLM use in this order:</p>
+<ol>
+<li><strong>Clarify the task.</strong> What exactly should the model produce?</li>
+<li><strong>Provide context.</strong> What does the model need to know for this answer?</li>
+<li><strong>Ground factual claims.</strong> Should this use retrieved sources, data, or tools?</li>
+<li><strong>Constrain the output.</strong> What format, tone, and level of detail are useful?</li>
+<li><strong>Ask for uncertainty.</strong> Where should the model flag missing or weak evidence?</li>
+<li><strong>Verify.</strong> What parts need human review, tests, citations, or computation?</li>
+</ol>
+<div class="llm102-note">
+  <p>The model is not the whole system. The system is the model plus instructions, context, retrieval, tools, interface design, evaluation, and human judgment.</p>
+</div>
+<p>In the next post, we can go deeper into RAG: embeddings, chunking, vector search, reranking, citations, and evaluation.</p>
+<div class="llm102-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2303.18223">Zhao et al. (2023), "A Survey of Large Language Models"</a>: useful as a broad map of model architecture, training, adaptation, use, and evaluation.</li>
+    <li><a href="https://arxiv.org/abs/2312.10997">Gao et al. (2023), "Retrieval-Augmented Generation for Large Language Models: A Survey"</a>: a good next step if you want to understand practical RAG design space.</li>
+  </ul>
+</div>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

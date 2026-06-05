@@ -126,6 +126,71 @@
   margin-bottom: 10px;
 }
 
+.horizontal-timeline {
+  margin-top: 48px;
+  overflow: visible;
+  padding: 18px 4px 26px;
+}
+
+.horizontal-timeline-row {
+  display: flex;
+  gap: 42px;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 20px 0 28px;
+  position: relative;
+}
+
+.horizontal-timeline-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.horizontal-timeline-item {
+  flex: 1 1 0;
+  min-width: 0;
+  position: relative;
+}
+
+.horizontal-timeline-arrow {
+  align-self: center;
+  flex: 0 0 auto;
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.95;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.12);
+}
+
+.horizontal-timeline-card {
+  align-items: center;
+  background: var(--background-color);
+  border: 1px solid rgba(128,128,128,0.35);
+  border-radius: 14px;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  min-height: 88px;
+  padding: 16px 18px;
+  text-decoration: none;
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease;
+}
+
+.horizontal-timeline-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+}
+
+.horizontal-timeline-card h2 {
+  font-size: 1.08rem;
+  line-height: 1.25;
+  margin: 0;
+  text-align: center;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
 @media (max-width: 900px) {
 
   .timeline::before {
@@ -143,6 +208,37 @@
 
   .timeline-card-wrapper {
     width: 100%;
+  }
+
+  .horizontal-timeline-row,
+  .horizontal-timeline-row.reverse {
+    display: block;
+    padding: 0 0 0 48px;
+  }
+
+  .horizontal-timeline-row::before {
+    display: none;
+  }
+
+  .horizontal-timeline-row:not(:last-child)::after,
+  .horizontal-timeline-row.reverse:not(:last-child)::after {
+    display: none;
+  }
+
+  .horizontal-timeline-item {
+    margin-bottom: 22px;
+  }
+
+  .horizontal-timeline-arrow {
+    display: block;
+    font-size: 0;
+    margin: -10px 0 12px;
+    text-align: center;
+  }
+
+  .horizontal-timeline-arrow::before {
+    content: attr(data-mobile-arrow);
+    font-size: 2rem;
   }
 }
 

@@ -2,58 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-05-24T00:00:00+00:00</lastmod>
+    <loc>https://m-movahedi.com/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-05-24T00:00:00+00:00</lastmod>
+    <loc>https://m-movahedi.com/scratchpad/llm/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/my-first-post/</loc>
-    <lastmod>2026-05-24T00:00:00+00:00</lastmod>
+    <loc>https://m-movahedi.com/scratchpad/llm/llm-108/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/disaster-resilience/</loc>
+    <loc>https://m-movahedi.com/scratchpad/</loc>
+    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/scratchpad/llm/llm-107/</loc>
+    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/scratchpad/llm/llm-106/</loc>
+    <lastmod>2026-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/scratchpad/llm/llm-105/</loc>
+    <lastmod>2026-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/scratchpad/llm/llm-104/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/scratchpad/llm/llm-103/</loc>
+    <lastmod>2026-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/scratchpad/llm/llm-102/</loc>
+    <lastmod>2026-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/scratchpad/llm/llm-101/</loc>
+    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/disaster-resilience/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/webinars/nheri_rsr_spring2026/</loc>
+    <loc>https://m-movahedi.com/webinars/nheri_rsr_spring2026/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/post-disaster-recovery/</loc>
+    <loc>https://m-movahedi.com/tags/post-disaster-recovery/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://m-movahedi.com/tags/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/webinars/</loc>
+    <loc>https://m-movahedi.com/webinars/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/asset-management/</loc>
+    <loc>https://m-movahedi.com/tags/asset-management/</loc>
     <lastmod>2025-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/generative-ai-virtual-reality-a-training-tool/</loc>
+    <loc>https://m-movahedi.com/research/generative-ai-virtual-reality-a-training-tool/</loc>
     <lastmod>2025-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/generative-ai/</loc>
+    <loc>https://m-movahedi.com/tags/generative-ai/</loc>
     <lastmod>2025-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
+    <loc>https://m-movahedi.com/research/</loc>
     <lastmod>2025-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/virtual-reality/</loc>
+    <loc>https://m-movahedi.com/tags/virtual-reality/</loc>
     <lastmod>2025-07-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/webinars/nheri_rsr_spring2025/</loc>
+    <loc>https://m-movahedi.com/webinars/nheri_rsr_spring2025-2/</loc>
     <lastmod>2025-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/sightseeing-tour-planning/</loc>
+    <loc>https://m-movahedi.com/webinars/nheri_rsr_spring2025/</loc>
+    <lastmod>2025-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/research/sightseeing-tour-planning/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/transportation-planning/</loc>
+    <loc>https://m-movahedi.com/tags/transportation-planning/</loc>
     <lastmod>2024-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://m-movahedi.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/background/</loc>
+    <loc>https://m-movahedi.com/background/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://m-movahedi.com/blog/</loc>
+  </url><url>
+    <loc>https://m-movahedi.com/categories/</loc>
   </url>
 </urlset>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>LLM 101: Transformers, Training, and Inference</title>
+    <meta name="description" content="Large Language Models (LLMs) can look mysterious from the outside: you type a prompt, the model writes back, and the response often feels more like conversation …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://m-movahedi.com/scratchpad/llm/llm-101/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LLM 101: Transformers, Training, and Inference">
+    <meta property="og:description" content="Large Language Models (LLMs) can look mysterious from the outside: you type a prompt, the model writes back, and the response often feels more like conversation …">
+    <meta property="og:image" content="https://m-movahedi.com/images/profile.png">
+    <meta property="og:image:secure_url" content="https://m-movahedi.com/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LLM 101: Transformers, Training, and Inference">
+    <meta name="twitter:description" content="Large Language Models (LLMs) can look mysterious from the outside: you type a prompt, the model writes back, and the response often feels more like conversation …">
+    <meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/llm/llm-101/">
+    <meta property="twitter:url" content="https://m-movahedi.com/scratchpad/llm/llm-101/">
+    <meta name="twitter:image" content="https://m-movahedi.com/images/profile.png">
+
+    
+    <link rel="canonical" href="https://m-movahedi.com/scratchpad/llm/llm-101/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://m-movahedi.com/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://m-movahedi.com/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>LLM 101: Transformers, Training, and Inference</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 1, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>Large Language Models (LLMs) can look mysterious from the outside: you type a prompt, the model writes back, and the response often feels more like conversation than computation. Under the hood, though, the core idea is surprisingly concrete. Most modern LLMs are built from <strong>transformers</strong>, trained to predict text one token at a time, and used during inference to repeatedly choose the next likely token.</p>
+<p>This post is the first in a short series. We will start with transformers, then move into how LLMs learn, how they generate text, why training and inference are different, and what people mean when they talk about model parameters.</p>
+<style>
+  .llm-note,
+  .llm-card,
+  .llm-panel,
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+  }
+
+  .llm-note {
+    margin: 1.4rem 0;
+    padding: 1rem 1.1rem;
+  }
+
+  .llm-papers {
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+
+  .llm-note p,
+  .llm-card p,
+  .llm-panel p {
+    margin: 0.35rem 0;
+  }
+
+  .llm-flow,
+  .llm-two-col,
+  .llm-param-grid {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.25rem 0;
+  }
+
+  .llm-flow {
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+    align-items: stretch;
+  }
+
+  .llm-card,
+  .llm-panel {
+    padding: 0.95rem;
+  }
+
+  .llm-card strong,
+  .llm-panel strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .llm-arrow {
+    align-self: center;
+    font-size: 1.35rem;
+    opacity: 0.7;
+    text-align: center;
+  }
+
+  .llm-token-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 1rem 0;
+  }
+
+  .llm-token {
+    border: 1px solid rgba(80, 120, 180, 0.35);
+    border-radius: 999px;
+    background: rgba(80, 120, 180, 0.1);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.92rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .llm-two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .llm-param-grid {
+    grid-template-columns: repeat(4, minmax(130px, 1fr));
+  }
+
+  .llm-mini-chart {
+    display: grid;
+    gap: 0.55rem;
+    margin-top: 0.7rem;
+  }
+
+  .llm-bar-row {
+    align-items: center;
+    display: grid;
+    gap: 0.65rem;
+    grid-template-columns: 90px 1fr 48px;
+  }
+
+  .llm-bar {
+    background: rgba(90, 140, 210, 0.18);
+    border-radius: 999px;
+    height: 12px;
+    overflow: hidden;
+  }
+
+  .llm-bar span {
+    background: rgba(70, 125, 200, 0.78);
+    display: block;
+    height: 100%;
+  }
+
+  .llm-param-number {
+    font-size: 1.35rem;
+    font-weight: 700;
+  }
+
+  @media (max-width: 850px) {
+    .llm-flow,
+    .llm-two-col,
+    .llm-param-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .llm-arrow {
+      transform: rotate(90deg);
+    }
+  }
+</style>
+<h2 id="1-text-becomes-tokens">1. Text Becomes Tokens</h2>
+<p>LLMs do not read text as whole sentences. They first break text into <strong>tokens</strong>: common words, word pieces, punctuation marks, spaces, or byte-level fragments. A sentence like this:</p>
+<div class="llm-token-row" aria-label="Tokenized sentence example">
+  <span class="llm-token">The</span>
+  <span class="llm-token"> evac</span>
+  <span class="llm-token">uation</span>
+  <span class="llm-token"> plan</span>
+  <span class="llm-token"> changed</span>
+  <span class="llm-token">.</span>
+</div>
+<p>might become a sequence of token IDs. Each ID is then mapped into an <strong>embedding</strong>, which is a vector of numbers. You can think of an embedding as the model&rsquo;s internal coordinate system for meaning, syntax, and usage.</p>
+<p>The model also needs information about order. The same words can mean different things depending on position, so transformers add <strong>positional information</strong> to token embeddings before processing them.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/1508.07909">Sennrich, Haddow, and Birch (2016), "Neural Machine Translation of Rare Words with Subword Units"</a>: the classic paper that popularized byte-pair encoding for open-vocabulary neural text models.</li>
+    <li><a href="https://arxiv.org/abs/1808.06226">Kudo and Richardson (2018), "SentencePiece"</a>: important for understanding modern subword tokenization pipelines that work directly from raw text.</li>
+  </ul>
+</div>
+<h2 id="2-why-transformers-matter">2. Why Transformers Matter</h2>
+<p>Before transformers, many language models processed text mostly from left to right using recurrent neural networks. That worked, but it made long-range relationships difficult and slow to learn. Transformers changed the center of gravity by using <strong>self-attention</strong>.</p>
+<p>Self-attention lets each token look at other tokens in the sequence and decide which ones matter for the current computation. For example, in &ldquo;the bridge failed after it flooded,&rdquo; the model needs to connect &ldquo;it&rdquo; with the right earlier concept. Attention is one of the mechanisms that helps.</p>
+<div class="llm-note">
+  <p><strong>Core intuition:</strong> a transformer does not simply store a sentence. It repeatedly rewrites every token's representation using context from nearby and distant tokens.</p>
+</div>
+<h3 id="a-transformer-block">A Transformer Block</h3>
+<p>A transformer is built by stacking many similar blocks. Each block usually contains attention, a feed-forward network, normalization, and residual connections.</p>
+<div class="llm-flow" role="img" aria-label="Transformer block flow from tokens to output probabilities">
+  <div class="llm-card">
+    <strong>Tokens</strong>
+    <p>Text becomes token IDs.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Embeddings</strong>
+    <p>IDs become vectors with position information.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Self-Attention</strong>
+    <p>Tokens exchange context with other tokens.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Feed-Forward</strong>
+    <p>Each token representation is transformed.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Probabilities</strong>
+    <p>The model scores possible next tokens.</p>
+  </div>
+</div>
+<p>The phrase <strong>large language model</strong> usually means a transformer with many layers, wide internal vectors, and a huge number of learned weights.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), "Attention Is All You Need"</a>: introduced the Transformer architecture and made attention the central operation.</li>
+    <li><a href="https://arxiv.org/abs/1409.0473">Bahdanau, Cho, and Bengio (2014), "Neural Machine Translation by Jointly Learning to Align and Translate"</a>: an influential precursor that made neural attention central to sequence modeling.</li>
+  </ul>
+</div>
+<h2 id="3-what-an-llm-learns">3. What an LLM Learns</h2>
+<p>The most common training objective is <strong>next-token prediction</strong>. During training, the model receives text and learns to predict the next token at many positions.</p>
+<p>For a sentence like:</p>
+<blockquote>
+<p>During a hurricane, people may choose to evacuate because ___</p>
+</blockquote>
+<p>the model learns to assign probabilities to possible continuations such as &ldquo;roads,&rdquo; &ldquo;officials,&rdquo; &ldquo;risk,&rdquo; &ldquo;family,&rdquo; or &ldquo;flooding.&rdquo; It is not choosing from a fixed list of human-written answers. It is producing a probability distribution across its vocabulary.</p>
+<div class="llm-panel">
+  <strong>Example next-token distribution</strong>
+  <div class="llm-mini-chart" aria-label="Example token probabilities">
+    <div class="llm-bar-row"><span>risk</span><div class="llm-bar"><span style="width: 42%;"></span></div><span>0.42</span></div>
+    <div class="llm-bar-row"><span>officials</span><div class="llm-bar"><span style="width: 24%;"></span></div><span>0.24</span></div>
+    <div class="llm-bar-row"><span>roads</span><div class="llm-bar"><span style="width: 17%;"></span></div><span>0.17</span></div>
+    <div class="llm-bar-row"><span>family</span><div class="llm-bar"><span style="width: 10%;"></span></div><span>0.10</span></div>
+    <div class="llm-bar-row"><span>coffee</span><div class="llm-bar"><span style="width: 2%;"></span></div><span>0.02</span></div>
+  </div>
+</div>
+<p>After seeing enormous amounts of text, the model learns patterns that support grammar, style imitation, translation, summarization, code generation, and some forms of reasoning. This is why next-token prediction is more powerful than it sounds. To predict language well, the model has to build internal representations of many things language refers to.</p>
+<p>That said, an LLM is not a database in the ordinary sense. It stores knowledge in distributed patterns across weights, and it can be wrong, outdated, or overconfident.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">Radford et al. (2019), "Language Models are Unsupervised Multitask Learners"</a>: showed how large next-token models can display broad zero-shot behavior.</li>
+    <li><a href="https://arxiv.org/abs/2005.14165">Brown et al. (2020), "Language Models are Few-Shot Learners"</a>: the GPT-3 paper, important for understanding scale, prompting, and few-shot use.</li>
+  </ul>
+</div>
+<h2 id="4-training-structure">4. Training Structure</h2>
+<p>During training, the model&rsquo;s parameters are still changing.</p>
+<ol>
+<li>Text is collected and cleaned.</li>
+<li>Text is tokenized into long sequences.</li>
+<li>The model predicts the next token at many positions.</li>
+<li>The predicted probabilities are compared with the actual next tokens.</li>
+<li>The error becomes a loss value.</li>
+<li>Backpropagation adjusts the parameters to reduce future error.</li>
+</ol>
+<p>This process is repeated over massive batches of examples. The model gradually becomes better at assigning high probability to plausible continuations and lower probability to unlikely ones.</p>
+<div class="llm-two-col">
+  <div class="llm-panel">
+    <strong>Training</strong>
+    <p>Weights are updated.</p>
+    <p>The model sees many examples in parallel.</p>
+    <p>The goal is to reduce prediction error.</p>
+  </div>
+  <div class="llm-panel">
+    <strong>After Training</strong>
+    <p>The learned weights are saved.</p>
+    <p>The model can be deployed for use.</p>
+    <p>No learning happens unless another training process is run.</p>
+  </div>
+</div>
+<p>Many deployed models also go through additional stages after pretraining, such as supervised fine-tuning, preference optimization, safety training, tool-use training, or domain adaptation. Those stages shape behavior, but the transformer foundation remains the same.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2001.08361">Kaplan et al. (2020), "Scaling Laws for Neural Language Models"</a>: explains how model size, data size, and compute relate to training loss.</li>
+    <li><a href="https://arxiv.org/abs/2203.15556">Hoffmann et al. (2022), "Training Compute-Optimal Large Language Models"</a>: the Chinchilla paper, which shifted attention toward balancing parameters with enough training data.</li>
+    <li><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: a key paper for instruction tuning and reinforcement learning from human feedback.</li>
+  </ul>
+</div>
+<h2 id="5-inference-structure">5. Inference Structure</h2>
+<p><strong>Inference</strong> is what happens when you use a trained model. The model receives a prompt and generates output one token at a time.</p>
+<div class="llm-flow" role="img" aria-label="Inference loop">
+  <div class="llm-card">
+    <strong>Prompt</strong>
+    <p>User input and system instructions.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Forward Pass</strong>
+    <p>The transformer computes next-token scores.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Select Token</strong>
+    <p>A decoding method chooses one token.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Append</strong>
+    <p>The selected token joins the context.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Repeat</strong>
+    <p>The loop continues until stopping.</p>
+  </div>
+</div>
+<p>The important distinction is that inference does not normally update the model&rsquo;s parameters. The model may appear to learn within a conversation because previous messages remain in the context window, but that is temporary context use, not permanent weight updating.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2205.14135">Dao et al. (2022), "FlashAttention"</a>: important for understanding why efficient attention kernels matter for practical transformer inference.</li>
+    <li><a href="https://arxiv.org/abs/2309.06180">Kwon et al. (2023), "Efficient Memory Management for Large Language Model Serving with PagedAttention"</a>: introduces vLLM/PagedAttention and explains the importance of KV-cache memory during serving.</li>
+    <li><a href="https://arxiv.org/abs/2302.01318">Chen et al. (2023), "Accelerating Large Language Model Decoding with Speculative Sampling"</a>: a readable entry point for inference acceleration through draft-and-verify decoding.</li>
+  </ul>
+</div>
+<h2 id="6-generation-and-decoding">6. Generation and Decoding</h2>
+<p>At each generation step, the model outputs probabilities for possible next tokens. The decoding strategy controls how one token is selected.</p>
+<ul>
+<li><strong>Greedy decoding</strong> chooses the highest-probability token every time. It is predictable but can be bland or get stuck.</li>
+<li><strong>Sampling</strong> randomly draws from the probability distribution. It can be more varied, but also more error-prone.</li>
+<li><strong>Temperature</strong> adjusts randomness. Lower temperature makes outputs more conservative; higher temperature makes outputs more exploratory.</li>
+<li><strong>Top-k sampling</strong> restricts choices to the k most likely tokens.</li>
+<li><strong>Top-p sampling</strong> restricts choices to the smallest set of tokens whose combined probability passes a threshold.</li>
+<li><strong>Beam search</strong> tracks several candidate continuations at once. It is useful in some structured generation tasks, though less common for open-ended chat.</li>
+</ul>
+<p>This is why the same prompt can produce different answers across runs. The model is not retrieving a single stored response. It is repeatedly constructing a continuation under a probability model and a decoding policy.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/1904.09751">Holtzman et al. (2019), "The Curious Case of Neural Text Degeneration"</a>: introduced nucleus sampling and explains why high-probability decoding can produce repetitive text.</li>
+    <li><a href="https://arxiv.org/abs/1805.04833">Fan, Lewis, and Dauphin (2018), "Hierarchical Neural Story Generation"</a>: an early influential use of top-k sampling for open-ended neural generation.</li>
+  </ul>
+</div>
+<h2 id="7-common-llm-architectures">7. Common LLM Architectures</h2>
+<p>Not every transformer-based language model is structured the same way. Three families matter most:</p>
+<div class="llm-two-col">
+  <div class="llm-panel">
+    <strong>Decoder-only models</strong>
+    <p>Used by many chat and text-generation systems. They read previous tokens and predict the next token.</p>
+    <p><em>Best fit:</em> open-ended generation, chat, code completion.</p>
+  </div>
+  <div class="llm-panel">
+    <strong>Encoder-only models</strong>
+    <p>Read the full input and produce contextual representations, but are not naturally designed to generate long text one token at a time.</p>
+    <p><em>Best fit:</em> classification, search, embeddings, extraction.</p>
+  </div>
+  <div class="llm-panel">
+    <strong>Encoder-decoder models</strong>
+    <p>Use one transformer to understand the input and another to generate the output.</p>
+    <p><em>Best fit:</em> translation, summarization, structured text-to-text tasks.</p>
+  </div>
+  <div class="llm-panel">
+    <strong>Mixture-of-experts models</strong>
+    <p>Route tokens through selected expert sub-networks instead of activating every parameter for every token.</p>
+    <p><em>Best fit:</em> scaling capacity while controlling inference cost.</p>
+  </div>
+</div>
+<p>Most popular conversational LLMs are <strong>decoder-only</strong> because next-token generation maps naturally onto dialogue, writing, coding, and step-by-step responses.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/1810.04805">Devlin et al. (2018), "BERT"</a>: the landmark encoder-only transformer for bidirectional representation learning.</li>
+    <li><a href="https://arxiv.org/abs/1910.10683">Raffel et al. (2019), "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"</a>: the T5 paper, a major encoder-decoder reference.</li>
+    <li><a href="https://arxiv.org/abs/2101.03961">Fedus, Zoph, and Shazeer (2021), "Switch Transformers"</a>: a key mixture-of-experts paper showing sparse scaling to very large parameter counts.</li>
+  </ul>
+</div>
+<h2 id="8-model-parameters">8. Model Parameters</h2>
+<p>Model parameters are the learned numbers inside the network. They include embedding tables, attention projections, feed-forward layers, normalization terms, and output weights. When people say a model has 7 billion, 70 billion, or hundreds of billions of parameters, they are talking about the number of learned values used to transform input tokens into output probabilities.</p>
+<div class="llm-param-grid" role="img" aria-label="Types of parameters inside a transformer">
+  <div class="llm-card">
+    <strong>Embeddings</strong>
+    <div class="llm-param-number">token to vector</div>
+    <p>Store learned representations for vocabulary items.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Attention</strong>
+    <div class="llm-param-number">Q K V</div>
+    <p>Learn how tokens query, match, and exchange information.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Feed-Forward</strong>
+    <div class="llm-param-number">transform</div>
+    <p>Do much of the model's internal computation.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Output Head</strong>
+    <div class="llm-param-number">scores</div>
+    <p>Maps final vectors back to vocabulary probabilities.</p>
+  </div>
+</div>
+<p>More parameters can increase capacity, but parameter count is not the whole story. Data quality, architecture, training recipe, context length, tokenizer, alignment process, inference settings, and tool access all affect model behavior. A smaller well-trained model can outperform a larger poorly trained model on specific tasks.</p>
+<p>There is also an important deployment distinction:</p>
+<ul>
+<li><strong>Total parameters</strong>: all learned weights stored by the model.</li>
+<li><strong>Active parameters</strong>: the subset used for a given token, especially relevant in mixture-of-experts models.</li>
+<li><strong>Context window</strong>: the amount of text the model can consider at once. This is not the same as parameter count.</li>
+</ul>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2001.08361">Kaplan et al. (2020), "Scaling Laws for Neural Language Models"</a>: useful for the relationship between parameter count, data, compute, and loss.</li>
+    <li><a href="https://arxiv.org/abs/2203.15556">Hoffmann et al. (2022), "Training Compute-Optimal Large Language Models"</a>: important because it shows that more parameters alone are not enough; training tokens matter too.</li>
+    <li><a href="https://arxiv.org/abs/2006.16668">Lepikhin et al. (2020), "GShard"</a>: an important sparse/mixture-of-experts scaling paper for distinguishing total parameters from active computation.</li>
+  </ul>
+</div>
+<h2 id="9-a-compact-mental-model">9. A Compact Mental Model</h2>
+<p>If you remember only one thing, use this:</p>
+<div class="llm-note">
+  <p>An LLM is a large transformer trained to predict the next token. At inference time, it turns your prompt into vectors, computes next-token probabilities, selects a token, appends it to the prompt, and repeats.</p>
+</div>
+<p>That loop is simple. The scale is not. The power of LLMs comes from running this simple prediction game across huge datasets, with billions of learned parameters, and then using the trained model inside carefully designed inference systems.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2303.18223">Zhao et al. (2023), "A Survey of Large Language Models"</a>: a broad survey that connects architectures, training, adaptation, evaluation, and deployment.</li>
+    <li><a href="https://arxiv.org/abs/1706.03762">Vaswani et al. (2017), "Attention Is All You Need"</a>, <a href="https://arxiv.org/abs/2005.14165">Brown et al. (2020), "Language Models are Few-Shot Learners"</a>, and <a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: a good three-paper arc from transformer architecture to large-scale prompting to instruction-following behavior.</li>
+  </ul>
+</div>
+<p>In the next post, we can build on this foundation and look at prompting, context windows, retrieval-augmented generation, and why LLMs sometimes hallucinate.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

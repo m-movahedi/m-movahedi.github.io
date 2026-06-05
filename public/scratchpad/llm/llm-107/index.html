@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>LLM 107: Deployment, Cost, Latency, and Monitoring</title>
+    <meta name="description" content="In LLM 106, we looked at fine-tuning and adaptation. That gave us a way to change model behavior when prompting, retrieval, and tools are not enough. Now we …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://m-movahedi.com/scratchpad/llm/llm-107/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LLM 107: Deployment, Cost, Latency, and Monitoring">
+    <meta property="og:description" content="In LLM 106, we looked at fine-tuning and adaptation. That gave us a way to change model behavior when prompting, retrieval, and tools are not enough. Now we …">
+    <meta property="og:image" content="https://m-movahedi.com/images/profile.png">
+    <meta property="og:image:secure_url" content="https://m-movahedi.com/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LLM 107: Deployment, Cost, Latency, and Monitoring">
+    <meta name="twitter:description" content="In LLM 106, we looked at fine-tuning and adaptation. That gave us a way to change model behavior when prompting, retrieval, and tools are not enough. Now we …">
+    <meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/llm/llm-107/">
+    <meta property="twitter:url" content="https://m-movahedi.com/scratchpad/llm/llm-107/">
+    <meta name="twitter:image" content="https://m-movahedi.com/images/profile.png">
+
+    
+    <link rel="canonical" href="https://m-movahedi.com/scratchpad/llm/llm-107/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://m-movahedi.com/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://m-movahedi.com/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>LLM 107: Deployment, Cost, Latency, and Monitoring</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 7, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>In LLM 106, we looked at fine-tuning and adaptation. That gave us a way to change model behavior when prompting, retrieval, and tools are not enough. Now we move from model behavior to system behavior.</p>
+<p>An LLM prototype can be a notebook, a prompt, and a few examples. A deployed LLM system is different. It has users, latency expectations, costs, logs, privacy constraints, model updates, failures, and maintenance work. This post focuses on the practical side: model choice, inference cost, serving, caching, monitoring, privacy, and operational reliability.</p>
+<style>
+  .llm107-note,
+  .llm107-card,
+  .llm107-panel,
+  .llm107-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+  }
+
+  .llm107-note,
+  .llm107-papers {
+    margin: 1.3rem 0;
+    padding: 1rem 1.1rem;
+  }
+
+  .llm107-card,
+  .llm107-panel {
+    padding: 0.95rem;
+  }
+
+  .llm107-note p,
+  .llm107-card p,
+  .llm107-panel p {
+    margin: 0.35rem 0;
+  }
+
+  .llm107-flow,
+  .llm107-grid,
+  .llm107-two-col {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.25rem 0;
+  }
+
+  .llm107-flow {
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+  }
+
+  .llm107-grid {
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+  }
+
+  .llm107-two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .llm107-card strong,
+  .llm107-panel strong,
+  .llm107-papers strong {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  .llm107-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm107-papers li {
+    margin: 0.35rem 0;
+  }
+
+  .llm107-code {
+    border-left: 4px solid rgba(70, 125, 200, 0.75);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin: 1.1rem 0;
+    padding: 0.8rem 1rem;
+    white-space: pre-wrap;
+  }
+
+  .llm107-row {
+    align-items: center;
+    display: grid;
+    gap: 0.65rem;
+    grid-template-columns: 120px 1fr 54px;
+    margin: 0.55rem 0;
+  }
+
+  .llm107-bar {
+    background: rgba(90, 140, 210, 0.16);
+    border-radius: 999px;
+    height: 12px;
+    overflow: hidden;
+  }
+
+  .llm107-bar span {
+    background: rgba(70, 125, 200, 0.78);
+    display: block;
+    height: 100%;
+  }
+
+  .llm107-small {
+    font-size: 0.9rem;
+    opacity: 0.78;
+  }
+
+  @media (max-width: 900px) {
+    .llm107-flow,
+    .llm107-grid,
+    .llm107-two-col {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<h2 id="1-deployment-is-a-system-problem">1. Deployment Is a System Problem</h2>
+<p>The model is only one component. A deployed LLM application usually includes prompts, retrieval, tools, routing, user interface, logging, monitoring, safety checks, access control, and evaluation.</p>
+<div class="llm107-flow" role="img" aria-label="LLM deployment stack">
+  <div class="llm107-card">
+    <strong>User</strong>
+    <p>Task, context, and expectations.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>Orchestrator</strong>
+    <p>Prompting, routing, and policies.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>Knowledge</strong>
+    <p>RAG, files, databases, and tools.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>Model</strong>
+    <p>Inference, generation, and scoring.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>Monitoring</strong>
+    <p>Quality, cost, latency, and risk.</p>
+  </div>
+</div>
+<p>The core deployment question is not &ldquo;Can the model answer this once?&rdquo; It is &ldquo;Can the system answer this reliably, affordably, and safely for real users?&rdquo;</p>
+<div class="llm107-note">
+  <p><strong>Practical framing:</strong> deployment turns model quality into service quality. Service quality includes latency, cost, privacy, observability, uptime, and user trust.</p>
+</div>
+<h2 id="2-choosing-a-model">2. Choosing a Model</h2>
+<p>Model choice is a tradeoff. Larger models often perform better on difficult reasoning and broad knowledge tasks, but they cost more and are slower. Smaller models can be cheaper, faster, easier to host, and good enough for narrow workflows.</p>
+<div class="llm107-grid">
+  <div class="llm107-card">
+    <strong>Large model</strong>
+    <p>Better for complex reasoning, broad tasks, and messy language.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>Small model</strong>
+    <p>Better for speed, cost, classification, extraction, and constrained tasks.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>Model router</strong>
+    <p>Send easy tasks to cheaper models and hard tasks to stronger models.</p>
+  </div>
+</div>
+<p>For many applications, the best system uses more than one model. A small model might classify intent, a retrieval system might gather evidence, and a stronger model might synthesize the final answer.</p>
+<p>Important model-choice questions:</p>
+<ul>
+<li>What task must the model perform?</li>
+<li>Does it need tool use or structured output?</li>
+<li>How much context does it need?</li>
+<li>What is the acceptable latency?</li>
+<li>What is the cost per successful task, not just cost per token?</li>
+<li>Can data leave your environment?</li>
+<li>How will you evaluate regressions after model changes?</li>
+</ul>
+<h2 id="3-latency-time-to-first-token-and-time-to-done">3. Latency: Time to First Token and Time to Done</h2>
+<p>LLM latency has two parts. <strong>Time to first token</strong> is how long the user waits before seeing the answer begin. <strong>Time to completion</strong> is how long the full answer takes.</p>
+<p>Long prompts increase prefill time. Long answers increase decoding time. Tool calls, retrieval, reranking, and safety checks add their own latency.</p>
+<div class="llm107-panel">
+  <strong>Latency budget example</strong>
+  <div class="llm107-row"><span>Retrieval</span><div class="llm107-bar"><span style="width: 18%;"></span></div><span>low</span></div>
+  <div class="llm107-row"><span>Reranking</span><div class="llm107-bar"><span style="width: 28%;"></span></div><span>med</span></div>
+  <div class="llm107-row"><span>Prefill</span><div class="llm107-bar"><span style="width: 42%;"></span></div><span>med</span></div>
+  <div class="llm107-row"><span>Decoding</span><div class="llm107-bar"><span style="width: 76%;"></span></div><span>high</span></div>
+  <p class="llm107-small">Illustrative only. The shape changes with model size, context length, hardware, batching, and output length.</p>
+</div>
+<p>Useful latency techniques include:</p>
+<ul>
+<li>streaming tokens to the user;</li>
+<li>reducing prompt size;</li>
+<li>retrieving fewer but better chunks;</li>
+<li>caching repeated prompts or retrieval results;</li>
+<li>using smaller models for simple tasks;</li>
+<li>batching requests when throughput matters;</li>
+<li>limiting output length;</li>
+<li>using faster decoding or serving systems.</li>
+</ul>
+<div class="llm107-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2205.14135">Dao et al. (2022), "FlashAttention"</a>: important for memory-efficient and IO-aware attention computation.</li>
+    <li><a href="https://arxiv.org/abs/2302.01318">Chen et al. (2023), "Accelerating Large Language Model Decoding with Speculative Sampling"</a>: explains draft-and-verify decoding as a way to reduce generation latency.</li>
+  </ul>
+</div>
+<h2 id="4-cost-is-more-than-tokens">4. Cost Is More Than Tokens</h2>
+<p>Token cost matters, but it is not the whole bill. A deployed system may pay for model calls, embedding calls, vector databases, rerankers, tool execution, storage, monitoring, human review, and engineering maintenance.</p>
+<p>Think in terms of <strong>cost per successful task</strong>:</p>
+<div class="llm107-code">Cost per successful task =
+  model calls
++ retrieval and reranking
++ tool calls
++ retries
++ human review
++ infrastructure
+divided by successful completed workflows</div>
+<p>A cheap model that fails often can be more expensive than a stronger model that succeeds with fewer retries. A long prompt that avoids one tool call may still cost more than a short prompt with a deterministic tool.</p>
+<div class="llm107-note">
+  <p><strong>Deployment habit:</strong> measure cost, latency, and quality together. Optimizing only one usually makes the other two worse.</p>
+</div>
+<h2 id="5-serving-and-the-kv-cache">5. Serving and the KV Cache</h2>
+<p>During generation, transformer models store key-value representations for previous tokens. This <strong>KV cache</strong> avoids recomputing the entire history at every step. It is essential for efficient decoding, but it can use a lot of memory.</p>
+<p>Serving systems care about:</p>
+<ul>
+<li>how many requests can run at once;</li>
+<li>how long each request is;</li>
+<li>how much KV cache memory is needed;</li>
+<li>whether requests can be batched;</li>
+<li>whether shared prefixes can reuse computation;</li>
+<li>how to schedule work under load.</li>
+</ul>
+<div class="llm107-two-col">
+  <div class="llm107-panel">
+    <strong>Without efficient cache management</strong>
+    <p>GPU memory fragments.</p>
+    <p>Long requests block shorter ones.</p>
+    <p>Throughput suffers under load.</p>
+  </div>
+  <div class="llm107-panel">
+    <strong>With efficient cache management</strong>
+    <p>Memory is reused more carefully.</p>
+    <p>Batching becomes more practical.</p>
+    <p>Serving cost can improve.</p>
+  </div>
+</div>
+<div class="llm107-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2309.06180">Kwon et al. (2023), "Efficient Memory Management for Large Language Model Serving with PagedAttention"</a>: introduces PagedAttention and vLLM for high-throughput LLM serving.</li>
+    <li><a href="https://arxiv.org/abs/1911.02150">Shazeer (2019), "Fast Transformer Decoding: One Write-Head is All You Need"</a>: an important reference for multi-query attention and faster decoding.</li>
+  </ul>
+</div>
+<h2 id="6-quantization-and-compression">6. Quantization and Compression</h2>
+<p>Quantization reduces the precision used to store or compute with model weights. The goal is to reduce memory and sometimes increase speed while keeping quality acceptable.</p>
+<p>This is especially important when deploying models on limited hardware. But quantization is a tradeoff. Lower precision can reduce quality, affect rare tasks, or interact badly with certain model architectures.</p>
+<div class="llm107-grid">
+  <div class="llm107-card">
+    <strong>FP16/BF16</strong>
+    <p>Common high-quality inference precision.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>INT8</strong>
+    <p>Often useful for memory reduction with manageable quality impact.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>4-bit</strong>
+    <p>Very memory efficient, but needs careful evaluation.</p>
+  </div>
+</div>
+<p>Always evaluate the quantized model on your actual task. A quantized model may look fine on casual chat but fail on structured extraction, citations, math, or domain-specific wording.</p>
+<div class="llm107-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2208.07339">Dettmers et al. (2022), "LLM.int8()"</a>: studies 8-bit matrix multiplication for large transformer inference.</li>
+    <li><a href="https://arxiv.org/abs/2210.17323">Frantar et al. (2022), "GPTQ"</a>: a widely cited post-training quantization method for generative transformer models.</li>
+    <li><a href="https://arxiv.org/abs/2211.10438">Xiao et al. (2022), "SmoothQuant"</a>: an important post-training quantization approach for large language models.</li>
+  </ul>
+</div>
+<h2 id="7-caching">7. Caching</h2>
+<p>Caching can reduce cost and latency, but only when used carefully.</p>
+<p>Useful cache targets include:</p>
+<ul>
+<li>embeddings for documents;</li>
+<li>retrieval results for repeated queries;</li>
+<li>reranking results;</li>
+<li>prompt prefixes;</li>
+<li>tool outputs;</li>
+<li>final answers for deterministic or low-risk tasks.</li>
+</ul>
+<p>Caching is less safe when answers depend on user permissions, current data, or private context. If two users ask the same question but have different document access, they should not automatically receive the same cached answer.</p>
+<div class="llm107-note">
+  <p><strong>Cache rule:</strong> cache stable computations, not sensitive decisions. Include permissions, source versions, and prompt versions in cache keys when they affect the answer.</p>
+</div>
+<h2 id="8-monitoring-quality-in-production">8. Monitoring Quality in Production</h2>
+<p>You cannot manually inspect every output. You need monitoring signals.</p>
+<p>Track:</p>
+<ul>
+<li>latency;</li>
+<li>cost;</li>
+<li>token counts;</li>
+<li>retry rate;</li>
+<li>tool-call failure rate;</li>
+<li>retrieval hit rate;</li>
+<li>citation coverage;</li>
+<li>user corrections;</li>
+<li>escalation rate;</li>
+<li>refusal rate;</li>
+<li>human review findings.</li>
+</ul>
+<div class="llm107-grid">
+  <div class="llm107-card">
+    <strong>System metrics</strong>
+    <p>Latency, errors, uptime, throughput.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>Model metrics</strong>
+    <p>Answer quality, grounding, refusals, drift.</p>
+  </div>
+  <div class="llm107-card">
+    <strong>User metrics</strong>
+    <p>Task success, corrections, trust, adoption.</p>
+  </div>
+</div>
+<p>Monitoring should connect back to evaluation. If your evaluation says citation quality matters, production monitoring should track citation failures. If your agent has tools, monitor tool calls and not only final text.</p>
+<h2 id="9-privacy-logging-and-data-boundaries">9. Privacy, Logging, and Data Boundaries</h2>
+<p>LLM systems often touch sensitive data: documents, prompts, user messages, tool outputs, identifiers, and metadata. Deployment requires explicit data boundaries.</p>
+<p>Questions to answer before launch:</p>
+<ul>
+<li>What data is sent to the model provider?</li>
+<li>What is logged?</li>
+<li>How long are logs retained?</li>
+<li>Can logs contain private documents or personal information?</li>
+<li>Who can inspect traces?</li>
+<li>Are retrieved documents filtered by user permissions?</li>
+<li>Can users request deletion or correction?</li>
+<li>Are prompts and outputs used for future training?</li>
+</ul>
+<div class="llm107-two-col">
+  <div class="llm107-panel">
+    <strong>Unsafe habit</strong>
+    <p>Log every prompt and retrieved document by default.</p>
+  </div>
+  <div class="llm107-panel">
+    <strong>Safer habit</strong>
+    <p>Log only what is needed, redact sensitive data, and separate debugging from production retention.</p>
+  </div>
+</div>
+<p>Privacy is not a layer you add at the end. It affects model choice, hosting choice, retrieval permissions, logging, monitoring, and review workflows.</p>
+<h2 id="10-rollouts-and-regression-testing">10. Rollouts and Regression Testing</h2>
+<p>LLM systems should be rolled out like software systems, not like one-off demos.</p>
+<p>Use:</p>
+<ul>
+<li>staging environments;</li>
+<li>fixed evaluation sets;</li>
+<li>canary releases;</li>
+<li>prompt and model versioning;</li>
+<li>rollback plans;</li>
+<li>human review for high-risk outputs;</li>
+<li>monitoring dashboards;</li>
+<li>incident notes when failures occur.</li>
+</ul>
+<div class="llm107-code">Deployment checklist
+<p>Model version: recorded
+Prompt version: recorded
+RAG index version: recorded
+Tool permissions: reviewed
+Evaluation set: passed
+Latency budget: passed
+Cost budget: passed
+Rollback plan: ready
+Monitoring: enabled</div></p>
+<p>The boring versioning details matter. If quality gets worse, you need to know whether the model changed, the prompt changed, the retriever changed, the documents changed, or user behavior changed.</p>
+<h2 id="11-a-practical-deployment-checklist">11. A Practical Deployment Checklist</h2>
+<p>Before shipping an LLM feature, I would check:</p>
+<ol>
+<li><strong>Task definition:</strong> What workflow does this support?</li>
+<li><strong>Model choice:</strong> Why this model, and what is the fallback?</li>
+<li><strong>Prompt versioning:</strong> Can you reproduce a prior output?</li>
+<li><strong>Context design:</strong> What enters the prompt, and why?</li>
+<li><strong>Cost controls:</strong> Are there token, retry, and tool-call budgets?</li>
+<li><strong>Latency controls:</strong> Is streaming, caching, or routing needed?</li>
+<li><strong>Privacy rules:</strong> What data is sent, stored, redacted, or blocked?</li>
+<li><strong>Evaluation:</strong> What local tests must pass before release?</li>
+<li><strong>Monitoring:</strong> What signals show quality, risk, and cost?</li>
+<li><strong>Rollback:</strong> How do you revert a bad model, prompt, or index update?</li>
+</ol>
+<div class="llm107-note">
+  <p>Deployment is where LLM work becomes engineering. A good system is not just impressive on a prompt. It is observable, bounded, affordable, testable, and useful under real conditions.</p>
+</div>
+<p>In the next post, we can look at safety and responsible use: bias, privacy, misuse, transparency, uncertainty, and human oversight.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>
