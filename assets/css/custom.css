@@ -126,6 +126,83 @@
   margin-bottom: 10px;
 }
 
+.timeline-compact .timeline-card h2 {
+  font-size: 1.00rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.timeline-compact .timeline-card {
+  padding: 16px 16px;
+}
+
+.progress-list {
+  margin-top: 34px;
+  max-width: 760px;
+  position: relative;
+}
+
+.progress-list::before {
+  background: currentColor;
+  bottom: 26px;
+  content: "";
+  left: 18px;
+  opacity: 0.22;
+  position: absolute;
+  top: 26px;
+  width: 2px;
+}
+
+.progress-item {
+  align-items: center;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 38px minmax(0, 1fr);
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.progress-marker {
+  align-items: center;
+  background: var(--background-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  color: var(--accent-color);
+  display: flex;
+  font-size: 0.88rem;
+  font-weight: 800;
+  height: 38px;
+  justify-content: center;
+  line-height: 1;
+  position: relative;
+  width: 38px;
+  z-index: 2;
+}
+
+.progress-card {
+  background: var(--background-color);
+  border: 1px solid rgba(128,128,128,0.35);
+  border-radius: 12px;
+  color: inherit;
+  display: block;
+  padding: 13px 16px;
+  text-decoration: none;
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease;
+}
+
+.progress-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transform: translateX(3px);
+}
+
+.progress-card h2 {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
 .horizontal-timeline {
   margin-top: 48px;
   overflow: visible;
@@ -208,6 +285,10 @@
 
   .timeline-card-wrapper {
     width: 100%;
+  }
+
+  .progress-list {
+    max-width: none;
   }
 
   .horizontal-timeline-row,
