@@ -1,0 +1,56 @@
+{{ $pages := .CurrentSection.RegularPages.ByDate }}
+{{ $current := . }}
+{{ $currentIndex := -1 }}
+
+{{ range $index, $page := $pages }}
+    {{ if eq $page.RelPermalink $current.RelPermalink }}
+        {{ $currentIndex = $index }}
+    {{ end }}
+{{ end }}
+
+{{ $prev := false }}
+{{ $next := false }}
+
+{{ if ge $currentIndex 0 }}
+    {{ if gt $currentIndex 0 }}
+        {{ $prev = index $pages (sub $currentIndex 1) }}
+    {{ end }}
+
+    {{ if lt $currentIndex (sub (len $pages) 1) }}
+        {{ $next = index $pages (add $currentIndex 1) }}
+    {{ end }}
+{{ end }}
+
+{{ if or $prev $next }}
+<nav aria-label="Post navigation" class="post-navigation">
+    {{ with $prev }}
+    <div class="prev-post">
+        <p>
+            <a href="{{ .RelPermalink }}">
+                &#8592;
+                {{ i18n "previous" }}:
+                {{ .Title | markdownify }}
+            </a>
+        </p>
+        <p class="prev-post-date">
+            {{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date }}
+        </p>
+    </div>
+    {{ end }}
+
+    {{ with $next }}
+    <div class="next-post">
+        <p>
+            <a href="{{ .RelPermalink }}">
+                {{ i18n "next" }}:
+                {{ .Title | markdownify }}
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            {{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date }}
+        </p>
+    </div>
+    {{ end }}
+</nav>
+{{ end }}
