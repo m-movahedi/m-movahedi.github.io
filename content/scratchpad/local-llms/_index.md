@@ -1,5 +1,4 @@
 ---
-menus : ['main', 'footer']
 title: "Local LLMs"
 draft: false
 view: "timeline-reverse"
