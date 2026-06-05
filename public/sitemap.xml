@@ -2,8 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://m-movahedi.com/blog/practical-local-agent-stack/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/ai-agents/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/ai-tools/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://m-movahedi.com/</loc>
-    <lastmod>2026-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/local-llms/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/mcp/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/ollama/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/</loc>
+    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/mcp-how-local-llms-get-tools-and-context/</loc>
+    <lastmod>2026-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/skills/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/skills-rules-agents-subagents-local-llms/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/subagents/</loc>
+    <lastmod>2026-06-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/antigravity/</loc>
+    <lastmod>2026-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/claude-code/</loc>
+    <lastmod>2026-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/codex/</loc>
+    <lastmod>2026-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/coding-agents/</loc>
+    <lastmod>2026-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/coding-agents-claude-code-codex-antigravity/</loc>
+    <lastmod>2026-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/ai-apis/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/byok/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/openrouter-byok-local-llm-world/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/openrouter/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/ai-models/</loc>
+    <lastmod>2026-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/model-serving/</loc>
+    <lastmod>2026-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/why-the-same-local-llm-is-not-the-same/</loc>
+    <lastmod>2026-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/choosing-a-local-llm-without-guessing/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/model-selection/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/local-llm-toolchain-uv-uvx-ollama-model-files/</loc>
+    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/uv/</loc>
+    <lastmod>2026-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/tags/generative-ai/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://m-movahedi.com/blog/local-llms-101-what-runs-on-your-machine/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://m-movahedi.com/scratchpad/llm/</loc>
     <lastmod>2026-05-08T00:00:00+00:00</lastmod>
@@ -44,9 +134,6 @@
     <loc>https://m-movahedi.com/tags/post-disaster-recovery/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://m-movahedi.com/tags/</loc>
-    <lastmod>2026-02-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://m-movahedi.com/webinars/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -54,9 +141,6 @@
     <lastmod>2025-07-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://m-movahedi.com/research/generative-ai-virtual-reality-a-training-tool/</loc>
-    <lastmod>2025-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://m-movahedi.com/tags/generative-ai/</loc>
     <lastmod>2025-07-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://m-movahedi.com/research/</loc>
@@ -80,8 +164,6 @@
     <loc>https://m-movahedi.com/about/</loc>
   </url><url>
     <loc>https://m-movahedi.com/background/</loc>
-  </url><url>
-    <loc>https://m-movahedi.com/blog/</loc>
   </url><url>
     <loc>https://m-movahedi.com/categories/</loc>
   </url>

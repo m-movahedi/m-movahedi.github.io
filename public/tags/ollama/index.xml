@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ollama on Mohammad Movahedi</title>
+    <link>https://m-movahedi.com/tags/ollama/</link>
+    <description>Recent content in Ollama on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://m-movahedi.com/tags/ollama/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Practical Local Agent Stack</title>
+      <link>https://m-movahedi.com/blog/practical-local-agent-stack/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://m-movahedi.com/blog/practical-local-agent-stack/</guid>
+      <description>&lt;p&gt;After the tools, models, routers, agents, skills, and MCP servers, it helps to put the pieces into one practical stack.&lt;/p&gt;&#xA;&lt;p&gt;The goal is not to build the most complicated local AI system. The goal is to build a workflow you can understand, debug, and improve.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-start-local-add-power-only-when-needed&#34;&gt;Mental model: start local, add power only when needed&lt;/h2&gt;&#xA;&lt;p&gt;A practical beginner stack has layers:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Layer&lt;/th&gt;&#xA;          &lt;th&gt;Default choice&lt;/th&gt;&#xA;          &lt;th&gt;Why&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Runtime&lt;/td&gt;&#xA;          &lt;td&gt;Ollama or another beginner-friendly local server&lt;/td&gt;&#xA;          &lt;td&gt;Gets a model running quickly&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Model&lt;/td&gt;&#xA;          &lt;td&gt;Small or medium instruct model&lt;/td&gt;&#xA;          &lt;td&gt;Establishes a stable baseline&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;API shape&lt;/td&gt;&#xA;          &lt;td&gt;OpenAI-compatible endpoint when possible&lt;/td&gt;&#xA;          &lt;td&gt;Works with many clients&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Evaluation&lt;/td&gt;&#xA;          &lt;td&gt;Fixed prompt set&lt;/td&gt;&#xA;          &lt;td&gt;Prevents vibe-based model choice&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Tools&lt;/td&gt;&#xA;          &lt;td&gt;MCP servers or app-native tools&lt;/td&gt;&#xA;          &lt;td&gt;Adds controlled access to context&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Instructions&lt;/td&gt;&#xA;          &lt;td&gt;Rules, skills, or project notes&lt;/td&gt;&#xA;          &lt;td&gt;Makes behavior repeatable&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hosted fallback&lt;/td&gt;&#xA;          &lt;td&gt;OpenRouter or direct provider API&lt;/td&gt;&#xA;          &lt;td&gt;Handles tasks local models cannot&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coding agent&lt;/td&gt;&#xA;          &lt;td&gt;Claude Code, Codex, Antigravity, or another tool&lt;/td&gt;&#xA;          &lt;td&gt;Handles repository actions and verification&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Build the stack one layer at a time. If you cannot explain what a layer does, do not add it yet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Local LLM Toolchain: uv, uvx, Ollama, and Model Files</title>
+      <link>https://m-movahedi.com/blog/local-llm-toolchain-uv-uvx-ollama-model-files/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://m-movahedi.com/blog/local-llm-toolchain-uv-uvx-ollama-model-files/</guid>
+      <description>&lt;p&gt;A local LLM setup can feel messy because several tools appear at once: Python environments, command-line utilities, model downloaders, model runtimes, chat interfaces, and APIs. The trick is to separate the toolchain into jobs.&lt;/p&gt;&#xA;&lt;p&gt;For a beginner, four ideas are enough to get oriented: &lt;code&gt;uv&lt;/code&gt;, &lt;code&gt;uvx&lt;/code&gt;, Ollama, and model files.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-tools-install-things-runtimes-run-models&#34;&gt;Mental model: tools install things, runtimes run models&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;uv&lt;/code&gt; helps manage Python projects, Python versions, dependencies, and Python command-line tools. Ollama runs language models and exposes them through a local API. A model file contains the model weights and metadata that the runtime needs.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

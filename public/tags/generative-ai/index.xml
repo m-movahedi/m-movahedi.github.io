@@ -6,8 +6,15 @@
     <description>Recent content in Generative-AI on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 08 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://m-movahedi.com/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local LLMs 101: What Runs on Your Machine</title>
+      <link>https://m-movahedi.com/blog/local-llms-101-what-runs-on-your-machine/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://m-movahedi.com/blog/local-llms-101-what-runs-on-your-machine/</guid>
+      <description>&lt;p&gt;Local large language models are exciting because they move part of the AI stack onto your own computer. Instead of sending every prompt to a remote service, you download a model, run it through a local runtime, and talk to it from an app, terminal, editor, or API.&lt;/p&gt;&#xA;&lt;p&gt;The beginner mistake is to ask, &amp;ldquo;What is the best local model?&amp;rdquo; The better first question is: &lt;strong&gt;what can this machine actually run well enough to be useful?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Generative AI &#43; Virtual Reality: A training tool</title>
       <link>https://m-movahedi.com/research/generative-ai-virtual-reality-a-training-tool/</link>
