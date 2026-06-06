@@ -10,9 +10,9 @@
     <atom:link href="https://m-movahedi.com/tags/model-selection/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Choosing a Model Without Guessing</title>
-      <link>https://m-movahedi.com/scratchpad/local-llms/choosing-a-local-llm-without-guessing/</link>
+      <link>https://m-movahedi.com/blog/choosing-a-local-llm-without-guessing/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/scratchpad/local-llms/choosing-a-local-llm-without-guessing/</guid>
+      <guid>https://m-movahedi.com/blog/choosing-a-local-llm-without-guessing/</guid>
       <description>&lt;p&gt;Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small models, giant models, quantized models, preview models: it is a lot.&lt;/p&gt;&#xA;&lt;p&gt;The goal is not to memorize every release. The goal is to choose a model with a reason.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-model-choice-is-task-fit-plus-hardware-fit&#34;&gt;Mental model: model choice is task fit plus hardware fit&lt;/h2&gt;&#xA;&lt;p&gt;A useful model is the intersection of three things:&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,185 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Mohammad Movahedi</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://m-movahedi.com/tags/</link>
     <description>Recent content in Tags on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://m-movahedi.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Agents</title>
-      <link>http://localhost:1313/tags/ai-agents/</link>
+      <link>https://m-movahedi.com/tags/ai-agents/</link>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai-agents/</guid>
+      <guid>https://m-movahedi.com/tags/ai-agents/</guid>
       <description></description>
     </item>
     <item>
       <title>AI Tools</title>
-      <link>http://localhost:1313/tags/ai-tools/</link>
+      <link>https://m-movahedi.com/tags/ai-tools/</link>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai-tools/</guid>
+      <guid>https://m-movahedi.com/tags/ai-tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Local LLMs</title>
-      <link>http://localhost:1313/tags/local-llms/</link>
+      <link>https://m-movahedi.com/tags/local-llms/</link>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/local-llms/</guid>
+      <guid>https://m-movahedi.com/tags/local-llms/</guid>
       <description></description>
     </item>
     <item>
       <title>MCP</title>
-      <link>http://localhost:1313/tags/mcp/</link>
+      <link>https://m-movahedi.com/tags/mcp/</link>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mcp/</guid>
+      <guid>https://m-movahedi.com/tags/mcp/</guid>
       <description></description>
     </item>
     <item>
       <title>Ollama</title>
-      <link>http://localhost:1313/tags/ollama/</link>
+      <link>https://m-movahedi.com/tags/ollama/</link>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ollama/</guid>
+      <guid>https://m-movahedi.com/tags/ollama/</guid>
       <description></description>
     </item>
     <item>
       <title>Skills</title>
-      <link>http://localhost:1313/tags/skills/</link>
+      <link>https://m-movahedi.com/tags/skills/</link>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/skills/</guid>
+      <guid>https://m-movahedi.com/tags/skills/</guid>
       <description></description>
     </item>
     <item>
       <title>Subagents</title>
-      <link>http://localhost:1313/tags/subagents/</link>
+      <link>https://m-movahedi.com/tags/subagents/</link>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/subagents/</guid>
+      <guid>https://m-movahedi.com/tags/subagents/</guid>
       <description></description>
     </item>
     <item>
       <title>Antigravity</title>
-      <link>http://localhost:1313/tags/antigravity/</link>
+      <link>https://m-movahedi.com/tags/antigravity/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/antigravity/</guid>
+      <guid>https://m-movahedi.com/tags/antigravity/</guid>
       <description></description>
     </item>
     <item>
       <title>Claude Code</title>
-      <link>http://localhost:1313/tags/claude-code/</link>
+      <link>https://m-movahedi.com/tags/claude-code/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/claude-code/</guid>
+      <guid>https://m-movahedi.com/tags/claude-code/</guid>
       <description></description>
     </item>
     <item>
       <title>Codex</title>
-      <link>http://localhost:1313/tags/codex/</link>
+      <link>https://m-movahedi.com/tags/codex/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/codex/</guid>
+      <guid>https://m-movahedi.com/tags/codex/</guid>
       <description></description>
     </item>
     <item>
       <title>Coding Agents</title>
-      <link>http://localhost:1313/tags/coding-agents/</link>
+      <link>https://m-movahedi.com/tags/coding-agents/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/coding-agents/</guid>
+      <guid>https://m-movahedi.com/tags/coding-agents/</guid>
       <description></description>
     </item>
     <item>
       <title>AI APIs</title>
-      <link>http://localhost:1313/tags/ai-apis/</link>
+      <link>https://m-movahedi.com/tags/ai-apis/</link>
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai-apis/</guid>
+      <guid>https://m-movahedi.com/tags/ai-apis/</guid>
       <description></description>
     </item>
     <item>
       <title>BYOK</title>
-      <link>http://localhost:1313/tags/byok/</link>
+      <link>https://m-movahedi.com/tags/byok/</link>
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/byok/</guid>
+      <guid>https://m-movahedi.com/tags/byok/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenRouter</title>
-      <link>http://localhost:1313/tags/openrouter/</link>
+      <link>https://m-movahedi.com/tags/openrouter/</link>
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/openrouter/</guid>
+      <guid>https://m-movahedi.com/tags/openrouter/</guid>
       <description></description>
     </item>
     <item>
       <title>AI Models</title>
-      <link>http://localhost:1313/tags/ai-models/</link>
+      <link>https://m-movahedi.com/tags/ai-models/</link>
       <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai-models/</guid>
+      <guid>https://m-movahedi.com/tags/ai-models/</guid>
       <description></description>
     </item>
     <item>
       <title>Model Serving</title>
-      <link>http://localhost:1313/tags/model-serving/</link>
+      <link>https://m-movahedi.com/tags/model-serving/</link>
       <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/model-serving/</guid>
+      <guid>https://m-movahedi.com/tags/model-serving/</guid>
       <description></description>
     </item>
     <item>
       <title>Model Selection</title>
-      <link>http://localhost:1313/tags/model-selection/</link>
+      <link>https://m-movahedi.com/tags/model-selection/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/model-selection/</guid>
+      <guid>https://m-movahedi.com/tags/model-selection/</guid>
       <description></description>
     </item>
     <item>
       <title>Uv</title>
-      <link>http://localhost:1313/tags/uv/</link>
+      <link>https://m-movahedi.com/tags/uv/</link>
       <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/uv/</guid>
+      <guid>https://m-movahedi.com/tags/uv/</guid>
       <description></description>
     </item>
     <item>
-      <title>Generative AI</title>
-      <link>http://localhost:1313/tags/generative-ai/</link>
+      <title>Generative-AI</title>
+      <link>https://m-movahedi.com/tags/generative-ai/</link>
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/generative-ai/</guid>
+      <guid>https://m-movahedi.com/tags/generative-ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Disaster Resilience</title>
-      <link>http://localhost:1313/tags/disaster-resilience/</link>
+      <link>https://m-movahedi.com/tags/disaster-resilience/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/disaster-resilience/</guid>
+      <guid>https://m-movahedi.com/tags/disaster-resilience/</guid>
       <description></description>
     </item>
     <item>
       <title>Post-Disaster-Recovery</title>
-      <link>http://localhost:1313/tags/post-disaster-recovery/</link>
+      <link>https://m-movahedi.com/tags/post-disaster-recovery/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/post-disaster-recovery/</guid>
+      <guid>https://m-movahedi.com/tags/post-disaster-recovery/</guid>
       <description></description>
     </item>
     <item>
       <title>Asset Management</title>
-      <link>http://localhost:1313/tags/asset-management/</link>
+      <link>https://m-movahedi.com/tags/asset-management/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/asset-management/</guid>
+      <guid>https://m-movahedi.com/tags/asset-management/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtual Reality</title>
-      <link>http://localhost:1313/tags/virtual-reality/</link>
+      <link>https://m-movahedi.com/tags/virtual-reality/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/virtual-reality/</guid>
+      <guid>https://m-movahedi.com/tags/virtual-reality/</guid>
       <description></description>
     </item>
     <item>
       <title>Transportation Planning</title>
-      <link>http://localhost:1313/tags/transportation-planning/</link>
+      <link>https://m-movahedi.com/tags/transportation-planning/</link>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/transportation-planning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Knowledge Graph</title>
-      <link>http://localhost:1313/tags/knowledge-graph/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/knowledge-graph/</guid>
+      <guid>https://m-movahedi.com/tags/transportation-planning/</guid>
       <description></description>
     </item>
   </channel>
