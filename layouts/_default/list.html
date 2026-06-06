@@ -11,12 +11,13 @@
 {{ if eq .Params.view "grid" }}
 
 <div class="blog-grid">
+  {{ $sectionImage := .Params.featured_image | default .Params.image }}
   {{ range .Pages }}
-  <a class="blog-card" href="{{ .RelPermalink }}">
+  {{ $cardImage := .Params.featured_image | default .Params.image | default $sectionImage }}
+  <a class="blog-card{{ with $cardImage }} has-card-image{{ end }}" href="{{ .RelPermalink }}"{{ with $cardImage }} style="{{ printf "--card-image: url('%s');" . | safeCSS }}"{{ end }}>
     <div class="blog-card-content">
       <h2>{{ .Title }}</h2>
       {{ with .Date }}<p class="blog-date">{{ .Format "Jan 2, 2006" }}</p>{{ end }}
-      {{ with .Summary }}<p>{{ . }}</p>{{ end }}
     </div>
   </a>
   {{ end }}

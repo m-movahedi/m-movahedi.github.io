@@ -3,6 +3,7 @@
   --dark-secondary-color: #2d333b;
   --dark-tertiary-color: #646464;
   --dark-text-color: white;
+  --card-fade-rgb: var(--dark-primary-color);
 }
 
 html {

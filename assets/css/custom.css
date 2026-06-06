@@ -23,18 +23,52 @@
 }
 
 .blog-card {
+    display: block;
     text-decoration: none;
     color: inherit;
 }
 
 .blog-card-content {
+    background: rgba(var(--card-fade-rgb, var(--light-primary-color)), 0.78);
     border: 1px solid var(--border-color);
     border-radius: 18px;
     padding: 24px;
     height: 250px;
     overflow: hidden;
+    isolation: isolate;
+    position: relative;
     transition: transform 0.15s ease,
                 box-shadow 0.15s ease;
+}
+
+.has-card-image .blog-card-content::before {
+    background-image: var(--card-image);
+    background-position: center;
+    background-size: cover;
+    content: "";
+    filter: blur(6px);
+    inset: -6px;
+    opacity: 0.9;
+    position: absolute;
+    transform: scale(1.02);
+    transition: opacity 0.15s ease,
+                transform 0.15s ease;
+    z-index: 0;
+}
+
+.has-card-image .blog-card-content::after {
+    background:
+        linear-gradient(180deg, rgba(var(--card-fade-rgb, var(--light-primary-color)), 0.46), rgba(var(--card-fade-rgb, var(--light-primary-color)), 0.18)),
+        linear-gradient(135deg, rgba(var(--card-fade-rgb, var(--light-primary-color)), 0.5), rgba(var(--card-fade-rgb, var(--light-primary-color)), 0.08));
+    content: "";
+    inset: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.has-card-image .blog-card-content > * {
+    position: relative;
+    z-index: 2;
 }
 
 .blog-card-content:hover {
@@ -42,10 +76,20 @@
     box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
-.blog-date {
+.has-card-image .blog-card-content:hover::before {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.blog-card-content .blog-date {
     opacity: 0.7;
     font-size: 0.9rem;
-    margin-bottom: 12px;
+    bottom: 20px;
+    margin: 0;
+    position: absolute;
+    right: 24px;
+    text-align: right;
+    z-index: 2;
 }
 
 
