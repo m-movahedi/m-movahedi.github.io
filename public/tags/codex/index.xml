@@ -10,9 +10,9 @@
     <atom:link href="https://m-movahedi.com/tags/codex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coding Agents: Claude Code, Codex, and Antigravity</title>
-      <link>https://m-movahedi.com/blog/coding-agents-claude-code-codex-antigravity/</link>
+      <link>https://m-movahedi.com/scratchpad/local-llms/coding-agents-claude-code-codex-antigravity/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/blog/coding-agents-claude-code-codex-antigravity/</guid>
+      <guid>https://m-movahedi.com/scratchpad/local-llms/coding-agents-claude-code-codex-antigravity/</guid>
       <description>&lt;p&gt;A chat model answers questions. A coding agent works inside a software environment. That difference sounds small until the agent starts reading files, editing code, running tests, opening browsers, creating commits, and explaining what changed.&lt;/p&gt;&#xA;&lt;p&gt;Claude Code, Codex, and Google Antigravity are examples of agentic coding tools. They do not replace local LLM runtimes, but they show what happens when a model is wrapped in tools, permissions, project context, and verification loops.&lt;/p&gt;</description>
     </item>
   </channel>

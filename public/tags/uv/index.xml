@@ -10,9 +10,9 @@
     <atom:link href="https://m-movahedi.com/tags/uv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Local LLM Toolchain: uv, uvx, Ollama, and Model Files</title>
-      <link>https://m-movahedi.com/blog/local-llm-toolchain-uv-uvx-ollama-model-files/</link>
+      <link>https://m-movahedi.com/scratchpad/local-llms/local-llm-toolchain-uv-uvx-ollama-model-files/</link>
       <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/blog/local-llm-toolchain-uv-uvx-ollama-model-files/</guid>
+      <guid>https://m-movahedi.com/scratchpad/local-llms/local-llm-toolchain-uv-uvx-ollama-model-files/</guid>
       <description>&lt;p&gt;A local LLM setup can feel messy because several tools appear at once: Python environments, command-line utilities, model downloaders, model runtimes, chat interfaces, and APIs. The trick is to separate the toolchain into jobs.&lt;/p&gt;&#xA;&lt;p&gt;For a beginner, four ideas are enough to get oriented: &lt;code&gt;uv&lt;/code&gt;, &lt;code&gt;uvx&lt;/code&gt;, Ollama, and model files.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-tools-install-things-runtimes-run-models&#34;&gt;Mental model: tools install things, runtimes run models&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;uv&lt;/code&gt; helps manage Python projects, Python versions, dependencies, and Python command-line tools. Ollama runs language models and exposes them through a local API. A model file contains the model weights and metadata that the runtime needs.&lt;/p&gt;</description>
     </item>
   </channel>

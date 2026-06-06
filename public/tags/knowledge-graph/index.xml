@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge Graph on Mohammad Movahedi</title>
+    <link>https://m-movahedi.com/tags/knowledge-graph/</link>
+    <description>Recent content in Knowledge Graph on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://m-movahedi.com/tags/knowledge-graph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Knowledge Graph for Local LLMs</title>
+      <link>https://m-movahedi.com/blog/local-llm-knowledge-graph/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://m-movahedi.com/blog/local-llm-knowledge-graph/</guid>
+      <description>&lt;p&gt;Local LLMs are easier to understand when the pieces are shown as a system instead of a list. A model does not exist alone. It sits inside a stack of hardware, runtimes, file formats, prompts, tools, permissions, and sometimes hosted fallback.&lt;/p&gt;&#xA;&lt;p&gt;This post turns the local LLM series into an HTML-based knowledge graph. Click a node to see what it depends on. Use the filters to focus on one part of the system.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
