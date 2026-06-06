@@ -4,4 +4,4 @@ title: "Research"
 draft: false
 ---
 
-Notes, essays, and updates.
+Funded research projects and papers

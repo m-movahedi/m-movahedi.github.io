@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,22 +22,22 @@
     <meta name="description" content="In LLM 107, we looked at deployment: latency, cost, monitoring, privacy, and the engineering work needed to move from a prototype to a running system. This post …">
     <meta name="keywords" content=''>
 
-    <meta property="og:url" content="http://localhost:1313/scratchpad/llm/llm-108/">
+    <meta property="og:url" content="http://127.0.0.1:1314/scratchpad/llm/llm-108/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="LLM 108: Safety, Privacy, Bias, and Responsible Use">
     <meta property="og:description" content="In LLM 107, we looked at deployment: latency, cost, monitoring, privacy, and the engineering work needed to move from a prototype to a running system. This post …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://127.0.0.1:1314/images/profile.png">
+    <meta property="og:image:secure_url" content="http://127.0.0.1:1314/images/profile.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LLM 108: Safety, Privacy, Bias, and Responsible Use">
     <meta name="twitter:description" content="In LLM 107, we looked at deployment: latency, cost, monitoring, privacy, and the engineering work needed to move from a prototype to a running system. This post …">
-    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/llm/llm-108/">
-    <meta property="twitter:url" content="http://localhost:1313/scratchpad/llm/llm-108/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta property="twitter:domain" content="http://127.0.0.1:1314/scratchpad/llm/llm-108/">
+    <meta property="twitter:url" content="http://127.0.0.1:1314/scratchpad/llm/llm-108/">
+    <meta name="twitter:image" content="http://127.0.0.1:1314/images/profile.png">
 
     
-    <link rel="canonical" href="http://localhost:1313/scratchpad/llm/llm-108/">
+    <link rel="canonical" href="http://127.0.0.1:1314/scratchpad/llm/llm-108/">
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -86,44 +86,44 @@ gtag('config', 'G-1WZSE8DHZ9');
 
         
         <div class="avatar">
-            <a href="http://localhost:1313/">
+            <a href="http://127.0.0.1:1314/">
                 <img src='/images/profile.png' alt="Mohammad Movahedi">
             </a>
         </div>
         
 
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+            <a class="nav-brand" href="http://127.0.0.1:1314/">Mohammad Movahedi</a>
         </div>
 
         <div class="nav-links">
             
             <div class="nav-link">
-                <a href="http://localhost:1313/" aria-label="" > Home </a>
+                <a href="http://127.0.0.1:1314/" aria-label="" > Home </a>
             </div>
             
             <div class="nav-link">
-                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+                <a href="http://127.0.0.1:1314/background/" aria-label="" > Background </a>
             </div>
             
             <div class="nav-link">
-                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+                <a href="http://127.0.0.1:1314/webinars/" aria-label="" > Webinars </a>
             </div>
             
             <div class="nav-link">
-                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+                <a href="http://127.0.0.1:1314/research/" aria-label="" > Research </a>
             </div>
             
             <div class="nav-link">
-                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+                <a href="http://127.0.0.1:1314/blog/" aria-label="" > Blog </a>
             </div>
             
             <div class="nav-link">
-                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+                <a href="http://127.0.0.1:1314/scratchpad/" aria-label="" > Scratchpad </a>
             </div>
             
             <div class="nav-link">
-                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+                <a href="http://127.0.0.1:1314/about/" aria-label="" > About </a>
             </div>
             
 
@@ -146,31 +146,31 @@ gtag('config', 'G-1WZSE8DHZ9');
             <ul class="nav-hamburger-list visibility-hidden">
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/" > Home </a>
+                    <a href="http://127.0.0.1:1314/" > Home </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/background/" > Background </a>
+                    <a href="http://127.0.0.1:1314/background/" > Background </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                    <a href="http://127.0.0.1:1314/webinars/" > Webinars </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/research/" > Research </a>
+                    <a href="http://127.0.0.1:1314/research/" > Research </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/blog/" > Blog </a>
+                    <a href="http://127.0.0.1:1314/blog/" > Blog </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                    <a href="http://127.0.0.1:1314/scratchpad/" > Scratchpad </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/about/" > About </a>
+                    <a href="http://127.0.0.1:1314/about/" > About </a>
                 </li>
                 
                 <li class="nav-item dark-theme-toggle">

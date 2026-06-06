@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction to LLM on Mohammad Movahedi</title>
-    <link>http://localhost:1313/scratchpad/llm/</link>
+    <link>http://127.0.0.1:1314/scratchpad/llm/</link>
     <description>Recent content in Introduction to LLM on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/scratchpad/llm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://127.0.0.1:1314/scratchpad/llm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LLM 108: Safety, Privacy, Bias, and Responsible Use</title>
-      <link>http://localhost:1313/scratchpad/llm/llm-108/</link>
+      <link>http://127.0.0.1:1314/scratchpad/llm/llm-108/</link>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/llm/llm-108/</guid>
+      <guid>http://127.0.0.1:1314/scratchpad/llm/llm-108/</guid>
       <description>&lt;p&gt;In LLM 107, we looked at deployment: latency, cost, monitoring, privacy, and the engineering work needed to move from a prototype to a running system. This post focuses on responsible use.&lt;/p&gt;&#xA;&lt;p&gt;LLM safety is not one single problem. It includes truthfulness, bias, privacy, misuse, security, transparency, environmental cost, user trust, and human oversight. The practical question is not &amp;ldquo;Is this model safe?&amp;rdquo; in the abstract. The better question is: &lt;strong&gt;safe enough for which task, under which constraints, with which users, and with which failure plan?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLM 107: Deployment, Cost, Latency, and Monitoring</title>
-      <link>http://localhost:1313/scratchpad/llm/llm-107/</link>
+      <link>http://127.0.0.1:1314/scratchpad/llm/llm-107/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/llm/llm-107/</guid>
+      <guid>http://127.0.0.1:1314/scratchpad/llm/llm-107/</guid>
       <description>&lt;p&gt;In LLM 106, we looked at fine-tuning and adaptation. That gave us a way to change model behavior when prompting, retrieval, and tools are not enough. Now we move from model behavior to system behavior.&lt;/p&gt;&#xA;&lt;p&gt;An LLM prototype can be a notebook, a prompt, and a few examples. A deployed LLM system is different. It has users, latency expectations, costs, logs, privacy constraints, model updates, failures, and maintenance work. This post focuses on the practical side: model choice, inference cost, serving, caching, monitoring, privacy, and operational reliability.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLM 106: Fine-Tuning, Adaptation, and When to Train</title>
-      <link>http://localhost:1313/scratchpad/llm/llm-106/</link>
+      <link>http://127.0.0.1:1314/scratchpad/llm/llm-106/</link>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/llm/llm-106/</guid>
+      <guid>http://127.0.0.1:1314/scratchpad/llm/llm-106/</guid>
       <description>&lt;p&gt;In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you know where a model fails, you can decide how to improve it.&lt;/p&gt;&#xA;&lt;p&gt;The tempting answer is often &amp;ldquo;fine-tune it.&amp;rdquo; Sometimes that is right. Often it is not. Many LLM problems are better solved with a clearer prompt, better retrieval, a tool call, stronger evaluation, or a narrower workflow. Fine-tuning is powerful, but it is not magic. It changes model behavior; it does not automatically add fresh facts, guarantee truthfulness, or replace system design.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLM 105: Evaluation, Benchmarks, and Measuring Usefulness</title>
-      <link>http://localhost:1313/scratchpad/llm/llm-105/</link>
+      <link>http://127.0.0.1:1314/scratchpad/llm/llm-105/</link>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/llm/llm-105/</guid>
+      <guid>http://127.0.0.1:1314/scratchpad/llm/llm-105/</guid>
       <description>&lt;p&gt;In LLM 104, we looked at agents, tools, memory, and guardrails. That raises the question every serious LLM system eventually faces: &lt;strong&gt;how do we know if it is actually good?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Evaluation is harder than it looks. A model can sound fluent while being wrong. A RAG system can cite sources while missing the best evidence. An agent can complete a task but take too many steps, use the wrong tools, or create avoidable risk. Good evaluation is not just a leaderboard score. It is a measurement plan tied to the task you care about.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLM 104: Agents, Tools, Memory, and Guardrails</title>
-      <link>http://localhost:1313/scratchpad/llm/llm-104/</link>
+      <link>http://127.0.0.1:1314/scratchpad/llm/llm-104/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/llm/llm-104/</guid>
+      <guid>http://127.0.0.1:1314/scratchpad/llm/llm-104/</guid>
       <description>&lt;p&gt;In LLM 103, we treated Retrieval-Augmented Generation (RAG) as an evidence pipeline. The model receives a question, the system retrieves relevant documents, and the model answers from those sources. That is already more than a plain chatbot.&lt;/p&gt;&#xA;&lt;p&gt;This post goes one step further: &lt;strong&gt;LLM agents&lt;/strong&gt;. An agent is an LLM-powered system that can choose actions, call tools, observe results, keep state, and continue working toward a goal. Agents can be useful, but they are also easy to overbuild. Most problems do not need a fully autonomous loop. They need a small, reliable workflow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLM 103: Retrieval-Augmented Generation in Practice</title>
-      <link>http://localhost:1313/scratchpad/llm/llm-103/</link>
+      <link>http://127.0.0.1:1314/scratchpad/llm/llm-103/</link>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/llm/llm-103/</guid>
+      <guid>http://127.0.0.1:1314/scratchpad/llm/llm-103/</guid>
       <description>&lt;p&gt;In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We will look at how a RAG system actually works: embeddings, chunking, vector search, reranking, prompt assembly, citations, and evaluation.&lt;/p&gt;&#xA;&lt;p&gt;The basic idea is simple: when the model needs knowledge, do not ask it to rely only on its parameters. Retrieve relevant evidence, place that evidence into the context window, and ask the model to answer from that evidence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLM 102: Prompting, Context, RAG, and Hallucinations</title>
-      <link>http://localhost:1313/scratchpad/llm/llm-102/</link>
+      <link>http://127.0.0.1:1314/scratchpad/llm/llm-102/</link>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/llm/llm-102/</guid>
+      <guid>http://127.0.0.1:1314/scratchpad/llm/llm-102/</guid>
       <description>&lt;p&gt;In the first post, we looked at transformers, token prediction, training, inference, and model parameters. That gives us the machinery. Now we can ask a more practical question: &lt;strong&gt;how do people actually use LLMs well?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This post focuses on the layer between the model and the user: prompting, context windows, retrieval-augmented generation, tool use, and hallucinations. These ideas matter because the raw model is only part of an LLM system. The prompt, surrounding context, retrieved evidence, decoding settings, and external tools all shape the final answer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LLM 101: Transformers, Training, and Inference</title>
-      <link>http://localhost:1313/scratchpad/llm/llm-101/</link>
+      <link>http://127.0.0.1:1314/scratchpad/llm/llm-101/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/llm/llm-101/</guid>
+      <guid>http://127.0.0.1:1314/scratchpad/llm/llm-101/</guid>
       <description>&lt;p&gt;Large Language Models (LLMs) can look mysterious from the outside: you type a prompt, the model writes back, and the response often feels more like conversation than computation. Under the hood, though, the core idea is surprisingly concrete. Most modern LLMs are built from &lt;strong&gt;transformers&lt;/strong&gt;, trained to predict text one token at a time, and used during inference to repeatedly choose the next likely token.&lt;/p&gt;&#xA;&lt;p&gt;This post is the first in a short series. We will start with transformers, then move into how LLMs learn, how they generate text, why training and inference are different, and what people mean when they talk about model parameters.&lt;/p&gt;</description>
     </item>
   </channel>

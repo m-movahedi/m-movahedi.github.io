@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI Tools on Mohammad Movahedi</title>
-    <link>http://localhost:57889/tags/ai-tools/</link>
+    <link>https://m-movahedi.com/tags/ai-tools/</link>
     <description>Recent content in AI Tools on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:57889/tags/ai-tools/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://m-movahedi.com/tags/ai-tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Local LLMs 209: A Practical Local Agent Stack</title>
-      <link>http://localhost:57889/scratchpad/local-llms/local-llms-209-practical-local-agent-stack/</link>
+      <link>https://m-movahedi.com/scratchpad/local-llms/local-llms-209-practical-local-agent-stack/</link>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57889/scratchpad/local-llms/local-llms-209-practical-local-agent-stack/</guid>
+      <guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-209-practical-local-agent-stack/</guid>
       <description>&lt;p&gt;After the tools, models, routers, agents, skills, and MCP servers, it helps to put the pieces into one practical stack.&lt;/p&gt;&#xA;&lt;p&gt;The goal is not to build the most complicated local AI system. The goal is to build a workflow you can understand, debug, and improve.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-start-local-add-power-only-when-needed&#34;&gt;Mental model: start local, add power only when needed&lt;/h2&gt;&#xA;&lt;p&gt;A practical beginner stack has layers:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Layer&lt;/th&gt;&#xA;          &lt;th&gt;Default choice&lt;/th&gt;&#xA;          &lt;th&gt;Why&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Runtime&lt;/td&gt;&#xA;          &lt;td&gt;Ollama or another beginner-friendly local server&lt;/td&gt;&#xA;          &lt;td&gt;Gets a model running quickly&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Model&lt;/td&gt;&#xA;          &lt;td&gt;Small or medium instruct model&lt;/td&gt;&#xA;          &lt;td&gt;Establishes a stable baseline&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;API shape&lt;/td&gt;&#xA;          &lt;td&gt;OpenAI-compatible endpoint when possible&lt;/td&gt;&#xA;          &lt;td&gt;Works with many clients&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Evaluation&lt;/td&gt;&#xA;          &lt;td&gt;Fixed prompt set&lt;/td&gt;&#xA;          &lt;td&gt;Prevents vibe-based model choice&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Tools&lt;/td&gt;&#xA;          &lt;td&gt;MCP servers or app-native tools&lt;/td&gt;&#xA;          &lt;td&gt;Adds controlled access to context&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Instructions&lt;/td&gt;&#xA;          &lt;td&gt;Rules, skills, or project notes&lt;/td&gt;&#xA;          &lt;td&gt;Makes behavior repeatable&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hosted fallback&lt;/td&gt;&#xA;          &lt;td&gt;OpenRouter or direct provider API&lt;/td&gt;&#xA;          &lt;td&gt;Handles tasks local models cannot&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coding agent&lt;/td&gt;&#xA;          &lt;td&gt;Claude Code, Codex, Antigravity, or another tool&lt;/td&gt;&#xA;          &lt;td&gt;Handles repository actions and verification&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Build the stack one layer at a time. If you cannot explain what a layer does, do not add it yet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local LLMs 208: MCP and How Local LLMs Get Tools and Context</title>
-      <link>http://localhost:57889/scratchpad/local-llms/local-llms-208-mcp-how-local-llms-get-tools-and-context/</link>
+      <link>https://m-movahedi.com/scratchpad/local-llms/local-llms-208-mcp-how-local-llms-get-tools-and-context/</link>
       <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57889/scratchpad/local-llms/local-llms-208-mcp-how-local-llms-get-tools-and-context/</guid>
+      <guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-208-mcp-how-local-llms-get-tools-and-context/</guid>
       <description>&lt;p&gt;A local model by itself only sees the prompt you give it. It cannot read your files, inspect GitHub issues, search a database, or check a calendar unless something connects it to those sources.&lt;/p&gt;&#xA;&lt;p&gt;MCP, the Model Context Protocol, is one way to standardize that connection.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-mcp-is-a-tool-plug&#34;&gt;Mental model: MCP is a tool plug&lt;/h2&gt;&#xA;&lt;p&gt;Anthropic&amp;rsquo;s MCP documentation describes MCP as an open protocol that standardizes how applications provide context to LLMs. The common analogy is a standard connector between AI applications and data or tools.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local LLMs 202: The Local LLM Toolchain: uv, uvx, Ollama, and Model Files</title>
-      <link>http://localhost:57889/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/</link>
+      <link>https://m-movahedi.com/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/</link>
       <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57889/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/</guid>
+      <guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/</guid>
       <description>&lt;p&gt;A local LLM setup can feel messy because several tools appear at once: Python environments, command-line utilities, model downloaders, model runtimes, chat interfaces, and APIs. The trick is to separate the toolchain into jobs.&lt;/p&gt;&#xA;&lt;p&gt;For a beginner, four ideas are enough to get oriented: &lt;code&gt;uv&lt;/code&gt;, &lt;code&gt;uvx&lt;/code&gt;, Ollama, and model files.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-tools-install-things-runtimes-run-models&#34;&gt;Mental model: tools install things, runtimes run models&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;uv&lt;/code&gt; helps manage Python projects, Python versions, dependencies, and Python command-line tools. Ollama runs language models and exposes them through a local API. A model file contains the model weights and metadata that the runtime needs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local LLMs 201: What Runs on Your Machine</title>
-      <link>http://localhost:57889/scratchpad/local-llms/local-llms-201-what-runs-on-your-machine/</link>
+      <link>https://m-movahedi.com/scratchpad/local-llms/local-llms-201-what-runs-on-your-machine/</link>
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57889/scratchpad/local-llms/local-llms-201-what-runs-on-your-machine/</guid>
+      <guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-201-what-runs-on-your-machine/</guid>
       <description>&lt;p&gt;Local large language models are exciting because they move part of the AI stack onto your own computer. Instead of sending every prompt to a remote service, you download a model, run it through a local runtime, and talk to it from an app, terminal, editor, or API.&lt;/p&gt;&#xA;&lt;p&gt;The beginner mistake is to ask, &amp;ldquo;What is the best local model?&amp;rdquo; The better first question is: &lt;strong&gt;what can this machine actually run well enough to be useful?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

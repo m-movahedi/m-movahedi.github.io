@@ -5,4 +5,4 @@ view: "timeline"
 draft: false
 ---
 
-Notes, essays, and updates.
+Recorded webinars and online events I hosted.
