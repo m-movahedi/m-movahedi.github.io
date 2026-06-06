@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>MCP: How Local LLMs Get Tools and Context</title>
+    <meta name="description" content="A local model by itself only sees the prompt you give it. It cannot read your files, inspect GitHub issues, search a database, or check a calendar unless …">
+    <meta name="keywords" content='MCP, AI Agents, Local LLMs, AI Tools'>
+
+    <meta property="og:url" content="http://127.0.0.1:1314/scratchpad/local-llms/mcp-how-local-llms-get-tools-and-context/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MCP: How Local LLMs Get Tools and Context">
+    <meta property="og:description" content="A local model by itself only sees the prompt you give it. It cannot read your files, inspect GitHub issues, search a database, or check a calendar unless …">
+    <meta property="og:image" content="http://127.0.0.1:1314/images/profile.png">
+    <meta property="og:image:secure_url" content="http://127.0.0.1:1314/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MCP: How Local LLMs Get Tools and Context">
+    <meta name="twitter:description" content="A local model by itself only sees the prompt you give it. It cannot read your files, inspect GitHub issues, search a database, or check a calendar unless …">
+    <meta property="twitter:domain" content="http://127.0.0.1:1314/scratchpad/local-llms/mcp-how-local-llms-get-tools-and-context/">
+    <meta property="twitter:url" content="http://127.0.0.1:1314/scratchpad/local-llms/mcp-how-local-llms-get-tools-and-context/">
+    <meta name="twitter:image" content="http://127.0.0.1:1314/images/profile.png">
+
+    
+    <link rel="canonical" href="http://127.0.0.1:1314/scratchpad/local-llms/mcp-how-local-llms-get-tools-and-context/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://127.0.0.1:1314/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://127.0.0.1:1314/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>MCP: How Local LLMs Get Tools and Context</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/mcp">MCP</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ai-agents">AI Agents</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/local-llms">Local LLMs</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ai-tools">AI Tools</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>A local model by itself only sees the prompt you give it. It cannot read your files, inspect GitHub issues, search a database, or check a calendar unless something connects it to those sources.</p>
+<p>MCP, the Model Context Protocol, is one way to standardize that connection.</p>
+<h2 id="mental-model-mcp-is-a-tool-plug">Mental model: MCP is a tool plug</h2>
+<p>Anthropic&rsquo;s MCP documentation describes MCP as an open protocol that standardizes how applications provide context to LLMs. The common analogy is a standard connector between AI applications and data or tools.</p>
+<p>In beginner terms:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Piece</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>MCP client</td>
+          <td>The app or agent that wants tools and context</td>
+      </tr>
+      <tr>
+          <td>MCP server</td>
+          <td>A process that exposes tools, resources, or prompts</td>
+      </tr>
+      <tr>
+          <td>Tool</td>
+          <td>An action the model can request, such as search, fetch, create, or update</td>
+      </tr>
+      <tr>
+          <td>Resource</td>
+          <td>Readable context, such as a file, document, issue, or database entry</td>
+      </tr>
+      <tr>
+          <td>Permission layer</td>
+          <td>Rules about what the model is allowed to access or change</td>
+      </tr>
+  </tbody>
+</table>
+<p>The model does not become all-powerful. The client decides what servers are connected and what actions require approval.</p>
+<p>Official source to verify:</p>
+<ul>
+<li><a href="https://docs.anthropic.com/en/docs/agents-and-tools/mcp">Anthropic MCP docs</a></li>
+</ul>
+<h2 id="why-mcp-matters-for-local-llms">Why MCP matters for local LLMs</h2>
+<p>Local LLMs are often attractive because of privacy and control. But isolated local chat is limited. MCP can help local or hybrid tools connect to controlled context sources.</p>
+<p>Examples:</p>
+<table>
+  <thead>
+      <tr>
+          <th>MCP server idea</th>
+          <th>What the model can do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Filesystem</td>
+          <td>Read selected project files or notes</td>
+      </tr>
+      <tr>
+          <td>GitHub</td>
+          <td>Inspect issues, pull requests, comments, and files</td>
+      </tr>
+      <tr>
+          <td>Browser/search</td>
+          <td>Fetch current pages or search documentation</td>
+      </tr>
+      <tr>
+          <td>Database</td>
+          <td>Query structured project or research data</td>
+      </tr>
+      <tr>
+          <td>Notes app</td>
+          <td>Retrieve personal knowledge</td>
+      </tr>
+      <tr>
+          <td>Local evaluation harness</td>
+          <td>Run fixed prompts and return scores</td>
+      </tr>
+  </tbody>
+</table>
+<p>The key word is selected. A safe MCP setup should expose only what the task needs.</p>
+<h2 id="tools-vs-resources">Tools vs resources</h2>
+<p>Tools and resources are easy to mix up.</p>
+<table>
+  <thead>
+      <tr>
+          <th>MCP concept</th>
+          <th>Beginner example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Resource</td>
+          <td>&ldquo;Here is the content of <code>README.md</code>.&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Tool</td>
+          <td>&ldquo;Run the test command and return the output.&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Prompt</td>
+          <td>&ldquo;Use this reusable prompt template for a task.&rdquo;</td>
+      </tr>
+  </tbody>
+</table>
+<p>Resources provide context. Tools perform actions. Tools usually need more caution because they can change state or access external systems.</p>
+<h2 id="local-model-plus-mcp">Local model plus MCP</h2>
+<p>A local model can participate in an MCP workflow when the application around it supports MCP or bridges MCP calls into the model loop.</p>
+<p>A simplified loop:</p>
+<ol>
+<li>User asks a question.</li>
+<li>Agent app sends prompt and available tool descriptions to the model.</li>
+<li>Model asks to call a tool.</li>
+<li>MCP client calls the MCP server.</li>
+<li>Server returns data or action results.</li>
+<li>App sends the result back to the model.</li>
+<li>Model answers or asks for another tool call.</li>
+</ol>
+<p>The model is not directly browsing your computer. The app mediates every step.</p>
+<h2 id="openai-compatible-local-endpoints">OpenAI-compatible local endpoints</h2>
+<p>Some local runtimes expose OpenAI-compatible APIs. Ollama documents support for OpenAI-compatible chat completions fields including messages, streaming, JSON mode, tools, and tool choice. This compatibility can make local runtimes easier to connect to existing apps.</p>
+<p>But OpenAI-compatible does not automatically mean fully equivalent. Check exact support for:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Why to verify</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Tool calling</td>
+          <td>Some models produce tool calls more reliably than others</td>
+      </tr>
+      <tr>
+          <td>Structured outputs</td>
+          <td>Schema enforcement may differ</td>
+      </tr>
+      <tr>
+          <td>Vision</td>
+          <td>Image input depends on model and runtime</td>
+      </tr>
+      <tr>
+          <td>Streaming</td>
+          <td>Client and server must both support it</td>
+      </tr>
+      <tr>
+          <td>Context length</td>
+          <td>Runtime settings may limit effective context</td>
+      </tr>
+  </tbody>
+</table>
+<p>Official docs to verify:</p>
+<ul>
+<li><a href="https://docs.ollama.com/openai">Ollama OpenAI compatibility</a></li>
+</ul>
+<h2 id="permissions-matter">Permissions matter</h2>
+<p>MCP can connect useful tools, but it also expands the blast radius of mistakes. A local LLM with access to a shell, browser, filesystem, and GitHub is no longer &ldquo;just local chat.&rdquo;</p>
+<p>Beginner safety checklist:</p>
+<ol>
+<li>Start read-only when possible.</li>
+<li>Use project-scoped filesystem access.</li>
+<li>Require confirmation for writes, deletes, shell commands, and network actions.</li>
+<li>Keep API keys outside prompts and logs.</li>
+<li>Prefer narrow tools over broad shell access.</li>
+<li>Review generated changes before applying them.</li>
+</ol>
+<h2 id="what-to-verify-because-tools-change">What to verify because tools change</h2>
+<p>Verify MCP support in the specific client you use. Claude Code, Codex, desktop apps, IDEs, and local agent frameworks may expose MCP differently. Also verify whether a server is official, community-maintained, or custom.</p>
+<p>The practical lesson: MCP is not the model. It is plumbing for context and tools. For local LLMs, that plumbing can turn a private chat model into a useful assistant, but permissions decide whether it is safe.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/local-llms/skills-rules-agents-subagents-local-llms/">
+                &#8592;
+                Previous:
+                Skills, Rules, Agents, and Subagents
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 3, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/local-llms/practical-local-agent-stack/">
+                Next:
+                A Practical Local Agent Stack
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 5, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

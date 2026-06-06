@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Local LLMs 101: What Runs on Your Machine</title>
+    <meta name="description" content="Local large language models are exciting because they move part of the AI stack onto your own computer. Instead of sending every prompt to a remote service, you …">
+    <meta name="keywords" content='Local LLMs, Generative AI, AI Tools'>
+
+    <meta property="og:url" content="http://127.0.0.1:1314/scratchpad/local-llms/local-llms-101-what-runs-on-your-machine/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Local LLMs 101: What Runs on Your Machine">
+    <meta property="og:description" content="Local large language models are exciting because they move part of the AI stack onto your own computer. Instead of sending every prompt to a remote service, you …">
+    <meta property="og:image" content="http://127.0.0.1:1314/images/profile.png">
+    <meta property="og:image:secure_url" content="http://127.0.0.1:1314/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Local LLMs 101: What Runs on Your Machine">
+    <meta name="twitter:description" content="Local large language models are exciting because they move part of the AI stack onto your own computer. Instead of sending every prompt to a remote service, you …">
+    <meta property="twitter:domain" content="http://127.0.0.1:1314/scratchpad/local-llms/local-llms-101-what-runs-on-your-machine/">
+    <meta property="twitter:url" content="http://127.0.0.1:1314/scratchpad/local-llms/local-llms-101-what-runs-on-your-machine/">
+    <meta name="twitter:image" content="http://127.0.0.1:1314/images/profile.png">
+
+    
+    <link rel="canonical" href="http://127.0.0.1:1314/scratchpad/local-llms/local-llms-101-what-runs-on-your-machine/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://127.0.0.1:1314/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://127.0.0.1:1314/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Local LLMs 101: What Runs on Your Machine</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 28, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/local-llms">Local LLMs</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/generative-ai">Generative AI</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ai-tools">AI Tools</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>Local large language models are exciting because they move part of the AI stack onto your own computer. Instead of sending every prompt to a remote service, you download a model, run it through a local runtime, and talk to it from an app, terminal, editor, or API.</p>
+<p>The beginner mistake is to ask, &ldquo;What is the best local model?&rdquo; The better first question is: <strong>what can this machine actually run well enough to be useful?</strong></p>
+<h2 id="mental-model-model-runtime-hardware">Mental model: model, runtime, hardware</h2>
+<p>Think of a local LLM setup as three separate things:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Layer</th>
+          <th>What it means</th>
+          <th>Beginner question</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Model</td>
+          <td>The trained weights, such as a Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, or gpt-oss variant</td>
+          <td>What is this model good at?</td>
+      </tr>
+      <tr>
+          <td>Runtime</td>
+          <td>The program that loads and serves the model, such as Ollama, llama.cpp, LM Studio, vLLM, or MLX-based tools</td>
+          <td>Can this runtime load this file format on my computer?</td>
+      </tr>
+      <tr>
+          <td>Hardware</td>
+          <td>Your CPU, RAM, GPU, VRAM, disk, and operating system</td>
+          <td>Will it be fast enough and stable enough?</td>
+      </tr>
+  </tbody>
+</table>
+<p>The model is not the app. The model is closer to a large mathematical object. The runtime is the engine that loads it. Your hardware decides how large the engine can be before it starts crawling.</p>
+<h2 id="local-vs-hosted-models">Local vs hosted models</h2>
+<p>Hosted models run on someone else&rsquo;s infrastructure. You usually get stronger models, large context windows, easier APIs, and less setup. You also depend on an account, network connection, pricing, rate limits, provider policy, and provider logging behavior.</p>
+<p>Local models run on your own machine. You get more control over data boundaries, offline use, experimentation, and cost per use after setup. You also inherit the boring parts: downloads, drivers, memory limits, heat, disk space, model compatibility, and model quality tradeoffs.</p>
+<p>Neither path is morally superior. They solve different problems.</p>
+<h2 id="the-hardware-bottleneck">The hardware bottleneck</h2>
+<p>For local LLMs, memory matters more than almost anything else. A model has to fit somewhere while it runs. If you have a GPU, the best experience usually comes when the model fits mostly or fully in VRAM. If it spills into system RAM or CPU inference, it may still work, but responses can become much slower.</p>
+<p>The rough beginner map looks like this:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Machine</th>
+          <th>Practical starting point</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>8 GB RAM laptop</td>
+          <td>Small models, light chat, patience required</td>
+      </tr>
+      <tr>
+          <td>16 GB RAM laptop</td>
+          <td>3B to 8B class quantized models are a reasonable starting range</td>
+      </tr>
+      <tr>
+          <td>32 GB RAM laptop or desktop</td>
+          <td>More comfortable 7B to 14B experimentation</td>
+      </tr>
+      <tr>
+          <td>Consumer GPU with 8 to 12 GB VRAM</td>
+          <td>Good local coding/chat experiments with quantized models</td>
+      </tr>
+      <tr>
+          <td>Larger GPU or Apple Silicon with high unified memory</td>
+          <td>Bigger models, larger contexts, better speed</td>
+      </tr>
+  </tbody>
+</table>
+<p>This is not a benchmark. It is a sanity check. Model architecture, quantization, runtime, context length, and your exact workload can change the result.</p>
+<h2 id="tokens-and-context-windows">Tokens and context windows</h2>
+<p>LLMs do not read text exactly like people do. They read tokens, which are chunks of text. A context window is the amount of input and generated output the model can hold in one conversation. For local use, large context is useful, but it is not free. More context usually means more memory use and slower generation.</p>
+<p>A practical way to think about context:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Context use</th>
+          <th>What it is good for</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Small</td>
+          <td>Quick questions, snippets, short chats</td>
+      </tr>
+      <tr>
+          <td>Medium</td>
+          <td>Notes, small files, focused coding help</td>
+      </tr>
+      <tr>
+          <td>Large</td>
+          <td>Multi-file work, long documents, agent workflows</td>
+      </tr>
+  </tbody>
+</table>
+<p>Long context does not automatically mean better reasoning. A smaller model with the right retrieved context can beat a larger model drowning in irrelevant text.</p>
+<h2 id="quantization">Quantization</h2>
+<p>Quantization compresses model weights so they use less memory. The tradeoff is usually speed and accessibility against some loss in quality. You will see labels such as Q4, Q5, Q6, Q8, or file formats such as GGUF. In beginner terms:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Choice</th>
+          <th>Practical meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Lower-bit quantization</td>
+          <td>Smaller, easier to run, sometimes less accurate</td>
+      </tr>
+      <tr>
+          <td>Higher-bit quantization</td>
+          <td>Larger, usually closer to original quality</td>
+      </tr>
+      <tr>
+          <td>Full precision</td>
+          <td>Best fidelity, often impractical on consumer hardware</td>
+      </tr>
+  </tbody>
+</table>
+<p>If you are starting, a widely used quantized version of a popular instruct model is often better than chasing the largest file your disk can hold.</p>
+<h2 id="practical-workflow">Practical workflow</h2>
+<ol>
+<li>Write down your hardware: RAM, GPU, VRAM, operating system, free disk.</li>
+<li>Pick a beginner runtime, usually Ollama or LM Studio.</li>
+<li>Start with a small instruct model, not the largest model you can find.</li>
+<li>Test three prompts you actually care about: one writing task, one reasoning task, one coding or technical task.</li>
+<li>Watch speed, memory, and answer quality.</li>
+<li>Move up or down in model size only after you have a baseline.</li>
+</ol>
+<h2 id="what-to-verify-because-tools-change">What to verify because tools change</h2>
+<p>Before publishing or following any exact recommendation, verify the current model list, runtime support, license, context length, and hardware notes from the tool or model provider. Local LLM advice ages quickly because model releases, quantizations, and runtimes improve every month.</p>
+<p>Useful official starting points:</p>
+<ul>
+<li><a href="https://docs.ollama.com/">Ollama documentation</a></li>
+<li><a href="https://ollama.com/models">Ollama model library</a></li>
+<li><a href="https://openrouter.ai/docs/guides/overview/models">OpenRouter model metadata</a></li>
+</ul>
+<p>The first win is not finding the mythical best model. The first win is getting one useful model running reliably on your own machine.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/local-llms/local-llm-toolchain-uv-uvx-ollama-model-files/">
+                Next:
+                The Local LLM Toolchain: uv, uvx, Ollama, and Model Files
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 29, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

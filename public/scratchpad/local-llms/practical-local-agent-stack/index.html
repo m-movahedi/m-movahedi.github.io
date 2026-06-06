@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>A Practical Local Agent Stack</title>
+    <meta name="description" content="After the tools, models, routers, agents, skills, and MCP servers, it helps to put the pieces into one practical stack.
+The goal is not to build the most …">
+    <meta name="keywords" content='Local LLMs, AI Agents, MCP, Ollama, AI Tools'>
+
+    <meta property="og:url" content="http://127.0.0.1:1314/scratchpad/local-llms/practical-local-agent-stack/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A Practical Local Agent Stack">
+    <meta property="og:description" content="After the tools, models, routers, agents, skills, and MCP servers, it helps to put the pieces into one practical stack.
+The goal is not to build the most …">
+    <meta property="og:image" content="http://127.0.0.1:1314/images/profile.png">
+    <meta property="og:image:secure_url" content="http://127.0.0.1:1314/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A Practical Local Agent Stack">
+    <meta name="twitter:description" content="After the tools, models, routers, agents, skills, and MCP servers, it helps to put the pieces into one practical stack.
+The goal is not to build the most …">
+    <meta property="twitter:domain" content="http://127.0.0.1:1314/scratchpad/local-llms/practical-local-agent-stack/">
+    <meta property="twitter:url" content="http://127.0.0.1:1314/scratchpad/local-llms/practical-local-agent-stack/">
+    <meta name="twitter:image" content="http://127.0.0.1:1314/images/profile.png">
+
+    
+    <link rel="canonical" href="http://127.0.0.1:1314/scratchpad/local-llms/practical-local-agent-stack/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://127.0.0.1:1314/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://127.0.0.1:1314/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>A Practical Local Agent Stack</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 5, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/local-llms">Local LLMs</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ai-agents">AI Agents</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/mcp">MCP</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ollama">Ollama</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ai-tools">AI Tools</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>After the tools, models, routers, agents, skills, and MCP servers, it helps to put the pieces into one practical stack.</p>
+<p>The goal is not to build the most complicated local AI system. The goal is to build a workflow you can understand, debug, and improve.</p>
+<h2 id="mental-model-start-local-add-power-only-when-needed">Mental model: start local, add power only when needed</h2>
+<p>A practical beginner stack has layers:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Layer</th>
+          <th>Default choice</th>
+          <th>Why</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Runtime</td>
+          <td>Ollama or another beginner-friendly local server</td>
+          <td>Gets a model running quickly</td>
+      </tr>
+      <tr>
+          <td>Model</td>
+          <td>Small or medium instruct model</td>
+          <td>Establishes a stable baseline</td>
+      </tr>
+      <tr>
+          <td>API shape</td>
+          <td>OpenAI-compatible endpoint when possible</td>
+          <td>Works with many clients</td>
+      </tr>
+      <tr>
+          <td>Evaluation</td>
+          <td>Fixed prompt set</td>
+          <td>Prevents vibe-based model choice</td>
+      </tr>
+      <tr>
+          <td>Tools</td>
+          <td>MCP servers or app-native tools</td>
+          <td>Adds controlled access to context</td>
+      </tr>
+      <tr>
+          <td>Instructions</td>
+          <td>Rules, skills, or project notes</td>
+          <td>Makes behavior repeatable</td>
+      </tr>
+      <tr>
+          <td>Hosted fallback</td>
+          <td>OpenRouter or direct provider API</td>
+          <td>Handles tasks local models cannot</td>
+      </tr>
+      <tr>
+          <td>Coding agent</td>
+          <td>Claude Code, Codex, Antigravity, or another tool</td>
+          <td>Handles repository actions and verification</td>
+      </tr>
+  </tbody>
+</table>
+<p>Build the stack one layer at a time. If you cannot explain what a layer does, do not add it yet.</p>
+<h2 id="step-1-run-one-local-model">Step 1: run one local model</h2>
+<p>Start with one runtime and one model. For many beginners, that means Ollama plus a small instruct model from the current Ollama library.</p>
+<p>Your first success criteria are modest:</p>
+<ol>
+<li>The model downloads.</li>
+<li>It responds to a prompt.</li>
+<li>You know the exact model name.</li>
+<li>You know whether it is fast enough.</li>
+<li>You know where the local API is.</li>
+</ol>
+<p>Do not install five frontends before you have one stable model.</p>
+<h2 id="step-2-create-a-tiny-evaluation-set">Step 2: create a tiny evaluation set</h2>
+<p>Make a file with five prompts:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Prompt type</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Explanation</td>
+          <td>&ldquo;Explain quantization to a beginner.&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Summarization</td>
+          <td>Paste a short article or note</td>
+      </tr>
+      <tr>
+          <td>Coding</td>
+          <td>Ask for a small function and tests</td>
+      </tr>
+      <tr>
+          <td>Structured output</td>
+          <td>Ask for JSON with a fixed schema</td>
+      </tr>
+      <tr>
+          <td>Judgment</td>
+          <td>Ask it to compare two options with tradeoffs</td>
+      </tr>
+  </tbody>
+</table>
+<p>Run the same prompts when you try a new model. Record model, runtime, quantization, speed, failures, and notes.</p>
+<h2 id="step-3-add-a-client">Step 3: add a client</h2>
+<p>Once the local runtime works, connect it to a client:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Client type</th>
+          <th>Use</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Terminal</td>
+          <td>Quick tests and scripting</td>
+      </tr>
+      <tr>
+          <td>Desktop chat UI</td>
+          <td>Comfortable daily use</td>
+      </tr>
+      <tr>
+          <td>Notebook or Python script</td>
+          <td>Evaluation and experimentation</td>
+      </tr>
+      <tr>
+          <td>Editor integration</td>
+          <td>Coding help</td>
+      </tr>
+      <tr>
+          <td>Agent framework</td>
+          <td>Tool use and multi-step workflows</td>
+      </tr>
+  </tbody>
+</table>
+<p>If the client supports custom base URLs, check whether it can point to your local OpenAI-compatible endpoint.</p>
+<h2 id="step-4-add-tools-through-mcp-or-app-features">Step 4: add tools through MCP or app features</h2>
+<p>Add tools only after the model baseline is stable. Useful first tools are read-only:</p>
+<ol>
+<li>Filesystem read access to a project folder.</li>
+<li>Documentation fetch/search.</li>
+<li>Notes retrieval.</li>
+<li>GitHub issue or PR reading.</li>
+</ol>
+<p>Then consider write tools:</p>
+<ol>
+<li>Create a draft file.</li>
+<li>Edit a controlled workspace.</li>
+<li>Run a test command.</li>
+<li>Open a pull request.</li>
+</ol>
+<p>Writes should require review until you deeply trust the workflow.</p>
+<h2 id="step-5-create-one-reusable-skill-or-rule">Step 5: create one reusable skill or rule</h2>
+<p>A good first reusable workflow is a local model evaluator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Name: Local model evaluator
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Goal:
+</span></span><span style="display:flex;"><span>Compare candidate local models on the same task set.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Steps:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Record hardware, runtime, model ID, and quantization.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Run the fixed prompt set.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Score quality, speed, structured-output reliability, and failures.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> Recommend a model for the current task.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> Save the results with date and source links.
+</span></span></code></pre></div><p>This is small enough to use, but structured enough to make model choice less random.</p>
+<h2 id="step-6-add-hosted-fallback-carefully">Step 6: add hosted fallback carefully</h2>
+<p>A hosted fallback is useful when local models are too slow or weak. OpenRouter can provide one API for many hosted models, while direct provider APIs may give tighter provider-specific behavior.</p>
+<p>Use hosted fallback for:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Task</th>
+          <th>Why</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Hard coding problems</td>
+          <td>Stronger coding models may save time</td>
+      </tr>
+      <tr>
+          <td>Large context</td>
+          <td>Local context may be limited</td>
+      </tr>
+      <tr>
+          <td>Multimodal tasks</td>
+          <td>Local model may not support vision/audio</td>
+      </tr>
+      <tr>
+          <td>Final review</td>
+          <td>A second model can catch mistakes</td>
+      </tr>
+  </tbody>
+</table>
+<p>Keep sensitive prompts local unless you have reviewed the provider path.</p>
+<h2 id="decision-matrix">Decision matrix</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Reader goal</th>
+          <th>Suggested stack</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Privacy-first</td>
+          <td>Local runtime, local model, read-only local tools, no hosted fallback by default</td>
+      </tr>
+      <tr>
+          <td>Low-cost learner</td>
+          <td>Ollama, small instruct models, fixed evaluation prompts, occasional hosted comparison</td>
+      </tr>
+      <tr>
+          <td>Coding-heavy</td>
+          <td>Local model for drafts, coding agent for repo edits, tests required before trusting output</td>
+      </tr>
+      <tr>
+          <td>Research-heavy</td>
+          <td>Local summaries, RAG over notes, MCP for curated sources, hosted fallback for difficult synthesis</td>
+      </tr>
+      <tr>
+          <td>Hybrid local/cloud</td>
+          <td>Local default, OpenRouter or provider fallback, strict notes about what leaves the machine</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="what-to-verify-because-tools-change">What to verify because tools change</h2>
+<p>Before publishing an exact stack, verify current runtime docs, model availability, licenses, API compatibility, MCP support, and provider-supported parameters. For agentic coding tools, verify installation, permission modes, sandboxing, and data-use policies from official docs.</p>
+<p>The practical lesson: a useful local agent stack is not one magic model. It is a small system with a model, a runtime, repeatable evaluation, controlled tools, reusable instructions, and a clear boundary between local and hosted work.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/local-llms/mcp-how-local-llms-get-tools-and-context/">
+                &#8592;
+                Previous:
+                MCP: How Local LLMs Get Tools and Context
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 4, 2026
+        </p>
+    </div>
+    
+
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>
