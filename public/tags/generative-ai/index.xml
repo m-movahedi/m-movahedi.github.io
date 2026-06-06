@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Generative-AI on Mohammad Movahedi</title>
-    <link>https://m-movahedi.com/tags/generative-ai/</link>
+    <link>http://localhost:57889/tags/generative-ai/</link>
     <description>Recent content in Generative-AI on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 28 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://m-movahedi.com/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57889/tags/generative-ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Local LLMs 101: What Runs on Your Machine</title>
-      <link>https://m-movahedi.com/blog/local-llms-101-what-runs-on-your-machine/</link>
+      <title>Local LLMs 201: What Runs on Your Machine</title>
+      <link>http://localhost:57889/scratchpad/local-llms/local-llms-201-what-runs-on-your-machine/</link>
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/blog/local-llms-101-what-runs-on-your-machine/</guid>
+      <guid>http://localhost:57889/scratchpad/local-llms/local-llms-201-what-runs-on-your-machine/</guid>
       <description>&lt;p&gt;Local large language models are exciting because they move part of the AI stack onto your own computer. Instead of sending every prompt to a remote service, you download a model, run it through a local runtime, and talk to it from an app, terminal, editor, or API.&lt;/p&gt;&#xA;&lt;p&gt;The beginner mistake is to ask, &amp;ldquo;What is the best local model?&amp;rdquo; The better first question is: &lt;strong&gt;what can this machine actually run well enough to be useful?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Generative AI &#43; Virtual Reality: A training tool</title>
-      <link>https://m-movahedi.com/research/generative-ai-virtual-reality-a-training-tool/</link>
+      <link>http://localhost:57889/research/generative-ai-virtual-reality-a-training-tool/</link>
       <pubDate>Tue, 08 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/research/generative-ai-virtual-reality-a-training-tool/</guid>
-      <description>&lt;p&gt;Sometime in late 2023, when the generative AI community suddenly shifted its focus to picture and video generation, I started developing a framework to first generate textures of materials based on the description that the inspection guidelines provide. This concept quickly evolves into a framework to generate auditory and visual cues for 3D objects.&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://m-movahedi.com/images/Movahedi2025Framework.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;figcaption&gt; The proposed framework &lt;/figcaption&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;In a conference paper titled “Generative Artificial Intelligence and Virtual Reality: Emerging Future of the Building Component Inspection Training”, presented in CIB WBC CIB 2025, I described this framework in detail. The framework integrates generative artificial intelligence (Gen AI) with virtual reality (VR) to create a more immersive and effective training environment for building maintenance and operations. Traditional training methods often rely on static visuals and text, limiting inspectors’ exposure to the diverse and complex conditions found in real-world scenarios. In contrast, the proposed approach leverages Gen AI to generate realistic textures of deteriorating building components, which are then embedded into an interactive VR environment. This enables trainees to engage in hands-on, immersive practice, improving their ability to identify and assess conditions accurately. The framework aims to reduce subjectivity in inspections and enhance knowledge transfer. A hypothetical case study demonstrates the framework’s potential, highlighting its broader applicability not only in building maintenance but also in other domains that require precise, objective evaluations.&lt;/p&gt;</description>
+      <guid>http://localhost:57889/research/generative-ai-virtual-reality-a-training-tool/</guid>
+      <description>&lt;p&gt;Sometime in late 2023, when the generative AI community suddenly shifted its focus to picture and video generation, I started developing a framework to first generate textures of materials based on the description that the inspection guidelines provide. This concept quickly evolves into a framework to generate auditory and visual cues for 3D objects.&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:57889/images/Movahedi2025Framework.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;figcaption&gt; The proposed framework &lt;/figcaption&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;In a conference paper titled “Generative Artificial Intelligence and Virtual Reality: Emerging Future of the Building Component Inspection Training”, presented in CIB WBC CIB 2025, I described this framework in detail. The framework integrates generative artificial intelligence (Gen AI) with virtual reality (VR) to create a more immersive and effective training environment for building maintenance and operations. Traditional training methods often rely on static visuals and text, limiting inspectors’ exposure to the diverse and complex conditions found in real-world scenarios. In contrast, the proposed approach leverages Gen AI to generate realistic textures of deteriorating building components, which are then embedded into an interactive VR environment. This enables trainees to engage in hands-on, immersive practice, improving their ability to identify and assess conditions accurately. The framework aims to reduce subjectivity in inspections and enhance knowledge transfer. A hypothetical case study demonstrates the framework’s potential, highlighting its broader applicability not only in building maintenance but also in other domains that require precise, objective evaluations.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -18,7 +18,7 @@ googleAnalytics = "G-1WZSE8DHZ9"
 <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-
+<link rel="stylesheet" href="/css/llm-series.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
 <script>
@@ -46,7 +46,7 @@ gtag('config', 'G-1WZSE8DHZ9');
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-      
+
 [menu]
   [[menu.main]]
     name = "Home"
@@ -82,5 +82,3 @@ gtag('config', 'G-1WZSE8DHZ9');
     name = "About"
     url = "/about/"
     weight = 7
-
- 

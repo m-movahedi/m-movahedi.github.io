@@ -1,0 +1,225 @@
+/* ===================================================
+   LLM Introduction Series — Shared Styles
+   Used by: llm-101 through llm-108
+   =================================================== */
+
+/* ---------- base card / note / panel / papers ------- */
+.llm-note,
+.llm-card,
+.llm-panel,
+.llm-papers {
+  border: 1px solid rgba(128, 128, 128, 0.28);
+  border-radius: 14px;
+  background: rgba(128, 128, 128, 0.06);
+}
+
+.llm-note,
+.llm-papers {
+  margin: 1.3rem 0;
+  padding: 1rem 1.1rem;
+}
+
+.llm-card,
+.llm-panel {
+  padding: 0.95rem;
+}
+
+.llm-note p,
+.llm-card p,
+.llm-panel p {
+  margin: 0.35rem 0;
+}
+
+.llm-card strong,
+.llm-panel strong,
+.llm-papers strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.llm-papers ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.llm-papers li {
+  margin: 0.35rem 0;
+}
+
+/* ---------- grid layouts ---------------------------- */
+.llm-flow,
+.llm-grid,
+.llm-two-col,
+.llm-param-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.25rem 0;
+}
+
+.llm-flow       { grid-template-columns: repeat(5, minmax(120px, 1fr)); }
+.llm-flow-6     { grid-template-columns: repeat(6, minmax(115px, 1fr));
+                   display: grid; gap: 0.85rem; margin: 1.25rem 0; }
+.llm-grid       { grid-template-columns: repeat(3, minmax(140px, 1fr)); }
+.llm-two-col    { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.llm-param-grid { grid-template-columns: repeat(4, minmax(130px, 1fr)); }
+
+/* ---------- token chips ----------------------------- */
+.llm-token-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0;
+}
+
+.llm-token,
+.llm-pill {
+  border: 1px solid rgba(80, 120, 180, 0.35);
+  border-radius: 999px;
+  background: rgba(80, 120, 180, 0.1);
+  padding: 0.25rem 0.6rem;
+}
+
+.llm-token {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+}
+
+.llm-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.8rem 0;
+}
+
+/* ---------- code / prompt block --------------------- */
+.llm-code {
+  border-left: 4px solid rgba(70, 125, 200, 0.75);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 1.1rem 0;
+  padding: 0.8rem 1rem;
+  white-space: pre-wrap;
+}
+
+/* ---------- bar charts / meters --------------------- */
+.llm-mini-chart {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.llm-bar-row,
+.llm-score-row,
+.llm-row {
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+  margin: 0.55rem 0;
+}
+
+.llm-bar-row   { grid-template-columns: 90px  1fr 48px; }
+.llm-score-row { grid-template-columns: 120px 1fr 44px; }
+.llm-row       { grid-template-columns: 120px 1fr 54px; }
+
+.llm-bar,
+.llm-score,
+.llm-meter {
+  background: rgba(90, 140, 210, 0.16);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.llm-bar   { height: 12px; }
+.llm-score { height: 12px; margin-top: 0.45rem; }
+.llm-meter { height: 18px; margin: 0.65rem 0; }
+
+.llm-bar span,
+.llm-score span,
+.llm-meter span {
+  background: rgba(70, 125, 200, 0.78);
+  display: block;
+  height: 100%;
+}
+
+/* ---------- param number accent --------------------- */
+.llm-param-number {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+/* ---------- arrow (flow diagrams) ------------------- */
+.llm-arrow {
+  align-self: center;
+  font-size: 1.35rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* ---------- status row (agents) --------------------- */
+.llm-status {
+  align-items: center;
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: 95px 1fr;
+  margin: 0.55rem 0;
+}
+
+/* ---------- small / muted text ---------------------- */
+.llm-small {
+  font-size: 0.9rem;
+  opacity: 0.78;
+}
+
+/* ---------- exercises block ------------------------- */
+.llm-exercises {
+  border: 1px solid rgba(80, 120, 180, 0.30);
+  border-radius: 14px;
+  background: rgba(80, 120, 180, 0.05);
+  margin: 2rem 0 1rem;
+  padding: 1.1rem 1.2rem;
+}
+
+.llm-exercises strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.llm-exercises ol {
+  margin: 0.4rem 0 0;
+  padding-left: 1.3rem;
+}
+
+.llm-exercises li {
+  margin: 0.55rem 0;
+}
+
+/* ---------- math block ------------------------------ */
+.llm-math {
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  border-radius: 14px;
+  background: rgba(128, 128, 128, 0.04);
+  margin: 1.3rem 0;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+}
+
+.llm-math code {
+  font-size: 1rem;
+}
+
+/* ---------- responsive ------------------------------ */
+@media (max-width: 900px) {
+  .llm-flow,
+  .llm-flow-6,
+  .llm-grid,
+  .llm-two-col,
+  .llm-param-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .llm-arrow {
+    transform: rotate(90deg);
+  }
+}

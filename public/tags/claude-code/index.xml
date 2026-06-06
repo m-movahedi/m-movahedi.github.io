@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Claude Code on Mohammad Movahedi</title>
-    <link>https://m-movahedi.com/tags/claude-code/</link>
+    <link>http://localhost:57889/tags/claude-code/</link>
     <description>Recent content in Claude Code on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 02 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://m-movahedi.com/tags/claude-code/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57889/tags/claude-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Coding Agents: Claude Code, Codex, and Antigravity</title>
-      <link>https://m-movahedi.com/blog/coding-agents-claude-code-codex-antigravity/</link>
+      <title>Local LLMs 206: Coding Agents</title>
+      <link>http://localhost:57889/scratchpad/local-llms/local-llms-206-coding-agents-claude-code-codex-antigravity/</link>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/blog/coding-agents-claude-code-codex-antigravity/</guid>
+      <guid>http://localhost:57889/scratchpad/local-llms/local-llms-206-coding-agents-claude-code-codex-antigravity/</guid>
       <description>&lt;p&gt;A chat model answers questions. A coding agent works inside a software environment. That difference sounds small until the agent starts reading files, editing code, running tests, opening browsers, creating commits, and explaining what changed.&lt;/p&gt;&#xA;&lt;p&gt;Claude Code, Codex, and Google Antigravity are examples of agentic coding tools. They do not replace local LLM runtimes, but they show what happens when a model is wrapped in tools, permissions, project context, and verification loops.&lt;/p&gt;</description>
     </item>
   </channel>
