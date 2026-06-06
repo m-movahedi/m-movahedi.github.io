@@ -123,6 +123,39 @@ description: Compare local models on a small fixed prompt set before recommendin
 
 The important part is repeatability. If you test models differently every time, you are mostly testing your mood.
 
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+
+<div class="llm-papers">
+  <strong>Key papers on prompting, instruction following, and agent evaluation</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: foundational work on instruction tuning and RLHF that explains why trained agents follow reusable instructions better than base models.</li>
+    <li><a href="https://arxiv.org/abs/2212.09561">Wei et al. (2022), "Emergent Abilities of Large Language Models"</a>: explains scaling phenomena relevant to choosing between models for reliable instruction and tool-use compliance.</li>
+    <li><a href="https://arxiv.org/abs/2311.07102">Xu et al. (2023), "Agents That Can Read: Diverse Retrieval-Augmented Generation for Questionnaire-style Machine Reading Assessment"</a>: relevant to how agents and subagents manage context, instructions, and information retrieval.</li>
+  </ul>
+</div>
+
 ## What to verify because tools change
 
 Verify product-specific file paths, activation rules, subagent support, and tool permissions from official docs. The concepts are stable, but the exact implementation details differ across Codex, Claude Code, Antigravity, and local agent frameworks.

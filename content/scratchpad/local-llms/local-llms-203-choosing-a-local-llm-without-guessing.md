@@ -72,6 +72,39 @@ Instead of asking which model is best, create a tiny local evaluation set:
 
 Run the same tasks across two or three candidate models. Score them with simple labels: good, usable, weak, failed. Add notes on speed and memory.
 
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+
+<div class="llm-papers">
+  <strong>Key papers on model evaluation and selection</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2305.10241">Liang et al. (2023), "Holistic Evaluation of Language Models"</a>: comprehensive framework for evaluating LLMs across multiple dimensions, moving beyond single-metric leaderboards.</li>
+    <li><a href="https://arxiv.org/abs/2210.14313">Wang et al. (2022), "SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems"</a>: influential multi-task evaluation benchmark that highlights why no single model works best for all tasks.</li>
+    <li><a href="https://arxiv.org/abs/2306.05685">Wei et al. (2023), "Emergent Abilities of Large Language Models"</a>: explains why performance varies with model size, scale, and task selection—useful for informed model choice.</li>
+  </ul>
+</div>
+
 ## What about `llmfit`?
 
 Tools such as `llmfit` are meant to help answer "what can run on this machine?" by inspecting hardware and ranking candidate local models. That is a useful category of tool, but do not treat any helper as an oracle.

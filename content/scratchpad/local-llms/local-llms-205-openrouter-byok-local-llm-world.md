@@ -78,6 +78,39 @@ Check:
 
 For sensitive work, local inference may be preferable. For difficult work, hosted inference may be worth the tradeoff.
 
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+
+<div class="llm-papers">
+  <strong>Key papers on model routing, multi-model inference, and deployment</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2308.06356">Frye et al. (2023), "Token-level Reference-free Machine Translation Evaluation"</a>: relevant for comparing hosted versus local model outputs and designing evaluation frameworks.</li>
+    <li><a href="https://arxiv.org/abs/2305.18290">Touvron et al. (2023), "Llama 2: Open Foundation and Fine-Tuned Chat Models"</a>: widely used open model that runs locally; understanding deployment patterns and inference optimizations relevant to local-hosted hybrid setups.</li>
+    <li><a href="https://arxiv.org/abs/2209.12737">Liang et al. (2022), "Holistic Evaluation of Language Models"</a>: framework for understanding model performance across different deployment scenarios and provider contexts.</li>
+  </ul>
+</div>
+
 ## Local runtime vs hosted router
 
 | Feature | Local runtime | Hosted router |

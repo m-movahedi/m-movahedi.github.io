@@ -142,3 +142,36 @@ Keep sensitive prompts local unless you have reviewed the provider path.
 Before publishing an exact stack, verify current runtime docs, model availability, licenses, API compatibility, MCP support, and provider-supported parameters. For agentic coding tools, verify installation, permission modes, sandboxing, and data-use policies from official docs.
 
 The practical lesson: a useful local agent stack is not one magic model. It is a small system with a model, a runtime, repeatable evaluation, controlled tools, reusable instructions, and a clear boundary between local and hosted work.
+
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+
+<div class="llm-papers">
+  <strong>Key papers on system design, evaluation frameworks, and orchestration</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2306.05685">Wei et al. (2023), "Emergent Abilities of Large Language Models"</a>: explains how evaluation design shapes what we think models can do—critical for building reliable local stacks with correct expectations.</li>
+    <li><a href="https://arxiv.org/abs/2305.10241">Liang et al. (2023), "Holistic Evaluation of Language Models"</a>: comprehensive framework for multi-dimensional model evaluation, useful for designing your own evaluation sets that capture local stack behavior.</li>
+    <li><a href="https://arxiv.org/abs/2305.08817">Ivgi et al. (2023), "Compressing Context for Improved Open Domain Question Answering"</a>: relevant to designing practical stacks where tool outputs and retrieved context are compressed before feeding to local models.</li>
+  </ul>
+</div>

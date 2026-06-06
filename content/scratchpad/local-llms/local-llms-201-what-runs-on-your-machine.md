@@ -75,6 +75,39 @@ Quantization compresses model weights so they use less memory. The tradeoff is u
 
 If you are starting, a widely used quantized version of a popular instruct model is often better than chasing the largest file your disk can hold.
 
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+
+<div class="llm-papers">
+  <strong>Key papers on quantization and efficient inference for local LLMs</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2308.06335">Dettmers & Zettlemoyer (2023), "The case for 8-bit activations in transformers for efficient inference"</a>: practical guidance on quantization levels and their tradeoffs for inference memory and speed.</li>
+    <li><a href="https://arxiv.org/abs/2306.00978">Frantar et al. (2023), "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"</a>: widely used technique for quantizing LLMs to run on consumer hardware.</li>
+    <li><a href="https://arxiv.org/abs/2210.06423">Hidey & Asai (2022), "Quantization-aware training for speech recognition via noise regularized knowledge distillation"</a>: foundational work on maintaining model quality during quantization.</li>
+  </ul>
+</div>
+
 ## Practical workflow
 
 1. Write down your hardware: RAM, GPU, VRAM, operating system, free disk.

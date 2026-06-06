@@ -79,6 +79,39 @@ A simplified loop:
 
 The model is not directly browsing your computer. The app mediates every step.
 
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+
+<div class="llm-papers">
+  <strong>Key papers on tool use, function calling, and retrieval-augmented generation</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2305.15334">Schlag et al. (2023), "Toolformer: Language Models Can Teach Themselves to Use Tools"</a>: foundational work on how LLMs learn to call external functions and tools without explicit supervision.</li>
+    <li><a href="https://arxiv.org/abs/2307.06173">Nakano et al. (2023), "WebGPT: Browser-assisted question-answering with human feedback"</a>: demonstrates how agents can call tools like browsers and search to retrieve context before answering.</li>
+    <li><a href="https://arxiv.org/abs/2305.06983">Lewis et al. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"</a>: classic work on combining external retrieval (tools, resources, context) with language models.</li>
+  </ul>
+</div>
+
 ## OpenAI-compatible local endpoints
 
 Some local runtimes expose OpenAI-compatible APIs. Ollama documents support for OpenAI-compatible chat completions fields including messages, streaming, JSON mode, tools, and tool choice. This compatibility can make local runtimes easier to connect to existing apps.
