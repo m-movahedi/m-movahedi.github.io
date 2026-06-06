@@ -1,7 +1,7 @@
 ---
 title: "The Literature Scout Agent: Systematic Paper Search"
 date: "2026-06-08"
-draft: true
+draft: false
 type: "post"
 tags:
   - "AI Agents"

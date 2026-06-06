@@ -1,7 +1,7 @@
 ---
 title: "Multi-Agent Workflows: Coordination and Conflict Resolution"
 date: "2026-06-11"
-draft: true
+draft: false
 type: "post"
 tags:
   - "AI Agents"

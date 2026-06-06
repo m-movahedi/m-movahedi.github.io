@@ -1,7 +1,7 @@
 ---
 title: "Research as an Agent Problem"
 date: "2026-06-06"
-draft: true
+draft: false
 type: "post"
 tags:
   - "AI Agents"

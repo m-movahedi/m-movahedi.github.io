@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agentic AI as a Research Tool on Mohammad Movahedi</title>
-    <link>http://127.0.0.1:1314/scratchpad/research-agents/</link>
-    <description>Recent content in Agentic AI as a Research Tool on Mohammad Movahedi</description>
+    <title>Research Methodology on Mohammad Movahedi</title>
+    <link>http://127.0.0.1:1314/tags/research-methodology/</link>
+    <description>Recent content in Research Methodology on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://127.0.0.1:1314/scratchpad/research-agents/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://127.0.0.1:1314/tags/research-methodology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Research as an Agent Problem</title>
       <link>http://127.0.0.1:1314/scratchpad/research-agents/01-research-as-agent-problem/</link>

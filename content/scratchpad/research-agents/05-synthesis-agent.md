@@ -1,7 +1,7 @@
 ---
 title: "The Synthesis Agent: From Data to Narrative"
 date: "2026-06-10"
-draft: true
+draft: false
 type: "post"
 tags:
   - "AI Agents"

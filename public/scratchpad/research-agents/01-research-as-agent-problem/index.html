@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Research as an Agent Problem</title>
+    <meta name="description" content="A researcher&rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas …">
+    <meta name="keywords" content='AI Agents, Research methodology, Multi-agent systems, Literature review, Knowledge synthesis'>
+
+    <meta property="og:url" content="http://127.0.0.1:1314/scratchpad/research-agents/01-research-as-agent-problem/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Research as an Agent Problem">
+    <meta property="og:description" content="A researcher&rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas …">
+    <meta property="og:image" content="http://127.0.0.1:1314/images/profile.png">
+    <meta property="og:image:secure_url" content="http://127.0.0.1:1314/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Research as an Agent Problem">
+    <meta name="twitter:description" content="A researcher&rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas …">
+    <meta property="twitter:domain" content="http://127.0.0.1:1314/scratchpad/research-agents/01-research-as-agent-problem/">
+    <meta property="twitter:url" content="http://127.0.0.1:1314/scratchpad/research-agents/01-research-as-agent-problem/">
+    <meta name="twitter:image" content="http://127.0.0.1:1314/images/profile.png">
+
+    
+    <link rel="canonical" href="http://127.0.0.1:1314/scratchpad/research-agents/01-research-as-agent-problem/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://127.0.0.1:1314/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://127.0.0.1:1314/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://127.0.0.1:1314/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://127.0.0.1:1314/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Research as an Agent Problem</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 6, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ai-agents">AI Agents</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/research-methodology">Research methodology</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/multi-agent-systems">Multi-agent systems</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/literature-review">Literature review</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/knowledge-synthesis">Knowledge synthesis</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>A researcher&rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas across domains, and revising your own methods based on what you find. Most of this work is done alone or in small teams. Each researcher becomes a bottleneck.</p>
+<p>What if instead of one person reading papers, summarizing, and synthesizing, you had specialized agents exploring in parallel?</p>
+<p>This is not about replacing researchers. It is about freeing researchers to focus on the hard thinking while agents handle the systematic, observable, and repeatable work.</p>
+<h2 id="the-researchers-bottleneck">The researcher&rsquo;s bottleneck</h2>
+<p>A typical literature review workflow looks like this:</p>
+<ol>
+<li><strong>Search</strong> - Query databases, scan titles, judge relevance (hours to days)</li>
+<li><strong>Read and extract</strong> - Skim papers, extract methods/findings, track sources (weeks)</li>
+<li><strong>Organize</strong> - Group papers by theme, note relationships, identify gaps (days)</li>
+<li><strong>Synthesize</strong> - Write narrative, connect ideas, propose new questions (weeks)</li>
+<li><strong>Iterate</strong> - Find missing papers, revise understanding, update the narrative (ongoing)</li>
+</ol>
+<p>The bottleneck is not computation. It is human attention. One person cannot simultaneously:</p>
+<ul>
+<li>Monitor ten databases for new papers</li>
+<li>Extract structured data from hundreds of PDFs</li>
+<li>Cross-reference findings to spot contradictions</li>
+<li>Build a coherent mental model of the landscape</li>
+<li>Stay current as new work arrives</li>
+</ul>
+<p>The result: literature reviews become subjective snapshots, recent work is missed, methodological gaps are overlooked, and new researchers repeat the same searches others already did.</p>
+<h2 id="where-agents-help">Where agents help</h2>
+<p>An agent is a system that observes, decides, and acts. For research, agents can handle the <strong>systematic</strong> parts of the workflow—the parts where you can verify the work was done correctly and repeat it reliably.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Bottleneck</th>
+          <th>Traditional approach</th>
+          <th>Agentic approach</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Search across databases</td>
+          <td>Manual queries, selective</td>
+          <td>Scheduled autonomous searches, exhaustive</td>
+      </tr>
+      <tr>
+          <td>Extract structured data</td>
+          <td>Manual reading, notes</td>
+          <td>Automated extraction with verification</td>
+      </tr>
+      <tr>
+          <td>Track relationships</td>
+          <td>Mental model or spreadsheet</td>
+          <td>Persistent knowledge graph updated continuously</td>
+      </tr>
+      <tr>
+          <td>Detect gaps</td>
+          <td>Reader intuition</td>
+          <td>Systematic comparison across papers</td>
+      </tr>
+      <tr>
+          <td>Synthesize narrative</td>
+          <td>Solo writing</td>
+          <td>Agents propose sections, humans refine</td>
+      </tr>
+      <tr>
+          <td>Monitor for new work</td>
+          <td>Manual checks</td>
+          <td>Continuous agents watching arrival feeds</td>
+      </tr>
+  </tbody>
+</table>
+<p>This does not replace the researcher. It replaces the tedious parts that slow thinking down.</p>
+<h2 id="four-ways-agents-change-research">Four ways agents change research</h2>
+<h3 id="1-parallel-exploration">1. Parallel exploration</h3>
+<p>Instead of one person reading papers sequentially, deploy multiple agents:</p>
+<ul>
+<li>One searches for recent conference papers</li>
+<li>One scans journal archives for older foundational work</li>
+<li>One monitors preprint servers for emerging ideas</li>
+<li>One checks for methods your domain borrowed from others</li>
+</ul>
+<p>They work in parallel. A human researcher skimming papers linearly would take weeks for what agents accomplish in hours.</p>
+<h3 id="2-systematic-extraction">2. Systematic extraction</h3>
+<p>When an agent finds a paper, it can extract metadata reliably:</p>
+<ul>
+<li>Authors, publication venue, date</li>
+<li>Core research question</li>
+<li>Datasets used</li>
+<li>Methods and tools</li>
+<li>Key findings and limitations</li>
+<li>What the authors do not claim</li>
+</ul>
+<p>A human reads the abstract and skims once. An agent can extract the same fields from every paper the same way, making comparison easy.</p>
+<h3 id="3-persistent-knowledge-base">3. Persistent knowledge base</h3>
+<p>Papers discovered do not disappear into notebook chaos. Each finding updates a central knowledge base:</p>
+<ul>
+<li>New papers are compared against existing ones for novelty</li>
+<li>Duplicate effort is flagged</li>
+<li>Relationships between papers are recorded</li>
+<li>When you return to the research in six months, the knowledge base is still there</li>
+</ul>
+<h3 id="4-bias-reduction-through-iteration">4. Bias reduction through iteration</h3>
+<p>An individual researcher has blind spots: papers they did not search the right way, databases they overlooked, methodological assumptions they did not question. When multiple agents explore independently, they catch different gaps.</p>
+<p>A human then reviews and synthesizes what the agents found, making deliberate choices about what matters. But the agents make sure nothing important is accidentally overlooked.</p>
+<h2 id="what-agents-cannot-do">What agents cannot do</h2>
+<p>Agents are not a substitute for research judgment. They cannot:</p>
+<ul>
+<li>Decide whether a research question matters</li>
+<li>Judge whether a method is sound without guidance</li>
+<li>Choose between competing paradigms</li>
+<li>Determine what deserves publication</li>
+<li>Know which constraints are negotiable vs. fixed</li>
+</ul>
+<p>These require human wisdom, experience, and taste. What agents do is expand the horizon of what a human can see before making those judgments.</p>
+<h2 id="a-concrete-example-evacuation-behavior-research">A concrete example: evacuation behavior research</h2>
+<p>Suppose you want to understand how people evacuate during disasters. Your bottleneck today:</p>
+<ol>
+<li>You manually search Google Scholar: &ldquo;evacuation behavior&rdquo;, &ldquo;disaster evacuation&rdquo;, &ldquo;human behavior flooding&rdquo;, etc.</li>
+<li>You skim abstracts and decide which 20 papers to read</li>
+<li>You extract methods and findings by hand</li>
+<li>You write a literature review summarizing what you found</li>
+<li>Three months later, new papers arrive; you manually re-search to see if anything changed</li>
+</ol>
+<p>With agents:</p>
+<ol>
+<li>An agent continuously monitors multiple databases (Google Scholar, arxiv, TRID, SSRN, domain-specific repos) for variations of your search terms.</li>
+<li>Each new paper is extracted for authors, methods (survey vs. simulation vs. real-world), datasets (if any), findings, and limitations.</li>
+<li>An agent compares each new paper to what you already know: &ldquo;This uses the same dataset as Paper X but a different model. New finding: Y.&rdquo;</li>
+<li>A synthesis agent builds an evolving mind-graph: &ldquo;Flow-based models predict evacuation time well, but agent-based models capture behavioral heterogeneity. No one has combined both approaches for cascading failures.&rdquo;</li>
+<li>When you query the knowledge base, you get not just papers but structured comparison.</li>
+<li>Every week, the agent alerts you: &ldquo;5 new papers arrived. 2 are directly relevant. Here is how they change your landscape.&rdquo;</li>
+</ol>
+<p>The researcher is no longer overwhelmed. The agent is no longer passive.</p>
+<h2 id="tradeoffs-to-manage">Tradeoffs to manage</h2>
+<h3 id="speed-vs-depth">Speed vs. depth</h3>
+<p>Agents are fast at breadth (scan 1,000 papers). They may be shallow at depth (miss nuance in a complex paper). The workflow is: agents find candidates, humans read the important ones carefully.</p>
+<h3 id="recall-vs-precision">Recall vs. precision</h3>
+<p>An agent trained to find <em>everything</em> related to evacuation will include papers on crowd dynamics, ant colony behavior, building architecture, and network analysis—many with no direct relevance. One trained to find only direct matches misses creative connections.</p>
+<p>Solution: agents with adjustable search width. Start broad, then filter.</p>
+<h3 id="autonomy-vs-alignment">Autonomy vs. alignment</h3>
+<p>An agent working without feedback will optimize for what you told it to do, not what you actually needed. If you ask it to find papers on &ldquo;agent-based evacuation models&rdquo; and do not mention behavioral heterogeneity, it may miss papers that use agent-based models for other purposes.</p>
+<p>Solution: agents you can interrupt, redirect, and teach as you work.</p>
+<h2 id="the-research-team-mental-model">The research team mental model</h2>
+<p>Think of agents not as individual chatbots but as a research team with specialization:</p>
+<ul>
+<li><strong>Literature Scout</strong> - Finds papers systematically across sources</li>
+<li><strong>Methodology Analyzer</strong> - Extracts methods, datasets, tools, and validation approaches</li>
+<li><strong>Gap Finder</strong> - Compares across papers and highlights what is missing</li>
+<li><strong>Synthesis Writer</strong> - Drafts sections and proposes narrative connections</li>
+<li><strong>Critic</strong> - Questions assumptions, flags contradictions, suggests alternatives</li>
+</ul>
+<p>These are not five separate chatbots. They are coordinated agents with shared access to a knowledge base, specialized instructions, and limited tool permissions.</p>
+<p>You are the team lead. Your job is not to do all the work. Your job is to:</p>
+<ol>
+<li>Set the research question</li>
+<li>Review what the team finds</li>
+<li>Make decisions agents cannot</li>
+<li>Provide feedback that improves the team&rsquo;s work</li>
+</ol>
+<h2 id="why-now">Why now?</h2>
+<p>Agentic AI is suddenly practical because:</p>
+<ol>
+<li><strong>Tool use is reliable</strong> - Models can now use tools consistently and understand when to use them</li>
+<li><strong>Instruction following improved</strong> - You can write detailed rules and have them followed</li>
+<li><strong>MCP and APIs are available</strong> - Agents can connect to databases, search engines, and knowledge bases</li>
+<li><strong>Multi-turn reasoning works</strong> - Agents can observe, revise, and improve their own work</li>
+<li><strong>Cost is manageable</strong> - Running agents on local models or selective hosted API calls is affordable</li>
+</ol>
+<p>Five years ago, agents for research were too expensive and unreliable. Today they are viable.</p>
+<h2 id="what-comes-next-in-this-series">What comes next in this series</h2>
+<p>The next posts will cover:</p>
+<ol>
+<li><strong>Designing your research team</strong> - How to think about agent roles, specialization, and coordination</li>
+<li><strong>The literature scout agent</strong> - Building an agent that searches databases autonomously</li>
+<li><strong>The methodology analyzer</strong> - Extracting structured data from papers at scale</li>
+<li><strong>The synthesis agent</strong> - Turning scattered findings into coherent narrative</li>
+<li><strong>Multi-agent workflows</strong> - How agents discover contradictions and how you resolve them</li>
+<li><strong>From idea to first draft</strong> - A complete walkthrough of using a research team on a new project</li>
+<li><strong>Scaling and maintaining</strong> - Tools, infrastructure, and versioning for long-running research</li>
+</ol>
+<p>Each post includes practical workflows, concrete prompts, and tradeoffs to consider.</p>
+<h2 id="the-practical-lesson">The practical lesson</h2>
+<p>Research is an information problem wrapped in a thinking problem. Agents are good at the information part. You are good at the thinking part. When you separate them cleanly, both can do their best work.</p>
+<p>The researcher&rsquo;s job is not changing—it is shifting. Less time reading abstractly, more time deciding. Less time managing notes, more time building understanding. Less time re-discovering what others found, more time asking what no one has asked yet.</p>
+<p>That is what an agentic research team enables.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

@@ -1,7 +1,7 @@
 ---
 title: "Scaling and Maintaining: Sustaining Your Research Team"
 date: "2026-06-13"
-draft: true
+draft: false
 type: "post"
 tags:
   - "AI Agents"

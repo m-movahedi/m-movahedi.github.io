@@ -1,7 +1,7 @@
 ---
 title: "From Idea to First Draft: An End-to-End Walkthrough"
 date: "2026-06-12"
-draft: true
+draft: false
 type: "post"
 tags:
   - "AI Agents"

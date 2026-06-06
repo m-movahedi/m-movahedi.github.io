@@ -1,7 +1,7 @@
 ---
 title: "The Methodology Analyzer: Extracting Structured Research Data"
 date: "2026-06-09"
-draft: true
+draft: false
 type: "post"
 tags:
   - "AI Agents"

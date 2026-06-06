@@ -1,7 +1,7 @@
 ---
 title: "Designing Your Research Team: Agent Roles and Coordination"
 date: "2026-06-07"
-draft: true
+draft: false
 type: "post"
 tags:
   - "AI Agents"
