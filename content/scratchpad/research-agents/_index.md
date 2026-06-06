@@ -1,7 +1,7 @@
 ---
-title: "Agentic Research"
+title: "Agentic AI as a Research Tool"
 draft: false
 view: "timeline-reverse"
 ---
 
-A beginner-friendly series on agentic AI research tools.
+A beginner-friendly post series on developing agents to help with research.
