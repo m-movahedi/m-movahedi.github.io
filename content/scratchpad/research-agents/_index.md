@@ -1,6 +1,5 @@
 ---
 title: "Agentic AI as a Research Tool"
-draft: false
 view: "timeline-reverse"
 ---
 
