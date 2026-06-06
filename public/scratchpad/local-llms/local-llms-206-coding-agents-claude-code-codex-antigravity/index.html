@@ -419,6 +419,37 @@ gtag('config', 'G-1WZSE8DHZ9');
   </tbody>
 </table>
 <p>The limiting factor is not only model intelligence. Coding agents need reliable tool use, long context management, strong instruction following, and good recovery from errors.</p>
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+<div class="llm-papers">
+  <strong>Key papers on tool use, agentic systems, and code generation</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2305.15334">Schlag et al. (2023), "Toolformer: Language Models Can Teach Themselves to Use Tools"</a>: foundational work on how LLMs learn to call tools and APIs without extensive fine-tuning.</li>
+    <li><a href="https://arxiv.org/abs/2402.01030">Ruan et al. (2024), "Towards General Computer Assistants That Can See, Understand, and Act"</a>: explores how agents combine vision, tool use, and planning for code and repository work.</li>
+    <li><a href="https://arxiv.org/abs/2403.13033">Liang et al. (2024), "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents"</a>: relevant to agent planning and error recovery in coding tasks.</li>
+  </ul>
+</div>
 <h2 id="practical-workflow">Practical workflow</h2>
 <ol>
 <li>Use a local model to explore ideas, summarize files, or draft tests.</li>

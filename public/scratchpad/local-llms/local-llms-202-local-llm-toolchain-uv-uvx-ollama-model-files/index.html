@@ -353,6 +353,37 @@ gtag('config', 'G-1WZSE8DHZ9');
   </tbody>
 </table>
 <p>The model family name is not enough. You need the exact variant, file format, quantization, context support, license, and runtime compatibility.</p>
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+<div class="llm-papers">
+  <strong>Key papers on model distribution, inference runtimes, and software tooling</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2306.00978">Frantar et al. (2023), "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers"</a>: foundational work on model file formats and quantization techniques that power local inference runtimes.</li>
+    <li><a href="https://arxiv.org/abs/2305.18290">Touvron et al. (2023), "Llama 2: Open Foundation and Fine-Tuned Chat Models"</a>: documents model variants, file formats, and deployment considerations relevant to understanding model distribution.</li>
+    <li><a href="https://arxiv.org/abs/2310.13048">Beurer-Kellner et al. (2023), "Efficient Serving of Large Language Models via Adaptive Structure Sharing"</a>: explores how runtimes like Ollama optimize model loading and serving to reduce resource overhead.</li>
+  </ul>
+</div>
 <h2 id="a-beginner-setup-workflow">A beginner setup workflow</h2>
 <ol>
 <li>Install one runtime first, such as Ollama.</li>

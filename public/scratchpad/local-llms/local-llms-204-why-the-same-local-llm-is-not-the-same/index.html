@@ -344,6 +344,37 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="quantization-changes-behavior">Quantization changes behavior</h2>
 <p>Quantization makes models smaller and easier to run. It can also change answer quality, especially on tasks that require precision, long reasoning, or consistent structured output.</p>
 <p>A Q4 model can be perfectly useful for chat and summaries. A higher-bit quantization may be better for code, tool calls, or delicate reasoning. The only honest answer is to test your workload.</p>
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+<div class="llm-papers">
+  <strong>Key papers on quantization effects and post-training adaptation</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2210.17323">Xiao et al. (2022), "Smoothquant: Accurate and Efficient Post-Training Quantization for Large Language Models"</a>: shows how to maintain quality during aggressive quantization by normalizing activation ranges.</li>
+    <li><a href="https://arxiv.org/abs/2208.07339">Frantar et al. (2022), "Optimal Brain Damage via Sensitivity Analysis"</a>: theoretical foundation for understanding which weights matter most during compression.</li>
+    <li><a href="https://arxiv.org/abs/2304.09145">Lin et al. (2023), "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration"</a>: practical quantization method designed specifically for the unique activation patterns of large language models.</li>
+  </ul>
+</div>
 <h2 id="prompt-templates-matter">Prompt templates matter</h2>
 <p>Instruction-tuned models expect prompts in particular formats. Runtimes often handle templates for you, but not always. A hosted provider may add its own wrapper. A local UI may add a system prompt. A coding agent may add repository instructions, tool schemas, and safety rules.</p>
 <p>That is why the same checkpoint can feel different in:</p>
