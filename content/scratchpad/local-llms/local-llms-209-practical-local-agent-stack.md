@@ -1,5 +1,5 @@
 ---
-title : "A Practical Local Agent Stack"
+title : "Local LLMs 209: A Practical Local Agent Stack"
 date : "2026-06-05"
 draft : false
 type : "post"

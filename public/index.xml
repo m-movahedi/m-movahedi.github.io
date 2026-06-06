@@ -72,7 +72,7 @@
       <description>&lt;p&gt;A local LLM setup can feel messy because several tools appear at once: Python environments, command-line utilities, model downloaders, model runtimes, chat interfaces, and APIs. The trick is to separate the toolchain into jobs.&lt;/p&gt;&#xA;&lt;p&gt;For a beginner, four ideas are enough to get oriented: &lt;code&gt;uv&lt;/code&gt;, &lt;code&gt;uvx&lt;/code&gt;, Ollama, and model files.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-tools-install-things-runtimes-run-models&#34;&gt;Mental model: tools install things, runtimes run models&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;uv&lt;/code&gt; helps manage Python projects, Python versions, dependencies, and Python command-line tools. Ollama runs language models and exposes them through a local API. A model file contains the model weights and metadata that the runtime needs.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Local LLMs 101: What Runs on Your Machine</title>
+      <title>Local LLMs 201: What Runs on Your Machine</title>
       <link>http://127.0.0.1:1314/scratchpad/local-llms/local-llms-101-what-runs-on-your-machine/</link>
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
       <guid>http://127.0.0.1:1314/scratchpad/local-llms/local-llms-101-what-runs-on-your-machine/</guid>

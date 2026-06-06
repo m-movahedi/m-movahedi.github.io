@@ -1,5 +1,5 @@
 ---
-title : "Hosted Routers and BYOK: OpenRouter.ai in the Local LLM World"
+title : "Local LLMs 205: Hosted Routers and BYOK: OpenRouter.ai in the Local LLM World"
 date : "2026-06-01"
 draft : false
 type : "post"

@@ -18,26 +18,29 @@
     
 
     
-    <title>Local LLMs 204: Why the Same Model Is Not Always the Same</title>
-    <meta name="description" content="You may see the same model name in Ollama, Hugging Face, LM Studio, OpenRouter, a benchmark table, and a coding tool. Then you try it in two places and it …">
-    <meta name="keywords" content='Local LLMs, AI Models, Model Serving'>
+    <title>Local LLMs 205: Hosted Routers and BYOK: OpenRouter.ai in the Local LLM World</title>
+    <meta name="description" content="Local LLMs are about control. Hosted routers are about reach. At first those sound opposite, but many practical workflows use both.
+OpenRouter is a hosted …">
+    <meta name="keywords" content='Local LLMs, OpenRouter, BYOK, AI APIs'>
 
-    <meta property="og:url" content="http://127.0.0.1:1314/scratchpad/local-llms/why-the-same-local-llm-is-not-the-same/">
+    <meta property="og:url" content="http://127.0.0.1:1314/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Local LLMs 204: Why the Same Model Is Not Always the Same">
-    <meta property="og:description" content="You may see the same model name in Ollama, Hugging Face, LM Studio, OpenRouter, a benchmark table, and a coding tool. Then you try it in two places and it …">
+    <meta property="og:title" content="Local LLMs 205: Hosted Routers and BYOK: OpenRouter.ai in the Local LLM World">
+    <meta property="og:description" content="Local LLMs are about control. Hosted routers are about reach. At first those sound opposite, but many practical workflows use both.
+OpenRouter is a hosted …">
     <meta property="og:image" content="http://127.0.0.1:1314/images/profile.png">
     <meta property="og:image:secure_url" content="http://127.0.0.1:1314/images/profile.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Local LLMs 204: Why the Same Model Is Not Always the Same">
-    <meta name="twitter:description" content="You may see the same model name in Ollama, Hugging Face, LM Studio, OpenRouter, a benchmark table, and a coding tool. Then you try it in two places and it …">
-    <meta property="twitter:domain" content="http://127.0.0.1:1314/scratchpad/local-llms/why-the-same-local-llm-is-not-the-same/">
-    <meta property="twitter:url" content="http://127.0.0.1:1314/scratchpad/local-llms/why-the-same-local-llm-is-not-the-same/">
+    <meta name="twitter:title" content="Local LLMs 205: Hosted Routers and BYOK: OpenRouter.ai in the Local LLM World">
+    <meta name="twitter:description" content="Local LLMs are about control. Hosted routers are about reach. At first those sound opposite, but many practical workflows use both.
+OpenRouter is a hosted …">
+    <meta property="twitter:domain" content="http://127.0.0.1:1314/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/">
+    <meta property="twitter:url" content="http://127.0.0.1:1314/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/">
     <meta name="twitter:image" content="http://127.0.0.1:1314/images/profile.png">
 
     
-    <link rel="canonical" href="http://127.0.0.1:1314/scratchpad/local-llms/why-the-same-local-llm-is-not-the-same/">
+    <link rel="canonical" href="http://127.0.0.1:1314/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/">
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -187,7 +190,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
-        <h1>Local LLMs 204: Why the Same Model Is Not Always the Same</h1>
+        <h1>Local LLMs 205: Hosted Routers and BYOK: OpenRouter.ai in the Local LLM World</h1>
 
         
 
@@ -210,7 +213,7 @@ gtag('config', 'G-1WZSE8DHZ9');
           <p class="post-date">
               
 
-              May 31, 2026
+              June 1, 2026
 
               
           </p>
@@ -223,183 +226,195 @@ gtag('config', 'G-1WZSE8DHZ9');
            
          
            
-             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ai-models">AI Models</a></li>
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/openrouter">OpenRouter</a></li>
            
          
            
-             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/model-serving">Model Serving</a></li>
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/byok">BYOK</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://127.0.0.1:1314/tags/ai-apis">AI APIs</a></li>
            
          
         </ul>
     </div>
 
     <div class="post-content">
-        <p>You may see the same model name in Ollama, Hugging Face, LM Studio, OpenRouter, a benchmark table, and a coding tool. Then you try it in two places and it behaves differently.</p>
-<p>This is normal. &ldquo;Same model&rdquo; often hides several layers of difference.</p>
-<h2 id="mental-model-name-checkpoint-format-runtime-provider">Mental model: name, checkpoint, format, runtime, provider</h2>
-<p>A model name is only the label at the top of the stack. Behavior comes from the whole stack:</p>
+        <p>Local LLMs are about control. Hosted routers are about reach. At first those sound opposite, but many practical workflows use both.</p>
+<p>OpenRouter is a hosted service that provides access to many models through one API. That makes it useful when you want to compare models, keep one client interface, or fall back to a stronger hosted model when your local machine is not enough.</p>
+<h2 id="mental-model-local-first-hosted-fallback">Mental model: local-first, hosted fallback</h2>
+<p>A simple hybrid workflow looks like this:</p>
 <table>
   <thead>
       <tr>
           <th>Layer</th>
-          <th>Example difference</th>
+          <th>Beginner role</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Family</td>
-          <td>Qwen, Llama, Gemma, Mistral, DeepSeek, Phi</td>
+          <td>Local runtime</td>
+          <td>Private drafts, experiments, offline work, cheap repeated tasks</td>
       </tr>
       <tr>
-          <td>Checkpoint</td>
-          <td>Base, instruct, coder, reasoning, distilled, updated release</td>
+          <td>Hosted router</td>
+          <td>Model comparison, stronger models, larger contexts, backup path</td>
       </tr>
       <tr>
-          <td>File format</td>
-          <td>GGUF, safetensors, runtime-specific package</td>
-      </tr>
-      <tr>
-          <td>Quantization</td>
-          <td>Q4, Q5, Q8, full precision</td>
-      </tr>
-      <tr>
-          <td>Runtime</td>
-          <td>Ollama, llama.cpp, vLLM, MLX, transformers</td>
-      </tr>
-      <tr>
-          <td>Prompt template</td>
-          <td>ChatML, model-specific instruct format, custom system prompt</td>
-      </tr>
-      <tr>
-          <td>Provider</td>
-          <td>Local machine, OpenRouter route, direct vendor API</td>
-      </tr>
-      <tr>
-          <td>Parameters</td>
-          <td>Temperature, top_p, max tokens, reasoning settings, stop sequences</td>
+          <td>Application</td>
+          <td>Chat UI, coding agent, script, RAG system, or evaluation harness</td>
       </tr>
   </tbody>
 </table>
-<p>If any layer changes, the behavior can change.</p>
-<h2 id="base-vs-instruct-vs-chat">Base vs instruct vs chat</h2>
-<p>A base model is usually trained to continue text. It may be powerful, but it is not automatically good at following instructions. An instruct or chat model has been adapted to respond to user requests in a conversational format.</p>
-<p>For beginners:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Variant</th>
-          <th>Beginner use</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Base</td>
-          <td>Usually avoid unless you know why you need it</td>
-      </tr>
-      <tr>
-          <td>Instruct/chat</td>
-          <td>Best default for normal prompting</td>
-      </tr>
-      <tr>
-          <td>Coder</td>
-          <td>Use for programming-heavy tasks</td>
-      </tr>
-      <tr>
-          <td>Reasoning</td>
-          <td>Use for difficult multi-step tasks, but expect slower output</td>
-      </tr>
-      <tr>
-          <td>Vision</td>
-          <td>Use when image input is needed</td>
-      </tr>
-  </tbody>
-</table>
-<p>If a model feels strangely unhelpful, check whether you accidentally loaded a base model.</p>
-<h2 id="gguf-vs-safetensors">GGUF vs safetensors</h2>
-<p>GGUF is common in local inference workflows built around llama.cpp and tools that package models for consumer hardware. Safetensors is common in Hugging Face and PyTorch-style model distribution.</p>
-<p>Neither format is simply &ldquo;better.&rdquo; They belong to different workflows.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Format</th>
-          <th>Common workflow</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>GGUF</td>
-          <td>Local desktop inference, quantized model files, llama.cpp-style runtimes</td>
-      </tr>
-      <tr>
-          <td>safetensors</td>
-          <td>Training, fine-tuning, transformers pipelines, server-side inference</td>
-      </tr>
-      <tr>
-          <td>Runtime package</td>
-          <td>Ollama-style model distribution and local model management</td>
-      </tr>
-  </tbody>
-</table>
-<p>When someone says they ran &ldquo;Qwen 8B,&rdquo; ask which format and quantization.</p>
-<h2 id="quantization-changes-behavior">Quantization changes behavior</h2>
-<p>Quantization makes models smaller and easier to run. It can also change answer quality, especially on tasks that require precision, long reasoning, or consistent structured output.</p>
-<p>A Q4 model can be perfectly useful for chat and summaries. A higher-bit quantization may be better for code, tool calls, or delicate reasoning. The only honest answer is to test your workload.</p>
-<h2 id="prompt-templates-matter">Prompt templates matter</h2>
-<p>Instruction-tuned models expect prompts in particular formats. Runtimes often handle templates for you, but not always. A hosted provider may add its own wrapper. A local UI may add a system prompt. A coding agent may add repository instructions, tool schemas, and safety rules.</p>
-<p>That is why the same checkpoint can feel different in:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Place</th>
-          <th>Hidden influence</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Ollama chat</td>
-          <td>Ollama model template and runtime defaults</td>
-      </tr>
-      <tr>
-          <td>Hugging Face demo</td>
-          <td>Demo prompt format and generation parameters</td>
-      </tr>
-      <tr>
-          <td>OpenRouter</td>
-          <td>Provider routing, normalization, moderation, supported parameters</td>
-      </tr>
-      <tr>
-          <td>Coding agent</td>
-          <td>System prompt, tools, repo context, permissions</td>
-      </tr>
-  </tbody>
-</table>
-<p>The model is not answering from a vacuum. It is answering inside a harness.</p>
-<h2 id="provider-hosted-variants">Provider-hosted variants</h2>
-<p>Hosted aggregators and providers may expose the same family or checkpoint through different backends. They may differ in context length, moderation, rate limits, quantization, tokenizer accounting, tool support, structured outputs, or sampling defaults.</p>
-<p>OpenRouter&rsquo;s model metadata is useful because it exposes fields such as model IDs, context length, architecture information, pricing, top provider details, and supported parameters. But even then, check the exact endpoint when feature support matters.</p>
+<p>You can start local and escalate only when needed. That is different from sending every prompt to the cloud by default.</p>
+<h2 id="what-openrouter-does">What OpenRouter does</h2>
+<p>OpenRouter normalizes access to many models and providers behind an OpenAI-like API shape. Its documentation describes a models API that exposes metadata such as model IDs, context length, architecture, pricing, provider details, and supported parameters.</p>
+<p>That metadata matters because model names are not enough. You often need to know whether a specific endpoint supports tools, structured outputs, image input, reasoning parameters, or a particular context window.</p>
 <p>Official docs to verify:</p>
 <ul>
 <li><a href="https://openrouter.ai/docs/guides/overview/models">OpenRouter models documentation</a></li>
 <li><a href="https://openrouter.ai/docs/api-reference/overview">OpenRouter API overview</a></li>
-<li><a href="https://docs.ollama.com/openai">Ollama OpenAI compatibility</a></li>
+<li><a href="https://openrouter.ai/docs/api/reference/parameters">OpenRouter parameters</a></li>
 </ul>
-<h2 id="a-practical-comparison-checklist">A practical comparison checklist</h2>
-<p>When comparing two &ldquo;same model&rdquo; results, write down:</p>
+<h2 id="byok-in-plain-english">BYOK in plain English</h2>
+<p>BYOK means &ldquo;bring your own key.&rdquo; In practice, people use the phrase in two related ways:</p>
 <ol>
-<li>Exact model ID or file name.</li>
-<li>Base, instruct, coder, reasoning, or distilled variant.</li>
-<li>File format.</li>
-<li>Quantization.</li>
-<li>Runtime or provider.</li>
-<li>Context length used.</li>
-<li>Prompt template or chat format.</li>
-<li>System prompt.</li>
-<li>Temperature and sampling settings.</li>
-<li>Tool or structured-output settings.</li>
+<li>You provide your own API key to an app instead of using the app&rsquo;s bundled account.</li>
+<li>You route requests through a service where you control billing and provider choices.</li>
+</ol>
+<p>The benefit is control. The cost is that you are now responsible for keys, spending, provider selection, and data boundaries.</p>
+<h2 id="when-openrouter-helps">When OpenRouter helps</h2>
+<p>OpenRouter can be helpful when:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Need</th>
+          <th>Why a router helps</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Compare many models</td>
+          <td>One API surface reduces setup friction</td>
+      </tr>
+      <tr>
+          <td>Keep an app flexible</td>
+          <td>Change model IDs without rewriting the client</td>
+      </tr>
+      <tr>
+          <td>Use stronger models sometimes</td>
+          <td>Local model handles routine work, hosted model handles hard work</td>
+      </tr>
+      <tr>
+          <td>Audit cost</td>
+          <td>Some responses include usage and cost metadata</td>
+      </tr>
+      <tr>
+          <td>Check feature support</td>
+          <td>Model metadata can expose supported parameters</td>
+      </tr>
+  </tbody>
+</table>
+<p>It is especially useful for learning because you can compare local expectations against hosted behavior.</p>
+<h2 id="when-openrouter-reduces-control">When OpenRouter reduces control</h2>
+<p>A router is still a hosted service. It may reduce friction, but it does not make the workflow local.</p>
+<p>Check:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Concern</th>
+          <th>What to ask</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Privacy</td>
+          <td>What data is sent, logged, retained, or passed to providers?</td>
+      </tr>
+      <tr>
+          <td>Routing</td>
+          <td>Which provider actually handled this request?</td>
+      </tr>
+      <tr>
+          <td>Moderation</td>
+          <td>Is the endpoint moderated or filtered?</td>
+      </tr>
+      <tr>
+          <td>Availability</td>
+          <td>Can the route change, fail, or be deprecated?</td>
+      </tr>
+      <tr>
+          <td>Cost</td>
+          <td>What are prompt, completion, reasoning, caching, or tool costs?</td>
+      </tr>
+      <tr>
+          <td>Feature mismatch</td>
+          <td>Does this endpoint support tools or structured output?</td>
+      </tr>
+  </tbody>
+</table>
+<p>For sensitive work, local inference may be preferable. For difficult work, hosted inference may be worth the tradeoff.</p>
+<h2 id="local-runtime-vs-hosted-router">Local runtime vs hosted router</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Local runtime</th>
+          <th>Hosted router</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Data location</td>
+          <td>Your machine, depending on app behavior</td>
+          <td>Remote service and provider path</td>
+      </tr>
+      <tr>
+          <td>Setup</td>
+          <td>More local setup</td>
+          <td>Easier API access</td>
+      </tr>
+      <tr>
+          <td>Cost</td>
+          <td>Hardware and electricity after setup</td>
+          <td>Pay per use or account limits</td>
+      </tr>
+      <tr>
+          <td>Speed</td>
+          <td>Depends on your hardware</td>
+          <td>Depends on provider and network</td>
+      </tr>
+      <tr>
+          <td>Model strength</td>
+          <td>Limited by hardware</td>
+          <td>Access to larger models</td>
+      </tr>
+      <tr>
+          <td>Offline use</td>
+          <td>Possible</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Feature support</td>
+          <td>Runtime-dependent</td>
+          <td>Endpoint-dependent</td>
+      </tr>
+  </tbody>
+</table>
+<p>The right answer is often not one or the other. It is a default path plus an escape hatch.</p>
+<h2 id="practical-workflow">Practical workflow</h2>
+<ol>
+<li>Run routine prompts locally first.</li>
+<li>Keep a hosted model available for harder tasks.</li>
+<li>Use the same evaluation prompts across local and hosted models.</li>
+<li>Track model ID, provider, cost, and quality.</li>
+<li>Keep sensitive prompts local unless you have reviewed provider policy.</li>
+<li>Check supported parameters before relying on tools or structured outputs.</li>
 </ol>
 <h2 id="what-to-verify-because-tools-change">What to verify because tools change</h2>
-<p>Model names, aliases, and provider routes can change. Avoid saying &ldquo;this model supports tools&rdquo; unless you have checked the current endpoint or runtime docs. The local file, the hosted endpoint, and the app integration may not support the same feature set.</p>
-<p>The practical lesson: when a model behaves differently, do not assume you are imagining it. You may be looking at a different checkpoint, format, runtime, prompt, or provider path.</p>
+<p>Before publishing exact model suggestions, verify the current OpenRouter model list, model IDs, provider routes, context lengths, pricing, and supported parameters. Do not assume two endpoints with similar names have the same behavior.</p>
+<p>The practical lesson: OpenRouter is not a replacement for local LLMs. It is a useful bridge between local control and hosted model variety.</p>
 
         
     </div>
@@ -419,9 +434,9 @@ gtag('config', 'G-1WZSE8DHZ9');
     
 
     
-        
-    
 
+    
+        
     
 
     
@@ -451,14 +466,14 @@ gtag('config', 'G-1WZSE8DHZ9');
     
     <div class="prev-post">
         <p>
-            <a href="/scratchpad/local-llms/ocal-llms-203-choosing-a-local-llm-without-guessing/">
+            <a href="/scratchpad/local-llms/local-llms-204-why-the-same-local-llm-is-not-the-same/">
                 &#8592;
                 Previous:
-                Local LLMs 203: Choosing a Model Without Guessing
+                Local LLMs 204: Why the Same Model Is Not Always the Same
             </a>
         </p>
         <p class="prev-post-date">
-            May 30, 2026
+            May 31, 2026
         </p>
     </div>
     
@@ -466,14 +481,14 @@ gtag('config', 'G-1WZSE8DHZ9');
     
     <div class="next-post">
         <p>
-            <a href="/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/">
+            <a href="/scratchpad/local-llms/local-llms-206-coding-agents-claude-code-codex-antigravity/">
                 Next:
-                Local LLMs 205: Hosted Routers and BYOK: OpenRouter.ai in the Local LLM World
+                Local LLMs 206: Coding Agents
                 &#8594;
             </a>
         </p>
         <p class="next-post-date">
-            June 1, 2026
+            June 2, 2026
         </p>
     </div>
     

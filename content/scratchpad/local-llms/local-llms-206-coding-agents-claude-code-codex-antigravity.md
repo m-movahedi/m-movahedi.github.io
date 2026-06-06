@@ -1,5 +1,5 @@
 ---
-title : "Coding Agents: Claude Code, Codex, and Antigravity"
+title : "Local LLMs 206: Coding Agents"
 date : "2026-06-02"
 draft : false
 type : "post"

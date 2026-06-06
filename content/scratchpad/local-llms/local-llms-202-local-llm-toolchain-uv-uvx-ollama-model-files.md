@@ -1,5 +1,5 @@
 ---
-title : "The Local LLM Toolchain: uv, uvx, Ollama, and Model Files"
+title : "Local LLMs 202: The Local LLM Toolchain: uv, uvx, Ollama, and Model Files"
 date : "2026-05-29"
 draft : false
 type : "post"

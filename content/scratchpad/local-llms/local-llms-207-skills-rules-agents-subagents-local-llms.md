@@ -1,5 +1,5 @@
 ---
-title : "Skills, Rules, Agents, and Subagents"
+title : "Local LLMs 207: Skills, Rules, Agents, and Subagents"
 date : "2026-06-03"
 draft : false
 type : "post"

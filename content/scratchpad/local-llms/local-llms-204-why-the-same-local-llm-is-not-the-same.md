@@ -1,5 +1,5 @@
 ---
-title : "Why the Same Model Is Not Always the Same"
+title : "Local LLMs 204: Why the Same Model Is Not Always the Same"
 date : "2026-05-31"
 draft : false
 type : "post"

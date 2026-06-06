@@ -1,5 +1,5 @@
 ---
-title : "MCP: How Local LLMs Get Tools and Context"
+title : "Local LLMs 208: MCP and How Local LLMs Get Tools and Context"
 date : "2026-06-04"
 draft : false
 type : "post"

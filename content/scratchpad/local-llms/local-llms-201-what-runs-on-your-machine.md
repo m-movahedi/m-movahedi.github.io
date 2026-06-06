@@ -1,5 +1,5 @@
 ---
-title : "Local LLMs 101: What Runs on Your Machine"
+title : "Local LLMs 201: What Runs on Your Machine"
 date : "2026-05-28"
 draft : false
 type : "post"

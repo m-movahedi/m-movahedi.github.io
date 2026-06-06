@@ -1,5 +1,5 @@
 ---
-title : "Choosing a Model Without Guessing"
+title : "Local LLMs 203: Choosing a Model Without Guessing"
 date : "2026-05-30"
 draft : false
 type : "post"
