@@ -99,7 +99,7 @@
   line-height: 1.55;
   margin: 1.1rem 0;
   padding: 0.8rem 1rem;
-  white-space: pre-wrap;
+  white-space: pre;
 }
 
 /* ---------- bar charts / meters --------------------- */
