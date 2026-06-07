@@ -31,7 +31,7 @@ A model name is only the label at the top of the stack. Behavior comes from the 
 <div class="llm-diagram-container" id="diagram-204">
   <div class="llm-diagram-header">
     <h4>The "Same Model" Stack</h4>
-    <p>A model name is just the top layer. <button id="btn-204-highlight" style="margin-left:10px; padding:4px 8px; cursor:pointer;">Highlight Differences</button></p>
+    <p>A model name is just the top layer.</p>
   </div>
   <div class="llm-grid-layout" style="grid-template-columns: repeat(4, 1fr); gap: 0.5rem; text-align: center;">
     <div class="llm-node"><div class="llm-node-title">Family</div><div class="llm-node-subtitle">e.g. Qwen</div></div>
