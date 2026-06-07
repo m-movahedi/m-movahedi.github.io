@@ -252,8 +252,7 @@ gtag('config', 'G-1WZSE8DHZ9');
   </div>
 </div>
 <p>The five cards above are not a one-shot sequence. In practice they form a loop: after observing a result, the agent revises its plan and acts again until the goal is met.</p>
-<div class="llm-code">
-┌─────────────────────────┐
+<pre class="llm-code"><code>┌─────────────────────────┐
 │           GOAL          │
 └────────────┬────────────┘
              │
@@ -275,8 +274,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 │            ▼
 │      ┌───────────┐
 └──────┤  REVISE   │─── done? continue? ask human?
-       └───────────┘
-</div>
+       └───────────┘</code></pre>
 <p>This loop is powerful because it lets the model interact with the world instead of only describing it. It is risky for the same reason. A bad answer is one thing. A bad action can change files, send messages, spend money, leak data, or corrupt a workflow.</p>
 <div class="llm-note">
   <p><strong>Working definition:</strong> an LLM agent is a system where the model helps choose actions over time, usually with tools, memory, and feedback.</p>
