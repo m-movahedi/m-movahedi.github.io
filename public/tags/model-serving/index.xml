@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Model Serving on Mohammad Movahedi</title>
-    <link>http://localhost:1313/tags/model-serving/</link>
+    <link>https://m-movahedi.com/tags/model-serving/</link>
     <description>Recent content in Model Serving on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 31 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/model-serving/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://m-movahedi.com/tags/model-serving/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Local LLMs 204: Why the Same Model Is Not Always the Same</title>
-      <link>http://localhost:1313/scratchpad/local-llms/local-llms-204-why-the-same-local-llm-is-not-the-same/</link>
+      <link>https://m-movahedi.com/scratchpad/local-llms/local-llms-204-why-the-same-local-llm-is-not-the-same/</link>
       <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/local-llms/local-llms-204-why-the-same-local-llm-is-not-the-same/</guid>
+      <guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-204-why-the-same-local-llm-is-not-the-same/</guid>
       <description>&lt;p&gt;You may see the same model name in Ollama, Hugging Face, LM Studio, OpenRouter, a benchmark table, and a coding tool. Then you try it in two places and it behaves differently.&lt;/p&gt;&#xA;&lt;p&gt;This is normal. &amp;ldquo;Same model&amp;rdquo; often hides several layers of difference.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-name-checkpoint-format-runtime-provider&#34;&gt;Mental model: name, checkpoint, format, runtime, provider&lt;/h2&gt;&#xA;&lt;p&gt;A model name is only the label at the top of the stack. Behavior comes from the whole stack:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Layer&lt;/th&gt;&#xA;          &lt;th&gt;Example difference&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Family&lt;/td&gt;&#xA;          &lt;td&gt;Qwen, Llama, Gemma, Mistral, DeepSeek, Phi&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Checkpoint&lt;/td&gt;&#xA;          &lt;td&gt;Base, instruct, coder, reasoning, distilled, updated release&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;File format&lt;/td&gt;&#xA;          &lt;td&gt;GGUF, safetensors, runtime-specific package&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Quantization&lt;/td&gt;&#xA;          &lt;td&gt;Q4, Q5, Q8, full precision&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Runtime&lt;/td&gt;&#xA;          &lt;td&gt;Ollama, llama.cpp, vLLM, MLX, transformers&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Prompt template&lt;/td&gt;&#xA;          &lt;td&gt;ChatML, model-specific instruct format, custom system prompt&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Provider&lt;/td&gt;&#xA;          &lt;td&gt;Local machine, OpenRouter route, direct vendor API&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Parameters&lt;/td&gt;&#xA;          &lt;td&gt;Temperature, top_p, max tokens, reasoning settings, stop sequences&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;If any layer changes, the behavior can change.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,0 +1,339 @@
+---
+title : "HBM 14: Social Practice Theory"
+date  : "2026-06-06"
+draft : false
+type  : "post"
+---
+
+Every model in this series so far has shared one fundamental assumption: behavior is something that individuals *do*. People form attitudes, weigh risks, calculate utilities, feel moral obligations, and then choose to act. Policies and interventions target those individual processes — changing attitudes, providing information, adjusting incentives, shifting norms. The person is the unit of analysis.
+
+Social Practice Theory (SPT) challenges this assumption at its root. The question is not "Why does this person drive?" but "Why is driving the normal, obvious, almost invisible way of getting around?" SPT argues that the answer lies not in individual psychology but in the structure of *practices* — socially organized bundles of activity that connect materials, competences, and meanings into routines that feel natural to their practitioners. Car driving is not merely a choice made by millions of individuals. It is a practice — one that is held together by roads, parking lots, suburbs, driving skills, automotive culture, status symbols, and the feeling of personal freedom.
+
+This is a fundamentally different way of thinking about behavior, and it carries fundamentally different implications for transportation policy.
+
+## Why the Individual-Choice Framing Is Not Enough
+
+Consider a typical suburban commuter. Every weekday, she drives 45 minutes to work. She parks in a company lot, drives to lunch, drives to pick up her child, drives to the grocery store, and drives home. She has heard about climate change, understands that car emissions are harmful, and even says in surveys that she supports sustainable transportation. But she drives every day.
+
+The models examined so far would diagnose this in various ways:
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>TPB would say</strong>
+    <p>Her intention to use alternatives is weak because perceived behavioral control is low — she doesn't believe she can realistically commute without a car.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>NAM would say</strong>
+    <p>She may be aware of consequences but denies personal responsibility, or her personal norm is overridden by practical constraints.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>VBN would say</strong>
+    <p>Her values may not be strongly biospheric, or the chain breaks at the awareness-to-responsibility link.</p>
+  </div>
+</div>
+
+All of these diagnoses locate the problem inside the individual — in her cognitions, values, beliefs, or psychological states. SPT offers a different diagnosis entirely.
+
+<div class="hbm-note">
+  <p><strong>SPT's diagnosis:</strong> The problem is not in her head. The problem is in the practice. Driving is not a "choice" she makes each morning after weighing alternatives. It is a routine performance of a socially organized practice that is held together by suburban land use (materials), driving competence and route knowledge (competences), and cultural meanings of freedom, convenience, adulthood, and status (meanings). Changing her behavior requires changing the practice — not just changing her mind.</p>
+</div>
+
+## The Model: Practices as the Unit of Analysis
+
+Social Practice Theory draws on the work of several social theorists, most notably Andreas Reckwitz, Theodore Schatzki, and Elizabeth Shove. The version most influential in transportation and sustainability research is Shove, Pantzar, and Watson's (2012) framework, which defines a practice as composed of three interconnected elements.
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Materials</strong>
+    <p>The physical stuff: infrastructure, objects, tools, technologies, built environments. For driving: roads, highways, parking lots, cars, fuel stations, suburban housing, garages, traffic signals, GPS devices.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Competences</strong>
+    <p>The skills, knowledge, and know-how: driving ability, route knowledge, traffic navigation, parking strategies, vehicle maintenance, familiarity with traffic laws and conventions.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Meanings</strong>
+    <p>The cultural significance, norms, aspirations, and symbols: freedom, independence, adulthood, status, convenience, control, privacy, masculinity, modernity.</p>
+  </div>
+</div>
+
+A practice exists when these three elements are linked together in a recognizable, routinized pattern of activity. The practice of "driving to work" is not a single decision — it is a durable configuration of roads (materials), driving skills and route habits (competences), and the cultural sense that driving is normal, adult, and necessary (meanings).
+
+<div class="hbm-note">
+  <p><strong>Key shift:</strong> In SPT, the individual is not the primary agent. The individual is a <em>carrier</em> of practices — a person who performs practices that exist as social entities. Practices recruit practitioners, persist over time, evolve, compete with other practices, and can decline or disappear. The analytic focus shifts from "Why does this person behave this way?" to "What holds this practice together, and what would it take to reconfigure or replace it?"</p>
+</div>
+
+### How Practices Change
+
+Practices are not static. They evolve as their elements change. New materials (e-bikes), new competences (app-based navigation), or new meanings (cycling as urban sophistication) can reconfigure a practice or create new ones. Practices can also break apart when a critical element is removed — a road closure, a license suspension, a cultural shift.
+
+<div class="hbm-flow" role="img" aria-label="Practice dynamics">
+  <div class="hbm-card">
+    <strong>Making</strong>
+    <p>New links form between materials, competences, and meanings. A new practice emerges (e.g., e-scooter commuting).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Maintaining</strong>
+    <p>Existing links are reinforced through repetition, infrastructure investment, and cultural reproduction. The practice stabilizes (e.g., car commuting).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Breaking</strong>
+    <p>Links dissolve. Materials are removed, competences become obsolete, or meanings shift. The practice declines (e.g., horse-drawn transport).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Substituting</strong>
+    <p>One practice displaces another by offering a more compelling configuration of elements (e.g., car ownership displacing transit use in postwar suburbs).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Reconfiguring</strong>
+    <p>Elements are rearranged within a practice, changing its character (e.g., commuting shifts from driving to e-biking with the same route and schedule).</p>
+  </div>
+</div>
+
+## Core Constructs
+
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Materials</span>
+  <span class="hbm-construct">Competences</span>
+  <span class="hbm-construct">Meanings</span>
+  <span class="hbm-construct">Practice-as-entity</span>
+  <span class="hbm-construct">Practice-as-performance</span>
+  <span class="hbm-construct">Carriers (practitioners)</span>
+  <span class="hbm-construct">Routines</span>
+  <span class="hbm-construct">Practice dynamics (making, breaking, maintaining)</span>
+</div>
+
+SPT distinguishes between a *practice-as-entity* (the recognizable pattern that exists as a social phenomenon — "driving") and a *practice-as-performance* (each specific instance of someone performing the practice — "Maria driving to work on Tuesday"). The entity persists even when no one is performing it at a given moment; performances reproduce and sustain the entity over time.
+
+## Causal Logic (or Rather, the Rejection of Linear Causality)
+
+SPT does not propose a causal chain like TPB (attitude → intention → behavior) or VBN (values → beliefs → norms → behavior). Instead, it proposes a configurational logic: practices are held together by the *integration* of elements, and they change when elements are reconfigured.
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Linear causality (individual models)</strong>
+    <p>Attitude → Intention → Behavior</p>
+    <p>If we change the attitude, we change the behavior.</p>
+    <p>The lever is the individual mind.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Configurational logic (SPT)</strong>
+    <p>Materials ↔ Competences ↔ Meanings = Practice</p>
+    <p>If we change the configuration of elements, the practice changes.</p>
+    <p>The levers are infrastructure, skills, and cultural meaning — not just mindsets.</p>
+  </div>
+</div>
+
+This has profound implications for intervention. From an SPT perspective, an information campaign about the environmental benefits of cycling (targeting meanings) will fail if cycling infrastructure is absent (materials) and people lack cycling skills and confidence (competences). All three elements must be addressed for the practice to change.
+
+<div class="hbm-code">Car Dependency as a Practice:
+
+MATERIALS:
+  ├── Suburban land use (low density, separated uses, long distances)
+  ├── Road network (highways, arterials, free parking)
+  ├── Car industry (affordable vehicles, financing, insurance)
+  ├── Fuel infrastructure (gas stations on every corner)
+  └── Limited alternatives (infrequent transit, no bike lanes, no sidewalks)
+
+COMPETENCES:
+  ├── Driving skills (acquired at age 16, reinforced daily)
+  ├── Route knowledge (memorized commute, known shortcuts)
+  ├── Parking strategies (where to park at work, at the mall, at school)
+  ├── Vehicle maintenance knowledge
+  └── Traffic navigation habits
+
+MEANINGS:
+  ├── Freedom ("I can go anywhere, anytime")
+  ├── Independence ("I don't depend on schedules or other people")
+  ├── Status ("My car reflects who I am")
+  ├── Adulthood ("Getting a license is a rite of passage")
+  ├── Convenience ("It's just easier")
+  └── Privacy ("My car is my personal space")
+
+INTEGRATION:
+  → These elements are deeply interconnected and mutually reinforcing.
+  → Suburban land use REQUIRES driving competence.
+  → Driving competence ENABLES suburban living.
+  → The meaning of freedom JUSTIFIES car ownership.
+  → Car ownership CREATES the infrastructure demand.
+  → The practice of car commuting is LOCKED IN.</div>
+
+## Data Needed
+
+SPT research typically uses qualitative and mixed methods, reflecting its focus on understanding the configuration of elements rather than measuring individual attitudes.
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Qualitative data</strong>
+    <ul>
+      <li><strong>In-depth interviews:</strong> How do people describe their daily routines? What materials, skills, and meanings are involved? When have routines changed, and why?</li>
+      <li><strong>Ethnographic observation:</strong> Observing commuting practices in context — at bus stops, in parking lots, on cycling paths, in households during morning routines</li>
+      <li><strong>Time-use diaries:</strong> Detailed logs of daily activities, capturing the sequencing and bundling of practices throughout the day</li>
+      <li><strong>Photo elicitation:</strong> Asking participants to photograph their daily travel, revealing material elements and meanings that surveys miss</li>
+    </ul>
+  </div>
+  <div class="hbm-panel">
+    <strong>Supplementary data</strong>
+    <ul>
+      <li><strong>Built environment audits:</strong> Mapping the material infrastructure — road width, parking supply, transit frequency, bike lane coverage, land use mix</li>
+      <li><strong>Policy and historical analysis:</strong> How did the practice evolve? What policy decisions, infrastructure investments, and cultural shifts created the current configuration?</li>
+      <li><strong>Household travel surveys:</strong> Linking practice elements to travel patterns at the household level</li>
+      <li><strong>Media and cultural analysis:</strong> How is driving represented in advertising, film, and public discourse? What meanings are attached to car ownership, cycling, and transit?</li>
+    </ul>
+  </div>
+</div>
+
+<div class="hbm-note">
+  <p><strong>Methodological contrast:</strong> Individual-level models typically use Likert-scale surveys and structural equation modeling. SPT typically uses interviews, ethnography, and case studies. This reflects a deeper epistemological difference: individual models seek to measure and predict; SPT seeks to understand and interpret. The two approaches are complementary but speak different analytical languages.</p>
+</div>
+
+## Methods
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Qualitative Analysis</strong>
+    <p>Thematic analysis, grounded theory, or framework analysis applied to interview and observational data. Identifies elements, their linkages, and how they are maintained or disrupted.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Practice-Based Case Studies</strong>
+    <p>In-depth studies of specific practices in specific contexts — e.g., car commuting in a suburban community, cycling in a Dutch city, or transit use in a post-pandemic workplace.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Mixed Methods</strong>
+    <p>Combining qualitative practice analysis with quantitative travel data. Interviews identify practice elements; surveys or GPS data quantify performance patterns.</p>
+  </div>
+</div>
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Historical and Policy Analysis</strong>
+    <p>Tracing how practices evolved over decades — how car dependency was constructed through highway investment, zoning, and suburban development. Understanding practice dynamics requires historical perspective.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Comparative Analysis</strong>
+    <p>Comparing the same practice across contexts — why cycling is normal in Copenhagen and exceptional in Houston. Differences in materials, competences, and meanings explain divergent practice configurations.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Practice Mapping</strong>
+    <p>Visual mapping of practice elements and their interconnections. Identifying which elements are most entrenched and which are most amenable to reconfiguration.</p>
+  </div>
+</div>
+
+<hbm-spt-widget></hbm-spt-widget>
+
+## Transportation Example: Car Dependency and Its Alternatives
+
+Car dependency is SPT's paradigmatic transportation case. From an individual-choice perspective, car dependency is the aggregate result of millions of people choosing to drive. From a practice perspective, car dependency is a deeply entrenched configuration of materials, competences, and meanings that makes driving the default and renders alternatives abnormal.
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Why car dependency persists (practice analysis)</strong>
+    <p><strong>Materials:</strong> Decades of highway investment, zoning codes that separate housing from employment, minimum parking requirements, and low-density suburban development have created a built environment where driving is the only practical option for most trips.</p>
+    <p><strong>Competences:</strong> Most adults learned to drive as teenagers and have decades of driving experience. Few have equivalent competence in transit navigation, cycling in traffic, or trip chaining without a car.</p>
+    <p><strong>Meanings:</strong> Car ownership is culturally linked to freedom, adulthood, social status, and personal autonomy. Not owning a car is often stigmatized as a sign of poverty or dependence.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>What it would take to change (practice reconfiguration)</strong>
+    <p><strong>Materials:</strong> Protected cycling infrastructure, frequent and reliable transit, mixed-use zoning, reduced parking supply, car-free zones, compact urban form.</p>
+    <p><strong>Competences:</strong> Cycling training programs, transit orientation for new residents, wayfinding systems, trip-planning apps that make multimodal travel legible.</p>
+    <p><strong>Meanings:</strong> Cultural reframing of cycling as modern and sophisticated (not poor), transit as dignified and efficient (not a last resort), and walking as healthy and social (not inconvenient).</p>
+    <p><strong>Critical point:</strong> All three elements must shift together. Building bike lanes (materials) without addressing cycling confidence (competences) or cultural stigma (meanings) will produce infrastructure that sits empty.</p>
+  </div>
+</div>
+
+### Commuting Routines and Household Travel
+
+SPT is also valuable for understanding the interlocking nature of daily routines. A commuter's morning drive is not an isolated trip — it is embedded in a sequence of practices: waking up, dressing, preparing breakfast, dropping children at school, commuting, parking, and arriving at work. These practices are temporally sequenced, spatially distributed, and often bundled in ways that make car use the only feasible connector.
+
+<div class="hbm-code">A morning routine as interlocking practices:
+
+6:30  Wake up, shower, dress        (personal care practice)
+7:00  Prepare breakfast, eat         (feeding practice)
+7:30  Drive child to school (3 km)   (school drop-off practice)
+7:50  Drive to work (20 km)          (commuting practice)
+8:20  Park in company lot            (parking practice)
+8:30  Arrive at desk                 (work practice)
+
+SPT analysis:
+  The school drop-off LOCKS IN driving because:
+  - School is 3 km from home in a direction opposite to transit routes (materials)
+  - The child is too young to walk or cycle alone (competences, safety norms)
+  - Morning timing is tight, and driving is fastest (temporal integration)
+  - "Good parenting" includes driving children safely to school (meanings)
+
+  Even if this commuter WANTED to take transit to work,
+  the school drop-off practice would need to be reconfigured first.</div>
+
+<div class="hbm-note">
+  <p><strong>Policy implication:</strong> SPT reveals that travel behavior is not a series of independent mode choices. It is a system of interlocking practices. Changing one trip (e.g., the work commute) may require changing others (e.g., school drop-off, grocery shopping). Interventions that address only one trip in isolation may fail because the surrounding practice system is unchanged.</p>
+</div>
+
+## Strengths
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Explains stability and resistance to change</strong>
+    <p>SPT explains why behaviors persist even when people express willingness to change. The practice is held together by interlocking elements that resist piecemeal modification.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Integrates material, cultural, and competence dimensions</strong>
+    <p>Unlike psychological models that focus on cognitions, SPT gives equal weight to infrastructure, skills, and cultural meanings. This provides a more complete picture of why behavior looks the way it does.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Challenges individual-deficit framing</strong>
+    <p>SPT refuses to blame individuals for behavior that is structured by practices. This shifts responsibility from "lazy car users" to the systems, institutions, and infrastructures that maintain car dependency. This is more analytically honest and more equitable.</p>
+  </div>
+</div>
+
+## Limitations
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Hard to operationalize quantitatively</strong>
+    <p>Practice elements are not easily measured with Likert scales or discrete variables. SPT research relies on qualitative methods that are rich but difficult to standardize, replicate, or scale.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Limited predictive power</strong>
+    <p>SPT describes and interprets practice configurations but does not produce quantitative predictions about who will change behavior, how much, or when. It is an explanatory and diagnostic framework, not a forecasting tool.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Difficult to translate into survey instruments</strong>
+    <p>Most transportation planning agencies rely on surveys, traffic models, and cost-benefit analyses. SPT's insights are difficult to feed into these standard tools, creating an implementation gap between theory and planning practice.</p>
+  </div>
+</div>
+
+SPT also faces the challenge of policy translation. While it provides a powerful critique of individual-focused interventions, it is less clear on exactly *how* to intervene. Saying "change the practice" is conceptually compelling but operationally vague compared to "increase the subsidy by $50" or "add a protected bike lane on Main Street."
+
+## Best Use Case
+
+SPT is most useful when the research or policy question concerns **why behaviors are stable and resistant to change despite apparent willingness to change**, or when individual-level interventions have repeatedly failed. It is the right framework for understanding systemic behavior patterns — car dependency, commuting routines, household travel systems — that are held in place by interlocking material, competence, and meaning structures.
+
+Use SPT when asking: Why has this behavior not changed despite years of information campaigns, incentives, and attitude shifts? What holds the current configuration in place? What would it take to reconfigure the practice — not just persuade the person?
+
+<div class="hbm-note">
+  <p><strong>Key takeaway:</strong> To change behavior, you may need to change the practice — not just the person's mind. Practices are held together by infrastructure, skills, and cultural meanings, and reconfiguring them requires working on all three simultaneously.</p>
+</div>
+
+## Key References
+
+<div class="hbm-papers">
+  <strong>Foundational and applied references</strong>
+  <ul>
+    <li><a href="https://doi.org/10.4135/9781446250655">Shove, E., Pantzar, M., & Watson, M. (2012). <em>The Dynamics of Social Practice: Everyday Life and How It Changes.</em> SAGE.</a> — The most influential statement of the materials-competences-meanings framework, with extensive discussion of how practices form, evolve, and break.</li>
+    <li><a href="https://doi.org/10.1177/1468795X02005002003">Reckwitz, A. (2002). "Toward a Theory of Social Practices: A Development in Culturalist Theorizing." <em>European Journal of Social Theory, 5</em>(2), 243–263.</a> — A key theoretical synthesis that defines practices as "routinized types of behaviour" composed of interconnected elements, establishing the conceptual foundation for contemporary practice theory.</li>
+    <li><a href="https://www.sprg.ac.uk/uploads/sprg-report-nov-2013.pdf">Spurling, N., McMeekin, A., Shove, E., Southerton, D., & Welch, D. (2013). <em>Interventions in Practice: Reframing Policy Approaches to Consumer Behaviour.</em> Sustainable Practices Research Group Report.</a> — Translates SPT into policy-relevant recommendations, identifying three intervention strategies: recrafting practices, substituting practices, and changing how practices interlock.</li>
+    <li><a href="https://doi.org/10.1016/j.tra.2016.08.023">Cass, N., & Faulconbridge, J. (2016). "Commuting Practices: New Insights into Modal Shift from Theories of Social Practice." <em>Transport Policy, 45</em>, 1–14.</a> — Applies SPT to commuting mode shift, demonstrating how materials, competences, and meanings interact to maintain car commuting and resist modal alternatives.</li>
+    <li><a href="https://doi.org/10.1080/01441647.2017.1344207">Cairns, S., Harmer, C., Hopkin, J., & Skippon, S. (2014). "Sociological Perspectives on Travel to Work: A Novel Application of Practice Theory." <em>Transportation Research Part A, 66</em>, 273–284.</a> — Uses practice theory to analyze commuting routines, identifying how everyday practice bundles constrain and enable travel behavior change.</li>
+  </ul>
+</div>
+
+## Exercises and Discussion Questions
+
+<div class="hbm-exercises">
+  <strong>Exercises</strong>
+  <ol>
+    <li>Choose a daily travel routine you perform (commuting, grocery shopping, school drop-off). Map its elements using the SPT framework: list the materials, competences, and meanings that hold it together. Identify which element would be hardest to change and explain why.</li>
+    <li>A city builds a new protected bike lane on a major corridor, but cycling rates remain low after one year. Using SPT, diagnose the likely problem. Consider which practice elements — beyond materials — may be missing. Propose two additional interventions that address competences and meanings.</li>
+    <li>Compare how SPT and VBN theory would explain the same behavior: a person who supports environmental sustainability but drives alone to work every day. Which theory provides a more useful diagnosis for this specific case? What does each theory miss?</li>
+  </ol>
+</div>

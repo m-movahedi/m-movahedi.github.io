@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>HBM 03: The KAP Framework</title>
+    <meta name="description" content="A transit agency launches a new bus rapid transit (BRT) line with dedicated lanes, high-frequency service, and modern stations. Ridership projections are …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://m-movahedi.com/scratchpad/human-behavior-modeling/hbm-03/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HBM 03: The KAP Framework">
+    <meta property="og:description" content="A transit agency launches a new bus rapid transit (BRT) line with dedicated lanes, high-frequency service, and modern stations. Ridership projections are …">
+    <meta property="og:image" content="https://m-movahedi.com/images/profile.png">
+    <meta property="og:image:secure_url" content="https://m-movahedi.com/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HBM 03: The KAP Framework">
+    <meta name="twitter:description" content="A transit agency launches a new bus rapid transit (BRT) line with dedicated lanes, high-frequency service, and modern stations. Ridership projections are …">
+    <meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/human-behavior-modeling/hbm-03/">
+    <meta property="twitter:url" content="https://m-movahedi.com/scratchpad/human-behavior-modeling/hbm-03/">
+    <meta name="twitter:image" content="https://m-movahedi.com/images/profile.png">
+
+    
+    <link rel="canonical" href="https://m-movahedi.com/scratchpad/human-behavior-modeling/hbm-03/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://m-movahedi.com/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://m-movahedi.com/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>HBM 03: The KAP Framework</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 6, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>A transit agency launches a new bus rapid transit (BRT) line with dedicated lanes, high-frequency service, and modern stations. Ridership projections are optimistic. After six months, actual ridership is well below target. The agency needs answers: Do people know about the new line? Do they have a favorable view of it? Are they actually using it? And if not — where is the breakdown?</p>
+<p>This is the kind of question that the KAP framework was designed to answer.</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>Before explaining why people do or do not use transit, adopt cycling, comply with safety regulations, or evacuate during emergencies, it helps to know the basic facts: what do people actually know, how do they feel, and what are they doing? Without this baseline, more complex models are built on assumptions instead of evidence.</p>
+<p>KAP — Knowledge, Attitude, Practice — is the simplest structured approach to gathering this information. It originated in public health in the 1960s as a rapid assessment tool for family planning programs and has since been used in hundreds of domains, from disease prevention to food safety to environmental behavior. In transportation, KAP surveys have been applied to cycling safety, transit perceptions, road safety awareness, electric vehicle knowledge, and pedestrian behavior.</p>
+<p>KAP is not a causal theory. It does not explain why people behave the way they do. But it does something valuable: it makes the gap between knowledge, beliefs, and action visible and measurable.</p>
+<h2 id="model-explanation">Model Explanation</h2>
+<p>The KAP framework assesses three dimensions of a population&rsquo;s relationship with a behavior or issue:</p>
+<div class="hbm-flow" style="grid-template-columns: repeat(3, minmax(140px, 1fr));">
+  <div class="hbm-card">
+    <strong>Knowledge (K)</strong>
+    <p>What do people know or believe to be true about a topic? This includes factual knowledge, awareness of services or risks, and understanding of rules or procedures.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Attitude (A)</strong>
+    <p>How do people feel about the topic? This includes opinions, evaluations, perceived importance, willingness, and emotional responses.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Practice (P)</strong>
+    <p>What do people actually do? This includes self-reported behaviors, frequency of action, compliance, and behavioral patterns.</p>
+  </div>
+</div>
+<p>The implicit logic of KAP is linear and sequential:</p>
+<div class="hbm-math">
+  <p><strong>Assumed causal chain:</strong></p>
+  <p><code>Knowledge → Attitude → Practice</code></p>
+  <p>People first learn about a topic (K), then form an attitude toward it (A), and then act accordingly (P). This chain is simple, intuitive, and — as the previous post showed — often incomplete.</p>
+</div>
+<p>The framework does not claim that this chain always works. In practice, KAP is used primarily as a <strong>descriptive assessment tool</strong>: measure K, A, and P separately, then look for gaps. The most informative finding in a KAP study is usually the discrepancy — for example, when knowledge is high but practice is low.</p>
+<p><hbm-kap-survey-widget></hbm-kap-survey-widget></p>
+<h2 id="core-constructs">Core Constructs</h2>
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Knowledge</span>
+  <span class="hbm-construct">Attitude</span>
+  <span class="hbm-construct">Practice</span>
+</div>
+<p>Each construct is measured through survey items, typically using structured questionnaires:</p>
+<div class="hbm-three-col">
+  <div class="hbm-panel">
+    <strong>Knowledge items</strong>
+    <p>Factual questions, true/false, multiple choice, awareness checks.</p>
+    <p>Example: "Do you know the location of the nearest bus rapid transit station?"</p>
+    <p>Example: "What is the maximum legal speed in a school zone?"</p>
+    <p>Scored as correct/incorrect or on a knowledge scale.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Attitude items</strong>
+    <p>Opinion statements, Likert scales, evaluative judgments.</p>
+    <p>Example: "Public transit is a convenient way to commute." (Strongly disagree → Strongly agree)</p>
+    <p>Example: "Cycling is safe in my neighborhood." (Strongly disagree → Strongly agree)</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Practice items</strong>
+    <p>Self-reported behavior, frequency, recency, compliance checks.</p>
+    <p>Example: "How many days per week do you use public transit?"</p>
+    <p>Example: "In the past month, how often did you exceed the speed limit?"</p>
+  </div>
+</div>
+<h2 id="causal-logic">Causal Logic</h2>
+<p>The causal logic of KAP is its greatest simplicity and its greatest vulnerability.</p>
+<p>The assumed chain — Knowledge → Attitude → Practice — implies that:</p>
+<ol>
+<li>Increasing knowledge will improve attitudes.</li>
+<li>Improving attitudes will increase desirable practices.</li>
+<li>Low practice is a downstream consequence of inadequate knowledge or unfavorable attitudes.</li>
+</ol>
+<div class="hbm-flow-4">
+  <div class="hbm-card">
+    <strong>Learn</strong>
+    <p>Person acquires knowledge about transit, safety, or risk.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Evaluate</strong>
+    <p>Person forms an attitude based on that knowledge.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Intend</strong>
+    <p>Attitude leads to willingness or intention.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Act</strong>
+    <p>Intention translates into observable behavior.</p>
+  </div>
+</div>
+<p>This chain works reasonably well for new and unfamiliar behaviors — when a person genuinely has no prior knowledge and the behavior is simple to adopt. But for established behaviors like driving, commuting, or risk-taking, the chain breaks down. People may have excellent knowledge and favorable attitudes but still not change their behavior because of habits, constraints, social norms, or system design.</p>
+<p>The KAP framework does not include constructs for these intervening factors. It identifies that a gap exists between K, A, and P, but it cannot explain why the gap persists.</p>
+<h2 id="data-needed">Data Needed</h2>
+<p>KAP studies rely primarily on <strong>cross-sectional survey data</strong> — a questionnaire administered to a sample of the target population at one point in time.</p>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Survey instrument</strong>
+    <p>Structured questionnaire with K, A, and P sections. Often 20–50 items.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Sampling</strong>
+    <p>Random, stratified, or convenience sampling of the target population.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Demographics</strong>
+    <p>Age, gender, income, education, household characteristics, location.</p>
+  </div>
+</div>
+<p>KAP surveys are typically inexpensive, fast to deploy, and easy to analyze. They can be administered in person, by phone, online, or through intercept surveys at transit stations, workplaces, or community events.</p>
+<p>The data limitations should be noted: KAP relies on self-report, which can be affected by social desirability bias (people overreporting good behaviors and underreporting bad ones). Practice measures are especially vulnerable. A respondent may report wearing a seat belt &ldquo;always&rdquo; while actual observational studies show compliance rates far below self-reported levels.</p>
+<h2 id="methods">Methods</h2>
+<p>KAP analysis is typically straightforward:</p>
+<div class="hbm-code">Typical KAP Analysis Pipeline
+<ol>
+<li>Calculate knowledge scores (% correct answers)</li>
+<li>Calculate attitude scores (mean Likert ratings)</li>
+<li>Calculate practice frequencies (% performing behavior)</li>
+<li>Cross-tabulate K, A, P by demographics</li>
+<li>Identify K-A gaps, A-P gaps, and K-P gaps</li>
+<li>Chi-square tests for associations between groups</li>
+<li>Correlation analysis between K, A, and P scores</div></li>
+</ol>
+<p>Common statistical methods include:</p>
+<ul>
+<li><strong>Descriptive statistics:</strong> frequencies, percentages, means, standard deviations for each KAP dimension.</li>
+<li><strong>Gap analysis:</strong> comparing knowledge levels with attitude levels and practice levels to identify where breakdowns occur.</li>
+<li><strong>Cross-tabulation and chi-square tests:</strong> examining whether KAP levels differ by demographic group.</li>
+<li><strong>Correlation and simple regression:</strong> testing whether higher knowledge is associated with more favorable attitudes or more frequent practice.</li>
+</ul>
+<p>More sophisticated KAP studies may use logistic regression (predicting practice as a function of knowledge and attitude scores) or cluster analysis (identifying population segments with distinct KAP profiles). However, the analytical power of KAP is inherently limited by its lack of a causal mechanism.</p>
+<h2 id="transportation-example-public-transit-safety-perceptions">Transportation Example: Public Transit Safety Perceptions</h2>
+<p>Consider a KAP survey on safety perceptions and use of public transit in a mid-sized city. The transit agency wants to understand whether low ridership is related to safety concerns.</p>
+<div class="hbm-panel">
+  <strong>Sample KAP survey items: Public transit safety</strong>
+</div>
+<div class="hbm-code">KNOWLEDGE SECTION
+K1. Is there a security presence on the city's bus rapid transit system? (Yes / No / Don't know)
+K2. What number do you call to report a safety concern on public transit? (Open-ended)
+K3. True or False: Transit vehicles are equipped with security cameras.
+K4. Are there emergency call buttons at BRT stations? (Yes / No / Don't know)
+<p>ATTITUDE SECTION
+A1. &ldquo;I feel safe using public transit during the day.&rdquo; (Strongly disagree → Strongly agree)
+A2. &ldquo;I feel safe using public transit at night.&rdquo; (Strongly disagree → Strongly agree)
+A3. &ldquo;Public transit is safer than driving for my daily commute.&rdquo; (Strongly disagree → Strongly agree)
+A4. &ldquo;I would use transit more often if safety were improved.&rdquo; (Strongly disagree → Strongly agree)</p>
+<p>PRACTICE SECTION
+P1. How many days per week do you use public transit? (0 / 1-2 / 3-4 / 5+)
+P2. Do you avoid transit at certain times due to safety concerns? (Yes / No)
+P3. Have you changed your transit use in the past year due to safety perceptions? (Yes, use less / No change / Yes, use more)</div></p>
+<p>The results might look like this:</p>
+<div class="hbm-panel">
+  <strong>Hypothetical KAP results</strong>
+  <div class="hbm-mini-chart">
+    <div class="hbm-bar-row"><span>Knowledge</span><div class="hbm-bar"><span style="width: 45%;"></span></div><span>45%</span></div>
+    <div class="hbm-bar-row"><span>Positive attitude</span><div class="hbm-bar"><span style="width: 62%;"></span></div><span>62%</span></div>
+    <div class="hbm-bar-row"><span>Regular use</span><div class="hbm-bar"><span style="width: 18%;"></span></div><span>18%</span></div>
+  </div>
+  <p class="hbm-small">Knowledge about safety features is low. Attitude is moderately positive. But regular use is very low. The largest gap is between attitude and practice.</p>
+</div>
+<p>This result pattern is informative. It tells the agency that:</p>
+<ol>
+<li><strong>Knowledge is low.</strong> Many people do not know about existing safety features. This suggests a communication problem.</li>
+<li><strong>Attitude is moderate.</strong> Most people are not hostile toward transit — they just are not using it.</li>
+<li><strong>The A–P gap is large.</strong> Even people with positive attitudes are not riding. Something beyond attitude is blocking practice.</li>
+</ol>
+<p>What KAP cannot tell the agency is <em>what</em> is blocking practice. Is it habit? Is it poor service quality? Is it social norms? Is it land use patterns that make driving easier? Is it a lack of perceived control over the commuting decision? These questions require models with more explanatory power — which is why the series moves from KAP to the Theory of Planned Behavior in the next post.</p>
+<h2 id="strengths">Strengths</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Simple and fast</strong>
+    <p>KAP surveys can be designed, deployed, and analyzed quickly. They do not require complex statistical models or large sample sizes.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Baseline assessment</strong>
+    <p>KAP is excellent for establishing a baseline: what does the population currently know, believe, and do? This baseline is valuable before and after interventions.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Gap identification</strong>
+    <p>The most useful finding in a KAP study is the discrepancy: high K but low P, or high A but low P. These gaps direct attention to the right problems.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Needs assessment</strong>
+    <p>For organizations planning campaigns, programs, or services, KAP provides a structured way to identify what the target population already knows and where misconceptions exist.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Comparability</strong>
+    <p>KAP surveys can be repeated over time or across populations to track changes or compare groups.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Accessibility</strong>
+    <p>KAP does not require specialized training in structural equation modeling, choice modeling, or simulation. It is accessible to practitioners, planners, and policy makers.</p>
+  </div>
+</div>
+<h2 id="limitations">Limitations</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Descriptive only</strong>
+    <p>KAP describes what people know and do. It does not explain <em>why</em> gaps exist between knowledge and practice.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Assumes linearity</strong>
+    <p>The implicit K → A → P chain assumes that knowledge causes attitude change, which causes behavior change. This is often not the case.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>No causal mechanism</strong>
+    <p>KAP does not include constructs for norms, perceived control, habit, self-efficacy, or context. It cannot diagnose which mechanism is responsible for a gap.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Self-report bias</strong>
+    <p>All three dimensions rely on self-report. Knowledge can be guessed. Attitudes can be socially desirable. Practice can be over- or under-reported.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Cross-sectional design</strong>
+    <p>Most KAP studies are cross-sectional, making it impossible to establish temporal or causal ordering between K, A, and P.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Shallow constructs</strong>
+    <p>"Attitude" in KAP is often a single dimension. It does not distinguish between affective attitude, cognitive evaluation, perceived risk, or moral judgment.</p>
+  </div>
+</div>
+<div class="hbm-note">
+  <p><strong>A common criticism:</strong> KAP tells you that a gap exists between what people know and what they do. It does not tell you what to do about it. For intervention design, more explanatory models are needed.</p>
+</div>
+<h2 id="best-use-case">Best Use Case</h2>
+<p>KAP is best used when:</p>
+<ul>
+<li>The goal is <strong>baseline assessment</strong> — understanding what a population currently knows, believes, and does before designing an intervention.</li>
+<li>The research is <strong>exploratory</strong> — identifying where gaps exist before committing to a more complex theoretical model.</li>
+<li>The context is <strong>needs assessment</strong> — an agency, organization, or program needs to understand its audience before launching a campaign or service.</li>
+<li><strong>Time and resources are limited</strong> — KAP is fast, cheap, and does not require advanced statistical skills.</li>
+<li>The behavior is <strong>relatively new</strong> — for unfamiliar behaviors (e.g., a new transit line, a new safety regulation, a new technology), knowledge gaps may genuinely be the primary barrier.</li>
+</ul>
+<p>KAP should not be used when the goal is to explain <em>why</em> people behave a certain way, to design behavior change interventions, or to predict which individuals will adopt a behavior. For those purposes, models with causal mechanisms — like the Theory of Planned Behavior, the Health Belief Model, or COM-B — are more appropriate.</p>
+<h2 id="key-takeaway">Key Takeaway</h2>
+<div class="hbm-note">
+  <p>KAP tells you <em>what</em> people know, feel, and do — and where the gaps are. It does not tell you <em>why</em> those gaps exist or how to close them. It is a starting point, not a destination.</p>
+</div>
+<h2 id="key-references">Key References</h2>
+<div class="hbm-papers">
+  <strong>Key References</strong>
+  <ul>
+    <li><a href="https://www.who.int/publications/m/item/a-guide-to-developing-knowledge-attitude-and-practice-surveys">World Health Organization (2008), "A Guide to Developing Knowledge, Attitude and Practice Surveys"</a>: the WHO's practical guide to designing and implementing KAP surveys, widely used across public health and increasingly in transportation.</li>
+    <li><a href="https://doi.org/10.1111/j.1365-3156.2009.02264.x">Launiala, A. (2009), "How Much Can a KAP Survey Tell Us About People's Knowledge, Attitudes and Practices? Some Methodological Reflections"</a>: a critical review of KAP methodology, limitations, and the gap between KAP assessment and behavior change.</li>
+    <li><a href="https://doi.org/10.1016/j.aap.2016.04.032">Azhar, M. et al. (2017), "Knowledge, Attitude and Practice of Road Safety Among Drivers"</a>: an application of KAP to traffic safety, demonstrating both the utility and limitations of the approach.</li>
+    <li><a href="https://doi.org/10.1186/s12889-020-8279-0">Zhong, B. L. et al. (2020), "Knowledge, Attitudes, and Practices Towards COVID-19"</a>: a large-scale KAP study that illustrates the standard methodology and its strengths and weaknesses.</li>
+    <li><a href="https://doi.org/10.1016/j.socscimed.2005.11.034">Cleland, J. (1973/2006 retrospective), "The Evolution of KAP Surveys"</a>: a retrospective on the origins and evolution of KAP methodology in population studies.</li>
+  </ul>
+</div>
+<div class="hbm-exercises">
+  <strong>Exercises and Discussion Questions</strong>
+  <ol>
+    <li>Design a 12-item KAP questionnaire for assessing public knowledge, attitudes, and practices regarding cycling to work in your city. Include 4 knowledge items, 4 attitude items, and 4 practice items. For each item, specify the response format (true/false, Likert scale, frequency scale, etc.).</li>
+    <li>A KAP survey on electric vehicle adoption finds that 78% of respondents know about government purchase subsidies, 65% have a positive attitude toward EVs, but only 4% have purchased or leased an EV. What does this gap tell you? What does it <em>not</em> tell you? What additional information would you need to explain the gap?</li>
+    <li>Compare the information that a KAP survey provides with the information needed to design an effective behavior change intervention. What is missing from KAP that a practitioner would need? Name at least three constructs or types of information that KAP does not capture.</li>
+  </ol>
+</div>
+<p>In the next post, we move from description to explanation. The Theory of Planned Behavior introduces subjective norms, perceived behavioral control, and the concept of behavioral intention — constructs that begin to answer <em>why</em> the KAP gap exists.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/human-behavior-modeling/hbm-02/">
+                &#8592;
+                Previous:
+                HBM 02: Why Knowledge Does Not Always Change Behavior
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/human-behavior-modeling/hbm-04/">
+                Next:
+                HBM 04: Theory of Planned Behavior
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

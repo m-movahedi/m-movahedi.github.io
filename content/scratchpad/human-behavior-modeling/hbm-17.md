@@ -1,0 +1,291 @@
+---
+title : "HBM 17: Bounded Rationality"
+date : "2026-06-06"
+draft : false
+type : "post"
+---
+
+Open a navigation app and it offers three routes: highway (28 min), arterial (33 min), and a local-street path (31 min). The rational optimizer would compare all three on travel time, fuel cost, toll charges, reliability, scenery, and crash risk, weigh these attributes according to personal preferences, and select the utility-maximizing route. Most people do not do this. They glance at the map, recognize the highway route as the one they usually take, confirm that the travel time looks reasonable, and start driving. They never evaluate the arterial option. They never compute a cost function. They satisfice.
+
+This gap between what optimization theory prescribes and what people actually do is the subject of bounded rationality — a perspective that reframes rationality not as a failure of human cognition but as an adaptation to the real constraints of limited time, attention, information, and cognitive capacity.
+
+## Why Bounded Rationality Matters
+
+Discrete choice models assume that people evaluate all alternatives in their choice set, weigh all relevant attributes, and select the utility-maximizing option. This assumption works well enough for aggregate predictions in many contexts, but it can mislead when applied to situations where people demonstrably do not consider all options, do not process all information, and do not compute trade-offs.
+
+In transportation and planning, bounded rationality matters for several reasons. Route choice involves hundreds of possible paths, but drivers rarely consider more than two or three. Mode choice is often made once and then repeated without reconsideration. Parking decisions are made under time pressure with incomplete information. Emergency evacuation decisions are made under extreme stress with rapidly changing conditions. Real-time traveler information systems provide data, but research shows that many people do not use the information optimally — and that adding more information can sometimes make decisions worse, not better.
+
+<div class="hbm-note">
+  <p><strong>Core intuition:</strong> bounded rationality does not claim that people are irrational. It claims that people are rational within the limits of their cognitive capacity, available information, and time constraints. They use simple rules that work well enough in familiar environments.</p>
+</div>
+
+## The Model: Satisficing and Heuristics
+
+Herbert Simon introduced bounded rationality in 1955 as an alternative to the optimization assumption in economics. His key argument was that the computational requirements of optimization — exhaustive search, complete information, unlimited processing capacity — are unrealistic descriptions of human cognition. Instead, people **satisfice**: they search through alternatives sequentially and choose the first one that meets an acceptable threshold, rather than continuing to search for the best possible option.
+
+The concept was expanded significantly by Gerd Gigerenzer and colleagues, who showed that simple heuristics — fast-and-frugal rules that ignore most available information — can be surprisingly accurate and even outperform complex optimization models in uncertain environments. The key insight is that heuristics are not always second-best compromises forced by cognitive limits. In many real-world environments, they are **ecologically rational** — well-adapted to the structure of the environment in which they are used.
+
+## Core Constructs
+
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Satisficing</span>
+  <span class="hbm-construct">Limited Information</span>
+  <span class="hbm-construct">Heuristics</span>
+  <span class="hbm-construct">Cognitive Load</span>
+  <span class="hbm-construct">Consideration Sets</span>
+  <span class="hbm-construct">Search Costs</span>
+</div>
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Satisficing</strong>
+    <p>Choosing an option that is "good enough" rather than optimal. The decision-maker sets an aspiration level and stops searching when an alternative meets it. If the usual commute takes 35 minutes and a new route app suggests a 30-minute option, the commuter may not bother checking whether a 27-minute route exists.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Limited Information</strong>
+    <p>People make decisions with incomplete knowledge of alternatives, attributes, and probabilities. A commuter may not know the actual cost of driving (fuel, depreciation, insurance, parking combined) compared to transit. Information acquisition is costly in time and effort.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Heuristics</strong>
+    <p>Simple decision rules that reduce computational demands. Examples include take-the-best (use the most important cue and ignore the rest), recognition (choose the recognized option), and elimination-by-aspects (eliminate options that fail on successive criteria).</p>
+  </div>
+</div>
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Cognitive Load</strong>
+    <p>The mental effort required for a decision. Under high cognitive load — stress, multitasking, fatigue, time pressure — people rely more heavily on heuristics and less on deliberative evaluation. This is directly relevant to driving decisions, emergency evacuation, and information processing.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Consideration Sets</strong>
+    <p>The subset of alternatives that a person actually evaluates, as opposed to the full choice set. Most travelers do not compare all available routes or modes. They consider a small set — often just one or two options — based on familiarity, habit, or salience.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Search Costs</strong>
+    <p>The time and effort required to learn about additional alternatives. When search costs are high relative to the expected improvement from finding a better option, the rational strategy is to stop searching early — exactly what satisficing predicts.</p>
+  </div>
+</div>
+
+## Key Heuristics in Transportation Decisions
+
+<div class="hbm-flow-4" role="img" aria-label="Common heuristics in travel behavior">
+  <div class="hbm-card">
+    <strong>Take-the-Best</strong>
+    <p>Use the single most important attribute (e.g., travel time) and choose the alternative that performs best on it. Ignore everything else.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Elimination-by-Aspects</strong>
+    <p>Set thresholds on attributes sequentially. "Must be under 40 minutes" → eliminates long routes. "Must cost less than $5" → eliminates toll roads. Choose from survivors.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Recognition Heuristic</strong>
+    <p>Choose the recognized option over the unrecognized one. A familiar bus route is chosen over an unfamiliar but faster one.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Status Quo / Default</strong>
+    <p>Stick with the current choice unless there is a compelling reason to switch. Most commuters use the same route and mode day after day without active deliberation.</p>
+  </div>
+</div>
+
+These heuristics are not random. They exploit regularities in the environment. In stable, familiar settings — the daily commute, the regular grocery trip — heuristics work remarkably well because the environment does not change much and extensive search would yield little improvement. In novel, complex, or high-stakes settings — an unfamiliar city, a natural disaster, a once-in-a-decade relocation decision — heuristics can lead to significant errors.
+
+## Causal Logic
+
+<div class="hbm-flow" role="img" aria-label="Bounded rationality decision process">
+  <div class="hbm-card">
+    <strong>Decision Problem</strong>
+    <p>A choice among alternatives with multiple attributes.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Cognitive Constraints</strong>
+    <p>Limited time, attention, information, and processing capacity.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Consideration Set</strong>
+    <p>Only a subset of alternatives is evaluated.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Heuristic Application</strong>
+    <p>A simple rule is applied rather than full optimization.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Satisficing Choice</strong>
+    <p>The first acceptable option is selected.</p>
+  </div>
+</div>
+
+The causal logic reverses a key assumption of rational choice theory. Instead of "evaluate all, then choose best," bounded rationality proposes "search sequentially, apply simple rules, stop when good enough." The order in which alternatives are encountered matters. The salience of attributes matters. The aspiration level matters. And all of these are influenced by experience, context, and the cognitive state of the decision-maker.
+
+## Data Needed
+
+Bounded rationality research requires data that goes beyond final choices. Understanding **how** people decide requires observing the decision process itself.
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Process Tracing</strong>
+    <p>Methods that record the sequence of information acquisition: which attributes are looked up, in what order, and how long each is considered. Information display boards (physical or digital) present alternatives in a matrix and track which cells are opened.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Eye Tracking</strong>
+    <p>Measures gaze patterns during decision tasks. Shows which alternatives receive attention and which are ignored entirely. Reveals whether people search by attribute (comparing all alternatives on one attribute) or by alternative (evaluating one option at a time).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Think-Aloud Protocols</strong>
+    <p>Respondents verbalize their thought process while making a decision. Provides rich qualitative data on reasoning strategies, but can alter the natural decision process.</p>
+  </div>
+</div>
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Travel Surveys with Process Questions</strong>
+    <p>Standard travel surveys can be augmented with questions about consideration sets: "Which modes did you actually consider?" "Did you compare travel times?" "How did you learn about this route?" These questions reveal the size and composition of the consideration set.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>GPS and App Usage Data</strong>
+    <p>GPS traces can reveal route choice patterns over time — whether commuters explore different routes or stick to a single one. Navigation app usage data can show whether information is actually consulted and whether recommendations are followed.</p>
+  </div>
+</div>
+
+## Methods
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Choice Set Generation Models</strong>
+    <p>Two-stage models where the first stage determines which alternatives enter the consideration set and the second stage models the choice among considered alternatives. This explicitly models the filtering process that precedes choice.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Elimination-by-Aspects Models</strong>
+    <p>Formal probabilistic models of sequential elimination. Tversky (1972) proposed a model where alternatives are eliminated based on aspects (attributes) selected with probability proportional to importance. The process continues until one alternative survives.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Heuristic Classification</strong>
+    <p>Identifying which heuristic best describes a person's decision pattern. Computational approaches compare predicted choices from each candidate heuristic against observed choices and information search patterns.</p>
+  </div>
+</div>
+
+Additionally, satisficing models can be operationalized through threshold-based utility models where decision-makers accept any alternative that exceeds a threshold rather than maximizing across all options. Agent-based models naturally accommodate bounded rationality by allowing agents to use heterogeneous decision rules.
+
+<hbm-br-widget></hbm-br-widget>
+
+## Transportation Example: Route Choice and Information Use
+
+Consider an experimental study on route choice in a medium-density urban corridor. Researchers equip 200 commuters with a navigation app that logs (1) whether the app is consulted, (2) which alternative routes are viewed, and (3) which route is ultimately taken. The study runs for eight weeks.
+
+<div class="hbm-code">
+Key findings (illustrative):
+
+Week 1 (exploration phase):
+  - 68% of commuters viewed 2+ routes before choosing
+  - Average consideration set size: 2.3 routes
+  - 22% followed the app's fastest recommendation
+  - 41% chose their "usual" route regardless of app data
+
+Weeks 4–8 (habituation phase):
+  - Only 31% viewed 2+ routes
+  - Average consideration set size: 1.4 routes
+  - 15% followed the fastest recommendation
+  - 62% chose their usual route without consulting the app
+</div>
+
+The results reveal three behavioral patterns that violate the optimization assumption:
+
+<div class="hbm-three-col">
+  <div class="hbm-panel">
+    <strong>Non-Searchers (45%)</strong>
+    <p>Never or rarely consulted the app. Chose the same route every day. Satisficing at its purest — the habitual route exceeded their aspiration level, so no search occurred.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Threshold Switchers (35%)</strong>
+    <p>Consulted the app but only switched routes when the expected time saving exceeded ~8 minutes. Below that threshold, they defaulted to the familiar route. A clear satisficing threshold.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Optimizers (20%)</strong>
+    <p>Regularly compared routes and chose the fastest. These commuters behaved closest to the rational choice model, but even they considered only 2–3 routes out of many possible paths.</p>
+  </div>
+</div>
+
+<div class="hbm-note">
+  <p><strong>Implication for real-time information systems:</strong> providing more information does not automatically improve decisions. If most commuters are satisficers who rarely search, real-time travel information has limited impact unless it is delivered proactively, presented simply, and designed to overcome the default tendency not to search.</p>
+</div>
+
+### Emergency Evacuation Under Stress
+
+Bounded rationality becomes especially consequential during emergency evacuations. Under extreme stress, time pressure, and information overload, people rely heavily on simple heuristics:
+
+- **Follow the crowd** — choose the route that others are taking, regardless of whether it leads to congestion.
+- **Familiar route** — take the evacuation route you know, even if it is longer or more congested than alternatives.
+- **First option** — take the first route that comes to mind rather than comparing alternatives.
+
+Mahmassani (1990) and subsequent research showed that drivers during evacuations dramatically narrow their consideration sets, ignore dynamic information (even when available), and exhibit strong status quo bias toward familiar routes. This creates predictable congestion patterns that evacuation models need to account for — and that optimal routing models consistently fail to predict because they assume people evaluate all routes.
+
+### Parking Decisions
+
+Parking search is a natural bounded rationality problem. Drivers searching for on-street parking cannot observe the full set of available spaces simultaneously. They search sequentially — driving along streets, checking each space — and must decide at each moment whether to take the current space or continue searching. The decision involves uncertainty (future spaces may or may not be available), time pressure (circling costs time and fuel), and limited information (you cannot see around the corner).
+
+Standard parking search models show that rational optimizers should pass up early spaces and search longer, but observed behavior shows that most drivers take the first acceptable space they find — especially under time pressure or in unfamiliar areas. This satisficing behavior is well-predicted by bounded rationality and poorly predicted by optimization models.
+
+## Strengths
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Realistic Cognitive Assumptions</strong>
+    <p>Acknowledges that people have limited time, attention, information, and processing capacity. Does not require the assumption that commuters perform complex utility maximization each morning.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Explains Shortcuts and Simplification</strong>
+    <p>Provides a theoretical basis for understanding why people ignore information, consider few alternatives, use rules of thumb, and stick with familiar options — behaviors that are ubiquitous in travel decisions.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Complements Rational Models</strong>
+    <p>Does not reject rational choice theory but delimits its applicability. It identifies when optimization assumptions hold (novel, high-stakes, well-informed decisions) and when they do not (routine, low-stakes, information-scarce decisions).</p>
+  </div>
+</div>
+
+Additional strengths include practical implications for information system design (simplify, don't just add data), policy design (make the right choice the easy default), and modeling (consideration set models improve predictions).
+
+## Limitations
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Many Possible Heuristics</strong>
+    <p>The "adaptive toolbox" framework proposes that people have a repertoire of heuristics but provides limited guidance on which heuristic applies in a given situation. This flexibility can make bounded rationality unfalsifiable if post hoc heuristic assignment is allowed.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Harder to Predict</strong>
+    <p>Utility maximization makes a clear, testable prediction: choose the highest-utility option. Bounded rationality predicts "good enough" but the threshold is harder to specify, varies across individuals, and changes with context.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Less Parsimonious</strong>
+    <p>A single utility maximization model can describe many behaviors compactly. Bounded rationality may require different heuristic models for different people, contexts, and decisions — increasing model complexity rather than reducing it.</p>
+  </div>
+</div>
+
+## Best Use Case
+
+Bounded rationality is the best framework when the research question involves **understanding how people simplify decisions**, particularly in contexts with many alternatives, limited information, time pressure, cognitive load, or routine behavior. It is essential for designing information systems, simplifying choice architectures, modeling evacuation behavior, and understanding why information campaigns or optimization-based tools often have less impact than expected.
+
+<div class="hbm-note">
+  <p><strong>Key takeaway:</strong> people satisfice rather than optimize — they search until they find "good enough" and use simple rules that work well in familiar environments. Interventions should simplify choices and set good defaults, not just add more information.</p>
+</div>
+
+## Key References
+
+<div class="hbm-papers">
+  <strong>Foundational references</strong>
+  <ul>
+    <li><a href="https://doi.org/10.2307/1884852">Simon, H. A. (1955). "A Behavioral Model of Rational Choice." Quarterly Journal of Economics, 69(1), 99–118.</a> The foundational paper that introduced bounded rationality and satisficing as alternatives to optimization in economic theory.</li>
+    <li><a href="https://doi.org/10.1037/0033-295X.103.4.650">Gigerenzer, G. & Goldstein, D. G. (1996). "Reasoning the Fast and Frugal Way: Models of Bounded Rationality." Psychological Review, 103(4), 650–669.</a> Introduced the fast-and-frugal heuristics program, showing that simple rules can match or outperform complex models in uncertain environments.</li>
+    <li><a href="https://doi.org/10.1016/0191-2615(90)90020-Y">Mahmassani, H. S. (1990). "Dynamic Models of Commuter Behavior: Experimental Investigation and Application to the Analysis of Planned Traffic Disruptions." Transportation Research Part A, 24(6), 465–484.</a> Demonstrated bounded rationality in commuter route and departure time choices, showing that drivers use simple adjustment rules rather than optimization.</li>
+    <li><a href="https://doi.org/10.1016/j.tra.2007.07.008">Chorus, C., Arentze, T., & Timmermans, H. (2008). "A Random Regret-Minimization Model of Travel Choice." Transportation Research Part B, 42(1), 1–18.</a> Extended choice modeling beyond utility maximization to include regret-based decision rules, connecting bounded rationality concepts to formal choice models.</li>
+    <li><a href="https://doi.org/10.1016/0010-0285(72)90011-9">Tversky, A. (1972). "Elimination by Aspects: A Theory of Choice." Psychological Review, 79(4), 281–299.</a> A formal model of non-compensatory choice where alternatives are sequentially eliminated based on critical aspects.</li>
+  </ul>
+</div>
+
+<div class="hbm-exercises">
+  <strong>Exercises and Discussion Questions</strong>
+  <ol>
+    <li>A transportation agency launches a new trip-planning app that shows all available modes, their travel times, costs, and carbon emissions for any origin-destination pair. Based on bounded rationality research, why might this app have less impact on mode choice than expected? What design changes could increase its effectiveness?</li>
+    <li>Compare a discrete choice model (Post 15) and a bounded rationality model for predicting commuter route choice. What different assumptions do they make about the decision process? Under what conditions would each model produce better predictions?</li>
+    <li>During a hurricane evacuation, traffic managers want to divert drivers from congested evacuation routes to less-used alternatives. Using bounded rationality concepts, explain why simply posting signs with alternative route information may be insufficient. What approaches might work better?</li>
+  </ol>
+</div>

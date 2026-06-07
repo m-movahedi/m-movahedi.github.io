@@ -1,0 +1,350 @@
+---
+title : "HBM 11: Diffusion of Innovations"
+date  : "2026-06-06"
+draft : false
+type  : "post"
+---
+
+In 2011, a handful of electric vehicles appeared on American roads — mostly purchased by technology enthusiasts willing to tolerate limited range, sparse charging infrastructure, and high prices. By 2024, EVs accounted for roughly one in ten new car sales in the United States, and over one in five globally. The pattern was not linear. Growth was slow for years, then accelerated sharply, tracing the familiar shape of an S-curve.
+
+This pattern — slow start, rapid acceleration, eventual saturation — appears across nearly every transportation technology: seatbelts, airbags, GPS navigation, ride-hailing apps, bike-sharing systems, congestion pricing, and automated driving features. The question is not simply *whether* an innovation will be adopted, but *how fast*, *by whom*, and *through what channels* it spreads through a population. Diffusion of Innovations theory provides a structured framework for answering these questions.
+
+## Why Diffusion Matters for Transportation
+
+Transportation planning operates on long time horizons. Infrastructure investments, vehicle fleet turnover, land use changes, and technology deployment all unfold over years or decades. Understanding how innovations spread — and how that spread can be accelerated, guided, or anticipated — is essential for forecasting, investment decisions, and policy timing.
+
+<div class="hbm-note">
+  <p><strong>Core insight:</strong> Adoption is not a single decision made in isolation. It is a social process shaped by how an innovation is perceived, who adopts it first, how information travels through networks, and whether the broader system supports the change. Diffusion theory explains the temporal and social dynamics of this process.</p>
+</div>
+
+A city considering a bike-sharing system, an agency planning charging infrastructure, or a state evaluating automated vehicle regulations all benefit from understanding where on the S-curve a technology sits — and what factors will determine whether adoption accelerates, stalls, or reverses.
+
+## The Model: Rogers' Diffusion of Innovations
+
+Everett Rogers first published *Diffusion of Innovations* in 1962, drawing on studies of agricultural technology, medical practices, and educational reforms. The framework has since been applied across hundreds of domains, including transportation, energy, and urban technology. The fifth edition (2003) remains the standard reference.
+
+Rogers identifies five key elements of diffusion: the innovation itself (and how it is perceived), adopter categories, communication channels, time, and the social system.
+
+### Five Perceived Attributes of Innovations
+
+The rate at which an innovation is adopted depends not on its objective qualities but on how potential adopters perceive it. Rogers identified five attributes that consistently predict adoption speed.
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Relative Advantage</strong>
+    <p>Is the innovation perceived as better than what it replaces? Better can mean cheaper, faster, more convenient, more prestigious, or more sustainable. Greater perceived advantage speeds adoption.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Compatibility</strong>
+    <p>Does the innovation fit with existing values, past experiences, and current needs? An EV that requires a complete change in refueling habits faces a compatibility barrier. One that charges at home overnight fits existing routines.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Complexity</strong>
+    <p>Is the innovation difficult to understand or use? Simpler innovations diffuse faster. A tap-to-pay transit card is less complex than a multi-modal journey planning app with dynamic pricing.</p>
+  </div>
+</div>
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Trialability</strong>
+    <p>Can the innovation be tried on a limited basis before full commitment? Test drives, free trial periods, and bike-share single-ride options all reduce risk. High trialability speeds adoption because it lowers the cost of experimentation.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Observability</strong>
+    <p>Are the results of the innovation visible to others? Electric vehicles in parking lots, bike-share stations on street corners, and congestion pricing countdown signs all make adoption observable. Visible adoption triggers social influence.</p>
+  </div>
+</div>
+
+<div class="hbm-note">
+  <p><strong>Practical test:</strong> When evaluating why an innovation is diffusing slowly, check each attribute. Often the bottleneck is not relative advantage (most people agree EVs are cleaner) but compatibility (charging habits), complexity (range planning), or trialability (high upfront cost makes experimentation expensive).</p>
+</div>
+
+### Adopter Categories
+
+Rogers divided the adoption population into five categories based on their timing of adoption, each with distinct characteristics.
+
+<div class="hbm-flow" role="img" aria-label="Adopter categories on the diffusion curve">
+  <div class="hbm-card">
+    <strong>Innovators</strong>
+    <p>~2.5%. Risk-tolerant, well-resourced, cosmopolitan. They seek novelty and tolerate failure. First EV buyers, early e-scooter riders.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Early Adopters</strong>
+    <p>~13.5%. Opinion leaders, respected in social networks. They adopt deliberately and influence others. Their endorsement is critical for broader spread.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Early Majority</strong>
+    <p>~34%. Pragmatic, deliberate. They adopt once they see evidence of success. They want reliability and social proof, not novelty.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Late Majority</strong>
+    <p>~34%. Skeptical, risk-averse. They adopt when the innovation becomes the norm or when not adopting becomes costly. Social pressure and institutional support drive them.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Laggards</strong>
+    <p>~16%. Traditional, isolated from social networks, resource-constrained. They adopt last — or not at all. Resistance may be rational given their circumstances.</p>
+  </div>
+</div>
+
+<div class="hbm-small">The percentages are idealized based on a normal distribution. Real adoption distributions vary by context.</div>
+
+The transition from early adopters to the early majority is often called the **chasm** — a concept emphasized by Geoffrey Moore in technology marketing. Many innovations fail here because what appeals to enthusiasts (novelty, cutting-edge features) does not appeal to pragmatists (reliability, support, social proof).
+
+### Communication Channels, Time, and Social System
+
+Diffusion does not happen through individual decisions alone. It requires communication — information about the innovation must reach potential adopters and be perceived as credible.
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Mass Media Channels</strong>
+    <p>Effective for creating awareness. News coverage, advertising, government campaigns. Reaches many people but has limited influence on adoption decisions.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Interpersonal Channels</strong>
+    <p>Effective for persuasion. Word of mouth, peer observation, social network influence. Neighbors, colleagues, and friends who have adopted carry more weight than advertisements.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Social System</strong>
+    <p>The structure of norms, networks, and institutions within which diffusion occurs. Opinion leaders, change agents, and organizational gatekeepers shape the rate and direction of spread.</p>
+  </div>
+</div>
+
+## Core Constructs
+
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Relative Advantage</span>
+  <span class="hbm-construct">Compatibility</span>
+  <span class="hbm-construct">Complexity</span>
+  <span class="hbm-construct">Trialability</span>
+  <span class="hbm-construct">Observability</span>
+  <span class="hbm-construct">Adopter Categories</span>
+  <span class="hbm-construct">Communication Channels</span>
+  <span class="hbm-construct">Social System</span>
+  <span class="hbm-construct">Rate of Adoption</span>
+  <span class="hbm-construct">S-Curve</span>
+</div>
+
+## Causal Logic
+
+The causal logic of diffusion operates at two levels. At the individual level, a person moves through a decision process from awareness to knowledge to persuasion to decision to implementation to confirmation. At the population level, individual adoption decisions aggregate into the S-curve.
+
+<div class="hbm-flow-6" role="img" aria-label="Innovation-decision process">
+  <div class="hbm-card">
+    <strong>Knowledge</strong>
+    <p>The person learns the innovation exists and gains basic understanding.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Persuasion</strong>
+    <p>The person forms a favorable or unfavorable attitude based on perceived attributes.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Decision</strong>
+    <p>The person chooses to adopt or reject the innovation.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Implementation</strong>
+    <p>The person puts the innovation to use. Reinvention may occur as users adapt it.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Confirmation</strong>
+    <p>The person seeks reinforcement and may reverse if dissonance arises.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Continued or Discontinued</strong>
+    <p>Adoption is sustained — or abandoned due to dissatisfaction or better alternatives.</p>
+  </div>
+</div>
+
+At the population level, the S-curve emerges because early adoption creates social visibility and network effects. As more people adopt, the innovation becomes more observable, more compatible with emerging norms, and less risky — accelerating adoption among the majority. Eventually, the remaining non-adopters are harder to reach, and growth slows.
+
+<div class="hbm-math">
+The Bass Diffusion Model formalizes the S-curve mathematically:
+
+F(t) = [1 − e^(−(p+q)t)] / [1 + (q/p)e^(−(p+q)t)]
+
+Where:
+  F(t) = cumulative proportion of adopters at time t
+  p = coefficient of innovation (external influence, e.g., advertising)
+  q = coefficient of imitation (internal influence, e.g., word of mouth)
+
+When q > p, adoption is primarily driven by social influence — the classic S-curve.
+When p is large relative to q, adoption is more uniform over time.
+</div>
+
+## Data Needed
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Cross-sectional data</strong>
+    <ul>
+      <li><strong>Adoption surveys:</strong> Who has adopted? When? What were their reasons? What barriers remain?</li>
+      <li><strong>Perceptual measures:</strong> Survey scales measuring perceived relative advantage, compatibility, complexity, trialability, and observability</li>
+      <li><strong>Adopter characteristics:</strong> Demographics, income, technology orientation, social network position</li>
+      <li><strong>Awareness and knowledge:</strong> What do non-adopters know about the innovation?</li>
+    </ul>
+  </div>
+  <div class="hbm-panel">
+    <strong>Longitudinal and aggregate data</strong>
+    <ul>
+      <li><strong>Market data:</strong> Sales, registrations, subscriptions, ridership over time</li>
+      <li><strong>Panel data:</strong> Repeated surveys tracking the same individuals over adoption waves</li>
+      <li><strong>Social network data:</strong> Mapping influence pathways, opinion leaders, community structure</li>
+      <li><strong>Policy and infrastructure timelines:</strong> When subsidies, regulations, or infrastructure changes occurred</li>
+    </ul>
+  </div>
+</div>
+
+## Methods
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Bass Diffusion Model</strong>
+    <p>Fits the S-curve to aggregate adoption data. Estimates innovation (p) and imitation (q) coefficients. Widely used for forecasting market penetration.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Survival / Hazard Analysis</strong>
+    <p>Models the time until adoption as a function of individual and contextual covariates. Handles censored data (people who have not yet adopted).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Logistic Growth Curves</strong>
+    <p>A simpler approach to modeling the S-curve. Useful when detailed individual-level data is unavailable and only aggregate trends are observed.</p>
+  </div>
+</div>
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Network Analysis</strong>
+    <p>Maps social influence pathways. Identifies opinion leaders, clusters, and bridge nodes. Useful for understanding how adoption spreads through communities.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Discrete Choice Models</strong>
+    <p>Model the adoption decision as a choice among alternatives (adopt, delay, reject). Can incorporate perceived innovation attributes as choice variables.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Agent-Based Modeling</strong>
+    <p>Simulates heterogeneous agents making adoption decisions within social networks. Useful for testing policy scenarios (subsidies, infrastructure rollout timing).</p>
+  </div>
+</div>
+
+<hbm-doi-widget></hbm-doi-widget>
+
+## Transportation Example: Electric Vehicle Adoption
+
+EV adoption is perhaps the most extensively studied case of diffusion in modern transportation. The five perceived attributes map directly onto the barriers and enablers that research has identified.
+
+<div class="hbm-code">Applying Rogers' Five Attributes to EV Adoption:
+
+Relative Advantage:
+  ✓ Lower fuel costs, reduced emissions, smoother acceleration
+  ✗ Higher purchase price, range limitations (narrowing)
+
+Compatibility:
+  ✓ Home charging fits overnight routines (for homeowners with garages)
+  ✗ Apartment dwellers, long-distance travelers, rural residents face compatibility gaps
+
+Complexity:
+  ✓ Driving experience is simple — often simpler than ICE vehicles
+  ✗ Charging network navigation, range planning, and home installation add complexity
+
+Trialability:
+  ✓ Test drives, short-term rentals, ride-hailing fleets provide trial exposure
+  ✗ High purchase cost limits casual experimentation (mitigated by leasing)
+
+Observability:
+  ✓ EVs are increasingly visible on roads, in parking lots, at charging stations
+  ✓ Distinctive designs (Tesla) increase social visibility
+  ✗ Environmental benefits are invisible without labeling or feedback</div>
+
+Research by Axsen and Kurani (2012) demonstrated that interpersonal communication — conversations with EV owners — was a stronger predictor of adoption interest than mass media exposure, consistent with Rogers' emphasis on interpersonal channels for persuasion. They also found that potential adopters who could observe EVs in their social networks were significantly more likely to consider adoption.
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Policy implications from diffusion theory</strong>
+    <ul>
+      <li><strong>Target early adopters:</strong> Incentive programs should prioritize reaching opinion leaders who will influence broader networks</li>
+      <li><strong>Increase trialability:</strong> Short-term lease programs, test drive events, and fleet integration lower experimentation costs</li>
+      <li><strong>Improve compatibility:</strong> Charging infrastructure at apartment buildings and workplaces addresses a key compatibility gap</li>
+      <li><strong>Enhance observability:</strong> Visible charging stations, green license plates, and community showcases make adoption salient</li>
+      <li><strong>Reduce complexity:</strong> Simplified charging apps, standardized connectors, and clear range displays lower learning costs</li>
+    </ul>
+  </div>
+  <div class="hbm-panel">
+    <strong>Beyond EVs: Other transportation diffusion cases</strong>
+    <ul>
+      <li><strong>E-scooters:</strong> High trialability (single-ride rental) and observability (dockless, visible) drove rapid initial diffusion; complexity and compatibility issues (helmet access, infrastructure gaps) limit sustained use</li>
+      <li><strong>Bike-sharing:</strong> Diffusion was faster in cities with existing cycling culture (compatibility) and visible station networks (observability)</li>
+      <li><strong>Mobility apps:</strong> Smartphone penetration provided the platform; real-time transit info reduced complexity; social sharing increased observability</li>
+      <li><strong>Automated vehicles:</strong> High complexity, low trialability, and uncertain compatibility create significant diffusion barriers despite perceived relative advantage</li>
+    </ul>
+  </div>
+</div>
+
+## Strengths
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Explains temporal dynamics</strong>
+    <p>Diffusion theory explains not just whether an innovation is adopted but when and how fast. The S-curve provides a testable, quantifiable framework for forecasting adoption trajectories.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Identifies actionable segments</strong>
+    <p>The adopter categories help target interventions. Innovators need novelty; early majority need reliability and proof; late majority need social norms and institutional support.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Strong policy relevance</strong>
+    <p>Each perceived attribute suggests a policy lever. Subsidies increase relative advantage. Infrastructure increases compatibility. Trial programs increase trialability. Public deployment increases observability.</p>
+  </div>
+</div>
+
+## Limitations
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Pro-innovation bias</strong>
+    <p>The framework implicitly assumes that adoption is desirable. It provides less guidance for understanding rational rejection, discontinuance, or innovations that should not diffuse (e.g., unsafe technologies).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Limited on rejection and discontinuance</strong>
+    <p>Rogers acknowledges rejection but the framework is primarily oriented toward explaining adoption. Why people stop using an innovation after initial adoption is less developed.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Individual focus within social structure</strong>
+    <p>While diffusion theory includes social systems and networks, the decision process is still centered on the individual adopter. Structural barriers — affordability, access, infrastructure availability — can be underemphasized.</p>
+  </div>
+</div>
+
+The theory also treats adopter categories as relatively fixed personality types, when in reality a person may be an innovator in one domain (smartphone apps) and a laggard in another (electric vehicles). Context matters.
+
+## Best Use Case
+
+Diffusion of Innovations is most useful when the research or policy question concerns **how and when a new technology, practice, or policy will spread through a population**. It is the right framework for forecasting adoption trajectories, segmenting adopter populations, identifying barriers to scaling, and timing policy interventions.
+
+Use diffusion theory when asking: Where is this innovation on the S-curve? What is preventing the jump from early adopters to the early majority? Which perceived attribute is the binding constraint? How can communication strategies be tailored to different adopter segments?
+
+<div class="hbm-note">
+  <p><strong>Key takeaway:</strong> Innovations do not spread because they are objectively superior — they spread because enough people perceive them as advantageous, compatible, simple, testable, and visible, and because social networks carry that perception from early adopters to the majority.</p>
+</div>
+
+## Key References
+
+<div class="hbm-papers">
+  <strong>Foundational and applied references</strong>
+  <ul>
+    <li><a href="https://doi.org/10.1093/sf/44.2.291a">Rogers, E. M. (2003). <em>Diffusion of Innovations</em> (5th ed.). Free Press.</a> — The definitive text on diffusion theory, covering innovation attributes, adopter categories, communication channels, and hundreds of case studies across domains.</li>
+    <li><a href="https://doi.org/10.1287/mnsc.15.5.215">Bass, F. M. (1969). "A New Product Growth Model for Consumer Durables." <em>Management Science, 15</em>(5), 215–227.</a> — The foundational mathematical model for diffusion, distinguishing innovation (external) and imitation (internal) effects.</li>
+    <li><a href="https://doi.org/10.1016/j.enpol.2012.01.049">Axsen, J., & Kurani, K. S. (2012). "Interpersonal Influence within Car Buyers' Social Networks: Applying Five Perspectives to Plug-in Hybrid Vehicle Drivers." <em>Environment and Planning A, 44</em>(5), 1057–1078.</a> — Empirical study of interpersonal influence in EV adoption, demonstrating the importance of social networks in diffusion.</li>
+    <li><a href="https://doi.org/10.1016/j.tra.2017.09.012">Hardman, S., Shiu, E., & Steinberger-Wilckens, R. (2016). "Comparing High-End and Low-End Early Adopters of Battery Electric Vehicles." <em>Transportation Research Part A, 88</em>, 40–57.</a> — Examines heterogeneity within early adopter categories for EVs, linking adopter characteristics to vehicle choice.</li>
+    <li><a href="https://doi.org/10.1016/j.trc.2015.04.010">Shaheen, S. A., & Cohen, A. P. (2019). "Shared Micromobility Policy Toolkit." UC Berkeley Transportation Sustainability Research Center.</a> — Applies diffusion concepts to shared mobility innovations including e-scooters and bike-sharing.</li>
+  </ul>
+</div>
+
+## Exercises and Discussion Questions
+
+<div class="hbm-exercises">
+  <strong>Exercises</strong>
+  <ol>
+    <li>Choose a transportation innovation currently diffusing in your region (e.g., e-bikes, contactless transit payment, ride-pooling). Rate it on each of Rogers' five perceived attributes. Identify the attribute that is most likely constraining its diffusion rate, and propose one policy intervention to address it.</li>
+    <li>A city has deployed 500 shared e-scooters. After six months, usage data shows that 80% of trips are made by 12% of registered users. Using adopter categories, interpret this pattern. What would need to change for the innovation to cross from early adopters to the early majority?</li>
+    <li>The Bass diffusion model separates adoption driven by external influence (p) from adoption driven by imitation (q). For automated vehicles, do you expect p or q to dominate in the early stages? What about later stages? Justify your answer using the communication channels framework.</li>
+  </ol>
+</div>

@@ -1,0 +1,440 @@
+---
+title : "HBM 21: Behaviour Change Wheel"
+date : "2026-06-06"
+draft : false
+type : "post"
+---
+
+A transit agency has completed a thorough COM-B analysis and identified three barriers to increasing bus ridership: residents lack knowledge about routes and schedules (psychological capability), bus stops feel unsafe at night (physical opportunity), and driving is deeply habitual for most commuters (automatic motivation). The diagnosis is clear. But what comes next? How does a planning team move from knowing *what* is wrong to deciding *what to do about it*?
+
+This is where many behavior change efforts stall. The barriers are identified, but the selection of interventions is unsystematic — driven by budget availability, political preference, or whatever worked somewhere else. The Behaviour Change Wheel (BCW) was designed to solve this problem by providing a structured, evidence-based process for moving from diagnosis to intervention design to policy implementation.
+
+## Why Systematic Intervention Design Matters
+
+In transportation, safety, and sustainability practice, interventions are often chosen before barriers are diagnosed. A city defaults to education campaigns because they are inexpensive. A construction firm defaults to enforcement because it is familiar. A transit agency defaults to fare reductions because they are politically visible. These choices may or may not match the actual barriers.
+
+The consequences of mismatch are significant:
+
+- Resources are wasted on interventions that cannot work because they target the wrong mechanism
+- Stakeholders lose confidence in behavior change approaches after repeated failures
+- Real barriers remain unaddressed while superficial ones receive attention
+- Opportunities for effective, multi-component interventions are missed
+
+The Behaviour Change Wheel addresses this by creating a systematic pathway from diagnosis (COM-B) through intervention function selection to policy category choice. It does not guarantee success, but it ensures that intervention choices are justified by the diagnosed barriers rather than by convenience or assumption.
+
+## The BCW Framework Explained
+
+The Behaviour Change Wheel was developed by Susan Michie, Lou Atkins, and Robert West through a synthesis of 19 existing frameworks of behavior change. It is structured as three concentric layers:
+
+<div class="hbm-note">
+  <p><strong>Core principle:</strong> The BCW works from the inside out. First, diagnose the behavior using COM-B (inner hub). Then, select intervention functions that address the diagnosed barriers (middle ring). Finally, choose policy categories that can deliver the selected interventions (outer ring).</p>
+</div>
+
+### The Three Layers
+
+<div class="hbm-flow">
+  <div class="hbm-card">
+    <strong>Layer 1: COM-B</strong>
+    <p>The diagnostic hub. Identify which components of Capability, Opportunity, and Motivation are barriers.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Layer 2: Intervention Functions</strong>
+    <p>Nine types of intervention that address different COM-B barriers.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Layer 3: Policy Categories</strong>
+    <p>Seven types of policy that can deliver intervention functions at scale.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Selection Logic</strong>
+    <p>BCW matrices link COM-B components to appropriate intervention functions, and functions to policy categories.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>APEASE Criteria</strong>
+    <p>Each candidate is evaluated for Affordability, Practicability, Effectiveness, Acceptability, Side-effects, and Equity.</p>
+  </div>
+</div>
+
+## Core Constructs
+
+### The Nine Intervention Functions
+
+Each intervention function addresses specific COM-B components. The BCW provides a matrix specifying which functions are appropriate for which barriers:
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>1. Education</strong>
+    <p>Increasing knowledge or understanding. Providing information about consequences, causes, or how to perform a behavior.</p>
+    <p><em>Targets:</em> Psychological capability, Reflective motivation</p>
+    <p><em>Transit example:</em> Route maps, schedule guides, wayfinding signage</p>
+  </div>
+  <div class="hbm-card">
+    <strong>2. Persuasion</strong>
+    <p>Using communication to induce positive or negative feelings or stimulate action. Not just providing facts — actively shaping attitudes.</p>
+    <p><em>Targets:</em> Reflective motivation, Automatic motivation</p>
+    <p><em>Transit example:</em> Testimonial campaigns from satisfied transit riders</p>
+  </div>
+  <div class="hbm-card">
+    <strong>3. Incentivisation</strong>
+    <p>Creating an expectation of reward. Financial or non-financial incentives that make the behavior more attractive.</p>
+    <p><em>Targets:</em> Reflective motivation, Automatic motivation</p>
+    <p><em>Transit example:</em> Employer-subsidized transit passes, loyalty points</p>
+  </div>
+  <div class="hbm-card">
+    <strong>4. Coercion</strong>
+    <p>Creating an expectation of punishment or cost. Making the undesired behavior less attractive through penalties.</p>
+    <p><em>Targets:</em> Reflective motivation, Automatic motivation</p>
+    <p><em>Transit example:</em> Congestion pricing, parking surcharges in city centers</p>
+  </div>
+  <div class="hbm-card">
+    <strong>5. Training</strong>
+    <p>Imparting skills. Going beyond knowledge to develop the actual ability to perform the behavior through practice.</p>
+    <p><em>Targets:</em> Physical capability, Psychological capability</p>
+    <p><em>Transit example:</em> Urban cycling courses, transit app tutorials</p>
+  </div>
+  <div class="hbm-card">
+    <strong>6. Restriction</strong>
+    <p>Using rules to reduce the opportunity to engage in competing behaviors or increase the opportunity for the target behavior.</p>
+    <p><em>Targets:</em> Physical opportunity, Social opportunity</p>
+    <p><em>Transit example:</em> Car-free zones, single-occupancy vehicle restrictions</p>
+  </div>
+  <div class="hbm-card">
+    <strong>7. Environmental Restructuring</strong>
+    <p>Changing the physical or social context. Altering what people encounter without changing the rules.</p>
+    <p><em>Targets:</em> Physical opportunity, Social opportunity, Automatic motivation</p>
+    <p><em>Transit example:</em> Better lighting at bus stops, real-time arrival displays, bike-share stations</p>
+  </div>
+  <div class="hbm-card">
+    <strong>8. Modelling</strong>
+    <p>Providing an example for people to aspire to or imitate. Demonstrating the behavior through visible role models.</p>
+    <p><em>Targets:</em> Social opportunity, Reflective motivation, Automatic motivation</p>
+    <p><em>Transit example:</em> A mayor who visibly commutes by bus; workplace cycling champions</p>
+  </div>
+  <div class="hbm-card">
+    <strong>9. Enablement</strong>
+    <p>Increasing means or reducing barriers beyond education and training. Providing support, resources, or removing constraints.</p>
+    <p><em>Targets:</em> All COM-B components potentially</p>
+    <p><em>Transit example:</em> Flexible work hours to match transit schedules, e-bike loan programs</p>
+  </div>
+</div>
+
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Education</span>
+  <span class="hbm-construct">Persuasion</span>
+  <span class="hbm-construct">Incentivisation</span>
+  <span class="hbm-construct">Coercion</span>
+  <span class="hbm-construct">Training</span>
+  <span class="hbm-construct">Restriction</span>
+  <span class="hbm-construct">Environmental Restructuring</span>
+  <span class="hbm-construct">Modelling</span>
+  <span class="hbm-construct">Enablement</span>
+</div>
+
+### The Seven Policy Categories
+
+Policy categories are the delivery mechanisms — the institutional and governmental actions that implement intervention functions at scale:
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Policy Categories</strong>
+    <ol>
+      <li><strong>Communication/marketing:</strong> Using print, electronic, telephonic, or broadcast media to deliver messages (e.g., transit marketing campaigns)</li>
+      <li><strong>Guidelines:</strong> Creating documents that recommend or mandate clinical, professional, or institutional practice (e.g., workplace travel plans, complete streets guidelines)</li>
+      <li><strong>Fiscal measures:</strong> Using the tax system to reduce or increase the financial cost of behaviors (e.g., fuel taxes, transit subsidies, parking pricing)</li>
+      <li><strong>Regulation:</strong> Establishing rules or principles of behavior or practice managed by authorities (e.g., vehicle emission standards, speed limits)</li>
+    </ol>
+  </div>
+  <div class="hbm-panel">
+    <strong>Policy Categories (continued)</strong>
+    <ol start="5">
+      <li><strong>Legislation:</strong> Making or changing laws (e.g., mandatory helmet laws, distracted driving laws, Vision Zero legislation)</li>
+      <li><strong>Environmental/social planning:</strong> Designing and/or controlling the physical or social environment (e.g., land use planning, transit-oriented development, complete streets)</li>
+      <li><strong>Service provision:</strong> Delivering a service (e.g., providing public transit, bike-share systems, ride-sharing platforms, safety training programs)</li>
+    </ol>
+  </div>
+</div>
+
+### The APEASE Criteria
+
+Not every intervention function that matches a diagnosed barrier is worth implementing. The BCW includes a set of criteria for evaluating candidate interventions:
+
+<div class="hbm-flow-6">
+  <div class="hbm-card">
+    <strong>Affordability</strong>
+    <p>Can the intervention be delivered within acceptable budget constraints?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Practicability</strong>
+    <p>Can it be delivered as designed in the real-world context?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Effectiveness</strong>
+    <p>Is there evidence that it produces meaningful behavior change?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Acceptability</strong>
+    <p>Is it acceptable to the target population and key stakeholders?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Side-effects</strong>
+    <p>Are there unwanted consequences? Could it cause harm or backfire?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Equity</strong>
+    <p>Does it reduce or widen health, access, or social inequalities?</p>
+  </div>
+</div>
+
+## Causal Logic
+
+The BCW operates through a three-stage causal chain:
+
+<div class="hbm-code">
+<pre>
+STAGE 1: UNDERSTAND THE BEHAVIOR
+  ├── Define the target behavior precisely
+  ├── Identify the target population
+  └── Conduct COM-B analysis
+       ├── Capability barriers? → Which sub-components?
+       ├── Opportunity barriers? → Which sub-components?
+       └── Motivation barriers? → Which sub-components?
+
+STAGE 2: IDENTIFY INTERVENTION OPTIONS
+  ├── Use the COM-B → Intervention Function matrix
+  │    (e.g., Psychological Capability deficit → Education, Training, Enablement)
+  ├── Generate candidate intervention functions
+  └── Evaluate candidates using APEASE criteria
+
+STAGE 3: IDENTIFY IMPLEMENTATION OPTIONS
+  ├── Use the Intervention Function → Policy Category matrix
+  │    (e.g., Environmental Restructuring → Environmental/social planning,
+  │     Service provision)
+  ├── Generate candidate policy categories
+  └── Evaluate candidates using APEASE criteria
+</pre>
+</div>
+
+The logic is that diagnosis *constrains* intervention choice. If the diagnosed barrier is physical opportunity, then education and persuasion are unlikely to be effective. The appropriate intervention functions are environmental restructuring, restriction, enablement, or possibly incentivisation. This constraint prevents the common mistake of defaulting to the easiest or cheapest intervention regardless of the barrier.
+
+<div class="hbm-note">
+  <p><strong>Key causal insight:</strong> The right intervention depends on the diagnosed barrier. Education addresses capability, not opportunity. Environmental restructuring addresses opportunity, not motivation. The BCW ensures this matching is systematic, not intuitive.</p>
+</div>
+
+## Data Needed
+
+BCW application requires data at each stage:
+
+- **COM-B assessment data:** From interviews, surveys, focus groups, and observational studies (as described in the COM-B post)
+- **Intervention mapping exercises:** Structured workshops where the design team maps diagnosed barriers to candidate intervention functions using the BCW matrices
+- **Stakeholder input:** Perspectives from policymakers, practitioners, community members, and target populations — essential for APEASE evaluation
+- **Evidence reviews:** Literature on the effectiveness of candidate interventions in similar contexts
+- **Implementation feasibility data:** Budget constraints, institutional capacity, political context, regulatory environment
+
+## Methods
+
+- **Systematic intervention design:** Following the BCW's three-stage process (understand, identify interventions, identify implementation)
+- **APEASE evaluation:** Structured assessment of each candidate intervention against the six criteria, typically done in stakeholder workshops
+- **Behavioral specification:** Precisely defining the target behavior in terms of who needs to do what differently, in what context, and when
+- **Mapping matrices:** Using published COM-B → Intervention Function and Intervention Function → Policy Category matrices to generate candidates
+- **Mixed-methods research:** Combining qualitative COM-B diagnosis with quantitative evaluation of intervention options
+
+<hbm-bcw-widget></hbm-bcw-widget>
+
+## Transportation Example: Increasing Transit Ridership
+
+A regional transit authority wants to increase bus ridership by 25% in a suburban corridor. The team applies the BCW systematically.
+
+### Stage 1: COM-B Diagnosis
+
+Interviews and surveys with 200 corridor residents reveal three primary barriers:
+
+<div class="hbm-three-col">
+  <div class="hbm-panel">
+    <strong>Barrier 1: Psychological Capability</strong>
+    <p>Many residents do not understand the route system, cannot read the schedule, and do not know how to use the fare payment app. Some have never ridden a public bus.</p>
+    <p><em>COM-B component:</em> Psychological capability is deficient.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Barrier 2: Physical Opportunity</strong>
+    <p>Bus stops lack shelters, lighting, and seating. Service frequency is low (every 30 minutes). First/last mile connections are poor — most residents cannot walk to a stop in under 15 minutes.</p>
+    <p><em>COM-B component:</em> Physical opportunity is deficient.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Barrier 3: Automatic Motivation</strong>
+    <p>Driving is the default morning routine. Residents report that getting in the car is automatic — they do not consciously choose driving over transit each day. The car is associated with comfort, autonomy, and predictability.</p>
+    <p><em>COM-B component:</em> Automatic motivation favors driving.</p>
+  </div>
+</div>
+
+### Stage 2: Selecting Intervention Functions
+
+Using the BCW matrix, the team identifies candidate functions for each barrier:
+
+<div class="hbm-code">
+<pre>
+BARRIER → CANDIDATE INTERVENTION FUNCTIONS
+
+Psychological Capability deficit:
+  ✓ Education — provide route information, schedule guides
+  ✓ Training — guided first-ride programs, app tutorials
+  ✓ Enablement — simplified fare system, journey planning tools
+
+Physical Opportunity deficit:
+  ✓ Environmental Restructuring — bus shelters, lighting, real-time displays
+  ✓ Enablement — bike-share for first/last mile, on-demand feeder shuttles
+  ✓ Restriction — parking restrictions near transit corridor (push factor)
+
+Automatic Motivation (driving habit):
+  ✓ Environmental Restructuring — make transit more visible, prominent stops
+  ✓ Persuasion — testimonials from new riders, social proof messaging
+  ✓ Modelling — visible role models (employer champions, community leaders)
+  ✓ Incentivisation — free trial passes, employer-matched transit benefits
+</pre>
+</div>
+
+### Stage 3: APEASE Evaluation and Policy Selection
+
+The team evaluates each candidate intervention function against the APEASE criteria:
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Selected Interventions</strong>
+    <ul>
+      <li><strong>Education + Training:</strong> Guided first-ride program with transit ambassadors at major stops. Affordable, practical, acceptable. Delivered through <em>Service provision</em> and <em>Communication/marketing</em>.</li>
+      <li><strong>Environmental Restructuring:</strong> Bus stop upgrades (shelters, lighting, real-time displays) and first/last mile bike-share. More expensive but high effectiveness and equity. Delivered through <em>Environmental/social planning</em> and <em>Service provision</em>.</li>
+      <li><strong>Incentivisation + Modelling:</strong> Free 30-day trial passes combined with employer champions program. Affordable, scalable, high acceptability. Delivered through <em>Fiscal measures</em> and <em>Communication/marketing</em>.</li>
+    </ul>
+  </div>
+  <div class="hbm-panel">
+    <strong>Deprioritized Interventions</strong>
+    <ul>
+      <li><strong>Restriction (parking):</strong> Effective in theory but scored low on acceptability and equity (would disproportionately affect lower-income residents who may have no alternative). Side-effects include political backlash. <em>Deferred pending transit improvements.</em></li>
+      <li><strong>Coercion (congestion pricing):</strong> Scored low on practicability (requires regional coordination and technology infrastructure not yet in place). <em>Deferred to future phase.</em></li>
+    </ul>
+  </div>
+</div>
+
+### The Multi-Component Design
+
+The final intervention design is multi-component because the diagnosis identified barriers across multiple COM-B components:
+
+<div class="hbm-flow-4">
+  <div class="hbm-card">
+    <strong>Component 1</strong>
+    <p><strong>Transit Ambassador Program</strong></p>
+    <p>Education + Training targeting psychological capability</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Component 2</strong>
+    <p><strong>Infrastructure Upgrades</strong></p>
+    <p>Environmental restructuring targeting physical opportunity</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Component 3</strong>
+    <p><strong>Free Trial Passes</strong></p>
+    <p>Incentivisation targeting automatic motivation (habit disruption)</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Component 4</strong>
+    <p><strong>Employer Champions</strong></p>
+    <p>Modelling targeting social opportunity and automatic motivation</p>
+  </div>
+</div>
+
+<div class="hbm-small">Each intervention component targets a specific diagnosed barrier. The multi-component design reflects the principle that behavior change often requires simultaneous action on multiple COM-B components.</div>
+
+## Strengths
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Comprehensive and Systematic</strong>
+    <p>The BCW covers the full landscape of intervention options — nine functions and seven policy categories — reducing the risk of overlooking promising approaches. It replaces ad hoc selection with a structured process.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Theory-Driven</strong>
+    <p>Built from a synthesis of 19 behavior change frameworks, the BCW is grounded in behavioral science rather than intuition. Each link between COM-B components and intervention functions has a theoretical justification.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Diagnosis-to-Action Pathway</strong>
+    <p>The BCW explicitly links diagnosis (COM-B) to intervention selection to policy implementation. This end-to-end pathway is rare among behavior change frameworks, most of which stop at diagnosis.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Multi-Component Design</strong>
+    <p>The BCW naturally produces multi-component interventions when multiple barriers are diagnosed. This reflects the reality that most complex behaviors (mode choice, safety compliance, evacuation) have multiple barriers.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Widely Adopted</strong>
+    <p>Originally developed for public health, the BCW is increasingly used in transportation, workplace safety, environmental behavior, and urban planning. A growing evidence base supports its application.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Stakeholder Communication</strong>
+    <p>The visual wheel structure and systematic process provide a clear way to communicate intervention logic to policymakers, funders, and community stakeholders. The APEASE criteria make trade-offs explicit.</p>
+  </div>
+</div>
+
+## Limitations
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Complexity of Full Application</strong>
+    <p>Applying the BCW rigorously — from behavioral specification through COM-B analysis through intervention and policy selection through APEASE evaluation — is time-consuming and resource-intensive. Shortcuts risk undermining the systematic benefits.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Subjectivity of APEASE</strong>
+    <p>The APEASE criteria require judgment. Different stakeholders may rate the same intervention differently on acceptability, equity, or side-effects. The process structures these judgments but does not eliminate them.</p>
+  </div>
+</div>
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>No Effect Size Estimation</strong>
+    <p>The BCW helps select the right type of intervention but does not predict how large the effect will be. A well-selected intervention function may still produce small effects if implementation is poor or the behavior is deeply entrenched.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Context Dependence</strong>
+    <p>The BCW process produces context-specific recommendations. An intervention design for a suburban transit corridor in one city cannot be directly transferred to another without repeating the COM-B diagnosis in the new context.</p>
+  </div>
+</div>
+
+## Best Use Case
+
+The BCW is the right framework when a team has diagnosed behavioral barriers (using COM-B or a similar framework) and needs to **systematically select and design multi-component interventions**. It is most valuable when:
+
+- The behavior is complex and involves multiple barrier types
+- The team wants to avoid defaulting to a single familiar intervention
+- Stakeholder buy-in requires a transparent, justifiable selection process
+- The intervention must be delivered through policy channels
+- There is a need for equity analysis and side-effect evaluation
+- The team includes members from different disciplines who need a common process
+
+The BCW is less useful when the behavior is simple, the barrier is obvious, or the intervention is already determined. It is a design framework, not an evaluation framework — it does not tell you whether the intervention worked after implementation.
+
+## Key Takeaway
+
+<div class="hbm-note">
+  <p><strong>Remember this:</strong> The right intervention depends on the diagnosed barrier — education will not fix an opportunity problem, and incentives will not fix a capability problem. The Behaviour Change Wheel ensures that intervention selection is driven by diagnosis, not by habit or convenience.</p>
+</div>
+
+## Key References
+
+<div class="hbm-papers">
+  <strong>Foundational References</strong>
+  <ul>
+    <li><a href="https://doi.org/10.1186/1748-5908-6-42">Michie, S., van Stralen, M. M., & West, R. (2011). "The Behaviour Change Wheel: A new method for characterising and designing behaviour change interventions." <em>Implementation Science</em>, 6, 42.</a> — The original paper presenting the BCW, its theoretical development from 19 frameworks, and the COM-B model at its center.</li>
+    <li><a href="https://doi.org/10.1007/978-1-137-42750-3">Michie, S., Atkins, L., & West, R. (2014). <em>The Behaviour Change Wheel: A Guide to Designing Interventions</em>. Silverback Publishing.</a> — The comprehensive practitioner guide with worked examples, matrices, and step-by-step instructions for applying the BCW.</li>
+    <li><a href="https://doi.org/10.1186/s13012-015-0379-8">Atkins, L., & Michie, S. (2015). "Designing interventions to change eating behaviours." <em>Proceedings of the Nutrition Society</em>, 74(2), 164–170.</a> — A worked application of the BCW showing the full process from diagnosis through intervention design; the process generalizes to other behavior domains.</li>
+    <li><a href="https://doi.org/10.1186/s13012-017-0605-9">Atkins, L., Francis, J., Islam, R., et al. (2017). "A guide to using the Theoretical Domains Framework of behaviour change to investigate implementation problems." <em>Implementation Science</em>, 12, 77.</a> — Connects TDF (the detailed refinement of COM-B) to the BCW process.</li>
+  </ul>
+</div>
+
+## Exercises and Discussion Questions
+
+<div class="hbm-exercises">
+  <ol>
+    <li><strong>BCW application exercise:</strong> A construction company wants to increase consistent use of fall protection harnesses on elevated work sites. Current compliance is around 60%. Using the BCW process, (a) hypothesize at least three COM-B barriers that might explain non-compliance, (b) identify at least two intervention functions for each barrier using the BCW matrix, and (c) evaluate one candidate intervention from each barrier using the APEASE criteria. Which intervention functions would you prioritize, and why?</li>
+    <li><strong>Policy category matching:</strong> For the transit ridership example in this post, the team selected four intervention components. For each component, identify which policy category (or categories) would be needed to deliver it at scale. Are there policy categories that enable multiple intervention components simultaneously? What institutional coordination would be required?</li>
+    <li><strong>APEASE trade-offs:</strong> Congestion pricing scores high on effectiveness and potential for environmental benefit, but often scores low on acceptability and equity. Using the APEASE framework, discuss how a transportation planner might address the equity concern. Could changes to the intervention design (e.g., revenue recycling, exemptions, transit investment) shift the APEASE evaluation? At what point does modifying an intervention for acceptability compromise its effectiveness?</li>
+  </ol>
+</div>
+
+The next post introduces the Theoretical Domains Framework — a more granular tool that acts as a magnifying glass for COM-B, breaking its broad categories into 14 specific behavioral domains for detailed barrier analysis.

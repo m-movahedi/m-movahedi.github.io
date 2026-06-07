@@ -1,0 +1,331 @@
+---
+title : "HBM 26: System Dynamics"
+date : "2026-06-06"
+draft : false
+type : "post"
+---
+
+In 1962, a new freeway opened in a congested metropolitan area. Traffic engineers predicted it would relieve congestion on parallel routes. Within five years, the new freeway was just as congested as the roads it was meant to relieve — and the parallel routes had not improved either. Total vehicle-miles traveled in the corridor had increased. The road had not reduced congestion; it had *induced* demand. Latent travelers who had previously avoided the corridor, shifted departure times, or chosen other destinations now used the new capacity, filling it to the same equilibrium as before.
+
+This outcome was counterintuitive to most decision-makers. The logic seemed straightforward: more supply should reduce scarcity. But the transportation system is not a simple pipeline. It is a system with **feedback loops, delays, and nonlinear responses**, and those features produce behavior that linear, open-loop thinking cannot anticipate. System dynamics is the modeling framework designed to understand exactly these phenomena.
+
+## Why System Dynamics Matters
+
+Most behavioral models in this series focus on individual decisions — what a single person thinks, intends, and chooses. System dynamics operates at a different level entirely. It models the **structure of the system** in which those decisions take place: the feedback mechanisms, accumulation processes, and delays that connect individual actions to aggregate outcomes and connect those outcomes back to future actions.
+
+<div class="hbm-note">
+  <p><strong>Core insight:</strong> System dynamics reveals why transportation systems often behave counterintuitively — feedback loops and delays mean that well-intended policies can produce the opposite of their intended effects, and problems that seem simple often resist simple solutions.</p>
+</div>
+
+Consider the "transit death spiral," a phenomenon observed in many North American cities:
+
+<div class="hbm-flow" role="img" aria-label="Transit death spiral">
+  <div class="hbm-card">
+    <strong>Ridership declines</strong>
+    <p>Due to suburbanization, car ownership, or service quality.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Revenue falls</strong>
+    <p>Fare revenue drops, creating budget pressure.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Service cuts</strong>
+    <p>Agency reduces frequency, coverage, or both.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Quality worsens</strong>
+    <p>Longer waits, fewer routes, worse experience.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>More riders leave</strong>
+    <p>Remaining riders switch to cars. Loop reinforces.</p>
+  </div>
+</div>
+
+This is a **reinforcing feedback loop** — a vicious cycle where each deterioration makes the next one worse. A discrete choice model can estimate the elasticity of ridership with respect to service frequency. But only a system dynamics model can show how that elasticity, operating within a feedback structure over time, can produce a self-reinforcing decline that accelerates beyond what any static analysis would predict.
+
+## How System Dynamics Works
+
+System dynamics, developed by Jay Forrester at MIT in the 1950s and 1960s, models systems as networks of **stocks**, **flows**, and **feedback loops** that evolve over time. The approach uses two primary tools: **causal loop diagrams** (CLDs) for qualitative understanding and **stock-and-flow models** for quantitative simulation.
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Causal loop diagram (CLD)</strong>
+    <p>A qualitative map of the feedback structure showing variables, causal connections (with polarity: + or −), and feedback loops (reinforcing R or balancing B). Used for problem framing, stakeholder communication, and hypothesis generation.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Stock-and-flow model</strong>
+    <p>A quantitative simulation where stocks (accumulations) change through inflows and outflows, governed by equations that implement the causal structure. Simulated numerically over time to produce dynamic behavior.</p>
+  </div>
+</div>
+
+The fundamental building block is the stock-flow structure:
+
+<div class="hbm-math">
+Stock(t) = Stock(t₀) + ∫ᵗₜ₀ [Inflow(s) − Outflow(s)] ds
+</div>
+
+Stocks are accumulations — they represent the state of the system at any point in time. Flows are rates that change stocks. The key insight is that **stocks create delays and inertia**: even if you change a flow immediately, the stock adjusts gradually.
+
+## Core Constructs
+
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Stocks</span>
+  <span class="hbm-construct">Flows</span>
+  <span class="hbm-construct">Reinforcing Loops</span>
+  <span class="hbm-construct">Balancing Loops</span>
+  <span class="hbm-construct">Delays</span>
+  <span class="hbm-construct">Nonlinearity</span>
+  <span class="hbm-construct">Causal Loop Diagrams</span>
+</div>
+
+**Stocks** are accumulations that characterize the state of a system. In transportation, examples include:
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Vehicle fleet</strong>
+    <p>Total cars on the road, accumulated through purchases and reduced through scrappage. Changes slowly — even with strong EV policy, the fleet turns over across decades.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Road capacity</strong>
+    <p>Lane-miles of highway, accumulated through construction. Increases slowly due to planning and construction delays; rarely decreases.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Transit ridership base</strong>
+    <p>Habitual transit riders, accumulated through positive experiences and word-of-mouth, depleted by service cuts and bad experiences.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Public perception</strong>
+    <p>Accumulated trust in transit safety, accumulated frustration with congestion, accumulated concern about climate — these shift slowly and influence policy windows.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Infrastructure condition</strong>
+    <p>Bridge and pavement quality, depleted by use and weather, replenished by maintenance investment — with long delays between funding decisions and completed repairs.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Urban sprawl</strong>
+    <p>Developed land area, accumulated through suburban development. Extremely hard to reverse once built — a nearly irreversible stock.</p>
+  </div>
+</div>
+
+**Flows** are the rates that change stocks: vehicle purchases per year, lane-miles built per decade, riders gained or lost per month. Policies typically act on flows, not stocks directly, which is why system change is often slower than decision-makers expect.
+
+**Reinforcing feedback loops** (labeled R in causal loop diagrams) amplify change. They make growth grow faster and decline decline faster. The transit death spiral above is a reinforcing loop. Another example: road building → lower congestion → more driving → more congestion → demand for more roads → more road building.
+
+**Balancing feedback loops** (labeled B) resist change and push the system toward equilibrium or a goal. A thermostat is the classic example. In transportation: congestion → longer travel times → some drivers switch to transit or telework → congestion decreases. This is a balancing loop — congestion generates a corrective response.
+
+<div class="hbm-note">
+  <p><strong>The interplay of loops:</strong> Real systems contain multiple reinforcing and balancing loops operating simultaneously. The behavior of the system depends on which loops dominate at any given time. A system may be stable (balancing loops dominate) until a threshold is crossed, at which point a reinforcing loop takes over and produces rapid change — a tipping point.</p>
+</div>
+
+**Delays** are the time lags between a cause and its full effect. They are ubiquitous in transportation systems and are a primary source of counterintuitive behavior:
+
+- **Construction delays** — a highway takes 5–10 years from planning to opening
+- **Perception delays** — travelers take months to adjust route or mode habits after a change
+- **Information delays** — data on ridership or safety lags the conditions that produced it
+- **Fleet turnover delays** — even with immediate EV adoption, the average car lasts 12–15 years
+- **Land use delays** — development patterns respond to infrastructure with lags of years to decades
+
+**Nonlinearity** means that relationships between variables are not proportional. Congestion does not increase linearly with traffic volume — it is relatively mild until volume approaches capacity, then deteriorates sharply. This S-shaped or threshold behavior is typical of transportation systems and is a key reason why linear extrapolation fails.
+
+## Causal Logic: The Induced Demand Example
+
+The induced demand phenomenon — perhaps the most famous counterintuitive result in transportation — illustrates system dynamics thinking perfectly.
+
+<div class="hbm-panel">
+  <strong>Causal loop diagram: Induced demand</strong>
+  <p>
+  Road capacity (+) → Congestion (−) : More capacity reduces congestion initially.<br>
+  Congestion (−) → Attractiveness of driving (+) : Lower congestion makes driving more attractive.<br>
+  Attractiveness of driving (+) → Vehicle-miles traveled (+) : More attractive driving → more driving.<br>
+  Vehicle-miles traveled (+) → Congestion (+) : More driving increases congestion.<br>
+  <br>
+  This forms a <strong>balancing loop</strong>: the capacity increase triggers a behavioral response (more driving) that partially or fully offsets the congestion reduction. The system finds a new equilibrium at higher VMT and similar congestion levels.
+  </p>
+  <p>
+  Meanwhile, a <strong>reinforcing loop</strong> operates on a longer timescale:<br>
+  Road capacity (+) → Suburban development (+) : New roads enable development in previously inaccessible areas.<br>
+  Suburban development (+) → Car-dependent population (+) : Sprawl creates populations who must drive.<br>
+  Car-dependent population (+) → Vehicle-miles traveled (+) : More car-dependent people means more driving.<br>
+  Vehicle-miles traveled (+) → Demand for road capacity (+) : Congestion generates political pressure for more roads.
+  </p>
+</div>
+
+The short-term balancing loop and the long-term reinforcing loop together create the phenomenon of **car dependency lock-in** — a system that becomes progressively harder to shift away from automobile dominance because each element reinforces the others.
+
+<div class="hbm-note">
+  <p><strong>Policy lesson:</strong> A system dynamics model does not say "don't build roads." It says: "building roads, without simultaneous land-use policy and transit investment, will likely produce induced demand that offsets much of the congestion benefit within 5–10 years." The insight is about system structure, not about any single variable.</p>
+</div>
+
+## Data Requirements
+
+System dynamics models operate at an aggregate level and typically require different data than individual-level behavioral models:
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Time-series data</strong>
+    <p>Historical trends in key stocks and flows — VMT, mode shares, transit ridership, road-miles built, vehicle registrations, fuel prices, population density — over decades.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Parameter estimates</strong>
+    <p>Elasticities, response rates, delay times, capacity utilization curves — drawn from the literature, expert judgment, or calibration to historical patterns.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Policy and institutional data</strong>
+    <p>Funding cycles, construction timelines, regulatory changes, fare structures — the institutional constraints that govern flows.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Stakeholder knowledge</strong>
+    <p>Expert mental models of causal relationships — often elicited through group model-building workshops where stakeholders help construct causal loop diagrams.</p>
+  </div>
+</div>
+
+<div class="hbm-note">
+  <p><strong>A distinctive feature:</strong> System dynamics often begins with qualitative modeling — building causal loop diagrams with stakeholders before writing any equations. This process itself generates insights, even before simulation. The act of mapping feedback structure forces stakeholders to articulate their assumptions about how the system works.</p>
+</div>
+
+## Methods
+
+System dynamics models are built using specialized software:
+
+- **Vensim** — the most widely used academic platform, with optimization and sensitivity analysis
+- **Stella/iThink** — visual, accessible interface popular in teaching and policy workshops
+- **AnyLogic** — combines system dynamics with agent-based and discrete-event simulation
+- **Python (PySD, sdeverywhere)** — open-source tools for scripting and integrating SD models with other analyses
+
+The modeling process typically follows these steps:
+
+1. **Problem articulation** — define the dynamic problem (not a static snapshot, but a behavior-over-time pattern)
+2. **Dynamic hypothesis** — construct a causal loop diagram explaining the feedback structure that produces the problematic behavior
+3. **Formulation** — translate the CLD into a stock-and-flow model with mathematical equations
+4. **Calibration and testing** — tune parameters to reproduce historical behavior; test under extreme conditions
+5. **Policy analysis** — simulate interventions and compare scenarios
+
+<hbm-sd-widget></hbm-sd-widget>
+
+## Transportation Example: Car Dependency Lock-In
+
+Consider a system dynamics model of a mid-sized city experiencing car dependency lock-in. The model contains four interconnected loops:
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>R1: Sprawl reinforcement</strong>
+    <p>Road investment → Suburban accessibility → Development in suburbs → Population dispersal → Higher VMT → Congestion → Demand for road investment. This reinforcing loop drives low-density, car-dependent development.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>R2: Transit death spiral</strong>
+    <p>Population dispersal → Lower transit density → Service cuts → Worse transit quality → More car use → More dispersal. A reinforcing loop that undermines transit viability as density falls.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>B1: Congestion regulation</strong>
+    <p>Congestion → Higher travel times → Some mode/time switching → Slight congestion relief. A weak balancing loop — congestion self-corrects, but only partially.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>B2: Budget constraint</strong>
+    <p>Road construction costs → Budget pressure → Reduced construction rate → Slows capacity expansion. A balancing loop that limits road building, but often overcome by political pressure.</p>
+  </div>
+</div>
+
+The model simulates 50 years. Policy scenarios include:
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Scenario A: Business as usual</strong>
+    <p>Continue road expansion in response to congestion. Result: VMT grows 60%, transit mode share drops from 12% to 4%, CO₂ emissions increase, and congestion stabilizes at the same level despite massive road investment.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Scenario B: Integrated policy</strong>
+    <p>Freeze highway expansion, invest in transit and cycling, implement congestion pricing, and adopt transit-oriented zoning. Result: VMT stabilizes, transit mode share grows to 18%, CO₂ emissions fall 30%, and congestion improves moderately after a 5-year adjustment period.</p>
+  </div>
+</div>
+
+<div class="hbm-note">
+  <p><strong>Key finding:</strong> The model shows that Scenario B is worse than Scenario A for the first 3–5 years (congestion increases temporarily as road capacity is not expanded), but dramatically better over 20–50 years. This lag is the fundamental political challenge: the costs of systemic change are immediate and visible, while the benefits are delayed and diffuse. System dynamics makes this tradeoff explicit and quantifiable.</p>
+</div>
+
+## Strengths
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Captures feedback structure</strong>
+    <p>Explicitly models reinforcing and balancing loops that produce counterintuitive behavior — induced demand, lock-in, spirals, and tipping points.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Long-term perspective</strong>
+    <p>Designed for multi-decade simulation, making it suitable for infrastructure planning, climate policy, and urbanization scenarios where short-term optimization is misleading.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Reveals delays and inertia</strong>
+    <p>Makes explicit the time lags between policy action and system response, helping decision-makers set realistic expectations.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Policy scenario testing</strong>
+    <p>Excellent for comparing alternative policy packages under different assumptions — "what if we invest in transit AND implement pricing AND change zoning?"</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Stakeholder engagement</strong>
+    <p>Causal loop diagrams are intuitive communication tools. Group model-building workshops can align diverse stakeholders around a shared understanding of system structure.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Holistic perspective</strong>
+    <p>Can integrate transportation, land use, environment, economics, and social dynamics in a single model, revealing cross-sector interactions.</p>
+  </div>
+</div>
+
+## Limitations
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Aggregate representation</strong>
+    <p>System dynamics models populations as stocks, not individuals. They cannot represent heterogeneity, equity effects, or individual behavioral differences without becoming unwieldy.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Parameter subjectivity</strong>
+    <p>Many parameters (delay times, elasticities, loop gains) are estimated from limited data, expert judgment, or calibration. Different modelers may produce different models of the same system.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Validation difficulty</strong>
+    <p>System dynamics models are hard to validate rigorously because they model long-term behavior that may not have occurred yet, and controlled experiments are rarely possible at the system level.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Spatial weakness</strong>
+    <p>Standard system dynamics models have no spatial dimension. Congestion in the model is "average congestion," not location-specific. Spatial variants exist but add complexity.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Boundary choice</strong>
+    <p>The modeler must decide what to include and exclude. Too narrow a boundary misses important feedbacks; too broad a boundary makes the model intractable.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Not predictive in the traditional sense</strong>
+    <p>System dynamics models are tools for exploring "what if" scenarios and understanding structural behavior, not for precise forecasting of specific values at specific dates.</p>
+  </div>
+</div>
+
+## Best Use Case
+
+System dynamics is the right tool when the research or planning question involves **feedback loops, delays, and long-term structural dynamics** — phenomena where the system resists change, produces counterintuitive outcomes, or exhibits path dependency. It is most valuable for strategic policy analysis: induced demand, transit investment cycles, car dependency, infrastructure decay, technology transition (EV adoption dynamics), and climate-transportation interactions. It is least suitable when individual-level behavioral detail, spatial resolution, or short-term prediction is required.
+
+<div class="hbm-note">
+  <p><strong>Key takeaway:</strong> System dynamics shows that transportation systems are not machines to be optimized but feedback-rich systems to be understood — where building more roads can increase congestion, cutting fares may not save transit, and the best time to act was twenty years ago.</p>
+</div>
+
+## Key References
+
+<div class="hbm-papers">
+  <strong>Foundational and applied references</strong>
+  <ul>
+    <li><a href="https://mitpress.mit.edu/9780262194532/business-dynamics/">Sterman, J. D. (2000). <em>Business Dynamics: Systems Thinking and Modeling for a Complex World.</em> Irwin/McGraw-Hill.</a> — The definitive textbook on system dynamics methodology, with extensive treatment of feedback, delays, and modeling practice.</li>
+    <li><a href="https://doi.org/10.1002/sdr.4260050106">Forrester, J. W. (1969/1971). <em>Urban Dynamics.</em> MIT Press.</a> — Forrester's groundbreaking application of system dynamics to urban systems, demonstrating counterintuitive policy outcomes in housing, employment, and urban decay.</li>
+    <li><a href="https://doi.org/10.1016/j.tra.2014.07.005">Shepherd, S. P. (2014). "A review of system dynamics models applied in transportation." <em>Transportation Research Part B</em>.</a> — A comprehensive review of system dynamics applications in transportation, covering induced demand, modal shift, and infrastructure investment.</li>
+    <li><a href="https://doi.org/10.1016/0191-2615(94)90022-1">Abbas, K. A., & Bell, M. G. H. (1994). "System dynamics applicability to transportation modeling." <em>Transportation Research Part A</em>, 28(5), 373–390.</a> — An early argument for applying system dynamics to transportation planning, with worked examples.</li>
+  </ul>
+</div>
+
+<div class="hbm-exercises">
+  <strong>Exercises and Discussion Questions</strong>
+  <ol>
+    <li>Draw a causal loop diagram for the following dynamic problem: A city introduces a bike-sharing system. Initial ridership is high due to novelty. As the novelty wears off, ridership drops. The city reduces the number of stations and bikes to cut costs. This makes the system less convenient, further reducing ridership. Meanwhile, safety concerns grow as remaining cyclists share roads with fast traffic, deterring new users. Identify the reinforcing and balancing loops. Where could policy intervention break the negative cycle?</li>
+    <li>The concept of "induced demand" is often summarized as "you can't build your way out of congestion." Using system dynamics concepts, explain why this summary is partially correct but also incomplete. Under what conditions (if any) could road building actually reduce long-term congestion? What accompanying policies would be needed?</li>
+    <li>Compare system dynamics and agent-based modeling for studying EV adoption over 30 years. What aspects of the problem would each approach handle well? What would each miss? Could the two be combined, and if so, how?</li>
+  </ol>
+</div>

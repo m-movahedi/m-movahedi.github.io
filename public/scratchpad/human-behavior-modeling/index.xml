@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Human Behavior Modeling on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/human-behavior-modeling/</link>
+    <description>Recent content in Human Behavior Modeling on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/human-behavior-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HBM 01: What Is Human Behavior Modeling?</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-01/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-01/</guid>
+      <description>&lt;p&gt;Transportation and urban systems are not only made of roads, vehicles, signals, sidewalks, buildings, and policies. They are also made of people.&lt;/p&gt;&#xA;&lt;p&gt;People decide whether to drive or take the bus. They decide how fast to go, whether to wear a seatbelt, when to cross the street, and whether to evacuate during a hurricane. They choose where to live, how to commute, whether to buy an electric vehicle, and whether to support a new bike lane. Those choices — billions of them each day — shape congestion, emissions, crash rates, accessibility, equity, and quality of life.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 02: Why Knowledge Does Not Always Change Behavior</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-02/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-02/</guid>
+      <description>&lt;p&gt;Every licensed driver knows that speeding increases crash risk. Seat belt campaigns have been running for decades, and awareness of their life-saving effect is near-universal. Most commuters in car-dependent cities are aware that public transit options exist. Residents in flood-prone areas generally know that evacuation orders are issued for their safety.&lt;/p&gt;&#xA;&lt;p&gt;Yet speeding persists. Seat belt compliance varies widely across regions and demographics. Transit ridership stays flat despite new investments. Some households refuse to evacuate even under mandatory orders.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 03: The KAP Framework</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-03/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-03/</guid>
+      <description>&lt;p&gt;A transit agency launches a new bus rapid transit (BRT) line with dedicated lanes, high-frequency service, and modern stations. Ridership projections are optimistic. After six months, actual ridership is well below target. The agency needs answers: Do people know about the new line? Do they have a favorable view of it? Are they actually using it? And if not — where is the breakdown?&lt;/p&gt;&#xA;&lt;p&gt;This is the kind of question that the KAP framework was designed to answer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 04: Theory of Planned Behavior</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-04/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-04/</guid>
+      <description>&lt;p&gt;A city government introduces a congestion pricing scheme and a subsidized transit pass to encourage commuters to switch from driving to public transit. Awareness is high. The transit system is well-rated. Surveys show that many commuters have a positive view of transit. Yet after a year, mode shift is modest. Some people switched. Most did not. Why?&lt;/p&gt;&#xA;&lt;p&gt;The KAP framework from the previous post could document this gap: knowledge is high, attitudes are favorable, but practice has barely changed. But KAP cannot explain &lt;em&gt;why&lt;/em&gt; the gap persists. It has no mechanism for social pressure, no construct for perceived difficulty, and no concept of behavioral intention.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 05: KAP vs. TPB — Description vs. Explanation</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-05/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-05/</guid>
+      <description>&lt;p&gt;A city planner is studying why more people do not cycle to work despite new bike lanes, a bike-share program, and a public awareness campaign. Two research approaches are available. One uses a KAP survey to assess what people know about cycling infrastructure, how they feel about cycling, and whether they cycle. The other uses a TPB questionnaire to measure attitudes, social norms, perceived behavioral control, and intention to cycle.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 06: Health Belief Model</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-06/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-06/</guid>
+      <description>&lt;p&gt;Every year, traffic safety agencies launch campaigns reminding drivers to wear seatbelts, stop texting behind the wheel, and slow down in school zones. The information is clear, the statistics are public, and the risks are well documented. Yet millions of drivers continue to engage in exactly the behaviors they know are dangerous. A commuter who checks a phone at every red light, a teenager who drives without a seatbelt, a homeowner who ignores hurricane evacuation orders — each of these people has some awareness of the risk. The question is not whether they know. The question is why knowing is not enough.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 07: Protection Motivation Theory</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-07/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-07/</guid>
+      <description>&lt;p&gt;In 2005, as Hurricane Katrina approached the Gulf Coast, officials issued mandatory evacuation orders for New Orleans. The threat was clear, the forecasts were severe, and the warnings were urgent. Yet an estimated 100,000 residents did not evacuate. Some lacked transportation. Some did not believe the storm would be as bad as predicted. And some believed the storm would be catastrophic — but also believed there was nothing they could do about it. Fear without a viable response produced paralysis, not action.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 08: Transtheoretical Model</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-08/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-08/</guid>
+      <description>&lt;p&gt;A city launches a new bus rapid transit line and promotes it heavily across neighborhoods that currently depend almost entirely on private cars. After six months, ridership is lower than projected. Officials are puzzled: the route is fast, the fares are affordable, and satisfaction surveys from actual riders are positive. Why didn&amp;rsquo;t more people switch?&lt;/p&gt;&#xA;&lt;p&gt;The answer may be that different residents were at different stages of readiness to change. Some had never considered taking transit. Some had thought about it but hadn&amp;rsquo;t committed. Some were actively planning to try it. Some had already tried it and were deciding whether to continue. A single campaign — one message, one incentive, one launch event — treated all of these people as if they were the same. They were not.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 09: Social Cognitive Theory</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-09/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-09/</guid>
+      <description>&lt;p&gt;A mid-sized city installs new protected bike lanes along a major corridor. In the first month, usage is low. But then something shifts. A few confident cyclists begin using the lanes visibly during peak commute hours. Neighbors see them. Coworkers mention trying it. A local cycling group starts weekly &amp;ldquo;confidence rides&amp;rdquo; for beginners along the new route. Within six months, daily cycling counts on the corridor have tripled — not because the infrastructure changed, but because people watched others succeed, built confidence through guided experience, and began to see themselves as capable cyclists.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 10: Self-Determination Theory</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-10/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-10/</guid>
+      <description>&lt;p&gt;A city invests heavily in a new cycling network: protected lanes, bike-share stations, repair hubs, real-time route apps. Usage surges in the first month, then slowly declines. Riders who tried it for a promotional discount drift back to driving. Yet a smaller group keeps cycling — not because of incentives, but because they genuinely enjoy it, feel skilled at navigating city streets, and ride with friends or colleagues. They have internalized cycling as part of their identity, not as a transaction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 11: Diffusion of Innovations</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-11/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-11/</guid>
+      <description>&lt;p&gt;In 2011, a handful of electric vehicles appeared on American roads — mostly purchased by technology enthusiasts willing to tolerate limited range, sparse charging infrastructure, and high prices. By 2024, EVs accounted for roughly one in ten new car sales in the United States, and over one in five globally. The pattern was not linear. Growth was slow for years, then accelerated sharply, tracing the familiar shape of an S-curve.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 12: Norm Activation Model</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-12/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-12/</guid>
+      <description>&lt;p&gt;Most models of travel behavior assume that people act in their own interest — choosing the mode, route, or time that minimizes their personal cost, travel time, or effort. And much of the time, that assumption works well enough. But it cannot explain the commuter who carpools even though driving alone would be faster, the homeowner who supports congestion pricing despite owning two cars, or the parent who walks children to school in the rain because she believes it matters for the neighborhood.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 13: Value-Belief-Norm Theory</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-13/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-13/</guid>
+      <description>&lt;p&gt;Two neighbors live on the same street, drive similar cars, and commute to jobs of comparable distance. One is an active supporter of congestion pricing, has switched to an e-bike for local trips, and volunteers for a neighborhood sustainability committee. The other sees congestion pricing as an unfair tax, considers cycling impractical, and views sustainability campaigns with skepticism. Both are informed, educated, and thoughtful. Why do they respond so differently to the same environmental information?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 14: Social Practice Theory</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-14/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-14/</guid>
+      <description>&lt;p&gt;Every model in this series so far has shared one fundamental assumption: behavior is something that individuals &lt;em&gt;do&lt;/em&gt;. People form attitudes, weigh risks, calculate utilities, feel moral obligations, and then choose to act. Policies and interventions target those individual processes — changing attitudes, providing information, adjusting incentives, shifting norms. The person is the unit of analysis.&lt;/p&gt;&#xA;&lt;p&gt;Social Practice Theory (SPT) challenges this assumption at its root. The question is not &amp;ldquo;Why does this person drive?&amp;rdquo; but &amp;ldquo;Why is driving the normal, obvious, almost invisible way of getting around?&amp;rdquo; SPT argues that the answer lies not in individual psychology but in the structure of &lt;em&gt;practices&lt;/em&gt; — socially organized bundles of activity that connect materials, competences, and meanings into routines that feel natural to their practitioners. Car driving is not merely a choice made by millions of individuals. It is a practice — one that is held together by roads, parking lots, suburbs, driving skills, automotive culture, status symbols, and the feeling of personal freedom.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 15: Discrete Choice Models</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-15/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-15/</guid>
+      <description>&lt;p&gt;Every day, millions of people face a deceptively simple question: how should I get there? Drive alone, carpool, take the bus, ride a bike, walk, call a ride-hailing service — each option comes with different travel times, costs, comfort levels, and reliability. A transit agency considering a new rail line, a city evaluating congestion pricing, or a planner designing a bike-share system all need to answer a deeper question: if we change the attributes of these options, how many people will switch?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 16: Prospect Theory</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-16/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-16/</guid>
+      <description>&lt;p&gt;A city introduces a $5 congestion toll for driving downtown during peak hours. Drivers are furious. The same city could frame the policy differently: &amp;ldquo;Drive off-peak and save $5.&amp;rdquo; The financial reality is identical, but the psychological reality is not. The first version imposes a loss; the second offers a gain. Research consistently shows that the loss frame produces stronger emotional reactions, more political opposition, and different behavioral responses — even when the monetary amount is exactly the same.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 17: Bounded Rationality</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-17/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-17/</guid>
+      <description>&lt;p&gt;Open a navigation app and it offers three routes: highway (28 min), arterial (33 min), and a local-street path (31 min). The rational optimizer would compare all three on travel time, fuel cost, toll charges, reliability, scenery, and crash risk, weigh these attributes according to personal preferences, and select the utility-maximizing route. Most people do not do this. They glance at the map, recognize the highway route as the one they usually take, confirm that the travel time looks reasonable, and start driving. They never evaluate the arterial option. They never compute a cost function. They satisfice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 18: Habit Theory</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-18/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-18/</guid>
+      <description>&lt;p&gt;Ask a daily car commuter why they drive to work. The first answer is usually practical: &amp;ldquo;It&amp;rsquo;s faster,&amp;rdquo; &amp;ldquo;I need my car for errands,&amp;rdquo; &amp;ldquo;Transit doesn&amp;rsquo;t go where I need.&amp;rdquo; Push a little deeper and something else emerges: &amp;ldquo;I don&amp;rsquo;t really think about it anymore.&amp;rdquo; That last answer is the most honest — and the most important. For millions of commuters, the daily mode choice is not a choice at all. It is a habit: an automatic behavior triggered by context cues, executed without deliberation, and remarkably resistant to change.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 19: Dual-Process Models</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-19/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-19/</guid>
+      <description>&lt;p&gt;A pedestrian stands at a crosswalk. She looks to her left and sees a car approaching. In a fraction of a second, without consciously estimating the car&amp;rsquo;s speed, calculating the distance, or weighing the value of her time against the risk of injury, she steps off the curb. Her brain made an automatic, effortless judgment: there is enough space.&lt;/p&gt;&#xA;&lt;p&gt;Ten minutes later, the same pedestrian is buying a new car. She sits at a desk, compares interest rates, reads vehicle safety ratings, calculates monthly payments, and deliberates with her spouse. This decision is slow, effortful, and highly analytical.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 20: COM-B Model</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-20/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-20/</guid>
+      <description>&lt;p&gt;A city invests heavily in a cycling awareness campaign. Brochures explain the health benefits of cycling, social media posts highlight environmental impact, and local news covers success stories from other cities. After twelve months, cycling mode share has barely changed. The campaign increased knowledge — surveys confirm that residents now know cycling is healthy and sustainable — but almost nobody switched from driving. Why?&lt;/p&gt;&#xA;&lt;p&gt;The answer often lies in a mismatch between the type of barrier and the type of intervention. If people already understand the benefits of cycling but lack safe bike lanes, secure parking, or the physical fitness to ride, then more information is the wrong lever. The COM-B model was designed to prevent exactly this kind of mismatch by diagnosing &lt;em&gt;what must change&lt;/em&gt; before selecting &lt;em&gt;how to change it&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 21: Behaviour Change Wheel</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-21/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-21/</guid>
+      <description>&lt;p&gt;A transit agency has completed a thorough COM-B analysis and identified three barriers to increasing bus ridership: residents lack knowledge about routes and schedules (psychological capability), bus stops feel unsafe at night (physical opportunity), and driving is deeply habitual for most commuters (automatic motivation). The diagnosis is clear. But what comes next? How does a planning team move from knowing &lt;em&gt;what&lt;/em&gt; is wrong to deciding &lt;em&gt;what to do about it&lt;/em&gt;?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 22: Theoretical Domains Framework</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-22/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-22/</guid>
+      <description>&lt;p&gt;A construction safety manager conducts a COM-B analysis to understand why workers on a bridge rehabilitation project are not consistently wearing fall protection harnesses. The analysis identifies &amp;ldquo;psychological capability&amp;rdquo; and &amp;ldquo;reflective motivation&amp;rdquo; as deficient. These are useful starting points, but they raise more questions than they answer. Is the psychological capability problem about knowledge (workers do not know when harnesses are required), about attention (workers forget in the rush of work), or about decision-making (workers misjudge the risk on familiar tasks)? Is the motivation problem about beliefs (workers think falls are unlikely), about goals (safety competes with productivity), or about identity (workers see harness use as a sign of inexperience)?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 23: Nudge and Choice Architecture</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-23/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-23/</guid>
+      <description>&lt;p&gt;When a new employee joins a large company, their commute benefits are configured in one of two ways. In Company A, the default enrollment is a parking pass — employees who want a transit pass must actively opt in, fill out a form, and submit it to HR. In Company B, the default enrollment is a transit pass — employees who want a parking pass must actively opt out and request one. The policies are otherwise identical. Both options are available. No one is forced.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 24: Agent-Based Modeling</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-24/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-24/</guid>
+      <description>&lt;p&gt;A city emergency manager runs a hurricane evacuation drill. The plan calls for a staged departure: coastal zones leave first, then inland neighborhoods follow on a schedule. On paper, each zone clears the road network in sequence and traffic flows smoothly. In practice, the drill reveals something different. Some households in Zone B leave early because they see Zone A departing and panic. Others in Zone A refuse to leave at all because they distrust the warning. A school bus route collides with a contraflow lane. A gas station on the main corridor runs dry. Traffic backs up for hours, not because the road capacity was miscalculated, but because thousands of individuals made decisions that interacted in ways no aggregate equation anticipated.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 25: Activity-Based Travel Models</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-25/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-25/</guid>
+      <description>&lt;p&gt;A commuter does not wake up and decide to &amp;ldquo;make a trip.&amp;rdquo; She wakes up, checks whether it is a school day, gets her children dressed, drives them to school, continues to work, picks up groceries during lunch, returns to the office, drives to after-school pickup, and finally goes home. By the end of the day she has made six trips — but none of them was planned in isolation. Each trip was a link in a chain of activities, constrained by time windows, household obligations, vehicle availability, and the locations of schools, workplaces, and stores.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 26: System Dynamics</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-26/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-26/</guid>
+      <description>&lt;p&gt;In 1962, a new freeway opened in a congested metropolitan area. Traffic engineers predicted it would relieve congestion on parallel routes. Within five years, the new freeway was just as congested as the roads it was meant to relieve — and the parallel routes had not improved either. Total vehicle-miles traveled in the corridor had increased. The road had not reduced congestion; it had &lt;em&gt;induced&lt;/em&gt; demand. Latent travelers who had previously avoided the corridor, shifted departure times, or chosen other destinations now used the new capacity, filling it to the same equilibrium as before.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 27: Hybrid Choice Models</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-27/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-27/</guid>
+      <description>&lt;p&gt;Two commuters face the same choice: drive alone or take the new light rail line. Both live 8 km from work. Both face a 25-minute drive and a 35-minute transit ride. A standard discrete choice model predicts similar choices for both. But one commuter has deep environmental convictions and sees every car trip as a moral failure. The other perceives public transit as unsafe and unreliable, regardless of the actual statistics. The first chooses rail despite the longer travel time. The second drives despite the higher cost.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 28: Machine Learning for Behavior Prediction</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-28/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-28/</guid>
+      <description>&lt;p&gt;A transport analyst has access to a massive dataset: millions of GPS coordinates from smartphone apps, combined with local transit schedules, weather feeds, and land-use records. Her goal is to predict what travel mode each user is using (walking, biking, driving, transit) at any given moment.&lt;/p&gt;&#xA;&lt;p&gt;If she uses a discrete choice model (Post 15), she must manually specify the utility function, define the choice set, and make strict assumptions about how variables interact. If she uses machine learning, she can feed the raw data into a gradient boosting model or a deep neural network, and let the algorithm discover the patterns. The ML model will likely predict mode choices with much higher accuracy. But it raises a critical question: does it explain &lt;em&gt;why&lt;/em&gt; people choose those modes?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 29: Integrating Theory, Data, and Simulation</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-29/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-29/</guid>
+      <description>&lt;p&gt;A city transport agency faces a crisis: public transit ridership has declined by 15% over three years.&lt;/p&gt;&#xA;&lt;p&gt;To solve this, they hire three research teams. The first team conducts qualitative focus groups and a psychology survey, concluding that fear of crime and declining civic trust are driving the shift. The second team collects smart card data and estimates a discrete choice model, concluding that service frequency cuts and fare increases explain the decline. The third team builds an agent-based simulation, arguing that ride-hailing services are out-competing buses in high-density areas, causing traffic congestion that slows down the buses further.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HBM 30: Final Synthesis</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-30/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-30/</guid>
+      <description>&lt;p&gt;We have traveled a long road. We began in Post 1 with a simple, foundational claim: transportation and urban systems are not only made of concrete, asphalt, steel, and code. They are also made of people.&lt;/p&gt;&#xA;&lt;p&gt;Across thirty posts, we have explored human behavior modeling not as a catalog of academic theories, but as a strategic toolkit for research, engineering, and policy. We have looked at how people perceive risk, form intentions, react to social norms, establish habits, make discrete choices under cognitive constraints, respond to nudges, and generate complex system dynamics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Human Behavior Modeling: Series Plan</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/series-plan/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/series-plan/</guid>
+      <description>&lt;p&gt;Human behavior modeling can easily become a list of theories: KAP, TPB, HBM, PMT, SCT, SDT, COM-B, ABM, and many more. That is not enough for deep understanding.&lt;/p&gt;&#xA;&lt;p&gt;This series is planned as a learning path. Each post should answer one practical question:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;What does this model help us understand, what does it miss, and when should we use it?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The focus is transportation, urban planning, civil engineering, safety, sustainability, emergency response, and policy. The running examples can include public transit use, speeding, distracted driving, cycling, evacuation, electric vehicle adoption, car dependency, and low-carbon mobility.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

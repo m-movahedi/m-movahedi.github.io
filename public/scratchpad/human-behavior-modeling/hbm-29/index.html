@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>HBM 29: Integrating Theory, Data, and Simulation</title>
+    <meta name="description" content="A city transport agency faces a crisis: public transit ridership has declined by 15% over three years.
+To solve this, they hire three research teams. The first …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/human-behavior-modeling/hbm-29/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HBM 29: Integrating Theory, Data, and Simulation">
+    <meta property="og:description" content="A city transport agency faces a crisis: public transit ridership has declined by 15% over three years.
+To solve this, they hire three research teams. The first …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HBM 29: Integrating Theory, Data, and Simulation">
+    <meta name="twitter:description" content="A city transport agency faces a crisis: public transit ridership has declined by 15% over three years.
+To solve this, they hire three research teams. The first …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/human-behavior-modeling/hbm-29/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/human-behavior-modeling/hbm-29/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/human-behavior-modeling/hbm-29/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>HBM 29: Integrating Theory, Data, and Simulation</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 6, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>A city transport agency faces a crisis: public transit ridership has declined by 15% over three years.</p>
+<p>To solve this, they hire three research teams. The first team conducts qualitative focus groups and a psychology survey, concluding that fear of crime and declining civic trust are driving the shift. The second team collects smart card data and estimates a discrete choice model, concluding that service frequency cuts and fare increases explain the decline. The third team builds an agent-based simulation, arguing that ride-hailing services are out-competing buses in high-density areas, causing traffic congestion that slows down the buses further.</p>
+<p>Who is right?</p>
+<p>The answer is all of them. Each team used a different lens to view the same system. The crisis is not just a psychology problem, an economics problem, or a network physics problem — it is all three. To design effective policies, planners must integrate <strong>theory, data, and simulation</strong> into a single pipeline.</p>
+<h2 id="the-integration-pipeline">The Integration Pipeline</h2>
+<p>No single modeling method can answer all questions. Qualitative theory identifies the constructs we should care about. Surveys and passive sensors collect data. Statistical models estimate parameters. Simulations scale those parameters up to system-level outcomes. Policy evaluation tests how the system responds to interventions.</p>
+<p>Integrating these methods creates a structured pipeline that moves from individual psychology to macro-level forecasting:</p>
+<div class="hbm-flow" role="img" aria-label="Behavioral modeling integration pipeline">
+  <div class="hbm-card">
+    <strong>1. Theory</strong>
+    <p>Define constructs and psychological mechanisms (e.g., TPB, COM-B).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>2. Data</strong>
+    <p>Gather evidence via surveys, sensors, and passive diaries.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>3. Model</strong>
+    <p>Estimate statistical relationships (SEM, Logit, ML).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>4. Simulate</strong>
+    <p>Scale up behavior in agent-based or dynamic networks (ABM, SD).</p>
+  </div>
+  <div class="hbm-card">
+    <strong>5. Policy</strong>
+    <p>Test scenarios, forecast demand, and measure welfare changes.</p>
+  </div>
+</div>
+<p>This pipeline shows that methods are <strong>complementary, not competing</strong>. A simulation is only as good as its agent decision rules (which come from statistical models and theory). A statistical model is only as good as its data. And data collection is only useful if it is guided by a clear behavioral theory.</p>
+<div class="hbm-note">
+  <p><strong>Core insight:</strong> Robust behavioral research matches methods to questions. Instead of arguing about whether psychology or econometrics is "correct," researchers should construct multi-method pipelines where qualitative theory informs data collection, statistical models parameterize decision rules, and simulations predict emergent system-level outcomes.</p>
+</div>
+<h2 id="the-multi-method-toolkit">The Multi-Method Toolkit</h2>
+<p>To understand how these tools fit together, we can organize them by their primary function and scale of analysis:</p>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Qualitative & Psychological Theory</strong>
+    <p>Tools: Interviews, focus groups, COM-B diagnosis, Theory of Planned Behavior. Scale: Individual. Purpose: To discover *what* people think, *how* they frame choices, and *which* unobserved constructs (attitudes, norms, habits) drive behavior. This prevents modelers from omitting critical variables.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Econometric & Choice Models</strong>
+    <p>Tools: Discrete Choice Models (MNL, Mixed Logit), Hybrid Choice Models. Scale: Population-level parameters. Purpose: To calculate trade-offs, willingness-to-pay (e.g., value of time), and mode choice probabilities. They provide the mathematical parameters that represent choice behavior in simulations.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Machine Learning Prediction</strong>
+    <p>Tools: Random Forests, Gradient Boosting, Deep Learning. Scale: High-dimensional patterns. Purpose: To classify travel patterns from passive data streams (GPS, smart cards), detect complex interactions, and forecast demand under stable conditions. Useful for identifying segments and preprocessing inputs.</p>
+  </div>
+</div>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Agent-Based Microsimulation</strong>
+    <p>Tools: MATSim, NetLogo, custom ABMs. Scale: Emergent system outcomes. Purpose: To simulate thousands of individual decision-makers interacting on a road network. ABM takes choice probabilities or heuristic rules and shows how they produce traffic congestion, transit crowding, and network equilibria.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>System Dynamics Modeling</strong>
+    <p>Tools: Vensim, Stella, causal loop diagrams. Scale: Macro-level feedback. Purpose: To model long-term feedbacks, accumulations, and delays (e.g., how transit ridership declines lead to budget cuts, which reduce service frequency, which further reduces ridership). Essential for strategic planning.</p>
+  </div>
+</div>
+<p><hbm-integration-widget></hbm-integration-widget></p>
+<h2 id="worked-example-transit-ridership-decline">Worked Example: Transit Ridership Decline</h2>
+<p>Let&rsquo;s look at how the city transport agency can combine these methods to address the ridership decline:</p>
+<div class="hbm-three-col">
+  <div class="hbm-panel">
+    <strong>Step 1: Theory & Survey</strong>
+    <p>Qualitative interviews discover that safety concerns and remote-work flexibility are major barriers. The agency designs a survey combining standard demographic items with Theory of Planned Behavior constructs (attitudes toward safety, subjective norms about working from home, and perceived control over transit options).</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Step 2: Estimation</strong>
+    <p>The agency estimates a Hybrid Choice Model. The model quantifies how much "perceived safety" (measured as a latent variable from the survey) shifts choice probabilities compared to travel time and fare costs. They find that a 1-unit increase in perceived safety is equivalent to a $1.50 fare reduction for female riders.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Step 3: Simulation</strong>
+    <p>The Hybrid Choice parameters are embedded as decision rules in an Agent-Based Model. The ABM represents the city's population and road network. In the simulation, safety perceptions are linked to local crime statistics. The agency runs scenarios: what happens if we add transit security officers at specific high-crime stations?</p>
+  </div>
+</div>
+<p>The simulation reveals an emergent feedback loop: adding security at station A increases ridership at that station, which increases overall pedestrian activity in the surrounding area, which reduces crime rates further (&ldquo;eyes on the street&rdquo;). This positive feedback loop could not be captured by the choice model alone, but the simulation would be uncalibrated without the choice model parameters.</p>
+<h2 id="selecting-the-right-method">Selecting the Right Method</h2>
+<p>How does a researcher choose which model to use? The decision depends on the behavior&rsquo;s characteristics, the available data, and the primary policy goal:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Behavioral Dimension</th>
+          <th>Best Model Choice</th>
+          <th>Reason</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Highly Intentional &amp; New</strong></td>
+          <td>Theory of Planned Behavior (Post 4)</td>
+          <td>Focuses on deliberative intention formation</td>
+      </tr>
+      <tr>
+          <td><strong>Routine &amp; Repetitive</strong></td>
+          <td>Habit Theory (Post 18)</td>
+          <td>Captures automaticity and context cue triggers</td>
+      </tr>
+      <tr>
+          <td><strong>High Threat or Risk</strong></td>
+          <td>Protection Motivation Theory (Post 7)</td>
+          <td>Isolates threat and coping appraisals</td>
+      </tr>
+      <tr>
+          <td><strong>Complex Trade-offs</strong></td>
+          <td>Discrete Choice Models (Post 15)</td>
+          <td>Rigorous estimation of willingness-to-pay</td>
+      </tr>
+      <tr>
+          <td><strong>Large-scale Emergence</strong></td>
+          <td>Agent-Based Modeling (Post 24)</td>
+          <td>Models interactions and congestion</td>
+      </tr>
+      <tr>
+          <td><strong>Long-term Strategic Feedback</strong></td>
+          <td>System Dynamics (Post 26)</td>
+          <td>Tracks stocks, flows, and delays</td>
+      </tr>
+      <tr>
+          <td><strong>High-dimensional Passive Data</strong></td>
+          <td>Machine Learning (Post 28)</td>
+          <td>High accuracy without strict assumptions</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="strengths-of-integration">Strengths of Integration</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Avoids Methodological Blind Spots</strong>
+    <p>Psychology explains the *why*, choice models estimate the *how much*, and simulations predict the *what happens next*. Combining them ensures no part of the system is ignored.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Bridges Data Silos</strong>
+    <p>Combines active data (surveys capturing attitudes and demographics) with passive data (smart cards capturing actual trips) to build models that are both psychologically rich and empirically grounded.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Rigorous Policy Evaluation</strong>
+    <p>Enables policy scenario testing that accounts for both individual behavioral shifts and system-level feedback loops, reducing the risk of unintended consequences.</p>
+  </div>
+</div>
+<h2 id="limitations-of-integration">Limitations of Integration</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Resource Intensive</strong>
+    <p>Requires diverse expertise (psychology, econometrics, computer science) and significant budgets for data collection and software development.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Error Propagation</strong>
+    <p>If the behavioral theory is wrong, the survey will collect the wrong variables, the choice model will estimate biased parameters, and the simulation will produce inaccurate predictions. Quality control is required at every stage.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Calibration Complexity</strong>
+    <p>Calibrating a simulation that combines choice models, agent interactions, and physical networks is extremely difficult, often resulting in models that are "right for the wrong reasons."</p>
+  </div>
+</div>
+<div class="hbm-note">
+  <p><strong>Key takeaway:</strong> There is no universal behavioral model. The discipline of behavior modeling lies in selecting the right tools, recognizing their limitations, and building integration pipelines where theory, data, and simulation reinforce each other.</p>
+</div>
+<h2 id="key-references">Key References</h2>
+<div class="hbm-papers">
+  <strong>Foundational references</strong>
+  <ul>
+    <li><a href="https://doi.org/10.1016/j.tra.2007.12.008">Shiftan, Y., Outwater, M. L., & Zhou, Y. (2008). "Transit Market Segmentation Using Cognitive and Attitudinal Data." Transportation Research Part A: Policy and Practice, 42(4), 547–559.</a> Demonstrated how attitudinal survey data can segment transit markets and parameterize travel demand models.</li>
+    <li><a href="https://doi.org/10.1016/j.trb.2013.04.010">Chorus, C. G., Walker, J. L., & Ben-Akiva, M. E. (2013). "A Joint Model of Travel Mode Choice and Latent Psychological Constructs." Transportation Research Part B: Methodological.</a> Discussed the integration of psychological choice models within large-scale travel behavior simulations.</li>
+    <li><a href="https://doi.org/10.1016/j.trb.2018.06.012">Bansal, P., Kockelman, K. M., & Singh, R. (2018). "Integrating Attitudinal Constructs and Latent Variables into Travel Demand Models." Transportation Research Part B: Methodological, 115, 60–85.</a> Synthesized methods for linking attitudinal surveys, choice models, and network simulations to forecast new technology adoption.</li>
+  </ul>
+</div>
+<div class="hbm-exercises">
+  <strong>Exercises and Discussion Questions</strong>
+  <ol>
+    <li>You are hired to design an intervention to reduce distracted driving. Draft an integration plan that combines: (1) Protection Motivation Theory (Post 7), (2) Naturalistic Driving Data (Post 19), (3) a Machine Learning classifier (Post 28), and (4) a System Dynamics simulation (Post 26). Show what each method contributes.</li>
+    <li>Consider the transition to electric vehicles (EVs). Why would a discrete choice model estimated from stated preference data predict different adoption rates than an agent-based simulation that includes social networks (Diffusion of Innovations, Post 11)? How would you combine these two models?</li>
+    <li>A researcher argues: "We don't need behavioral theory or choice models anymore. With enough smart card and GPS data, machine learning algorithms can predict all travel demand directly." Critique this statement using the integr
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/human-behavior-modeling/hbm-28/">
+                &#8592;
+                Previous:
+                HBM 28: Machine Learning for Behavior Prediction
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/human-behavior-modeling/hbm-30/">
+                Next:
+                HBM 30: Final Synthesis
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

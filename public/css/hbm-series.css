@@ -1,0 +1,209 @@
+/* ===================================================
+   Human Behavior Modeling Series — Shared Styles
+   Used by: hbm-01 through hbm-30
+   =================================================== */
+
+/* ---------- base card / note / panel / papers ------- */
+.hbm-note,
+.hbm-card,
+.hbm-panel,
+.hbm-papers {
+  border: 1px solid rgba(128, 128, 128, 0.28);
+  border-radius: 14px;
+  background: rgba(128, 128, 128, 0.06);
+}
+
+.hbm-note,
+.hbm-papers {
+  margin: 1.3rem 0;
+  padding: 1rem 1.1rem;
+}
+
+.hbm-card,
+.hbm-panel {
+  padding: 0.95rem;
+}
+
+.hbm-note p,
+.hbm-card p,
+.hbm-panel p {
+  margin: 0.35rem 0;
+}
+
+.hbm-card strong,
+.hbm-panel strong,
+.hbm-papers strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.hbm-papers ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.hbm-papers li {
+  margin: 0.35rem 0;
+}
+
+/* ---------- grid layouts ---------------------------- */
+.hbm-flow,
+.hbm-grid,
+.hbm-two-col,
+.hbm-three-col {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.25rem 0;
+}
+
+.hbm-flow       { grid-template-columns: repeat(5, minmax(120px, 1fr)); }
+.hbm-flow-4     { grid-template-columns: repeat(4, minmax(130px, 1fr));
+                   display: grid; gap: 0.85rem; margin: 1.25rem 0; }
+.hbm-flow-6     { grid-template-columns: repeat(6, minmax(115px, 1fr));
+                   display: grid; gap: 0.85rem; margin: 1.25rem 0; }
+.hbm-grid       { grid-template-columns: repeat(3, minmax(140px, 1fr)); }
+.hbm-two-col    { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.hbm-three-col  { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* ---------- construct / pill chips ------------------ */
+.hbm-construct-row,
+.hbm-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.8rem 0;
+}
+
+.hbm-construct,
+.hbm-pill {
+  border: 1px solid rgba(170, 120, 50, 0.35);
+  border-radius: 999px;
+  background: rgba(170, 120, 50, 0.10);
+  padding: 0.25rem 0.6rem;
+  font-size: 0.92rem;
+}
+
+/* ---------- code / prompt block --------------------- */
+.hbm-code {
+  border-left: 4px solid rgba(170, 120, 50, 0.75);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 1.1rem 0;
+  padding: 0.8rem 1rem;
+  white-space: pre-wrap;
+}
+
+/* ---------- bar charts / meters --------------------- */
+.hbm-mini-chart {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.7rem;
+}
+
+.hbm-bar-row,
+.hbm-score-row,
+.hbm-row {
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+  margin: 0.55rem 0;
+}
+
+.hbm-bar-row   { grid-template-columns: 130px 1fr 48px; }
+.hbm-score-row { grid-template-columns: 150px 1fr 44px; }
+.hbm-row       { grid-template-columns: 150px 1fr 54px; }
+
+.hbm-bar,
+.hbm-score,
+.hbm-meter {
+  background: rgba(170, 120, 50, 0.16);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.hbm-bar   { height: 12px; }
+.hbm-score { height: 12px; margin-top: 0.45rem; }
+.hbm-meter { height: 18px; margin: 0.65rem 0; }
+
+.hbm-bar span,
+.hbm-score span,
+.hbm-meter span {
+  background: rgba(170, 120, 50, 0.78);
+  display: block;
+  height: 100%;
+}
+
+/* ---------- arrow (flow diagrams) ------------------- */
+.hbm-arrow {
+  align-self: center;
+  font-size: 1.35rem;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* ---------- small / muted text ---------------------- */
+.hbm-small {
+  font-size: 0.9rem;
+  opacity: 0.78;
+}
+
+/* ---------- exercises block ------------------------- */
+.hbm-exercises {
+  border: 1px solid rgba(170, 120, 50, 0.30);
+  border-radius: 14px;
+  background: rgba(170, 120, 50, 0.05);
+  margin: 2rem 0 1rem;
+  padding: 1.1rem 1.2rem;
+}
+
+.hbm-exercises strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.hbm-exercises ol {
+  margin: 0.4rem 0 0;
+  padding-left: 1.3rem;
+}
+
+.hbm-exercises li {
+  margin: 0.55rem 0;
+}
+
+/* ---------- math / equation block ------------------- */
+.hbm-math {
+  border: 1px solid rgba(128, 128, 128, 0.22);
+  border-radius: 14px;
+  background: rgba(128, 128, 128, 0.04);
+  margin: 1.3rem 0;
+  padding: 1rem 1.2rem;
+  overflow-x: auto;
+}
+
+.hbm-math code {
+  font-size: 1rem;
+}
+
+/* ---------- responsive ------------------------------ */
+@media (max-width: 900px) {
+  .hbm-flow,
+  .hbm-flow-4,
+  .hbm-flow-6,
+  .hbm-grid,
+  .hbm-two-col,
+  .hbm-three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .hbm-arrow {
+    transform: rotate(90deg);
+  }
+
+  .hbm-bar-row,
+  .hbm-score-row,
+  .hbm-row {
+    grid-template-columns: 110px 1fr 40px;
+  }
+}

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>HBM 22: Theoretical Domains Framework</title>
+    <meta name="description" content="A construction safety manager conducts a COM-B analysis to understand why workers on a bridge rehabilitation project are not consistently wearing fall …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/human-behavior-modeling/hbm-22/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HBM 22: Theoretical Domains Framework">
+    <meta property="og:description" content="A construction safety manager conducts a COM-B analysis to understand why workers on a bridge rehabilitation project are not consistently wearing fall …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HBM 22: Theoretical Domains Framework">
+    <meta name="twitter:description" content="A construction safety manager conducts a COM-B analysis to understand why workers on a bridge rehabilitation project are not consistently wearing fall …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/human-behavior-modeling/hbm-22/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/human-behavior-modeling/hbm-22/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/human-behavior-modeling/hbm-22/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>HBM 22: Theoretical Domains Framework</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 6, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>A construction safety manager conducts a COM-B analysis to understand why workers on a bridge rehabilitation project are not consistently wearing fall protection harnesses. The analysis identifies &ldquo;psychological capability&rdquo; and &ldquo;reflective motivation&rdquo; as deficient. These are useful starting points, but they raise more questions than they answer. Is the psychological capability problem about knowledge (workers do not know when harnesses are required), about attention (workers forget in the rush of work), or about decision-making (workers misjudge the risk on familiar tasks)? Is the motivation problem about beliefs (workers think falls are unlikely), about goals (safety competes with productivity), or about identity (workers see harness use as a sign of inexperience)?</p>
+<p>COM-B tells the team <em>which broad component</em> is the barrier. But for designing a specific, targeted intervention, the team needs more detail. The Theoretical Domains Framework (TDF) provides exactly this — a magnifying glass that breaks COM-B&rsquo;s broad categories into 14 specific, assessable behavioral domains.</p>
+<h2 id="why-detailed-barrier-analysis-matters">Why Detailed Barrier Analysis Matters</h2>
+<p>In transportation, construction, and planning practice, broad diagnoses often lead to broad interventions. If the diagnosis is &ldquo;motivation is low,&rdquo; the response might be a generic motivational campaign. If the diagnosis is &ldquo;capability is lacking,&rdquo; the response might be a general training session. These broad responses frequently fail because they do not target the specific mechanism that is actually blocking the behavior.</p>
+<p>Consider the difference:</p>
+<ul>
+<li>&ldquo;Workers lack psychological capability&rdquo; → generic safety training</li>
+<li>&ldquo;Workers lack <em>knowledge</em> of when harnesses are required for specific tasks&rdquo; → task-specific decision aids</li>
+<li>&ldquo;Workers have adequate knowledge but <em>forget</em> to don harnesses when transitioning between ground-level and elevated work&rdquo; → context-triggered reminders and environmental cues</li>
+</ul>
+<p>The second and third diagnoses point to entirely different interventions. The TDF&rsquo;s value lies in making these distinctions visible and systematic.</p>
+<h2 id="the-tdf-explained">The TDF Explained</h2>
+<p>The Theoretical Domains Framework was developed by a collaboration between behavioral scientists and implementation researchers. The original version (Michie et al., 2005) identified 12 domains; the validated refinement (Cane et al., 2012) established 14 domains. These 14 domains represent a synthesis of 33 theories of behavior and behavior change, with 128 constructs organized into distinct, assessable categories.</p>
+<div class="hbm-note">
+  <p><strong>Core principle:</strong> The TDF is not a theory of behavior — it is a comprehensive <em>framework of behavioral determinants</em>. Each of its 14 domains represents a cluster of related constructs that can act as a barrier or facilitator for any behavior. The TDF refines COM-B's broad categories into specific, researchable questions.</p>
+</div>
+<h3 id="the-relationship-between-com-b-and-tdf">The Relationship Between COM-B and TDF</h3>
+<p>TDF and COM-B are not competing frameworks. They are nested:</p>
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>COM-B Component</strong>
+    <ul>
+      <li><strong>Physical Capability</strong> → Skills</li>
+      <li><strong>Psychological Capability</strong> → Knowledge, Skills, Memory/attention/decision processes, Behavioural regulation</li>
+      <li><strong>Physical Opportunity</strong> → Environmental context and resources</li>
+      <li><strong>Social Opportunity</strong> → Social influences</li>
+      <li><strong>Reflective Motivation</strong> → Social/professional role and identity, Beliefs about capabilities, Optimism, Beliefs about consequences, Intentions, Goals</li>
+      <li><strong>Automatic Motivation</strong> → Reinforcement, Emotion</li>
+    </ul>
+  </div>
+  <div class="hbm-panel">
+    <strong>How They Work Together</strong>
+    <p>COM-B provides the initial broad-level diagnosis. If the analysis reveals that "psychological capability" is a barrier, TDF allows the team to probe further: is it Knowledge? Skills? Memory and attention? Behavioural regulation? Each of these domains suggests different interventions.</p>
+    <p>The progression is: <strong>COM-B (broad diagnosis) → TDF (detailed diagnosis) → BCW (intervention selection)</strong>.</p>
+  </div>
+</div>
+<h2 id="core-constructs-the-14-domains">Core Constructs: The 14 Domains</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>1. Knowledge</strong>
+    <p>An awareness of the existence of something. Knowing what to do, when, why, and how.</p>
+    <p><em>Key question:</em> Does the person know what the desired behavior is and when it applies?</p>
+    <p><em>Construction example:</em> Does the worker know which tasks require fall protection?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>2. Skills</strong>
+    <p>An ability or proficiency acquired through practice. Both cognitive and physical skills.</p>
+    <p><em>Key question:</em> Can the person actually perform the behavior competently?</p>
+    <p><em>Construction example:</em> Can the worker correctly inspect, adjust, and don a harness?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>3. Social/Professional Role and Identity</strong>
+    <p>A coherent set of behaviors and displayed personal qualities in a social or work context. Professional identity, group belonging, social roles.</p>
+    <p><em>Key question:</em> Is the behavior consistent with the person's professional identity?</p>
+    <p><em>Construction example:</em> Do experienced workers see harness use as professional, or as a sign of weakness?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>4. Beliefs About Capabilities</strong>
+    <p>Acceptance of the truth, reality, or validity about an ability, talent, or facility. Self-confidence, self-efficacy, perceived competence.</p>
+    <p><em>Key question:</em> Does the person believe they can perform the behavior?</p>
+    <p><em>Construction example:</em> Does the worker believe they can work efficiently while wearing a harness?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>5. Optimism</strong>
+    <p>The confidence that things will happen for the best or that desired goals will be attained. General dispositional optimism.</p>
+    <p><em>Key question:</em> Does the person believe that compliance will lead to good outcomes?</p>
+    <p><em>Construction example:</em> Does the worker believe that safety efforts actually reduce injuries on site?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>6. Beliefs About Consequences</strong>
+    <p>Acceptance of the truth, reality, or validity about outcomes of a behavior. Anticipated regret, outcome expectancies.</p>
+    <p><em>Key question:</em> What does the person think will happen if they perform (or don't perform) the behavior?</p>
+    <p><em>Construction example:</em> Does the worker believe that a fall is unlikely on this particular task?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>7. Reinforcement</strong>
+    <p>Increasing the probability of a response by arranging a dependent relationship between the response and a given stimulus. Rewards, punishments, consequences.</p>
+    <p><em>Key question:</em> Are there rewards for performing the behavior or penalties for not?</p>
+    <p><em>Construction example:</em> Is harness compliance rewarded, or is non-compliance ever actually penalized?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>8. Intentions</strong>
+    <p>A conscious decision to perform a behavior or a resolve to act in a certain way. Stability of intentions.</p>
+    <p><em>Key question:</em> Has the person decided to perform the behavior?</p>
+    <p><em>Construction example:</em> Does the worker intend to wear the harness consistently?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>9. Goals</strong>
+    <p>Mental representations of outcomes or end states that an individual wants to achieve. Goal priority, goal conflict.</p>
+    <p><em>Key question:</em> Is the behavior a priority, and does it conflict with other goals?</p>
+    <p><em>Construction example:</em> Does finishing the task quickly take priority over harness use?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>10. Memory, Attention, and Decision Processes</strong>
+    <p>The ability to retain information, focus selectively, and choose between alternatives. Cognitive overload, forgetting.</p>
+    <p><em>Key question:</em> Does the person remember, notice, and decide correctly in context?</p>
+    <p><em>Construction example:</em> Does the worker forget to switch to the harness when moving from ground to elevation?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>11. Environmental Context and Resources</strong>
+    <p>Any circumstance of a person's situation or environment that discourages or encourages the behavior. Resources, environmental stressors, organizational culture.</p>
+    <p><em>Key question:</em> Does the environment support or hinder the behavior?</p>
+    <p><em>Construction example:</em> Are harnesses readily available at the work location? Is there time pressure from the schedule?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>12. Social Influences</strong>
+    <p>Those interpersonal processes that can cause individuals to change their thoughts, feelings, or behaviors. Social norms, group conformity, social pressure, social support.</p>
+    <p><em>Key question:</em> Do peers, supervisors, or the organizational culture support the behavior?</p>
+    <p><em>Construction example:</em> Do supervisors consistently model and enforce harness use?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>13. Emotion</strong>
+    <p>A complex reaction pattern involving experiential, behavioral, and physiological elements. Fear, anxiety, stress, positive affect.</p>
+    <p><em>Key question:</em> Does the person have emotional responses that affect the behavior?</p>
+    <p><em>Construction example:</em> Does wearing a harness cause anxiety about restricted movement, or does working at height cause fear that motivates harness use?</p>
+  </div>
+  <div class="hbm-card">
+    <strong>14. Behavioural Regulation</strong>
+    <p>Anything aimed at managing or changing objectively observed or measured actions. Self-monitoring, action planning, habit formation.</p>
+    <p><em>Key question:</em> Does the person have strategies to maintain the behavior over time?</p>
+    <p><em>Construction example:</em> Does the worker have a routine for checking harness status at the start of each task?</p>
+  </div>
+</div>
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Knowledge</span>
+  <span class="hbm-construct">Skills</span>
+  <span class="hbm-construct">Role/Identity</span>
+  <span class="hbm-construct">Beliefs — Capabilities</span>
+  <span class="hbm-construct">Optimism</span>
+  <span class="hbm-construct">Beliefs — Consequences</span>
+  <span class="hbm-construct">Reinforcement</span>
+  <span class="hbm-construct">Intentions</span>
+  <span class="hbm-construct">Goals</span>
+  <span class="hbm-construct">Memory/Attention/Decision</span>
+  <span class="hbm-construct">Environment/Resources</span>
+  <span class="hbm-construct">Social Influences</span>
+  <span class="hbm-construct">Emotion</span>
+  <span class="hbm-construct">Behavioural Regulation</span>
+</div>
+<h2 id="causal-logic">Causal Logic</h2>
+<p>The TDF does not propose a single causal pathway. Instead, it provides a <strong>comprehensive checklist of determinants</strong>, any of which can serve as a barrier or facilitator for any given behavior:</p>
+<div class="hbm-flow-4">
+  <div class="hbm-card">
+    <strong>Step 1: Specify</strong>
+    <p>Define the target behavior precisely: who, what, when, where, how often</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Step 2: Assess</strong>
+    <p>Systematically assess each of the 14 domains as a potential barrier or facilitator</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Step 3: Identify</strong>
+    <p>Determine which domains are the key barriers (not all 14 will be relevant)</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Step 4: Map</strong>
+    <p>Map identified barrier domains to intervention functions using published linkage matrices</p>
+  </div>
+</div>
+<p>The causal logic is pragmatic: the TDF assumes that behavior is multiply determined, and that different behaviors in different contexts will have different dominant barriers. The framework does not prescribe which domains are most important in general — that is an empirical question answered by the assessment.</p>
+<div class="hbm-note">
+  <p><strong>Key insight:</strong> TDF is a magnifying glass for COM-B. Where COM-B identifies broad deficits (e.g., "psychological capability is low"), TDF reveals whether the specific problem is knowledge, skills, memory, attention, or behavioural regulation — each of which calls for a different intervention.</p>
+</div>
+<h2 id="data-needed">Data Needed</h2>
+<p>TDF-based studies typically use qualitative or mixed-methods data:</p>
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Qualitative Approaches</strong>
+    <ul>
+      <li><strong>Semi-structured interviews:</strong> The most common method. Interview guides include questions addressing each of the 14 domains. Typically 12–30 interviews with members of the target population.</li>
+      <li><strong>Focus groups:</strong> Group discussions organized around TDF domains. Useful for exploring shared experiences and social influences.</li>
+      <li><strong>Think-aloud protocols:</strong> Participants narrate their decision-making while performing (or imagining) the target behavior. Reveals memory, attention, and decision-process barriers.</li>
+    </ul>
+  </div>
+  <div class="hbm-panel">
+    <strong>Quantitative Approaches</strong>
+    <ul>
+      <li><strong>TDF-based questionnaires:</strong> Validated survey instruments measuring each domain. Allow assessment across larger samples and quantitative comparison of domain scores.</li>
+      <li><strong>Behavioural observation:</strong> Direct observation of the target behavior in context, coded against TDF domains.</li>
+      <li><strong>Administrative data:</strong> Incident reports, compliance records, and audit data that can indicate which domains are relevant (e.g., patterns of non-compliance suggesting environmental context issues).</li>
+    </ul>
+  </div>
+</div>
+<div class="hbm-code">
+<pre>
+SAMPLE TDF INTERVIEW QUESTIONS (Construction Safety — Harness Use)
+<p>KNOWLEDGE
+&ldquo;Can you describe when fall protection is required on this project?&rdquo;
+&ldquo;What are the site-specific rules for harness use?&rdquo;</p>
+<p>SKILLS
+&ldquo;Walk me through how you inspect and put on your harness.&rdquo;
+&ldquo;Have you received training on the specific harness system used here?&rdquo;</p>
+<p>SOCIAL/PROFESSIONAL ROLE AND IDENTITY
+&ldquo;Is wearing a harness something that experienced workers do, or is
+it more associated with newer workers?&rdquo;
+&ldquo;How does harness use fit with being a skilled [trade] worker?&rdquo;</p>
+<p>BELIEFS ABOUT CAPABILITIES
+&ldquo;How confident are you that you can work efficiently while wearing
+a harness?&rdquo;
+&ldquo;Are there tasks where the harness makes your work significantly
+harder?&rdquo;</p>
+<p>BELIEFS ABOUT CONSEQUENCES
+&ldquo;What do you think would happen if you didn&rsquo;t wear a harness for
+a quick task at height?&rdquo;
+&ldquo;Have you seen or heard about fall incidents on projects like this?&rdquo;</p>
+<p>ENVIRONMENTAL CONTEXT AND RESOURCES
+&ldquo;Are harnesses easily accessible when you need them?&rdquo;
+&ldquo;Is there time in the schedule to properly don and adjust harnesses?&rdquo;
+&ldquo;Does the weather or work environment affect harness use?&rdquo;</p>
+<p>SOCIAL INFLUENCES
+&ldquo;Do your supervisors consistently wear harnesses when at height?&rdquo;
+&ldquo;What would happen if you reminded a coworker to put on their harness?&rdquo;</p>
+<p>GOALS
+&ldquo;When you&rsquo;re working at height, what is your main priority?&rdquo;
+&ldquo;Does harness use ever conflict with getting the job done on time?&rdquo;</p>
+<p>MEMORY, ATTENTION, AND DECISION PROCESSES
+&ldquo;Have you ever forgotten to put on a harness when moving to elevated
+work?&rdquo;
+&ldquo;Are there transitions during the day when harness use gets overlooked?&rdquo;</p>
+<p>EMOTION
+&ldquo;How do you feel about working at height with and without a harness?&rdquo;
+&ldquo;Is there frustration associated with harness use?&rdquo;</p>
+<p>BEHAVIOURAL REGULATION
+&ldquo;Do you have a personal routine for checking your harness?&rdquo;
+&ldquo;What would help you remember to use the harness consistently?&rdquo;
+</pre></p>
+</div>
+<h2 id="methods">Methods</h2>
+<ul>
+<li><strong>Qualitative framework analysis:</strong> Transcripts from TDF-based interviews are coded deductively using the 14 domains as the coding framework. Coded data are analyzed to identify which domains contain the most barriers.</li>
+<li><strong>TDF-based coding:</strong> A structured coding process where two or more researchers independently code interview data to TDF domains, then reconcile disagreements. This produces a domain-level summary of barriers and facilitators.</li>
+<li><strong>Domain relevance ranking:</strong> After coding, domains are ranked by frequency, specificity, and importance to identify the key barriers. Not all 14 domains will be relevant for every behavior.</li>
+<li><strong>Mixed methods:</strong> Combining qualitative TDF interviews (for depth and mechanism) with quantitative TDF questionnaires (for prevalence and generalizability across the target population).</li>
+<li><strong>Linkage to BCW:</strong> Once key barrier domains are identified, they are mapped to COM-B components and then to BCW intervention functions using published linkage matrices.</li>
+</ul>
+<p><hbm-tdf-widget></hbm-tdf-widget></p>
+<h2 id="construction-safety-example-why-harness-compliance-fails">Construction Safety Example: Why Harness Compliance Fails</h2>
+<p>A construction company managing a highway bridge rehabilitation project observes that fall protection harness use is inconsistent — around 65% compliance in weekly audits, despite training, available equipment, and clear policies. A TDF-based study involving 24 semi-structured interviews with ironworkers, laborers, and supervisors reveals the following barrier profile:</p>
+<div class="hbm-bar-row">
+  <div class="hbm-bar"><span style="width: 90%;">Knowledge — 90% (not a major barrier)</span></div>
+</div>
+<div class="hbm-bar-row">
+  <div class="hbm-bar"><span style="width: 80%;">Skills — 80% (not a major barrier)</span></div>
+</div>
+<div class="hbm-bar-row">
+  <div class="hbm-bar"><span style="width: 35%;">Beliefs about consequences — 35% (major barrier)</span></div>
+</div>
+<div class="hbm-bar-row">
+  <div class="hbm-bar"><span style="width: 30%;">Goals — 30% (major barrier)</span></div>
+</div>
+<div class="hbm-bar-row">
+  <div class="hbm-bar"><span style="width: 40%;">Memory/attention — 40% (significant barrier)</span></div>
+</div>
+<div class="hbm-bar-row">
+  <div class="hbm-bar"><span style="width: 45%;">Environmental context — 45% (significant barrier)</span></div>
+</div>
+<div class="hbm-bar-row">
+  <div class="hbm-bar"><span style="width: 50%;">Social influences — 50% (moderate barrier)</span></div>
+</div>
+<div class="hbm-bar-row">
+  <div class="hbm-bar"><span style="width: 40%;">Role/identity — 40% (significant barrier)</span></div>
+</div>
+<div class="hbm-small">Illustrative TDF barrier profile. Percentages represent the share of interviewees for whom the domain was identified as a barrier to consistent harness use. Higher percentages indicate the domain is adequate for more people; lower percentages indicate more prevalent barriers.</div>
+<h3 id="detailed-findings-by-domain">Detailed Findings by Domain</h3>
+<div class="hbm-three-col">
+  <div class="hbm-panel">
+    <strong>Key Barriers</strong>
+    <p><strong>Beliefs about consequences (35%):</strong> Many workers believe falls are unlikely on familiar tasks. "I've been doing this for 15 years and never fallen." Perceived risk is low for routine work at moderate heights.</p>
+    <p><strong>Goals (30%):</strong> Production goals consistently compete with safety. Workers report pressure to complete tasks quickly. Harness donning and tie-off time is seen as lost productivity. "The foreman wants the pour done by 3 PM."</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Significant Barriers</strong>
+    <p><strong>Memory/attention (40%):</strong> Workers forget to don harnesses when transitioning from ground-level work to elevated work within the same shift. The transition is gradual — climbing scaffolding to check something "quickly" — without a clear trigger point.</p>
+    <p><strong>Environmental context (45%):</strong> Harness storage is sometimes far from the work location. Anchor points are not always available or conveniently located. Weather (heat, rain) makes harnesses uncomfortable.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Contributing Factors</strong>
+    <p><strong>Social influences (50%):</strong> Senior workers sometimes bypass harness use, sending an implicit message that compliance is optional for experienced crew. Supervisors do not always model consistent use.</p>
+    <p><strong>Role/identity (40%):</strong> Some workers associate harness use with inexperience. "Real ironworkers don't need to be tied off." Professional identity conflicts with the behavior.</p>
+  </div>
+</div>
+<h3 id="what-tdf-reveals-that-com-b-alone-could-not">What TDF Reveals That COM-B Alone Could Not</h3>
+<p>A COM-B analysis would have identified &ldquo;reflective motivation&rdquo; and &ldquo;social opportunity&rdquo; as barriers. TDF reveals the <em>specific mechanisms</em> within those broad categories:</p>
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>COM-B Diagnosis</strong>
+    <p>"Reflective motivation is deficient"</p>
+    <p>"Social opportunity is moderate"</p>
+    <p>→ Broad interventions: motivation campaign, social influence program</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>TDF Diagnosis</strong>
+    <p>"Beliefs about consequences: workers underestimate fall risk on familiar tasks"</p>
+    <p>"Goals: production goals systematically override safety goals"</p>
+    <p>"Memory/attention: transition moments lack behavioral triggers"</p>
+    <p>"Role/identity: harness use conflicts with professional identity"</p>
+    <p>→ Specific interventions: risk recalibration, goal integration, transition cues, identity reframing</p>
+  </div>
+</div>
+<div class="hbm-note">
+  <p><strong>The practical difference:</strong> TDF-informed interventions are more targeted. Instead of a generic safety talk, the intervention might include: (1) vivid case studies of falls on routine tasks (beliefs about consequences), (2) schedule adjustments that build harness time into task estimates (goals), (3) physical markers at transition points (memory/attention), and (4) senior worker champions who model harness use (role/identity, social influences).</p>
+</div>
+<h2 id="strengths">Strengths</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Comprehensive Coverage</strong>
+    <p>With 14 domains synthesizing 33 theories and 128 constructs, TDF provides near-comprehensive coverage of behavioral determinants. It is unlikely that a significant barrier will be missed.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Theoretical Grounding</strong>
+    <p>Each domain is grounded in established psychological theory. This distinguishes TDF from ad hoc checklists and provides a rigorous basis for barrier identification.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Systematic and Replicable</strong>
+    <p>TDF provides a structured assessment process: specify the behavior, assess each domain, identify key barriers, and map to interventions. This process can be replicated across settings and behaviors.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Specificity for Intervention Design</strong>
+    <p>TDF's specificity directly supports intervention targeting. Knowing that "memory and attention" is the barrier (rather than just "psychological capability") points to specific behavior change techniques: prompts, cues, implementation intentions, and environmental triggers.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Flexibility Across Domains</strong>
+    <p>TDF has been applied to healthcare, construction safety, environmental behavior, transportation, education, and workplace practices. The 14 domains are sufficiently general to apply to any volitional behavior.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Integration with BCW</strong>
+    <p>TDF maps directly onto COM-B and, through COM-B, onto the Behaviour Change Wheel. This creates a seamless pathway from detailed diagnosis to intervention selection.</p>
+  </div>
+</div>
+<h2 id="limitations">Limitations</h2>
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>14 Domains Can Feel Overwhelming</strong>
+    <p>Assessing all 14 domains for every behavior is time-consuming. Interview guides are long, coding is complex, and not every domain will be relevant. Researchers must balance comprehensiveness with practical feasibility.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Overlap Between Domains</strong>
+    <p>Some domains overlap conceptually. "Beliefs about capabilities" and "Optimism" can be difficult to distinguish in practice. "Social/professional role and identity" overlaps with "Social influences." Coding reliability depends on clear operational definitions and coder training.</p>
+  </div>
+</div>
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Primarily Diagnostic</strong>
+    <p>Like COM-B, TDF identifies barriers but does not predict behavior quantitatively. It does not estimate effect sizes or model interactions between domains. For quantitative prediction, structural equation modeling or choice models are needed.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Resource Intensive</strong>
+    <p>A rigorous TDF study requires trained qualitative researchers, structured interview guides, dual-coded transcripts, and systematic analysis. This can be prohibitive for organizations without research capacity.</p>
+  </div>
+</div>
+<h2 id="best-use-case">Best Use Case</h2>
+<p>The TDF is the right framework when a team needs <strong>detailed, specific barrier and facilitator identification</strong> beyond what COM-B provides. It is particularly valuable when:</p>
+<ul>
+<li>A COM-B analysis has identified broad barriers but more specificity is needed for intervention design</li>
+<li>The target behavior is complex and potentially influenced by many different factors</li>
+<li>Previous interventions have failed and the team suspects the real barrier was not identified</li>
+<li>The team wants a theoretically grounded, systematic approach to qualitative research on behavioral determinants</li>
+<li>The study will inform the design of a multi-component intervention where each component must target a specific mechanism</li>
+</ul>
+<p>TDF is less useful when the barriers are obvious, when the behavior is simple and well-understood, or when the team lacks the resources for rigorous qualitative research.</p>
+<h2 id="key-takeaway">Key Takeaway</h2>
+<div class="hbm-note">
+  <p><strong>Remember this:</strong> The Theoretical Domains Framework is a magnifying glass for COM-B — it reveals specific barriers that broad categories can miss, ensuring that interventions target the actual mechanisms blocking behavior change rather than assumed ones.</p>
+</div>
+<h2 id="key-references">Key References</h2>
+<div class="hbm-papers">
+  <strong>Foundational References</strong>
+  <ul>
+    <li><a href="https://doi.org/10.1186/1748-5908-7-37">Cane, J., O'Connor, D., & Michie, S. (2012). "Validation of the theoretical domains framework for use in behaviour change and implementation research." <em>Implementation Science</em>, 7, 37.</a> — The validated 14-domain version of TDF, with detailed domain definitions and construct mappings.</li>
+    <li><a href="https://doi.org/10.1136/qshc.2004.010199">Michie, S., Johnston, M., Abraham, C., Lawton, R., Parker, D., & Walker, A. (2005). "Making psychological theory useful for implementing evidence based practice: A consensus approach." <em>Quality and Safety in Health Care</em>, 14(1), 26–33.</a> — The original paper developing TDF from a synthesis of 33 psychological theories into 12 initial domains.</li>
+    <li><a href="https://doi.org/10.1186/s13012-017-0605-9">Atkins, L., Francis, J., Islam, R., et al. (2017). "A guide to using the Theoretical Domains Framework of behaviour change to investigate implementation problems." <em>Implementation Science</em>, 12, 77.</a> — A practical guide for researchers applying TDF, with step-by-step instructions for interview design, coding, and analysis.</li>
+    <li><a href="https://doi.org/10.1186/1748-5908-6-42">Michie, S., van Stralen, M. M., & West, R. (2011). "The Behaviour Change Wheel: A new method for characterising and designing behaviour change interventions." <em>Implementation Science</em>, 6, 42.</a> — The COM-B and BCW paper that provides the higher-level framework within which TDF operates.</li>
+  </ul>
+</div>
+<h2 id="exercises-and-discussion-questions">Exercises and Discussion Questions</h2>
+<div class="hbm-exercises">
+  <ol>
+    <li><strong>TDF domain identification exercise:</strong> Choose one of the following behaviors: (a) a commuter switching from driving alone to using a park-and-ride facility, (b) a pedestrian consistently using marked crosswalks rather than jaywalking, or (c) a homeowner installing a home EV charger. For your chosen behavior, identify which five TDF domains are most likely to contain the critical barriers. For each, write one specific interview question that would help assess whether that domain is a barrier or facilitator.</li>
+    <li><strong>COM-B vs. TDF comparison:</strong> Return to the cycling example from Post 20. The COM-B analysis identified "physical opportunity" and "automatic motivation" as the critical barriers. Using TDF, break each of these down into their constituent domains. What specific barriers might TDF reveal within "physical opportunity" (Environmental context and resources) and "automatic motivation" (Reinforcement, Emotion) that the COM-B analysis could not distinguish? How would these more specific diagnoses change the intervention design?</li>
+    <li><strong>Domain overlap challenge:</strong> A TDF interview about transit use reveals the following response: "I don't take the bus because none of my coworkers do, and I feel like people would think I can't afford a car." Which TDF domains does this response relate to? (Consider Social influences, Social/professional role and identity, Emotion, and Beliefs about consequences.) How would you code this response, and why does the coding matter for intervention design?</li>
+  </ol>
+</div>
+<p>The next post turns from diagnostic frameworks to a different approach: rather than identifying individual psychological barriers, nudge theory and choice architecture redesign the decision environment itself to make desired behaviors easier, mo</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/human-behavior-modeling/hbm-21/">
+                &#8592;
+                Previous:
+                HBM 21: Behaviour Change Wheel
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/human-behavior-modeling/hbm-23/">
+                Next:
+                HBM 23: Nudge and Choice Architecture
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

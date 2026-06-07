@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Designing Your Research Team: Agent Roles and Coordination</title>
+    <meta name="description" content="Once you decide to use agents for research, the next question is immediate: what should each agent do?
+The temptation is to build one big &ldquo;research …">
+    <meta name="keywords" content='AI Agents, Research methodology, Multi-agent systems, Agent architecture, Research workflow'>
+
+    <meta property="og:url" content="https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Designing Your Research Team: Agent Roles and Coordination">
+    <meta property="og:description" content="Once you decide to use agents for research, the next question is immediate: what should each agent do?
+The temptation is to build one big &ldquo;research …">
+    <meta property="og:image" content="https://m-movahedi.com/images/profile.png">
+    <meta property="og:image:secure_url" content="https://m-movahedi.com/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Designing Your Research Team: Agent Roles and Coordination">
+    <meta name="twitter:description" content="Once you decide to use agents for research, the next question is immediate: what should each agent do?
+The temptation is to build one big &ldquo;research …">
+    <meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/">
+    <meta property="twitter:url" content="https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/">
+    <meta name="twitter:image" content="https://m-movahedi.com/images/profile.png">
+
+    
+    <link rel="canonical" href="https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://m-movahedi.com/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://m-movahedi.com/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Designing Your Research Team: Agent Roles and Coordination</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 7, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="https://m-movahedi.com/tags/ai-agents">AI Agents</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="https://m-movahedi.com/tags/research-methodology">Research methodology</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="https://m-movahedi.com/tags/multi-agent-systems">Multi-agent systems</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="https://m-movahedi.com/tags/agent-architecture">Agent architecture</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="https://m-movahedi.com/tags/research-workflow">Research workflow</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>Once you decide to use agents for research, the next question is immediate: what should each agent do?</p>
+<p>The temptation is to build one big &ldquo;research agent&rdquo; that does everything. That is a mistake. A research team is useful precisely because it is specialized. Each agent does one thing well. They coordinate through shared knowledge.</p>
+<p>This post is about designing that team: what roles make sense, how they specialize, how they coordinate, and when to merge or split roles.</p>
+<h2 id="the-mental-model-specialization-through-instructions-and-tools">The mental model: specialization through instructions and tools</h2>
+<p>A research agent is not distinguished by being a different model. It is distinguished by:</p>
+<ol>
+<li><strong>Instructions</strong> - What the agent is responsible for, how to think about its job</li>
+<li><strong>Tools</strong> - What databases, APIs, or file systems it can access</li>
+<li><strong>Knowledge</strong> - What information it has access to (shared knowledge base vs. private state)</li>
+<li><strong>Constraints</strong> - What it is not allowed to do (e.g., a Scout searches; it does not decide what matters)</li>
+</ol>
+<p>Two agents using the same underlying model but with different instructions, tools, and constraints will behave very differently.</p>
+<p>Example:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>Literature Scout</th>
+          <th>Methodology Analyzer</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Instructions</td>
+          <td>&ldquo;Find papers matching these search terms. Extract titles, authors, URLs. Note which database each came from. Flag duplicates.&rdquo;</td>
+          <td>&ldquo;Read papers in the knowledge base. Extract: datasets used, validation methods, metrics reported, limitations mentioned. Compare across papers.&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Tools</td>
+          <td>Read-only access to Google Scholar, arxiv, TRID, Semantic Scholar APIs</td>
+          <td>Read access to papers in knowledge base, write access to methodology database</td>
+      </tr>
+      <tr>
+          <td>Knowledge</td>
+          <td>Sees list of searches to perform; tracks what it has already searched</td>
+          <td>Sees papers marked as &ldquo;ready for extraction&rdquo;; reads synthesis notes from other agents</td>
+      </tr>
+      <tr>
+          <td>Constraints</td>
+          <td>Does not judge relevance (that is the Gap Finder&rsquo;s job). Does not extract details (Analyzer&rsquo;s job). Stops and asks before adding to knowledge base if duplicate is uncertain.</td>
+          <td>Does not search for new papers. Does not write the narrative. Only extracts structured data.</td>
+      </tr>
+  </tbody>
+</table>
+<p>This separation is powerful. The Scout can be aggressive about breadth. The Analyzer can be meticulous about accuracy. They do not conflict because their jobs do not overlap.</p>
+<h2 id="the-five-core-roles">The five core roles</h2>
+<p>Start with this team:</p>
+<h3 id="1-literature-scout">1. Literature Scout</h3>
+<p><strong>Job:</strong> Find papers systematically. Sweep databases. Detect new arrivals. Bring candidates to the team.</p>
+<p><strong>Specialization:</strong></p>
+<ul>
+<li>Exhaustive search across multiple sources (not selective)</li>
+<li>Comfortable with false positives (a few irrelevant papers is fine; missing papers is not)</li>
+<li>Tracks source metadata (where each paper came from, search date)</li>
+<li>Detects duplicates within the incoming set</li>
+</ul>
+<p><strong>Instructions might include:</strong></p>
+<ul>
+<li>Search terms to try (and variations)</li>
+<li>Databases and APIs to query</li>
+<li>How to handle results (extract metadata, store URLs, note source)</li>
+<li>What to do if results are ambiguous (log it; let another agent decide)</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li>Google Scholar API or similar</li>
+<li>arxiv, TRID, Semantic Scholar APIs</li>
+<li>Any domain-specific paper repos</li>
+<li>Read/write access to &ldquo;incoming papers&rdquo; staging area</li>
+</ul>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>Does not decide whether a paper is relevant</li>
+<li>Does not extract methods or findings (the Analyzer does)</li>
+<li>Does not update the main knowledge base directly</li>
+</ul>
+<p><strong>Runs:</strong> Continuously or on a schedule (e.g., weekly sweeps)</p>
+<h3 id="2-methodology-analyzer">2. Methodology Analyzer</h3>
+<p><strong>Job:</strong> Extract structured data from papers. Build a methodology database.</p>
+<p><strong>Specialization:</strong></p>
+<ul>
+<li>Reads papers carefully (or their abstracts/PDFs)</li>
+<li>Extracts consistently: same fields from every paper</li>
+<li>Compares methodology across papers</li>
+<li>Flags missing information or ambiguities</li>
+</ul>
+<p><strong>Instructions might include:</strong></p>
+<ul>
+<li>What fields to extract: datasets used, sample size, validation method, metrics, tools, limitations</li>
+<li>How to handle incomplete information (note what is missing; do not guess)</li>
+<li>How to standardize: if one paper calls it &ldquo;agent-based model&rdquo; and another &ldquo;microsimulation,&rdquo; note both but use a canonical term for comparison</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li>Read access to paper PDFs or abstracts</li>
+<li>Write access to methodology database</li>
+<li>Optional: access to a code search engine (if papers mention GitHub repos)</li>
+<li>Optional: access to a dataset registry (to verify dataset names)</li>
+</ul>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>Does not search for new papers</li>
+<li>Does not write the narrative</li>
+<li>Only extracts structured data (does not summarize the paper in prose)</li>
+</ul>
+<p><strong>Runs:</strong> When new papers arrive in the incoming queue</p>
+<h3 id="3-gap-finder">3. Gap Finder</h3>
+<p><strong>Job:</strong> Compare across papers. Identify what is missing. Find conflicts or inconsistencies.</p>
+<p><strong>Specialization:</strong></p>
+<ul>
+<li>Systematic comparison (not intuition)</li>
+<li>Comfortable with structured data (methodology table, findings list)</li>
+<li>Generates queries like: &ldquo;Which papers use dataset X? Who else studied outcome Y? Do these papers contradict each other?&rdquo;</li>
+<li>Proposes research directions (e.g., &ldquo;No one has combined agent-based models with real-world behavioral data. This is a gap.&rdquo;)</li>
+</ul>
+<p><strong>Instructions might include:</strong></p>
+<ul>
+<li>How to detect gaps: missing combinations, unexplored datasets, unstudied populations</li>
+<li>How to detect conflicts: papers with opposite findings on the same question</li>
+<li>How to propose follow-up questions or research directions</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li>Read access to methodology database</li>
+<li>Read access to findings summary (what each paper concluded)</li>
+<li>Write access to &ldquo;research questions&rdquo; or &ldquo;gap analysis&rdquo; document</li>
+<li>Optional: ability to query the knowledge base (e.g., &ldquo;Show me all papers on evacuation + agent-based models&rdquo;)</li>
+</ul>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>Does not search for papers to fill gaps (the Scout does)</li>
+<li>Does not decide whether a gap matters (the Critic or researcher does)</li>
+<li>Works with data the Analyzer extracted (does not re-read papers)</li>
+</ul>
+<p><strong>Runs:</strong> Periodically (e.g., after new papers are added) or on-demand</p>
+<h3 id="4-synthesis-writer">4. Synthesis Writer</h3>
+<p><strong>Job:</strong> Draft narrative. Propose connections between papers. Build coherent story.</p>
+<p><strong>Specialization:</strong></p>
+<ul>
+<li>Turns data into prose</li>
+<li>Identifies themes and patterns across papers</li>
+<li>Proposes section structure for a literature review</li>
+<li>Drafts background paragraphs or methodology overviews</li>
+</ul>
+<p><strong>Instructions might include:</strong></p>
+<ul>
+<li>How to organize: chronologically? By methodology? By finding? By population?</li>
+<li>How to handle conflicting findings: note both; explain why they might differ</li>
+<li>How to write for the researcher&rsquo;s audience (journal paper? PhD proposal? grant?)</li>
+<li>Style preferences (formal academic vs. accessible overview?)</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li>Read access to methodology database, gap analysis, findings</li>
+<li>Write access to draft sections</li>
+<li>Optional: ability to query &ldquo;here are papers on topic X; summarize what they say&rdquo;</li>
+</ul>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>Does not evaluate whether the narrative is correct (the Critic does)</li>
+<li>Does not search for missing papers (the Scout does)</li>
+<li>Only works with information the Analyzer extracted</li>
+</ul>
+<p><strong>Runs:</strong> After enough papers have been processed, or on-demand for specific sections</p>
+<h3 id="5-critic">5. Critic</h3>
+<p><strong>Job:</strong> Question assumptions. Spot contradictions. Flag weak reasoning. Suggest alternatives.</p>
+<p><strong>Specialization:</strong></p>
+<ul>
+<li>Adversarial reading (looking for problems, not confirmation)</li>
+<li>Catching logical gaps in the narrative</li>
+<li>Detecting when insufficient evidence supports a claim</li>
+<li>Proposing alternative interpretations</li>
+</ul>
+<p><strong>Instructions might include:</strong></p>
+<ul>
+<li>What to scrutinize: big claims, causal statements, generalization from limited samples</li>
+<li>How to challenge: &ldquo;This paper studied X, but the claim generalizes to Y. Is that justified?&rdquo;</li>
+<li>When to flag as problematic vs. when to note as limitation</li>
+</ul>
+<p><strong>Tools:</strong></p>
+<ul>
+<li>Read access to all databases and drafts</li>
+<li>Write access to &ldquo;review notes&rdquo; or &ldquo;issues&rdquo; document</li>
+<li>Optional: ability to suggest &ldquo;find papers on X to test this claim&rdquo;</li>
+</ul>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>Does not make final decisions (the researcher does)</li>
+<li>Does not search for papers unless directing the Scout to</li>
+<li>Only raises questions; does not resolve them</li>
+</ul>
+<p><strong>Runs:</strong> On-demand, before finalizing drafts, or continuously as background task</p>
+<h2 id="coordination-patterns">Coordination patterns</h2>
+<p>How do these five agents work together? Three main patterns:</p>
+<h3 id="pattern-1-sequential-pipeline">Pattern 1: Sequential pipeline</h3>
+<pre tabindex="0"><code>Scout → Analyzer → Gap Finder → Synthesis Writer → Critic → Researcher review
+</code></pre><p>Best for: First pass through a new research area. Structured workflow.</p>
+<p><strong>How it works:</strong></p>
+<ol>
+<li>Scout finds 50 candidate papers</li>
+<li>Analyzer processes all 50, extracts methodology</li>
+<li>Gap Finder reviews what is common, what is rare</li>
+<li>Synthesis Writer drafts a literature review based on the gaps</li>
+<li>Critic reviews the draft, flags weak claims</li>
+<li>You review and decide what to fix</li>
+</ol>
+<p><strong>Tradeoff:</strong> Slow but thorough. Errors can cascade (if Scout misses papers, Analyzer does not extract them, Gap Finder does not see them). Good for first pass; less good for iteration.</p>
+<h3 id="pattern-2-parallel-exploration-with-merge">Pattern 2: Parallel exploration with merge</h3>
+<pre tabindex="0"><code>Scout A → (conference papers)   ↘
+Scout B → (journal archives)     → Analyzer → Gap Finder → Synthesis → Critic
+Scout C → (preprint servers)    ↗
+Scout D → (borrowed methods)   ↗
+</code></pre><p>Best for: Comprehensive search. Reducing blind spots.</p>
+<p><strong>How it works:</strong></p>
+<ol>
+<li>Four Scout agents search different sources in parallel</li>
+<li>Their results merge in a deduplicated incoming queue</li>
+<li>Analyzer processes everything once</li>
+<li>Rest of pipeline same as before</li>
+</ol>
+<p><strong>Tradeoff:</strong> Faster initial search, but more duplicates to handle. Requires deduplication logic.</p>
+<h3 id="pattern-3-continuous-loop">Pattern 3: Continuous loop</h3>
+<pre tabindex="0"><code>Scout (weekly) → Analyzer → Gap Finder ↓ → Synthesis → Critic
+   ↑                                    ↓
+   ← (directs attention to missing areas) ←
+</code></pre><p>Best for: Long-running research. Monitoring for new work.</p>
+<p><strong>How it works:</strong></p>
+<ol>
+<li>Scout runs on a schedule (e.g., every Monday)</li>
+<li>New papers flow through Analyzer, Gap Finder</li>
+<li>Gap Finder identifies gaps: &ldquo;No one has studied X yet&rdquo;</li>
+<li>Gap Finder directs Scout: &ldquo;Search for papers on X&rdquo;</li>
+<li>Loop continues indefinitely</li>
+<li>Knowledge base is always current</li>
+</ol>
+<p><strong>Tradeoff:</strong> Complex to manage (agents directing each other), but catches emerging work and refinements.</p>
+<h2 id="when-to-merge-or-split-roles">When to merge or split roles</h2>
+<h3 id="merge-two-roles-when">Merge two roles when:</h3>
+<ul>
+<li>One agent is idle (e.g., Scout finds papers, but Analyzer is always busy catching up). Combine them.</li>
+<li>The boundary between roles is blurry (e.g., does the Gap Finder find gaps or does the Critic?). Consolidate.</li>
+<li>The workflow is small (e.g., searching one database for a narrow topic). One Scout is enough.</li>
+</ul>
+<h3 id="split-a-role-when">Split a role when:</h3>
+<ul>
+<li>One agent becomes a bottleneck (e.g., Analyzer cannot keep up with Scout&rsquo;s pace). Give Analyzer help or split the incoming queue.</li>
+<li>A task is distinct enough (e.g., &ldquo;Extract datasets&rdquo; is different from &ldquo;Extract methods&rdquo;). Create a Dataset Extractor.</li>
+<li>Specialization improves quality (e.g., one Analyzer focuses on real-world studies, another on simulation-based work).</li>
+</ul>
+<p>Example split:</p>
+<pre tabindex="0"><code>Original:  Analyzer (extracts all fields from all papers)
+
+Split:     Dataset Extractor (finds and catalogs datasets)
+           Method Extractor (documents methodology)
+           Findings Extractor (summarizes results)
+</code></pre><p>This only makes sense if the Analyzer is overwhelmed or if specialization improves accuracy.</p>
+<h2 id="knowledge-base-design">Knowledge base design</h2>
+<p>All agents share one central resource: the knowledge base. This is where the team&rsquo;s work lives.</p>
+<p><strong>Minimum structure:</strong></p>
+<pre tabindex="0"><code>incoming_papers/
+  - title, authors, url, source, search_date
+  - status: (new, processing, complete)
+
+methodology_db/
+  - paper_id, dataset, sample_size, method, tools, validation, metrics, limitations
+  
+findings_summary/
+  - paper_id, main_claim, key_result, evidence_strength, conflicting_papers
+  
+gap_analysis/
+  - gap_description, papers_involved, research_question, scout_directive
+  
+draft_sections/
+  - section_title, content, source_papers, review_notes
+  
+issues/
+  - issue_id, type (logic, missing_paper, contradiction, unclear), description, resolution
+</code></pre><p><strong>Why it matters:</strong></p>
+<ul>
+<li>Agents do not repeat work (Scout checks if paper is already in the database)</li>
+<li>Knowledge persists (six months later, your literature review is still there)</li>
+<li>Humans can audit (you can see exactly what each agent did)</li>
+<li>Agents can coordinate (Scout reads gap_analysis to know what to search for next)</li>
+</ul>
+<h2 id="example-evacuation-research-team">Example: evacuation research team</h2>
+<p>Let us put this together for your evacuation research:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Role</th>
+          <th>Specific job</th>
+          <th>Tools</th>
+          <th>Runs</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Scout</td>
+          <td>Search: &ldquo;evacuation&rdquo;, &ldquo;disaster behavior&rdquo;, &ldquo;agent-based evacuation&rdquo;, &ldquo;behavioral heterogeneity evacuation&rdquo; across Google Scholar, arxiv, TRID, ResearchGate</td>
+          <td>Database APIs, URL fetcher</td>
+          <td>Weekly</td>
+      </tr>
+      <tr>
+          <td>Analyzer</td>
+          <td>Extract: dataset (simulation? survey? real-world?), model type (agent-based? flow? hybrid?), population (adults? children? diverse?), validation (real data? expert judgment?)</td>
+          <td>PDF reader, structured output</td>
+          <td>After each Scout run</td>
+      </tr>
+      <tr>
+          <td>Gap Finder</td>
+          <td>Compare: Who studied children? Who used real data? Did anyone combine agent-based + real behavior?</td>
+          <td>Methodology DB query</td>
+          <td>After Analyzer completes</td>
+      </tr>
+      <tr>
+          <td>Synthesis</td>
+          <td>Draft: &ldquo;Prior work on evacuation has focused on adult populations in Western countries using [method]. New work on behavioral heterogeneity is emerging. Gap: cascading failures in multi-modal evacuation.&rdquo;</td>
+          <td>Gap analysis, findings DB</td>
+          <td>On-demand</td>
+      </tr>
+      <tr>
+          <td>Critic</td>
+          <td>Review: &ldquo;Did we miss non-English papers? Are there related fields (animal evacuation, robot swarms) with insights?&rdquo;</td>
+          <td>All DBs</td>
+          <td>Before finalizing review</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="tradeoffs-and-gotchas">Tradeoffs and gotchas</h2>
+<h3 id="tool-access-vs-security">Tool access vs. security</h3>
+<p>Agents with write access to your knowledge base can corrupt it (accidentally or if their instructions are unclear). Solution: start with read-only tools. Require human approval before agents write.</p>
+<h3 id="specialization-vs-context">Specialization vs. context</h3>
+<p>An agent that only extracts datasets from papers does one job well but has no context about the bigger research question. If it misses a field, it does not know to ask. Solution: include research context in agent instructions.</p>
+<h3 id="parallelization-vs-order-dependency">Parallelization vs. order dependency</h3>
+<p>If Scout A finds papers and Scout B searches the same databases, you get duplicates. If Analyzer A processes papers and Analyzer B processes different papers, you lose consistency. Solution: explicit boundaries (Scout A searches Google Scholar, Scout B searches arxiv) or deduplication logic.</p>
+<h3 id="human-in-the-loop-timing">Human in the loop timing</h3>
+<p>If you review after each agent runs, the system is slow. If you never review, errors compound. Solution: review at strategic points (after Gap Finder identifies something surprising, before Synthesis drafts final narrative).</p>
+<h2 id="what-comes-next">What comes next</h2>
+<p>The next post will dive deep into the Literature Scout agent: how to search multiple databases, handle ambiguity, avoid duplicates, and keep search exhaustive without being random.</p>
+<p>Then we move to the Methodology Analyzer: extracting structured data at scale, comparing across papers, and building a methodology database that actually serves your research.</p>
+<h2 id="the-practical-lesson">The practical lesson</h2>
+<p>A research team is not one agent pretending to be a team. It is specialized agents with clear boundaries, shared knowledge, and explicit coordination.</p>
+<p>The power is not in each individual agent. The power is in the division of labor. The Scout does not waste time extracting methods. The Analyzer does not waste time searching. The Synthesis Writer does not waste time second-guessing. And the Critic asks questions no one else has the cognitive space to ask.</p>
+<p>When you design for specialization, you get better results faster. When you design for coordination, you get results that are auditable and improvable.</p>
+<p>That is what good team design does—for human teams or agent teams.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+        
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/research-agents/01-research-as-agent-problem/">
+                &#8592;
+                Previous:
+                Research as an Agent Problem
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

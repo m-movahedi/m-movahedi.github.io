@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>HBM 12: Norm Activation Model</title>
+    <meta name="description" content="Most models of travel behavior assume that people act in their own interest — choosing the mode, route, or time that minimizes their personal cost, travel time, …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="https://m-movahedi.com/scratchpad/human-behavior-modeling/hbm-12/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HBM 12: Norm Activation Model">
+    <meta property="og:description" content="Most models of travel behavior assume that people act in their own interest — choosing the mode, route, or time that minimizes their personal cost, travel time, …">
+    <meta property="og:image" content="https://m-movahedi.com/images/profile.png">
+    <meta property="og:image:secure_url" content="https://m-movahedi.com/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HBM 12: Norm Activation Model">
+    <meta name="twitter:description" content="Most models of travel behavior assume that people act in their own interest — choosing the mode, route, or time that minimizes their personal cost, travel time, …">
+    <meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/human-behavior-modeling/hbm-12/">
+    <meta property="twitter:url" content="https://m-movahedi.com/scratchpad/human-behavior-modeling/hbm-12/">
+    <meta name="twitter:image" content="https://m-movahedi.com/images/profile.png">
+
+    
+    <link rel="canonical" href="https://m-movahedi.com/scratchpad/human-behavior-modeling/hbm-12/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://m-movahedi.com/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://m-movahedi.com/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://m-movahedi.com/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://m-movahedi.com/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>HBM 12: Norm Activation Model</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 6, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>Most models of travel behavior assume that people act in their own interest — choosing the mode, route, or time that minimizes their personal cost, travel time, or effort. And much of the time, that assumption works well enough. But it cannot explain the commuter who carpools even though driving alone would be faster, the homeowner who supports congestion pricing despite owning two cars, or the parent who walks children to school in the rain because she believes it matters for the neighborhood.</p>
+<p>These are not irrational behaviors. They are prosocial behaviors — actions taken at personal cost because the person feels a moral obligation to do the right thing. The Norm Activation Model (NAM), developed by Shalom Schwartz in 1977, provides a framework for understanding when and why these moral obligations are activated, and when they are not.</p>
+<h2 id="why-prosocial-behavior-matters-in-transportation">Why Prosocial Behavior Matters in Transportation</h2>
+<p>Transportation is a domain where individual choices have collective consequences. Driving alone contributes to congestion, emissions, noise, crash risk, and urban sprawl. Choosing transit, cycling, carpooling, or walking reduces these harms — but often at a personal cost in time, comfort, or convenience. Standard rational-choice models predict that few people will voluntarily bear these costs. Yet many do.</p>
+<div class="hbm-note">
+  <p><strong>Core insight:</strong> The Norm Activation Model explains prosocial behavior as a moral process, not a cost-benefit calculation. People act prosocially when they believe their behavior has consequences for others AND feel personally responsible for those consequences. If either condition is absent, the moral norm is not activated.</p>
+</div>
+<p>Understanding this moral dimension is critical for transportation policy. Campaigns that assume people only respond to prices and travel times miss a powerful motivational channel. Conversely, campaigns that assume moral appeals will work on everyone miss the conditions under which moral norms activate — or fail to activate.</p>
+<h2 id="the-model-schwartzs-norm-activation-model">The Model: Schwartz&rsquo;s Norm Activation Model</h2>
+<p>The NAM proposes a simple but precise causal chain. Prosocial behavior occurs when a personal norm — a feeling of moral obligation — is activated. Activation depends on two preconditions: the person must be aware that their behavior has consequences for others, and the person must feel personally responsible for those consequences.</p>
+<div class="hbm-flow-4" role="img" aria-label="NAM causal chain">
+  <div class="hbm-card">
+    <strong>Awareness of Consequences (AC)</strong>
+    <p>The person recognizes that a behavior (or its absence) has consequences for others' welfare.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Ascription of Responsibility (AR)</strong>
+    <p>The person accepts personal responsibility for those consequences.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Personal Norm (PN)</strong>
+    <p>A feeling of moral obligation to act is activated.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Prosocial Behavior</strong>
+    <p>The person acts in accordance with the moral obligation.</p>
+  </div>
+</div>
+<p>The model&rsquo;s power lies in its specificity about the conditions for moral action. Awareness alone is not enough. A person may know that car emissions contribute to climate change (awareness of consequences) but still not feel personally responsible — perhaps believing that individual actions are insignificant compared to industrial emissions, or that the government should solve the problem. Without ascription of responsibility, the personal norm remains dormant.</p>
+<div class="hbm-note">
+  <p><strong>The activation conditions:</strong> Both AC and AR must be present for the personal norm to be activated. If a person is aware of consequences but denies responsibility, or accepts responsibility but is unaware of consequences, the moral obligation does not activate. This explains why simply informing people about environmental damage often fails to change behavior — information addresses AC but not necessarily AR.</p>
+</div>
+<h3 id="denial-and-neutralization">Denial and Neutralization</h3>
+<p>Schwartz also identified defense mechanisms that can block norm activation even when AC and AR are initially present. These include:</p>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Denial of Consequences</strong>
+    <p>"My driving doesn't really make a difference to air quality." The person minimizes or denies the consequences of their behavior.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Denial of Responsibility</strong>
+    <p>"It's the government's job to provide transit, not my job to stop driving." The person shifts responsibility to institutions, corporations, or other people.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Denial of Ability</strong>
+    <p>"I can't take the bus — there's no route near my house." The person cites practical constraints to neutralize the moral obligation.</p>
+  </div>
+</div>
+<p>These denial mechanisms are not necessarily dishonest. They can reflect genuine uncertainty about consequences, reasonable disagreements about responsibility, or real structural barriers. The NAM does not assume that people who deny responsibility are wrong — only that denial deactivates the norm.</p>
+<h2 id="core-constructs">Core Constructs</h2>
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Awareness of Consequences (AC)</span>
+  <span class="hbm-construct">Ascription of Responsibility (AR)</span>
+  <span class="hbm-construct">Personal Norm (PN)</span>
+  <span class="hbm-construct">Prosocial Behavior</span>
+  <span class="hbm-construct">Denial of Consequences</span>
+  <span class="hbm-construct">Denial of Responsibility</span>
+</div>
+<h2 id="causal-logic">Causal Logic</h2>
+<p>The causal logic is sequential and conditional. AC is a necessary precondition for AR, and both are necessary preconditions for PN activation. PN, once activated, predicts behavior — but can be blocked by denial mechanisms at any stage.</p>
+<div class="hbm-code">Causal chain:
+<p>AC (Awareness of Consequences)
+↓ &ldquo;My car use contributes to air pollution that harms public health.&rdquo;
+AR (Ascription of Responsibility)
+↓ &ldquo;I am personally responsible for this impact because I choose to drive.&rdquo;
+PN (Personal Norm activation)
+↓ &ldquo;I feel a moral obligation to reduce my car use.&rdquo;
+Behavior
+→ Carpooling, using transit, cycling, supporting congestion pricing</p>
+<p>If AC is blocked:
+&ldquo;I don&rsquo;t think car emissions are really a health problem.&rdquo; → No norm activation.</p>
+<p>If AR is blocked:
+&ldquo;Even if it&rsquo;s a problem, one person driving less won&rsquo;t make any difference.&rdquo; → No norm activation.</p>
+<p>If PN is activated but overridden:
+&ldquo;I feel I should drive less, but I can&rsquo;t get to work any other way.&rdquo; → Norm-behavior gap.</div></p>
+<p>A key feature of the NAM is that personal norms are <em>internal</em> moral standards, not social expectations. The model explains behavior motivated by moral conviction (&ldquo;I ought to do this because it is right&rdquo;) rather than social pressure (&ldquo;Others expect me to do this&rdquo;). This distinguishes NAM from the Theory of Planned Behavior&rsquo;s subjective norms, which capture perceived social expectations.</p>
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>NAM: Personal norms</strong>
+    <p>Self-generated moral obligation. "I feel personally obligated to reduce my environmental impact." The source is internal: one's own values and sense of right and wrong.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>TPB: Subjective norms</strong>
+    <p>Perceived social expectations. "People who are important to me think I should use transit." The source is external: what others think or expect.</p>
+  </div>
+</div>
+<h2 id="data-needed">Data Needed</h2>
+<p>NAM research relies primarily on survey instruments measuring moral cognitions. The constructs are psychological and require careful measurement.</p>
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>Primary measures</strong>
+    <ul>
+      <li><strong>Awareness of consequences:</strong> Items measuring whether the respondent recognizes the negative effects of a specific behavior on others' welfare or the environment</li>
+      <li><strong>Ascription of responsibility:</strong> Items measuring whether the respondent accepts personal responsibility for those consequences</li>
+      <li><strong>Personal norms:</strong> Items measuring the felt moral obligation to act (or refrain from acting)</li>
+      <li><strong>Behavior:</strong> Self-reported or observed prosocial actions</li>
+    </ul>
+  </div>
+  <div class="hbm-panel">
+    <strong>Supporting measures</strong>
+    <ul>
+      <li><strong>Denial scales:</strong> Items measuring denial of consequences, denial of responsibility, and other neutralization strategies</li>
+      <li><strong>Demographics and context:</strong> Income, car ownership, residential location, transit access — to control for structural factors</li>
+      <li><strong>Values:</strong> Measures of environmental, altruistic, and egoistic value orientations (connecting NAM to the broader VBN framework)</li>
+    </ul>
+  </div>
+</div>
+<div class="hbm-code">Example survey items:
+<p>Awareness of Consequences (AC):
+&ldquo;Car use in my city contributes significantly to air pollution.&rdquo;
+&ldquo;Driving alone during rush hour increases congestion for everyone.&rdquo;
+&ldquo;Traffic emissions have negative health effects on people in my neighborhood.&rdquo;</p>
+<p>Ascription of Responsibility (AR):
+&ldquo;I feel personally responsible for the environmental impact of my travel choices.&rdquo;
+&ldquo;Every individual driver contributes to the congestion problem.&rdquo;
+&ldquo;I can make a meaningful difference by choosing to drive less.&rdquo;</p>
+<p>Personal Norm (PN):
+&ldquo;I feel a moral obligation to use environmentally friendly transport.&rdquo;
+&ldquo;I feel guilty when I drive alone for a trip I could have made by transit.&rdquo;
+&ldquo;Regardless of what others do, I feel I should reduce my car use.&rdquo;</p>
+<p>Denial of Responsibility:
+&ldquo;One person&rsquo;s travel choices are too small to make any real difference.&rdquo;
+&ldquo;It&rsquo;s the government&rsquo;s responsibility to provide alternatives, not mine to change.&quot;</div></p>
+<h2 id="methods">Methods</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Structural Equation Modeling</strong>
+    <p>Test the full AC → AR → PN → Behavior causal chain, including mediation effects. SEM is the most common analytical approach in NAM studies because all constructs are latent.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Mediation Analysis</strong>
+    <p>Test whether personal norms mediate the effect of AC and AR on behavior. The indirect effect (AC → AR → PN → Behavior) is the theoretical pathway.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Hierarchical Regression</strong>
+    <p>Enter AC, AR, and PN sequentially to examine incremental predictive power. Interaction terms can test whether AR moderates the AC–PN relationship.</p>
+  </div>
+</div>
+<div class="hbm-math">
+SEM path specification for NAM:
+<p>AR = β₁·AC + ε₁
+PN = β₂·AR + β₃·AC + ε₂
+Behavior = β₄·PN + β₅·Controls + ε₃</p>
+<p>The key test: β₂ and β₄ should both be significant.
+If PN fully mediates the effect of AC and AR on behavior,
+the direct paths from AC/AR to behavior should be non-significant
+after PN is included.</p>
+<p>Some specifications test moderation rather than mediation:
+PN = β₂·AC + β₃·AR + β₄·(AC × AR) + ε₂
+This tests whether AR moderates the activation of PN by AC.</p>
+</div>
+<p>A methodological debate exists over whether AR acts as a mediator (AR transmits the effect of AC to PN) or a moderator (AR amplifies or dampens the AC → PN relationship). Schwartz&rsquo;s original formulation suggested moderation — AR as a condition for activation — but many empirical studies have tested mediation because SEM tools handle mediating paths more naturally. Both specifications have received empirical support.</p>
+<p><hbm-nam-widget></hbm-nam-widget></p>
+<h2 id="transportation-example-carpooling-and-support-for-congestion-pricing">Transportation Example: Carpooling and Support for Congestion Pricing</h2>
+<h3 id="carpooling-as-prosocial-behavior">Carpooling as Prosocial Behavior</h3>
+<p>Consider a metropolitan area where single-occupancy vehicle commuting generates severe congestion and air quality problems. A transportation agency wants to understand why some commuters carpool despite the inconvenience of coordinating schedules and detours.</p>
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>The carpooler's moral pathway</strong>
+    <ul>
+      <li><strong>AC:</strong> "I know that every additional car on the highway during rush hour adds to congestion and emissions that affect everyone."</li>
+      <li><strong>AR:</strong> "As someone who commutes daily, I am part of this problem and I can be part of the solution."</li>
+      <li><strong>PN:</strong> "I feel a moral obligation to share rides when I can."</li>
+      <li><strong>Behavior:</strong> Regular carpooling with two colleagues.</li>
+    </ul>
+  </div>
+  <div class="hbm-panel">
+    <strong>The non-carpooler's denial pathway</strong>
+    <ul>
+      <li><strong>AC:</strong> "I've heard about congestion and emissions, but I'm not sure how much my one car matters."</li>
+      <li><strong>AR denial:</strong> "The real problem is trucks and commercial vehicles. Individual cars are a small fraction of emissions."</li>
+      <li><strong>PN:</strong> Not activated — no felt moral obligation.</li>
+      <li><strong>Behavior:</strong> Continues driving alone.</li>
+    </ul>
+  </div>
+</div>
+<h3 id="support-for-congestion-pricing">Support for Congestion Pricing</h3>
+<p>NAM also helps explain public support for policies that impose personal costs for collective benefit. Congestion pricing requires drivers to pay for road use, generating revenue that can fund transit improvements. Support for such policies is not purely a function of self-interest — it also reflects moral reasoning.</p>
+<p>Research by De Groot and Steg (2009) found that personal norms significantly predicted acceptability of congestion pricing, mediated by AC and AR. People who were aware of traffic&rsquo;s environmental consequences and who accepted personal responsibility for contributing to the problem were more likely to feel morally obligated to support pricing — even though it would cost them money.</p>
+<div class="hbm-note">
+  <p><strong>Policy implication:</strong> Campaigns promoting congestion pricing that focus only on efficiency ("it will reduce your commute time") target self-interest. Campaigns that also communicate consequences ("traffic emissions cause X respiratory hospitalizations per year in our city") and personal responsibility ("your daily commute contributes to this") can activate moral motivation — a complementary pathway to support.</p>
+</div>
+<h2 id="strengths">Strengths</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Explains moral and altruistic behavior</strong>
+    <p>NAM fills a gap in behavioral models that focus on self-interest, attitudes, and social pressure. It explains why people voluntarily bear costs for others' benefit.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Precise activation conditions</strong>
+    <p>The model specifies exactly when moral norms activate (AC + AR) and when they do not (denial). This precision is useful for diagnosis and intervention design.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Complements self-interest models</strong>
+    <p>NAM does not replace rational choice or TPB — it extends them. Travel behavior is shaped by both self-interest and moral obligation, and NAM captures the moral dimension.</p>
+  </div>
+</div>
+<h2 id="limitations">Limitations</h2>
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Focused on prosocial behavior</strong>
+    <p>NAM was designed for behaviors motivated by moral obligation. It is less applicable to self-interested behaviors, habitual behaviors, or choices driven primarily by convenience and cost.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Limited on structural barriers</strong>
+    <p>A person may feel a strong moral obligation to use transit but have no transit service nearby. NAM explains the moral motivation but not the structural constraint. The norm-behavior gap remains unexplained within the model.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Limited on habits</strong>
+    <p>Daily travel is often habitual, not morally deliberated. NAM assumes a reflective process that may not describe routine commuting decisions. Habits can override even strong personal norms.</p>
+  </div>
+</div>
+<p>Another limitation is the assumption of a unidirectional causal chain. In reality, behavior may also influence norms — people who start carpooling may develop stronger moral obligations about car use over time, creating a feedback loop that the model&rsquo;s linear structure does not capture.</p>
+<h2 id="best-use-case">Best Use Case</h2>
+<p>NAM is most useful when the research or policy question involves <strong>morally motivated behavior</strong> — actions people take (or resist) based on feelings of obligation, responsibility, and concern for collective welfare. It is the right model for understanding voluntary pro-environmental travel behavior, public support for policies with personal costs, and the conditions under which moral appeals succeed or fail.</p>
+<p>Use NAM when asking: Why do some people voluntarily reduce car use while others do not? What makes moral appeals effective for some audiences and ineffective for others? How does awareness of consequences translate — or fail to translate — into felt obligation?</p>
+<div class="hbm-note">
+  <p><strong>Key takeaway:</strong> People act prosocially when they recognize that their behavior has consequences for others and accept personal responsibility for those consequences — if either condition is absent, the moral obligation remains dormant.</p>
+</div>
+<h2 id="key-references">Key References</h2>
+<div class="hbm-papers">
+  <strong>Foundational and applied references</strong>
+  <ul>
+    <li><a href="https://doi.org/10.1016/S0065-2601(08)60358-5">Schwartz, S. H. (1977). "Normative Influences on Altruism." In L. Berkowitz (Ed.), <em>Advances in Experimental Social Psychology</em> (Vol. 10, pp. 221–279). Academic Press.</a> — The foundational statement of the Norm Activation Model, including the AC → AR → PN → behavior chain and denial mechanisms.</li>
+    <li><a href="https://doi.org/10.1016/j.jenvp.2009.05.003">De Groot, J. I. M., & Steg, L. (2009). "Morality and Prosocial Behavior: The Role of Awareness, Responsibility, and Norms in the Norm Activation Model." <em>Journal of Social Psychology, 149</em>(4), 425–449.</a> — Empirical test of NAM applied to pro-environmental behavior, including support for environmental policies.</li>
+    <li><a href="https://doi.org/10.1016/S0272-4944(03)00013-7">Nordlund, A. M., & Garvill, J. (2003). "Effects of Values, Problem Awareness, and Personal Norm on Willingness to Reduce Personal Car Use." <em>Journal of Environmental Psychology, 23</em>(4), 339–347.</a> — Applies NAM to car use reduction, finding that personal norms mediate the effect of consequence awareness on willingness to reduce driving.</li>
+    <li><a href="https://doi.org/10.1016/j.trd.2014.10.003">Bamberg, S., & Möser, G. (2007). "Twenty Years After Hines, Hungerford, and Tomera: A New Meta-Analysis of Psycho-Social Determinants of Pro-Environmental Behaviour." <em>Journal of Environmental Psychology, 27</em>(1), 14–25.</a> — Meta-analysis showing that personal norms and moral obligation are consistent predictors of pro-environmental behavior, supporting NAM's core claims.</li>
+  </ul>
+</div>
+<h2 id="exercises-and-discussion-questions">Exercises and Discussion Questions</h2>
+<div class="hbm-exercises">
+  <strong>Exercises</strong>
+  <ol>
+    <li>A city launches an air quality awareness campaign showing real-time pollution data from roadside monitors. Using the NAM, predict under what conditions this campaign will change commuting behavior and under what conditions it will not. Be specific about which construct (AC, AR, or PN) the campaign targets and which it misses.</li>
+    <li>Interview (or imagine interviewing) two people: one who regularly carpools and one who always drives alone, both with similar commuting distances. Using the NAM framework, construct plausible profiles for each — their awareness of consequences, ascription of responsibility, and personal norms. Where do the profiles diverge?</li>
+    <li>A transportation researcher finds that awareness of consequences is high in a survey sample (most respondents agree that car emissions are harmful) but car use reduction intentions are low. Using the NAM, explain this gap. Which construct is most likely the weak link, and what evidence would you look for to confirm your diagnosis?</li>
+  </ol>
+</div>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/human-behavior-modeling/hbm-11/">
+                &#8592;
+                Previous:
+                HBM 11: Diffusion of Innovations
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/human-behavior-modeling/hbm-13/">
+                Next:
+                HBM 13: Value-Belief-Norm Theory
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 6, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

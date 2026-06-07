@@ -1,0 +1,275 @@
+---
+title : "HBM 18: Habit Theory"
+date : "2026-06-06"
+draft : false
+type : "post"
+---
+
+Ask a daily car commuter why they drive to work. The first answer is usually practical: "It's faster," "I need my car for errands," "Transit doesn't go where I need." Push a little deeper and something else emerges: "I don't really think about it anymore." That last answer is the most honest — and the most important. For millions of commuters, the daily mode choice is not a choice at all. It is a habit: an automatic behavior triggered by context cues, executed without deliberation, and remarkably resistant to change.
+
+This resistance is the central problem that habit theory addresses. If behavior change requires changing intentions — as models like the Theory of Planned Behavior assume — then habitual behaviors represent a blind spot. Strengthening someone's intention to use transit is unlikely to change their behavior if the morning routine (wake up, coffee, keys, garage, highway) unfolds automatically without the intention ever being consulted.
+
+## Why Habits Matter for Transportation
+
+Habits are not a marginal concern in transportation. The most consequential travel behaviors — commuting mode, daily route, departure time, speeding, phone use while driving — are among the most repetitive and context-stable behaviors in daily life. They are performed in the same context (same time, same origin, same destination), at high frequency (daily or multiple times per day), and with minimal variation.
+
+This makes habits a structural barrier to almost every transportation policy goal. Mode shift programs fail because car commuting is habitual. Speed reduction campaigns fail because speeding is habitual. Distracted driving persists because phone checking is habitual. The intention–behavior gap that plagues transportation interventions is, in many cases, a habit problem.
+
+<div class="hbm-note">
+  <p><strong>Core intuition:</strong> habits are behaviors that have become automated through repetition in stable contexts. They are triggered by cues rather than decisions, and they operate largely outside conscious deliberation. When context remains stable, habits dominate over intentions.</p>
+</div>
+
+## The Model: From Repetition to Automaticity
+
+Habit theory in psychology draws on a long tradition, but the modern framework most relevant to transportation was developed through the work of Verplanken and Aarts (1999), Ouellette and Wood (1998), and subsequent researchers. The core model describes a process through which deliberate behavior becomes automatic:
+
+<div class="hbm-flow" role="img" aria-label="Habit formation process">
+  <div class="hbm-card">
+    <strong>Initial Decision</strong>
+    <p>A deliberate choice based on goals, intentions, and evaluation.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Repetition</strong>
+    <p>The same behavior is performed repeatedly in a stable context.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Context–Behavior Link</strong>
+    <p>Associative links form between context cues and the behavior.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Automaticity</strong>
+    <p>The behavior is triggered by cues without deliberation.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Habit</strong>
+    <p>Behavior persists even when intentions or circumstances change.</p>
+  </div>
+</div>
+
+The critical transition is from **goal-directed behavior** to **cue-triggered behavior**. In the early stages of commuting to a new job, a person actively considers routes, evaluates travel times, and makes conscious decisions. After weeks of repetition in the same context — same departure time, same origin, same destination, same traffic pattern — the behavior becomes linked to contextual cues. The morning alarm triggers the sequence: shower, breakfast, keys, car, highway exit, parking garage. The sequence executes with minimal cognitive engagement. The person is not choosing to drive; they are performing a routine.
+
+## Core Constructs
+
+<div class="hbm-construct-row">
+  <span class="hbm-construct">Repetition</span>
+  <span class="hbm-construct">Context Cues</span>
+  <span class="hbm-construct">Automaticity</span>
+  <span class="hbm-construct">Past Behavior</span>
+  <span class="hbm-construct">Habit Discontinuity</span>
+  <span class="hbm-construct">Habit–Intention Interaction</span>
+</div>
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Repetition</strong>
+    <p>The frequency of past performance in consistent circumstances. Repetition alone is not sufficient — the behavior must occur in a stable context for habit formation. Running every Tuesday at the same park at 7 AM builds a habit; running at random times and places does not.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Context Cues</strong>
+    <p>Environmental triggers that activate the habitual behavior. These include time of day, physical location, preceding actions (e.g., finishing breakfast → picking up car keys), the presence of other people, and even internal states (e.g., stress → cigarette). The cue–behavior link is the mechanism of automaticity.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Automaticity</strong>
+    <p>The defining feature of habits. Automatic behaviors are performed without conscious intention, are difficult to control once triggered, are efficient (require little cognitive effort), and may occur without awareness. Automaticity is a continuum, not a binary state.</p>
+  </div>
+</div>
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Past Behavior as Predictor</strong>
+    <p>In regression models that include both intention and past behavior as predictors, past behavior often dominates for frequent, routine actions. If past behavior predicts future behavior better than intention does, this is evidence of habituation. Ouellette and Wood (1998) showed this pattern clearly: for frequent behaviors in stable contexts, past behavior overwhelms intention.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Habit Discontinuity</strong>
+    <p>Life events that disrupt stable contexts — moving, changing jobs, retirement, having a child, major infrastructure changes, service disruptions — can break habits by removing the context cues that trigger them. During these "windows of opportunity," people return to deliberative processing, and intentions regain influence over behavior.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Habit–Intention Interaction</strong>
+    <p>Habits and intentions interact rather than operate independently. When habits are strong and context is stable, intentions have little influence. When habits are disrupted (context changes), intentions re-emerge as the primary driver. This interaction explains why intention-based interventions (education, persuasion, information) work for non-habitual behaviors but fail for habitual ones.</p>
+  </div>
+</div>
+
+## Causal Logic
+
+<div class="hbm-two-col">
+  <div class="hbm-panel">
+    <strong>When Context Is Stable</strong>
+    <p>Stable context cues → automatic activation of habitual behavior → behavior occurs without deliberation → intention is bypassed → information and persuasion have little effect.</p>
+    <p><em>Example:</em> A car commuter who has driven the same route for three years. Providing information about a new bus route has minimal impact because the driving habit executes before deliberation occurs.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>When Context Changes</strong>
+    <p>Context disruption (move, job change, road closure, service change) → cue–behavior link is broken → person returns to deliberative mode → intention and attitudes regain influence → behavior may change.</p>
+    <p><em>Example:</em> A commuter whose office relocates. The old driving habit no longer applies. During this transition, the commuter actively evaluates mode options, and an intervention promoting transit has a much higher chance of success.</p>
+  </div>
+</div>
+
+This dual-pathway logic has a powerful implication: **the timing of an intervention matters as much as its content**. An excellent awareness campaign about cycling delivered to people with strong car-commuting habits in stable contexts will have negligible impact. The same campaign delivered to people who have just moved or started a new job — whose travel habits are disrupted — can produce significant behavior change.
+
+<div class="hbm-note">
+  <p><strong>The habit discontinuity hypothesis:</strong> life changes that alter the performance context of habitual behaviors open a "window of opportunity" during which people are more receptive to new behavioral patterns. Interventions timed to coincide with these disruptions are more effective than those delivered during stable periods.</p>
+</div>
+
+## Data Needed
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Self-Report Habit Index (SRHI)</strong>
+    <p>The most widely used habit measure (Verplanken & Orbell, 2003). A 12-item scale measuring automaticity, frequency, relevance to self-identity, and history. Items include: "Driving to work is something I do automatically," "I do without thinking," "I would find hard not to do." Despite widespread use, the SRHI has been critiqued for conflating habit strength with behavioral frequency.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Response Frequency Measure</strong>
+    <p>Presents respondents with scenarios and measures how quickly and consistently they report the habitual response. Faster, more consistent responses indicate stronger habits. Less prone to the self-report biases of the SRHI.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Longitudinal Data</strong>
+    <p>Repeated observations of behavior over time, especially around life events. Longitudinal designs can track whether behavior changes following context disruptions and whether new habits form after transitions. Travel diary panels and smart card data are especially useful.</p>
+  </div>
+</div>
+
+<div class="hbm-code">
+Example SRHI items for car commuting habit:
+
+Using the following scale (1 = strongly disagree, 7 = strongly agree),
+rate each statement about your daily commute by car:
+
+1. Driving to work is something I do frequently.
+2. Driving to work is something I do automatically.
+3. Driving to work is something I do without having to
+   consciously remember.
+4. Driving to work is something that makes me feel weird
+   if I do not do it.
+5. Driving to work is something I do without thinking.
+6. Driving to work is something that would require effort
+   not to do.
+7. Driving to work is something that belongs to my
+   daily routine.
+8. Driving to work is something I start doing before I
+   realize I'm doing it.
+9. Driving to work is something I would find hard not to do.
+10. Driving to work is something I have no need to think
+    about doing.
+11. Driving to work is something that's typically "me."
+12. Driving to work is something I have been doing for a
+    long time.
+</div>
+
+## Methods
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Moderated Regression</strong>
+    <p>Tests the habit × intention interaction. If the interaction term is significant and negative, habit moderates the intention–behavior relationship: as habit strength increases, the effect of intention on behavior decreases. This is the primary statistical test of habit theory's core prediction.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Longitudinal Analysis</strong>
+    <p>Panel data tracking behavior before and after context changes. Mixed-effects models or difference-in-differences designs test whether habit discontinuity produces behavior change and whether new habits form after transitions.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Natural Experiments</strong>
+    <p>Real-world disruptions as quasi-experiments: transit strikes, road closures, service introductions, office relocations, COVID-19 lockdowns. These provide exogenous variation in context stability that cannot be ethically or practically manipulated in experiments.</p>
+  </div>
+</div>
+
+<hbm-habit-widget></hbm-habit-widget>
+
+## Transportation Example: Car Commuting and the Habit Trap
+
+A European city wants to increase transit ridership among car commuters. Previous campaigns — information about bus routes, cost comparisons, environmental appeals — produced negligible mode shift. The city suspects the problem is habit: commuters are not considering transit because they are not deliberating at all.
+
+<div class="hbm-three-col">
+  <div class="hbm-panel">
+    <strong>Study Design</strong>
+    <p>The city identifies three groups: (1) car commuters with stable commutes (strong habit, no recent life change), (2) car commuters who recently moved to a new address (context disrupted), and (3) new employees at downtown firms (new commute pattern forming). All groups receive the same intervention: a free one-month transit pass plus personalized travel information.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Hypotheses</strong>
+    <p>Habit theory predicts that Group 2 (movers) and Group 3 (new employees) will show significantly higher mode shift than Group 1 (stable commuters), because their context disruption has weakened existing habits and opened them to deliberation.</p>
+  </div>
+  <div class="hbm-panel">
+    <strong>Results</strong>
+    <p>Illustrative findings consistent with the literature: Group 1 shows 3% mode shift (strong habits resist intervention). Group 2 shows 18% mode shift. Group 3 shows 22% mode shift. Among Group 2 movers, transit use persists 6 months later for 12% — a new habit has formed.</p>
+  </div>
+</div>
+
+<div class="hbm-bar-row"><span>Stable commuters</span><div class="hbm-bar"><span style="width: 3%;"></span></div><span>3% shift</span></div>
+<div class="hbm-bar-row"><span>Recent movers</span><div class="hbm-bar"><span style="width: 18%;"></span></div><span>18% shift</span></div>
+<div class="hbm-bar-row"><span>New employees</span><div class="hbm-bar"><span style="width: 22%;"></span></div><span>22% shift</span></div>
+
+<div class="hbm-small">Illustrative mode shift rates by habit disruption status.</div>
+
+The study by Verplanken et al. (2008) on residential relocation and travel behavior confirmed this pattern with real data: people who recently moved were significantly more likely to change their travel mode, especially when their environmental values were strong. The key finding was the **interaction** between habit disruption and intention: environmental values predicted transit use among movers (disrupted habits) but not among non-movers (strong habits).
+
+### Speeding Habit
+
+Speeding is another classic habitual behavior. Many drivers who exceed speed limits do not make a conscious decision to speed each time. Instead, habitual speed is triggered by road characteristics (wide lanes, straight road, low perceived enforcement), vehicle cues (engine power, ride smoothness), and temporal context (running late, familiar route). The behavior executes automatically.
+
+This explains why speed awareness courses — which target knowledge and attitudes — often produce only temporary reductions. The knowledge changes, but when the driver returns to the same road, the same car, and the same time pressure, the contextual cues re-trigger the habitual speed. Effective speed interventions must change the context: narrow lanes, speed bumps, dynamic speed displays that provide immediate feedback, or automated enforcement that changes the cue–consequence association.
+
+### Phone Use While Driving
+
+Distracted driving from phone use follows the same pattern. The phone notification sound is a powerful context cue. The response — glancing at and reaching for the phone — is automatic for many people. Campaigns telling drivers that phone use is dangerous change knowledge and attitudes, but the habitual response to the notification cue remains. Interventions that change the context — automatic do-not-disturb modes, phone lockouts triggered by vehicle speed, physical phone storage compartments — address the habit directly by removing or altering the cue.
+
+## Strengths
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Explains the Intention–Behavior Gap</strong>
+    <p>For routine behaviors, the gap between what people intend and what they do is largely a habit problem. Habit theory provides a specific mechanism: when habits are strong, intentions are bypassed.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Practical Timing Implications</strong>
+    <p>The habit discontinuity hypothesis provides actionable guidance: target interventions at moments of life change (moving, new job, retirement, service disruption, infrastructure change) when habits are weakest and openness to change is greatest.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Identifies Context Levers</strong>
+    <p>Instead of trying to change minds (attitudes, knowledge, intentions), habit theory directs attention to changing contexts — modifying cues, altering environments, or disrupting routines. This aligns with infrastructure and design-based approaches in transportation.</p>
+  </div>
+</div>
+
+## Limitations
+
+<div class="hbm-grid">
+  <div class="hbm-card">
+    <strong>Measurement Debates</strong>
+    <p>The SRHI conflates habit strength with behavioral frequency, and some items tap self-identity rather than automaticity. The automaticity subscale (SRBAI) addresses this partially, but habit measurement remains contested.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Habit Formation Speed</strong>
+    <p>How long does it take for a new behavior to become habitual? Estimates range from 18 to 254 days (Lally et al., 2010), depending on complexity and context consistency. The theory provides limited guidance on formation dynamics.</p>
+  </div>
+  <div class="hbm-card">
+    <strong>Limited on Non-Routine Behaviors</strong>
+    <p>Habit theory is most relevant for frequent, routine behaviors in stable contexts. It contributes less to understanding infrequent decisions (vehicle purchase, relocation) or novel situations (first-time evacuation).</p>
+  </div>
+</div>
+
+## Best Use Case
+
+Habit theory is the best framework when the research question involves **why routine behaviors persist despite changed intentions, information, or incentives** — and when the goal is to identify the best timing and context levers for behavior change. It is essential for understanding car commuting persistence, repeated traffic violations, and the limited effectiveness of awareness campaigns for routine travel behaviors.
+
+<div class="hbm-note">
+  <p><strong>Key takeaway:</strong> interventions targeting intention may fail for habitual behaviors — changing behavior requires disrupting the context that triggers the habit, and the best time to intervene is during life transitions when habits are already weakened.</p>
+</div>
+
+## Key References
+
+<div class="hbm-papers">
+  <strong>Foundational references</strong>
+  <ul>
+    <li><a href="https://doi.org/10.1002/(SICI)1099-0992(199909/10)29:5/6<591::AID-EJSP948>3.0.CO;2-H">Verplanken, B. & Aarts, H. (1999). "Habit, Attitude, and Planned Behaviour: Is Habit an Empty Construct or an Interesting Case of Goal-Directed Automaticity?" European Journal of Social Psychology, 29(5-6), 591–604.</a> A foundational paper defining habit as goal-directed automaticity and distinguishing it from mere behavioral frequency.</li>
+    <li><a href="https://doi.org/10.1037/0033-2909.124.1.54">Ouellette, J. A. & Wood, W. (1998). "Habit and Intention in Everyday Life: The Multiple Processes by Which Past Behavior Predicts Future Behavior." Psychological Bulletin, 124(1), 54–74.</a> A meta-analysis demonstrating that past behavior predicts future behavior through two pathways: habitual (for frequent, stable-context behaviors) and intentional (for infrequent or unstable-context behaviors).</li>
+    <li><a href="https://doi.org/10.1016/j.jenvp.2008.02.003">Verplanken, B., Walker, I., Davis, A., & Jurasek, M. (2008). "Context Change and Travel Mode Choice: Combining the Habit Discontinuity and Self-Activation Hypotheses." Journal of Environmental Psychology, 28(2), 121–127.</a> Demonstrated that residential relocation disrupts travel habits and that environmental values predict mode change among movers but not non-movers.</li>
+    <li><a href="https://doi.org/10.1080/17437199.2015.1006180">Gardner, B. (2015). "A Review and Analysis of the Use of 'Habit' in Understanding, Predicting and Influencing Health-Related Behaviour." Health Psychology Review, 9(3), 277–295.</a> A comprehensive review of habit measurement, theory, and intervention, with insights applicable to transportation behavior.</li>
+    <li><a href="https://doi.org/10.1002/ejsp.674">Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). "How Are Habits Formed: Modelling Habit Formation in the Real World." European Journal of Social Psychology, 40(6), 998–1009.</a> Studied habit formation in daily life, finding that automaticity plateaus after a median of 66 days — but with substantial variation depending on behavioral complexity.</li>
+  </ul>
+</div>
+
+<div class="hbm-exercises">
+  <strong>Exercises and Discussion Questions</strong>
+  <ol>
+    <li>A city launches a marketing campaign encouraging car commuters to try cycling. The campaign includes route maps, cost calculators, and health benefit information. Using habit theory, explain why this campaign is likely to have limited impact on established car commuters. Redesign the intervention using the habit discontinuity hypothesis.</li>
+    <li>COVID-19 lockdowns disrupted commuting habits for millions of workers. As offices reopened, some commuters returned to driving while others adopted new modes or remote work. How would you use habit theory to study which pre-pandemic habits reformed and which did not? What data would you need?</li>
+    <li>Compare how the Theory of Planned Behavior (Post 4) and habit theory would explain a commuter who states strong pro-transit attitudes but continues to drive every day. Which model provides a more useful explanation? Under what conditions would TPB-based and habit-based interventions each be more effective?</li>
+  </ol>
+</div>
