@@ -23,6 +23,40 @@ A useful model is the intersection of three things:
 | What hardware do I have? | A model that barely fits may be less useful than a smaller model that runs smoothly |
 | What constraints matter? | Privacy, license, cost, speed, context length, and reliability change the decision |
 
+<div class="llm-diagram-container" id="diagram-203">
+  <div class="llm-diagram-header">
+    <h4>Model Selection Matrix</h4>
+    <p>Click a pillar to see what happens when it's ignored</p>
+  </div>
+  <div class="llm-grid-layout">
+    <div class="llm-node" data-target="panel-203-task">
+      <div class="llm-node-title">Task Fit</div>
+      <div class="llm-node-subtitle">Coding, Chat, RAG</div>
+    </div>
+    <div class="llm-node" data-target="panel-203-hardware">
+      <div class="llm-node-title">Hardware Fit</div>
+      <div class="llm-node-subtitle">VRAM, RAM, CPU</div>
+    </div>
+    <div class="llm-node" data-target="panel-203-constraints">
+      <div class="llm-node-title">Constraints</div>
+      <div class="llm-node-subtitle">Privacy, Speed, Cost</div>
+    </div>
+  </div>
+  <div class="llm-detail-panel" id="detail-203">
+    <div id="panel-203-task" class="llm-panel-content" style="display:none;">
+      <h5>If you ignore Task Fit:</h5>
+      <p>You might end up using a massive reasoning model just to summarize an email, wasting time and compute. Or you use a base model instead of an instruct model, and it fails to answer.</p>
+    </div>
+    <div id="panel-203-hardware" class="llm-panel-content" style="display:none;">
+      <h5>If you ignore Hardware Fit:</h5>
+      <p>You download a 70B parameter model that spills entirely into system RAM. It generates 1 token per second, making it practically useless for interactive chat.</p>
+    </div>
+    <div id="panel-203-constraints" class="llm-panel-content" style="display:none;">
+      <h5>If you ignore Constraints:</h5>
+      <p>You build a tool around an open-weights model, but its license prohibits commercial use. Or you rely on an API that is too expensive at scale.</p>
+    </div>
+  </div>
+</div>
 The "best" model on a leaderboard may be the wrong model for your laptop.
 
 ## Common model families

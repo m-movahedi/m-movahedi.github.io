@@ -28,6 +28,50 @@ These are different jobs:
 | Model file | The actual model weights and configuration |
 | Chat UI or coding agent | The application that sends prompts to the model |
 
+<div class="llm-diagram-container" id="diagram-202">
+  <div class="llm-diagram-header">
+    <h4>The Toolchain Divide</h4>
+    <p>Click a tool to see its primary job</p>
+  </div>
+  <div class="llm-flow-layout">
+    <div style="text-align:center;">
+      <h5 style="margin-bottom:0.5rem;">Python Management</h5>
+      <div class="llm-node" data-target="panel-202-uv">
+        <div class="llm-node-title">uv / uvx</div>
+        <div class="llm-node-subtitle">Dependencies & CLI Tools</div>
+      </div>
+    </div>
+    <div class="llm-edge">← Integrates →</div>
+    <div style="text-align:center;">
+      <h5 style="margin-bottom:0.5rem;">Local Models</h5>
+      <div class="llm-stack-layout" style="gap:0.2rem;">
+        <div class="llm-node" data-target="panel-202-ollama">
+          <div class="llm-node-title">Ollama</div>
+          <div class="llm-node-subtitle">Runtime API</div>
+        </div>
+        <div class="llm-edge vertical" style="padding:0; font-size:1rem;">↓</div>
+        <div class="llm-node" data-target="panel-202-model">
+          <div class="llm-node-title">Model File</div>
+          <div class="llm-node-subtitle">GGUF / Weights</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="llm-detail-panel" id="detail-202">
+    <div id="panel-202-uv" class="llm-panel-content" style="display:none;">
+      <h5>uv and uvx</h5>
+      <p>Use <code>uv</code> to manage your Python projects, and <code>uvx</code> to run isolated scripts (like evals) without breaking your environment.</p>
+    </div>
+    <div id="panel-202-ollama" class="llm-panel-content" style="display:none;">
+      <h5>Ollama (Runtime)</h5>
+      <p>Downloads models and exposes them via a local API (e.g., <code>localhost:11434</code>). Your Python scripts talk to this API, not the model directly.</p>
+    </div>
+    <div id="panel-202-model" class="llm-panel-content" style="display:none;">
+      <h5>Model File</h5>
+      <p>The actual neural network. Managed and loaded by Ollama.</p>
+    </div>
+  </div>
+</div>
 The same local model might be used from a terminal, a web UI, a notebook, or an editor. The model is the engine. The surrounding tools decide how pleasant it is to use.
 
 ## What `uv` is for

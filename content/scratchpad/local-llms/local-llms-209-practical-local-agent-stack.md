@@ -30,6 +30,56 @@ A practical beginner stack has layers:
 | Hosted fallback | OpenRouter or direct provider API | Handles tasks local models cannot |
 | Coding agent | Claude Code, Codex, Antigravity, or another tool | Handles repository actions and verification |
 
+<div class="llm-diagram-container" id="diagram-209">
+  <div class="llm-diagram-header">
+    <h4>The Practical Local Agent Stack</h4>
+    <p>Click a layer to see when to add it</p>
+  </div>
+  <div class="llm-stack-layout" style="max-width: 500px;">
+    <div class="llm-node" data-target="panel-209-agent" style="border-color: rgba(180, 80, 80, 0.6);"><div class="llm-node-title">Coding Agent (Top)</div><div class="llm-node-subtitle">e.g. Antigravity, Claude Code</div></div>
+    <div class="llm-node" data-target="panel-209-hosted" style="border-color: rgba(180, 140, 80, 0.6);"><div class="llm-node-title">Hosted Fallback</div><div class="llm-node-subtitle">e.g. OpenRouter API</div></div>
+    <div class="llm-node" data-target="panel-209-instructions"><div class="llm-node-title">Instructions</div><div class="llm-node-subtitle">Rules & Skills</div></div>
+    <div class="llm-node" data-target="panel-209-tools"><div class="llm-node-title">Tools</div><div class="llm-node-subtitle">MCP Servers</div></div>
+    <div class="llm-node" data-target="panel-209-eval"><div class="llm-node-title">Evaluation</div><div class="llm-node-subtitle">Fixed Prompt Sets</div></div>
+    <div class="llm-node" data-target="panel-209-api"><div class="llm-node-title">API Shape</div><div class="llm-node-subtitle">OpenAI-Compatible Local Endpoint</div></div>
+    <div class="llm-node" data-target="panel-209-model"><div class="llm-node-title">Model</div><div class="llm-node-subtitle">Small/Medium Instruct Checkpoint</div></div>
+    <div class="llm-node" data-target="panel-209-runtime" style="border-width: 3px;"><div class="llm-node-title">Runtime (Base)</div><div class="llm-node-subtitle">Ollama, LM Studio</div></div>
+  </div>
+  <div class="llm-detail-panel" id="detail-209">
+    <div id="panel-209-agent" class="llm-panel-content" style="display:none;">
+      <h5>Coding Agent</h5>
+      <p>Add this when you need autonomous repository edits, test execution, and multi-step verification.</p>
+    </div>
+    <div id="panel-209-hosted" class="llm-panel-content" style="display:none;">
+      <h5>Hosted Fallback</h5>
+      <p>Add this when local models fail on reasoning-heavy tasks or when you need a massive context window.</p>
+    </div>
+    <div id="panel-209-instructions" class="llm-panel-content" style="display:none;">
+      <h5>Instructions (Rules/Skills)</h5>
+      <p>Add these when you find yourself typing the same prompts over and over.</p>
+    </div>
+    <div id="panel-209-tools" class="llm-panel-content" style="display:none;">
+      <h5>Tools (MCP)</h5>
+      <p>Add tools when the model needs real-time context (reading files, searching docs).</p>
+    </div>
+    <div id="panel-209-eval" class="llm-panel-content" style="display:none;">
+      <h5>Evaluation</h5>
+      <p>Add this as soon as you have a model running to prevent "vibe-based" model swapping.</p>
+    </div>
+    <div id="panel-209-api" class="llm-panel-content" style="display:none;">
+      <h5>API Shape</h5>
+      <p>Ensuring your local runtime exposes an OpenAI-compatible API allows you to use almost any modern client UI.</p>
+    </div>
+    <div id="panel-209-model" class="llm-panel-content" style="display:none;">
+      <h5>Model</h5>
+      <p>Start here. Get one model responding reliably before adding frontends.</p>
+    </div>
+    <div id="panel-209-runtime" class="llm-panel-content" style="display:none;">
+      <h5>Runtime</h5>
+      <p>The foundation of the local stack. It talks to the hardware so you don't have to.</p>
+    </div>
+  </div>
+</div>
 Build the stack one layer at a time. If you cannot explain what a layer does, do not add it yet.
 
 ## Step 1: run one local model

@@ -28,6 +28,39 @@ A coding agent is not just a model. It is a system:
 | Permissions | What the agent can read, write, run, or access |
 | Verification | Tests, builds, screenshots, logs, reviews |
 
+<div class="llm-diagram-container" id="diagram-206">
+  <div class="llm-diagram-header">
+    <h4>The Agentic Loop</h4>
+    <p><button id="btn-206-play" style="padding:4px 8px; cursor:pointer;">Play Agent Loop</button></p>
+  </div>
+  <div class="llm-loop-layout">
+    <div class="llm-node llm-node-circle" id="node-206-observe">Observe<br><small>Read context</small></div>
+    <div class="llm-edge">→</div>
+    <div class="llm-node llm-node-circle" id="node-206-decide">Decide<br><small>Plan action</small></div>
+    <div class="llm-edge">→</div>
+    <div class="llm-node llm-node-circle" id="node-206-act">Act<br><small>Call tool</small></div>
+    <div class="llm-edge">→</div>
+    <div class="llm-node llm-node-circle" id="node-206-verify">Verify<br><small>Check result</small></div>
+  </div>
+  <div class="llm-detail-panel" id="detail-206">
+    <div id="panel-node-206-observe" class="llm-panel-content" style="display:none;">
+      <h5>1. Observe</h5>
+      <p>The agent reads the initial prompt, inspects the workspace, and gathers necessary context from files or tool outputs.</p>
+    </div>
+    <div id="panel-node-206-decide" class="llm-panel-content" style="display:none;">
+      <h5>2. Decide</h5>
+      <p>The model reasons about what to do next based on the rules, skills, and current state. It decides which tool to call.</p>
+    </div>
+    <div id="panel-node-206-act" class="llm-panel-content" style="display:none;">
+      <h5>3. Act</h5>
+      <p>The agent executes a tool call. For example, it writes code to a file, runs a bash command, or searches the web.</p>
+    </div>
+    <div id="panel-node-206-verify" class="llm-panel-content" style="display:none;">
+      <h5>4. Verify</h5>
+      <p>The agent observes the result of the action (e.g., test passed or failed). If failed, it loops back to decide how to fix it.</p>
+    </div>
+  </div>
+</div>
 This is why an agent can be more useful than a raw local chat model for coding. It can act, observe, and revise.
 
 ## Claude Code

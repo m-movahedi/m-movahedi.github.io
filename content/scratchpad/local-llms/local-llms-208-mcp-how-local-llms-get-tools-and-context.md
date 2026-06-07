@@ -28,6 +28,52 @@ In beginner terms:
 | Resource | Readable context, such as a file, document, issue, or database entry |
 | Permission layer | Rules about what the model is allowed to access or change |
 
+<div class="llm-diagram-container" id="diagram-208">
+  <div class="llm-diagram-header">
+    <h4>Model Context Protocol (MCP)</h4>
+    <p>Click a component to see its role</p>
+  </div>
+  <div class="llm-flow-layout">
+    <div class="llm-node" data-target="panel-208-model">
+      <div class="llm-node-title">LLM</div>
+      <div class="llm-node-subtitle">Generates Text / Tool Calls</div>
+    </div>
+    <div class="llm-edge">↔</div>
+    <div class="llm-node" data-target="panel-208-client" style="border-width: 3px; border-color: rgba(40, 160, 100, 0.7);">
+      <div class="llm-node-title">MCP Client</div>
+      <div class="llm-node-subtitle">Your App / Agent</div>
+    </div>
+    <div class="llm-edge">↔</div>
+    <div class="llm-stack-layout" style="gap:0.2rem;">
+      <div class="llm-node" data-target="panel-208-server1">
+        <div class="llm-node-title">Filesystem Server</div>
+        <div class="llm-node-subtitle">Reads local files</div>
+      </div>
+      <div class="llm-node" data-target="panel-208-server2">
+        <div class="llm-node-title">GitHub Server</div>
+        <div class="llm-node-subtitle">Reads Issues/PRs</div>
+      </div>
+    </div>
+  </div>
+  <div class="llm-detail-panel" id="detail-208">
+    <div id="panel-208-model" class="llm-panel-content" style="display:none;">
+      <h5>The Model</h5>
+      <p>The LLM receives a prompt that includes the descriptions of available tools. When it wants to use a tool, it outputs a structured request (e.g., JSON).</p>
+    </div>
+    <div id="panel-208-client" class="llm-panel-content" style="display:none;">
+      <h5>The MCP Client</h5>
+      <p>The orchestrator. It sits between the Model and the Servers. It catches the tool call from the model, routes it to the correct MCP Server, and handles permission checks.</p>
+    </div>
+    <div id="panel-208-server1" class="llm-panel-content" style="display:none;">
+      <h5>Filesystem Server (Example)</h5>
+      <p>A specialized process that strictly handles interacting with the local disk. It returns file contents to the Client, which then passes it back to the Model.</p>
+    </div>
+    <div id="panel-208-server2" class="llm-panel-content" style="display:none;">
+      <h5>GitHub Server (Example)</h5>
+      <p>An external connector. This server securely manages GitHub API tokens so the Client and Model never have to see the secrets directly.</p>
+    </div>
+  </div>
+</div>
 The model does not become all-powerful. The client decides what servers are connected and what actions require approval.
 
 Official source to verify:

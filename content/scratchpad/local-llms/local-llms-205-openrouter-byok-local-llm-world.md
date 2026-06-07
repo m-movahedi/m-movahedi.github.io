@@ -24,6 +24,41 @@ A simple hybrid workflow looks like this:
 | Hosted router | Model comparison, stronger models, larger contexts, backup path |
 | Application | Chat UI, coding agent, script, RAG system, or evaluation harness |
 
+<div class="llm-diagram-container" id="diagram-205">
+  <div class="llm-diagram-header">
+    <h4>Hybrid Routing Workflow</h4>
+    <p><button id="btn-205-toggle" style="padding:4px 8px; cursor:pointer;">Switch to Hosted Route</button></p>
+  </div>
+  <div class="llm-flow-layout" style="align-items: stretch;">
+    <div class="llm-node" style="display:flex; align-items:center;">
+      <div class="llm-node-title">Application<br><small>Your Chat UI or Agent</small></div>
+    </div>
+    <div style="display:flex; flex-direction:column; justify-content:space-around;">
+      <div class="llm-edge route-local">↗</div>
+      <div class="llm-edge route-hosted" style="opacity:0.2;">↘</div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:1rem;">
+      <div class="llm-node route-local">
+        <div class="llm-node-title">Local Runtime</div>
+        <div class="llm-node-subtitle">Private Drafts & Evals</div>
+      </div>
+      <div class="llm-node route-hosted" style="opacity:0.2;">
+        <div class="llm-node-title">Hosted Router</div>
+        <div class="llm-node-subtitle">OpenRouter API</div>
+      </div>
+    </div>
+  </div>
+  <div class="llm-detail-panel active" id="detail-205">
+    <div id="panel-205-local" class="llm-panel-content">
+      <h5>The Local Route</h5>
+      <p>Used for routine tasks, exploring ideas, offline work, and keeping sensitive data strictly on your machine. Costs nothing per prompt.</p>
+    </div>
+    <div id="panel-205-hosted" class="llm-panel-content" style="display:none;">
+      <h5>The Hosted Route</h5>
+      <p>Used as an escape hatch. When a task requires a massive context window or reasoning capabilities beyond your hardware's limits, the request is routed here.</p>
+    </div>
+  </div>
+</div>
 You can start local and escalate only when needed. That is different from sending every prompt to the cloud by default.
 
 ## What OpenRouter does

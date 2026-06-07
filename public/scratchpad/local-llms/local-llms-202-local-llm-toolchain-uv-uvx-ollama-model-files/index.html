@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,22 +22,22 @@
     <meta name="description" content="A local LLM setup can feel messy because several tools appear at once: Python environments, command-line utilities, model downloaders, model runtimes, chat …">
     <meta name="keywords" content='Local LLMs, Ollama, uv, AI Tools'>
 
-    <meta property="og:url" content="https://m-movahedi.com/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
+    <meta property="og:url" content="http://localhost:1313/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Local LLMs 202: The Local LLM Toolchain: uv, uvx, Ollama, and Model Files">
     <meta property="og:description" content="A local LLM setup can feel messy because several tools appear at once: Python environments, command-line utilities, model downloaders, model runtimes, chat …">
-    <meta property="og:image" content="https://m-movahedi.com/images/profile.png">
-    <meta property="og:image:secure_url" content="https://m-movahedi.com/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Local LLMs 202: The Local LLM Toolchain: uv, uvx, Ollama, and Model Files">
     <meta name="twitter:description" content="A local LLM setup can feel messy because several tools appear at once: Python environments, command-line utilities, model downloaders, model runtimes, chat …">
-    <meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
-    <meta property="twitter:url" content="https://m-movahedi.com/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
-    <meta name="twitter:image" content="https://m-movahedi.com/images/profile.png">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
 
     
-    <link rel="canonical" href="https://m-movahedi.com/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
+    <link rel="canonical" href="http://localhost:1313/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -62,8 +62,10 @@
 
 <link rel="stylesheet" href="/css/llm-series.css">
 <link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
 
 <script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
 <script>
@@ -89,44 +91,44 @@ gtag('config', 'G-1WZSE8DHZ9');
 
         
         <div class="avatar">
-            <a href="https://m-movahedi.com/">
+            <a href="http://localhost:1313/">
                 <img src='/images/profile.png' alt="Mohammad Movahedi">
             </a>
         </div>
         
 
         <div class="nav-title">
-            <a class="nav-brand" href="https://m-movahedi.com/">Mohammad Movahedi</a>
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
         </div>
 
         <div class="nav-links">
             
             <div class="nav-link">
-                <a href="https://m-movahedi.com/" aria-label="" > Home </a>
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://m-movahedi.com/background/" aria-label="" > Background </a>
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://m-movahedi.com/webinars/" aria-label="" > Webinars </a>
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://m-movahedi.com/research/" aria-label="" > Research </a>
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://m-movahedi.com/blog/" aria-label="" > Blog </a>
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://m-movahedi.com/scratchpad/" aria-label="" > Scratchpad </a>
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
             </div>
             
             <div class="nav-link">
-                <a href="https://m-movahedi.com/about/" aria-label="" > About </a>
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
             </div>
             
 
@@ -149,31 +151,31 @@ gtag('config', 'G-1WZSE8DHZ9');
             <ul class="nav-hamburger-list visibility-hidden">
                 
                 <li class="nav-item">
-                    <a href="https://m-movahedi.com/" > Home </a>
+                    <a href="http://localhost:1313/" > Home </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://m-movahedi.com/background/" > Background </a>
+                    <a href="http://localhost:1313/background/" > Background </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://m-movahedi.com/webinars/" > Webinars </a>
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://m-movahedi.com/research/" > Research </a>
+                    <a href="http://localhost:1313/research/" > Research </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://m-movahedi.com/blog/" > Blog </a>
+                    <a href="http://localhost:1313/blog/" > Blog </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://m-movahedi.com/scratchpad/" > Scratchpad </a>
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="https://m-movahedi.com/about/" > About </a>
+                    <a href="http://localhost:1313/about/" > About </a>
                 </li>
                 
                 <li class="nav-item dark-theme-toggle">
@@ -222,19 +224,19 @@ gtag('config', 'G-1WZSE8DHZ9');
         <ul class="post-tags">
           
            
-             <li class="post-tag"><a href="https://m-movahedi.com/tags/local-llms">Local LLMs</a></li>
+             <li class="post-tag"><a href="http://localhost:1313/tags/local-llms">Local LLMs</a></li>
            
          
            
-             <li class="post-tag"><a href="https://m-movahedi.com/tags/ollama">Ollama</a></li>
+             <li class="post-tag"><a href="http://localhost:1313/tags/ollama">Ollama</a></li>
            
          
            
-             <li class="post-tag"><a href="https://m-movahedi.com/tags/uv">uv</a></li>
+             <li class="post-tag"><a href="http://localhost:1313/tags/uv">uv</a></li>
            
          
            
-             <li class="post-tag"><a href="https://m-movahedi.com/tags/ai-tools">AI Tools</a></li>
+             <li class="post-tag"><a href="http://localhost:1313/tags/ai-tools">AI Tools</a></li>
            
          
         </ul>
@@ -276,7 +278,51 @@ gtag('config', 'G-1WZSE8DHZ9');
       </tr>
   </tbody>
 </table>
-<p>The same local model might be used from a terminal, a web UI, a notebook, or an editor. The model is the engine. The surrounding tools decide how pleasant it is to use.</p>
+<div class="llm-diagram-container" id="diagram-202">
+  <div class="llm-diagram-header">
+    <h4>The Toolchain Divide</h4>
+    <p>Click a tool to see its primary job</p>
+  </div>
+  <div class="llm-flow-layout">
+    <div style="text-align:center;">
+      <h5 style="margin-bottom:0.5rem;">Python Management</h5>
+      <div class="llm-node" data-target="panel-202-uv">
+        <div class="llm-node-title">uv / uvx</div>
+        <div class="llm-node-subtitle">Dependencies & CLI Tools</div>
+      </div>
+    </div>
+    <div class="llm-edge">← Integrates →</div>
+    <div style="text-align:center;">
+      <h5 style="margin-bottom:0.5rem;">Local Models</h5>
+      <div class="llm-stack-layout" style="gap:0.2rem;">
+        <div class="llm-node" data-target="panel-202-ollama">
+          <div class="llm-node-title">Ollama</div>
+          <div class="llm-node-subtitle">Runtime API</div>
+        </div>
+        <div class="llm-edge vertical" style="padding:0; font-size:1rem;">↓</div>
+        <div class="llm-node" data-target="panel-202-model">
+          <div class="llm-node-title">Model File</div>
+          <div class="llm-node-subtitle">GGUF / Weights</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="llm-detail-panel" id="detail-202">
+    <div id="panel-202-uv" class="llm-panel-content" style="display:none;">
+      <h5>uv and uvx</h5>
+      <p>Use <code>uv</code> to manage your Python projects, and <code>uvx</code> to run isolated scripts (like evals) without breaking your environment.</p>
+    </div>
+    <div id="panel-202-ollama" class="llm-panel-content" style="display:none;">
+      <h5>Ollama (Runtime)</h5>
+      <p>Downloads models and exposes them via a local API (e.g., <code>localhost:11434</code>). Your Python scripts talk to this API, not the model directly.</p>
+    </div>
+    <div id="panel-202-model" class="llm-panel-content" style="display:none;">
+      <h5>Model File</h5>
+      <p>The actual neural network. Managed and loaded by Ollama.</p>
+    </div>
+  </div>
+</div>
+The same local model might be used from a terminal, a web UI, a notebook, or an editor. The model is the engine. The surrounding tools decide how pleasant it is to use.
 <h2 id="what-uv-is-for">What <code>uv</code> is for</h2>
 <p><code>uv</code> is a fast Python package and project manager from Astral. It can create and synchronize project environments, manage dependencies, install Python versions, and run commands inside a project environment.</p>
 <p>If you are building scripts around local LLMs, <code>uv</code> helps avoid the old &ldquo;which Python environment is this using?&rdquo; problem. A project can declare dependencies in <code>pyproject.toml</code>, and <code>uv run</code> can execute commands in the project environment.</p>

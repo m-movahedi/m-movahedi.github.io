@@ -23,6 +23,45 @@ Think of a local LLM setup as three separate things:
 | Runtime | The program that loads and serves the model, such as Ollama, llama.cpp, LM Studio, vLLM, or MLX-based tools | Can this runtime load this file format on my computer? |
 | Hardware | Your CPU, RAM, GPU, VRAM, disk, and operating system | Will it be fast enough and stable enough? |
 
+<div class="llm-diagram-container" id="diagram-201">
+  <div class="llm-diagram-header">
+    <h4>The Local LLM Stack</h4>
+    <p>Click a layer to see more details</p>
+  </div>
+  <div class="llm-stack-layout">
+    <div class="llm-node" data-target="panel-201-model">
+      <div class="llm-node-title">Model</div>
+      <div class="llm-node-subtitle">Llama, Qwen, Mistral, etc.</div>
+    </div>
+    <div class="llm-edge vertical">↓</div>
+    <div class="llm-node" data-target="panel-201-runtime">
+      <div class="llm-node-title">Runtime</div>
+      <div class="llm-node-subtitle">Ollama, LM Studio, vLLM</div>
+    </div>
+    <div class="llm-edge vertical">↓</div>
+    <div class="llm-node" data-target="panel-201-hardware">
+      <div class="llm-node-title">Hardware</div>
+      <div class="llm-node-subtitle">RAM, GPU, Disk</div>
+    </div>
+  </div>
+  <div class="llm-detail-panel" id="detail-201">
+    <div id="panel-201-model" class="llm-panel-content" style="display:none;">
+      <h5>The Model Layer</h5>
+      <p>The mathematical weights. Models are inert files until loaded.</p>
+      <ul><li>Examples: Llama 3 8B, Qwen 2.5</li><li>Beginner question: What is this model good at?</li></ul>
+    </div>
+    <div id="panel-201-runtime" class="llm-panel-content" style="display:none;">
+      <h5>The Runtime Layer</h5>
+      <p>The engine that loads the model weights into memory and provides an API or chat interface.</p>
+      <ul><li>Examples: Ollama, LM Studio, llama.cpp</li><li>Beginner question: Can this load this file format?</li></ul>
+    </div>
+    <div id="panel-201-hardware" class="llm-panel-content" style="display:none;">
+      <h5>The Hardware Layer</h5>
+      <p>Your physical machine. VRAM (GPU memory) is the most critical constraint for fast local inference.</p>
+      <ul><li>Constraints: 8GB RAM (small), 16GB (medium), 24GB VRAM (large)</li><li>Beginner question: Will it be fast enough?</li></ul>
+    </div>
+  </div>
+</div>
 The model is not the app. The model is closer to a large mathematical object. The runtime is the engine that loads it. Your hardware decides how large the engine can be before it starts crawling.
 
 ## Local vs hosted models

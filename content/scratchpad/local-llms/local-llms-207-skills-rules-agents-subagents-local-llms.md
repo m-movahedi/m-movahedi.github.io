@@ -27,6 +27,51 @@ Think of these concepts as layers of reusable behavior:
 | Project instructions | Repo-specific guidance for how work should be done |
 | MCP tool | A live capability exposed to a model, such as reading issues or querying a database |
 
+<div class="llm-diagram-container" id="diagram-207">
+  <div class="llm-diagram-header">
+    <h4>Durable Context Hierarchy</h4>
+    <p>Click an entity to see its role</p>
+  </div>
+  <div class="llm-stack-layout">
+    <div class="llm-node" data-target="panel-207-rules">
+      <div class="llm-node-title">Rules</div>
+      <div class="llm-node-subtitle">Global or Workspace Constraints</div>
+    </div>
+    <div class="llm-edge vertical">↓</div>
+    <div class="llm-node" data-target="panel-207-skills">
+      <div class="llm-node-title">Skills</div>
+      <div class="llm-node-subtitle">Reusable Workflows</div>
+    </div>
+    <div class="llm-edge vertical">↓</div>
+    <div class="llm-tree-level" style="margin-bottom:0;">
+      <div class="llm-node" data-target="panel-207-main">
+        <div class="llm-node-title">Main Agent</div>
+      </div>
+      <div class="llm-edge">→</div>
+      <div class="llm-node" data-target="panel-207-sub">
+        <div class="llm-node-title">Subagents</div>
+      </div>
+    </div>
+  </div>
+  <div class="llm-detail-panel" id="detail-207">
+    <div id="panel-207-rules" class="llm-panel-content" style="display:none;">
+      <h5>Rules</h5>
+      <p>Always-on or context-triggered instructions. Example: "Never edit files in the <code>public/</code> directory."</p>
+    </div>
+    <div id="panel-207-skills" class="llm-panel-content" style="display:none;">
+      <h5>Skills</h5>
+      <p>Packaged workflows. Example: A "PR Review" skill that tells the agent exactly what checklist to run against a diff.</p>
+    </div>
+    <div id="panel-207-main" class="llm-panel-content" style="display:none;">
+      <h5>Main Agent</h5>
+      <p>The orchestrator. It holds the user's primary intent, applies the rules, uses skills, and delegates tasks.</p>
+    </div>
+    <div id="panel-207-sub" class="llm-panel-content" style="display:none;">
+      <h5>Subagents</h5>
+      <p>Focused workers spawned by the main agent. Example: A "Research Subagent" with read-only access that scans 50 files without cluttering the main agent's context.</p>
+    </div>
+  </div>
+</div>
 Different products use different names, but the purpose is similar: reduce repeated prompting and make behavior more consistent.
 
 ## Rules

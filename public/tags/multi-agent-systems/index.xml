@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Multi-Agent Systems on Mohammad Movahedi</title>
-    <link>https://m-movahedi.com/tags/multi-agent-systems/</link>
+    <link>http://localhost:1313/tags/multi-agent-systems/</link>
     <description>Recent content in Multi-Agent Systems on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 07 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://m-movahedi.com/tags/multi-agent-systems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/multi-agent-systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Designing Your Research Team: Agent Roles and Coordination</title>
-      <link>https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/</link>
+      <link>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</link>
       <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/</guid>
+      <guid>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</guid>
       <description>&lt;p&gt;Once you decide to use agents for research, the next question is immediate: what should each agent do?&lt;/p&gt;&#xA;&lt;p&gt;The temptation is to build one big &amp;ldquo;research agent&amp;rdquo; that does everything. That is a mistake. A research team is useful precisely because it is specialized. Each agent does one thing well. They coordinate through shared knowledge.&lt;/p&gt;&#xA;&lt;p&gt;This post is about designing that team: what roles make sense, how they specialize, how they coordinate, and when to merge or split roles.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Research as an Agent Problem</title>
-      <link>https://m-movahedi.com/scratchpad/research-agents/01-research-as-agent-problem/</link>
+      <link>http://localhost:1313/scratchpad/research-agents/01-research-as-agent-problem/</link>
       <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/scratchpad/research-agents/01-research-as-agent-problem/</guid>
+      <guid>http://localhost:1313/scratchpad/research-agents/01-research-as-agent-problem/</guid>
       <description>&lt;p&gt;A researcher&amp;rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas across domains, and revising your own methods based on what you find. Most of this work is done alone or in small teams. Each researcher becomes a bottleneck.&lt;/p&gt;&#xA;&lt;p&gt;What if instead of one person reading papers, summarizing, and synthesizing, you had specialized agents exploring in parallel?&lt;/p&gt;&#xA;&lt;p&gt;This is not about replacing researchers. It is about freeing researchers to focus on the hard thinking while agents handle the systematic, observable, and repeatable work.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -28,6 +28,22 @@ A model name is only the label at the top of the stack. Behavior comes from the 
 | Provider | Local machine, OpenRouter route, direct vendor API |
 | Parameters | Temperature, top_p, max tokens, reasoning settings, stop sequences |
 
+<div class="llm-diagram-container" id="diagram-204">
+  <div class="llm-diagram-header">
+    <h4>The "Same Model" Stack</h4>
+    <p>A model name is just the top layer. <button id="btn-204-highlight" style="margin-left:10px; padding:4px 8px; cursor:pointer;">Highlight Differences</button></p>
+  </div>
+  <div class="llm-grid-layout" style="grid-template-columns: repeat(4, 1fr); gap: 0.5rem; text-align: center;">
+    <div class="llm-node"><div class="llm-node-title">Family</div><div class="llm-node-subtitle">e.g. Qwen</div></div>
+    <div class="llm-node"><div class="llm-node-title">Checkpoint</div><div class="llm-node-subtitle">e.g. Instruct</div></div>
+    <div class="llm-node"><div class="llm-node-title">Format</div><div class="llm-node-subtitle">e.g. GGUF</div></div>
+    <div class="llm-node"><div class="llm-node-title">Quantization</div><div class="llm-node-subtitle">e.g. Q4_K_M</div></div>
+    <div class="llm-node"><div class="llm-node-title">Runtime</div><div class="llm-node-subtitle">e.g. Ollama</div></div>
+    <div class="llm-node"><div class="llm-node-title">Template</div><div class="llm-node-subtitle">e.g. ChatML</div></div>
+    <div class="llm-node"><div class="llm-node-title">Provider</div><div class="llm-node-subtitle">e.g. Local</div></div>
+    <div class="llm-node"><div class="llm-node-title">Params</div><div class="llm-node-subtitle">e.g. Temp 0.7</div></div>
+  </div>
+</div>
 If any layer changes, the behavior can change.
 
 ## Base vs instruct vs chat
