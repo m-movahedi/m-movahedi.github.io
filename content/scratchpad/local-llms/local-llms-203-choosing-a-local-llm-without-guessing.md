@@ -61,7 +61,7 @@ The "best" model on a leaderboard may be the wrong model for your laptop.
 
 ## Common model families
 
-As of drafting, these are common families beginners will encounter:
+As of May 2026, these are common families beginners will encounter:
 
 | Family | Why people use it | What to check |
 | --- | --- | --- |
