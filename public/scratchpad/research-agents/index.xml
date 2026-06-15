@@ -6,8 +6,50 @@
     <description>Recent content in Agentic AI as a Research Tool on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 07 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/scratchpad/research-agents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scaling and Maintaining: Sustaining Your Research Team</title>
+      <link>http://localhost:1313/scratchpad/research-agents/08-scaling-and-maintaining/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/08-scaling-and-maintaining/</guid>
+      <description>&lt;p&gt;You built a research team. It produced a literature review in 2 weeks. Now what?&lt;/p&gt;&#xA;&lt;p&gt;Research does not stop. New papers arrive every week. New questions emerge. Maybe you want to run a second research project while the first one continues. Maybe you want to share the workflow with collaborators. Maybe you realize your Scout is expensive because it&amp;rsquo;s calling hosted APIs every search.&lt;/p&gt;&#xA;&lt;p&gt;This post is about the infrastructure and practices that let your research team scale from &amp;ldquo;one project&amp;rdquo; to &amp;ldquo;long-running research operations.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Idea to First Draft: An End-to-End Walkthrough</title>
+      <link>http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/</link>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/</guid>
+      <description>&lt;p&gt;You have a research question. You have a research team (5 specialized agents). Now what?&lt;/p&gt;&#xA;&lt;p&gt;This post walks through a complete workflow from idea to polished first draft. You will see what agents do, where humans intervene, what surprises appear, and how the team navigates them.&lt;/p&gt;&#xA;&lt;p&gt;We will use a real research question: &lt;strong&gt;How do household evacuation decisions integrate social networks and behavioral heterogeneity?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;phase-1-setup-day-0&#34;&gt;Phase 1: Setup (Day 0)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-define-the-scope&#34;&gt;Step 1: Define the scope&lt;/h3&gt;&#xA;&lt;p&gt;You sit down with a clear research question:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multi-Agent Workflows: Coordination and Conflict Resolution</title>
+      <link>http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/</link>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/</guid>
+      <description>&lt;p&gt;Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe each other&amp;rsquo;s findings, discover contradictions, and learn from feedback.&lt;/p&gt;&#xA;&lt;p&gt;This post is about how agents work together when they disagree, when they discover something surprising, and when the human researcher needs to intervene.&lt;/p&gt;&#xA;&lt;h2 id=&#34;coordination-patterns-revisited&#34;&gt;Coordination patterns revisited&lt;/h2&gt;&#xA;&lt;p&gt;Recall three coordination patterns from earlier:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sequential pipeline&lt;/strong&gt; - Scout → Analyzer → Gap Finder → Synthesis → Critic&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Parallel exploration&lt;/strong&gt; - Multiple Scouts search in parallel, results merge&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Continuous loop&lt;/strong&gt; - Agents direct each other; workflow runs indefinitely&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Each pattern handles coordination differently.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Synthesis Agent: From Data to Narrative</title>
+      <link>http://localhost:1313/scratchpad/research-agents/05-synthesis-agent/</link>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/05-synthesis-agent/</guid>
+      <description>&lt;p&gt;You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.&lt;/p&gt;&#xA;&lt;p&gt;But you still do not have a story. You do not have sentences that connect findings. You do not have a narrative that says: &amp;ldquo;Here is what we know. Here is what we do not know. Here is why your research matters.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;This is where the Synthesis Agent works. It is not a writer (narrative is not its strength). It is a &lt;em&gt;storyteller&lt;/em&gt;: taking structured data and proposing connections, identifying themes, drafting sections, building the backbone of a literature review.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Methodology Analyzer: Extracting Structured Research Data</title>
+      <link>http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/</link>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/</guid>
+      <description>&lt;p&gt;The Scout brought you 200 papers. Now what? You could read them all, but that takes weeks. Instead, let the Methodology Analyzer extract the important structure: what dataset did they use? What method? How did they validate? What did they claim and what are the limitations?&lt;/p&gt;&#xA;&lt;p&gt;This extraction enables the Gap Finder to spot what is missing, and the Synthesis Writer to build a coherent narrative.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-analyzers-challenge&#34;&gt;The Analyzer&amp;rsquo;s challenge&lt;/h2&gt;&#xA;&lt;p&gt;If you read 200 papers and manually extract data, you will:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Literature Scout Agent: Systematic Paper Search</title>
+      <link>http://localhost:1313/scratchpad/research-agents/03-literature-scout-agent/</link>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/03-literature-scout-agent/</guid>
+      <description>&lt;p&gt;The Literature Scout&amp;rsquo;s job sounds simple: find papers. In practice, it is the most consequential agent on your team. If the Scout misses papers, the rest of the team never sees them. Everything downstream is incomplete.&lt;/p&gt;&#xA;&lt;p&gt;This post is about building a Scout that is exhaustive, systematic, and reliable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-scouts-challenge&#34;&gt;The Scout&amp;rsquo;s challenge&lt;/h2&gt;&#xA;&lt;p&gt;A typical researcher manually searches:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Google Scholar: &amp;#34;evacuation behavior&amp;#34;&#xD;&#xA;Google Scholar: &amp;#34;disaster evacuation&amp;#34;&#xD;&#xA;Google Scholar: &amp;#34;agent-based evacuation&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then stops, satisfied they have found &amp;ldquo;the papers.&amp;rdquo; But they have missed:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Designing Your Research Team: Agent Roles and Coordination</title>
       <link>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</link>

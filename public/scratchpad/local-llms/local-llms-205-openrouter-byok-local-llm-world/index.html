@@ -422,7 +422,71 @@ You can start local and escalate only when needed. That is different from sendin
   <strong>Key papers on model routing, multi-model inference, and deployment</strong>
   <ul>
     <li><a href="https://arxiv.org/abs/2308.06356">Frye et al. (2023), "Token-level Reference-free Machine Translation Evaluation"</a>: relevant for comparing hosted versus local model outputs and designing evaluation frameworks.</li>
-    <li><a href="https://arxiv.org/abs/2305.18290">Touvron et al. (2023), "Llama 2: Open Foundation and Fine-Tuned Chat Models"</a>: widely used open model that runs locally; understanding deployment patter
+    <li><a href="https://arxiv.org/abs/2305.18290">Touvron et al. (2023), "Llama 2: Open Foundation and Fine-Tuned Chat Models"</a>: widely used open model that runs locally; understanding deployment patterns and inference optimizations relevant to local-hosted hybrid setups.</li>
+    <li><a href="https://arxiv.org/abs/2209.12737">Liang et al. (2022), "Holistic Evaluation of Language Models"</a>: framework for understanding model performance across different deployment scenarios and provider contexts.</li>
+  </ul>
+</div>
+<h2 id="local-runtime-vs-hosted-router">Local runtime vs hosted router</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Local runtime</th>
+          <th>Hosted router</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Data location</td>
+          <td>Your machine, depending on app behavior</td>
+          <td>Remote service and provider path</td>
+      </tr>
+      <tr>
+          <td>Setup</td>
+          <td>More local setup</td>
+          <td>Easier API access</td>
+      </tr>
+      <tr>
+          <td>Cost</td>
+          <td>Hardware and electricity after setup</td>
+          <td>Pay per use or account limits</td>
+      </tr>
+      <tr>
+          <td>Speed</td>
+          <td>Depends on your hardware</td>
+          <td>Depends on provider and network</td>
+      </tr>
+      <tr>
+          <td>Model strength</td>
+          <td>Limited by hardware</td>
+          <td>Access to larger models</td>
+      </tr>
+      <tr>
+          <td>Offline use</td>
+          <td>Possible</td>
+          <td>No</td>
+      </tr>
+      <tr>
+          <td>Feature support</td>
+          <td>Runtime-dependent</td>
+          <td>Endpoint-dependent</td>
+      </tr>
+  </tbody>
+</table>
+<p>The right answer is often not one or the other. It is a default path plus an escape hatch.</p>
+<h2 id="practical-workflow">Practical workflow</h2>
+<ol>
+<li>Run routine prompts locally first.</li>
+<li>Keep a hosted model available for harder tasks.</li>
+<li>Use the same evaluation prompts across local and hosted models.</li>
+<li>Track model ID, provider, cost, and quality.</li>
+<li>Keep sensitive prompts local unless you have reviewed provider policy.</li>
+<li>Check supported parameters before relying on tools or structured outputs.</li>
+</ol>
+<h2 id="what-to-verify-because-tools-change">What to verify because tools change</h2>
+<p>Before publishing exact model suggestions, verify the current OpenRouter model list, model IDs, provider routes, context lengths, pricing, and supported parameters. Do not assume two endpoints with similar names have the same behavior.</p>
+<p>The practical lesson: OpenRouter is not a replacement for local LLMs. It is a useful bridge between local control and hosted model variety.</p>
+
         
     </div>
 

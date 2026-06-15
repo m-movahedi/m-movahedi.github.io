@@ -6,8 +6,15 @@
     <description>Recent content in Transportation Planning on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/transportation-planning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Robust Mobile Electric Vehicle Charging Solutions for Natural Disasters</title>
+      <link>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</guid>
+      <description>&lt;p&gt;The transition to electric vehicles (EVs) introduces new paradigms for emergency management, particularly in hurricane-prone regions. During extreme weather events, the vulnerability of the power grid becomes a critical bottleneck. Structural failures within the transmission and distribution networks can disable permanently installed EV charging stations precisely when they are most necessary for mass population evacuations.&lt;/p&gt;&#xA;&lt;div style=&#34;background-color: #f4f6f9; padding: 20px; border-left: 5px solid #0056b3; border-radius: 4px; margin: 25px 0;&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #0056b3;&#34;&gt;The Research Problem&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; font-size: 1.1em;&#34;&gt;How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Tehran Sightseeing Tour Planning</title>
       <link>http://localhost:1313/research/sightseeing-tour-planning/</link>

@@ -451,8 +451,44 @@ Different products use different names, but the purpose is similar: reduce repea
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Verify model IDs and quantization.
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Run the fixed prompt set.
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> Score output quality, speed, and failures.
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> Recommend the smallest model that p
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> Recommend the smallest model that passes the target tasks.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">6.</span> Save results with date, model ID, runtime, and parameters.
+</span></span></code></pre></div><p>The important part is repeatability. If you test models differently every time, you are mostly testing your mood.</p>
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+<div class="llm-papers">
+  <strong>Key papers on prompting, instruction following, and agent evaluation</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: foundational work on instruction tuning and RLHF that explains why trained agents follow reusable instructions better than base models.</li>
+    <li><a href="https://arxiv.org/abs/2212.09561">Wei et al. (2022), "Emergent Abilities of Large Language Models"</a>: explains scaling phenomena relevant to choosing between models for reliable instruction and tool-use compliance.</li>
+    <li><a href="https://arxiv.org/abs/2311.07102">Xu et al. (2023), "Agents That Can Read: Diverse Retrieval-Augmented Generation for Questionnaire-style Machine Reading Assessment"</a>: relevant to how agents and subagents manage context, instructions, and information retrieval.</li>
+  </ul>
+</div>
+<h2 id="what-to-verify-because-tools-change">What to verify because tools change</h2>
+<p>Verify product-specific file paths, activation rules, subagent support, and tool permissions from official docs. The concepts are stable, but the exact implementation details differ across Codex, Claude Code, Antigravity, and local agent frameworks.</p>
+<p>The practical lesson: skills and rules are how you stop retyping your working style. Subagents are how you split large work into focused roles. Local LLMs can participate, but the surrounding tool system decides how agentic they really are.</p>
+
         
     </div>
 

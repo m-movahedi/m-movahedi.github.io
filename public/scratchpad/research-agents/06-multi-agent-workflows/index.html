@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Multi-Agent Workflows: Coordination and Conflict Resolution</title>
+    <meta name="description" content="Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe …">
+    <meta name="keywords" content='AI Agents, Multi-agent systems, Coordination patterns, Research workflows, Conflict resolution'>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Multi-Agent Workflows: Coordination and Conflict Resolution">
+    <meta property="og:description" content="Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Multi-Agent Workflows: Coordination and Conflict Resolution">
+    <meta name="twitter:description" content="Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Multi-Agent Workflows: Coordination and Conflict Resolution</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 11, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/ai-agents">AI Agents</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/multi-agent-systems">Multi-agent systems</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/coordination-patterns">Coordination patterns</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/research-workflows">Research workflows</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/conflict-resolution">Conflict resolution</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe each other&rsquo;s findings, discover contradictions, and learn from feedback.</p>
+<p>This post is about how agents work together when they disagree, when they discover something surprising, and when the human researcher needs to intervene.</p>
+<h2 id="coordination-patterns-revisited">Coordination patterns revisited</h2>
+<p>Recall three coordination patterns from earlier:</p>
+<ol>
+<li><strong>Sequential pipeline</strong> - Scout → Analyzer → Gap Finder → Synthesis → Critic</li>
+<li><strong>Parallel exploration</strong> - Multiple Scouts search in parallel, results merge</li>
+<li><strong>Continuous loop</strong> - Agents direct each other; workflow runs indefinitely</li>
+</ol>
+<p>Each pattern handles coordination differently.</p>
+<h2 id="pattern-1-sequential-pipeline-simple-but-brittle">Pattern 1: Sequential pipeline (simple but brittle)</h2>
+<pre tabindex="0"><code>Scout (find papers)
+  ↓ incoming_papers.yaml
+Analyzer (extract structure)
+  ↓ methodology_db.csv
+Gap Finder (compare across)
+  ↓ gaps.md
+Synthesis (draft narrative)
+  ↓ draft_review.md
+Critic (question assumptions)
+  ↓ review_notes.md
+Human (decide and refine)
+</code></pre><p><strong>How coordination works:</strong></p>
+<p>Each agent reads the previous agent&rsquo;s output as input.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Scout outputs</span>
+</span></span><span style="display:flex;"><span>scout_output <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;incoming_papers&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;2024_smith&#34;</span>, <span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;...&#34;</span>, <span style="color:#e6db74">&#34;url&#34;</span>: <span style="color:#e6db74">&#34;...&#34;</span>, <span style="color:#e6db74">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;Scholar&#34;</span>}
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;search_stats&#34;</span>: {<span style="color:#e6db74">&#34;total_found&#34;</span>: <span style="color:#ae81ff">50</span>, <span style="color:#e6db74">&#34;new_papers&#34;</span>: <span style="color:#ae81ff">35</span>, <span style="color:#e6db74">&#34;duplicates&#34;</span>: <span style="color:#ae81ff">15</span>}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Analyzer reads incoming_papers, extracts, outputs methodology_db</span>
+</span></span><span style="display:flex;"><span>analyzer_input <span style="color:#f92672">=</span> scout_output[<span style="color:#e6db74">&#34;incoming_papers&#34;</span>]
+</span></span><span style="display:flex;"><span>analyzer_output <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;methodology_db&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;paper_id&#34;</span>: <span style="color:#e6db74">&#34;2024_smith&#34;</span>, <span style="color:#e6db74">&#34;methodology&#34;</span>: <span style="color:#e6db74">&#34;agent-based&#34;</span>, <span style="color:#e6db74">&#34;dataset&#34;</span>: <span style="color:#e6db74">&#34;...&#34;</span>}
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;extraction_stats&#34;</span>: {<span style="color:#e6db74">&#34;total_extracted&#34;</span>: <span style="color:#ae81ff">35</span>, <span style="color:#e6db74">&#34;unclear&#34;</span>: <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;failed&#34;</span>: <span style="color:#ae81ff">0</span>}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Gap Finder reads methodology_db, queries it</span>
+</span></span><span style="display:flex;"><span>gap_finder_input <span style="color:#f92672">=</span> analyzer_output[<span style="color:#e6db74">&#34;methodology_db&#34;</span>]
+</span></span><span style="display:flex;"><span>gap_finder_output <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;gaps&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;gap&#34;</span>: <span style="color:#e6db74">&#34;No papers on neurodivergent populations&#34;</span>, <span style="color:#e6db74">&#34;papers_related&#34;</span>: <span style="color:#ae81ff">0</span>}
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;comparison_stats&#34;</span>: {<span style="color:#e6db74">&#34;unique_methodologies&#34;</span>: <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;unique_datasets&#34;</span>: <span style="color:#ae81ff">12</span>}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># And so on...</span>
+</span></span></code></pre></div><p><strong>Advantages:</strong></p>
+<ul>
+<li>Simple to understand and debug</li>
+<li>Each agent focuses on one job</li>
+<li>Clear input/output contracts</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Errors cascade (Scout misses paper → Analyzer never sees it → Gap Finder misses the gap)</li>
+<li>Slow (waits for each agent to finish)</li>
+<li>Agents cannot redirect each other (if Gap Finder finds a gap, cannot ask Scout to search for it)</li>
+<li>Brittle to changes (if Analyzer extracts differently, downstream agents confused)</li>
+</ul>
+<p><strong>When to use:</strong> First pass on a new research question. One-shot literature review.</p>
+<h2 id="pattern-2-parallel-exploration-faster-more-robust">Pattern 2: Parallel exploration (faster, more robust)</h2>
+<pre tabindex="0"><code>Scout A (Scholar) ┐
+Scout B (arxiv)   ├→ Deduplicator → Analyzer → Gap Finder → Synthesis → Critic
+Scout C (TRID)    │
+Scout D (Methods) ┘
+</code></pre><p><strong>How coordination works:</strong></p>
+<p>Multiple Scouts search independently. Results are merged and deduplicated before downstream agents process.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># All Scouts output to incoming_papers/ directory</span>
+</span></span><span style="display:flex;"><span>scout_results <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>  scout_a_output,  <span style="color:#75715e"># Scholar search results</span>
+</span></span><span style="display:flex;"><span>  scout_b_output,  <span style="color:#75715e"># arxiv results</span>
+</span></span><span style="display:flex;"><span>  scout_c_output,  <span style="color:#75715e"># TRID results</span>
+</span></span><span style="display:flex;"><span>  scout_d_output   <span style="color:#75715e"># Methods search results</span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Deduplicator merges and deduplicates</span>
+</span></span><span style="display:flex;"><span>merged <span style="color:#f92672">=</span> deduplicator<span style="color:#f92672">.</span>merge(scout_results)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># merged.yaml contains combined papers, with duplicates flagged</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Analyzer processes merged, deduplicated list</span>
+</span></span><span style="display:flex;"><span>analyzer_output <span style="color:#f92672">=</span> analyzer<span style="color:#f92672">.</span>run(merged)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Rest of pipeline same as sequential</span>
+</span></span></code></pre></div><p><strong>Advantages:</strong></p>
+<ul>
+<li>Faster (4 Scouts search in parallel vs. 1 Scout sequentially)</li>
+<li>More robust (if Scout A misses papers, Scouts B-D might find them)</li>
+<li>Reduced blind spots</li>
+<li>Parallel execution reduces wall-clock time</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>More complex (requires deduplication logic)</li>
+<li>More duplicates to handle initially</li>
+<li>More coordination overhead</li>
+<li>Still cannot redirect Scouts mid-run</li>
+</ul>
+<p><strong>When to use:</strong> Large-scale literature review. You want comprehensive coverage across many sources.</p>
+<h2 id="pattern-3-continuous-loop-adaptive-but-complex">Pattern 3: Continuous loop (adaptive but complex)</h2>
+<pre tabindex="0"><code>                    Synthesis → Critic
+                    ↓ (feedback)      ↓
+Scout (directed) ← Gap Finder (analyze)
+  ↓                 ↑ (new gaps)
+Analyzer
+</code></pre><p><strong>How coordination works:</strong></p>
+<p>Agents form feedback loops. Gap Finder discovers what is missing, directs Scout to search for it. Scout finds new papers. Analyzer extracts. Gaps might change. Loop continues.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Week 1: Initial search</span>
+</span></span><span style="display:flex;"><span>scout<span style="color:#f92672">.</span>run(task<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Search for evacuation papers&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Week 1: Analysis</span>
+</span></span><span style="display:flex;"><span>analyzer<span style="color:#f92672">.</span>run(on_papers<span style="color:#f92672">=</span>scout<span style="color:#f92672">.</span>output)
+</span></span><span style="display:flex;"><span>gap_finder<span style="color:#f92672">.</span>run(on_data<span style="color:#f92672">=</span>analyzer<span style="color:#f92672">.</span>output)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Week 2: Directed search based on gaps</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> gap <span style="color:#f92672">in</span> gap_finder<span style="color:#f92672">.</span>output[<span style="color:#e6db74">&#34;gaps&#34;</span>]:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> gap<span style="color:#f92672">.</span>is_searchable:
+</span></span><span style="display:flex;"><span>    scout<span style="color:#f92672">.</span>run(task<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Search for papers addressing: </span><span style="color:#e6db74">{</span>gap<span style="color:#f92672">.</span>description<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Week 2: Re-analyze with new papers</span>
+</span></span><span style="display:flex;"><span>analyzer<span style="color:#f92672">.</span>run(on_papers<span style="color:#f92672">=</span>scout<span style="color:#f92672">.</span>output)
+</span></span><span style="display:flex;"><span>gap_finder<span style="color:#f92672">.</span>run(on_data<span style="color:#f92672">=</span>analyzer<span style="color:#f92672">.</span>output)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Synthesis drafts based on current understanding</span>
+</span></span><span style="display:flex;"><span>synthesis<span style="color:#f92672">.</span>run(on_data<span style="color:#f92672">=</span>gap_finder<span style="color:#f92672">.</span>output)
+</span></span><span style="display:flex;"><span>critic<span style="color:#f92672">.</span>run(on_draft<span style="color:#f92672">=</span>synthesis<span style="color:#f92672">.</span>output)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># If Critic finds issues, may direct Gap Finder to re-examine data</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> critic<span style="color:#f92672">.</span>finds_contradiction():
+</span></span><span style="display:flex;"><span>  gap_finder<span style="color:#f92672">.</span>re_examine()
+</span></span></code></pre></div><p><strong>Advantages:</strong></p>
+<ul>
+<li>Agents adapt to findings</li>
+<li>Catches emerging work (continuous monitoring)</li>
+<li>Feedback loops improve understanding iteratively</li>
+<li>Knowledge base stays current</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li>Complex to orchestrate (agents directing each other)</li>
+<li>Risk of infinite loops (Scout keeps finding papers, no stopping point)</li>
+<li>Requires clear stopping criteria</li>
+<li>Harder to debug when something goes wrong</li>
+</ul>
+<p><strong>When to use:</strong> Long-running research programs. Continuous literature monitoring. Iterative theory building.</p>
+<h2 id="handling-discovery-when-agents-find-something-surprising">Handling discovery: when agents find something surprising</h2>
+<p>Suppose Gap Finder discovers a contradiction:</p>
+<pre tabindex="0"><code>Gap Finder finds:
+- Paper A (Smith 2024): Social networks increase evacuation by 23%
+- Paper B (Jones 2023): No effect
+- Paper C (Lee 2022): Opposite effect (-15%)
+
+This is a contradiction. How does the research team respond?
+</code></pre><h3 id="response-1-agent-investigation-automatic">Response 1: Agent investigation (automatic)</h3>
+<p>Synthesis Agent investigates:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>synthesis<span style="color:#f92672">.</span>investigate(
+</span></span><span style="display:flex;"><span>  contradiction_description<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Three papers on social networks show opposite effects&#34;</span>,
+</span></span><span style="display:flex;"><span>  papers<span style="color:#f92672">=</span>[paper_a, paper_b, paper_c],
+</span></span><span style="display:flex;"><span>  methodology_db<span style="color:#f92672">=</span>analyzer<span style="color:#f92672">.</span>output
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Synthesis generates explanation:</span>
+</span></span><span style="display:flex;"><span>explanation <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hypothesis_1&#34;</span>: <span style="color:#e6db74">&#34;Different populations studied&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;evidence&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;paper_a&#34;</span>: <span style="color:#e6db74">&#34;families in coastal Florida&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;paper_b&#34;</span>: <span style="color:#e6db74">&#34;general urban population&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;paper_c&#34;</span>: <span style="color:#e6db74">&#34;rural communities&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hypothesis_2&#34;</span>: <span style="color:#e6db74">&#34;Different measures of &#39;social network&#39;&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;evidence&#34;</span>: {<span style="color:#f92672">...</span>},
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hypothesis_3&#34;</span>: <span style="color:#e6db74">&#34;Different evacuation contexts&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;evidence&#34;</span>: {<span style="color:#f92672">...</span>}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Synthesis drafts:</span>
+</span></span><span style="display:flex;"><span>draft <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Papers show contradictory effects of social networks on evacuation...
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">This likely reflects differences in:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">1. Population studied
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">2. How social networks were measured
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">3. Evacuation context (mandatory vs. voluntary)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Unified interpretation: [synthesis]
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span></code></pre></div><h3 id="response-2-human-review-and-decision">Response 2: Human review and decision</h3>
+<p>You review Synthesis&rsquo;s explanation:</p>
+<pre tabindex="0"><code>Question 1: Does Synthesis&#39;s explanation make sense? (Yes/No/Partial)
+  - I think hypothesis 1 (population) is most important
+  - Hypothesis 2 (measurement) also matters
+  - Hypothesis 3 (context) I want to investigate further
+
+Question 2: What should the literature review say?
+  Option A: &#34;Papers disagree; no consensus yet&#34;
+  Option B: &#34;Papers disagree due to [synthesis&#39;s hypothesis 1]&#34;
+  Option C: &#34;Papers disagree because researchers misunderstood each other&#34;
+
+Question 3: What should we do next?
+  - Search for papers that directly test social network effect on different populations?
+  - Request original data from authors to re-analyze?
+  - Mark as &#34;unresolved contradiction&#34; and move on?
+</code></pre><p>You choose. Agents incorporate feedback into next synthesis draft.</p>
+<h3 id="response-3-directed-exploration">Response 3: Directed exploration</h3>
+<p>Based on your decision, direct agents:</p>
+<pre tabindex="0"><code>Human decision: &#34;Hypothesis 1 (population) is most likely. 
+Let&#39;s search for papers that explicitly compare social network effects 
+across populations.&#34;
+
+Scout directive:
+  - Search for: &#34;social network&#34; AND evacuation AND (family OR elderly OR vulnerable)
+  - Search for: &#34;social network&#34; AND evacuation AND comparison
+  - Goal: Find papers that study social networks across different populations
+
+Gap Finder directive:
+  - Re-examine papers A, B, C
+  - For each, extract: what population? how measured social networks?
+  - Create comparison table
+
+Synthesis directive:
+  - Wait for Scout and Gap Finder to complete
+  - Redraft the section on social networks
+  - Include population-stratified analysis
+</code></pre><h2 id="conflict-resolution-patterns">Conflict resolution patterns</h2>
+<p>When agents (or agent + human) disagree, how is it resolved?</p>
+<h3 id="pattern-1-escalation-to-human">Pattern 1: Escalation to human</h3>
+<pre tabindex="0"><code>Analyzer extracts from paper: &#34;Dataset size: 500&#34;
+Analyzer flags: &#34;Unclear - text says &#39;large dataset&#39; but no n reported&#34;
+
+Synthesis assumes: &#34;n=500 (from Analyzer)&#34;
+Critic checks: &#34;Is this reasonable?&#34;
+
+Critic output: &#34;FLAGGED: Dataset size is ambiguous. 
+Analyzer reports n=500 but notes this may not be from paper.
+Should verify with author or mark as &#39;unclear&#39;.&#34;
+
+Human decision: &#34;Mark as &#39;unclear&#39;, do not use this paper for dataset comparison&#34;
+</code></pre><h3 id="pattern-2-voting--consensus">Pattern 2: Voting / consensus</h3>
+<p>For questions with multiple agents&rsquo; perspectives:</p>
+<pre tabindex="0"><code>Question: &#34;Is this paper relevant to evacuation research?&#34;
+
+Scout says: YES (found via search term)
+Analyzer says: NO (abstract does not mention evacuation or behavior)
+Gap Finder says: MAYBE (related to crowd dynamics, might inform evacuation)
+
+Voting rule: 2 out of 3 say include → Include
+Consensus: Paper is included but flagged as &#34;peripherally relevant&#34;
+</code></pre><h3 id="pattern-3-fallback-to-conservative-choice">Pattern 3: Fallback to conservative choice</h3>
+<p>When in doubt, agents choose the conservative option:</p>
+<pre tabindex="0"><code>Scout finds a paper with ambiguous relevance.
+Unclear if it matches search terms or just tangentially related.
+
+Conservative choice: Include it.
+Reason: False positives (extra papers) are cheaper than false negatives (missing papers).
+
+Later, Critic or human can remove it if irrelevant.
+</code></pre><h2 id="common-coordination-mistakes">Common coordination mistakes</h2>
+<h3 id="mistake-1-agents-making-final-decisions">Mistake 1: Agents making final decisions</h3>
+<p>Scout finds papers and decides which are &ldquo;important.&rdquo;
+Analyzer extracts and decides which fields are &ldquo;relevant.&rdquo;</p>
+<p><strong>Problem:</strong> Agents lack context. An &ldquo;unimportant&rdquo; paper to Scout might be crucial to your research question.</p>
+<p><strong>Fix:</strong> Agents flag, they do not filter. Humans decide what matters.</p>
+<h3 id="mistake-2-no-handoff-protocol">Mistake 2: No handoff protocol</h3>
+<p>Scout outputs papers to file X. Analyzer looks for file Y. They do not connect.</p>
+<p><strong>Problem:</strong> Coordination breaks silently. You think Analyzer processed Scout&rsquo;s papers, but it did not.</p>
+<p><strong>Fix:</strong> Explicit handoff: &ldquo;Scout output saved to location X&rdquo;; &ldquo;Analyzer reads from location X&rdquo;; confirmation that Analyzer successfully processed.</p>
+<h3 id="mistake-3-agents-stuck-in-loops">Mistake 3: Agents stuck in loops</h3>
+<p>Gap Finder identifies gaps. Directs Scout to search. Scout finds papers.
+Gap Finder identifies new gaps. Directs Scout again. Infinite loop.</p>
+<p><strong>Problem:</strong> Research never ends; team never produces output.</p>
+<p><strong>Fix:</strong> Set stopping criteria. Examples:</p>
+<ul>
+<li>&ldquo;Stop after 3 rounds of directed search&rdquo;</li>
+<li>&ldquo;Stop when new gaps are 10% smaller than previous round&rdquo; (diminishing returns)</li>
+<li>&ldquo;Stop after 6 months of continuous monitoring&rdquo;</li>
+</ul>
+<h3 id="mistake-4-lost-context">Mistake 4: Lost context</h3>
+<p>Synthesis drafts based on old data. Analyzer runs again, findings change.
+But Synthesis does not know and is still referencing old data.</p>
+<p><strong>Problem:</strong> Narrative is out of sync with current knowledge base.</p>
+<p><strong>Fix:</strong> Explicit versioning and re-runs.</p>
+<pre tabindex="0"><code>metadata:
+  knowledge_base_version: 3  # which version of data is this synthesis based on?
+  synthesis_version: 2
+  last_updated: 2026-06-10
+</code></pre><p>When knowledge base updates, Synthesis must re-run or explicitly acknowledge it is stale.</p>
+<h3 id="mistake-5-unclear-authority">Mistake 5: Unclear authority</h3>
+<p>Scout and Analyzer disagree on paper classification. Who decides?</p>
+<p><strong>Problem:</strong> Unresolved conflicts pile up.</p>
+<p><strong>Fix:</strong> Clear authority structure.</p>
+<pre tabindex="0"><code>Scout: &#34;This paper on ant behavior might inform evacuation modeling&#34;
+Analyzer: &#34;It is not about evacuation. Exclude it.&#34;
+
+Authority rule: If a paper is ambiguous, Analyzer&#39;s decision stands.
+But if Scout strongly disagrees, escalate to Gap Finder.
+Gap Finder: Final decision.
+
+Record: &#34;Paper on ant behavior: Scout wanted it (related work), 
+Analyzer excluded it, Gap Finder included it (gap finder sees connection to modeling).&#34;
+</code></pre><h2 id="building-feedback-loops">Building feedback loops</h2>
+<p>Feedback makes the system smarter over time.</p>
+<h3 id="feedback-loop-1-agent--critic">Feedback loop 1: Agent ← Critic</h3>
+<pre tabindex="0"><code>Synthesis drafts: &#34;Social networks increase evacuation by 23%&#34;
+
+Critic: &#34;This cites Paper A only. What about Paper B (opposite finding) 
+and Paper C (no effect)? Contradiction unresolved.&#34;
+
+Synthesis receives feedback, redrafts: &#34;Some papers show social networks 
+increase evacuation (A), while others find no effect (B) or opposite (C). 
+Likely explanation: [synthesis reconciliation]&#34;
+</code></pre><h3 id="feedback-loop-2-agent--human">Feedback loop 2: Agent ← Human</h3>
+<pre tabindex="0"><code>Researcher reviews Analyzer output: &#34;Dataset field is inconsistent. 
+Paper 1 says &#39;n=500&#39;, Paper 2 says &#39;large sample&#39;, Paper 3 says &#39;n estimated ~1000&#39;. 
+Standardize to: &#39;sample_size&#39; with flag &#39;estimated&#39; if not exact.&#34;
+
+Analyzer receives feedback, re-extracts with new standardization.
+</code></pre><h3 id="feedback-loop-3-agent--agent">Feedback loop 3: Agent → Agent</h3>
+<pre tabindex="0"><code>Gap Finder output: &#34;No papers study neurodivergent populations (n=0)&#34;
+
+Scout receives directive: &#34;Search for papers on evacuation + autism, 
++ ADHD, + neurodivergence, + accessible evacuation, etc.&#34;
+
+Scout searches, finds 2 papers. Gap Finder&#39;s gap shrinks.
+</code></pre><h3 id="feedback-loop-4-agent--data">Feedback loop 4: Agent ← Data</h3>
+<pre tabindex="0"><code>Analyzer extracts from 50 papers. You spot-check 5.
+Accuracy: 4 out of 5 correct.
+
+Feedback: &#34;Analyzer is at 80% accuracy. Areas of concern: methodology_type 
+extraction (confused &#39;hybrid&#39; with &#39;agent-based&#39;). Retrain on these cases.&#34;
+
+Analyzer re-runs with refined instructions. Accuracy improves to 95%.
+</code></pre><h2 id="orchestration-coordinating-agents-in-practice">Orchestration: coordinating agents in practice</h2>
+<p>How do you actually run this? Three approaches:</p>
+<h3 id="approach-1-manual-spreadsheet--prompts">Approach 1: Manual (spreadsheet + prompts)</h3>
+<pre tabindex="0"><code>Week 1:
+- Run Scout manually (copy-paste prompt to Claude)
+- Save results to papers.csv
+- Run Analyzer manually on papers.csv
+- Save to methodology.csv
+
+Week 2:
+- Run Gap Finder manually on methodology.csv
+- Review gaps
+- Manually create new Scout directives based on gaps
+</code></pre><p><strong>Pros:</strong> Simple, you understand every step
+<strong>Cons:</strong> Manual, time-consuming, easy to make mistakes</p>
+<h3 id="approach-2-script-based-python--apis">Approach 2: Script-based (Python + APIs)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> anthropic
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> anthropic<span style="color:#f92672">.</span>Anthropic()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Scout</span>
+</span></span><span style="display:flex;"><span>scout_output <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>messages<span style="color:#f92672">.</span>create(
+</span></span><span style="display:flex;"><span>  model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claude-opus&#34;</span>,
+</span></span><span style="display:flex;"><span>  messages<span style="color:#f92672">=</span>[{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;content&#34;</span>: scout_instructions <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">Search for papers on evacuation&#34;</span>
+</span></span><span style="display:flex;"><span>  }]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Analyzer</span>
+</span></span><span style="display:flex;"><span>papers <span style="color:#f92672">=</span> parse_scout_output(scout_output<span style="color:#f92672">.</span>content)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> paper <span style="color:#f92672">in</span> papers:
+</span></span><span style="display:flex;"><span>  analyzer_output <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>messages<span style="color:#f92672">.</span>create(<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>  save_extraction(analyzer_output)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Gap Finder</span>
+</span></span><span style="display:flex;"><span>methodology_db <span style="color:#f92672">=</span> load_all_extractions()
+</span></span><span style="display:flex;"><span>gap_finder_output <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>messages<span style="color:#f92672">.</span>create(<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Continue...</span>
+</span></span></code></pre></div><p><strong>Pros:</strong> Automated, repeatable, can run on schedule
+<strong>Cons:</strong> Requires coding, API costs add up, harder to debug</p>
+<h3 id="approach-3-agent-framework-langchain-claude-sdk">Approach 3: Agent framework (LangChain, Claude SDK)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> anthropic <span style="color:#f92672">import</span> Anthropic
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.agents <span style="color:#f92672">import</span> AgentExecutor, create_react_agent
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define agents with tools</span>
+</span></span><span style="display:flex;"><span>scout <span style="color:#f92672">=</span> create_research_agent(
+</span></span><span style="display:flex;"><span>  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;scout&#34;</span>,
+</span></span><span style="display:flex;"><span>  instructions<span style="color:#f92672">=</span>scout_instructions,
+</span></span><span style="display:flex;"><span>  tools<span style="color:#f92672">=</span>[google_scholar_search, arxiv_search, database_write]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>analyzer <span style="color:#f92672">=</span> create_research_agent(
+</span></span><span style="display:flex;"><span>  name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;analyzer&#34;</span>,
+</span></span><span style="display:flex;"><span>  instructions<span style="color:#f92672">=</span>analyzer_instructions,
+</span></span><span style="display:flex;"><span>  tools<span style="color:#f92672">=</span>[pdf_read, database_query, database_write]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Orchestrate</span>
+</span></span><span style="display:flex;"><span>plan <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">1. Scout searches for papers
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">2. Analyzer extracts from new papers
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">3. Gap Finder analyzes data
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">4. Synthesis drafts narrative
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">5. Critic reviews draft
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>executor <span style="color:#f92672">=</span> AgentExecutor(
+</span></span><span style="display:flex;"><span>  agents<span style="color:#f92672">=</span>[scout, analyzer, gap_finder, synthesis, critic],
+</span></span><span style="display:flex;"><span>  plan<span style="color:#f92672">=</span>plan,
+</span></span><span style="display:flex;"><span>  tools<span style="color:#f92672">=</span>[all_tools],
+</span></span><span style="display:flex;"><span>  callbacks<span style="color:#f92672">=</span>[logging, checkpoint]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> executor<span style="color:#f92672">.</span>run(research_question<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;How do people evacuate?&#34;</span>)
+</span></span></code></pre></div><p><strong>Pros:</strong> Professional-grade, handles tool use, logging/checkpointing built-in
+<strong>Cons:</strong> Complex setup, steep learning curve, expensive if using hosted models</p>
+<h2 id="example-complete-workflow-on-evacuation-research">Example: complete workflow on evacuation research</h2>
+<p>Here is what a full loop looks like:</p>
+<pre tabindex="0"><code>Day 1: Scout runs
+  Output: 120 new papers found
+  Status: &#34;Ready for Analyzer&#34;
+
+Day 1: Analyzer processes
+  Output: 110 papers extracted (10 failed PDF reads)
+  Status: &#34;10 papers need manual review&#34;
+
+Day 2: Gap Finder analyzes
+  Output: 5 major gaps identified
+    - Gap 1: Neurodivergent populations (n=0)
+    - Gap 2: Real-time decision updates (n=0)
+    - Gap 3: Multi-hazard cascades (n=2)
+  Status: &#34;3 searchable gaps; 2 are foundational research&#34;
+
+Day 3: Synthesis drafts
+  Output: Draft review (3,000 words)
+  Organization: &#34;Methodology traditions → Gaps → Emerging directions&#34;
+  Status: &#34;Ready for Critic&#34;
+
+Day 3: Critic reviews
+  Output: 12 review notes
+    - &#34;Contradiction on social networks unresolved&#34;
+    - &#34;Missing: papers on psychological factors&#34;
+    - &#34;Unsupported claim: &#39;95% of papers use ABM&#39; (actually 40%)&#34;
+  Status: &#34;Flagged issues for human review&#34;
+
+Day 4: Human reviews
+  Decision 1: Accept Gap Finder&#39;s gaps; add directed search for gap-specific papers
+  Decision 2: Incorporate Critic feedback on contradictions
+  Decision 3: Revise unsupported claims
+
+Day 5: Directed search
+  Scout runs with specific queries on the 3 gaps
+  Output: 15 new papers on the 3 gaps
+  Status: &#34;Ready for re-analysis&#34;
+
+Day 5: Re-analysis
+  Analyzer, Gap Finder, Synthesis run on new papers
+  Output: Updated knowledge base, revised gaps, new draft
+
+And so on...
+</code></pre><h2 id="what-comes-next">What comes next</h2>
+<p>With a functioning workflow, the next question is: how do you take this from research support tool to actually producing your first paper or research proposal?</p>
+<p>The next post covers that: &ldquo;From Idea to First Draft&rdquo; — a complete walkthrough of using your research team from initial question to polished literature review or research proposal.</p>
+<h2 id="the-practical-lesson">The practical lesson</h2>
+<p>A research team is not a set of independent agents. It is a coordinated system where agents observe each other, discover contradictions, and learn from feedback.</p>
+<p>The most powerful part is not individual agents. It is the loops: Scout directing feedback to Gap Finder, Gap Finder directing feedback to Scout, Critic pointing out assumptions, Human deciding and agents learning from the decision.</p>
+<p>When coordination works, the team becomes smarter than any individual researcher or agent alone.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/research-agents/05-synthesis-agent/">
+                &#8592;
+                Previous:
+                The Synthesis Agent: From Data to Narrative
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 10, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/research-agents/07-idea-to-first-draft/">
+                Next:
+                From Idea to First Draft: An End-to-End Walkthrough
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 12, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

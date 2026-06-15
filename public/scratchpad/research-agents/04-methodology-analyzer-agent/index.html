@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>The Methodology Analyzer: Extracting Structured Research Data</title>
+    <meta name="description" content="The Scout brought you 200 papers. Now what? You could read them all, but that takes weeks. Instead, let the Methodology Analyzer extract the important …">
+    <meta name="keywords" content='AI Agents, Methodology extraction, Structured data, Paper analysis, Research synthesis'>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Methodology Analyzer: Extracting Structured Research Data">
+    <meta property="og:description" content="The Scout brought you 200 papers. Now what? You could read them all, but that takes weeks. Instead, let the Methodology Analyzer extract the important …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Methodology Analyzer: Extracting Structured Research Data">
+    <meta name="twitter:description" content="The Scout brought you 200 papers. Now what? You could read them all, but that takes weeks. Instead, let the Methodology Analyzer extract the important …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>The Methodology Analyzer: Extracting Structured Research Data</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 9, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/ai-agents">AI Agents</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/methodology-extraction">Methodology extraction</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/structured-data">Structured data</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/paper-analysis">Paper analysis</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/research-synthesis">Research synthesis</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>The Scout brought you 200 papers. Now what? You could read them all, but that takes weeks. Instead, let the Methodology Analyzer extract the important structure: what dataset did they use? What method? How did they validate? What did they claim and what are the limitations?</p>
+<p>This extraction enables the Gap Finder to spot what is missing, and the Synthesis Writer to build a coherent narrative.</p>
+<h2 id="the-analyzers-challenge">The Analyzer&rsquo;s challenge</h2>
+<p>If you read 200 papers and manually extract data, you will:</p>
+<ul>
+<li>Extract different fields from different papers (inconsistency)</li>
+<li>Get tired and miss details in paper 50</li>
+<li>Forget what paper 30 said when you reach paper 150</li>
+<li>Spend weeks on data entry when you should be thinking</li>
+</ul>
+<p>The Analyzer&rsquo;s job is to extract consistently, completely, and without fatigue.</p>
+<h2 id="what-to-extract-the-core-schema">What to extract: the core schema</h2>
+<p>Do not try to extract everything. Extract what supports your research question. For evacuation research:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Why it matters</th>
+          <th>Example</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Paper metadata</strong></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Authors</td>
+          <td>Track prolific researchers, institutional patterns</td>
+          <td>Smith, J.; Doe, A.</td>
+      </tr>
+      <tr>
+          <td>Year</td>
+          <td>Detect trends, separate old vs. new work</td>
+          <td>2024</td>
+      </tr>
+      <tr>
+          <td>Venue</td>
+          <td>Identify authoritative sources vs. emerging work</td>
+          <td>Journal of Transportation Research</td>
+      </tr>
+      <tr>
+          <td><strong>Research question</strong></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Main question</td>
+          <td>Understand what each paper investigated</td>
+          <td>&ldquo;How do social networks influence evacuation decisions?&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Hypothesis/goal</td>
+          <td>Distinguish research directions</td>
+          <td>&ldquo;Test if agent-based models outperform flow models&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Methodology</strong></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Type</td>
+          <td>Categorize approach</td>
+          <td>&ldquo;Agent-based simulation&rdquo;, &ldquo;Empirical survey&rdquo;, &ldquo;Real-world observation&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Dataset</td>
+          <td>What data was used</td>
+          <td>&ldquo;600 survey respondents from coastal cities&rdquo;; &ldquo;Cellular automata on synthetic grid&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Sample size</td>
+          <td>Assess generalizability</td>
+          <td>n=600 (survey), 10,000 agents (simulation)</td>
+      </tr>
+      <tr>
+          <td>Population</td>
+          <td>Who was studied</td>
+          <td>&ldquo;Families with children in US coastal areas&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Time period</td>
+          <td>Is it current?</td>
+          <td>&ldquo;2022-2024&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Methods and tools</strong></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Primary tool/model</td>
+          <td>What was the main technique</td>
+          <td>&ldquo;AnyLogic agent-based simulation&rdquo;; &ldquo;Logistic regression&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Supporting tools</td>
+          <td>What else was used</td>
+          <td>&ldquo;GIS for spatial analysis&rdquo;; &ldquo;Python for post-processing&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Validation approach</td>
+          <td>How was it tested</td>
+          <td>&ldquo;Compared to real evacuation data&rdquo;; &ldquo;Expert review&rdquo;; &ldquo;Sensitivity analysis&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Findings</strong></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Main claim</td>
+          <td>What did they conclude</td>
+          <td>&ldquo;Agent-based models capture behavioral heterogeneity better than flow models&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Evidence strength</td>
+          <td>How confident is the claim</td>
+          <td>&ldquo;Validated against real data&rdquo;; &ldquo;n=3 case studies&rdquo;; &ldquo;Expert consensus&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Quantitative results</td>
+          <td>Numbers, metrics, effect sizes</td>
+          <td>&ldquo;RMSE 15% lower; p&lt;0.05&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Limitations</strong></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Data limitations</td>
+          <td>What was not covered</td>
+          <td>&ldquo;Only US coastal cities&rdquo;; &ldquo;Only families, not elderly&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Method limitations</td>
+          <td>What could not be tested</td>
+          <td>&ldquo;Did not validate on multi-modal evacuation&rdquo;; &ldquo;Computationally limited to 10K agents&rdquo;</td>
+      </tr>
+      <tr>
+          <td>Generalizability</td>
+          <td>How far do claims reach</td>
+          <td>&ldquo;May not apply to developing countries&rdquo;; &ldquo;Limited to vertical evacuation&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Connections</strong></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Related papers</td>
+          <td>Other papers in the field</td>
+          <td>Cites: [paper list]; Cited by: [paper list]</td>
+      </tr>
+      <tr>
+          <td>Novelty vs. prior work</td>
+          <td>What is new</td>
+          <td>&ldquo;First to combine agent-based model with real household data&rdquo;</td>
+      </tr>
+  </tbody>
+</table>
+<p>That is a lot. Start small: extract 6-8 core fields, then expand.</p>
+<p><strong>Minimal schema (start here):</strong></p>
+<pre tabindex="0"><code>1. Authors, Year, Venue
+2. Main research question
+3. Methodology type (simulation, survey, experiment, real-world)
+4. Dataset (what data was used, n)
+5. Main findings (1-2 sentences)
+6. Limitations (1-2 sentences)
+</code></pre><p>Once you have these, you can compare papers. Once comparison works, add more fields.</p>
+<h2 id="how-to-extract-reliably">How to extract reliably</h2>
+<h3 id="rule-1-extract-from-structured-parts-of-the-paper">Rule 1: Extract from structured parts of the paper</h3>
+<p>Papers have a predictable structure:</p>
+<ul>
+<li>Abstract: broad overview, usually mentions main question and findings</li>
+<li>Introduction: research question, motivation</li>
+<li>Methods: dataset, tools, validation</li>
+<li>Results: findings, numbers</li>
+<li>Discussion: limitations, implications</li>
+</ul>
+<p>Analyzer should read in this order, not randomly.</p>
+<h3 id="rule-2-use-consistent-vocabulary">Rule 2: Use consistent vocabulary</h3>
+<p>Different papers use different terms. Normalize them:</p>
+<table>
+  <thead>
+      <tr>
+          <th>What you see</th>
+          <th>Standard term</th>
+          <th>Why it matters</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>&ldquo;agent-based model&rdquo;, &ldquo;ABM&rdquo;, &ldquo;microscopic simulation&rdquo;, &ldquo;discrete agent system&rdquo;</td>
+          <td>agent-based</td>
+          <td>Enables comparison: &ldquo;How many papers used agent-based vs. flow-based?&rdquo;</td>
+      </tr>
+      <tr>
+          <td>&ldquo;survey&rdquo;, &ldquo;questionnaire&rdquo;, &ldquo;interviews&rdquo;</td>
+          <td>empirical-survey</td>
+          <td>Separates empirical human data from simulation</td>
+      </tr>
+      <tr>
+          <td>&ldquo;real-world&rdquo;, &ldquo;field study&rdquo;, &ldquo;actual evacuation&rdquo;</td>
+          <td>real-world</td>
+          <td>Distinguishes validation against real data</td>
+      </tr>
+      <tr>
+          <td>&ldquo;cellular automata&rdquo;, &ldquo;flow model&rdquo;, &ldquo;fundamental diagram&rdquo;</td>
+          <td>flow-based</td>
+          <td>Alternative to agent-based</td>
+      </tr>
+  </tbody>
+</table>
+<p>Create a vocabulary file for your domain. Analyzer uses it to standardize data.</p>
+<h3 id="rule-3-note-ambiguity-do-not-guess">Rule 3: Note ambiguity; do not guess</h3>
+<p>If a paper does not clearly state something:</p>
+<ul>
+<li>Do not guess</li>
+<li>Note: &ldquo;unclear&rdquo;, &ldquo;not mentioned&rdquo;, &ldquo;inferred from context&rdquo;</li>
+<li>Flag it for human review</li>
+</ul>
+<p>Example:</p>
+<pre tabindex="0"><code>Dataset size: unclear (paper says &#34;large dataset&#34; but no n reported)
+Flag: &#34;needs verification&#34;
+</code></pre><h3 id="rule-4-extract-one-paper-at-a-time">Rule 4: Extract one paper at a time</h3>
+<p>Do not extract all papers at once. Process one paper, verify it looks right, then move to the next. This prevents systematic errors.</p>
+<h3 id="rule-5-re-extract-a-sample-to-check-consistency">Rule 5: Re-extract a sample to check consistency</h3>
+<p>After extracting 20 papers, go back and re-extract 3 of them. Did you get the same answers? If not, your extraction is drifting.</p>
+<h2 id="example-extracting-an-evacuation-paper">Example: extracting an evacuation paper</h2>
+<p>Suppose the Scout found this paper abstract:</p>
+<blockquote>
+<p>&ldquo;Agent-Based Modeling of Household Evacuation Decisions During Hurricane Threats: Incorporating Behavioral Risk Perception and Social Networks. Smith et al. (2024). Journal of Transportation Research.</p>
+<p><strong>Abstract:</strong> We present an agent-based model (ABM) to simulate household evacuation decisions during hurricane threats, incorporating behavioral risk perception and social network effects. We calibrated the model using a survey of 582 households in coastal Florida (2022-2023) and validated against actual evacuation rates during Hurricane Milton (2024). Results show that accounting for social network effects improves model predictions by 23% (RMSE reduction from 28% to 21.5% error). We identify key behavioral factors: risk perception thresholds, family size effects, and evacuation mode preference. Limitations: model is specific to coastal Florida; does not account for cascading failures when multiple hurricanes occur in succession.&rdquo;</p>
+</blockquote>
+<p><strong>Analyzer extracts:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">paper_id</span>: <span style="color:#ae81ff">scholar_2024_smith_evacuation</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">authors</span>: [<span style="color:#e6db74">&#34;Smith, J.&#34;</span>, <span style="color:#e6db74">&#34;...&#34;</span> ]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">year</span>: <span style="color:#ae81ff">2024</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">venue</span>: <span style="color:#e6db74">&#34;Journal of Transportation Research&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">research_question</span>: <span style="color:#e6db74">&#34;How do behavioral risk perception and social networks influence household evacuation decisions during hurricanes?&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">hypothesis</span>: <span style="color:#e6db74">&#34;Accounting for social network effects improves evacuation behavior predictions&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">methodology_type</span>: <span style="color:#e6db74">&#34;agent-based&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">dataset</span>: <span style="color:#e6db74">&#34;Survey n=582 households; validation against actual Hurricane Milton evacuation data&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">sample_size</span>: <span style="color:#e6db74">&#34;582 (survey); validated on 2024 hurricane event&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">population</span>: <span style="color:#e6db74">&#34;Households in coastal Florida&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">time_period</span>: <span style="color:#e6db74">&#34;2022-2024&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">primary_tool</span>: <span style="color:#e6db74">&#34;Agent-based model (ABM)&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">supporting_tools</span>: <span style="color:#e6db74">&#34;Survey design, GIS for spatial analysis&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">validation_approach</span>: <span style="color:#e6db74">&#34;Calibrated with survey; validated against real evacuation rates&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">main_claim</span>: <span style="color:#e6db74">&#34;Incorporating social network effects improves household evacuation prediction&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">evidence_strength</span>: <span style="color:#e6db74">&#34;validated-against-real-data&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">quantitative_results</span>: <span style="color:#e6db74">&#34;RMSE improvement from 28% to 21.5% error (23% reduction); identified key behavioral factors&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">limitations</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Model specific to coastal Florida; generalizability uncertain&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Does not account for cascading multi-hurricane failures&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Limited to household level; does not model community-level evacuation&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data_limitations</span>: <span style="color:#e6db74">&#34;Only coastal Florida; survey conducted 2022-2023&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">method_limitations</span>: <span style="color:#e6db74">&#34;ABM computational constraints not discussed; single event validation&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">generalizability</span>: <span style="color:#e6db74">&#34;Likely transferable to other hurricane-prone regions; unclear for non-coastal or developing contexts&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">novelty</span>: <span style="color:#e6db74">&#34;First to explicitly model social network effects in ABM evacuation; combines survey + real-world validation&#34;</span>
+</span></span></code></pre></div><p>That is what one extraction looks like. Notice:</p>
+<ul>
+<li>Consistent field names</li>
+<li>Standardized vocabulary (agent-based, not ABM; survey-based not questionnaire)</li>
+<li>Explicit about uncertainty (does not guess)</li>
+<li>Separates findings from limitations</li>
+<li>Notes novelty and validation strength</li>
+</ul>
+<h2 id="implementation-three-approaches">Implementation: three approaches</h2>
+<h3 id="approach-1-hosted-agent-with-vision">Approach 1: Hosted agent with vision</h3>
+<p>Use Claude Opus or GPT-4V with paper PDFs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Pseudocode</span>
+</span></span><span style="display:flex;"><span>analyzer <span style="color:#f92672">=</span> HostedAgent(
+</span></span><span style="display:flex;"><span>  model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;claude-opus&#34;</span>,
+</span></span><span style="display:flex;"><span>  system_prompt<span style="color:#f92672">=</span>analyzer_instructions,
+</span></span><span style="display:flex;"><span>  tools<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>    PDFRead(),  <span style="color:#75715e"># read PDFs</span>
+</span></span><span style="display:flex;"><span>    DatabaseWrite(methodology_db),
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> paper <span style="color:#f92672">in</span> incoming_papers:
+</span></span><span style="display:flex;"><span>  extraction <span style="color:#f92672">=</span> analyzer<span style="color:#f92672">.</span>run(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Extract structured data from </span><span style="color:#e6db74">{</span>paper<span style="color:#f92672">.</span>pdf_url<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>  save_to_database(extraction)
+</span></span></code></pre></div><p><strong>Pros:</strong> Strong instruction following, handles images/tables well
+<strong>Cons:</strong> Expensive (per-paper cost), slow (can only process sequentially)</p>
+<h3 id="approach-2-local-model--structured-output">Approach 2: Local model + structured output</h3>
+<p>Use a local model with a schema to guide extraction:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pydantic <span style="color:#f92672">import</span> BaseModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MethodologyExtraction</span>(BaseModel):
+</span></span><span style="display:flex;"><span>  authors: List[str]
+</span></span><span style="display:flex;"><span>  year: int
+</span></span><span style="display:flex;"><span>  methodology_type: str  <span style="color:#75715e"># must be one of: agent-based, flow-based, survey, experiment, ...</span>
+</span></span><span style="display:flex;"><span>  dataset: str
+</span></span><span style="display:flex;"><span>  main_findings: str
+</span></span><span style="display:flex;"><span>  limitations: str
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>analyzer <span style="color:#f92672">=</span> LocalAgent(
+</span></span><span style="display:flex;"><span>  model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mistral-large&#34;</span>,
+</span></span><span style="display:flex;"><span>  output_schema<span style="color:#f92672">=</span>MethodologyExtraction,
+</span></span><span style="display:flex;"><span>  system_prompt<span style="color:#f92672">=</span>analyzer_instructions,
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> paper <span style="color:#f92672">in</span> incoming_papers:
+</span></span><span style="display:flex;"><span>  extraction <span style="color:#f92672">=</span> analyzer<span style="color:#f92672">.</span>run(
+</span></span><span style="display:flex;"><span>    task<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Extract methodology from </span><span style="color:#e6db74">{</span>paper<span style="color:#f92672">.</span>title<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>    context<span style="color:#f92672">=</span>paper<span style="color:#f92672">.</span>abstract  <span style="color:#75715e"># or paper PDF text</span>
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># extraction is now validated against schema</span>
+</span></span><span style="display:flex;"><span>  save_to_database(extraction<span style="color:#f92672">.</span>dict())
+</span></span></code></pre></div><p><strong>Pros:</strong> Cheaper, runs locally, output is guaranteed valid schema
+<strong>Cons:</strong> Local models may hallucinate or miss subtle details</p>
+<h3 id="approach-3-hybrid-with-human-review">Approach 3: Hybrid with human review</h3>
+<p>Local model extracts, then samples are reviewed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>analyzer <span style="color:#f92672">=</span> LocalAgent(<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>extraction_batch <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> paper <span style="color:#f92672">in</span> incoming_papers[:<span style="color:#ae81ff">100</span>]:
+</span></span><span style="display:flex;"><span>  extraction <span style="color:#f92672">=</span> analyzer<span style="color:#f92672">.</span>run(<span style="color:#f92672">...</span>)
+</span></span><span style="display:flex;"><span>  extraction_batch<span style="color:#f92672">.</span>append(extraction)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sample 10% for human review</span>
+</span></span><span style="display:flex;"><span>to_review <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>sample(extraction_batch, k<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> extraction <span style="color:#f92672">in</span> to_review:
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Review: </span><span style="color:#e6db74">{</span>extraction<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Human corrects if needed</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># If corrections are consistent, keep the batch</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># If many corrections, re-extract with refined instructions</span>
+</span></span></code></pre></div><p><strong>Pros:</strong> Catches errors, improves instructions iteratively
+<strong>Cons:</strong> Requires human time upfront</p>
+<h2 id="common-analyzer-mistakes-and-how-to-avoid-them">Common Analyzer mistakes (and how to avoid them)</h2>
+<h3 id="mistake-1-extracting-too-much-too-fast">Mistake 1: Extracting too much too fast</h3>
+<p>&ldquo;I will extract 20 fields from each paper to be thorough.&rdquo;</p>
+<p><strong>Reality:</strong> Analyzer will be slow, errors compound, and 50% of fields will be unused.</p>
+<p><strong>Fix:</strong> Start with 6 core fields. Add more only when you use them.</p>
+<h3 id="mistake-2-not-standardizing-vocabulary">Mistake 2: Not standardizing vocabulary</h3>
+<p>&ldquo;One paper says &lsquo;agent-based&rsquo;, another says &lsquo;microsimulation&rsquo;, another says &lsquo;discrete agent model.&rsquo; I will leave it as-is.&rdquo;</p>
+<p><strong>Reality:</strong> When you later query &ldquo;show me all agent-based papers,&rdquo; you miss half of them.</p>
+<p><strong>Fix:</strong> Create a vocabulary file. Map all variations to canonical terms before storing.</p>
+<h3 id="mistake-3-guessing-when-data-is-unclear">Mistake 3: Guessing when data is unclear</h3>
+<p>&ldquo;The paper does not say sample size, but it seems large, so I will guess n=1000.&rdquo;</p>
+<p><strong>Reality:</strong> Your guess becomes fact. When you compare papers later, you have corrupted data.</p>
+<p><strong>Fix:</strong> Mark as &ldquo;unclear&rdquo; or &ldquo;not reported.&rdquo; Flag for human review if important.</p>
+<h3 id="mistake-4-mixing-extracted-data-with-interpretation">Mistake 4: Mixing extracted data with interpretation</h3>
+<p>&ldquo;Paper says &lsquo;model error 28%&rsquo; so I write &lsquo;poor accuracy&rsquo;.&rdquo;</p>
+<p><strong>Reality:</strong> &ldquo;Poor&rdquo; is your judgment, not the paper&rsquo;s data. Downstream agents use your text literally.</p>
+<p><strong>Fix:</strong> Extract exactly what the paper says. Interpretation happens in the Critic agent.</p>
+<h3 id="mistake-5-not-checking-for-drift">Mistake 5: Not checking for drift</h3>
+<p>&ldquo;I extracted papers 1-20 with detail. Now I am on paper 150 and I am being less thorough.&rdquo;</p>
+<p><strong>Reality:</strong> Early papers are complete; later papers are summary. Comparison is biased.</p>
+<p><strong>Fix:</strong> Every 20 papers, spot-check 3 early extractions against your current standard.</p>
+<h2 id="building-the-methodology-database">Building the methodology database</h2>
+<p>After Analyzer processes all papers, you have a structured database:</p>
+<pre tabindex="0"><code>methodology_db.csv  (or JSON, or SQL)
+
+paper_id, authors, year, venue, research_question, methodology_type, ...
+smith_2024, &#34;Smith J, Doe A&#34;, 2024, Journal of Transportation Research, &#34;How do social networks...&#34;, agent-based, ...
+jones_2023, &#34;Jones B, Lee C&#34;, 2023, Transportation Research Record, &#34;Do evacuation warnings...&#34;, survey, ...
+</code></pre><p>This is the backbone for Gap Finder: when you query &ldquo;show me papers on agent-based + behavioral&rdquo;, it returns the 15 papers that match.</p>
+<h2 id="connecting-analyzer-to-gap-finder">Connecting Analyzer to Gap Finder</h2>
+<p>Analyzer outputs a structured database. Gap Finder queries it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Gap Finder queries</span>
+</span></span><span style="display:flex;"><span>gap_finder<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  Show me papers where methodology_type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;agent-based&#39;</span> 
+</span></span><span style="display:flex;"><span>  AND population includes <span style="color:#e6db74">&#39;elderly&#39;</span> 
+</span></span><span style="display:flex;"><span>  AND year <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">2022</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gap_finder<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  What datasets are used most frequently<span style="color:#960050;background-color:#1e0010">?</span>
+</span></span><span style="display:flex;"><span>  What datasets are used only once<span style="color:#960050;background-color:#1e0010">?</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>gap_finder<span style="color:#f92672">.</span>query(<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>  Which papers cite each other<span style="color:#960050;background-color:#1e0010">?</span>
+</span></span><span style="display:flex;"><span>  What are the common citations (canonical papers)<span style="color:#960050;background-color:#1e0010">?</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;)</span>
+</span></span></code></pre></div><p>These queries reveal gaps: &ldquo;We have 40 agent-based papers on general populations, but only 2 on elderly-specific evacuation.&rdquo;</p>
+<h2 id="handling-edge-cases">Handling edge cases</h2>
+<h3 id="what-if-the-paper-has-no-clear-methodology-section">What if the paper has no clear methodology section?</h3>
+<p>Some papers (especially older ones or book chapters) lack a standard Methods section.</p>
+<p><strong>Solution:</strong> Read Introduction + Results. Infer methodology from what they say they did.</p>
+<h3 id="what-if-the-paper-is-empirically-messy">What if the paper is empirically messy?</h3>
+<p>&ldquo;Survey of 500, response rate 12%, analysis uses 60. Which n do I report?&rdquo;</p>
+<p><strong>Solution:</strong> Extract both: &ldquo;Survey n=500, response rate 12%, analysis n=60.&rdquo; Note the discrepancy.</p>
+<h3 id="what-if-methodology-is-proprietarysecret">What if methodology is proprietary/secret?</h3>
+<p>&ldquo;Paper says &lsquo;proprietary method&rsquo; and does not describe it.&rdquo;</p>
+<p><strong>Solution:</strong> Mark as &ldquo;proprietary-undisclosed.&rdquo; This is honest data for downstream analysis.</p>
+<h3 id="what-if-the-paper-uses-multiple-methods">What if the paper uses multiple methods?</h3>
+<p>&ldquo;Part 1 is a survey (n=200). Part 2 is an ABM. Part 3 validates ABM against survey.&rdquo;</p>
+<p><strong>Solution:</strong> Can extract as multi-row entry (one row per method phase) or as a single row with &ldquo;methodology_type: mixed&rdquo; and detailed breakdown.</p>
+<p>Choose consistently.</p>
+<h2 id="quality-metrics-for-analyzer">Quality metrics for Analyzer</h2>
+<p>After Analyzer runs, ask:</p>
+<ol>
+<li><strong>Completeness:</strong> Did you extract all required fields from all papers?</li>
+<li><strong>Consistency:</strong> Do papers with similar methodologies have similar extracted data?</li>
+<li><strong>Accuracy:</strong> Spot-check 10 random extractions against the original papers. How many match?</li>
+<li><strong>Standardization:</strong> Are terminologies standardized? Can you query reliably?</li>
+<li><strong>Ambiguity flagging:</strong> Did unclear cases get marked as &ldquo;unclear&rdquo; rather than guessed?</li>
+<li><strong>Traceability:</strong> Can you link each extracted field back to the paper (quotes, page numbers)?</li>
+</ol>
+<p>Target: 95%+ accuracy on spot-checks. 100% standardization. 0% guesses.</p>
+<h2 id="tools-for-structured-extraction">Tools for structured extraction</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Purpose</th>
+          <th>Cost</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Pydantic</td>
+          <td>Define and validate extraction schemas</td>
+          <td>Free (Python)</td>
+      </tr>
+      <tr>
+          <td>Anthropic SDK</td>
+          <td>Structured outputs with Claude</td>
+          <td>API cost</td>
+      </tr>
+      <tr>
+          <td>LangChain</td>
+          <td>Agent framework with structured output</td>
+          <td>Free (Python)</td>
+      </tr>
+      <tr>
+          <td>Zotero + plugins</td>
+          <td>Semi-automated paper metadata extraction</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td>Pandas/Polars</td>
+          <td>Data validation and cleaning</td>
+          <td>Free (Python)</td>
+      </tr>
+      <tr>
+          <td>dbt</td>
+          <td>Data transformation and testing</td>
+          <td>Free (open source)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="what-comes-next">What comes next</h2>
+<p>With a populated methodology database, the Gap Finder can now work: comparing across papers, identifying what is missing, spotting contradictions.</p>
+<p>Then the Synthesis Writer drafts narrative: &ldquo;Here is what we know about agent-based evacuation models. Here is what remains unknown.&rdquo;</p>
+<h2 id="the-practical-lesson">The practical lesson</h2>
+<p>Extraction is not a creative task. It is a mechanical task that must be done consistently.</p>
+<p>When Analyzer does it right, downstream agents (Gap Finder, Synthesis Writer) can do their best work. When Analyzer is sloppy, everything downstream is corrupted.</p>
+<p>Invest in extraction quality. Make it boring. Make it standardized. Make it auditable.</p>
+<p>The payoff is: later, you can ask &ldquo;What is the most common dataset used?&rdquo; and get a reliable answer. You can ask &ldquo;Show me papers that combine agent-based models with real-world validation&rdquo; and get exactly what you asked for, not what the Analyzer guessed you meant.</p>
+<p>That is how a research team scales beyond one person thinking.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/research-agents/03-literature-scout-agent/">
+                &#8592;
+                Previous:
+                The Literature Scout Agent: Systematic Paper Search
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 8, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/research-agents/05-synthesis-agent/">
+                Next:
+                The Synthesis Agent: From Data to Narrative
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 10, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Structured Data on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/structured-data/</link>
+    <description>Recent content in Structured Data on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 09 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/structured-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Methodology Analyzer: Extracting Structured Research Data</title>
+      <link>http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/</link>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/</guid>
+      <description>&lt;p&gt;The Scout brought you 200 papers. Now what? You could read them all, but that takes weeks. Instead, let the Methodology Analyzer extract the important structure: what dataset did they use? What method? How did they validate? What did they claim and what are the limitations?&lt;/p&gt;&#xA;&lt;p&gt;This extraction enables the Gap Finder to spot what is missing, and the Synthesis Writer to build a coherent narrative.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-analyzers-challenge&#34;&gt;The Analyzer&amp;rsquo;s challenge&lt;/h2&gt;&#xA;&lt;p&gt;If you read 200 papers and manually extract data, you will:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

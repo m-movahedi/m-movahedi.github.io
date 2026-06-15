@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>From Idea to First Draft: An End-to-End Walkthrough</title>
+    <meta name="description" content="You have a research question. You have a research team (5 specialized agents). Now what?
+This post walks through a complete workflow from idea to polished first …">
+    <meta name="keywords" content='AI Agents, Research workflow, Literature review, Case study, Practical research'>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="From Idea to First Draft: An End-to-End Walkthrough">
+    <meta property="og:description" content="You have a research question. You have a research team (5 specialized agents). Now what?
+This post walks through a complete workflow from idea to polished first …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="From Idea to First Draft: An End-to-End Walkthrough">
+    <meta name="twitter:description" content="You have a research question. You have a research team (5 specialized agents). Now what?
+This post walks through a complete workflow from idea to polished first …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>From Idea to First Draft: An End-to-End Walkthrough</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 12, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/ai-agents">AI Agents</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/research-workflow">Research workflow</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/literature-review">Literature review</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/case-study">Case study</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/practical-research">Practical research</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>You have a research question. You have a research team (5 specialized agents). Now what?</p>
+<p>This post walks through a complete workflow from idea to polished first draft. You will see what agents do, where humans intervene, what surprises appear, and how the team navigates them.</p>
+<p>We will use a real research question: <strong>How do household evacuation decisions integrate social networks and behavioral heterogeneity?</strong></p>
+<h2 id="phase-1-setup-day-0">Phase 1: Setup (Day 0)</h2>
+<h3 id="step-1-define-the-scope">Step 1: Define the scope</h3>
+<p>You sit down with a clear research question:</p>
+<blockquote>
+<p>How do household evacuation decisions integrate social networks and behavioral heterogeneity during hurricanes? Specifically: Do models that incorporate social network effects outperform traditional agent-based models, and what behavioral factors drive network influence?</p>
+</blockquote>
+<p>You create a brief:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Research Brief: Social Networks in Evacuation
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Core question
+</span></span></span><span style="display:flex;"><span>How do social networks influence household evacuation decisions during hurricanes?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Sub-questions
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> What social network effects matter? (advice? coordination? social pressure?)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Do agent-based models capture these effects?
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> What behavioral factors mediate network influence?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Scope boundaries
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Focus: household-level decisions during hurricanes
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Geographic: primarily coastal US (but include international if available)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Time: peer-reviewed literature 2015-2026
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Methods: empirical studies, agent-based models, surveys, real-world data
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Expected output
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Literature review: 5,000-8,000 words
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Identifies: what is known, gaps, contradictions
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Proposes: research direction for empirical study on network effects
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Timeline
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Phase 1 (Scout): 3-5 days
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Phase 2 (Analyzer): 3-5 days
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Phase 3 (Gap Finder): 2-3 days
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Phase 4 (Synthesis): 2-3 days
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Phase 5 (Critic + revision): 2-3 days
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Total: ~2-3 weeks
+</span></span></code></pre></div><h3 id="step-2-initialize-agents">Step 2: Initialize agents</h3>
+<p>You provide each agent their role-specific instructions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># Scout Instructions
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Goal
+</span></span></span><span style="display:flex;"><span>Find papers on household evacuation decisions during hurricanes, 
+</span></span><span style="display:flex;"><span>with focus on social network effects and behavioral heterogeneity.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Search strategy
+</span></span></span><span style="display:flex;"><span>Systematically search 4 databases:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Google Scholar
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> arxiv.org
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> TRID (transportation research)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> Semantic Scholar
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Search term combinations
+</span></span></span><span style="display:flex;"><span>Core terms: evacuation, hurricane, household, behavior, decision-making
+</span></span><span style="display:flex;"><span>Social network terms: social network, peer influence, social pressure, advice, coordination
+</span></span><span style="display:flex;"><span>Heterogeneity terms: behavioral heterogeneity, vulnerability, risk perception, family dynamics
+</span></span><span style="display:flex;"><span>Model terms: agent-based, simulation, empirical, survey, real-world
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Search depth
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> At least 10 distinct searches per database
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> At least 5 pages of results per search
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Continue until results repeat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Output
+</span></span></span><span style="display:flex;"><span>Save to: incoming_papers.yaml
+</span></span><span style="display:flex;"><span>Include: title, authors, year, venue, DOI/URL, source_database, search_terms, rank
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Deduplication
+</span></span></span><span style="display:flex;"><span>Check for duplicates before adding. Use fuzzy matching on title + author names.
+</span></span></code></pre></div><p>(Similar detailed instructions for Analyzer, Gap Finder, Synthesis, Critic)</p>
+<h3 id="step-3-create-knowledge-base-structure">Step 3: Create knowledge base structure</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># knowledge_base/</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">incoming_papers/</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">papers.yaml       </span> <span style="color:#75715e"># Scout output</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">methodology/</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">papers_db.csv     </span> <span style="color:#75715e"># Analyzer output</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">extraction_log.md </span> <span style="color:#75715e"># What was extracted, what failed</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">gaps/</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">gaps_analysis.md  </span> <span style="color:#75715e"># Gap Finder output</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">comparison_table.csv</span> <span style="color:#75715e"># Papers compared</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">synthesis/</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">draft_v1.md       </span> <span style="color:#75715e"># Synthesis drafts (versioned)</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">draft_v2.md</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">citations.bib     </span> <span style="color:#75715e"># Bibliography</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">review/</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">critic_notes.md   </span> <span style="color:#75715e"># Critic feedback</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">decisions.md      </span> <span style="color:#75715e"># Your decisions on feedback</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">metadata/</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">config.yaml       </span> <span style="color:#75715e"># Research question, scope, timeline</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">log.md            </span> <span style="color:#75715e"># Day-by-day progress</span>
+</span></span></code></pre></div><h2 id="phase-2-scout-days-1-3">Phase 2: Scout (Days 1-3)</h2>
+<h3 id="run-scout">Run Scout</h3>
+<p>You prompt Scout with the research question:</p>
+<pre tabindex="0"><code>Research question: How do household evacuation decisions integrate social 
+networks and behavioral heterogeneity during hurricanes?
+
+Execute a comprehensive literature search. Use the following strategy:
+
+Search combinations:
+1. &#34;evacuation&#34; AND &#34;household&#34; AND &#34;hurricane&#34;
+2. &#34;evacuation&#34; AND &#34;social network&#34;
+3. &#34;evacuation&#34; AND &#34;behavioral heterogeneity&#34;
+4. &#34;agent-based&#34; AND &#34;evacuation&#34; AND &#34;household&#34;
+5. &#34;evacuation&#34; AND &#34;risk perception&#34;
+... [10-15 more]
+
+For each search:
+- Try 3+ databases
+- Go at least 5 pages deep
+- Extract: title, authors, year, venue, DOI/URL, database source
+- Flag duplicates
+
+Stop when: results repeat across searches and databases.
+
+Output format: YAML with papers and statistics.
+</code></pre><h3 id="scouts-output-day-1">Scout&rsquo;s output (Day 1)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">run_date</span>: <span style="color:#e6db74">2026-06-01</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">search_strategy</span>: <span style="color:#ae81ff">comprehensive_multi_database</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">databases_searched</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">google_scholar</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">arxiv</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">trid</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">semantic_scholar</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">search_summary</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">total_searches</span>: <span style="color:#ae81ff">18</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">total_papers_found</span>: <span style="color:#ae81ff">287</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">new_papers</span>: <span style="color:#ae81ff">245</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">duplicates_detected</span>: <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">papers_flagged_unclear</span>: <span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">sample_papers</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">id</span>: <span style="color:#ae81ff">scholar_2024_smith</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Agent-Based Modeling of Household Evacuation Decisions: Incorporating Social Networks&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">authors</span>: [<span style="color:#e6db74">&#34;Smith, J.&#34;</span>, <span style="color:#e6db74">&#34;Doe, A.&#34;</span>, <span style="color:#e6db74">&#34;Brown, C.&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">year</span>: <span style="color:#ae81ff">2024</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">venue</span>: <span style="color:#e6db74">&#34;Journal of Transportation Research Part A&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">doi</span>: <span style="color:#e6db74">&#34;10.1016/j.tra.2024.103456&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">source_database</span>: <span style="color:#e6db74">&#34;Google Scholar&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">search_terms</span>: [<span style="color:#e6db74">&#34;evacuation&#34;</span>, <span style="color:#e6db74">&#34;agent-based&#34;</span>, <span style="color:#e6db74">&#34;social network&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">rank_in_search</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">id</span>: <span style="color:#ae81ff">arxiv_2024_jones</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;Behavioral Heterogeneity in Evacuation: A Micro-Level Analysis&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">authors</span>: [<span style="color:#e6db74">&#34;Jones, B.&#34;</span>, <span style="color:#e6db74">&#34;Lee, C.&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">year</span>: <span style="color:#ae81ff">2024</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">venue</span>: <span style="color:#e6db74">&#34;arxiv preprint&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">url</span>: <span style="color:#e6db74">&#34;https://arxiv.org/abs/2401.12345&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">source_database</span>: <span style="color:#e6db74">&#34;arxiv&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">search_terms</span>: [<span style="color:#e6db74">&#34;evacuation&#34;</span>, <span style="color:#e6db74">&#34;behavioral heterogeneity&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">rank_in_search</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#ae81ff">... 243 more papers ...]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">search_notes</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Found significant recent work (2023-2024) on agent-based modeling&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Social network effects increasingly studied (12 recent papers)&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Fewer papers on behavioral heterogeneity intersection (only 8)&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Most work focused on evacuation timing; less on network coordination&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Limited international perspective (mostly US-focused)&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">next_steps</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Recommend directed search on: behavioral factors + social networks&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;Only 2 papers found on multi-household coordination&#34;</span>
+</span></span></code></pre></div><h3 id="your-decision-day-1">Your decision (Day 1)</h3>
+<p>Scout found 245 papers. You review:</p>
+<ul>
+<li>✅ Good breadth: 4 databases, 18 searches</li>
+<li>✅ Good recency: strong 2023-2024 coverage</li>
+<li>⚠️ Concern: &ldquo;Only 2 papers on multi-household coordination&rdquo; — this might be important for network effects</li>
+</ul>
+<p>You decide:</p>
+<ol>
+<li>Accept the 245 papers</li>
+<li>Add a directed search: &ldquo;evacuation AND household coordination AND decision-making&rdquo;</li>
+</ol>
+<p>You prompt Scout:</p>
+<pre tabindex="0"><code>Good work. I noticed only 2 papers on multi-household coordination.
+Let me do a targeted follow-up search to ensure we haven&#39;t missed papers 
+on how households coordinate evacuation (not just individual decisions).
+
+Run 5 more searches:
+1. &#34;evacuation&#34; AND &#34;household coordination&#34;
+2. &#34;evacuation&#34; AND &#34;collective decision&#34;
+3. &#34;evacuation&#34; AND &#34;family group&#34;
+4. &#34;disaster&#34; AND &#34;group behavior&#34; AND &#34;evacuation&#34;
+5. &#34;evacuation&#34; AND &#34;social group&#34; AND &#34;network&#34;
+
+Output any new papers not already found.
+</code></pre><h3 id="scouts-follow-up-day-2">Scout&rsquo;s follow-up (Day 2)</h3>
+<p>Scout runs, finds 8 additional papers, 3 are new.</p>
+<p>Total: 245 + 3 = <strong>248 papers in incoming_papers.yaml</strong></p>
+<p>Scout also notes: &ldquo;Most relevant papers are: Smith 2024, Jones 2024, [5 others]&rdquo;</p>
+<h2 id="phase-3-analyzer-days-3-5">Phase 3: Analyzer (Days 3-5)</h2>
+<h3 id="run-analyzer">Run Analyzer</h3>
+<p>You prepare extraction schema:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">extraction_schema</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">authors</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">year</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">venue</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">research_question</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">methodology_type</span>: [<span style="color:#ae81ff">agent-based, survey, empirical, simulation, review, other]</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">dataset_description</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">sample_size</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">population</span>: [<span style="color:#ae81ff">general, families, vulnerable, other]</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">social_network_focus</span>: [<span style="color:#66d9ef">yes</span>, <span style="color:#66d9ef">no</span>, <span style="color:#ae81ff">implicit]</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">heterogeneity_focus</span>: [<span style="color:#66d9ef">yes</span>, <span style="color:#66d9ef">no</span>, <span style="color:#ae81ff">behavioral, demographic]</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">main_findings</span>: [<span style="color:#ae81ff">1-2</span> <span style="color:#ae81ff">sentences]</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">validation_approach</span>: [<span style="color:#ae81ff">real-world, synthetic, expert, none]</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">limitations</span>: [<span style="color:#ae81ff">1-2</span> <span style="color:#ae81ff">sentences]</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">extraction_standards</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Use standardized vocabulary (vocabulary_map.yaml)</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Mark unclear fields as &#34;unclear&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">Extract exactly what paper says; do not interpret</span>
+</span></span></code></pre></div><p>You prompt Analyzer:</p>
+<pre tabindex="0"><code>Extract structured data from 248 evacuation papers using the provided schema.
+
+Focus areas:
+1. Does the paper address social networks in evacuation? (yes/no/implicit)
+2. Does it address behavioral heterogeneity? (yes/no)
+3. What methodology did they use?
+4. Was it validated against real-world data?
+
+Output: CSV with rows = papers, columns = schema fields
+
+Flag papers where:
+- Field is ambiguous or missing
+- Validation status is unclear
+- Methodology is hard to classify
+
+Process incrementally: extract 50 papers, spot-check for consistency, 
+then extract the rest.
+</code></pre><h3 id="analyzers-work-days-3-4">Analyzer&rsquo;s work (Days 3-4)</h3>
+<p>Analyzer works through 248 papers. Extracts:</p>
+<ul>
+<li>First 50 papers: detailed extraction, logs decisions</li>
+<li>Checks: consistency looks good</li>
+<li>Continues: extracts remaining 198 papers</li>
+<li>Completion: All 248 papers extracted</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csv" data-lang="csv"><span style="display:flex;"><span><span style="color:#e6db74">paper_id</span>,<span style="color:#e6db74">authors</span>,<span style="color:#e6db74">year</span>,<span style="color:#e6db74">venue</span>,<span style="color:#e6db74">methodology_type</span>,<span style="color:#e6db74">social_network_focus</span>,<span style="color:#e6db74">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">smith_2024</span>,<span style="color:#e6db74">&#34;Smith, J., Doe, A., Brown, C.&#34;</span>,<span style="color:#e6db74">2024</span>,<span style="color:#e6db74">Journal Transportation</span>,<span style="color:#e6db74">agent-based</span>,<span style="color:#e6db74">yes</span>,<span style="color:#e6db74">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">jones_2024</span>,<span style="color:#e6db74">&#34;Jones, B., Lee, C.&#34;</span>,<span style="color:#e6db74">2024</span>,<span style="color:#e6db74">arxiv</span>,<span style="color:#e6db74">survey</span>,<span style="color:#e6db74">no</span>,<span style="color:#e6db74">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">... [246 more rows]</span>
+</span></span></code></pre></div><p>Analyzer also flags:</p>
+<pre tabindex="0"><code>Extraction log:
+- 5 papers had ambiguous sample sizes: marked as &#34;unclear&#34;
+- 12 papers did not clearly state methodology: classified as &#34;other-descriptive&#34;
+- 8 papers had social network focus implicit (not explicitly stated): marked &#34;implicit&#34;
+- 2 papers could not be accessed (PDF not available): marked &#34;not-processed&#34;
+
+Consistency checks:
+- Re-extracted 10 random papers: 9/10 match original (90% accuracy)
+- One discrepancy: methodology_type for hybrid paper (was &#34;agent-based&#34;, should be &#34;hybrid&#34;)
+  → Corrected
+
+Total papers processed: 246/248 (2 not accessible)
+</code></pre><h3 id="your-decision-day-4">Your decision (Day 4)</h3>
+<p>You review Analyzer&rsquo;s work:</p>
+<ul>
+<li>✅ 246 out of 248 processed</li>
+<li>✅ 90% accuracy on spot-checks (acceptable)</li>
+<li>⚠️ Hybrid methodology classification was missed initially (but caught)</li>
+</ul>
+<p>You make minor corrections and move forward.</p>
+<h2 id="phase-4-gap-finder-days-5-6">Phase 4: Gap Finder (Days 5-6)</h2>
+<h3 id="run-gap-finder">Run Gap Finder</h3>
+<p>You prompt Gap Finder:</p>
+<pre tabindex="0"><code>Analyze the methodology database (246 papers, extracted data).
+
+Task 1: Characterize the landscape
+- How many papers per methodology?
+- What datasets are most common?
+- What populations are studied?
+- What is the temporal trend (papers per year)?
+
+Task 2: Identify what is missing
+- Social network focus: yes=? no=? implicit=?
+- Behavioral heterogeneity: yes=? no=?
+- Real-world validation: yes=? no=?
+- Papers addressing BOTH social networks AND heterogeneity: ?
+
+Task 3: Find contradictions
+- Do papers on social networks agree on effects?
+- What papers have opposite findings?
+
+Task 4: Identify research gaps
+For each gap, describe:
+- What is missing
+- How many papers address it currently
+- Why it matters for your research question
+</code></pre><h3 id="gap-finders-output-day-5-6">Gap Finder&rsquo;s output (Day 5-6)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">landscape_characterization</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">methodology_types</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">agent_based</span>: <span style="color:#ae81ff">62</span>  <span style="color:#75715e"># 25%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">survey</span>: <span style="color:#ae81ff">48</span>       <span style="color:#75715e"># 20%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">simulation</span>: <span style="color:#ae81ff">35</span>   <span style="color:#75715e"># 14%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">empirical_real_world</span>: <span style="color:#ae81ff">28</span>  <span style="color:#75715e"># 11%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">review</span>: <span style="color:#ae81ff">24</span>       <span style="color:#75715e"># 10%</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">other</span>: <span style="color:#ae81ff">49</span>        <span style="color:#75715e"># 20%</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">social_network_focus</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">yes</span>: <span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">implicit</span>: <span style="color:#ae81ff">18</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">no</span>: <span style="color:#ae81ff">204</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">behavioral_heterogeneity_focus</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">yes</span>: <span style="color:#ae81ff">32</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">implicit</span>: <span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">no</span>: <span style="color:#ae81ff">199</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">both_social_AND_heterogeneity</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">yes</span>: <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">implicit</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">no</span>: <span style="color:#ae81ff">236</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">real_world_validation</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">yes</span>: <span style="color:#ae81ff">31</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">partial</span>: <span style="color:#ae81ff">18</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">no</span>: <span style="color:#ae81ff">197</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">key_finding</span>: <span style="color:#e6db74">&#34;Intersection of social networks AND behavioral heterogeneity 
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">is understudied: only 8-10 papers directly address both.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">research_gaps</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">gap_1</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;No papers combine social networks + behavioral heterogeneity with real-world validation&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">papers_addressing</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">papers_with_partial_coverage</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">importance</span>: <span style="color:#e6db74">&#34;CRITICAL - directly addresses your research question&#34;</span>
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">gap_2</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Multi-household coordination not modeled in agent-based frameworks&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">papers_addressing</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">importance</span>: <span style="color:#e6db74">&#34;HIGH - mechanism for network effects&#34;</span>
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">gap_3</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Behavioral factors mediating network influence (e.g., trust, homophily)&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">papers_addressing</span>: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">importance</span>: <span style="color:#e6db74">&#34;HIGH - directly supports social network mechanism&#34;</span>
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">gap_4</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Real-time information integration in evacuation decisions&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">papers_addressing</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">importance</span>: <span style="color:#e6db74">&#34;MEDIUM - relevant for network dynamics&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">contradictions</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">contradiction_1</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">papers</span>: [<span style="color:#ae81ff">smith_2024, jones_2023, brown_2022]</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">topic</span>: <span style="color:#e6db74">&#34;Effect of social networks on evacuation compliance&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">findings</span>: 
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">smith</span>: <span style="color:#e6db74">&#34;23% improvement with network effects&#34;</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">jones</span>: <span style="color:#e6db74">&#34;No significant effect&#34;</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">brown</span>: <span style="color:#e6db74">&#34;Network effects vary by family structure&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">explanation</span>: <span style="color:#e6db74">&#34;Likely due to different populations and network measurement&#34;</span>
+</span></span></code></pre></div><h3 id="your-decision-day-6">Your decision (Day 6)</h3>
+<p>Gap Finder&rsquo;s key insight: The intersection of social networks + heterogeneity is understudied (8-10 papers).</p>
+<p>Your research question sits directly in this gap. You decide:</p>
+<ol>
+<li>This gap is worth exploring</li>
+<li>Focus Synthesis on this gap specifically</li>
+<li>After Synthesis, you will likely propose an empirical study to fill this gap</li>
+</ol>
+<h2 id="phase-5-synthesis-days-7-8">Phase 5: Synthesis (Days 7-8)</h2>
+<h3 id="run-synthesis">Run Synthesis</h3>
+<p>You prompt Synthesis with Gap Finder&rsquo;s output:</p>
+<pre tabindex="0"><code>Draft a literature review section on household evacuation decisions during hurricanes.
+
+Organize around 4 themes:
+1. Methodological traditions (ABM vs. survey vs. simulation)
+2. What we know about social networks in evacuation
+3. What we know about behavioral heterogeneity
+4. The gap: intersection of networks + heterogeneity
+
+For each section:
+- Synthesize 3-5 key papers
+- Identify common findings
+- Note contradictions and possible explanations
+- Highlight what remains unknown
+
+Then, draft a short &#34;Research Direction&#34; section proposing 
+how to address the gap.
+
+Output: 3,000-4,000 words of polished prose, with citations.
+</code></pre><h3 id="synthesiss-draft-days-7-8">Synthesis&rsquo;s draft (Days 7-8)</h3>
+<p>Synthesis produces:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#75715e">## Household Evacuation Decisions During Hurricanes: 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">## Integrating Social Networks and Behavioral Heterogeneity
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Introduction
+</span></span></span><span style="display:flex;"><span>Hurricanes trigger mass evacuation decisions by millions of households 
+</span></span><span style="display:flex;"><span>each year. Understanding what drives evacuation choices is critical for 
+</span></span><span style="display:flex;"><span>emergency management and policy. Prior research has identified two 
+</span></span><span style="display:flex;"><span>important factors: social networks (peer influence, household coordination) 
+</span></span><span style="display:flex;"><span>and behavioral heterogeneity (differences in risk perception, family structure). 
+</span></span><span style="display:flex;"><span>Yet these factors remain largely studied in isolation. This review examines 
+</span></span><span style="display:flex;"><span>the current state of knowledge and identifies a critical gap at their intersection.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Methodological Traditions
+</span></span></span><span style="display:flex;"><span>Evacuation research has evolved through three distinct traditions...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Detailed synthesis of agent-based, survey, and simulation approaches]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Social Networks and Evacuation
+</span></span></span><span style="display:flex;"><span>While social networks are known to influence many human decisions, 
+</span></span><span style="display:flex;"><span>their role in evacuation remains underexplored. Twenty-four papers 
+</span></span><span style="display:flex;"><span>explicitly study social network effects...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Synthesis of Smith 2024, Jones 2024, etc.]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Common findings:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Social networks increase compliance when they facilitate information sharing
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Network effects vary by household composition
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Coordination within networks can accelerate or delay evacuation
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Contradictions:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Some papers find 23% compliance increase (Smith 2024)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Others find no effect (Jones 2023)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Likely explanation: different network measurement and populations
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Behavioral Heterogeneity in Evacuation
+</span></span></span><span style="display:flex;"><span>Behavioral research shows evacuation decisions vary dramatically by household...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Synthesis of behavioral papers]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### The Gap: Integrating Networks and Heterogeneity
+</span></span></span><span style="display:flex;"><span>Only 8-10 papers address both social networks and behavioral heterogeneity 
+</span></span><span style="display:flex;"><span>simultaneously. None combine this with real-world validation. This gap is 
+</span></span><span style="display:flex;"><span>critical because:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Social network effects likely vary by behavioral type
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Some households may coordinate, others evacuate independently
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Different population segments may show different network susceptibility
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Research Direction: Empirical Study of Network-Heterogeneity Integration
+</span></span></span><span style="display:flex;"><span>To advance this field, we propose an empirical study that:
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Surveys households on evacuation decisions and network characteristics
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Segments households by behavioral heterogeneity (risk-averse, optimistic, etc.)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Tests whether network effects vary by behavioral segment
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Validates findings using real evacuation data (hurricanes 2023-2024)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>This approach would directly address the gap and inform both theory and policy.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[3,500 words of detailed synthesis]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Bibliography: [52 citations]
+</span></span></code></pre></div><h3 id="your-reaction-day-8">Your reaction (Day 8)</h3>
+<p>The Synthesis draft is good, but:</p>
+<ul>
+<li>✅ Well-organized, clear transitions</li>
+<li>✅ Accurately reflects the literature</li>
+<li>⚠️ The &ldquo;Research Direction&rdquo; section feels generic</li>
+<li>⚠️ Missing one important paper (you know of another)</li>
+</ul>
+<p>You decide: move to Critic phase and incorporate feedback.</p>
+<h2 id="phase-6-critic-day-9">Phase 6: Critic (Day 9)</h2>
+<h3 id="run-critic">Run Critic</h3>
+<p>You prompt Critic:</p>
+<pre tabindex="0"><code>Review this literature review draft critically.
+
+Questions:
+1. Are all claims supported by citations?
+2. Are contradictions adequately explained?
+3. Does the narrative logically flow to the gap identification?
+4. Is the proposed research direction justified by the gap?
+5. What assumptions are made that should be questioned?
+6. What important work is missing?
+
+For each issue, suggest a revision.
+</code></pre><h3 id="critics-review-day-9">Critic&rsquo;s review (Day 9)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#75715e">## Critical Review: Household Evacuation Decisions and Social Networks
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Issue 1: Unsupported generalization
+</span></span></span><span style="display:flex;"><span>**Location:** &#34;Social networks increase compliance when they facilitate information sharing&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Problem:**</span> This is stated as fact, but only 3 papers directly support it. 
+</span></span><span style="display:flex;"><span>The other papers show mixed results.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Suggestion:**</span> Revise to: &#34;Some evidence suggests social networks increase 
+</span></span><span style="display:flex;"><span>compliance when they facilitate information sharing (Smith 2024, Brown 2023), 
+</span></span><span style="display:flex;"><span>though findings are not universal (Jones 2023 finds no effect).&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Issue 2: Missing contradictory evidence
+</span></span></span><span style="display:flex;"><span>**Location:** Entire &#34;Social Networks&#34; section
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Problem:**</span> You present contradictions (Smith vs. Jones) but do not resolve them. 
+</span></span><span style="display:flex;"><span>The reader finishes confused. Should they believe social networks matter or not?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Suggestion:**</span> After presenting both findings, add: &#34;This contradiction likely 
+</span></span><span style="display:flex;"><span>reflects differences in: [A] measurement of networks, [B] population studied, 
+</span></span><span style="display:flex;"><span>[C] evacuation context. Future research should disentangle these factors.&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Issue 3: Missing important paper
+</span></span></span><span style="display:flex;"><span>**Problem:** You do not cite Lee et al. 2022, which directly studies 
+</span></span><span style="display:flex;"><span>network effects in families—exactly your intersection of interest.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Suggestion:**</span> Add Lee et al. to the social networks section.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Issue 4: Weak research direction
+</span></span></span><span style="display:flex;"><span>**Location:** &#34;Research Direction&#34; section
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Problem:**</span> You propose an empirical study, but it is generic. 
+</span></span><span style="display:flex;"><span>Why is this study needed? What specific hypothesis?
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Suggestion:**</span> Sharpen to: &#34;We hypothesize that risk-averse households show 
+</span></span><span style="display:flex;"><span>stronger network effects than risk-seeking households. An empirical survey 
+</span></span><span style="display:flex;"><span>of 500 households would test this hypothesis by measuring: [specific variables].&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Issue 5: Overstated gap
+</span></span></span><span style="display:flex;"><span>**Location:** &#34;Only 8-10 papers address both networks and heterogeneity&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Problem:**</span> This is somewhat misleading. 24 papers study networks + 32 study 
+</span></span><span style="display:flex;"><span>heterogeneity. Even if few study both explicitly, implicit coverage is higher.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">**Suggestion:**</span> Revise to: &#34;While 24 papers study social networks and 32 study 
+</span></span><span style="display:flex;"><span>behavioral heterogeneity, only 8-10 explicitly examine their intersection. 
+</span></span><span style="display:flex;"><span>This gap is significant because...&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Summary
+</span></span></span><span style="display:flex;"><span>The review is strong but overclaims in a few places and undersells the 
+</span></span><span style="display:flex;"><span>research direction. With the above revisions, it will be publication-ready.
+</span></span></code></pre></div><h3 id="your-review-of-critics-feedback-day-9">Your review of Critic&rsquo;s feedback (Day 9)</h3>
+<p>You read the Critic&rsquo;s notes:</p>
+<ul>
+<li>✅ Issue 1: Valid — need to be more careful about what is supported</li>
+<li>✅ Issue 2: Valid — contradiction handling is weak</li>
+<li>✅ Issue 3: Valid — you did miss Lee et al. 2022</li>
+<li>⚠️ Issue 4: Valid but needs more thought — you don&rsquo;t have specific hypothesis yet</li>
+<li>✅ Issue 5: Valid — overstated the gap</li>
+</ul>
+<p>You decide:</p>
+<ol>
+<li>Incorporate Issues 1, 2, 3, 5 immediately</li>
+<li>For Issue 4: You will develop the specific hypothesis later (this is the next research phase)</li>
+</ol>
+<h2 id="phase-7-revision-day-10">Phase 7: Revision (Day 10)</h2>
+<h3 id="revise-based-on-feedback">Revise based on feedback</h3>
+<p>You prompt Synthesis:</p>
+<pre tabindex="0"><code>Revise the draft based on this feedback:
+
+1. Revise the social networks section to:
+   - Include Lee et al. 2022 (families and networks)
+   - Present Smith vs. Jones contradiction explicitly
+   - Propose explanation for contradiction (measurement and population differences)
+
+2. Add missing papers:
+   - Lee et al. 2022
+
+3. Revise gap statement:
+   - Change &#34;only 8-10 papers&#34; to &#34;24 study networks, 32 study heterogeneity, 
+     but only 8-10 study both explicitly&#34;
+   - Strengthen the justification for why this gap matters
+
+4. Research direction:
+   - Framework: &#34;To advance understanding, future research should address 
+     three questions: [Q1] How do network effects vary by behavioral type? 
+     [Q2] What mechanisms drive network influence? [Q3] Can real data validate 
+     these network processes?&#34;
+
+Output: Revised draft (same structure, incorporated feedback).
+</code></pre><h3 id="synthesiss-revised-draft-day-10">Synthesis&rsquo;s revised draft (Day 10)</h3>
+<p>Synthesis revises and produces a cleaner version.</p>
+<h3 id="your-final-review-day-10">Your final review (Day 10)</h3>
+<p>You read the revised draft:</p>
+<ul>
+<li>✅ Contradictions now explicitly addressed</li>
+<li>✅ Lee et al. 2022 integrated</li>
+<li>✅ Gap statement sharper and more honest</li>
+<li>✅ Research questions clear</li>
+</ul>
+<p><strong>Status: Ready to submit</strong></p>
+<p>You save as: <code>draft_final.md</code></p>
+<h2 id="phase-8-export-and-use-day-11">Phase 8: Export and use (Day 11)</h2>
+<h3 id="convert-to-manuscript-format">Convert to manuscript format</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Convert Markdown to PDF/Word for submission</span>
+</span></span><span style="display:flex;"><span>pandoc draft_final.md -o evacuation_literature_review.pdf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extract bibliography</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># (Synthesis already provides in BibTeX format)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add figures/tables</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># (Gap Finder can generate comparison tables)</span>
+</span></span></code></pre></div><h3 id="use-the-draft">Use the draft</h3>
+<p>You now have:</p>
+<ol>
+<li>
+<p><strong>Literature review</strong> (5,000 words) — use for:</p>
+<ul>
+<li>Paper background section</li>
+<li>Grant proposal literature</li>
+<li>Thesis chapter</li>
+</ul>
+</li>
+<li>
+<p><strong>Bibliography</strong> (52 papers) — use for:</p>
+<ul>
+<li>Reference list</li>
+<li>Further reading</li>
+</ul>
+</li>
+<li>
+<p><strong>Gap identification</strong> — use for:</p>
+<ul>
+<li>Proposing your research project</li>
+<li>Justifying funding</li>
+<li>Positioning your work</li>
+</ul>
+</li>
+<li>
+<p><strong>Synthesis</strong> — use for:</p>
+<ul>
+<li>Learning the landscape quickly</li>
+<li>Explaining to colleagues</li>
+<li>Teaching students</li>
+</ul>
+</li>
+</ol>
+<h2 id="post-production-maintaining-the-knowledge-base">Post-production: maintaining the knowledge base</h2>
+<p>Your research didn&rsquo;t stop. You continue:</p>
+<h3 id="week-2-new-papers-arrive">Week 2: New papers arrive</h3>
+<p>Scout runs weekly search and finds 5 new papers on the topic.</p>
+<pre tabindex="0"><code>New papers found:
+- Wilson et al. 2026: &#34;Real-time network effects in evacuation&#34;  ← directly in your gap
+- Kumar et al. 2026: &#34;Agent-based models with social networks&#34;
+- [3 more]
+</code></pre><h3 id="your-decision">Your decision</h3>
+<p>New paper Wilson et al. is directly in your research gap. You decide:</p>
+<ol>
+<li>Add to methodology database</li>
+<li>Re-run Gap Finder to see if gaps shift</li>
+<li>Update research direction based on new findings</li>
+</ol>
+<h3 id="new-gap-finder-output">New Gap Finder output</h3>
+<pre tabindex="0"><code>Updated gap analysis:
+- Gap 1 (networks + heterogeneity + validation): still 0 papers [unchanged]
+- Gap 2 (real-time network effects): now 1 paper (Wilson et al. 2026) [shifted]
+- Gap 3 (multi-household coordination): now 3 papers [slightly addressed]
+
+Updated research direction:
+Wilson et al. 2026 moves the needle on real-time dynamics, but the core gap 
+(empirical validation of network-heterogeneity interaction) remains unaddressed.
+Your proposed research still fills this gap uniquely.
+</code></pre><h3 id="timeline-and-effort-summary">Timeline and effort summary</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Phase</th>
+          <th>Agent</th>
+          <th>Duration</th>
+          <th>Effort</th>
+          <th>Output</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Setup</td>
+          <td>Human</td>
+          <td>1 day</td>
+          <td>Low</td>
+          <td>Research brief, agent instructions</td>
+      </tr>
+      <tr>
+          <td>Scout</td>
+          <td>Scout</td>
+          <td>2-3 days</td>
+          <td>Automated</td>
+          <td>248 papers, metadata</td>
+      </tr>
+      <tr>
+          <td>Analyzer</td>
+          <td>Analyzer</td>
+          <td>2-3 days</td>
+          <td>Automated</td>
+          <td>246 extracted records</td>
+      </tr>
+      <tr>
+          <td>Gap Finder</td>
+          <td>Gap Finder</td>
+          <td>1-2 days</td>
+          <td>Automated</td>
+          <td>Gap analysis, contradictions</td>
+      </tr>
+      <tr>
+          <td>Synthesis</td>
+          <td>Synthesis</td>
+          <td>2-3 days</td>
+          <td>Automated</td>
+          <td>4,000-word draft</td>
+      </tr>
+      <tr>
+          <td>Critic</td>
+          <td>Critic</td>
+          <td>0.5 days</td>
+          <td>Automated</td>
+          <td>Review notes (10-15 issues)</td>
+      </tr>
+      <tr>
+          <td>Revision</td>
+          <td>Human + Synthesis</td>
+          <td>2-3 days</td>
+          <td>Moderate</td>
+          <td>Final draft</td>
+      </tr>
+      <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>Team</strong></td>
+          <td><strong>~2 weeks</strong></td>
+          <td><strong>4-5 hours human</strong></td>
+          <td><strong>Publication-ready review</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Key insight:</strong> 95% of effort is automated. You spend ~4-5 hours making decisions.
+Traditional approach: 80+ hours of human literature reading and synthesis.</p>
+<h2 id="what-worked-well">What worked well</h2>
+<ol>
+<li>✅ Scout was exhaustive — found papers across multiple databases</li>
+<li>✅ Analyzer extracted consistently — easy to spot patterns</li>
+<li>✅ Gap Finder made gaps explicit — clearly identified missing intersection</li>
+<li>✅ Synthesis captured contradictions — with explanations</li>
+<li>✅ Critic caught overstated claims — improved accuracy</li>
+<li>✅ Iteration was fast — revisions took hours, not days</li>
+</ol>
+<h2 id="what-was-challenging">What was challenging</h2>
+<ol>
+<li>⚠️ Deciding scope boundaries — &ldquo;am I searching broad enough?&rdquo; was persistent</li>
+<li>⚠️ Handling ambiguity — 10-15 papers were borderline relevant (included conservatively)</li>
+<li>⚠️ Contradictions — harder to reconcile than expected; needed human judgment</li>
+<li>⚠️ Determining &ldquo;doneness&rdquo; — could always search deeper; required discipline to stop</li>
+</ol>
+<h2 id="key-lessons">Key lessons</h2>
+<ol>
+<li><strong>Agent quality depends on instructions</strong> — detailed, specific instructions produced better work</li>
+<li><strong>Feedback loops matter</strong> — Critic&rsquo;s feedback improved Synthesis version 2 dramatically</li>
+<li><strong>Humans stay in loop</strong> — agents handled breadth; humans handled judgment</li>
+<li><strong>Knowledge base is persistent</strong> — New papers later will integrate easily</li>
+<li><strong>Time savings are real</strong> — Saved ~75 hours of manual reading, but gained more nuance</li>
+</ol>
+<h2 id="what-comes-next">What comes next</h2>
+<p>With a polished literature review and gap identification, you now:</p>
+<ol>
+<li><strong>Design the study</strong> — propose an empirical project to test the gap</li>
+<li><strong>Write the proposal</strong> — use Gap Finder output to write research aims</li>
+<li><strong>Monitor the field</strong> — keep Scout running; stay current</li>
+<li><strong>Teach others</strong> — share the review with collaborators/students</li>
+<li><strong>Publish</strong> — expand review to full manuscript for journal</li>
+</ol>
+<p>And when new papers arrive, the team updates the knowledge base automatically.</p>
+<h2 id="the-practical-lesson">The practical lesson</h2>
+<p>A research team can take you from &ldquo;I have a question&rdquo; to &ldquo;Here is what we know and don&rsquo;t know&rdquo; in 2 weeks, with 4-5 hours of your time.</p>
+<p>That is the power of agents handling the mechanical parts (search, extract, compare) while you handle the thinking parts (decide scope, interpret contradictions, judge importance).</p>
+<p>The literature is not scary anymore. It is a database your team can query and synthesize. And it stays current as new work arrives.</p>
+<p>That is how you scale research.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/research-agents/06-multi-agent-workflows/">
+                &#8592;
+                Previous:
+                Multi-Agent Workflows: Coordination and Conflict Resolution
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 11, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/research-agents/08-scaling-and-maintaining/">
+                Next:
+                Scaling and Maintaining: Sustaining Your Research Team
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 13, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>
