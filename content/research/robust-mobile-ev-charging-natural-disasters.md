@@ -192,37 +192,6 @@ Our recent study, <em>"Robust Mobile Electric Vehicle Charging Solutions for Nat
   <p style="font-size: 0.85em; color: #666; margin-top: 15px; font-style: italic; text-align: center;">Figure 1: Methodological framework integrating spatial analytics and probabilistic power grid resilience modeling for MEVCS deployment.</p>
 </div>
 
-### The General Methodological Framework
-
-<div style="background: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin: 30px 0;">
-  <h4 style="margin-top: 0; border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3;">Interactive Framework Explorer</h4>
-  <p style="font-size: 0.9em; color: #555; margin-bottom: 20px;"><em>Click on each methodological phase below to expand and explore the detailed steps involved in our Multi-Criteria Resilience Analysis:</em></p>
-  
-  <details style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; padding: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary style="font-weight: bold; color: #333; outline: none;">Phase 1: Data Collection & Preprocessing</summary>
-    <p style="margin-top: 10px; margin-bottom: 0; color: #555; line-height: 1.5;">Integration of spatial and non-spatial datasets including ZIP code EV registration counts, Annual Average Daily Traffic (AADT), power grid fragility curves, and critical infrastructure accessibility maps.</p>
-  </details>
-  
-  <details style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; padding: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary style="font-weight: bold; color: #333; outline: none;">Phase 2: Criteria Normalization</summary>
-    <p style="margin-top: 10px; margin-bottom: 0; color: #555; line-height: 1.5;">Standardizing disparate data units (e.g., raw traffic counts versus distances to shelters in kilometers) onto a uniform 1-9 suitability scale using Min-Max normalization to ensure proportional analytical influence.</p>
-  </details>
-  
-  <details style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; padding: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary style="font-weight: bold; color: #333; outline: none;">Phase 3: Weight Assignment (AHP)</summary>
-    <p style="margin-top: 10px; margin-bottom: 0; color: #555; line-height: 1.5;">Deriving precise criteria weights based on structured expert elicitation through the Analytical Hierarchy Process (AHP). This ensures the model mathematically reflects prioritized disaster management objectives (e.g., placing higher emphasis on grid failure risk than everyday traffic).</p>
-  </details>
-  
-  <details style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; padding: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary style="font-weight: bold; color: #333; outline: none;">Phase 4: Weighted Overlay Analysis</summary>
-    <p style="margin-top: 10px; margin-bottom: 0; color: #555; line-height: 1.5;">Synthesizing all normalized GIS layers by multiplying them by their respective AHP weights. The result is a composite suitability surface map identifying high-priority geographic zones for MEVCS deployment.</p>
-  </details>
-  
-  <details style="border: 1px solid #ddd; border-radius: 4px; padding: 10px; cursor: pointer; transition: all 0.2s ease;">
-    <summary style="font-weight: bold; color: #333; outline: none;">Phase 5: Coverage-Aware Optimal Selection</summary>
-    <p style="margin-top: 10px; margin-bottom: 0; color: #555; line-height: 1.5;">Extracting the highest-suitability polygons and applying a deterministic greedy selection algorithm constrained by a 5-kilometer spatial exclusion buffer. This finalizes a set of spatially distributed, non-redundant staging locations to maximize evacuation impact.</p>
-  </details>
-</div>
 
 ### Probabilistic Modeling of Grid Fragility
 
@@ -634,3 +603,8 @@ To mitigate spatial clustering and maximize regional coverage, the algorithm ite
 This methodology advances disaster operations research by explicitly coupling transportation network characteristics with power infrastructure resilience, providing decision-makers with a mathematically rigorous tool for emergency logistics planning.
 
 
+## Cite this paper
+
+This research was published on [Transport Geography](www.).
+
+    aa
