@@ -5,4 +5,4 @@ draft: false
 view: "grid"
 ---
 
-This is a collection of my scratchpads on important technical topics. Each scratchpad is meant to serve as a learning space where I organize key concepts, work through ideas, summarize useful references, and document practical insights as I study. The goal is to make these notes clear, reusable, and helpful for building a deeper understanding over time. Some visualizations and contents are generated with the help of Agentic AI.
+This is a collection of my scratchpads on important technical topics. Each scratchpad is meant to serve as a learning space where I organize key concepts, work through ideas, summarize useful references, and document practical insights as I study. The goal is to make these notes clear, reusable, and helpful for building a deeper understanding over time. Please note that Agentic AI was also used to help with visualizations and contents are in this section.
