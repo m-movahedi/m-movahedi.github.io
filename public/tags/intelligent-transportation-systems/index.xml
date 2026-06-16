@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intelligent Transportation Systems on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/intelligent-transportation-systems/</link>
+    <description>Recent content in Intelligent Transportation Systems on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/intelligent-transportation-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Crossroads of LLMs and Traffic Control: A New Era in Urban Mobility</title>
+      <link>http://localhost:1313/research/llm-adaptive-traffic-control/</link>
+      <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/llm-adaptive-traffic-control/</guid>
+      <description>&lt;div style=&#34;background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚦&lt;/span&gt; The Urban Gridlock Challenge&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems (ATCS)—which rely on fixed-time, gap-based, or delay-based logic—often struggle to adapt to dynamic, complex, and unpredictable real-world traffic flows. Designing a truly responsive traffic controller requires a system capable of human-like &lt;strong&gt;reasoning and planning&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

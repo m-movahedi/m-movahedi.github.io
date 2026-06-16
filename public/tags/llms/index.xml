@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LLMs on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/llms/</link>
+    <description>Recent content in LLMs on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/llms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulating Community Behaviors with LLMs: A New Era in Policy Evaluation</title>
+      <link>http://localhost:1313/research/llm-persona-debris-management/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/llm-persona-debris-management/</guid>
+      <description>&lt;div style=&#34;background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #856404; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚧&lt;/span&gt; The Challenge of Debris Management&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #533f03;&#34;&gt;Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive logistical challenge. Traditional planning relies heavily on volume estimation and routing, treating communities as passive entities. However, emergent human behaviors—such as &lt;strong&gt;illegal debris dumping&lt;/strong&gt;—introduce highly stochastic burdens that derail recovery efficiency, amplify health risks, and drastically increase municipal costs.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

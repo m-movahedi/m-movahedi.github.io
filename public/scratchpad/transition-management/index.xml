@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transition Management on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/transition-management/</link>
+    <description>Recent content in Transition Management on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/transition-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>101: Introduction to Market Transitions</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-101/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-101/</guid>
+      <description>&lt;h2 id=&#34;the-nature-of-economic-change-and-systemic-innovation&#34;&gt;The Nature of Economic Change and Systemic Innovation&lt;/h2&gt;&#xA;&lt;p&gt;Markets and economic structures are rarely static; they are complex adaptive systems that are constantly subjected to a myriad of pressures, ranging from technological breakthroughs and shifting consumer preferences to profound macroeconomic and geopolitical reorganizations. Historically, the academic and corporate discourse surrounding market changes has been heavily skewed towards the concept of incremental innovation. This perspective views economic progress as a series of steady, predictable improvements to existing products and services within established technological paradigms—for instance, the iterative process of optimizing fuel efficiency in internal combustion engines or increasing the processing power of a microchip within Moore&amp;rsquo;s Law. While incremental innovation is responsible for the vast majority of day-to-day economic growth and corporate profitability, it fails to account for the catastrophic disruptions that periodically reshape human civilization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>102: The Multi-Level Perspective (MLP)</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-102/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-102/</guid>
+      <description>&lt;p&gt;The Multi-Level Perspective (MLP), primarily developed and popularized by transition scholars such as Frank W. Geels and Arie Rip, is arguably the most foundational heuristic framework in the academic discipline of transition management. The framework was explicitly designed to address the shortcomings of linear innovation models, which erroneously suggest that technological advancement occurs in a vacuum and automatically leads to market adoption.&lt;/p&gt;&#xA;&lt;p&gt;Instead of isolating innovation as a purely technological phenomenon, the MLP posits that profound socio-technical transitions come about through the complex, non-linear, and dynamic interplay of three distinct analytical levels: the &lt;strong&gt;landscape&lt;/strong&gt; (the macro-level environment), the &lt;strong&gt;regime&lt;/strong&gt; (the meso-level established system), and the &lt;strong&gt;niche&lt;/strong&gt; (the micro-level locus of radical innovation). Understanding the unique characteristics of each level—and more importantly, how they interact over time—is critical for analyzing how deeply entrenched systems are ultimately overthrown.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>103: Disruptive Innovation &amp; The S-Curve</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-103/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-103/</guid>
+      <description>&lt;p&gt;While the Multi-Level Perspective (MLP) provides a macro-level framework for understanding societal transitions, we must also examine the micro-economic mechanics of &lt;em&gt;how&lt;/em&gt; specific technologies evolve and ultimately overthrow incumbent market leaders. To understand this, transition management relies heavily on two foundational theories from innovation economics: Richard Foster&amp;rsquo;s &lt;strong&gt;Technology S-Curve&lt;/strong&gt; and Clayton Christensen&amp;rsquo;s theory of &lt;strong&gt;Disruptive Innovation&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Together, these frameworks explain a perplexing historical paradox: why do outstanding, well-managed companies—organizations that listen carefully to their customers and invest heavily in research and development—consistently lose their market dominance when faced with certain types of technological change?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>104: Blue Ocean Strategy</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-104/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-104/</guid>
+      <description>&lt;p&gt;Disruptive Innovation explains &lt;em&gt;why&lt;/em&gt; incumbents fail, but it doesn&amp;rsquo;t necessarily provide a proactive framework for designing a market-beating product from scratch. For this, transition management turns to &lt;strong&gt;Blue Ocean Strategy&lt;/strong&gt;, developed by W. Chan Kim and Renée Mauborgne.&lt;/p&gt;&#xA;&lt;p&gt;Their research, based on a study of 150 strategic moves spanning more than 100 years and 30 industries, challenges the fundamental tenets of classical competitive strategy. Traditional strategy dictates that a company must either compete on lower costs or compete on superior differentiation—but it cannot do both. Blue Ocean Strategy dismantles this structuralist view, arguing that market boundaries and industry structures are not given; they can be systematically reconstructed by the actions and beliefs of industry players.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>105: Wardley Mapping</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-105/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-105/</guid>
+      <description>&lt;p&gt;While Disruptive Innovation tells us &lt;em&gt;how&lt;/em&gt; attackers win and Blue Ocean Strategy tells us &lt;em&gt;where&lt;/em&gt; to look for new value, neither framework provides a topographical map of the battlefield. This is where &lt;strong&gt;Wardley Mapping&lt;/strong&gt;, pioneered by Simon Wardley, becomes a critical tool for transition management.&lt;/p&gt;&#xA;&lt;p&gt;Strategy without a map is merely intuition. Wardley realized that business strategy was severely lacking situational awareness. In military history, generals who understand the terrain usually defeat generals who don&amp;rsquo;t. Wardley Mapping provides this visual terrain for business, allowing leaders to see how components within a value chain are evolving and where capital should be allocated to trigger a transition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>106: Diffusion of Innovations</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-106/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-106/</guid>
+      <description>&lt;p&gt;A technological transition cannot occur in a vacuum; it requires a population to actively adopt the change. Everett Rogers’ &lt;strong&gt;Diffusion of Innovations&lt;/strong&gt; is the definitive sociological theory explaining how, why, and at what rate new ideas and technology spread through cultures.&lt;/p&gt;&#xA;&lt;p&gt;It asserts that diffusion is fundamentally a social process, heavily reliant on communication networks and peer influence rather than purely objective technological superiority. Even a phenomenally superior product will fail to transition the market if the social mechanisms of diffusion are blocked.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>107: Jobs-to-be-Done (JTBD)</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-107/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-107/</guid>
+      <description>&lt;p&gt;While the Diffusion of Innovations model explains &lt;em&gt;who&lt;/em&gt; adopts a technology and &lt;em&gt;when&lt;/em&gt;, it does not explain the underlying psychological causality of &lt;em&gt;why&lt;/em&gt; they adopt it. Why do people abandon a product they have used for years to switch to something completely new?&lt;/p&gt;&#xA;&lt;p&gt;To answer this, transition management utilizes the &lt;strong&gt;Jobs-to-be-Done (JTBD)&lt;/strong&gt; theory, popularized by Clayton Christensen and Bob Moesta. The core premise is that customers do not buy products; they &amp;ldquo;hire&amp;rdquo; products to do a &amp;ldquo;job&amp;rdquo; they need to get done in their lives. If a new technology does the job significantly better, they will &amp;ldquo;fire&amp;rdquo; the old product and hire the new one.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>108: Crossing the Chasm</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-108/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-108/</guid>
+      <description>&lt;p&gt;While Rogers&amp;rsquo; Diffusion of Innovations model presents a smooth bell curve of adoption, Geoffrey Moore identified a fatal flaw in how companies interpret it. The transition from one adopter category to the next is not seamless. There are gaps between the psychologies of each group.&lt;/p&gt;&#xA;&lt;p&gt;The most lethal of these gaps lies between the &lt;strong&gt;Early Adopters&lt;/strong&gt; (Visionaries) and the &lt;strong&gt;Early Majority&lt;/strong&gt; (Pragmatists). Moore coined this terrifying void &lt;strong&gt;&amp;ldquo;The Chasm.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-the-chasm-exists&#34;&gt;Why the Chasm Exists&lt;/h2&gt;&#xA;&lt;p&gt;Visionaries buy technology to gain a massive competitive leap. They expect bugs, they want custom integrations, and they don&amp;rsquo;t care what other people are doing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>109: Strategic Niche Management (SNM)</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-109/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-109/</guid>
+      <description>&lt;p&gt;We know from the Multi-Level Perspective (MLP) that radical innovations originate in &amp;ldquo;Niches&amp;rdquo;—safe spaces where experimental technologies can be developed away from the brutal, optimizing pressures of the incumbent Socio-Technical Regime. But how are these niches actually built and managed?&lt;/p&gt;&#xA;&lt;p&gt;This brings us to &lt;strong&gt;Strategic Niche Management (SNM)&lt;/strong&gt;, a framework used by policymakers and transition managers to actively nurture radical innovations until they are robust enough to cross the chasm and survive in the open market.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>110: Ecosystem Building</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-110/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-110/</guid>
+      <description>&lt;p&gt;The history of technology is littered with brilliant, objectively superior innovations that utterly failed to transition the market. Often, this happens not because the core technology was flawed, but because the &lt;strong&gt;innovation ecosystem&lt;/strong&gt; surrounding it was unready.&lt;/p&gt;&#xA;&lt;p&gt;Ron Adner’s work on Innovation Ecosystems emphasizes that your success no longer depends solely on your own efforts. It depends on the success of other partners who must innovate alongside you. If you build a revolutionary electric vehicle (the core innovation), but no one builds the high-speed charging network (the co-innovation), your product fails.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>111: Incumbent Inertia</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-111/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-111/</guid>
+      <description>&lt;p&gt;Why do massively profitable, technologically capable incumbent corporations fail to manage transitions? It is rarely a lack of intelligence or engineering talent. Rather, it is a structural phenomenon known as &lt;strong&gt;Incumbent Inertia&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Incumbent inertia is the paradox of success. The very routines, resource allocation algorithms, and cultural values that made a company dominant in the &lt;em&gt;current&lt;/em&gt; socio-technical regime actively prevent it from adapting to the &lt;em&gt;next&lt;/em&gt; one.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-resource-allocation-trap&#34;&gt;The Resource Allocation Trap&lt;/h2&gt;&#xA;&lt;p&gt;Christensen identified that in large corporations, resources flow to the projects that promise the highest, most immediate profit margins. This creates a fatal trap.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>112: Transition Governance</title>
+      <link>http://localhost:1313/scratchpad/transition-management/tm-112/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/transition-management/tm-112/</guid>
+      <description>&lt;p&gt;We have reached the culmination of our series. We have mapped the landscape (MLP, Wardley), engineered the disruption (S-Curves, Blue Ocean), manipulated the psychology of adoption (Diffusion, JTBD), and mitigated institutional risks (SNM, Ecosystems, Inertia).&lt;/p&gt;&#xA;&lt;p&gt;But how does a society or a massive organization actively &lt;em&gt;steer&lt;/em&gt; a long-term transition? This requires &lt;strong&gt;Transition Governance&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;steer-dont-control&#34;&gt;Steer, Don&amp;rsquo;t Control&lt;/h2&gt;&#xA;&lt;p&gt;Transition Governance acknowledges that massive socio-technical shifts (like the transition to renewable energy or the adoption of AI) are too complex, too wicked, and too non-linear to be managed through traditional top-down planning. You cannot use a rigid Gantt chart to manage a 30-year societal shift.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

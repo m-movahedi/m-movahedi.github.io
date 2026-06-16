@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Simulating Community Behaviors with LLMs: A New Era in Policy Evaluation</title>
+    <meta name="description" content=" 🚧 The Challenge of Debris Management Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive …">
+    <meta name="keywords" content='Artificial Intelligence, Resilience, Disaster Management, Agent-Based Modeling, LLMs'>
+
+    <meta property="og:url" content="http://localhost:1313/research/llm-persona-debris-management/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Simulating Community Behaviors with LLMs: A New Era in Policy Evaluation">
+    <meta property="og:description" content=" 🚧 The Challenge of Debris Management Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simulating Community Behaviors with LLMs: A New Era in Policy Evaluation">
+    <meta name="twitter:description" content=" 🚧 The Challenge of Debris Management Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive …">
+    <meta property="twitter:domain" content="http://localhost:1313/research/llm-persona-debris-management/">
+    <meta property="twitter:url" content="http://localhost:1313/research/llm-persona-debris-management/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/research/llm-persona-debris-management/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Simulating Community Behaviors with LLMs: A New Era in Policy Evaluation</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              April 16, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/artificial-intelligence">Artificial Intelligence</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/resilience">Resilience</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/disaster-management">Disaster Management</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/agent-based-modeling">Agent-Based Modeling</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/llms">LLMs</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <h4 style="margin-top: 0; color: #856404; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🚧</span> The Challenge of Debris Management</h4>
+  <p style="margin-bottom: 0; color: #533f03;">Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive logistical challenge. Traditional planning relies heavily on volume estimation and routing, treating communities as passive entities. However, emergent human behaviors—such as <strong>illegal debris dumping</strong>—introduce highly stochastic burdens that derail recovery efficiency, amplify health risks, and drastically increase municipal costs.</p>
+</div>
+<p>Our latest research introduces a pioneering approach: <strong>a Large Language Model (LLM)-based persona framework</strong> designed to simulate complex, heterogeneous community behaviors. By utilizing generative AI to role-play specific community personas, we can test policy interventions in a simulated environment before deploying them in the real world.</p>
+<h3 id="moving-beyond-traditional-agent-based-models">Moving Beyond Traditional Agent-Based Models</h3>
+<p>Historically, predicting household behavior relied on static demographic assumptions or traditional Agent-Based Modeling (ABM). While ABMs represent diverse decisions, their accuracy is constrained by rigid rulesets, and scaling them requires massive computational resources.</p>
+<p>Our framework bridges this gap by deploying LLMs as context-aware, role-playing surrogate agents. By grounding these AI models in empirical survey data, they internalize the social, economic, and psychological nuances of real residents.</p>
+<h3 id="the-4-phase-llm-persona-framework">The 4-Phase LLM Persona Framework</h3>
+<p>To systematically integrate behavioral heterogeneity into disaster management decision support, we developed an iterative four-step workflow.</p>
+<style>
+  .llm-framework-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+    margin: 30px 0;
+    font-family: Arial, sans-serif;
+  }
+  .llm-phase-box {
+    flex: 1;
+    background: #fff;
+    border: 2px solid #a5b1c2;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0;
+  }
+  .llm-phase-title {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+  }
+  .llm-phase-content {
+    font-size: 0.85em;
+    color: #4b6584;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .llm-tag {
+    background: #f1f2f6;
+    padding: 5px 8px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    color: #2f3640;
+    border: 1px solid #dcdde1;
+  }
+  .llm-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a5b1c2;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .llm-framework-container { flex-direction: column; }
+    .llm-arrow { transform: rotate(90deg); margin: 10px 0; }
+  }
+</style>
+<div class="llm-framework-container">
+  <!-- Phase A -->
+  <div class="llm-phase-box" style="border-color: #e74c3c;">
+    <div class="llm-phase-title" style="color: #c0392b;">A. Data Collection</div>
+    <div class="llm-phase-content">
+      <div style="text-align: center; font-size: 2em; margin-bottom: 5px;">📊</div>
+      <div class="llm-tag">Socioeconomic Data</div>
+      <div class="llm-tag">Behavioral Factors</div>
+      <div class="llm-tag">KAP Surveys</div>
+    </div>
+  </div>
+  <div class="llm-arrow">➔</div>
+  <!-- Phase B -->
+  <div class="llm-phase-box" style="border-color: #27ae60;">
+    <div class="llm-phase-title" style="color: #1e8449;">B. Behavioral Analysis</div>
+    <div class="llm-phase-content">
+      <div style="text-align: center; font-size: 2em; margin-bottom: 5px;">🧠</div>
+      <div class="llm-tag" style="background: #e8f8f5; border-color: #a3e4d7; color: #117a65;">Factor Analysis</div>
+      <div class="llm-tag" style="background: #e8f8f5; border-color: #a3e4d7; color: #117a65;">KAP Modeling</div>
+      <div class="llm-tag" style="background: #e8f8f5; border-color: #a3e4d7; color: #117a65;">Latent Behaviors</div>
+    </div>
+  </div>
+  <div class="llm-arrow">➔</div>
+  <!-- Phase C -->
+  <div class="llm-phase-box" style="border-color: #3498db;">
+    <div class="llm-phase-title" style="color: #2874a6;">C. Persona Tuning</div>
+    <div class="llm-phase-content">
+      <div style="text-align: center; font-size: 2em; margin-bottom: 5px;">🤖</div>
+      <div style="display: flex; justify-content: space-between; align-items: center; background: #ebf5fb; padding: 5px; border-radius: 4px; border: 1px solid #aed6f1;">
+        <div style="font-size: 0.8em; font-weight: bold; color: #2874a6; text-align: center; width: 45%;">Moderator Agent</div>
+        <div style="display: flex; flex-direction: column; gap: 4px; width: 50%;">
+           <div class="llm-tag" style="font-size: 0.75em; padding: 3px;">Persona A</div>
+           <div class="llm-tag" style="font-size: 0.75em; padding: 3px;">Persona B</div>
+        </div>
+      </div>
+      <div class="llm-tag" style="background: #ebf5fb; border-color: #aed6f1; color: #2874a6;">Bias Evaluation</div>
+    </div>
+  </div>
+  <div class="llm-arrow">➔</div>
+  <!-- Phase D -->
+  <div class="llm-phase-box" style="border-color: #e67e22;">
+    <div class="llm-phase-title" style="color: #b9770e;">D. Testing & Eval</div>
+    <div class="llm-phase-content">
+      <div style="text-align: center; font-size: 2em; margin-bottom: 5px;">🎯</div>
+      <div class="llm-tag" style="background: #fef5e7; border-color: #f5cba7; color: #b9770e;">Testing Data</div>
+      <div class="llm-tag" style="background: #fef5e7; border-color: #f5cba7; color: #b9770e;">Decision Analysis</div>
+      <div class="llm-tag" style="background: #fef5e7; border-color: #f5cba7; color: #b9770e;">Review Feedback</div>
+    </div>
+  </div>
+</div>
+<p style="text-align: center; font-size: 0.85em; color: #666; font-style: italic;">Figure 1: Workflow for LLM persona modeling, spanning empirical data collection to agent evaluation.</p>
+<h3 id="scientific-grounding--empirical-calibration">Scientific Grounding &amp; Empirical Calibration</h3>
+<ol>
+<li><strong>Community Data Collection</strong>: We started with empirical Knowledge, Attitudes, and Practices (KAP) survey data collected from Tampa residents following Hurricane Ian. This provided real-world baselines on hazard sensitivity, risk tolerance, and municipal trust.</li>
+<li><strong>Behavioral Analysis</strong>: Using Principal Component Analysis (PCA) and K-means clustering ($k=6$), we moved beyond demographics. We identified distinct &ldquo;personas&rdquo; driven by behavior—segmenting the population into groups prone to legal, mixed, or illegal disposal practices based on shared socio-psychological traits.</li>
+<li><strong>Persona Development</strong>: We conditioned a frontier LLM (GPT-4o-mini) to role-play these specific clusters. To ensure scientific rigor, a <strong>Moderator Agent</strong> was deployed to monitor behavioral coherence via the Population Stability Index (PSI) and Kullback-Leibler Divergence (KLD), preventing hallucinations and ensuring the agent didn&rsquo;t drift from empirical data distributions.</li>
+<li><strong>Model Evaluation</strong>: We tested the AI agents against a 20% withheld subset of the survey data.</li>
+</ol>
+<div style="display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 250px; background: #eafaf1; padding: 20px; border-radius: 8px; border-top: 4px solid #2ecc71; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+    <h3 style="color: #27ae60; margin-top: 0;">75% Alignment Accuracy</h3>
+    <p style="color: #2c3e50; font-size: 0.95em;">The conditioned persona agents achieved a ~75% decision alignment accuracy when predicting illegal dumping tendencies, significantly outperforming conventional baselines like standard Gradient Boosting models (~60%).</p>
+  </div>
+  <div style="flex: 1; min-width: 250px; background: #f4f6f6; padding: 20px; border-radius: 8px; border-top: 4px solid #34495e; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+    <h3 style="color: #2c3e50; margin-top: 0;">Context-Sensitive Reasoning</h3>
+    <p style="color: #4b6584; font-size: 0.95em;">The agents didn't just mimic choices; they produced human-like rationales. For example, if travel time to a disposal site exceeded <strong>30 minutes</strong>, or if municipal collection was delayed past <strong>14 days</strong>, the agent's reasoning shifted from family safety compliance to frustration, accurately triggering illegal dumping behaviors mirroring real residents.</p>
+  </div>
+</div>
+<h3 id="implications-for-resilient-infrastructure">Implications for Resilient Infrastructure</h3>
+<p>By treating LLMs as surrogate stand-ins for affected communities, stakeholders gain a powerful, data-driven sandbox. Instead of rolling out expensive and untested awareness campaigns or enforcement strategies, municipalities can simulate how different intervention thresholds resonate with highly specific neighborhood personas.</p>
+<p>This framework represents a paradigm shift—moving disaster recovery from a purely logistical operation to a human-centered, socio-psychological science.</p>
+<pre><code>@inproceedings{Baldwin2026,
+address = {San Antonio, TX},
+author = {Baldwin, Alex and Movahedi, Mohammad and Choi, Juyeong},
+booktitle = {ASCE Construction Research Congress 2026},
+title = {{Large-Language Model-based Framework for Simulating Community Behavior in Policy Evaluation: Application to Community Debris Management}},
+year = {2026}
+}
+</code></pre>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/research/generative-ai-virtual-reality-a-training-tool/">
+                &#8592;
+                Previous:
+                Generative AI + Virtual Reality: A training tool
+            </a>
+        </p>
+        <p class="prev-post-date">
+            July 8, 2025
+        </p>
+    </div>
+    
+
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

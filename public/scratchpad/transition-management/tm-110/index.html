@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>110: Ecosystem Building</title>
+    <meta name="description" content="The history of technology is littered with brilliant, objectively superior innovations that utterly failed to transition the market. Often, this happens not …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/transition-management/tm-110/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="110: Ecosystem Building">
+    <meta property="og:description" content="The history of technology is littered with brilliant, objectively superior innovations that utterly failed to transition the market. Often, this happens not …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="110: Ecosystem Building">
+    <meta name="twitter:description" content="The history of technology is littered with brilliant, objectively superior innovations that utterly failed to transition the market. Often, this happens not …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/transition-management/tm-110/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/transition-management/tm-110/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/transition-management/tm-110/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>110: Ecosystem Building</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 16, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>The history of technology is littered with brilliant, objectively superior innovations that utterly failed to transition the market. Often, this happens not because the core technology was flawed, but because the <strong>innovation ecosystem</strong> surrounding it was unready.</p>
+<p>Ron Adner’s work on Innovation Ecosystems emphasizes that your success no longer depends solely on your own efforts. It depends on the success of other partners who must innovate alongside you. If you build a revolutionary electric vehicle (the core innovation), but no one builds the high-speed charging network (the co-innovation), your product fails.</p>
+<h2 id="co-innovation-risk-and-adoption-chain-risk">Co-Innovation Risk and Adoption Chain Risk</h2>
+<p>Transition managers must calculate two hidden risks that doom isolated technologies:</p>
+<ol>
+<li><strong>Co-Innovation Risk:</strong> The extent to which the success of your innovation depends on the successful commercialization of other innovations. (e.g., HD Televisions were useless until broadcasters adopted HD cameras and transmission standards).</li>
+<li><strong>Adoption Chain Risk:</strong> The extent to which partners will need to adopt your innovation before end-consumers can even evaluate it. (e.g., For a new medical device to reach a patient, it must be adopted by the FDA, the hospital purchasing board, the insurance company, and the doctor).</li>
+</ol>
+<blockquote>
+<p><strong>Suggested Reading:</strong></p>
+<ul>
+<li><a href="https://scholar.google.com/scholar?q=The+Wide+Lens+Adner">The Wide Lens: What Successful Innovators See That Others Miss</a> by Ron Adner (2012). A masterclass on how to map your ecosystem and mitigate the hidden risks of collaborative innovation.</li>
+</ul>
+</blockquote>
+<div class="tm-diagram-container" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:20px; margin: 30px 0;">
+    <h3 style="text-align: center; margin-top: 0; color:#1e293b;">Ecosystem Bottlenecks</h3>
+    <p style="text-align: center; font-size: 0.9em; color:#64748b; margin-bottom: 20px;">The core innovation (Electric Vehicle) cannot succeed until the co-innovation bottlenecks are resolved.</p>    
+    <div style="position: relative; width: 100%; height: 200px; background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; display:flex; align-items:center; justify-content:space-around; padding:20px; box-sizing: border-box;">        
+        <!-- Battery Tech -->
+        <div id="bottle1" style="width:100px; height:100px; background:#ef4444; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:white; font-weight:bold; transition:all 0.5s;">
+            <span style="font-size:2rem;">🔋</span>
+            <span style="font-size:0.7rem;">Battery Range</span>
+        </div>
+        <!-- Charging Network -->
+        <div id="bottle2" style="width:100px; height:100px; background:#ef4444; border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:white; font-weight:bold; transition:all 0.5s;">
+            <span style="font-size:2rem;">🔌</span>
+            <span style="font-size:0.7rem;">Charging Grid</span>
+        </div>
+        <!-- Core Innovation -->
+        <div id="coreInno" style="width:120px; height:120px; background:#94a3b8; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:white; font-weight:bold; transition:all 0.5s; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+            <span style="font-size:3rem;">🚗</span>
+            <span style="font-size:0.8rem;">EV Market</span>
+        </div>
+    </div>
+    <div style="margin-top: 20px; text-align: center; display:flex; justify-content:center; gap:10px;">
+        <button id="solveBatteryBtn" style="background:#3b82f6; color:white; border:none; padding:10px; border-radius:6px; cursor:pointer; font-weight:bold;">Solve Battery Tech</button>
+        <button id="solveGridBtn" style="background:#3b82f6; color:white; border:none; padding:10px; border-radius:6px; cursor:pointer; font-weight:bold;">Deploy Charging Grid</button>
+    </div>
+</div>
+<script>
+    let b1Solved = false;
+    let b2Solved = false;
+    document.getElementById('solveBatteryBtn').addEventListener('click', function(e) {
+        b1Solved = true;
+        document.getElementById('bottle1').style.background = '#10b981';
+        e.target.disabled = true;
+        e.target.style.background = '#94a3b8';
+        checkCore();
+    });
+    document.getElementById('solveGridBtn').addEventListener('click', function(e) {
+        b2Solved = true;
+        document.getElementById('bottle2').style.background = '#10b981';
+        e.target.disabled = true;
+        e.target.style.background = '#94a3b8';
+        checkCore();
+    });
+    function checkCore() {
+        if(b1Solved && b2Solved) {
+            const core = document.getElementById('coreInno');
+            core.style.background = '#f59e0b';
+            core.style.transform = 'scale(1.2)';
+            core.style.boxShadow = '0 0 30px #f59e0b';
+            core.innerHTML = '<span style="font-size:3rem;">⚡🚗⚡</span><span style="font-size:0.8rem;">Market Unleashed</span>';
+        }
+    }
+</script>
+<h2 id="minimum-viable-ecosystem-mve">Minimum Viable Ecosystem (MVE)</h2>
+<p>Because of these dependencies, transition management requires building a <strong>Minimum Viable Ecosystem (MVE)</strong> before launching a Minimum Viable Product (MVP).</p>
+<p>An MVE represents the smallest configuration of partners required to create a commercially viable offering. Apple&rsquo;s iPod succeeded where early MP3 players failed because Apple didn&rsquo;t just build the hardware (the MVP); they built iTunes and secured the legal rights to the music catalogs, resolving the critical co-innovation bottleneck. They built the ecosystem, and by doing so, transitioned the entire music industry.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/transition-management/tm-109/">
+                &#8592;
+                Previous:
+                109: Strategic Niche Management (SNM)
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 16, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/transition-management/tm-111/">
+                Next:
+                111: Incumbent Inertia
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 16, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

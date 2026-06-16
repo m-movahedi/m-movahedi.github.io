@@ -6,14 +6,14 @@
     <description>Recent content in Disaster Management on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/disaster-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Robust Mobile Electric Vehicle Charging Solutions for Natural Disasters</title>
-      <link>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</link>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</guid>
-      <description>&lt;p&gt;The transition to electric vehicles (EVs) introduces new paradigms for emergency management, particularly in hurricane-prone regions. During extreme weather events, the vulnerability of the power grid becomes a critical bottleneck. Structural failures within the transmission and distribution networks can disable permanently installed EV charging stations precisely when they are most necessary for mass population evacuations.&lt;/p&gt;&#xA;&lt;div style=&#34;background-color: #f4f6f9; padding: 20px; border-left: 5px solid #0056b3; border-radius: 4px; margin: 25px 0;&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #0056b3;&#34;&gt;The Research Problem&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; font-size: 1.1em;&#34;&gt;How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?&lt;/p&gt;</description>
+      <title>Simulating Community Behaviors with LLMs: A New Era in Policy Evaluation</title>
+      <link>http://localhost:1313/research/llm-persona-debris-management/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/llm-persona-debris-management/</guid>
+      <description>&lt;div style=&#34;background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #856404; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚧&lt;/span&gt; The Challenge of Debris Management&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #533f03;&#34;&gt;Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive logistical challenge. Traditional planning relies heavily on volume estimation and routing, treating communities as passive entities. However, emergent human behaviors—such as &lt;strong&gt;illegal debris dumping&lt;/strong&gt;—introduce highly stochastic burdens that derail recovery efficiency, amplify health risks, and drastically increase municipal costs.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

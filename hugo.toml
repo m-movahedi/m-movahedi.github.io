@@ -21,9 +21,11 @@ googleAnalytics = "G-1WZSE8DHZ9"
 <link rel="stylesheet" href="/css/llm-series.css">
 <link rel="stylesheet" href="/css/hbm-series.css">
 <link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
 
 <script defer src="/js/hbm-widgets.js"></script>
 <script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
 <script>
@@ -60,12 +62,12 @@ gtag('config', 'G-1WZSE8DHZ9');
 
   [[menu.main]]
     name = "Background"
-    url = "/Background/"
+    url = "/background/"
     weight = 2
 
   [[menu.main]]
     name = "Webinars"
-    url = "/Webinars/"
+    url = "/webinars/"
     weight = 3
 
   [[menu.main]]

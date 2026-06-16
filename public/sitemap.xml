@@ -2,32 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/disaster-management/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-101/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/electric-vehicles/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-102/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-103/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-104/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-105/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-106/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-107/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-108/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-109/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-110/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-111/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/transition-management/tm-112/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/multi-criteria-decision-analysis/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/resilience/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/transportation-planning/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/transition-management/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ai-agents/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
@@ -47,7 +65,7 @@
     <loc>http://localhost:1313/scratchpad/research-agents/08-scaling-and-maintaining/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/scratchpad/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/case-study/</loc>
@@ -344,6 +362,27 @@
     <loc>http://localhost:1313/scratchpad/llm/llm-101/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/agent-based-modeling/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/disaster-management/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/llms/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/resilience/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/llm-persona-debris-management/</loc>
+    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/disaster-resilience/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -371,8 +410,29 @@
     <loc>http://localhost:1313/webinars/nheri_rsr_spring2025/</loc>
     <lastmod>2025-01-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/adaptive-control/</loc>
+    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/intelligent-transportation-systems/</loc>
+    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/large-language-models/</loc>
+    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/reinforcement-learning/</loc>
+    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/llm-adaptive-traffic-control/</loc>
+    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/traffic-signal-control/</loc>
+    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/research/sightseeing-tour-planning/</loc>
-    <lastmod>2024-08-07T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/transportation-planning/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>

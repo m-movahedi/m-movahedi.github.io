@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Transition Management</title>
+    <meta name="description" content="Welcome to the Transition Management curriculum. This 12-part series is an advanced, academic exploration of how massive socio-technical shifts occur, how …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/transition-management/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Transition Management">
+    <meta property="og:description" content="Welcome to the Transition Management curriculum. This 12-part series is an advanced, academic exploration of how massive socio-technical shifts occur, how …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Transition Management">
+    <meta name="twitter:description" content="Welcome to the Transition Management curriculum. This 12-part series is an advanced, academic exploration of how massive socio-technical shifts occur, how …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/transition-management/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/transition-management/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/transition-management/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/scratchpad/transition-management/index.xml" title="Mohammad Movahedi">
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+
+<h1>Transition Management</h1>
+
+
+<div class="section-content">
+  <p>Welcome to the <strong>Transition Management</strong> curriculum. This 12-part series is an advanced, academic exploration of how massive socio-technical shifts occur, how disruptive innovations reshape industries, and the strategic frameworks leaders use to navigate these turbulent periods.</p>
+<p>If you are a student, researcher, or strategist attempting to understand why powerful incumbents fail or how niche technologies overtake entire markets, this series provides a comprehensive, interconnected playbook. We bridge the gap between sociological theory (like the Multi-Level Perspective and Diffusion of Innovations) and actionable business strategy (like Blue Ocean and Jobs-to-be-Done).</p>
+<h2 id="course-philosophy">Course Philosophy</h2>
+<p>Transitions are not purely technological phenomena; they are socio-technical. A superior technology does not automatically win. A transition only succeeds when technology, user psychology, regulatory policy, and ecosystem economics align.</p>
+
+</div>
+
+
+
+
+<div class="timeline timeline-compact">
+
+  
+
+  <div class="timeline-row right">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-101/">
+
+        <h2>101: Introduction to Market Transitions</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row left">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-102/">
+
+        <h2>102: The Multi-Level Perspective (MLP)</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row right">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-103/">
+
+        <h2>103: Disruptive Innovation &amp; The S-Curve</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row left">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-104/">
+
+        <h2>104: Blue Ocean Strategy</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row right">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-105/">
+
+        <h2>105: Wardley Mapping</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row left">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-106/">
+
+        <h2>106: Diffusion of Innovations</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row right">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-107/">
+
+        <h2>107: Jobs-to-be-Done (JTBD)</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row left">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-108/">
+
+        <h2>108: Crossing the Chasm</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row right">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-109/">
+
+        <h2>109: Strategic Niche Management (SNM)</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row left">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-110/">
+
+        <h2>110: Ecosystem Building</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row right">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-111/">
+
+        <h2>111: Incumbent Inertia</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+  <div class="timeline-row left">
+
+    <div class="timeline-card-wrapper">
+      <a class="timeline-card" href="/scratchpad/transition-management/tm-112/">
+
+        <h2>112: Transition Governance</h2>
+
+      </a>
+    </div>
+
+  </div>
+
+  
+
+</div>
+
+
+
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>
