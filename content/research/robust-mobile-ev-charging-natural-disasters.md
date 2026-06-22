@@ -1,7 +1,7 @@
 ---
 title : "Robust Mobile Electric Vehicle Charging Solutions for Natural Disasters"
 date : "2026-06-15"
-draft : true
+draft : false
 type : "post"
 tags:
   - "Resilience"
@@ -605,6 +605,18 @@ This methodology advances disaster operations research by explicitly coupling tr
 
 ## Cite this paper
 
-This research was published on [Transport Geography](www.).
+This research was published on [Transport Geography]([www.](https://doi.org/10.1016/j.jtrangeo.2026.104739)).
 
-    aa
+    @article{KHAYAMIM2026104739,
+    title = {Robust mobile electric vehicle charging solutions for natural disasters: A multi-criteria resilience analysis in Florida},
+    journal = {Journal of Transport Geography},
+    volume = {135},
+    pages = {104739},
+    year = {2026},
+    issn = {0966-6923},
+    doi = {https://doi.org/10.1016/j.jtrangeo.2026.104739},
+    url = {https://www.sciencedirect.com/science/article/pii/S0966692326001936},
+    author = {Razieh Khayamim and Mohammad Movahedi and Onur Alisan and Seçkin Özkul and Eren Erman Ozguven and Maxim A. Dulebenets},
+    keywords = {Mobile EV charging stations, Power grid failures, Hurricane emergencies, Electric vehicle infrastructure, Resilient infrastructure},
+    abstract = {The growing adoption of electric vehicles (EVs) creates new challenges for emergency management, particularly regarding evacuation capabilities during natural disasters such as hurricanes. Infrastructure disruptions and power grid failures, common during emergencies, can severely limit evacuation options, leaving EV owners vulnerable due to inadequate charging facilities. In those cases, mobile charging stations could be used to provide agile supply. As such, this study examines how vulnerable EV charging infrastructures would become during large-scale evacuations, presenting a multi-criteria decision analysis framework for promising deployment of mobile EV charging stations during hurricane evacuations. The methodology uniquely integrates power grid vulnerability assessment with geospatial analysis to identify the strategic placement of charging infrastructure during emergencies. Focusing on Hurricane Ian’s impact on the greater Tampa Bay region in Florida, USA as a case study, the study incorporated a set of criteria: (1) EV ownership density, (2) charging infrastructure vulnerability, (3) proximity to evacuation routes, (4) accessibility to critical facilities, and (5) traffic volume. Through systematic spatial analysis, 238 candidate locations were identified and evaluated using a distribution algorithm that implemented a proper buffer to ensure efficient resource allocation while maintaining overall service coverage. The final deployment strategy identified fourteen strategically promising locations, significantly enhancing coverage of critical evacuation routes, facilities, demand and effectively addressing gaps in existing charging infrastructure. This research contributes a robust methodological framework beneficial to emergency management practices in coastal regions with growing EV adoption rates. Results underscore the importance and effectiveness of integrating power grid resilience considerations into traditional transportation planning, substantially improving emergency response capabilities for EV-dependent communities during natural disasters.}
+    }
