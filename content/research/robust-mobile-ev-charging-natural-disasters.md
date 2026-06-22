@@ -605,7 +605,7 @@ This methodology advances disaster operations research by explicitly coupling tr
 
 ## Cite this paper
 
-This research was published on [Transport Geography]([www.](https://doi.org/10.1016/j.jtrangeo.2026.104739)).
+This research was published on [Transport Geography](https://www.doi.org/10.1016/j.jtrangeo.2026.104739).
 
     @article{KHAYAMIM2026104739,
     title = {Robust mobile electric vehicle charging solutions for natural disasters: A multi-criteria resilience analysis in Florida},
