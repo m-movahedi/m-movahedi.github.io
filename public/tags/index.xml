@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Disaster Management</title>
+      <link>http://localhost:1313/tags/disaster-management/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/disaster-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Electric Vehicles</title>
+      <link>http://localhost:1313/tags/electric-vehicles/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/electric-vehicles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multi-Criteria Decision Analysis</title>
+      <link>http://localhost:1313/tags/multi-criteria-decision-analysis/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/multi-criteria-decision-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resilience</title>
+      <link>http://localhost:1313/tags/resilience/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/resilience/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transportation Planning</title>
+      <link>http://localhost:1313/tags/transportation-planning/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/transportation-planning/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI Agents</title>
       <link>http://localhost:1313/tags/ai-agents/</link>
@@ -310,7 +345,7 @@
       <description></description>
     </item>
     <item>
-      <title>Generative-AI</title>
+      <title>Generative AI</title>
       <link>http://localhost:1313/tags/generative-ai/</link>
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/generative-ai/</guid>
@@ -331,24 +366,10 @@
       <description></description>
     </item>
     <item>
-      <title>Disaster Management</title>
-      <link>http://localhost:1313/tags/disaster-management/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/disaster-management/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>LLMs</title>
       <link>http://localhost:1313/tags/llms/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/llms/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Resilience</title>
-      <link>http://localhost:1313/tags/resilience/</link>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/resilience/</guid>
       <description></description>
     </item>
     <item>
@@ -412,13 +433,6 @@
       <link>http://localhost:1313/tags/traffic-signal-control/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/traffic-signal-control/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Transportation Planning</title>
-      <link>http://localhost:1313/tags/transportation-planning/</link>
-      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/transportation-planning/</guid>
       <description></description>
     </item>
   </channel>
