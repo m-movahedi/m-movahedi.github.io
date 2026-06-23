@@ -51,7 +51,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
       <a class="cv-tag" href="/tags/infrastructure-planning/">Infrastructure planning</a>
       <a class="cv-tag" href="/tags/intelligent-transportation/">Intelligent transportation</a>
       <a class="cv-tag" href="/tags/transportation-planning/">Transportation planning</a>
-      <a class="cv-tag" href="/tags/data-driven-decision-support/">Data-driven decision support</a>
       <a class="cv-tag" href="/tags/asset-management/">Asset management</a>
       <a class="cv-tag" href="/tags/traffic-modeling/">Traffic Modeling</a>
       <a class="cv-tag" href="/tags/construction-management/">Construction Management</a>
