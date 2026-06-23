@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Network Robustness of EV Charging Infrastructure During Extreme Weather: Insights from Hurricane Ian</title>
+    <meta name="description" content=" 🌩️ The Vulnerability of Electric Evacuations As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during …">
+    <meta name="keywords" content='Electric Vehicles, Resilience, Disaster Management, Infrastructure Planning, Spatial Analytics'>
+
+    <meta property="og:url" content="http://localhost:1313/research/ev-charging-network-hurricane-ian/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Network Robustness of EV Charging Infrastructure During Extreme Weather: Insights from Hurricane Ian">
+    <meta property="og:description" content=" 🌩️ The Vulnerability of Electric Evacuations As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Network Robustness of EV Charging Infrastructure During Extreme Weather: Insights from Hurricane Ian">
+    <meta name="twitter:description" content=" 🌩️ The Vulnerability of Electric Evacuations As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during …">
+    <meta property="twitter:domain" content="http://localhost:1313/research/ev-charging-network-hurricane-ian/">
+    <meta property="twitter:url" content="http://localhost:1313/research/ev-charging-network-hurricane-ian/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/research/ev-charging-network-hurricane-ian/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Network Robustness of EV Charging Infrastructure During Extreme Weather: Insights from Hurricane Ian</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 15, 2024
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/electric-vehicles">Electric Vehicles</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/resilience">Resilience</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/disaster-management">Disaster Management</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/infrastructure-planning">Infrastructure Planning</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/spatial-analytics">Spatial Analytics</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div style="background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <h4 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🌩️</span> The Vulnerability of Electric Evacuations</h4>
+  <p style="margin-bottom: 0; color: #34495e;">As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during natural disasters is paramount. During events like Hurricane Ian, mass evacuations put immense stress on the EV charging infrastructure. If transmission lines fail and charging stations go dark, it can profoundly hinder evacuation efficiency and public safety, leading to widespread vehicle immobilization.</p>
+</div>
+<p>Our latest research, <em>&ldquo;Network Robustness Analysis of Electric Vehicle Charging Infrastructure during Extreme Weather Conditions: A Case Study of Hurricane Ian&rdquo;</em>, delves into the vulnerabilities of the EV charging network during a county-wide evacuation in Florida.</p>
+<p>By utilizing a multilayered network analysis of the electric grid—incorporating real-world data on EV ownership, hurricane paths, and transmission line fragility—we were able to quantify the resilience of the EV charging network and identify critical vulnerabilities.</p>
+<h3 id="analyzing-the-grids-fragility">Analyzing the Grid&rsquo;s Fragility</h3>
+<p>The core of our methodology involves constructing an EV infrastructure graph consisting of power plants and charging stations connected by transmission lines. By overlaying the path and wind gusts of <strong>Hurricane Ian (Category 5)</strong>, we calculated the probability of failure for each transmission segment using established structural fragility curves.</p>
+<p>We then ran thousands of <strong>Monte Carlo simulations</strong> to evaluate the network&rsquo;s operational status post-impact. This allowed us to observe the emergence of &ldquo;subgraphs&rdquo; (indicating grid fragmentation) and the percentage of EV charging stations that remained functional.</p>
+<style>
+  .ev-grid-container {
+    background-color: #1e272e;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    margin: 40px auto 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: crosshair;
+  }
+  .ev-bg {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 2px, transparent 2px);
+    background-size: 30px 30px;
+  }
+  .ev-node {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    z-index: 10;
+    transition: all 0.5s ease;
+  }
+  .ev-plant-nuc {
+    width: 45px; height: 45px; background-color: #f39c12; border-radius: 8px;
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.6); font-size: 1.2em;
+  }
+  .ev-plant-ren {
+    width: 40px; height: 40px; background-color: #3498db; border-radius: 8px;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6); font-size: 1.2em;
+  }
+  .ev-station {
+    width: 30px; height: 30px; background-color: #2ecc71; border-radius: 50%;
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5); font-size: 0.9em;
+  }
+  .ev-line {
+    position: absolute; height: 3px; background-color: #bdc3c7; z-index: 5;
+    transform-origin: 0 50%; transition: all 0.5s ease;
+  }
+  
+  /* Positions */
+  .p-nuc { top: 100px; left: 150px; }
+  .p-ren { top: 350px; left: 150px; }
+  
+  .s1 { top: 100px; left: 350px; } /* Nuclear connected */
+  .s2 { top: 220px; left: 300px; } /* Cross connected */
+  .s3 { top: 100px; left: 550px; } /* Nuclear connected */
+  .s4 { top: 350px; left: 350px; } /* Ren connected */
+  .s5 { top: 350px; left: 550px; } /* Ren connected */
+  .s6 { top: 220px; left: 650px; } /* Cross connected */
+
+  /* Lines */
+  .l-nuc-s1 { top: 100px; left: 150px; width: 200px; transform: translateY(-50%); }
+  .l-nuc-s2 { top: 100px; left: 150px; width: 192px; transform: translateY(-50%) rotate(38.6deg); }
+  .l-s1-s3 { top: 100px; left: 350px; width: 200px; transform: translateY(-50%); }
+  .l-s3-s6 { top: 100px; left: 550px; width: 156px; transform: translateY(-50%) rotate(50.2deg); }
+  
+  .l-ren-s4 { top: 350px; left: 150px; width: 200px; transform: translateY(-50%); }
+  .l-ren-s2 { top: 350px; left: 150px; width: 198px; transform: translateY(-50%) rotate(-40.9deg); }
+  .l-s4-s5 { top: 350px; left: 350px; width: 200px; transform: translateY(-50%); }
+  .l-s5-s6 { top: 350px; left: 550px; width: 164px; transform: translateY(-50%) rotate(-52.4deg); }
+  
+  /* Hurricane Overlay */
+  .ev-hurricane {
+    position: absolute; top: 150px; left: 0; width: 800px; height: 300px;
+    background: repeating-linear-gradient(45deg, rgba(231,76,60,0.05), rgba(231,76,60,0.05) 10px, rgba(231,76,60,0.1) 10px, rgba(231,76,60,0.1) 20px);
+    opacity: 0; pointer-events: none; transition: opacity 0.8s; z-index: 1;
+    display: flex; justify-content: flex-end; align-items: flex-end; padding: 20px;
+    color: rgba(231, 76, 60, 0.8); font-size: 2em; font-weight: bold;
+  }
+  
+  /* Status */
+  .ev-status {
+    position: absolute; bottom: 80px; right: 20px; background: rgba(0,0,0,0.7);
+    color: #fff; padding: 15px; border-radius: 8px; font-size: 0.5em; z-index: 20;
+    min-width: 250px;
+  }
+  
+  /* Interaction */
+  .ev-grid-container:hover .ev-hurricane { opacity: 1; }
+  
+  /* Broken Lines */
+  .ev-grid-container:hover .l-ren-s4,
+  .ev-grid-container:hover .l-ren-s2,
+  .ev-grid-container:hover .l-s4-s5,
+  .ev-grid-container:hover .l-s5-s6 {
+    background-color: #c0392b; opacity: 0.2; box-shadow: 0 0 8px rgba(231, 76, 60, 0.8);
+  }
+  
+  /* Failed Nodes */
+  .ev-grid-container:hover .p-ren,
+  .ev-grid-container:hover .s4,
+  .ev-grid-container:hover .s5 {
+    background-color: #7f8c8d; box-shadow: none; color: #ccc;
+  }
+  
+  .ev-grid-container:hover .ev-status { background: rgba(231, 76, 60, 0.9); }
+  .ev-grid-container:hover .ev-state::after {
+    content: "Hurricane Strike! Weather-dependent plant (Group A) forced offline. Associated EV stations lose power. Nuclear-connected stations maintain 66% network functionality.";
+  }
+  .ev-grid-container .ev-state::after {
+    content: "Normal Conditions. 100% of EV Stations Operational.";
+  }
+  
+  .ev-legend {
+    position: absolute; bottom: 20px; left: 20px; display: flex; gap: 15px;
+    background: rgba(0,0,0,0.6); padding: 10px; border-radius: 8px; color: #fff; font-size: 0.8em; z-index: 20;
+  }
+  .ev-leg-item { display: flex; align-items: center; gap: 5px; }
+  .ev-dot { width: 12px; height: 12px; border-radius: 50%; }
+</style>
+<div class="ev-grid-container">
+  <div class="ev-bg"></div>
+  <div class="ev-hurricane">🌀 Hurricane Impact Zone</div>
+  <div class="ev-status">
+    <strong>Network Status:</strong><br><br>
+    <span class="ev-state"></span>
+  </div>
+  <div class="ev-legend">
+    <div class="ev-leg-item"><div class="ev-dot" style="background:#f39c12; border-radius:3px;"></div> Nuclear Plant (Group B)</div>
+    <div class="ev-leg-item"><div class="ev-dot" style="background:#3498db; border-radius:3px;"></div> Weather-Dependent Plant (Group A)</div>
+    <div class="ev-leg-item"><div class="ev-dot" style="background:#2ecc71;"></div> EV Station</div>
+  </div>
+  <!-- Lines -->
+  <div class="ev-line l-nuc-s1"></div>
+  <div class="ev-line l-nuc-s2"></div>
+  <div class="ev-line l-s1-s3"></div>
+  <div class="ev-line l-s3-s6"></div>
+  <div class="ev-line l-ren-s4"></div>
+  <div class="ev-line l-ren-s2"></div>
+  <div class="ev-line l-s4-s5"></div>
+  <div class="ev-line l-s5-s6"></div>
+  <!-- Nodes -->
+  <div class="ev-node ev-plant-nuc p-nuc" title="Nuclear Power Plant">☢️</div>
+  <div class="ev-node ev-plant-ren p-ren" title="Weather-Dependent Power Plant">☀️</div>
+  <div class="ev-node ev-station s1">🔋</div>
+  <div class="ev-node ev-station s2">🔋</div>
+  <div class="ev-node ev-station s3">🔋</div>
+  <div class="ev-node ev-station s4">🔋</div>
+  <div class="ev-node ev-station s5">🔋</div>
+  <div class="ev-node ev-station s6">🔋</div>
+</div>
+<p style="text-align: center; font-size: 0.85em; color: #666; font-style: italic; margin-bottom: 40px;">Interactive Figure 1: Hover over the network to simulate Hurricane Ian. Observe how a diversified energy mix (Nuclear vs Weather-dependent) affects grid resilience and localized EV station functionality.</p>
+<h3 id="the-critical-role-of-energy-diversity">The Critical Role of Energy Diversity</h3>
+<p>To account for the operational vulnerabilities of different power plant types, we evaluated the network under four distinct scenarios.</p>
+<p><strong>Group A</strong> power plants (solar, wind, and conventional generators) are highly susceptible to weather-induced interruptions. Events like hurricanes often force the shutdown of these facilities due to safety protocols or supply chain issues. Conversely, <strong>Group B</strong> power plants (such as nuclear facilities) adhere to stringent safety standards that allow them to withstand severe weather events and maintain operational status throughout a crisis.</p>
+<p>When analyzing the functional subgraphs in our simulation, the discrepancy between these scenarios accentuates the pivotal role of a diversified energy mix:</p>
+<ul>
+<li><strong>Moderate Damage:</strong> At a moderate damage index (0.368), the charging infrastructure demonstrated remarkable resilience, maintaining approximately <strong>90% functionality</strong>.</li>
+<li><strong>Extreme Scenarios:</strong> Even when a hypothetical worst-case scenario was tested—where <em>all</em> internal power plants in the impacted area failed—power supplied externally preserved over <strong>71% functionality</strong> of the charging infrastructure.</li>
+</ul>
+<h3 id="building-for-the-future">Building for the Future</h3>
+<p>The findings emphasize that the resilience of Florida&rsquo;s EV charging network intricately depends not only on the physical durability of transmission lines but heavily on the <strong>functional status of the associated power plants</strong>.</p>
+<p>A grid overly reliant on weather-dependent energy sources is vulnerable during a natural disaster. Bolstering the grid&rsquo;s robustness requires a balanced energy portfolio that includes weather-resistant power sources (like nuclear energy) to ensure uninterrupted power supply. Furthermore, these insights pave the way for exploring strategic improvements, such as the development of underground electric grids, to fortify infrastructure prior to the next major storm.</p>
+<p>You can find the published paper <a href="https://www.doi.org/10.1061/9780784485538.058">here</a>.</p>
+<pre><code>@inproceedings{Movahedi2024a,
+address = {Reston, VA},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1011.1669v3},
+author = {Movahedi, Mohammad and Khayamim, Razieh and Choi, Juyeong and Ozguven, Eren Erman},
+booktitle = {International Conference on Transportation and Development 2024},
+doi = {10.1061/9780784485538.058},
+eprint = {arXiv:1011.1669v3},
+isbn = {9780784485538},
+issn = {20711050},
+mendeley-groups = {0 My Own work/Conference papers},
+month = {jun},
+number = {1},
+pages = {657--669},
+pmid = {25246403},
+publisher = {American Society of Civil Engineers},
+title = {{Network Robustness Analysis of Electric Vehicle Charging Infrastructure during Extreme Weather Conditions: A Case Study of Hurricane Ian}},
+volume = {11},
+year = {2024}
+}
+</code></pre>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/research/demolition-waste-estimation/">
+                &#8592;
+                Previous:
+                Predicting the Unpredictable: Advanced Estimation Models for Demolition Waste
+            </a>
+        </p>
+        <p class="prev-post-date">
+            March 20, 2024
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/research/llm-adaptive-traffic-control/">
+                Next:
+                The Crossroads of LLMs and Traffic Control: A New Era in Urban Mobility
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            December 16, 2024
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

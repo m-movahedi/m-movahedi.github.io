@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/disaster-management/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/electric-vehicles/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/infrastructure-planning/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/ev-charging-network-hurricane-ian/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/resilience/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/spatial-analytics/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/scratchpad/transition-management/tm-101/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -38,34 +65,16 @@
     <loc>http://localhost:1313/scratchpad/transition-management/tm-112/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/scratchpad/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/scratchpad/transition-management/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/disaster-management/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/electric-vehicles/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/multi-criteria-decision-analysis/</loc>
     <lastmod>2026-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/resilience/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</loc>
-    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/transportation-planning/</loc>

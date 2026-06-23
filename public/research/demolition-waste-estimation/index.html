@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Predicting the Unpredictable: Advanced Estimation Models for Demolition Waste</title>
+    <meta name="description" content=" 🏗️ The Demolition Data Gap In the United States, construction and demolition waste (CDW) accounts for roughly 67% of the total solid waste stream, with a …">
+    <meta name="keywords" content='Construction Waste, Machine Learning, Sustainability, Artificial Neural Networks, Circular Economy'>
+
+    <meta property="og:url" content="http://localhost:1313/research/demolition-waste-estimation/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Predicting the Unpredictable: Advanced Estimation Models for Demolition Waste">
+    <meta property="og:description" content=" 🏗️ The Demolition Data Gap In the United States, construction and demolition waste (CDW) accounts for roughly 67% of the total solid waste stream, with a …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Predicting the Unpredictable: Advanced Estimation Models for Demolition Waste">
+    <meta name="twitter:description" content=" 🏗️ The Demolition Data Gap In the United States, construction and demolition waste (CDW) accounts for roughly 67% of the total solid waste stream, with a …">
+    <meta property="twitter:domain" content="http://localhost:1313/research/demolition-waste-estimation/">
+    <meta property="twitter:url" content="http://localhost:1313/research/demolition-waste-estimation/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/research/demolition-waste-estimation/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Predicting the Unpredictable: Advanced Estimation Models for Demolition Waste</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              March 20, 2024
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/construction-waste">Construction Waste</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/machine-learning">Machine Learning</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/sustainability">Sustainability</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/artificial-neural-networks">Artificial Neural Networks</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/circular-economy">Circular Economy</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <h4 style="margin-top: 0; color: #856404; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🏗️</span> The Demolition Data Gap</h4>
+  <p style="margin-bottom: 0; color: #533f03;">In the United States, construction and demolition waste (CDW) accounts for roughly 67% of the total solid waste stream, with a staggering <strong>90% originating directly from demolition sites</strong>. For a transition toward a circular economy, accurately estimating the <em>recoverable</em> portion of this waste is crucial. Yet, traditional estimation models remain heavily focused on total volume rather than recyclable potential.</p>
+</div>
+<p>Our latest research, <em>&ldquo;Assessment of Estimation Methods for Demolition Waste Volume and Cost&rdquo;</em>, bridges this critical gap. By analyzing a database of 52 highly detailed demolition projects in Tallahassee, Florida, we evaluated the feasibility and accuracy of four distinct estimation approaches. The goal? To predict both the <strong>demolition cost</strong> and the <strong>volume of recoverable materials</strong> (like concrete) before the wrecking ball even swings.</p>
+<h3 id="the-contenders-traditional-vs-advanced-models">The Contenders: Traditional vs. Advanced Models</h3>
+<p>We put four predictive models to the test:</p>
+<ol>
+<li><strong>Multiple Regression Analysis (MRA):</strong> The traditional statistical workhorse that assumes linear relationships between building traits and waste outcomes.</li>
+<li><strong>Artificial Neural Network (ANN):</strong> A flexible machine learning approach capable of mapping complex, non-linear relationships, though often criticized as a &ldquo;black box.&rdquo;</li>
+<li><strong>Advanced Case-based Reasoning (ACBR - Averaging):</strong> A problem-solving paradigm that retrieves historically similar demolition cases and averages their outcomes.</li>
+<li><strong>Advanced Case-based Reasoning (ACBR - Trained):</strong> A sophisticated hybrid that uses historical cases to train MRA and ANN algorithms, utilizing a Genetic Algorithm to minimize prediction errors.</li>
+</ol>
+<style>
+.acbr-container {
+  display: flex; justify-content: space-between; align-items: stretch; gap: 15px; margin: 40px 0; font-family: Arial, sans-serif;
+}
+.acbr-step {
+  flex: 1; background: #fff; border: 2px solid #bdc3c7; border-radius: 8px; padding: 20px; text-align: center;
+  position: relative; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05); cursor: default;
+}
+.acbr-step:hover {
+  border-color: #27ae60; transform: translateY(-5px); box-shadow: 0 8px 15px rgba(39, 174, 96, 0.2);
+}
+.acbr-step-num {
+  width: 30px; height: 30px; background: #bdc3c7; color: white; border-radius: 50%;
+  display: flex; justify-content: center; align-items: center; font-weight: bold;
+  position: absolute; top: -15px; left: 50%; transform: translateX(-50%); transition: all 0.3s ease;
+}
+.acbr-step:hover .acbr-step-num { background: #27ae60; }
+.acbr-title { font-weight: bold; color: #2c3e50; margin-top: 10px; margin-bottom: 10px; font-size: 1.1em; }
+.acbr-desc { font-size: 0.85em; color: #7f8c8d; line-height: 1.4; }
+.acbr-arrow { display: flex; align-items: center; font-size: 24px; color: #bdc3c7; font-weight: bold; }
+@media (max-width: 768px) {
+  .acbr-container { flex-direction: column; }
+  .acbr-arrow { transform: rotate(90deg); margin: 10px auto; }
+}
+</style>
+<div class="acbr-container">
+  <div class="acbr-step">
+    <div class="acbr-step-num">1</div>
+    <div class="acbr-title">Retrieve</div>
+    <div class="acbr-desc">Extract historically similar demolition cases from the database using Minimum Criterion for Scoring Attribute Similarity (MCAS).</div>
+  </div>
+  <div class="acbr-arrow">➔</div>
+  <div class="acbr-step">
+    <div class="acbr-step-num">2</div>
+    <div class="acbr-title">Reuse</div>
+    <div class="acbr-desc">Utilize MRA and ANN algorithms on the selected similar cases to derive the initial volume and cost estimations.</div>
+  </div>
+  <div class="acbr-arrow">➔</div>
+  <div class="acbr-step">
+    <div class="acbr-step-num">3</div>
+    <div class="acbr-title">Revise</div>
+    <div class="acbr-desc">Use Genetic Algorithms to minimize prediction error ranges, refining the relationships between variables for higher accuracy.</div>
+  </div>
+  <div class="acbr-arrow">➔</div>
+  <div class="acbr-step">
+    <div class="acbr-step-num">4</div>
+    <div class="acbr-title">Retain</div>
+    <div class="acbr-desc">Add the newly estimated project's data back into the knowledge base, continuously improving the model's future performance.</div>
+  </div>
+</div>
+<p style="text-align: center; font-size: 0.85em; color: #888; font-style: italic; margin-top: -20px; margin-bottom: 30px;">Interactive Figure 1: The four-step continuous learning process of the Advanced Case-Based Reasoning (ACBR) model.</p>
+<h3 id="simulation-results-which-model-reigns-supreme">Simulation Results: Which Model Reigns Supreme?</h3>
+<p>We tested the sensitivity and accuracy of each model across three target metrics: Recoverable Concrete, Demolition Cost, and Other Recoverable Materials.</p>
+<style>
+.dw-chart-container {
+  font-family: Arial, sans-serif;
+  background: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.dw-tabs {
+  display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; flex-wrap: wrap;
+}
+.dw-tab {
+  padding: 8px 15px; background: #eee; border-radius: 6px; cursor: pointer; font-weight: bold; color: #555;
+  transition: all 0.3s ease;
+}
+.dw-tab:hover { background: #ddd; }
+.dw-chart {
+  display: flex; align-items: flex-end; justify-content: space-around; height: 250px; padding-top: 20px;
+}
+.dw-bar-group {
+  display: flex; flex-direction: column; align-items: center; gap: 10px; width: 22%;
+}
+.dw-bar-bg {
+  height: 200px; width: 100%; max-width: 60px; background: #f0f0f0; border-radius: 4px 4px 0 0; position: relative;
+  display: flex; align-items: flex-end;
+}
+.dw-bar-fill {
+  width: 100%; border-radius: 4px 4px 0 0; transition: height 0.5s ease;
+  position: relative; cursor: crosshair;
+}
+.dw-bar-fill:hover::after {
+  content: attr(data-val) "% Acc \A (SD: " attr(data-std) "%)";
+  white-space: pre-wrap; text-align: center;
+  position: absolute; top: -50px; left: 50%; transform: translateX(-50%);
+  background: #333; color: #fff; padding: 5px 8px; border-radius: 4px; font-size: 0.8em; z-index: 10;
+  width: 90px;
+}
+.dw-label { font-size: 0.8em; font-weight: bold; color: #666; text-align: center; }
+
+/* CSS Tabs */
+#dw-tab1, #dw-tab2, #dw-tab3 { display: none; }
+.dw-content { display: none; }
+
+#dw-tab1:checked ~ .dw-tabs label[for="dw-tab1"],
+#dw-tab2:checked ~ .dw-tabs label[for="dw-tab2"],
+#dw-tab3:checked ~ .dw-tabs label[for="dw-tab3"] {
+  background: #3498db; color: white;
+}
+
+#dw-tab1:checked ~ #dw-content1,
+#dw-tab2:checked ~ #dw-content2,
+#dw-tab3:checked ~ #dw-content3 {
+  display: block;
+}
+
+/* Colors */
+.c-mra { background: #e74c3c; }
+.c-ann { background: #f39c12; }
+.c-acbra { background: #9b59b6; }
+.c-acbrt { background: #2ecc71; }
+</style>
+<div class="dw-chart-container">
+  <input type="radio" name="dw-tabs" id="dw-tab1" checked>
+  <input type="radio" name="dw-tabs" id="dw-tab2">
+  <input type="radio" name="dw-tabs" id="dw-tab3">
+  <div class="dw-tabs">
+    <label for="dw-tab1" class="dw-tab">Recoverable Concrete</label>
+    <label for="dw-tab2" class="dw-tab">Demolition Cost</label>
+    <label for="dw-tab3" class="dw-tab">Other Materials</label>
+  </div>
+  <!-- Content 1: Concrete -->
+  <div id="dw-content1" class="dw-content">
+    <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Recoverable Concrete</h4>
+    <div class="dw-chart">
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-mra" style="height: 73.09%;" data-val="73.09" data-std="31.99"></div></div>
+        <div class="dw-label">MRA</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-ann" style="height: 67.84%;" data-val="67.84" data-std="30.87"></div></div>
+        <div class="dw-label">ANN</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-acbra" style="height: 65.62%;" data-val="65.62" data-std="37.90"></div></div>
+        <div class="dw-label">ACBR (Avg)</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-acbrt" style="height: 80.92%;" data-val="80.92" data-std="16.42"></div></div>
+        <div class="dw-label">ACBR (Trained)</div>
+      </div>
+    </div>
+  </div>
+  <!-- Content 2: Cost -->
+  <div id="dw-content2" class="dw-content">
+    <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Demolition Cost</h4>
+    <div class="dw-chart">
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-mra" style="height: 76.12%;" data-val="76.12" data-std="30.31"></div></div>
+        <div class="dw-label">MRA</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-ann" style="height: 31.37%;" data-val="31.37" data-std="32.37"></div></div>
+        <div class="dw-label">ANN</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-acbra" style="height: 71.58%;" data-val="71.58" data-std="33.77"></div></div>
+        <div class="dw-label">ACBR (Avg)</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-acbrt" style="height: 56.36%;" data-val="56.36" data-std="26.11"></div></div>
+        <div class="dw-label">ACBR (Trained)</div>
+      </div>
+    </div>
+  </div>
+  <!-- Content 3: Other -->
+  <div id="dw-content3" class="dw-content">
+    <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Other Materials</h4>
+    <div class="dw-chart">
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-mra" style="height: 65.65%;" data-val="65.65" data-std="36.01"></div></div>
+        <div class="dw-label">MRA</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-ann" style="height: 42.43%;" data-val="42.43" data-std="32.33"></div></div>
+        <div class="dw-label">ANN</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-acbra" style="height: 57.81%;" data-val="57.81" data-std="40.10"></div></div>
+        <div class="dw-label">ACBR (Avg)</div>
+      </div>
+      <div class="dw-bar-group">
+        <div class="dw-bar-bg"><div class="dw-bar-fill c-acbrt" style="height: 66.09%;" data-val="66.09" data-std="25.26"></div></div>
+        <div class="dw-label">ACBR (Trained)</div>
+      </div>
+    </div>
+  </div>
+  <p style="text-align: center; font-size: 0.85em; color: #888; font-style: italic; margin-top: 15px;">Interactive Figure 2: Click the tabs to explore how each estimation model performs across different prediction targets. Hover over bars to see the exact mean accuracy and standard deviation (which indicates volatility/reliability).</p>
+</div>
+<p>The results highlight the immense potential of the <strong>ACBR (Trained Model)</strong> as the premier tool for DW management:</p>
+<ul>
+<li><strong>Recoverable Concrete:</strong> The ACBR (Trained) model dramatically outperformed the others, achieving an <strong>80.92% mean accuracy</strong> with the lowest standard deviation (16.42%), proving to be highly consistent and reliable.</li>
+<li><strong>Demolition Cost:</strong> While the traditional MRA achieved a high mean accuracy (76.12%), its predictions were volatile. The ACBR (Trained) model provided the most stable predictions with the lowest variance.</li>
+</ul>
+<h3 id="the-hidden-impact-of-maintenance-history">The Hidden Impact of Maintenance History</h3>
+<p>Beyond comparing algorithms, our cross-correlation analysis unearthed a fascinating insight regarding building life cycles. <strong>A building&rsquo;s maintenance history plays a pivotal role in the recoverability of its materials during demolition.</strong></p>
+<p>Variables such as the duration of the last renovation, external walls maintenance, and the time elapsed since the last roof repair significantly modulated the volume of materials that could be successfully reclaimed. This illuminates a profound interconnectedness: decisions made during the operational phase of a building directly dictate its sustainability at the end-of-life stage.</p>
+<p><em>For full details on the methodologies and dataset, read our <a href="https://www.doi.org/10.1061/9780784485286.033">paper</a> presented at the Construction Research Congress 2024.</em></p>
+<pre><code>@inproceedings{Movahedi2024,
+address = {Reston, VA},
+author = {Movahedi, Mohammad and Choi, Juyeong and Seo, Seungwon and Koo, Choongwan},
+booktitle = {Construction Research Congress 2024},
+doi = {10.1061/9780784485286.033},
+isbn = {9780784485286},
+mendeley-groups = {0 My Own work/Conference papers},
+month = {mar},
+pages = {318--327},
+publisher = {American Society of Civil Engineers},
+title = {{Assessment of Estimation Methods for Demolition Waste Volume and Cost}},
+url = {https://ascelibrary.org/doi/10.1061/9780784485286.033},
+year = {2024}
+}
+</code></pre>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/research/sustainable-cdw-management-life-cycle/">
+                &#8592;
+                Previous:
+                Sustainable Management of the Built Environment: A Life Cycle Perspective
+            </a>
+        </p>
+        <p class="prev-post-date">
+            January 22, 2023
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/research/ev-charging-network-hurricane-ian/">
+                Next:
+                Network Robustness of EV Charging Infrastructure During Extreme Weather: Insights from Hurricane Ian
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 15, 2024
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>
