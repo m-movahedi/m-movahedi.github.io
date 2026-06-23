@@ -4,9 +4,10 @@ date : "2025-07-08"
 draft : false
 type : "post"
 tags:
-  - "Asset management"
+  - "Asset Management"
   - "Virtual reality"
   - "Generative-AI"
+  - "Artificial Intelligence"
 ---
 
 Sometime in late 2023, when the generative AI community suddenly shifted its focus to picture and video generation, I started developing a framework to first generate textures of materials based on the description that the inspection guidelines provide. This concept quickly evolves into a framework to generate auditory and visual cues for 3D objects.

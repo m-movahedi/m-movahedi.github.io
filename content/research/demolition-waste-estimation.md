@@ -7,7 +7,7 @@ tags:
   - "Construction Waste"
   - "Machine Learning"
   - "Sustainability"
-  - "Artificial Neural Networks"
+  - "Artificial Intelligence"
   - "Circular Economy"
   - "Construction Management"
 ---

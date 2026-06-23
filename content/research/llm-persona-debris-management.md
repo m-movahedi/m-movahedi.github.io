@@ -8,7 +8,7 @@ tags:
   - "Resilience"
   - "Disaster Management"
   - "Agent-Based Modeling"
-  - "LLMs"
+  - "Large Language Models"
   - "Post-disaster Recovery"
   - "Infrastructure Management"
   - "Infrastructure Planning"
