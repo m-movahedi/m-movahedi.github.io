@@ -57,7 +57,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
       <a class="cv-tag" href="/tags/construction-management/">Construction Management</a>
       <a class="cv-tag" href="/tags/disaster-resilience/">Disaster resilience</a>
       <a class="cv-tag" href="/tags/post-disaster-recovery/">Post-disaster recovery</a>
-      <a class="cv-tag" href="/tags/sustainable-built-environment/">Sustainable built environment</a>
       <a class="cv-tag" href="/tags/virtual-reality/">Virtual reality</a>
       <a class="cv-tag" href="/tags/generative-ai/">Generative-AI</a>
     </div>
