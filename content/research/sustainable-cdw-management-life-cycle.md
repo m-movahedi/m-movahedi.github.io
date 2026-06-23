@@ -9,6 +9,9 @@ tags:
   - "Life Cycle Analysis"
   - "Sustainable Management"
   - "Policy and Regulation"
+  - "Infrastructure Management"
+  - "Construction Management"
+  - "Infrastructure Planning"
 ---
 
 <div style="background-color: #f4f6f7; border-left: 6px solid #27ae60; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">

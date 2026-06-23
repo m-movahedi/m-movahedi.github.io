@@ -7,8 +7,11 @@ tags:
   - "Electric Vehicles"
   - "Resilience"
   - "Disaster Management"
+  - "Infrastructure Management"
   - "Infrastructure Planning"
   - "Spatial Analytics"
+  - "Post-disaster Recovery"
+  - "Transportation Planning"
 ---
 
 <div style="background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">

@@ -45,22 +45,19 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         <li>Teaching and mentorship experience as a teaching assistant, guest lecturer, and mentor to undergraduate and NSF REU researchers.</li>
       </ul>
     </div>
-
     <h2 class="cv-section-heading">Research Interests</h2>
     <div class="cv-tag-list">
       <a class="cv-tag" href="/tags/infrastructure-management/">Infrastructure management</a>
       <a class="cv-tag" href="/tags/infrastructure-planning/">Infrastructure planning</a>
       <a class="cv-tag" href="/tags/intelligent-transportation/">Intelligent transportation</a>
-      <a class="cv-tag" href="/tags/Transportation-planning/">Transportation planning</a>
+      <a class="cv-tag" href="/tags/transportation-planning/">Transportation planning</a>
       <a class="cv-tag" href="/tags/data-driven-decision-support/">Data-driven decision support</a>
       <a class="cv-tag" href="/tags/asset-management/">Asset management</a>
       <a class="cv-tag" href="/tags/traffic-modeling/">Traffic Modeling</a>
-      <a class="cv-tag" href="/tags/smart-cities/">Smart cities</a>
-
+      <a class="cv-tag" href="/tags/construction-management/">Construction Management</a>
       <a class="cv-tag" href="/tags/disaster-resilience/">Disaster resilience</a>
       <a class="cv-tag" href="/tags/post-disaster-recovery/">Post-disaster recovery</a>
       <a class="cv-tag" href="/tags/sustainable-built-environment/">Sustainable built environment</a>
-      <a class="cv-tag" href="/tags/digital-twins/">Digital twins</a>
       <a class="cv-tag" href="/tags/virtual-reality/">Virtual reality</a>
       <a class="cv-tag" href="/tags/generative-ai/">Generative-AI</a>
     </div>
