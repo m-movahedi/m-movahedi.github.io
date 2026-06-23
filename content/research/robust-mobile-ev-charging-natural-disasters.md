@@ -1,5 +1,5 @@
 ---
-title : "Robust Mobile Electric Vehicle Charging Solutions for Natural Disasters"
+title : "Mobile Electric Vehicle Charging Solutions for Natural Disasters"
 date : "2026-06-15"
 draft : false
 type : "post"

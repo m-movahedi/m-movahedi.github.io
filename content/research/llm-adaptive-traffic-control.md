@@ -1,5 +1,5 @@
 ---
-title : "The Crossroads of LLMs and Traffic Control: A New Era in Urban Mobility"
+title : "The Crossroads of LLMs and Traffic Control"
 date : "2024-12-16"
 draft : false
 type : "post"

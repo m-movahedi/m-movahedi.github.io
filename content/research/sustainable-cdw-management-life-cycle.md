@@ -1,5 +1,5 @@
 ---
-title : "Sustainable Management of the Built Environment: A Life Cycle Perspective"
+title : "Sustainable Management of the Built Environment"
 date : "2023-01-22"
 draft : false
 type : "post"

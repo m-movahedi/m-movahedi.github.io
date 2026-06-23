@@ -1,5 +1,5 @@
 ---
-title : "Network Robustness of EV Charging Infrastructure During Extreme Weather: Insights from Hurricane Ian"
+title : "Network Robustness of EV Charging Infrastructure During Extreme Weather"
 date : "2024-06-15"
 draft : false
 type : "post"

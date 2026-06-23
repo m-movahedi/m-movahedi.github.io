@@ -1,5 +1,5 @@
 ---
-title : "Predicting the Unpredictable: Advanced Estimation Models for Demolition Waste"
+title : "Advanced Estimation Models for Demolition Waste"
 date : "2024-03-20"
 draft : false
 type : "post"

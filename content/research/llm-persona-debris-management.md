@@ -1,5 +1,5 @@
 ---
-title : "Simulating Community Behaviors with LLMs: A New Era in Policy Evaluation"
+title : "Simulating Community Behaviors with LLMs"
 date : "2026-04-16"
 draft : false
 type : "post"
