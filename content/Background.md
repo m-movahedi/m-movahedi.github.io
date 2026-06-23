@@ -144,7 +144,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
           <summary>In Preparation</summary>
           <ol class="cv-publication-list">
             <li>N. Nickdoost, M. Movahedi, and J. Choi, "Illegal Dumping as a Post-Disaster Behavior: Evidence from Hurricane Ian," 2026.</li>
-
             <li>A. Baldwin, M. Movahedi, and J. Choi, "LLM-Enabled Community Role-Play for Policy Testing in Post-Hurricane Recovery," 2026.</li>
             <li>M. Movahedi and J. Choi, "Continuous-State Deterioration Modeling through Deep Neural Networks with Mixture Heads," 2026.</li>
             <li>M. Movahedi and J. Choi, "Advanced Case-Based Reasoning for Sustainable Demolition Management and Resource Recovery," 2026.</li>
@@ -153,7 +152,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         </details>
       </div>
     </details>
-
     <details class="cv-slider">
       <summary>Conference Papers</summary>
       <div class="cv-slider-body">
@@ -170,13 +168,10 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
             <li>M. Sadeghi, H. Zangoei, and M. Movahedi, "Determination of Non-Recurring Traffic Bottlenecks Caused by Accidents Using Open Data," 2020.</li>
             <li>M. Movahedi, M. Movahedi, A. M. Amiri, and H. Behbahani, "Young Drivers' Attitude toward Aggressive Driving Distracted by Passengers," 2018.</li>
             <li>M. Movahedi, M. M. Barakchi, H. Zangoei, and R. Mohammadi, "Use of Construction Demolition Waste in Pavement in Context of Sustainability Indexing Standards," 2017.</li>
-            
           </ol>
         </details>
-
       </div>
     </details>
-
     <details class="cv-slider">
       <summary>Project Reports</summary>
       <div class="cv-slider-body">
@@ -188,7 +183,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         </ol>
       </div>
     </details>
-
     <h2 class="cv-section-heading">Sponsored Research</h2>
     <details class="cv-slider">
       <summary>Persona-Based Hurricane Evacuation Travel Demand Analysis to Support Transportation Planning in Rural Communities <span class="cv-kicker">R-SEAT & FDOT, 69A3552348321</span></summary>
@@ -224,7 +218,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         <details class="cv-slider"><summary>City Operational Management</summary><div class="cv-slider-body"><p>Developed software-supported frameworks for sightseeing tour buses and accessible curbside parking, and contributed to complete-street planning and design.</p></div></details>
       </div>
     </details>
-
     <h2 class="cv-section-heading">Grant Writing</h2>
     <details class="cv-slider">
       <summary>Research Proposals</summary>
@@ -317,7 +310,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         </details>
       </div>
     </details>
-
     <h2 class="cv-section-heading">Presentations and Awards</h2>
     <details class="cv-slider">
       <summary>Selected Presentations and Posters</summary>
@@ -350,7 +342,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
       </div>
     </details>
   </section>
-
   <section class="cv-tab-panel" id="cv-panel-teaching" role="tabpanel" aria-labelledby="cv-tab-teaching" hidden>
     <h2>Teaching Experience</h2>
     <details class="cv-slider">
@@ -374,7 +365,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
       <summary><span class="cv-entry-header"><span><strong>Graduate Teaching Assistant</strong>Iran University of Science and Technology</span><span class="cv-period">Sep 2018 - Sep 2020</span></span></summary>
       <div class="cv-slider-body"><p>Taught Highway Geometric Design across four semesters to 120 undergraduate students and designed a project-based learning curriculum.</p></div>
     </details>
-
     <h2 class="cv-section-heading">Mentoring</h2>
     <details class="cv-slider">
       <summary><span class="cv-entry-header"><span><strong>NSF REU Mentor</strong>Florida State University</span><span class="cv-period">May 2024 - Aug 2025</span></span></summary>
@@ -384,7 +374,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
       <summary><span class="cv-entry-header"><span><strong>Undergraduate Research Mentor</strong>Florida State University</span><span class="cv-period">Aug 2023 - Present</span></span></summary>
       <div class="cv-slider-body"><p>Mentored six students in asset management, including virtual-reality and generative-AI applications.</p></div>
     </details>
-
     <h2 class="cv-section-heading">Workshops and Outreach</h2>
     <details class="cv-slider">
       <summary>Organized Workshops and Demonstrations</summary>
@@ -399,7 +388,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
       </div>
     </details>
   </section>
-
   <section class="cv-tab-panel" id="cv-panel-leadership" role="tabpanel" aria-labelledby="cv-tab-leadership" hidden>
     <h2>Service and Leadership</h2>
     <details class="cv-slider">
