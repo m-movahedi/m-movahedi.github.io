@@ -128,9 +128,9 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         <details class="cv-slider">
           <summary>Published</summary>
           <ol class="cv-publication-list">
+            <li>R. Khayamim, M. Movahedi, M. A. Dulebenets, and E. E. Ozguven, "Robust Mobile Vehicle Charging Solutions for Natural Disasters: A Multi-Criteria Resilience Analysis in Florida," submitted to <em>Journal of Transport Geography</em>, 2026. DOI: <a href="https://doi.org/10.1016/j.jtrangeo.2026.104739">10.1016/j.jtrangeo.2026.104739</a>.</li>
             <li>M. Movahedi and J. Choi, "The Crossroads of LLM and Traffic Control: A Study on Large Language Models in Adaptive Traffic Signal Control," <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024. DOI: <a href="https://doi.org/10.1109/TITS.2024.3498735">10.1109/TITS.2024.3498735</a>.</li>
             <li>W. Hill, H. Jalloul, M. Movahedi, and J. Choi, "Sustainable Management of the Built Environment from the Life Cycle Perspective," <em>Journal of Management in Engineering</em>, 2023. DOI: <a href="https://doi.org/10.1061/jmenea.meeng-4759">10.1061/jmenea.meeng-4759</a>.</li>
-            <li>R. Khayamim, M. Movahedi, M. A. Dulebenets, and E. E. Ozguven, "Robust Mobile Vehicle Charging Solutions for Natural Disasters: A Multi-Criteria Resilience Analysis in Florida," submitted to <em>Journal of Transport Geography</em>, 2026. DOI: <a href="https://doi.org/10.1016/j.jtrangeo.2026.104739">10.1016/j.jtrangeo.2026.104739</a>.</li>
           </ol>
         </details>
         <details class="cv-slider">
