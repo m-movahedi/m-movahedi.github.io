@@ -1,6 +1,9 @@
 ---
 title: "Collision Diagrams"
 weight: 32
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Collision Diagrams
 

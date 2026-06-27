@@ -1,6 +1,9 @@
 ---
 title: "Roadway Cross-Section Elements"
 weight: 37
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Roadway Cross-Section Elements
 

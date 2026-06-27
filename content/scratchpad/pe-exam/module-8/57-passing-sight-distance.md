@@ -1,6 +1,9 @@
 ---
 title: "Passing Sight Distance on Vertical Curves"
 weight: 57
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Passing Sight Distance on Vertical Curves
 

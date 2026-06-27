@@ -1,6 +1,9 @@
 ---
 title: "Traffic Signal Design and Plans"
 weight: 73
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Traffic Signal Design and Plans
 

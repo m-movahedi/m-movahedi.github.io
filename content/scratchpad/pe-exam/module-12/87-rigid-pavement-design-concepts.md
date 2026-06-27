@@ -1,6 +1,9 @@
 ---
 title: "Rigid Pavement Design Concepts"
 weight: 87
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Rigid Pavement Design Concepts
 

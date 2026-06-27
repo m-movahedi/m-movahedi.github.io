@@ -1,6 +1,9 @@
 ---
 title: "Pavement Markings"
 weight: 75
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Pavement Markings
 

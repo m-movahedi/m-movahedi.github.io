@@ -1,6 +1,9 @@
 ---
 title: "Mixed Calculation Set: Geometry and Safety"
 weight: 110
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Mixed Calculation Set: Geometry and Safety
 

@@ -1,6 +1,9 @@
 ---
 title: "Exam Format, Interface, and Pacing Strategy"
 weight: 1
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Exam Format, Interface, and Pacing Strategy
 

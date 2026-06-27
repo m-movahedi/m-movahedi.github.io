@@ -1,6 +1,9 @@
 ---
 title: "Sag Vertical Curves"
 weight: 56
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Sag Vertical Curves
 

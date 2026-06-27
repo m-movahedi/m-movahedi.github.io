@@ -1,6 +1,9 @@
 ---
 title: "Sight Distance on Horizontal Curves"
 weight: 46
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Sight Distance on Horizontal Curves
 

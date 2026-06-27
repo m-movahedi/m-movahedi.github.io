@@ -1,6 +1,9 @@
 ---
 title: "Regulatory, Warning, and Guide Signs"
 weight: 74
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Regulatory, Warning, and Guide Signs
 

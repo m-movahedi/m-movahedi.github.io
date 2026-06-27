@@ -1,6 +1,9 @@
 ---
 title: "Highway Safety Manual Concepts"
 weight: 35
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Highway Safety Manual Concepts
 

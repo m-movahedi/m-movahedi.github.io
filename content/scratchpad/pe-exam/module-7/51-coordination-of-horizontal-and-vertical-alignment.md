@@ -1,6 +1,9 @@
 ---
 title: "Coordination of Horizontal and Vertical Alignment"
 weight: 51
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Coordination of Horizontal and Vertical Alignment
 

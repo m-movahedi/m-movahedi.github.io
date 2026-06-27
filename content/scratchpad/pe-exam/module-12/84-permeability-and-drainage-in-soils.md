@@ -1,6 +1,9 @@
 ---
 title: "Permeability and Drainage in Soils"
 weight: 84
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Permeability and Drainage in Soils
 

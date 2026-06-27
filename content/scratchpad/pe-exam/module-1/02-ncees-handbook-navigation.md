@@ -1,6 +1,9 @@
 ---
 title: "Navigating the NCEES PE Civil Reference Handbook"
 weight: 2
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Navigating the NCEES PE Civil Reference Handbook
 

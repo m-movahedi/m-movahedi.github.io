@@ -1,6 +1,9 @@
 ---
 title: "Mixed Calculation Set: Traffic and Signals"
 weight: 109
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Mixed Calculation Set: Traffic and Signals
 

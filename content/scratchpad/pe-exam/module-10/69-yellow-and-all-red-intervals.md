@@ -1,6 +1,9 @@
 ---
 title: "Yellow and All-Red Clearance Intervals"
 weight: 69
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Yellow and All-Red Clearance Intervals
 

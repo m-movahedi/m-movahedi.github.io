@@ -1,6 +1,9 @@
 ---
 title: "Engineering Economics"
 weight: 11
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Engineering Economics
 

@@ -1,6 +1,9 @@
 ---
 title: "Speed Studies"
 weight: 15
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Speed Studies
 

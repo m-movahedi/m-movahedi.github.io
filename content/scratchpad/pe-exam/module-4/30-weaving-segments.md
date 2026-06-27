@@ -1,6 +1,9 @@
 ---
 title: "Weaving Segments"
 weight: 30
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Weaving Segments
 

@@ -1,6 +1,9 @@
 ---
 title: "Urban Street Segments"
 weight: 25
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Urban Street Segments
 

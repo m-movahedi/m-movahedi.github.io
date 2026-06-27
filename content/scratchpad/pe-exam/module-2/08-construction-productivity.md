@@ -1,6 +1,9 @@
 ---
 title: "Construction Productivity"
 weight: 8
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Construction Productivity
 

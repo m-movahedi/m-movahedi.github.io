@@ -1,6 +1,9 @@
 ---
 title: "Curve Stationing"
 weight: 45
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Curve Stationing
 

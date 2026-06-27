@@ -1,6 +1,9 @@
 ---
 title: "Full Mini-Exam 1"
 weight: 112
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Full Mini-Exam 1
 

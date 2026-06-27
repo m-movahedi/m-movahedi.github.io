@@ -1,6 +1,9 @@
 ---
 title: "Exam Day Decision Drills"
 weight: 115
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Exam Day Decision Drills
 

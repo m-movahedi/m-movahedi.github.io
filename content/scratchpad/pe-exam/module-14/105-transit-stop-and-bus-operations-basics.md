@@ -1,6 +1,9 @@
 ---
 title: "Transit Stop and Bus Operations Basics"
 weight: 105
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Transit Stop and Bus Operations Basics
 

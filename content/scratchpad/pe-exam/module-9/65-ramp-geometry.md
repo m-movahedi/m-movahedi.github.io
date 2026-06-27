@@ -1,6 +1,9 @@
 ---
 title: "Ramp Geometry"
 weight: 65
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Ramp Geometry
 

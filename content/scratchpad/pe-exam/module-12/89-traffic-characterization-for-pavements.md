@@ -1,6 +1,9 @@
 ---
 title: "Traffic Characterization for Pavements"
 weight: 89
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Traffic Characterization for Pavements
 

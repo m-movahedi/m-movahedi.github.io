@@ -1,6 +1,9 @@
 ---
 title: "Anatomy of a PE-Style Problem"
 weight: 6
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Anatomy of a PE-Style Problem
 

@@ -1,6 +1,9 @@
 ---
 title: "Ramp Merge and Diverge Operations"
 weight: 29
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Ramp Merge and Diverge Operations
 

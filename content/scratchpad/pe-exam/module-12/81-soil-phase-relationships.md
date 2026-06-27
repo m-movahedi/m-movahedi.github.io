@@ -1,6 +1,9 @@
 ---
 title: "Soil Phase Relationships (Weight-Volume Relations)"
 weight: 81
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Soil Phase Relationships (Weight-Volume Relations)
 

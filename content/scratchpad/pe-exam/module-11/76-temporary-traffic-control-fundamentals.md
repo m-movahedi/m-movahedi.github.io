@@ -1,6 +1,9 @@
 ---
 title: "Temporary Traffic Control Fundamentals"
 weight: 76
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Temporary Traffic Control Fundamentals
 

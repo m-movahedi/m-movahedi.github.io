@@ -1,6 +1,9 @@
 ---
 title: "Forecasting and Growth Factors"
 weight: 20
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Forecasting and Growth Factors
 

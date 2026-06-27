@@ -1,6 +1,9 @@
 ---
 title: "Signalized Intersection Capacity"
 weight: 26
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Signalized Intersection Capacity
 

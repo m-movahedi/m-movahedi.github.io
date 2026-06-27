@@ -1,6 +1,9 @@
 ---
 title: "Quantity Takeoff and Cost Estimating"
 weight: 7
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Quantity Takeoff and Cost Estimating
 

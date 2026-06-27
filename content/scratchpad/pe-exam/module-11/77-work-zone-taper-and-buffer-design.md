@@ -1,6 +1,9 @@
 ---
 title: "Work Zone Taper and Buffer Design"
 weight: 77
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Work Zone Taper and Buffer Design
 

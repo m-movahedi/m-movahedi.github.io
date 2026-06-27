@@ -1,6 +1,9 @@
 ---
 title: "Vertical Clearance"
 weight: 58
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Vertical Clearance
 

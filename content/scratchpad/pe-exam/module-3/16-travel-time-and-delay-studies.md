@@ -1,6 +1,9 @@
 ---
 title: "Travel Time and Delay Studies"
 weight: 16
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Travel Time and Delay Studies
 

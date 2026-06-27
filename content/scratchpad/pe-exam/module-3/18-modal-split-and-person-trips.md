@@ -1,6 +1,9 @@
 ---
 title: "Modal Split and Person Trips"
 weight: 18
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Modal Split and Person Trips
 

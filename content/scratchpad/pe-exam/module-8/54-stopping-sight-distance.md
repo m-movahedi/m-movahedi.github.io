@@ -1,6 +1,9 @@
 ---
 title: "Stopping Sight Distance"
 weight: 54
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Stopping Sight Distance
 

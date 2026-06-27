@@ -1,6 +1,9 @@
 ---
 title: "Circular Curve Fundamentals"
 weight: 44
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Circular Curve Fundamentals
 

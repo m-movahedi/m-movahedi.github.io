@@ -1,6 +1,9 @@
 ---
 title: "Time of Concentration ($t_c$)"
 weight: 92
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Time of Concentration ($t_c$)
 

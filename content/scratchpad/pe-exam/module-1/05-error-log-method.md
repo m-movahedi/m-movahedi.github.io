@@ -1,6 +1,9 @@
 ---
 title: "The Error Log Method"
 weight: 5
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # The Error Log Method
 

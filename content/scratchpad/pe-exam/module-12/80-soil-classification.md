@@ -1,6 +1,9 @@
 ---
 title: "Soil Classification for Pavements and Subgrades"
 weight: 80
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Soil Classification for Pavements and Subgrades
 

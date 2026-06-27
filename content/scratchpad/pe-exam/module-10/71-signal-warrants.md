@@ -1,6 +1,9 @@
 ---
 title: "Traffic Signal Warrants"
 weight: 71
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Traffic Signal Warrants
 

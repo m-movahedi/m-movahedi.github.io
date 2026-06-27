@@ -1,6 +1,9 @@
 ---
 title: "Soil Compaction"
 weight: 82
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Soil Compaction
 

@@ -1,6 +1,9 @@
 ---
 title: "Roadside Slopes and Ditches"
 weight: 40
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Roadside Slopes and Ditches
 

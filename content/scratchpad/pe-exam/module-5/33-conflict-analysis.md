@@ -1,6 +1,9 @@
 ---
 title: "Conflict Analysis"
 weight: 33
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Conflict Analysis
 

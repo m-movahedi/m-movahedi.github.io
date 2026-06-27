@@ -1,6 +1,9 @@
 ---
 title: "Standards Conflict Resolution"
 weight: 108
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Standards Conflict Resolution
 

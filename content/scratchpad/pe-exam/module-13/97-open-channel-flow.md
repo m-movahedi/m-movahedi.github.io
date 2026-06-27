@@ -1,6 +1,9 @@
 ---
 title: "Open Channel Flow"
 weight: 97
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Open Channel Flow
 

@@ -1,6 +1,9 @@
 ---
 title: "Elevation on Vertical Curves"
 weight: 53
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Elevation on Vertical Curves
 

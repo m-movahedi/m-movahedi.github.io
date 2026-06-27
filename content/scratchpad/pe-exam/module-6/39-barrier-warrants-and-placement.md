@@ -1,6 +1,9 @@
 ---
 title: "Barrier Warrants and Placement"
 weight: 39
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Barrier Warrants and Placement
 

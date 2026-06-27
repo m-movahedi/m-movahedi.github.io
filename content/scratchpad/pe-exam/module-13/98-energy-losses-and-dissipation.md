@@ -1,6 +1,9 @@
 ---
 title: "Energy Losses and Dissipation"
 weight: 98
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Energy Losses and Dissipation
 

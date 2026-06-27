@@ -1,6 +1,9 @@
 ---
 title: "Final Review and Formula Recognition"
 weight: 114
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Final Review and Formula Recognition
 

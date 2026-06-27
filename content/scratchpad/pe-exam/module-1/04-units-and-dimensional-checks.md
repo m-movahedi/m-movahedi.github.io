@@ -1,6 +1,9 @@
 ---
 title: "Units and Dimensional Checks"
 weight: 4
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Units and Dimensional Checks
 

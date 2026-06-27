@@ -1,6 +1,9 @@
 ---
 title: "Basic Freeway Segments"
 weight: 22
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Basic Freeway Segments
 

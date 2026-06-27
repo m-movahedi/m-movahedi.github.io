@@ -1,6 +1,9 @@
 ---
 title: "Mixed Calculation Set: Drainage and Pavement"
 weight: 111
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Mixed Calculation Set: Drainage and Pavement
 

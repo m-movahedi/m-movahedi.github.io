@@ -1,6 +1,9 @@
 ---
 title: "Critical Path Method (CPM) and Crashing"
 weight: 10
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Critical Path Method (CPM) and Crashing
 

@@ -1,6 +1,9 @@
 ---
 title: "Detours and Lane Closures"
 weight: 78
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Detours and Lane Closures
 

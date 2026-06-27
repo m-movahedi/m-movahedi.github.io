@@ -1,6 +1,9 @@
 ---
 title: "Supplied Standards Strategy"
 weight: 3
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Supplied Standards Strategy
 

@@ -1,6 +1,9 @@
 ---
 title: "Hydrographs and Detention"
 weight: 93
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Hydrographs and Detention
 

@@ -1,6 +1,9 @@
 ---
 title: "Benefit-Cost and Life-Cycle Decisions"
 weight: 12
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Benefit-Cost and Life-Cycle Decisions
 

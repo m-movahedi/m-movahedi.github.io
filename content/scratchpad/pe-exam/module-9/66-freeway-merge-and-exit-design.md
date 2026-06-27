@@ -1,6 +1,9 @@
 ---
 title: "Freeway Merge and Exit Design"
 weight: 66
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Freeway Merge and Exit Design
 

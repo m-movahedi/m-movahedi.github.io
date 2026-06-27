@@ -1,6 +1,9 @@
 ---
 title: "Rational Method"
 weight: 91
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Rational Method
 

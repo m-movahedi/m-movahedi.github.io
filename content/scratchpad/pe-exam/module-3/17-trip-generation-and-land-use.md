@@ -1,6 +1,9 @@
 ---
 title: "Trip Generation and Land Use"
 weight: 17
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Trip Generation and Land Use
 

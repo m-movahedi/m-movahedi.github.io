@@ -1,6 +1,9 @@
 ---
 title: "Storm Sewer Hydraulics"
 weight: 94
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Storm Sewer Hydraulics
 

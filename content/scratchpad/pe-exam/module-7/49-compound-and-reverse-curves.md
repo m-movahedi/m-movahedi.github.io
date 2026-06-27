@@ -1,6 +1,9 @@
 ---
 title: "Compound and Reverse Curves"
 weight: 49
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Compound and Reverse Curves
 

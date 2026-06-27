@@ -1,6 +1,9 @@
 ---
 title: "Corridor Design Integration"
 weight: 106
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Corridor Design Integration
 

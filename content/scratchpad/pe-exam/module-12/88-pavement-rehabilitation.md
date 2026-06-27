@@ -1,6 +1,9 @@
 ---
 title: "Pavement Distress and Rehabilitation"
 weight: 88
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Pavement Distress and Rehabilitation
 

@@ -1,6 +1,9 @@
 ---
 title: "Superelevation Runoff and Transition"
 weight: 48
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Superelevation Runoff and Transition
 

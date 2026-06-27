@@ -1,6 +1,9 @@
 ---
 title: "Project Scheduling Basics"
 weight: 9
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Project Scheduling Basics
 

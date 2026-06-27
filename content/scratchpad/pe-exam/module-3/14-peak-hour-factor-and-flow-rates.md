@@ -1,6 +1,9 @@
 ---
 title: "Peak Hour Factor and Flow Rates"
 weight: 14
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Peak Hour Factor and Flow Rates
 

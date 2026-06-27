@@ -1,6 +1,9 @@
 ---
 title: "Crash Modification Factors"
 weight: 34
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Crash Modification Factors
 

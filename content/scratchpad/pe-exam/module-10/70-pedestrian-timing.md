@@ -1,6 +1,9 @@
 ---
 title: "Pedestrian Signal Timing"
 weight: 70
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Pedestrian Signal Timing
 

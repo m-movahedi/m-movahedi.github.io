@@ -1,6 +1,9 @@
 ---
 title: "Pedestrian Crossing Analysis"
 weight: 101
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Pedestrian Crossing Analysis
 

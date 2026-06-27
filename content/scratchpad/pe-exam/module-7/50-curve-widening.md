@@ -1,6 +1,9 @@
 ---
 title: "Curve Widening"
 weight: 50
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Curve Widening
 

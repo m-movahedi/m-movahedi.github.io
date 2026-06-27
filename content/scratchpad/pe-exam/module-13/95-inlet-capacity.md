@@ -1,6 +1,9 @@
 ---
 title: "Inlet Capacity"
 weight: 95
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Inlet Capacity
 

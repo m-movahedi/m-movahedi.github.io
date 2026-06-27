@@ -1,6 +1,9 @@
 ---
 title: "Traffic Signal Coordination"
 weight: 72
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Traffic Signal Coordination
 

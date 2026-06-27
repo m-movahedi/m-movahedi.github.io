@@ -1,6 +1,9 @@
 ---
 title: "Shared Use Paths"
 weight: 104
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Shared Use Paths
 

@@ -1,6 +1,9 @@
 ---
 title: "Culvert Hydraulics"
 weight: 96
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Culvert Hydraulics
 

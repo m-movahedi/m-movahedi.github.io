@@ -1,6 +1,9 @@
 ---
 title: "Design Exception Reasoning"
 weight: 107
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Design Exception Reasoning
 

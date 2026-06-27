@@ -1,6 +1,9 @@
 ---
 title: "Earthwork and Mass Balance"
 weight: 85
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Earthwork and Mass Balance
 

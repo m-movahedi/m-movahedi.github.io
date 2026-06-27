@@ -1,6 +1,9 @@
 ---
 title: "Roundabout Geometric Design"
 weight: 63
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Roundabout Geometric Design
 

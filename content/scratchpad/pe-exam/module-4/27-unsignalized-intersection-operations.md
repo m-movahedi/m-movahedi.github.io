@@ -1,6 +1,9 @@
 ---
 title: "Unsignalized Intersection Operations"
 weight: 27
+date : "2026-05-04"
+draft : false
+type : "post"
 ---
 # Unsignalized Intersection Operations
 
