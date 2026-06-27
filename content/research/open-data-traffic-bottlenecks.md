@@ -120,7 +120,6 @@ By tapping into crowdsourced probe data from the Waze application, we extracted 
       <div class="waze-axis-label" style="top: 15px; left: 15px;">Speed (km/h)</div>
       <div class="waze-axis-label" style="bottom: 15px; right: 20px;">Time</div>
       <div class="waze-pin">📍<span style="font-size: 0.45em; display: block; color: #e84118; font-weight: bold; background: rgba(0,0,0,0.5); padding: 2px 4px; border-radius: 4px;">Accident Detected</span></div>
-      
       <!-- SVG Chart Line -->
       <svg viewBox="0 0 100 50" preserveAspectRatio="none" style="width: 100%; height: 100%; padding: 30px 20px 20px 40px; box-sizing: border-box;">
         <polyline points="0,5 10,6 20,5 30,10 40,40 50,45 60,35 70,20 80,10 90,5 100,6" fill="none" stroke="#00a8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="waze-line"/>
