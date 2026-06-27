@@ -5,6 +5,9 @@ draft : false
 type : "post"
 tags:
   - "Transportation planning"
+  - "Public Transportation"
+  - "Transit Planning"
+  - "Multimodal Transportation Planning"
 journal: "tehran Municipality"
 ---
 
