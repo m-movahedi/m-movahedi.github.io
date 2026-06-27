@@ -5,6 +5,7 @@ draft : false
 type : "post"
 tags:
   - "Transportation planning"
+journal: "tehran Municipality"
 ---
 
 Tourism plays an important role in the growth of urban economies. Attractions like historical buildings that capture the essence of life, streets with the hallmarks of the past, and monuments that act as mementos can be lucrative for local businesses and fruitful for the city's culture.
