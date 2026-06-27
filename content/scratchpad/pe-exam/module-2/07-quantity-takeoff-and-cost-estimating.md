@@ -166,15 +166,12 @@ A concrete cantilever retaining wall has a uniform cross-section shown below. Th
     <!-- Footing: 10 ft x 2 ft = 150 x 30 -->
     <rect x="125" y="270" width="150" height="30" class="concrete" />
     <text x="200" y="285" class="text" text-anchor="middle">Footing (2.0' thick)</text>
-    
     <!-- Stem: Top 1.0 ft (15), Bottom 1.5 ft (22.5), Height 15.0 ft (225) -->
     <polygon points="175,45 190,45 197.5,270 175,270" class="concrete" />
     <text x="186" y="150" class="text" text-anchor="middle" transform="rotate(-90 186,150)">Stem (15.0' high)</text>
-
     <!-- Dimensions -->
     <line x1="175" y1="35" x2="190" y2="35" class="dim" />
-    <text x="182.5" y="28" class="text" text-anchor="middle">1.0'</text>
-    
+    <text x="182.5" y="28" class="text" text-anchor="middle">1.0'</text>    
     <line x1="125" y1="315" x2="275" y2="315" class="dim" />
     <text x="200" y="310" class="text" text-anchor="middle">10.0' Footing Width</text>
   </svg>
@@ -222,27 +219,21 @@ Drainage pipelines require calculating trench excavation volumes, pipe volumes, 
     <!-- Ground -->
     <line x1="50" y1="50" x2="150" y2="50" class="ground" />
     <line x1="250" y1="50" x2="350" y2="50" class="ground" />
-    <text x="100" y="40" class="text" text-anchor="middle">Ground Level</text>
-    
+    <text x="100" y="40" class="text" text-anchor="middle">Ground Level</text>    
     <!-- Trench bounds -->
-    <polyline points="150,50 150,220 250,220 250,50" class="trench" />
-    
+    <polyline points="150,50 150,220 250,220 250,50" class="trench" />    
     <!-- Bedding -->
     <rect x="150" y="170" width="100" height="50" class="bedding" />
-    <text x="200" y="200" class="text" text-anchor="middle">Bedding</text>
-    
+    <text x="200" y="200" class="text" text-anchor="middle">Bedding</text>    
     <!-- Backfill -->
     <rect x="150" y="50" width="100" height="120" class="backfill" />
-    <text x="200" y="90" class="text" text-anchor="middle">Backfill</text>
-    
+    <text x="200" y="90" class="text" text-anchor="middle">Backfill</text>    
     <!-- Pipe -->
     <circle cx="200" cy="150" r="30" class="pipe" />
-    <text x="200" y="155" class="text" fill="#fff" text-anchor="middle">Pipe</text>
-    
+    <text x="200" y="155" class="text" fill="#fff" text-anchor="middle">Pipe</text>    
     <!-- Dimensions -->
     <line x1="150" y1="30" x2="250" y2="30" class="dim" />
-    <text x="200" y="25" class="text" text-anchor="middle">Trench Width (W)</text>
-    
+    <text x="200" y="25" class="text" text-anchor="middle">Trench Width (W)</text>    
     <line x1="120" y1="150" x2="280" y2="150" class="dim" />
     <text x="310" y="155" class="text" text-anchor="middle">Springline</text>
   </svg>

@@ -28,14 +28,12 @@ Soil exists in one of three states during earthwork operations, each with a diff
     </div>
     <div style="margin-top: 5px; font-size: 0.9em;">Volume V<sub>B</sub></div>
   </div>
-
   <!-- Arrow 1 -->
   <div style="width: 12.5%; display: flex; flex-direction: column; align-items: center;">
     <div style="font-weight: bold; font-size: 0.9em;">Swell</div>
     <div style="font-size: 1.5em; line-height: 1;">&rarr;</div>
     <div style="font-size: 0.7em;">(Vol Increases)</div>
   </div>
-
   <!-- Loose State -->
   <div style="width: 25%;">
     <div style="font-weight: bold; margin-bottom: 5px;">LOOSE STATE<br><span style="font-size: 0.8em; font-weight: normal;">(Excavated)</span></div>
@@ -45,14 +43,12 @@ Soil exists in one of three states during earthwork operations, each with a diff
     </div>
     <div style="margin-top: 5px; font-size: 0.9em;">Volume V<sub>L</sub></div>
   </div>
-
   <!-- Arrow 2 -->
   <div style="width: 12.5%; display: flex; flex-direction: column; align-items: center;">
     <div style="font-weight: bold; font-size: 0.9em;">Shrink</div>
     <div style="font-size: 1.5em; line-height: 1;">&rarr;</div>
     <div style="font-size: 0.7em;">(Vol Decreases)</div>
   </div>
-
   <!-- Compacted State -->
   <div style="width: 25%;">
     <div style="font-weight: bold; margin-bottom: 5px;">COMPACTED<br><span style="font-size: 0.8em; font-weight: normal;">(Placed)</span></div>
@@ -110,28 +106,23 @@ A **mass diagram** is a cumulative plot of the net earthwork volume along the ce
 <svg viewBox="0 0 600 300" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif; fill: currentColor;">
   <!-- Axes -->
   <line x1="50" y1="150" x2="550" y2="150" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="100" y1="280" x2="100" y2="40" stroke="currentColor" stroke-width="2" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
-  
+  <line x1="100" y1="280" x2="100" y2="40" stroke="currentColor" stroke-width="2" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>  
   <!-- Labels -->
   <text x="500" y="140" text-anchor="end" font-weight="bold">Stationing</text>
   <text x="90" y="30" text-anchor="middle" font-weight="bold">Cumulative Net Volume (BCY)</text>
   <text x="540" y="170" text-anchor="end" font-size="0.9em" font-style="italic">Balance Line</text>
-
   <!-- Curve -->
-  <path d="M 100 150 Q 150 150, 200 50 T 300 150 T 400 220 T 500 150" fill="none" stroke="#27ae60" stroke-width="3" />
-  
+  <path d="M 100 150 Q 150 150, 200 50 T 300 150 T 400 220 T 500 150" fill="none" stroke="#27ae60" stroke-width="3" />  
   <!-- Peak annotation -->
   <circle cx="200" cy="50" r="4" fill="#e74c3c" />
   <line x1="200" y1="50" x2="280" y2="30" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
   <text x="290" y="25" font-size="0.9em" font-weight="bold">Peak</text>
   <text x="290" y="40" font-size="0.8em">(Transition from Cut to Fill)</text>
-
   <!-- Valley annotation -->
   <circle cx="400" cy="220" r="4" fill="#3498db" />
   <line x1="400" y1="220" x2="330" y2="250" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
   <text x="320" y="260" font-size="0.9em" font-weight="bold" text-anchor="end">Valley</text>
   <text x="320" y="275" font-size="0.8em" text-anchor="end">(Transition from Fill to Cut)</text>
-
   <!-- Defs -->
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">

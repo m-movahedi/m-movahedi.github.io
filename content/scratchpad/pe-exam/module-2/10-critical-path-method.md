@@ -28,28 +28,22 @@ Each activity is represented by a box with the following structure:
       .header { font-weight: bold; }
     </style>
     <!-- Outer Box -->
-    <rect x="10" y="10" width="180" height="100" class="node" />
-    
+    <rect x="10" y="10" width="180" height="100" class="node" />    
     <!-- Horizontal Dividers -->
     <line x1="10" y1="40" x2="190" y2="40" class="line" />
-    <line x1="10" y1="80" x2="190" y2="80" class="line" />
-    
+    <line x1="10" y1="80" x2="190" y2="80" class="line" />    
     <!-- Vertical Dividers (Top Row) -->
     <line x1="50" y1="10" x2="50" y2="40" class="line" />
-    <line x1="150" y1="10" x2="150" y2="40" class="line" />
-    
+    <line x1="150" y1="10" x2="150" y2="40" class="line" />    
     <!-- Vertical Dividers (Bottom Row) -->
     <line x1="50" y1="80" x2="50" y2="110" class="line" />
-    <line x1="150" y1="80" x2="150" y2="110" class="line" />
-    
+    <line x1="150" y1="80" x2="150" y2="110" class="line" />    
     <!-- Texts Top Row -->
     <text x="30" y="30" class="text" text-anchor="middle">ES</text>
     <text x="100" y="30" class="text" text-anchor="middle">Duration (d)</text>
-    <text x="170" y="30" class="text" text-anchor="middle">EF</text>
-    
+    <text x="170" y="30" class="text" text-anchor="middle">EF</text>    
     <!-- Activity Name -->
-    <text x="100" y="65" class="text header" text-anchor="middle">Activity Name</text>
-    
+    <text x="100" y="65" class="text header" text-anchor="middle">Activity Name</text>    
     <!-- Texts Bottom Row -->
     <text x="30" y="100" class="text" text-anchor="middle">LS</text>
     <text x="100" y="100" class="text" text-anchor="middle">Total Float</text>
@@ -131,16 +125,14 @@ A project network has the following activities, durations, and predecessor relat
       .arrow-crit { stroke: #d32f2f; stroke-width: 3; fill: none; marker-end: url(#arrowhead-crit); }
       .text { font-family: monospace; font-size: 12px; fill: #333; pointer-events: none; }
       .header { font-weight: bold; font-size: 14px; }
-    </style>
-    
+    </style>    
     <defs>
       <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
         <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
       </marker>
       <marker id="arrowhead-crit" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
         <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f" />
-      </marker>
-      
+      </marker>      
       <!-- Template for a Node. Use with <use> and pass x, y -->
       <g id="cpm-node">
         <rect x="0" y="0" width="120" height="75" class="node" />
@@ -161,19 +153,14 @@ A project network has the following activities, durations, and predecessor relat
         <line x1="85" y1="50" x2="85" y2="75" class="line" />
       </g>
     </defs>
-
     <!-- Edges -->
     <path d="M 140 150 L 160 150 L 160 50 L 195 50" class="arrow-crit" />
-    <path d="M 140 150 L 160 150 L 160 250 L 195 250" class="arrow" />
-    
+    <path d="M 140 150 L 160 150 L 160 250 L 195 250" class="arrow" />    
     <path d="M 320 50 L 350 50 L 350 130 L 395 130" class="arrow-crit" />
-    <path d="M 320 50 L 350 50 L 350 20 L 395 20" class="arrow" />
-    
+    <path d="M 320 50 L 350 50 L 350 20 L 395 20" class="arrow" />    
     <path d="M 320 250 L 350 250 L 350 170 L 395 170" class="arrow" />
-    
     <path d="M 520 20 L 550 20 L 550 130 L 575 130" class="arrow" />
     <path d="M 520 150 L 550 150 L 550 150 L 575 150" class="arrow-crit" />
-
     <!-- Node A (Critical) -->
     <g transform="translate(20, 112.5)">
       <use href="#cpm-node-crit" />
@@ -185,7 +172,6 @@ A project network has the following activities, durations, and predecessor relat
       <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
       <text x="102.5" y="67.5" class="text" text-anchor="middle">4</text>
     </g>
-
     <!-- Node B (Critical) -->
     <g transform="translate(200, 12.5)">
       <use href="#cpm-node-crit" />
@@ -197,7 +183,6 @@ A project network has the following activities, durations, and predecessor relat
       <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
       <text x="102.5" y="67.5" class="text" text-anchor="middle">10</text>
     </g>
-
     <!-- Node C -->
     <g transform="translate(200, 212.5)">
       <use href="#cpm-node" />
@@ -209,7 +194,6 @@ A project network has the following activities, durations, and predecessor relat
       <text x="60" y="67.5" class="text" text-anchor="middle">3</text>
       <text x="102.5" y="67.5" class="text" text-anchor="middle">10</text>
     </g>
-
     <!-- Node D -->
     <g transform="translate(400, 12.5)">
       <use href="#cpm-node" />
@@ -221,7 +205,6 @@ A project network has the following activities, durations, and predecessor relat
       <text x="60" y="67.5" class="text" text-anchor="middle">3</text>
       <text x="102.5" y="67.5" class="text" text-anchor="middle">18</text>
     </g>
-
     <!-- Node E (Critical) -->
     <g transform="translate(400, 112.5)">
       <use href="#cpm-node-crit" />
@@ -233,7 +216,6 @@ A project network has the following activities, durations, and predecessor relat
       <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
       <text x="102.5" y="67.5" class="text" text-anchor="middle">18</text>
     </g>
-
     <!-- Node F (Critical) -->
     <g transform="translate(580, 112.5)">
       <use href="#cpm-node-crit" />
