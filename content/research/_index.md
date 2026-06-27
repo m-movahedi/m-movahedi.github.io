@@ -2,7 +2,7 @@
 menus : ['main', 'footer']
 title: "Research"
 draft: false
-view: "grid"
+view: "card-list"
 ---
 
 Funded research projects and papers

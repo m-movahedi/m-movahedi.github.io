@@ -23,6 +23,40 @@
   {{ end }}
 </div>
 
+{{ else if eq .Params.view "card-list" }}
+
+<div class="card-list">
+  {{ $sectionImage := .Params.featured_image | default .Params.image }}
+  {{ range .Pages }}
+  {{ $cardImage := .Params.featured_image | default .Params.image | default $sectionImage }}
+  <a class="card-list-item" href="{{ .RelPermalink }}">
+    <div class="card-list-content">
+      <h2>{{ .Title }}</h2>
+      <div class="card-list-meta">
+        {{ with .Date }}<span class="card-list-date">{{ .Format "Jan 2, 2006" }}</span>{{ end }}
+        {{ with .Params.journal }}
+        <span class="card-list-separator">&bull;</span>
+        <span class="card-list-journal">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ with .Params.tags }}
+      <div class="card-list-tags">
+        {{ range first 5 . }}
+        <span class="card-list-tag">{{ . }}</span>
+        {{ end }}
+        {{ if gt (len .) 5 }}<span class="card-list-tag">...</span>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ with $cardImage }}
+    <div class="card-list-image">
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
+  </a>
+  {{ end }}
+</div>
+
 {{ else if eq .Params.view "timeline" }}
 
 <div class="timeline">
