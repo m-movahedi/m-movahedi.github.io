@@ -11,6 +11,7 @@ tags:
   - "Reinforcement Learning"
   - "Traffic Modeling"
   - "Intelligent Transportation"
+journal: "IEEE Transaction on ITS"
 ---
 
 <div style="background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">

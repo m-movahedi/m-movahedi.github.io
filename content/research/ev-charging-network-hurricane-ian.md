@@ -12,6 +12,7 @@ tags:
   - "Spatial Analytics"
   - "Post-disaster Recovery"
   - "Transportation Planning"
+journal: "International Conference on Transportation and Development 2024"
 ---
 
 <div style="background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">

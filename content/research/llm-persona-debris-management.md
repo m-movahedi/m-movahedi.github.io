@@ -12,6 +12,7 @@ tags:
   - "Post-disaster Recovery"
   - "Infrastructure Management"
   - "Infrastructure Planning"
+journal: "ASCE Construction Research Congress 2026"
 ---
 
 <div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">

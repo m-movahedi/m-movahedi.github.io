@@ -11,6 +11,7 @@ tags:
   - "Multi-Criteria Decision Analysis"
   - "Infrastructure Management"
   - "Infrastructure Planning"
+journal: "Journal of Transport Geography"
 ---
 
 The transition to electric vehicles (EVs) introduces new paradigms for emergency management, particularly in hurricane-prone regions. During extreme weather events, the vulnerability of the power grid becomes a critical bottleneck. Structural failures within the transmission and distribution networks can disable permanently installed EV charging stations precisely when they are most necessary for mass population evacuations. 
