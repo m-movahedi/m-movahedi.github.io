@@ -1,3 +1,7 @@
+---
+title: "Project Scheduling Basics"
+weight: 9
+---
 # Project Scheduling Basics
 
 Project scheduling is a core competency tested on the PE Civil Transportation exam. Understanding activity relationships, precedence types, network formats, and basic scheduling terms is essential before performing full Critical Path Method (CPM) analyses.

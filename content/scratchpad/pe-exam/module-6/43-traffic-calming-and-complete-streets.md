@@ -1,3 +1,7 @@
+---
+title: "Traffic Calming and Complete Streets"
+weight: 43
+---
 # Traffic Calming and Complete Streets
 
 Complete Streets is a design philosophy that requires roads to be planned, designed, operated, and maintained to enable safe, convenient, and comfortable travel for all users, including pedestrians, bicyclists, transit riders, and motorists. Traffic calming represents the physical, self-enforcing measures used to support this philosophy by managing vehicle speeds and volumes.

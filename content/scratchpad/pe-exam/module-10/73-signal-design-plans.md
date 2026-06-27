@@ -1,3 +1,7 @@
+---
+title: "Traffic Signal Design and Plans"
+weight: 73
+---
 # Traffic Signal Design and Plans
 
 Traffic signal design plans are highly detailed engineering documents that specify the physical layout, structural support, electrical wiring, and detection systems for a signalized intersection. 

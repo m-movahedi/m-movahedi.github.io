@@ -1,3 +1,7 @@
+---
+title: "Work Zone Taper and Buffer Design"
+weight: 77
+---
 # Work Zone Taper and Buffer Design
 
 Tapers and buffer spaces are the core geometric design elements of a Temporary Traffic Control (TTC) zone. A taper uses a series of channelizing devices or pavement markings to laterally transition traffic. A buffer space provides longitudinal and lateral clearance between active traffic and workers.

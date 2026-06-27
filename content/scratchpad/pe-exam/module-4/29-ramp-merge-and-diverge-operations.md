@@ -1,3 +1,7 @@
+---
+title: "Ramp Merge and Diverge Operations"
+weight: 29
+---
 # Ramp Merge and Diverge Operations
 
 Ramp merge and diverge segments represent major points of traffic turbulence on freeways. The operational analysis focuses on the **Ramp Influence Area**, which is defined as the area extending $1,500 \text{ feet}$ along the freeway outer lanes (lanes 1 and 2) and including the acceleration or deceleration lane.

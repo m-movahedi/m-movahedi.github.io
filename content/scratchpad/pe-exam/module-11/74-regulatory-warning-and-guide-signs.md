@@ -1,3 +1,7 @@
+---
+title: "Regulatory, Warning, and Guide Signs"
+weight: 74
+---
 # Regulatory, Warning, and Guide Signs
 
 Traffic signs are the primary means of communicating regulatory constraints, hazardous conditions, and route guidance to road users. Design and placement standards for signs are established by the *Manual on Uniform Traffic Control Devices (MUTCD)*.

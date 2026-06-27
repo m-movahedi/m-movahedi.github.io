@@ -1,3 +1,7 @@
+---
+title: "Exam Day Decision Drills"
+weight: 115
+---
 # Exam Day Decision Drills
 
 This lesson features five qualitative "decision drills" designed to test engineering judgment, reference navigation, and qualitative reasoning. These drills simulate conceptual questions on the PE Civil Transportation exam where calculations are minimal but understanding context and standards is critical.

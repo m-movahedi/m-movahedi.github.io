@@ -1,3 +1,7 @@
+---
+title: "Open Channel Flow"
+weight: 97
+---
 # Open Channel Flow
 
 Open channel flow is flow with a free water surface exposed to atmospheric pressure. Roadside ditches, natural streams, and gravity storm sewers are analyzed using open channel flow principles.

@@ -1,3 +1,7 @@
+---
+title: "Sag Vertical Curves"
+weight: 56
+---
 # Sag Vertical Curves
 
 Sag vertical curves connect a downgrade to an upgrade (or a steep downgrade to a flatter downgrade, etc.), where the algebraic difference in grade is positive ($g_1 < g_2$). Unlike crest curves, where sight distance is restricted by the roadway surface itself, sight distance on sag curves during the day is generally unrestricted. 

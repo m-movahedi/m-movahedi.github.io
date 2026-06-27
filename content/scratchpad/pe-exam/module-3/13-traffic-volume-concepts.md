@@ -1,3 +1,7 @@
+---
+title: "Traffic Volume Concepts"
+weight: 13
+---
 # Traffic Volume Concepts
 
 Traffic volume is the number of vehicles passing a given point on a roadway during a specified time interval. On the PE Civil Transportation exam, understanding the relationships between daily traffic volumes, design hourly volumes, and directional splits is fundamental to roadway planning, capacity analysis, and geometric design.

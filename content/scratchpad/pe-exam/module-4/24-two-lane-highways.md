@@ -1,3 +1,7 @@
+---
+title: "Two-Lane Highways"
+weight: 24
+---
 # Two-Lane Highways
 
 A two-lane highway is a undivided roadway with one lane of traffic in each direction. On these facilities, passing maneuvers must take place in the lane of opposing traffic when gaps permit. Consequently, operations are highly sensitive to opposing traffic volume and the availability of passing zones. 

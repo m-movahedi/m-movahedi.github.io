@@ -1,3 +1,7 @@
+---
+title: "Passing Sight Distance on Vertical Curves"
+weight: 57
+---
 # Passing Sight Distance on Vertical Curves
 
 Passing Sight Distance (PSD) is the minimum distance required for a driver on a two-lane highway to safely complete a passing maneuver around a slower vehicle without colliding with an opposing vehicle. Providing PSD on vertical curves is much more demanding than providing Stopping Sight Distance (SSD) due to the greater sight distance required.

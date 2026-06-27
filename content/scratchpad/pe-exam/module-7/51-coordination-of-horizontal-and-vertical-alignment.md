@@ -1,3 +1,7 @@
+---
+title: "Coordination of Horizontal and Vertical Alignment"
+weight: 51
+---
 # Coordination of Horizontal and Vertical Alignment
 
 Roadway design is a three-dimensional challenge. Although horizontal alignment (curves and tangents in plan view) and vertical alignment (grades and vertical curves in profile view) are calculated separately, they are experienced simultaneously by the driver. Poor coordination between these two dimensions can create optical illusions, hide hazards, cause headlight sight distance failures, and lead to severe crashes.

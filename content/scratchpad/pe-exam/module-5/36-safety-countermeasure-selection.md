@@ -1,3 +1,7 @@
+---
+title: "Safety Countermeasure Selection and Economic Evaluation"
+weight: 36
+---
 # Safety Countermeasure Selection and Economic Evaluation
 
 The final step in traffic safety engineering is selecting and economically evaluating safety countermeasures. The goal is to identify treatments that address diagnosed crash patterns (e.g., from collision diagrams or conflict analysis) and determine if they are economically viable.

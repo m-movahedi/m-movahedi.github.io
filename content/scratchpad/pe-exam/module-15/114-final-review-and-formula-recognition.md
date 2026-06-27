@@ -1,3 +1,7 @@
+---
+title: "Final Review and Formula Recognition"
+weight: 114
+---
 # Final Review and Formula Recognition
 
 Success on the PE Civil Transportation exam depends on quickly recognizing formulas in the NCEES Reference Handbook and matching them to the problem statement. This lesson serves as a final review guide, mapping critical equations across hydrology, drainage, traffic, geometry, and pavements.

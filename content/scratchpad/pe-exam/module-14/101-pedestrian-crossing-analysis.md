@@ -1,3 +1,7 @@
+---
+title: "Pedestrian Crossing Analysis"
+weight: 101
+---
 # Pedestrian Crossing Analysis
 
 Pedestrian crossing analysis evaluates the geometric design, signal timing, and safety treatments required for pedestrians to cross roadways safely. Key principles are governed by the Manual on Uniform Traffic Control Devices (MUTCD) and the AASHTO Guide for the Planning, Design, and Presentation of Pedestrian Facilities.

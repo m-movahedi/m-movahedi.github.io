@@ -1,3 +1,7 @@
+---
+title: "Bicycle Facility Design"
+weight: 42
+---
 # Bicycle Facility Design
 
 Bicycle facility design focuses on providing safe, accessible, and comfortable infrastructure for cyclists. In the United States, geometric design of bicycle facilities is guided by the **AASHTO Guide for the Development of Bicycle Facilities (GBF-4)**. On the PE Civil Transportation exam, you will need to understand the classifications of bike facilities, spatial dimensions, design speeds, stopping sight distances, and curve geometry.

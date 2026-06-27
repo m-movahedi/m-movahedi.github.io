@@ -1,3 +1,7 @@
+---
+title: "Transit Stop and Bus Operations Basics"
+weight: 105
+---
 # Transit Stop and Bus Operations Basics
 
 Integrating transit facilities into highway design requires balancing traffic flow with passenger safety and accessibility. Design criteria are governed by the AASHTO Guide for the Geometric Design of Transit Facilities on Highways and Streets and TCRP (Transit Cooperative Research Program) guidelines.

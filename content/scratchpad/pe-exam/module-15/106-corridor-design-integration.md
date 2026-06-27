@@ -1,3 +1,7 @@
+---
+title: "Corridor Design Integration"
+weight: 106
+---
 # Corridor Design Integration
 
 Corridor design integration represents the synthesis of horizontal alignment, vertical alignment, cross-section design, drainage, and earthwork balancing into a unified roadway project. A successful corridor balances vehicle safety, constructability, costs, and environmental impacts.

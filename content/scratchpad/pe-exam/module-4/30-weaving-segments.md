@@ -1,3 +1,7 @@
+---
+title: "Weaving Segments"
+weight: 30
+---
 # Weaving Segments
 
 A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of traffic signals or other control devices. Weaving segments are characterized by high turbulence, as vehicles must make lane changes over a limited distance.

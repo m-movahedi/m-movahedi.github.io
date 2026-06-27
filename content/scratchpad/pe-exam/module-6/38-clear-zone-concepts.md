@@ -1,3 +1,7 @@
+---
+title: "Clear Zone Concepts"
+weight: 38
+---
 # Clear Zone Concepts
 
 A clear zone is the unobstructed, traversable area provided beyond the edge of the traveled way for the recovery of errant vehicles. The design of the clear zone is a primary safety concept in roadway design, focusing on forgiving roadsides. The primary reference for clear zone design is the **AASHTO Roadside Design Guide (RDG)**, Chapter 3.

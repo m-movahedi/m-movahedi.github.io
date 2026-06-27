@@ -1,3 +1,7 @@
+---
+title: "Highway Safety Manual Concepts"
+weight: 35
+---
 # Highway Safety Manual Concepts
 
 The AASHTO Highway Safety Manual (HSM) provides a science-based, quantitative approach to traffic safety. It moves the profession away from subjective design standards and toward the prediction of crash frequency and severity.

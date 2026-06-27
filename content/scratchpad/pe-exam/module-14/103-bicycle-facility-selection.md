@@ -1,3 +1,7 @@
+---
+title: "Bicycle Facility Selection"
+weight: 103
+---
 # Bicycle Facility Selection
 
 Designing safe and effective bicycle facilities requires matching the facility type to the operating speed and traffic volume of the adjacent roadway. Design standards are governed by the AASHTO Guide for the Development of Bicycle Facilities and FHWA guidelines.

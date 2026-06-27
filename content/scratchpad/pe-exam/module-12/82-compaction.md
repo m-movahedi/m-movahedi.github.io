@@ -1,3 +1,7 @@
+---
+title: "Soil Compaction"
+weight: 82
+---
 # Soil Compaction
 
 Compaction is the densification of soil by the application of mechanical energy, which expels air from the void spaces. Densifying the soil increases its shear strength, decreases its compressibility, and reduces its permeability, making it a critical step in constructing highway subgrades, embankments, and structural fills.

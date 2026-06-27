@@ -1,3 +1,7 @@
+---
+title: "Roadway Cross-Section Elements"
+weight: 37
+---
 # Roadway Cross-Section Elements
 
 Cross-section design represents the physical footprint of a roadway. It defines the allocation of space for travel lanes, shoulders, medians, drainage, and non-motorized users. Designing these elements requires balancing safety, operational capacity, and right-of-way constraints. For the PE Civil Transportation exam, cross-section design is governed primarily by **AASHTO's A Policy on Geometric Design of Highways and Streets (the "Green Book")**, Chapter 4.

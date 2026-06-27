@@ -1,3 +1,7 @@
+---
+title: "Anatomy of a PE-Style Problem"
+weight: 6
+---
 # Anatomy of a PE-Style Problem
 
 The NCEES PE exam does not test your ability to blindly plug numbers into formulas. It tests your ability to act as a licensed professional engineer: evaluating a scenario, identifying what information is relevant, discarding what is not, and applying the correct standard.

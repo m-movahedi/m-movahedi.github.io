@@ -1,3 +1,7 @@
+---
+title: "Pavement Markings"
+weight: 75
+---
 # Pavement Markings
 
 Pavement markings are traffic control devices applied directly to the roadway surface. They provide continuous guidance to drivers and define path restrictions. Pavement marking design is governed by the *Manual on Uniform Traffic Control Devices (MUTCD)* Chapter 3.

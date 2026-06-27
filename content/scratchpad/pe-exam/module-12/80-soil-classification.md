@@ -1,3 +1,7 @@
+---
+title: "Soil Classification for Pavements and Subgrades"
+weight: 80
+---
 # Soil Classification for Pavements and Subgrades
 
 Soil classification is a fundamental topic on the PE Civil Transportation exam. In transportation engineering, soils serve as the subgrade that supports pavement structures. Understanding the engineering behavior of these soils based on index properties—such as grain size distribution and plasticity—is critical for design, compaction control, and drainage.

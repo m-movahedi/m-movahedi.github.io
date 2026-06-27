@@ -1,3 +1,7 @@
+---
+title: "Basic Freeway Segments"
+weight: 22
+---
 # Basic Freeway Segments
 
 Basic freeway segments are outside the influence of merging, diverging, or weaving maneuvers. The operational analysis of basic freeway segments is a core topic on the NCEES PE Civil Transportation exam. The methodology is governed by Chapter 12 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.

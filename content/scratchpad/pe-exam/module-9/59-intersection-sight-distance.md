@@ -1,3 +1,7 @@
+---
+title: "Intersection Sight Distance"
+weight: 59
+---
 # Intersection Sight Distance
 
 Intersection Sight Distance (ISD) is the sight distance required at an intersection to allow drivers to safely perceive and react to potential conflicts, enabling them to cross or merge with opposing traffic streams. ISD is evaluated using the concept of **sight triangles**, which define unobstructed areas along the intersection's corners.

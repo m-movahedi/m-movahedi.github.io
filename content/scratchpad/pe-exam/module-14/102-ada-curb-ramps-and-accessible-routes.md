@@ -1,3 +1,7 @@
+---
+title: "ADA Curb Ramps and Accessible Routes"
+weight: 102
+---
 # ADA Curb Ramps and Accessible Routes
 
 Accessibility in the public right-of-way is governed by the Americans with Disabilities Act (ADA) Standards for Accessible Design and the Proposed Accessibility Guidelines for Pedestrian Facilities in the Public Right-of-Way (PROWAG). Geometric engineers must design ramps and routes that comply with strict slope, width, and surface constraints.

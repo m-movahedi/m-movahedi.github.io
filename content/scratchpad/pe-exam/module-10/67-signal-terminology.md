@@ -1,3 +1,7 @@
+---
+title: "Traffic Signal Terminology"
+weight: 67
+---
 # Traffic Signal Terminology
 
 Traffic signal timing and design questions on the PE Civil Transportation exam require a precise understanding of terminology. On the exam, confusing a "phase" with an "interval" or failing to distinguish between "displayed green" and "effective green" will lead to incorrect calculations. 

@@ -1,3 +1,7 @@
+---
+title: "The Error Log Method"
+weight: 5
+---
 # The Error Log Method
 
 The most common mistake PE candidates make is prioritizing *quantity* of practice problems over *quality* of review. Grinding through 500 practice problems is useless if you are making the exact same mistakes on problem 500 that you made on problem 1.

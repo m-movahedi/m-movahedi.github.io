@@ -1,3 +1,7 @@
+---
+title: "Signalized Intersection Capacity"
+weight: 26
+---
 # Signalized Intersection Capacity
 
 Signalized intersections are critical nodes in urban street networks. Their capacity analysis is a major component of the NCEES PE Civil Transportation exam. The analysis determines the capacity of individual lane groups, their volume-to-capacity ($v/c$) ratios, and the average control delay per vehicle, which defines the Level of Service (LOS).

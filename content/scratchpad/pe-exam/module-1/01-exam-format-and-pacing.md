@@ -1,3 +1,7 @@
+---
+title: "Exam Format, Interface, and Pacing Strategy"
+weight: 1
+---
 # Exam Format, Interface, and Pacing Strategy
 
 Preparing for the PE Civil Transportation exam involves more than just mastering formulas and design standards. The format of the exam itself—how it is delivered, how you interact with the software, and how you manage your time—is a vital part of your passing strategy.

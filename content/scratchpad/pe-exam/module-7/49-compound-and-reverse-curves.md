@@ -1,3 +1,7 @@
+---
+title: "Compound and Reverse Curves"
+weight: 49
+---
 # Compound and Reverse Curves
 
 While simple horizontal curves are the most common horizontal alignment elements, complex alignments sometimes require combining multiple curves. Two such configurations are **compound curves** and **reverse curves**.

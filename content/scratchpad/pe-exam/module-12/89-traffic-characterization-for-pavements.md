@@ -1,3 +1,7 @@
+---
+title: "Traffic Characterization for Pavements"
+weight: 89
+---
 # Traffic Characterization for Pavements
 
 Pavements must be designed to withstand the repeated applications of traffic loads over their design life. Because traffic streams contain a diverse mix of vehicles—ranging from passenger cars to heavy multi-axle semi-trucks—engineers must characterize this traffic into a single design parameter. On the PE Civil Transportation exam, the primary traffic input is the **18-kip Equivalent Single Axle Load (ESAL)**.

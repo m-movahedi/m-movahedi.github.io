@@ -1,3 +1,7 @@
+---
+title: "Traffic Impact Studies"
+weight: 19
+---
 # Traffic Impact Studies
 
 A Traffic Impact Study (TIS) is a specialized engineering study that evaluates the effects of a proposed land development on the surrounding transportation network. On the PE Civil Transportation exam, TIS questions test your ability to perform **Build vs. No-Build comparisons**, calculate **background traffic growth**, assign **development trips** to specific turning movements, and identify necessary **mitigation measures**.

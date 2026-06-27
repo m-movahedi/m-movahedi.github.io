@@ -1,3 +1,7 @@
+---
+title: "Full Mini-Exam 2"
+weight: 113
+---
 # Full Mini-Exam 2
 
 This exam is designed to simulate the PE Civil Transportation morning and afternoon sessions. It contains five representative multiple-choice questions spanning open channel hydraulics, transit stop design, traffic flow theory, hydraulic jumps, and earthwork balancing.

@@ -1,3 +1,7 @@
+---
+title: "Vertical Clearance"
+weight: 58
+---
 # Vertical Clearance
 
 Vertical clearance is the minimum vertical distance between the roadway surface and an overhead structure, such as an overpass bridge girder, sign truss, or pedestrian bridge. Ensuring adequate clearance is critical for preventing overhead collisions from commercial trucks, and ensuring that overhead structures do not block a driver's line of sight (underpass sight distance).

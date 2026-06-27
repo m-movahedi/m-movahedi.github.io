@@ -1,3 +1,7 @@
+---
+title: "Roundabout Geometric Design"
+weight: 63
+---
 # Roundabout Geometric Design
 
 A modern roundabout is an at-grade intersection where traffic circulates counterclockwise (in the United States) around a central island. Unlike older traffic circles or rotaries, modern roundabouts operate under yield control on entry, require deflection to slow entering vehicles, and utilize a compact design to limit speeds and improve safety.

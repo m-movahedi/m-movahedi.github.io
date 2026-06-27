@@ -1,3 +1,7 @@
+---
+title: "Soil Phase Relationships (Weight-Volume Relations)"
+weight: 81
+---
 # Soil Phase Relationships (Weight-Volume Relations)
 
 A soil mass is a three-phase system consisting of solid particles (soil solids), water, and air. The relative proportions of these phases govern the physical behavior, compaction characteristics, and strength of the soil. On the PE Civil Transportation exam, soil phase calculations are highly common, requiring a systematic understanding of weight-volume relationships.

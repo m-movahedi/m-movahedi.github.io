@@ -1,3 +1,7 @@
+---
+title: "Culvert Hydraulics"
+weight: 96
+---
 # Culvert Hydraulics
 
 Culverts are conduits used to convey water through highway embankments. Culvert hydraulics is governed by FHWA Hydraulic Design Series No. 5 (HDS-5) guidelines. Designing or analyzing a culvert requires determining whether the flow is governed by **Inlet Control** or **Outlet Control**.

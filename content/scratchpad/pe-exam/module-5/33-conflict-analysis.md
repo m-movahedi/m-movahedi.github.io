@@ -1,3 +1,7 @@
+---
+title: "Conflict Analysis"
+weight: 33
+---
 # Conflict Analysis
 
 Conflict analysis is a proactive traffic safety methodology that evaluates "near-miss" events instead of waiting for historical crash data to accumulate. A traffic conflict is an event involving two or more road users where an unexpected maneuver by one user forces another to take evasive action (such as braking or swerving) to avoid a collision.

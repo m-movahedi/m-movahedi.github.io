@@ -1,3 +1,7 @@
+---
+title: "Turn Lane Design"
+weight: 61
+---
 # Turn Lane Design
 
 Auxiliary turn lanes (left-turn and right-turn lanes) are added to intersections to remove decelerating or stopped turning vehicles from the through-traffic stream. This increases the capacity of the intersection, reduces delays, and lowers the potential for rear-end collisions.

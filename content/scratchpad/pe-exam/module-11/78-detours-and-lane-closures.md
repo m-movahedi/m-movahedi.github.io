@@ -1,3 +1,7 @@
+---
+title: "Detours and Lane Closures"
+weight: 78
+---
 # Detours and Lane Closures
 
 Temporary traffic control designs must accommodate various roadway geometries and multi-modal traffic needs. Managing the closure of lanes, establishing detours, utilizing flaggers, conducting night work, and ensuring ADA compliance for pedestrians and bicyclists are key responsibilities for a traffic engineer.

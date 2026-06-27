@@ -1,3 +1,7 @@
+---
+title: "Time of Concentration ($t_c$)"
+weight: 92
+---
 # Time of Concentration ($t_c$)
 
 The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the watershed to the outlet. In the Rational Method, the design storm duration is set equal to $t_c$ because this corresponds to the maximum peak runoff rate.

@@ -1,3 +1,7 @@
+---
+title: "Collision Diagrams"
+weight: 32
+---
 # Collision Diagrams
 
 A collision diagram is a schematic representation of crashes that have occurred at a specific location (typically an intersection or a short roadway segment) over a designated time period. It is one of the most powerful diagnostic tools in traffic safety engineering, used to visually identify crash clusters, spatial patterns, and common conflict types.

@@ -1,3 +1,7 @@
+---
+title: "Trip Generation and Land Use"
+weight: 17
+---
 # Trip Generation and Land Use
 
 Trip generation is the first step in the traditional **Four-Step Transportation Planning Process** (Trip Generation, Trip Distribution, Mode Split, and Route Assignment). It estimates the number of trips beginning (productions) or ending (attractions) in a specific land use zone. On the PE Civil Transportation exam, you must know how to use trip-generation rates and regression equations, and how to adjust these totals for **pass-by trips**, **diverted trips**, and **internal capture**.

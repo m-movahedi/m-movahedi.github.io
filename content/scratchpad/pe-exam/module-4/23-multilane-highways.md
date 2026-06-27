@@ -1,3 +1,7 @@
+---
+title: "Multilane Highways"
+weight: 23
+---
 # Multilane Highways
 
 Multilane highways differ from freeways because they are not fully access-controlled. They often feature at-grade intersections, driveways, and medians (or lack thereof), which introduces additional friction to traffic flow. The operational analysis of multilane highways is governed by Chapter 12 of the Highway Capacity Manual (HCM 6th Edition) and is a frequent topic on the NCEES PE Civil Transportation exam.

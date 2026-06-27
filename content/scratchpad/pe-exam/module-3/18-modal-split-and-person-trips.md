@@ -1,3 +1,7 @@
+---
+title: "Modal Split and Person Trips"
+weight: 18
+---
 # Modal Split and Person Trips
 
 Modal split (or mode choice) is the third step in the traditional **Four-Step Transportation Planning Process**. It determines the proportion of total person trips that will use each available travel mode (e.g., driving alone, carpooling, taking public transit, bicycling, or walking). On the PE Civil Transportation exam, you must be able to convert between person trips and vehicle trips using **vehicle occupancy factors** and calculate mode shares using **utility functions** and the **Multinomial Logit Model**.

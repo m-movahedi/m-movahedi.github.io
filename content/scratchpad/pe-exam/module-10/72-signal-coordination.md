@@ -1,3 +1,7 @@
+---
+title: "Traffic Signal Coordination"
+weight: 72
+---
 # Traffic Signal Coordination
 
 Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. The primary goal of coordination is to reduce stops, delays, fuel consumption, and vehicle emissions. 

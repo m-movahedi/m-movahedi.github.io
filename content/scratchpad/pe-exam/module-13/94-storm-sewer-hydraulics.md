@@ -1,3 +1,7 @@
+---
+title: "Storm Sewer Hydraulics"
+weight: 94
+---
 # Storm Sewer Hydraulics
 
 Storm sewer hydraulics deals with the design and analysis of gravity-flow pipe systems. Because storm sewers typically flow under gravity (except when surcharged), they are analyzed as open channels using Manning's equation.

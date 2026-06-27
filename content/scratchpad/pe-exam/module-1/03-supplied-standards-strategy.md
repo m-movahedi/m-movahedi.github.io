@@ -1,3 +1,7 @@
+---
+title: "Supplied Standards Strategy"
+weight: 3
+---
 # Supplied Standards Strategy
 
 While the NCEES PE Civil Reference Handbook covers the foundational math and physics, the **PE Civil Transportation exam** requires you to navigate a vast library of specialized, discipline-specific design manuals. These are referred to as the "Supplied Standards."

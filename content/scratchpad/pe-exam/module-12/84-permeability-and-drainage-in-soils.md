@@ -1,3 +1,7 @@
+---
+title: "Permeability and Drainage in Soils"
+weight: 84
+---
 # Permeability and Drainage in Soils
 
 Water flow through soil is a key parameter in civil engineering design. It affects seepage under dams, stability of slopes, settlement of clay layers, and the structural integrity of pavements. Water trapped in pavement layers can lead to base softening, pumping of fines, and premature cracking. On the PE Civil Transportation exam, understanding permeability (hydraulic conductivity) and drainage design is essential.

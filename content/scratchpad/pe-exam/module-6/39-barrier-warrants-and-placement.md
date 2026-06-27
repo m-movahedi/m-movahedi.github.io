@@ -1,3 +1,7 @@
+---
+title: "Barrier Warrants and Placement"
+weight: 39
+---
 # Barrier Warrants and Placement
 
 Roadside barriers are protective devices designed to shield motorists from hazards that lie within the clear zone. However, barriers are themselves hazards and should only be installed when the consequences of striking the barrier are less severe than striking the shielded obstacle. The primary reference for barrier design, warrants, and placement is the **AASHTO Roadside Design Guide (RDG)**, Chapters 5 and 8.

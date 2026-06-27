@@ -1,3 +1,7 @@
+---
+title: "Temporary Traffic Control Fundamentals"
+weight: 76
+---
 # Temporary Traffic Control Fundamentals
 
 Temporary Traffic Control (TTC) zones are established to safely redirect traffic when construction, maintenance, or utility work occurs on or adjacent to a roadway. The design and operation of TTC zones must prioritize the safety of both road users (motorists, pedestrians, bicyclists) and workers.

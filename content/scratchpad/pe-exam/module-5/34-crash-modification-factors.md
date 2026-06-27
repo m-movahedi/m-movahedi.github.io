@@ -1,3 +1,7 @@
+---
+title: "Crash Modification Factors"
+weight: 34
+---
 # Crash Modification Factors
 
 A Crash Modification Factor (CMF) is a multiplicative factor used to compute the expected number of crashes after implementing a specific countermeasure at a transportation facility. A CMF represents the relative change in crash frequency compared to a baseline condition.

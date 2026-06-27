@@ -1,3 +1,7 @@
+---
+title: "Superelevation Basics"
+weight: 47
+---
 # Superelevation Basics
 
 When a vehicle travels along a horizontal curve, it experiences a centrifugal force that acts to push it outward, away from the center of the curve. To counter this lateral force and ensure passenger comfort and vehicle stability, the roadway cross-section is tilted or "banked." This banking is called **superelevation ($e$)**.

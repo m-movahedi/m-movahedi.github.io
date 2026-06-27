@@ -1,3 +1,7 @@
+---
+title: "Ramp Geometry"
+weight: 65
+---
 # Ramp Geometry
 
 Ramps are the connecting roadways that facilitate vehicle transfers between intersecting facilities at interchanges. Designing ramp geometry requires determining appropriate design speeds, horizontal curve radii, super-elevation rates, and vertical grades to ensure that vehicles can transition safely from one highway speed to another.

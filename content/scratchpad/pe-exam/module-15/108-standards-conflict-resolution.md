@@ -1,3 +1,7 @@
+---
+title: "Standards Conflict Resolution"
+weight: 108
+---
 # Standards Conflict Resolution
 
 Highway engineering projects frequently involve multiple reference manuals, state specifications, local guidelines, and federal regulations. When these standards conflict, engineers must apply a systematic hierarchy to determine which standard governs.

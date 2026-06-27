@@ -1,3 +1,7 @@
+---
+title: "Curve Widening"
+weight: 50
+---
 # Curve Widening
 
 On sharp horizontal curves, roadways are often widened to ensure that vehicles—especially large trucks—remain within their designated travel lanes. This widening is necessary for two primary physical reasons:
