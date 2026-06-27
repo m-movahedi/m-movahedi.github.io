@@ -27,18 +27,24 @@ A project schedule is a model that translates project activities, durations, res
 
 Activities are linked using logical dependencies. There are four types of relationships, which can be modified by **lags** or **leads**.
 
-```
-1. Finish-to-Start (FS)     2. Start-to-Start (SS)
-   [ A ]                       [ A ]
-     |                           |
-     v (FS)                      v (SS)
-   [ B ]                       [ B ]
-
-3. Finish-to-Finish (FF)    4. Start-to-Finish (SF)
-   [ A ]                       [ A ]
-     |                           |
-     v (FF)                      v (SF)
-   [ B ]                       [ B ]
+```mermaid
+flowchart TD
+    subgraph FS ["1. Finish-to-Start (FS)"]
+        direction TB
+        A1[A] -->|FS| B1[B]
+    end
+    subgraph SS ["2. Start-to-Start (SS)"]
+        direction TB
+        A2[A] -->|SS| B2[B]
+    end
+    subgraph FF ["3. Finish-to-Finish (FF)"]
+        direction TB
+        A3[A] -->|FF| B3[B]
+    end
+    subgraph SF ["4. Start-to-Finish (SF)"]
+        direction TB
+        A4[A] -->|SF| B4[B]
+    end
 ```
 
 ### 1. Finish-to-Start (FS)
@@ -81,15 +87,44 @@ Activities are represented by geometric shapes (nodes/boxes), and dependencies a
 - **Advantage:** Easy to represent all four precedence types and lags.
 - **Node Anatomy:** A typical AON node contains key scheduling variables:
 
-```
-+---------------------------+
-| ES |    Duration (d) | EF |
-+---------------------------+
-|       Activity Name       |
-+---------------------------+
-| LS |    Total Float  | LF |
-+---------------------------+
-```
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .node { fill: #f9f9f9; stroke: #333; stroke-width: 2; transition: fill 0.2s; }
+      .node:hover { fill: #eaeaea; }
+      .line { stroke: #333; stroke-width: 1; }
+      .text { font-family: monospace; font-size: 14px; fill: #333; }
+      .header { font-weight: bold; }
+    </style>
+    <!-- Outer Box -->
+    <rect x="10" y="10" width="180" height="100" class="node" />
+    
+    <!-- Horizontal Dividers -->
+    <line x1="10" y1="40" x2="190" y2="40" class="line" />
+    <line x1="10" y1="80" x2="190" y2="80" class="line" />
+    
+    <!-- Vertical Dividers (Top Row) -->
+    <line x1="50" y1="10" x2="50" y2="40" class="line" />
+    <line x1="150" y1="10" x2="150" y2="40" class="line" />
+    
+    <!-- Vertical Dividers (Bottom Row) -->
+    <line x1="50" y1="80" x2="50" y2="110" class="line" />
+    <line x1="150" y1="80" x2="150" y2="110" class="line" />
+    
+    <!-- Texts Top Row -->
+    <text x="30" y="30" class="text" text-anchor="middle">ES</text>
+    <text x="100" y="30" class="text" text-anchor="middle">Duration (d)</text>
+    <text x="170" y="30" class="text" text-anchor="middle">EF</text>
+    
+    <!-- Activity Name -->
+    <text x="100" y="65" class="text header" text-anchor="middle">Activity Name</text>
+    
+    <!-- Texts Bottom Row -->
+    <text x="30" y="100" class="text" text-anchor="middle">LS</text>
+    <text x="100" y="100" class="text" text-anchor="middle">Total Float</text>
+    <text x="170" y="100" class="text" text-anchor="middle">LF</text>
+  </svg>
+</div>
 
 ### 2. Activity-on-Arrow (AOA)
 Activities are represented by arrows, and nodes (circles) represent events (the start or finish of activities).

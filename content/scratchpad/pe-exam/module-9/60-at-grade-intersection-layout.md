@@ -23,13 +23,50 @@ The angle of intersection is the angle between the centerlines of the intersecti
     *   **Larger Sight Triangles:** Due to the skew, sight triangles must cover a larger area.
     *   **Swept Path:** Turning vehicles require wider swept paths, increasing the likelihood of lane encroachment.
 
-```
-       Perpendicular (90 deg)                     Skewed (60 deg)
-            |      |                                  /      /
-            |      |                                 /      / 
-      ------*------*------                     -----*------*-----
-            |      |                               /      /
-            |      |                              /      /
+```html
+<div style="display: flex; justify-content: space-around; background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0;">
+  <div style="text-align: center;">
+    <svg viewBox="0 0 200 200" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="70" width="200" height="60" fill="#f1f5f9" />
+      <rect x="70" y="0" width="60" height="200" fill="#f1f5f9" />
+      <line x1="0" y1="70" x2="70" y2="70" stroke="#94a3b8" stroke-width="3" />
+      <line x1="130" y1="70" x2="200" y2="70" stroke="#94a3b8" stroke-width="3" />
+      <line x1="0" y1="130" x2="70" y2="130" stroke="#94a3b8" stroke-width="3" />
+      <line x1="130" y1="130" x2="200" y2="130" stroke="#94a3b8" stroke-width="3" />
+      <line x1="70" y1="0" x2="70" y2="70" stroke="#94a3b8" stroke-width="3" />
+      <line x1="130" y1="0" x2="130" y2="70" stroke="#94a3b8" stroke-width="3" />
+      <line x1="70" y1="130" x2="70" y2="200" stroke="#94a3b8" stroke-width="3" />
+      <line x1="130" y1="130" x2="130" y2="200" stroke="#94a3b8" stroke-width="3" />
+      <!-- Center lines -->
+      <line x1="0" y1="100" x2="200" y2="100" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8,8" />
+      <line x1="100" y1="0" x2="100" y2="200" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8,8" />
+    </svg>
+    <div style="margin-top: 12px; font-family: sans-serif; font-size: 14px; font-weight: bold; color: #1e293b;">Perpendicular (90&deg;)</div>
+  </div>
+  <div style="text-align: center;">
+    <svg viewBox="0 0 200 200" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="70" width="200" height="60" fill="#f1f5f9" />
+      <polygon points="100,0 160,0 100,200 40,200" fill="#f1f5f9" />
+      
+      <!-- Horizontal lines -->
+      <line x1="0" y1="70" x2="77" y2="70" stroke="#94a3b8" stroke-width="3" />
+      <line x1="137" y1="70" x2="200" y2="70" stroke="#94a3b8" stroke-width="3" />
+      <line x1="0" y1="130" x2="63" y2="130" stroke="#94a3b8" stroke-width="3" />
+      <line x1="123" y1="130" x2="200" y2="130" stroke="#94a3b8" stroke-width="3" />
+      
+      <!-- Skewed lines -->
+      <line x1="100" y1="0" x2="77" y2="70" stroke="#94a3b8" stroke-width="3" />
+      <line x1="160" y1="0" x2="137" y2="70" stroke="#94a3b8" stroke-width="3" />
+      <line x1="63" y1="130" x2="40" y2="200" stroke="#94a3b8" stroke-width="3" />
+      <line x1="123" y1="130" x2="100" y2="200" stroke="#94a3b8" stroke-width="3" />
+
+      <!-- Center lines -->
+      <line x1="0" y1="100" x2="200" y2="100" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8,8" />
+      <line x1="130" y1="0" x2="70" y2="200" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8,8" />
+    </svg>
+    <div style="margin-top: 12px; font-family: sans-serif; font-size: 14px; font-weight: bold; color: #1e293b;">Skewed (60&deg;)</div>
+  </div>
+</div>
 ```
 
 ### 2. Vertical Profile
@@ -43,14 +80,30 @@ Roadway profiles near intersections should be as flat as possible to allow drive
 
 The curb radius (or corner radius) is the radius of the circular arc connecting the curb lines of two intersecting streets.
 
-```
-                  Curb line
-               =============+
-                            | \ 
-                            |  \  Curb Radius (R)
-                            |   \
-                            |    |
-                            |    |
+```html
+<div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; max-width: 400px; text-align: center;">
+  <svg viewBox="0 0 200 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Road Surface -->
+    <path d="M 0,200 L 0,80 L 80,80 A 70 70 0 0 1 150,150 L 150,200 Z" fill="#f1f5f9" />
+    
+    <!-- Curb -->
+    <path d="M 0,80 L 80,80 A 70 70 0 0 1 150,150 L 150,200" fill="none" stroke="#64748b" stroke-width="4" />
+    
+    <!-- Radius lines -->
+    <line x1="150" y1="80" x2="80" y2="80" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4" />
+    <line x1="150" y1="80" x2="150" y2="150" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4" />
+    <line x1="150" y1="80" x2="100" y2="130" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-radius)" />
+    
+    <text x="40" y="60" font-family="sans-serif" font-size="12" fill="#475569">Curb line</text>
+    <text x="135" y="115" font-family="sans-serif" font-size="12" fill="#2563eb" font-weight="bold" transform="rotate(-45, 135, 115)">R</text>
+    
+    <defs>
+      <marker id="arrow-radius" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+        <path d="M0,0 L0,8 L8,4 z" fill="#3b82f6" />
+      </marker>
+    </defs>
+  </svg>
+</div>
 ```
 
 Designing the curb radius requires balancing two conflicting objectives:

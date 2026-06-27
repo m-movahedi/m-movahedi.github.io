@@ -1,5 +1,4 @@
 ---
-menus : ['main', 'footer']
 title: "PE-Exam Preperation"
 draft: false
 view: "grid"

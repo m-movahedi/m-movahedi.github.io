@@ -18,15 +18,44 @@ CPM relies on a **forward pass** to determine early dates, followed by a **backw
 ### Node Layout (Activity-on-Node)
 Each activity is represented by a box with the following structure:
 
-```
-+---------------------------+
-| ES |    Duration (d) | EF |
-+---------------------------+
-|       Activity Name       |
-+---------------------------+
-| LS |    Total Float  | LF |
-+---------------------------+
-```
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .node { fill: #f9f9f9; stroke: #333; stroke-width: 2; transition: fill 0.2s; }
+      .node:hover { fill: #eaeaea; }
+      .line { stroke: #333; stroke-width: 1; }
+      .text { font-family: monospace; font-size: 14px; fill: #333; }
+      .header { font-weight: bold; }
+    </style>
+    <!-- Outer Box -->
+    <rect x="10" y="10" width="180" height="100" class="node" />
+    
+    <!-- Horizontal Dividers -->
+    <line x1="10" y1="40" x2="190" y2="40" class="line" />
+    <line x1="10" y1="80" x2="190" y2="80" class="line" />
+    
+    <!-- Vertical Dividers (Top Row) -->
+    <line x1="50" y1="10" x2="50" y2="40" class="line" />
+    <line x1="150" y1="10" x2="150" y2="40" class="line" />
+    
+    <!-- Vertical Dividers (Bottom Row) -->
+    <line x1="50" y1="80" x2="50" y2="110" class="line" />
+    <line x1="150" y1="80" x2="150" y2="110" class="line" />
+    
+    <!-- Texts Top Row -->
+    <text x="30" y="30" class="text" text-anchor="middle">ES</text>
+    <text x="100" y="30" class="text" text-anchor="middle">Duration (d)</text>
+    <text x="170" y="30" class="text" text-anchor="middle">EF</text>
+    
+    <!-- Activity Name -->
+    <text x="100" y="65" class="text header" text-anchor="middle">Activity Name</text>
+    
+    <!-- Texts Bottom Row -->
+    <text x="30" y="100" class="text" text-anchor="middle">LS</text>
+    <text x="100" y="100" class="text" text-anchor="middle">Total Float</text>
+    <text x="170" y="100" class="text" text-anchor="middle">LF</text>
+  </svg>
+</div>
 
 ### 1. Forward Pass (Calculating Early Dates)
 Moves from left to right through the network to determine the earliest possible start and finish times for each activity.
@@ -90,32 +119,134 @@ A project network has the following activities, durations, and predecessor relat
 
 ### Network Diagrams and Passes
 
-```
-             +------------+
-             | 4 |  6 | 10|
-             +------------+
-             |     B      |
-      +----->| 4 |  0 | 10|-----+
-      |      +------------+     |
-      |                         v
-+------------+            +------------+            +------------+
-| 0 |  4 |  4|            |10 |  5 | 15|            |18 |  4 | 22|
-+------------+            +------------+            +------------+
-|     A      |            |     D      |            |     F      |
-| 0 |  0 |  4|            |13 |  3 | 18|--->+------>|18 |  0 | 22|
-+------------+            +------------+    |       +------------+
-      |                         ^           |             ^
-      |      +------------+     |           |             |
-      |      | 4 |  3 |  7|     |           |             |
-      +----->|------------|-----+           |             |
-             |     C      |                 v             |
-             | 7 |  3 | 10|------------>+------------+    |
-             +------------+             |10 |  8 | 18|----+
-                                        +------------+
-                                        |     E      |
-                                        |10 |  0 | 18|
-                                        +------------+
-```
+<div style="text-align: center; margin: 20px 0; overflow-x: auto;">
+  <svg width="700" height="300" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .node { fill: #fff; stroke: #333; stroke-width: 2; transition: all 0.3s ease; cursor: pointer; }
+      .node:hover { fill: #f0f8ff; transform: scale(1.02); }
+      .critical { stroke: #d32f2f; stroke-width: 3; }
+      .critical-hover:hover { fill: #ffebee; }
+      .line { stroke: #333; stroke-width: 1; }
+      .arrow { stroke: #333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-crit { stroke: #d32f2f; stroke-width: 3; fill: none; marker-end: url(#arrowhead-crit); }
+      .text { font-family: monospace; font-size: 12px; fill: #333; pointer-events: none; }
+      .header { font-weight: bold; font-size: 14px; }
+    </style>
+    
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+      </marker>
+      <marker id="arrowhead-crit" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f" />
+      </marker>
+      
+      <!-- Template for a Node. Use with <use> and pass x, y -->
+      <g id="cpm-node">
+        <rect x="0" y="0" width="120" height="75" class="node" />
+        <line x1="0" y1="25" x2="120" y2="25" class="line" />
+        <line x1="0" y1="50" x2="120" y2="50" class="line" />
+        <line x1="35" y1="0" x2="35" y2="25" class="line" />
+        <line x1="85" y1="0" x2="85" y2="25" class="line" />
+        <line x1="35" y1="50" x2="35" y2="75" class="line" />
+        <line x1="85" y1="50" x2="85" y2="75" class="line" />
+      </g>
+      <g id="cpm-node-crit">
+        <rect x="0" y="0" width="120" height="75" class="node critical critical-hover" />
+        <line x1="0" y1="25" x2="120" y2="25" class="line" />
+        <line x1="0" y1="50" x2="120" y2="50" class="line" />
+        <line x1="35" y1="0" x2="35" y2="25" class="line" />
+        <line x1="85" y1="0" x2="85" y2="25" class="line" />
+        <line x1="35" y1="50" x2="35" y2="75" class="line" />
+        <line x1="85" y1="50" x2="85" y2="75" class="line" />
+      </g>
+    </defs>
+
+    <!-- Edges -->
+    <path d="M 140 150 L 160 150 L 160 50 L 195 50" class="arrow-crit" />
+    <path d="M 140 150 L 160 150 L 160 250 L 195 250" class="arrow" />
+    
+    <path d="M 320 50 L 350 50 L 350 130 L 395 130" class="arrow-crit" />
+    <path d="M 320 50 L 350 50 L 350 20 L 395 20" class="arrow" />
+    
+    <path d="M 320 250 L 350 250 L 350 170 L 395 170" class="arrow" />
+    
+    <path d="M 520 20 L 550 20 L 550 130 L 575 130" class="arrow" />
+    <path d="M 520 150 L 550 150 L 550 150 L 575 150" class="arrow-crit" />
+
+    <!-- Node A (Critical) -->
+    <g transform="translate(20, 112.5)">
+      <use href="#cpm-node-crit" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">0</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">A</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">4</text>
+    </g>
+
+    <!-- Node B (Critical) -->
+    <g transform="translate(200, 12.5)">
+      <use href="#cpm-node-crit" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">6</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">10</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">B</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">4</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">10</text>
+    </g>
+
+    <!-- Node C -->
+    <g transform="translate(200, 212.5)">
+      <use href="#cpm-node" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">3</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">7</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">C</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">7</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">3</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">10</text>
+    </g>
+
+    <!-- Node D -->
+    <g transform="translate(400, 12.5)">
+      <use href="#cpm-node" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">10</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">5</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">15</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">D</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">13</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">3</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">18</text>
+    </g>
+
+    <!-- Node E (Critical) -->
+    <g transform="translate(400, 112.5)">
+      <use href="#cpm-node-crit" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">10</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">8</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">18</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">E</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">10</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">18</text>
+    </g>
+
+    <!-- Node F (Critical) -->
+    <g transform="translate(580, 112.5)">
+      <use href="#cpm-node-crit" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">18</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">22</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">F</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">18</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">22</text>
+    </g>
+  </svg>
+</div>
 
 ### Steps:
 

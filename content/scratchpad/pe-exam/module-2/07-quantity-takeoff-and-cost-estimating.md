@@ -35,12 +35,10 @@ Soil exists in three distinct states, and each state has a different density and
 2. **Loose:** Soil after it is excavated and disturbed. The soil grains separate, introducing air pockets and increasing volume (swelling). Measured in **Loose Cubic Yards (LCY)**.
 3. **Compacted:** Soil after it is placed and compacted in the fill area. The air is forced out, making it denser than the bank state (shrinking). Measured in **Compacted Cubic Yards (CCY)**.
 
-```
-   [ Bank State (BCY) ]  --(Excavation)-->  [ Loose State (LCY) ]
-           |
-      (Compaction)
-           v
- [ Compacted State (CCY) ]
+```mermaid
+flowchart TD
+    A[Bank State <br/> BCY] -- Excavation --> B[Loose State <br/> LCY]
+    B -- Compaction --> C[Compacted State <br/> CCY]
 ```
 
 #### Formulas for Transitions:
@@ -157,19 +155,30 @@ Typical waste factors range from $2\%$ to $10\%$.
 **Problem:**  
 A concrete cantilever retaining wall has a uniform cross-section shown below. The stem is $12\text{ inches}$ wide at the top, $18\text{ inches}$ wide at the bottom, and $15\text{ feet}$ high above the footing. The footing is $10\text{ feet}$ wide, $2\text{ feet}$ thick, and runs the entire length of the wall. The wall is $250\text{ feet}$ long. Calculate the total concrete volume required in Cubic Yards, assuming a $4\%$ waste factor.
 
-```
-          1.0' (Top of Stem)
-         +---+
-         |   |
-         |   | 15.0' (Stem Height)
-         |   |
-         +---+
-       /       \ (Stem base: 1.5' wide)
-   +-----------------+
-   |                 | 2.0' (Footing)
-   +-----------------+
-        10.0' (Footing Width)
-```
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .concrete { fill: #e0e0e0; stroke: #333; stroke-width: 2; transition: fill 0.3s; }
+      .concrete:hover { fill: #c0c0c0; cursor: pointer; }
+      .dim { stroke: #666; stroke-width: 1; }
+      .text { font-family: sans-serif; font-size: 12px; fill: #333; }
+    </style>
+    <!-- Footing: 10 ft x 2 ft = 150 x 30 -->
+    <rect x="125" y="270" width="150" height="30" class="concrete" />
+    <text x="200" y="285" class="text" text-anchor="middle">Footing (2.0' thick)</text>
+    
+    <!-- Stem: Top 1.0 ft (15), Bottom 1.5 ft (22.5), Height 15.0 ft (225) -->
+    <polygon points="175,45 190,45 197.5,270 175,270" class="concrete" />
+    <text x="186" y="150" class="text" text-anchor="middle" transform="rotate(-90 186,150)">Stem (15.0' high)</text>
+
+    <!-- Dimensions -->
+    <line x1="175" y1="35" x2="190" y2="35" class="dim" />
+    <text x="182.5" y="28" class="text" text-anchor="middle">1.0'</text>
+    
+    <line x1="125" y1="315" x2="275" y2="315" class="dim" />
+    <text x="200" y="310" class="text" text-anchor="middle">10.0' Footing Width</text>
+  </svg>
+</div>
 
 **Solution:**
 
@@ -197,21 +206,47 @@ $$\text{Total Concrete to Order} = 358.80\text{ CY} \times 1.04 = 373.15\text{ C
 
 Drainage pipelines require calculating trench excavation volumes, pipe volumes, bedding material volumes, and backfill.
 
-```
-       |<-   Trench Width (W)   ->|
-================= Ground Level =================
-       |                          |
-       |       Backfill           |
-       |       Material           |
-       |                          |
-       |         +--+             |
-       |       /      \           |
-       |      |  Pipe  |          |
-       |       \      /           |
-       |---------+--+-------------|  <-- Springline
-       |     Bedding Material     |
-       +--------------------------+
-```
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="400" height="250" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .trench { fill: none; stroke: #654321; stroke-width: 3; }
+      .ground { stroke: #228B22; stroke-width: 3; }
+      .backfill { fill: #DEB887; opacity: 0.5; transition: opacity 0.3s; }
+      .backfill:hover { opacity: 0.8; cursor: pointer; }
+      .bedding { fill: #D3D3D3; opacity: 0.8; }
+      .pipe { fill: #808080; stroke: #333; stroke-width: 2; transition: transform 0.3s; }
+      .pipe:hover { fill: #696969; cursor: pointer; }
+      .dim { stroke: #333; stroke-width: 1; stroke-dasharray: 4; }
+      .text { font-family: sans-serif; font-size: 12px; fill: #333; }
+    </style>
+    <!-- Ground -->
+    <line x1="50" y1="50" x2="150" y2="50" class="ground" />
+    <line x1="250" y1="50" x2="350" y2="50" class="ground" />
+    <text x="100" y="40" class="text" text-anchor="middle">Ground Level</text>
+    
+    <!-- Trench bounds -->
+    <polyline points="150,50 150,220 250,220 250,50" class="trench" />
+    
+    <!-- Bedding -->
+    <rect x="150" y="170" width="100" height="50" class="bedding" />
+    <text x="200" y="200" class="text" text-anchor="middle">Bedding</text>
+    
+    <!-- Backfill -->
+    <rect x="150" y="50" width="100" height="120" class="backfill" />
+    <text x="200" y="90" class="text" text-anchor="middle">Backfill</text>
+    
+    <!-- Pipe -->
+    <circle cx="200" cy="150" r="30" class="pipe" />
+    <text x="200" y="155" class="text" fill="#fff" text-anchor="middle">Pipe</text>
+    
+    <!-- Dimensions -->
+    <line x1="150" y1="30" x2="250" y2="30" class="dim" />
+    <text x="200" y="25" class="text" text-anchor="middle">Trench Width (W)</text>
+    
+    <line x1="120" y1="150" x2="280" y2="150" class="dim" />
+    <text x="310" y="155" class="text" text-anchor="middle">Springline</text>
+  </svg>
+</div>
 
 ### Key Equations:
 1. **Total Excavation Volume ($V_{\text{exc}}$):**

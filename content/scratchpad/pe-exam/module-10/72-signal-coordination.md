@@ -35,15 +35,48 @@ A time-space diagram is the primary tool for designing and visualizing signal co
 *   **Green Band:** The shaded path running diagonally through the green phases of the intersections. The slope of this band represents the progression speed:
     $$\text{Slope} = \frac{\Delta \text{Distance}}{\Delta \text{Time}} = v_p$$
 
-```text
-Distance (ft)
-  ^
-  |        [ Red ] [=== Green ===] [ Red ]        <-- Intersection 2
-  |               /             /
-  |              /             /   <-- Green Band (Bandwidth B)
-  |             /             /
-  |      [=== Green ===] [ Red ] [=== Green ===]  <-- Intersection 1
-  +---------------------------------------------> Time (seconds)
+```html
+<div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;">
+  <svg viewBox="0 0 600 250" width="600" height="250" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+        <path d="M0,0 L0,8 L8,4 z" fill="#0f172a" />
+      </marker>
+    </defs>
+
+    <!-- Axes -->
+    <line x1="40" y1="200" x2="560" y2="200" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow-axis)" />
+    <line x1="40" y1="200" x2="40" y2="20" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow-axis)" />
+    <text x="540" y="220" font-family="sans-serif" font-size="12" fill="#0f172a" text-anchor="end">Time (seconds)</text>
+    <text x="25" y="30" font-family="sans-serif" font-size="12" fill="#0f172a" transform="rotate(-90, 25, 30)" text-anchor="end">Distance (ft)</text>
+    
+    <!-- Intersection lines (horizontal dashed) -->
+    <line x1="40" y1="160" x2="560" y2="160" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4" />
+    <text x="570" y="165" font-family="sans-serif" font-size="11" fill="#475569">Int. 1</text>
+    <line x1="40" y1="60" x2="560" y2="60" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4" />
+    <text x="570" y="65" font-family="sans-serif" font-size="11" fill="#475569">Int. 2</text>
+    
+    <!-- Green Band -->
+    <polygon points="120,160 220,160 300,60 200,60" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
+    <text x="280" y="110" font-family="sans-serif" font-size="11" fill="#047857" font-weight="bold" transform="rotate(-50, 280, 110)">Green Band (B)</text>
+
+    <!-- Signal Timings - Intersection 1 (Bottom) -->
+    <rect x="120" y="155" width="100" height="10" fill="#10b981" rx="2" />
+    <text x="170" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
+    <rect x="220" y="155" width="80" height="10" fill="#ef4444" rx="2" />
+    <text x="260" y="150" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>
+    <rect x="300" y="155" width="100" height="10" fill="#10b981" rx="2" />
+    <text x="350" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
+
+    <!-- Signal Timings - Intersection 2 (Top) -->
+    <rect x="120" y="55" width="80" height="10" fill="#ef4444" rx="2" />
+    <text x="160" y="50" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>
+    <rect x="200" y="55" width="100" height="10" fill="#10b981" rx="2" />
+    <text x="250" y="50" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
+    <rect x="300" y="55" width="80" height="10" fill="#ef4444" rx="2" />
+    <text x="340" y="50" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>
+  </svg>
+</div>
 ```
 
 ---

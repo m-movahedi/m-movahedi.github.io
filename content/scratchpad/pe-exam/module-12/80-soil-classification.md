@@ -113,27 +113,97 @@ Where:
 ### AASHTO Classification Procedure
 To classify a soil using the AASHTO system, test data is applied from left to right in the standard AASHTO table. The first group from the left that fits the data is the correct classification.
 
-```
-                                  AASHTO Classification Table
-========================================================================================
-  General       |              Granular Materials             |    Silt-Clay Materials   
-  Classification|            (35% or less passing No. 200)    |   (More than 35% passing)
-----------------+-----------------------+-------------+-------+-------------------------
-  Group         |          A-1          |     A-3     |  A-2  |  A-4   A-5   A-6   A-7  
-  Classification|   A-1-a     A-1-b     |             |       |                         
-========================================================================================
-  Sieve Analysis (% passing)
-  No. 10        |  50 max       -       |      -      |   -   |   -     -     -     -   
-  No. 40        |  30 max    50 max     |   51 min    |   -   |   -     -     -     -   
-  No. 200       |  15 max    25 max     |   10 max    |35 max |36 min 36 min 36 min 36 min
-----------------+-----------------------+-------------+-------+-------------------------
-  Fines Characteristics
-  Liquid Limit  |           -           |      -      |40 max |40 max 41 min 40 max 41 min
-  Plasticity Idx|         6 max         |     NP      |       |10 max 10 max 11 min 11 min
-========================================================================================
-  Subgrade Rating |                  Excellent to Good        |       Fair to Poor
-========================================================================================
-```
+<div style="overflow-x: auto; margin: 2rem 0;">
+  <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 0.9em;">
+    <caption style="font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1em;">AASHTO Classification Table</caption>
+    <thead>
+      <tr style="border-top: 2px solid currentColor; border-bottom: 1px solid currentColor;">
+        <th style="padding: 0.5rem; text-align: left;">General Classification</th>
+        <th colspan="4" style="padding: 0.5rem; border-left: 1px solid currentColor;">Granular Materials (35% or less passing No. 200)</th>
+        <th colspan="4" style="padding: 0.5rem; border-left: 1px solid currentColor;">Silt-Clay Materials (More than 35% passing)</th>
+      </tr>
+      <tr style="border-bottom: 2px solid currentColor;">
+        <th style="padding: 0.5rem; text-align: left;">Group Classification</th>
+        <th style="padding: 0.5rem; border-left: 1px solid currentColor;">A-1-a</th>
+        <th style="padding: 0.5rem;">A-1-b</th>
+        <th style="padding: 0.5rem; border-left: 1px solid currentColor;">A-3</th>
+        <th style="padding: 0.5rem; border-left: 1px solid currentColor;">A-2</th>
+        <th style="padding: 0.5rem; border-left: 1px solid currentColor;">A-4</th>
+        <th style="padding: 0.5rem;">A-5</th>
+        <th style="padding: 0.5rem;">A-6</th>
+        <th style="padding: 0.5rem;">A-7</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="9" style="text-align: left; padding: 0.5rem; font-weight: bold; font-style: italic; background-color: rgba(128,128,128,0.1);">Sieve Analysis (% passing)</td>
+      </tr>
+      <tr>
+        <td style="text-align: left; padding: 0.5rem;">No. 10</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">50 max</td>
+        <td style="padding: 0.5rem;">-</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">-</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">-</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">-</td>
+        <td style="padding: 0.5rem;">-</td>
+        <td style="padding: 0.5rem;">-</td>
+        <td style="padding: 0.5rem;">-</td>
+      </tr>
+      <tr>
+        <td style="text-align: left; padding: 0.5rem;">No. 40</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">30 max</td>
+        <td style="padding: 0.5rem;">50 max</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">51 min</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">-</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">-</td>
+        <td style="padding: 0.5rem;">-</td>
+        <td style="padding: 0.5rem;">-</td>
+        <td style="padding: 0.5rem;">-</td>
+      </tr>
+      <tr style="border-bottom: 1px solid currentColor;">
+        <td style="text-align: left; padding: 0.5rem;">No. 200</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">15 max</td>
+        <td style="padding: 0.5rem;">25 max</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">10 max</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">35 max</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">36 min</td>
+        <td style="padding: 0.5rem;">36 min</td>
+        <td style="padding: 0.5rem;">36 min</td>
+        <td style="padding: 0.5rem;">36 min</td>
+      </tr>
+      <tr>
+        <td colspan="9" style="text-align: left; padding: 0.5rem; font-weight: bold; font-style: italic; background-color: rgba(128,128,128,0.1);">Fines Characteristics</td>
+      </tr>
+      <tr>
+        <td style="text-align: left; padding: 0.5rem;">Liquid Limit</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">-</td>
+        <td style="padding: 0.5rem;">-</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">-</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">40 max</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">40 max</td>
+        <td style="padding: 0.5rem;">41 min</td>
+        <td style="padding: 0.5rem;">40 max</td>
+        <td style="padding: 0.5rem;">41 min</td>
+      </tr>
+      <tr style="border-bottom: 2px solid currentColor;">
+        <td style="text-align: left; padding: 0.5rem;">Plasticity Index</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">6 max</td>
+        <td style="padding: 0.5rem;">-</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">NP</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">-</td>
+        <td style="padding: 0.5rem; border-left: 1px solid currentColor;">10 max</td>
+        <td style="padding: 0.5rem;">10 max</td>
+        <td style="padding: 0.5rem;">11 min</td>
+        <td style="padding: 0.5rem;">11 min</td>
+      </tr>
+      <tr>
+        <td style="text-align: left; padding: 0.5rem; font-weight: bold;">Subgrade Rating</td>
+        <td colspan="4" style="padding: 0.5rem; border-left: 1px solid currentColor;">Excellent to Good</td>
+        <td colspan="4" style="padding: 0.5rem; border-left: 1px solid currentColor;">Fair to Poor</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 *Note on A-2 subgroups:*
 *   **A-2-4 and A-2-6:** $LL \le 40$. $PI \le 10$ for A-2-4; $PI \ge 11$ for A-2-6.

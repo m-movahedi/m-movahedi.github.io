@@ -36,13 +36,23 @@ Longitudinal markings are parallel to the direction of traffic. Their color and 
 
 *Exam Tip: This $10\text{-ft}$ line / $30\text{-ft}$ gap ratio is a standard design constant. If a problem states "standard broken lane line" without giving dimensions, you must assume this $10/30$ pattern.*
 
-```text
-|<-- 10 ft -->|       30 ft Gap       |<-- 10 ft -->|
-+-------------+                       +-------------+
-|    Paint    |                       |    Paint    |
-+-------------+                       +-------------+
-|<------------------- 40 ft Cycle ----------------->|
-```
+<div style="display: flex; flex-direction: column; align-items: center; font-family: sans-serif; margin: 2rem 0; width: 100%; max-width: 600px; margin-left: auto; margin-right: auto;">
+  <div style="display: flex; width: 100%; justify-content: space-between; margin-bottom: 5px; font-size: 0.9em;">
+    <div style="width: 20%; text-align: center;">&larr; 10 ft &rarr;</div>
+    <div style="width: 60%; text-align: center;">30 ft Gap</div>
+    <div style="width: 20%; text-align: center;">&larr; 10 ft &rarr;</div>
+  </div>
+  <div style="display: flex; width: 100%; height: 20px; background-color: #333; border-radius: 4px; overflow: hidden; margin-bottom: 10px;">
+    <div style="width: 20%; background-color: #f1c40f; display: flex; align-items: center; justify-content: center; color: #333; font-weight: bold; font-size: 0.8em;">Paint</div>
+    <div style="width: 60%; background-color: transparent;"></div>
+    <div style="width: 20%; background-color: #f1c40f; display: flex; align-items: center; justify-content: center; color: #333; font-weight: bold; font-size: 0.8em;">Paint</div>
+  </div>
+  <div style="width: 100%; text-align: center; border-top: 1px solid currentColor; margin-top: 5px; padding-top: 5px; font-size: 0.9em; position: relative;">
+    <div style="position: absolute; top: -5px; left: 0;">&larr;</div>
+    <div style="position: absolute; top: -5px; right: 0;">&rarr;</div>
+    40 ft Cycle
+  </div>
+</div>
 
 ---
 

@@ -41,17 +41,64 @@ Where:
 
 Lateral earth pressure is the horizontal stress exerted by a soil mass against a retaining structure. The magnitude of this pressure depends on the wall's movement relative to the soil.
 
-```
-       ACTIVE                       AT-REST                       PASSIVE
-   (Wall moves away)              (No movement)              (Wall pushes soil)
-     <--- Wall                     | Wall                       Wall --->
-   +---+  +---+                  +---+  +---+                  +---+  +---+
-   |   | /    |                  |   |  |   |                  |   | /    |
-   |   |/ Soil|                  |   |  |   |                  |   |/ Soil|
-   |   |      |                  |   |  |   |                  |   |      |
-   +---+      +                  +---+  +---+                  +---+      +
-     Ka <------------------------- K0 -------------------------> Kp
-```
+<div style="width: 100%; max-width: 700px; margin: 2rem auto;">
+<svg viewBox="0 0 700 250" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif; fill: currentColor;">
+  <!-- ACTIVE -->
+  <text x="130" y="30" text-anchor="middle" font-weight="bold">ACTIVE</text>
+  <text x="130" y="50" text-anchor="middle" font-size="0.8em">(Wall moves away)</text>
+  
+  <rect x="70" y="90" width="20" height="100" fill="rgba(128,128,128,0.5)" stroke="currentColor" stroke-width="2" />
+  <path d="M 90 190 L 150 90 L 190 90 L 190 190 Z" fill="rgba(139, 69, 19, 0.3)" stroke="currentColor" stroke-width="1" />
+  <!-- Soil surface -->
+  <line x1="90" y1="90" x2="190" y2="90" stroke="currentColor" stroke-width="2" />
+  <!-- Failure plane -->
+  <line x1="90" y1="190" x2="150" y2="90" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4" />
+  
+  <line x1="60" y1="75" x2="40" y2="75" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="30" y="80" text-anchor="end" font-size="0.8em">Wall</text>
+
+  <!-- AT-REST -->
+  <text x="350" y="30" text-anchor="middle" font-weight="bold">AT-REST</text>
+  <text x="350" y="50" text-anchor="middle" font-size="0.8em">(No movement)</text>
+
+  <rect x="310" y="90" width="20" height="100" fill="rgba(128,128,128,0.5)" stroke="currentColor" stroke-width="2" />
+  <rect x="330" y="90" width="60" height="100" fill="rgba(139, 69, 19, 0.3)" stroke="currentColor" stroke-width="1" />
+  <!-- Soil surface -->
+  <line x1="330" y1="90" x2="390" y2="90" stroke="currentColor" stroke-width="2" />
+
+  <line x1="320" y1="65" x2="320" y2="85" stroke="currentColor" stroke-width="2" />
+  <text x="320" y="60" text-anchor="middle" font-size="0.8em">Wall</text>
+
+  <!-- PASSIVE -->
+  <text x="590" y="30" text-anchor="middle" font-weight="bold">PASSIVE</text>
+  <text x="590" y="50" text-anchor="middle" font-size="0.8em">(Wall pushes soil)</text>
+
+  <rect x="550" y="90" width="20" height="100" fill="rgba(128,128,128,0.5)" stroke="currentColor" stroke-width="2" />
+  <path d="M 570 190 L 650 90 L 690 90 L 690 190 Z" fill="rgba(139, 69, 19, 0.3)" stroke="currentColor" stroke-width="1" />
+  <!-- Soil surface -->
+  <line x1="570" y1="90" x2="690" y2="90" stroke="currentColor" stroke-width="2" />
+  <!-- Failure plane -->
+  <line x1="570" y1="190" x2="650" y2="90" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4" />
+
+  <line x1="520" y1="75" x2="540" y2="75" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="510" y="80" text-anchor="end" font-size="0.8em">Wall</text>
+
+  <!-- K relation axis -->
+  <line x1="130" y1="230" x2="320" y2="230" stroke="currentColor" stroke-width="1" marker-start="url(#arrow)" />
+  <line x1="380" y1="230" x2="570" y2="230" stroke="currentColor" stroke-width="1" marker-end="url(#arrow)" />
+  
+  <text x="110" y="235" text-anchor="middle" font-weight="bold">K<tspan dy="5" font-size="0.8em">a</tspan></text>
+  <text x="350" y="235" text-anchor="middle" font-weight="bold">K<tspan dy="5" font-size="0.8em">0</tspan></text>
+  <text x="590" y="235" text-anchor="middle" font-weight="bold">K<tspan dy="5" font-size="0.8em">p</tspan></text>
+
+  <!-- Defs -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
+    </marker>
+  </defs>
+</svg>
+</div>
 
 ### Coefficients of Earth Pressure ($K$)
 The ratio of horizontal effective stress ($\sigma'_h$) to vertical effective stress ($\sigma'_v$) is defined as the earth pressure coefficient:

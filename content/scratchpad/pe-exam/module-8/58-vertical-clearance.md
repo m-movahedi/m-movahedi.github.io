@@ -21,18 +21,39 @@ According to AASHTO and federal design standards:
 
 Clearance is evaluated by comparing the profile elevation of the roadway with the elevation of the bottom of the overhead structure's girders. Because the roadway is often on a vertical curve (most critically a sag curve), the clearance varies across the width of the bridge.
 
-```
-                  ======================================  <- Overpass Girder
-                            |                        |       (Elev_bridge)
-                            |  C(x) = Clearance      |
-                            v                        v
-                    _ - - - - - - - - - - - - - - - _     <- Roadway Curve
-                _ -                                   - _    (Elev_road)
-            _ -                                           - _
-          ====================================================
-          PVC                                              PVT
-                            |<--- Bridge Width --->|
-```
+<div style="background-color: white; padding: 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <svg viewBox="0 0 800 250" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+      </marker>
+    </defs>
+    
+    <!-- Bridge Girder -->
+    <rect x="200" y="50" width="400" height="30" fill="#94a3b8" stroke="#475569" stroke-width="2" />
+    <text x="620" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#475569">Overpass Girder (Elev_bridge)</text>
+    
+    <!-- Roadway Curve -->
+    <path d="M 100 150 Q 400 250 700 150" fill="none" stroke="#2563eb" stroke-width="6" stroke-dasharray="12,6" />
+    <text x="720" y="160" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2563eb">Roadway Curve (Elev_road)</text>
+    
+    <!-- Clearance Dimension C(x) -->
+    <line x1="400" y1="80" x2="400" y2="195" stroke="#ef4444" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+    <text x="415" y="145" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ef4444">C(x) = Clearance</text>
+    
+    <!-- Bridge Width Dimension -->
+    <line x1="200" y1="30" x2="200" y2="45" stroke="#999" stroke-width="1" />
+    <line x1="600" y1="30" x2="600" y2="45" stroke="#999" stroke-width="1" />
+    <line x1="200" y1="35" x2="600" y2="35" stroke="#333" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+    <text x="400" y="25" font-family="sans-serif" font-size="14" fill="#333" text-anchor="middle">Bridge Width</text>
+    
+    <!-- PVC / PVT -->
+    <circle cx="100" cy="150" r="5" fill="#2563eb" />
+    <text x="100" y="130" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2563eb">PVC</text>
+    <circle cx="700" cy="150" r="5" fill="#2563eb" />
+    <text x="700" y="130" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2563eb">PVT</text>
+  </svg>
+</div>
 
 The vertical clearance at any horizontal distance $x$ from the PVC is:
 
@@ -54,16 +75,49 @@ AASHTO standard design parameters for underpass sight distance assume:
 *   **Driver Eye Height ($h_1$):** $8.00\text{ ft}$ ($2.40\text{ m}$) — represents a truck driver, who has a higher line of sight and is therefore more easily blocked by the overhead girder.
 *   **Object Height ($h_2$):** $2.00\text{ ft}$ ($0.60\text{ m}$) — represents vehicle taillights.
 
-```
-                    Bridge Structure (Sight Blockage)
-                            [======]
-                             \    /
-      h1 = 8.0'               \  /               h2 = 2.0'
-         O---------------------\/-----------------*
-        / \           Sight Line                  |
-     ====*========================================*==== Roadway Sag Curve
-        PVC                                      PVT
-```
+<div style="background-color: white; padding: 20px; border-radius: 8px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <svg viewBox="0 0 800 300" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+      </marker>
+    </defs>
+    
+    <!-- Roadway Sag Curve -->
+    <path d="M 100 150 Q 400 350 700 150" fill="none" stroke="#2563eb" stroke-width="6" />
+    
+    <!-- Bridge Structure -->
+    <rect x="350" y="50" width="100" height="30" fill="#94a3b8" stroke="#475569" stroke-width="2" />
+    <path d="M 350 80 L 370 140 L 430 140 L 450 80 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2" />
+    <text x="400" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle">Bridge Structure (Sight Blockage)</text>
+    
+    <!-- Vehicles -->
+    <rect x="120" y="125" width="40" height="30" rx="4" fill="#0284c7" />
+    <circle cx="130" cy="155" r="6" fill="#333" />
+    <circle cx="150" cy="155" r="6" fill="#333" />
+    <circle cx="140" cy="135" r="3" fill="#fca5a5" />
+    <text x="100" y="115" font-family="sans-serif" font-size="12" fill="#0284c7" text-anchor="end">Driver (h₁ = 8.0')</text>
+    
+    <rect x="640" y="145" width="40" height="20" rx="4" fill="#ef4444" />
+    <circle cx="650" cy="165" r="5" fill="#333" />
+    <circle cx="670" cy="165" r="5" fill="#333" />
+    <circle cx="645" cy="155" r="3" fill="#fca5a5" />
+    <text x="700" y="140" font-family="sans-serif" font-size="12" fill="#ef4444">Taillights (h₂ = 2.0')</text>
+    
+    <!-- Sight Line -->
+    <line x1="140" y1="135" x2="645" y2="155" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" />
+    <text x="250" y="130" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">Sight Line</text>
+    
+    <!-- Interference marker -->
+    <circle cx="370" cy="140" r="4" fill="#ef4444" />
+    
+    <!-- PVC / PVT -->
+    <circle cx="100" cy="150" r="5" fill="#2563eb" />
+    <text x="100" y="180" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2563eb">PVC</text>
+    <circle cx="700" cy="150" r="5" fill="#2563eb" />
+    <text x="700" y="180" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2563eb">PVT</text>
+  </svg>
+</div>
 
 Using these height parameters, the minimum curve length ($L$) equations for underpass sight distance are:
 

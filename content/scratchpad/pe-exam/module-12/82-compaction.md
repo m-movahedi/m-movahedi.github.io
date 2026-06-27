@@ -38,19 +38,44 @@ Where:
 
 Plotted as dry unit weight ($\gamma_d$) versus moisture content ($w$), the compaction curve exhibits a distinct peak.
 
-```
- Dry Unit Weight (yd)
-       ^
-       |           * (Max yd, OMC)
-       |         *   *
-       |        *     *     Zero-Air-Voids Curve (S = 100%)
-       |       *       *       /
-       |      *         *     /
-       |     *           *   /
-       |    *             * /
-       |   *               /
-       +-----------------------------> Moisture Content (w)
-```
+<div style="width: 100%; max-width: 500px; margin: 2rem auto;">
+<svg viewBox="0 0 500 350" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif; fill: currentColor;">
+  <!-- Axes -->
+  <line x1="50" y1="300" x2="450" y2="300" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="50" y1="300" x2="50" y2="50" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Labels -->
+  <text x="250" y="340" text-anchor="middle" font-weight="bold">Moisture Content (w)</text>
+  <text x="20" y="175" text-anchor="middle" transform="rotate(-90 20,175)" font-weight="bold">Dry Unit Weight (&#947;<tspan dy="2" font-size="0.8em">d</tspan>)</text>
+
+  <!-- Compaction Curve -->
+  <path d="M 80 280 C 120 150, 180 120, 220 120 C 260 120, 300 180, 320 280" fill="none" stroke="#e74c3c" stroke-width="3" />
+  
+  <!-- ZAV Curve -->
+  <path d="M 230 80 Q 280 150, 400 280" fill="none" stroke="#3498db" stroke-width="3" stroke-dasharray="6,4" />
+  
+  <!-- Max Point -->
+  <circle cx="220" cy="120" r="5" fill="#e74c3c" />
+  <line x1="50" y1="120" x2="220" y2="120" stroke="currentColor" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="220" y1="300" x2="220" y2="120" stroke="currentColor" stroke-width="1" stroke-dasharray="4,4" />
+  
+  <!-- Annotations -->
+  <text x="230" y="110" font-size="0.9em" fill="#e74c3c">Max &#947;<tspan dy="5" font-size="0.8em">d</tspan>, OMC</text>
+  <text x="360" y="100" font-size="0.9em" fill="#3498db">Zero-Air-Voids Curve</text>
+  <text x="360" y="120" font-size="0.9em" fill="#3498db">(S = 100%)</text>
+  <line x1="355" y1="110" x2="295" y2="160" stroke="#3498db" stroke-width="1" marker-end="url(#arrow-blue)"/>
+  
+  <!-- Defs -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3498db" />
+    </marker>
+  </defs>
+</svg>
+</div>
 
 *   **Optimum Moisture Content (OMC):** The water content at which the soil can be compacted to its maximum dry unit weight. At this point, water acts as a lubricant, allowing particles to slide into a denser configuration.
 *   **Dry Side of Optimum:** Water content is less than OMC. Soil structure is typically *flocculated* (particles oriented edge-to-face), leading to higher shear strength, lower compressibility, higher permeability, and brittle behavior.
