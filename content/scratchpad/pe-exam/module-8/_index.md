@@ -1,5 +1,5 @@
 ---
-title: "Vertical Alignment"
+title: "Module 8: Vertical Alignment"
 draft: false
 view: "timeline-reverse"
 date : "2026-05-28"

@@ -1,5 +1,5 @@
 ---
-title: "Geotechnical and Pavement Design"
+title: "Module 12: Geotechnical and Pavement Design"
 draft: false
 view: "timeline-reverse"
 date : "2026-05-28"

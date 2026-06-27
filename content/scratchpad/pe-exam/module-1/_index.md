@@ -1,5 +1,5 @@
 ---
-title: "Exam Strategy and Preparation"
+title: "Module 1: Exam Strategy and Preparation"
 draft: false
 view: "timeline-reverse"
 date : "2026-05-28"

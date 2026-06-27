@@ -1,5 +1,5 @@
 ---
-title: "Traffic Signal Operations and Design"
+title: "Module 10: Traffic Signal Operations and Design"
 draft: false
 view: "timeline-reverse"
 date : "2026-05-28"

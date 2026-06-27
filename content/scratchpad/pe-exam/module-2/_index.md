@@ -1,5 +1,5 @@
 ---
-title: "Project Management and Economics"
+title: "Module 2: Project Management and Economics"
 draft: false
 view: "timeline-reverse"
 date : "2026-05-28"

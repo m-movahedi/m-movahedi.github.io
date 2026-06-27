@@ -1,5 +1,5 @@
 ---
-title: "Intersection and Interchange Geometry"
+title: "Module 9: Intersection and Interchange Geometry"
 draft: false
 view: "timeline-reverse"
 date : "2026-05-28"
