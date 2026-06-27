@@ -18,7 +18,7 @@ The transition to electric vehicles (EVs) introduces new paradigms for emergency
 
 <div style="background-color: #f4f6f9; padding: 20px; border-left: 5px solid #0056b3; border-radius: 4px; margin: 25px 0;">
   <h4 style="margin-top: 0; color: #0056b3;">The Research Problem</h4>
-  <p style="margin-bottom: 0; font-size: 1.1em;">How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?</p>
+  <p style="margin-bottom: 0; font-size: 1.1em; color: #7e5109;">How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?</p>
 </div>
 
 Our recent study, <em>"Robust Mobile Electric Vehicle Charging Solutions for Natural Disasters: A Multi-Criteria Resilience Analysis in Florida,"</em> formalizes a methodological framework to optimize the deployment of <strong>Mobile EV Charging Stations (MEVCS)</strong>. 
