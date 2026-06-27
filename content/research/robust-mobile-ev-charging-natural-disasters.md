@@ -150,11 +150,11 @@ Our recent study, <em>"Robust Mobile Electric Vehicle Charging Solutions for Nat
   <div class="fc-box fc-mca">
     <div class="fc-title">Multi-Criteria Analysis</div>
     <div class="fc-row" style="margin-bottom: 10px;">
-      <div class="fc-crit">Normalize Evac Routes</div>
-      <div class="fc-crit">Normalize Critical Facilities</div>
-      <div class="fc-crit">Normalize Grid Failure</div>
-      <div class="fc-crit">Normalize Traffic Volume</div>
-      <div class="fc-crit">Normalize EV Density</div>
+      <div class="fc-crit" style="color: #242424;">Normalize Evac Routes</div>
+      <div class="fc-crit" style="color: #242424;">Normalize Critical Facilities</div>
+      <div class="fc-crit" style="color: #242424;">Normalize Grid Failure</div>
+      <div class="fc-crit" style="color: #242424;">Normalize Traffic Volume</div>
+      <div class="fc-crit" style="color: #242424;">Normalize EV Density</div>
     </div>
     <div style="display: flex; justify-content: center; gap: 10.5%; margin-bottom: 5px;">
        <div class="fc-arrow" style="margin: 0; height: 15px;"></div>
