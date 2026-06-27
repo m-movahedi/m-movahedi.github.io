@@ -24,55 +24,44 @@ Because the driver's eye height and the opposing vehicle height are identical, t
       <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
       </marker>
-    </defs>
-    
+    </defs>  
     <!-- Guidelines / Tangents -->
     <line x1="100" y1="250" x2="400" y2="50" stroke="#999" stroke-width="2" stroke-dasharray="5,5" />
     <line x1="400" y1="50" x2="700" y2="250" stroke="#999" stroke-width="2" stroke-dasharray="5,5" />
-    
     <!-- PVI Point -->
     <circle cx="400" cy="50" r="4" fill="#666" />
-    <text x="400" y="40" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#666">PVI</text>
-    
+    <text x="400" y="40" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#666">PVI</text>   
     <!-- Curve -->
-    <path d="M 250 150 Q 400 50 550 150" fill="none" stroke="#16a34a" stroke-width="4" />
-    
+    <path d="M 250 150 Q 400 50 550 150" fill="none" stroke="#16a34a" stroke-width="4" />    
     <!-- PVC and PVT -->
     <circle cx="250" cy="150" r="5" fill="#16a34a" />
     <text x="230" y="165" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#16a34a">PVC</text>
     <circle cx="550" cy="150" r="5" fill="#16a34a" />
-    <text x="570" y="165" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#16a34a">PVT</text>
-    
+    <text x="570" y="165" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#16a34a">PVT</text>    
     <!-- Grades -->
     <text x="160" y="190" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333">g₁ (+)</text>
-    <line x1="120" y1="210" x2="190" y2="163" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
-    
+    <line x1="120" y1="210" x2="190" y2="163" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />    
     <text x="640" y="190" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333">g₂ (-)</text>
-    <line x1="680" y1="210" x2="610" y2="163" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
-    
+    <line x1="680" y1="210" x2="610" y2="163" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />    
     <!-- Driver Vehicle -->
     <rect x="180" y="170" width="40" height="20" rx="4" fill="#2563eb" />
     <circle cx="190" cy="190" r="4" fill="#333" />
     <circle cx="210" cy="190" r="4" fill="#333" />
     <circle cx="205" cy="165" r="3" fill="#fca5a5" />
-    <text x="170" y="175" font-family="sans-serif" font-size="12" fill="#2563eb" text-anchor="end">Driver (h₁ = 3.5')</text>
-    
+    <text x="170" y="175" font-family="sans-serif" font-size="12" fill="#2563eb" text-anchor="end">Driver (h₁ = 3.5')</text>    
     <!-- Opposing Vehicle -->
     <rect x="580" y="170" width="40" height="20" rx="4" fill="#ef4444" />
     <circle cx="590" cy="190" r="4" fill="#333" />
     <circle cx="610" cy="190" r="4" fill="#333" />
-    <text x="630" y="175" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="start">Opposing (h₂ = 3.5')</text>
-    
+    <text x="630" y="175" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="start">Opposing (h₂ = 3.5')</text>    
     <!-- Sight Line -->
     <line x1="205" y1="165" x2="595" y2="165" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" />
-    <text x="400" y="185" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">Line of Sight</text>
-    
+    <text x="400" y="185" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">Line of Sight</text>    
     <!-- Length Dimensions -->
     <line x1="250" y1="210" x2="250" y2="280" stroke="#999" stroke-width="1" />
     <line x1="550" y1="210" x2="550" y2="280" stroke="#999" stroke-width="1" />
     <line x1="250" y1="230" x2="550" y2="230" stroke="#333" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />
-    <text x="400" y="225" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">L (Curve Length)</text>
-    
+    <text x="400" y="225" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">L (Curve Length)</text>    
     <line x1="205" y1="200" x2="205" y2="280" stroke="#999" stroke-width="1" />
     <line x1="595" y1="200" x2="595" y2="280" stroke="#999" stroke-width="1" />
     <line x1="205" y1="260" x2="595" y2="260" stroke="#333" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />

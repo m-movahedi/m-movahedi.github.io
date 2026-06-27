@@ -31,38 +31,32 @@ The relationship between the length of the curve, the grades, and the sight dist
         <polygon points="0 0, 8 3, 0 6" fill="#333" />
       </marker>
     </defs>
-
     <!-- Tangents -->
     <line x1="50" y1="180" x2="300" y2="30" class="tangent" />
     <line x1="300" y1="30" x2="550" y2="180" class="tangent" />
     <text x="120" y="100" class="text">g1 (+)</text>
     <text x="440" y="100" class="text">g2 (-)</text>
     <text x="300" y="20" class="text" text-anchor="middle">PVI</text>
-
     <!-- Curve -->
     <path d="M 150 120 Q 300 30 450 120" class="road" />
     <circle cx="150" cy="120" r="4" class="point" />
     <text x="150" y="140" class="text" text-anchor="middle">PVC</text>
     <circle cx="450" cy="120" r="4" class="point" />
     <text x="450" y="140" class="text" text-anchor="middle">PVT</text>
-
     <!-- Sight Line -->
     <line x1="100" y1="90" x2="500" y2="90" class="sightline" />
     <circle cx="100" cy="90" r="4" class="point" fill="#d32f2f" />
     <text x="90" y="80" class="text" fill="#d32f2f" text-anchor="end">Driver (h1)</text>
     <circle cx="500" cy="90" r="4" class="point" fill="#d32f2f" />
     <text x="510" y="80" class="text" fill="#d32f2f">Object (h2)</text>
-
     <!-- Heights -->
     <line x1="100" y1="90" x2="100" y2="150" class="dim" />
     <line x1="500" y1="90" x2="500" y2="150" class="dim" />
-
     <!-- Dimensions -->
     <line x1="150" y1="170" x2="150" y2="200" class="dim" />
     <line x1="450" y1="170" x2="450" y2="200" class="dim" />
     <line x1="150" y1="190" x2="450" y2="190" class="dim-line" />
     <text x="300" y="185" class="text" text-anchor="middle">L (Curve Length)</text>
-
     <line x1="100" y1="160" x2="100" y2="230" class="dim" />
     <line x1="500" y1="160" x2="500" y2="230" class="dim" />
     <line x1="100" y1="220" x2="500" y2="220" class="dim-line" />

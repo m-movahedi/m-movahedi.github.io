@@ -27,26 +27,21 @@ Clearance is evaluated by comparing the profile elevation of the roadway with th
       <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
       </marker>
-    </defs>
-    
+    </defs>    
     <!-- Bridge Girder -->
     <rect x="200" y="50" width="400" height="30" fill="#94a3b8" stroke="#475569" stroke-width="2" />
-    <text x="620" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#475569">Overpass Girder (Elev_bridge)</text>
-    
+    <text x="620" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#475569">Overpass Girder (Elev_bridge)</text>    
     <!-- Roadway Curve -->
     <path d="M 100 150 Q 400 250 700 150" fill="none" stroke="#2563eb" stroke-width="6" stroke-dasharray="12,6" />
-    <text x="720" y="160" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2563eb">Roadway Curve (Elev_road)</text>
-    
+    <text x="720" y="160" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2563eb">Roadway Curve (Elev_road)</text>    
     <!-- Clearance Dimension C(x) -->
     <line x1="400" y1="80" x2="400" y2="195" stroke="#ef4444" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)" />
-    <text x="415" y="145" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ef4444">C(x) = Clearance</text>
-    
+    <text x="415" y="145" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ef4444">C(x) = Clearance</text>    
     <!-- Bridge Width Dimension -->
     <line x1="200" y1="30" x2="200" y2="45" stroke="#999" stroke-width="1" />
     <line x1="600" y1="30" x2="600" y2="45" stroke="#999" stroke-width="1" />
     <line x1="200" y1="35" x2="600" y2="35" stroke="#333" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />
-    <text x="400" y="25" font-family="sans-serif" font-size="14" fill="#333" text-anchor="middle">Bridge Width</text>
-    
+    <text x="400" y="25" font-family="sans-serif" font-size="14" fill="#333" text-anchor="middle">Bridge Width</text>    
     <!-- PVC / PVT -->
     <circle cx="100" cy="150" r="5" fill="#2563eb" />
     <text x="100" y="130" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2563eb">PVC</text>
@@ -81,36 +76,29 @@ AASHTO standard design parameters for underpass sight distance assume:
       <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
       </marker>
-    </defs>
-    
+    </defs>    
     <!-- Roadway Sag Curve -->
-    <path d="M 100 150 Q 400 350 700 150" fill="none" stroke="#2563eb" stroke-width="6" />
-    
+    <path d="M 100 150 Q 400 350 700 150" fill="none" stroke="#2563eb" stroke-width="6" />    
     <!-- Bridge Structure -->
     <rect x="350" y="50" width="100" height="30" fill="#94a3b8" stroke="#475569" stroke-width="2" />
     <path d="M 350 80 L 370 140 L 430 140 L 450 80 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2" />
     <text x="400" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#475569" text-anchor="middle">Bridge Structure (Sight Blockage)</text>
-    
     <!-- Vehicles -->
     <rect x="120" y="125" width="40" height="30" rx="4" fill="#0284c7" />
     <circle cx="130" cy="155" r="6" fill="#333" />
     <circle cx="150" cy="155" r="6" fill="#333" />
     <circle cx="140" cy="135" r="3" fill="#fca5a5" />
-    <text x="100" y="115" font-family="sans-serif" font-size="12" fill="#0284c7" text-anchor="end">Driver (h₁ = 8.0')</text>
-    
+    <text x="100" y="115" font-family="sans-serif" font-size="12" fill="#0284c7" text-anchor="end">Driver (h₁ = 8.0')</text>    
     <rect x="640" y="145" width="40" height="20" rx="4" fill="#ef4444" />
     <circle cx="650" cy="165" r="5" fill="#333" />
     <circle cx="670" cy="165" r="5" fill="#333" />
     <circle cx="645" cy="155" r="3" fill="#fca5a5" />
-    <text x="700" y="140" font-family="sans-serif" font-size="12" fill="#ef4444">Taillights (h₂ = 2.0')</text>
-    
+    <text x="700" y="140" font-family="sans-serif" font-size="12" fill="#ef4444">Taillights (h₂ = 2.0')</text>    
     <!-- Sight Line -->
     <line x1="140" y1="135" x2="645" y2="155" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,4" />
-    <text x="250" y="130" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">Sight Line</text>
-    
+    <text x="250" y="130" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">Sight Line</text>    
     <!-- Interference marker -->
-    <circle cx="370" cy="140" r="4" fill="#ef4444" />
-    
+    <circle cx="370" cy="140" r="4" fill="#ef4444" />    
     <!-- PVC / PVT -->
     <circle cx="100" cy="150" r="5" fill="#2563eb" />
     <text x="100" y="180" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#2563eb">PVC</text>

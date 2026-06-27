@@ -30,45 +30,35 @@ An auxiliary lane consists of three distinct horizontal segments:
         <path d="M0,0 L0,8 L8,4 z" fill="#475569" />
       </marker>
     </defs>
-
     <!-- Main Road Surface -->
-    <rect x="20" y="40" width="660" height="60" fill="#f1f5f9" />
-    
+    <rect x="20" y="40" width="660" height="60" fill="#f1f5f9" />    
     <!-- Turn Lane Surface -->
-    <path d="M 120,100 L 220,140 L 680,140 L 680,100 Z" fill="#e2e8f0" />
-    
+    <path d="M 120,100 L 220,140 L 680,140 L 680,100 Z" fill="#e2e8f0" />    
     <!-- Lines -->
     <line x1="20" y1="40" x2="680" y2="40" stroke="#94a3b8" stroke-width="3" />
-    <line x1="20" y1="100" x2="120" y2="100" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="20" y1="100" x2="120" y2="100" stroke="#94a3b8" stroke-width="3" />    
     <!-- Taper Line -->
     <line x1="120" y1="100" x2="220" y2="140" stroke="#94a3b8" stroke-width="3" />
-    <line x1="220" y1="140" x2="680" y2="140" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="220" y1="140" x2="680" y2="140" stroke="#94a3b8" stroke-width="3" />    
     <!-- Center skip line between through and turn lane -->
     <line x1="120" y1="100" x2="680" y2="100" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="10,10" />
-    <line x1="20" y1="70" x2="680" y2="70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="10,10" />
-    
+    <line x1="20" y1="70" x2="680" y2="70" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="10,10" />    
     <!-- Stop Line -->
     <line x1="660" y1="100" x2="660" y2="140" stroke="#475569" stroke-width="4" />
     <text x="660" y="155" font-family="sans-serif" font-size="11" fill="#475569" text-anchor="middle">Stop Line</text>
-
     <!-- Labels -->
     <text x="350" y="25" font-family="sans-serif" font-size="14" fill="#0f172a" font-weight="bold" text-anchor="middle">Through Lanes</text>
     <text x="450" y="125" font-family="sans-serif" font-size="12" fill="#0f172a" text-anchor="middle">Auxiliary Turn Lane</text>
-
     <!-- Dimension Lines -->
     <!-- Taper (Lt) -->
     <line x1="120" y1="170" x2="220" y2="170" stroke="#475569" stroke-width="1.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
     <text x="170" y="160" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle">Taper (L_t)</text>
     <line x1="120" y1="105" x2="120" y2="175" stroke="#cbd5e1" stroke-width="1" />
-    <line x1="220" y1="145" x2="220" y2="175" stroke="#cbd5e1" stroke-width="1" />
-    
+    <line x1="220" y1="145" x2="220" y2="175" stroke="#cbd5e1" stroke-width="1" />    
     <!-- Deceleration (Ld) -->
     <line x1="220" y1="170" x2="440" y2="170" stroke="#475569" stroke-width="1.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
     <text x="330" y="160" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle">Deceleration (L_d)</text>
-    <line x1="440" y1="105" x2="440" y2="175" stroke="#cbd5e1" stroke-width="1" />
-    
+    <line x1="440" y1="105" x2="440" y2="175" stroke="#cbd5e1" stroke-width="1" />    
     <!-- Storage (Ls) -->
     <line x1="440" y1="170" x2="660" y2="170" stroke="#475569" stroke-width="1.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" />
     <text x="550" y="160" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle">Storage (L_s)</text>

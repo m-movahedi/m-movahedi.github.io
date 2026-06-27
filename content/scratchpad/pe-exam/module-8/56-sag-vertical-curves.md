@@ -31,49 +31,39 @@ During nighttime, the distance the driver can see is limited by the reach and an
         <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
       </marker>
     </defs>
-    
     <!-- Guidelines / Tangents -->
     <line x1="100" y1="50" x2="400" y2="250" stroke="#999" stroke-width="2" stroke-dasharray="5,5" />
     <line x1="400" y1="250" x2="700" y2="50" stroke="#999" stroke-width="2" stroke-dasharray="5,5" />
-    
     <!-- PVI Point -->
     <circle cx="400" cy="250" r="4" fill="#666" />
-    <text x="400" y="270" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#666">PVI</text>
-    
+    <text x="400" y="270" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#666">PVI</text>   
     <!-- Curve -->
-    <path d="M 250 150 Q 400 250 550 150" fill="none" stroke="#2563eb" stroke-width="4" />
-    
+    <path d="M 250 150 Q 400 250 550 150" fill="none" stroke="#2563eb" stroke-width="4" />   
     <!-- PVC and PVT -->
     <circle cx="250" cy="150" r="5" fill="#2563eb" />
     <text x="230" y="140" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#2563eb">PVC</text>
     <circle cx="550" cy="150" r="5" fill="#2563eb" />
-    <text x="570" y="140" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#2563eb">PVT</text>
-    
+    <text x="570" y="140" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#2563eb">PVT</text>    
     <!-- Grades -->
     <text x="160" y="110" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333">g₁ (-)</text>
-    <line x1="120" y1="110" x2="190" y2="156" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
-    
+    <line x1="120" y1="110" x2="190" y2="156" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />    
     <text x="640" y="110" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333">g₂ (+)</text>
-    <line x1="610" y1="156" x2="680" y2="110" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
-    
+    <line x1="610" y1="156" x2="680" y2="110" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />    
     <!-- Vehicle / Headlight -->
     <rect x="230" y="110" width="40" height="20" rx="4" fill="#ef4444" />
     <circle cx="240" cy="130" r="4" fill="#333" />
     <circle cx="260" cy="130" r="4" fill="#333" />
     <circle cx="270" cy="120" r="3" fill="#fbbf24" />
-    <text x="210" y="100" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="end">Headlight (h₃)</text>
-    
+    <text x="210" y="100" font-family="sans-serif" font-size="12" fill="#ef4444" text-anchor="end">Headlight (h₃)</text>    
     <!-- Light Beam -->
     <path d="M 270 120 L 600 70 L 600 120 Z" fill="#fef08a" opacity="0.4" />
     <line x1="270" y1="120" x2="600" y2="70" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,2" />
-    <text x="450" y="100" font-family="sans-serif" font-size="12" fill="#d97706" transform="rotate(-9, 450, 100)">1° Upward Divergence</text>
-    
+    <text x="450" y="100" font-family="sans-serif" font-size="12" fill="#d97706" transform="rotate(-9, 450, 100)">1° Upward Divergence</text>   
     <!-- Length Dimensions -->
     <line x1="250" y1="180" x2="250" y2="280" stroke="#999" stroke-width="1" />
     <line x1="550" y1="180" x2="550" y2="280" stroke="#999" stroke-width="1" />
     <line x1="250" y1="200" x2="550" y2="200" stroke="#333" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />
-    <text x="400" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">L (Curve Length)</text>
-    
+    <text x="400" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">L (Curve Length)</text>   
     <line x1="270" y1="220" x2="270" y2="280" stroke="#999" stroke-width="1" />
     <line x1="600" y1="140" x2="600" y2="280" stroke="#999" stroke-width="1" />
     <line x1="270" y1="230" x2="600" y2="230" stroke="#333" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)" />

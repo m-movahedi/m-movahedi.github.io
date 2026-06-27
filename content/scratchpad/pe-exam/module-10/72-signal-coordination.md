@@ -43,23 +43,19 @@ A time-space diagram is the primary tool for designing and visualizing signal co
         <path d="M0,0 L0,8 L8,4 z" fill="#0f172a" />
       </marker>
     </defs>
-
     <!-- Axes -->
     <line x1="40" y1="200" x2="560" y2="200" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow-axis)" />
     <line x1="40" y1="200" x2="40" y2="20" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow-axis)" />
     <text x="540" y="220" font-family="sans-serif" font-size="12" fill="#0f172a" text-anchor="end">Time (seconds)</text>
     <text x="25" y="30" font-family="sans-serif" font-size="12" fill="#0f172a" transform="rotate(-90, 25, 30)" text-anchor="end">Distance (ft)</text>
-    
     <!-- Intersection lines (horizontal dashed) -->
     <line x1="40" y1="160" x2="560" y2="160" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4" />
     <text x="570" y="165" font-family="sans-serif" font-size="11" fill="#475569">Int. 1</text>
     <line x1="40" y1="60" x2="560" y2="60" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4" />
-    <text x="570" y="65" font-family="sans-serif" font-size="11" fill="#475569">Int. 2</text>
-    
+    <text x="570" y="65" font-family="sans-serif" font-size="11" fill="#475569">Int. 2</text>    
     <!-- Green Band -->
     <polygon points="120,160 220,160 300,60 200,60" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
     <text x="280" y="110" font-family="sans-serif" font-size="11" fill="#047857" font-weight="bold" transform="rotate(-50, 280, 110)">Green Band (B)</text>
-
     <!-- Signal Timings - Intersection 1 (Bottom) -->
     <rect x="120" y="155" width="100" height="10" fill="#10b981" rx="2" />
     <text x="170" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
@@ -67,7 +63,6 @@ A time-space diagram is the primary tool for designing and visualizing signal co
     <text x="260" y="150" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>
     <rect x="300" y="155" width="100" height="10" fill="#10b981" rx="2" />
     <text x="350" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
-
     <!-- Signal Timings - Intersection 2 (Top) -->
     <rect x="120" y="55" width="80" height="10" fill="#ef4444" rx="2" />
     <text x="160" y="50" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>

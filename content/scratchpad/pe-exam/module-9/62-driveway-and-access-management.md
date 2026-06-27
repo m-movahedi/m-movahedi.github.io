@@ -41,42 +41,32 @@ Corner clearance is the distance between an intersection and the nearest drivewa
         <path d="M0,4 L8,8 L8,0 z" fill="#475569" />
       </marker>
     </defs>
-
     <!-- Main Road -->
-    <rect x="40" y="120" width="520" height="80" fill="#f1f5f9" />
-    
+    <rect x="40" y="120" width="520" height="80" fill="#f1f5f9" />    
     <!-- Cross Street -->
-    <rect x="150" y="20" width="100" height="100" fill="#f1f5f9" />
-    
+    <rect x="150" y="20" width="100" height="100" fill="#f1f5f9" />    
     <!-- Driveway -->
-    <rect x="380" y="50" width="60" height="70" fill="#e2e8f0" />
-    
+    <rect x="380" y="50" width="60" height="70" fill="#e2e8f0" />    
     <!-- Lines for Main Road -->
     <line x1="40" y1="200" x2="560" y2="200" stroke="#94a3b8" stroke-width="3" />
     <line x1="40" y1="120" x2="150" y2="120" stroke="#94a3b8" stroke-width="3" />
     <line x1="250" y1="120" x2="380" y2="120" stroke="#94a3b8" stroke-width="3" />
     <line x1="440" y1="120" x2="560" y2="120" stroke="#94a3b8" stroke-width="3" />
     <line x1="40" y1="160" x2="560" y2="160" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="10,10" />
-
     <!-- Lines for Cross Street -->
     <line x1="150" y1="20" x2="150" y2="120" stroke="#94a3b8" stroke-width="3" />
-    <line x1="250" y1="20" x2="250" y2="120" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="250" y1="20" x2="250" y2="120" stroke="#94a3b8" stroke-width="3" />    
     <!-- Lines for Driveway -->
     <line x1="380" y1="50" x2="380" y2="120" stroke="#94a3b8" stroke-width="3" />
-    <line x1="440" y1="50" x2="440" y2="120" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="440" y1="50" x2="440" y2="120" stroke="#94a3b8" stroke-width="3" />    
     <!-- Direction of Travel -->
     <path d="M 120,90 L 50,90" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrow-both)" />
     <text x="85" y="80" font-family="sans-serif" font-size="12" fill="#3b82f6" text-anchor="middle">Travel</text>
-
     <!-- Labels and Dimensions -->
-    <text x="410" y="40" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="bold">Driveway</text>
-    
+    <text x="410" y="40" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle" font-weight="bold">Driveway</text>    
     <!-- Corner Clearance (C) -->
     <line x1="250" y1="100" x2="380" y2="100" stroke="#ef4444" stroke-width="2" marker-start="url(#arrow-left)" marker-end="url(#arrow-both)" />
-    <text x="315" y="90" font-family="sans-serif" font-size="12" fill="#ef4444" font-weight="bold" text-anchor="middle">Corner Clearance (C)</text>
-    
+    <text x="315" y="90" font-family="sans-serif" font-size="12" fill="#ef4444" font-weight="bold" text-anchor="middle">Corner Clearance (C)</text>    
     <!-- Driveway Width -->
     <line x1="380" y1="100" x2="440" y2="100" stroke="#475569" stroke-width="1.5" marker-start="url(#arrow-left)" marker-end="url(#arrow-both)" />
     <text x="410" y="90" font-family="sans-serif" font-size="10" fill="#475569" text-anchor="middle">Width</text>

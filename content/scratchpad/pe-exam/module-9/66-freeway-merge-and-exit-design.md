@@ -39,28 +39,22 @@ There are two primary geometric designs for entrance and exit terminals:
       <marker id="arrow-left-p" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto-start-reverse">
         <path d="M0,4 L8,8 L8,0 z" fill="#475569" />
       </marker>
-    </defs>
-    
+    </defs>    
     <!-- Main Road -->
     <rect x="20" y="20" width="560" height="40" fill="#f1f5f9" />
     <line x1="20" y1="20" x2="580" y2="20" stroke="#94a3b8" stroke-width="3" />
     <line x1="20" y1="60" x2="350" y2="60" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="10,10" />
-    <line x1="350" y1="60" x2="580" y2="60" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="350" y1="60" x2="580" y2="60" stroke="#94a3b8" stroke-width="3" />    
     <!-- Parallel Lane -->
     <polygon points="20,60 350,60 450,100 20,100" fill="#e2e8f0" />
-    <line x1="20" y1="100" x2="350" y2="100" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="20" y1="100" x2="350" y2="100" stroke="#94a3b8" stroke-width="3" />    
     <!-- Taper -->
-    <line x1="350" y1="100" x2="450" y2="60" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="350" y1="100" x2="450" y2="60" stroke="#94a3b8" stroke-width="3" />    
     <!-- Ramp connection -->
-    <line x1="20" y1="60" x2="20" y2="100" stroke="#e2e8f0" stroke-width="3" />
-    
+    <line x1="20" y1="60" x2="20" y2="100" stroke="#e2e8f0" stroke-width="3" />    
     <text x="250" y="45" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle">Through Lanes</text>
     <text x="185" y="85" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle">Auxiliary Acceleration Lane</text>
-    <text x="420" y="75" font-family="sans-serif" font-size="10" fill="#1e293b" font-weight="bold">Taper</text>
-    
+    <text x="420" y="75" font-family="sans-serif" font-size="10" fill="#1e293b" font-weight="bold">Taper</text>    
     <!-- Dimension -->
     <line x1="20" y1="120" x2="350" y2="120" stroke="#475569" stroke-width="1.5" marker-start="url(#arrow-left-p)" marker-end="url(#arrow-both-p)" />
     <text x="185" y="140" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Parallel Lane Length</text>
@@ -83,22 +77,18 @@ There are two primary geometric designs for entrance and exit terminals:
       <marker id="arrow-left-t" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto-start-reverse">
         <path d="M0,4 L8,8 L8,0 z" fill="#475569" />
       </marker>
-    </defs>
-    
+    </defs>    
     <!-- Main Road -->
     <rect x="20" y="20" width="560" height="40" fill="#f1f5f9" />
     <line x1="20" y1="20" x2="580" y2="20" stroke="#94a3b8" stroke-width="3" />
-    <line x1="20" y1="60" x2="580" y2="60" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="20" y1="60" x2="580" y2="60" stroke="#94a3b8" stroke-width="3" />    
     <!-- Taper & Ramp -->
     <polygon points="20,100 200,100 450,60 20,60" fill="#e2e8f0" />
     <line x1="200" y1="100" x2="450" y2="60" stroke="#94a3b8" stroke-width="3" />
-    <line x1="20" y1="100" x2="200" y2="100" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="20" y1="100" x2="200" y2="100" stroke="#94a3b8" stroke-width="3" />    
     <text x="250" y="45" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle">Through Lanes</text>
     <text x="100" y="85" font-family="sans-serif" font-size="12" fill="#1e293b" text-anchor="middle">Ramp</text>
-    <text x="325" y="70" font-family="sans-serif" font-size="10" fill="#1e293b" font-weight="bold">Merge Taper</text>
-    
+    <text x="325" y="70" font-family="sans-serif" font-size="10" fill="#1e293b" font-weight="bold">Merge Taper</text>    
     <!-- Dimension -->
     <line x1="200" y1="120" x2="450" y2="120" stroke="#475569" stroke-width="1.5" marker-start="url(#arrow-left-t)" marker-end="url(#arrow-both-t)" />
     <text x="325" y="140" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Taper Length</text>

@@ -40,30 +40,25 @@ A modern roundabout contains several distinct geometric elements:
     <rect x="130" y="0" width="40" height="50" fill="#f1f5f9" />
     <line x1="130" y1="0" x2="130" y2="50" stroke="#94a3b8" stroke-width="2" />
     <line x1="170" y1="0" x2="170" y2="50" stroke="#94a3b8" stroke-width="2" />
-    <polygon points="145,50 155,50 150,70" fill="#cbd5e1" />
-    
+    <polygon points="145,50 155,50 150,70" fill="#cbd5e1" />    
     <!-- South -->
     <rect x="130" y="250" width="40" height="50" fill="#f1f5f9" />
     <line x1="130" y1="250" x2="130" y2="300" stroke="#94a3b8" stroke-width="2" />
     <line x1="170" y1="250" x2="170" y2="300" stroke="#94a3b8" stroke-width="2" />
-    <polygon points="145,250 155,250 150,230" fill="#cbd5e1" />
-    
+    <polygon points="145,250 155,250 150,230" fill="#cbd5e1" />    
     <!-- East -->
     <rect x="250" y="130" width="50" height="40" fill="#f1f5f9" />
     <line x1="250" y1="130" x2="300" y2="130" stroke="#94a3b8" stroke-width="2" />
     <line x1="250" y1="170" x2="300" y2="170" stroke="#94a3b8" stroke-width="2" />
-    <polygon points="250,145 250,155 230,150" fill="#cbd5e1" />
-    
+    <polygon points="250,145 250,155 230,150" fill="#cbd5e1" />    
     <!-- West -->
     <rect x="0" y="130" width="50" height="40" fill="#f1f5f9" />
     <line x1="0" y1="130" x2="50" y2="130" stroke="#94a3b8" stroke-width="2" />
     <line x1="0" y1="170" x2="50" y2="170" stroke="#94a3b8" stroke-width="2" />
     <polygon points="50,145 50,155 70,150" fill="#cbd5e1" />
-
     <!-- Labels -->
     <text x="210" y="135" font-family="sans-serif" font-size="12" fill="#ef4444" font-weight="bold">Truck Apron</text>
-    <line x1="205" y1="140" x2="185" y2="150" stroke="#ef4444" stroke-width="1.5" />
-    
+    <line x1="205" y1="140" x2="185" y2="150" stroke="#ef4444" stroke-width="1.5" />    
     <text x="150" y="154" font-family="sans-serif" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">Island</text>
   </svg>
 </div>
@@ -95,17 +90,14 @@ The fastest path is the smoothest, flattest vehicle path through the roundabout,
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; text-align: center;">
   <svg viewBox="0 0 500 150" width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
     <!-- Path Line -->
-    <path d="M 50,100 C 150,100 200,40 250,40 C 300,40 350,100 450,100" fill="none" stroke="#3b82f6" stroke-width="4" stroke-dasharray="8,4" />
-    
+    <path d="M 50,100 C 150,100 200,40 250,40 C 300,40 350,100 450,100" fill="none" stroke="#3b82f6" stroke-width="4" stroke-dasharray="8,4" />    
     <!-- Radius indicators -->
     <!-- R1 -->
     <path d="M 130,90 A 40 40 0 0 0 170,50" fill="none" stroke="#ef4444" stroke-width="2" />
-    <text x="130" y="40" font-family="sans-serif" font-size="12" fill="#ef4444" font-weight="bold" text-anchor="middle">R1 (Entry)</text>
-    
+    <text x="130" y="40" font-family="sans-serif" font-size="12" fill="#ef4444" font-weight="bold" text-anchor="middle">R1 (Entry)</text>    
     <!-- R2 -->
     <path d="M 230,45 A 30 30 0 0 1 270,45" fill="none" stroke="#10b981" stroke-width="2" />
-    <text x="250" y="25" font-family="sans-serif" font-size="12" fill="#10b981" font-weight="bold" text-anchor="middle">R2 (Circulating)</text>
-    
+    <text x="250" y="25" font-family="sans-serif" font-size="12" fill="#10b981" font-weight="bold" text-anchor="middle">R2 (Circulating)</text>    
     <!-- R3 -->
     <path d="M 330,50 A 40 40 0 0 0 370,90" fill="none" stroke="#f59e0b" stroke-width="2" />
     <text x="370" y="40" font-family="sans-serif" font-size="12" fill="#f59e0b" font-weight="bold" text-anchor="middle">R3 (Exit)</text>

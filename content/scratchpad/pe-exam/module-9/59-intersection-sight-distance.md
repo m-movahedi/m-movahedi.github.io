@@ -28,48 +28,37 @@ Sight triangles represent the clear zones required for drivers to see approachin
         <path d="M0,0 L0,6 L9,3 z" fill="#475569" />
       </marker>
     </defs>
-    
     <!-- Roads -->
     <rect x="0" y="120" width="600" height="80" fill="#f1f5f9" />
-    <rect x="120" y="200" width="80" height="150" fill="#f1f5f9" />
-    
+    <rect x="120" y="200" width="80" height="150" fill="#f1f5f9" />    
     <!-- Edge Lines -->
     <line x1="0" y1="120" x2="600" y2="120" stroke="#94a3b8" stroke-width="3" />
     <line x1="0" y1="200" x2="120" y2="200" stroke="#94a3b8" stroke-width="3" />
     <line x1="200" y1="200" x2="600" y2="200" stroke="#94a3b8" stroke-width="3" />
     
     <line x1="120" y1="200" x2="120" y2="350" stroke="#94a3b8" stroke-width="3" />
-    <line x1="200" y1="200" x2="200" y2="350" stroke="#94a3b8" stroke-width="3" />
-    
+    <line x1="200" y1="200" x2="200" y2="350" stroke="#94a3b8" stroke-width="3" />    
     <!-- Center Lines -->
     <line x1="0" y1="160" x2="600" y2="160" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="12,12" />
     <line x1="160" y1="200" x2="160" y2="350" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="12,12" />
-
     <!-- Sight Triangle -->
-    <polygon points="160,280 500,160 160,160" fill="#3b82f6" fill-opacity="0.1" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,4" />
-    
+    <polygon points="160,280 500,160 160,160" fill="#3b82f6" fill-opacity="0.1" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,4" />    
     <!-- Vehicles / Eye -->
     <rect x="148" y="270" width="24" height="40" fill="#ef4444" rx="4" />
-    <circle cx="500" cy="160" r="8" fill="#ef4444" />
-    
+    <circle cx="500" cy="160" r="8" fill="#ef4444" />    
     <text x="135" y="295" font-family="sans-serif" font-size="12" fill="#0f172a" text-anchor="end" font-weight="bold">Eye</text>
-    <text x="145" y="225" font-family="sans-serif" font-size="12" fill="#334155" text-anchor="end">a</text>
-    
+    <text x="145" y="225" font-family="sans-serif" font-size="12" fill="#334155" text-anchor="end">a</text>    
     <!-- Sight Triangle Dimension Lines -->
     <line x1="160" y1="310" x2="500" y2="310" stroke="#475569" stroke-width="1.5" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)" />
     <text x="330" y="330" font-family="sans-serif" font-size="14" fill="#0f172a" text-anchor="middle" font-weight="bold">ISD (b)</text>
-
     <!-- Direction Arrows -->
     <path d="M 400,95 L 200,95" stroke="#475569" stroke-width="2" marker-end="url(#arrow-left)" />
-    <text x="300" y="85" font-family="sans-serif" font-size="13" fill="#475569" text-anchor="middle">Major Road Traffic</text>
-    
+    <text x="300" y="85" font-family="sans-serif" font-size="13" fill="#475569" text-anchor="middle">Major Road Traffic</text>    
     <path d="M 200,225 L 400,225" stroke="#475569" stroke-width="2" marker-end="url(#arrow-right)" />
-    <text x="300" y="245" font-family="sans-serif" font-size="13" fill="#475569" text-anchor="middle">Major Road Traffic</text>
-    
+    <text x="300" y="245" font-family="sans-serif" font-size="13" fill="#475569" text-anchor="middle">Major Road Traffic</text>    
     <!-- Labels -->
     <text x="60" y="280" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">Minor</text>
-    <text x="60" y="298" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">Road</text>
-    
+    <text x="60" y="298" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">Road</text>    
     <text x="310" y="200" font-family="sans-serif" font-size="14" fill="#2563eb" font-weight="bold" transform="rotate(-15, 310, 200)">Clear Sight Triangle</text>
   </svg>
 </div>
