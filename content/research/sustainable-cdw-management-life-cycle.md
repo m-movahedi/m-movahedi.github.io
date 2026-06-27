@@ -85,7 +85,6 @@ To understand why CDW is so frequently mismanaged, we conducted a systematic rev
 .c-log { border-left-color: #1abc9c; }
 .c-cor { border-left-color: #34495e; }
 </style>
-
 <div class="cdw-causes">
   <div class="cdw-cause-card c-mat">
     <div class="cdw-cause-title">🧱 Challenging Material Conditions</div>
@@ -184,7 +183,6 @@ Applying our framework, we identified 11 active root causes in Louisiana. By run
       </div>
     </div>
   </div>
-  
   <div class="strat-item">
     <div class="strat-rank">#2 <span>Score: 26</span></div>
     <div class="strat-content">
@@ -196,7 +194,6 @@ Applying our framework, we identified 11 active root causes in Louisiana. By run
       </div>
     </div>
   </div>
-
   <div class="strat-item">
     <div class="strat-rank">#2 <span>Score: 26</span></div>
     <div class="strat-content">
@@ -208,7 +205,6 @@ Applying our framework, we identified 11 active root causes in Louisiana. By run
       </div>
     </div>
   </div>
-  
   <div class="strat-item">
     <div class="strat-rank">#4 <span>Score: 25.3</span></div>
     <div class="strat-content">
@@ -233,14 +229,11 @@ Addressing unsustainable CDW management requires more than just building better 
     @article{Hill2023,
     author = {Hill, Will and Jalloul, Hiba and Movahedi, Mohammad and Choi, Juyeong},
     doi = {10.1061/jmenea.meeng-4759},
-    file = {:C\:/Users/moham/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Hill et al. - 2023 - Sustainable Management of the Built Environment from the Life Cycle Perspective(5).pdf:pdf},
     journal = {Journal of Management in Engineering},
-    mendeley-groups = {CIB,0 My Own work/Journal papers},
     number = {2},
     pages = {3123001},
     publisher = {American Society of Civil Engineers},
     title = {{Sustainable Management of the Built Environment from the Life Cycle Perspective}},
-    url = {file:///C:/Users/mm21cu/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Hill et al. - 2023 - Sustainable Management of the Built Environment from the Life Cycle Perspective.pdf},
     volume = {39},
     year = {2023}
     }

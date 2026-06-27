@@ -120,7 +120,6 @@ Our recent study, <em>"Robust Mobile Electric Vehicle Charging Solutions for Nat
 </style>
 
 <div class="fc-container">
-  
   <!-- Phase 1 -->
   <div class="fc-box">
     <div class="fc-title">Data Collection & Preprocessing</div>
@@ -140,16 +139,12 @@ Our recent study, <em>"Robust Mobile Electric Vehicle Charging Solutions for Nat
       </div>
     </div>
   </div>
-  
   <div class="fc-arrow"></div>
-
   <!-- Phase 2 & 3 -->
   <div class="fc-sub" style="background: #d0ece7; border-color: #a2d9ce; color: #0e6251; font-weight: bold; width: 100%; max-width: 650px; text-align: center;">
     Assign relative importance (based on stakeholder priorities) &rarr; Weight Assignment
   </div>
-
   <div class="fc-arrow"></div>
-
   <!-- Phase 4 -->
   <div class="fc-box fc-mca">
     <div class="fc-title">Multi-Criteria Analysis</div>
@@ -185,9 +180,7 @@ Our recent study, <em>"Robust Mobile Electric Vehicle Charging Solutions for Nat
     <div class="fc-arrow" style="margin: 5px auto 0; height: 15px;"></div>
     <div class="fc-opt-sub">Select Distributed Locations</div>
   </div>
-  
   <div class="fc-arrow"></div>
-  
   <div class="fc-sub" style="background: #28b463; color: white; font-weight: bold; font-size: 1.1em; padding: 15px; border: none; box-shadow: 0 4px 10px rgba(40, 180, 99, 0.4); width: 100%; max-width: 650px; text-align: center;">
     Final 14 Mobile Charging Station Locations
   </div>
@@ -216,7 +209,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   border: 2px solid #2c3e50;
   cursor: crosshair;
 }
-
 /* Background */
 .grid-bg-v2 {
   position: absolute;
@@ -224,7 +216,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   background-image: radial-gradient(circle, rgba(255,255,255,0.05) 2px, transparent 2px);
   background-size: 25px 25px;
 }
-
 /* Nodes */
 .n-node {
   position: absolute;
@@ -251,7 +242,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   box-shadow: 0 0 18px 6px rgba(241, 196, 15, 0.6);
   font-size: 16px;
 }
-
 /* Node Positions */
 .p1 { top: 100px; left: 80px; }
 .p2 { top: 400px; left: 720px; }
@@ -268,7 +258,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
 .n11 { top: 180px; left: 750px; }
 .n13 { top: 100px; left: 350px; } /* cascading */
 .n15 { top: 480px; left: 200px; } /* cascading */
-
 /* Edges */
 .e-line {
   position: absolute;
@@ -279,7 +268,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   transition: all 0.5s ease;
   box-shadow: 0 0 8px rgba(52, 152, 219, 0.7);
 }
-
 .e-p1-n1 { top: 100px; left: 80px; width: 171px; transform: translateY(-50%) rotate(-6.7deg); }
 .e-p1-n3 { top: 100px; left: 80px; width: 193px; transform: translateY(-50%) rotate(68.7deg); }
 .e-n1-n2 { top: 80px; left: 250px; width: 250px; transform: translateY(-50%) rotate(0deg); }
@@ -299,7 +287,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
 .e-n6-p2 { top: 280px; left: 680px; width: 126px; transform: translateY(-50%) rotate(71.5deg); }
 .e-n6-n11 { top: 280px; left: 680px; width: 122px; transform: translateY(-50%) rotate(-55.0deg); }
 .e-p2-n10 { top: 400px; left: 720px; width: 130px; transform: translateY(-50%) rotate(157.3deg); }
-
 /* Hurricane Area */
 .hurricane-zone {
   position: absolute;
@@ -346,7 +333,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   box-shadow: 0 0 8px rgba(231, 76, 60, 0.8);
   opacity: 0.2;
 }
-
 /* Nodes losing power (Inside & Cascading Outside) */
 .grid-container-v2:hover .n4,
 .grid-container-v2:hover .n8,
@@ -356,7 +342,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   background-color: #7f8c8d;
   box-shadow: none;
 }
-
 /* Status text */
 .grid-status-v2 {
   position: absolute;
@@ -379,7 +364,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
 .grid-container-v2 .grid-state-v2::after {
   content: "Grid Stable. 2 Plants and 13 Stations fully powered.";
 }
-  
 .grid-instruct {
   text-align: center;
   font-size: 0.85em;
@@ -388,12 +372,9 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   font-style: italic;
 }
 </style>
-
 <div class="grid-container-v2">
   <div class="grid-bg-v2"></div>
-  
   <div class="hurricane-zone"></div>
-  
   <!-- Lines -->
   <div class="e-line e-p1-n1"></div>
   <div class="e-line e-p1-n3"></div>
@@ -414,7 +395,6 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   <div class="e-line e-n6-p2"></div>
   <div class="e-line e-n6-n11"></div>
   <div class="e-line e-p2-n10"></div>
-
   <!-- Nodes -->
   <div class="n-node n-plant p1" title="Power Plant 1">⚡</div>
   <div class="n-node n-plant p2" title="Power Plant 2">⚡</div>
@@ -431,11 +411,9 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   <div class="n-node n11"></div>
   <div class="n-node n13"></div>
   <div class="n-node n15"></div>
-
   <div class="grid-status-v2"><strong>Network Status:</strong> <span class="grid-state-v2"></span></div>
 </div>
 <div class="grid-instruct">👆 Hover over the complex network above to simulate a focused hurricane strike. Watch the transmission lines in its path fail and observe the cascading power outages extending to nodes outside the path.</div>
-
 <div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 30px 0;">
   <div style="flex: 1 1 100%; background: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
     <h4 style="margin-top: 0; border-bottom: 2px solid #28a745; padding-bottom: 10px;">Multi-Criteria Decision Analysis (MCDA) via AHP</h4>
@@ -477,7 +455,6 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
       linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
     background-size: 30px 30px;
   }
-
   .ntl-sat-wrapper {
     position: absolute;
     top: 10px;
@@ -488,18 +465,15 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
     flex-direction: column;
     align-items: center;
   }
-  
   @keyframes ntl-orbit {
     0% { transform: translateX(0) translateY(0); }
     50% { transform: translateX(400px) translateY(20px); }
     100% { transform: translateX(800px) translateY(0); }
   }
-
   .ntl-sat {
     font-size: 28px;
     z-index: 10;
   }
-  
   .ntl-beam {
     width: 120px;
     height: 300px;
@@ -508,7 +482,6 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
     z-index: 5;
     margin-top: -10px;
   }
-
   .ntl-light {
     position: absolute;
     width: 8px;
@@ -518,7 +491,6 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
     box-shadow: 0 0 12px 3px rgba(251, 212, 109, 0.8);
     transition: opacity 1s ease, background-color 1s ease, box-shadow 1s ease;
   }
-  
   .ntl-l1 { top: 120px; left: 150px; }
   .ntl-l2 { top: 140px; left: 180px; }
   .ntl-l3 { top: 180px; left: 160px; } 
@@ -531,7 +503,6 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
   .ntl-l10 { top: 100px; left: 450px; }
   .ntl-l11 { top: 150px; left: 480px; } 
   .ntl-l12 { top: 210px; left: 460px; } 
-
   .ntl-status {
     position: absolute;
     bottom: 20px;
@@ -545,24 +516,20 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
     z-index: 20;
     transition: background 0.5s ease;
   }
-
   .ntl-container:hover .ntl-vuln {
     opacity: 0.1;
     background-color: #333;
     box-shadow: none;
-  }
-  
+  }  
   .ntl-container:hover .ntl-status {
     background: rgba(220, 53, 69, 0.8);
-  }
-  
+  }  
   .ntl-container:hover .ntl-state::after {
     content: "Post-Landfall (Outages Detected)";
   }
   .ntl-container .ntl-state::after {
     content: "Pre-Landfall (Normal Operations)";
-  }
-  
+  }  
   .ntl-instruct {
     text-align: center;
     font-size: 0.85em;
@@ -571,14 +538,12 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
     font-style: italic;
   }
 </style>
-
 <div class="ntl-container">
   <div class="ntl-grid"></div>
   <div class="ntl-sat-wrapper">
     <div class="ntl-sat">🛰️</div>
     <div class="ntl-beam"></div>
-  </div>
-  
+  </div>  
   <div class="ntl-light ntl-l1"></div>
   <div class="ntl-light ntl-l2 ntl-vuln"></div>
   <div class="ntl-light ntl-l3 ntl-vuln"></div>
@@ -590,8 +555,7 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
   <div class="ntl-light ntl-l9 ntl-vuln"></div>
   <div class="ntl-light ntl-l10 ntl-vuln"></div>
   <div class="ntl-light ntl-l11"></div>
-  <div class="ntl-light ntl-l12 ntl-vuln"></div>
-  
+  <div class="ntl-light ntl-l12 ntl-vuln"></div>  
   <div class="ntl-status"><strong>Satellite NTL View:</strong> <span class="ntl-state"></span></div>
 </div>
 <div class="ntl-instruct">👆 Hover over the interactive map above to simulate the hurricane landfall and observe the power outages.</div>
@@ -619,6 +583,4 @@ This research was published on [Transport Geography](https://www.doi.org/10.1016
     doi = {https://doi.org/10.1016/j.jtrangeo.2026.104739},
     url = {https://www.sciencedirect.com/science/article/pii/S0966692326001936},
     author = {Razieh Khayamim and Mohammad Movahedi and Onur Alisan and Seçkin Özkul and Eren Erman Ozguven and Maxim A. Dulebenets},
-    keywords = {Mobile EV charging stations, Power grid failures, Hurricane emergencies, Electric vehicle infrastructure, Resilient infrastructure},
-    abstract = {The growing adoption of electric vehicles (EVs) creates new challenges for emergency management, particularly regarding evacuation capabilities during natural disasters such as hurricanes. Infrastructure disruptions and power grid failures, common during emergencies, can severely limit evacuation options, leaving EV owners vulnerable due to inadequate charging facilities. In those cases, mobile charging stations could be used to provide agile supply. As such, this study examines how vulnerable EV charging infrastructures would become during large-scale evacuations, presenting a multi-criteria decision analysis framework for promising deployment of mobile EV charging stations during hurricane evacuations. The methodology uniquely integrates power grid vulnerability assessment with geospatial analysis to identify the strategic placement of charging infrastructure during emergencies. Focusing on Hurricane Ian’s impact on the greater Tampa Bay region in Florida, USA as a case study, the study incorporated a set of criteria: (1) EV ownership density, (2) charging infrastructure vulnerability, (3) proximity to evacuation routes, (4) accessibility to critical facilities, and (5) traffic volume. Through systematic spatial analysis, 238 candidate locations were identified and evaluated using a distribution algorithm that implemented a proper buffer to ensure efficient resource allocation while maintaining overall service coverage. The final deployment strategy identified fourteen strategically promising locations, significantly enhancing coverage of critical evacuation routes, facilities, demand and effectively addressing gaps in existing charging infrastructure. This research contributes a robust methodological framework beneficial to emergency management practices in coastal regions with growing EV adoption rates. Results underscore the importance and effectiveness of integrating power grid resilience considerations into traditional transportation planning, substantially improving emergency response capabilities for EV-dependent communities during natural disasters.}
     }

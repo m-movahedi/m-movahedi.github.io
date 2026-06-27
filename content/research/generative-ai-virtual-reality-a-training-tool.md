@@ -28,14 +28,11 @@ In a conference paper titled “Generative Artificial Intelligence and Virtual R
 <figcaption> An example of the proposed concept </figcaption>
 </center>
 </figure>
-
 <br>
 You can find more information about this framework at the following links:
 
 
-
 <div style="margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
-
   <a href="https://github.com/m-movahedi/Gen-AI-VR-Asset-Generator"
      style="
       padding:10px 18px;
@@ -48,7 +45,6 @@ You can find more information about this framework at the following links:
      ">
      GitHub Repository    
   </a>
-
  <a href="https://www.youtube.com/watch?v=uEgWkT4K-gU"
      style="
       padding:10px 18px;
@@ -61,7 +57,6 @@ You can find more information about this framework at the following links:
      ">
      Youtube Tutorial
   </a>
-
  <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=BXiu1y0AAAAJ&citation_for_view=BXiu1y0AAAAJ:T_ojBgVMvoEC"
      style="
       padding:10px 18px;
@@ -74,7 +69,6 @@ You can find more information about this framework at the following links:
      ">
      Published paper
   </a> 
-
 </div>
 
 ## Recommended Citation:

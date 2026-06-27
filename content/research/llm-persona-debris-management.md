@@ -93,7 +93,6 @@ To systematically integrate behavioral heterogeneity into disaster management de
     .llm-arrow { transform: rotate(90deg); margin: 10px 0; }
   }
 </style>
-
 <div class="llm-framework-container">
   <!-- Phase A -->
   <div class="llm-phase-box" style="border-color: #e74c3c;">
@@ -118,9 +117,7 @@ To systematically integrate behavioral heterogeneity into disaster management de
       <div class="llm-tag" style="background: #e8f8f5; border-color: #a3e4d7; color: #117a65;">Latent Behaviors</div>
     </div>
   </div>
-  
   <div class="llm-arrow">➔</div>
-
   <!-- Phase C -->
   <div class="llm-phase-box" style="border-color: #3498db;">
     <div class="llm-phase-title" style="color: #2874a6;">C. Persona Tuning</div>
@@ -136,9 +133,7 @@ To systematically integrate behavioral heterogeneity into disaster management de
       <div class="llm-tag" style="background: #ebf5fb; border-color: #aed6f1; color: #2874a6;">Bias Evaluation</div>
     </div>
   </div>
-  
   <div class="llm-arrow">➔</div>
-
   <!-- Phase D -->
   <div class="llm-phase-box" style="border-color: #e67e22;">
     <div class="llm-phase-title" style="color: #b9770e;">D. Testing & Eval</div>

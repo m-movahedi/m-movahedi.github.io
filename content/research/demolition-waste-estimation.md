@@ -246,12 +246,10 @@ Variables such as the duration of the last renovation, external walls maintenanc
 *For full details on the methodologies and dataset, read our [paper](https://www.doi.org/10.1061/9780784485286.033) presented at the Construction Research Congress 2024.*
 
     @inproceedings{Movahedi2024,
-    address = {Reston, VA},
     author = {Movahedi, Mohammad and Choi, Juyeong and Seo, Seungwon and Koo, Choongwan},
     booktitle = {Construction Research Congress 2024},
     doi = {10.1061/9780784485286.033},
     isbn = {9780784485286},
-    mendeley-groups = {0 My Own work/Conference papers},
     month = {mar},
     pages = {318--327},
     publisher = {American Society of Civil Engineers},

@@ -76,29 +76,24 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
     position: absolute; height: 3px; background-color: #bdc3c7; z-index: 5;
     transform-origin: 0 50%; transition: all 0.5s ease;
   }
-  
   /* Positions */
   .p-nuc { top: 100px; left: 150px; }
   .p-ren { top: 350px; left: 150px; }
-  
   .s1 { top: 100px; left: 350px; } /* Nuclear connected */
   .s2 { top: 220px; left: 300px; } /* Cross connected */
   .s3 { top: 100px; left: 550px; } /* Nuclear connected */
   .s4 { top: 350px; left: 350px; } /* Ren connected */
   .s5 { top: 350px; left: 550px; } /* Ren connected */
   .s6 { top: 220px; left: 650px; } /* Cross connected */
-
   /* Lines */
   .l-nuc-s1 { top: 100px; left: 150px; width: 200px; transform: translateY(-50%); }
   .l-nuc-s2 { top: 100px; left: 150px; width: 192px; transform: translateY(-50%) rotate(38.6deg); }
   .l-s1-s3 { top: 100px; left: 350px; width: 200px; transform: translateY(-50%); }
   .l-s3-s6 { top: 100px; left: 550px; width: 156px; transform: translateY(-50%) rotate(50.2deg); }
-  
   .l-ren-s4 { top: 350px; left: 150px; width: 200px; transform: translateY(-50%); }
   .l-ren-s2 { top: 350px; left: 150px; width: 198px; transform: translateY(-50%) rotate(-40.9deg); }
   .l-s4-s5 { top: 350px; left: 350px; width: 200px; transform: translateY(-50%); }
   .l-s5-s6 { top: 350px; left: 550px; width: 164px; transform: translateY(-50%) rotate(-52.4deg); }
-  
   /* Hurricane Overlay */
   .ev-hurricane {
     position: absolute; top: 150px; left: 0; width: 800px; height: 300px;
@@ -107,17 +102,14 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
     display: flex; justify-content: flex-end; align-items: flex-end; padding: 20px;
     color: rgba(231, 76, 60, 0.8); font-size: 2em; font-weight: bold;
   }
-  
   /* Status */
   .ev-status {
     position: absolute; bottom: 80px; right: 20px; background: rgba(0,0,0,0.7);
     color: #fff; padding: 15px; border-radius: 8px; font-size: 0.5em; z-index: 20;
     min-width: 250px;
   }
-  
   /* Interaction */
   .ev-grid-container:hover .ev-hurricane { opacity: 1; }
-  
   /* Broken Lines */
   .ev-grid-container:hover .l-ren-s4,
   .ev-grid-container:hover .l-ren-s2,
@@ -125,14 +117,12 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
   .ev-grid-container:hover .l-s5-s6 {
     background-color: #c0392b; opacity: 0.2; box-shadow: 0 0 8px rgba(231, 76, 60, 0.8);
   }
-  
   /* Failed Nodes */
   .ev-grid-container:hover .p-ren,
   .ev-grid-container:hover .s4,
   .ev-grid-container:hover .s5 {
     background-color: #7f8c8d; box-shadow: none; color: #ccc;
   }
-  
   .ev-grid-container:hover .ev-status { background: rgba(231, 76, 60, 0.9); }
   .ev-grid-container:hover .ev-state::after {
     content: "Hurricane Strike! Weather-dependent plant (Group A) forced offline. Associated EV stations lose power. Nuclear-connected stations maintain 66% network functionality.";
@@ -140,7 +130,6 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
   .ev-grid-container .ev-state::after {
     content: "Normal Conditions. 100% of EV Stations Operational.";
   }
-  
   .ev-legend {
     position: absolute; bottom: 20px; left: 20px; display: flex; gap: 15px;
     background: rgba(0,0,0,0.6); padding: 10px; border-radius: 8px; color: #fff; font-size: 0.8em; z-index: 20;
@@ -152,33 +141,27 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
 <div class="ev-grid-container">
   <div class="ev-bg"></div>
   <div class="ev-hurricane">🌀 Hurricane Impact Zone</div>
-  
   <div class="ev-status">
     <strong>Network Status:</strong><br><br>
     <span class="ev-state"></span>
   </div>
-  
   <div class="ev-legend">
     <div class="ev-leg-item"><div class="ev-dot" style="background:#f39c12; border-radius:3px;"></div> Nuclear Plant (Group B)</div>
     <div class="ev-leg-item"><div class="ev-dot" style="background:#3498db; border-radius:3px;"></div> Weather-Dependent Plant (Group A)</div>
     <div class="ev-leg-item"><div class="ev-dot" style="background:#2ecc71;"></div> EV Station</div>
   </div>
-
   <!-- Lines -->
   <div class="ev-line l-nuc-s1"></div>
   <div class="ev-line l-nuc-s2"></div>
   <div class="ev-line l-s1-s3"></div>
   <div class="ev-line l-s3-s6"></div>
-  
   <div class="ev-line l-ren-s4"></div>
   <div class="ev-line l-ren-s2"></div>
   <div class="ev-line l-s4-s5"></div>
   <div class="ev-line l-s5-s6"></div>
-
   <!-- Nodes -->
   <div class="ev-node ev-plant-nuc p-nuc" title="Nuclear Power Plant">☢️</div>
-  <div class="ev-node ev-plant-ren p-ren" title="Weather-Dependent Power Plant">☀️</div>
-  
+  <div class="ev-node ev-plant-ren p-ren" title="Weather-Dependent Power Plant">☀️</div> 
   <div class="ev-node ev-station s1">🔋</div>
   <div class="ev-node ev-station s2">🔋</div>
   <div class="ev-node ev-station s3">🔋</div>
@@ -218,7 +201,6 @@ You can find the published paper [here](https://www.doi.org/10.1061/978078448553
     eprint = {arXiv:1011.1669v3},
     isbn = {9780784485538},
     issn = {20711050},
-    mendeley-groups = {0 My Own work/Conference papers},
     month = {jun},
     number = {1},
     pages = {657--669},
