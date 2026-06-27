@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Hydrographs and Detention</title>
+    <meta name="description" content="Hydrographs and Detention A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hydrographs and Detention">
+    <meta property="og:description" content="Hydrographs and Detention A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hydrographs and Detention">
+    <meta name="twitter:description" content="Hydrographs and Detention A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Hydrographs and Detention</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="hydrographs-and-detention">Hydrographs and Detention</h1>
+<p>A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational Method) are sufficient for sizing pipes and channels, detention basin design requires an understanding of how flow rate changes over the entire duration of a storm.</p>
+<hr>
+<h2 id="scs-curve-number-method-for-runoff-depth">SCS Curve Number Method for Runoff Depth</h2>
+<p>To construct a runoff hydrograph, we must first determine the depth of excess rainfall (direct runoff) using the NRCS (SCS) Curve Number method.</p>
+<h3 id="governing-equations">Governing Equations:</h3>
+<p>$$Q = \frac{(P - I_a)^2}{P - I_a + S}$$</p>
+<p>Using the standard assumption that initial abstraction $I_a = 0.2 \cdot S$:</p>
+<p>$$Q = \frac{(P - 0.2S)^2}{P + 0.8S}$$</p>
+<p>Where:</p>
+<ul>
+<li>$Q$ = Depth of direct runoff (<strong>inches</strong>)</li>
+<li>$P$ = Depth of total rainfall (<strong>inches</strong>)</li>
+<li>$S$ = Potential maximum retention after runoff begins (<strong>inches</strong>)</li>
+<li>$I_a$ = Initial abstraction (<strong>inches</strong>), representing losses from ponding, interception, and initial infiltration.</li>
+</ul>
+<p>The potential maximum retention $S$ is calculated from the Curve Number ($CN$):</p>
+<p>$$S = \frac{1000}{CN} - 10$$</p>
+<p><em>Note:</em> Direct runoff only occurs when $P &gt; 0.2S$. If $P \le 0.2S$, then $Q = 0$.</p>
+<hr>
+<h2 id="unit-hydrographs">Unit Hydrographs</h2>
+<p>A <strong>Unit Hydrograph (UH)</strong> is defined as the direct runoff hydrograph resulting from 1 inch of excess rainfall (effective rainfall) distributed uniformly over the watershed at a constant rate for a specified duration.</p>
+<ul>
+<li><strong>SCS Dimensionless Unit Hydrograph:</strong> A standard synthetic hydrograph that expresses flow as a ratio of peak flow ($q/q_p$) and time as a ratio of time to peak ($t/t_p$).</li>
+</ul>
+<h3 id="peak-flow-equation-for-scs-uh-uscs">Peak Flow Equation for SCS UH (USCS):</h3>
+<p>$$q_p = \frac{484 \cdot A \cdot Q}{t_p}$$</p>
+<p>Where:</p>
+<ul>
+<li>$q_p$ = Peak discharge (<strong>cfs</strong>)</li>
+<li>$A$ = Drainage area (<strong>square miles, $mi^2$</strong>)</li>
+<li>$Q$ = Runoff depth (<strong>inches</strong>; equal to 1.0 inch for a unit hydrograph)</li>
+<li>$t_p$ = Time to peak (<strong>hours</strong>)</li>
+<li><strong>484</strong> = Standard peak factor (varies from 300 in flat coastal plains to 600 in steep mountain areas, but 484 is the NCEES standard default).</li>
+</ul>
+<h3 id="time-to-peak-t_p">Time to Peak ($t_p$):</h3>
+<p>$$t_p = \frac{D}{2} + t_L$$</p>
+<p>Where:</p>
+<ul>
+<li>$D$ = Duration of excess rainfall (<strong>hours</strong>)</li>
+<li>$t_L$ = Lag time from center of mass of rainfall to peak flow (<strong>hours</strong>)</li>
+<li>SCS Lag Time relationship: $t_L \approx 0.6 \cdot t_c$, where $t_c$ is the time of concentration.</li>
+</ul>
+<hr>
+<h2 id="detention-basin-sizing-the-modified-rational-method">Detention Basin Sizing: The Modified Rational Method</h2>
+<p>Detention basins temporarily store stormwater to reduce peak downstream runoff. The <strong>Modified Rational Method</strong> is a common technique to estimate the storage volume required for small developments ($A &lt; 20$ acres).</p>
+<p>The storage volume is determined by evaluating the difference between the inflow hydrograph (Rational Method peak flows for various storm durations) and a constant allowable outflow rate ($Q_{out}$):</p>
+<p>$$V_{storage} = (Q_{in} - Q_{out}) \cdot t_d \cdot 60$$</p>
+<p>Where:</p>
+<ul>
+<li>$V_{storage}$ = Required storage volume (<strong>cubic feet, $\text{ft}^3$</strong>)</li>
+<li>$Q_{in}$ = Peak inflow rate (<strong>cfs</strong>; calculated as $C \cdot i \cdot A$ for a storm of duration $t_d$)</li>
+<li>$Q_{out}$ = Allowable release rate (<strong>cfs</strong>; usually set to pre-development peak flow)</li>
+<li>$t_d$ = Storm duration (<strong>minutes</strong>)</li>
+<li><strong>60</strong> = Conversion factor (minutes to seconds)</li>
+</ul>
+<p>The critical detention volume is the maximum value of $V_{storage}$ found by evaluating multiple storm durations ($t_d$).</p>
+<hr>
+<h2 id="worked-example-1-scs-curve-number-runoff-depth">Worked Example 1: SCS Curve Number Runoff Depth</h2>
+<p>A 120-acre watershed has a composite Curve Number ($CN$) of 78. During a design storm event, the total rainfall depth ($P$) is $4.5\text{ inches}$.</p>
+<p><strong>Calculate the depth of runoff ($Q$) in inches and the total runoff volume in acre-feet.</strong></p>
+<h3 id="solution">Solution:</h3>
+<ol>
+<li>
+<p><strong>Calculate the potential maximum retention ($S$):</strong>
+$$S = \frac{1000}{CN} - 10 = \frac{1000}{78} - 10 = 12.82 - 10 = 2.82\text{ inches}$$</p>
+</li>
+<li>
+<p><strong>Verify if runoff occurs ($P &gt; 0.2S$):</strong>
+$$0.2S = 0.2 \cdot 2.82 = 0.564\text{ inches}$$
+Since $P = 4.5\text{ inches} &gt; 0.564\text{ inches}$, runoff will occur.</p>
+</li>
+<li>
+<p><strong>Calculate the depth of direct runoff ($Q$):</strong>
+$$Q = \frac{(P - 0.2S)^2}{P + 0.8S} = \frac{(4.5 - 0.564)^2}{4.5 + 0.8 \cdot 2.82}$$
+$$Q = \frac{(3.936)^2}{4.5 + 2.256} = \frac{15.492}{6.756} \approx 2.29\text{ inches}$$</p>
+</li>
+<li>
+<p><strong>Calculate the total runoff volume:</strong>
+$$\text{Runoff Volume} = \text{Area} \cdot Q = 120\text{ acres} \cdot \left(\frac{2.29\text{ inches}}{12\text{ inches/ft}}\right) = 120 \cdot 0.191\text{ ft} = 22.9\text{ acre-feet}$$</p>
+</li>
+</ol>
+<hr>
+<h2 id="worked-example-2-storage-sizing-via-modified-rational-method">Worked Example 2: Storage Sizing via Modified Rational Method</h2>
+<p>A commercial site of 6.0 acres has a post-development runoff coefficient $C = 0.85$. The allowable pre-development discharge rate ($Q_{out}$) is $8.0\text{ cfs}$.</p>
+<p>Using the local IDF table below, determine the required detention storage volume for a storm duration of $30\text{ minutes}$.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Duration ($t_d$, min)</th>
+          <th>Intensity ($i$, in/hr)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>15</td>
+          <td>4.8</td>
+      </tr>
+      <tr>
+          <td>30</td>
+          <td>3.5</td>
+      </tr>
+      <tr>
+          <td>60</td>
+          <td>2.2</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="solution-1">Solution:</h3>
+<ol>
+<li>
+<p><strong>Calculate the peak inflow ($Q_{in}$) for the 30-minute duration:</strong>
+$$Q_{in} = C \cdot i \cdot A = 0.85 \cdot 3.5\text{ in/hr} \cdot 6.0\text{ acres} = 17.85\text{ cfs}$$</p>
+</li>
+<li>
+<p><strong>Calculate the required storage volume for this duration:</strong>
+$$V_{storage} = (Q_{in} - Q_{out}) \cdot t_d \cdot 60$$
+$$V_{storage} = (17.85\text{ cfs} - 8.0\text{ cfs}) \cdot 30\text{ minutes} \cdot 60\text{ s/min}$$
+$$V_{storage} = 9.85\text{ cfs} \cdot 1800\text{ seconds} = 17,730\text{ ft}^3$$</p>
+</li>
+</ol>
+<hr>
+<h2 id="technical-pitfalls">Technical Pitfalls</h2>
+<ul>
+<li><strong>Unit matching for Area in SCS Peak Discharge:</strong> Note that $A$ in $q_p = \frac{484 AQ}{t_p}$ must be in <strong>square miles</strong>, not acres! If a problem gives area in acres, divide by 640 before applying the formula.</li>
+<li><strong>Initial Abstraction limit:</strong> Runoff is 0 if rainfall $P \le 0.2S$. Always check this threshold if rainfall is light.</li>
+<li><strong>Modified Rational Method volume calculation:</strong> Make sure you use the duration $t_d$ in seconds (multiply minutes by 60) to yield cubic feet.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-13/92-time-of-concentration/">
+                &#8592;
+                Previous:
+                Time of Concentration ($t_c$)
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-13/94-storm-sewer-hydraulics/">
+                Next:
+                Storm Sewer Hydraulics
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

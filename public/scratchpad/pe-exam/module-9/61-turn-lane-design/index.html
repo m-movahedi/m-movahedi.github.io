@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Turn Lane Design</title>
+    <meta name="description" content="Turn Lane Design Auxiliary turn lanes (left-turn and right-turn lanes) are added to intersections to remove decelerating or stopped turning vehicles from the …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-9/61-turn-lane-design/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Turn Lane Design">
+    <meta property="og:description" content="Turn Lane Design Auxiliary turn lanes (left-turn and right-turn lanes) are added to intersections to remove decelerating or stopped turning vehicles from the …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Turn Lane Design">
+    <meta name="twitter:description" content="Turn Lane Design Auxiliary turn lanes (left-turn and right-turn lanes) are added to intersections to remove decelerating or stopped turning vehicles from the …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-9/61-turn-lane-design/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-9/61-turn-lane-design/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-9/61-turn-lane-design/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Turn Lane Design</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="turn-lane-design">Turn Lane Design</h1>
+<p>Auxiliary turn lanes (left-turn and right-turn lanes) are added to intersections to remove decelerating or stopped turning vehicles from the through-traffic stream. This increases the capacity of the intersection, reduces delays, and lowers the potential for rear-end collisions.</p>
+<hr>
+<h2 id="components-of-an-auxiliary-turn-lane">Components of an Auxiliary Turn Lane</h2>
+<p>An auxiliary lane consists of three distinct horizontal segments:</p>
+<ol>
+<li><strong>Entering Taper ($L_{\text{taper}}$):</strong> The transition zone where vehicles lateral into the auxiliary lane. It can be a straight-line taper or a curved transition.</li>
+<li><strong>Deceleration Length ($L_{\text{decel}}$):</strong> The distance required for a vehicle to decelerate from the through-lane design speed to a stop (or to the speed of the turning maneuver) before reaching the queue of stored vehicles.</li>
+<li><strong>Storage Length ($L_{\text{storage}}$):</strong> The length reserved for vehicles waiting to complete the turn.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">viewBox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0 0 700 200&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;700&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">xmlns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">defs</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">marker</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;arrow-start&#34;</span> <span style="color:#a6e22e">markerWidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">markerHeight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">refX</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">refY</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4&#34;</span> <span style="color:#a6e22e">orient</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auto-start-reverse&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">path</span> <span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;M0,4 L8,8 L8,0 z&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">marker</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">marker</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;arrow-end&#34;</span> <span style="color:#a6e22e">markerWidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">markerHeight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">refX</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">refY</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4&#34;</span> <span style="color:#a6e22e">orient</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auto&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">path</span> <span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;M0,0 L0,8 L8,4 z&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">marker</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">defs</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Main Road Surface --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">rect</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;20&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;660&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;60&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#f1f5f9&#34;</span> /&gt;    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Turn Lane Surface --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">path</span> <span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;M 120,100 L 220,140 L 680,140 L 680,100 Z&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#e2e8f0&#34;</span> /&gt;    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Lines --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;20&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;680&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#94a3b8&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;20&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#94a3b8&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span> /&gt;    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Taper Line --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;220&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;140&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#94a3b8&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;220&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;140&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;680&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;140&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#94a3b8&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3&#34;</span> /&gt;    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Center skip line between through and turn lane --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;680&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#cbd5e1&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> <span style="color:#a6e22e">stroke-dasharray</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10,10&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;20&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;70&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;680&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;70&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#cbd5e1&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> <span style="color:#a6e22e">stroke-dasharray</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10,10&#34;</span> /&gt;    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Stop Line --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;660&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;660&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;140&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;660&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;155&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;11&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Stop Line&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Labels --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;350&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;25&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;14&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0f172a&#34;</span> <span style="color:#a6e22e">font-weight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bold&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Through Lanes&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;450&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;125&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;12&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0f172a&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Auxiliary Turn Lane&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Dimension Lines --&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Taper (Lt) --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;170&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;220&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;170&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.5&#34;</span> <span style="color:#a6e22e">marker-start</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url(#arrow-start)&#34;</span> <span style="color:#a6e22e">marker-end</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url(#arrow-end)&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;170&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;160&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;12&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#1e293b&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Taper (L_t)&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;105&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;175&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#cbd5e1&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;220&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;145&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;220&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;175&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#cbd5e1&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> /&gt;    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Deceleration (Ld) --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;220&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;170&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;440&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;170&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.5&#34;</span> <span style="color:#a6e22e">marker-start</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url(#arrow-start)&#34;</span> <span style="color:#a6e22e">marker-end</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url(#arrow-end)&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;330&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;160&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;12&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#1e293b&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Deceleration (L_d)&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;440&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;105&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;440&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;175&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#cbd5e1&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> /&gt;    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Storage (Ls) --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;440&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;170&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;660&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;170&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1.5&#34;</span> <span style="color:#a6e22e">marker-start</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url(#arrow-start)&#34;</span> <span style="color:#a6e22e">marker-end</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url(#arrow-end)&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;550&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;160&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;12&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#1e293b&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Storage (L_s)&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;660&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;145&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;660&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;175&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#cbd5e1&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">svg</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><hr>
+<h2 id="design-and-calculations">Design and Calculations</h2>
+<h3 id="1-entering-taper-length-l_texttaper">1. Entering Taper Length ($L_{\text{taper}}$)</h3>
+<p>For a straight-line transition, the taper length is:</p>
+<p>$$L_{\text{taper}} = W \times R$$</p>
+<p>Where:</p>
+<ul>
+<li>$W$ = width of the turn lane (typically $12\text{ ft}$)</li>
+<li>$R$ = taper ratio (standard ratios range from 8:1 to 15:1; e.g., $10$ indicates $10\text{ ft}$ of longitudinal length per $1\text{ ft}$ of lateral shift). A common urban standard is a $100\text{ ft}$ taper.</li>
+</ul>
+<h3 id="2-deceleration-length-l_textdecel">2. Deceleration Length ($L_{\text{decel}}$)</h3>
+<p>The deceleration length is based on vehicle braking capabilities. AASHTO Green Book Table 9-22 provides standard deceleration lengths to come to a full stop from the design speed:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Design Speed (mph)</th>
+          <th style="text-align: center">Deceleration Length to Stop (ft)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><strong>30</strong></td>
+          <td style="text-align: center">160</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>35</strong></td>
+          <td style="text-align: center">215</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>40</strong></td>
+          <td style="text-align: center">275</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>45</strong></td>
+          <td style="text-align: center">345</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>50</strong></td>
+          <td style="text-align: center">425</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>55</strong></td>
+          <td style="text-align: center">510</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>60</strong></td>
+          <td style="text-align: center">605</td>
+      </tr>
+  </tbody>
+</table>
+<p><em>Note: In constrained urban settings, part of the deceleration is assumed to occur in the through lane before entering the taper, reducing the required $L_{\text{decel}}$ on the turn lane.</em></p>
+<h3 id="3-storage-length-l_textstorage">3. Storage Length ($L_{\text{storage}}$)</h3>
+<p>The storage length must be sufficient to store the maximum queue of turning vehicles expected during a typical cycle.</p>
+<h4 id="signalized-intersections">Signalized Intersections</h4>
+<p>For signalized intersections, storage length is designed to accommodate the 95th percentile queue length to prevent lane overflow (spillback). A standard PE exam formula is:</p>
+<p>$$L_{\text{storage}} = \left( \frac{V}{N_{\text{cycles}}} \right) \times F \times L_{\text{veh}}$$</p>
+<p>Where:</p>
+<ul>
+<li>$V$ = peak hour volume of turning vehicles (veh/h)</li>
+<li>$N_{\text{cycles}}$ = number of signal cycles per hour = $\frac{3600}{C}$ (where $C$ is the cycle length in seconds)</li>
+<li>$F$ = queue accumulation factor to account for random arrivals (typically $1.5$ to $2.0$ for $95%$ overflow prevention; use $2.0$ if no factor is specified)</li>
+<li>$L_{\text{veh}}$ = design length of a single vehicle (standard passenger car value is <strong>$25\text{ ft}$</strong>; for trucks, use <strong>$40-75\text{ ft}$</strong> depending on the truck type)</li>
+</ul>
+<h4 id="unsignalized-intersections">Unsignalized Intersections</h4>
+<p>At stop- or yield-controlled intersections, the storage length is based on the probability of arrivals during the peak hour, often estimated as 1.5 to 2.0 times the average number of arrivals during a 2-minute interval:</p>
+<p>$$L_{\text{storage}} = 2.0 \times \left( \frac{V}{30} \right) \times 25\text{ ft}$$</p>
+<hr>
+<h2 id="worked-example">Worked Example</h2>
+<p>Design a left-turn lane for a signalized intersection approach under the following design conditions:</p>
+<ul>
+<li>Roadway design speed = $45\text{ mph}$</li>
+<li>Left-turn design volume ($V$) = $270\text{ veh/h}$</li>
+<li>Signal cycle length ($C$) = $120\text{ seconds}$</li>
+<li>Lane width ($W$) = $12\text{ ft}$</li>
+<li>Taper ratio ($R$) = 10:1</li>
+<li>Use a random arrival factor $F = 1.8$ and a vehicle design length $L_{\text{veh}} = 25\text{ ft}$.</li>
+</ul>
+<p>Calculate:</p>
+<ol>
+<li>The entering taper length ($L_{\text{taper}}$).</li>
+<li>The required storage length ($L_{\text{storage}}$).</li>
+<li>The required deceleration length ($L_{\text{decel}}$).</li>
+<li>The total length of the left-turn lane.</li>
+</ol>
+<h3 id="solution">Solution</h3>
+<p><strong>1. Calculate Entering Taper Length ($L_{\text{taper}}$):</strong>
+$$L_{\text{taper}} = W \times R = 12\text{ ft} \times 10 = 120\text{ ft}$$</p>
+<p><strong>2. Calculate Storage Length ($L_{\text{storage}}$):</strong></p>
+<ul>
+<li>First, find the number of cycles per hour ($N_{\text{cycles}}$):
+$$N_{\text{cycles}} = \frac{3600\text{ s/h}}{120\text{ s/cycle}} = 30\text{ cycles/h}$$</li>
+<li>Find the average number of left-turning vehicles arriving per cycle:
+$$\text{Average arrivals} = \frac{V}{N_{\text{cycles}}} = \frac{270\text{ veh/h}}{30\text{ cycles/h}} = 9\text{ vehicles/cycle}$$</li>
+<li>Calculate storage length:
+$$L_{\text{storage}} = 9\text{ vehicles} \times 1.8 \times 25\text{ ft/vehicle} = 405\text{ ft}$$</li>
+</ul>
+<p><strong>3. Calculate Deceleration Length ($L_{\text{decel}}$):</strong></p>
+<ul>
+<li>From the AASHTO table for a design speed of $45\text{ mph}$:
+$$L_{\text{decel}} = 345\text{ ft}$$</li>
+</ul>
+<p><strong>4. Calculate Total Turn Lane Length ($L_{\text{total}}$):</strong>
+$$L_{\text{total}} = L_{\text{taper}} + L_{\text{decel}} + L_{\text{storage}}$$
+$$L_{\text{total}} = 120\text{ ft} + 345\text{ ft} + 405\text{ ft} = 870\text{ ft}$$</p>
+<p>The designer must specify a left-turn lane with a $120\text{ ft}$ taper and a $750\text{ ft}$ full-width lane ($345\text{ ft}$ for deceleration plus $405\text{ ft}$ for storage).</p>
+<h2 id="references">References</h2>
+<ul>
+<li><em>A Policy on Geometric Design of Highways and Streets</em> (AASHTO Green Book), 7th Edition, 2018, Section 9.7.2.</li>
+<li><em>NCEES PE Civil Reference Handbook</em>, Section 4.3.2.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-9/60-at-grade-intersection-layout/">
+                &#8592;
+                Previous:
+                At-Grade Intersection Layout
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-9/62-driveway-and-access-management/">
+                Next:
+                Driveway and Access Management
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

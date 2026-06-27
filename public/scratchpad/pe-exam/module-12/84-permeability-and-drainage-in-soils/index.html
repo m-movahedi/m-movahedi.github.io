@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Permeability and Drainage in Soils</title>
+    <meta name="description" content="Permeability and Drainage in Soils Water flow through soil is a key parameter in civil engineering design. It affects seepage under dams, stability of slopes, …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Permeability and Drainage in Soils">
+    <meta property="og:description" content="Permeability and Drainage in Soils Water flow through soil is a key parameter in civil engineering design. It affects seepage under dams, stability of slopes, …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Permeability and Drainage in Soils">
+    <meta name="twitter:description" content="Permeability and Drainage in Soils Water flow through soil is a key parameter in civil engineering design. It affects seepage under dams, stability of slopes, …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Permeability and Drainage in Soils</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="permeability-and-drainage-in-soils">Permeability and Drainage in Soils</h1>
+<p>Water flow through soil is a key parameter in civil engineering design. It affects seepage under dams, stability of slopes, settlement of clay layers, and the structural integrity of pavements. Water trapped in pavement layers can lead to base softening, pumping of fines, and premature cracking. On the PE Civil Transportation exam, understanding permeability (hydraulic conductivity) and drainage design is essential.</p>
+<hr>
+<h2 id="1-darcys-law">1. Darcy&rsquo;s Law</h2>
+<p>Water flows through soil pores due to differences in total energy (hydraulic head). The rate of water flow is governed by Darcy&rsquo;s Law, which states that flow velocity is directly proportional to the hydraulic gradient.</p>
+<p>$$q = k \cdot i \cdot A$$</p>
+<p>Where:</p>
+<ul>
+<li>$q = \text{flow rate (discharge volume per unit time, e.g., ft}^3/\text{sec or m}^3/\text{sec)}$</li>
+<li>$k = \text{hydraulic conductivity (permeability, e.g., ft/day, cm/sec, m/s)}$</li>
+<li>$i = \text{hydraulic gradient}$ (dimensionless head loss per unit distance of flow path):
+$$i = \frac{\Delta h}{L}$$
+<em>(where $\Delta h$ is the total head loss across the soil length $L$)</em></li>
+<li>$A = \text{cross-sectional area of soil perpendicular to the direction of flow}$</li>
+</ul>
+<h3 id="discharge-velocity-vs-seepage-velocity">Discharge Velocity vs. Seepage Velocity</h3>
+<ul>
+<li><strong>Discharge Velocity ($v$):</strong> The apparent velocity of flow calculated over the gross cross-sectional area of the soil:
+$$v = \frac{q}{A} = k \cdot i$$</li>
+<li><strong>Seepage Velocity ($v_s$):</strong> The actual velocity of water as it flows through the pore channels. Since water can only flow through the void spaces, the seepage velocity is always greater than the discharge velocity:
+$$v_s = \frac{v}{n} = v \cdot \left(\frac{1+e}{e}\right)$$
+Where:
+<ul>
+<li>$n = \text{porosity of the soil (expressed as a decimal)}$</li>
+<li>$e = \text{void ratio of the soil}$</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2-equivalent-permeability-in-layered-soils">2. Equivalent Permeability in Layered Soils</h2>
+<p>In nature and engineered subgrades, soils are often stratified. To calculate the overall seepage through layered profiles, we determine the equivalent hydraulic conductivity.</p>
+<pre tabindex="0"><code>       FLOW PARALLEL (Horizontal)                 FLOW PERPENDICULAR (Vertical)
+      ============================                 ============================
+      | Layer 1: H1, k1   -----&gt; |                 | Layer 1: H1, k1   |
+      ----------------------------                 --------------------|  | Flow
+      | Layer 2: H2, k2   -----&gt; |                 | Layer 2: H2, k2   |  v Direction
+      ----------------------------                 --------------------|
+      | Layer 3: H3, k3   -----&gt; |                 | Layer 3: H3, k3   |
+      ============================                 ============================
+</code></pre><h3 id="flow-parallel-to-soil-layers-eg-horizontal-seepage">Flow Parallel to Soil Layers (e.g., Horizontal Seepage)</h3>
+<p>When flow is parallel to the stratification, the hydraulic gradient is the same in all layers. The equivalent permeability is a weighted average based on layer thicknesses:
+$$k_{eq,p} = \frac{k_1 H_1 + k_2 H_2 + \dots + k_n H_n}{\sum H_i}$$</p>
+<h3 id="flow-perpendicular-to-soil-layers-eg-vertical-seepage">Flow Perpendicular to Soil Layers (e.g., Vertical Seepage)</h3>
+<p>When flow is perpendicular to the stratification, the flow rate per unit area ($v$) is the same through all layers, but the hydraulic gradient varies. The equivalent permeability is a harmonic weighted average:
+$$k_{eq,v} = \frac{\sum H_i}{\frac{H_1}{k_1} + \frac{H_2}{k_2} + \dots + \frac{H_n}{k_n}}$$</p>
+<p><em>Key Note:</em> The equivalent permeability parallel to layering ($k_{eq,p}$) is always greater than the equivalent permeability perpendicular to layering ($k_{eq,v}$).</p>
+<hr>
+<h2 id="3-seepage-and-flow-nets">3. Seepage and Flow Nets</h2>
+<p>A <strong>flow net</strong> is a graphical representation of the Laplace equation for two-dimensional flow through an isotropic medium. It consists of:</p>
+<ol>
+<li><strong>Flow Lines:</strong> The pathways that water particles follow from upstream to downstream.</li>
+<li><strong>Equipotential Lines:</strong> Lines connecting points of equal total head.
+<em>Flow lines and equipotential lines must intersect at right angles ($90^\circ$) to form curvilinear squares.</em></li>
+</ol>
+<h3 id="seepage-discharge-from-a-flow-net">Seepage Discharge from a Flow Net</h3>
+<p>For an isotropic soil, the total seepage flow rate per unit width of the structure is calculated as:
+$$q = k \cdot H \cdot \frac{N_f}{N_d}$$</p>
+<p>Where:</p>
+<ul>
+<li>$k = \text{hydraulic conductivity}$</li>
+<li>$H = \text{total head loss between upstream and downstream water levels}$</li>
+<li>$N_f = \text{number of flow channels}$ (spaces between adjacent flow lines)</li>
+<li>$N_d = \text{number of equipotential drops}$ (number of increments between equipotential lines)</li>
+</ul>
+<hr>
+<h2 id="4-pavement-drainage-and-subdrains">4. Pavement Drainage and Subdrains</h2>
+<p>Good drainage is essential for extending pavement service life. Water entering the pavement structure from surface cracks or groundwater must be drained away quickly.</p>
+<h3 id="pavement-drainage-components">Pavement Drainage Components</h3>
+<ul>
+<li><strong>Permeable Base Course:</strong> A layer of open-graded aggregate with high permeability ($k \approx 1,000$ to $3,000\text{ ft/day}$) located directly beneath the pavement slab to collect water.</li>
+<li><strong>Longitudinal Edge Drains:</strong> Perforated collector pipes placed in trenches along the edge of the pavement to intercept water flowing horizontally out of the base course.</li>
+<li><strong>Filter Fabric (Geotextile):</strong> Placed around the drain trench to prevent fine soil particles from clogging the drainage aggregate while allowing water to pass.</li>
+</ul>
+<h3 id="hydraulic-transmissivity-t">Hydraulic Transmissivity ($T$)</h3>
+<p>The capacity of a drainage layer to transmit water per unit width is defined as transmissivity:
+$$T = k \cdot H_{\text{drain}}$$
+Where $H_{\text{drain}}$ is the thickness of the permeable drainage layer.</p>
+<hr>
+<h2 id="5-worked-examples">5. Worked Examples</h2>
+<h3 id="worked-example-1-darcys-law-and-seepage-velocity">Worked Example 1: Darcy&rsquo;s Law and Seepage Velocity</h3>
+<p>A constant-head permeability test is performed on a cylindrical sand specimen with a diameter of $4.0\text{ inches}$ and a length of $6.0\text{ inches}$. The head difference between the top and bottom of the specimen is maintained at $12.0\text{ inches}$. During a $5\text{-minute}$ test period, a total of $0.082\text{ ft}^3$ of water is collected. The dry weight of the sand is $5.20\text{ lb}$, and the specific gravity of solids is $2.65$.</p>
+<p><strong>Goal:</strong> Calculate the hydraulic conductivity ($k$) in $\text{ft/day}$ and the seepage velocity ($v_s$) in $\text{ft/day}$.</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li><strong>Calculate Flow Rate ($q$):</strong>
+$$q = \frac{\text{Volume}}{\text{Time}} = \frac{0.082\text{ ft}^3}{5\text{ min}} = 0.0164\text{ ft}^3/\text{min}$$
+Convert to $\text{ft}^3/\text{day}$:
+$$q = 0.0164\text{ ft}^3/\text{min} \cdot 1440\text{ min/day} = 23.616\text{ ft}^3/\text{day}$$</li>
+<li><strong>Calculate Cross-Sectional Area ($A$):</strong>
+Diameter $D = 4\text{ inches} = 0.333\text{ ft}$.
+$$A = \frac{\pi D^2}{4} = \frac{\pi (0.333)^2}{4} = 0.0873\text{ ft}^2$$</li>
+<li><strong>Calculate Hydraulic Gradient ($i$):</strong>
+Head loss $\Delta h = 12\text{ inches}$, Length $L = 6\text{ inches}$.
+$$i = \frac{\Delta h}{L} = \frac{12.0}{6.0} = 2.0$$</li>
+<li><strong>Calculate Hydraulic Conductivity ($k$):</strong>
+From Darcy&rsquo;s Law: $q = k \cdot i \cdot A \implies k = \frac{q}{i \cdot A}$
+$$k = \frac{23.616\text{ ft}^3/\text{day}}{2.0 \cdot 0.0873\text{ ft}^2} = 135.26\text{ ft/day}$$</li>
+<li><strong>Calculate Porosity ($n$) to find Seepage Velocity:</strong>
+<ul>
+<li>Volume of solid particles ($V_s$):
+$$V_s = \frac{W_s}{G_s \cdot \gamma_w} = \frac{5.20\text{ lb}}{2.65 \cdot 62.4\text{ lb/ft}^3} = 0.0314\text{ ft}^3$$</li>
+<li>Total volume of sample ($V = A \cdot L$):
+$$L = 6\text{ inches} = 0.50\text{ ft}$$
+$$V = 0.0873\text{ ft}^2 \cdot 0.50\text{ ft} = 0.0437\text{ ft}^3$$</li>
+<li>Porosity ($n$):
+$$n = \frac{V_v}{V} = \frac{V - V_s}{V} = \frac{0.0437 - 0.0314}{0.0437} = \frac{0.0123}{0.0437} = 0.281$$</li>
+</ul>
+</li>
+<li><strong>Calculate Seepage Velocity ($v_s$):</strong>
+<ul>
+<li>Discharge velocity ($v = k \cdot i$):
+$$v = 135.26\text{ ft/day} \cdot 2.0 = 270.52\text{ ft/day}$$</li>
+<li>Seepage velocity ($v_s$):
+$$v_s = \frac{v}{n} = \frac{270.52\text{ ft/day}}{0.281} = 962.7\text{ ft/day}$$</li>
+</ul>
+</li>
+</ol>
+<p><em>Result:</em> Hydraulic conductivity is <strong>$135.3\text{ ft/day}$</strong> and seepage velocity is <strong>$962.7\text{ ft/day}$</strong>.</p>
+<hr>
+<h3 id="worked-example-2-equivalent-permeability-in-layered-soils">Worked Example 2: Equivalent Permeability in Layered Soils</h3>
+<p>A highway embankment foundation consists of two soil layers over an impermeable bedrock.</p>
+<ul>
+<li><strong>Layer 1 (Top):</strong> Silt, thickness $H_1 = 6\text{ ft}$, permeability $k_1 = 0.25\text{ ft/day}$.</li>
+<li><strong>Layer 2 (Bottom):</strong> Sand, thickness $H_2 = 4\text{ ft}$, permeability $k_2 = 85.0\text{ ft/day}$.</li>
+</ul>
+<p><strong>Goal:</strong> Determine the equivalent horizontal permeability ($k_{eq,h}$) and vertical permeability ($k_{eq,v}$) of the system.</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li><strong>Equivalent Horizontal Permeability ($k_{eq,h}$):</strong>
+$$k_{eq,h} = \frac{k_1 H_1 + k_2 H_2}{H_1 + H_2}$$
+$$k_{eq,h} = \frac{(0.25 \cdot 6) + (85.0 \cdot 4)}{6 + 4} = \frac{1.5 + 340.0}{10} = \frac{341.5}{10} = 34.15\text{ ft/day}$$</li>
+<li><strong>Equivalent Vertical Permeability ($k_{eq,v}$):</strong>
+$$k_{eq,v} = \frac{H_1 + H_2}{\frac{H_1}{k_1} + \frac{H_2}{k_2}}$$
+$$\frac{H_1}{k_1} = \frac{6}{0.25} = 24.0\text{ days}$$
+$$\frac{H_2}{k_2} = \frac{4}{85.0} = 0.047\text{ days}$$
+$$k_{eq,v} = \frac{10}{24.0 + 0.047} = \frac{10}{24.047} = 0.416\text{ ft/day}$$</li>
+</ol>
+<p><em>Result:</em> Equivalent horizontal permeability is <strong>$34.15\text{ ft/day}$</strong> (dominated by the sand layer) and vertical permeability is <strong>$0.416\text{ ft/day}$</strong> (restricted by the silt layer).</p>
+<hr>
+<h2 id="6-exam-pitfalls-and-tips">6. Exam Pitfalls and Tips</h2>
+<ul>
+<li><strong>Pore Velocity vs. Bulk Velocity:</strong> Make sure to distinguish between $v$ (discharge velocity) and $v_s$ (seepage velocity). PE questions will often ask for the &ldquo;velocity of flow through the voids&rdquo; or &ldquo;water travel time,&rdquo; which requires using $v_s$, not $v$.</li>
+<li><strong>Porosity vs. Void Ratio:</strong> In the seepage velocity equation $v_s = v/n$, remember that $n$ is porosity. If the problem gives you void ratio ($e$), you must convert it to porosity first using $n = e / (1+e)$.</li>
+<li><strong>Unit Conversions:</strong> Permeability is often given in laboratory units like $\text{cm/s}$, while the dimensions of the structure are in feet or meters. A standard conversion to memorize is:
+$$1.0\text{ cm/sec} \approx 2835\text{ ft/day}$$</li>
+<li><strong>Flow Net Counting:</strong> When counting flow channels ($N_f$) and equipotential drops ($N_d$) in a flow net, remember:
+<ul>
+<li>$N_f$ is the number of channels (lanes of flow), which is usually the number of flow lines minus one.</li>
+<li>$N_d$ is the number of drops (steps in potential), which is the number of equipotential lines minus one (do not count the upstream and downstream boundary contours twice).</li>
+</ul>
+</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/">
+                &#8592;
+                Previous:
+                Shear Strength and Lateral Earth Pressures
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-12/85-earthwork-and-mass-balance/">
+                Next:
+                Earthwork and Mass Balance
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

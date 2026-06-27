@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Circular Curve Fundamentals</title>
+    <meta name="description" content="Circular Curve Fundamentals Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Circular Curve Fundamentals">
+    <meta property="og:description" content="Circular Curve Fundamentals Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Circular Curve Fundamentals">
+    <meta name="twitter:description" content="Circular Curve Fundamentals Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Circular Curve Fundamentals</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="circular-curve-fundamentals">Circular Curve Fundamentals</h1>
+<p>Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of constant radius connecting two tangents. For the PE Civil Transportation exam, horizontal alignment calculations are based on the equations found in the <strong>NCEES PE Civil Reference Handbook</strong> and design criteria in <strong>AASHTO&rsquo;s Green Book (GDHS)</strong>, Chapter 3.</p>
+<hr>
+<h2 id="circular-curve-geometry-and-terms">Circular Curve Geometry and Terms</h2>
+<p>Understanding the spatial layout and definitions of horizontal curve components is critical.</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
+    classDef point fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef line fill:#fff,stroke:#333,stroke-width:1px;
+
+    PI((PI: Point of Intersection)):::point
+    PC((PC: Point of Curvature)):::point
+    PT((PT: Point of Tangency)):::point
+    O((O: Center of Curve)):::point
+
+    PC --&gt;|Tangent Length T| PI
+    PI --&gt;|Tangent Length T| PT
+    PC --&gt;|Radius R| O
+    PT --&gt;|Radius R| O
+    PC -.-&gt;|Long Chord LC| PT
+</code></pre><h3 id="definitions">Definitions:</h3>
+<ul>
+<li><strong>PI (Point of Intersection):</strong> The point where the back tangent and forward tangent intersect.</li>
+<li><strong>PC (Point of Curvature):</strong> The point where the alignment changes from a tangent to the circular curve (beginning of the curve).</li>
+<li><strong>PT (Point of Tangency):</strong> The point where the alignment changes from the circular curve to a tangent (end of the curve).</li>
+<li><strong>$\Delta$ or $I$ (Deflection Angle / Central Angle):</strong> The angle of intersection between the back and forward tangents, which is equal to the central angle subtended by the circular arc.</li>
+<li><strong>$R$ (Radius):</strong> The radius of the circular arc.</li>
+<li><strong>$T$ (Tangent Length):</strong> The distance from PC to PI, or from PI to PT.</li>
+<li><strong>$L$ (Length of Curve):</strong> The length of the circular arc from PC to PT.</li>
+<li><strong>$LC$ (Long Chord):</strong> The straight-line distance from PC to PT.</li>
+<li><strong>$E$ (External Distance):</strong> The distance from the PI to the midpoint of the curve along the radial line connecting the PI to the curve center.</li>
+<li><strong>$M$ (Middle Ordinate):</strong> The distance from the midpoint of the curve to the midpoint of the long chord.</li>
+</ul>
+<hr>
+<h2 id="degree-of-curve-d">Degree of Curve ($D$)</h2>
+<p>Degree of curve is a measure of the sharpness of a curve. There are two standard definitions:</p>
+<h3 id="1-arc-definition-d_a">1. Arc Definition ($D_a$)</h3>
+<p>The degree of curve is the central angle subtended by a circular arc of exactly <strong>$100\text{ ft}$</strong>. This definition is used exclusively in highway engineering.
+$$D_a = \frac{360^\circ \times 100\text{ ft}}{2 \pi R} \approx \frac{5729.58}{R}$$</p>
+<h3 id="2-chord-definition-d_c">2. Chord Definition ($D_c$)</h3>
+<p>The degree of curve is the central angle subtended by a straight chord of exactly <strong>$100\text{ ft}$</strong>. This definition is used in railway engineering.
+$$R = \frac{50}{\sin\left(\frac{D_c}{2}\right)}$$</p>
+<hr>
+<h2 id="fundamental-circular-curve-formulas">Fundamental Circular Curve Formulas</h2>
+<p>The following geometric relationships are used to calculate the properties of a simple circular curve. Ensure your calculator is set to <strong>Degree Mode</strong> for all trigonometric functions.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Parameter</th>
+          <th style="text-align: left">Formula</th>
+          <th style="text-align: left">Alternative Form</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Radius ($R$)</strong></td>
+          <td style="text-align: left">$$R = \frac{5729.58}{D_a}$$ <em>(Arc)</em></td>
+          <td style="text-align: left">$$R = \frac{50}{\sin(D_c/2)}$$ <em>(Chord)</em></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Tangent ($T$)</strong></td>
+          <td style="text-align: left">$$T = R \tan\left(\frac{\Delta}{2}\right)$$</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Curve Length ($L$)</strong></td>
+          <td style="text-align: left">$$L = R \Delta \left(\frac{\pi}{180}\right)$$</td>
+          <td style="text-align: left">$$L = \frac{100 \Delta}{D_a}$$</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Long Chord ($LC$)</strong></td>
+          <td style="text-align: left">$$LC = 2 R \sin\left(\frac{\Delta}{2}\right)$$</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>External Distance ($E$)</strong></td>
+          <td style="text-align: left">$$E = R \left( \sec\left(\frac{\Delta}{2}\right) - 1 \right)$$</td>
+          <td style="text-align: left">$$E = R \left( \frac{1}{\cos(\Delta/2)} - 1 \right)$$</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Middle Ordinate ($M$)</strong></td>
+          <td style="text-align: left">$$M = R \left( 1 - \cos\left(\frac{\Delta}{2}\right) \right)$$</td>
+          <td style="text-align: left">$$M = E \cos\left(\frac{\Delta}{2}\right)$$</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="worked-example-full-curve-parameter-calculation">Worked Example: Full Curve Parameter Calculation</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>A simple horizontal circular curve is designed to connect two highway tangents. The deflection angle ($\Delta$) at the Point of Intersection (PI) is $42^\circ 30&rsquo;$. The degree of curve ($D_a$, arc definition) is specified as $4.5^\circ$.</p>
+<ol>
+<li>Calculate the radius ($R$) of the curve.</li>
+<li>Find the tangent length ($T$).</li>
+<li>Calculate the length of the curve ($L$).</li>
+<li>Find the long chord length ($LC$).</li>
+<li>Determine the external distance ($E$) and middle ordinate ($M$).</li>
+</ol>
+<h3 id="solution">Solution</h3>
+<ol>
+<li>
+<p><strong>Calculate the Radius ($R$):</strong>
+Using the arc definition:
+$$R = \frac{5729.58}{D_a} = \frac{5729.58}{4.5} = 1273.24\text{ ft}$$</p>
+</li>
+<li>
+<p><strong>Calculate the Tangent Length ($T$):</strong>
+Convert $\Delta$ to decimal degrees: $\Delta = 42^\circ + \frac{30&rsquo;}{60} = 42.5^\circ$.
+$$T = R \tan\left(\frac{\Delta}{2}\right) = 1273.24 \tan\left(\frac{42.5^\circ}{2}\right)$$
+$$T = 1273.24 \tan(21.25^\circ) = 1273.24 \times 0.38888 = 495.14\text{ ft}$$</p>
+</li>
+<li>
+<p><strong>Calculate the Curve Length ($L$):</strong>
+Using the degree of curve formula:
+$$L = \frac{100 \Delta}{D_a} = \frac{100 \times 42.5}{4.5} = 944.44\text{ ft}$$
+<em>Double-check with arc length formula:</em>
+$$L = R \Delta \left(\frac{\pi}{180}\right) = 1273.24 \times 42.5 \times 0.0174533 = 944.44\text{ ft}$$ (Matches!)</p>
+</li>
+<li>
+<p><strong>Calculate the Long Chord ($LC$):</strong>
+$$LC = 2 R \sin\left(\frac{\Delta}{2}\right) = 2 \times 1273.24 \sin(21.25^\circ)$$
+$$LC = 2546.48 \times 0.36244 = 922.94\text{ ft}$$</p>
+</li>
+<li>
+<p><strong>Calculate the External Distance ($E$) and Middle Ordinate ($M$):</strong></p>
+<ul>
+<li><strong>External Distance ($E$):</strong>
+$$E = R \left( \frac{1}{\cos(\Delta/2)} - 1 \right) = 1273.24 \left( \frac{1}{\cos(21.25^\circ)} - 1 \right)$$
+$$E = 1273.24 \left( \frac{1}{0.93201} - 1 \right) = 1273.24 \times (1.07295 - 1) = 1273.24 \times 0.07295 = 92.88\text{ ft}$$</li>
+<li><strong>Middle Ordinate ($M$):</strong>
+$$M = R \left( 1 - \cos\left(\frac{\Delta}{2}\right) \right) = 1273.24 (1 - \cos(21.25^\circ))$$
+$$M = 1273.24 (1 - 0.93201) = 1273.24 \times 0.06799 = 86.57\text{ ft}$$
+<em>Check relation:</em> $M = E \cos(\Delta/2) = 92.88 \times \cos(21.25^\circ) = 92.88 \times 0.93201 = 86.56\text{ ft}$ (Rounding agreement).</li>
+</ul>
+</li>
+</ol>
+<h3 id="answer">Answer</h3>
+<ul>
+<li>Radius ($R$): <strong>1,273.24 ft</strong></li>
+<li>Tangent ($T$): <strong>495.14 ft</strong></li>
+<li>Length of curve ($L$): <strong>944.44 ft</strong></li>
+<li>Long Chord ($LC$): <strong>922.94 ft</strong></li>
+<li>External Distance ($E$): <strong>92.88 ft</strong></li>
+<li>Middle Ordinate ($M$): <strong>86.57 ft</strong></li>
+</ul>
+<hr>
+<h2 id="crucial-exam-tips">Crucial Exam Tips</h2>
+<ul>
+<li><strong>Calculator Angle Settings:</strong> A common error is evaluating trigonometric functions in radians instead of degrees. Ensure your calculator displays &ldquo;DEG&rdquo;.</li>
+<li><strong>Arc vs. Chord Degree of Curve:</strong> If the problem does not specify, <strong>always</strong> assume highway design (arc definition: $R = 5729.58/D$). Only use chord definition if the problem specifically mentions railroads or track design.</li>
+<li><strong>Subdividing Deflection Angle:</strong> Make sure to divide $\Delta$ by 2 in the functions for $T$, $LC$, $E$, and $M$ ($T = R \tan(\Delta/2)$, etc.). Forgetting to divide $\Delta$ by 2 is a very common distractor choice in multiple-choice questions.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-7/45-curve-stationing/">
+                Next:
+                Curve Stationing
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

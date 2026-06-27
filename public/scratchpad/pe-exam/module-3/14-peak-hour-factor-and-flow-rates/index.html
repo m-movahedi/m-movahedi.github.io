@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Peak Hour Factor and Flow Rates</title>
+    <meta name="description" content="Peak Hour Factor and Flow Rates In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Peak Hour Factor and Flow Rates">
+    <meta property="og:description" content="Peak Hour Factor and Flow Rates In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Peak Hour Factor and Flow Rates">
+    <meta name="twitter:description" content="Peak Hour Factor and Flow Rates In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Peak Hour Factor and Flow Rates</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="peak-hour-factor-and-flow-rates">Peak Hour Factor and Flow Rates</h1>
+<p>In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a brief portion of the hour (e.g., a 15-minute surge) even if the total hourly volume is within the roadway&rsquo;s theoretical capacity. To account for this variation, the Highway Capacity Manual (HCM) uses the <strong>Peak Hour Factor (PHF)</strong> to convert hourly volumes into equivalent peak-period flow rates.</p>
+<hr>
+<h2 id="the-peak-hour-factor-phf">The Peak Hour Factor (PHF)</h2>
+<p>The Peak Hour Factor represents the relationship between the hourly volume and the peak rate of flow within that hour (typically measured in 15-minute intervals).</p>
+<h3 id="formula">Formula:</h3>
+<p>$$PHF = \frac{V}{4 \times V_{15}}$$</p>
+<p>Where:</p>
+<ul>
+<li>$V$ = total hourly volume during the peak hour ($\text{vehicles/hour}$)</li>
+<li>$V_{15}$ = volume during the single busiest 15-minute interval of the peak hour ($\text{vehicles/15-min}$)</li>
+<li>$4$ = multiplier to scale the 15-minute count to an equivalent hourly rate ($4 \text{ quarters/hour}$)</li>
+</ul>
+<h3 id="physical-boundaries-of-phf">Physical Boundaries of PHF:</h3>
+<ul>
+<li><strong>Maximum PHF = 1.00:</strong> Occurs when traffic is distributed perfectly evenly across all four 15-minute intervals ($V_{15} = V/4$).</li>
+<li><strong>Minimum PHF = 0.25:</strong> Occurs when all hourly traffic arrives in a single 15-minute interval (with zero vehicles in the other three intervals).</li>
+<li><strong>Typical Ranges:</strong>
+<ul>
+<li>Urban/congested areas: $0.85$ to $0.98$ (more stable, continuous traffic).</li>
+<li>Rural/low-volume areas: $0.70$ to $0.85$ (more sporadic traffic).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="peak-flow-rate-v">Peak Flow Rate ($v$)</h2>
+<p>To evaluate the operational capacity and level of service (LOS) of a facility, we use the equivalent hourly flow rate ($v$) based on the peak 15-minute interval. This represents the rate of flow if the peak 15-minute surge were to persist for a full hour.</p>
+<p>$$v = \frac{V}{PHF}$$</p>
+<p>Where:</p>
+<ul>
+<li>$v$ = equivalent peak hourly flow rate ($\text{vehicles/hour}$ or $\text{passenger cars/hour}$)</li>
+<li>$V$ = total hourly volume ($\text{vehicles/hour}$)</li>
+<li>$PHF$ = Peak Hour Factor</li>
+</ul>
+<p><strong>Note:</strong> If the problem asks for flow rate in <em>passenger cars per hour per lane</em> ($\text{pc/h/ln}$ or $\text{pcphpl}$), we must also adjust the volume for lane counts, heavy vehicles ($f_{HV}$), and driver population ($f_p$) using the standard HCM capacity adjustment formulas:</p>
+<p>$$v_p = \frac{V}{PHF \times N \times f_{HV} \times f_p}$$</p>
+<hr>
+<h2 id="worked-example-calculating-phf-and-peak-flow-rate-from-15-minute-counts">Worked Example: Calculating PHF and Peak Flow Rate from 15-Minute Counts</h2>
+<p><strong>Problem:</strong><br>
+A direction of a freeway has the following traffic counts recorded during the peak hour:</p>
+<ul>
+<li>5:00 PM to 5:15 PM: $450 \text{ vehicles}$</li>
+<li>5:15 PM to 5:30 PM: $520 \text{ vehicles}$</li>
+<li>5:30 PM to 5:45 PM: $610 \text{ vehicles}$</li>
+<li>5:45 PM to 6:00 PM: $480 \text{ vehicles}$</li>
+</ul>
+<p>Calculate:</p>
+<ol>
+<li>The total hourly volume ($V$).</li>
+<li>The peak 15-minute volume ($V_{15}$).</li>
+<li>The Peak Hour Factor (PHF).</li>
+<li>The equivalent peak hourly flow rate ($v$).</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Calculate Total Hourly Volume ($V$)</strong><br>
+Sum the volumes of the four 15-minute intervals:
+$$V = 450 + 520 + 610 + 480 = 2,060 \text{ vehicles}$$</p>
+<p><strong>Step 2: Identify Peak 15-Minute Volume ($V_{15}$)</strong><br>
+The busiest 15-minute interval is between 5:30 PM and 5:45 PM:
+$$V_{15} = 610 \text{ vehicles}$$</p>
+<p><strong>Step 3: Calculate the Peak Hour Factor (PHF)</strong><br>
+$$PHF = \frac{V}{4 \times V_{15}}$$
+$$PHF = \frac{2,060}{4 \times 610} = \frac{2,060}{2,440} \approx 0.844$$</p>
+<p><strong>Step 4: Calculate the Peak Flow Rate ($v$)</strong><br>
+$$v = \frac{V}{PHF}$$
+$$v = \frac{2,060}{0.844} \approx 2,440 \text{ vehicles/hour}$$</p>
+<p><em>Alternative Check:</em><br>
+The equivalent flow rate is simply the peak 15-minute count scaled up to an hour:
+$$v = V_{15} \times 4 = 610 \times 4 = 2,440 \text{ vehicles/hour}$$
+Both methods yield the same results.</p>
+<hr>
+<h2 id="worked-example-estimating-peak-15-minute-volume">Worked Example: Estimating Peak 15-Minute Volume</h2>
+<p><strong>Problem:</strong><br>
+A highway is carrying an hourly volume of $1,600 \text{ vehicles/hour}$. If the Peak Hour Factor (PHF) is $0.80$, calculate the number of vehicles that pass through the segment during the busiest 15-minute interval.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Rearrange the PHF equation to solve for $V_{15}$</strong>
+$$PHF = \frac{V}{4 \times V_{15}} \implies V_{15} = \frac{V}{4 \times PHF}$$</p>
+<p><strong>Step 2: Substitute values and solve</strong></p>
+<ul>
+<li>$V = 1,600 \text{ vehicles}$</li>
+<li>$PHF = 0.80$
+$$V_{15} = \frac{1,600}{4 \times 0.80} = \frac{1,600}{3.2} = 500 \text{ vehicles}$$</li>
+</ul>
+<p><em>Interpretation:</em> During the peak hour, the busiest 15 minutes will see $500$ vehicles. If this rate persisted for the entire hour, the flow rate would be $500 \times 4 = 2,000 \text{ vehicles/hour}$, which is significantly higher than the actual hourly volume of $1,600$ vehicles.</p>
+<hr>
+<h2 id="crucial-pitfalls-and-exam-traps">Crucial Pitfalls and Exam Traps</h2>
+<ul>
+<li><strong>Mathematical Bounds Check:</strong> The Peak Hour Factor must always be between $0.25$ and $1.00$. If you calculate a PHF outside this range (e.g. $1.15$), you have made an error (often putting the peak 15-minute rate in the numerator).</li>
+<li><strong>Hourly Volume vs. Peak Flow Rate in Capacity Analysis:</strong> When using HCM methods (e.g., finding the level of service of a freeway segment or a signalized intersection), never plug the raw hourly volume ($V$) directly into capacity equations. You must divide it by the PHF to find the peak flow rate ($v$). Using the unadjusted hourly volume will underestimate congestion and overestimate level of service.</li>
+<li><strong>Data Identification:</strong> Ensure that the 15-minute count you use is the <em>maximum</em> value of the four intervals, not the first or the last.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-3/13-traffic-volume-concepts/">
+                &#8592;
+                Previous:
+                Traffic Volume Concepts
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-3/15-speed-studies/">
+                Next:
+                Speed Studies
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

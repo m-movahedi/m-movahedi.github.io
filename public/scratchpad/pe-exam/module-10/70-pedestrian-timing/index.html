@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Pedestrian Signal Timing</title>
+    <meta name="description" content="Pedestrian Signal Timing Pedestrian safety is a key constraint in traffic signal design. When pedestrians are present at an intersection, the signal timing must …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/70-pedestrian-timing/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pedestrian Signal Timing">
+    <meta property="og:description" content="Pedestrian Signal Timing Pedestrian safety is a key constraint in traffic signal design. When pedestrians are present at an intersection, the signal timing must …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pedestrian Signal Timing">
+    <meta name="twitter:description" content="Pedestrian Signal Timing Pedestrian safety is a key constraint in traffic signal design. When pedestrians are present at an intersection, the signal timing must …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-10/70-pedestrian-timing/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/70-pedestrian-timing/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-10/70-pedestrian-timing/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Pedestrian Signal Timing</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="pedestrian-signal-timing">Pedestrian Signal Timing</h1>
+<p>Pedestrian safety is a key constraint in traffic signal design. When pedestrians are present at an intersection, the signal timing must provide sufficient green and clearance time for a pedestrian to react, step off the curb, and completely cross the roadway before conflicting traffic is released.</p>
+<p>On the PE Civil Transportation exam, you will need to calculate minimum green times and pedestrian clearance intervals based on crossing distance, pedestrian walking speed, and vehicle clearance times.</p>
+<hr>
+<h2 id="pedestrian-timing-intervals">Pedestrian Timing Intervals</h2>
+<p>A pedestrian phase consists of three main intervals:</p>
+<ol>
+<li><strong>Walk Interval ($Walk$ or $W$):</strong> The time during which the walking person symbol is displayed. This allows pedestrians to react to the signal and begin crossing. The MUTCD specifies a standard minimum Walk interval of <strong>$7.0\text{ seconds}$</strong>, which can be reduced to <strong>$4.0\text{ seconds}$</strong> under specific conditions (e.g., high pedestrian volume or short cycle lengths with pedestrian actuation).</li>
+<li><strong>Pedestrian Clearance Time ($t_{pc}$):</strong> The time required for a pedestrian to safely walk from the curb to the opposite side of the roadway or to a pedestrian refuge median.</li>
+<li><strong>Pedestrian Change Interval / Flashing Don&rsquo;t Walk ($FDW$):</strong> The interval during which the flashing orange upraised hand is displayed. Pedestrians should not start crossing during this interval, but those already in the crosswalk can safely finish crossing.</li>
+</ol>
+<hr>
+<h2 id="pedestrian-walking-speed">Pedestrian Walking Speed</h2>
+<p>The pedestrian walking speed ($S_p$) determines the rate of travel across the crosswalk:</p>
+<ul>
+<li><strong>MUTCD Standard Speed:</strong> <strong>$3.5\text{ ft/s}$</strong> is the standard design speed used for calculating pedestrian clearance times.</li>
+<li><strong>Reduced Speed:</strong> <strong>$3.0\text{ ft/s}$</strong> is used if there is a high volume of older pedestrians, school children, or individuals with mobility impairments.</li>
+<li><strong>Older Standard:</strong> Older literature and some legacy exam questions may reference <strong>$4.0\text{ ft/s}$</strong>.</li>
+</ul>
+<p><em>Exam Tip: On the PE exam, always check the problem statement for a specified walking speed. If no speed is given, use the standard $3.5\text{ ft/s}$ in accordance with the current MUTCD.</em></p>
+<hr>
+<h2 id="calculations-and-formulas">Calculations and Formulas</h2>
+<p>The NCEES PE Civil Reference Handbook provides the formula for the minimum green time ($G_{min}$) required for a vehicle phase that runs concurrently with a pedestrian phase.</p>
+<h3 id="1-pedestrian-clearance-time-t_pc">1. Pedestrian Clearance Time ($t_{pc}$)</h3>
+<p>The time required to walk the crossing distance ($D$) is:
+$$t_{pc} = \frac{D}{S_p}$$</p>
+<p>Where:</p>
+<ul>
+<li>$t_{pc}$ = Pedestrian clearance time (seconds)</li>
+<li>$D$ = Crossing distance (feet), measured from the near curb to the far edge of the travel lane (or to a median refuge)</li>
+<li>$S_p$ = Pedestrian walking speed (feet per second, e.g., $3.5\text{ ft/s}$)</li>
+</ul>
+<h3 id="2-minimum-vehicle-green-time-g_min">2. Minimum Vehicle Green Time ($G_{min}$)</h3>
+<p>The total time needed for a pedestrian to cross ($Walk + t_{pc}$) can overlap with the vehicle&rsquo;s yellow change ($Y$) and all-red clearance ($R_c$) intervals. Therefore, the minimum displayed green time for the vehicle phase ($G_{min}$) is:</p>
+<p>$$G_{min} = Walk + t_{pc} - Y - R_c$$</p>
+<p>Substituting the pedestrian clearance time equation:</p>
+<p>$$G_{min} = Walk + \frac{D}{S_p} - Y - R_c$$</p>
+<p>Where:</p>
+<ul>
+<li>$G_{min}$ = Minimum vehicle green time (seconds)</li>
+<li>$Walk$ = Walk interval (seconds; minimum of $7.0\text{ s}$ unless specified otherwise)</li>
+<li>$Y$ = Displayed vehicle yellow change interval (seconds)</li>
+<li>$R_c$ = Displayed vehicle all-red clearance interval (seconds)</li>
+</ul>
+<hr>
+<h2 id="medians-and-pedestrian-refuges">Medians and Pedestrian Refuges</h2>
+<p>If a median is present in the crosswalk, its width determines how the crossing is timed:</p>
+<ul>
+<li><strong>Width $&lt; 6.0\text{ feet}$:</strong> The median cannot act as a pedestrian refuge. The crossing distance $D$ must cover the entire curb-to-curb width of the intersection.</li>
+<li><strong>Width $\ge 6.0\text{ feet}$:</strong> The median is classified as a pedestrian refuge. If the median contains pedestrian detectors (pushbuttons), the crossing can be timed in two stages (the pedestrian crosses one side, waits in the median during the next cycle, and crosses the second side).</li>
+</ul>
+<hr>
+<h2 id="worked-example-minimum-green-time-calculation">Worked Example: Minimum Green Time Calculation</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>A major-street crossing at a signalized intersection has a curb-to-curb crossing width of $56\text{ feet}$. The street has a flat grade and a $4.0\text{-foot}$ wide median without pedestrian pushbuttons. The concurrent vehicle phase has a yellow change interval of $4.5\text{ seconds}$ and an all-red clearance interval of $1.5\text{ seconds}$.</p>
+<p>Assuming a standard walk interval of $7.0\text{ seconds}$ and a pedestrian walking speed of $3.5\text{ ft/s}$:</p>
+<ol>
+<li>Determine the crossing distance ($D$) that must be used for timing calculations.</li>
+<li>Calculate the required pedestrian clearance time ($t_{pc}$).</li>
+<li>Calculate the minimum vehicle green time ($G_{min}$) that must be programmed for this phase.</li>
+</ol>
+<h3 id="step-by-step-solution">Step-by-Step Solution</h3>
+<h4 id="step-1-determine-the-crossing-distance-d">Step 1: Determine the Crossing Distance ($D$)</h4>
+<p>The median is $4.0\text{ feet}$ wide. Because this is less than the $6.0\text{-foot}$ minimum width required for a pedestrian refuge, it cannot be used for staged crossing. The pedestrian must cross the entire width in a single phase.
+$$D = 56\text{ feet}$$</p>
+<h4 id="step-2-calculate-pedestrian-clearance-time-t_pc">Step 2: Calculate Pedestrian Clearance Time ($t_{pc}$)</h4>
+<p>Using the walking speed $S_p = 3.5\text{ ft/s}$:
+$$t_{pc} = \frac{D}{S_p} = \frac{56\text{ ft}}{3.5\text{ ft/s}} = 16.0\text{ seconds}$$</p>
+<h4 id="step-3-calculate-minimum-vehicle-green-time-g_min">Step 3: Calculate Minimum Vehicle Green Time ($G_{min}$)</h4>
+<p>Apply the NCEES formula:
+$$G_{min} = Walk + t_{pc} - Y - R_c$$
+$$G_{min} = 7.0\text{ s} + 16.0\text{ s} - 4.5\text{ s} - 1.5\text{ s}$$
+$$G_{min} = 23.0\text{ s} - 6.0\text{ s} = 17.0\text{ seconds}$$</p>
+<p>Thus, the signal controller must be programmed with a minimum green time of <strong>$17.0\text{ seconds}$</strong> for the concurrent vehicle phase.</p>
+<p><em>Exam Tip: If the vehicle demand only requires a green of, say, $10\text{ seconds}$, but the phase has a concurrent pedestrian movement, the green must be extended to $17.0\text{ seconds}$ (or pedestrian pushbuttons must be installed to activate the $17.0\text{-second}$ green only when a pedestrian is present).</em></p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-10/69-yellow-and-all-red-intervals/">
+                &#8592;
+                Previous:
+                Yellow and All-Red Clearance Intervals
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-10/71-signal-warrants/">
+                Next:
+                Traffic Signal Warrants
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

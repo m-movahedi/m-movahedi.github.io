@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 5: Highway Safety Analysis on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-5/</link>
+    <description>Recent content in Module 5: Highway Safety Analysis on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crash Data Fundamentals</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/</guid>
+      <description>&lt;h1 id=&#34;crash-data-fundamentals&#34;&gt;Crash Data Fundamentals&lt;/h1&gt;&#xA;&lt;p&gt;Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam frequently tests safety calculations, specifically focusing on exposure measures, crash rates for segments and intersections, crash frequency, and crash severity classification.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;crash-frequency-vs-crash-rate&#34;&gt;Crash Frequency vs. Crash Rate&lt;/h2&gt;&#xA;&lt;p&gt;Traffic safety analysis utilizes two primary metrics to evaluate the safety performance of a location:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Crash Frequency ($F$)&lt;/strong&gt;: The raw count of crashes occurring at a specific location over a designated time period (typically expressed as crashes per year). While simple to calculate, frequency does not account for differences in traffic volume.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Crash Rate ($R$)&lt;/strong&gt;: A normalized metric that relates the number of crashes to traffic exposure (the volume of vehicles using the facility). This allows for a fair comparison of safety performance between locations with different traffic volumes.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;traffic-exposure-and-crash-rate-equations&#34;&gt;Traffic Exposure and Crash Rate Equations&lt;/h2&gt;&#xA;&lt;p&gt;To compute crash rates, we use different exposure metrics depending on whether the study area is a roadway segment or an intersection. These equations are found in the NCEES PE Civil Reference Handbook.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Collision Diagrams</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-5/32-collision-diagrams/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-5/32-collision-diagrams/</guid>
+      <description>&lt;h1 id=&#34;collision-diagrams&#34;&gt;Collision Diagrams&lt;/h1&gt;&#xA;&lt;p&gt;A collision diagram is a schematic representation of crashes that have occurred at a specific location (typically an intersection or a short roadway segment) over a designated time period. It is one of the most powerful diagnostic tools in traffic safety engineering, used to visually identify crash clusters, spatial patterns, and common conflict types.&lt;/p&gt;&#xA;&lt;p&gt;On the NCEES PE Civil Transportation exam, you may need to interpret a collision diagram, identify a safety pattern, and link that pattern to effective safety countermeasures.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conflict Analysis</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-5/33-conflict-analysis/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-5/33-conflict-analysis/</guid>
+      <description>&lt;h1 id=&#34;conflict-analysis&#34;&gt;Conflict Analysis&lt;/h1&gt;&#xA;&lt;p&gt;Conflict analysis is a proactive traffic safety methodology that evaluates &amp;ldquo;near-miss&amp;rdquo; events instead of waiting for historical crash data to accumulate. A traffic conflict is an event involving two or more road users where an unexpected maneuver by one user forces another to take evasive action (such as braking or swerving) to avoid a collision.&lt;/p&gt;&#xA;&lt;p&gt;On the NCEES PE Civil Transportation exam, conflict analysis is tested conceptually through surrogate safety measures and quantitatively through the calculation of conflict points for different intersection configurations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crash Modification Factors</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-5/34-crash-modification-factors/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-5/34-crash-modification-factors/</guid>
+      <description>&lt;h1 id=&#34;crash-modification-factors&#34;&gt;Crash Modification Factors&lt;/h1&gt;&#xA;&lt;p&gt;A Crash Modification Factor (CMF) is a multiplicative factor used to compute the expected number of crashes after implementing a specific countermeasure at a transportation facility. A CMF represents the relative change in crash frequency compared to a baseline condition.&lt;/p&gt;&#xA;&lt;p&gt;The NCEES PE Civil Transportation exam frequently tests CMF and Crash Reduction Factor (CRF) calculations, including multi-CMF combinations and safety benefit assessments.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;cmf-vs-crf&#34;&gt;CMF vs. CRF&lt;/h2&gt;&#xA;&lt;p&gt;While a CMF represents the multiplier for expected crashes, the Crash Reduction Factor (CRF) represents the percentage reduction in crashes:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Highway Safety Manual Concepts</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-5/35-highway-safety-manual-concepts/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-5/35-highway-safety-manual-concepts/</guid>
+      <description>&lt;h1 id=&#34;highway-safety-manual-concepts&#34;&gt;Highway Safety Manual Concepts&lt;/h1&gt;&#xA;&lt;p&gt;The AASHTO Highway Safety Manual (HSM) provides a science-based, quantitative approach to traffic safety. It moves the profession away from subjective design standards and toward the prediction of crash frequency and severity.&lt;/p&gt;&#xA;&lt;p&gt;On the NCEES PE Civil Transportation exam, you must understand the structure of the HSM, the predictive method, Safety Performance Functions (SPFs), and statistical concepts like Regression-to-the-Mean (RTM) and the Empirical Bayes (EB) method.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Safety Countermeasure Selection and Economic Evaluation</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-5/36-safety-countermeasure-selection/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-5/36-safety-countermeasure-selection/</guid>
+      <description>&lt;h1 id=&#34;safety-countermeasure-selection-and-economic-evaluation&#34;&gt;Safety Countermeasure Selection and Economic Evaluation&lt;/h1&gt;&#xA;&lt;p&gt;The final step in traffic safety engineering is selecting and economically evaluating safety countermeasures. The goal is to identify treatments that address diagnosed crash patterns (e.g., from collision diagrams or conflict analysis) and determine if they are economically viable.&lt;/p&gt;&#xA;&lt;p&gt;On the NCEES PE Civil Transportation exam, this topic is tested through qualitative countermeasure matching and quantitative economic evaluations, including Benefit-Cost ($B/C$) ratios and Net Present Value (NPV) calculations.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

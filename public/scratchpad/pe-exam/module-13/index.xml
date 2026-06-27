@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 13: Hydrology, Hydraulics, and Stormwater on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-13/</link>
+    <description>Recent content in Module 13: Hydrology, Hydraulics, and Stormwater on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-13/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hydrology Fundamentals</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/90-hydrology-fundamentals/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/90-hydrology-fundamentals/</guid>
+      <description>&lt;h1 id=&#34;hydrology-fundamentals&#34;&gt;Hydrology Fundamentals&lt;/h1&gt;&#xA;&lt;p&gt;Hydrology focuses on estimating the quantity and timing of runoff from a watershed. In PE Civil Transportation, hydrologic analysis is the precursor to hydraulic design. Before sizing a ditch, pipe, inlet, or culvert, you must determine the design flow rate ($Q$).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;key-parameters-of-hydrologic-analysis&#34;&gt;Key Parameters of Hydrologic Analysis&lt;/h2&gt;&#xA;&lt;p&gt;Understanding how these core parameters interact is crucial for solving NCEES-style questions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-drainage-area-a&#34;&gt;1. Drainage Area ($A$)&lt;/h3&gt;&#xA;&lt;p&gt;The drainage area (or watershed) is the contributing planimetric area from which runoff drains to a specific point of interest.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rational Method</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/91-rational-method/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/91-rational-method/</guid>
+      <description>&lt;h1 id=&#34;rational-method&#34;&gt;Rational Method&lt;/h1&gt;&#xA;&lt;p&gt;The Rational Method is the most widely used hydrologic model for sizing storm drainage systems, gutter inlets, roadside ditches, and small culverts. It is designed to estimate the peak runoff rate from small watersheds.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;governing-equations&#34;&gt;Governing Equations&lt;/h2&gt;&#xA;&lt;h3 id=&#34;uscs-units&#34;&gt;USCS Units&lt;/h3&gt;&#xA;&lt;p&gt;$$Q = C i A$$&lt;/p&gt;&#xA;&lt;p&gt;Where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$Q$ = Peak runoff rate (&lt;strong&gt;cubic feet per second, cfs&lt;/strong&gt;)&lt;/li&gt;&#xA;&lt;li&gt;$C$ = Runoff coefficient (dimensionless)&lt;/li&gt;&#xA;&lt;li&gt;$i$ = Average rainfall intensity (&lt;strong&gt;inches per hour, in/hr&lt;/strong&gt;) for a duration equal to the time of concentration ($t_c$)&lt;/li&gt;&#xA;&lt;li&gt;$A$ = Drainage area (&lt;strong&gt;acres, ac&lt;/strong&gt;)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Technically, $1\text{ in/hr} \cdot 1\text{ acre} = 1.008\text{ cfs}$. Because this conversion is so close to $1.0$, the conversion factor is neglected.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Time of Concentration ($t_c$)</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/</guid>
+      <description>&lt;h1 id=&#34;time-of-concentration-t_c&#34;&gt;Time of Concentration ($t_c$)&lt;/h1&gt;&#xA;&lt;p&gt;The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the watershed to the outlet. In the Rational Method, the design storm duration is set equal to $t_c$ because this corresponds to the maximum peak runoff rate.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;components-of-time-of-concentration&#34;&gt;Components of Time of Concentration&lt;/h2&gt;&#xA;&lt;p&gt;Runoff travels through a watershed in three distinct phases. The total time of concentration is the sum of the travel times for each phase:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hydrographs and Detention</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/</guid>
+      <description>&lt;h1 id=&#34;hydrographs-and-detention&#34;&gt;Hydrographs and Detention&lt;/h1&gt;&#xA;&lt;p&gt;A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational Method) are sufficient for sizing pipes and channels, detention basin design requires an understanding of how flow rate changes over the entire duration of a storm.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;scs-curve-number-method-for-runoff-depth&#34;&gt;SCS Curve Number Method for Runoff Depth&lt;/h2&gt;&#xA;&lt;p&gt;To construct a runoff hydrograph, we must first determine the depth of excess rainfall (direct runoff) using the NRCS (SCS) Curve Number method.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Storm Sewer Hydraulics</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/94-storm-sewer-hydraulics/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/94-storm-sewer-hydraulics/</guid>
+      <description>&lt;h1 id=&#34;storm-sewer-hydraulics&#34;&gt;Storm Sewer Hydraulics&lt;/h1&gt;&#xA;&lt;p&gt;Storm sewer hydraulics deals with the design and analysis of gravity-flow pipe systems. Because storm sewers typically flow under gravity (except when surcharged), they are analyzed as open channels using Manning&amp;rsquo;s equation.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;full-flow-pipe-geometry-and-mannings-equation&#34;&gt;Full-Flow Pipe Geometry and Manning&amp;rsquo;s Equation&lt;/h2&gt;&#xA;&lt;p&gt;For a circular pipe of diameter $D$ (in feet) flowing completely full under gravity (not under pressure):&lt;/p&gt;&#xA;&lt;h3 id=&#34;area-a_full&#34;&gt;Area ($A_{full}$):&lt;/h3&gt;&#xA;&lt;p&gt;$$A_{full} = \frac{\pi D^2}{4}$$&lt;/p&gt;&#xA;&lt;h3 id=&#34;wetted-perimeter-p_full&#34;&gt;Wetted Perimeter ($P_{full}$):&lt;/h3&gt;&#xA;&lt;p&gt;$$P_{full} = \pi D$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inlet Capacity</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/95-inlet-capacity/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/95-inlet-capacity/</guid>
+      <description>&lt;h1 id=&#34;inlet-capacity&#34;&gt;Inlet Capacity&lt;/h1&gt;&#xA;&lt;p&gt;Roadway drainage systems collect surface runoff through curb openings, grates, or combination inlets and convey it into the storm sewer system. The design goal is to limit the spread of water ($T$) onto the roadway travel lanes to maintain traffic safety.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;gutter-flow-in-triangular-channels&#34;&gt;Gutter Flow in Triangular Channels&lt;/h2&gt;&#xA;&lt;p&gt;Roadway gutters are analyzed as triangular open channels. Because the cross-section is extremely wide and shallow, standard Manning&amp;rsquo;s equation is modified (known as the Izzard method or Modified Manning&amp;rsquo;s Equation):&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Culvert Hydraulics</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/</guid>
+      <description>&lt;h1 id=&#34;culvert-hydraulics&#34;&gt;Culvert Hydraulics&lt;/h1&gt;&#xA;&lt;p&gt;Culverts are conduits used to convey water through highway embankments. Culvert hydraulics is governed by FHWA Hydraulic Design Series No. 5 (HDS-5) guidelines. Designing or analyzing a culvert requires determining whether the flow is governed by &lt;strong&gt;Inlet Control&lt;/strong&gt; or &lt;strong&gt;Outlet Control&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;control-types&#34;&gt;Control Types&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-inlet-control&#34;&gt;1. Inlet Control&lt;/h3&gt;&#xA;&lt;p&gt;Inlet control occurs when the flow capacity of the culvert is limited by the entrance geometry (cross-sectional area, shape, and inlet edge configuration) and the headwater depth ($HW$).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Open Channel Flow</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/97-open-channel-flow/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/97-open-channel-flow/</guid>
+      <description>&lt;h1 id=&#34;open-channel-flow&#34;&gt;Open Channel Flow&lt;/h1&gt;&#xA;&lt;p&gt;Open channel flow is flow with a free water surface exposed to atmospheric pressure. Roadside ditches, natural streams, and gravity storm sewers are analyzed using open channel flow principles.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;governing-equation-mannings-equation&#34;&gt;Governing Equation: Manning&amp;rsquo;s Equation&lt;/h2&gt;&#xA;&lt;p&gt;The velocity and capacity of open channels are determined using Manning&amp;rsquo;s equation.&lt;/p&gt;&#xA;&lt;h3 id=&#34;uscs-units&#34;&gt;USCS Units:&lt;/h3&gt;&#xA;&lt;p&gt;$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$&#xA;$$Q = V \cdot A = \frac{1.486}{n} A R^{2/3} S^{1/2}$$&lt;/p&gt;&#xA;&lt;h3 id=&#34;si-metric-units&#34;&gt;SI (Metric) Units:&lt;/h3&gt;&#xA;&lt;p&gt;$$V = \frac{1}{n} R^{2/3} S^{1/2}$$&#xA;$$Q = V \cdot A = \frac{1}{n} A R^{2/3} S^{1/2}$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Energy Losses and Dissipation</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/</guid>
+      <description>&lt;h1 id=&#34;energy-losses-and-dissipation&#34;&gt;Energy Losses and Dissipation&lt;/h1&gt;&#xA;&lt;p&gt;Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or channels can cause scour at outfalls, which is prevented using energy dissipation structures (like riprap aprons or stilling basins) and by managing transitions.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;minor-head-losses&#34;&gt;Minor Head Losses&lt;/h2&gt;&#xA;&lt;p&gt;Minor head losses occur due to changes in velocity, flow direction, or cross-sectional area at inlets, bends, expansions, contractions, and manholes.&lt;/p&gt;&#xA;&lt;h3 id=&#34;governing-equation&#34;&gt;Governing Equation:&lt;/h3&gt;&#xA;&lt;p&gt;$$h_L = K \cdot \frac{V^2}{2g}$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Water Quality and Stormwater BMPs</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/99-water-quality-and-stormwater-bmps/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/99-water-quality-and-stormwater-bmps/</guid>
+      <description>&lt;h1 id=&#34;water-quality-and-stormwater-bmps&#34;&gt;Water Quality and Stormwater BMPs&lt;/h1&gt;&#xA;&lt;p&gt;Stormwater Best Management Practices (BMPs) are structural and non-structural controls designed to mitigate the water quality impacts of urban runoff. Urbanization increases impervious surfaces, leading to higher peak flows and increased pollutant wash-off (suspended solids, metals, nutrients, hydrocarbons).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;types-of-stormwater-bmps&#34;&gt;Types of Stormwater BMPs&lt;/h2&gt;&#xA;&lt;p&gt;BMPs are selected based on site constraints, target pollutants, and regulatory requirements.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-retention-basins-wet-ponds&#34;&gt;1. Retention Basins (Wet Ponds)&lt;/h3&gt;&#xA;&lt;p&gt;Wet ponds maintain a permanent pool of water.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Floodplain and Roadway Overtopping</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-13/100-floodplain-and-roadway-overtopping/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-13/100-floodplain-and-roadway-overtopping/</guid>
+      <description>&lt;h1 id=&#34;floodplain-and-roadway-overtopping&#34;&gt;Floodplain and Roadway Overtopping&lt;/h1&gt;&#xA;&lt;p&gt;Roadway designs must accommodate extreme flood events without causing hazardous roadway overtopping or flooding adjacent properties. When a flood event exceeds the capacity of cross-culverts or bridges, the roadway embankment acts as a weir, and water spills over the pavement.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;fema-floodplain-definitions&#34;&gt;FEMA Floodplain Definitions&lt;/h2&gt;&#xA;&lt;p&gt;FEMA (Federal Emergency Management Agency) regulates development within flood-prone areas.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Base Flood Elevation (BFE):&lt;/strong&gt; The computed water surface elevation resulting from a flood that has a $1%$ chance of occurring in any given year (also called the 100-year flood or &amp;ldquo;Base Flood&amp;rdquo;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Regulatory Floodway:&lt;/strong&gt; The channel of a river or stream plus the adjacent land area that must be kept free of development so that the 100-year flood can be discharged without increasing the water surface elevation by more than a designated height (typically &lt;strong&gt;1.0 foot&lt;/strong&gt; under FEMA standards).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Floodway Fringe:&lt;/strong&gt; The portion of the 100-year floodplain outside of the regulatory floodway. Development is permitted here if structures are elevated above the BFE.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;roadway-overtopping-hydraulics&#34;&gt;Roadway Overtopping Hydraulics&lt;/h2&gt;&#xA;&lt;p&gt;When water level exceeds the highest point of a roadway cross-section (the crown or shoulder elevation), the roadway behaves as a &lt;strong&gt;broad-crested weir&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

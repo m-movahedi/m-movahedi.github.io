@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Project Scheduling Basics</title>
+    <meta name="description" content="Project Scheduling Basics Project scheduling is a core competency tested on the PE Civil Transportation exam. Understanding activity relationships, precedence …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Project Scheduling Basics">
+    <meta property="og:description" content="Project Scheduling Basics Project scheduling is a core competency tested on the PE Civil Transportation exam. Understanding activity relationships, precedence …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Project Scheduling Basics">
+    <meta name="twitter:description" content="Project Scheduling Basics Project scheduling is a core competency tested on the PE Civil Transportation exam. Understanding activity relationships, precedence …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Project Scheduling Basics</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="project-scheduling-basics">Project Scheduling Basics</h1>
+<p>Project scheduling is a core competency tested on the PE Civil Transportation exam. Understanding activity relationships, precedence types, network formats, and basic scheduling terms is essential before performing full Critical Path Method (CPM) analyses.</p>
+<hr>
+<h2 id="elements-of-a-schedule">Elements of a Schedule</h2>
+<p>A project schedule is a model that translates project activities, durations, resources, and constraints into a time-based plan.</p>
+<ul>
+<li><strong>Activity (Task):</strong> A cohesive unit of work that consumes time and resources.</li>
+<li><strong>Milestone:</strong> A significant event or point in time. It has <strong>zero duration</strong> and consumes no resources.</li>
+<li><strong>Duration ($d$):</strong> The estimated time required to complete an activity (usually measured in working days).</li>
+<li><strong>Predecessor:</strong> An activity that must start or finish before another activity can begin or complete.</li>
+<li><strong>Successor:</strong> An activity that cannot start or finish until another activity has started or completed.</li>
+</ul>
+<hr>
+<h2 id="precedence-relationships">Precedence Relationships</h2>
+<p>Activities are linked using logical dependencies. There are four types of relationships, which can be modified by <strong>lags</strong> or <strong>leads</strong>.</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TD
+    subgraph FS [&#34;1. Finish-to-Start (FS)&#34;]
+        direction TB
+        A1[A] --&gt;|FS| B1[B]
+    end
+    subgraph SS [&#34;2. Start-to-Start (SS)&#34;]
+        direction TB
+        A2[A] --&gt;|SS| B2[B]
+    end
+    subgraph FF [&#34;3. Finish-to-Finish (FF)&#34;]
+        direction TB
+        A3[A] --&gt;|FF| B3[B]
+    end
+    subgraph SF [&#34;4. Start-to-Finish (SF)&#34;]
+        direction TB
+        A4[A] --&gt;|SF| B4[B]
+    end
+</code></pre><h3 id="1-finish-to-start-fs">1. Finish-to-Start (FS)</h3>
+<p>The successor activity cannot start until the predecessor activity finishes. This is the most common relationship.</p>
+<ul>
+<li><strong>Equation:</strong> $ES_B \ge EF_A$</li>
+<li><strong>With Lag ($L$):</strong> $ES_B \ge EF_A + L$ (Activity B can start $L$ days after Activity A finishes).</li>
+</ul>
+<h3 id="2-start-to-start-ss">2. Start-to-Start (SS)</h3>
+<p>The successor activity cannot start until the predecessor activity starts.</p>
+<ul>
+<li><strong>Equation:</strong> $ES_B \ge ES_A$</li>
+<li><strong>With Lag ($L$):</strong> $ES_B \ge ES_A + L$ (Activity B can start $L$ days after Activity A starts). Common for overlapping tasks like excavation and pipe laying.</li>
+</ul>
+<h3 id="3-finish-to-finish-ff">3. Finish-to-Finish (FF)</h3>
+<p>The successor activity cannot finish until the predecessor activity finishes.</p>
+<ul>
+<li><strong>Equation:</strong> $EF_B \ge EF_A$</li>
+<li><strong>With Lag ($L$):</strong> $EF_B \ge EF_A + L$ (Activity B can finish $L$ days after Activity A finishes).</li>
+</ul>
+<h3 id="4-start-to-finish-sf">4. Start-to-Finish (SF)</h3>
+<p>The successor activity cannot finish until the predecessor activity starts. This is rarely used in construction.</p>
+<ul>
+<li><strong>Equation:</strong> $EF_B \ge ES_A$</li>
+<li><strong>With Lag ($L$):</strong> $EF_B \ge ES_A + L$</li>
+</ul>
+<hr>
+<h2 id="lag-and-lead-times">Lag and Lead Times</h2>
+<ul>
+<li><strong>Lag Time:</strong> A directed delay that requires an activity to wait a specified time after its predecessor&rsquo;s start/finish before starting/finishing itself (positive value).
+<em>Example:</em> Pour concrete (Activity A) must cure for 5 days before building forms (Activity B). This is a <strong>Finish-to-Start relationship with a 5-day lag (FS + 5)</strong>.</li>
+<li><strong>Lead Time:</strong> A negative lag that allows a successor to begin before the predecessor is completely finished (negative value).
+<em>Example:</em> Lay asphalt (Activity B) can start 2 days before subgrade prep (Activity A) completes (FS - 2).</li>
+</ul>
+<hr>
+<h2 id="network-diagram-formats">Network Diagram Formats</h2>
+<p>There are two primary styles of scheduling network diagrams. The PE Civil exam almost exclusively uses AON.</p>
+<h3 id="1-activity-on-node-aon">1. Activity-on-Node (AON)</h3>
+<p>Activities are represented by geometric shapes (nodes/boxes), and dependencies are represented by arrows connecting the nodes.</p>
+<ul>
+<li><strong>Advantage:</strong> Easy to represent all four precedence types and lags.</li>
+<li><strong>Node Anatomy:</strong> A typical AON node contains key scheduling variables:</li>
+</ul>
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .node { fill: #f9f9f9; stroke: #333; stroke-width: 2; transition: fill 0.2s; }
+      .node:hover { fill: #eaeaea; }
+      .line { stroke: #333; stroke-width: 1; }
+      .text { font-family: monospace; font-size: 14px; fill: #333; }
+      .header { font-weight: bold; }
+    </style>
+    <!-- Outer Box -->
+    <rect x="10" y="10" width="180" height="100" class="node" />
+<pre><code>&lt;!-- Horizontal Dividers --&gt;
+&lt;line x1=&quot;10&quot; y1=&quot;40&quot; x2=&quot;190&quot; y2=&quot;40&quot; class=&quot;line&quot; /&gt;
+&lt;line x1=&quot;10&quot; y1=&quot;80&quot; x2=&quot;190&quot; y2=&quot;80&quot; class=&quot;line&quot; /&gt;
+
+&lt;!-- Vertical Dividers (Top Row) --&gt;
+&lt;line x1=&quot;50&quot; y1=&quot;10&quot; x2=&quot;50&quot; y2=&quot;40&quot; class=&quot;line&quot; /&gt;
+&lt;line x1=&quot;150&quot; y1=&quot;10&quot; x2=&quot;150&quot; y2=&quot;40&quot; class=&quot;line&quot; /&gt;
+
+&lt;!-- Vertical Dividers (Bottom Row) --&gt;
+&lt;line x1=&quot;50&quot; y1=&quot;80&quot; x2=&quot;50&quot; y2=&quot;110&quot; class=&quot;line&quot; /&gt;
+&lt;line x1=&quot;150&quot; y1=&quot;80&quot; x2=&quot;150&quot; y2=&quot;110&quot; class=&quot;line&quot; /&gt;
+
+&lt;!-- Texts Top Row --&gt;
+&lt;text x=&quot;30&quot; y=&quot;30&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;ES&lt;/text&gt;
+&lt;text x=&quot;100&quot; y=&quot;30&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;Duration (d)&lt;/text&gt;
+&lt;text x=&quot;170&quot; y=&quot;30&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;EF&lt;/text&gt;
+
+&lt;!-- Activity Name --&gt;
+&lt;text x=&quot;100&quot; y=&quot;65&quot; class=&quot;text header&quot; text-anchor=&quot;middle&quot;&gt;Activity Name&lt;/text&gt;
+
+&lt;!-- Texts Bottom Row --&gt;
+&lt;text x=&quot;30&quot; y=&quot;100&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;LS&lt;/text&gt;
+&lt;text x=&quot;100&quot; y=&quot;100&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;Total Float&lt;/text&gt;
+&lt;text x=&quot;170&quot; y=&quot;100&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;LF&lt;/text&gt;
+</code></pre>
+  </svg>
+</div>
+<h3 id="2-activity-on-arrow-aoa">2. Activity-on-Arrow (AOA)</h3>
+<p>Activities are represented by arrows, and nodes (circles) represent events (the start or finish of activities).</p>
+<ul>
+<li><strong>Advantage:</strong> Clear visual representation of events.</li>
+<li><strong>Disadvantage:</strong> Can only represent Finish-to-Start relationships without lags. Requires the use of <strong>dummy activities</strong> (dashed arrows with zero duration) to maintain logic.</li>
+</ul>
+<hr>
+<h2 id="worked-example-precedence-and-lag-calculations">Worked Example: Precedence and Lag Calculations</h2>
+<p><strong>Problem:</strong><br>
+Activity X (duration = 6 days) begins at Day 0. It is connected to Activity Y (duration = 4 days) and Activity Z (duration = 5 days) under the following rules:</p>
+<ul>
+<li>Activity Y has a Start-to-Start relationship with Activity X with a 2-day lag (SS + 2).</li>
+<li>Activity Z has a Finish-to-Start relationship with Activity X with a 3-day lag (FS + 3).</li>
+</ul>
+<p>Calculate the Early Start (ES) and Early Finish (EF) for Activities X, Y, and Z.</p>
+<p><strong>Solution:</strong></p>
+<p><em>Note: We will use the 0-based scheduling convention where the project begins at Day 0.</em></p>
+<p><strong>Step 1: Calculate Activity X</strong></p>
+<ul>
+<li>$ES_X = 0$</li>
+<li>$EF_X = ES_X + d_X = 0 + 6 = 6\text{ days}$</li>
+</ul>
+<p><strong>Step 2: Calculate Activity Y (SS + 2 with X)</strong></p>
+<ul>
+<li>Relationship: $ES_Y = ES_X + \text{Lag} = 0 + 2 = 2\text{ days}$</li>
+<li>$EF_Y = ES_Y + d_Y = 2 + 4 = 6\text{ days}$</li>
+</ul>
+<p><strong>Step 3: Calculate Activity Z (FS + 3 with X)</strong></p>
+<ul>
+<li>Relationship: $ES_Z = EF_X + \text{Lag} = 6 + 3 = 9\text{ days}$</li>
+<li>$EF_Z = ES_Z + d_Z = 9 + 5 = 14\text{ days}$</li>
+</ul>
+<hr>
+<h2 id="schedule-compression-overview">Schedule Compression Overview</h2>
+<p>When a schedule exceeds its allowable duration, it must be compressed. This can be achieved through two primary techniques:</p>
+<ol>
+<li><strong>Fast-Tracking:</strong> Performing activities in parallel that would normally be done in sequence.
+<ul>
+<li><em>Pros:</em> No additional direct cost.</li>
+<li><em>Cons:</em> Increases risk, coordination complexity, and potential for rework.</li>
+</ul>
+</li>
+<li><strong>Crashing:</strong> Shortening the duration of activities on the critical path by adding resources (overtime, extra equipment, labor).
+<ul>
+<li><em>Pros:</em> Safely compresses duration.</li>
+<li><em>Cons:</em> Increases direct costs.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="crucial-pitfalls-and-exam-traps">Crucial Pitfalls and Exam Traps</h2>
+<ul>
+<li><strong>0-Based vs. 1-Based Systems:</strong>
+<ul>
+<li>In a <strong>0-based system</strong>, if Activity A finishes at day 4, the next Finish-to-Start Activity B starts at day 4. (Formula: $EF = ES + d$).</li>
+<li>In a <strong>1-based system</strong> (often used in project management textbooks), if Activity A finishes at day 4, Activity B starts at day 5. (Formula: $EF = ES + d - 1$).</li>
+<li><em>Exam Strategy:</em> Check the answer choices or NCEES handbook. If the NCEES handbook uses $EF = ES + t$, it is using the 0-based system. The 0-based system is significantly less error-prone when dealing with lags.</li>
+</ul>
+</li>
+<li><strong>Applying Lags to the Wrong Dates:</strong> Read the relationship carefully. A Start-to-Start lag adds to the <em>Early Start</em> of the predecessor. A Finish-to-Start lag adds to the <em>Early Finish</em>. Misapplying this is a major source of calculation errors.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-2/08-construction-productivity/">
+                &#8592;
+                Previous:
+                Construction Productivity
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-2/10-critical-path-method/">
+                Next:
+                Critical Path Method (CPM) and Crashing
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

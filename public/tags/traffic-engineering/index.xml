@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Traffic Engineering on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/traffic-engineering/</link>
+    <description>Recent content in Traffic Engineering on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/traffic-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crowdsourcing Safety: Detecting Accident Bottlenecks with Open Data</title>
+      <link>http://localhost:1313/research/open-data-traffic-bottlenecks/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/open-data-traffic-bottlenecks/</guid>
+      <description>&lt;div style=&#34;background-color: #f9f2f4; border-left: 6px solid #c0392b; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #900C3F; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚨&lt;/span&gt; Every Second Counts in an Emergency&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #555;&#34;&gt;Traffic accidents account for approximately 5% of all traffic congestion, creating what engineers call &#34;non-recurring bottlenecks.&#34; In developing nations, the most pressing issue isn&#39;t just the delay—it&#39;s the pre-hospital time for trauma patients. Identifying the exact location of an accident immediately is the first critical step in dispatching rescue teams and saving lives.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

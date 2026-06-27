@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Human Behavior on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/human-behavior/</link>
+    <description>Recent content in Human Behavior on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/human-behavior/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Human Behavior Modeling</title>
+      <link>http://localhost:1313/scratchpad/human-behavior-modeling/</link>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/human-behavior-modeling/</guid>
+      <description>&lt;p&gt;This scratchpad collects a planned series on &lt;strong&gt;human behavior modeling&lt;/strong&gt; for transportation, urban planning, safety, sustainability, and policy research.&lt;/p&gt;&#xA;&lt;p&gt;The series is designed as a study flow: start with simple descriptive models, move into psychological and social mechanisms, then connect those mechanisms to choice models, intervention design, and system-level simulation.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

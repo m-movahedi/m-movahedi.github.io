@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Unsignalized Intersection Operations</title>
+    <meta name="description" content="Unsignalized Intersection Operations Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Unsignalized Intersection Operations">
+    <meta property="og:description" content="Unsignalized Intersection Operations Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Unsignalized Intersection Operations">
+    <meta name="twitter:description" content="Unsignalized Intersection Operations Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Unsignalized Intersection Operations</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="unsignalized-intersection-operations">Unsignalized Intersection Operations</h1>
+<p>Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are Two-Way Stop-Controlled (TWSC) intersections and All-Way Stop-Controlled (AWSC) intersections. Their operational analysis is a key topic on the NCEES PE Civil Transportation exam, focusing on critical headway, potential capacity, movement capacity, control delay, and Level of Service (LOS).</p>
+<p>The methodology is governed by Chapters 20 and 21 of the Highway Capacity Manual (HCM 6th Edition).</p>
+<hr>
+<h2 id="two-way-stop-controlled-twsc-intersections">Two-Way Stop-Controlled (TWSC) Intersections</h2>
+<p>In a TWSC intersection, the major street has absolute right-of-way. Vehicles on the minor street approaches must stop and yield to major street traffic. In addition, left-turning vehicles from the major street must yield to opposing major street through and right-turn traffic.</p>
+<h3 id="movement-hierarchy-ranks">Movement Hierarchy (Ranks)</h3>
+<p>Operations are analyzed based on a hierarchy of movements. Higher-ranked movements impede lower-ranked movements:</p>
+<pre tabindex="0"><code>Rank 1 (No Impedance): 
+  - Major street through movements
+  - Major street right turns
+Rank 2: 
+  - Major street left turns
+  - Minor street right turns
+Rank 3: 
+  - Minor street through movements (crossing)
+Rank 4 (Most Impeded): 
+  - Minor street left turns (crossing &amp; turning)
+</code></pre><hr>
+<h2 id="twsc-capacity-analysis-methodology">TWSC Capacity Analysis Methodology</h2>
+<p>To calculate the capacity of a minor street or major street left-turning movement, we use the conflicting flow rate, critical headway, and follow-up time.</p>
+<h3 id="1-conflicting-flow-rate-v_c">1. Conflicting Flow Rate ($V_c$)</h3>
+<p>The sum of all traffic streams that have priority over the movement being analyzed. For example, a minor-street left turn must conflict with:</p>
+<ul>
+<li>Major-street through traffic in both directions.</li>
+<li>Major-street left-turn traffic from the opposite approach.</li>
+<li>Major-street right-turn traffic (in some cases).</li>
+<li>Minor-street through and right-turn traffic from the opposing approach.</li>
+</ul>
+<h3 id="2-critical-headway-t_c-and-follow-up-time-t_f">2. Critical Headway ($t_c$) and Follow-Up Time ($t_f$)</h3>
+<ul>
+<li><strong>Critical Headway ($t_c$)</strong>: The minimum time interval in the major-street traffic stream (seconds) that a minor-street driver requires to enter the intersection. If a gap is shorter than $t_c$, the driver will wait.</li>
+<li><strong>Follow-Up Time ($t_f$)</strong>: The time between the departure of one minor-street vehicle and the departure of the next vehicle using the same major-street gap (seconds).</li>
+</ul>
+<h3 id="3-potential-capacity-c_p">3. Potential Capacity ($c_p$)</h3>
+<p>The potential capacity ($c_p$) of a minor-street movement represents the maximum flow rate it can achieve, assuming it is the only minor-street movement operating and has no impedance from other minor movements:</p>
+<p>$$c_p = V_c \times \frac{e^{-V_c \cdot t_c / 3,600}}{1 - e^{-V_c \cdot t_f / 3,600}}$$</p>
+<p>Where:</p>
+<ul>
+<li>$c_p$ = potential capacity of the movement ($veh/h$)</li>
+<li>$V_c$ = conflicting flow rate ($veh/h$)</li>
+<li>$t_c$ = critical headway ($sec$)</li>
+<li>$t_f$ = follow-up time ($sec$)</li>
+</ul>
+<h3 id="4-movement-capacity-c_m">4. Movement Capacity ($c_m$)</h3>
+<p>The potential capacity is adjusted to account for impedance from higher-ranked movements. For example, if Rank 2 vehicles are queued and waiting, Rank 3 vehicles cannot utilize the gaps. The movement capacity is:
+$$c_m = c_p \times \prod \text{Impedance Factors}$$</p>
+<hr>
+<h2 id="all-way-stop-controlled-awsc-intersections">All-Way Stop-Controlled (AWSC) Intersections</h2>
+<p>In an AWSC intersection, all approaches are controlled by stop signs. Right-of-way is governed by a first-come, first-served rule, with drivers cooperating to discharge in turns.</p>
+<ul>
+<li><strong>Capacity</strong>: Determined by the saturation headway, which depends on the degree of conflict between approaches. The saturation headway increases (and capacity decreases) as the volume on opposing and conflicting approaches increases.</li>
+<li><strong>Service Time</strong>: The average time a vehicle spends at the stop line waiting to depart after the previous vehicle has gone.</li>
+</ul>
+<hr>
+<h2 id="control-delay-d">Control Delay ($d$)</h2>
+<p>The average control delay per vehicle ($sec/veh$) for any movement at an unsignalized intersection is calculated as:</p>
+<p>$$d = \frac{3,600}{c_m} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_m \times T}} \right] + 5$$</p>
+<p>Where:</p>
+<ul>
+<li>$c_m$ = movement capacity ($veh/h$)</li>
+<li>$T$ = analysis period (hours); typically $0.25 \text{ h}$ (15 minutes).</li>
+<li>$X$ = volume-to-capacity ratio for the movement ($v/c_m$).</li>
+<li>The constant $+5 \text{ seconds}$ accounts for deceleration and acceleration delay.</li>
+</ul>
+<hr>
+<h2 id="level-of-service-los-criteria">Level of Service (LOS) Criteria</h2>
+<p>For unsignalized intersections (both TWSC and AWSC), LOS is determined using the average control delay ($d$) of each individual movement (or approach):</p>
+<table>
+  <thead>
+      <tr>
+          <th>Level of Service (LOS)</th>
+          <th>Control Delay per Vehicle ($sec/veh$)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>A</strong></td>
+          <td>$\le 10.0$</td>
+      </tr>
+      <tr>
+          <td><strong>B</strong></td>
+          <td>$&gt; 10.0$ to $\le 15.0$</td>
+      </tr>
+      <tr>
+          <td><strong>C</strong></td>
+          <td>$&gt; 15.0$ to $\le 25.0$</td>
+      </tr>
+      <tr>
+          <td><strong>D</strong></td>
+          <td>$&gt; 25.0$ to $\le 35.0$</td>
+      </tr>
+      <tr>
+          <td><strong>E</strong></td>
+          <td>$&gt; 35.0$ to $\le 50.0$</td>
+      </tr>
+      <tr>
+          <td><strong>F</strong></td>
+          <td>$&gt; 50.0$ OR if $X &gt; 1.0$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="key-exam-tip-threshold-comparison">Key Exam Tip: Threshold Comparison</h3>
+<p>Notice that the delay thresholds for unsignalized intersections are <strong>lower</strong> than those for signalized intersections. For example, a delay of $60 \text{ sec/veh}$ is <strong>LOS E</strong> at a traffic signal, but it is <strong>LOS F</strong> at a stop sign. Motorists are less tolerant of delays when they must actively look for gaps than when they are waiting for a green light.</p>
+<hr>
+<h2 id="critical-pitfalls-and-exam-traps">Critical Pitfalls and Exam Traps</h2>
+<ol>
+<li>
+<p><strong>Confusing Unsignalized and Signalized Delay Thresholds</strong>:
+Do not use the signalized intersection delay table for unsignalized intersections. Memorize or look up the correct table (where LOS F starts at $50 \text{ s}$ instead of $80 \text{ s}$).</p>
+</li>
+<li>
+<p><strong>Failing to Identify the Correct Conflicting Flow ($V_c$)</strong>:
+Read the collision or intersection diagram carefully. A minor-street right-turn movement only conflicts with the major-street through traffic coming from its left. A minor-street left-turn movement conflicts with almost all major-street movements.</p>
+</li>
+<li>
+<p><strong>Units and Equations for Delay</strong>:
+In the delay equation, ensure that $c_m$ is in vehicles per hour, $T$ is in hours (typically $0.25$), and the $+5$ is added at the very end.</p>
+</li>
+</ol>
+<hr>
+<h2 id="worked-example">Worked Example</h2>
+<p>A minor street right-turn movement at a TWSC intersection has the following characteristics:</p>
+<ul>
+<li>Conflicting flow rate ($V_c$): $800 \text{ veh/h}$</li>
+<li>Critical headway ($t_c$): $4.1 \text{ seconds}$</li>
+<li>Follow-up time ($t_f$): $2.2 \text{ seconds}$</li>
+<li>Directional hourly demand volume ($V$): $180 \text{ veh/h}$</li>
+<li>Peak Hour Factor (PHF): $0.90$</li>
+<li>Analysis period ($T$): $0.25 \text{ hours}$</li>
+<li>Impedance factors: None (assume movement capacity $c_m$ equals potential capacity $c_p$).</li>
+</ul>
+<p><strong>Determine the potential capacity, volume-to-capacity ratio, control delay, and Level of Service (LOS) for this right-turn movement.</strong></p>
+<h3 id="solution">Solution:</h3>
+<h4 id="step-1-calculate-potential-capacity-c_p">Step 1: Calculate Potential Capacity ($c_p$)</h4>
+<p>$$c_p = V_c \times \frac{e^{-V_c \cdot t_c / 3,600}}{1 - e^{-V_c \cdot t_f / 3,600}}$$</p>
+<p>Calculate exponents:</p>
+<ul>
+<li>$\frac{V_c \cdot t_c}{3,600} = \frac{800 \times 4.1}{3,600} = 0.9111 \rightarrow e^{-0.9111} = 0.4021$</li>
+<li>$\frac{V_c \cdot t_f}{3,600} = \frac{800 \times 2.2}{3,600} = 0.4889 \rightarrow e^{-0.4889} = 0.6133$</li>
+</ul>
+<p>Calculate capacity:
+$$c_p = 800 \times \frac{0.4021}{1 - 0.6133} = 800 \times \frac{0.4021}{0.3867} = 800 \times 1.0398 = 831.8 \text{ veh/h}$$
+Since impedance is neglected, $c_m = c_p = 831.8 \text{ veh/h}$.</p>
+<h4 id="step-2-calculate-adjusted-demand-flow-rate-v-and-vc-ratio-x">Step 2: Calculate Adjusted Demand Flow Rate ($v$) and $v/c$ Ratio ($X$)</h4>
+<p>$$v = \frac{V}{\text{PHF}} = \frac{180}{0.90} = 200 \text{ veh/h}$$
+$$X = \frac{v}{c_m} = \frac{200}{831.8} = 0.240$$</p>
+<h4 id="step-3-calculate-control-delay-d">Step 3: Calculate Control Delay ($d$)</h4>
+<p>$$d = \frac{3,600}{c_m} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_m \times T}} \right] + 5$$</p>
+<ul>
+<li>$\frac{3,600}{c_m} = \frac{3,600}{831.8} = 4.33 \text{ s}$</li>
+<li>$X - 1 = 0.240 - 1 = -0.760$</li>
+<li>$c_m \times T = 831.8 \times 0.25 = 207.95$</li>
+<li>$\frac{360 \times X}{c_m \times T} = \frac{360 \times 0.240}{207.95} = 0.4155$</li>
+<li>$\sqrt{(X - 1)^2 + \frac{360 \times X}{c_m \times T}} = \sqrt{(-0.760)^2 + 0.4155} = \sqrt{0.5776 + 0.4155} = \sqrt{0.9931} = 0.9965$</li>
+</ul>
+<p>Now solve the delay terms:
+$$d = 4.33 + 900 \times 0.25 \left[ -0.760 + 0.9965 \right] + 5$$
+$$d = 4.33 + 225 \left[ 0.2365 \right] + 5$$
+$$d = 4.33 + 53.21 + 5 = 62.54 \text{ sec/veh}$$</p>
+<h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4>
+<p>Compare $d = 62.54 \text{ sec/veh}$ to the unsignalized intersection LOS criteria:</p>
+<ul>
+<li>$d &gt; 50.0 \text{ sec/veh} \rightarrow$ <strong>LOS F</strong></li>
+</ul>
+<p><strong>Conclusion:</strong> The minor street right-turn movement operates at <strong>LOS F</strong>.</p>
+<hr>
+<h2 id="references-and-standards">References and Standards</h2>
+<ul>
+<li><em>NCEES PE Civil Reference Handbook</em>, Section 6.2 (Traffic Operations).</li>
+<li><em>Highway Capacity Manual (HCM) 6th Edition</em>, Chapter 20 (Two-Way Stop-Controlled Intersections) and Chapter 21 (All-Way Stop-Controlled Intersections).</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-4/26-signalized-intersection-capacity/">
+                &#8592;
+                Previous:
+                Signalized Intersection Capacity
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-4/28-roundabout-operations/">
+                Next:
+                Roundabout Operations
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

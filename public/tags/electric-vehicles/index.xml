@@ -6,21 +6,21 @@
     <description>Recent content in Electric Vehicles on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/electric-vehicles/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Network Robustness of EV Charging Infrastructure During Extreme Weather: Insights from Hurricane Ian</title>
-      <link>http://localhost:1313/research/ev-charging-network-hurricane-ian/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/ev-charging-network-hurricane-ian/</guid>
-      <description>&lt;div style=&#34;background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🌩️&lt;/span&gt; The Vulnerability of Electric Evacuations&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during natural disasters is paramount. During events like Hurricane Ian, mass evacuations put immense stress on the EV charging infrastructure. If transmission lines fail and charging stations go dark, it can profoundly hinder evacuation efficiency and public safety, leading to widespread vehicle immobilization.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Robust Mobile Electric Vehicle Charging Solutions for Natural Disasters</title>
+      <title>Mobile Electric Vehicle Charging Solutions for Natural Disasters</title>
       <link>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</guid>
-      <description>&lt;p&gt;The transition to electric vehicles (EVs) introduces new paradigms for emergency management, particularly in hurricane-prone regions. During extreme weather events, the vulnerability of the power grid becomes a critical bottleneck. Structural failures within the transmission and distribution networks can disable permanently installed EV charging stations precisely when they are most necessary for mass population evacuations.&lt;/p&gt;&#xA;&lt;div style=&#34;background-color: #f4f6f9; padding: 20px; border-left: 5px solid #0056b3; border-radius: 4px; margin: 25px 0;&#34;&gt;&#xD;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #0056b3;&#34;&gt;The Research Problem&lt;/h4&gt;&#xD;&#xA;  &lt;p style=&#34;margin-bottom: 0; font-size: 1.1em;&#34;&gt;How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?&lt;/p&gt;</description>
+      <description>&lt;p&gt;The transition to electric vehicles (EVs) introduces new paradigms for emergency management, particularly in hurricane-prone regions. During extreme weather events, the vulnerability of the power grid becomes a critical bottleneck. Structural failures within the transmission and distribution networks can disable permanently installed EV charging stations precisely when they are most necessary for mass population evacuations.&lt;/p&gt;&#xA;&lt;div style=&#34;background-color: #f4f6f9; padding: 20px; border-left: 5px solid #0056b3; border-radius: 4px; margin: 25px 0;&#34;&gt;&#xD;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #0056b3;&#34;&gt;The Research Problem&lt;/h4&gt;&#xD;&#xA;  &lt;p style=&#34;margin-bottom: 0; font-size: 1.1em; color: #242424;&#34;&gt;How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Robustness of EV Charging Infrastructure During Extreme Weather</title>
+      <link>http://localhost:1313/research/ev-charging-network-hurricane-ian/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/ev-charging-network-hurricane-ian/</guid>
+      <description>&lt;div style=&#34;background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🌩️&lt;/span&gt; The Vulnerability of Electric Evacuations&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during natural disasters is paramount. During events like Hurricane Ian, mass evacuations put immense stress on the EV charging infrastructure. If transmission lines fail and charging stations go dark, it can profoundly hinder evacuation efficiency and public safety, leading to widespread vehicle immobilization.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

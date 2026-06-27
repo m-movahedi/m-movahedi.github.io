@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Ramp Merge and Diverge Operations</title>
+    <meta name="description" content="Ramp Merge and Diverge Operations Ramp merge and diverge segments represent major points of traffic turbulence on freeways. The operational analysis focuses on …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ramp Merge and Diverge Operations">
+    <meta property="og:description" content="Ramp Merge and Diverge Operations Ramp merge and diverge segments represent major points of traffic turbulence on freeways. The operational analysis focuses on …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ramp Merge and Diverge Operations">
+    <meta name="twitter:description" content="Ramp Merge and Diverge Operations Ramp merge and diverge segments represent major points of traffic turbulence on freeways. The operational analysis focuses on …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Ramp Merge and Diverge Operations</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="ramp-merge-and-diverge-operations">Ramp Merge and Diverge Operations</h1>
+<p>Ramp merge and diverge segments represent major points of traffic turbulence on freeways. The operational analysis focuses on the <strong>Ramp Influence Area</strong>, which is defined as the area extending $1,500 \text{ feet}$ along the freeway outer lanes (lanes 1 and 2) and including the acceleration or deceleration lane.</p>
+<p>The NCEES PE Civil Transportation exam frequently tests these operations. The analysis is governed by Chapter 14 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.</p>
+<hr>
+<h2 id="the-ramp-influence-area">The Ramp Influence Area</h2>
+<p>The ramp influence area is the zone where merging or diverging vehicles interact with through-freeway vehicles.</p>
+<ul>
+<li><strong>Merge Area</strong>: Commences at the physical gore point where the ramp lane meets the freeway and extends $1,500 \text{ ft}$ downstream.</li>
+<li><strong>Diverge Area</strong>: Commences $1,500 \text{ ft}$ upstream of the physical gore point where the deceleration lane begins.</li>
+<li><strong>Freeway Lanes 1 and 2</strong>: Lane 1 is the rightmost lane of the freeway (adjacent to the ramp). Lane 2 is the lane immediately to the left of Lane 1. On the exam, freeway lanes are always numbered from left to right (inside to outside), meaning Lane 1 and Lane 2 are the lanes closest to the right shoulder where ramps connect.</li>
+</ul>
+<hr>
+<h2 id="step-1-calculate-demand-flow-rates-in-lanes-1-and-2-v_12">Step 1: Calculate Demand Flow Rates in Lanes 1 and 2 ($v_{12}$)</h2>
+<p>Before calculating density, you must estimate the proportion of freeway traffic that occupies lanes 1 and 2 ($v_{12}$) immediately upstream of the merge or diverge.</p>
+<h3 id="1-merge-area-lanes-1-and-2-flow-v_12">1. Merge Area Lanes 1 and 2 Flow ($v_{12}$)</h3>
+<p>$$v_{12} = v_F \times P_{FM}$$</p>
+<p>Where:</p>
+<ul>
+<li>$v_{12}$ = demand flow rate in freeway lanes 1 and 2 immediately upstream of the merge ($pc/h$)</li>
+<li>$v_F$ = directional freeway demand flow rate immediately upstream of the merge ($pc/h$)</li>
+<li>$P_{FM}$ = proportion of freeway traffic remaining in lanes 1 and 2 at the merge point.</li>
+</ul>
+<h3 id="2-diverge-area-lanes-1-and-2-flow-v_12">2. Diverge Area Lanes 1 and 2 Flow ($v_{12}$)</h3>
+<p>$$v_{12} = v_F \times P_{FD}$$</p>
+<p>Where:</p>
+<ul>
+<li>$v_{12}$ = demand flow rate in freeway lanes 1 and 2 immediately upstream of the diverge ($pc/h$)</li>
+<li>$v_F$ = directional freeway demand flow rate upstream of the diverge ($pc/h$)</li>
+<li>$P_{FD}$ = proportion of freeway traffic remaining in lanes 1 and 2 at the diverge point.</li>
+</ul>
+<p><em>Note: The proportions $P_{FM}$ and $P_{FD}$ are calculated using regression equations provided in the NCEES handbook. These equations depend on the number of freeway lanes ($N$), the ramp flow ($v_R$), and the distance to adjacent upstream or downstream ramps ($L_{up}$ or $L_{dn}$). On the exam, $P_{FM}$ or $P_{FD}$ is either given, or the problem will simplify the system.</em></p>
+<hr>
+<h2 id="step-2-calculate-density-in-the-ramp-influence-area-d_r">Step 2: Calculate Density in the Ramp Influence Area ($D_R$)</h2>
+<p>Once $v_{12}$ and the ramp flow ($v_R$) are determined, the density in the influence area ($D_R$, in $pc/mi/ln$) is calculated using the following empirical equations:</p>
+<h3 id="1-merge-area-density-d_r">1. Merge Area Density ($D_R$)</h3>
+<p>$$D_R = 3.402 + 0.00756 \times v_{12} + 0.0115 \times v_R - 0.0048 \times L_A$$</p>
+<p>Where:</p>
+<ul>
+<li>$v_{12}$ = adjusted flow rate in freeway lanes 1 and 2 ($pc/h$)</li>
+<li>$v_R$ = adjusted flow rate on the ramp ($pc/h$)</li>
+<li>$L_A$ = length of the acceleration lane ($\text{feet}$)</li>
+</ul>
+<h3 id="2-diverge-area-density-d_r">2. Diverge Area Density ($D_R$)</h3>
+<p>$$D_R = 2.642 + 0.0053 \times v_{12} + 0.0143 \times v_R - 0.0029 \times L_D$$</p>
+<p>Where:</p>
+<ul>
+<li>$v_{12}$ = adjusted flow rate in freeway lanes 1 and 2 ($pc/h$)</li>
+<li>$v_R$ = adjusted flow rate on the ramp ($pc/h$)</li>
+<li>$L_D$ = length of the deceleration lane ($\text{feet}$)</li>
+</ul>
+<hr>
+<h2 id="step-3-determine-level-of-service-los">Step 3: Determine Level of Service (LOS)</h2>
+<p>LOS for ramp influence areas is determined by the density ($D_R$):</p>
+<table>
+  <thead>
+      <tr>
+          <th>Level of Service (LOS)</th>
+          <th>Density Range ($pc/mi/ln$)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>A</strong></td>
+          <td>$\le 10.0$</td>
+      </tr>
+      <tr>
+          <td><strong>B</strong></td>
+          <td>$&gt; 10.0$ to $\le 20.0$</td>
+      </tr>
+      <tr>
+          <td><strong>C</strong></td>
+          <td>$&gt; 20.0$ to $\le 28.0$</td>
+      </tr>
+      <tr>
+          <td><strong>D</strong></td>
+          <td>$&gt; 28.0$ to $\le 35.0$</td>
+      </tr>
+      <tr>
+          <td><strong>E</strong></td>
+          <td>$&gt; 35.0$ to $\le 45.0$</td>
+      </tr>
+      <tr>
+          <td><strong>F</strong></td>
+          <td>$&gt; 45.0$ OR if demand exceeds capacity</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="capacity-limits-los-f-triggers">Capacity Limits (LOS F Triggers)</h3>
+<p>Regardless of the calculated density, the segment operates at <strong>LOS F</strong> if any of the following capacity limits are exceeded:</p>
+<ol>
+<li><strong>Total Freeway Flow Downstream of Merge ($v_{fo}$)</strong>:
+$$v_{fo} = v_F + v_R &gt; \text{Freeway Capacity} \times N$$</li>
+<li><strong>Maximum Flow entering the Merge Influence Area ($v_{12} + v_R$)</strong>:
+$$v_{12} + v_R &gt; 4,600 \text{ pc/h}$$</li>
+<li><strong>Maximum Flow entering the Diverge Influence Area ($v_{12}$)</strong>:
+$$v_{12} &gt; 4,400 \text{ pc/h}$$</li>
+<li><strong>Ramp Capacity ($v_R$)</strong>:
+$$v_R &gt; \text{Ramp Capacity (typically } 1,800 - 2,200 \text{ pc/h)}$$</li>
+</ol>
+<hr>
+<h2 id="critical-pitfalls-and-exam-traps">Critical Pitfalls and Exam Traps</h2>
+<ol>
+<li>
+<p><strong>Incorrect Flow Direction Adjustment (PHF and Heavy Vehicles)</strong>:
+Always adjust raw hourly demand volumes ($veh/h$) to passenger-car equivalents ($pc/h$) using the PHF and heavy vehicle factor ($f_{HV}$) before calculating $v_{12}$ or $v_R$.
+$$v = \frac{V}{\text{PHF} \times f_{HV}}$$</p>
+</li>
+<li>
+<p><strong>Acceleration/Deceleration Lane Length ($L_A$ or $L_D$) Units</strong>:
+The equations for density require the acceleration lane length ($L_A$) and deceleration lane length ($L_D$) to be in <strong>feet</strong>. Do not use miles.</p>
+</li>
+<li>
+<p><strong>Confusing Lane Numbers</strong>:
+Remember that lanes 1 and 2 in the influence area always refer to the two rightmost lanes of the freeway. On a 3-lane freeway direction, $v_{12}$ represents the flow in the center and right lanes. The leftmost lane (Lane 3) is excluded from the influence area calculation.</p>
+</li>
+</ol>
+<hr>
+<h2 id="worked-example">Worked Example</h2>
+<p>A freeway merge segment has the following adjusted peak passenger-car flow rates:</p>
+<ul>
+<li>Freeway flow upstream of the merge: $v_F = 3,800 \text{ pc/h}$ (on a 3-lane directional freeway, $N=3$)</li>
+<li>On-ramp flow: $v_R = 750 \text{ pc/h}$</li>
+<li>Acceleration lane length: $L_A = 600 \text{ ft}$</li>
+<li>Proportion of freeway traffic remaining in lanes 1 and 2: $P_{FM} = 0.65$</li>
+</ul>
+<p><strong>Determine the density in the ramp influence area, check capacity limits, and find the Level of Service (LOS).</strong></p>
+<h3 id="solution">Solution:</h3>
+<h4 id="step-1-calculate-freeway-flow-in-lanes-1-and-2-v_12">Step 1: Calculate Freeway Flow in Lanes 1 and 2 ($v_{12}$)</h4>
+<p>$$v_{12} = v_F \times P_{FM} = 3,800 \times 0.65 = 2,470 \text{ pc/h}$$</p>
+<h4 id="step-2-calculate-density-in-the-merge-influence-area-d_r">Step 2: Calculate Density in the Merge Influence Area ($D_R$)</h4>
+<p>$$D_R = 3.402 + 0.00756 \times v_{12} + 0.0115 \times v_R - 0.0048 \times L_A$$
+$$D_R = 3.402 + 0.00756(2,470) + 0.0115(750) - 0.0048(600)$$
+$$D_R = 3.402 + 18.673 + 8.625 - 2.88$$
+$$D_R = 27.82 \text{ pc/mi/ln}$$</p>
+<h4 id="step-3-check-capacity-limits">Step 3: Check Capacity Limits</h4>
+<ol>
+<li><strong>Downstream Freeway Flow</strong>:
+$$v_{fo} = v_F + v_R = 3,800 + 750 = 4,550 \text{ pc/h}$$
+Freeway capacity for a 3-lane segment (assuming FFS = $70 \text{ mph}$, capacity is $2,400 \text{ pc/h/ln}$):
+$$\text{Capacity} = 3 \times 2,400 = 7,200 \text{ pc/h}$$
+Since $4,550 \le 7,200$, the downstream freeway is not oversaturated.</li>
+<li><strong>Merge Influence Area Flow</strong>:
+$$v_{12} + v_R = 2,470 + 750 = 3,220 \text{ pc/h}$$
+Since $3,220 \le 4,600 \text{ pc/h}$, the influence area is below capacity.</li>
+<li><strong>Ramp Flow</strong>:
+$$v_R = 750 \text{ pc/h} \le 2,000 \text{ pc/h (typical capacity)}$$
+Ramp capacity is not exceeded.</li>
+</ol>
+<h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4>
+<p>Compare $D_R = 27.82 \text{ pc/mi/ln}$ to the ramp influence area LOS criteria:</p>
+<ul>
+<li>$20.0 &lt; D_R \le 28.0 \rightarrow$ <strong>LOS C</strong></li>
+</ul>
+<p><strong>Conclusion:</strong> The ramp merge segment operates at <strong>LOS C</strong>.</p>
+<hr>
+<h2 id="references-and-standards">References and Standards</h2>
+<ul>
+<li><em>NCEES PE Civil Reference Handbook</em>, Section 6.2 (Traffic Operations).</li>
+<li><em>Highway Capacity Manual (HCM) 6th Edition</em>, Chapter 14 (Freeway Merges and Diverges).</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-4/28-roundabout-operations/">
+                &#8592;
+                Previous:
+                Roundabout Operations
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-4/30-weaving-segments/">
+                Next:
+                Weaving Segments
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

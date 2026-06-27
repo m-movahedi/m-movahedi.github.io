@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 7: Horizontal Alignment on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-7/</link>
+    <description>Recent content in Module 7: Horizontal Alignment on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Circular Curve Fundamentals</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/</guid>
+      <description>&lt;h1 id=&#34;circular-curve-fundamentals&#34;&gt;Circular Curve Fundamentals&lt;/h1&gt;&#xA;&lt;p&gt;Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of constant radius connecting two tangents. For the PE Civil Transportation exam, horizontal alignment calculations are based on the equations found in the &lt;strong&gt;NCEES PE Civil Reference Handbook&lt;/strong&gt; and design criteria in &lt;strong&gt;AASHTO&amp;rsquo;s Green Book (GDHS)&lt;/strong&gt;, Chapter 3.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;circular-curve-geometry-and-terms&#34;&gt;Circular Curve Geometry and Terms&lt;/h2&gt;&#xA;&lt;p&gt;Understanding the spatial layout and definitions of horizontal curve components is critical.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Curve Stationing</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-7/45-curve-stationing/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-7/45-curve-stationing/</guid>
+      <description>&lt;h1 id=&#34;curve-stationing&#34;&gt;Curve Stationing&lt;/h1&gt;&#xA;&lt;p&gt;Stationing is a standard system used in highway engineering to measure distances along the centerline of a project alignment. Stationing is written in the format &lt;strong&gt;$XX+YY.ZZ$&lt;/strong&gt;, where each &amp;ldquo;station&amp;rdquo; represents &lt;strong&gt;$100\text{ ft}$&lt;/strong&gt;. For example, Station $14+25.30$ represents a physical distance of $1,425.30\text{ ft}$ from the project origin.&lt;/p&gt;&#xA;&lt;p&gt;For the PE Civil Transportation exam, you must master the horizontal curve stationing workflow, know how to handle station equations, and understand how curves are laid out in the field using deflection angles and chords.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sight Distance on Horizontal Curves</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-7/46-sight-distance-on-horizontal-curves/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-7/46-sight-distance-on-horizontal-curves/</guid>
+      <description>&lt;h1 id=&#34;sight-distance-on-horizontal-curves&#34;&gt;Sight Distance on Horizontal Curves&lt;/h1&gt;&#xA;&lt;p&gt;When a vehicle travels along a horizontal curve, the driver&amp;rsquo;s line of sight can be obstructed by objects on the inside of the curve, such as retaining walls, bridge abutments, building facades, rock cuts, or dense vegetation. Designers must ensure that the lateral clearance between the travel lane and any obstruction is sufficient to provide the required stopping sight distance (SSD).&lt;/p&gt;&#xA;&lt;p&gt;For the PE Civil Transportation exam, sight distance on horizontal curves is calculated using formulas from the &lt;strong&gt;NCEES PE Civil Reference Handbook&lt;/strong&gt; and guidelines in the &lt;strong&gt;AASHTO Green Book (GDHS)&lt;/strong&gt;, Chapter 3.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Superelevation Basics</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-7/47-superelevation-basics/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-7/47-superelevation-basics/</guid>
+      <description>&lt;h1 id=&#34;superelevation-basics&#34;&gt;Superelevation Basics&lt;/h1&gt;&#xA;&lt;p&gt;When a vehicle travels along a horizontal curve, it experiences a centrifugal force that acts to push it outward, away from the center of the curve. To counter this lateral force and ensure passenger comfort and vehicle stability, the roadway cross-section is tilted or &amp;ldquo;banked.&amp;rdquo; This banking is called &lt;strong&gt;superelevation ($e$)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For the PE Civil Transportation exam, the physics, fundamental equations, side friction relationships, and minimum radius calculations are governed by the &lt;strong&gt;NCEES PE Civil Reference Handbook&lt;/strong&gt; and &lt;strong&gt;AASHTO&amp;rsquo;s Green Book (GDHS)&lt;/strong&gt;, Chapter 3.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Superelevation Runoff and Transition</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-7/48-superelevation-runoff-and-transition/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-7/48-superelevation-runoff-and-transition/</guid>
+      <description>&lt;h1 id=&#34;superelevation-runoff-and-transition&#34;&gt;Superelevation Runoff and Transition&lt;/h1&gt;&#xA;&lt;p&gt;Superelevation transition is the progressive rotation of the roadway cross-section from a normal crown (NC) to a fully superelevated section ($e_d$). Properly designing this transition is critical for driver comfort, vehicle stability, and drainage.&lt;/p&gt;&#xA;&lt;p&gt;For the PE Civil Transportation exam, transition lengths and station-specific cross slopes are calculated using formulas from &lt;strong&gt;AASHTO&amp;rsquo;s Green Book (GDHS)&lt;/strong&gt;, Chapter 3.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;components-of-the-transition&#34;&gt;Components of the Transition&lt;/h2&gt;&#xA;&lt;p&gt;The superelevation transition is divided into two distinct sections along the alignment:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compound and Reverse Curves</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-7/49-compound-and-reverse-curves/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-7/49-compound-and-reverse-curves/</guid>
+      <description>&lt;h1 id=&#34;compound-and-reverse-curves&#34;&gt;Compound and Reverse Curves&lt;/h1&gt;&#xA;&lt;p&gt;While simple horizontal curves are the most common horizontal alignment elements, complex alignments sometimes require combining multiple curves. Two such configurations are &lt;strong&gt;compound curves&lt;/strong&gt; and &lt;strong&gt;reverse curves&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;For the PE Civil Transportation exam, you must understand their geometric relationships, coordinate calculations, stationing workflows, and critical design limitations set by &lt;strong&gt;AASHTO&amp;rsquo;s Green Book (GDHS)&lt;/strong&gt;, Chapter 3.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;compound-curves&#34;&gt;Compound Curves&lt;/h2&gt;&#xA;&lt;p&gt;A compound curve consists of two or more circular curves of different radii curving in the same direction, meeting at a common &lt;strong&gt;Point of Compound Curvature (PCC)&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Curve Widening</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-7/50-curve-widening/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-7/50-curve-widening/</guid>
+      <description>&lt;h1 id=&#34;curve-widening&#34;&gt;Curve Widening&lt;/h1&gt;&#xA;&lt;p&gt;On sharp horizontal curves, roadways are often widened to ensure that vehicles—especially large trucks—remain within their designated travel lanes. This widening is necessary for two primary physical reasons:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Off-Tracking:&lt;/strong&gt; The rear wheels of a vehicle do not follow the exact path of the front wheels when turning; they track inward, toward the center of the curve.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Front Overhang ($F_A$):&lt;/strong&gt; The front bumper and body overhang of a vehicle project outward, sweeping a wider path than the wheels.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Difficulty of Driving ($Z$):&lt;/strong&gt; Drivers experience more difficulty holding a vehicle precisely centered in a lane on a curve than on a tangent.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;For the PE Civil Transportation exam, curve widening calculations and criteria are governed by &lt;strong&gt;AASHTO&amp;rsquo;s Green Book (GDHS)&lt;/strong&gt;, Chapter 3.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Coordination of Horizontal and Vertical Alignment</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-7/51-coordination-of-horizontal-and-vertical-alignment/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-7/51-coordination-of-horizontal-and-vertical-alignment/</guid>
+      <description>&lt;h1 id=&#34;coordination-of-horizontal-and-vertical-alignment&#34;&gt;Coordination of Horizontal and Vertical Alignment&lt;/h1&gt;&#xA;&lt;p&gt;Roadway design is a three-dimensional challenge. Although horizontal alignment (curves and tangents in plan view) and vertical alignment (grades and vertical curves in profile view) are calculated separately, they are experienced simultaneously by the driver. Poor coordination between these two dimensions can create optical illusions, hide hazards, cause headlight sight distance failures, and lead to severe crashes.&lt;/p&gt;&#xA;&lt;p&gt;For the PE Civil Transportation exam, the coordination of horizontal and vertical alignment is evaluated qualitatively and conceptually using the guidelines set forth in &lt;strong&gt;AASHTO&amp;rsquo;s Green Book (GDHS)&lt;/strong&gt;, Chapter 3.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

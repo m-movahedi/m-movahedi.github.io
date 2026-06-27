@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 12: Geotechnical and Pavement Design on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-12/</link>
+    <description>Recent content in Module 12: Geotechnical and Pavement Design on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-12/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Soil Classification for Pavements and Subgrades</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/80-soil-classification/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/80-soil-classification/</guid>
+      <description>&lt;h1 id=&#34;soil-classification-for-pavements-and-subgrades&#34;&gt;Soil Classification for Pavements and Subgrades&lt;/h1&gt;&#xA;&lt;p&gt;Soil classification is a fundamental topic on the PE Civil Transportation exam. In transportation engineering, soils serve as the subgrade that supports pavement structures. Understanding the engineering behavior of these soils based on index properties—such as grain size distribution and plasticity—is critical for design, compaction control, and drainage.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-soil-index-properties&#34;&gt;1. Soil Index Properties&lt;/h2&gt;&#xA;&lt;p&gt;Before classifying a soil, we must determine its index properties through laboratory testing. The two primary laboratory tests are:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soil Phase Relationships (Weight-Volume Relations)</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/81-soil-phase-relationships/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/81-soil-phase-relationships/</guid>
+      <description>&lt;h1 id=&#34;soil-phase-relationships-weight-volume-relations&#34;&gt;Soil Phase Relationships (Weight-Volume Relations)&lt;/h1&gt;&#xA;&lt;p&gt;A soil mass is a three-phase system consisting of solid particles (soil solids), water, and air. The relative proportions of these phases govern the physical behavior, compaction characteristics, and strength of the soil. On the PE Civil Transportation exam, soil phase calculations are highly common, requiring a systematic understanding of weight-volume relationships.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-the-soil-phase-diagram&#34;&gt;1. The Soil Phase Diagram&lt;/h2&gt;&#xA;&lt;p&gt;To solve phase relationship problems, it is helpful to visualize the three phases using a block diagram (the phase diagram). Weights are typically written on the left side of the diagram, and volumes are written on the right.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soil Compaction</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/82-compaction/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/82-compaction/</guid>
+      <description>&lt;h1 id=&#34;soil-compaction&#34;&gt;Soil Compaction&lt;/h1&gt;&#xA;&lt;p&gt;Compaction is the densification of soil by the application of mechanical energy, which expels air from the void spaces. Densifying the soil increases its shear strength, decreases its compressibility, and reduces its permeability, making it a critical step in constructing highway subgrades, embankments, and structural fills.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-laboratory-compaction-tests&#34;&gt;1. Laboratory Compaction Tests&lt;/h2&gt;&#xA;&lt;p&gt;To determine the maximum dry density and optimum moisture content of a soil, standard laboratory tests are performed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shear Strength and Lateral Earth Pressures</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/</guid>
+      <description>&lt;h1 id=&#34;shear-strength-and-lateral-earth-pressures&#34;&gt;Shear Strength and Lateral Earth Pressures&lt;/h1&gt;&#xA;&lt;p&gt;Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern the design of retaining walls, abutments, excavation support systems, and highway embankments.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-shear-strength-of-soil&#34;&gt;1. Shear Strength of Soil&lt;/h2&gt;&#xA;&lt;p&gt;Soil is a particulate material that derives its shear strength from friction between particles and cohesion (cementation or electrostatic bonding) between clay minerals.&lt;/p&gt;&#xA;&lt;h3 id=&#34;mohr-coulomb-failure-criterion&#34;&gt;Mohr-Coulomb Failure Criterion&lt;/h3&gt;&#xA;&lt;p&gt;The shear strength ($\tau$) of a soil at any point along a failure plane is modeled by the Mohr-Coulomb failure criterion:&#xA;$$\tau = c + \sigma \tan(\phi) \quad \text{(Total Stress Basis)}$$&#xA;$$\tau = c&amp;rsquo; + \sigma&amp;rsquo; \tan(\phi&amp;rsquo;) \quad \text{(Effective Stress Basis)}$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Permeability and Drainage in Soils</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/</guid>
+      <description>&lt;h1 id=&#34;permeability-and-drainage-in-soils&#34;&gt;Permeability and Drainage in Soils&lt;/h1&gt;&#xA;&lt;p&gt;Water flow through soil is a key parameter in civil engineering design. It affects seepage under dams, stability of slopes, settlement of clay layers, and the structural integrity of pavements. Water trapped in pavement layers can lead to base softening, pumping of fines, and premature cracking. On the PE Civil Transportation exam, understanding permeability (hydraulic conductivity) and drainage design is essential.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-darcys-law&#34;&gt;1. Darcy&amp;rsquo;s Law&lt;/h2&gt;&#xA;&lt;p&gt;Water flows through soil pores due to differences in total energy (hydraulic head). The rate of water flow is governed by Darcy&amp;rsquo;s Law, which states that flow velocity is directly proportional to the hydraulic gradient.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Earthwork and Mass Balance</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/85-earthwork-and-mass-balance/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/85-earthwork-and-mass-balance/</guid>
+      <description>&lt;h1 id=&#34;earthwork-and-mass-balance&#34;&gt;Earthwork and Mass Balance&lt;/h1&gt;&#xA;&lt;p&gt;Earthwork operations are a major component of highway construction projects. Designers must balance the volume of soil excavated from cut sections with the volume of soil required for fill (embankment) sections. Because soil volume changes when it is excavated, hauled, and compacted, engineers must apply volumetric conversion factors to calculate hauling costs and borrow-pit requirements. These concepts are frequently tested on the PE Civil Transportation exam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flexible Pavement Design Concepts</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/86-flexible-pavement-design-concepts/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/86-flexible-pavement-design-concepts/</guid>
+      <description>&lt;h1 id=&#34;flexible-pavement-design-concepts&#34;&gt;Flexible Pavement Design Concepts&lt;/h1&gt;&#xA;&lt;p&gt;Flexible pavements consist of a bituminous (asphalt) surface layer underlaid by granular base and subbase courses, resting on the prepared subgrade. They distribute traffic loads through a layered system, dispersing stresses with depth so that the stress reaching the subgrade does not exceed its bearing capacity. On the PE Civil Transportation exam, flexible pavement design is governed by the &lt;strong&gt;AASHTO 1993 Guide for Design of Pavement Structures&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rigid Pavement Design Concepts</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/87-rigid-pavement-design-concepts/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/87-rigid-pavement-design-concepts/</guid>
+      <description>&lt;h1 id=&#34;rigid-pavement-design-concepts&#34;&gt;Rigid Pavement Design Concepts&lt;/h1&gt;&#xA;&lt;p&gt;Rigid pavements are constructed using Portland cement concrete (PCC) slabs resting on a subbase or directly on the subgrade. Unlike flexible pavements, which distribute loads through a layered system, rigid pavements distribute traffic wheel loads over a wide area through the bending stiffness (flexural rigidity) of the concrete slab itself. On the PE Civil Transportation exam, rigid pavement design is based on the &lt;strong&gt;AASHTO 1993 rigid pavement design methodology&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pavement Distress and Rehabilitation</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/88-pavement-rehabilitation/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/88-pavement-rehabilitation/</guid>
+      <description>&lt;h1 id=&#34;pavement-distress-and-rehabilitation&#34;&gt;Pavement Distress and Rehabilitation&lt;/h1&gt;&#xA;&lt;p&gt;Over time, pavements deteriorate due to the combined effects of traffic loading and environmental conditions. Pavement rehabilitation involves restoring an existing pavement&amp;rsquo;s structural capacity or functional performance. On the PE Civil Transportation exam, you must be able to identify types of pavement distress, select appropriate rehabilitation strategies, and calculate structural overlay thickness requirements.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-pavement-distress-types&#34;&gt;1. Pavement Distress Types&lt;/h2&gt;&#xA;&lt;p&gt;Pavement distresses are categorized into structural distresses (related to load-carrying capacity) and functional distresses (related to ride quality and safety).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Traffic Characterization for Pavements</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-12/89-traffic-characterization-for-pavements/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-12/89-traffic-characterization-for-pavements/</guid>
+      <description>&lt;h1 id=&#34;traffic-characterization-for-pavements&#34;&gt;Traffic Characterization for Pavements&lt;/h1&gt;&#xA;&lt;p&gt;Pavements must be designed to withstand the repeated applications of traffic loads over their design life. Because traffic streams contain a diverse mix of vehicles—ranging from passenger cars to heavy multi-axle semi-trucks—engineers must characterize this traffic into a single design parameter. On the PE Civil Transportation exam, the primary traffic input is the &lt;strong&gt;18-kip Equivalent Single Axle Load (ESAL)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-the-equivalent-single-axle-load-esal-concept&#34;&gt;1. The Equivalent Single Axle Load (ESAL) Concept&lt;/h2&gt;&#xA;&lt;p&gt;The damage caused to a pavement structure is not linearly proportional to the wheel load. A single passage of a heavy truck causes thousands of times more damage than a passenger car.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

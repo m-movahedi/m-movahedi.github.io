@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 6: Cross-Section and Roadside Design on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-6/</link>
+    <description>Recent content in Module 6: Cross-Section and Roadside Design on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roadway Cross-Section Elements</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-6/37-roadway-cross-section-elements/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-6/37-roadway-cross-section-elements/</guid>
+      <description>&lt;h1 id=&#34;roadway-cross-section-elements&#34;&gt;Roadway Cross-Section Elements&lt;/h1&gt;&#xA;&lt;p&gt;Cross-section design represents the physical footprint of a roadway. It defines the allocation of space for travel lanes, shoulders, medians, drainage, and non-motorized users. Designing these elements requires balancing safety, operational capacity, and right-of-way constraints. For the PE Civil Transportation exam, cross-section design is governed primarily by &lt;strong&gt;AASHTO&amp;rsquo;s A Policy on Geometric Design of Highways and Streets (the &amp;ldquo;Green Book&amp;rdquo;)&lt;/strong&gt;, Chapter 4.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;travel-lanes-and-lane-widths&#34;&gt;Travel Lanes and Lane Widths&lt;/h2&gt;&#xA;&lt;p&gt;The traveled way is the portion of the roadway dedicated to vehicle movement, excluding shoulders and auxiliary lanes. Travel lane width has a direct impact on safety, driver comfort, and capacity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clear Zone Concepts</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-6/38-clear-zone-concepts/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-6/38-clear-zone-concepts/</guid>
+      <description>&lt;h1 id=&#34;clear-zone-concepts&#34;&gt;Clear Zone Concepts&lt;/h1&gt;&#xA;&lt;p&gt;A clear zone is the unobstructed, traversable area provided beyond the edge of the traveled way for the recovery of errant vehicles. The design of the clear zone is a primary safety concept in roadway design, focusing on forgiving roadsides. The primary reference for clear zone design is the &lt;strong&gt;AASHTO Roadside Design Guide (RDG)&lt;/strong&gt;, Chapter 3.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;clear-zone-determinants&#34;&gt;Clear Zone Determinants&lt;/h2&gt;&#xA;&lt;p&gt;The width of the clear zone is not a single fixed number. It is determined dynamically based on three main parameters:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Barrier Warrants and Placement</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-6/39-barrier-warrants-and-placement/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-6/39-barrier-warrants-and-placement/</guid>
+      <description>&lt;h1 id=&#34;barrier-warrants-and-placement&#34;&gt;Barrier Warrants and Placement&lt;/h1&gt;&#xA;&lt;p&gt;Roadside barriers are protective devices designed to shield motorists from hazards that lie within the clear zone. However, barriers are themselves hazards and should only be installed when the consequences of striking the barrier are less severe than striking the shielded obstacle. The primary reference for barrier design, warrants, and placement is the &lt;strong&gt;AASHTO Roadside Design Guide (RDG)&lt;/strong&gt;, Chapters 5 and 8.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;barrier-warrants-when-is-a-barrier-needed&#34;&gt;Barrier Warrants (When is a Barrier Needed?)&lt;/h2&gt;&#xA;&lt;p&gt;A barrier is warranted when a hazard exists within the clear zone and cannot be removed, relocated, or designed to be breakaway. Common hazards warranting barriers include:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Roadside Slopes and Ditches</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-6/40-roadside-slopes-and-ditches/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-6/40-roadside-slopes-and-ditches/</guid>
+      <description>&lt;h1 id=&#34;roadside-slopes-and-ditches&#34;&gt;Roadside Slopes and Ditches&lt;/h1&gt;&#xA;&lt;p&gt;Roadside slopes and drainage ditches are primary features of a roadway&amp;rsquo;s edge design. They must serve two conflicting purposes: they must safely drain water away from the pavement structure (hydraulics) while remaining traversable and forgiving for errant vehicles that leave the road (roadside safety). The primary references are the &lt;strong&gt;AASHTO Roadside Design Guide (RDG)&lt;/strong&gt;, Chapter 3, and &lt;strong&gt;AASHTO&amp;rsquo;s Green Book (GDHS)&lt;/strong&gt;, Chapter 4.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;slope-notation-and-conventions&#34;&gt;Slope Notation and Conventions&lt;/h2&gt;&#xA;&lt;p&gt;On the PE exam, slopes are written in the format &lt;strong&gt;Horizontal to Vertical (H:V)&lt;/strong&gt; (e.g., $4:1$ or $4\text{H}:1\text{V}$), which means 4 units of horizontal distance for every 1 unit of vertical rise or fall.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pedestrian Facility Design</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-6/41-pedestrian-facility-design/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-6/41-pedestrian-facility-design/</guid>
+      <description>&lt;h1 id=&#34;pedestrian-facility-design&#34;&gt;Pedestrian Facility Design&lt;/h1&gt;&#xA;&lt;p&gt;Pedestrian facilities must accommodate users of all ages and abilities. In public rights-of-way, design is heavily governed by the &lt;strong&gt;Americans with Disabilities Act (ADA)&lt;/strong&gt; standards and the &lt;strong&gt;AASHTO Guide for the Planning, Design, and Operation of Pedestrian Facilities (GPF-2)&lt;/strong&gt;. For the PE Civil Transportation exam, understanding ADA geometry, sidewalk widths, curb ramp configurations, and pedestrian routing is critical.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;ada-and-prowag-design-standards&#34;&gt;ADA and PROWAG Design Standards&lt;/h2&gt;&#xA;&lt;p&gt;The Proposed Guidelines for Pedestrian Facilities in the Public Right-of-Way (PROWAG) and ADA Accessibility Guidelines (ADAAG) establish strict geometric limits for pedestrian routes:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bicycle Facility Design</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/</guid>
+      <description>&lt;h1 id=&#34;bicycle-facility-design&#34;&gt;Bicycle Facility Design&lt;/h1&gt;&#xA;&lt;p&gt;Bicycle facility design focuses on providing safe, accessible, and comfortable infrastructure for cyclists. In the United States, geometric design of bicycle facilities is guided by the &lt;strong&gt;AASHTO Guide for the Development of Bicycle Facilities (GBF-4)&lt;/strong&gt;. On the PE Civil Transportation exam, you will need to understand the classifications of bike facilities, spatial dimensions, design speeds, stopping sight distances, and curve geometry.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;classifications-of-bicycle-facilities&#34;&gt;Classifications of Bicycle Facilities&lt;/h2&gt;&#xA;&lt;p&gt;Bicycle facilities are classified into four main categories based on the level of separation from motorized traffic:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Traffic Calming and Complete Streets</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-6/43-traffic-calming-and-complete-streets/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-6/43-traffic-calming-and-complete-streets/</guid>
+      <description>&lt;h1 id=&#34;traffic-calming-and-complete-streets&#34;&gt;Traffic Calming and Complete Streets&lt;/h1&gt;&#xA;&lt;p&gt;Complete Streets is a design philosophy that requires roads to be planned, designed, operated, and maintained to enable safe, convenient, and comfortable travel for all users, including pedestrians, bicyclists, transit riders, and motorists. Traffic calming represents the physical, self-enforcing measures used to support this philosophy by managing vehicle speeds and volumes.&lt;/p&gt;&#xA;&lt;p&gt;For the PE Civil Transportation exam, traffic calming is tested through the lenses of &lt;strong&gt;AASHTO&amp;rsquo;s Green Book (GDHS)&lt;/strong&gt;, the &lt;strong&gt;AASHTO Pedestrian Guide (GPF-2)&lt;/strong&gt;, and Federal Highway Administration (FHWA) guidelines.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

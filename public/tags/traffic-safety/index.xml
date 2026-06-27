@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Traffic Safety on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/traffic-safety/</link>
+    <description>Recent content in Traffic Safety on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/traffic-safety/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mind on the Road: How Selective Attention Predicts Aggressive Driving</title>
+      <link>http://localhost:1313/research/selective-attention-aggressive-driving/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/selective-attention-aggressive-driving/</guid>
+      <description>&lt;div style=&#34;background-color: #fdf5e6; border-left: 6px solid #e67e22; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #d35400; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🧠&lt;/span&gt; The Cognitive Cost of Distracted Driving&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #555;&#34;&gt;With motor vehicle crashes remaining a leading cause of fatalities worldwide, understanding the human factors behind the wheel is more critical than ever. Inattention and aggressive driving are major culprits. But what if we could predict a driver&#39;s likelihood to make aggressive errors based on a simple cognitive test? This study bridges cognitive psychology and transportation engineering to explore exactly that.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

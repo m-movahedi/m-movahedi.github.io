@@ -268,7 +268,7 @@ By tapping into crowdsourced probe data from the Waze application, we extracted 
       </svg>
     </div>
     <div class="waze-title" style="margin-top: 30px; font-size: 0.9em; color: #7f8fa6;">Simulated Waze User Experience</div>
-    <div class="waze-map-sim">
+    <div class="waze-map-sim" style="height: 250px">
       <div class="waze-road">
         <div class="waze-dash-line"></div>
         <div class="waze-car"></div>

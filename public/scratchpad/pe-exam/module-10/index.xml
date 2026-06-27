@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 10: Traffic Signal Operations and Design on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-10/</link>
+    <description>Recent content in Module 10: Traffic Signal Operations and Design on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Traffic Signal Terminology</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-10/67-signal-terminology/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-10/67-signal-terminology/</guid>
+      <description>&lt;h1 id=&#34;traffic-signal-terminology&#34;&gt;Traffic Signal Terminology&lt;/h1&gt;&#xA;&lt;p&gt;Traffic signal timing and design questions on the PE Civil Transportation exam require a precise understanding of terminology. On the exam, confusing a &amp;ldquo;phase&amp;rdquo; with an &amp;ldquo;interval&amp;rdquo; or failing to distinguish between &amp;ldquo;displayed green&amp;rdquo; and &amp;ldquo;effective green&amp;rdquo; will lead to incorrect calculations.&lt;/p&gt;&#xA;&lt;p&gt;This lesson establishes the fundamental vocabulary, operational structures, and mathematical relationships used in traffic signal analysis, grounding these concepts in the &lt;em&gt;Highway Capacity Manual (HCM)&lt;/em&gt; and the &lt;em&gt;Manual on Uniform Traffic Control Devices (MUTCD)&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Traffic Signal Phasing</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-10/68-signal-phasing/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-10/68-signal-phasing/</guid>
+      <description>&lt;h1 id=&#34;traffic-signal-phasing&#34;&gt;Traffic Signal Phasing&lt;/h1&gt;&#xA;&lt;p&gt;Signal phasing is the sequence of right-of-way allocations designed to prevent conflicts between vehicles and pedestrians at an intersection. In the PE Civil Transportation exam, you will encounter questions regarding standard NEMA phase numbering, ring-barrier configurations, left-turn treatment operations, and overlaps.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;nema-phase-numbering-convention&#34;&gt;NEMA Phase Numbering Convention&lt;/h2&gt;&#xA;&lt;p&gt;The National Electrical Manufacturers Association (NEMA) standardizes phase numbering for an 8-phase dual-ring controller. An intersection&amp;rsquo;s movements are mapped to phases using a standard layout.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Yellow and All-Red Clearance Intervals</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-10/69-yellow-and-all-red-intervals/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-10/69-yellow-and-all-red-intervals/</guid>
+      <description>&lt;h1 id=&#34;yellow-and-all-red-clearance-intervals&#34;&gt;Yellow and All-Red Clearance Intervals&lt;/h1&gt;&#xA;&lt;p&gt;The yellow change and all-red clearance intervals are critical safety timings at signalized intersections. Their primary purpose is to transition the right-of-way safely between conflicting phases. On the PE Civil Transportation exam, you must be prepared to calculate these intervals using the standard kinematic formulas found in the NCEES PE Civil Reference Handbook and the MUTCD.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-dilemma-zone-concept&#34;&gt;The Dilemma Zone Concept&lt;/h2&gt;&#xA;&lt;p&gt;The clearance interval is designed to eliminate the &lt;strong&gt;dilemma zone&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pedestrian Signal Timing</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-10/70-pedestrian-timing/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-10/70-pedestrian-timing/</guid>
+      <description>&lt;h1 id=&#34;pedestrian-signal-timing&#34;&gt;Pedestrian Signal Timing&lt;/h1&gt;&#xA;&lt;p&gt;Pedestrian safety is a key constraint in traffic signal design. When pedestrians are present at an intersection, the signal timing must provide sufficient green and clearance time for a pedestrian to react, step off the curb, and completely cross the roadway before conflicting traffic is released.&lt;/p&gt;&#xA;&lt;p&gt;On the PE Civil Transportation exam, you will need to calculate minimum green times and pedestrian clearance intervals based on crossing distance, pedestrian walking speed, and vehicle clearance times.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Traffic Signal Warrants</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-10/71-signal-warrants/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-10/71-signal-warrants/</guid>
+      <description>&lt;h1 id=&#34;traffic-signal-warrants&#34;&gt;Traffic Signal Warrants&lt;/h1&gt;&#xA;&lt;p&gt;A traffic control signal should only be installed if an engineering study indicates that the installation is justified. The &lt;em&gt;Manual on Uniform Traffic Control Devices (MUTCD)&lt;/em&gt; Chapter 4C defines nine specific traffic signal warrants.&lt;/p&gt;&#xA;&lt;p&gt;Meeting one or more of these warrants does not mandate the installation of a signal; rather, it indicates that a signal may be considered. Conversely, if no warrants are met, a signal should not be installed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Traffic Signal Coordination</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/</guid>
+      <description>&lt;h1 id=&#34;traffic-signal-coordination&#34;&gt;Traffic Signal Coordination&lt;/h1&gt;&#xA;&lt;p&gt;Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. The primary goal of coordination is to reduce stops, delays, fuel consumption, and vehicle emissions.&lt;/p&gt;&#xA;&lt;p&gt;On the PE Civil Transportation exam, you will encounter questions regarding coordination fundamentals, cycle length determination, offset calculations, progression bandwidth, and the interpretation of time-space diagrams.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;fundamentals-of-coordination&#34;&gt;Fundamentals of Coordination&lt;/h2&gt;&#xA;&lt;p&gt;To maintain a constant phase relationship over time, &lt;strong&gt;all signalized intersections within a coordinated system must operate on the same cycle length&lt;/strong&gt; (or a sub-multiple, such as $C/2$ for minor intersections). The system cycle length is typically dictated by the &amp;ldquo;critical intersection&amp;rdquo;—the intersection in the network that requires the longest cycle length to satisfy its capacity and pedestrian timing demands.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Traffic Signal Design and Plans</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-10/73-signal-design-plans/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-10/73-signal-design-plans/</guid>
+      <description>&lt;h1 id=&#34;traffic-signal-design-and-plans&#34;&gt;Traffic Signal Design and Plans&lt;/h1&gt;&#xA;&lt;p&gt;Traffic signal design plans are highly detailed engineering documents that specify the physical layout, structural support, electrical wiring, and detection systems for a signalized intersection.&lt;/p&gt;&#xA;&lt;p&gt;On the PE Civil Transportation exam, you must understand the MUTCD design standards for signal head placement, detection technologies, support configurations, and conduit fill calculations.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;signal-head-placement-standards-mutcd-chapter-4d&#34;&gt;Signal Head Placement Standards (MUTCD Chapter 4D)&lt;/h2&gt;&#xA;&lt;p&gt;The placement of signal faces is governed by strict visibility criteria to ensure drivers can see the indications from a safe distance.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

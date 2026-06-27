@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Basic Freeway Segments</title>
+    <meta name="description" content="Basic Freeway Segments Basic freeway segments are outside the influence of merging, diverging, or weaving maneuvers. The operational analysis of basic freeway …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Basic Freeway Segments">
+    <meta property="og:description" content="Basic Freeway Segments Basic freeway segments are outside the influence of merging, diverging, or weaving maneuvers. The operational analysis of basic freeway …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Basic Freeway Segments">
+    <meta name="twitter:description" content="Basic Freeway Segments Basic freeway segments are outside the influence of merging, diverging, or weaving maneuvers. The operational analysis of basic freeway …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Basic Freeway Segments</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="basic-freeway-segments">Basic Freeway Segments</h1>
+<p>Basic freeway segments are outside the influence of merging, diverging, or weaving maneuvers. The operational analysis of basic freeway segments is a core topic on the NCEES PE Civil Transportation exam. The methodology is governed by Chapter 12 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.</p>
+<hr>
+<h2 id="the-hcm-analysis-methodology">The HCM Analysis Methodology</h2>
+<p>The operational analysis of a basic freeway segment follows a structured, step-by-step procedure to determine its Level of Service (LOS) and capacity:</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
+    A[Determine Base Free-Flow Speed BFFS] --&gt; B[Adjust FFS for Width, Clearance, Ramp Density]
+    B --&gt; C[Calculate Adjusted Free-Flow Speed FFS]
+    D[Identify Demand Volume V] --&gt; E[Calculate Heavy Vehicle Factor f_HV]
+    E --&gt; F[Calculate Equivalent Passenger-Car Flow Rate v_p]
+    C &amp; F --&gt; G[Determine Average Passenger-Car Speed S]
+    G &amp; F --&gt; H[Calculate Density D = v_p / S]
+    H --&gt; I[Determine Level of Service LOS]
+</code></pre><hr>
+<h2 id="step-1-determine-free-flow-speed-ffs">Step 1: Determine Free-Flow Speed (FFS)</h2>
+<p>Free-flow speed is the average speed of passenger cars measured when traffic volumes are low and drivers are not constrained by other vehicles. FFS can be measured directly in the field or estimated using the following equation:</p>
+<p>$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{TRD}$$</p>
+<p>Where:</p>
+<ul>
+<li>$\text{FFS}$ = estimated free-flow speed ($mph$)</li>
+<li>$\text{BFFS}$ = base free-flow speed ($mph$); typically assumed to be $75 \text{ mph}$ for rural freeways and $70 \text{ mph}$ for urban freeways if not specified.</li>
+<li>$f_{LW}$ = adjustment for lane width ($mph$)</li>
+<li>$f_{LC}$ = adjustment for right-shoulder lateral clearance ($mph$)</li>
+<li>$f_{TRD}$ = adjustment for total ramp density ($mph$)</li>
+</ul>
+<h3 id="1-lane-width-adjustment-f_lw">1. Lane Width Adjustment ($f_{LW}$)</h3>
+<p>Standard lane width is $12 \text{ ft}$. Lanes narrower than $12 \text{ ft}$ reduce free-flow speed:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Average Lane Width (ft)</th>
+          <th>FFS Reduction, $f_{LW}$ (mph)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\ge 12$</td>
+          <td>0.0</td>
+      </tr>
+      <tr>
+          <td>$11$</td>
+          <td>1.9</td>
+      </tr>
+      <tr>
+          <td>$10$</td>
+          <td>6.6</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="2-lateral-clearance-adjustment-f_lc">2. Lateral Clearance Adjustment ($f_{LC}$)</h3>
+<p>Obstructions (walls, guardrails, utility poles) close to the right shoulder cause drivers to slow down. The adjustment depends on the number of lanes in one direction ($N$) and the lateral clearance from the right-hand lane edge to the obstruction:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Right-Shoulder Lateral Clearance (ft)</th>
+          <th>2 Lanes</th>
+          <th>3 Lanes</th>
+          <th>4 Lanes</th>
+          <th>$\ge 5$ Lanes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$\ge 6$</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+      </tr>
+      <tr>
+          <td>$5$</td>
+          <td>0.6</td>
+          <td>0.4</td>
+          <td>0.2</td>
+          <td>0.1</td>
+      </tr>
+      <tr>
+          <td>$4$</td>
+          <td>1.2</td>
+          <td>0.8</td>
+          <td>0.4</td>
+          <td>0.2</td>
+      </tr>
+      <tr>
+          <td>$3$</td>
+          <td>1.8</td>
+          <td>1.2</td>
+          <td>0.6</td>
+          <td>0.3</td>
+      </tr>
+      <tr>
+          <td>$2$</td>
+          <td>2.4</td>
+          <td>1.6</td>
+          <td>0.8</td>
+          <td>0.4</td>
+      </tr>
+      <tr>
+          <td>$1$</td>
+          <td>3.0</td>
+          <td>2.0</td>
+          <td>1.0</td>
+          <td>0.5</td>
+      </tr>
+      <tr>
+          <td>$0$</td>
+          <td>3.6</td>
+          <td>2.4</td>
+          <td>1.2</td>
+          <td>0.6</td>
+      </tr>
+  </tbody>
+</table>
+<p><em>Note: Left-shoulder (median) lateral clearance is assumed to have no effect on basic freeway segments.</em></p>
+<h3 id="3-total-ramp-density-adjustment-f_trd">3. Total Ramp Density Adjustment ($f_{TRD}$)</h3>
+<p>Total Ramp Density (TRD) is the total number of on-ramps and off-ramps (in both directions) located within a 6-mile window (3 miles upstream and 3 miles downstream of the segment center) divided by 6 miles.
+The adjustment is calculated as:
+$$f_{TRD} = 0.8 \times \text{TRD}$$
+Where $\text{TRD}$ is expressed in ramps per mile.</p>
+<hr>
+<h2 id="step-2-determine-equivalent-passenger-car-flow-rate-v_p">Step 2: Determine Equivalent Passenger-Car Flow Rate ($v_p$)</h2>
+<p>The hourly demand volume ($V$) must be adjusted to account for peak-hour variations, number of lanes, presence of heavy vehicles, and driver familiarity:</p>
+<p>$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p}$$</p>
+<p>Where:</p>
+<ul>
+<li>$v_p$ = demand flow rate under equivalent passenger-car conditions ($pc/h/ln$)</li>
+<li>$V$ = hourly demand volume ($veh/h$)</li>
+<li>$\text{PHF}$ = Peak Hour Factor</li>
+<li>$N$ = number of lanes in one direction</li>
+<li>$f_{HV}$ = heavy vehicle adjustment factor</li>
+<li>$f_p$ = driver population adjustment factor (typically $1.00$ for familiar drivers/commuters; can range from $0.85$ to $1.00$ for recreational or unfamiliar driver populations).</li>
+</ul>
+<h3 id="heavy-vehicle-adjustment-factor-f_hv">Heavy Vehicle Adjustment Factor ($f_{HV}$)</h3>
+<p>Heavy vehicles (trucks, buses, RVs) occupy more space and have lower acceleration capabilities than passenger cars. We convert them to passenger-car equivalents ($E_T$ and $E_R$):</p>
+<p>$$f_{HV} = \frac{1}{1 + P_T(E_T - 1) + P_R(E_R - 1)}$$</p>
+<p>Where:</p>
+<ul>
+<li>$P_T$ = proportion of trucks and buses in the traffic stream (expressed as a decimal)</li>
+<li>$P_R$ = proportion of recreational vehicles (RVs) in the traffic stream (expressed as a decimal)</li>
+<li>$E_T$ = passenger-car equivalent for trucks and buses</li>
+<li>$E_R$ = passenger-car equivalent for RVs</li>
+</ul>
+<p>For general terrain analysis:</p>
+<ul>
+<li><strong>Level Terrain</strong>: $E_T = 1.5$, $E_R = 1.2$</li>
+<li><strong>Rolling Terrain</strong>: $E_T = 2.5$, $E_R = 2.0$</li>
+</ul>
+<hr>
+<h2 id="step-3-determine-speed-s-and-density-d">Step 3: Determine Speed ($S$) and Density ($D$)</h2>
+<h3 id="average-passenger-car-speed-s">Average Passenger-Car Speed ($S$)</h3>
+<p>Speed remains relatively constant at the FFS until the flow rate ($v_p$) exceeds a specific <strong>breakpoint</strong> (BP). If the flow rate is below the breakpoint, speed equals the FFS. If it exceeds the breakpoint, speed drops.</p>
+<p>The HCM 6th Edition speed-flow relationships are defined by:</p>
+<ul>
+<li><strong>For $v_p \le \text{Breakpoint}$</strong>:
+$$S = \text{FFS}$$</li>
+<li><strong>For $\text{Breakpoint} &lt; v_p \le \text{Capacity}$</strong>:
+$$S = \text{FFS} - \frac{(\text{FFS} - 49.5)(v_p - \text{Breakpoint})^{1.31}}{(\text{Capacity} - \text{Breakpoint})^{1.31}}$$</li>
+</ul>
+<p>The breakpoints and capacities vary by FFS:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Free-Flow Speed (FFS)</th>
+          <th>Capacity ($pc/h/ln$)</th>
+          <th>Breakpoint ($pc/h/ln$)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>$75 \text{ mph}$</td>
+          <td>$2,400$</td>
+          <td>$1,000$</td>
+      </tr>
+      <tr>
+          <td>$70 \text{ mph}$</td>
+          <td>$2,400$</td>
+          <td>$1,200$</td>
+      </tr>
+      <tr>
+          <td>$65 \text{ mph}$</td>
+          <td>$2,350$</td>
+          <td>$1,400$</td>
+      </tr>
+      <tr>
+          <td>$60 \text{ mph}$</td>
+          <td>$2,300$</td>
+          <td>$1,600$</td>
+      </tr>
+      <tr>
+          <td>$55 \text{ mph}$</td>
+          <td>$2,250$</td>
+          <td>$1,800$</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="density-d">Density ($D$)</h3>
+<p>Once $v_p$ and $S$ are determined, calculate density:
+$$D = \frac{v_p}{S}$$
+Where:</p>
+<ul>
+<li>$D$ = density ($pc/mi/ln$)</li>
+</ul>
+<hr>
+<h2 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h2>
+<p>LOS is determined directly from density ($D$):</p>
+<table>
+  <thead>
+      <tr>
+          <th>Level of Service (LOS)</th>
+          <th>Density Range ($pc/mi/ln$)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>A</strong></td>
+          <td>$\le 11.0$</td>
+      </tr>
+      <tr>
+          <td><strong>B</strong></td>
+          <td>$&gt; 11.0$ to $\le 16.0$</td>
+      </tr>
+      <tr>
+          <td><strong>C</strong></td>
+          <td>$&gt; 16.0$ to $\le 26.0$</td>
+      </tr>
+      <tr>
+          <td><strong>D</strong></td>
+          <td>$&gt; 26.0$ to $\le 35.0$</td>
+      </tr>
+      <tr>
+          <td><strong>E</strong></td>
+          <td>$&gt; 35.0$ to $\le 45.0$</td>
+      </tr>
+      <tr>
+          <td><strong>F</strong></td>
+          <td>$&gt; 45.0$ OR if $v_p &gt; \text{Capacity}$ ($v/c &gt; 1.0$)</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="critical-pitfalls-and-exam-traps">Critical Pitfalls and Exam Traps</h2>
+<ol>
+<li>
+<p><strong>Failure to Convert Heavy Vehicle Percentage to Decimal</strong>:
+If the problem states trucks are $12%$, you must use $P_T = 0.12$ in the $f_{HV}$ equation. Using $12.0$ instead of $0.12$ is a common calculation error.</p>
+</li>
+<li>
+<p><strong>Total Ramp Density ($TRD$) Calculation</strong>:
+Ramps are counted on <em>both</em> sides of the freeway (on-ramps and off-ramps in both directions of travel) within the 6-mile window. Read the problem statement carefully to see if the given ramp count is already directional, total, or expressed as a rate.</p>
+</li>
+<li>
+<p><strong>Using the Wrong $E_T$ and $E_R$ values</strong>:
+Ensure you select the values for the correct terrain. Level terrain ($E_T=1.5$, $E_R=1.2$) and Rolling terrain ($E_T=2.5$, $E_R=2.0$) are standard. Do not confuse trucks ($E_T$) with RVs ($E_R$).</p>
+</li>
+<li>
+<p><strong>Assuming Speed equals FFS in All Cases</strong>:
+Always compare your calculated $v_p$ to the breakpoint. If $v_p$ is greater than the breakpoint, you must use the speed reduction equation or a lookup graph. Assuming speed equals FFS when $v_p &gt; \text{Breakpoint}$ will lead to an underestimated density and incorrect LOS.</p>
+</li>
+</ol>
+<hr>
+<h2 id="worked-example">Worked Example</h2>
+<p>An urban freeway segment has the following characteristics:</p>
+<ul>
+<li>Number of lanes: 3 in each direction ($N = 3$)</li>
+<li>Lane width: $11 \text{ ft}$</li>
+<li>Right-shoulder lateral clearance: $4 \text{ ft}$</li>
+<li>Total ramp density: $3.0 \text{ ramps/mi}$</li>
+<li>Base free-flow speed (BFFS): $70 \text{ mph}$</li>
+<li>Directional hourly demand volume: $3,100 \text{ veh/h}$</li>
+<li>Peak Hour Factor (PHF): $0.90$</li>
+<li>Traffic composition: $8%$ trucks, $2%$ RVs</li>
+<li>Terrain: Rolling</li>
+<li>Driver population: Familiar commuters ($f_p = 1.00$)</li>
+</ul>
+<p><strong>Determine the Level of Service (LOS) of the segment.</strong></p>
+<h3 id="solution">Solution:</h3>
+<h4 id="step-1-calculate-free-flow-speed-ffs">Step 1: Calculate Free-Flow Speed (FFS)</h4>
+<p>$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{TRD}$$</p>
+<ul>
+<li>From the lane width table, for $11 \text{ ft}$ lanes: $f_{LW} = 1.9 \text{ mph}$</li>
+<li>From the lateral clearance table, for 3 lanes and $4 \text{ ft}$ clearance: $f_{LC} = 0.8 \text{ mph}$</li>
+<li>For total ramp density:
+$$f_{TRD} = 0.8 \times 3.0 = 2.4 \text{ mph}$$</li>
+<li>Calculate FFS:
+$$\text{FFS} = 70 - 1.9 - 0.8 - 2.4 = 64.9 \text{ mph}$$</li>
+</ul>
+<h4 id="step-2-calculate-heavy-vehicle-adjustment-factor-f_hv">Step 2: Calculate Heavy Vehicle Adjustment Factor ($f_{HV}$)</h4>
+<ul>
+<li>Terrain is rolling, so $E_T = 2.5$ and $E_R = 2.0$.</li>
+<li>Proportions: $P_T = 0.08$ and $P_R = 0.02$.
+$$f_{HV} = \frac{1}{1 + 0.08(2.5 - 1) + 0.02(2.0 - 1)} = \frac{1}{1 + 0.08(1.5) + 0.02(1.0)} = \frac{1}{1 + 0.12 + 0.02} = \frac{1}{1.14} = 0.877$$</li>
+</ul>
+<h4 id="step-3-calculate-equivalent-flow-rate-v_p">Step 3: Calculate Equivalent Flow Rate ($v_p$)</h4>
+<p>$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p} = \frac{3,100}{0.90 \times 3 \times 0.877 \times 1.00} = \frac{3,100}{2.368} = 1,309.1 \text{ pc/h/ln}$$</p>
+<h4 id="step-4-determine-average-speed-s">Step 4: Determine Average Speed ($S$)</h4>
+<ul>
+<li>For an FFS of approximately $65 \text{ mph}$ ($64.9 \text{ mph}$), the breakpoint is $1,400 \text{ pc/h/ln}$.</li>
+<li>Since $v_p = 1,309.1 \text{ pc/h/ln} \le 1,400 \text{ pc/h/ln}$ (flow rate is below the breakpoint), the speed does not drop.
+$$S = \text{FFS} = 64.9 \text{ mph}$$</li>
+</ul>
+<h4 id="step-5-calculate-density-d-and-determine-los">Step 5: Calculate Density ($D$) and Determine LOS</h4>
+<p>$$D = \frac{v_p}{S} = \frac{1,309.1 \text{ pc/h/ln}}{64.9 \text{ mph}} = 20.17 \text{ pc/mi/ln}$$</p>
+<ul>
+<li>Look up $D = 20.17 \text{ pc/mi/ln}$ in the LOS criteria table:
+<ul>
+<li>$16.0 &lt; D \le 26.0 \rightarrow$ <strong>LOS C</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Conclusion:</strong> The basic freeway segment operates at <strong>LOS C</strong>.</p>
+<hr>
+<h2 id="references-and-standards">References and Standards</h2>
+<ul>
+<li><em>NCEES PE Civil Reference Handbook</em>, Section 6.2 (Traffic Operations).</li>
+<li><em>Highway Capacity Manual (HCM) 6th Edition</em>, Chapter 12 (Basic Freeway and Multilane Highway Segments).</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-4/21-capacity-and-level-of-service-overview/">
+                &#8592;
+                Previous:
+                Capacity and Level of Service Overview
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-4/23-multilane-highways/">
+                Next:
+                Multilane Highways
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

@@ -6,12 +6,33 @@
     <description>Recent content in Machine Learning on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Predicting the Unpredictable: Advanced Estimation Models for Demolition Waste</title>
+      <title>Agentic AI as a Research Tool</title>
+      <link>http://localhost:1313/scratchpad/research-agents/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/</guid>
+      <description>&lt;p&gt;This scratchpad explores how agentic AI can be used as a practical research tool. It focuses on understanding how AI agents can support literature review, data analysis, writing, coding, workflow automation, and knowledge organization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Local LLMs</title>
+      <link>http://localhost:1313/scratchpad/local-llms/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/local-llms/</guid>
+      <description>&lt;p&gt;This scratchpad collects my notes on running and working with local large language models. It is meant to better understand model deployment, inference tools, hardware requirements, quantization, fine-tuning, evaluation, and practical workflows for using LLMs outside cloud-based platforms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to LLM</title>
+      <link>http://localhost:1313/scratchpad/llm/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/llm/</guid>
+      <description>&lt;p&gt;This scratchpad collects the &lt;strong&gt;LLM introduction series&lt;/strong&gt;, an eight-part walkthrough from transformer basics to responsible deployment. Many examples use evacuation and transportation planning as a running case, but the concepts apply broadly.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Advanced Estimation Models for Demolition Waste</title>
       <link>http://localhost:1313/research/demolition-waste-estimation/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/demolition-waste-estimation/</guid>
       <description>&lt;div style=&#34;background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #856404; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🏗️&lt;/span&gt; The Demolition Data Gap&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #533f03;&#34;&gt;In the United States, construction and demolition waste (CDW) accounts for roughly 67% of the total solid waste stream, with a staggering &lt;strong&gt;90% originating directly from demolition sites&lt;/strong&gt;. For a transition toward a circular economy, accurately estimating the &lt;em&gt;recoverable&lt;/em&gt; portion of this waste is crucial. Yet, traditional estimation models remain heavily focused on total volume rather than recyclable potential.&lt;/p&gt;</description>
     </item>

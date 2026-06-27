@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Crash Data Fundamentals</title>
+    <meta name="description" content="Crash Data Fundamentals Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Crash Data Fundamentals">
+    <meta property="og:description" content="Crash Data Fundamentals Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Crash Data Fundamentals">
+    <meta name="twitter:description" content="Crash Data Fundamentals Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Crash Data Fundamentals</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="crash-data-fundamentals">Crash Data Fundamentals</h1>
+<p>Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam frequently tests safety calculations, specifically focusing on exposure measures, crash rates for segments and intersections, crash frequency, and crash severity classification.</p>
+<hr>
+<h2 id="crash-frequency-vs-crash-rate">Crash Frequency vs. Crash Rate</h2>
+<p>Traffic safety analysis utilizes two primary metrics to evaluate the safety performance of a location:</p>
+<ul>
+<li><strong>Crash Frequency ($F$)</strong>: The raw count of crashes occurring at a specific location over a designated time period (typically expressed as crashes per year). While simple to calculate, frequency does not account for differences in traffic volume.</li>
+<li><strong>Crash Rate ($R$)</strong>: A normalized metric that relates the number of crashes to traffic exposure (the volume of vehicles using the facility). This allows for a fair comparison of safety performance between locations with different traffic volumes.</li>
+</ul>
+<hr>
+<h2 id="traffic-exposure-and-crash-rate-equations">Traffic Exposure and Crash Rate Equations</h2>
+<p>To compute crash rates, we use different exposure metrics depending on whether the study area is a roadway segment or an intersection. These equations are found in the NCEES PE Civil Reference Handbook.</p>
+<h3 id="1-roadway-segments-crashes-per-100-million-vehicle-miles-of-travel-r_seg">1. Roadway Segments (Crashes per 100 Million Vehicle-Miles of Travel, $R_{seg}$)</h3>
+<p>For roadway segments, exposure is measured in Million Vehicle-Miles of Travel (MVM) or 100 Million Vehicle-Miles (100 MVM):</p>
+<p>$$R_{seg} = \frac{C \times 10^8}{\text{ADT} \times 365 \times L \times Y}$$</p>
+<p>Where:</p>
+<ul>
+<li>$R_{seg}$ = segment crash rate (crashes per $100 \text{ million vehicle-miles}$)</li>
+<li>$C$ = number of crashes observed during the study period</li>
+<li>$\text{ADT}$ = Average Daily Traffic on the segment ($veh/day$)</li>
+<li>$L$ = length of the roadway segment ($\text{miles}$)</li>
+<li>$Y$ = number of years in the study period</li>
+</ul>
+<h3 id="2-intersections-crashes-per-million-entering-vehicles-r_int">2. Intersections (Crashes per Million Entering Vehicles, $R_{int}$)</h3>
+<p>For intersections, exposure is measured in Million Entering Vehicles (MEV):</p>
+<p>$$R_{int} = \frac{C \times 10^6}{\sum \text{ADT}_{\text{app}} \times 365 \times Y}$$</p>
+<p>Where:</p>
+<ul>
+<li>$R_{int}$ = intersection crash rate (crashes per $\text{million entering vehicles}$)</li>
+<li>$C$ = number of crashes observed at the intersection during the study period</li>
+<li>$\sum \text{ADT}_{\text{app}}$ = sum of the Average Daily Traffic on all entering approaches to the intersection ($veh/day$)</li>
+<li>$Y$ = number of years in the study period</li>
+</ul>
+<hr>
+<h2 id="crash-severity-and-the-kabco-scale">Crash Severity and the KABCO Scale</h2>
+<p>Crashes are categorized by their most severe outcome using the KABCO scale, a standardized classification system developed by the Federal Highway Administration (FHWA):</p>
+<ul>
+<li><strong>K (Fatal Injury)</strong>: One or more deaths occurring within 30 days of the crash.</li>
+<li><strong>A (Suspected Serious Injury)</strong>: Incapacitating injuries that prevent the victim from walking, driving, or continuing normal activities (e.g., broken bones, severe lacerations).</li>
+<li><strong>B (Suspected Minor Injury)</strong>: Non-incapacitating evident injuries (e.g., minor cuts, abrasions, bruising).</li>
+<li><strong>C (Possible Injury)</strong>: Non-evident complaints of pain or temporary symptoms (e.g., whiplash, dizziness).</li>
+<li><strong>O (Property Damage Only - PDO)</strong>: No injuries; only vehicle or roadside property damage occurs.</li>
+</ul>
+<h3 id="equivalent-property-damage-only-epdo">Equivalent Property Damage Only (EPDO)</h3>
+<p>To compare sites based on severity rather than just crash counts, engineers use the EPDO index. Different weightings are applied to fatal/injury crashes relative to PDO crashes (e.g., a fatal crash might be weighted as 542, an injury as 30, and a PDO as 1). The total EPDO crashes is:
+$$\text{EPDO} = w_K \cdot C_K + w_A \cdot C_A + w_B \cdot C_B + w_C \cdot C_C + w_O \cdot C_O$$</p>
+<hr>
+<h2 id="critical-pitfalls-and-exam-traps">Critical Pitfalls and Exam Traps</h2>
+<ol>
+<li>
+<p><strong>Forgetting the Study Duration ($Y$)</strong>:
+The exam will often give crash counts over a multi-year period (e.g., &ldquo;150 crashes occurred over a 3-year period&rdquo;). A common trap is omitting $Y=3$ in the denominator, which will inflate the crash rate by a factor of 3.</p>
+</li>
+<li>
+<p><strong>Summing Major and Minor Approach ADTs for Intersections</strong>:
+Ensure you sum the ADT of all entering approaches. For a standard 4-leg intersection, you must add the entering ADT of all 4 legs. If a problem states &ldquo;the major street ADT is 15,000 and the minor street ADT is 5,000,&rdquo; the total entering volume is $15,000 + 5,000 = 20,000 \text{ veh/day}$ (assuming these are two-way ADT values representing all entering legs, or read carefully to see if the values represent entering volumes directly).</p>
+</li>
+<li>
+<p><strong>Mixing Up the Constants ($10^6$ vs. $10^8$)</strong>:</p>
+<ul>
+<li>For segments, the standard rate is per <strong>100 MVM</strong>, so the multiplier in the numerator is $10^8$.</li>
+<li>For intersections, the standard rate is per <strong>MEV</strong>, so the multiplier in the numerator is $10^6$.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="worked-example-1-segment-crash-rate">Worked Example 1: Segment Crash Rate</h3>
+<p>A $4.5\text{-mile}$ rural multilane highway segment has an ADT of $12,500 \text{ veh/day}$. Over a $3\text{-year}$ period, the state police recorded $95$ crashes on this segment.</p>
+<p><strong>Calculate the crash rate of the segment in crashes per 100 Million Vehicle-Miles (100 MVM).</strong></p>
+<h4 id="solution">Solution:</h4>
+<p>Identify variables:</p>
+<ul>
+<li>$C = 95$ crashes</li>
+<li>$\text{ADT} = 12,500 \text{ veh/day}$</li>
+<li>$L = 4.5 \text{ miles}$</li>
+<li>$Y = 3 \text{ years}$</li>
+</ul>
+<p>Apply the segment crash rate equation:
+$$R_{seg} = \frac{C \times 10^8}{\text{ADT} \times 365 \times L \times Y}$$
+$$R_{seg} = \frac{95 \times 10^8}{12,500 \times 365 \times 4.5 \times 3}$$
+$$R_{seg} = \frac{9,500,000,000}{61,593,750} = 154.24 \text{ crashes/100 MVM}$$</p>
+<hr>
+<h3 id="worked-example-2-intersection-crash-rate">Worked Example 2: Intersection Crash Rate</h3>
+<p>A 4-leg urban intersection has the following Average Daily Traffic (ADT) values on its approaches:</p>
+<ul>
+<li>Eastbound entry: $6,500 \text{ veh/day}$</li>
+<li>Westbound entry: $5,800 \text{ veh/day}$</li>
+<li>Northbound entry: $3,200 \text{ veh/day}$</li>
+<li>Southbound entry: $2,900 \text{ veh/day}$</li>
+</ul>
+<p>Over a $5\text{-year}$ period, a total of $32$ crashes were recorded at the intersection.</p>
+<p><strong>Calculate the intersection crash rate in crashes per Million Entering Vehicles (MEV).</strong></p>
+<h4 id="solution-1">Solution:</h4>
+<p>Identify variables:</p>
+<ul>
+<li>$C = 32$ crashes</li>
+<li>$Y = 5$ years</li>
+<li>Calculate $\sum \text{ADT}<em>{\text{app}}$:
+$$\sum \text{ADT}</em>{\text{app}} = 6,500 + 5,800 + 3,200 + 2,900 = 18,400 \text{ veh/day}$$</li>
+</ul>
+<p>Apply the intersection crash rate equation:
+$$R_{int} = \frac{C \times 10^6}{\sum \text{ADT}<em>{\text{app}} \times 365 \times Y}$$
+$$R</em>{int} = \frac{32 \times 10^6}{18,400 \times 365 \times 5}$$
+$$R_{int} = \frac{32,000,000}{33,580,000} = 0.953 \text{ crashes/MEV}$$</p>
+<hr>
+<h2 id="references-and-standards">References and Standards</h2>
+<ul>
+<li><em>NCEES PE Civil Reference Handbook</em>, Section 6.3 (Traffic Safety).</li>
+<li><em>Highway Safety Manual (HSM) 1st Edition</em>, Chapter 3 (Fundamentals).</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-5/32-collision-diagrams/">
+                Next:
+                Collision Diagrams
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

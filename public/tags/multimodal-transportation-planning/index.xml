@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multimodal Transportation Planning on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/multimodal-transportation-planning/</link>
+    <description>Recent content in Multimodal Transportation Planning on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 07 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/multimodal-transportation-planning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tehran Sightseeing Tour Planning</title>
+      <link>http://localhost:1313/research/sightseeing-tour-planning/</link>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/sightseeing-tour-planning/</guid>
+      <description>&lt;p&gt;Tourism plays an important role in the growth of urban economies. Attractions like historical buildings that capture the essence of life, streets with the hallmarks of the past, and monuments that act as mementos can be lucrative for local businesses and fruitful for the city&amp;rsquo;s culture.&lt;/p&gt;&#xA;&lt;p&gt;The path to an efficient sightseeing tour plan requires both demand evaluation and route planning. This post will discuss only the route planning stage. In most sightseeing tours, there are two active transportation modes working alongside each other: a major mode that usually provides users with a lift to special stations and a minor mode that connects these stations to the desired attractions.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

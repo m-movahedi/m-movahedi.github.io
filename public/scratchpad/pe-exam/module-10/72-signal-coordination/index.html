@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Traffic Signal Coordination</title>
+    <meta name="description" content="Traffic Signal Coordination Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Traffic Signal Coordination">
+    <meta property="og:description" content="Traffic Signal Coordination Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Traffic Signal Coordination">
+    <meta name="twitter:description" content="Traffic Signal Coordination Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Traffic Signal Coordination</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="traffic-signal-coordination">Traffic Signal Coordination</h1>
+<p>Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. The primary goal of coordination is to reduce stops, delays, fuel consumption, and vehicle emissions.</p>
+<p>On the PE Civil Transportation exam, you will encounter questions regarding coordination fundamentals, cycle length determination, offset calculations, progression bandwidth, and the interpretation of time-space diagrams.</p>
+<hr>
+<h2 id="fundamentals-of-coordination">Fundamentals of Coordination</h2>
+<p>To maintain a constant phase relationship over time, <strong>all signalized intersections within a coordinated system must operate on the same cycle length</strong> (or a sub-multiple, such as $C/2$ for minor intersections). The system cycle length is typically dictated by the &ldquo;critical intersection&rdquo;—the intersection in the network that requires the longest cycle length to satisfy its capacity and pedestrian timing demands.</p>
+<h3 id="key-terminology">Key Terminology:</h3>
+<ul>
+<li><strong>Platoon:</strong> A group of vehicles traveling together along a corridor, released from an upstream signal.</li>
+<li><strong>Progression Speed ($v_p$):</strong> The speed at which a platoon of vehicles travels through the coordinated system (typically equal to the speed limit or the 85th-percentile speed, expressed in $\text{ft/s}$ or $\text{mph}$).</li>
+<li><strong>Bandwidth ($B$):</strong> The window of time (in seconds) during which a vehicle starting at the first intersection can travel through the entire coordinated corridor at the progression speed without stopping. A larger bandwidth indicates better coordination.</li>
+<li><strong>Bandwidth Efficiency ($E$):</strong> The ratio of the green bandwidth to the cycle length, expressed as a percentage:
+$$E = \left( \frac{B}{C} \right) \times 100%$$</li>
+<li><strong>Offset ($O_{ij}$):</strong> The time difference (in seconds or as a percentage of the cycle length) between the start of the green phase for the coordinated movement at a downstream intersection ($j$) relative to a reference point (usually the start of green) at an upstream intersection ($i$).</li>
+</ul>
+<hr>
+<h2 id="time-space-diagrams">Time-Space Diagrams</h2>
+<p>A time-space diagram is the primary tool for designing and visualizing signal coordination.</p>
+<ul>
+<li><strong>Vertical Axis ($y$-axis):</strong> Distance along the corridor (feet or miles). The locations of the signalized intersections are marked.</li>
+<li><strong>Horizontal Axis ($x$-axis):</strong> Time (seconds). The signal indications (green, yellow, red) for each intersection are plotted.</li>
+<li><strong>Green Band:</strong> The shaded path running diagonally through the green phases of the intersections. The slope of this band represents the progression speed:
+$$\text{Slope} = \frac{\Delta \text{Distance}}{\Delta \text{Time}} = v_p$$</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">svg</span> <span style="color:#a6e22e">viewBox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0 0 600 250&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;250&#34;</span> <span style="color:#a6e22e">xmlns</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.w3.org/2000/svg&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">defs</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">marker</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;arrow-axis&#34;</span> <span style="color:#a6e22e">markerWidth</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">markerHeight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">refX</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;8&#34;</span> <span style="color:#a6e22e">refY</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4&#34;</span> <span style="color:#a6e22e">orient</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auto&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">path</span> <span style="color:#a6e22e">d</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;M0,0 L0,8 L8,4 z&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0f172a&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">marker</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">defs</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Axes --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;560&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0f172a&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> <span style="color:#a6e22e">marker-end</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url(#arrow-axis)&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;20&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0f172a&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> <span style="color:#a6e22e">marker-end</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;url(#arrow-axis)&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;540&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;220&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;12&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0f172a&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;end&#34;</span>&gt;Time (seconds)&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;25&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;30&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;12&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#0f172a&#34;</span> <span style="color:#a6e22e">transform</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rotate(-90, 25, 30)&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;end&#34;</span>&gt;Distance (ft)&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Intersection lines (horizontal dashed) --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;160&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;560&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;160&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#cbd5e1&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">stroke-dasharray</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4,4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;570&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;165&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;11&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span>&gt;Int. 1&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">line</span> <span style="color:#a6e22e">x1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;40&#34;</span> <span style="color:#a6e22e">y1</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;60&#34;</span> <span style="color:#a6e22e">x2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;560&#34;</span> <span style="color:#a6e22e">y2</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;60&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#cbd5e1&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> <span style="color:#a6e22e">stroke-dasharray</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;4,4&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;570&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;65&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;11&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#475569&#34;</span>&gt;Int. 2&lt;/<span style="color:#f92672">text</span>&gt;    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Green Band --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">polygon</span> <span style="color:#a6e22e">points</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120,160 220,160 300,60 200,60&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#10b981&#34;</span> <span style="color:#a6e22e">fill-opacity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0.2&#34;</span> <span style="color:#a6e22e">stroke</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#10b981&#34;</span> <span style="color:#a6e22e">stroke-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;280&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;110&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;11&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#047857&#34;</span> <span style="color:#a6e22e">font-weight</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bold&#34;</span> <span style="color:#a6e22e">transform</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rotate(-50, 280, 110)&#34;</span>&gt;Green Band (B)&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Signal Timings - Intersection 1 (Bottom) --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">rect</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;155&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#10b981&#34;</span> <span style="color:#a6e22e">rx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;170&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#10b981&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Green&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">rect</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;220&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;155&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;80&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ef4444&#34;</span> <span style="color:#a6e22e">rx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;260&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ef4444&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Red&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">rect</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;300&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;155&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#10b981&#34;</span> <span style="color:#a6e22e">rx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;350&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#10b981&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Green&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Signal Timings - Intersection 2 (Top) --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">rect</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;120&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;55&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;80&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ef4444&#34;</span> <span style="color:#a6e22e">rx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;160&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ef4444&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Red&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">rect</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;200&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;55&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#10b981&#34;</span> <span style="color:#a6e22e">rx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;250&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#10b981&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Green&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">rect</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;300&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;55&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;80&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ef4444&#34;</span> <span style="color:#a6e22e">rx</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">text</span> <span style="color:#a6e22e">x</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;340&#34;</span> <span style="color:#a6e22e">y</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;50&#34;</span> <span style="color:#a6e22e">font-family</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sans-serif&#34;</span> <span style="color:#a6e22e">font-size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10&#34;</span> <span style="color:#a6e22e">fill</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#ef4444&#34;</span> <span style="color:#a6e22e">text-anchor</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle&#34;</span>&gt;Red&lt;/<span style="color:#f92672">text</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">svg</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><hr>
+<h2 id="one-way-vs-two-way-coordination">One-Way vs. Two-Way Coordination</h2>
+<h3 id="one-way-coordination">One-Way Coordination</h3>
+<p>For a one-way street (or a corridor where traffic is heavily directional, such as inbound during AM peak), coordinating the signal is straightforward. The ideal offset between intersection $i$ and downstream intersection $j$ is simply the travel time between them:</p>
+<p>$$O_{ideal} = \frac{L_{ij}}{v_p}$$</p>
+<p>Where:</p>
+<ul>
+<li>$O_{ideal}$ = Ideal offset (seconds)</li>
+<li>$L_{ij}$ = Distance between intersections $i$ and $j$ (feet)</li>
+<li>$v_p$ = Progression speed (feet per second, $\text{ft/s}$)</li>
+</ul>
+<h3 id="two-way-coordination">Two-Way Coordination</h3>
+<p>Coordinating traffic in both directions concurrently is challenging. Perfect two-way coordination (where maximum bandwidth is achieved in both directions) is only possible under specific geometric conditions.</p>
+<p>Specifically, the travel time ($t_{\text{travel}}$) between two intersections must be a multiple of half the cycle length ($C/2$):
+$$t_{\text{travel}} = n \cdot \left( \frac{C}{2} \right)$$
+Where $n$ is an integer ($0, 1, 2, \dots$).</p>
+<ul>
+<li>If $n$ is even (e.g., $t_{\text{travel}} = C, 2C$), the ideal offset is <strong>$0\text{ seconds}$</strong> (simultaneous green onset).</li>
+<li>If $n$ is odd (e.g., $t_{\text{travel}} = C/2, 3C/2$), the ideal offset is <strong>$C/2\text{ seconds}$</strong> (single-alternate green onset).</li>
+</ul>
+<p>When travel times do not match these criteria, traffic engineers must compromise by unequalizing the bandwidths (e.g., giving the peak direction a wider bandwidth and the off-peak direction a narrower bandwidth).</p>
+<hr>
+<h2 id="worked-example-progression-and-offset-design">Worked Example: Progression and Offset Design</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>Two signalized intersections along an arterial corridor are separated by a distance of $1,760\text{ feet}$ (exactly 1/3 of a mile). The corridor operates on a coordinated system with a common cycle length of $80\text{ seconds}$. The design progression speed is $30\text{ mph}$.</p>
+<ol>
+<li>Calculate the travel time between the two intersections in seconds.</li>
+<li>Determine the ideal offset for one-way progression from the first intersection to the second.</li>
+<li>Evaluate the feasibility of achieving perfect two-way coordination (equal bandwidth in both directions).</li>
+</ol>
+<h3 id="step-by-step-solution">Step-by-Step Solution</h3>
+<h4 id="step-1-convert-progression-speed-and-calculate-travel-time">Step 1: Convert Progression Speed and Calculate Travel Time</h4>
+<p>First, convert the progression speed from $\text{mph}$ to $\text{ft/s}$:
+$$v_p = 30\text{ mph} \times 1.467 = 44\text{ ft/s}$$</p>
+<p>Now, calculate the travel time ($t_{\text{travel}}$) over the $1,760\text{-foot}$ distance:
+$$t_{\text{travel}} = \frac{L}{v_p} = \frac{1,760\text{ ft}}{44\text{ ft/s}} = 40.0\text{ seconds}$$</p>
+<h4 id="step-2-determine-the-ideal-one-way-offset">Step 2: Determine the Ideal One-Way Offset</h4>
+<p>For one-way progression, the downstream signal&rsquo;s green phase should start exactly when the platoon arrives. Thus, the ideal offset is equal to the travel time:
+$$\text{Offset} = 40.0\text{ seconds}$$</p>
+<p>As a percentage of the cycle length ($C = 80\text{ s}$):
+$$\text{Offset (%)} = \left( \frac{40\text{ s}}{80\text{ s}} \right) \times 100% = 50%$$</p>
+<h4 id="step-3-evaluate-two-way-coordination-feasibility">Step 3: Evaluate Two-Way Coordination Feasibility</h4>
+<p>For perfect two-way coordination, the travel time must satisfy:
+$$t_{\text{travel}} = n \cdot \left( \frac{C}{2} \right)$$</p>
+<p>Let&rsquo;s test this relationship with our values ($t_{\text{travel}} = 40.0\text{ s}$ and $C = 80\text{ s}$):
+$$\frac{C}{2} = \frac{80\text{ s}}{2} = 40.0\text{ seconds}$$
+$$t_{\text{travel}} = 40.0\text{ s} = 1 \cdot (40.0\text{ s})$$</p>
+<p>Here, $n = 1$, which is an integer.</p>
+<p>Because the travel time ($40.0\text{ seconds}$) is exactly equal to half the cycle length ($C/2 = 40.0\text{ seconds}$), <strong>perfect two-way coordination is feasible</strong>. By setting the offset at the second intersection to $40.0\text{ seconds}$ (or $C/2$), the green bands in both directions will be maximized and identical.</p>
+<p><em>Exam Tip: If the travel time had been 30 seconds, perfect two-way progression would not be possible without changing the cycle length. If the cycle length could be adjusted to 60 seconds ($C/2 = 30\text{ s}$), then two-way coordination would become perfect. This is why cycle length selection and coordination are iterative.</em></p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-10/71-signal-warrants/">
+                &#8592;
+                Previous:
+                Traffic Signal Warrants
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-10/73-signal-design-plans/">
+                Next:
+                Traffic Signal Design and Plans
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

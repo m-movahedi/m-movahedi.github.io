@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 4: Capacity and Level of Service on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-4/</link>
+    <description>Recent content in Module 4: Capacity and Level of Service on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Capacity and Level of Service Overview</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/21-capacity-and-level-of-service-overview/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/21-capacity-and-level-of-service-overview/</guid>
+      <description>&lt;h1 id=&#34;capacity-and-level-of-service-overview&#34;&gt;Capacity and Level of Service Overview&lt;/h1&gt;&#xA;&lt;p&gt;The Highway Capacity Manual (HCM) defines capacity and Level of Service (LOS) as the core performance metrics used to analyze and design transportation facilities. In the NCEES PE Civil Transportation exam, understanding these foundational concepts, knowing how they differ across facility types, and mastering the basic traffic flow relationships is essential. This lesson covers the fundamentals of capacity, demand, volume-to-capacity ($v/c$) ratios, service flow rates, density, delay, and how these performance measures translate into LOS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basic Freeway Segments</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/</guid>
+      <description>&lt;h1 id=&#34;basic-freeway-segments&#34;&gt;Basic Freeway Segments&lt;/h1&gt;&#xA;&lt;p&gt;Basic freeway segments are outside the influence of merging, diverging, or weaving maneuvers. The operational analysis of basic freeway segments is a core topic on the NCEES PE Civil Transportation exam. The methodology is governed by Chapter 12 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-hcm-analysis-methodology&#34;&gt;The HCM Analysis Methodology&lt;/h2&gt;&#xA;&lt;p&gt;The operational analysis of a basic freeway segment follows a structured, step-by-step procedure to determine its Level of Service (LOS) and capacity:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multilane Highways</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/23-multilane-highways/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/23-multilane-highways/</guid>
+      <description>&lt;h1 id=&#34;multilane-highways&#34;&gt;Multilane Highways&lt;/h1&gt;&#xA;&lt;p&gt;Multilane highways differ from freeways because they are not fully access-controlled. They often feature at-grade intersections, driveways, and medians (or lack thereof), which introduces additional friction to traffic flow. The operational analysis of multilane highways is governed by Chapter 12 of the Highway Capacity Manual (HCM 6th Edition) and is a frequent topic on the NCEES PE Civil Transportation exam.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;operational-differences-freeways-vs-multilane-highways&#34;&gt;Operational Differences: Freeways vs. Multilane Highways&lt;/h2&gt;&#xA;&lt;p&gt;To analyze multilane highways correctly, keep these differences from freeways in mind:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Two-Lane Highways</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/24-two-lane-highways/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/24-two-lane-highways/</guid>
+      <description>&lt;h1 id=&#34;two-lane-highways&#34;&gt;Two-Lane Highways&lt;/h1&gt;&#xA;&lt;p&gt;A two-lane highway is a undivided roadway with one lane of traffic in each direction. On these facilities, passing maneuvers must take place in the lane of opposing traffic when gaps permit. Consequently, operations are highly sensitive to opposing traffic volume and the availability of passing zones.&lt;/p&gt;&#xA;&lt;p&gt;The NCEES PE Civil Transportation exam frequently tests two-lane highway operations. The methodology is governed by Chapter 15 of the Highway Capacity Manual (HCM 6th Edition).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Urban Street Segments</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/25-urban-street-segments/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/25-urban-street-segments/</guid>
+      <description>&lt;h1 id=&#34;urban-street-segments&#34;&gt;Urban Street Segments&lt;/h1&gt;&#xA;&lt;p&gt;Urban streets are characterized by interrupted flow, where traffic signals, stop signs, and turning vehicles at intersections dominate the travel time and operational quality. Unlike freeways and multilane highways where density is the primary measure of service, urban street segments are evaluated using &lt;strong&gt;Average Travel Speed ($S_D$)&lt;/strong&gt; or its ratio to the segment&amp;rsquo;s &lt;strong&gt;Free-Flow Speed (FFS)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The operational analysis of urban street segments is governed by Chapters 16 and 18 of the Highway Capacity Manual (HCM 6th Edition).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Signalized Intersection Capacity</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/26-signalized-intersection-capacity/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/26-signalized-intersection-capacity/</guid>
+      <description>&lt;h1 id=&#34;signalized-intersection-capacity&#34;&gt;Signalized Intersection Capacity&lt;/h1&gt;&#xA;&lt;p&gt;Signalized intersections are critical nodes in urban street networks. Their capacity analysis is a major component of the NCEES PE Civil Transportation exam. The analysis determines the capacity of individual lane groups, their volume-to-capacity ($v/c$) ratios, and the average control delay per vehicle, which defines the Level of Service (LOS).&lt;/p&gt;&#xA;&lt;p&gt;The methodology is governed by Chapter 19 of the Highway Capacity Manual (HCM 6th Edition) and is detailed in the NCEES PE Civil Reference Handbook.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unsignalized Intersection Operations</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/</guid>
+      <description>&lt;h1 id=&#34;unsignalized-intersection-operations&#34;&gt;Unsignalized Intersection Operations&lt;/h1&gt;&#xA;&lt;p&gt;Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are Two-Way Stop-Controlled (TWSC) intersections and All-Way Stop-Controlled (AWSC) intersections. Their operational analysis is a key topic on the NCEES PE Civil Transportation exam, focusing on critical headway, potential capacity, movement capacity, control delay, and Level of Service (LOS).&lt;/p&gt;&#xA;&lt;p&gt;The methodology is governed by Chapters 20 and 21 of the Highway Capacity Manual (HCM 6th Edition).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Roundabout Operations</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/28-roundabout-operations/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/28-roundabout-operations/</guid>
+      <description>&lt;h1 id=&#34;roundabout-operations&#34;&gt;Roundabout Operations&lt;/h1&gt;&#xA;&lt;p&gt;Roundabouts are unsignalized intersections with a circular central island, where entering traffic yields to circulating traffic. Their analysis is performed on an entry-lane-by-entry-lane basis. The NCEES PE Civil Transportation exam frequently tests roundabout capacity, circulating flow calculation, control delay, and Level of Service (LOS).&lt;/p&gt;&#xA;&lt;p&gt;The methodology is governed by Chapter 22 of the Highway Capacity Manual (HCM 6th Edition) and is outlined in the NCEES PE Civil Reference Handbook.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ramp Merge and Diverge Operations</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/</guid>
+      <description>&lt;h1 id=&#34;ramp-merge-and-diverge-operations&#34;&gt;Ramp Merge and Diverge Operations&lt;/h1&gt;&#xA;&lt;p&gt;Ramp merge and diverge segments represent major points of traffic turbulence on freeways. The operational analysis focuses on the &lt;strong&gt;Ramp Influence Area&lt;/strong&gt;, which is defined as the area extending $1,500 \text{ feet}$ along the freeway outer lanes (lanes 1 and 2) and including the acceleration or deceleration lane.&lt;/p&gt;&#xA;&lt;p&gt;The NCEES PE Civil Transportation exam frequently tests these operations. The analysis is governed by Chapter 14 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weaving Segments</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/</guid>
+      <description>&lt;h1 id=&#34;weaving-segments&#34;&gt;Weaving Segments&lt;/h1&gt;&#xA;&lt;p&gt;A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of traffic signals or other control devices. Weaving segments are characterized by high turbulence, as vehicles must make lane changes over a limited distance.&lt;/p&gt;&#xA;&lt;p&gt;The NCEES PE Civil Transportation exam frequently tests weaving segment operations. The methodology is governed by Chapter 13 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Critical Path Method (CPM) and Crashing</title>
+    <meta name="description" content="Critical Path Method (CPM) and Crashing The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Critical Path Method (CPM) and Crashing">
+    <meta property="og:description" content="Critical Path Method (CPM) and Crashing The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Critical Path Method (CPM) and Crashing">
+    <meta name="twitter:description" content="Critical Path Method (CPM) and Crashing The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Critical Path Method (CPM) and Crashing</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="critical-path-method-cpm-and-crashing">Critical Path Method (CPM) and Crashing</h1>
+<p>The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the critical path, calculate floats, and manage project schedules. This is a highly tested, calculation-heavy topic on the PE Civil Transportation exam.</p>
+<hr>
+<h2 id="the-cpm-calculation-process">The CPM Calculation Process</h2>
+<p>CPM relies on a <strong>forward pass</strong> to determine early dates, followed by a <strong>backward pass</strong> to determine late dates. We use the <strong>0-based convention</strong> ($ES_{\text{start}} = 0$) because it simplifies the math, especially when relationship lags are present.</p>
+<h3 id="node-layout-activity-on-node">Node Layout (Activity-on-Node)</h3>
+<p>Each activity is represented by a box with the following structure:</p>
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .node { fill: #f9f9f9; stroke: #333; stroke-width: 2; transition: fill 0.2s; }
+      .node:hover { fill: #eaeaea; }
+      .line { stroke: #333; stroke-width: 1; }
+      .text { font-family: monospace; font-size: 14px; fill: #333; }
+      .header { font-weight: bold; }
+    </style>
+    <!-- Outer Box -->
+    <rect x="10" y="10" width="180" height="100" class="node" />    
+    <!-- Horizontal Dividers -->
+    <line x1="10" y1="40" x2="190" y2="40" class="line" />
+    <line x1="10" y1="80" x2="190" y2="80" class="line" />    
+    <!-- Vertical Dividers (Top Row) -->
+    <line x1="50" y1="10" x2="50" y2="40" class="line" />
+    <line x1="150" y1="10" x2="150" y2="40" class="line" />    
+    <!-- Vertical Dividers (Bottom Row) -->
+    <line x1="50" y1="80" x2="50" y2="110" class="line" />
+    <line x1="150" y1="80" x2="150" y2="110" class="line" />    
+    <!-- Texts Top Row -->
+    <text x="30" y="30" class="text" text-anchor="middle">ES</text>
+    <text x="100" y="30" class="text" text-anchor="middle">Duration (d)</text>
+    <text x="170" y="30" class="text" text-anchor="middle">EF</text>    
+    <!-- Activity Name -->
+    <text x="100" y="65" class="text header" text-anchor="middle">Activity Name</text>    
+    <!-- Texts Bottom Row -->
+    <text x="30" y="100" class="text" text-anchor="middle">LS</text>
+    <text x="100" y="100" class="text" text-anchor="middle">Total Float</text>
+    <text x="170" y="100" class="text" text-anchor="middle">LF</text>
+  </svg>
+</div>
+<h3 id="1-forward-pass-calculating-early-dates">1. Forward Pass (Calculating Early Dates)</h3>
+<p>Moves from left to right through the network to determine the earliest possible start and finish times for each activity.</p>
+<ul>
+<li><strong>Rule 1 (First Activity):</strong><br>
+$$ES_{\text{Start}} = 0$$</li>
+<li><strong>Rule 2 (Early Finish):</strong><br>
+$$EF = ES + d$$</li>
+<li><strong>Rule 3 (Merge Activities):</strong> If a successor activity has multiple predecessors, its Early Start is the <strong>maximum</strong> of the Early Finish dates of its immediate predecessors.
+$$ES_{\text{successor}} = \max(EF_{\text{predecessor 1}}, EF_{\text{predecessor 2}}, \dots)$$</li>
+</ul>
+<h3 id="2-backward-pass-calculating-late-dates">2. Backward Pass (Calculating Late Dates)</h3>
+<p>Moves from right to left through the network to determine the latest possible start and finish times that will not delay the project finish.</p>
+<ul>
+<li><strong>Rule 1 (Last Activity):</strong> The Late Finish ($LF$) of the final activity is set equal to its Early Finish ($EF$) unless a contract deadline is specified.
+$$LF_{\text{End}} = EF_{\text{End}}$$</li>
+<li><strong>Rule 2 (Late Start):</strong><br>
+$$LS = LF - d$$</li>
+<li><strong>Rule 3 (Burst Activities):</strong> If a predecessor activity has multiple successors, its Late Finish is the <strong>minimum</strong> of the Late Start dates of its immediate successors.
+$$LF_{\text{predecessor}} = \min(LS_{\text{successor 1}}, LS_{\text{successor 2}}, \dots)$$</li>
+</ul>
+<hr>
+<h2 id="total-float-vs-free-float">Total Float vs. Free Float</h2>
+<p>Float represents schedule flexibility.</p>
+<h3 id="1-total-float-tf">1. Total Float (TF)</h3>
+<p>The maximum amount of time that an activity can be delayed from its early start without delaying the overall project completion date.
+$$TF = LS - ES = LF - EF$$</p>
+<ul>
+<li>Activities on the critical path have <strong>$TF = 0$</strong>.</li>
+<li>A delay in any activity with $TF &gt; 0$ will eat into the project&rsquo;s buffer but won&rsquo;t delay the finish date until the delay exceeds $TF$.</li>
+</ul>
+<h3 id="2-free-float-ff">2. Free Float (FF)</h3>
+<p>The maximum amount of time an activity can be delayed without delaying the early start of <strong>any</strong> of its immediate successor activities.
+$$FF = \min(ES_{\text{successors}}) - EF_{\text{activity}}$$</p>
+<ul>
+<li>Free float can never exceed total float ($FF \le TF$).</li>
+<li>An activity can have total float but zero free float if delaying it would immediately push its successors&rsquo; early start dates.</li>
+</ul>
+<hr>
+<h2 id="worked-example-full-cpm-network">Worked Example: Full CPM Network</h2>
+<p><strong>Problem:</strong><br>
+A project network has the following activities, durations, and predecessor relationships:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Activity</th>
+          <th style="text-align: center">Predecessors</th>
+          <th style="text-align: center">Duration (Days)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><strong>A</strong></td>
+          <td style="text-align: center">None</td>
+          <td style="text-align: center">4</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>B</strong></td>
+          <td style="text-align: center">A</td>
+          <td style="text-align: center">6</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>C</strong></td>
+          <td style="text-align: center">A</td>
+          <td style="text-align: center">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>D</strong></td>
+          <td style="text-align: center">B</td>
+          <td style="text-align: center">5</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>E</strong></td>
+          <td style="text-align: center">B, C</td>
+          <td style="text-align: center">8</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>F</strong></td>
+          <td style="text-align: center">D, E</td>
+          <td style="text-align: center">4</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>Draw the network and perform the forward and backward passes.</li>
+<li>Identify the critical path and the total project duration.</li>
+<li>Compute the Total Float ($TF$) and Free Float ($FF$) for all activities.</li>
+</ol>
+<hr>
+<h3 id="network-diagrams-and-passes">Network Diagrams and Passes</h3>
+<div style="text-align: center; margin: 20px 0; overflow-x: auto;">
+  <svg width="700" height="300" viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .node { fill: #fff; stroke: #333; stroke-width: 2; transition: all 0.3s ease; cursor: pointer; }
+      .node:hover { fill: #f0f8ff; transform: scale(1.02); }
+      .critical { stroke: #d32f2f; stroke-width: 3; }
+      .critical-hover:hover { fill: #ffebee; }
+      .line { stroke: #333; stroke-width: 1; }
+      .arrow { stroke: #333; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-crit { stroke: #d32f2f; stroke-width: 3; fill: none; marker-end: url(#arrowhead-crit); }
+      .text { font-family: monospace; font-size: 12px; fill: #333; pointer-events: none; }
+      .header { font-weight: bold; font-size: 14px; }
+    </style>    
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+      </marker>
+      <marker id="arrowhead-crit" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f" />
+      </marker>      
+      <!-- Template for a Node. Use with <use> and pass x, y -->
+      <g id="cpm-node">
+        <rect x="0" y="0" width="120" height="75" class="node" />
+        <line x1="0" y1="25" x2="120" y2="25" class="line" />
+        <line x1="0" y1="50" x2="120" y2="50" class="line" />
+        <line x1="35" y1="0" x2="35" y2="25" class="line" />
+        <line x1="85" y1="0" x2="85" y2="25" class="line" />
+        <line x1="35" y1="50" x2="35" y2="75" class="line" />
+        <line x1="85" y1="50" x2="85" y2="75" class="line" />
+      </g>
+      <g id="cpm-node-crit">
+        <rect x="0" y="0" width="120" height="75" class="node critical critical-hover" />
+        <line x1="0" y1="25" x2="120" y2="25" class="line" />
+        <line x1="0" y1="50" x2="120" y2="50" class="line" />
+        <line x1="35" y1="0" x2="35" y2="25" class="line" />
+        <line x1="85" y1="0" x2="85" y2="25" class="line" />
+        <line x1="35" y1="50" x2="35" y2="75" class="line" />
+        <line x1="85" y1="50" x2="85" y2="75" class="line" />
+      </g>
+    </defs>
+    <!-- Edges -->
+    <path d="M 140 150 L 160 150 L 160 50 L 195 50" class="arrow-crit" />
+    <path d="M 140 150 L 160 150 L 160 250 L 195 250" class="arrow" />    
+    <path d="M 320 50 L 350 50 L 350 130 L 395 130" class="arrow-crit" />
+    <path d="M 320 50 L 350 50 L 350 20 L 395 20" class="arrow" />    
+    <path d="M 320 250 L 350 250 L 350 170 L 395 170" class="arrow" />
+    <path d="M 520 20 L 550 20 L 550 130 L 575 130" class="arrow" />
+    <path d="M 520 150 L 550 150 L 550 150 L 575 150" class="arrow-crit" />
+    <!-- Node A (Critical) -->
+    <g transform="translate(20, 112.5)">
+      <use href="#cpm-node-crit" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">0</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">A</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">4</text>
+    </g>
+    <!-- Node B (Critical) -->
+    <g transform="translate(200, 12.5)">
+      <use href="#cpm-node-crit" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">6</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">10</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">B</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">4</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">10</text>
+    </g>
+    <!-- Node C -->
+    <g transform="translate(200, 212.5)">
+      <use href="#cpm-node" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">3</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">7</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">C</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">7</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">3</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">10</text>
+    </g>
+    <!-- Node D -->
+    <g transform="translate(400, 12.5)">
+      <use href="#cpm-node" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">10</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">5</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">15</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">D</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">13</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">3</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">18</text>
+    </g>
+    <!-- Node E (Critical) -->
+    <g transform="translate(400, 112.5)">
+      <use href="#cpm-node-crit" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">10</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">8</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">18</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">E</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">10</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">18</text>
+    </g>
+    <!-- Node F (Critical) -->
+    <g transform="translate(580, 112.5)">
+      <use href="#cpm-node-crit" />
+      <text x="17.5" y="17.5" class="text" text-anchor="middle">18</text>
+      <text x="60" y="17.5" class="text" text-anchor="middle">4</text>
+      <text x="102.5" y="17.5" class="text" text-anchor="middle">22</text>
+      <text x="60" y="42.5" class="text header" text-anchor="middle">F</text>
+      <text x="17.5" y="67.5" class="text" text-anchor="middle">18</text>
+      <text x="60" y="67.5" class="text" text-anchor="middle">0</text>
+      <text x="102.5" y="67.5" class="text" text-anchor="middle">22</text>
+    </g>
+  </svg>
+</div>
+<h3 id="steps">Steps:</h3>
+<h4 id="forward-pass">Forward Pass:</h4>
+<ul>
+<li><strong>A:</strong> $ES_A = 0$, $EF_A = 0 + 4 = 4$</li>
+<li><strong>B:</strong> $ES_B = EF_A = 4$, $EF_B = 4 + 6 = 10$</li>
+<li><strong>C:</strong> $ES_C = EF_A = 4$, $EF_C = 4 + 3 = 7$</li>
+<li><strong>D:</strong> $ES_D = EF_B = 10$, $EF_D = 10 + 5 = 15$</li>
+<li><strong>E:</strong> $ES_E = \max(EF_B, EF_C) = \max(10, 7) = 10$, $EF_E = 10 + 8 = 18$</li>
+<li><strong>F:</strong> $ES_F = \max(EF_D, EF_E) = \max(15, 18) = 18$, $EF_F = 18 + 4 = 22$</li>
+<li><strong>Project Duration = 22 days.</strong></li>
+</ul>
+<h4 id="backward-pass-set-lf_f--ef_f--22">Backward Pass (Set $LF_F = EF_F = 22$):</h4>
+<ul>
+<li><strong>F:</strong> $LF_F = 22$, $LS_F = 22 - 4 = 18$</li>
+<li><strong>E:</strong> $LF_E = LS_F = 18$, $LS_E = 18 - 8 = 10$</li>
+<li><strong>D:</strong> $LF_D = LS_F = 18$, $LS_D = 18 - 5 = 13$</li>
+<li><strong>C:</strong> $LF_C = LS_E = 10$, $LS_C = 10 - 3 = 7$</li>
+<li><strong>B:</strong> $LF_B = \min(LS_D, LS_E) = \min(13, 10) = 10$, $LS_B = 10 - 6 = 4$</li>
+<li><strong>A:</strong> $LF_A = \min(LS_B, LS_C) = \min(4, 7) = 4$, $LS_A = 4 - 4 = 0$</li>
+</ul>
+<hr>
+<h3 id="float-calculations-table">Float Calculations Table</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Activity</th>
+          <th style="text-align: center">ES</th>
+          <th style="text-align: center">EF</th>
+          <th style="text-align: center">LS</th>
+          <th style="text-align: center">LF</th>
+          <th style="text-align: center">Total Float ($LF-EF$)</th>
+          <th style="text-align: center">Free Float ($\min(ES_{\text{succ}}) - EF$)</th>
+          <th style="text-align: center">Critical?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><strong>A</strong></td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">$\min(4, 4) - 4 = 0$</td>
+          <td style="text-align: center"><strong>Yes</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>B</strong></td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">$\min(10, 10) - 10 = 0$</td>
+          <td style="text-align: center"><strong>Yes</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>C</strong></td>
+          <td style="text-align: center">4</td>
+          <td style="text-align: center">7</td>
+          <td style="text-align: center">7</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">$10 - 7 = 3$</td>
+          <td style="text-align: center">No</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>D</strong></td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">15</td>
+          <td style="text-align: center">13</td>
+          <td style="text-align: center">18</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">$18 - 15 = 3$</td>
+          <td style="text-align: center">No</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>E</strong></td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">18</td>
+          <td style="text-align: center">10</td>
+          <td style="text-align: center">18</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">$18 - 18 = 0$</td>
+          <td style="text-align: center"><strong>Yes</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>F</strong></td>
+          <td style="text-align: center">18</td>
+          <td style="text-align: center">22</td>
+          <td style="text-align: center">18</td>
+          <td style="text-align: center">22</td>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">$22 - 22 = 0$</td>
+          <td style="text-align: center"><strong>Yes</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Critical Path:</strong> A - B - E - F (Length = 22 days)</p>
+<hr>
+<h2 id="schedule-crashing-cost-time-trade-off">Schedule Crashing (Cost-Time Trade-off)</h2>
+<p>Crashing is the process of reducing project duration by adding resources to critical activities at the lowest possible cost.</p>
+<h3 id="key-concept-the-cost-slope">Key Concept: The Cost Slope</h3>
+<p>The cost slope represents the crash cost per unit of time (e.g., dollars per day).</p>
+<p>$$\text{Cost Slope} = \frac{\text{Crash Cost} - \text{Normal Cost}}{\text{Normal Duration} - \text{Crash Duration}}$$</p>
+<h3 id="crashing-protocol">Crashing Protocol:</h3>
+<ol>
+<li>Identify the current critical path(s) and project duration.</li>
+<li>Determine the cost slope for all activities.</li>
+<li>Select the activity <strong>on the critical path</strong> that has the <strong>lowest cost slope</strong> and can still be crashed.</li>
+<li>Crash that activity by <strong>1 day</strong> (or the maximum allowable crash limit, or until a new path becomes critical).</li>
+<li>Recalculate the critical path(s). If multiple critical paths exist, you must crash activities on both paths simultaneously to reduce the overall project duration.</li>
+<li>Repeat until the target duration is reached or all critical activities are crashed to their limits.</li>
+</ol>
+<hr>
+<h2 id="worked-example-schedule-crashing">Worked Example: Schedule Crashing</h2>
+<p><strong>Problem:</strong><br>
+Using the previous network ($A \to B \to E \to F$ is critical, duration = 22 days), we want to reduce the project duration by <strong>2 days</strong> (target = 20 days) at the lowest additional cost.</p>
+<p>The crash limits and costs are:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Activity</th>
+          <th style="text-align: center">Normal Duration</th>
+          <th style="text-align: center">Crash Duration</th>
+          <th style="text-align: center">Normal Cost</th>
+          <th style="text-align: center">Crash Cost</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><strong>A</strong></td>
+          <td style="text-align: center">4 days</td>
+          <td style="text-align: center">3 days</td>
+          <td style="text-align: center">$1,000</td>
+          <td style="text-align: center">$1,500</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>B</strong></td>
+          <td style="text-align: center">6 days</td>
+          <td style="text-align: center">4 days</td>
+          <td style="text-align: center">$2,000</td>
+          <td style="text-align: center">$3,200</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>C</strong></td>
+          <td style="text-align: center">3 days</td>
+          <td style="text-align: center">2 days</td>
+          <td style="text-align: center">$800</td>
+          <td style="text-align: center">$1,100</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>D</strong></td>
+          <td style="text-align: center">5 days</td>
+          <td style="text-align: center">3 days</td>
+          <td style="text-align: center">$1,500</td>
+          <td style="text-align: center">$2,100</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>E</strong></td>
+          <td style="text-align: center">8 days</td>
+          <td style="text-align: center">6 days</td>
+          <td style="text-align: center">$4,000</td>
+          <td style="text-align: center">$5,000</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><strong>F</strong></td>
+          <td style="text-align: center">4 days</td>
+          <td style="text-align: center">3 days</td>
+          <td style="text-align: center">$1,200</td>
+          <td style="text-align: center">$1,800</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Solution:</strong></p>
+<p><strong>Step 1: Calculate Cost Slopes</strong></p>
+<ul>
+<li><strong>A:</strong> $\frac{1,500 - 1,000}{4 - 3} = $500 / \text{day}$</li>
+<li><strong>B:</strong> $\frac{3,200 - 2,000}{6 - 4} = $600 / \text{day}$</li>
+<li><strong>C:</strong> $\frac{1,100 - 800}{3 - 2} = $300 / \text{day}$ (Non-critical)</li>
+<li><strong>D:</strong> $\frac{2,100 - 1,500}{5 - 3} = $300 / \text{day}$ (Non-critical)</li>
+<li><strong>E:</strong> $\frac{5,000 - 4,000}{8 - 6} = $500 / \text{day}$</li>
+<li><strong>F:</strong> $\frac{1,800 - 1,200}{4 - 3} = $600 / \text{day}$</li>
+</ul>
+<p><strong>Step 2: First Crashing Step (Reduce from 22 to 21 Days)</strong></p>
+<ul>
+<li>Critical Path: A - B - E - F</li>
+<li>Candidates for crashing (must be on the critical path): A ($500/day), B ($600/day), E ($500/day), F ($600/day).</li>
+<li>Tie-breaker: Both A and E cost $500/day. Let&rsquo;s crash <strong>Activity A</strong> by 1 day.</li>
+<li><strong>New Duration of A = 3 days.</strong></li>
+<li>Recalculate paths:
+<ul>
+<li>Path A-B-E-F: $3 + 6 + 8 + 4 = 21\text{ days}$</li>
+<li>Path A-C-E-F: $3 + 3 + 8 + 4 = 18\text{ days}$ (Still non-critical)</li>
+<li>Path A-B-D-F: $3 + 6 + 5 + 4 = 18\text{ days}$ (Still non-critical)</li>
+</ul>
+</li>
+<li><strong>Total Project Duration = 21 days.</strong> Additional cost = $500.</li>
+</ul>
+<p><strong>Step 3: Second Crashing Step (Reduce from 21 to 20 Days)</strong></p>
+<ul>
+<li>Critical Path remains: A - B - E - F.</li>
+<li>Activity A is at its crash limit (3 days).</li>
+<li>Remaining candidates: B ($600/day), E ($500/day), F ($600/day).</li>
+<li>Choose <strong>Activity E</strong> (lowest remaining cost slope: $500/day).</li>
+<li><strong>New Duration of E = 7 days.</strong></li>
+<li>Recalculate paths:
+<ul>
+<li>Path A-B-E-F: $3 + 6 + 7 + 4 = 20\text{ days}$</li>
+<li>Path A-C-E-F: $3 + 3 + 7 + 4 = 17\text{ days}$</li>
+<li>Path A-B-D-F: $3 + 6 + 5 + 4 = 18\text{ days}$</li>
+</ul>
+</li>
+<li><strong>Total Project Duration = 20 days.</strong> Additional cost = $500.</li>
+</ul>
+<p><strong>Step 4: Summary</strong></p>
+<ul>
+<li>Target duration met: 20 days.</li>
+<li><strong>Total additional crash cost:</strong> $$500 + $500 = $1,000$.</li>
+<li>Modified activity durations: $d_A = 3 \text{ days}$, $d_E = 7 \text{ days}$.</li>
+</ul>
+<hr>
+<h2 id="crucial-pitfalls-and-exam-traps">Crucial Pitfalls and Exam Traps</h2>
+<ul>
+<li><strong>Crashing Non-Critical Activities:</strong> Do not crash an activity just because it has the lowest cost slope. If it is not on the critical path, crashing it has zero effect on the project duration.</li>
+<li><strong>Multiple Critical Paths:</strong> When crashing creates a second critical path, you must crash both paths simultaneously. If you only crash one path, the project duration will not change because the other path remains at the original duration.</li>
+<li><strong>Free Float Calculation:</strong> Remember that free float is relative to the <em>immediate next</em> successors. If an activity connects to two successors, you must use the minimum ES of those successors in the formula:
+$$FF = \min(ES_{\text{successor 1}}, ES_{\text{successor 2}}) - EF_{\text{predecessor}}$$</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-2/09-project-scheduling-basics/">
+                &#8592;
+                Previous:
+                Project Scheduling Basics
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-2/11-engineering-economics/">
+                Next:
+                Engineering Economics
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 8: Vertical Alignment on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-8/</link>
+    <description>Recent content in Module 8: Vertical Alignment on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vertical Curve Fundamentals</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-8/52-vertical-curve-fundamentals/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-8/52-vertical-curve-fundamentals/</guid>
+      <description>&lt;h1 id=&#34;vertical-curve-fundamentals&#34;&gt;Vertical Curve Fundamentals&lt;/h1&gt;&#xA;&lt;p&gt;Vertical curves are used in highway design to provide a smooth transition between two intersecting grade tangents. Unlike horizontal curves, which are typically circular arcs, vertical curves are designed as parabolic arcs. A parabolic profile provides a constant rate of change of grade, which minimizes vertical acceleration and passenger discomfort while maintaining consistent steering control.&lt;/p&gt;&#xA;&lt;h2 id=&#34;curve-classifications&#34;&gt;Curve Classifications&lt;/h2&gt;&#xA;&lt;p&gt;Vertical curves are classified based on the relative direction of the grade change:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Elevation on Vertical Curves</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-8/53-elevation-on-vertical-curves/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-8/53-elevation-on-vertical-curves/</guid>
+      <description>&lt;h1 id=&#34;elevation-on-vertical-curves&#34;&gt;Elevation on Vertical Curves&lt;/h1&gt;&#xA;&lt;p&gt;Determining elevations along a parabolic vertical curve is a frequent task in road design and a heavily tested topic on the PE Civil Transportation exam. Geometric calculations utilize the properties of a vertical parabola, where the vertical offset from a tangent grade is proportional to the square of the horizontal distance from the tangent point.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-parabolic-curve-equations&#34;&gt;The Parabolic Curve Equations&lt;/h2&gt;&#xA;&lt;p&gt;To calculate the elevation of any point on a vertical curve, we define a coordinate system with its origin at the PVC:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stopping Sight Distance</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-8/54-stopping-sight-distance/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-8/54-stopping-sight-distance/</guid>
+      <description>&lt;h1 id=&#34;stopping-sight-distance&#34;&gt;Stopping Sight Distance&lt;/h1&gt;&#xA;&lt;p&gt;Stopping Sight Distance (SSD) is the minimum distance required for a driver traveling at a given speed to see a hazard on the roadway, react, and bring the vehicle to a complete stop before colliding with the object. SSD is a fundamental control for horizontal alignment, vertical alignment, and intersection design.&lt;/p&gt;&#xA;&lt;h2 id=&#34;components-of-stopping-sight-distance&#34;&gt;Components of Stopping Sight Distance&lt;/h2&gt;&#xA;&lt;p&gt;SSD is composed of two distinct components:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Perception-Reaction Distance:&lt;/strong&gt; The distance traveled from the instant the driver sees a hazard to the instant they apply the brakes.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Braking Distance:&lt;/strong&gt; The distance traveled while the vehicle is decelerating to a stop under braking.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;|&amp;lt;-------------------------- Stopping Sight Distance (SSD) --------------------------&amp;gt;|&#xD;&#xA;|                                                                                     |&#xD;&#xA;|&amp;lt;--- Perception-Reaction Distance ---&amp;gt;|&amp;lt;---------------- Braking Distance ----------&amp;gt;|&#xD;&#xA;| (Vehicle travels at design speed V)  | (Vehicle decelerates under braking)          |&#xD;&#xA;*--------------------------------------*----------------------------------------------*&#xD;&#xA;Driver sees hazard                 Brakes applied                                  Stop&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;&#xA;&lt;h2 id=&#34;governing-equations&#34;&gt;Governing Equations&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-uscs-english-units&#34;&gt;1. USCS (English) Units&lt;/h3&gt;&#xA;&lt;p&gt;The general formula for SSD in USCS units is:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crest Vertical Curves</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-8/55-crest-vertical-curves/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-8/55-crest-vertical-curves/</guid>
+      <description>&lt;h1 id=&#34;crest-vertical-curves&#34;&gt;Crest Vertical Curves&lt;/h1&gt;&#xA;&lt;p&gt;Crest vertical curves are designed to connect an uphill grade to a downhill grade (or a steeper uphill grade to a flatter uphill grade, etc.), where the algebraic difference in grade is negative ($g_1 &amp;gt; g_2$). The primary design control for a crest vertical curve is ensuring adequate sight distance—specifically Stopping Sight Distance (SSD)—so that a driver can see a hazard over the crest of the hill.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sag Vertical Curves</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-8/56-sag-vertical-curves/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-8/56-sag-vertical-curves/</guid>
+      <description>&lt;h1 id=&#34;sag-vertical-curves&#34;&gt;Sag Vertical Curves&lt;/h1&gt;&#xA;&lt;p&gt;Sag vertical curves connect a downgrade to an upgrade (or a steep downgrade to a flatter downgrade, etc.), where the algebraic difference in grade is positive ($g_1 &amp;lt; g_2$). Unlike crest curves, where sight distance is restricted by the roadway surface itself, sight distance on sag curves during the day is generally unrestricted.&lt;/p&gt;&#xA;&lt;p&gt;Consequently, the design of sag vertical curves is governed by four criteria:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Headlight Sight Distance&lt;/strong&gt; (the primary safety control for nighttime driving)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Passenger Comfort&lt;/strong&gt; (limiting vertical acceleration)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Drainage Control&lt;/strong&gt; (preventing water accumulation in the low point)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;General Appearance&lt;/strong&gt; (preventing an abrupt or sagging look)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;headlight-sight-distance-criteria&#34;&gt;Headlight Sight Distance Criteria&lt;/h2&gt;&#xA;&lt;p&gt;During nighttime, the distance the driver can see is limited by the reach and angle of the vehicle&amp;rsquo;s headlights. AASHTO design standards assume:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Passing Sight Distance on Vertical Curves</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-8/57-passing-sight-distance/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-8/57-passing-sight-distance/</guid>
+      <description>&lt;h1 id=&#34;passing-sight-distance-on-vertical-curves&#34;&gt;Passing Sight Distance on Vertical Curves&lt;/h1&gt;&#xA;&lt;p&gt;Passing Sight Distance (PSD) is the minimum distance required for a driver on a two-lane highway to safely complete a passing maneuver around a slower vehicle without colliding with an opposing vehicle. Providing PSD on vertical curves is much more demanding than providing Stopping Sight Distance (SSD) due to the greater sight distance required.&lt;/p&gt;&#xA;&lt;h2 id=&#34;design-parameters-for-passing-sight-distance&#34;&gt;Design Parameters for Passing Sight Distance&lt;/h2&gt;&#xA;&lt;p&gt;Unlike SSD, where the object on the road is small ($h_2 = 2.00\text{ ft}$), the object in a passing scenario is an oncoming vehicle. AASHTO Green Book standards assume:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vertical Clearance</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-8/58-vertical-clearance/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-8/58-vertical-clearance/</guid>
+      <description>&lt;h1 id=&#34;vertical-clearance&#34;&gt;Vertical Clearance&lt;/h1&gt;&#xA;&lt;p&gt;Vertical clearance is the minimum vertical distance between the roadway surface and an overhead structure, such as an overpass bridge girder, sign truss, or pedestrian bridge. Ensuring adequate clearance is critical for preventing overhead collisions from commercial trucks, and ensuring that overhead structures do not block a driver&amp;rsquo;s line of sight (underpass sight distance).&lt;/p&gt;&#xA;&lt;h2 id=&#34;design-standards-for-vertical-clearance&#34;&gt;Design Standards for Vertical Clearance&lt;/h2&gt;&#xA;&lt;p&gt;According to AASHTO and federal design standards:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Minimum Clearance:&lt;/strong&gt; The standard minimum vertical clearance for highways and freeways is &lt;strong&gt;$16.0\text{ ft}$&lt;/strong&gt; ($4.9\text{ m}$). On local or collector roads, a minimum clearance of &lt;strong&gt;$14.0\text{ ft}$&lt;/strong&gt; to &lt;strong&gt;$15.0\text{ ft}$&lt;/strong&gt; may be permitted.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Overlay Allowance:&lt;/strong&gt; It is standard practice to design for an additional &lt;strong&gt;$6\text{ inches}$&lt;/strong&gt; ($0.5\text{ ft}$) of clearance (making the design clearance $16.5\text{ ft}$) to accommodate future asphalt overlays without reducing the clearance below the legal limit.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;profile-and-clearance-geometry&#34;&gt;Profile and Clearance Geometry&lt;/h2&gt;&#xA;&lt;p&gt;Clearance is evaluated by comparing the profile elevation of the roadway with the elevation of the bottom of the overhead structure&amp;rsquo;s girders. Because the roadway is often on a vertical curve (most critically a sag curve), the clearance varies across the width of the bridge.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

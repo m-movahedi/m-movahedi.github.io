@@ -2,32 +2,395 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/disaster-management/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-1/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/electric-vehicles/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-1/01-exam-format-and-pacing/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-2/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/infrastructure-planning/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-1/02-ncees-handbook-navigation/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/ev-charging-network-hurricane-ian/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-1/03-supplied-standards-strategy/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/resilience/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/spatial-analytics/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-1/04-units-and-dimensional-checks/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-5/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-1/05-error-log-method/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-6/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-1/06-pe-style-problem-anatomy/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-2/07-quantity-takeoff-and-cost-estimating/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-8/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-2/08-construction-productivity/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-10/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-11/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-2/11-engineering-economics/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-2/12-benefit-cost-and-lifecycle-decisions/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/13-traffic-volume-concepts/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-14/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/15-speed-studies/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/16-travel-time-and-delay-studies/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/17-trip-generation-and-land-use/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/18-modal-split-and-person-trips/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/19-traffic-impact-studies/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-3/20-forecasting-and-growth-factors/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/21-capacity-and-level-of-service-overview/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/23-multilane-highways/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/24-two-lane-highways/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/25-urban-street-segments/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/26-signalized-intersection-capacity/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/28-roundabout-operations/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-5/32-collision-diagrams/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-5/33-conflict-analysis/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-5/34-crash-modification-factors/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-5/35-highway-safety-manual-concepts/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-5/36-safety-countermeasure-selection/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-6/37-roadway-cross-section-elements/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-6/38-clear-zone-concepts/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-6/39-barrier-warrants-and-placement/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-6/40-roadside-slopes-and-ditches/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-6/41-pedestrian-facility-design/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-6/43-traffic-calming-and-complete-streets/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/45-curve-stationing/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/46-sight-distance-on-horizontal-curves/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/47-superelevation-basics/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/48-superelevation-runoff-and-transition/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/49-compound-and-reverse-curves/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/50-curve-widening/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-7/51-coordination-of-horizontal-and-vertical-alignment/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-8/52-vertical-curve-fundamentals/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-8/53-elevation-on-vertical-curves/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-8/54-stopping-sight-distance/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-8/55-crest-vertical-curves/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-8/56-sag-vertical-curves/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-8/57-passing-sight-distance/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-8/58-vertical-clearance/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/59-intersection-sight-distance/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/60-at-grade-intersection-layout/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/61-turn-lane-design/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/62-driveway-and-access-management/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/63-roundabout-geometric-design/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/64-interchange-forms/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/65-ramp-geometry/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-9/66-freeway-merge-and-exit-design/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-10/67-signal-terminology/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-10/68-signal-phasing/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-10/69-yellow-and-all-red-intervals/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-10/70-pedestrian-timing/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-10/71-signal-warrants/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-10/73-signal-design-plans/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-11/74-regulatory-warning-and-guide-signs/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-11/75-pavement-markings/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-11/76-temporary-traffic-control-fundamentals/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-11/77-work-zone-taper-and-buffer-design/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-11/78-detours-and-lane-closures/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-11/79-railroad-crossings-and-preemption/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/80-soil-classification/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/81-soil-phase-relationships/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/82-compaction/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/85-earthwork-and-mass-balance/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/86-flexible-pavement-design-concepts/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/87-rigid-pavement-design-concepts/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/88-pavement-rehabilitation/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-12/89-traffic-characterization-for-pavements/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/90-hydrology-fundamentals/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/91-rational-method/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/94-storm-sewer-hydraulics/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/95-inlet-capacity/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/97-open-channel-flow/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/99-water-quality-and-stormwater-bmps/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-13/100-floodplain-and-roadway-overtopping/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-14/101-pedestrian-crossing-analysis/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-14/102-ada-curb-ramps-and-accessible-routes/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-14/103-bicycle-facility-selection/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-14/104-shared-use-paths/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-14/105-transit-stop-and-bus-operations-basics/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/106-corridor-design-integration/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/107-design-exception-reasoning/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/108-standards-conflict-resolution/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/109-mixed-calculation-set-traffic-and-signals/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/110-mixed-calculation-set-geometry-and-safety/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/111-mixed-calculation-set-drainage-and-pavement/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/112-full-mini-exam-1/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/113-full-mini-exam-2/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/114-final-review-and-formula-recognition/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/module-15/115-exam-day-decision-drills/</loc>
+    <lastmod>2026-05-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/scratchpad/transition-management/tm-101/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
@@ -65,16 +428,40 @@
     <loc>http://localhost:1313/scratchpad/transition-management/tm-112/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-06-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/scratchpad/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/scratchpad/transition-management/</loc>
     <lastmod>2026-06-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/multi-criteria-decision-analysis/</loc>
+    <loc>http://localhost:1313/tags/disaster-management/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/electric-vehicles/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/infrastructure-management/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/infrastructure-planning/</loc>
     <lastmod>2026-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multi-criteria-decision-analysis/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/resilience/</loc>
+    <lastmod>2026-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/transportation-planning/</loc>
@@ -269,6 +656,9 @@
     <loc>http://localhost:1313/scratchpad/human-behavior-modeling/hbm-30/</loc>
     <lastmod>2026-06-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/human-behavior/</loc>
+    <lastmod>2026-06-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/scratchpad/human-behavior-modeling/</loc>
     <lastmod>2026-06-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -344,7 +734,16 @@
     <loc>http://localhost:1313/scratchpad/research-agents/</loc>
     <lastmod>2026-05-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/large-language-models/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/scratchpad/local-llms/local-llms-203-choosing-a-local-llm-without-guessing/</loc>
+    <lastmod>2026-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
     <lastmod>2026-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/model-selection/</loc>
@@ -363,6 +762,15 @@
     <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/scratchpad/local-llms/local-llms-201-what-runs-on-your-machine/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pe-exam/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/pe-exam/</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/transportation-engineering/</loc>
     <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/scratchpad/llm/llm-108/</loc>
@@ -395,10 +803,7 @@
     <loc>http://localhost:1313/tags/agent-based-modeling/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
-    <lastmod>2026-04-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/llms/</loc>
+    <loc>http://localhost:1313/tags/post-disaster-recovery/</loc>
     <lastmod>2026-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/research/llm-persona-debris-management/</loc>
@@ -408,9 +813,6 @@
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/webinars/nheri_rsr_spring2026/</loc>
-    <lastmod>2026-02-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/post-disaster-recovery/</loc>
     <lastmod>2026-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/webinars/</loc>
@@ -434,10 +836,10 @@
     <loc>http://localhost:1313/tags/adaptive-control/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/intelligent-transportation-systems/</loc>
+    <loc>http://localhost:1313/tags/intelligent-transportation/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/large-language-models/</loc>
+    <loc>http://localhost:1313/tags/intelligent-transportation-systems/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/reinforcement-learning/</loc>
@@ -446,11 +848,122 @@
     <loc>http://localhost:1313/research/llm-adaptive-traffic-control/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/traffic-modeling/</loc>
+    <lastmod>2024-12-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/traffic-signal-control/</loc>
     <lastmod>2024-12-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/research/ev-charging-network-hurricane-ian/</loc>
+    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/spatial-analytics/</loc>
+    <lastmod>2024-06-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/demolition-waste-estimation/</loc>
+    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/circular-economy/</loc>
+    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/construction-management/</loc>
+    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/construction-waste/</loc>
+    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sustainability/</loc>
+    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/construction-and-demolition-waste/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/life-cycle-analysis/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/policy-and-regulation/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sustainable-management/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/sustainable-cdw-management-life-cycle/</loc>
+    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/adaptive-traffic-control/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/rl-adaptive-traffic-lights/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/network-optimization/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sumo-simulation/</loc>
+    <lastmod>2020-10-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multimodal-transportation-planning/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/public-transportation/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/research/sightseeing-tour-planning/</loc>
     <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/transit-planning/</loc>
+    <lastmod>2020-08-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/open-data-traffic-bottlenecks/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/incident-detection/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/its/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/open-data/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/probe-data/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/traffic-engineering/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/aggressive-driving/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/driving-simulation/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/human-factors/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/selective-attention-aggressive-driving/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/selective-attention/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/stroop-test/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/traffic-safety/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pavement-engineering/</loc>
+    <lastmod>2018-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/research/impacts-of-cdw-in-urban-roads/</loc>
+    <lastmod>2018-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/recycling/</loc>
+    <lastmod>2018-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sustainable-development/</loc>
+    <lastmod>2018-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>

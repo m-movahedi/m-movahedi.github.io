@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 1: Exam Strategy and Preparation on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-1/</link>
+    <description>Recent content in Module 1: Exam Strategy and Preparation on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exam Format, Interface, and Pacing Strategy</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-1/01-exam-format-and-pacing/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-1/01-exam-format-and-pacing/</guid>
+      <description>&lt;h1 id=&#34;exam-format-interface-and-pacing-strategy&#34;&gt;Exam Format, Interface, and Pacing Strategy&lt;/h1&gt;&#xA;&lt;p&gt;Preparing for the PE Civil Transportation exam involves more than just mastering formulas and design standards. The format of the exam itself—how it is delivered, how you interact with the software, and how you manage your time—is a vital part of your passing strategy.&lt;/p&gt;&#xA;&lt;p&gt;This lesson breaks down the Computer-Based Testing (CBT) environment, the structure of the exam, and a battle-tested pacing methodology to maximize your score over the 8-hour testing period.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Navigating the NCEES PE Civil Reference Handbook</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-1/02-ncees-handbook-navigation/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-1/02-ncees-handbook-navigation/</guid>
+      <description>&lt;h1 id=&#34;navigating-the-ncees-pe-civil-reference-handbook&#34;&gt;Navigating the NCEES PE Civil Reference Handbook&lt;/h1&gt;&#xA;&lt;p&gt;For the Computer-Based Testing (CBT) format of the PE exam, you can no longer bring your own milk crates full of tabbed textbooks. Your primary lifeline is the digital &lt;strong&gt;NCEES PE Civil Reference Handbook&lt;/strong&gt;, provided on the left half of your screen.&lt;/p&gt;&#xA;&lt;p&gt;Navigating this handbook quickly and efficiently is a fundamental skill. It is not just about using &lt;code&gt;Ctrl+F&lt;/code&gt;; it is about understanding the architecture of the document so you know &lt;em&gt;when&lt;/em&gt; to search, &lt;em&gt;how&lt;/em&gt; to search, and when a formula isn&amp;rsquo;t in the handbook at all.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Supplied Standards Strategy</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-1/03-supplied-standards-strategy/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-1/03-supplied-standards-strategy/</guid>
+      <description>&lt;h1 id=&#34;supplied-standards-strategy&#34;&gt;Supplied Standards Strategy&lt;/h1&gt;&#xA;&lt;p&gt;While the NCEES PE Civil Reference Handbook covers the foundational math and physics, the &lt;strong&gt;PE Civil Transportation exam&lt;/strong&gt; requires you to navigate a vast library of specialized, discipline-specific design manuals. These are referred to as the &amp;ldquo;Supplied Standards.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;In the CBT environment, these standards are provided as searchable PDFs on the left side of your monitor. You do not need to memorize the tables within them, but you &lt;strong&gt;must&lt;/strong&gt; instantly know &lt;em&gt;which&lt;/em&gt; standard to open when reading a problem statement.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Units and Dimensional Checks</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-1/04-units-and-dimensional-checks/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-1/04-units-and-dimensional-checks/</guid>
+      <description>&lt;h1 id=&#34;units-and-dimensional-checks&#34;&gt;Units and Dimensional Checks&lt;/h1&gt;&#xA;&lt;p&gt;If there is one absolute truth about the PE Civil Transportation exam, it is this: &lt;strong&gt;Unit errors will sink your score.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Transportation engineering is heavily reliant on empirical formulas (formulas derived from observation rather than pure physics). Because of this, equations frequently mix units—taking a speed in miles per hour (mph) and a time in seconds (s) to produce a distance in feet (ft).&lt;/p&gt;&#xA;&lt;p&gt;Mastering unit conversions and using dimensional checks is the easiest way to prevent unforced errors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Error Log Method</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-1/05-error-log-method/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-1/05-error-log-method/</guid>
+      <description>&lt;h1 id=&#34;the-error-log-method&#34;&gt;The Error Log Method&lt;/h1&gt;&#xA;&lt;p&gt;The most common mistake PE candidates make is prioritizing &lt;em&gt;quantity&lt;/em&gt; of practice problems over &lt;em&gt;quality&lt;/em&gt; of review. Grinding through 500 practice problems is useless if you are making the exact same mistakes on problem 500 that you made on problem 1.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Error Log Method&lt;/strong&gt; is a study framework designed to force you to confront &lt;em&gt;why&lt;/em&gt; you are getting problems wrong. It turns every missed practice problem into a targeted study directive.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anatomy of a PE-Style Problem</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-1/06-pe-style-problem-anatomy/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-1/06-pe-style-problem-anatomy/</guid>
+      <description>&lt;h1 id=&#34;anatomy-of-a-pe-style-problem&#34;&gt;Anatomy of a PE-Style Problem&lt;/h1&gt;&#xA;&lt;p&gt;The NCEES PE exam does not test your ability to blindly plug numbers into formulas. It tests your ability to act as a licensed professional engineer: evaluating a scenario, identifying what information is relevant, discarding what is not, and applying the correct standard.&lt;/p&gt;&#xA;&lt;p&gt;To succeed, you must understand how NCEES writes their questions. Once you can deconstruct the anatomy of a PE problem, you can avoid the traps they deliberately set for you.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

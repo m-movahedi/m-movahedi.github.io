@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Energy Losses and Dissipation</title>
+    <meta name="description" content="Energy Losses and Dissipation Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Energy Losses and Dissipation">
+    <meta property="og:description" content="Energy Losses and Dissipation Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Energy Losses and Dissipation">
+    <meta name="twitter:description" content="Energy Losses and Dissipation Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Energy Losses and Dissipation</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="energy-losses-and-dissipation">Energy Losses and Dissipation</h1>
+<p>Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or channels can cause scour at outfalls, which is prevented using energy dissipation structures (like riprap aprons or stilling basins) and by managing transitions.</p>
+<hr>
+<h2 id="minor-head-losses">Minor Head Losses</h2>
+<p>Minor head losses occur due to changes in velocity, flow direction, or cross-sectional area at inlets, bends, expansions, contractions, and manholes.</p>
+<h3 id="governing-equation">Governing Equation:</h3>
+<p>$$h_L = K \cdot \frac{V^2}{2g}$$</p>
+<p>Where:</p>
+<ul>
+<li>$h_L$ = Head loss (<strong>feet</strong> or <strong>meters</strong>)</li>
+<li>$K$ = Minor loss coefficient (dimensionless)</li>
+<li>$V$ = Velocity of flow (<strong>ft/s</strong> or <strong>m/s</strong>)</li>
+<li>$g$ = Acceleration of gravity ($32.2\text{ ft/s}^2$ or $9.81\text{ m/s}^2$)</li>
+</ul>
+<hr>
+<h2 id="hydraulic-jumps-in-rectangular-channels">Hydraulic Jumps in Rectangular Channels</h2>
+<p>A <strong>Hydraulic Jump</strong> occurs when supercritical flow ($Fr_1 &gt; 1.0$) transitions abruptly to subcritical flow ($Fr_2 &lt; 1.0$). This transition creates high turbulence and dissipates a significant amount of kinetic energy.</p>
+<h3 id="sequent-depth-conjugate-depth-equation">Sequent Depth (Conjugate Depth) Equation:</h3>
+<p>The relationship between the depth before the jump ($y_1$) and the depth after the jump ($y_2$) in a horizontal rectangular channel is:</p>
+<p>$$\frac{y_2}{y_1} = \frac{1}{2} \left( \sqrt{1 + 8 Fr_1^2} - 1 \right)$$</p>
+<p>Where:</p>
+<ul>
+<li>$y_1$ = Upstream (supercritical) depth (<strong>feet</strong> or <strong>meters</strong>)</li>
+<li>$y_2$ = Downstream (subcritical) depth (<strong>feet</strong> or <strong>meters</strong>)</li>
+<li>$Fr_1$ = Upstream Froude number:
+$$Fr_1 = \frac{V_1}{\sqrt{g \cdot y_1}}$$</li>
+</ul>
+<h3 id="head-loss-in-a-jump-delta-e">Head Loss in a Jump ($\Delta E$):</h3>
+<p>The energy dissipated during a hydraulic jump is:</p>
+<p>$$H_L = \Delta E = E_1 - E_2 = \frac{(y_2 - y_1)^3}{4 \cdot y_1 \cdot y_2}$$</p>
+<hr>
+<h2 id="energy-dissipators">Energy Dissipators</h2>
+<p>Energy dissipators are structured outlets designed to reduce velocities before runoff enters natural watercourses.</p>
+<ul>
+<li><strong>Riprap Aprons:</strong> A placed bed of rock riprap at the culvert outlet. The median stone size ($d_{50}$) is determined based on the outlet velocity and culvert diameter/flow rate (typically sized using FHWA HEC-14 charts or equations).</li>
+<li><strong>Stilling Basins:</strong> Reinforced concrete structures containing chute blocks, baffle blocks, and end sills to force a hydraulic jump within the basin and stabilize the flow.</li>
+</ul>
+<hr>
+<h2 id="worked-example-1-hydraulic-jump-and-energy-loss">Worked Example 1: Hydraulic Jump and Energy Loss</h2>
+<p>A rectangular drainage channel with a bottom width of $6.0\text{ ft}$ carries a flow of $Q = 72\text{ cfs}$. At a transition, the flow depth is measured to be $y_1 = 0.50\text{ ft}$. A hydraulic jump occurs just downstream of the transition.</p>
+<p><strong>1. Calculate the conjugate depth ($y_2$) downstream of the jump.</strong>
+<strong>2. Determine the energy head loss ($H_L$) across the jump.</strong></p>
+<h3 id="solution">Solution:</h3>
+<h4 id="step-1-calculate-upstream-velocity-v_1-and-froude-number-fr_1">Step 1: Calculate upstream velocity ($V_1$) and Froude number ($Fr_1$)</h4>
+<ul>
+<li>Width $b = 6.0\text{ ft}$, Depth $y_1 = 0.50\text{ ft}$</li>
+<li>Area $A_1 = b \cdot y_1 = 6.0 \cdot 0.50 = 3.0\text{ ft}^2$</li>
+<li>Velocity $V_1 = \frac{Q}{A_1} = \frac{72}{3.0} = 24.0\text{ ft/s}$</li>
+</ul>
+<p>Calculate $Fr_1$:
+$$Fr_1 = \frac{V_1}{\sqrt{g \cdot y_1}} = \frac{24.0}{\sqrt{32.2 \cdot 0.50}} = \frac{24.0}{\sqrt{16.1}} = \frac{24.0}{4.0125} \approx 5.98$$
+<em>Note:</em> Since $Fr_1 \approx 5.98 &gt; 1.0$, the flow is supercritical, validating the occurrence of a hydraulic jump.</p>
+<h4 id="step-2-calculate-conjugate-depth-y_2">Step 2: Calculate conjugate depth ($y_2$)</h4>
+<p>$$\frac{y_2}{y_1} = \frac{1}{2} \left( \sqrt{1 + 8 Fr_1^2} - 1 \right)$$
+$$\frac{y_2}{0.50} = 0.5 \cdot \left( \sqrt{1 + 8 \cdot (5.98)^2} - 1 \right)$$</p>
+<ul>
+<li>$(5.98)^2 \approx 35.76$</li>
+<li>$8 \cdot 35.76 = 286.08$</li>
+<li>$\sqrt{1 + 286.08} = \sqrt{287.08} \approx 16.94$</li>
+<li>$\sqrt{287.08} - 1 = 15.94$</li>
+</ul>
+<p>Solve for $y_2$:
+$$\frac{y_2}{0.50} = 0.5 \cdot 15.94 = 7.97$$
+$$y_2 = 7.97 \cdot 0.50 \approx 3.99\text{ feet}$$</p>
+<h4 id="step-3-calculate-energy-loss-h_l">Step 3: Calculate energy loss ($H_L$)</h4>
+<p>$$H_L = \frac{(y_2 - y_1)^3}{4 \cdot y_1 \cdot y_2}$$
+$$H_L = \frac{(3.99 - 0.50)^3}{4 \cdot 0.50 \cdot 3.99} = \frac{(3.49)^3}{7.98}$$</p>
+<ul>
+<li>$(3.49)^3 \approx 42.51$
+$$H_L = \frac{42.51}{7.98} \approx 5.33\text{ feet of head loss}$$</li>
+</ul>
+<hr>
+<h2 id="worked-example-2-minor-losses-in-pipe-junction">Worked Example 2: Minor Losses in Pipe Junction</h2>
+<p>A $12\text{-inch}$ storm sewer pipe carries flow at $V = 6.0\text{ ft/s}$. The pipe passes through a manhole junction that causes a minor loss of $K = 0.35$ for a straight-through configuration.</p>
+<p><strong>Calculate the head loss ($h_L$) at the manhole.</strong></p>
+<h3 id="solution-1">Solution:</h3>
+<p>$$h_L = K \cdot \frac{V^2}{2g}$$
+$$h_L = 0.35 \cdot \frac{6.0^2}{2 \cdot 32.2} = 0.35 \cdot \frac{36.0}{64.4}$$
+$$h_L = 0.35 \cdot 0.559 \approx 0.20\text{ feet}$$</p>
+<hr>
+<h2 id="technical-pitfalls">Technical Pitfalls</h2>
+<ul>
+<li><strong>Sequent Depth vs Alternate Depth:</strong> Do not confuse <em>sequent</em> (or conjugate) depths with <em>alternate</em> depths. Conjugate depths represent the depths before and after a hydraulic jump (where momentum is conserved, but energy is lost). Alternate depths are depths that share the exact same specific energy ($E_1 = E_2$), which occurs under frictionless transitions without a jump.</li>
+<li><strong>Unit of g:</strong> Ensure you use $g = 32.2\text{ ft/s}^2$ for USCS or $g = 9.81\text{ m/s}^2$ for SI units.</li>
+<li><strong>Froude Number calculation:</strong> Double check that $Fr_1$ is calculated using the <em>upstream</em> depth $y_1$ and upstream velocity $V_1$.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-13/97-open-channel-flow/">
+                &#8592;
+                Previous:
+                Open Channel Flow
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-13/99-water-quality-and-stormwater-bmps/">
+                Next:
+                Water Quality and Stormwater BMPs
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

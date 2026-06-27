@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 3: Traffic Flow, Volume, and Forecasting on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-3/</link>
+    <description>Recent content in Module 3: Traffic Flow, Volume, and Forecasting on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Traffic Volume Concepts</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-3/13-traffic-volume-concepts/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-3/13-traffic-volume-concepts/</guid>
+      <description>&lt;h1 id=&#34;traffic-volume-concepts&#34;&gt;Traffic Volume Concepts&lt;/h1&gt;&#xA;&lt;p&gt;Traffic volume is the number of vehicles passing a given point on a roadway during a specified time interval. On the PE Civil Transportation exam, understanding the relationships between daily traffic volumes, design hourly volumes, and directional splits is fundamental to roadway planning, capacity analysis, and geometric design.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;traffic-volume-metrics&#34;&gt;Traffic Volume Metrics&lt;/h2&gt;&#xA;&lt;p&gt;Traffic volume is measured over various periods to capture daily, weekly, and seasonal variations.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-average-annual-daily-traffic-aadt&#34;&gt;1. Average Annual Daily Traffic (AADT)&lt;/h3&gt;&#xA;&lt;p&gt;The total number of vehicles passing a point on a highway in both directions over a full year (365 days), divided by 365.&#xA;$$AADT = \frac{\text{Total Vehicles in a Year}}{365}$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Peak Hour Factor and Flow Rates</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/</guid>
+      <description>&lt;h1 id=&#34;peak-hour-factor-and-flow-rates&#34;&gt;Peak Hour Factor and Flow Rates&lt;/h1&gt;&#xA;&lt;p&gt;In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a brief portion of the hour (e.g., a 15-minute surge) even if the total hourly volume is within the roadway&amp;rsquo;s theoretical capacity. To account for this variation, the Highway Capacity Manual (HCM) uses the &lt;strong&gt;Peak Hour Factor (PHF)&lt;/strong&gt; to convert hourly volumes into equivalent peak-period flow rates.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speed Studies</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-3/15-speed-studies/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-3/15-speed-studies/</guid>
+      <description>&lt;h1 id=&#34;speed-studies&#34;&gt;Speed Studies&lt;/h1&gt;&#xA;&lt;p&gt;Speed is a fundamental parameter of traffic flow. In traffic engineering, speed studies are conducted to evaluate traffic operations, assess safety, set speed limits, and perform capacity analyses. On the PE Civil Transportation exam, the most critical speed concepts are the mathematical distinctions between &lt;strong&gt;Time Mean Speed&lt;/strong&gt; and &lt;strong&gt;Space Mean Speed&lt;/strong&gt;, and the interpretation of speed distribution statistics.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;time-mean-speed-tms-vs-space-mean-speed-sms&#34;&gt;Time Mean Speed (TMS) vs. Space Mean Speed (SMS)&lt;/h2&gt;&#xA;&lt;p&gt;Vehicles passing a point on a road have different speeds. We can average these speeds in two distinct ways: by time (at a single point) or by space (along a section of road).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Travel Time and Delay Studies</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-3/16-travel-time-and-delay-studies/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-3/16-travel-time-and-delay-studies/</guid>
+      <description>&lt;h1 id=&#34;travel-time-and-delay-studies&#34;&gt;Travel Time and Delay Studies&lt;/h1&gt;&#xA;&lt;p&gt;Travel time and delay studies determine the amount of time required to traverse a specific route and identify the locations, causes, and durations of delays. On the PE Civil Transportation exam, you must understand the key definitions of time and speed, field measurement methodologies, and the equations for the &lt;strong&gt;Moving Observer Method&lt;/strong&gt; (also known as the Moving Vehicle Method).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;key-definitions&#34;&gt;Key Definitions&lt;/h2&gt;&#xA;&lt;p&gt;Understanding the precise differences between these time and speed metrics is crucial for solving conceptual and numerical problems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trip Generation and Land Use</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-3/17-trip-generation-and-land-use/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-3/17-trip-generation-and-land-use/</guid>
+      <description>&lt;h1 id=&#34;trip-generation-and-land-use&#34;&gt;Trip Generation and Land Use&lt;/h1&gt;&#xA;&lt;p&gt;Trip generation is the first step in the traditional &lt;strong&gt;Four-Step Transportation Planning Process&lt;/strong&gt; (Trip Generation, Trip Distribution, Mode Split, and Route Assignment). It estimates the number of trips beginning (productions) or ending (attractions) in a specific land use zone. On the PE Civil Transportation exam, you must know how to use trip-generation rates and regression equations, and how to adjust these totals for &lt;strong&gt;pass-by trips&lt;/strong&gt;, &lt;strong&gt;diverted trips&lt;/strong&gt;, and &lt;strong&gt;internal capture&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Modal Split and Person Trips</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-3/18-modal-split-and-person-trips/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-3/18-modal-split-and-person-trips/</guid>
+      <description>&lt;h1 id=&#34;modal-split-and-person-trips&#34;&gt;Modal Split and Person Trips&lt;/h1&gt;&#xA;&lt;p&gt;Modal split (or mode choice) is the third step in the traditional &lt;strong&gt;Four-Step Transportation Planning Process&lt;/strong&gt;. It determines the proportion of total person trips that will use each available travel mode (e.g., driving alone, carpooling, taking public transit, bicycling, or walking). On the PE Civil Transportation exam, you must be able to convert between person trips and vehicle trips using &lt;strong&gt;vehicle occupancy factors&lt;/strong&gt; and calculate mode shares using &lt;strong&gt;utility functions&lt;/strong&gt; and the &lt;strong&gt;Multinomial Logit Model&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Traffic Impact Studies</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-3/19-traffic-impact-studies/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-3/19-traffic-impact-studies/</guid>
+      <description>&lt;h1 id=&#34;traffic-impact-studies&#34;&gt;Traffic Impact Studies&lt;/h1&gt;&#xA;&lt;p&gt;A Traffic Impact Study (TIS) is a specialized engineering study that evaluates the effects of a proposed land development on the surrounding transportation network. On the PE Civil Transportation exam, TIS questions test your ability to perform &lt;strong&gt;Build vs. No-Build comparisons&lt;/strong&gt;, calculate &lt;strong&gt;background traffic growth&lt;/strong&gt;, assign &lt;strong&gt;development trips&lt;/strong&gt; to specific turning movements, and identify necessary &lt;strong&gt;mitigation measures&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-traffic-impact-study-process&#34;&gt;The Traffic Impact Study Process&lt;/h2&gt;&#xA;&lt;p&gt;A TIS follows a logical progression of traffic demand forecasting:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forecasting and Growth Factors</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-3/20-forecasting-and-growth-factors/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-3/20-forecasting-and-growth-factors/</guid>
+      <description>&lt;h1 id=&#34;forecasting-and-growth-factors&#34;&gt;Forecasting and Growth Factors&lt;/h1&gt;&#xA;&lt;p&gt;Traffic forecasting estimates future traffic volumes on road facilities, which is essential for determining design requirements (such as the number of lanes or pavement thickness). On the PE Civil Transportation exam, forecasting questions cover two primary categories: projecting traffic into the future using &lt;strong&gt;linear and compound growth models&lt;/strong&gt;, and expanding short-term traffic counts into estimated annual averages using &lt;strong&gt;seasonal, daily, and hourly adjustment factors&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;traffic-growth-models&#34;&gt;Traffic Growth Models&lt;/h2&gt;&#xA;&lt;p&gt;When projecting current traffic volumes to a future design year (often 20 years in the future), traffic engineers use growth models.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

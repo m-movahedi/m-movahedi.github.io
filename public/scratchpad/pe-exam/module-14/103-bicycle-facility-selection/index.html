@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Bicycle Facility Selection</title>
+    <meta name="description" content="Bicycle Facility Selection Designing safe and effective bicycle facilities requires matching the facility type to the operating speed and traffic volume of the …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-14/103-bicycle-facility-selection/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bicycle Facility Selection">
+    <meta property="og:description" content="Bicycle Facility Selection Designing safe and effective bicycle facilities requires matching the facility type to the operating speed and traffic volume of the …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bicycle Facility Selection">
+    <meta name="twitter:description" content="Bicycle Facility Selection Designing safe and effective bicycle facilities requires matching the facility type to the operating speed and traffic volume of the …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-14/103-bicycle-facility-selection/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-14/103-bicycle-facility-selection/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-14/103-bicycle-facility-selection/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Bicycle Facility Selection</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="bicycle-facility-selection">Bicycle Facility Selection</h1>
+<p>Designing safe and effective bicycle facilities requires matching the facility type to the operating speed and traffic volume of the adjacent roadway. Design standards are governed by the AASHTO Guide for the Development of Bicycle Facilities and FHWA guidelines.</p>
+<hr>
+<h2 id="bicycle-facility-classifications">Bicycle Facility Classifications</h2>
+<p>Bicycle facilities are classified based on the level of separation from motor vehicle traffic.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Facility Type</th>
+          <th>Separation Level</th>
+          <th>Typical Widths</th>
+          <th>Application Context</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Shared Lanes (Sharrows)</strong></td>
+          <td>None (bicycles share lane with vehicles)</td>
+          <td>Standard lane (11 to 14 ft)</td>
+          <td>Speed $\le 25\text{ mph}$, Volume $&lt; 3,000\text{ ADT}$.</td>
+      </tr>
+      <tr>
+          <td><strong>Bike Lane</strong></td>
+          <td>Visual separation (striped line &amp; markings)</td>
+          <td><strong>4 ft</strong> (no curb, e.g., rural) / <strong>5 ft</strong> (adjacent to curb or parking)</td>
+          <td>Speed $25-30\text{ mph}$, Volume $3,000-7,000\text{ ADT}$.</td>
+      </tr>
+      <tr>
+          <td><strong>Buffered Bike Lane</strong></td>
+          <td>Visual buffer (striped buffer zone, e.g., 2 ft)</td>
+          <td><strong>5 ft</strong> lane + <strong>2 ft</strong> buffer</td>
+          <td>Speed $30-35\text{ mph}$, heavy curb parking or high turnover.</td>
+      </tr>
+      <tr>
+          <td><strong>Separated Bike Lane (Cycle Track)</strong></td>
+          <td>Physical separation (curb, bollards, parking lane)</td>
+          <td><strong>5 to 7 ft</strong> (one-way) / <strong>10 to 12 ft</strong> (two-way)</td>
+          <td>Speed $\ge 35\text{ mph}$, Volume $\ge 7,000\text{ ADT}$, or heavy truck traffic.</td>
+      </tr>
+      <tr>
+          <td><strong>Shared Use Path</strong></td>
+          <td>Complete physical separation (independent alignment)</td>
+          <td><strong>10 to 12 ft</strong> (minimum 8 ft)</td>
+          <td>All speeds/volumes; accommodates pedestrians and cyclists.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="fhwa-facility-selection-framework">FHWA Facility Selection Framework</h2>
+<p>The FHWA (Federal Highway Administration) provides a standard framework for selecting the appropriate bicycle facility based on roadway speed and traffic volume.</p>
+<ol>
+<li><strong>Low-Speed, Low-Volume Streets:</strong> On streets with speeds $\le 20\text{ mph}$ (or $\le 25\text{ mph}$ with low volumes) and ADT $&lt; 2,000$ to $3,000$, shared lanes or bicycle boulevards are appropriate.</li>
+<li><strong>Intermediate Speed and Volume:</strong> As speeds rise to $25-30\text{ mph}$ and volumes reach $3,000-7,000\text{ ADT}$, separated facilities are preferred, but standard or buffered bike lanes are acceptable.</li>
+<li><strong>High-Speed, High-Volume Corridors:</strong> On roadways with speeds $\ge 35\text{ mph}$ and volumes $\ge 7,000-10,000\text{ ADT}$, bicyclists require physical separation (separated bike lanes or shared-use paths) to maintain safety.</li>
+</ol>
+<hr>
+<h2 id="key-geometric-design-standards-for-bike-lanes">Key Geometric Design Standards for Bike Lanes</h2>
+<ul>
+<li><strong>Adjacent to Curb:</strong> The minimum width of a bike lane adjacent to a curb is <strong>5.0 feet</strong> (measured from the curb face). If a joint between the concrete gutter pan and the asphalt pavement exists, the bike lane must have at least <strong>4.0 feet</strong> of rideable asphalt surface outside of the gutter pan.</li>
+<li><strong>Adjacent to On-Street Parking:</strong> The minimum width of a bike lane adjacent to parallel parking is <strong>5.0 feet</strong> (placed on the traffic side of the parking lane). Parking lanes are typically 7.0 to 8.0 feet wide.</li>
+<li><strong>Drainage Grates:</strong> Must be bicycle-safe (slats perpendicular to travel) and flush with the pavement.</li>
+</ul>
+<hr>
+<h2 id="worked-example-bicycle-facility-selection-analysis">Worked Example: Bicycle Facility Selection Analysis</h2>
+<p>A city planning department is upgrading a suburban arterial corridor to accommodate bicycle traffic. The current corridor characteristics are:</p>
+<ul>
+<li><strong>Design Speed / 85th Percentile Speed:</strong> $40\text{ mph}$</li>
+<li><strong>Average Daily Traffic (ADT):</strong> $12,500\text{ vehicles per day}$</li>
+<li><strong>Heavy Vehicle Percentage (Trucks):</strong> $8%$</li>
+<li><strong>Available Right-of-Way (ROW) Width:</strong> $80\text{ feet}$</li>
+<li><strong>Existing Cross-Section:</strong> Four 12-foot travel lanes, a 12-foot central two-way left-turn lane (TWLTL), and 10-foot gravel shoulders on each side.</li>
+</ul>
+<p><strong>Evaluate the corridor parameters and select the most appropriate bicycle facility type based on AASHTO and FHWA guidelines. Provide the minimum width for the selected facility.</strong></p>
+<h3 id="solution">Solution:</h3>
+<h4 id="step-1-analyze-speed-and-volume-parameters">Step 1: Analyze Speed and Volume Parameters</h4>
+<ul>
+<li>Roadway Speed ($40\text{ mph}$) is in the high-speed category ($\ge 35\text{ mph}$).</li>
+<li>Roadway Volume ($12,500\text{ ADT}$) is in the high-volume category ($\ge 7,000\text{ ADT}$).</li>
+<li>The presence of heavy vehicle traffic ($8%$ trucks) increases the risk of wind blast and stress for bicyclists.</li>
+</ul>
+<h4 id="step-2-select-the-facility-type">Step 2: Select the Facility Type</h4>
+<p>Referring to the FHWA facility selection criteria:</p>
+<ul>
+<li><strong>Shared Lanes:</strong> Inappropriate due to high speed ($40\text{ mph}$) and high volume ($12,500\text{ ADT}$).</li>
+<li><strong>Standard/Buffered Bike Lanes:</strong> Under AASHTO/FHWA guidelines, standard striped bike lanes are not recommended on roadways with design speeds $\ge 35\text{ mph}$ and high ADT due to the lack of physical separation.</li>
+<li><strong>Separated Bike Lane or Shared Use Path:</strong> Recommended. A physical barrier (cycle track) or a completely separated shared-use path is necessary to provide a safe and comfortable environment.</li>
+</ul>
+<h4 id="step-3-determine-facility-dimensions">Step 3: Determine Facility Dimensions</h4>
+<p>If the city selects a <strong>one-way separated bike lane</strong> on each side of the roadway:</p>
+<ul>
+<li>The minimum rideable width of each lane is <strong>5.0 feet</strong>.</li>
+<li>A physical buffer (e.g., concrete curb or bollards) must separate the bike lane from traffic. The buffer should be at least <strong>2.0 feet</strong> wide.</li>
+<li>Therefore, each side requires a total of $7.0\text{ feet}$ of width. This can be accommodated by paving the existing 10-foot gravel shoulders.</li>
+</ul>
+<hr>
+<h2 id="technical-pitfalls">Technical Pitfalls</h2>
+<ul>
+<li><strong>Gutter Pan Trap:</strong> Do not count the concrete gutter pan as part of the bike lane width if the joint is rough or wide. The rideable width must be measured outside the gutter pan (minimum 4.0 feet of asphalt).</li>
+<li><strong>Speed Limits vs. 85th Percentile Speeds:</strong> Always use the design speed or 85th percentile speed for facility selection, not the posted speed limit if both are given and differ.</li>
+<li><strong>Parking Turn-out:</strong> When bike lanes are adjacent to parallel parking, the minimum width is <strong>5.0 feet</strong> to prevent bicyclists from colliding with opening car doors (the &ldquo;door zone&rdquo;).</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-14/102-ada-curb-ramps-and-accessible-routes/">
+                &#8592;
+                Previous:
+                ADA Curb Ramps and Accessible Routes
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-14/104-shared-use-paths/">
+                Next:
+                Shared Use Paths
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

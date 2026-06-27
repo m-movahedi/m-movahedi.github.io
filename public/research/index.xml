@@ -9,14 +9,14 @@
     <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Robust Mobile Electric Vehicle Charging Solutions for Natural Disasters</title>
+      <title>Mobile Electric Vehicle Charging Solutions for Natural Disasters</title>
       <link>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/robust-mobile-ev-charging-natural-disasters/</guid>
-      <description>&lt;p&gt;The transition to electric vehicles (EVs) introduces new paradigms for emergency management, particularly in hurricane-prone regions. During extreme weather events, the vulnerability of the power grid becomes a critical bottleneck. Structural failures within the transmission and distribution networks can disable permanently installed EV charging stations precisely when they are most necessary for mass population evacuations.&lt;/p&gt;&#xA;&lt;div style=&#34;background-color: #f4f6f9; padding: 20px; border-left: 5px solid #0056b3; border-radius: 4px; margin: 25px 0;&#34;&gt;&#xD;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #0056b3;&#34;&gt;The Research Problem&lt;/h4&gt;&#xD;&#xA;  &lt;p style=&#34;margin-bottom: 0; font-size: 1.1em;&#34;&gt;How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?&lt;/p&gt;</description>
+      <description>&lt;p&gt;The transition to electric vehicles (EVs) introduces new paradigms for emergency management, particularly in hurricane-prone regions. During extreme weather events, the vulnerability of the power grid becomes a critical bottleneck. Structural failures within the transmission and distribution networks can disable permanently installed EV charging stations precisely when they are most necessary for mass population evacuations.&lt;/p&gt;&#xA;&lt;div style=&#34;background-color: #f4f6f9; padding: 20px; border-left: 5px solid #0056b3; border-radius: 4px; margin: 25px 0;&#34;&gt;&#xD;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #0056b3;&#34;&gt;The Research Problem&lt;/h4&gt;&#xD;&#xA;  &lt;p style=&#34;margin-bottom: 0; font-size: 1.1em; color: #242424;&#34;&gt;How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Simulating Community Behaviors with LLMs: A New Era in Policy Evaluation</title>
+      <title>Simulating Community Behaviors with LLMs</title>
       <link>http://localhost:1313/research/llm-persona-debris-management/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/llm-persona-debris-management/</guid>
@@ -30,32 +30,39 @@
       <description>&lt;p&gt;Sometime in late 2023, when the generative AI community suddenly shifted its focus to picture and video generation, I started developing a framework to first generate textures of materials based on the description that the inspection guidelines provide. This concept quickly evolves into a framework to generate auditory and visual cues for 3D objects.&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/images/Movahedi2025Framework.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;figcaption&gt; The proposed framework &lt;/figcaption&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;In a conference paper titled “Generative Artificial Intelligence and Virtual Reality: Emerging Future of the Building Component Inspection Training”, presented in CIB WBC CIB 2025, I described this framework in detail. The framework integrates generative artificial intelligence (Gen AI) with virtual reality (VR) to create a more immersive and effective training environment for building maintenance and operations. Traditional training methods often rely on static visuals and text, limiting inspectors’ exposure to the diverse and complex conditions found in real-world scenarios. In contrast, the proposed approach leverages Gen AI to generate realistic textures of deteriorating building components, which are then embedded into an interactive VR environment. This enables trainees to engage in hands-on, immersive practice, improving their ability to identify and assess conditions accurately. The framework aims to reduce subjectivity in inspections and enhance knowledge transfer. A hypothetical case study demonstrates the framework’s potential, highlighting its broader applicability not only in building maintenance but also in other domains that require precise, objective evaluations.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The Crossroads of LLMs and Traffic Control: A New Era in Urban Mobility</title>
+      <title>The Crossroads of LLMs and Traffic Control</title>
       <link>http://localhost:1313/research/llm-adaptive-traffic-control/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/llm-adaptive-traffic-control/</guid>
       <description>&lt;div style=&#34;background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚦&lt;/span&gt; The Urban Gridlock Challenge&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems (ATCS)—which rely on fixed-time, gap-based, or delay-based logic—often struggle to adapt to dynamic, complex, and unpredictable real-world traffic flows. Designing a truly responsive traffic controller requires a system capable of human-like &lt;strong&gt;reasoning and planning&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Network Robustness of EV Charging Infrastructure During Extreme Weather: Insights from Hurricane Ian</title>
+      <title>Network Robustness of EV Charging Infrastructure During Extreme Weather</title>
       <link>http://localhost:1313/research/ev-charging-network-hurricane-ian/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/ev-charging-network-hurricane-ian/</guid>
       <description>&lt;div style=&#34;background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🌩️&lt;/span&gt; The Vulnerability of Electric Evacuations&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during natural disasters is paramount. During events like Hurricane Ian, mass evacuations put immense stress on the EV charging infrastructure. If transmission lines fail and charging stations go dark, it can profoundly hinder evacuation efficiency and public safety, leading to widespread vehicle immobilization.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Predicting the Unpredictable: Advanced Estimation Models for Demolition Waste</title>
+      <title>Advanced Estimation Models for Demolition Waste</title>
       <link>http://localhost:1313/research/demolition-waste-estimation/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/demolition-waste-estimation/</guid>
       <description>&lt;div style=&#34;background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #856404; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🏗️&lt;/span&gt; The Demolition Data Gap&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #533f03;&#34;&gt;In the United States, construction and demolition waste (CDW) accounts for roughly 67% of the total solid waste stream, with a staggering &lt;strong&gt;90% originating directly from demolition sites&lt;/strong&gt;. For a transition toward a circular economy, accurately estimating the &lt;em&gt;recoverable&lt;/em&gt; portion of this waste is crucial. Yet, traditional estimation models remain heavily focused on total volume rather than recyclable potential.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Sustainable Management of the Built Environment: A Life Cycle Perspective</title>
+      <title>Sustainable Management of the Built Environment</title>
       <link>http://localhost:1313/research/sustainable-cdw-management-life-cycle/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/sustainable-cdw-management-life-cycle/</guid>
       <description>&lt;div style=&#34;background-color: #f4f6f7; border-left: 6px solid #27ae60; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;♻️&lt;/span&gt; Breaking the Linear Fate&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;In the built environment, every structure has a life cycle—from natural resource extraction to final disposition. Unfortunately, the vast majority of waste generated at the end of a building&#39;s life meets a &#34;linear fate,&#34; terminating in landfills. To achieve a truly circular economy, we must continuously extend the life of materials through &lt;strong&gt;Reduction, Reuse, Repair, Recycling, and Recovery (the 5Rs)&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mastering the Grid: Reinforcement Learning for Adaptive Traffic Control</title>
+      <link>http://localhost:1313/research/rl-adaptive-traffic-lights/</link>
+      <pubDate>Thu, 15 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/rl-adaptive-traffic-lights/</guid>
+      <description>&lt;div style=&#34;background-color: #f4f6f7; border-left: 6px solid #8e44ad; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🤖&lt;/span&gt; Smarter Intersections, Smoother Cities&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;In sprawling metropolises like Tehran, drivers spend nearly 24% of their travel time idling at intersections. Traditional fixed-time traffic lights simply cannot adapt to the chaotic, stochastic nature of urban traffic flow. To solve this, our research deploys &lt;strong&gt;Reinforcement Learning (RL)&lt;/strong&gt;—an advanced branch of Artificial Intelligence—to create traffic signals that learn, adapt, and optimize the network in real-time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tehran Sightseeing Tour Planning</title>
@@ -63,6 +70,27 @@
       <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/sightseeing-tour-planning/</guid>
       <description>&lt;p&gt;Tourism plays an important role in the growth of urban economies. Attractions like historical buildings that capture the essence of life, streets with the hallmarks of the past, and monuments that act as mementos can be lucrative for local businesses and fruitful for the city&amp;rsquo;s culture.&lt;/p&gt;&#xA;&lt;p&gt;The path to an efficient sightseeing tour plan requires both demand evaluation and route planning. This post will discuss only the route planning stage. In most sightseeing tours, there are two active transportation modes working alongside each other: a major mode that usually provides users with a lift to special stations and a minor mode that connects these stations to the desired attractions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Crowdsourcing Safety: Detecting Accident Bottlenecks with Open Data</title>
+      <link>http://localhost:1313/research/open-data-traffic-bottlenecks/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/open-data-traffic-bottlenecks/</guid>
+      <description>&lt;div style=&#34;background-color: #f9f2f4; border-left: 6px solid #c0392b; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #900C3F; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚨&lt;/span&gt; Every Second Counts in an Emergency&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #555;&#34;&gt;Traffic accidents account for approximately 5% of all traffic congestion, creating what engineers call &#34;non-recurring bottlenecks.&#34; In developing nations, the most pressing issue isn&#39;t just the delay—it&#39;s the pre-hospital time for trauma patients. Identifying the exact location of an accident immediately is the first critical step in dispatching rescue teams and saving lives.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mind on the Road: How Selective Attention Predicts Aggressive Driving</title>
+      <link>http://localhost:1313/research/selective-attention-aggressive-driving/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/selective-attention-aggressive-driving/</guid>
+      <description>&lt;div style=&#34;background-color: #fdf5e6; border-left: 6px solid #e67e22; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #d35400; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🧠&lt;/span&gt; The Cognitive Cost of Distracted Driving&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #555;&#34;&gt;With motor vehicle crashes remaining a leading cause of fatalities worldwide, understanding the human factors behind the wheel is more critical than ever. Inattention and aggressive driving are major culprits. But what if we could predict a driver&#39;s likelihood to make aggressive errors based on a simple cognitive test? This study bridges cognitive psychology and transportation engineering to explore exactly that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paving the Way to Sustainability: Recycling Construction Waste for Urban Roads</title>
+      <link>http://localhost:1313/research/impacts-of-cdw-in-urban-roads/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/impacts-of-cdw-in-urban-roads/</guid>
+      <description>&lt;div style=&#34;background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;♻️&lt;/span&gt; The Growing Crisis of Construction Waste&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;Every year, nearly 50% of the raw materials extracted globally are consumed by the construction industry. Simultaneously, the demolition and renovation of urban infrastructure generate massive amounts of Construction and Demolition Waste (CDW). Finding sustainable ways to repurpose this waste is critical for reducing environmental degradation and achieving true sustainable development.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

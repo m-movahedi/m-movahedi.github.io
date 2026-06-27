@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Time of Concentration ($t_c$)</title>
+    <meta name="description" content="Time of Concentration ($t_c$) The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Time of Concentration ($t_c$)">
+    <meta property="og:description" content="Time of Concentration ($t_c$) The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Time of Concentration ($t_c$)">
+    <meta name="twitter:description" content="Time of Concentration ($t_c$) The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Time of Concentration ($t_c$)</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="time-of-concentration-t_c">Time of Concentration ($t_c$)</h1>
+<p>The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the watershed to the outlet. In the Rational Method, the design storm duration is set equal to $t_c$ because this corresponds to the maximum peak runoff rate.</p>
+<hr>
+<h2 id="components-of-time-of-concentration">Components of Time of Concentration</h2>
+<p>Runoff travels through a watershed in three distinct phases. The total time of concentration is the sum of the travel times for each phase:</p>
+<p>$$t_c = t_{sheet} + t_{shallow} + t_{channel}$$</p>
+<h3 id="1-sheet-flow-overland-flow">1. Sheet Flow (Overland Flow)</h3>
+<p>Sheet flow occurs very early in the runoff process, where water flows in a thin sheet across a plane surface. This flow is dominated by friction against the ground surface.
+The NRCS (SCS) method uses the Manning&rsquo;s Kinematic Wave equation:</p>
+<p>$$t_{sheet} = \frac{0.007 (n \cdot L)^{0.8}}{(P_2)^{0.5} \cdot S^{0.4}}$$</p>
+<p>Where:</p>
+<ul>
+<li>$t_{sheet}$ = Travel time (<strong>hours</strong>)</li>
+<li>$n$ = Manning&rsquo;s roughness coefficient for sheet flow (values differ significantly from channel roughness; e.g., asphalt = 0.011, dense grass = 0.24, woods = 0.40)</li>
+<li>$L$ = Flow length (<strong>feet</strong>). <em>Limit:</em> The NRCS limits sheet flow length to a maximum of <strong>100 feet</strong> (historically up to 300 feet, but 100 feet is the modern standard to prevent sheet flow from breaking into shallow concentrated rills).</li>
+<li>$P_2$ = 2-year, 24-hour rainfall depth (<strong>inches</strong>)</li>
+<li>$S$ = Slope of land surface (<strong>ft/ft</strong>)</li>
+</ul>
+<h3 id="2-shallow-concentrated-flow">2. Shallow Concentrated Flow</h3>
+<p>After a maximum of 100 to 300 feet, sheet flow begins to accumulate in small rills, shallow gullies, or roadway gutters.
+The velocity of shallow concentrated flow is calculated as:</p>
+<p>$$V = k \cdot S^{0.5}$$</p>
+<p>Where:</p>
+<ul>
+<li>$V$ = Average velocity (<strong>feet per second, ft/s</strong>)</li>
+<li>$S$ = Longitudinal slope (<strong>ft/ft</strong> or percent depending on standard; in NCEES, $S$ is in <strong>ft/ft</strong> or percent. Let&rsquo;s use the explicit formulas):
+<ul>
+<li><strong>Paved surfaces:</strong> $V = 20.3282 \sqrt{S}$ (where $S$ is in ft/ft)</li>
+<li><strong>Unpaved surfaces:</strong> $V = 16.1345 \sqrt{S}$ (where $S$ is in ft/ft)</li>
+</ul>
+</li>
+<li>$k$ = Intercept coefficient (paved = 20.3, unpaved = 16.1)</li>
+</ul>
+<p>Travel time for shallow concentrated flow:
+$$t_{shallow} = \frac{L_{shallow}}{60 \cdot V}\text{ (minutes)} = \frac{L_{shallow}}{3600 \cdot V}\text{ (hours)}$$</p>
+<h3 id="3-channel-or-conduit-flow">3. Channel or Conduit Flow</h3>
+<p>Channel flow occurs when runoff is collected in a distinct ditch, stream, open channel, or storm sewer pipe.
+Use Manning&rsquo;s Equation to determine the velocity:</p>
+<p>$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$</p>
+<p>Where:</p>
+<ul>
+<li>$V$ = Mean flow velocity (<strong>ft/s</strong>)</li>
+<li>$n$ = Manning&rsquo;s roughness coefficient for channels/conduits (e.g., concrete pipe = 0.012, ditch with grass = 0.035)</li>
+<li>$R$ = Hydraulic Radius = $A / P_w$ (<strong>feet</strong>), where $A$ is flow cross-sectional area ($\text{ft}^2$) and $P_w$ is wetted perimeter ($\text{feet}$)</li>
+<li>$S$ = Friction/channel slope (<strong>ft/ft</strong>)</li>
+</ul>
+<p>Travel time for channel flow:
+$$t_{channel} = \frac{L_{channel}}{60 \cdot V}\text{ (minutes)}$$</p>
+<hr>
+<h2 id="worked-example-composite-time-of-concentration-calculation">Worked Example: Composite Time of Concentration Calculation</h2>
+<p>A design engineer is calculating the time of concentration ($t_c$) for a roadside drainage area. The path of the hydraulically most remote point consists of three segments:</p>
+<ol>
+<li><strong>Segment 1 (Sheet Flow):</strong> Lawn grass ($n = 0.15$), length $L = 100\text{ ft}$, slope $S = 2.0% = 0.02\text{ ft/ft}$. The local 2-year, 24-hour rainfall depth $P_2 = 3.2\text{ inches}$.</li>
+<li><strong>Segment 2 (Shallow Concentrated Flow):</strong> Unpaved dirt path, length $L = 450\text{ ft}$, slope $S = 4.0% = 0.04\text{ ft/ft}$.</li>
+<li><strong>Segment 3 (Channel Flow):</strong> Trapezoidal turf-lined ditch ($n = 0.035$) with bottom width $b = 4\text{ ft}$, side slopes of 3:1 (H:V), longitudinal slope $S = 1.0% = 0.01\text{ ft/ft}$, length $L = 1200\text{ ft}$. The design depth of flow is $y = 1.5\text{ ft}$.</li>
+</ol>
+<p><strong>Calculate the total time of concentration ($t_c$) in minutes.</strong></p>
+<h3 id="solution">Solution:</h3>
+<h4 id="step-1-sheet-flow-travel-time-t_sheet">Step 1: Sheet Flow Travel Time ($t_{sheet}$)</h4>
+<p>Using the Manning&rsquo;s Kinematic Wave equation:
+$$t_{sheet} = \frac{0.007 (n \cdot L)^{0.8}}{(P_2)^{0.5} \cdot S^{0.4}}$$
+$$t_{sheet} = \frac{0.007 \cdot (0.15 \cdot 100)^{0.8}}{(3.2)^{0.5} \cdot (0.02)^{0.4}}$$</p>
+<ul>
+<li>$(0.15 \cdot 100)^{0.8} = 15^{0.8} \approx 8.725$</li>
+<li>$(3.2)^{0.5} \approx 1.789$</li>
+<li>$(0.02)^{0.4} \approx 0.209$</li>
+</ul>
+<p>$$t_{sheet} = \frac{0.007 \cdot 8.725}{1.789 \cdot 0.209} = \frac{0.061075}{0.3739} \approx 0.1633\text{ hours}$$
+$$t_{sheet} = 0.1633\text{ hours} \cdot 60\text{ minutes/hour} \approx 9.80\text{ minutes}$$</p>
+<h4 id="step-2-shallow-concentrated-flow-travel-time-t_shallow">Step 2: Shallow Concentrated Flow Travel Time ($t_{shallow}$)</h4>
+<p>For unpaved surfaces, velocity is:
+$$V = 16.1345 \sqrt{S} = 16.1345 \sqrt{0.04} = 16.1345 \cdot 0.2 = 3.227\text{ ft/s}$$
+Calculate travel time:
+$$t_{shallow} = \frac{L}{60 \cdot V} = \frac{450\text{ ft}}{60 \cdot 3.227\text{ ft/s}} = \frac{450}{193.62} \approx 2.32\text{ minutes}$$</p>
+<h4 id="step-3-channel-flow-travel-time-t_channel">Step 3: Channel Flow Travel Time ($t_{channel}$)</h4>
+<p>For the trapezoidal ditch, calculate the cross-sectional area ($A$) and wetted perimeter ($P_w$) for a depth of $y = 1.5\text{ ft}$:</p>
+<ul>
+<li>$b = 4\text{ ft}$, side slope $z = 3$</li>
+<li>$A = b \cdot y + z \cdot y^2 = (4 \cdot 1.5) + (3 \cdot 1.5^2) = 6.0 + 6.75 = 12.75\text{ ft}^2$</li>
+<li>$P_w = b + 2y\sqrt{1+z^2} = 4 + 2 \cdot 1.5 \sqrt{1+3^2} = 4 + 3\sqrt{10} \approx 4 + 9.487 = 13.487\text{ ft}$</li>
+<li>Hydraulic Radius: $R = \frac{A}{P_w} = \frac{12.75}{13.487} \approx 0.945\text{ ft}$</li>
+</ul>
+<p>Calculate velocity using Manning&rsquo;s equation:
+$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$
+$$V = \frac{1.486}{0.035} \cdot (0.945)^{2/3} \cdot (0.01)^{1/2}$$</p>
+<ul>
+<li>$1.486 / 0.035 \approx 42.457$</li>
+<li>$(0.945)^{2/3} \approx 0.963$</li>
+<li>$(0.01)^{1/2} = 0.10$
+$$V = 42.457 \cdot 0.963 \cdot 0.10 \approx 4.09\text{ ft/s}$$</li>
+</ul>
+<p>Calculate travel time:
+$$t_{channel} = \frac{L}{60 \cdot V} = \frac{1200\text{ ft}}{60 \cdot 4.09\text{ ft/s}} = \frac{1200}{245.4} \approx 4.89\text{ minutes}$$</p>
+<h4 id="step-4-total-time-of-concentration-t_c">Step 4: Total Time of Concentration ($t_c$)</h4>
+<p>$$t_c = t_{sheet} + t_{shallow} + t_{channel} = 9.80 + 2.32 + 4.89 = 17.01\text{ minutes}$$</p>
+<hr>
+<h2 id="technical-pitfalls">Technical Pitfalls</h2>
+<ul>
+<li><strong>Unit mismatch in Manning&rsquo;s kinematic equation:</strong> The resulting travel time is in <strong>hours</strong>. You must multiply by 60 to convert to minutes.</li>
+<li><strong>Underland flow length limit:</strong> In design problems, sheet flow length should never be set beyond 100 feet unless specified otherwise.</li>
+<li><strong>Using wrong Manning&rsquo;s n:</strong> Do not use a channel Manning&rsquo;s $n$ (like 0.012 for concrete) in the sheet flow equation for grass, as the resistance in sheet flow is much higher.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-13/91-rational-method/">
+                &#8592;
+                Previous:
+                Rational Method
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/">
+                Next:
+                Hydrographs and Detention
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

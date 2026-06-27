@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Mind on the Road: How Selective Attention Predicts Aggressive Driving</title>
+    <meta name="description" content=" 🧠 The Cognitive Cost of Distracted Driving With motor vehicle crashes remaining a leading cause of fatalities worldwide, understanding the human factors behind …">
+    <meta name="keywords" content='Traffic Safety, Aggressive Driving, Selective Attention, Stroop Test, Driving Simulation, Human Factors'>
+
+    <meta property="og:url" content="http://localhost:1313/research/selective-attention-aggressive-driving/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mind on the Road: How Selective Attention Predicts Aggressive Driving">
+    <meta property="og:description" content=" 🧠 The Cognitive Cost of Distracted Driving With motor vehicle crashes remaining a leading cause of fatalities worldwide, understanding the human factors behind …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mind on the Road: How Selective Attention Predicts Aggressive Driving">
+    <meta name="twitter:description" content=" 🧠 The Cognitive Cost of Distracted Driving With motor vehicle crashes remaining a leading cause of fatalities worldwide, understanding the human factors behind …">
+    <meta property="twitter:domain" content="http://localhost:1313/research/selective-attention-aggressive-driving/">
+    <meta property="twitter:url" content="http://localhost:1313/research/selective-attention-aggressive-driving/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/research/selective-attention-aggressive-driving/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Mind on the Road: How Selective Attention Predicts Aggressive Driving</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 15, 2019
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/traffic-safety">Traffic Safety</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/aggressive-driving">Aggressive Driving</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/selective-attention">Selective Attention</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/stroop-test">Stroop Test</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/driving-simulation">Driving Simulation</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/human-factors">Human Factors</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div style="background-color: #fdf5e6; border-left: 6px solid #e67e22; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <h4 style="margin-top: 0; color: #d35400; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🧠</span> The Cognitive Cost of Distracted Driving</h4>
+  <p style="margin-bottom: 0; color: #555;">With motor vehicle crashes remaining a leading cause of fatalities worldwide, understanding the human factors behind the wheel is more critical than ever. Inattention and aggressive driving are major culprits. But what if we could predict a driver's likelihood to make aggressive errors based on a simple cognitive test? This study bridges cognitive psychology and transportation engineering to explore exactly that.</p>
+</div>
+<p>Our research investigates the hidden link between a driver&rsquo;s inherent <strong>selective attention</strong> and their tendency to engage in <strong>aggressive driving</strong> behaviors when distracted. By observing young drivers in a controlled simulator environment, we sought to determine if psychological tests could reliably predict on-road mistakes.</p>
+<h3 id="the-methodology-simulators-and-psychology">The Methodology: Simulators and Psychology</h3>
+<p>To capture an accurate picture of cognitive load and driving performance, we designed a multi-step experiment:</p>
+<ol>
+<li><strong>The Stroop Test:</strong> A classic psychological tool used to measure selective attention—the brain&rsquo;s ability to focus on a specific stimulus while ignoring distracting information.</li>
+<li><strong>The Driving Simulator:</strong> Using <em>City Car Driving</em> software, volunteers navigated a rural road environment under varying levels of distraction.</li>
+<li><strong>The Distraction Layers:</strong> Drivers were tested under a baseline (no distraction), while listening to radio news and answering comprehension questions, and during a simulated passenger conversation.</li>
+</ol>
+<h3 id="interactive-dashboard-cognitive-profiles--driving-errors">Interactive Dashboard: Cognitive Profiles &amp; Driving Errors</h3>
+<style>
+.sa-dash {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #2c3e50;
+  border-radius: 12px;
+  padding: 30px;
+  color: #ecf0f1;
+  margin: 30px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.sa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.sa-card {
+  background: #34495e;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #455a64;
+  position: relative;
+}
+.sa-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sa-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sa-label {
+  font-size: 0.85em;
+  color: #bdc3c7;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.sa-bar {
+  background: #1e272e;
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.sa-fill {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+.sa-good { background: #2ecc71; }
+.sa-bad { background: #e74c3c; }
+
+@keyframes pulse-error {
+  0% { opacity: 0.8; box-shadow: 0 0 5px #e74c3c; }
+  50% { opacity: 1; box-shadow: 0 0 15px #e74c3c; }
+  100% { opacity: 0.8; box-shadow: 0 0 5px #e74c3c; }
+}
+
+@media (max-width: 768px) {
+  .sa-grid { grid-template-columns: 1fr; }
+}
+</style>
+<div class="sa-dash">
+  <div class="sa-grid">
+    <div class="sa-card" style="border-top: 4px solid #2ecc71;">
+      <div class="sa-title" style="color: #2ecc71;">High Selective Attention<br><span style="font-size: 0.7em; color: #95a5a6;">(High Stroop Score)</span></div>
+      <div class="sa-metrics">
+        <div>
+          <div class="sa-label">Ability to Ignore Distractions</div>
+          <div class="sa-bar"><div class="sa-fill sa-good" style="width: 85%;"></div></div>
+        </div>
+        <div>
+          <div class="sa-label">Aggressive Overtaking / Shoulder Use</div>
+          <div class="sa-bar"><div class="sa-fill sa-good" style="width: 15%;"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="sa-card" style="border-top: 4px solid #e74c3c;">
+      <div class="sa-title" style="color: #e74c3c;">Low Selective Attention<br><span style="font-size: 0.7em; color: #95a5a6;">(Low Stroop Score)</span></div>
+      <div class="sa-metrics">
+        <div>
+          <div class="sa-label">Ability to Ignore Distractions</div>
+          <div class="sa-bar"><div class="sa-fill sa-bad" style="width: 35%;"></div></div>
+        </div>
+        <div>
+          <div class="sa-label">Aggressive Overtaking / Shoulder Use</div>
+          <div class="sa-bar"><div class="sa-fill sa-bad" style="width: 78%; animation: pulse-error 2s infinite;"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sa-card" style="margin-top: 20px; text-align: center; border: 2px dashed #f1c40f;">
+    <div class="sa-title" style="color: #f1c40f; margin-bottom: 10px;">The Predictive Power of Psychology</div>
+    <div style="font-size: 3.5em; font-weight: bold; color: #f1c40f; line-height: 1;">42%</div>
+    <div style="font-size: 1em; color: #bdc3c7; margin-top: 10px;">Regression analysis reveals that the Stroop test score alone can predict up to 42% of aggressive driving errors.</div>
+  </div>
+</div>
+<p style="text-align: center; font-size: 0.85em; color: #666; font-style: italic; margin-top: -15px;">Interactive Comparison: How cognitive attention levels correlate with driving behavior under distraction.</p>
+<h3 id="key-findings">Key Findings</h3>
+<p>Through careful observation of the simulated driving sessions and Analysis of Variance (ANOVA), several striking patterns emerged:</p>
+<ul>
+<li><strong>Speed Reduction:</strong> Across the board, as distraction levels increased, drivers naturally decreased their speed as a compensatory mechanism.</li>
+<li><strong>Aggressive Tendencies:</strong> Drivers who scored lower on the Stroop test (indicating poorer selective attention) were significantly more likely to resort to aggressive behaviors when overwhelmed. This included dangerous maneuvers like driving on the road shoulder and reckless right-side overtaking.</li>
+<li><strong>The Threshold of Frustration:</strong> A driver&rsquo;s attitude toward aggressive overtaking remained relatively stable until the distraction reached a specific cognitive threshold, at which point the error rate spiked dramatically.</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>Driving is an intensely demanding cognitive task. This research proves that aggressive driving isn&rsquo;t always just a behavioral choice—it can be a byproduct of cognitive overload. By utilizing cognitive profiling tools like the Stroop test, we can identify drivers who are more susceptible to distraction-induced aggression, paving the way for better driver education and more intelligent, personalized vehicle safety systems.</p>
+<p><em>For full details, refer to the original <a href="https://www.researchgate.net/publication/350515985_Young_Drivers'_Attitude_toward_Aggressive_Driving_Distracted_by_Passengers">paper</a>:</em></p>
+<pre><code>@article{Behbahani2018,
+author = {Behbahani, Hamid and Movahedi, Mohammad and Movahedi, Mina and Mohammadian Amiri, Amir and Yavari, Afsaneh},
+title = {Investigating the Relationship between Selective Attention and Aggressive Driving in Young Drivers},
+year = {2018}
+}
+</code></pre>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/research/impacts-of-cdw-in-urban-roads/">
+                &#8592;
+                Previous:
+                Paving the Way to Sustainability: Recycling Construction Waste for Urban Roads
+            </a>
+        </p>
+        <p class="prev-post-date">
+            November 15, 2018
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/research/open-data-traffic-bottlenecks/">
+                Next:
+                Crowdsourcing Safety: Detecting Accident Bottlenecks with Open Data
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            March 18, 2020
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

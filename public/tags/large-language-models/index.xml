@@ -6,10 +6,38 @@
     <description>Recent content in Large Language Models on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 16 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/large-language-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The Crossroads of LLMs and Traffic Control: A New Era in Urban Mobility</title>
+      <title>Agentic AI as a Research Tool</title>
+      <link>http://localhost:1313/scratchpad/research-agents/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/research-agents/</guid>
+      <description>&lt;p&gt;This scratchpad explores how agentic AI can be used as a practical research tool. It focuses on understanding how AI agents can support literature review, data analysis, writing, coding, workflow automation, and knowledge organization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Local LLMs</title>
+      <link>http://localhost:1313/scratchpad/local-llms/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/local-llms/</guid>
+      <description>&lt;p&gt;This scratchpad collects my notes on running and working with local large language models. It is meant to better understand model deployment, inference tools, hardware requirements, quantization, fine-tuning, evaluation, and practical workflows for using LLMs outside cloud-based platforms.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to LLM</title>
+      <link>http://localhost:1313/scratchpad/llm/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/llm/</guid>
+      <description>&lt;p&gt;This scratchpad collects the &lt;strong&gt;LLM introduction series&lt;/strong&gt;, an eight-part walkthrough from transformer basics to responsible deployment. Many examples use evacuation and transportation planning as a running case, but the concepts apply broadly.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simulating Community Behaviors with LLMs</title>
+      <link>http://localhost:1313/research/llm-persona-debris-management/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/llm-persona-debris-management/</guid>
+      <description>&lt;div style=&#34;background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #856404; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚧&lt;/span&gt; The Challenge of Debris Management&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #533f03;&#34;&gt;Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive logistical challenge. Traditional planning relies heavily on volume estimation and routing, treating communities as passive entities. However, emergent human behaviors—such as &lt;strong&gt;illegal debris dumping&lt;/strong&gt;—introduce highly stochastic burdens that derail recovery efficiency, amplify health risks, and drastically increase municipal costs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Crossroads of LLMs and Traffic Control</title>
       <link>http://localhost:1313/research/llm-adaptive-traffic-control/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/research/llm-adaptive-traffic-control/</guid>

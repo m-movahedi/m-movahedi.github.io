@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 2: Project Management and Economics on Mohammad Movahedi</title>
+    <link>http://localhost:1313/scratchpad/pe-exam/module-2/</link>
+    <description>Recent content in Module 2: Project Management and Economics on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/scratchpad/pe-exam/module-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantity Takeoff and Cost Estimating</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-2/07-quantity-takeoff-and-cost-estimating/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-2/07-quantity-takeoff-and-cost-estimating/</guid>
+      <description>&lt;h1 id=&#34;quantity-takeoff-and-cost-estimating&#34;&gt;Quantity Takeoff and Cost Estimating&lt;/h1&gt;&#xA;&lt;p&gt;This lesson covers the fundamentals of estimating material quantities and associated costs for civil engineering projects, a core topic on the NCEES PE Civil Transportation exam. In the exam, quantity takeoff problems test your attention to detail, unit conversions, and application of swell/shrinkage factors rather than complex mathematical theory.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;earthwork-quantities&#34;&gt;Earthwork Quantities&lt;/h2&gt;&#xA;&lt;p&gt;Earthwork estimating involves calculating the volumes of material to be excavated (cut) or deposited (fill) to achieve the design grade.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Construction Productivity</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-2/08-construction-productivity/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-2/08-construction-productivity/</guid>
+      <description>&lt;h1 id=&#34;construction-productivity&#34;&gt;Construction Productivity&lt;/h1&gt;&#xA;&lt;p&gt;Construction productivity calculations on the PE Civil Transportation exam focus on determining crew sizes, estimating cycle times, optimizing equipment configurations, and predicting activity durations. Managing and calculating the output rates of labor and machinery directly impacts both cost and project schedules.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;crew-productivity-and-labor-hours&#34;&gt;Crew Productivity and Labor-Hours&lt;/h2&gt;&#xA;&lt;p&gt;Productivity is the rate at which work is completed, expressed as output per unit of time or input.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-terms&#34;&gt;Key Terms:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Production Rate:&lt;/strong&gt; Quantity of work completed per unit of time (e.g., $\text{CY/hour}$, $\text{LF/day}$, $\text{SY/crew-hour}$).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Labor-Hour (L-H or MH):&lt;/strong&gt; The work performed by one person in one hour.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Crew-Hour:&lt;/strong&gt; The work performed by a standard crew in one hour.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;formulas&#34;&gt;Formulas:&lt;/h3&gt;&#xA;&lt;p&gt;$$\text{Total Labor-Hours} = \text{Crew Size} \times \text{Duration (hours)}$$&#xA;$$\text{Labor-Hours per Unit} = \frac{\text{Total Labor-Hours}}{\text{Total Quantity}}$$&#xA;$$\text{Production Rate (Units/Hour)} = \frac{\text{Crew Size}}{\text{Labor-Hours per Unit}}$$&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Project Scheduling Basics</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/</guid>
+      <description>&lt;h1 id=&#34;project-scheduling-basics&#34;&gt;Project Scheduling Basics&lt;/h1&gt;&#xA;&lt;p&gt;Project scheduling is a core competency tested on the PE Civil Transportation exam. Understanding activity relationships, precedence types, network formats, and basic scheduling terms is essential before performing full Critical Path Method (CPM) analyses.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;elements-of-a-schedule&#34;&gt;Elements of a Schedule&lt;/h2&gt;&#xA;&lt;p&gt;A project schedule is a model that translates project activities, durations, resources, and constraints into a time-based plan.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Activity (Task):&lt;/strong&gt; A cohesive unit of work that consumes time and resources.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Milestone:&lt;/strong&gt; A significant event or point in time. It has &lt;strong&gt;zero duration&lt;/strong&gt; and consumes no resources.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Duration ($d$):&lt;/strong&gt; The estimated time required to complete an activity (usually measured in working days).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Predecessor:&lt;/strong&gt; An activity that must start or finish before another activity can begin or complete.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Successor:&lt;/strong&gt; An activity that cannot start or finish until another activity has started or completed.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;precedence-relationships&#34;&gt;Precedence Relationships&lt;/h2&gt;&#xA;&lt;p&gt;Activities are linked using logical dependencies. There are four types of relationships, which can be modified by &lt;strong&gt;lags&lt;/strong&gt; or &lt;strong&gt;leads&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Critical Path Method (CPM) and Crashing</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/</guid>
+      <description>&lt;h1 id=&#34;critical-path-method-cpm-and-crashing&#34;&gt;Critical Path Method (CPM) and Crashing&lt;/h1&gt;&#xA;&lt;p&gt;The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the critical path, calculate floats, and manage project schedules. This is a highly tested, calculation-heavy topic on the PE Civil Transportation exam.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;the-cpm-calculation-process&#34;&gt;The CPM Calculation Process&lt;/h2&gt;&#xA;&lt;p&gt;CPM relies on a &lt;strong&gt;forward pass&lt;/strong&gt; to determine early dates, followed by a &lt;strong&gt;backward pass&lt;/strong&gt; to determine late dates. We use the &lt;strong&gt;0-based convention&lt;/strong&gt; ($ES_{\text{start}} = 0$) because it simplifies the math, especially when relationship lags are present.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Engineering Economics</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-2/11-engineering-economics/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-2/11-engineering-economics/</guid>
+      <description>&lt;h1 id=&#34;engineering-economics&#34;&gt;Engineering Economics&lt;/h1&gt;&#xA;&lt;p&gt;Engineering economics evaluates the systematic worth of projects and alternatives. On the PE Civil Transportation exam, this topic is highly predictable and relies heavily on the economic tables and formulas in the NCEES PE Civil Reference Handbook.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;cash-flow-variables-and-conventions&#34;&gt;Cash Flow Variables and Conventions&lt;/h2&gt;&#xA;&lt;p&gt;Every engineering economics problem can be represented as a cash flow diagram. We define the following variables:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$P$ (or $PW$): Present equivalent value or worth (at time $t = 0$).&lt;/li&gt;&#xA;&lt;li&gt;$F$ (or $FW$): Future equivalent value or worth (at time $t = n$ interest periods).&lt;/li&gt;&#xA;&lt;li&gt;$A$ (or $AW$): Annual equivalent value or worth (occurring at the end of each interest period for $n$ periods).&lt;/li&gt;&#xA;&lt;li&gt;$G$: Uniform arithmetic gradient (a constant increase or decrease in cash flows starting at the end of period 2).&lt;/li&gt;&#xA;&lt;li&gt;$i$: Interest rate per period (expressed as a decimal in calculations, or as a percentage when using tables).&lt;/li&gt;&#xA;&lt;li&gt;$n$: Number of interest periods (typically years).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;economic-interest-factors-and-formulas&#34;&gt;Economic Interest Factors and Formulas&lt;/h2&gt;&#xA;&lt;p&gt;The NCEES Reference Handbook provides both algebraic formulas and tables for standard interest factors. The factors are written in the bracket notation: &lt;strong&gt;(To Find / Given, Interest Rate, Periods)&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Benefit-Cost and Life-Cycle Decisions</title>
+      <link>http://localhost:1313/scratchpad/pe-exam/module-2/12-benefit-cost-and-lifecycle-decisions/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/scratchpad/pe-exam/module-2/12-benefit-cost-and-lifecycle-decisions/</guid>
+      <description>&lt;h1 id=&#34;benefit-cost-and-life-cycle-decisions&#34;&gt;Benefit-Cost and Life-Cycle Decisions&lt;/h1&gt;&#xA;&lt;p&gt;Benefit-Cost (B/C) analysis and Life-Cycle Cost Analysis (LCCA) are decision-making tools used to evaluate public infrastructure projects, such as highway safety treatments, pavement alternatives, and transit systems. These analyses extend basic engineering economics to compare options with different lifespans and balance initial capital costs against ongoing operational benefits and user savings.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;comparing-alternatives-with-unequal-service-lives&#34;&gt;Comparing Alternatives with Unequal Service Lives&lt;/h2&gt;&#xA;&lt;p&gt;When evaluating mutually exclusive alternatives (where choosing one eliminates the others) with different lifespans, comparing Net Present Value (NPV) directly over their single lifespans is invalid because it ignores what happens after the shorter project expires.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

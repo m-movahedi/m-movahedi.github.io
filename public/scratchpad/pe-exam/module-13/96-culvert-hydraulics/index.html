@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Culvert Hydraulics</title>
+    <meta name="description" content="Culvert Hydraulics Culverts are conduits used to convey water through highway embankments. Culvert hydraulics is governed by FHWA Hydraulic Design Series No. 5 …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Culvert Hydraulics">
+    <meta property="og:description" content="Culvert Hydraulics Culverts are conduits used to convey water through highway embankments. Culvert hydraulics is governed by FHWA Hydraulic Design Series No. 5 …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Culvert Hydraulics">
+    <meta name="twitter:description" content="Culvert Hydraulics Culverts are conduits used to convey water through highway embankments. Culvert hydraulics is governed by FHWA Hydraulic Design Series No. 5 …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Culvert Hydraulics</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="culvert-hydraulics">Culvert Hydraulics</h1>
+<p>Culverts are conduits used to convey water through highway embankments. Culvert hydraulics is governed by FHWA Hydraulic Design Series No. 5 (HDS-5) guidelines. Designing or analyzing a culvert requires determining whether the flow is governed by <strong>Inlet Control</strong> or <strong>Outlet Control</strong>.</p>
+<hr>
+<h2 id="control-types">Control Types</h2>
+<h3 id="1-inlet-control">1. Inlet Control</h3>
+<p>Inlet control occurs when the flow capacity of the culvert is limited by the entrance geometry (cross-sectional area, shape, and inlet edge configuration) and the headwater depth ($HW$).</p>
+<ul>
+<li><strong>Key Factor:</strong> The barrel slope, length, and roughness do <strong>not</strong> affect culvert capacity.</li>
+<li><strong>Flow Condition:</strong> Flow passes through critical depth ($y_c$) at or near the inlet, and flow inside the barrel is supercritical.</li>
+<li><strong>Equations (from NCEES handbook):</strong>
+<ul>
+<li><strong>Unsubmerged ($HW/D &lt; 1.2$):</strong>
+$$\frac{HW_i}{D} = \frac{H_c}{D} + K \left[\frac{Q}{A D^{0.5}}\right]^M - 0.5 S_o$$</li>
+<li><strong>Submerged ($HW/D \ge 1.2$):</strong>
+$$\frac{HW_i}{D} = c \left[\frac{Q}{A D^{0.5}}\right]^2 + Y - 0.5 S_o$$
+<em>(where $H_c$ is specific head at critical depth, $S_o$ is culvert barrel slope, and $K, M, c, Y$ are inlet constants based on shape and edge configuration).</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-outlet-control">2. Outlet Control</h3>
+<p>Outlet control occurs when the flow capacity is limited by downstream conditions, barrel friction, entrance losses, and tailwater depth ($TW$).</p>
+<ul>
+<li><strong>Key Factors:</strong> Barrel length ($L$), roughness ($n$), slope ($S_o$), tailwater depth ($TW$), and entrance loss coefficient ($K_e$) all influence capacity.</li>
+<li><strong>Flow Condition:</strong> Flow in the barrel is subcritical, and the culvert is often flowing full or nearly full.</li>
+<li><strong>Energy Equation for Outlet Control:</strong>
+$$HW = H + h_o - L \cdot S_o$$</li>
+</ul>
+<p>Where:</p>
+<ul>
+<li>$HW$ = Headwater depth above inlet invert (<strong>feet</strong>)</li>
+<li>$H$ = Total head loss (<strong>feet</strong>) through the culvert:
+$$H = h_e + h_f + h_v = \left[ 1 + K_e + \frac{29.16 \cdot n^2 \cdot L}{R^{1.33}} \right] \frac{V^2}{2g}$$
+<em>(where $K_e$ is the entrance loss coefficient, $n$ is Manning&rsquo;s roughness, $L$ is length in feet, $R$ is hydraulic radius in feet, and $V$ is velocity in ft/s).</em></li>
+<li>$h_o$ = Downstream tailwater height above outlet invert, calculated as:
+$$h_o = \max\left(TW, \frac{y_c + D}{2}\right)$$
+<em>(where $y_c$ is critical depth, and $D$ is pipe diameter).</em></li>
+<li>$L \cdot S_o$ = Elevation drop along the culvert length (<strong>feet</strong>).</li>
+</ul>
+<hr>
+<h2 id="entrance-loss-coefficients-k_e">Entrance Loss Coefficients ($K_e$)</h2>
+<p>The entrance loss coefficient ($K_e$) is a major factor in outlet control design:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Pipe Type / Inlet Edge</th>
+          <th>$K_e$ Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Concrete Pipe, Projecting from fill (socket end)</td>
+          <td>0.2</td>
+      </tr>
+      <tr>
+          <td>Concrete Pipe, Headwall with square edge</td>
+          <td>0.5</td>
+      </tr>
+      <tr>
+          <td>Concrete Pipe, Mitered to conform to fill</td>
+          <td>0.7</td>
+      </tr>
+      <tr>
+          <td>Corrugated Metal Pipe, Projecting from fill</td>
+          <td>0.9</td>
+      </tr>
+      <tr>
+          <td>Corrugated Metal Pipe, Mitered to conform to fill</td>
+          <td>0.7</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="worked-example-1-inlet-control-headwater-depth">Worked Example 1: Inlet Control Headwater Depth</h2>
+<p>A $36\text{-inch}$ ($3.0\text{-foot}$) concrete circular culvert drains $Q = 35\text{ cfs}$ under inlet control conditions. The culvert is unsubmerged.
+Using the NCEES handbook inlet control parameters for a concrete pipe with a headwall and square edge:</p>
+<ul>
+<li>$K = 0.0098$</li>
+<li>$M = 2.0$</li>
+<li>Critical depth for this flow is $y_c = 1.95\text{ ft}$</li>
+<li>Specific head at critical depth is $H_c = y_c + \frac{V_c^2}{2g} = 2.65\text{ ft}$</li>
+<li>The culvert slope is $S_o = 1.0% = 0.01\text{ ft/ft}$</li>
+</ul>
+<p><strong>Calculate the required headwater depth ($HW$) in feet.</strong></p>
+<h3 id="solution">Solution:</h3>
+<ol>
+<li>
+<p><strong>Calculate the Area ($A$) and Diameter ($D$):</strong></p>
+<ul>
+<li>$D = 3.0\text{ feet}$</li>
+<li>$A = \frac{\pi D^2}{4} = \frac{\pi (3.0)^2}{4} \approx 7.07\text{ ft}^2$</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply the Unsubmerged Inlet Control Equation:</strong>
+$$\frac{HW_i}{D} = \frac{H_c}{D} + K \left[\frac{Q}{A D^{0.5}}\right]^M - 0.5 S_o$$</p>
+</li>
+<li>
+<p><strong>Evaluate the terms:</strong></p>
+<ul>
+<li>$\frac{H_c}{D} = \frac{2.65}{3.0} = 0.883$</li>
+<li>$\frac{Q}{A D^{0.5}} = \frac{35}{7.07 \cdot 3.0^{0.5}} = \frac{35}{7.07 \cdot 1.732} = \frac{35}{12.245} \approx 2.858$</li>
+<li>$K \left[\frac{Q}{A D^{0.5}}\right]^M = 0.0098 \cdot (2.858)^{2.0} = 0.0098 \cdot 8.168 \approx 0.080$</li>
+<li>$- 0.5 S_o = -0.5 \cdot 0.01 = -0.005$</li>
+</ul>
+</li>
+<li>
+<p><strong>Solve for $HW_i$:</strong>
+$$\frac{HW_i}{D} = 0.883 + 0.080 - 0.005 = 0.958$$
+$$HW_i = 0.958 \cdot D = 0.958 \cdot 3.0\text{ ft} \approx 2.87\text{ feet}$$</p>
+</li>
+</ol>
+<hr>
+<h2 id="worked-example-2-outlet-control-headwater-depth">Worked Example 2: Outlet Control Headwater Depth</h2>
+<p>A $24\text{-inch}$ ($2.0\text{-foot}$) concrete culvert ($n = 0.012$) of length $L = 120\text{ feet}$ is laid on a slope $S_o = 0.005\text{ ft/ft}$.</p>
+<ul>
+<li>Design flow is $Q = 12.0\text{ cfs}$</li>
+<li>The inlet has a square-edge headwall ($K_e = 0.5$)</li>
+<li>Tailwater depth above the outlet invert is $TW = 2.2\text{ feet}$ (which is greater than the pipe diameter $D = 2.0\text{ feet}$, forcing outlet control full flow)</li>
+<li>Acceleration of gravity $g = 32.2\text{ ft/s}^2$</li>
+</ul>
+<p><strong>Determine the headwater depth ($HW$) required above the inlet invert.</strong></p>
+<h3 id="solution-1">Solution:</h3>
+<ol>
+<li>
+<p><strong>Verify full flow properties:</strong></p>
+<ul>
+<li>$D = 2.0\text{ feet}$</li>
+<li>$A = \frac{\pi (2.0)^2}{4} = 3.142\text{ ft}^2$</li>
+<li>$P_w = \pi D = 6.283\text{ feet}$</li>
+<li>$R = \frac{D}{4} = 0.50\text{ feet}$</li>
+<li>Velocity $V = \frac{Q}{A} = \frac{12.0}{3.142} \approx 3.82\text{ ft/s}$</li>
+</ul>
+</li>
+<li>
+<p><strong>Calculate head loss ($H$):</strong>
+$$H = \left[ 1 + K_e + \frac{29.16 \cdot n^2 \cdot L}{R^{1.33}} \right] \frac{V^2}{2g}$$</p>
+<ul>
+<li>$1 + K_e = 1 + 0.5 = 1.5$</li>
+<li>$\frac{29.16 \cdot (0.012)^2 \cdot 120}{(0.5)^{1.33}} = \frac{29.16 \cdot 0.000144 \cdot 120}{0.3976} = \frac{0.5039}{0.3976} \approx 1.267$</li>
+<li>Velocity Head $\frac{V^2}{2g} = \frac{(3.82)^2}{2 \cdot 32.2} = \frac{14.592}{64.4} \approx 0.227\text{ feet}$</li>
+</ul>
+<p>Total loss:
+$$H = [1.5 + 1.267] \cdot 0.227 = 2.767 \cdot 0.227 \approx 0.63\text{ feet}$$</p>
+</li>
+<li>
+<p><strong>Determine $h_o$:</strong>
+Since $TW = 2.2\text{ feet}$ (pipe is submerged downstream):
+$$h_o = TW = 2.2\text{ feet}$$</p>
+</li>
+<li>
+<p><strong>Calculate Headwater ($HW$):</strong>
+$$HW = H + h_o - L \cdot S_o$$
+$$HW = 0.63\text{ ft} + 2.2\text{ ft} - (120\text{ ft} \cdot 0.005\text{ ft/ft})$$
+$$HW = 2.83 - 0.60 = 2.23\text{ feet}$$</p>
+</li>
+</ol>
+<hr>
+<h2 id="technical-pitfalls">Technical Pitfalls</h2>
+<ul>
+<li><strong>Inlet vs. Outlet Control Choice:</strong> In practice, you must calculate $HW$ for both inlet and outlet control. The larger of the two headwater depths governs the design. On the exam, read carefully to see if the control condition is pre-defined or if you must check both.</li>
+<li><strong>Elevation Drop ($L \cdot S_o$):</strong> Do not forget to subtract the elevation drop ($L \cdot S_o$) in the outlet control energy equation. Leaving it out makes the required headwater appear higher than it is.</li>
+<li><strong>Entrance Losses ($K_e$):</strong> Pay close attention to the pipe material and inlet edge condition to select the correct $K_e$ from the reference handbook.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-13/95-inlet-capacity/">
+                &#8592;
+                Previous:
+                Inlet Capacity
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-13/97-open-channel-flow/">
+                Next:
+                Open Channel Flow
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

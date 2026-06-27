@@ -6,8 +6,15 @@
     <description>Recent content in Post-Disaster-Recovery on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 20 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/post-disaster-recovery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simulating Community Behaviors with LLMs</title>
+      <link>http://localhost:1313/research/llm-persona-debris-management/</link>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/llm-persona-debris-management/</guid>
+      <description>&lt;div style=&#34;background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #856404; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚧&lt;/span&gt; The Challenge of Debris Management&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #533f03;&#34;&gt;Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive logistical challenge. Traditional planning relies heavily on volume estimation and routing, treating communities as passive entities. However, emergent human behaviors—such as &lt;strong&gt;illegal debris dumping&lt;/strong&gt;—introduce highly stochastic burdens that derail recovery efficiency, amplify health risks, and drastically increase municipal costs.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NHERI GSC RSR: Scalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA</title>
       <link>http://localhost:1313/webinars/nheri_rsr_spring2026/</link>
@@ -28,6 +35,13 @@
       <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/webinars/nheri_rsr_spring2025/</guid>
       <description>&lt;div class=&#34;layout-container&#34;&gt;&#xA;  &lt;div class=&#34;left-section&#34;&gt;&#xA;    &lt;img src=&#34;https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg&#34; alt=&#34;Description of image&#34; class=&#34;side-image&#34; style=&#34;width:70px&#34;&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;right-section&#34;&gt;&#xA;    &lt;h3&gt;NHERI Graduate Student Council&lt;/h3&gt;&#xA;    &lt;h2&gt;Reconnaissance RSR Meeting&lt;/h2&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;marshal-fire-colorado-field-reconnaissance-overvirew&#34;&gt;Marshal Fire, Colorado: Field Reconnaissance Overvirew&lt;/h2&gt;&#xA;&lt;p&gt;I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.&lt;/p&gt;&#xA;&lt;p&gt;Dr. Brad Wham is a civil and geotechnical engineering researcher specializing in lifeline infrastructure resilience, pipeline performance, and earthquake engineering. Based at the University of Nevada, Reno, he leads research that informs the design and protection of buried utilities against extreme ground deformation events.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Robustness of EV Charging Infrastructure During Extreme Weather</title>
+      <link>http://localhost:1313/research/ev-charging-network-hurricane-ian/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/ev-charging-network-hurricane-ian/</guid>
+      <description>&lt;div style=&#34;background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🌩️&lt;/span&gt; The Vulnerability of Electric Evacuations&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during natural disasters is paramount. During events like Hurricane Ian, mass evacuations put immense stress on the EV charging infrastructure. If transmission lines fail and charging stations go dark, it can profoundly hinder evacuation efficiency and public safety, leading to widespread vehicle immobilization.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

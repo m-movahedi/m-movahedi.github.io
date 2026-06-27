@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Shear Strength and Lateral Earth Pressures</title>
+    <meta name="description" content="Shear Strength and Lateral Earth Pressures Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shear Strength and Lateral Earth Pressures">
+    <meta property="og:description" content="Shear Strength and Lateral Earth Pressures Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shear Strength and Lateral Earth Pressures">
+    <meta name="twitter:description" content="Shear Strength and Lateral Earth Pressures Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Shear Strength and Lateral Earth Pressures</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="shear-strength-and-lateral-earth-pressures">Shear Strength and Lateral Earth Pressures</h1>
+<p>Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern the design of retaining walls, abutments, excavation support systems, and highway embankments.</p>
+<hr>
+<h2 id="1-shear-strength-of-soil">1. Shear Strength of Soil</h2>
+<p>Soil is a particulate material that derives its shear strength from friction between particles and cohesion (cementation or electrostatic bonding) between clay minerals.</p>
+<h3 id="mohr-coulomb-failure-criterion">Mohr-Coulomb Failure Criterion</h3>
+<p>The shear strength ($\tau$) of a soil at any point along a failure plane is modeled by the Mohr-Coulomb failure criterion:
+$$\tau = c + \sigma \tan(\phi) \quad \text{(Total Stress Basis)}$$
+$$\tau = c&rsquo; + \sigma&rsquo; \tan(\phi&rsquo;) \quad \text{(Effective Stress Basis)}$$</p>
+<p>Where:</p>
+<ul>
+<li>$\tau = \text{shear strength of the soil}$</li>
+<li>$c, c&rsquo; = \text{cohesion (total and effective, respectively)}$</li>
+<li>$\phi, \phi&rsquo; = \text{internal friction angle (total and effective, respectively)}$</li>
+<li>$\sigma = \text{total normal stress on the failure plane}$</li>
+<li>$\sigma&rsquo; = \text{effective normal stress on the failure plane} = \sigma - u$</li>
+<li>$u = \text{pore water pressure}$</li>
+</ul>
+<h3 id="cohesive-vs-cohesionless-soils">Cohesive vs. Cohesionless Soils</h3>
+<ul>
+<li><strong>Cohesionless (Granular) Soils (Sands, Gravels):</strong> Have no long-term cohesion ($c&rsquo; = 0$). Strength depends entirely on effective normal stress and the friction angle:
+$$\tau = \sigma&rsquo; \tan(\phi&rsquo;)$$</li>
+<li><strong>Cohesive (Fine-Grained) Soils (Clays, Silts):</strong> Exhibit cohesion.
+<ul>
+<li><em>Undrained Condition (Short-Term):</em> Loading occurs faster than water can drain, generating excess pore pressures. Typically modeled using total stress: $\tau = s_u$ (where $s_u = c$ is the undrained shear strength, and $\phi = 0$).</li>
+<li><em>Drained Condition (Long-Term):</em> Pore pressures dissipate. Modeled using effective stress: $\tau = c&rsquo; + \sigma&rsquo; \tan(\phi&rsquo;)$.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2-lateral-earth-pressures">2. Lateral Earth Pressures</h2>
+<p>Lateral earth pressure is the horizontal stress exerted by a soil mass against a retaining structure. The magnitude of this pressure depends on the wall&rsquo;s movement relative to the soil.</p>
+<div style="width: 100%; max-width: 700px; margin: 2rem auto;">
+<svg viewBox="0 0 700 250" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="font-family: sans-serif; fill: currentColor;">
+  <!-- ACTIVE -->
+  <text x="130" y="30" text-anchor="middle" font-weight="bold">ACTIVE</text>
+  <text x="130" y="50" text-anchor="middle" font-size="0.8em">(Wall moves away)</text>  
+  <rect x="70" y="90" width="20" height="100" fill="rgba(128,128,128,0.5)" stroke="currentColor" stroke-width="2" />
+  <path d="M 90 190 L 150 90 L 190 90 L 190 190 Z" fill="rgba(139, 69, 19, 0.3)" stroke="currentColor" stroke-width="1" />
+  <!-- Soil surface -->
+  <line x1="90" y1="90" x2="190" y2="90" stroke="currentColor" stroke-width="2" />
+  <!-- Failure plane -->
+  <line x1="90" y1="190" x2="150" y2="90" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4" />  
+  <line x1="60" y1="75" x2="40" y2="75" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="30" y="80" text-anchor="end" font-size="0.8em">Wall</text>
+  <!-- AT-REST -->
+  <text x="350" y="30" text-anchor="middle" font-weight="bold">AT-REST</text>
+  <text x="350" y="50" text-anchor="middle" font-size="0.8em">(No movement)</text>
+  <rect x="310" y="90" width="20" height="100" fill="rgba(128,128,128,0.5)" stroke="currentColor" stroke-width="2" />
+  <rect x="330" y="90" width="60" height="100" fill="rgba(139, 69, 19, 0.3)" stroke="currentColor" stroke-width="1" />
+  <!-- Soil surface -->
+  <line x1="330" y1="90" x2="390" y2="90" stroke="currentColor" stroke-width="2" />
+  <line x1="320" y1="65" x2="320" y2="85" stroke="currentColor" stroke-width="2" />
+  <text x="320" y="60" text-anchor="middle" font-size="0.8em">Wall</text>
+  <!-- PASSIVE -->
+  <text x="590" y="30" text-anchor="middle" font-weight="bold">PASSIVE</text>
+  <text x="590" y="50" text-anchor="middle" font-size="0.8em">(Wall pushes soil)</text>
+  <rect x="550" y="90" width="20" height="100" fill="rgba(128,128,128,0.5)" stroke="currentColor" stroke-width="2" />
+  <path d="M 570 190 L 650 90 L 690 90 L 690 190 Z" fill="rgba(139, 69, 19, 0.3)" stroke="currentColor" stroke-width="1" />
+  <!-- Soil surface -->
+  <line x1="570" y1="90" x2="690" y2="90" stroke="currentColor" stroke-width="2" />
+  <!-- Failure plane -->
+  <line x1="570" y1="190" x2="650" y2="90" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4" />
+  <line x1="520" y1="75" x2="540" y2="75" stroke="currentColor" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="510" y="80" text-anchor="end" font-size="0.8em">Wall</text>
+  <!-- K relation axis -->
+  <line x1="130" y1="230" x2="320" y2="230" stroke="currentColor" stroke-width="1" marker-start="url(#arrow)" />
+  <line x1="380" y1="230" x2="570" y2="230" stroke="currentColor" stroke-width="1" marker-end="url(#arrow)" />  
+  <text x="110" y="235" text-anchor="middle" font-weight="bold">K<tspan dy="5" font-size="0.8em">a</tspan></text>
+  <text x="350" y="235" text-anchor="middle" font-weight="bold">K<tspan dy="5" font-size="0.8em">0</tspan></text>
+  <text x="590" y="235" text-anchor="middle" font-weight="bold">K<tspan dy="5" font-size="0.8em">p</tspan></text>
+  <!-- Defs -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
+    </marker>
+  </defs>
+</svg>
+</div>
+<h3 id="coefficients-of-earth-pressure-k">Coefficients of Earth Pressure ($K$)</h3>
+<p>The ratio of horizontal effective stress ($\sigma&rsquo;_h$) to vertical effective stress ($\sigma&rsquo;_v$) is defined as the earth pressure coefficient:
+$$K = \frac{\sigma&rsquo;_h}{\sigma&rsquo;_v}$$</p>
+<ol>
+<li><strong>At-Rest Earth Pressure ($K_0$):</strong> Occurs when the wall is completely rigid and undergoes zero lateral displacement.
+<ul>
+<li>For normally consolidated soils, Jaky&rsquo;s equation is used:
+$$K_0 = 1 - \sin(\phi&rsquo;)$$</li>
+</ul>
+</li>
+<li><strong>Active Earth Pressure ($K_a$):</strong> Occurs when the wall moves <em>away</em> from the backfill, allowing the soil to expand laterally and fail along a shear plane. Rankine&rsquo;s coefficient is:
+$$K_a = \frac{1 - \sin(\phi&rsquo;)}{1 + \sin(\phi&rsquo;)} = \tan^2\left(45^\circ - \frac{\phi&rsquo;}{2}\right)$$</li>
+<li><strong>Passive Earth Pressure ($K_p$):</strong> Occurs when the wall is pushed <em>into</em> the backfill, compressing the soil laterally until failure occurs. Rankine&rsquo;s coefficient is:
+$$K_p = \frac{1 + \sin(\phi&rsquo;)}{1 - \sin(\phi&rsquo;)} = \tan^2\left(45^\circ + \frac{\phi&rsquo;}{2}\right)$$</li>
+</ol>
+<p><em>Note:</em> $K_p$ is the mathematical inverse of $K_a$ ($K_p = 1 / K_a$). The relationship is always $K_a &lt; K_0 &lt; K_p$. Active pressure requires very little wall rotation to mobilize, while passive pressure requires significant displacement to be fully mobilized.</p>
+<hr>
+<h2 id="3-lateral-earth-pressure-distribution-rankine-theory">3. Lateral Earth Pressure Distribution (Rankine Theory)</h2>
+<p>For a vertical wall of height $H$ with dry cohesionless backfill ($\gamma$, $\phi$, $c=0$), the active lateral pressure increases linearly with depth ($z$):
+$$\sigma&rsquo;_h(z) = K_a \cdot \sigma&rsquo;_v(z) = K_a \cdot \gamma \cdot z$$</p>
+<p>The total active lateral force (thrust) per unit length of the wall ($P_a$) is the area under the triangular pressure distribution:
+$$P_a = \frac{1}{2} K_a \gamma H^2$$
+This resultant force acts at a height of $H/3$ from the base of the wall.</p>
+<h3 id="surcharge-and-water-table-effects">Surcharge and Water Table Effects</h3>
+<p>If a uniform surcharge ($q$) is applied to the surface, and a water table is present at depth $d$ behind the wall:</p>
+<ol>
+<li><strong>Surcharge Pressure:</strong> Adds a uniform lateral pressure over the entire height of the wall:
+$$\sigma_{h,\text{surcharge}} = K_a \cdot q$$
+The resultant force is $P_{\text{surcharge}} = K_a q H$, acting at $H/2$ from the base.</li>
+<li><strong>Water Pressure:</strong> Water pressure is hydrostatic and isotropic ($K = 1.0$). It must be calculated separately from soil pressure:
+$$u(z) = \gamma_w (z - d) \quad (\text{for } z \ge d)$$
+The resultant water force is $P_w = \frac{1}{2} \gamma_w (H - d)^2$, acting at $(H-d)/3$ from the base.</li>
+<li><strong>Effective Soil Stress below Water Table:</strong> Below the water table, the vertical effective stress must use the submerged unit weight ($\gamma&rsquo; = \gamma_{\text{sat}} - \gamma_w$):
+$$\sigma&rsquo;_v(z) = \gamma \cdot d + \gamma&rsquo; \cdot (z - d) \quad (\text{for } z \ge d)$$
+$$\sigma&rsquo;_h(z) = K_a \cdot \sigma&rsquo;_v(z)$$</li>
+</ol>
+<hr>
+<h2 id="4-slope-stability-basics">4. Slope Stability Basics</h2>
+<p>Slope stability is measured by the Factor of Safety ($FS$), which is the ratio of resisting forces/moments to driving forces/moments:
+$$FS = \frac{\tau_{\text{resisting}}}{\tau_{\text{driving}}}$$</p>
+<h3 id="infinite-slope-analysis">Infinite Slope Analysis</h3>
+<p>An infinite slope has a failure plane parallel to the slope face. For a cohesionless dry soil slope inclined at an angle $\beta$:</p>
+<ul>
+<li>The shear stress driving failure is $\tau_{\text{driving}} = \gamma z \sin(\beta) \cos(\beta)$.</li>
+<li>The normal stress on the plane is $\sigma&rsquo; = \gamma z \cos^2(\beta)$.</li>
+<li>The resisting shear strength is $\tau_{\text{resisting}} = \sigma&rsquo; \tan(\phi&rsquo;) = \gamma z \cos^2(\beta) \tan(\phi&rsquo;)$.</li>
+</ul>
+<p>$$FS = \frac{\gamma z \cos^2(\beta) \tan(\phi&rsquo;)}{\gamma z \sin(\beta) \cos(\beta)} = \frac{\tan(\phi&rsquo;)}{\tan(\beta)}$$</p>
+<p><em>Key Takeaway:</em> For a dry sand slope, the factor of safety is independent of depth ($z$) and unit weight. If $FS = 1.0$, the slope angle $\beta$ equals the internal friction angle $\phi&rsquo;$ (angle of repose).</p>
+<p>If seepage occurs parallel to the slope surface and is coincident with the slope face, the factor of safety is reduced by approximately half due to pore pressures:
+$$FS = \frac{\gamma&rsquo;}{\gamma_{\text{sat}}} \frac{\tan(\phi&rsquo;)}{\tan(\beta)} \approx 0.5 \frac{\tan(\phi&rsquo;)}{\tan(\beta)}$$</p>
+<hr>
+<h2 id="5-worked-examples">5. Worked Examples</h2>
+<h3 id="worked-example-1-active-pressure-with-surcharge-and-water">Worked Example 1: Active Pressure with Surcharge and Water</h3>
+<p>A retaining wall with a height of $20\text{ ft}$ has a vertical back face and supports a level sand backfill. The soil has the following properties:</p>
+<ul>
+<li>$\gamma = 115\text{ lb/ft}^3$ (above water table)</li>
+<li>$\gamma_{\text{sat}} = 125\text{ lb/ft}^3$ (below water table)</li>
+<li>$\phi&rsquo; = 30^\circ$, $c&rsquo; = 0$</li>
+<li>Water table is located at $12\text{ ft}$ below the ground surface.</li>
+<li>A uniform surcharge $q = 250\text{ lb/ft}^2$ is applied on the backfill surface.</li>
+</ul>
+<p><strong>Goal:</strong> Calculate the total active lateral thrust (force per unit length of wall) and the height of its line of action from the base of the wall.</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li><strong>Calculate $K_a$:</strong>
+$$K_a = \tan^2(45^\circ - 30^\circ / 2) = \tan^2(30^\circ) = 0.333$$</li>
+<li><strong>Identify Pressures at Key Depths ($z = 0\text{ ft}$, $z = 12\text{ ft}$, $z = 20\text{ ft}$):</strong>
+<ul>
+<li><strong>At $z = 0\text{ ft}$:</strong>
+<ul>
+<li>$\sigma&rsquo;_v = 0$</li>
+<li>$\sigma&rsquo;_h = K_a q = 0.333(250) = 83.3\text{ lb/ft}^2$</li>
+<li>$u = 0$</li>
+</ul>
+</li>
+<li><strong>At $z = 12\text{ ft}$ (just above water table):</strong>
+<ul>
+<li>$\sigma&rsquo;_v = \gamma z = 115(12) = 1380\text{ lb/ft}^2$</li>
+<li>$\sigma&rsquo;_h = K_a (\sigma&rsquo;_v + q) = 0.333(1380 + 250) = 0.333(1630) = 543.3\text{ lb/ft}^2$</li>
+<li>$u = 0$</li>
+</ul>
+</li>
+<li><strong>At $z = 20\text{ ft}$ (base of wall):</strong>
+<ul>
+<li>Submerged unit weight: $\gamma&rsquo; = 125 - 62.4 = 62.6\text{ lb/ft}^3$</li>
+<li>$\sigma&rsquo;_v = \gamma(12) + \gamma&rsquo;(8) = 1380 + 62.6(8) = 1380 + 500.8 = 1880.8\text{ lb/ft}^2$</li>
+<li>$\sigma&rsquo;_h = K_a (\sigma&rsquo;_v + q) = 0.333(1880.8 + 250) = 0.333(2130.8) = 710.3\text{ lb/ft}^2$</li>
+<li>$u = \gamma_w (20 - 12) = 62.4(8) = 499.2\text{ lb/ft}^2$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Break Down Lateral Forces (Thrusts) per foot of wall:</strong>
+<ul>
+<li><strong>Force 1 (Surcharge):</strong> Uniform rectangular pressure distribution of $K_a q = 83.3\text{ lb/ft}^2$ over height $H=20\text{ ft}$.
+$$P_1 = 83.3 \cdot 20 = 1666\text{ lb/ft}$$
+<em>Moment arm from base:</em> $y_1 = 20 / 2 = 10\text{ ft}$</li>
+<li><strong>Force 2 (Soil Dry Triangle):</strong> Triangular pressure increasing from $0$ at $z=0$ to $K_a \gamma (12) = 0.333(115)(12) = 460\text{ lb/ft}^2$ at $z=12\text{ ft}$.
+$$P_2 = \frac{1}{2} \cdot 460 \cdot 12 = 2760\text{ lb/ft}$$
+<em>Moment arm from base:</em> $y_2 = (20 - 12) + \frac{12}{3} = 8 + 4 = 12\text{ ft}$</li>
+<li><strong>Force 3 (Soil Wet Rectangle):</strong> Uniform pressure of $460\text{ lb/ft}^2$ acting over the lower $8\text{ ft}$ (due to soil overhead).
+$$P_3 = 460 \cdot 8 = 3680\text{ lb/ft}$$
+<em>Moment arm from base:</em> $y_3 = 8 / 2 = 4\text{ ft}$</li>
+<li><strong>Force 4 (Soil Wet Triangle):</strong> Triangular pressure increasing from $0$ at $z=12$ to $K_a \gamma&rsquo; (8) = 0.333(62.6)(8) = 167.0\text{ lb/ft}^2$ at $z=20\text{ ft}$.
+$$P_4 = \frac{1}{2} \cdot 167.0 \cdot 8 = 668\text{ lb/ft}$$
+<em>Moment arm from base:</em> $y_4 = 8 / 3 = 2.67\text{ ft}$</li>
+<li><strong>Force 5 (Water Pressure Triangle):</strong> Hydrostatic water pressure increasing from $0$ at $z=12$ to $499.2\text{ lb/ft}^2$ at $z=20\text{ ft}$.
+$$P_5 = \frac{1}{2} \cdot 499.2 \cdot 8 = 1996.8\text{ lb/ft}$$
+<em>Moment arm from base:</em> $y_5 = 8 / 3 = 2.67\text{ ft}$</li>
+</ul>
+</li>
+<li><strong>Calculate Total Thrust ($P_{\text{total}}$):</strong>
+$$P_{\text{total}} = P_1 + P_2 + P_3 + P_4 + P_5 = 1666 + 2760 + 3680 + 668 + 1996.8 = 10,770.8\text{ lb/ft}$$</li>
+<li><strong>Calculate Height of Resultant Force ($\bar{y}$):</strong>
+Use moment equilibrium about the base of the wall:
+$$\bar{y} = \frac{\sum P_i y_i}{P_{\text{total}}}$$
+$$\sum P_i y_i = (1666 \cdot 10) + (2760 \cdot 12) + (3680 \cdot 4) + (668 \cdot 2.67) + (1996.8 \cdot 2.67)$$
+$$\sum P_i y_i = 16,660 + 33,120 + 14,720 + 1783.6 + 5331.5 = 71,615.1\text{ ft-lb/ft}$$
+$$\bar{y} = \frac{71,615.1}{10,770.8} = 6.65\text{ ft}$$</li>
+</ol>
+<p><em>Result:</em> Total lateral force is <strong>$10,771\text{ lb/ft}$</strong> acting at <strong>$6.65\text{ ft}$</strong> above the base.</p>
+<hr>
+<h3 id="worked-example-2-infinite-slope-stability">Worked Example 2: Infinite Slope Stability</h3>
+<p>A steep highway cut slope is constructed in dry sand. The slope angle is $24^\circ$. The sand has a friction angle of $\phi&rsquo; = 32^\circ$ and dry unit weight of $112\text{ lb/ft}^3$.</p>
+<p><strong>Goal:</strong> Calculate the Factor of Safety ($FS$) against sliding. If seepage develops parallel to the slope and is coincident with the ground surface, calculate the new Factor of Safety. (Assume saturated unit weight is $122\text{ lb/ft}^3$).</p>
+<p><strong>Solution:</strong></p>
+<ol>
+<li><strong>Calculate Dry Slope $FS$:</strong>
+$$FS = \frac{\tan(\phi&rsquo;)}{\tan(\beta)} = \frac{\tan(32^\circ)}{\tan(24^\circ)} = \frac{0.6249}{0.4452} = 1.40$$</li>
+<li><strong>Calculate Wet Slope $FS$ (with seepage):</strong>
+<ul>
+<li>$\gamma&rsquo; = \gamma_{\text{sat}} - \gamma_w = 122 - 62.4 = 59.6\text{ lb/ft}^3$</li>
+<li>Seepage formula:
+$$FS = \left(\frac{\gamma&rsquo;}{\gamma_{\text{sat}}}\right) \frac{\tan(\phi&rsquo;)}{\tan(\beta)}$$
+$$FS = \left(\frac{59.6}{122}\right) \cdot 1.403 = 0.4885 \cdot 1.403 = 0.69$$</li>
+</ul>
+</li>
+</ol>
+<p><em>Result:</em> The dry slope is stable ($FS = 1.40$), but the introduction of seepage reduces the safety factor below $1.0$ ($FS = 0.69$), triggering a landslide failure.</p>
+<hr>
+<h2 id="6-exam-pitfalls-and-tips">6. Exam Pitfalls and Tips</h2>
+<ul>
+<li><strong>Pore Pressure Neglect:</strong> Always subtract pore water pressure from total vertical stress before multiplying by $K_a$ or $K_p$. Soil grain lateral pressure depends only on effective stress.</li>
+<li><strong>Water pressure coefficient:</strong> Water has no shear strength, so it does not have a friction angle. Therefore, water pressure is never multiplied by $K_a$ or $K_p$. It is calculated simply as $u = \gamma_w h$ (using $K=1.0$).</li>
+<li><strong>Resultant Locations:</strong> Rectangular surcharge forces act at $H/2$. Triangular soil/water forces act at $H/3$. If there are multiple layers, be careful with the geometry of the pressure segments. Sketching the pressure diagram will prevent errors.</li>
+<li><strong>Cohesive Active Pressures:</strong> If a soil has cohesion, the active pressure is $\sigma&rsquo;_h = K_a \sigma&rsquo;<em>v - 2c\sqrt{K_a}$. Cohesion reduces lateral earth pressure and can create a theoretical tension crack zone near the surface ($z</em>{\text{crack}} = \frac{2c}{\gamma\sqrt{K_a}}$) where pressure is assumed to be zero.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-12/82-compaction/">
+                &#8592;
+                Previous:
+                Soil Compaction
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/">
+                Next:
+                Permeability and Drainage in Soils
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

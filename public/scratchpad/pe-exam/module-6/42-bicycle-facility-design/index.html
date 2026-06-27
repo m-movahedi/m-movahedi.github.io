@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Bicycle Facility Design</title>
+    <meta name="description" content="Bicycle Facility Design Bicycle facility design focuses on providing safe, accessible, and comfortable infrastructure for cyclists. In the United States, …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bicycle Facility Design">
+    <meta property="og:description" content="Bicycle Facility Design Bicycle facility design focuses on providing safe, accessible, and comfortable infrastructure for cyclists. In the United States, …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bicycle Facility Design">
+    <meta name="twitter:description" content="Bicycle Facility Design Bicycle facility design focuses on providing safe, accessible, and comfortable infrastructure for cyclists. In the United States, …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Bicycle Facility Design</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="bicycle-facility-design">Bicycle Facility Design</h1>
+<p>Bicycle facility design focuses on providing safe, accessible, and comfortable infrastructure for cyclists. In the United States, geometric design of bicycle facilities is guided by the <strong>AASHTO Guide for the Development of Bicycle Facilities (GBF-4)</strong>. On the PE Civil Transportation exam, you will need to understand the classifications of bike facilities, spatial dimensions, design speeds, stopping sight distances, and curve geometry.</p>
+<hr>
+<h2 id="classifications-of-bicycle-facilities">Classifications of Bicycle Facilities</h2>
+<p>Bicycle facilities are classified into four main categories based on the level of separation from motorized traffic:</p>
+<ol>
+<li><strong>Shared-Use Paths (Class I):</strong> Physically separated from motorized vehicular traffic by an open space or barrier. They are located within an independent right-of-way or easement and are shared with pedestrians, runners, and skaters.</li>
+<li><strong>Bike Lanes (Class II):</strong> A portion of the roadway designated by striping, signing, and pavement markings for the preferential or exclusive use of bicyclists.</li>
+<li><strong>Shared Lanes (Class III):</strong> Streets where bicyclists and motorists share the same travel lane. Often marked with &ldquo;sharrows&rdquo; (shared lane markings) and signs, but without designated lane lines.</li>
+<li><strong>Separated Bikeways / Cycle Tracks (Class IV):</strong> On-street bicycle facilities that are physically separated from motor vehicle traffic by a vertical element such as a raised median, plastic delineators, bollards, or on-street parking.</li>
+</ol>
+<hr>
+<h2 id="design-dimensions-and-clearances">Design Dimensions and Clearances</h2>
+<h3 id="shared-use-paths-multi-use-paths">Shared-Use Paths (Multi-Use Paths)</h3>
+<ul>
+<li><strong>Standard Width:</strong> <strong>10.0 ft (3.0 m)</strong> is the standard design width for a two-way shared-use path.</li>
+<li><strong>Minimum Width:</strong> <strong>8.0 ft (2.4 m)</strong> is acceptable only under low-volume conditions or where physical constraints exist.</li>
+<li><strong>Preferred Width:</strong> <strong>12.0 ft to 14.0 ft (3.6 m to 4.3 m)</strong> is recommended on paths with high pedestrian and bicycle volumes.</li>
+<li><strong>Lateral Clearance:</strong> A minimum <strong>2.0-ft (0.6-m)</strong> graded shoulder (horizontal clearance) must be maintained on both sides of the path, free of fixed hazards like trees, utility poles, and fences.</li>
+<li><strong>Vertical Clearance:</strong> A minimum of <strong>8.0 ft (2.4 m)</strong> (10.0 ft preferred) of vertical clearance to overhanging branches or structures.</li>
+</ul>
+<h3 id="on-street-bike-lanes">On-Street Bike Lanes</h3>
+<ul>
+<li><strong>Against a Curb:</strong> Minimum width is <strong>5.0 ft (1.5 m)</strong> from the curb face to the lane stripe (with a minimum of 3.0 ft of smooth asphalt surface if a concrete gutter pan is present).</li>
+<li><strong>Adjacent to a Shoulder:</strong> Minimum width is <strong>4.0 ft (1.2 m)</strong>.</li>
+<li><strong>Adjacent to On-Street Parking:</strong> Minimum width is <strong>5.0 ft (1.5 m)</strong>. The bike lane must be placed on the left side of the parking lane to prevent cyclists from being hit by opening car doors (the &ldquo;door zone&rdquo;).</li>
+<li><strong>Buffered Bike Lanes:</strong> Feature a painted buffer zone, typically <strong>2.0 ft to 3.0 ft</strong> wide, separating the bike lane from traffic or parking.</li>
+</ul>
+<hr>
+<h2 id="design-parameters-for-shared-use-paths">Design Parameters for Shared-Use Paths</h2>
+<h3 id="design-speed">Design Speed</h3>
+<ul>
+<li>Paved shared-use paths are typically designed for a bicyclist speed of <strong>18 mph (30 km/h)</strong>.</li>
+<li>On downgrades steeper than $4%$ or in areas with high-performance cyclists, the design speed should be increased to <strong>30 mph (50 km/h)</strong>.</li>
+</ul>
+<h3 id="maximum-grade">Maximum Grade</h3>
+<ul>
+<li>To comply with ADA guidelines (since paths are shared with pedestrians), the maximum grade of a shared-use path is <strong>5.0%</strong>.</li>
+<li>Grades up to <strong>8.33% (1:12)</strong> are permitted for short distances (up to $500\text{ ft}$) if appropriate warning signs are provided.</li>
+</ul>
+<hr>
+<h2 id="stopping-sight-distance-ssd-for-bicyclists">Stopping Sight Distance (SSD) for Bicyclists</h2>
+<p>Bicyclists require adequate sight distance to see and stop for hazards. The SSD formula for bicyclists is identical in structure to the vehicle SSD formula:</p>
+<p>$$S = \frac{V^2}{30(f \pm G)} + 1.47 V t$$</p>
+<p>Where:</p>
+<ul>
+<li>$S$ = Stopping Sight Distance (ft)</li>
+<li>$V$ = Bicyclist design speed (mph)</li>
+<li>$t$ = Perception-reaction time = <strong>2.5 seconds</strong> (standard for design)</li>
+<li>$f$ = Coefficient of friction (wet pavement condition, ranging from $0.16$ at $30\text{ mph}$ to $0.25$ at $10\text{ mph}$)</li>
+<li>$G$ = Longitudinal grade (decimal form; e.g., $-0.03$ for a $3%$ downgrade)</li>
+</ul>
+<hr>
+<h2 id="horizontal-curve-geometry-for-bicyclists">Horizontal Curve Geometry for Bicyclists</h2>
+<p>Unlike vehicles, bicyclists lean into curves to maintain balance. The minimum horizontal curve radius ($R_{min}$) is governed by the bicycle design speed, side friction, and superelevation:</p>
+<p>$$R_{min} = \frac{V^2}{15 \left( \frac{e}{100} + f \right)}$$</p>
+<p>Where:</p>
+<ul>
+<li>$V$ = Bicyclist design speed (mph)</li>
+<li>$e$ = Superelevation rate (%). For shared-use paths, the maximum superelevation rate is <strong>2.0%</strong> to comply with pedestrian cross-slope limits.</li>
+<li>$f$ = Side friction factor for bicyclists (typically ranging from <strong>0.20 to 0.30</strong> depending on speed).</li>
+</ul>
+<hr>
+<h2 id="worked-example-bicycle-sight-distance-and-horizontal-curve-design">Worked Example: Bicycle Sight Distance and Horizontal Curve Design</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>A shared-use path is being designed along an abandoned railway corridor. A curved section of the path descends a $4.0%$ grade ($G = -0.04$). The path design speed is $20\text{ mph}$.</p>
+<ul>
+<li>Bicyclist perception-reaction time ($t$): $2.5\text{ seconds}$</li>
+<li>Coefficient of wet friction ($f$) at $20\text{ mph}$: $0.20$</li>
+<li>Maximum allowable superelevation rate ($e$): $2.0%$</li>
+<li>Side friction factor ($f_s$) at $20\text{ mph}$: $0.27$</li>
+</ul>
+<ol>
+<li>Calculate the required stopping sight distance ($S$) for a bicyclist traveling down the $4.0%$ grade.</li>
+<li>Determine the minimum horizontal curve radius ($R_{min}$) required for this section of the path.</li>
+</ol>
+<h3 id="solution">Solution</h3>
+<ol>
+<li>
+<p><strong>Calculate the Stopping Sight Distance ($S$):</strong>
+Use the SSD formula:
+$$S = \frac{V^2}{30(f - G)} + 1.47 V t$$
+<em>Note: Since it is a downgrade, we subtract the grade ($G = 0.04$):</em>
+$$S = \frac{20^2}{30(0.20 - 0.04)} + 1.47(20)(2.5)$$
+$$S = \frac{400}{30(0.16)} + 73.5$$
+$$S = \frac{400}{4.8} + 73.5 = 83.33 + 73.5 = 156.83\text{ ft}$$
+<em>Rounding up for design:</em> <strong>$157\text{ ft}$</strong></p>
+</li>
+<li>
+<p><strong>Calculate the Minimum Horizontal Curve Radius ($R_{min}$):</strong>
+Use the minimum radius formula:
+$$R_{min} = \frac{V^2}{15 \left( \frac{e}{100} + f_s \right)}$$
+<em>Substitute the given values:</em>
+$$R_{min} = \frac{20^2}{15 \left( \frac{2.0}{100} + 0.27 \right)}$$
+$$R_{min} = \frac{400}{15(0.02 + 0.27)} = \frac{400}{15(0.29)}$$
+$$R_{min} = \frac{400}{4.35} = 91.95\text{ ft}$$
+<em>Rounding up for design:</em> <strong>$92\text{ ft}$</strong></p>
+</li>
+</ol>
+<h3 id="answer">Answer</h3>
+<ol>
+<li>Stopping sight distance on the downgrade: <strong>157 ft</strong></li>
+<li>Minimum horizontal curve radius: <strong>92 ft</strong></li>
+</ol>
+<hr>
+<h2 id="crucial-exam-tips">Crucial Exam Tips</h2>
+<ul>
+<li><strong>The 2% Superelevation Cap:</strong> On the PE exam, if you are asked to design a shared-use path horizontal curve, do not use the standard highway superelevation rates (e.g., $6%$ or $8%$). Because pedestrians share the path, the cross slope cannot exceed <strong>2.0%</strong> to comply with ADA.</li>
+<li><strong>Wet Friction vs. Dry Friction:</strong> Always verify whether the problem specifies wet or dry conditions. For standard safety design, always use the wet coefficient of friction provided in the tables.</li>
+<li><strong>Clearance to Barriers:</strong> Remember that fences or guardrails along a shared-use path must be placed at least <strong>2.0 ft</strong> from the edge of the path. A common exam question involves checking whether a path clearance layout violates this lateral clearance rule.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-6/41-pedestrian-facility-design/">
+                &#8592;
+                Previous:
+                Pedestrian Facility Design
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-6/43-traffic-calming-and-complete-streets/">
+                Next:
+                Traffic Calming and Complete Streets
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>

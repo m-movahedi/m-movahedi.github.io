@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Compound and Reverse Curves</title>
+    <meta name="description" content="Compound and Reverse Curves While simple horizontal curves are the most common horizontal alignment elements, complex alignments sometimes require combining …">
+    <meta name="keywords" content=''>
+
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/49-compound-and-reverse-curves/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Compound and Reverse Curves">
+    <meta property="og:description" content="Compound and Reverse Curves While simple horizontal curves are the most common horizontal alignment elements, complex alignments sometimes require combining …">
+    <meta property="og:image" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compound and Reverse Curves">
+    <meta name="twitter:description" content="Compound and Reverse Curves While simple horizontal curves are the most common horizontal alignment elements, complex alignments sometimes require combining …">
+    <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-7/49-compound-and-reverse-curves/">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/49-compound-and-reverse-curves/">
+    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-7/49-compound-and-reverse-curves/">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Compound and Reverse Curves</h1>
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="compound-and-reverse-curves">Compound and Reverse Curves</h1>
+<p>While simple horizontal curves are the most common horizontal alignment elements, complex alignments sometimes require combining multiple curves. Two such configurations are <strong>compound curves</strong> and <strong>reverse curves</strong>.</p>
+<p>For the PE Civil Transportation exam, you must understand their geometric relationships, coordinate calculations, stationing workflows, and critical design limitations set by <strong>AASHTO&rsquo;s Green Book (GDHS)</strong>, Chapter 3.</p>
+<hr>
+<h2 id="compound-curves">Compound Curves</h2>
+<p>A compound curve consists of two or more circular curves of different radii curving in the same direction, meeting at a common <strong>Point of Compound Curvature (PCC)</strong>.</p>
+<pre tabindex="0"><code>       Back Tangent
+==================[PC] (Radius R_1)
+                     \
+                      \    Curve 1 (Angle Delta_1)
+                       \
+                       [PCC] (Common Tangent Line)
+                         \
+                          \    Curve 2 (Angle Delta_2)
+                           \
+                           [PT] (Radius R_2)
+                              ================== Forward Tangent
+</code></pre><h3 id="key-geometry">Key Geometry:</h3>
+<ul>
+<li><strong>Total Deflection Angle ($\Delta$):</strong> The total angle of deflection between the back and forward tangents is the sum of the individual curve central angles:
+$$\Delta = \Delta_1 + \Delta_2$$</li>
+<li><strong>Stationing:</strong> Stationing runs continuously along the curve:
+$$\text{PCC Station} = \text{PC Station} + L_1$$
+$$\text{PT Station} = \text{PCC Station} + L_2$$
+Where $L_1$ and $L_2$ are the arc lengths of Curve 1 and Curve 2, calculated using their respective radii ($R_1, R_2$) and central angles ($\Delta_1, \Delta_2$).</li>
+</ul>
+<h3 id="aashto-design-criteria-radius-ratios">AASHTO Design Criteria (Radius Ratios)</h3>
+<p>To prevent drivers from experiencing sudden shifts in lateral acceleration, the transition from a larger radius ($R_1$) to a smaller radius ($R_2$) must be gradual:</p>
+<ul>
+<li><strong>High-Speed Highways:</strong> The ratio of the larger radius to the smaller radius should not exceed <strong>1.5</strong>:
+$$\frac{R_{large}}{R_{small}} \le 1.5$$</li>
+<li><strong>Low-Speed Intersections and Ramps:</strong> The ratio of the larger radius to the smaller radius should not exceed <strong>2.0</strong>:
+$$\frac{R_{large}}{R_{small}} \le 2.0$$</li>
+</ul>
+<hr>
+<h2 id="reverse-curves">Reverse Curves</h2>
+<p>A reverse curve consists of two circular curves of equal or different radii curving in opposite directions, meeting at a common <strong>Point of Reverse Curvature (PRC)</strong>.</p>
+<pre tabindex="0"><code>                    Curve 1 (Left Curve)
+                   /
+================[PC]
+                 \
+                  \
+                  [PRC] (Point of Zero Curvature)
+                     \
+                      \
+                      [PT] (Right Curve)
+                          ====================
+</code></pre><h3 id="the-superelevation-hazard-in-reverse-curves">The Superelevation Hazard in Reverse Curves</h3>
+<p>Reverse curves present a significant safety issue on high-speed roads because the roadway must transition from full superelevation in one direction (e.g., $+6%$) to full superelevation in the opposite direction (e.g., $-6%$).</p>
+<ul>
+<li><strong>The Flat Spot:</strong> At the PRC, the cross slope must pass through $0%$. This creates a flat area of pavement with zero cross slope, leading to severe drainage problems and hydroplaning risks.</li>
+<li><strong>Driver Control:</strong> A driver crossing the PRC must quickly rotate the steering wheel in the opposite direction while the vehicle&rsquo;s lateral acceleration flips, creating instability.</li>
+</ul>
+<h3 id="aashto-guidelines-for-reverse-curves">AASHTO Guidelines for Reverse Curves:</h3>
+<ul>
+<li><strong>High-Speed Routes:</strong> Reverse curves are <strong>strongly discouraged</strong>. If they must be used, they must be separated by a <strong>tangent section of sufficient length</strong> to accommodate the superelevation runoff of both curves, or by spiral transition curves.</li>
+<li><strong>Low-Speed Routes:</strong> Acceptable at low speeds (such as temporary detours or parking lot lanes) where lateral acceleration forces are minimal.</li>
+</ul>
+<hr>
+<h2 id="worked-example-compound-curve-verification-and-stationing">Worked Example: Compound Curve Verification and Stationing</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>A compound curve is proposed for an interchange exit ramp. The design speed of the ramp is $35\text{ mph}$ (low-speed facility).</p>
+<ul>
+<li>Curve 1: Radius ($R_1$) = $600\text{ ft}$, Central Angle ($\Delta_1$) = $24^\circ 00'$</li>
+<li>Curve 2: Radius ($R_2$) = $320\text{ ft}$, Central Angle ($\Delta_2$) = $38^\circ 00'$</li>
+<li>PC Station: $200+50.00$</li>
+</ul>
+<ol>
+<li>Verify whether the proposed compound curve radii meet the AASHTO design criteria for a low-speed ramp.</li>
+<li>Calculate the arc lengths of Curve 1 ($L_1$) and Curve 2 ($L_2$).</li>
+<li>Determine the stationing of the Point of Compound Curvature (PCC) and the Point of Tangency (PT).</li>
+</ol>
+<h3 id="solution">Solution</h3>
+<ol>
+<li>
+<p><strong>Verify AASHTO Radius Ratio Criterion:</strong></p>
+<ul>
+<li>Larger radius ($R_{large}$) = $600\text{ ft}$</li>
+<li>Smaller radius ($R_{small}$) = $320\text{ ft}$</li>
+<li>Calculate the ratio:
+$$\text{Ratio} = \frac{R_1}{R_2} = \frac{600\text{ ft}}{320\text{ ft}} = 1.875$$</li>
+<li>For low-speed facilities, the AASHTO limit is $2.0$.</li>
+<li>Since $1.875 \le 2.0$, the proposed compound curve <strong>satisfies the AASHTO criterion</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Calculate Arc Lengths ($L_1$ and $L_2$):</strong></p>
+<ul>
+<li><strong>Curve 1 Length ($L_1$):</strong>
+$$L_1 = R_1 \Delta_1 \left( \frac{\pi}{180} \right) = 600\text{ ft} \times 24^\circ \times 0.0174533 = 251.33\text{ ft}$$</li>
+<li><strong>Curve 2 Length ($L_2$):</strong>
+$$L_2 = R_2 \Delta_2 \left( \frac{\pi}{180} \right) = 320\text{ ft} \times 38^\circ \times 0.0174533 = 212.23\text{ ft}$$</li>
+</ul>
+</li>
+<li>
+<p><strong>Determine Stationing:</strong></p>
+<ul>
+<li><strong>PC Station:</strong> $200+50.00$</li>
+<li><strong>PCC Station:</strong>
+$$\text{PCC Station} = \text{PC} + L_1 = (200+50.00) + 251.33\text{ ft}$$
+$$\text{PCC Station} = 20050.00 + 251.33 = 20301.33 \implies \text{Station } 203+01.33$$</li>
+<li><strong>PT Station:</strong>
+$$\text{PT Station} = \text{PCC} + L_2 = (203+01.33) + 212.23\text{ ft}$$
+$$\text{PT Station} = 20301.33 + 212.23 = 20513.56 \implies \text{Station } 205+13.56$$</li>
+</ul>
+</li>
+</ol>
+<h3 id="answer">Answer</h3>
+<ol>
+<li>The radius ratio is <strong>1.875</strong>, which meets the AASHTO limit ($\le 2.0$).</li>
+<li>Curve lengths: $L_1 = \mathbf{251.33\text{ ft}}$ and $L_2 = \mathbf{212.23\text{ ft}}$.</li>
+<li>PCC Station: <strong>203+01.33</strong>; PT Station: <strong>205+13.56</strong>.</li>
+</ol>
+<hr>
+<h2 id="crucial-exam-tips">Crucial Exam Tips</h2>
+<ul>
+<li><strong>Identifying the Speed Limit:</strong> On the exam, pay close attention to whether the roadway is high-speed ($\ge 50\text{ mph}$) or low-speed ($\le 45\text{ mph}$). Applying the wrong radius ratio limit (e.g., using $2.0$ instead of $1.5$ on a highway) is a common trap.</li>
+<li><strong>No Short Cuts through the PI:</strong> In compound curves, you cannot calculate the PT station by working through a single PI tangent length like you would for a simple curve. You must calculate the lengths of the individual curve arcs ($L_1, L_2$) and add them sequentially starting from the PC.</li>
+<li><strong>PRC Stationing in Reverse Curves:</strong> If a question asks for the stationing of a reverse curve, remember that:
+$$\text{PRC Station} = \text{PC Station} + L_1$$
+$$\text{PT Station} = \text{PRC Station} + L_2$$
+Just like compound curves, the stationing runs strictly along the centerline arc of the roadway.</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-7/48-superelevation-runoff-and-transition/">
+                &#8592;
+                Previous:
+                Superelevation Runoff and Transition
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-7/50-curve-widening/">
+                Next:
+                Curve Widening
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       © 2017-2026 / Mohammad Movahedi. All rights reserved</a>.
+    </span>
+</footer>
+</body>
+</html>
