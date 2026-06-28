@@ -23,7 +23,6 @@ The angle of intersection is the angle between the centerlines of the intersecti
     *   **Larger Sight Triangles:** Due to the skew, sight triangles must cover a larger area.
     *   **Swept Path:** Turning vehicles require wider swept paths, increasing the likelihood of lane encroachment.
 
-```html
 <div style="display: flex; justify-content: space-around; background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0;">
   <div style="text-align: center;">
     <svg viewBox="0 0 200 200" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +63,6 @@ The angle of intersection is the angle between the centerlines of the intersecti
     <div style="margin-top: 12px; font-family: sans-serif; font-size: 14px; font-weight: bold; color: #1e293b;">Skewed (60&deg;)</div>
   </div>
 </div>
-```
 
 ### 2. Vertical Profile
 Roadway profiles near intersections should be as flat as possible to allow drivers to stop safely and accelerate from a stop.
@@ -77,7 +75,6 @@ Roadway profiles near intersections should be as flat as possible to allow drive
 
 The curb radius (or corner radius) is the radius of the circular arc connecting the curb lines of two intersecting streets.
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; max-width: 400px; text-align: center;">
   <svg viewBox="0 0 200 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
     <!-- Road Surface -->
@@ -97,7 +94,6 @@ The curb radius (or corner radius) is the radius of the circular arc connecting 
     </defs>
   </svg>
 </div>
-```
 
 Designing the curb radius requires balancing two conflicting objectives:
 1.  **Truck Turning Requirements:** Large trucks (e.g., WB-50, WB-67 design vehicles) have wide swept paths and require a large turning radius. If the curb radius is too small, the truck's rear wheels will mount the curb (endangering pedestrians) or the cab must swing into the opposing lane of traffic.

@@ -19,7 +19,6 @@ An auxiliary lane consists of three distinct horizontal segments:
 2.  **Deceleration Length ($L_{\text{decel}}$):** The distance required for a vehicle to decelerate from the through-lane design speed to a stop (or to the speed of the turning maneuver) before reaching the queue of stored vehicles.
 3.  **Storage Length ($L_{\text{storage}}$):** The length reserved for vehicles waiting to complete the turn.
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;">
   <svg viewBox="0 0 700 200" width="700" height="200" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -65,7 +64,6 @@ An auxiliary lane consists of three distinct horizontal segments:
     <line x1="660" y1="145" x2="660" y2="175" stroke="#cbd5e1" stroke-width="1" />
   </svg>
 </div>
-```
 
 ---
 

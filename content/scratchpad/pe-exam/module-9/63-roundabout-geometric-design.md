@@ -23,18 +23,14 @@ A modern roundabout contains several distinct geometric elements:
 *   **Splitter Island:** A raised or painted triangular island on each approach. It serves three purposes: deflecting and slowing entering traffic, preventing wrong-way movements, and providing a mid-crossing refuge for pedestrians.
 *   **Circulatory Roadway:** The active travel lanes around the central island.
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; text-align: center;">
   <svg viewBox="0 0 300 300" width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
     <!-- Outer inscribed circle (Circulatory Roadway Outer Edge) -->
     <circle cx="150" cy="150" r="100" fill="#f1f5f9" stroke="#94a3b8" stroke-width="3" />
-    
     <!-- Central Island -->
-    <circle cx="150" cy="150" r="45" fill="#10b981" />
-    
+    <circle cx="150" cy="150" r="45" fill="#10b981" />    
     <!-- Truck Apron -->
-    <circle cx="150" cy="150" r="60" fill="none" stroke="#fca5a5" stroke-width="15" stroke-dasharray="4,4" />
-    
+    <circle cx="150" cy="150" r="60" fill="none" stroke="#fca5a5" stroke-width="15" stroke-dasharray="4,4" />    
     <!-- Splitter Islands and Approach Roads -->
     <!-- North -->
     <rect x="130" y="0" width="40" height="50" fill="#f1f5f9" />
@@ -62,7 +58,6 @@ A modern roundabout contains several distinct geometric elements:
     <text x="150" y="154" font-family="sans-serif" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">Island</text>
   </svg>
 </div>
-```
 
 ---
 
@@ -86,7 +81,6 @@ The fastest path is the smoothest, flattest vehicle path through the roundabout,
 4.  **$R_4$ (Left-Turn Path Radius):** The radius of the path for a left-turning vehicle.
 5.  **$R_5$ (Right-Turn Path Radius):** The radius of the path for a right-turning vehicle.
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; text-align: center;">
   <svg viewBox="0 0 500 150" width="100%" height="150" xmlns="http://www.w3.org/2000/svg">
     <!-- Path Line -->
@@ -103,7 +97,6 @@ The fastest path is the smoothest, flattest vehicle path through the roundabout,
     <text x="370" y="40" font-family="sans-serif" font-size="12" fill="#f59e0b" font-weight="bold" text-anchor="middle">R3 (Exit)</text>
   </svg>
 </div>
-```
 
 ### Speed-Radius Relationship
 The speed along any curve of the fastest path is governed by:

@@ -30,7 +30,6 @@ Corner clearance is the distance between an intersection and the nearest drivewa
 *   **Significance:** Inadequate corner clearance causes severe operational issues. For example, if a driveway is too close to an intersection, vehicles queuing at a red light will block access to the driveway, or a vehicle attempting to turn into the driveway will back up traffic into the active intersection area.
 *   **Design Goal:** The corner clearance should ideally exceed the maximum queue length expected at the intersection during peak hours.
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;">
   <svg viewBox="0 0 600 250" width="600" height="250" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -72,7 +71,6 @@ Corner clearance is the distance between an intersection and the nearest drivewa
     <text x="410" y="90" font-family="sans-serif" font-size="10" fill="#475569" text-anchor="middle">Width</text>
   </svg>
 </div>
-```
 
 ### Spacing Criteria
 Driveway spacing is typically based on the design speed of the roadway. Higher speeds require larger spacing to match the distance traveled during perception-reaction and braking. Standard guidelines recommend:

@@ -28,7 +28,6 @@ There are two primary geometric designs for entrance and exit terminals:
 *   **Entrance:** Features an auxiliary lane parallel to the freeway lanes, ending with a short taper. Parallel terminals are preferred for entrance ramps because they provide the driver with a longer area to observe freeway traffic in their side mirrors and find an acceptable gap before merging.
 *   **Exit:** Features a parallel auxiliary lane beginning with a short taper, leading into the exit ramp.
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;">
   <div style="font-family: sans-serif; font-size: 14px; font-weight: bold; color: #1e293b; margin-bottom: 12px; text-align: center;">Parallel Entrance Terminal</div>
   <svg viewBox="0 0 600 150" width="600" height="150" xmlns="http://www.w3.org/2000/svg">
@@ -60,13 +59,11 @@ There are two primary geometric designs for entrance and exit terminals:
     <text x="185" y="140" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Parallel Lane Length</text>
   </svg>
 </div>
-```
 
 ### 2. Taper Type
 *   **Entrance:** Features a direct, angled entry path (typically a 50:1 to 70:1 taper) that guides merging vehicles directly into the through lane.
 *   **Exit:** Features a direct, angled exit path (typically a 15:1 to 25:1 taper) pointing toward the ramp.
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;">
   <div style="font-family: sans-serif; font-size: 14px; font-weight: bold; color: #1e293b; margin-bottom: 12px; text-align: center;">Taper Entrance Terminal</div>
   <svg viewBox="0 0 600 150" width="600" height="150" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +91,6 @@ There are two primary geometric designs for entrance and exit terminals:
     <text x="325" y="140" font-family="sans-serif" font-size="12" fill="#475569" text-anchor="middle">Taper Length</text>
   </svg>
 </div>
-```
 
 ---
 
