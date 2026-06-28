@@ -54,7 +54,7 @@ A time-space diagram is the primary tool for designing and visualizing signal co
     <text x="570" y="65" font-family="sans-serif" font-size="11" fill="#475569">Int. 2</text>    
     <!-- Green Band -->
     <polygon points="120,160 220,160 300,60 200,60" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
-    <text x="200" y="160" font-family="sans-serif" font-size="11" fill="#047857" font-weight="bold" transform="rotate(-50, 280, 110)">Green Band (B)</text>
+    <text x="150" y="120" font-family="sans-serif" font-size="11" fill="#047857" font-weight="bold" transform="rotate(-50, 280, 110)">Green Band (B)</text>
     <!-- Signal Timings - Intersection 1 (Bottom) -->
     <rect x="120" y="155" width="100" height="10" fill="#10b981" rx="2" />
     <text x="170" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
