@@ -17,7 +17,6 @@ Sight triangles represent the clear zones required for drivers to see approachin
 1.  **Approach Sight Triangles:** Used at uncontrolled or yield-controlled intersections where drivers must see approaching vehicles while still moving, allowing them to slow down or stop if necessary.
 2.  **Departure Sight Triangles:** Used at stop-controlled or signal-controlled intersections where a driver is stopped at the minor road and must see approaching traffic on the major road to safely make a maneuver (left turn, right turn, or crossing).
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 16px; margin: 24px 0;">
   <svg viewBox="0 0 600 350" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -61,7 +60,7 @@ Sight triangles represent the clear zones required for drivers to see approachin
     <text x="310" y="200" font-family="sans-serif" font-size="14" fill="#2563eb" font-weight="bold" transform="rotate(-15, 310, 200)">Clear Sight Triangle</text>
   </svg>
 </div>
-```
+
 
 ### Sight Triangle Dimensions
 *   **Minor Road Leg ($a$):** The distance from the edge of the major road travel lane to the driver's eye. The standard AASHTO design value is **$14.7\text{ ft}$** ($4.5\text{ m}$), although a minimum of **$15.0\text{ ft}$** is often recommended.
