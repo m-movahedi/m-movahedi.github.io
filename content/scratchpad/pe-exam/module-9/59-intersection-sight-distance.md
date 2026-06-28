@@ -35,7 +35,6 @@ Sight triangles represent the clear zones required for drivers to see approachin
     <line x1="0" y1="120" x2="600" y2="120" stroke="#94a3b8" stroke-width="3" />
     <line x1="0" y1="200" x2="120" y2="200" stroke="#94a3b8" stroke-width="3" />
     <line x1="200" y1="200" x2="600" y2="200" stroke="#94a3b8" stroke-width="3" />
-    
     <line x1="120" y1="200" x2="120" y2="350" stroke="#94a3b8" stroke-width="3" />
     <line x1="200" y1="200" x2="200" y2="350" stroke="#94a3b8" stroke-width="3" />    
     <!-- Center Lines -->
