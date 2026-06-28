@@ -45,7 +45,7 @@ There are two primary geometric designs for entrance and exit terminals:
     <line x1="20" y1="60" x2="350" y2="60" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="10,10" />
     <line x1="350" y1="60" x2="580" y2="60" stroke="#94a3b8" stroke-width="3" />    
     <!-- Parallel Lane -->
-    <polygon points="20,60 350,60 450,100 20,100" fill="#e2e8f0" />
+    <polygon points="20,60 450,60 350,100 20,100" fill="#e2e8f0" />
     <line x1="20" y1="100" x2="350" y2="100" stroke="#94a3b8" stroke-width="3" />    
     <!-- Taper -->
     <line x1="350" y1="100" x2="450" y2="60" stroke="#94a3b8" stroke-width="3" />    
