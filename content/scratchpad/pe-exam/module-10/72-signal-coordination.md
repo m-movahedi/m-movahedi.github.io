@@ -35,7 +35,6 @@ A time-space diagram is the primary tool for designing and visualizing signal co
 *   **Green Band:** The shaded path running diagonally through the green phases of the intersections. The slope of this band represents the progression speed:
     $$\text{Slope} = \frac{\Delta \text{Distance}}{\Delta \text{Time}} = v_p$$
 
-```html
 <div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;">
   <svg viewBox="0 0 600 250" width="600" height="250" xmlns="http://www.w3.org/2000/svg">
     <defs>
@@ -72,7 +71,6 @@ A time-space diagram is the primary tool for designing and visualizing signal co
     <text x="340" y="50" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>
   </svg>
 </div>
-```
 
 ---
 
