@@ -98,27 +98,21 @@ Activities are represented by geometric shapes (nodes/boxes), and dependencies a
     </style>
     <!-- Outer Box -->
     <rect x="10" y="10" width="180" height="100" class="node" />
-    
     <!-- Horizontal Dividers -->
     <line x1="10" y1="40" x2="190" y2="40" class="line" />
-    <line x1="10" y1="80" x2="190" y2="80" class="line" />
-    
+    <line x1="10" y1="80" x2="190" y2="80" class="line" />    
     <!-- Vertical Dividers (Top Row) -->
     <line x1="50" y1="10" x2="50" y2="40" class="line" />
-    <line x1="150" y1="10" x2="150" y2="40" class="line" />
-    
+    <line x1="150" y1="10" x2="150" y2="40" class="line" />    
     <!-- Vertical Dividers (Bottom Row) -->
     <line x1="50" y1="80" x2="50" y2="110" class="line" />
-    <line x1="150" y1="80" x2="150" y2="110" class="line" />
-    
+    <line x1="150" y1="80" x2="150" y2="110" class="line" />    
     <!-- Texts Top Row -->
     <text x="30" y="30" class="text" text-anchor="middle">ES</text>
     <text x="100" y="30" class="text" text-anchor="middle">Duration (d)</text>
-    <text x="170" y="30" class="text" text-anchor="middle">EF</text>
-    
+    <text x="170" y="30" class="text" text-anchor="middle">EF</text>    
     <!-- Activity Name -->
-    <text x="100" y="65" class="text header" text-anchor="middle">Activity Name</text>
-    
+    <text x="100" y="65" class="text header" text-anchor="middle">Activity Name</text>    
     <!-- Texts Bottom Row -->
     <text x="30" y="100" class="text" text-anchor="middle">LS</text>
     <text x="100" y="100" class="text" text-anchor="middle">Total Float</text>
