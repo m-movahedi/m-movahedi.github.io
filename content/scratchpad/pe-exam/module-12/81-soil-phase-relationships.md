@@ -20,36 +20,28 @@ To solve phase relationship problems, it is helpful to visualize the three phase
   <!-- Headers -->
   <text x="120" y="30" text-anchor="middle" font-weight="bold">WEIGHTS</text>
   <text x="380" y="30" text-anchor="middle" font-weight="bold">VOLUMES</text>
-
   <!-- Left Brackets (Total Weight) -->
   <path d="M 70 50 L 50 50 L 50 250 L 70 250" fill="none" stroke="currentColor" stroke-width="2"/>
   <text x="40" y="155" text-anchor="end">W (Total Weight)</text>
-
   <!-- Left labels -->
   <text x="130" y="85" text-anchor="middle">W<tspan dy="5" font-size="0.8em">a</tspan><tspan dy="-5"> = 0</tspan></text>
   <text x="130" y="145" text-anchor="middle">W<tspan dy="5" font-size="0.8em">w</tspan></text>
   <text x="130" y="215" text-anchor="middle">W<tspan dy="5" font-size="0.8em">s</tspan></text>
-
   <!-- Central Boxes -->
   <rect x="200" y="50" width="100" height="50" fill="rgba(128,128,128,0.1)" stroke="currentColor" stroke-width="2" />
   <rect x="200" y="100" width="100" height="70" fill="rgba(54, 162, 235, 0.2)" stroke="currentColor" stroke-width="2" />
-  <rect x="200" y="170" width="100" height="80" fill="rgba(139, 69, 19, 0.2)" stroke="currentColor" stroke-width="2" />
-  
+  <rect x="200" y="170" width="100" height="80" fill="rgba(139, 69, 19, 0.2)" stroke="currentColor" stroke-width="2" />  
   <line x1="200" y1="100" x2="300" y2="100" stroke="currentColor" stroke-dasharray="4,4" stroke-width="2" />
-
   <text x="250" y="80" text-anchor="middle" font-weight="bold">Air</text>
   <text x="250" y="140" text-anchor="middle" font-weight="bold">Water</text>
   <text x="250" y="215" text-anchor="middle" font-weight="bold">Solids</text>
-
   <!-- Right labels -->
   <text x="370" y="85" text-anchor="middle">V<tspan dy="5" font-size="0.8em">a</tspan></text>
   <text x="370" y="145" text-anchor="middle">V<tspan dy="5" font-size="0.8em">w</tspan></text>
   <text x="370" y="215" text-anchor="middle">V<tspan dy="5" font-size="0.8em">s</tspan></text>
-
   <!-- Right Brackets (Voids and Total Volume) -->
   <path d="M 410 50 L 420 50 L 420 170 L 410 170" fill="none" stroke="currentColor" stroke-width="2"/>
   <text x="430" y="115" text-anchor="start">V<tspan dy="5" font-size="0.8em">v</tspan><tspan dy="-5"> (Voids)</tspan></text>
-
   <path d="M 410 50 L 510 50 L 510 250 L 410 250" fill="none" stroke="currentColor" stroke-width="2"/>
   <text x="520" y="155" text-anchor="start">V (Total Volume)</text>
 </svg>
