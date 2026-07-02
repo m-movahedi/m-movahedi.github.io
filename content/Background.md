@@ -122,6 +122,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         <details class="cv-slider">
           <summary>Published</summary>
           <ol class="cv-publication-list">
+            <li>N. Nickdoost, M. Movahedi, and J. Choi, "Quantifying Transportation Resilience Across Florida: Development of the Florida Index for Transportation (FIT),", <em>Journal of Management in Engineering</em> <em>(Accepted)</em> 2026.</li>
             <li>R. Khayamim, M. Movahedi, M. A. Dulebenets, and E. E. Ozguven, "Robust Mobile Vehicle Charging Solutions for Natural Disasters: A Multi-Criteria Resilience Analysis in Florida," submitted to <em>Journal of Transport Geography</em>, 2026. DOI: <a href="https://doi.org/10.1016/j.jtrangeo.2026.104739">10.1016/j.jtrangeo.2026.104739</a>.</li>
             <li>M. Movahedi and J. Choi, "The Crossroads of LLM and Traffic Control: A Study on Large Language Models in Adaptive Traffic Signal Control," <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024. DOI: <a href="https://doi.org/10.1109/TITS.2024.3498735">10.1109/TITS.2024.3498735</a>.</li>
             <li>W. Hill, H. Jalloul, M. Movahedi, and J. Choi, "Sustainable Management of the Built Environment from the Life Cycle Perspective," <em>Journal of Management in Engineering</em>, 2023. DOI: <a href="https://doi.org/10.1061/jmenea.meeng-4759">10.1061/jmenea.meeng-4759</a>.</li>
@@ -131,14 +132,12 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
           <summary>Under Review</summary>
           <ol class="cv-publication-list">
             <li>M. Movahedi, N. Nickdoost, and J. Choi, "Uncovering Community Debris Disposal Behavior During Post-Disaster Recovery: A Case Study of Illegal Dumping After Hurricane Ian," submitted to <em>Natural Hazards Review</em>, 2025.</li>
-            <li>N. Nickdoost, M. Movahedi, and J. Choi, "Quantifying Transportation Resilience Across Florida: Development of the Florida Index for Transportation (FIT)," 2026.</li>
+            <li>A. Baldwin, M. Movahedi, and J. Choi, "LLM-Enabled Community Role-Play for Policy Testing in Post-Hurricane Recovery,"submitted to <em>Journal of Management in Engineering</em>, 2026.</li></li>
           </ol>
         </details>
         <details class="cv-slider">
           <summary>In Preparation</summary>
           <ol class="cv-publication-list">
-            <li>N. Nickdoost, M. Movahedi, and J. Choi, "Illegal Dumping as a Post-Disaster Behavior: Evidence from Hurricane Ian," 2026.</li>
-            <li>A. Baldwin, M. Movahedi, and J. Choi, "LLM-Enabled Community Role-Play for Policy Testing in Post-Hurricane Recovery," 2026.</li>
             <li>M. Movahedi and J. Choi, "Continuous-State Deterioration Modeling through Deep Neural Networks with Mixture Heads," 2026.</li>
             <li>M. Movahedi and J. Choi, "Advanced Case-Based Reasoning for Sustainable Demolition Management and Resource Recovery," 2026.</li>
             <li>M. Movahedi, R. Khayamim, J. Choi, and M. A. Dulebenets, "Enhancing Transportation System Robustness: The Impact of Weather-Induced Traffic Incidents on Hurricane Evacuation," 2026.</li>
