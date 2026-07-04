@@ -93,7 +93,6 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
         </ul>
       </div>
     </details>
-
     <h2 class="cv-section-heading">Education</h2>
     <details class="cv-slider">
       <summary><span class="cv-entry-header"><span><strong>Florida State University</strong>Ph.D. in Civil Engineering</span><span class="cv-period">Jan 2022 - Sep 2026 (expected)</span></span></summary>
