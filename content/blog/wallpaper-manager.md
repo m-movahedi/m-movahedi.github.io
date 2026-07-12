@@ -1,5 +1,5 @@
 ---
-title: "Wallpaper Manager"
+title: "Wallpaper Manager Release 0.1"
 date : "2026-07-12"
 draft : false
 type : "post"
