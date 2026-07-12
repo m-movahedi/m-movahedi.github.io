@@ -4,8 +4,11 @@ date : "2026-07-12"
 draft : false
 type : "post"
 featured_image: "/images/blog/wallpaper -manager.png"
+tags:
+  - "Weekend Projects"
 ---
-I’m excited to introduce Wallpaper Manager, a local-first desktop app for organizing and automatically rotating your wallpapers.
+
+I'm excited to introduce Wallpaper Manager, a local-first desktop app for organizing and automatically rotating your wallpapers.
 
 <figure>
 <center>
