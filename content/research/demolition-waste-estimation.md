@@ -127,41 +127,34 @@ We tested the sensitivity and accuracy of each model across three target metrics
   width: 90px;
 }
 .dw-label { font-size: 0.8em; font-weight: bold; color: #666; text-align: center; }
-
 /* CSS Tabs */
 #dw-tab1, #dw-tab2, #dw-tab3 { display: none; }
 .dw-content { display: none; }
-
 #dw-tab1:checked ~ .dw-tabs label[for="dw-tab1"],
 #dw-tab2:checked ~ .dw-tabs label[for="dw-tab2"],
 #dw-tab3:checked ~ .dw-tabs label[for="dw-tab3"] {
   background: #3498db; color: white;
 }
-
 #dw-tab1:checked ~ #dw-content1,
 #dw-tab2:checked ~ #dw-content2,
 #dw-tab3:checked ~ #dw-content3 {
   display: block;
 }
-
 /* Colors */
 .c-mra { background: #e74c3c; }
 .c-ann { background: #f39c12; }
 .c-acbra { background: #9b59b6; }
 .c-acbrt { background: #2ecc71; }
 </style>
-
 <div class="dw-chart-container">
   <input type="radio" name="dw-tabs" id="dw-tab1" checked>
   <input type="radio" name="dw-tabs" id="dw-tab2">
   <input type="radio" name="dw-tabs" id="dw-tab3">
-  
   <div class="dw-tabs">
     <label for="dw-tab1" class="dw-tab">Recoverable Concrete</label>
     <label for="dw-tab2" class="dw-tab">Demolition Cost</label>
     <label for="dw-tab3" class="dw-tab">Other Materials</label>
   </div>
-  
   <!-- Content 1: Concrete -->
   <div id="dw-content1" class="dw-content">
     <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Recoverable Concrete</h4>
@@ -184,7 +177,6 @@ We tested the sensitivity and accuracy of each model across three target metrics
       </div>
     </div>
   </div>
-
   <!-- Content 2: Cost -->
   <div id="dw-content2" class="dw-content">
     <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Demolition Cost</h4>
@@ -207,7 +199,6 @@ We tested the sensitivity and accuracy of each model across three target metrics
       </div>
     </div>
   </div>
-
   <!-- Content 3: Other -->
   <div id="dw-content3" class="dw-content">
     <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Other Materials</h4>
