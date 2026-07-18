@@ -43,4 +43,16 @@ Wallpaper Manager is built with Flutter and designed to eventually support Windo
      ">
      GitHub Repository    
   </a>
+  <a href="https://github.com/m-movahedi/Wallpaper-Manager/blob/main/dist/Wallpaper-Manager-0.1.0-x64.msi"
+     style="
+      padding:10px 18px;
+      border-radius:36px;
+      text-decoration:none;
+      background:#db2d21;
+      color:white;
+      font-weight:600;
+      display:inline-block;
+     ">
+     Windows x64    
+  </a>
 </div>
