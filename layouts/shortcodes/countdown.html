@@ -2,8 +2,8 @@
   {{ .Page.Scratch.Set "countdown_loaded" true }}
   <style>
   .countdown-container {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       gap: 2rem;
       margin: 2rem 0;
   }
