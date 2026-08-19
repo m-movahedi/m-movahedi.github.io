@@ -14,6 +14,18 @@
         </script>
         {{- partial "header.html" . -}}
         <main id="content">
+        {{ if .Params.content_width }}
+        <style>
+            main#content {
+                width: {{ .Params.content_width }}% !important;
+                max-width: 100% !important;
+            }
+            main#content > .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        </style>
+        {{ end }}
         {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}
