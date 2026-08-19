@@ -2,6 +2,7 @@
 title: "Conference Deadlines"
 description: "Countdowns to upcoming conferences"
 type: "page"
+featured_image: "/images/blog/conference-deadlines.png"
 ---
 
 Welcome to the conference countdown page! Here are the upcoming events I am looking forward to:
