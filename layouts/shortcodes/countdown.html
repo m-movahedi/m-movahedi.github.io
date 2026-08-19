@@ -81,7 +81,7 @@
       color: #007bff;
       padding: 0.2rem 0.6rem;
       border-radius: 12px;
-      font-size: 0.75rem;
+      font-size: 0.55rem;
       font-weight: 600;
       text-transform: uppercase;
       white-space: nowrap;
@@ -176,18 +176,13 @@
 {{ end }}
 
 <div class="conference-card" data-date="{{ .Get "date" }}">
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
-        <h3>
-            {{ if .Get "url" }}
-            <a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer" class="conference-link">{{ .Get "title" }}</a>
-            {{ else }}
-            {{ .Get "title" }}
-            {{ end }}
-        </h3>
-        {{ with .Get "tag" }}
-        <span class="conference-tag">{{ . }}</span>
+    <h3>
+        {{ if .Get "url" }}
+        <a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer" class="conference-link">{{ .Get "title" }}</a>
+        {{ else }}
+        {{ .Get "title" }}
         {{ end }}
-    </div>
+    </h3>
     <div class="conference-dates">
         {{ .Get "subtitle" }}
         {{ with .Get "location" }}
@@ -201,4 +196,9 @@
         <div class="countdown-item"><span class="countdown-value minutes">00</span><span class="countdown-label">Mins</span></div>
         <div class="countdown-item"><span class="countdown-value seconds">00</span><span class="countdown-label">Secs</span></div>
     </div>
+    {{ with .Get "tag" }}
+    <div style="margin-top: auto; padding-top: 1.5rem;">
+        <span class="conference-tag">{{ . }}</span>
+    </div>
+    {{ end }}
 </div>
