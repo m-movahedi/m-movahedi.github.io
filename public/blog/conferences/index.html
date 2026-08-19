@@ -292,6 +292,43 @@ gtag('config', 'G-1WZSE8DHZ9');
           letter-spacing: 1px;
           opacity: 0.8;
       }
+    
+      .conference-tag {
+          background-color: rgba(0, 123, 255, 0.1);
+          color: #007bff;
+          padding: 0.2rem 0.6rem;
+          border-radius: 12px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          white-space: nowrap;
+      }
+    
+      .conference-location {
+          font-size: 0.9rem;
+          opacity: 0.9;
+      }
+      
+      .conference-link {
+          color: inherit;
+          text-decoration: none;
+          transition: color 0.2s;
+      }
+      
+      .conference-link:hover {
+          color: #007bff;
+          text-decoration: underline;
+      }
+      
+      @media (prefers-color-scheme: dark) {
+          .conference-tag {
+              background-color: rgba(77, 163, 255, 0.15);
+              color: #4da3ff;
+          }
+          .conference-link:hover {
+              color: #4da3ff;
+          }
+      }
       </style>
     
       <script>
@@ -355,9 +392,24 @@ gtag('config', 'G-1WZSE8DHZ9');
       </script>
     
     
-    <div class="conference-card" data-date="2027-08-02T23:59:00Z">
-        <h3>TRB 107th Annual Meeting</h3>
-        <div class="conference-dates">Full paper submission deadline</div>
+    <div class="conference-card" data-date="2027-08-02T11:59:00Z">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+            <h3>
+                
+                <a href="https://www.nationalacademies.org/trb/transportation-research-board" target="_blank" rel="noopener noreferrer" class="conference-link">TRB 107th Annual Meeting</a>
+                
+            </h3>
+            
+            <span class="conference-tag">Transportation</span>
+            
+        </div>
+        <div class="conference-dates">
+            Full paper submission deadline
+            
+            <br>
+            <span class="conference-location">📍 Washington, D.C.</span>
+            
+        </div>
         <div class="countdown">
             <div class="countdown-item"><span class="countdown-value days">00</span><span class="countdown-label">Days</span></div>
             <div class="countdown-item"><span class="countdown-value hours">00</span><span class="countdown-label">Hours</span></div>
@@ -369,8 +421,108 @@ gtag('config', 'G-1WZSE8DHZ9');
     
     
     <div class="conference-card" data-date="2026-10-16T23:59:00Z">
-        <h3>ASCE 2028</h3>
-        <div class="conference-dates">Expected call opening</div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+            <h3>
+                
+                <a href="https://www.asce.org/" target="_blank" rel="noopener noreferrer" class="conference-link">ASCE 2028</a>
+                
+            </h3>
+            
+            <span class="conference-tag">General Civil Engineering</span>
+            
+        </div>
+        <div class="conference-dates">
+            Expected call opening
+            
+            <br>
+            <span class="conference-location">📍 Seattle, Washington</span>
+            
+        </div>
+        <div class="countdown">
+            <div class="countdown-item"><span class="countdown-value days">00</span><span class="countdown-label">Days</span></div>
+            <div class="countdown-item"><span class="countdown-value hours">00</span><span class="countdown-label">Hours</span></div>
+            <div class="countdown-item"><span class="countdown-value minutes">00</span><span class="countdown-label">Mins</span></div>
+            <div class="countdown-item"><span class="countdown-value seconds">00</span><span class="countdown-label">Secs</span></div>
+        </div>
+    </div>
+
+    
+    
+    <div class="conference-card" data-date="2027-05-01T23:59:00Z">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+            <h3>
+                
+                <a href="https://cibworld.org/" target="_blank" rel="noopener noreferrer" class="conference-link">World Building Congress 2028</a>
+                
+            </h3>
+            
+            <span class="conference-tag">General Civil Engineering</span>
+            
+        </div>
+        <div class="conference-dates">
+            Expected call opening
+            
+            <br>
+            <span class="conference-location">📍 Tsinghua University, Beijing</span>
+            
+        </div>
+        <div class="countdown">
+            <div class="countdown-item"><span class="countdown-value days">00</span><span class="countdown-label">Days</span></div>
+            <div class="countdown-item"><span class="countdown-value hours">00</span><span class="countdown-label">Hours</span></div>
+            <div class="countdown-item"><span class="countdown-value minutes">00</span><span class="countdown-label">Mins</span></div>
+            <div class="countdown-item"><span class="countdown-value seconds">00</span><span class="countdown-label">Secs</span></div>
+        </div>
+    </div>
+
+    <!-- Transportation Engineering -->
+    
+    
+    <div class="conference-card" data-date="2027-03-01T23:59:00Z">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+            <h3>
+                
+                <a href="https://ieee-itss.org/" target="_blank" rel="noopener noreferrer" class="conference-link">IEEE ITSC 2027</a>
+                
+            </h3>
+            
+            <span class="conference-tag">Transportation</span>
+            
+        </div>
+        <div class="conference-dates">
+            Intelligent Transportation Systems Conference
+            
+            <br>
+            <span class="conference-location">📍 Boston, Massachusetts</span>
+            
+        </div>
+        <div class="countdown">
+            <div class="countdown-item"><span class="countdown-value days">00</span><span class="countdown-label">Days</span></div>
+            <div class="countdown-item"><span class="countdown-value hours">00</span><span class="countdown-label">Hours</span></div>
+            <div class="countdown-item"><span class="countdown-value minutes">00</span><span class="countdown-label">Mins</span></div>
+            <div class="countdown-item"><span class="countdown-value seconds">00</span><span class="countdown-label">Secs</span></div>
+        </div>
+    </div>
+
+    
+    
+    <div class="conference-card" data-date="2026-12-06T23:59:00Z">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+            <h3>
+                
+                <a href="https://www.ite.org/" target="_blank" rel="noopener noreferrer" class="conference-link">ITE Annual Meeting 2027</a>
+                
+            </h3>
+            
+            <span class="conference-tag">Transportation</span>
+            
+        </div>
+        <div class="conference-dates">
+            Institute of Transportation Engineers
+            
+            <br>
+            <span class="conference-location">📍 Calgary, Canada</span>
+            
+        </div>
         <div class="countdown">
             <div class="countdown-item"><span class="countdown-value days">00</span><span class="countdown-label">Days</span></div>
             <div class="countdown-item"><span class="countdown-value hours">00</span><span class="countdown-label">Hours</span></div>

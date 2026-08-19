@@ -71,6 +71,43 @@
       letter-spacing: 1px;
       opacity: 0.8;
   }
+
+  .conference-tag {
+      background-color: rgba(0, 123, 255, 0.1);
+      color: #007bff;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+  }
+
+  .conference-location {
+      font-size: 0.9rem;
+      opacity: 0.9;
+  }
+  
+  .conference-link {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+  }
+  
+  .conference-link:hover {
+      color: #007bff;
+      text-decoration: underline;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+      .conference-tag {
+          background-color: rgba(77, 163, 255, 0.15);
+          color: #4da3ff;
+      }
+      .conference-link:hover {
+          color: #4da3ff;
+      }
+  }
   </style>
 
   <script>
@@ -135,8 +172,25 @@
 {{ end }}
 
 <div class="conference-card" data-date="{{ .Get "date" }}">
-    <h3>{{ .Get "title" }}</h3>
-    <div class="conference-dates">{{ .Get "subtitle" }}</div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+        <h3>
+            {{ if .Get "url" }}
+            <a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer" class="conference-link">{{ .Get "title" }}</a>
+            {{ else }}
+            {{ .Get "title" }}
+            {{ end }}
+        </h3>
+        {{ with .Get "tag" }}
+        <span class="conference-tag">{{ . }}</span>
+        {{ end }}
+    </div>
+    <div class="conference-dates">
+        {{ .Get "subtitle" }}
+        {{ with .Get "location" }}
+        <br>
+        <span class="conference-location">📍 {{ . }}</span>
+        {{ end }}
+    </div>
     <div class="countdown">
         <div class="countdown-item"><span class="countdown-value days">00</span><span class="countdown-label">Days</span></div>
         <div class="countdown-item"><span class="countdown-value hours">00</span><span class="countdown-label">Hours</span></div>
