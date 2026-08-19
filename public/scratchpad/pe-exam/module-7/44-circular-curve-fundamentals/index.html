@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Circular Curve Fundamentals">
     <meta property="og:description" content="Circular Curve Fundamentals Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Circular Curve Fundamentals">
     <meta name="twitter:description" content="Circular Curve Fundamentals Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-7/44-circular-curve-fundamentals/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -262,15 +276,15 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>$M$ (Middle Ordinate):</strong> The distance from the midpoint of the curve to the midpoint of the long chord.</li>
 </ul>
 <hr>
-<h2 id="degree-of-curve-d">Degree of Curve ($D$)</h2>
+<h2 id="degree-of-curve-">Degree of Curve ($D$)</h2>
 <p>Degree of curve is a measure of the sharpness of a curve. There are two standard definitions:</p>
-<h3 id="1-arc-definition-d_a">1. Arc Definition ($D_a$)</h3>
+<h3 id="1-arc-definition-">1. Arc Definition ($D_a$)</h3>
 <p>The degree of curve is the central angle subtended by a circular arc of exactly <strong>$100\text{ ft}$</strong>. This definition is used exclusively in highway engineering.
-$$D_a = \frac{360^\circ \times 100\text{ ft}}{2 \pi R} \approx \frac{5729.58}{R}$$</p>
-<h3 id="2-chord-definition-d_c">2. Chord Definition ($D_c$)</h3>
+</p>
+$$D_a = \frac{360^\circ \times 100\text{ ft}}{2 \pi R} \approx \frac{5729.58}{R}$$<h3 id="2-chord-definition-">2. Chord Definition ($D_c$)</h3>
 <p>The degree of curve is the central angle subtended by a straight chord of exactly <strong>$100\text{ ft}$</strong>. This definition is used in railway engineering.
-$$R = \frac{50}{\sin\left(\frac{D_c}{2}\right)}$$</p>
-<hr>
+</p>
+$$R = \frac{50}{\sin\left(\frac{D_c}{2}\right)}$$<hr>
 <h2 id="fundamental-circular-curve-formulas">Fundamental Circular Curve Formulas</h2>
 <p>The following geometric relationships are used to calculate the properties of a simple circular curve. Ensure your calculator is set to <strong>Degree Mode</strong> for all trigonometric functions.</p>
 <table>
@@ -317,7 +331,7 @@ $$R = \frac{50}{\sin\left(\frac{D_c}{2}\right)}$$</p>
 <hr>
 <h2 id="worked-example-full-curve-parameter-calculation">Worked Example: Full Curve Parameter Calculation</h2>
 <h3 id="problem-statement">Problem Statement</h3>
-<p>A simple horizontal circular curve is designed to connect two highway tangents. The deflection angle ($\Delta$) at the Point of Intersection (PI) is $42^\circ 30&rsquo;$. The degree of curve ($D_a$, arc definition) is specified as $4.5^\circ$.</p>
+<p>A simple horizontal circular curve is designed to connect two highway tangents. The deflection angle ($\Delta$) at the Point of Intersection (PI) is $42^\circ 30'$. The degree of curve ($D_a$, arc definition) is specified as $4.5^\circ$.</p>
 <ol>
 <li>Calculate the radius ($R$) of the curve.</li>
 <li>Find the tangent length ($T$).</li>
@@ -330,34 +344,42 @@ $$R = \frac{50}{\sin\left(\frac{D_c}{2}\right)}$$</p>
 <li>
 <p><strong>Calculate the Radius ($R$):</strong>
 Using the arc definition:
-$$R = \frac{5729.58}{D_a} = \frac{5729.58}{4.5} = 1273.24\text{ ft}$$</p>
-</li>
+</p>
+$$R = \frac{5729.58}{D_a} = \frac{5729.58}{4.5} = 1273.24\text{ ft}$$</li>
 <li>
 <p><strong>Calculate the Tangent Length ($T$):</strong>
-Convert $\Delta$ to decimal degrees: $\Delta = 42^\circ + \frac{30&rsquo;}{60} = 42.5^\circ$.
-$$T = R \tan\left(\frac{\Delta}{2}\right) = 1273.24 \tan\left(\frac{42.5^\circ}{2}\right)$$
-$$T = 1273.24 \tan(21.25^\circ) = 1273.24 \times 0.38888 = 495.14\text{ ft}$$</p>
-</li>
+Convert $\Delta$ to decimal degrees: $\Delta = 42^\circ + \frac{30'}{60} = 42.5^\circ$.
+</p>
+$$T = R \tan\left(\frac{\Delta}{2}\right) = 1273.24 \tan\left(\frac{42.5^\circ}{2}\right)$$<p>
+</p>
+$$T = 1273.24 \tan(21.25^\circ) = 1273.24 \times 0.38888 = 495.14\text{ ft}$$</li>
 <li>
 <p><strong>Calculate the Curve Length ($L$):</strong>
 Using the degree of curve formula:
-$$L = \frac{100 \Delta}{D_a} = \frac{100 \times 42.5}{4.5} = 944.44\text{ ft}$$
+</p>
+$$L = \frac{100 \Delta}{D_a} = \frac{100 \times 42.5}{4.5} = 944.44\text{ ft}$$<p>
 <em>Double-check with arc length formula:</em>
-$$L = R \Delta \left(\frac{\pi}{180}\right) = 1273.24 \times 42.5 \times 0.0174533 = 944.44\text{ ft}$$ (Matches!)</p>
+</p>
+$$L = R \Delta \left(\frac{\pi}{180}\right) = 1273.24 \times 42.5 \times 0.0174533 = 944.44\text{ ft}$$<p> (Matches!)</p>
 </li>
 <li>
 <p><strong>Calculate the Long Chord ($LC$):</strong>
-$$LC = 2 R \sin\left(\frac{\Delta}{2}\right) = 2 \times 1273.24 \sin(21.25^\circ)$$
-$$LC = 2546.48 \times 0.36244 = 922.94\text{ ft}$$</p>
-</li>
+</p>
+$$LC = 2 R \sin\left(\frac{\Delta}{2}\right) = 2 \times 1273.24 \sin(21.25^\circ)$$<p>
+</p>
+$$LC = 2546.48 \times 0.36244 = 922.94\text{ ft}$$</li>
 <li>
 <p><strong>Calculate the External Distance ($E$) and Middle Ordinate ($M$):</strong></p>
 <ul>
 <li><strong>External Distance ($E$):</strong>
+
 $$E = R \left( \frac{1}{\cos(\Delta/2)} - 1 \right) = 1273.24 \left( \frac{1}{\cos(21.25^\circ)} - 1 \right)$$
+
 $$E = 1273.24 \left( \frac{1}{0.93201} - 1 \right) = 1273.24 \times (1.07295 - 1) = 1273.24 \times 0.07295 = 92.88\text{ ft}$$</li>
 <li><strong>Middle Ordinate ($M$):</strong>
+
 $$M = R \left( 1 - \cos\left(\frac{\Delta}{2}\right) \right) = 1273.24 (1 - \cos(21.25^\circ))$$
+
 $$M = 1273.24 (1 - 0.93201) = 1273.24 \times 0.06799 = 86.57\text{ ft}$$
 <em>Check relation:</em> $M = E \cos(\Delta/2) = 92.88 \times \cos(21.25^\circ) = 92.88 \times 0.93201 = 86.56\text{ ft}$ (Rounding agreement).</li>
 </ul>

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Urban Street Segments">
     <meta property="og:description" content="Urban Street Segments Urban streets are characterized by interrupted flow, where traffic signals, stop signs, and turning vehicles at intersections dominate the …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Urban Street Segments">
     <meta name="twitter:description" content="Urban Street Segments Urban streets are characterized by interrupted flow, where traffic signals, stop signs, and turning vehicles at intersections dominate the …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/25-urban-street-segments/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/25-urban-street-segments/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/25-urban-street-segments/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -244,26 +258,22 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="average-travel-speed-methodology">Average Travel Speed Methodology</h2>
 <p>The Average Travel Speed ($S_D$, in $mph$) for a segment is calculated from the length of the segment and the total travel time:</p>
-<p>$$S_D = \frac{3,600 \times L}{T}$$</p>
-<p>Where:</p>
+$$S_D = \frac{3,600 \times L}{T}$$<p>Where:</p>
 <ul>
 <li>$S_D$ = average travel speed ($mph$)</li>
 <li>$L$ = segment length ($mi$)</li>
 <li>$T$ = average travel time to traverse the segment ($sec$)</li>
 </ul>
 <p>The total travel time ($T$) is the sum of the midblock running time ($t_R$) and the control delay ($d$) at the downstream boundary intersection:</p>
-<p>$$T = t_R + d$$</p>
-<h3 id="1-midblock-running-time-t_r">1. Midblock Running Time ($t_R$)</h3>
+$$T = t_R + d$$<h3 id="1-midblock-running-time-">1. Midblock Running Time ($t_R$)</h3>
 <p>This is the time required to traverse the physical distance of the segment at the midblock running speed ($S_R$), without any intersection delays:</p>
-<p>$$t_R = \frac{3,600 \times L}{S_R}$$</p>
-<p>Where:</p>
+$$t_R = \frac{3,600 \times L}{S_R}$$<p>Where:</p>
 <ul>
 <li>$S_R$ = midblock running speed ($mph$). This is estimated based on the segment&rsquo;s free-flow speed (FFS) and is typically slightly lower than FFS due to midblock friction (driveways, lane changes, curbside activity).</li>
 </ul>
-<h3 id="2-downstream-boundary-intersection-control-delay-d">2. Downstream Boundary Intersection Control Delay ($d$)</h3>
+<h3 id="2-downstream-boundary-intersection-control-delay-">2. Downstream Boundary Intersection Control Delay ($d$)</h3>
 <p>The control delay is the average delay experienced by a vehicle at the downstream intersection (usually a traffic signal). It includes uniform delay ($d_1$), incremental delay ($d_2$), and initial queue delay ($d_3$):</p>
-<p>$$d = d_1 \times \text{PF} + d_2 + d_3$$</p>
-<p>Where:</p>
+$$d = d_1 \times \text{PF} + d_2 + d_3$$<p>Where:</p>
 <ul>
 <li>$d_1$ = uniform delay ($sec/veh$); assuming uniform arrivals.</li>
 <li>$\text{PF}$ = progression adjustment factor (accounts for coordinated signal timing).</li>
@@ -273,7 +283,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p><em>Note: Intersection delay calculations are covered in detail in Lesson 26 (Signalized Intersection Capacity).</em></p>
 <hr>
 <h2 id="level-of-service-los-criteria">Level of Service (LOS) Criteria</h2>
-<p>In HCM 6th Edition, the Level of Service for urban street segments is determined by the <strong>travel speed as a percentage of the base free-flow speed</strong> ($% \text{ FFS}$), or directly by the average travel speed ($S_D$) according to the street class:</p>
+<p>In HCM 6th Edition, the Level of Service for urban street segments is determined by the <strong>travel speed as a percentage of the base free-flow speed</strong> ($\% \text{ FFS}$), or directly by the average travel speed ($S_D$) according to the street class:</p>
 <table>
   <thead>
       <tr>
@@ -288,47 +298,47 @@ gtag('config', 'G-1WZSE8DHZ9');
   <tbody>
       <tr>
           <td><strong>A</strong></td>
-          <td>$&gt; 85%$</td>
-          <td>$&gt; 42$</td>
-          <td>$&gt; 30$</td>
-          <td>$&gt; 27$</td>
-          <td>$&gt; 21$</td>
+          <td>$> 85\%$</td>
+          <td>$> 42$</td>
+          <td>$> 30$</td>
+          <td>$> 27$</td>
+          <td>$> 21$</td>
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 67% - 85%$</td>
-          <td>$&gt; 34 - 42$</td>
-          <td>$&gt; 24 - 30$</td>
-          <td>$&gt; 21 - 27$</td>
-          <td>$&gt; 16 - 21$</td>
+          <td>$> 67\% - 85\%$</td>
+          <td>$> 34 - 42$</td>
+          <td>$> 24 - 30$</td>
+          <td>$> 21 - 27$</td>
+          <td>$> 16 - 21$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 50% - 67%$</td>
-          <td>$&gt; 25 - 34$</td>
-          <td>$&gt; 18 - 24$</td>
-          <td>$&gt; 16 - 21$</td>
-          <td>$&gt; 12 - 16$</td>
+          <td>$> 50\% - 67\%$</td>
+          <td>$> 25 - 34$</td>
+          <td>$> 18 - 24$</td>
+          <td>$> 16 - 21$</td>
+          <td>$> 12 - 16$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 40% - 50%$</td>
-          <td>$&gt; 20 - 25$</td>
-          <td>$&gt; 14 - 18$</td>
-          <td>$&gt; 12 - 16$</td>
-          <td>$&gt; 10 - 12$</td>
+          <td>$> 40\% - 50\%$</td>
+          <td>$> 20 - 25$</td>
+          <td>$> 14 - 18$</td>
+          <td>$> 12 - 16$</td>
+          <td>$> 10 - 12$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 30% - 40%$</td>
-          <td>$&gt; 15 - 20$</td>
-          <td>$&gt; 10 - 14$</td>
-          <td>$&gt; 9 - 12$</td>
-          <td>$&gt; 7 - 10$</td>
+          <td>$> 30\% - 40\%$</td>
+          <td>$> 15 - 20$</td>
+          <td>$> 10 - 14$</td>
+          <td>$> 9 - 12$</td>
+          <td>$> 7 - 10$</td>
       </tr>
       <tr>
           <td><strong>F</strong></td>
-          <td>$\le 30%$</td>
+          <td>$\le 30\%$</td>
           <td>$\le 15$</td>
           <td>$\le 10$</td>
           <td>$\le 9$</td>
@@ -353,7 +363,7 @@ Segment length ($L$) is typically given in feet or miles, and delay ($d$) is giv
 </li>
 <li>
 <p><strong>Confusing Segment LOS with Intersection LOS</strong>:
-An urban street segment&rsquo;s LOS is determined by <em>speed</em> (or $%$ of FFS). The boundary intersection itself has its own LOS based purely on <em>control delay</em>. Do not use the intersection delay LOS table to evaluate the street segment.</p>
+An urban street segment&rsquo;s LOS is determined by <em>speed</em> (or $\%$ of FFS). The boundary intersection itself has its own LOS based purely on <em>control delay</em>. Do not use the intersection delay LOS table to evaluate the street segment.</p>
 </li>
 </ol>
 <hr>
@@ -365,23 +375,18 @@ An urban street segment&rsquo;s LOS is determined by <em>speed</em> (or $%$ of F
 <li>Estimated midblock running speed ($S_R$): $36 \text{ mph}$</li>
 <li>Control delay at the downstream signalized intersection: $22.5 \text{ sec/veh}$</li>
 </ul>
-<p><strong>Determine the average travel speed ($S_D$), the percent of free-flow speed ($% \text{ FFS}$), and the Level of Service (LOS) of the segment.</strong></p>
+<p><strong>Determine the average travel speed ($S_D$), the percent of free-flow speed ($\% \text{ FFS}$), and the Level of Service (LOS) of the segment.</strong></p>
 <h3 id="solution">Solution:</h3>
 <h4 id="step-1-convert-segment-length-to-miles">Step 1: Convert Segment Length to Miles</h4>
-<p>$$L = \frac{1,200 \text{ ft}}{5,280 \text{ ft/mi}} = 0.2273 \text{ miles}$$</p>
-<h4 id="step-2-calculate-midblock-running-time-t_r">Step 2: Calculate Midblock Running Time ($t_R$)</h4>
-<p>$$t_R = \frac{3,600 \times L}{S_R} = \frac{3,600 \times 0.2273 \text{ mi}}{36 \text{ mph}} = 22.73 \text{ seconds}$$</p>
-<h4 id="step-3-calculate-total-travel-time-t">Step 3: Calculate Total Travel Time ($T$)</h4>
-<p>$$T = t_R + d = 22.73 \text{ s} + 22.50 \text{ s} = 45.23 \text{ seconds}$$</p>
-<h4 id="step-4-calculate-average-travel-speed-s_d">Step 4: Calculate Average Travel Speed ($S_D$)</h4>
-<p>$$S_D = \frac{3,600 \times L}{T} = \frac{3,600 \times 0.2273 \text{ mi}}{45.23 \text{ s}} = 18.09 \text{ mph}$$</p>
-<h4 id="step-5-calculate-percent-of-free-flow-speed--text-ffs">Step 5: Calculate Percent of Free-Flow Speed ($% \text{ FFS}$)</h4>
-<p>$$% \text{ FFS} = \frac{S_D}{\text{FFS}} \times 100 = \frac{18.09 \text{ mph}}{40 \text{ mph}} \times 100 = 45.2%$$</p>
-<h4 id="step-6-determine-level-of-service-los">Step 6: Determine Level of Service (LOS)</h4>
-<p>Compare the calculated speed ($S_D = 18.09 \text{ mph}$) or $%$ of FFS ($45.2%$) to the Class 2 Arterial LOS criteria:</p>
+$$L = \frac{1,200 \text{ ft}}{5,280 \text{ ft/mi}} = 0.2273 \text{ miles}$$<h4 id="step-2-calculate-midblock-running-time-">Step 2: Calculate Midblock Running Time ($t_R$)</h4>
+$$t_R = \frac{3,600 \times L}{S_R} = \frac{3,600 \times 0.2273 \text{ mi}}{36 \text{ mph}} = 22.73 \text{ seconds}$$<h4 id="step-3-calculate-total-travel-time-">Step 3: Calculate Total Travel Time ($T$)</h4>
+$$T = t_R + d = 22.73 \text{ s} + 22.50 \text{ s} = 45.23 \text{ seconds}$$<h4 id="step-4-calculate-average-travel-speed-">Step 4: Calculate Average Travel Speed ($S_D$)</h4>
+$$S_D = \frac{3,600 \times L}{T} = \frac{3,600 \times 0.2273 \text{ mi}}{45.23 \text{ s}} = 18.09 \text{ mph}$$<h4 id="step-5-calculate-percent-of-free-flow-speed-">Step 5: Calculate Percent of Free-Flow Speed ($\% \text{ FFS}$)</h4>
+$$\% \text{ FFS} = \frac{S_D}{\text{FFS}} \times 100 = \frac{18.09 \text{ mph}}{40 \text{ mph}} \times 100 = 45.2\%$$<h4 id="step-6-determine-level-of-service-los">Step 6: Determine Level of Service (LOS)</h4>
+<p>Compare the calculated speed ($S_D = 18.09 \text{ mph}$) or $\%$ of FFS ($45.2\%$) to the Class 2 Arterial LOS criteria:</p>
 <ul>
-<li>Under the $% \text{ FFS}$ criteria: $40% &lt; 45.2% \le 50% \rightarrow$ <strong>LOS D</strong></li>
-<li>Under the Class 2 Speed criteria: $14 \text{ mph} &lt; 18.09 \text{ mph} \le 18 \text{ mph} \rightarrow$ <strong>LOS D</strong> (or right on the boundary between C and D, round to the worse condition or select <strong>LOS D</strong>).</li>
+<li>Under the $\% \text{ FFS}$ criteria: $40\% < 45.2\% \le 50\% \rightarrow$ <strong>LOS D</strong></li>
+<li>Under the Class 2 Speed criteria: $14 \text{ mph} < 18.09 \text{ mph} \le 18 \text{ mph} \rightarrow$ <strong>LOS D</strong> (or right on the boundary between C and D, round to the worse condition or select <strong>LOS D</strong>).</li>
 </ul>
 <p><strong>Conclusion:</strong> The urban street segment operates at <strong>LOS D</strong>.</p>
 <hr>

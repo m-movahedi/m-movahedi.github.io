@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Project Scheduling Basics">
     <meta property="og:description" content="Project Scheduling Basics Project scheduling is a core competency tested on the PE Civil Transportation exam. Understanding activity relationships, precedence …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Project Scheduling Basics">
     <meta name="twitter:description" content="Project Scheduling Basics Project scheduling is a core competency tested on the PE Civil Transportation exam. Understanding activity relationships, precedence …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-2/09-project-scheduling-basics/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -313,31 +327,25 @@ gtag('config', 'G-1WZSE8DHZ9');
     </style>
     <!-- Outer Box -->
     <rect x="10" y="10" width="180" height="100" class="node" />
-<pre><code>&lt;!-- Horizontal Dividers --&gt;
-&lt;line x1=&quot;10&quot; y1=&quot;40&quot; x2=&quot;190&quot; y2=&quot;40&quot; class=&quot;line&quot; /&gt;
-&lt;line x1=&quot;10&quot; y1=&quot;80&quot; x2=&quot;190&quot; y2=&quot;80&quot; class=&quot;line&quot; /&gt;
-
-&lt;!-- Vertical Dividers (Top Row) --&gt;
-&lt;line x1=&quot;50&quot; y1=&quot;10&quot; x2=&quot;50&quot; y2=&quot;40&quot; class=&quot;line&quot; /&gt;
-&lt;line x1=&quot;150&quot; y1=&quot;10&quot; x2=&quot;150&quot; y2=&quot;40&quot; class=&quot;line&quot; /&gt;
-
-&lt;!-- Vertical Dividers (Bottom Row) --&gt;
-&lt;line x1=&quot;50&quot; y1=&quot;80&quot; x2=&quot;50&quot; y2=&quot;110&quot; class=&quot;line&quot; /&gt;
-&lt;line x1=&quot;150&quot; y1=&quot;80&quot; x2=&quot;150&quot; y2=&quot;110&quot; class=&quot;line&quot; /&gt;
-
-&lt;!-- Texts Top Row --&gt;
-&lt;text x=&quot;30&quot; y=&quot;30&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;ES&lt;/text&gt;
-&lt;text x=&quot;100&quot; y=&quot;30&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;Duration (d)&lt;/text&gt;
-&lt;text x=&quot;170&quot; y=&quot;30&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;EF&lt;/text&gt;
-
-&lt;!-- Activity Name --&gt;
-&lt;text x=&quot;100&quot; y=&quot;65&quot; class=&quot;text header&quot; text-anchor=&quot;middle&quot;&gt;Activity Name&lt;/text&gt;
-
-&lt;!-- Texts Bottom Row --&gt;
-&lt;text x=&quot;30&quot; y=&quot;100&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;LS&lt;/text&gt;
-&lt;text x=&quot;100&quot; y=&quot;100&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;Total Float&lt;/text&gt;
-&lt;text x=&quot;170&quot; y=&quot;100&quot; class=&quot;text&quot; text-anchor=&quot;middle&quot;&gt;LF&lt;/text&gt;
-</code></pre>
+    <!-- Horizontal Dividers -->
+    <line x1="10" y1="40" x2="190" y2="40" class="line" />
+    <line x1="10" y1="80" x2="190" y2="80" class="line" />    
+    <!-- Vertical Dividers (Top Row) -->
+    <line x1="50" y1="10" x2="50" y2="40" class="line" />
+    <line x1="150" y1="10" x2="150" y2="40" class="line" />    
+    <!-- Vertical Dividers (Bottom Row) -->
+    <line x1="50" y1="80" x2="50" y2="110" class="line" />
+    <line x1="150" y1="80" x2="150" y2="110" class="line" />    
+    <!-- Texts Top Row -->
+    <text x="30" y="30" class="text" text-anchor="middle">ES</text>
+    <text x="100" y="30" class="text" text-anchor="middle">Duration (d)</text>
+    <text x="170" y="30" class="text" text-anchor="middle">EF</text>    
+    <!-- Activity Name -->
+    <text x="100" y="65" class="text header" text-anchor="middle">Activity Name</text>    
+    <!-- Texts Bottom Row -->
+    <text x="30" y="100" class="text" text-anchor="middle">LS</text>
+    <text x="100" y="100" class="text" text-anchor="middle">Total Float</text>
+    <text x="170" y="100" class="text" text-anchor="middle">LF</text>
   </svg>
 </div>
 <h3 id="2-activity-on-arrow-aoa">2. Activity-on-Arrow (AOA)</h3>

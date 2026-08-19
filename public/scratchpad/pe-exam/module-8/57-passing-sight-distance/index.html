@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Passing Sight Distance on Vertical Curves">
     <meta property="og:description" content="Passing Sight Distance on Vertical Curves Passing Sight Distance (PSD) is the minimum distance required for a driver on a two-lane highway to safely complete a …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Passing Sight Distance on Vertical Curves">
     <meta name="twitter:description" content="Passing Sight Distance on Vertical Curves Passing Sight Distance (PSD) is the minimum distance required for a driver on a two-lane highway to safely complete a …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-8/57-passing-sight-distance/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-8/57-passing-sight-distance/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-8/57-passing-sight-distance/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -297,12 +311,12 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li>
 <p><strong>Case 1: Passing Sight Distance $\le$ Curve Length ($S \le L$)</strong>
-$$L = \frac{A S^2}{2800}$$</p>
-</li>
+</p>
+$$L = \frac{A S^2}{2800}$$</li>
 <li>
-<p><strong>Case 2: Passing Sight Distance $&gt;$ Curve Length ($S &gt; L$)</strong>
-$$L = 2S - \frac{2800}{A}$$</p>
-</li>
+<p><strong>Case 2: Passing Sight Distance $>$ Curve Length ($S > L$)</strong>
+</p>
+$$L = 2S - \frac{2800}{A}$$</li>
 </ul>
 <p>Where:</p>
 <ul>
@@ -316,12 +330,12 @@ $$L = 2S - \frac{2800}{A}$$</p>
 <ul>
 <li>
 <p><strong>Case 1: Passing Sight Distance $\le$ Curve Length ($S \le L$)</strong>
-$$L = \frac{A S^2}{864}$$</p>
-</li>
+</p>
+$$L = \frac{A S^2}{864}$$</li>
 <li>
-<p><strong>Case 2: Passing Sight Distance $&gt;$ Curve Length ($S &gt; L$)</strong>
-$$L = 2S - \frac{864}{A}$$</p>
-</li>
+<p><strong>Case 2: Passing Sight Distance $>$ Curve Length ($S > L$)</strong>
+</p>
+$$L = 2S - \frac{864}{A}$$</li>
 </ul>
 <p>Where $L$ and $S$ are in meters, and $A$ is in percent.</p>
 <hr>
@@ -392,7 +406,7 @@ $$L = 2S - \frac{864}{A}$$</p>
 </ul>
 <hr>
 <h2 id="worked-example">Worked Example</h2>
-<p>A crest vertical curve on a two-lane rural highway connects an initial grade of $+2.0%$ and a final grade of $-2.0%$. The design speed is $50\text{ mph}$.</p>
+<p>A crest vertical curve on a two-lane rural highway connects an initial grade of $+2.0\%$ and a final grade of $-2.0\%$. The design speed is $50\text{ mph}$.</p>
 <p>Calculate:</p>
 <ol>
 <li>The minimum length of the vertical curve required to satisfy Stopping Sight Distance (SSD).</li>
@@ -402,12 +416,14 @@ $$L = 2S - \frac{864}{A}$$</p>
 <h3 id="solution">Solution</h3>
 <p><strong>1. Calculate Curve Length for SSD:</strong></p>
 <ul>
-<li>$A = |g_2 - g_1| = |-2.0 - 2.0| = 4.0%$</li>
+<li>$A = |g_2 - g_1| = |-2.0 - 2.0| = 4.0\%$</li>
 <li>For $V = 50\text{ mph}$, design SSD = $425\text{ ft}$.</li>
 <li><em>Assumption:</em> Assume $S \le L$.
+
 $$L_{\text{SSD}} = \frac{A S^2}{2158} = \frac{4.0 \times (425)^2}{2158} = \frac{4.0 \times 180,625}{2158} = \frac{722,500}{2158} = 334.8\text{ ft}$$</li>
-<li><em>Verify assumption:</em> Since $425\text{ ft} &gt; 334.8\text{ ft}$, the assumption $S \le L$ is <strong>false</strong>.</li>
-<li><em>Recalculate using Case 2 ($S &gt; L$):</em>
+<li><em>Verify assumption:</em> Since $425\text{ ft} > 334.8\text{ ft}$, the assumption $S \le L$ is <strong>false</strong>.</li>
+<li><em>Recalculate using Case 2 ($S > L$):</em>
+
 $$L_{\text{SSD}} = 2S - \frac{2158}{A} = 2(425) - \frac{2158}{4.0} = 850 - 539.5 = 310.5\text{ ft}$$</li>
 <li>Thus, the minimum required curve length for SSD is <strong>$311\text{ ft}$</strong>.</li>
 </ul>
@@ -415,6 +431,7 @@ $$L_{\text{SSD}} = 2S - \frac{2158}{A} = 2(425) - \frac{2158}{4.0} = 850 - 539.5
 <ul>
 <li>For $V = 50\text{ mph}$, design PSD = $975\text{ ft}$.</li>
 <li><em>Assumption:</em> Assume $S \le L$.
+
 $$L_{\text{PSD}} = \frac{A S^2}{2800} = \frac{4.0 \times (975)^2}{2800} = \frac{4.0 \times 950,625}{2800} = \frac{3,802,500}{2800} = 1358.04\text{ ft}$$</li>
 <li><em>Verify assumption:</em> Since $975\text{ ft} \le 1358.04\text{ ft}$, the assumption $S \le L$ is <strong>correct</strong>.</li>
 <li>Thus, the minimum required curve length for PSD is <strong>$1,358\text{ ft}$</strong>.</li>

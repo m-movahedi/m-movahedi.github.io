@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Traffic Calming and Complete Streets">
     <meta property="og:description" content="Traffic Calming and Complete Streets Complete Streets is a design philosophy that requires roads to be planned, designed, operated, and maintained to enable …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Traffic Calming and Complete Streets">
     <meta name="twitter:description" content="Traffic Calming and Complete Streets Complete Streets is a design philosophy that requires roads to be planned, designed, operated, and maintained to enable …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-6/43-traffic-calming-and-complete-streets/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-6/43-traffic-calming-and-complete-streets/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-6/43-traffic-calming-and-complete-streets/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -331,7 +345,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li>Existing crossing distance ($D_{exist}$) = $48\text{ ft}$.</li>
 <li>Using the MUTCD crossing time formula:
+
 $$t_{c, exist} = t_{pr} + \frac{D_{exist}}{S_p}$$
+
 $$t_{c, exist} = 3.0\text{ seconds} + \frac{48\text{ ft}}{3.5\text{ ft/s}} = 3.0 + 13.71 = 16.71\text{ seconds}$$</li>
 </ul>
 </li>
@@ -346,6 +362,7 @@ $$t_{c, exist} = 3.0\text{ seconds} + \frac{48\text{ ft}}{3.5\text{ ft/s}} = 3.0
 <li>New curb-to-curb width = $48\text{ ft} - 2(6\text{ ft}) = 36\text{ ft}$.</li>
 <li><em>Check:</em> The $36\text{-ft}$ space contains 4 lanes of $10\text{ ft}$ ($40\text{ ft}$) minus the median? No, let&rsquo;s verify the layout:
 With curb extensions extending $6\text{ ft}$ on each side, the physical crossing distance between curbs is indeed reduced to $36\text{ ft}$. The median is $8\text{ ft}$ wide, so the distance from the curb to the median on each side is:
+
 $$\text{Crossing distance to median} = \frac{36\text{ ft} - 8\text{ ft}}{2} = 14\text{ ft}$$
 <em>(This corresponds to two travel lanes of $10\text{ ft}$ each where the curb extensions have narrowed the parking/buffer zone, or the layout has shifted the travel lanes).</em></li>
 </ul>
@@ -355,7 +372,9 @@ $$\text{Crossing distance to median} = \frac{36\text{ ft} - 8\text{ ft}}{2} = 14
 <ul>
 <li>Because the median is $8\text{ ft}$ wide ($\ge 6\text{ ft}$), it qualifies as a pedestrian refuge. The pedestrian crossing time only needs to account for crossing from the curb to the median ($14\text{ ft}$).</li>
 <li>Using the crossing time formula:
-$$t_{c, prop} = t_{pr} + \frac{D_{to_median}}{S_p}$$
+
+$$t_{c, prop} = t_{pr} + \frac{D_{to\_median}}{S_p}$$
+
 $$t_{c, prop} = 3.0\text{ seconds} + \frac{14\text{ ft}}{3.5\text{ ft/s}} = 3.0 + 4.0 = 7.0\text{ seconds}$$</li>
 <li><em>Result:</em> The required pedestrian crossing phase is reduced from $16.7\text{ seconds}$ to <strong>$7.0\text{ seconds}$</strong>.</li>
 </ul>
@@ -364,10 +383,12 @@ $$t_{c, prop} = 3.0\text{ seconds} + \frac{14\text{ ft}}{3.5\text{ ft/s}} = 3.0 
 <p><strong>Calculate Saturation Flow Rate Impact:</strong></p>
 <ul>
 <li><strong>Existing Saturation Flow:</strong>
+
 $$s_{exist} = 1,900 \times 1.00 = 1,900\text{ pc/h/ln}$$</li>
 <li><strong>Proposed Saturation Flow:</strong>
+
 $$s_{prop} = 1,900 \times 0.94 = 1,786\text{ pc/h/ln}$$</li>
-<li><em>Result:</em> Narrowing the lanes reduces the saturation flow rate (and therefore the capacity) by <strong>$6.0%$</strong> per lane.</li>
+<li><em>Result:</em> Narrowing the lanes reduces the saturation flow rate (and therefore the capacity) by <strong>$6.0\%$</strong> per lane.</li>
 </ul>
 </li>
 </ol>
@@ -376,7 +397,7 @@ $$s_{prop} = 1,900 \times 0.94 = 1,786\text{ pc/h/ln}$$</li>
 <li>Existing pedestrian crossing time: <strong>16.7 seconds</strong></li>
 <li>New curb-to-curb width: <strong>36 ft</strong></li>
 <li>Proposed pedestrian crossing time (with median refuge): <strong>7.0 seconds</strong></li>
-<li>Proposed saturation flow rate: <strong>1,786 pc/h/ln</strong> (a $6.0%$ reduction in vehicle capacity).</li>
+<li>Proposed saturation flow rate: <strong>1,786 pc/h/ln</strong> (a $6.0\%$ reduction in vehicle capacity).</li>
 </ol>
 <hr>
 <h2 id="crucial-exam-tips">Crucial Exam Tips</h2>

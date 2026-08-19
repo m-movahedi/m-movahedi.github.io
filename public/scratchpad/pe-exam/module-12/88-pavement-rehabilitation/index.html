@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pavement Distress and Rehabilitation">
     <meta property="og:description" content="Pavement Distress and Rehabilitation Over time, pavements deteriorate due to the combined effects of traffic loading and environmental conditions. Pavement …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Pavement Distress and Rehabilitation">
     <meta name="twitter:description" content="Pavement Distress and Rehabilitation Over time, pavements deteriorate due to the combined effects of traffic loading and environmental conditions. Pavement …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/88-pavement-rehabilitation/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/88-pavement-rehabilitation/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/88-pavement-rehabilitation/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -322,26 +336,28 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>The thickness of a structural overlay is determined by comparing the structural capacity required for future traffic ($SN_{\text{req}}$ or $D_{\text{req}}$) with the effective capacity of the existing pavement ($SN_{\text{eff}}$ or $D_{\text{eff}}$).</p>
 <h3 id="flexible-pavement-overlay-design">Flexible Pavement Overlay Design</h3>
 <p>The required structural number of the overlay ($SN_{\text{ol}}$) is:
-$$SN_{\text{ol}} = SN_{\text{req}} - SN_{\text{eff}}$$</p>
-<p>Where:</p>
+</p>
+$$SN_{\text{ol}} = SN_{\text{req}} - SN_{\text{eff}}$$<p>Where:</p>
 <ul>
 <li>$SN_{\text{req}} = \text{structural number required for the design traffic (future ESALs)}$</li>
 <li>$SN_{\text{eff}} = \text{effective structural number of the existing pavement}$
-$$SN_{\text{eff}} = a&rsquo;_1 D_1 + a&rsquo;_2 D_2 m&rsquo;_2 + a&rsquo;_3 D_3 m&rsquo;_3$$
-<em>(where $a&rsquo;_i$ are deteriorated layer coefficients representing the current damaged state of the pavement).</em></li>
+
+$$SN_{\text{eff}} = a'_1 D_1 + a'_2 D_2 m'_2 + a'_3 D_3 m'_3$$
+<em>(where $a'_i$ are deteriorated layer coefficients representing the current damaged state of the pavement).</em></li>
 </ul>
 <p>The required HMA overlay thickness ($D_{\text{ol}}$) is:
-$$D_{\text{ol}} = \frac{SN_{\text{ol}}}{a_{\text{ol}}}$$
+</p>
+$$D_{\text{ol}} = \frac{SN_{\text{ol}}}{a_{\text{ol}}}$$<p>
 <em>(where $a_{\text{ol}}$ is the coefficient of the new asphalt overlay, typically $0.44$).</em></p>
 <h3 id="rigid-pavement-pcc-overlay-design">Rigid Pavement (PCC) Overlay Design</h3>
 <p>The thickness of a concrete overlay ($D_{\text{ol}}$) depends on whether the overlay is bonded or unbonded to the existing PCC slab.</p>
 <h4 id="bonded-concrete-overlay">Bonded Concrete Overlay</h4>
 <p>The new slab bonds monolithically with the existing slab to act as a single, thick composite plate. Used only when the existing slab is in structurally sound condition.
-$$D_{\text{ol}} = D_{\text{req}} - D_{\text{eff}}$$</p>
-<h4 id="unbonded-concrete-overlay">Unbonded Concrete Overlay</h4>
+</p>
+$$D_{\text{ol}} = D_{\text{req}} - D_{\text{eff}}$$<h4 id="unbonded-concrete-overlay">Unbonded Concrete Overlay</h4>
 <p>An asphalt leveling/interlayer course is placed between the old PCC and the new PCC overlay to prevent bond. Used when the existing slab is highly distressed.
-$$D_{\text{ol}} = \sqrt{D_{\text{req}}^2 - D_{\text{eff}}^2}$$</p>
-<p>Where:</p>
+</p>
+$$D_{\text{ol}} = \sqrt{D_{\text{req}}^2 - D_{\text{eff}}^2}$$<p>Where:</p>
 <ul>
 <li>$D_{\text{req}} = \text{slab thickness required for future traffic (inches)}$</li>
 <li>$D_{\text{eff}} = \text{effective thickness of the existing slab (inches)}$, adjusted for structural distresses.</li>
@@ -351,8 +367,8 @@ $$D_{\text{ol}} = \sqrt{D_{\text{req}}^2 - D_{\text{eff}}^2}$$</p>
 <h3 id="worked-example-1-hma-overlay-design">Worked Example 1: HMA Overlay Design</h3>
 <p>An existing flexible pavement has the following profile:</p>
 <ul>
-<li>Asphalt Surface: Original $D_1 = 4.0\text{ inches}$. Due to severe alligator cracking, its coefficient is reduced from $0.44$ to $a&rsquo;_1 = 0.20$.</li>
-<li>Crushed Stone Base: $D_2 = 8.0\text{ inches}$ ($a&rsquo;_2 = 0.12$, $m&rsquo;_2 = 1.0$).</li>
+<li>Asphalt Surface: Original $D_1 = 4.0\text{ inches}$. Due to severe alligator cracking, its coefficient is reduced from $0.44$ to $a'_1 = 0.20$.</li>
+<li>Crushed Stone Base: $D_2 = 8.0\text{ inches}$ ($a'_2 = 0.12$, $m'_2 = 1.0$).</li>
 <li>Subbase: None.
 Future traffic demand requires a Structural Number ($SN_{\text{req}}$) of $3.80$. The new HMA overlay has a design coefficient $a_{\text{ol}} = 0.44$.</li>
 </ul>
@@ -360,13 +376,18 @@ Future traffic demand requires a Structural Number ($SN_{\text{req}}$) of $3.80$
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Calculate Effective Structural Number ($SN_{\text{eff}}$):</strong>
-$$SN_{\text{eff}} = a&rsquo;_1 D_1 + a&rsquo;_2 D_2 m&rsquo;<em>2$$
-$$SN</em>{\text{eff}} = (0.20 \cdot 4.0) + (0.12 \cdot 8.0 \cdot 1.0) = 0.80 + 0.96 = 1.76$$</li>
+
+$$SN_{\text{eff}} = a'_1 D_1 + a'_2 D_2 m'_2$$
+
+$$SN_{\text{eff}} = (0.20 \cdot 4.0) + (0.12 \cdot 8.0 \cdot 1.0) = 0.80 + 0.96 = 1.76$$</li>
 <li><strong>Calculate Required Structural Number for the Overlay ($SN_{\text{ol}}$):</strong>
+
 $$SN_{\text{ol}} = SN_{\text{req}} - SN_{\text{eff}} = 3.80 - 1.76 = 2.04$$</li>
 <li><strong>Calculate Overlay Thickness ($D_{\text{ol}}$):</strong>
+
 $$D_{\text{ol}} = \frac{SN_{\text{ol}}}{a_{\text{ol}}} = \frac{2.04}{0.44} = 4.64\text{ inches}$$</li>
 <li><strong>Round Up to Nearest Half-Inch:</strong>
+
 $$D_{\text{ol}} = 5.0\text{ inches}$$</li>
 </ol>
 <p><em>Result:</em> The required HMA overlay thickness is <strong>$5.0\text{ inches}$</strong>.</p>
@@ -381,12 +402,16 @@ $$D_{\text{ol}} = 5.0\text{ inches}$$</li>
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Bonded Concrete Overlay:</strong>
+
 $$D_{\text{ol}} = D_{\text{req}} - D_{\text{eff}} = 9.0 - 6.0 = 3.0\text{ inches}$$
 <em>(Since $3.0\text{ inches}$ is a half-inch increment, no rounding is needed).</em></li>
 <li><strong>Unbonded Concrete Overlay:</strong>
+
 $$D_{\text{ol}} = \sqrt{D_{\text{req}}^2 - D_{\text{eff}}^2}$$
+
 $$D_{\text{ol}} = \sqrt{9.0^2 - 6.0^2} = \sqrt{81.0 - 36.0} = \sqrt{45.0} = 6.71\text{ inches}$$
 Round up to the nearest half-inch:
+
 $$D_{\text{ol}} = 7.0\text{ inches}$$</li>
 </ol>
 <p><em>Result:</em> A bonded overlay requires <strong>$3.0\text{ inches}$</strong> of concrete, whereas an unbonded overlay requires <strong>$7.0\text{ inches}$</strong> of concrete.</p>
@@ -400,7 +425,7 @@ $$D_{\text{ol}} = 7.0\text{ inches}$$</li>
 </ul>
 </li>
 <li><strong>Bonded vs. Unbonded Equations:</strong> Do not confuse the rigid overlay equations. Bonded is linear subtraction ($D_{\text{req}} - D_{\text{eff}}$), while unbonded is square-root subtraction ($\sqrt{D_{\text{req}}^2 - D_{\text{eff}}^2}$). Unbonded overlays are thicker because the old and new slabs act independently rather than as a single composite unit.</li>
-<li><strong>Condition Factor Application:</strong> When estimating $SN_{\text{eff}}$ or $D_{\text{eff}}$, the problem may give a condition factor (e.g., &ldquo;retains $70%$ of its structural capacity&rdquo;). Multiply the original layer coefficient by this factor (e.g., $a&rsquo;<em>1 = 0.70 \cdot a_1$) before calculating $SN</em>{\text{eff}}$.</li>
+<li><strong>Condition Factor Application:</strong> When estimating $SN_{\text{eff}}$ or $D_{\text{eff}}$, the problem may give a condition factor (e.g., &ldquo;retains $70\%$ of its structural capacity&rdquo;). Multiply the original layer coefficient by this factor (e.g., $a'_1 = 0.70 \cdot a_1$) before calculating $SN_{\text{eff}}$.</li>
 <li><strong>Reflection Cracking Mitigation:</strong> In conceptual questions, remember that placing HMA directly over joints in a concrete slab will lead to reflection cracking. Subgrade/PCC preparation methods like rubblization, crack and seat, or placing a geotextile/asphalt cushion layer are required to prevent this.</li>
 </ul>
 

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Rigid Pavement Design Concepts">
     <meta property="og:description" content="Rigid Pavement Design Concepts Rigid pavements are constructed using Portland cement concrete (PCC) slabs resting on a subbase or directly on the subgrade. …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Rigid Pavement Design Concepts">
     <meta name="twitter:description" content="Rigid Pavement Design Concepts Rigid pavements are constructed using Portland cement concrete (PCC) slabs resting on a subbase or directly on the subgrade. …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/87-rigid-pavement-design-concepts/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/87-rigid-pavement-design-concepts/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/87-rigid-pavement-design-concepts/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -279,8 +293,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="2-aashto-1993-rigid-pavement-design-equation">2. AASHTO 1993 Rigid Pavement Design Equation</h2>
 <p>The objective of rigid pavement design is to determine the required slab thickness ($D$, in inches). The AASHTO design equation is:</p>
-<p>$$\log_{10}(W_{18}) = Z_R S_0 + 7.35 \log_{10}(D + 1) - 0.06 + \frac{\log_{10}\left(\frac{\Delta PSI}{4.5 - 1.5}\right)}{1.0 + \frac{1.624 \cdot 10^7}{(D + 1)^{8.46}}} + (4.22 - 0.32 p_t) \log_{10}\left[ \frac{S&rsquo;_c C_d (D^{0.75} - 1.13)}{215.63 J \left( D^{0.75} - \frac{18.42}{(E_c / k)^{0.25}} \right)} \right]$$</p>
-<p>Where:</p>
+$$\log_{10}(W_{18}) = Z_R S_0 + 7.35 \log_{10}(D + 1) - 0.06 + \frac{\log_{10}\left(\frac{\Delta PSI}{4.5 - 1.5}\right)}{1.0 + \frac{1.624 \cdot 10^7}{(D + 1)^{8.46}}} + (4.22 - 0.32 p_t) \log_{10}\left[ \frac{S'_c C_d (D^{0.75} - 1.13)}{215.63 J \left( D^{0.75} - \frac{18.42}{(E_c / k)^{0.25}} \right)} \right]$$<p>Where:</p>
 <ul>
 <li>$W_{18} = \text{design traffic demand}$ (total 18-kip Equivalent Single Axle Loads (ESALs) over the design life).</li>
 <li>$Z_R = \text{standard normal deviate}$ corresponding to the design Reliability ($R$, %).</li>
@@ -292,16 +305,17 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>$p_t = \text{terminal serviceability index}$ (typically $2.5$ for major highways).</li>
 </ul>
 </li>
-<li>$S&rsquo;_c = \text{concrete modulus of rupture}$ (flexural strength of concrete in psi).</li>
+<li>$S'_c = \text{concrete modulus of rupture}$ (flexural strength of concrete in psi).</li>
 <li>$C_d = \text{drainage coefficient}$ (adjusts slab performance based on drainage quality).</li>
 <li>$J = \text{load transfer coefficient}$ (accounts for the ability of joints or shoulders to transfer load).</li>
 <li>$E_c = \text{modulus of elasticity of concrete (in psi)}$.</li>
 <li>$k = \text{modulus of subgrade reaction (in psi/in or pci)}$.</li>
 </ul>
 <hr>
-<h2 id="3-modulus-of-subgrade-reaction-k">3. Modulus of Subgrade Reaction ($k$)</h2>
+<h2 id="3-modulus-of-subgrade-reaction-">3. Modulus of Subgrade Reaction ($k$)</h2>
 <p>The modulus of subgrade reaction ($k$) represents the stiffness of the soil foundation supporting the concrete slab. It is measured in the field using a <strong>Plate Bearing Test</strong> (using a $30\text{-inch}$ diameter steel plate):
-$$k = \frac{p}{\delta}$$
+</p>
+$$k = \frac{p}{\delta}$$<p>
 Where:</p>
 <ul>
 <li>$p = \text{contact pressure applied by the plate (psi)}$</li>
@@ -311,14 +325,15 @@ Where:</p>
 <p>The design $k$-value is adjusted to account for the presence of a subbase layer, the depth to bedrock, and seasonal moisture variations. It is also corrected for the <strong>Loss of Support (LS)</strong>, which is a factor ($0.0$ to $3.0$) that accounts for the potential erosion of subbase material beneath the slab.</p>
 <hr>
 <h2 id="4-concrete-material-properties">4. Concrete Material Properties</h2>
-<h3 id="modulus-of-rupture-s_c">Modulus of Rupture ($S&rsquo;_c$)</h3>
-<p>Concrete is weak in tension, and rigid pavements fail primarily through flexural fatigue cracking at the bottom of the slab. Thus, the design strength is characterized by the <strong>flexural strength</strong> or <strong>modulus of rupture ($S&rsquo;_c$)</strong>, measured using a third-point beam loading test (ASTM C78).
-$$S&rsquo;_c \approx 8 \text{ to } 10 \sqrt{f&rsquo;_c} \quad \text{(in psi)}$$
-Where $f&rsquo;_c$ is the compressive strength of the concrete in psi.</p>
-<h3 id="modulus-of-elasticity-e_c">Modulus of Elasticity ($E_c$)</h3>
+<h3 id="modulus-of-rupture-">Modulus of Rupture ($S'_c$)</h3>
+<p>Concrete is weak in tension, and rigid pavements fail primarily through flexural fatigue cracking at the bottom of the slab. Thus, the design strength is characterized by the <strong>flexural strength</strong> or <strong>modulus of rupture ($S'_c$)</strong>, measured using a third-point beam loading test (ASTM C78).
+</p>
+$$S'_c \approx 8 \text{ to } 10 \sqrt{f'_c} \quad \text{(in psi)}$$<p>
+Where $f'_c$ is the compressive strength of the concrete in psi.</p>
+<h3 id="modulus-of-elasticity-">Modulus of Elasticity ($E_c$)</h3>
 <p>The concrete modulus of elasticity is calculated from its compressive strength:
-$$E_c = 57,000 \sqrt{f&rsquo;_c} \quad \text{(in psi)}$$</p>
-<hr>
+</p>
+$$E_c = 57,000 \sqrt{f'_c} \quad \text{(in psi)}$$<hr>
 <h2 id="5-joint-design-and-load-transfer">5. Joint Design and Load Transfer</h2>
 <p>To control cracking caused by thermal expansion, contraction, and moisture gradients, rigid pavements are divided into individual slabs by joints.</p>
 <div style="width: 100%; max-width: 700px; margin: 2rem auto;">
@@ -367,7 +382,7 @@ $$E_c = 57,000 \sqrt{f&rsquo;_c} \quad \text{(in psi)}$$</p>
 <li><strong>Purpose:</strong> Deformed steel rebars placed across longitudinal joints to hold adjacent traffic lanes or shoulders together.</li>
 <li><strong>Mechanism:</strong> Unlike dowel bars, tie bars are bonded to the concrete and do not allow joint opening or horizontal movement. They prevent lane separation.</li>
 </ul>
-<h3 id="load-transfer-coefficient-j">Load Transfer Coefficient ($J$)</h3>
+<h3 id="load-transfer-coefficient-">Load Transfer Coefficient ($J$)</h3>
 <p>The $J$ parameter accounts for the presence of load transfer devices (dowel bars) and tied concrete shoulders:</p>
 <ul>
 <li><strong>Lower $J$ values (2.5 - 3.2):</strong> Indicate excellent load transfer (doweled transverse joints and/or tied concrete shoulders).</li>
@@ -376,28 +391,34 @@ $$E_c = 57,000 \sqrt{f&rsquo;_c} \quad \text{(in psi)}$$</p>
 <hr>
 <h2 id="6-worked-examples">6. Worked Examples</h2>
 <h3 id="worked-example-1-concrete-properties">Worked Example 1: Concrete Properties</h3>
-<p>A rigid pavement is specified to be constructed using concrete with a $28\text{-day}$ compressive strength ($f&rsquo;_c$) of $4500\text{ psi}$.</p>
-<p><strong>Goal:</strong> Estimate the concrete&rsquo;s modulus of rupture ($S&rsquo;_c$) using the NCEES standard relation ($S&rsquo;_c = 9 \sqrt{f&rsquo;_c}$) and its modulus of elasticity ($E_c$).</p>
+<p>A rigid pavement is specified to be constructed using concrete with a $28\text{-day}$ compressive strength ($f'_c$) of $4500\text{ psi}$.</p>
+<p><strong>Goal:</strong> Estimate the concrete&rsquo;s modulus of rupture ($S'_c$) using the NCEES standard relation ($S'_c = 9 \sqrt{f'_c}$) and its modulus of elasticity ($E_c$).</p>
 <p><strong>Solution:</strong></p>
 <ol>
-<li><strong>Calculate Modulus of Rupture ($S&rsquo;_c$):</strong>
-$$S&rsquo;_c = 9 \sqrt{f&rsquo;_c} = 9 \sqrt{4500} = 9 \cdot 67.08 = 603.7\text{ psi}$$</li>
+<li><strong>Calculate Modulus of Rupture ($S'_c$):</strong>
+
+$$S'_c = 9 \sqrt{f'_c} = 9 \sqrt{4500} = 9 \cdot 67.08 = 603.7\text{ psi}$$</li>
 <li><strong>Calculate Modulus of Elasticity ($E_c$):</strong>
-$$E_c = 57,000 \sqrt{f&rsquo;_c} = 57,000 \sqrt{4500} = 57,000 \cdot 67.08 = 3.82 \cdot 10^6\text{ psi}$$</li>
+
+$$E_c = 57,000 \sqrt{f'_c} = 57,000 \sqrt{4500} = 57,000 \cdot 67.08 = 3.82 \cdot 10^6\text{ psi}$$</li>
 </ol>
 <p><em>Result:</em> The modulus of rupture is <strong>$604\text{ psi}$</strong> and the modulus of elasticity is <strong>$3.82 \cdot 10^6\text{ psi}$</strong>.</p>
 <hr>
-<h3 id="worked-example-2-modulus-of-subgrade-reaction-k">Worked Example 2: Modulus of Subgrade Reaction ($k$)</h3>
+<h3 id="worked-example-2-modulus-of-subgrade-reaction-">Worked Example 2: Modulus of Subgrade Reaction ($k$)</h3>
 <p>A plate bearing test is conducted on a prepared subgrade. A load of $14,130\text{ lb}$ is applied to a $30\text{-inch}$ diameter plate, resulting in a deflection of $0.05\text{ inches}$.</p>
 <p><strong>Goal:</strong> Calculate the modulus of subgrade reaction ($k$) of the subgrade in pci.</p>
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Calculate Plate Area ($A$):</strong>
+
 $$D = 30\text{ inches} \implies R = 15\text{ inches}$$
+
 $$A = \pi R^2 = \pi (15)^2 = 225\pi \approx 706.86\text{ in}^2$$</li>
 <li><strong>Calculate Applied Pressure ($p$):</strong>
+
 $$p = \frac{\text{Load}}{A} = \frac{14,130\text{ lb}}{706.86\text{ in}^2} = 19.99\text{ psi} \approx 20.0\text{ psi}$$</li>
 <li><strong>Calculate Modulus of Subgrade Reaction ($k$):</strong>
+
 $$k = \frac{p}{\delta} = \frac{20.0\text{ psi}}{0.05\text{ inches}} = 400.0\text{ pci}$$</li>
 </ol>
 <p><em>Result:</em> The modulus of subgrade reaction is <strong>$400\text{ pci}$</strong>.</p>

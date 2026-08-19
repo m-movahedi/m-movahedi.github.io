@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Signalized Intersection Capacity">
     <meta property="og:description" content="Signalized Intersection Capacity Signalized intersections are critical nodes in urban street networks. Their capacity analysis is a major component of the NCEES …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Signalized Intersection Capacity">
     <meta name="twitter:description" content="Signalized Intersection Capacity Signalized intersections are critical nodes in urban street networks. Their capacity analysis is a major component of the NCEES …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/26-signalized-intersection-capacity/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/26-signalized-intersection-capacity/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/26-signalized-intersection-capacity/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -241,27 +255,30 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>All-Red Clearance ($Rc$)</strong>: The red clearance interval before opposing movements receive green (seconds).</li>
 <li><strong>Total Lost Time per Phase ($t_L$)</strong>: The sum of start-up lost time ($l_1$, typically $2.0 \text{ s}$) and clearance lost time ($l_2$, typically $2.0 \text{ s}$). If not specified, total lost time is assumed to be $t_L = 4.0 \text{ seconds}$ per phase.</li>
 <li><strong>Effective Green ($g$)</strong>: The actual usable green time allocated to a movement:
+
 $$g = G + Y + Rc - t_L$$
 <em>(If yellow and all-red clearance times are not specified, it is common to assume effective green equals displayed green: $g = G$).</em></li>
 <li><strong>Green-to-Cycle Ratio ($g/C$)</strong>: The proportion of the cycle length during which a lane group has the right-of-way.</li>
 </ul>
 <hr>
-<h2 id="saturation-flow-rate-s">Saturation Flow Rate ($s$)</h2>
+<h2 id="saturation-flow-rate-">Saturation Flow Rate ($s$)</h2>
 <p>The saturation flow rate represents the maximum queue discharge rate that can be sustained by a lane group, assuming a continuous queue of vehicles and a constant green indication. It is calculated by adjusting a base saturation flow rate for prevailing physical and traffic conditions:</p>
-<p>$$s = s_0 \times N \times f_w \times f_{HV} \times f_g \times f_p \times f_{bb} \times f_a \times f_{LU} \times f_{LT} \times f_{RT} \times f_{Lpb} \times f_{Rpb}$$</p>
-<p>Where:</p>
+$$s = s_0 \times N \times f_w \times f_{HV} \times f_g \times f_p \times f_{bb} \times f_a \times f_{LU} \times f_{LT} \times f_{RT} \times f_{Lpb} \times f_{Rpb}$$<p>Where:</p>
 <ul>
 <li>$s_0$ = base saturation flow rate ($pc/h/ln$); typically assumed to be $1,900 \text{ pc/h/ln}$ if not specified.</li>
 <li>$N$ = number of lanes in the lane group.</li>
 <li>$f_w$ = lane width adjustment factor:
+
 $$f_w = 1 + \frac{W - 12}{30}$$
 <em>(where $W$ is the lane width in feet; standard is $12 \text{ ft}$).</em></li>
 <li>$f_{HV}$ = heavy vehicle adjustment factor:
+
 $$f_{HV} = \frac{100}{100 + P_{HV}(E_{HV} - 1)} = \frac{1}{1 + P_{HV}(E_{HV} - 1)}$$
 <em>(where $P_{HV}$ is the proportion of heavy vehicles and $E_{HV} = 2.0$, simplifying to $f_{HV} = \frac{1}{1 + P_{HV}}$).</em></li>
 <li>$f_g$ = approach grade adjustment factor:
-$$f_g = 1 - 0.005 \times %G$$
-<em>(where $%G$ is the grade percentage; positive for uphill, negative for downhill).</em></li>
+
+$$f_g = 1 - 0.005 \times \%G$$
+<em>(where $\%G$ is the grade percentage; positive for uphill, negative for downhill).</em></li>
 <li>$f_p$ = parking adjustment factor (accounts for frictional loss from on-street parking maneuvers).</li>
 <li>$f_{bb}$ = bus blockage adjustment factor (accounts for local transit buses stopping within the intersection area).</li>
 <li>$f_a$ = area type adjustment factor ($0.90$ for Central Business Districts; $1.00$ for all other areas).</li>
@@ -276,54 +293,49 @@ $$f_g = 1 - 0.005 \times %G$$
 <li>$f_{Lpb}, f_{Rpb}$ = adjustments for pedestrian and bicycle conflicts with turning vehicles.</li>
 </ul>
 <hr>
-<h2 id="lane-group-capacity-c-and-vc-ratio-x">Lane Group Capacity ($c$) and $v/c$ Ratio ($X$)</h2>
-<h3 id="capacity-c">Capacity ($c$)</h3>
+<h2 id="lane-group-capacity--and--ratio-">Lane Group Capacity ($c$) and $v/c$ Ratio ($X$)</h2>
+<h3 id="capacity-">Capacity ($c$)</h3>
 <p>The capacity of a lane group is the product of its saturation flow rate and its green-to-cycle ratio:</p>
-<p>$$c = s \times \frac{g}{C}$$</p>
-<p>Where:</p>
+$$c = s \times \frac{g}{C}$$<p>Where:</p>
 <ul>
 <li>$c$ = capacity of the lane group ($veh/h$)</li>
 <li>$s$ = saturation flow rate ($veh/h$)</li>
 <li>$g/C$ = effective green-to-cycle ratio</li>
 </ul>
-<h3 id="volume-to-capacity-ratio-x">Volume-to-Capacity Ratio ($X$)</h3>
+<h3 id="volume-to-capacity-ratio-">Volume-to-Capacity Ratio ($X$)</h3>
 <p>The $v/c$ ratio (also called the degree of saturation, $X$) for a lane group is:</p>
-<p>$$X = \frac{v}{c} = \frac{v}{s \times (g/C)}$$</p>
-<p>Where:</p>
+$$X = \frac{v}{c} = \frac{v}{s \times (g/C)}$$<p>Where:</p>
 <ul>
 <li>$v$ = adjusted peak 15-minute demand flow rate ($veh/h$), calculated as $V / \text{PHF}$.</li>
 </ul>
 <hr>
-<h2 id="control-delay-d">Control Delay ($d$)</h2>
+<h2 id="control-delay-">Control Delay ($d$)</h2>
 <p>The average control delay per vehicle for a lane group is calculated as the sum of three components:</p>
-<p>$$d = d_1 \times \text{PF} + d_2 + d_3$$</p>
-<h3 id="1-uniform-delay-d_1">1. Uniform Delay ($d_1$)</h3>
+$$d = d_1 \times \text{PF} + d_2 + d_3$$<h3 id="1-uniform-delay-">1. Uniform Delay ($d_1$)</h3>
 <p>Assuming uniform vehicle arrivals throughout the cycle, uniform delay is calculated as:</p>
-<p>$$d_1 = \frac{0.5 \times C \times \left(1 - g/C\right)^2}{1 - \left[\min(1, X) \times g/C\right]}$$</p>
-<p>Where:</p>
+$$d_1 = \frac{0.5 \times C \times \left(1 - g/C\right)^2}{1 - \left[\min(1, X) \times g/C\right]}$$<p>Where:</p>
 <ul>
 <li>$C$ = cycle length ($sec$)</li>
 <li>$g/C$ = green-to-cycle ratio</li>
 <li>$X$ = volume-to-capacity ratio</li>
 </ul>
-<h3 id="2-progression-adjustment-factor-textpf">2. Progression Adjustment Factor ($\text{PF}$)</h3>
+<h3 id="2-progression-adjustment-factor-">2. Progression Adjustment Factor ($\text{PF}$)</h3>
 <p>$\text{PF}$ adjusts the uniform delay to account for signal coordination:</p>
 <ul>
-<li>$\text{PF} &lt; 1.0$ indicates good progression (vehicles arrive during the green phase, e.g., coordinated platoons).</li>
+<li>$\text{PF} < 1.0$ indicates good progression (vehicles arrive during the green phase, e.g., coordinated platoons).</li>
 <li>$\text{PF} = 1.0$ indicates isolated/uncoordinated signal operations (random arrivals).</li>
-<li>$\text{PF} &gt; 1.0$ indicates poor progression (vehicles arrive during the red phase).</li>
+<li>$\text{PF} > 1.0$ indicates poor progression (vehicles arrive during the red phase).</li>
 </ul>
-<h3 id="3-incremental-delay-d_2">3. Incremental Delay ($d_2$)</h3>
+<h3 id="3-incremental-delay-">3. Incremental Delay ($d_2$)</h3>
 <p>Incremental delay accounts for random arrivals, cycle-to-cycle failures (where some vehicles must wait for more than one cycle), and oversaturation:</p>
-<p>$$d_2 = 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{8 \times k \times I \times X}{c \times T}} \right]$$</p>
-<p>Where:</p>
+$$d_2 = 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{8 \times k \times I \times X}{c \times T}} \right]$$<p>Where:</p>
 <ul>
 <li>$T$ = duration of the analysis period (hours); typically $0.25 \text{ hours}$ (representing a 15-minute peak period).</li>
 <li>$k$ = incremental delay factor (depends on controller settings; $k = 0.50$ for pretimed signals).</li>
 <li>$I$ = upstream filtering adjustment factor (typically $1.0$ for isolated intersections).</li>
 <li>$c$ = capacity of the lane group ($veh/h$).</li>
 </ul>
-<h3 id="4-initial-queue-delay-d_3">4. Initial Queue Delay ($d_3$)</h3>
+<h3 id="4-initial-queue-delay-">4. Initial Queue Delay ($d_3$)</h3>
 <p>$d_3$ accounts for delay caused by a pre-existing queue at the start of the analysis period. On the PE exam, this is typically assumed to be zero unless a pre-existing queue length is explicitly provided.</p>
 <hr>
 <h2 id="level-of-service-los-criteria">Level of Service (LOS) Criteria</h2>
@@ -342,23 +354,23 @@ $$f_g = 1 - 0.005 \times %G$$
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 10.0$ to $\le 20.0$</td>
+          <td>$> 10.0$ to $\le 20.0$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 20.0$ to $\le 35.0$</td>
+          <td>$> 20.0$ to $\le 35.0$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 35.0$ to $\le 55.0$</td>
+          <td>$> 35.0$ to $\le 55.0$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 55.0$ to $\le 80.0$</td>
+          <td>$> 55.0$ to $\le 80.0$</td>
       </tr>
       <tr>
           <td><strong>F</strong></td>
-          <td>$&gt; 80.0$ OR if $X &gt; 1.0$</td>
+          <td>$> 80.0$ OR if $X > 1.0$</td>
       </tr>
   </tbody>
 </table>
@@ -385,9 +397,9 @@ In the incremental delay ($d_2$) formula, $T$ is in <strong>hours</strong>. For 
 <li>Number of lanes: 2 ($N = 2$)</li>
 <li>Base saturation flow rate ($s_0$): $1,900 \text{ pc/h/ln}$</li>
 <li>Lane width: $12 \text{ ft}$</li>
-<li>Grade: $2%$ uphill ($%G = +2$)</li>
+<li>Grade: $2\%$ uphill ($\%G = +2$)</li>
 <li>Area type: Non-CBD ($f_a = 1.00$)</li>
-<li>Heavy vehicles: $4%$ ($P_{HV} = 0.04$, $E_{HV} = 2.0$)</li>
+<li>Heavy vehicles: $4\%$ ($P_{HV} = 0.04$, $E_{HV} = 2.0$)</li>
 <li>Lane utilization factor ($f_{LU}$): $0.95$</li>
 <li>Cycle length ($C$): $90 \text{ seconds}$</li>
 <li>Effective green time ($g$): $45 \text{ seconds}$</li>
@@ -397,51 +409,59 @@ In the incremental delay ($d_2$) formula, $T$ is in <strong>hours</strong>. For 
 </ul>
 <p><strong>Determine the saturation flow rate ($s$), capacity ($c$), volume-to-capacity ratio ($X$), uniform delay ($d_1$), and the Level of Service (LOS).</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-saturation-flow-rate-s">Step 1: Calculate Saturation Flow Rate ($s$)</h4>
+<h4 id="step-1-calculate-saturation-flow-rate-">Step 1: Calculate Saturation Flow Rate ($s$)</h4>
 <p>First, determine the adjustment factors:</p>
 <ol>
 <li><strong>Lane Width Adjustment</strong>:
+
 $$f_w = 1.00 \text{ (since lane width is 12 ft)}$$</li>
 <li><strong>Heavy Vehicle Adjustment</strong>:
+
 $$f_{HV} = \frac{1}{1 + P_{HV}(E_{HV}-1)} = \frac{1}{1 + 0.04(2-1)} = \frac{1}{1.04} = 0.962$$</li>
 <li><strong>Grade Adjustment</strong>:
+
 $$f_g = 1 - 0.005(2) = 1 - 0.01 = 0.990$$</li>
 <li><strong>Lane Utilization</strong>:
+
 $$f_{LU} = 0.95$$</li>
 </ol>
 <p>Calculate adjusted saturation flow rate:
-$$s = s_0 \times N \times f_w \times f_{HV} \times f_g \times f_{LU}$$
-$$s = 1,900 \times 2 \times 1.00 \times 0.962 \times 0.990 \times 0.95 = 3,437.3 \text{ veh/h}$$</p>
-<h4 id="step-2-calculate-capacity-c">Step 2: Calculate Capacity ($c$)</h4>
-<p>$$c = s \times \frac{g}{C} = 3,437.3 \times \frac{45}{90} = 1,718.7 \text{ veh/h}$$</p>
-<h4 id="step-3-calculate-demand-flow-rate-v-and-vc-ratio-x">Step 3: Calculate Demand Flow Rate ($v$) and $v/c$ Ratio ($X$)</h4>
-<p>$$v = \frac{V}{\text{PHF}} = \frac{1,200}{0.90} = 1,333.3 \text{ veh/h}$$
-$$X = \frac{v}{c} = \frac{1,333.3}{1,718.7} = 0.776$$</p>
-<h4 id="step-4-calculate-uniform-delay-d_1">Step 4: Calculate Uniform Delay ($d_1$)</h4>
-<p>$$d_1 = \frac{0.5 \times C \times (1 - g/C)^2}{1 - [\min(1, X) \times g/C]}$$</p>
-<ul>
+</p>
+$$s = s_0 \times N \times f_w \times f_{HV} \times f_g \times f_{LU}$$<p>
+</p>
+$$s = 1,900 \times 2 \times 1.00 \times 0.962 \times 0.990 \times 0.95 = 3,437.3 \text{ veh/h}$$<h4 id="step-2-calculate-capacity-">Step 2: Calculate Capacity ($c$)</h4>
+$$c = s \times \frac{g}{C} = 3,437.3 \times \frac{45}{90} = 1,718.7 \text{ veh/h}$$<h4 id="step-3-calculate-demand-flow-rate--and--ratio-">Step 3: Calculate Demand Flow Rate ($v$) and $v/c$ Ratio ($X$)</h4>
+$$v = \frac{V}{\text{PHF}} = \frac{1,200}{0.90} = 1,333.3 \text{ veh/h}$$<p>
+</p>
+$$X = \frac{v}{c} = \frac{1,333.3}{1,718.7} = 0.776$$<h4 id="step-4-calculate-uniform-delay-">Step 4: Calculate Uniform Delay ($d_1$)</h4>
+$$d_1 = \frac{0.5 \times C \times (1 - g/C)^2}{1 - [\min(1, X) \times g/C]}$$<ul>
 <li>$g/C = 45 / 90 = 0.50$</li>
 <li>$1 - g/C = 0.50$</li>
 <li>$\min(1, X) = 0.776$
+
 $$d_1 = \frac{0.5 \times 90 \times (0.50)^2}{1 - [0.776 \times 0.50]} = \frac{45 \times 0.25}{1 - 0.388} = \frac{11.25}{0.612} = 18.38 \text{ sec/veh}$$</li>
 </ul>
-<h4 id="step-5-calculate-incremental-delay-d_2">Step 5: Calculate Incremental Delay ($d_2$)</h4>
+<h4 id="step-5-calculate-incremental-delay-">Step 5: Calculate Incremental Delay ($d_2$)</h4>
 <ul>
 <li>$T = 0.25 \text{ hours}$</li>
 <li>$k = 0.50$</li>
 <li>$I = 1.00$
+
 $$d_2 = 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{8 \times k \times I \times X}{c \times T}} \right]$$
+
 $$d_2 = 900 \times 0.25 \left[ (0.776 - 1) + \sqrt{(0.776 - 1)^2 + \frac{8 \times 0.50 \times 1.00 \times 0.776}{1,718.7 \times 0.25}} \right]$$
+
 $$d_2 = 225 \left[ -0.224 + \sqrt{(-0.224)^2 + \frac{3.104}{429.68}} \right]$$
+
 $$d_2 = 225 \left[ -0.224 + \sqrt{0.0502 + 0.00722} \right]$$
+
 $$d_2 = 225 \left[ -0.224 + \sqrt{0.05742} \right] = 225 \left[ -0.224 + 0.2396 \right] = 225 \times 0.0156 = 3.51 \text{ sec/veh}$$</li>
 </ul>
-<h4 id="step-6-calculate-total-delay-d-and-determine-los">Step 6: Calculate Total Delay ($d$) and Determine LOS</h4>
-<p>$$d = d_1 \times \text{PF} + d_2 = 18.38 \times 1.00 + 3.51 = 21.89 \text{ sec/veh}$$</p>
-<ul>
+<h4 id="step-6-calculate-total-delay--and-determine-los">Step 6: Calculate Total Delay ($d$) and Determine LOS</h4>
+$$d = d_1 \times \text{PF} + d_2 = 18.38 \times 1.00 + 3.51 = 21.89 \text{ sec/veh}$$<ul>
 <li>Look up $d = 21.89 \text{ sec/veh}$ in the signalized intersection LOS table:
 <ul>
-<li>$20.0 &lt; d \le 35.0 \rightarrow$ <strong>LOS C</strong></li>
+<li>$20.0 < d \le 35.0 \rightarrow$ <strong>LOS C</strong></li>
 </ul>
 </li>
 </ul>

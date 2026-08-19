@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Basic Freeway Segments">
     <meta property="og:description" content="Basic Freeway Segments Basic freeway segments are outside the influence of merging, diverging, or weaving maneuvers. The operational analysis of basic freeway …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Basic Freeway Segments">
     <meta name="twitter:description" content="Basic Freeway Segments Basic freeway segments are outside the influence of merging, diverging, or weaving maneuvers. The operational analysis of basic freeway …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/22-freeway-basic-segments/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -245,8 +259,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 </code></pre><hr>
 <h2 id="step-1-determine-free-flow-speed-ffs">Step 1: Determine Free-Flow Speed (FFS)</h2>
 <p>Free-flow speed is the average speed of passenger cars measured when traffic volumes are low and drivers are not constrained by other vehicles. FFS can be measured directly in the field or estimated using the following equation:</p>
-<p>$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{TRD}$$</p>
-<p>Where:</p>
+$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{TRD}$$<p>Where:</p>
 <ul>
 <li>$\text{FFS}$ = estimated free-flow speed ($mph$)</li>
 <li>$\text{BFFS}$ = base free-flow speed ($mph$); typically assumed to be $75 \text{ mph}$ for rural freeways and $70 \text{ mph}$ for urban freeways if not specified.</li>
@@ -254,7 +267,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>$f_{LC}$ = adjustment for right-shoulder lateral clearance ($mph$)</li>
 <li>$f_{TRD}$ = adjustment for total ramp density ($mph$)</li>
 </ul>
-<h3 id="1-lane-width-adjustment-f_lw">1. Lane Width Adjustment ($f_{LW}$)</h3>
+<h3 id="1-lane-width-adjustment-">1. Lane Width Adjustment ($f_{LW}$)</h3>
 <p>Standard lane width is $12 \text{ ft}$. Lanes narrower than $12 \text{ ft}$ reduce free-flow speed:</p>
 <table>
   <thead>
@@ -278,7 +291,7 @@ gtag('config', 'G-1WZSE8DHZ9');
       </tr>
   </tbody>
 </table>
-<h3 id="2-lateral-clearance-adjustment-f_lc">2. Lateral Clearance Adjustment ($f_{LC}$)</h3>
+<h3 id="2-lateral-clearance-adjustment-">2. Lateral Clearance Adjustment ($f_{LC}$)</h3>
 <p>Obstructions (walls, guardrails, utility poles) close to the right shoulder cause drivers to slow down. The adjustment depends on the number of lanes in one direction ($N$) and the lateral clearance from the right-hand lane edge to the obstruction:</p>
 <table>
   <thead>
@@ -343,16 +356,16 @@ gtag('config', 'G-1WZSE8DHZ9');
   </tbody>
 </table>
 <p><em>Note: Left-shoulder (median) lateral clearance is assumed to have no effect on basic freeway segments.</em></p>
-<h3 id="3-total-ramp-density-adjustment-f_trd">3. Total Ramp Density Adjustment ($f_{TRD}$)</h3>
+<h3 id="3-total-ramp-density-adjustment-">3. Total Ramp Density Adjustment ($f_{TRD}$)</h3>
 <p>Total Ramp Density (TRD) is the total number of on-ramps and off-ramps (in both directions) located within a 6-mile window (3 miles upstream and 3 miles downstream of the segment center) divided by 6 miles.
 The adjustment is calculated as:
-$$f_{TRD} = 0.8 \times \text{TRD}$$
+</p>
+$$f_{TRD} = 0.8 \times \text{TRD}$$<p>
 Where $\text{TRD}$ is expressed in ramps per mile.</p>
 <hr>
-<h2 id="step-2-determine-equivalent-passenger-car-flow-rate-v_p">Step 2: Determine Equivalent Passenger-Car Flow Rate ($v_p$)</h2>
+<h2 id="step-2-determine-equivalent-passenger-car-flow-rate-">Step 2: Determine Equivalent Passenger-Car Flow Rate ($v_p$)</h2>
 <p>The hourly demand volume ($V$) must be adjusted to account for peak-hour variations, number of lanes, presence of heavy vehicles, and driver familiarity:</p>
-<p>$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p}$$</p>
-<p>Where:</p>
+$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p}$$<p>Where:</p>
 <ul>
 <li>$v_p$ = demand flow rate under equivalent passenger-car conditions ($pc/h/ln$)</li>
 <li>$V$ = hourly demand volume ($veh/h$)</li>
@@ -361,10 +374,9 @@ Where $\text{TRD}$ is expressed in ramps per mile.</p>
 <li>$f_{HV}$ = heavy vehicle adjustment factor</li>
 <li>$f_p$ = driver population adjustment factor (typically $1.00$ for familiar drivers/commuters; can range from $0.85$ to $1.00$ for recreational or unfamiliar driver populations).</li>
 </ul>
-<h3 id="heavy-vehicle-adjustment-factor-f_hv">Heavy Vehicle Adjustment Factor ($f_{HV}$)</h3>
+<h3 id="heavy-vehicle-adjustment-factor-">Heavy Vehicle Adjustment Factor ($f_{HV}$)</h3>
 <p>Heavy vehicles (trucks, buses, RVs) occupy more space and have lower acceleration capabilities than passenger cars. We convert them to passenger-car equivalents ($E_T$ and $E_R$):</p>
-<p>$$f_{HV} = \frac{1}{1 + P_T(E_T - 1) + P_R(E_R - 1)}$$</p>
-<p>Where:</p>
+$$f_{HV} = \frac{1}{1 + P_T(E_T - 1) + P_R(E_R - 1)}$$<p>Where:</p>
 <ul>
 <li>$P_T$ = proportion of trucks and buses in the traffic stream (expressed as a decimal)</li>
 <li>$P_R$ = proportion of recreational vehicles (RVs) in the traffic stream (expressed as a decimal)</li>
@@ -377,14 +389,16 @@ Where $\text{TRD}$ is expressed in ramps per mile.</p>
 <li><strong>Rolling Terrain</strong>: $E_T = 2.5$, $E_R = 2.0$</li>
 </ul>
 <hr>
-<h2 id="step-3-determine-speed-s-and-density-d">Step 3: Determine Speed ($S$) and Density ($D$)</h2>
-<h3 id="average-passenger-car-speed-s">Average Passenger-Car Speed ($S$)</h3>
+<h2 id="step-3-determine-speed--and-density-">Step 3: Determine Speed ($S$) and Density ($D$)</h2>
+<h3 id="average-passenger-car-speed-">Average Passenger-Car Speed ($S$)</h3>
 <p>Speed remains relatively constant at the FFS until the flow rate ($v_p$) exceeds a specific <strong>breakpoint</strong> (BP). If the flow rate is below the breakpoint, speed equals the FFS. If it exceeds the breakpoint, speed drops.</p>
 <p>The HCM 6th Edition speed-flow relationships are defined by:</p>
 <ul>
 <li><strong>For $v_p \le \text{Breakpoint}$</strong>:
+
 $$S = \text{FFS}$$</li>
-<li><strong>For $\text{Breakpoint} &lt; v_p \le \text{Capacity}$</strong>:
+<li><strong>For $\text{Breakpoint} < v_p \le \text{Capacity}$</strong>:
+
 $$S = \text{FFS} - \frac{(\text{FFS} - 49.5)(v_p - \text{Breakpoint})^{1.31}}{(\text{Capacity} - \text{Breakpoint})^{1.31}}$$</li>
 </ul>
 <p>The breakpoints and capacities vary by FFS:</p>
@@ -424,9 +438,10 @@ $$S = \text{FFS} - \frac{(\text{FFS} - 49.5)(v_p - \text{Breakpoint})^{1.31}}{(\
       </tr>
   </tbody>
 </table>
-<h3 id="density-d">Density ($D$)</h3>
+<h3 id="density-">Density ($D$)</h3>
 <p>Once $v_p$ and $S$ are determined, calculate density:
-$$D = \frac{v_p}{S}$$
+</p>
+$$D = \frac{v_p}{S}$$<p>
 Where:</p>
 <ul>
 <li>$D$ = density ($pc/mi/ln$)</li>
@@ -448,23 +463,23 @@ Where:</p>
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 11.0$ to $\le 16.0$</td>
+          <td>$> 11.0$ to $\le 16.0$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 16.0$ to $\le 26.0$</td>
+          <td>$> 16.0$ to $\le 26.0$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 26.0$ to $\le 35.0$</td>
+          <td>$> 26.0$ to $\le 35.0$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 35.0$ to $\le 45.0$</td>
+          <td>$> 35.0$ to $\le 45.0$</td>
       </tr>
       <tr>
           <td><strong>F</strong></td>
-          <td>$&gt; 45.0$ OR if $v_p &gt; \text{Capacity}$ ($v/c &gt; 1.0$)</td>
+          <td>$> 45.0$ OR if $v_p > \text{Capacity}$ ($v/c > 1.0$)</td>
       </tr>
   </tbody>
 </table>
@@ -473,7 +488,7 @@ Where:</p>
 <ol>
 <li>
 <p><strong>Failure to Convert Heavy Vehicle Percentage to Decimal</strong>:
-If the problem states trucks are $12%$, you must use $P_T = 0.12$ in the $f_{HV}$ equation. Using $12.0$ instead of $0.12$ is a common calculation error.</p>
+If the problem states trucks are $12\%$, you must use $P_T = 0.12$ in the $f_{HV}$ equation. Using $12.0$ instead of $0.12$ is a common calculation error.</p>
 </li>
 <li>
 <p><strong>Total Ramp Density ($TRD$) Calculation</strong>:
@@ -485,7 +500,7 @@ Ensure you select the values for the correct terrain. Level terrain ($E_T=1.5$, 
 </li>
 <li>
 <p><strong>Assuming Speed equals FFS in All Cases</strong>:
-Always compare your calculated $v_p$ to the breakpoint. If $v_p$ is greater than the breakpoint, you must use the speed reduction equation or a lookup graph. Assuming speed equals FFS when $v_p &gt; \text{Breakpoint}$ will lead to an underestimated density and incorrect LOS.</p>
+Always compare your calculated $v_p$ to the breakpoint. If $v_p$ is greater than the breakpoint, you must use the speed reduction equation or a lookup graph. Assuming speed equals FFS when $v_p > \text{Breakpoint}$ will lead to an underestimated density and incorrect LOS.</p>
 </li>
 </ol>
 <hr>
@@ -499,42 +514,43 @@ Always compare your calculated $v_p$ to the breakpoint. If $v_p$ is greater than
 <li>Base free-flow speed (BFFS): $70 \text{ mph}$</li>
 <li>Directional hourly demand volume: $3,100 \text{ veh/h}$</li>
 <li>Peak Hour Factor (PHF): $0.90$</li>
-<li>Traffic composition: $8%$ trucks, $2%$ RVs</li>
+<li>Traffic composition: $8\%$ trucks, $2\%$ RVs</li>
 <li>Terrain: Rolling</li>
 <li>Driver population: Familiar commuters ($f_p = 1.00$)</li>
 </ul>
 <p><strong>Determine the Level of Service (LOS) of the segment.</strong></p>
 <h3 id="solution">Solution:</h3>
 <h4 id="step-1-calculate-free-flow-speed-ffs">Step 1: Calculate Free-Flow Speed (FFS)</h4>
-<p>$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{TRD}$$</p>
-<ul>
+$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{TRD}$$<ul>
 <li>From the lane width table, for $11 \text{ ft}$ lanes: $f_{LW} = 1.9 \text{ mph}$</li>
 <li>From the lateral clearance table, for 3 lanes and $4 \text{ ft}$ clearance: $f_{LC} = 0.8 \text{ mph}$</li>
 <li>For total ramp density:
+
 $$f_{TRD} = 0.8 \times 3.0 = 2.4 \text{ mph}$$</li>
 <li>Calculate FFS:
+
 $$\text{FFS} = 70 - 1.9 - 0.8 - 2.4 = 64.9 \text{ mph}$$</li>
 </ul>
-<h4 id="step-2-calculate-heavy-vehicle-adjustment-factor-f_hv">Step 2: Calculate Heavy Vehicle Adjustment Factor ($f_{HV}$)</h4>
+<h4 id="step-2-calculate-heavy-vehicle-adjustment-factor-">Step 2: Calculate Heavy Vehicle Adjustment Factor ($f_{HV}$)</h4>
 <ul>
 <li>Terrain is rolling, so $E_T = 2.5$ and $E_R = 2.0$.</li>
 <li>Proportions: $P_T = 0.08$ and $P_R = 0.02$.
+
 $$f_{HV} = \frac{1}{1 + 0.08(2.5 - 1) + 0.02(2.0 - 1)} = \frac{1}{1 + 0.08(1.5) + 0.02(1.0)} = \frac{1}{1 + 0.12 + 0.02} = \frac{1}{1.14} = 0.877$$</li>
 </ul>
-<h4 id="step-3-calculate-equivalent-flow-rate-v_p">Step 3: Calculate Equivalent Flow Rate ($v_p$)</h4>
-<p>$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p} = \frac{3,100}{0.90 \times 3 \times 0.877 \times 1.00} = \frac{3,100}{2.368} = 1,309.1 \text{ pc/h/ln}$$</p>
-<h4 id="step-4-determine-average-speed-s">Step 4: Determine Average Speed ($S$)</h4>
+<h4 id="step-3-calculate-equivalent-flow-rate-">Step 3: Calculate Equivalent Flow Rate ($v_p$)</h4>
+$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p} = \frac{3,100}{0.90 \times 3 \times 0.877 \times 1.00} = \frac{3,100}{2.368} = 1,309.1 \text{ pc/h/ln}$$<h4 id="step-4-determine-average-speed-">Step 4: Determine Average Speed ($S$)</h4>
 <ul>
 <li>For an FFS of approximately $65 \text{ mph}$ ($64.9 \text{ mph}$), the breakpoint is $1,400 \text{ pc/h/ln}$.</li>
 <li>Since $v_p = 1,309.1 \text{ pc/h/ln} \le 1,400 \text{ pc/h/ln}$ (flow rate is below the breakpoint), the speed does not drop.
+
 $$S = \text{FFS} = 64.9 \text{ mph}$$</li>
 </ul>
-<h4 id="step-5-calculate-density-d-and-determine-los">Step 5: Calculate Density ($D$) and Determine LOS</h4>
-<p>$$D = \frac{v_p}{S} = \frac{1,309.1 \text{ pc/h/ln}}{64.9 \text{ mph}} = 20.17 \text{ pc/mi/ln}$$</p>
-<ul>
+<h4 id="step-5-calculate-density--and-determine-los">Step 5: Calculate Density ($D$) and Determine LOS</h4>
+$$D = \frac{v_p}{S} = \frac{1,309.1 \text{ pc/h/ln}}{64.9 \text{ mph}} = 20.17 \text{ pc/mi/ln}$$<ul>
 <li>Look up $D = 20.17 \text{ pc/mi/ln}$ in the LOS criteria table:
 <ul>
-<li>$16.0 &lt; D \le 26.0 \rightarrow$ <strong>LOS C</strong></li>
+<li>$16.0 < D \le 26.0 \rightarrow$ <strong>LOS C</strong></li>
 </ul>
 </li>
 </ul>

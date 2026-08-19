@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Benefit-Cost and Life-Cycle Decisions">
     <meta property="og:description" content="Benefit-Cost and Life-Cycle Decisions Benefit-Cost (B/C) analysis and Life-Cycle Cost Analysis (LCCA) are decision-making tools used to evaluate public …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Benefit-Cost and Life-Cycle Decisions">
     <meta name="twitter:description" content="Benefit-Cost and Life-Cycle Decisions Benefit-Cost (B/C) analysis and Life-Cycle Cost Analysis (LCCA) are decision-making tools used to evaluate public …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-2/12-benefit-cost-and-lifecycle-decisions/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/12-benefit-cost-and-lifecycle-decisions/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-2/12-benefit-cost-and-lifecycle-decisions/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -240,8 +254,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>Rule:</strong> Choose the alternative with the lowest EUAC (or highest positive Annual Worth).</li>
 <li><strong>No adjustment</strong> to the analysis period is required because the EUAC represents the cost per year of service, assuming the alternative can be renewed at the same cost.</li>
 </ul>
-<p>$$EUAC = P(A/P, i, n) + A_{\text{annual}} - F(A/F, i, n)$$</p>
-<p>Where:</p>
+$$EUAC = P(A/P, i, n) + A_{\text{annual}} - F(A/F, i, n)$$<p>Where:</p>
 <ul>
 <li>$P$ = Initial cost</li>
 <li>$A_{\text{annual}}$ = Annual operations and maintenance (O&amp;M) cost</li>
@@ -253,68 +266,74 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><em>Example:</em> If comparing Alternative 1 ($n_1 = 6 \text{ years}$) and Alternative 2 ($n_2 = 8 \text{ years}$), evaluate both over an LCM of $24 \text{ years}$.</li>
 <li>Assume each alternative is replaced (reinvested) at its end-of-life at the same initial cost.</li>
 </ul>
-<h3 id="3-capitalized-cost-cc-method">3. Capitalized Cost ($CC$) Method</h3>
+<h3 id="3-capitalized-cost--method">3. Capitalized Cost ($CC$) Method</h3>
 <p>Evaluates projects that have an infinite service life (e.g., dams, highways, bridges). Capitalized cost is the present worth of a project that lasts forever.
-$$CC = P + \frac{A}{i}$$</p>
-<p>For cyclic replacement costs (e.g., replacing pavement every $k$ years at cost $R$):
-$$CC = P + \frac{R(A/F, i, k)}{i}$$</p>
-<hr>
+</p>
+$$CC = P + \frac{A}{i}$$<p>For cyclic replacement costs (e.g., replacing pavement every $k$ years at cost $R$):
+</p>
+$$CC = P + \frac{R(A/F, i, k)}{i}$$<hr>
 <h2 id="worked-example-unequal-service-lives-euac-vs-lcm">Worked Example: Unequal Service Lives (EUAC vs. LCM)</h2>
 <p><strong>Problem:</strong><br>
 A transportation department is evaluating two pavement marking alternatives.</p>
 <ul>
 <li><strong>Option A (Waterborne Paint):</strong> Initial cost of $12,000. Service life of 2 years. Annual maintenance cost of $1,000. Salvage value of $0.</li>
 <li><strong>Option B (Thermoplastic):</strong> Initial cost of $25,000. Service life of 6 years. Annual maintenance cost of $300. Salvage value of $2,000.
-Using an interest rate of $6%$, determine which option is the most economical.</li>
+Using an interest rate of $6\%$, determine which option is the most economical.</li>
 </ul>
 <p><strong>Solution using EUAC:</strong></p>
 <p><strong>Step 1: Calculate EUAC for Option A ($n = 2$)</strong></p>
 <ul>
-<li>$P_A = $12,000$, $A_A = $1,000$, $F_A = $0$, $i = 6%$</li>
-<li>$(A/P, 6%, 2) = \frac{0.06(1.06)^2}{(1.06)^2 - 1} = 0.5454$
-$$EUAC_A = $12,000(A/P, 6%, 2) + $1,000$$
-$$EUAC_A = $12,000(0.5454) + $1,000 = $6,544.80 + $1,000 = $7,544.80\text{/year}$$</li>
+<li>$P_A = \$12,000$, $A_A = $1,000$, $F_A = $0$, $i = 6%$</li>
+<li>$(A/P, 6\%, 2) = \frac{0.06(1.06)^2}{(1.06)^2 - 1} = 0.5454$
+
+$$EUAC_A = \$12,000(A/P, 6\%, 2) + \$1,000$$
+
+$$EUAC_A = \$12,000(0.5454) + \$1,000 = \$6,544.80 + \$1,000 = \$7,544.80\text{/year}$$</li>
 </ul>
 <p><strong>Step 2: Calculate EUAC for Option B ($n = 6$)</strong></p>
 <ul>
-<li>$P_B = $25,000$, $A_B = $300$, $F_B = $2,000$, $i = 6%$</li>
-<li>$(A/P, 6%, 6) = \frac{0.06(1.06)^6}{(1.06)^6 - 1} = 0.2034$</li>
-<li>$(A/F, 6%, 6) = \frac{0.06}{(1.06)^6 - 1} = 0.1434$
-$$EUAC_B = $25,000(A/P, 6%, 6) + $300 - $2,000(A/F, 6%, 6)$$
-$$EUAC_B = $25,000(0.2034) + $300 - $2,000(0.1434)$$
-$$EUAC_B = $5,085.00 + $300 - $286.80 = $5,098.20\text{/year}$$</li>
+<li>$P_B = \$25,000$, $A_B = $300$, $F_B = $2,000$, $i = 6%$</li>
+<li>$(A/P, 6\%, 6) = \frac{0.06(1.06)^6}{(1.06)^6 - 1} = 0.2034$</li>
+<li>$(A/F, 6\%, 6) = \frac{0.06}{(1.06)^6 - 1} = 0.1434$
+
+$$EUAC_B = \$25,000(A/P, 6\%, 6) + \$300 - \$2,000(A/F, 6\%, 6)$$
+
+$$EUAC_B = \$25,000(0.2034) + \$300 - \$2,000(0.1434)$$
+
+$$EUAC_B = \$5,085.00 + \$300 - \$286.80 = \$5,098.20\text{/year}$$</li>
 </ul>
 <p><strong>Conclusion:</strong><br>
-Option B is more economical because its equivalent annual cost is lower ($EUAC_B = $5,098.20 &lt; EUAC_A = $7,544.80$).</p>
+Option B is more economical because its equivalent annual cost is lower ($EUAC_B = \$5,098.20 &lt; EUAC_A = $7,544.80$).</p>
 <hr>
 <h2 id="benefit-cost-bc-ratio-analysis">Benefit-Cost (B/C) Ratio Analysis</h2>
 <p>Public projects are often assessed by comparing the benefits to the public (e.g., reduced travel times, fewer accidents) against the costs to the government.</p>
 <ul>
 <li><strong>Benefits ($B$):</strong> Positive outcomes for the user/public (reduced operating costs, safety improvements).</li>
 <li><strong>Disbenefits ($D$):</strong> Negative consequences of the project to the public (increased noise, construction delay).</li>
-<li><strong>Costs ($C$):</strong> Capital costs ($Co$) plus ongoing operations, maintenance, and rehabilitation ($O&amp;M$).</li>
+<li><strong>Costs ($C$):</strong> Capital costs ($Co$) plus ongoing operations, maintenance, and rehabilitation ($O\&M$).</li>
 </ul>
 <h3 id="1-conventional-bc-ratio">1. Conventional B/C Ratio</h3>
 <p>Calculated by placing all public benefits in the numerator and all agency costs in the denominator.
-$$B/C = \frac{PW(Benefits) - PW(Disbenefits)}{PW(Initial\ Cost) + PW(O&amp;M)}$$</p>
-<h3 id="2-modified-bc-ratio">2. Modified B/C Ratio</h3>
+</p>
+$$B/C = \frac{PW(Benefits) - PW(Disbenefits)}{PW(Initial\ Cost) + PW(O\&M)}$$<h3 id="2-modified-bc-ratio">2. Modified B/C Ratio</h3>
 <p>Places ongoing O&amp;M costs in the numerator as a negative benefit, isolating the initial capital investment in the denominator.
-$$B/C_{\text{modified}} = \frac{PW(Benefits) - PW(Disbenefits) - PW(O&amp;M)}{PW(Initial\ Cost)}$$</p>
-<p><strong>Decision Rule:</strong><br>
+</p>
+$$B/C_{\text{modified}} = \frac{PW(Benefits) - PW(Disbenefits) - PW(O\&M)}{PW(Initial\ Cost)}$$<p><strong>Decision Rule:</strong><br>
 For a single project to be acceptable, the B/C ratio must be <strong>$\ge 1.0$</strong> (representing $PW(Benefits) \ge PW(Costs)$). Both the conventional and modified methods will yield the same acceptability decision.</p>
 <hr>
 <h2 id="incremental-benefit-cost-analysis">Incremental Benefit-Cost Analysis</h2>
 <p>When selecting from multiple mutually exclusive projects, you <strong>cannot</strong> simply choose the project with the highest B/C ratio. You must perform an <strong>Incremental B/C Analysis ($\Delta B / \Delta C$)</strong>.</p>
 <h3 id="step-by-step-protocol">Step-by-Step Protocol:</h3>
 <ol>
-<li>Calculate the individual B/C ratio for each alternative. Discard any alternative with a ratio $&lt; 1.0$.</li>
+<li>Calculate the individual B/C ratio for each alternative. Discard any alternative with a ratio $< 1.0$.</li>
 <li>Rank the remaining alternatives in order of <strong>increasing initial cost</strong> (including the &ldquo;Do-Nothing&rdquo; alternative if it is an option).</li>
 <li>Compute the incremental changes in benefits ($\Delta B$) and costs ($\Delta C$) between the lowest-cost option (Alternative 1) and the next cheapest (Alternative 2).
+
 $$\frac{\Delta B}{\Delta C} = \frac{Benefits_2 - Benefits_1}{Costs_2 - Costs_1}$$</li>
 <li>Evaluate:
 <ul>
 <li>If $\frac{\Delta B}{\Delta C} \ge 1.0$: The extra investment is justified. Keep Alternative 2 and discard Alternative 1.</li>
-<li>If $\frac{\Delta B}{\Delta C} &lt; 1.0$: The extra investment is not justified. Retain Alternative 1 and discard Alternative 2.</li>
+<li>If $\frac{\Delta B}{\Delta C} < 1.0$: The extra investment is not justified. Retain Alternative 1 and discard Alternative 2.</li>
 </ul>
 </li>
 <li>Repeat the incremental comparison between your currently selected best alternative and the next higher-cost alternative on the list.</li>
@@ -379,22 +398,30 @@ All alternatives have a B/C ratio $\ge 1.0$, so all are viable.</p>
 <li>Alternative D ($500,000)</li>
 </ol>
 <p><strong>Step 3: Incremental Comparison: Do-Nothing vs. A</strong>
-$$\Delta C = $100,000 - $0 = $100,000$$
-$$\Delta B = $180,000 - $0 = $180,000$$
-$$\frac{\Delta B}{\Delta C} = \frac{$180,000}{$100,000} = 1.80 \ge 1.0 \implies \text{Select A (Discard Do-Nothing)}$$</p>
-<p><strong>Step 4: Incremental Comparison: A vs. C</strong>
-$$\Delta C = $200,000 - $100,000 = $100,000$$
-$$\Delta B = $320,000 - $180,000 = $140,000$$
-$$\frac{\Delta B}{\Delta C} = \frac{$140,000}{$100,000} = 1.40 \ge 1.0 \implies \text{Select C (Discard A)}$$</p>
-<p><strong>Step 5: Incremental Comparison: C vs. B</strong>
-$$\Delta C = $350,000 - $200,000 = $150,000$$
-$$\Delta B = $490,000 - $320,000 = $170,000$$
-$$\frac{\Delta B}{\Delta C} = \frac{$170,000}{$150,000} = 1.13 \ge 1.0 \implies \text{Select B (Discard C)}$$</p>
-<p><strong>Step 6: Incremental Comparison: B vs. D</strong>
-$$\Delta C = $500,000 - $350,000 = $150,000$$
-$$\Delta B = $610,000 - $490,000 = $120,000$$
-$$\frac{\Delta B}{\Delta C} = \frac{$120,000}{$150,000} = 0.80 &lt; 1.0 \implies \text{Keep B (Discard D)}$$</p>
-<p><strong>Conclusion:</strong><br>
+</p>
+$$\Delta C = \$100,000 - \$0 = \$100,000$$<p>
+</p>
+$$\Delta B = \$180,000 - \$0 = \$180,000$$<p>
+</p>
+$$\frac{\Delta B}{\Delta C} = \frac{\$180,000}{\$100,000} = 1.80 \ge 1.0 \implies \text{Select A (Discard Do-Nothing)}$$<p><strong>Step 4: Incremental Comparison: A vs. C</strong>
+</p>
+$$\Delta C = \$200,000 - \$100,000 = \$100,000$$<p>
+</p>
+$$\Delta B = \$320,000 - \$180,000 = \$140,000$$<p>
+</p>
+$$\frac{\Delta B}{\Delta C} = \frac{\$140,000}{\$100,000} = 1.40 \ge 1.0 \implies \text{Select C (Discard A)}$$<p><strong>Step 5: Incremental Comparison: C vs. B</strong>
+</p>
+$$\Delta C = \$350,000 - \$200,000 = \$150,000$$<p>
+</p>
+$$\Delta B = \$490,000 - \$320,000 = \$170,000$$<p>
+</p>
+$$\frac{\Delta B}{\Delta C} = \frac{\$170,000}{\$150,000} = 1.13 \ge 1.0 \implies \text{Select B (Discard C)}$$<p><strong>Step 6: Incremental Comparison: B vs. D</strong>
+</p>
+$$\Delta C = \$500,000 - \$350,000 = \$150,000$$<p>
+</p>
+$$\Delta B = \$610,000 - \$490,000 = \$120,000$$<p>
+</p>
+$$\frac{\Delta B}{\Delta C} = \frac{\$120,000}{\$150,000} = 0.80 < 1.0 \implies \text{Keep B (Discard D)}$$<p><strong>Conclusion:</strong><br>
 Select <strong>Alternative B</strong> as the economically optimal design. (Note: Alternative A has the highest individual B/C ratio of 1.80, but Alternative B is the correct choice because the extra investment to move from A to B is fully justified by the incremental benefits).</p>
 <hr>
 <h2 id="crucial-pitfalls-and-exam-traps">Crucial Pitfalls and Exam Traps</h2>

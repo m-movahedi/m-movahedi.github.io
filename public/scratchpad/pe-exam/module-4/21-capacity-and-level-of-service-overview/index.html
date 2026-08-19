@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Capacity and Level of Service Overview">
     <meta property="og:description" content="Capacity and Level of Service Overview The Highway Capacity Manual (HCM) defines capacity and Level of Service (LOS) as the core performance metrics used to …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Capacity and Level of Service Overview">
     <meta name="twitter:description" content="Capacity and Level of Service Overview The Highway Capacity Manual (HCM) defines capacity and Level of Service (LOS) as the core performance metrics used to …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/21-capacity-and-level-of-service-overview/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/21-capacity-and-level-of-service-overview/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/21-capacity-and-level-of-service-overview/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -232,20 +246,20 @@ gtag('config', 'G-1WZSE8DHZ9');
         <h1 id="capacity-and-level-of-service-overview">Capacity and Level of Service Overview</h1>
 <p>The Highway Capacity Manual (HCM) defines capacity and Level of Service (LOS) as the core performance metrics used to analyze and design transportation facilities. In the NCEES PE Civil Transportation exam, understanding these foundational concepts, knowing how they differ across facility types, and mastering the basic traffic flow relationships is essential. This lesson covers the fundamentals of capacity, demand, volume-to-capacity ($v/c$) ratios, service flow rates, density, delay, and how these performance measures translate into LOS.</p>
 <h2 id="fundamentals-of-capacity-and-demand">Fundamentals of Capacity and demand</h2>
-<h3 id="capacity-c">Capacity ($c$)</h3>
+<h3 id="capacity-">Capacity ($c$)</h3>
 <p>Capacity is the maximum sustainable hourly flow rate at which persons or vehicles can reasonably be expected to traverse a point or a uniform segment of a lane or roadway during a specified time period under prevailing roadway, traffic, and control conditions.</p>
 <ul>
 <li>Capacity is not a fixed physical constant; it varies based on geometry, lane widths, lateral clearances, heavy vehicle percentages, and traffic control configurations.</li>
 <li>Capacity is typically expressed in passenger cars per hour ($pc/h$) or passenger cars per hour per lane ($pc/h/ln$).</li>
 </ul>
-<h3 id="demand-v-or-d">Demand ($V$ or $D$)</h3>
+<h3 id="demand--or-">Demand ($V$ or $D$)</h3>
 <p>Demand is the actual number of vehicles or users attempting to traverse the facility. On the exam, demand is usually given as an hourly volume (vehicles per hour, $veh/h$), which must be adjusted to represent the peak 15-minute flow rate before capacity or LOS analysis can begin.</p>
-<h3 id="volume-to-capacity-ratio-vc">Volume-to-Capacity Ratio ($v/c$)</h3>
+<h3 id="volume-to-capacity-ratio-">Volume-to-Capacity Ratio ($v/c$)</h3>
 <p>The $v/c$ ratio (also known as the degree of saturation) represents the proportion of a facility&rsquo;s capacity utilized by traffic demand:
-$$v/c = \frac{\text{Demand Flow Rate } (v)}{\text{Capacity } (c)}$$</p>
-<ul>
+</p>
+$$v/c = \frac{\text{Demand Flow Rate } (v)}{\text{Capacity } (c)}$$<ul>
 <li>A $v/c \le 1.0$ indicates that demand is less than or equal to capacity.</li>
-<li>A $v/c &gt; 1.0$ indicates that demand exceeds capacity, resulting in oversaturated conditions, queue formation, and system breakdown (LOS F).</li>
+<li>A $v/c > 1.0$ indicates that demand exceeds capacity, resulting in oversaturated conditions, queue formation, and system breakdown (LOS F).</li>
 </ul>
 <hr>
 <h2 id="uninterrupted-vs-interrupted-flow-facilities">Uninterrupted vs. Interrupted Flow Facilities</h2>
@@ -297,7 +311,7 @@ $$v/c = \frac{\text{Demand Flow Rate } (v)}{\text{Capacity } (c)}$$</p>
           <td><strong>Two-Lane Highways</strong></td>
           <td>PTSF, ATS, or $v/c$</td>
           <td>Percent Time-Spent-Following, Average Travel Speed</td>
-          <td>$%$, $mph$</td>
+          <td>$\%$, $mph$</td>
       </tr>
       <tr>
           <td><strong>Weaving Segments</strong></td>
@@ -333,17 +347,20 @@ $$v/c = \frac{\text{Demand Flow Rate } (v)}{\text{Capacity } (c)}$$</p>
           <td><strong>Urban Street Segments</strong></td>
           <td>Average Travel Speed ($S_D$)</td>
           <td>Travel time relative to free-flow speed</td>
-          <td>$mph$ (or $%$ of FFS)</td>
+          <td>$mph$ (or $\%$ of FFS)</td>
       </tr>
   </tbody>
 </table>
 <hr>
 <h2 id="the-fundamental-relationship-of-traffic-flow">The Fundamental Relationship of Traffic Flow</h2>
 <p>For uninterrupted flow, speed ($S$, in $mph$), density ($k$ or $D$, in $veh/mi$ or $pc/mi$), and flow rate ($v$, in $veh/h$ or $pc/h$) are linked by the fundamental identity:
-$$v = S \times k$$
+</p>
+$$v = S \times k$$<p>
 For a multi-lane facility, we analyze performance on a per-lane basis:
-$$v_p = \frac{v}{N}$$
-$$D = \frac{v_p}{S}$$
+</p>
+$$v_p = \frac{v}{N}$$<p>
+</p>
+$$D = \frac{v_p}{S}$$<p>
 Where:</p>
 <ul>
 <li>$v_p$ = equivalent peak passenger-car flow rate ($pc/h/ln$)</li>
@@ -361,14 +378,16 @@ Where:</p>
 <h2 id="peak-hour-factor-phf">Peak Hour Factor (PHF)</h2>
 <p>Traffic demand is rarely distributed evenly throughout an hour. To design for the peak periods within the hour, HCM utilizes the Peak Hour Factor (PHF) to convert an hourly volume into an equivalent peak 15-minute flow rate.</p>
 <p>The Peak Hour Factor is calculated as:
-$$\text{PHF} = \frac{V}{4 \times V_{15}}$$
+</p>
+$$\text{PHF} = \frac{V}{4 \times V_{15}}$$<p>
 Where:</p>
 <ul>
 <li>$V$ = total hourly volume ($veh/h$)</li>
 <li>$V_{15}$ = maximum volume counted during any single 15-minute interval within the peak hour ($veh$)</li>
 </ul>
 <p>The peak 15-minute equivalent flow rate ($v$) is:
-$$v = \frac{V}{\text{PHF}}$$
+</p>
+$$v = \frac{V}{\text{PHF}}$$<p>
 Where:</p>
 <ul>
 <li>$v$ = equivalent hourly flow rate for the peak 15-minute period ($veh/h$)</li>
@@ -410,19 +429,20 @@ A common algebra mistake is multiplying the hourly volume by the PHF instead of 
 <ol>
 <li>
 <p>Calculate the total hourly volume ($V$):
-$$V = 720 + 850 + 920 + 780 = 3,270 \text{ veh/h}$$</p>
-</li>
+</p>
+$$V = 720 + 850 + 920 + 780 = 3,270 \text{ veh/h}$$</li>
 <li>
 <p>Identify the peak 15-minute volume ($V_{15}$):
-$$V_{15} = 920 \text{ vehicles (occurs between 5:30 PM and 5:45 PM)}$$</p>
-</li>
+</p>
+$$V_{15} = 920 \text{ vehicles (occurs between 5:30 PM and 5:45 PM)}$$</li>
 <li>
 <p>Calculate the PHF:
-$$\text{PHF} = \frac{V}{4 \times V_{15}} = \frac{3,270}{4 \times 920} = \frac{3,270}{3,680} = 0.889$$</p>
-</li>
+</p>
+$$\text{PHF} = \frac{V}{4 \times V_{15}} = \frac{3,270}{4 \times 920} = \frac{3,270}{3,680} = 0.889$$</li>
 <li>
 <p>Calculate the peak flow rate ($v$):
-$$v = \frac{V}{\text{PHF}} = \frac{3,270}{0.889} = 3,680 \text{ veh/h}$$
+</p>
+$$v = \frac{V}{\text{PHF}} = \frac{3,270}{0.889} = 3,680 \text{ veh/h}$$<p>
 <em>(Note: This is exactly equivalent to $4 \times V_{15} = 4 \times 920 = 3,680 \text{ veh/h}$.)</em></p>
 </li>
 </ol>
@@ -438,16 +458,16 @@ $$v = \frac{V}{\text{PHF}} = \frac{3,270}{0.889} = 3,680 \text{ veh/h}$$
 <ol>
 <li>
 <p>Convert the directional peak flow rate ($v = 4,800 \text{ pc/h}$) to a per-lane flow rate ($v_p$):
-$$v_p = \frac{v}{N} = \frac{4,800}{3} = 1,600 \text{ pc/h/ln}$$</p>
-</li>
+</p>
+$$v_p = \frac{v}{N} = \frac{4,800}{3} = 1,600 \text{ pc/h/ln}$$</li>
 <li>
 <p>Calculate the $v/c$ ratio:
-$$v/c = \frac{v_p}{\text{Capacity per lane}} = \frac{1,600}{2,300} = 0.696$$</p>
-</li>
+</p>
+$$v/c = \frac{v_p}{\text{Capacity per lane}} = \frac{1,600}{2,300} = 0.696$$</li>
 <li>
 <p>Calculate the density ($D$):
-$$D = \frac{v_p}{S} = \frac{1,600 \text{ pc/h/ln}}{58 \text{ mph}} = 27.59 \text{ pc/mi/ln}$$</p>
-</li>
+</p>
+$$D = \frac{v_p}{S} = \frac{1,600 \text{ pc/h/ln}}{58 \text{ mph}} = 27.59 \text{ pc/mi/ln}$$</li>
 </ol>
 <hr>
 <h2 id="references-and-standards">References and Standards</h2>

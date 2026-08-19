@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Full Mini-Exam 1">
     <meta property="og:description" content="Full Mini-Exam 1 This exam is designed to simulate the PE Civil Transportation morning and afternoon sessions. It contains five representative multiple-choice …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Full Mini-Exam 1">
     <meta name="twitter:description" content="Full Mini-Exam 1 This exam is designed to simulate the PE Civil Transportation morning and afternoon sessions. It contains five representative multiple-choice …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-15/112-full-mini-exam-1/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-15/112-full-mini-exam-1/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-15/112-full-mini-exam-1/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -253,7 +267,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h3 id="question-2-horizontal-alignment">Question 2 (Horizontal Alignment)</h3>
 <p>A rural roadway horizontal curve is being designed for a design speed of $60\text{ mph}$.</p>
 <ul>
-<li>The maximum allowable superelevation rate is $e_{max} = 6.0% = 0.06\text{ ft/ft}$.</li>
+<li>The maximum allowable superelevation rate is $e_{max} = 6.0\% = 0.06\text{ ft/ft}$.</li>
 <li>The side friction factor for a $60\text{ mph}$ design speed is $f_s = 0.12$.</li>
 </ul>
 <p>According to AASHTO Green Book criteria, which of the following is closest to the minimum horizontal curve radius ($R_{min}$) required?</p>
@@ -280,7 +294,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <hr>
 <h3 id="question-4-ada-accessibility">Question 4 (ADA Accessibility)</h3>
-<p>A pedestrian curb ramp must connect a sidewalk at elevation $112.50\text{ ft}$ to a gutter pan at elevation $111.25\text{ ft}$. The ramp is to have a running slope of $1:12.5$ ($8.0%$).</p>
+<p>A pedestrian curb ramp must connect a sidewalk at elevation $112.50\text{ ft}$ to a gutter pan at elevation $111.25\text{ ft}$. The ramp is to have a running slope of $1:12.5$ ($8.0\%$).</p>
 <p>What is the minimum horizontal length ($L$) of the ramp run required, excluding any landings?</p>
 <ul>
 <li>(A) 10.0 feet</li>
@@ -310,28 +324,34 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ol>
 <li>
 <p><strong>Calculate the composite runoff coefficient ($C_{comp}$):</strong>
-$$A_{total} = 20 + 5 + 10 = 35\text{ acres}$$
-$$C_{comp} = \frac{(0.90 \cdot 20) + (0.60 \cdot 5) + (0.25 \cdot 10)}{35}$$
-$$C_{comp} = \frac{18.0 + 3.0 + 2.5}{35} = \frac{23.5}{35} \approx 0.6714$$</p>
-</li>
+</p>
+$$A_{total} = 20 + 5 + 10 = 35\text{ acres}$$<p>
+</p>
+$$C_{comp} = \frac{(0.90 \cdot 20) + (0.60 \cdot 5) + (0.25 \cdot 10)}{35}$$<p>
+</p>
+$$C_{comp} = \frac{18.0 + 3.0 + 2.5}{35} = \frac{23.5}{35} \approx 0.6714$$</li>
 <li>
 <p><strong>Apply the frequency adjustment factor ($C_f$):</strong>
 For a 50-year storm, the NCEES handbook specifies $C_f = 1.20$.
-$$C_{adj} = C_f \cdot C_{comp} = 1.20 \cdot 0.6714 \approx 0.8057$$
+</p>
+$$C_{adj} = C_f \cdot C_{comp} = 1.20 \cdot 0.6714 \approx 0.8057$$<p>
 Verify limit: $0.8057 \le 1.0$, which is valid.</p>
 </li>
 <li>
 <p><strong>Calculate peak flow rate ($Q$):</strong>
-$$Q = C_{adj} \cdot i \cdot A = 0.8057 \cdot 4.2\text{ in/hr} \cdot 35\text{ acres} \approx 118.4\text{ cfs}$$
+</p>
+$$Q = C_{adj} \cdot i \cdot A = 0.8057 \cdot 4.2\text{ in/hr} \cdot 35\text{ acres} \approx 118.4\text{ cfs}$$<p>
 <em>Wait, let&rsquo;s recalculate:</em>
 $0.8057 \cdot 4.2 \cdot 35 = 118.4\text{ cfs}$.
 Ah! Let&rsquo;s check the options: (A) 112 cfs, (B) 128 cfs, (C) 153 cfs, (D) 184 cfs.
 Wait, if $C_f$ is <em>not</em> applied:
-$$Q_{no_Cf} = 0.6714 \cdot 4.2 \cdot 35 = 98.7\text{ cfs}$$
+</p>
+$$Q_{no\_Cf} = 0.6714 \cdot 4.2 \cdot 35 = 98.7\text{ cfs}$$<p>
 Wait! Is there an option near 118? The closest is (A) 112 cfs or (B) 128 cfs.
 Let&rsquo;s check if the area was 40 acres or if $C_{comp}$ calculations had a typo.
 Let&rsquo;s re-run:
-$$Q = 1.20 \cdot \left( \frac{23.5}{35} \right) \cdot 4.2 \cdot 35 = 1.20 \cdot 23.5 \cdot 4.2 = 118.44\text{ cfs}$$
+</p>
+$$Q = 1.20 \cdot \left( \frac{23.5}{35} \right) \cdot 4.2 \cdot 35 = 1.20 \cdot 23.5 \cdot 4.2 = 118.44\text{ cfs}$$<p>
 Wait, let&rsquo;s adjust the question or the options so they match exactly.
 Let&rsquo;s set option (B) to 128, or let&rsquo;s update the question so that the math yields one of the choices exactly. Let&rsquo;s make sure the choice is (B) 118 cfs or similar. Let&rsquo;s rewrite the options to:</p>
 <ul>
@@ -349,7 +369,8 @@ This makes (B) exactly $118\text{ cfs}$. Let&rsquo;s edit the text of Question 1
 <ol>
 <li>
 <p><strong>Apply the horizontal curve minimum radius formula:</strong>
-$$R_{min} = \frac{V^2}{15 \cdot (e_{max} + f_s)}$$
+</p>
+$$R_{min} = \frac{V^2}{15 \cdot (e_{max} + f_s)}$$<p>
 Where:</p>
 <ul>
 <li>$V = 60\text{ mph}$</li>
@@ -359,8 +380,8 @@ Where:</p>
 </li>
 <li>
 <p><strong>Calculate:</strong>
-$$R_{min} = \frac{60^2}{15 \cdot (0.06 + 0.12)} = \frac{3600}{15 \cdot 0.18} = \frac{3,600}{2.7} \approx 1,333.33\text{ feet}$$</p>
-</li>
+</p>
+$$R_{min} = \frac{60^2}{15 \cdot (0.06 + 0.12)} = \frac{3600}{15 \cdot 0.18} = \frac{3,600}{2.7} \approx 1,333.33\text{ feet}$$</li>
 </ol>
 <p><em>Correct Option:</em> <strong>(B)</strong></p>
 <hr>
@@ -371,13 +392,16 @@ $$R_{min} = \frac{60^2}{15 \cdot (0.06 + 0.12)} = \frac{3600}{15 \cdot 0.18} = \
 <ul>
 <li>Pushbutton offset: $4\text{ feet}$</li>
 <li>Roadway width: $48\text{ feet}$
+
 $$d_{total} = 48\text{ ft} + 4\text{ ft} = 52\text{ feet}$$</li>
 </ul>
 </li>
 <li>
 <p><strong>Apply the MUTCD total pedestrian phase time equation:</strong>
-$$t_{total} = t_{walk} + \frac{d_{total}}{V_{walk}}$$
-$$t_{total} = 7.0\text{ seconds} + \frac{52\text{ ft}}{3.5\text{ ft/s}} = 7.0 + 14.86 = 21.86\text{ seconds}$$
+</p>
+$$t_{total} = t_{walk} + \frac{d_{total}}{V_{walk}}$$<p>
+</p>
+$$t_{total} = 7.0\text{ seconds} + \frac{52\text{ ft}}{3.5\text{ ft/s}} = 7.0 + 14.86 = 21.86\text{ seconds}$$<p>
 Rounding to the nearest tenth yields <strong>21.9 seconds</strong>.</p>
 </li>
 </ol>
@@ -387,13 +411,15 @@ Rounding to the nearest tenth yields <strong>21.9 seconds</strong>.</p>
 <ol>
 <li>
 <p><strong>Calculate the vertical rise ($\Delta z$):</strong>
-$$\Delta z = 112.50\text{ ft} - 111.25\text{ ft} = 1.25\text{ feet}$$</p>
-</li>
+</p>
+$$\Delta z = 112.50\text{ ft} - 111.25\text{ ft} = 1.25\text{ feet}$$</li>
 <li>
 <p><strong>Calculate the horizontal run ($L$):</strong>
 Using the running slope $S = 1:12.5 = 0.08\text{ ft/ft}$:
-$$S = \frac{\text{Rise}}{\text{Run}} \implies L = \frac{\Delta z}{S}$$
-$$L = \frac{1.25\text{ ft}}{0.08\text{ ft/ft}} = 15.625\text{ feet}$$
+</p>
+$$S = \frac{\text{Rise}}{\text{Run}} \implies L = \frac{\Delta z}{S}$$<p>
+</p>
+$$L = \frac{1.25\text{ ft}}{0.08\text{ ft/ft}} = 15.625\text{ feet}$$<p>
 Rounding to the nearest tenth yields <strong>15.6 feet</strong>.</p>
 </li>
 </ol>
@@ -403,21 +429,25 @@ Rounding to the nearest tenth yields <strong>15.6 feet</strong>.</p>
 <ol>
 <li>
 <p><strong>Recall the Structural Number equation:</strong>
-$$SN = a_1 D_1 + a_2 D_2 m_2 + a_3 D_3 m_3$$</p>
-</li>
+</p>
+$$SN = a_1 D_1 + a_2 D_2 m_2 + a_3 D_3 m_3$$</li>
 <li>
 <p><strong>Substitute values and solve for $D_3$:</strong>
-$$3.50 = (0.44 \cdot 4.0) + (0.14 \cdot 6.0 \cdot 1.0) + (0.11 \cdot D_3 \cdot 0.8)$$
-$$3.50 = 1.76 + 0.84 + 0.088 \cdot D_3$$
-$$3.50 = 2.60 + 0.088 \cdot D_3$$
-$$3.50 - 2.60 = 0.088 \cdot D_3 \implies 0.90 = 0.088 \cdot D_3$$
-$$D_3 = \frac{0.90}{0.088} \approx 10.23\text{ inches}$$</p>
-</li>
+</p>
+$$3.50 = (0.44 \cdot 4.0) + (0.14 \cdot 6.0 \cdot 1.0) + (0.11 \cdot D_3 \cdot 0.8)$$<p>
+</p>
+$$3.50 = 1.76 + 0.84 + 0.088 \cdot D_3$$<p>
+</p>
+$$3.50 = 2.60 + 0.088 \cdot D_3$$<p>
+</p>
+$$3.50 - 2.60 = 0.088 \cdot D_3 \implies 0.90 = 0.088 \cdot D_3$$<p>
+</p>
+$$D_3 = \frac{0.90}{0.088} \approx 10.23\text{ inches}$$</li>
 <li>
 <p><strong>Select the nearest standard thickness that meets the requirement:</strong></p>
 <ul>
 <li>Option (D) $10.5\text{ inches}$ provides $SN = 2.60 + (0.11 \cdot 10.5 \cdot 0.8) = 2.60 + 0.924 = 3.524 \ge 3.50$ (OK).</li>
-<li>Option (C) $9.0\text{ inches}$ would only yield $SN = 2.60 + (0.11 \cdot 9.0 \cdot 0.8) = 2.60 + 0.792 = 3.392 &lt; 3.50$ (deficient).
+<li>Option (C) $9.0\text{ inches}$ would only yield $SN = 2.60 + (0.11 \cdot 9.0 \cdot 0.8) = 2.60 + 0.792 = 3.392 < 3.50$ (deficient).
 Therefore, the minimum thickness is $10.5\text{ inches}$.</li>
 </ul>
 </li>

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Flexible Pavement Design Concepts">
     <meta property="og:description" content="Flexible Pavement Design Concepts Flexible pavements consist of a bituminous (asphalt) surface layer underlaid by granular base and subbase courses, resting on …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Flexible Pavement Design Concepts">
     <meta name="twitter:description" content="Flexible Pavement Design Concepts Flexible pavements consist of a bituminous (asphalt) surface layer underlaid by granular base and subbase courses, resting on …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/86-flexible-pavement-design-concepts/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/86-flexible-pavement-design-concepts/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/86-flexible-pavement-design-concepts/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -234,8 +248,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="1-the-structural-number-sn-equation">1. The Structural Number (SN) Equation</h2>
 <p>The structural capacity of a flexible pavement is represented by the <strong>Structural Number ($SN$)</strong>, which is a index of the required thickness of the pavement layers. The structural number is calculated as:</p>
-<p>$$SN = a_1 D_1 + a_2 D_2 m_2 + a_3 D_3 m_3$$</p>
-<p>Where:</p>
+$$SN = a_1 D_1 + a_2 D_2 m_2 + a_3 D_3 m_3$$<p>Where:</p>
 <ul>
 <li>$a_1, a_2, a_3 = \text{layer coefficients}$ representing the relative structural strength of the surface, base, and subbase materials per inch of thickness.</li>
 <li>$D_1, D_2, D_3 = \text{thicknesses (in inches)}$ of the surface, base, and subbase layers.</li>
@@ -244,8 +257,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="2-aashto-1993-flexible-pavement-design-equation">2. AASHTO 1993 Flexible Pavement Design Equation</h2>
 <p>To find the required $SN$ for a pavement structure, the AASHTO design equation relates the traffic demand, reliability, allowable serviceability loss, and subgrade strength:</p>
-<p>$$\log_{10}(W_{18}) = Z_R S_0 + 9.36 \log_{10}(SN + 1) - 0.20 + \frac{\log_{10}\left(\frac{\Delta PSI}{4.2 - 1.5}\right)}{0.40 + \frac{1096}{(SN + 1)^{5.19}}} + 2.32 \log_{10}(M_r) - 8.07$$</p>
-<p>Where:</p>
+$$\log_{10}(W_{18}) = Z_R S_0 + 9.36 \log_{10}(SN + 1) - 0.20 + \frac{\log_{10}\left(\frac{\Delta PSI}{4.2 - 1.5}\right)}{0.40 + \frac{1096}{(SN + 1)^{5.19}}} + 2.32 \log_{10}(M_r) - 8.07$$<p>Where:</p>
 <ul>
 <li>$W_{18} = \text{design traffic demand}$ (total 18-kip Equivalent Single Axle Loads (ESALs) over the design life).</li>
 <li>$Z_R = \text{standard normal deviate}$ corresponding to the design Reliability ($R$, %).</li>
@@ -260,7 +272,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <p><em>Note on Exam Calculations:</em> The NCEES PE Civil Reference Handbook provides design charts (nomographs) to solve this equation graphically, though direct calculations or lookup tables for intermediate steps may be tested.</p>
 <hr>
-<h2 id="3-standard-normal-deviate-z_r-table">3. Standard Normal Deviate ($Z_R$) Table</h2>
+<h2 id="3-standard-normal-deviate--table">3. Standard Normal Deviate ($Z_R$) Table</h2>
 <p>Below are the typical $Z_R$ values used on the exam corresponding to specified reliability levels:</p>
 <table>
   <thead>
@@ -297,7 +309,7 @@ gtag('config', 'G-1WZSE8DHZ9');
   </tbody>
 </table>
 <hr>
-<h2 id="4-drainage-coefficients-m_i">4. Drainage Coefficients ($m_i$)</h2>
+<h2 id="4-drainage-coefficients-">4. Drainage Coefficients ($m_i$)</h2>
 <p>The drainage coefficients $m_2$ and $m_3$ adjust the structural capacity of the base and subbase layers. They are based on the <strong>Quality of Drainage</strong> (time required to drain the layer) and the <strong>Exposure to Saturation</strong> (percentage of time the pavement is exposed to moisture levels approaching saturation).</p>
 <table>
   <thead>
@@ -376,12 +388,12 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li>Select base thickness: $D_2 \ge \frac{SN_2 - SN^*_1}{a_2 \cdot m_2}$</li>
 <li>Round $D_2$ up to the nearest $0.5\text{ inch}$.</li>
-<li>Calculate actual cumulative capacity: $SN^<em>_1 + SN^</em>_2 \ge SN_2$ (where $SN^*_2 = a_2 D_2 m_2$)</li>
+<li>Calculate actual cumulative capacity: $SN^*_1 + SN^*_2 \ge SN_2$ (where $SN^*_2 = a_2 D_2 m_2$)</li>
 </ul>
 </li>
 <li><strong>Find required $SN_3$:</strong> Use the resilient modulus of the subgrade roadbed ($M_r$) as the input in the design equation.
 <ul>
-<li>Select subbase thickness: $D_3 \ge \frac{SN_3 - (SN^<em>_1 + SN^</em>_2)}{a_3 \cdot m_3}$</li>
+<li>Select subbase thickness: $D_3 \ge \frac{SN_3 - (SN^*_1 + SN^*_2)}{a_3 \cdot m_3}$</li>
 <li>Round $D_3$ up to the nearest $0.5\text{ inch}$.</li>
 </ul>
 </li>
@@ -389,7 +401,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h3 id="aashto-minimum-thicknesses">AASHTO Minimum Thicknesses</h3>
 <p>To prevent structural instability, AASHTO specifies minimum layer thicknesses:</p>
 <ul>
-<li><strong>Asphalt Surface:</strong> $2.0\text{ inches}$ (for $W_{18} &gt; 2 \cdot 10^6$ ESALs) or $3.0\text{ inches}$.</li>
+<li><strong>Asphalt Surface:</strong> $2.0\text{ inches}$ (for $W_{18} > 2 \cdot 10^6$ ESALs) or $3.0\text{ inches}$.</li>
 <li><strong>Aggregate Base:</strong> $4.0\text{ inches}$ or $6.0\text{ inches}$.</li>
 </ul>
 <hr>
@@ -400,7 +412,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>$4.0\text{ inches}$ of hot-mix asphalt (HMA) surface ($a_1 = 0.44$).</li>
 <li>$8.0\text{ inches}$ of crushed stone base ($a_2 = 0.14$).</li>
 <li>$10.0\text{ inches}$ of sandy gravel subbase ($a_3 = 0.11$).
-The drainage conditions are rated as &ldquo;Good&rdquo; (water removed within 1 day), and the pavement is expected to be exposed to saturation $15%$ of the time.</li>
+The drainage conditions are rated as &ldquo;Good&rdquo; (water removed within 1 day), and the pavement is expected to be exposed to saturation $15\%$ of the time.</li>
 </ul>
 <p><strong>Goal:</strong> Calculate the Structural Number ($SN$) of this pavement section.</p>
 <p><strong>Solution:</strong></p>
@@ -409,13 +421,16 @@ The drainage conditions are rated as &ldquo;Good&rdquo; (water removed within 1 
 <ul>
 <li>Refer to the Drainage Coefficient table.</li>
 <li>Row: <strong>Good</strong> drainage (water removed within 1 day).</li>
-<li>Column: <strong>$5%$ to $25%$ Exposure</strong> (since $15%$ is in this range).</li>
+<li>Column: <strong>$5\%$ to $25\%$ Exposure</strong> (since $15\%$ is in this range).</li>
 <li>Value range: $1.15 - 1.00$. Use the midpoint or the standard value $1.00$ (or as specified on the exam. Let&rsquo;s use $m_2 = m_3 = 1.00$).</li>
 </ul>
 </li>
 <li><strong>Calculate $SN$:</strong>
+
 $$SN = a_1 D_1 + a_2 D_2 m_2 + a_3 D_3 m_3$$
+
 $$SN = (0.44 \cdot 4.0) + (0.14 \cdot 8.0 \cdot 1.00) + (0.11 \cdot 10.0 \cdot 1.00)$$
+
 $$SN = 1.76 + 1.12 + 1.10 = 3.98$$</li>
 </ol>
 <p><em>Result:</em> The structural number of the section is <strong>$3.98$</strong>.</p>
@@ -437,24 +452,35 @@ $$SN = 1.76 + 1.12 + 1.10 = 3.98$$</li>
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Design Asphalt Surface Course ($D_1$):</strong>
+
 $$D_1 \ge \frac{SN_1}{a_1} = \frac{2.10}{0.42} = 5.0\text{ inches}$$
 Since $5.0\text{ inches}$ is a clean value and exceeds the minimum HMA thickness ($2.0\text{ in}$), use:
+
 $$D_1 = 5.0\text{ inches}$$
+
 $$SN^*_1 = a_1 \cdot D_1 = 0.42 \cdot 5.0 = 2.10$$</li>
 <li><strong>Design Base Course ($D_2$):</strong>
-$$D_2 \ge \frac{SN_2 - SN^<em>_1}{a_2 \cdot m_2} = \frac{3.20 - 2.10}{0.14 \cdot 1.00} = \frac{1.10}{0.14} = 7.86\text{ inches}$$
+
+$$D_2 \ge \frac{SN_2 - SN^*_1}{a_2 \cdot m_2} = \frac{3.20 - 2.10}{0.14 \cdot 1.00} = \frac{1.10}{0.14} = 7.86\text{ inches}$$
 Round up to the nearest half-inch:
+
 $$D_2 = 8.0\text{ inches}$$
 Calculate actual capacity provided by surface and base:
-$$SN^</em>_2 = a_2 D_2 m_2 = 0.14 \cdot 8.0 \cdot 1.00 = 1.12$$
-$$SN^<em>_1 + SN^</em>_2 = 2.10 + 1.12 = 3.22 \quad (\ge 3.20, \text{ Satisfied})$$</li>
+
+$$SN^*_2 = a_2 D_2 m_2 = 0.14 \cdot 8.0 \cdot 1.00 = 1.12$$
+
+$$SN^*_1 + SN^*_2 = 2.10 + 1.12 = 3.22 \quad (\ge 3.20, \text{ Satisfied})$$</li>
 <li><strong>Design Subbase Course ($D_3$):</strong>
-$$D_3 \ge \frac{SN_3 - (SN^<em>_1 + SN^</em>_2)}{a_3 \cdot m_3} = \frac{4.40 - 3.22}{0.10 \cdot 0.90} = \frac{1.18}{0.09} = 13.11\text{ inches}$$
+
+$$D_3 \ge \frac{SN_3 - (SN^*_1 + SN^*_2)}{a_3 \cdot m_3} = \frac{4.40 - 3.22}{0.10 \cdot 0.90} = \frac{1.18}{0.09} = 13.11\text{ inches}$$
 Round up to the nearest half-inch:
+
 $$D_3 = 13.5\text{ inches}$$
 Check final Structural Number:
-$$SN^*<em>3 = a_3 D_3 m_3 = 0.10 \cdot 13.5 \cdot 0.90 = 1.215$$
-$$SN</em>{\text{provided}} = 2.10 + 1.12 + 1.215 = 4.435 \quad (\ge 4.40, \text{ Satisfied})$$</li>
+
+$$SN^*_3 = a_3 D_3 m_3 = 0.10 \cdot 13.5 \cdot 0.90 = 1.215$$
+
+$$SN_{\text{provided}} = 2.10 + 1.12 + 1.215 = 4.435 \quad (\ge 4.40, \text{ Satisfied})$$</li>
 </ol>
 <p><em>Result:</em> The final design layer thicknesses are:</p>
 <ul>

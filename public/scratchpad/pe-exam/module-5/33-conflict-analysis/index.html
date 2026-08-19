@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Conflict Analysis">
     <meta property="og:description" content="Conflict Analysis Conflict analysis is a proactive traffic safety methodology that evaluates &ldquo;near-miss&rdquo; events instead of waiting for historical …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Conflict Analysis">
     <meta name="twitter:description" content="Conflict Analysis Conflict analysis is a proactive traffic safety methodology that evaluates &ldquo;near-miss&rdquo; events instead of waiting for historical …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-5/33-conflict-analysis/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-5/33-conflict-analysis/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-5/33-conflict-analysis/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -237,9 +251,11 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>Since crashes are rare, random events, safety engineers use surrogate safety measures to quantify the level of risk on a roadway:</p>
 <ul>
 <li><strong>Time-to-Collision (TTC)</strong>: The time remaining before a collision would occur if the two vehicles continued on their present trajectories and speeds:
+
 $$\text{TTC} = \frac{d}{\Delta v}$$
 <em>where $d$ is the distance between vehicles and $\Delta v$ is the relative speed. A lower TTC indicates a more severe conflict.</em></li>
 <li><strong>Post-Encroachment Time (PET)</strong>: The time interval between the departure of an encroaching vehicle from a common conflict area and the arrival of a second vehicle with priority at that same area:
+
 $$\text{PET} = t_{\text{arrival}} - t_{\text{departure}}$$
 <em>PET is easier to measure in the field than TTC because it does not require continuous tracking of vehicle speeds.</em></li>
 <li><strong>Deceleration Rate to Avoid Crash (DRAC)</strong>: The deceleration rate required by a vehicle to come to a stop or slow down sufficiently to avoid colliding with an encroaching vehicle.</li>
@@ -337,8 +353,10 @@ The standard &ldquo;32 conflict points&rdquo; rule only applies to a single-lane
 <h4 id="step-3-compare-results">Step 3: Compare Results</h4>
 <ul>
 <li><strong>Total Conflict Reduction</strong>:
+
 $$\Delta \text{Total} = 32 - 9 = 23 \text{ conflict points (71.9% reduction)}$$</li>
 <li><strong>Crossing Conflict Reduction</strong>:
+
 $$\Delta \text{Crossing} = 16 - 3 = 13 \text{ crossing points (81.3% reduction)}$$</li>
 </ul>
 <p><strong>Conclusion:</strong> Converting the intersection to a 3-leg T-intersection reduces the total conflict points from $32$ to $9$, and reduces high-severity crossing conflicts from $16$ to $3$.</p>

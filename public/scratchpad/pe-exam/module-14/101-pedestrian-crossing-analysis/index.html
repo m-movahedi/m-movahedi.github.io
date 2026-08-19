@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pedestrian Crossing Analysis">
     <meta property="og:description" content="Pedestrian Crossing Analysis Pedestrian crossing analysis evaluates the geometric design, signal timing, and safety treatments required for pedestrians to cross …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Pedestrian Crossing Analysis">
     <meta name="twitter:description" content="Pedestrian Crossing Analysis Pedestrian crossing analysis evaluates the geometric design, signal timing, and safety treatments required for pedestrians to cross …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-14/101-pedestrian-crossing-analysis/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-14/101-pedestrian-crossing-analysis/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-14/101-pedestrian-crossing-analysis/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -234,26 +248,24 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="pedestrian-walking-speed-and-signal-timing">Pedestrian Walking Speed and Signal Timing</h2>
 <p>Signal timing at intersections must provide adequate time for pedestrians to cross the street before conflicting vehicular movements receive a green indication.</p>
-<h3 id="1-pedestrian-walking-speed-v_walk">1. Pedestrian Walking Speed ($V_{walk}$)</h3>
+<h3 id="1-pedestrian-walking-speed-">1. Pedestrian Walking Speed ($V_{walk}$)</h3>
 <ul>
 <li><strong>Standard Design Walking Speed (MUTCD Section 4E.06):</strong> <strong>3.5 ft/s</strong> is the default speed used to calculate crossing times.</li>
 <li><strong>Reduced Walking Speed:</strong> <strong>3.0 ft/s</strong> should be used at locations where older pedestrians, school children, or individuals with mobility impairments cross frequently, or where the ramp slopes are steep.</li>
 </ul>
-<h3 id="2-pedestrian-clearance-time-pct">2. Pedestrian Clearance Time ($PCT$)</h3>
+<h3 id="2-pedestrian-clearance-time-">2. Pedestrian Clearance Time ($PCT$)</h3>
 <p>The pedestrian clearance time represents the duration of the flashing upraised hand (DONT WALK) interval. It allows a pedestrian who entered the crosswalk at the end of the WALK interval to reach the far side of the road or a pedestrian refuge island.</p>
-<p>$$PCT = \frac{d}{V_{walk}}$$</p>
-<p>Where:</p>
+$$PCT = \frac{d}{V_{walk}}$$<p>Where:</p>
 <ul>
 <li>$PCT$ = Pedestrian clearance time (<strong>seconds</strong>)</li>
 <li>$d$ = Crossing distance (<strong>feet</strong>), measured from the curb or edge of pavement to the far side of the farthest travel lane.</li>
 <li>$V_{walk}$ = Pedestrian walking speed (<strong>ft/s</strong>; typically $3.5\text{ ft/s}$).</li>
 </ul>
-<h3 id="3-total-pedestrian-walking-time-t_total">3. Total Pedestrian Walking Time ($t_{total}$)</h3>
+<h3 id="3-total-pedestrian-walking-time-">3. Total Pedestrian Walking Time ($t_{total}$)</h3>
 <p>The MUTCD also requires that the total pedestrian phase (WALK interval plus flashing clearance interval) be sufficient for a pedestrian to walk from the pedestrian detector (pushbutton) or a point 2 feet behind the curb face to the far side of the road:</p>
-<p>$$t_{total} = t_{walk_min} + \frac{d}{V_{walk}} \ge 7.0\text{ s} + \frac{d}{3.5\text{ ft/s}}$$</p>
-<p>Where:</p>
+$$t_{total} = t_{walk\_min} + \frac{d}{V_{walk}} \ge 7.0\text{ s} + \frac{d}{3.5\text{ ft/s}}$$<p>Where:</p>
 <ul>
-<li>$t_{walk_min}$ = Minimum walk interval (typically <strong>7.0 seconds</strong> under MUTCD, though it can be reduced to 4.0 seconds in high-density areas with low volumes).</li>
+<li>$t_{walk\_min}$ = Minimum walk interval (typically <strong>7.0 seconds</strong> under MUTCD, though it can be reduced to 4.0 seconds in high-density areas with low volumes).</li>
 </ul>
 <hr>
 <h2 id="pedestrian-refuge-islands">Pedestrian Refuge Islands</h2>
@@ -287,19 +299,22 @@ gtag('config', 'G-1WZSE8DHZ9');
 <strong>2. Calculate the total required pedestrian phase length ($t_{total}$) from the pushbutton to the far curb.</strong>
 <strong>3. If a $6\text{-foot}$ wide pedestrian refuge island is installed in the median, splitting the crossing into two equal stages, calculate the revised required $PCT$ for each stage.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="part-1-required-pedestrian-clearance-time-pct">Part 1: Required Pedestrian Clearance Time ($PCT$)</h4>
+<h4 id="part-1-required-pedestrian-clearance-time-">Part 1: Required Pedestrian Clearance Time ($PCT$)</h4>
 <p>Using $d = 72\text{ feet}$ and $V_{walk} = 3.5\text{ ft/s}$:
-$$PCT = \frac{d}{V_{walk}} = \frac{72\text{ ft}}{3.5\text{ ft/s}} \approx 20.6\text{ seconds}$$
+</p>
+$$PCT = \frac{d}{V_{walk}} = \frac{72\text{ ft}}{3.5\text{ ft/s}} \approx 20.6\text{ seconds}$$<p>
 Round up to the nearest whole second: <strong>21.0 seconds</strong>.</p>
-<h4 id="part-2-total-required-pedestrian-phase-length-t_total">Part 2: Total required pedestrian phase length ($t_{total}$)</h4>
+<h4 id="part-2-total-required-pedestrian-phase-length-">Part 2: Total required pedestrian phase length ($t_{total}$)</h4>
 <p>The distance from the pushbutton to the far curb is $72\text{ ft} + 5\text{ ft} = 77\text{ feet}$.
 Using the MUTCD check:
-$$t_{total} = t_{walk} + \frac{d_{total}}{V_{walk}} = 7.0\text{ seconds} + \frac{77\text{ ft}}{3.5\text{ ft/s}} = 7.0 + 22.0 = 29.0\text{ seconds}$$</p>
-<h4 id="part-3-sizing-with-a-refuge-island">Part 3: Sizing with a refuge island</h4>
+</p>
+$$t_{total} = t_{walk} + \frac{d_{total}}{V_{walk}} = 7.0\text{ seconds} + \frac{77\text{ ft}}{3.5\text{ ft/s}} = 7.0 + 22.0 = 29.0\text{ seconds}$$<h4 id="part-3-sizing-with-a-refuge-island">Part 3: Sizing with a refuge island</h4>
 <p>With a $6\text{-foot}$ refuge island, the total width of the lanes is $72 - 6 = 66\text{ feet}$. Each stage crossing distance is:
-$$d_{stage} = \frac{66\text{ ft}}{2} = 33\text{ feet}$$
+</p>
+$$d_{stage} = \frac{66\text{ ft}}{2} = 33\text{ feet}$$<p>
 Calculate the revised $PCT_{stage}$:
-$$PCT_{stage} = \frac{d_{stage}}{V_{walk}} = \frac{33\text{ ft}}{3.5\text{ ft/s}} \approx 9.4\text{ seconds}$$
+</p>
+$$PCT_{stage} = \frac{d_{stage}}{V_{walk}} = \frac{33\text{ ft}}{3.5\text{ ft/s}} \approx 9.4\text{ seconds}$$<p>
 Round up to the nearest tenth or whole second: <strong>9.5 seconds</strong> (or <strong>10.0 seconds</strong>).
 <em>Benefit:</em> Setting the crossing to a two-stage signal reduces the required clearance interval per cycle, which improves vehicular capacity at the intersection.</p>
 <hr>

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Construction Productivity">
     <meta property="og:description" content="Construction Productivity Construction productivity calculations on the PE Civil Transportation exam focus on determining crew sizes, estimating cycle times, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Construction Productivity">
     <meta name="twitter:description" content="Construction Productivity Construction productivity calculations on the PE Civil Transportation exam focus on determining crew sizes, estimating cycle times, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-2/08-construction-productivity/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/08-construction-productivity/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-2/08-construction-productivity/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -241,16 +255,17 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>Crew-Hour:</strong> The work performed by a standard crew in one hour.</li>
 </ul>
 <h3 id="formulas">Formulas:</h3>
-<p>$$\text{Total Labor-Hours} = \text{Crew Size} \times \text{Duration (hours)}$$
-$$\text{Labor-Hours per Unit} = \frac{\text{Total Labor-Hours}}{\text{Total Quantity}}$$
-$$\text{Production Rate (Units/Hour)} = \frac{\text{Crew Size}}{\text{Labor-Hours per Unit}}$$</p>
-<hr>
+$$\text{Total Labor-Hours} = \text{Crew Size} \times \text{Duration (hours)}$$<p>
+</p>
+$$\text{Labor-Hours per Unit} = \frac{\text{Total Labor-Hours}}{\text{Total Quantity}}$$<p>
+</p>
+$$\text{Production Rate (Units/Hour)} = \frac{\text{Crew Size}}{\text{Labor-Hours per Unit}}$$<hr>
 <h2 id="equipment-productivity-hauling-and-excavation">Equipment Productivity: Hauling and Excavation</h2>
 <p>Optimizing earthmoving operations requires matching the production rates of excavation equipment (excavators, loaders) with hauling equipment (dump trucks).</p>
-<h3 id="1-cycle-time-t_c">1. Cycle Time ($t_c$)</h3>
+<h3 id="1-cycle-time-">1. Cycle Time ($t_c$)</h3>
 <p>Cycle time is the time required for a piece of equipment to complete one full cycle of work. For a haul truck:
-$$t_c = t_{\text{load}} + t_{\text{haul}} + t_{\text{dump}} + t_{\text{return}} + t_{\text{spot}}$$</p>
-<p>Where:</p>
+</p>
+$$t_c = t_{\text{load}} + t_{\text{haul}} + t_{\text{dump}} + t_{\text{return}} + t_{\text{spot}}$$<p>Where:</p>
 <ul>
 <li>$t_{\text{load}}$ = Loader cycle time $\times$ number of loader passes to fill the truck</li>
 <li>$t_{\text{haul}}$ = distance $\div$ loaded haul speed</li>
@@ -263,25 +278,28 @@ $$t_c = t_{\text{load}} + t_{\text{haul}} + t_{\text{dump}} + t_{\text{return}} 
 <ul>
 <li>
 <p><strong>Loader Production Rate ($P_{\text{loader}}$):</strong>
-$$P_{\text{loader}} = \frac{3600 \text{ sec/hr}}{t_{\text{loader (sec)}}} \times \text{Bucket Capacity} \times \text{Bucket Fill Factor} \times \text{Efficiency}$$</p>
-</li>
+</p>
+$$P_{\text{loader}} = \frac{3600 \text{ sec/hr}}{t_{\text{loader (sec)}}} \times \text{Bucket Capacity} \times \text{Bucket Fill Factor} \times \text{Efficiency}$$</li>
 <li>
 <p><strong>Truck Production Rate ($P_{\text{truck}}$):</strong>
-$$P_{\text{truck}} = \frac{60 \text{ min/hr}}{t_c \text{ (min)}} \times \text{Truck Capacity} \times \text{Efficiency}$$</p>
-</li>
+</p>
+$$P_{\text{truck}} = \frac{60 \text{ min/hr}}{t_c \text{ (min)}} \times \text{Truck Capacity} \times \text{Efficiency}$$</li>
 <li>
 <p><strong>Number of Trucks for Balance ($N$):</strong>
-$$N = \frac{\text{Truck Cycle Time (min)}}{\text{Loader Time to Fill One Truck (min)}}$$</p>
-<p>Where:
-$$\text{Loader Time to Fill One Truck} = \text{Loader Cycle Time (min)} \times \text{Number of Passes}$$
-$$\text{Number of Passes} = \frac{\text{Truck Capacity}}{\text{Loader Bucket Capacity}} \text{ (rounded up to nearest integer)}$$</p>
-</li>
+</p>
+$$N = \frac{\text{Truck Cycle Time (min)}}{\text{Loader Time to Fill One Truck (min)}}$$<p>Where:
+</p>
+$$\text{Loader Time to Fill One Truck} = \text{Loader Cycle Time (min)} \times \text{Number of Passes}$$<p>
+</p>
+$$\text{Number of Passes} = \frac{\text{Truck Capacity}}{\text{Loader Bucket Capacity}} \text{ (rounded up to nearest integer)}$$</li>
 </ul>
 <h4 id="balancing-scenarios">Balancing Scenarios:</h4>
 <ul>
-<li>If $N_{\text{actual}} &lt; N_{\text{balance}}$: The system is <strong>truck-limited</strong> (excavator sits idle). Overall production is governed by the trucks:
+<li>If $N_{\text{actual}} < N_{\text{balance}}$: The system is <strong>truck-limited</strong> (excavator sits idle). Overall production is governed by the trucks:
+
 $$\text{System Production} = N_{\text{actual}} \times P_{\text{truck}}$$</li>
-<li>If $N_{\text{actual}} &gt; N_{\text{balance}}$: The system is <strong>loader-limited</strong> (trucks wait in queue). Overall production is governed by the loader:
+<li>If $N_{\text{actual}} > N_{\text{balance}}$: The system is <strong>loader-limited</strong> (trucks wait in queue). Overall production is governed by the loader:
+
 $$\text{System Production} = P_{\text{loader}}$$</li>
 </ul>
 <hr>
@@ -290,13 +308,13 @@ $$\text{System Production} = P_{\text{loader}}$$</li>
 An excavator with a $3.0 \text{ BCY}$ bucket is loading a fleet of $15 \text{ BCY}$ dump trucks.</p>
 <ul>
 <li>Excavator cycle time: $36 \text{ seconds}$</li>
-<li>Excavator bucket fill factor: $90%$</li>
+<li>Excavator bucket fill factor: $90\%$</li>
 <li>Truck travel distance: $5.0 \text{ miles}$ (one-way)</li>
 <li>Average loaded truck speed: $30 \text{ mph}$</li>
 <li>Average empty truck speed: $45 \text{ mph}$</li>
 <li>Truck dump and maneuver time: $2.0 \text{ minutes}$</li>
 <li>Truck spotting time at excavator: $1.0 \text{ minute}$</li>
-<li>Operational efficiency: $50 \text{ min/hour}$ (or $83.3%$)</li>
+<li>Operational efficiency: $50 \text{ min/hour}$ (or $83.3\%$)</li>
 </ul>
 <p>Calculate:</p>
 <ol>
@@ -307,33 +325,37 @@ An excavator with a $3.0 \text{ BCY}$ bucket is loading a fleet of $15 \text{ BC
 </ol>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Excavator Passes per Truck</strong>
-$$\text{Passes} = \frac{\text{Truck Capacity}}{\text{Excavator Bucket Capacity} \times \text{Fill Factor}}$$
-$$\text{Passes} = \frac{15 \text{ BCY}}{3.0 \text{ BCY} \times 0.90} = 5.56 \text{ passes}$$
+</p>
+$$\text{Passes} = \frac{\text{Truck Capacity}}{\text{Excavator Bucket Capacity} \times \text{Fill Factor}}$$<p>
+</p>
+$$\text{Passes} = \frac{15 \text{ BCY}}{3.0 \text{ BCY} \times 0.90} = 5.56 \text{ passes}$$<p>
 Since the excavator bucket operates in whole passes:
-$$\text{Passes Required} = 6 \text{ passes (representing a nominal load of } 6 \times 2.7\text{ BCY} = 16.2\text{ BCY, capped by truck size of } 15\text{ BCY)}$$
+</p>
+$$\text{Passes Required} = 6 \text{ passes (representing a nominal load of } 6 \times 2.7\text{ BCY} = 16.2\text{ BCY, capped by truck size of } 15\text{ BCY)}$$<p>
 We assume the excavator delivers exactly $15\text{ BCY}$ in $6$ passes.</p>
 <p><strong>Step 2: Calculate Loader Time to Fill One Truck</strong>
-$$\text{Time to Fill} = 6 \text{ passes} \times 36 \text{ sec/pass} = 216 \text{ seconds} = 3.6 \text{ minutes}$$</p>
-<p><strong>Step 3: Calculate Truck Cycle Time</strong></p>
+</p>
+$$\text{Time to Fill} = 6 \text{ passes} \times 36 \text{ sec/pass} = 216 \text{ seconds} = 3.6 \text{ minutes}$$<p><strong>Step 3: Calculate Truck Cycle Time</strong></p>
 <ul>
 <li>$\text{Haul Time} = \frac{5.0 \text{ miles}}{30 \text{ miles/hour}} \times 60 \text{ min/hour} = 10.0 \text{ minutes}$</li>
 <li>$\text{Return Time} = \frac{5.0 \text{ miles}}{45 \text{ miles/hour}} \times 60 \text{ min/hour} = 6.67 \text{ minutes}$</li>
 <li>$\text{Total Cycle Time} (t_c) = t_{\text{load}} + t_{\text{haul}} + t_{\text{dump}} + t_{\text{return}} + t_{\text{spot}}$
+
 $$t_c = 3.6 + 10.0 + 2.0 + 6.67 + 1.0 = 23.27 \text{ minutes}$$</li>
 </ul>
 <p><strong>Step 4: Calculate the Balanced Number of Trucks ($N$)</strong>
-$$N = \frac{t_c}{\text{Time to Fill}} = \frac{23.27 \text{ min}}{3.6 \text{ min}} \approx 6.46 \text{ trucks}$$</p>
-<p><strong>Step 5: Determine Production for 6 Active Trucks</strong>
+</p>
+$$N = \frac{t_c}{\text{Time to Fill}} = \frac{23.27 \text{ min}}{3.6 \text{ min}} \approx 6.46 \text{ trucks}$$<p><strong>Step 5: Determine Production for 6 Active Trucks</strong>
 Since the active fleet has $6$ trucks, which is less than the balanced number ($6.46$), the fleet is <strong>truck-limited</strong>. Production is governed by the trucks:
-$$\text{Single Truck Production} = \frac{50 \text{ min/hr (efficiency)}}{23.27 \text{ min/cycle}} \times 15 \text{ BCY/cycle} \approx 32.23 \text{ BCY/hour}$$
-$$\text{Total Fleet Production} = 6 \text{ trucks} \times 32.23 \text{ BCY/hour} = 193.4 \text{ BCY/hour}$$</p>
-<hr>
+</p>
+$$\text{Single Truck Production} = \frac{50 \text{ min/hr (efficiency)}}{23.27 \text{ min/cycle}} \times 15 \text{ BCY/cycle} \approx 32.23 \text{ BCY/hour}$$<p>
+</p>
+$$\text{Total Fleet Production} = 6 \text{ trucks} \times 32.23 \text{ BCY/hour} = 193.4 \text{ BCY/hour}$$<hr>
 <h2 id="equipment-productivity-compaction-and-paving">Equipment Productivity: Compaction and Paving</h2>
 <p>Compactors (rollers) and asphalt pavers have productivity formulas based on linear speed, width, and lift thickness.</p>
 <h3 id="compactor-production-rate-formula">Compactor Production Rate Formula</h3>
 <p>The production of a roller is calculated as:</p>
-<p>$$P = \frac{S \times W \times L \times E}{N \times 27}$$</p>
-<p>Where:</p>
+$$P = \frac{S \times W \times L \times E}{N \times 27}$$<p>Where:</p>
 <ul>
 <li>$P$ = production rate ($\text{CCY/hour}$)</li>
 <li>$S$ = roller speed ($\text{ft/hour}$). <em>Note: $1 \text{ mph} = 5,280 \text{ ft/hour}$</em></li>
@@ -344,8 +366,8 @@ $$\text{Total Fleet Production} = 6 \text{ trucks} \times 32.23 \text{ BCY/hour}
 <li>$27$ = conversion factor from cubic feet to cubic yards ($\text{ft}^3/\text{yd}^3$)</li>
 </ul>
 <p>Combining unit conversions, the formula can be expressed as:
-$$P\text{ (CCY/hr)} = \frac{S\text{ (mph)} \times 5280 \times W\text{ (ft)} \times \left(\frac{t\text{ (in)}}{12}\right) \times E}{N \times 27} = \frac{16.3 \times S \times W \times t \times E}{N}$$</p>
-<hr>
+</p>
+$$P\text{ (CCY/hr)} = \frac{S\text{ (mph)} \times 5280 \times W\text{ (ft)} \times \left(\frac{t\text{ (in)}}{12}\right) \times E}{N \times 27} = \frac{16.3 \times S \times W \times t \times E}{N}$$<hr>
 <h2 id="worked-example-compactor-production">Worked Example: Compactor Production</h2>
 <p><strong>Problem:</strong><br>
 A vibratory roller is compacting an aggregate base course.</p>
@@ -360,25 +382,27 @@ A vibratory roller is compacting an aggregate base course.</p>
 <p>Calculate the production rate of this roller in Compacted Cubic Yards per hour (CCY/hr).</p>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Effective Compaction Width ($W$)</strong>
-$$W = \text{Width} - \text{Overlap} = 66 \text{ in} - 6 \text{ in} = 60 \text{ inches} = 5.0 \text{ feet}$$</p>
-<p><strong>Step 2: Convert Units</strong></p>
+</p>
+$$W = \text{Width} - \text{Overlap} = 66 \text{ in} - 6 \text{ in} = 60 \text{ inches} = 5.0 \text{ feet}$$<p><strong>Step 2: Convert Units</strong></p>
 <ul>
 <li>$S = 3.0 \text{ mph} \times 5,280 \text{ ft/mile} = 15,840 \text{ ft/hour}$</li>
 <li>$L = 6.0 \text{ inches} \div 12 \text{ in/ft} = 0.50 \text{ feet}$</li>
 <li>$E = 45 \text{ min/hour} \div 60 \text{ min/hour} = 0.75$</li>
 </ul>
 <p><strong>Step 3: Calculate Production Rate</strong>
-$$P = \frac{15,840 \text{ ft/hr} \times 5.0 \text{ ft} \times 0.50 \text{ ft} \times 0.75}{4 \text{ passes} \times 27 \text{ ft}^3/\text{yd}^3}$$
-$$P = \frac{29,700}{108} = 275 \text{ CCY/hour}$$</p>
-<hr>
+</p>
+$$P = \frac{15,840 \text{ ft/hr} \times 5.0 \text{ ft} \times 0.50 \text{ ft} \times 0.75}{4 \text{ passes} \times 27 \text{ ft}^3/\text{yd}^3}$$<p>
+</p>
+$$P = \frac{29,700}{108} = 275 \text{ CCY/hour}$$<hr>
 <h2 id="schedule-impacts-of-productivity">Schedule Impacts of Productivity</h2>
 <p>Calculating the duration of an activity links productivity to scheduling:</p>
-<p>$$\text{Duration (Days)} = \frac{\text{Total Work Quantity}}{\text{Daily Production Rate}}$$
-$$\text{Daily Production Rate} = \text{Production Rate per Hour} \times \text{Work Hours per Day}$$</p>
-<h3 id="adjusting-for-crew-size">Adjusting for Crew Size:</h3>
+$$\text{Duration (Days)} = \frac{\text{Total Work Quantity}}{\text{Daily Production Rate}}$$<p>
+</p>
+$$\text{Daily Production Rate} = \text{Production Rate per Hour} \times \text{Work Hours per Day}$$<h3 id="adjusting-for-crew-size">Adjusting for Crew Size:</h3>
 <ul>
 <li>Doubling the crew size typically doubles the production rate (halving the duration), provided there are no crowding inefficiencies.</li>
 <li>If efficiency drops due to larger crew sizes, apply the efficiency factor:
+
 $$\text{Adjusted Production Rate} = \text{Base Production Rate} \times \text{New Crew Size} \times \text{Efficiency Factor}$$</li>
 </ul>
 <hr>

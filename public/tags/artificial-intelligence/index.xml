@@ -23,6 +23,13 @@
       <description>&lt;p&gt;This scratchpad collects my notes on running and working with local large language models. It is meant to better understand model deployment, inference tools, hardware requirements, quantization, fine-tuning, evaluation, and practical workflows for using LLMs outside cloud-based platforms.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Persona-Based Hurricane Evacuation Travel Demand Analysis</title>
+      <link>http://localhost:1313/research/persona-based-hurricane-evacuation/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/persona-based-hurricane-evacuation/</guid>
+      <description>&lt;div style=&#34;background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2980b9; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🌀&lt;/span&gt; The Challenge of Rural Evacuation Planning&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #154360;&#34;&gt;Florida continues to be the most hurricane-prone state in the United States. While evacuation orders play a significant role in reducing casualties, their effectiveness relies heavily on household decision-making. In rural communities, such as the Florida Panhandle, this is complicated by limited infrastructure, longer travel distances, and resource constraints. Current evacuation demand models often rely on oversimplified assumptions of rational decision-making, failing to capture the stress, urgency, and irrationality inherent in disaster scenarios.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Introduction to LLM</title>
       <link>http://localhost:1313/scratchpad/llm/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Roadside Slopes and Ditches">
     <meta property="og:description" content="Roadside Slopes and Ditches Roadside slopes and drainage ditches are primary features of a roadway&rsquo;s edge design. They must serve two conflicting …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Roadside Slopes and Ditches">
     <meta name="twitter:description" content="Roadside Slopes and Ditches Roadside slopes and drainage ditches are primary features of a roadway&rsquo;s edge design. They must serve two conflicting …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-6/40-roadside-slopes-and-ditches/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-6/40-roadside-slopes-and-ditches/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-6/40-roadside-slopes-and-ditches/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -236,8 +250,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>On the PE exam, slopes are written in the format <strong>Horizontal to Vertical (H:V)</strong> (e.g., $4:1$ or $4\text{H}:1\text{V}$), which means 4 units of horizontal distance for every 1 unit of vertical rise or fall.</p>
 <ul>
 <li><strong>Conversion to Percent:</strong> A slope of $H:V$ is equivalent to a grade of:
-$$\text{Grade (%)} = \left(\frac{V}{H}\right) \times 100$$
-<em>Example:</em> A $4:1$ slope is a $\left(\frac{1}{4}\right) \times 100 = 25%$ slope.</li>
+
+$$\text{Grade (\%)} = \left(\frac{V}{H}\right) \times 100$$
+<em>Example:</em> A $4:1$ slope is a $\left(\frac{1}{4}\right) \times 100 = 25\%$ slope.</li>
 <li><strong>Foreslope (Fill Slope):</strong> Slopes extending downward from the shoulder edge to the bottom of the ditch.</li>
 <li><strong>Backslope (Cut Slope):</strong> Slopes extending upward from the bottom of the ditch to intersect with the natural terrain.</li>
 </ul>
@@ -277,7 +292,7 @@ $$\text{Grade (%)} = \left(\frac{V}{H}\right) \times 100$$
 <p>Roadside channels must withstand the shear stress of moving stormwater.</p>
 <ul>
 <li><strong>Erosion Control:</strong> Ditches are lined with vegetative grass, erosion control blankets (ECBs), turf reinforcement mats (TRMs), riprap, or concrete.</li>
-<li><strong>Roadside Hazard Conflict:</strong> Large riprap (stones with $d_{50} &gt; 4$ to $6\text{ inches}$) or steep concrete channels are considered <strong>fixed-object hazards</strong> if they lie within the clear zone. Designers must balance hydraulic shear requirements with vehicle traversability. If heavy riprap is required, the ditch may need to be moved further from the road, or a traversable lining (like TRM or articulated concrete blocks) should be used.</li>
+<li><strong>Roadside Hazard Conflict:</strong> Large riprap (stones with $d_{50} > 4$ to $6\text{ inches}$) or steep concrete channels are considered <strong>fixed-object hazards</strong> if they lie within the clear zone. Designers must balance hydraulic shear requirements with vehicle traversability. If heavy riprap is required, the ditch may need to be moved further from the road, or a traversable lining (like TRM or articulated concrete blocks) should be used.</li>
 </ul>
 <hr>
 <h2 id="worked-example-ditch-safety-and-geometry-design">Worked Example: Ditch Safety and Geometry Design</h2>
@@ -286,7 +301,7 @@ $$\text{Grade (%)} = \left(\frac{V}{H}\right) \times 100$$
 <ol>
 <li>If a simple V-ditch is used with a $4:1$ backslope, determine if this configuration is safe and traversable according to AASHTO guidelines.</li>
 <li>If the configuration is unsafe, design a flat-bottom (trapezoidal) ditch that satisfies the safety criteria for a $4:1$ foreslope and $4:1$ backslope. Find the minimum required bottom width ($B$).</li>
-<li>Calculate the depth of the ditch ($d$) if the outside edge of the shoulder is at elevation $100.00\text{ ft}$, the shoulder is $8\text{ ft}$ wide with a $4%$ cross slope, and the horizontal distance from the edge of the shoulder to the centerline of the ditch is $20\text{ ft}$.</li>
+<li>Calculate the depth of the ditch ($d$) if the outside edge of the shoulder is at elevation $100.00\text{ ft}$, the shoulder is $8\text{ ft}$ wide with a $4\%$ cross slope, and the horizontal distance from the edge of the shoulder to the centerline of the ditch is $20\text{ ft}$.</li>
 </ol>
 <h3 id="solution">Solution</h3>
 <ol>
@@ -297,27 +312,33 @@ According to the AASHTO Roadside Design Guide (Chapter 3), a V-ditch with a $4:1
 <li>
 <p><strong>Determine Flat-Bottom Ditch Width ($B$):</strong>
 According to RDG Figure 3.2 (Preferred Channel Section for Flatter Slopes), for a $4:1$ foreslope and $4:1$ backslope, the design transitions to the preferred region if a flat-bottom width ($B$) of at least <strong>$4.0\text{ ft}$</strong> is provided.
-$$\text{Minimum Flat-Bottom Width } (B) = 4.0\text{ ft}$$</p>
-</li>
+</p>
+$$\text{Minimum Flat-Bottom Width } (B) = 4.0\text{ ft}$$</li>
 <li>
 <p><strong>Calculate the Ditch Depth ($d$):</strong>
 Let&rsquo;s sketch the profile:</p>
 <ul>
 <li><strong>Edge of Travel Lane:</strong> Elevation = $100.00\text{ ft}$ (at the shoulder start).</li>
-<li><strong>Shoulder Runway:</strong> Width = $8\text{ ft}$ at a slope of $-4%$.
+<li><strong>Shoulder Runway:</strong> Width = $8\text{ ft}$ at a slope of $-4\%$.
+
 $$\text{Elevation at Outer Shoulder Edge} = 100.00 - (8\text{ ft} \times 0.04) = 100.00 - 0.32 = 99.68\text{ ft}$$</li>
-<li><strong>Foreslope:</strong> Starts at the shoulder edge ($99.68\text{ ft}$) and runs down at a $4:1$ slope ($25%$) to the ditch bottom.</li>
+<li><strong>Foreslope:</strong> Starts at the shoulder edge ($99.68\text{ ft}$) and runs down at a $4:1$ slope ($25\%$) to the ditch bottom.</li>
 <li>Let $X$ be the horizontal distance from the shoulder edge to the start of the flat bottom.</li>
 <li>The total horizontal distance from the shoulder edge to the centerline of the ditch is:
+
 $$\text{Distance from shoulder edge} = 20\text{ ft} - 8\text{ ft} = 12\text{ ft}$$</li>
 <li>Because the ditch has a flat bottom of width $B = 4.0\text{ ft}$, the flat bottom extends $2.0\text{ ft}$ on either side of the centerline.</li>
 <li>Therefore, the foreslope runs horizontally from the shoulder edge to the start of the flat bottom:
+
 $$\text{Horizontal run of foreslope } (X) = 12\text{ ft} - \frac{B}{2} = 12\text{ ft} - 2.0\text{ ft} = 10.0\text{ ft}$$</li>
 <li>Using the $4:1$ slope, the vertical drop along the foreslope is:
+
 $$\text{Vertical Drop} = \frac{\text{Horizontal Run}}{4} = \frac{10.0\text{ ft}}{4} = 2.5\text{ ft}$$</li>
 <li><strong>Ditch Bottom Elevation:</strong>
+
 $$\text{Elevation}_{\text{bottom}} = 99.68\text{ ft} - 2.5\text{ ft} = 97.18\text{ ft}$$</li>
 <li>The total depth of the ditch ($d$) measured from the shoulder edge (elevation $99.68\text{ ft}$) to the bottom (elevation $97.18\text{ ft}$) is:
+
 $$d = 99.68\text{ ft} - 97.18\text{ ft} = 2.5\text{ ft}$$</li>
 </ul>
 </li>
@@ -331,7 +352,7 @@ $$d = 99.68\text{ ft} - 97.18\text{ ft} = 2.5\text{ ft}$$</li>
 <hr>
 <h2 id="crucial-exam-tips">Crucial Exam Tips</h2>
 <ul>
-<li><strong>Reading H:V Ratios:</strong> Always remember that $H:V$ means Horizontal over Vertical. If a slope is described as &ldquo;1 to 4,&rdquo; look at the context. Roadsides are almost always flatter than $1:1$ (vertical), so a roadside slope described as &ldquo;1:4&rdquo; actually means $4\text{H}:1\text{V}$ (a $25%$ slope), whereas a structural slope might mean something else. Always assume $H:V$ for roadside design.</li>
+<li><strong>Reading H:V Ratios:</strong> Always remember that $H:V$ means Horizontal over Vertical. If a slope is described as &ldquo;1 to 4,&rdquo; look at the context. Roadsides are almost always flatter than $1:1$ (vertical), so a roadside slope described as &ldquo;1:4&rdquo; actually means $4\text{H}:1\text{V}$ (a $25\%$ slope), whereas a structural slope might mean something else. Always assume $H:V$ for roadside design.</li>
 <li><strong>Riprap Hazard Limits:</strong> If a question describes a ditch lined with &ldquo;12-inch riprap,&rdquo; recognize that this is a major safety hazard. Standard traversable riprap has a $d_{50}$ limit of $4$ to $6\text{ inches}$. Larger stones will catch tires and cause rollover.</li>
 <li><strong>Ditch Centerline vs. Toe of Slope:</strong> In geometry calculations, pay close attention to whether distances are measured to the <em>centerline</em> of the ditch, the <em>toe</em> of the slope, or the <em>inside edge</em> of the flat bottom. Draw a quick cross-section sketch to avoid off-by-one or off-by-half-width errors.</li>
 </ul>

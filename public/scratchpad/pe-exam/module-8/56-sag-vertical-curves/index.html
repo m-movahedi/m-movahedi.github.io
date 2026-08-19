@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sag Vertical Curves">
     <meta property="og:description" content="Sag Vertical Curves Sag vertical curves connect a downgrade to an upgrade (or a steep downgrade to a flatter downgrade, etc.), where the algebraic difference in …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Sag Vertical Curves">
     <meta name="twitter:description" content="Sag Vertical Curves Sag vertical curves connect a downgrade to an upgrade (or a steep downgrade to a flatter downgrade, etc.), where the algebraic difference in …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-8/56-sag-vertical-curves/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-8/56-sag-vertical-curves/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-8/56-sag-vertical-curves/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -230,7 +244,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 
     <div class="post-content">
         <h1 id="sag-vertical-curves">Sag Vertical Curves</h1>
-<p>Sag vertical curves connect a downgrade to an upgrade (or a steep downgrade to a flatter downgrade, etc.), where the algebraic difference in grade is positive ($g_1 &lt; g_2$). Unlike crest curves, where sight distance is restricted by the roadway surface itself, sight distance on sag curves during the day is generally unrestricted.</p>
+<p>Sag vertical curves connect a downgrade to an upgrade (or a steep downgrade to a flatter downgrade, etc.), where the algebraic difference in grade is positive ($g_1 < g_2$). Unlike crest curves, where sight distance is restricted by the roadway surface itself, sight distance on sag curves during the day is generally unrestricted.</p>
 <p>Consequently, the design of sag vertical curves is governed by four criteria:</p>
 <ol>
 <li><strong>Headlight Sight Distance</strong> (the primary safety control for nighttime driving)</li>
@@ -298,12 +312,12 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li>
 <p><strong>Case 1: Sight Distance $\le$ Curve Length ($S \le L$)</strong>
-$$L = \frac{A S^2}{200(h_3 + S \tan \beta)} = \frac{A S^2}{400 + 3.5 S}$$</p>
-</li>
+</p>
+$$L = \frac{A S^2}{200(h_3 + S \tan \beta)} = \frac{A S^2}{400 + 3.5 S}$$</li>
 <li>
-<p><strong>Case 2: Sight Distance $&gt;$ Curve Length ($S &gt; L$)</strong>
-$$L = 2S - \frac{400 + 3.5 S}{A}$$</p>
-</li>
+<p><strong>Case 2: Sight Distance $>$ Curve Length ($S > L$)</strong>
+</p>
+$$L = 2S - \frac{400 + 3.5 S}{A}$$</li>
 </ul>
 <p>Where:</p>
 <ul>
@@ -316,37 +330,34 @@ $$L = 2S - \frac{400 + 3.5 S}{A}$$</p>
 <ul>
 <li>
 <p><strong>Case 1: Sight Distance $\le$ Curve Length ($S \le L$)</strong>
-$$L = \frac{A S^2}{120 + 3.5 S}$$</p>
-</li>
+</p>
+$$L = \frac{A S^2}{120 + 3.5 S}$$</li>
 <li>
-<p><strong>Case 2: Sight Distance $&gt;$ Curve Length ($S &gt; L$)</strong>
-$$L = 2S - \frac{120 + 3.5 S}{A}$$</p>
-</li>
+<p><strong>Case 2: Sight Distance $>$ Curve Length ($S > L$)</strong>
+</p>
+$$L = 2S - \frac{120 + 3.5 S}{A}$$</li>
 </ul>
 <p>Where $L$ and $S$ are in meters, and $A$ is in percent.</p>
 <hr>
 <h2 id="passenger-comfort-criterion">Passenger Comfort Criterion</h2>
 <p>When a vehicle travels through a sag curve, centrifugal force acts downward, adding to the force of gravity. To ensure passenger comfort, the vertical acceleration should be limited to less than $1.0\text{ ft/s}^2$ ($0.3\text{ m/s}^2$). The required curve length for comfort is:</p>
 <h3 id="uscs-units">USCS Units</h3>
-<p>$$L_{\text{comfort}} = \frac{A V^2}{46.5}$$</p>
-<h3 id="metric-units">Metric Units</h3>
-<p>$$L_{\text{comfort}} = \frac{A V^2}{395}$$</p>
-<p>Where $V$ is the design speed (mph in USCS, km/h in metric) and $A$ is in percent.</p>
+$$L_{\text{comfort}} = \frac{A V^2}{46.5}$$<h3 id="metric-units">Metric Units</h3>
+$$L_{\text{comfort}} = \frac{A V^2}{395}$$<p>Where $V$ is the design speed (mph in USCS, km/h in metric) and $A$ is in percent.</p>
 <hr>
-<h2 id="drainage-control-maximum-k">Drainage Control (Maximum $K$)</h2>
+<h2 id="drainage-control-maximum-">Drainage Control (Maximum $K$)</h2>
 <p>In sag curves, water drains toward the low point of the curve. If the curve is too flat, water will pond, causing hydroplaning hazards. This is particularly critical when the road is built with curbs.</p>
 <ul>
-<li><strong>Drainage Limit:</strong> The rate of vertical curvature $K = L/A$ should not exceed <strong>$167\text{ ft/%}$</strong> ($51\text{ m/%}$ for metric).</li>
-<li>If $K &gt; 167$, special design is required to ensure a minimum $0.3%$ grade slope is maintained within $50\text{ ft}$ of the low point.</li>
+<li><strong>Drainage Limit:</strong> The rate of vertical curvature $K = L/A$ should not exceed <strong>$167\text{ ft/\%}$</strong> ($51\text{ m/\%}$ for metric).</li>
+<li>If $K > 167$, special design is required to ensure a minimum $0.3\%$ grade slope is maintained within $50\text{ ft}$ of the low point.</li>
 </ul>
 <hr>
 <h2 id="general-appearance-criterion">General Appearance Criterion</h2>
 <p>To prevent the curve from looking like a sagged dip or an abrupt kink, AASHTO recommends a minimum curve length based on design speed:</p>
-<p>$$L_{\text{min}} \ge 3 V$$</p>
-<p>Where $V$ is the design speed in mph.</p>
+$$L_{\text{min}} \ge 3 V$$<p>Where $V$ is the design speed in mph.</p>
 <hr>
 <h2 id="worked-example">Worked Example</h2>
-<p>A sag vertical curve is to connect an initial grade $g_1 = -3.5%$ and a final grade $g_2 = +2.5%$. The design speed of the highway is $55\text{ mph}$.</p>
+<p>A sag vertical curve is to connect an initial grade $g_1 = -3.5\%$ and a final grade $g_2 = +2.5\%$. The design speed of the highway is $55\text{ mph}$.</p>
 <p>Determine:</p>
 <ol>
 <li>The minimum required length of the vertical curve based on headlight sight distance (verifying the $S \le L$ assumption).</li>
@@ -360,18 +371,21 @@ $$L = 2S - \frac{120 + 3.5 S}{A}$$</p>
 <ul>
 <li>From AASHTO design tables, the design SSD for $55\text{ mph}$ is $495\text{ ft}$.</li>
 <li>Calculate algebraic grade difference:
-$$A = |g_2 - g_1| = |+2.5 - (-3.5)| = 6.0%$$</li>
+
+$$A = |g_2 - g_1| = |+2.5 - (-3.5)| = 6.0\%$$</li>
 <li><em>Assumption:</em> Assume $S \le L$.
+
 $$L = \frac{A S^2}{400 + 3.5 S} = \frac{6.0 \times (495)^2}{400 + 3.5(495)}$$
+
 $$L = \frac{6.0 \times 245,025}{400 + 1732.5} = \frac{1,470,150}{2132.5} = 689.40\text{ ft}$$</li>
 <li><em>Verify assumption:</em> Is $S \le L$? Since $495\text{ ft} \le 689.40\text{ ft}$, the assumption is correct.</li>
-<li>Thus, the minimum length for headlight sight distance is $689.4\text{ ft}$ (AASHTO tables round this to $690\text{ ft}$ using the rounded $K = 115\text{ ft/%}$, i.e., $L = 115 \times 6.0 = 690\text{ ft}$).</li>
+<li>Thus, the minimum length for headlight sight distance is $689.4\text{ ft}$ (AASHTO tables round this to $690\text{ ft}$ using the rounded $K = 115\text{ ft/\%}$, i.e., $L = 115 \times 6.0 = 690\text{ ft}$).</li>
 </ul>
 <p><strong>2. Calculate Length for Passenger Comfort:</strong>
-$$L_{\text{comfort}} = \frac{A V^2}{46.5} = \frac{6.0 \times (55)^2}{46.5} = \frac{6.0 \times 3025}{46.5} = \frac{18,150}{46.5} = 390.32\text{ ft}$$</p>
-<p><strong>3. Calculate Length for General Appearance:</strong>
-$$L_{\text{appearance}} = 3V = 3(55) = 165\text{ ft}$$</p>
-<p><strong>4. Determine governing design length:</strong>
+</p>
+$$L_{\text{comfort}} = \frac{A V^2}{46.5} = \frac{6.0 \times (55)^2}{46.5} = \frac{6.0 \times 3025}{46.5} = \frac{18,150}{46.5} = 390.32\text{ ft}$$<p><strong>3. Calculate Length for General Appearance:</strong>
+</p>
+$$L_{\text{appearance}} = 3V = 3(55) = 165\text{ ft}$$<p><strong>4. Determine governing design length:</strong>
 Comparing the three criteria:</p>
 <ul>
 <li>Headlight Sight Distance: $690\text{ ft}$ (governs)</li>
@@ -381,9 +395,9 @@ Comparing the three criteria:</p>
 <p>The governing minimum design length is <strong>$690\text{ ft}$</strong>.</p>
 <p><strong>5. Verify Drainage Criteria:</strong></p>
 <ul>
-<li>$K = L / A = 690 / 6.0 = 115\text{ ft/%}$</li>
-<li>The AASHTO maximum drainage limit is $167\text{ ft/%}$.</li>
-<li>Since $115 &lt; 167$, the curve is steep enough to avoid drainage ponding and is acceptable.</li>
+<li>$K = L / A = 690 / 6.0 = 115\text{ ft/\%}$</li>
+<li>The AASHTO maximum drainage limit is $167\text{ ft/\%}$.</li>
+<li>Since $115 < 167$, the curve is steep enough to avoid drainage ponding and is acceptable.</li>
 </ul>
 <h2 id="references">References</h2>
 <ul>

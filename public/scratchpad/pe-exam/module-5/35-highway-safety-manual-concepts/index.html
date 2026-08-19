@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Highway Safety Manual Concepts">
     <meta property="og:description" content="Highway Safety Manual Concepts The AASHTO Highway Safety Manual (HSM) provides a science-based, quantitative approach to traffic safety. It moves the profession …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Highway Safety Manual Concepts">
     <meta name="twitter:description" content="Highway Safety Manual Concepts The AASHTO Highway Safety Manual (HSM) provides a science-based, quantitative approach to traffic safety. It moves the profession …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-5/35-highway-safety-manual-concepts/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-5/35-highway-safety-manual-concepts/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-5/35-highway-safety-manual-concepts/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -253,8 +267,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="the-hsm-predictive-method">The HSM Predictive Method</h2>
 <p>Part C of the HSM utilizes a structured predictive model to estimate expected crash frequency. The general predictive equation is:</p>
-<p>$$N_{\text{predicted}} = N_{\text{spf}} \times C_i \times \prod_{j=1}^{n} \text{CMF}_j$$</p>
-<p>Where:</p>
+$$N_{\text{predicted}} = N_{\text{spf}} \times C_i \times \prod_{j=1}^{n} \text{CMF}_j$$<p>Where:</p>
 <ul>
 <li>$N_{\text{predicted}}$ = estimated annual crash frequency for the specific site</li>
 <li>$N_{\text{spf}}$ = predicted annual crash frequency for <strong>base conditions</strong> (derived from a Safety Performance Function)</li>
@@ -264,9 +277,11 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h3 id="safety-performance-functions-spfs">Safety Performance Functions (SPFs)</h3>
 <p>SPFs are mathematical regression models developed from historical data of similar sites. They relate crash frequency to traffic exposure (AADT) under baseline conditions (e.g., 12-ft lanes, 6-ft shoulders, no lighting).</p>
 <p>A typical SPF for a two-lane rural road segment has the form:
-$$N_{\text{spf}} = \text{AADT} \times L \times 365 \times 10^{-6} \times e^{a}$$
+</p>
+$$N_{\text{spf}} = \text{AADT} \times L \times 365 \times 10^{-6} \times e^{a}$$<p>
 Or more generally:
-$$N_{\text{spf}} = e^{a + b \cdot \ln(\text{AADT})} \times L$$
+</p>
+$$N_{\text{spf}} = e^{a + b \cdot \ln(\text{AADT})} \times L$$<p>
 <em>where $a$ and $b$ are regression coefficients specific to the facility type, and $L$ is the segment length in miles.</em></p>
 <hr>
 <h2 id="regression-to-the-mean-rtm-and-the-empirical-bayes-eb-method">Regression-to-the-Mean (RTM) and the Empirical Bayes (EB) Method</h2>
@@ -277,13 +292,13 @@ $$N_{\text{spf}} = e^{a + b \cdot \ln(\text{AADT})} \times L$$
 </ul>
 <h3 id="the-empirical-bayes-eb-method">The Empirical Bayes (EB) Method</h3>
 <p>The EB method is used to correct for RTM bias. It calculates the expected crash frequency ($N_{\text{expected}}$) by combining a site&rsquo;s observed crash history with the predicted crash frequency from an SPF:</p>
-<p>$$N_{\text{expected}} = w \times N_{\text{predicted}} + (1 - w) \times N_{\text{observed}}$$</p>
-<p>Where:</p>
+$$N_{\text{expected}} = w \times N_{\text{predicted}} + (1 - w) \times N_{\text{observed}}$$<p>Where:</p>
 <ul>
 <li>$N_{\text{expected}}$ = expected average crash frequency, corrected for RTM</li>
 <li>$N_{\text{observed}}$ = actual observed crash count at the site</li>
 <li>$N_{\text{predicted}}$ = predicted crash frequency from the SPF</li>
 <li>$w$ = weight factor ($0 \le w \le 1$):
+
 $$w = \frac{1}{1 + k \times N_{\text{predicted}}}$$
 <em>where $k$ is the overdispersion parameter of the SPF. A lower $k$ (better model fit) increases the weight $w$ placed on the model prediction.</em></li>
 </ul>
@@ -310,7 +325,8 @@ Ensure you read the SPF equation carefully. Most segment SPFs require the length
 <h2 id="worked-example">Worked Example</h2>
 <p>A state highway agency is evaluating a $2.0\text{-mile}$ rural two-lane road segment. The segment has an AADT of $8,000 \text{ veh/day}$. Over a 1-year period, $12$ crashes were observed on this segment ($N_{\text{observed}} = 12.0 \text{ crashes/year}$).</p>
 <p>The national SPF for this roadway type is:
-$$N_{\text{spf}} = e^{-5.85 + 0.95 \cdot \ln(\text{AADT})} \times L$$
+</p>
+$$N_{\text{spf}} = e^{-5.85 + 0.95 \cdot \ln(\text{AADT})} \times L$$<p>
 The segment deviates from base conditions, requiring two CMF adjustments:</p>
 <ul>
 <li>Lane width adjustment: $\text{CMF}_1 = 1.08$</li>
@@ -319,25 +335,26 @@ The segment deviates from base conditions, requiring two CMF adjustments:</p>
 <p>The local calibration factor for the state is $C_i = 1.15$. The SPF overdispersion parameter is $k = 0.25$.</p>
 <p><strong>Calculate the predicted crash frequency ($N_{\text{predicted}}$) and the RTM-corrected expected crash frequency ($N_{\text{expected}}$) using the Empirical Bayes method.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-the-base-spf-crash-frequency-n_textspf">Step 1: Calculate the Base SPF Crash Frequency ($N_{\text{spf}}$)</h4>
-<p>$$N_{\text{spf}} = e^{-5.85 + 0.95 \cdot \ln(8,000)} \times 2.0$$</p>
-<ul>
+<h4 id="step-1-calculate-the-base-spf-crash-frequency-">Step 1: Calculate the Base SPF Crash Frequency ($N_{\text{spf}}$)</h4>
+$$N_{\text{spf}} = e^{-5.85 + 0.95 \cdot \ln(8,000)} \times 2.0$$<ul>
 <li>$\ln(8,000) = 8.9872$</li>
 <li>$-5.85 + 0.95(8.9872) = -5.85 + 8.5378 = 2.6878$</li>
 <li>$e^{2.6878} = 14.699$
+
 $$N_{\text{spf}} = 14.699 \times 2.0 = 29.398 \text{ crashes/year}$$</li>
 </ul>
-<h4 id="step-2-calculate-the-predicted-crash-frequency-n_textpredicted">Step 2: Calculate the Predicted Crash Frequency ($N_{\text{predicted}}$)</h4>
+<h4 id="step-2-calculate-the-predicted-crash-frequency-">Step 2: Calculate the Predicted Crash Frequency ($N_{\text{predicted}}$)</h4>
 <p>Multiply by the calibration factor and CMFs:
-$$N_{\text{predicted}} = N_{\text{spf}} \times C_i \times \text{CMF}_1 \times \text{CMF}<em>2$$
-$$N</em>{\text{predicted}} = 29.398 \times 1.15 \times 1.08 \times 1.12 = 40.91 \text{ crashes/year}$$</p>
-<h4 id="step-3-calculate-the-empirical-bayes-weight-w">Step 3: Calculate the Empirical Bayes Weight ($w$)</h4>
-<p>$$w = \frac{1}{1 + k \times N_{\text{predicted}}} = \frac{1}{1 + 0.25 \times 40.91} = \frac{1}{1 + 10.228} = \frac{1}{11.228} = 0.0891$$</p>
-<h4 id="step-4-calculate-the-expected-crash-frequency-n_textexpected">Step 4: Calculate the Expected Crash Frequency ($N_{\text{expected}}$)</h4>
-<p>$$N_{\text{expected}} = w \times N_{\text{predicted}} + (1 - w) \times N_{\text{observed}}$$
-$$N_{\text{expected}} = 0.0891 \times 40.91 + (1 - 0.0891) \times 12.0$$
-$$N_{\text{expected}} = 3.65 + (0.9109 \times 12.0) = 3.65 + 10.93 = 14.58 \text{ crashes/year}$$</p>
-<p><strong>Conclusion:</strong> The predicted crash frequency is $40.91 \text{ crashes/year}$, and the RTM-corrected expected crash frequency is $14.58 \text{ crashes/year}$.</p>
+</p>
+$$N_{\text{predicted}} = N_{\text{spf}} \times C_i \times \text{CMF}_1 \times \text{CMF}_2$$<p>
+</p>
+$$N_{\text{predicted}} = 29.398 \times 1.15 \times 1.08 \times 1.12 = 40.91 \text{ crashes/year}$$<h4 id="step-3-calculate-the-empirical-bayes-weight-">Step 3: Calculate the Empirical Bayes Weight ($w$)</h4>
+$$w = \frac{1}{1 + k \times N_{\text{predicted}}} = \frac{1}{1 + 0.25 \times 40.91} = \frac{1}{1 + 10.228} = \frac{1}{11.228} = 0.0891$$<h4 id="step-4-calculate-the-expected-crash-frequency-">Step 4: Calculate the Expected Crash Frequency ($N_{\text{expected}}$)</h4>
+$$N_{\text{expected}} = w \times N_{\text{predicted}} + (1 - w) \times N_{\text{observed}}$$<p>
+</p>
+$$N_{\text{expected}} = 0.0891 \times 40.91 + (1 - 0.0891) \times 12.0$$<p>
+</p>
+$$N_{\text{expected}} = 3.65 + (0.9109 \times 12.0) = 3.65 + 10.93 = 14.58 \text{ crashes/year}$$<p><strong>Conclusion:</strong> The predicted crash frequency is $40.91 \text{ crashes/year}$, and the RTM-corrected expected crash frequency is $14.58 \text{ crashes/year}$.</p>
 <hr>
 <h2 id="references-and-standards">References and Standards</h2>
 <ul>

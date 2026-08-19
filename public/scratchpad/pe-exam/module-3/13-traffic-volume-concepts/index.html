@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Traffic Volume Concepts">
     <meta property="og:description" content="Traffic Volume Concepts Traffic volume is the number of vehicles passing a given point on a roadway during a specified time interval. On the PE Civil …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Traffic Volume Concepts">
     <meta name="twitter:description" content="Traffic Volume Concepts Traffic volume is the number of vehicles passing a given point on a roadway during a specified time interval. On the PE Civil …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-3/13-traffic-volume-concepts/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-3/13-traffic-volume-concepts/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-3/13-traffic-volume-concepts/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -236,14 +250,14 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>Traffic volume is measured over various periods to capture daily, weekly, and seasonal variations.</p>
 <h3 id="1-average-annual-daily-traffic-aadt">1. Average Annual Daily Traffic (AADT)</h3>
 <p>The total number of vehicles passing a point on a highway in both directions over a full year (365 days), divided by 365.
-$$AADT = \frac{\text{Total Vehicles in a Year}}{365}$$</p>
-<ul>
+</p>
+$$AADT = \frac{\text{Total Vehicles in a Year}}{365}$$<ul>
 <li><strong>Use:</strong> Used in highway planning, determining highway systems, calculating crash rates, and performing economic evaluations.</li>
 </ul>
 <h3 id="2-average-daily-traffic-adt">2. Average Daily Traffic (ADT)</h3>
 <p>The average 24-hour volume of traffic in both directions over a period of time greater than 1 day but less than 1 year (e.g., 48-hour counts, weekly counts).
-$$ADT = \frac{\text{Total Vehicles counted during } N \text{ days}}{N}$$</p>
-<ul>
+</p>
+$$ADT = \frac{\text{Total Vehicles counted during } N \text{ days}}{N}$$<ul>
 <li><strong>Use:</strong> Used for local planning, minor design projects, and trend analyses. ADT is subject to seasonal variation, whereas AADT is not.</li>
 </ul>
 <h3 id="3-peak-hour-volume-phv">3. Peak Hour Volume (PHV)</h3>
@@ -254,8 +268,8 @@ $$ADT = \frac{\text{Total Vehicles counted during } N \text{ days}}{N}$$</p>
 <ul>
 <li><strong>Design Hourly Volume (DHV):</strong> The 2-way volume of traffic during the design hour. Historically, this is selected as the <strong>30th highest hourly volume of the year (30 HV)</strong>.</li>
 <li><strong>K-Factor (K):</strong> The ratio of the design hourly volume (DHV) to the Average Annual Daily Traffic (AADT).
-$$K = \frac{DHV}{AADT}$$
-<ul>
+
+$$K = \frac{DHV}{AADT}$$<ul>
 <li>$K$ is typically expressed as a decimal (e.g., $0.10$ to $0.15$).</li>
 <li>Urban facilities generally have lower K-factors ($0.08$ to $0.12$) because traffic is distributed more evenly throughout the day.</li>
 <li>Rural and recreational routes have higher K-factors ($0.12$ to $0.18$ or more) due to high weekend and seasonal spikes.</li>
@@ -267,18 +281,19 @@ $$K = \frac{DHV}{AADT}$$
 <p>Traffic is rarely distributed evenly between directions during the peak hour (e.g., commuters traveling into a city in the morning and out in the evening). Roadways must be designed to accommodate the peak flow direction.</p>
 <ul>
 <li><strong>D-Factor (D):</strong> The proportion of traffic moving in the peak direction of travel during the design hour.
-$$D = \frac{\text{Volume in Peak Direction}}{\text{Total Two-Way Volume}}$$
-<ul>
+
+$$D = \frac{\text{Volume in Peak Direction}}{\text{Total Two-Way Volume}}$$<ul>
 <li>$D$ is expressed as a decimal and typically ranges from $0.50$ (equal split) to $0.80$ (highly directional commuter routes).</li>
 </ul>
 </li>
 <li><strong>Directional Design Hourly Volume (DDHV):</strong> The one-way volume in the peak direction during the design hour. This is the primary parameter used for geometric design and capacity analysis.
+
 $$DDHV = AADT \times K \times D$$</li>
 </ul>
 <hr>
 <h2 id="worked-example-calculating-traffic-volumes">Worked Example: Calculating Traffic Volumes</h2>
 <p><strong>Problem:</strong><br>
-A rural arterial highway has a projected Average Annual Daily Traffic (AADT) of $24,000 \text{ vehicles/day}$. The planning department selects a design K-factor of $12%$ and a directional distribution (D-factor) of $65%$ in the peak direction.</p>
+A rural arterial highway has a projected Average Annual Daily Traffic (AADT) of $24,000 \text{ vehicles/day}$. The planning department selects a design K-factor of $12\%$ and a directional distribution (D-factor) of $65\%$ in the peak direction.</p>
 <ol>
 <li>Calculate the Design Hourly Volume (DHV) for both directions combined.</li>
 <li>Calculate the Directional Design Hourly Volume (DDHV) in the peak direction.</li>
@@ -288,32 +303,38 @@ A rural arterial highway has a projected Average Annual Daily Traffic (AADT) of 
 <p><strong>Step 1: Calculate the Design Hourly Volume (DHV)</strong></p>
 <ul>
 <li>$AADT = 24,000 \text{ vehicles/day}$</li>
-<li>$K = 12% = 0.12$
+<li>$K = 12\% = 0.12$
+
 $$DHV = AADT \times K$$
+
 $$DHV = 24,000 \times 0.12 = 2,880 \text{ vehicles/hour (both directions combined)}$$</li>
 </ul>
 <p><strong>Step 2: Calculate the Directional Design Hourly Volume (DDHV)</strong></p>
 <ul>
-<li>$D = 65% = 0.65$
+<li>$D = 65\% = 0.65$
+
 $$DDHV = AADT \times K \times D = DHV \times D$$
+
 $$DDHV = 2,880 \times 0.65 = 1,872 \text{ vehicles/hour (peak direction)}$$</li>
 </ul>
 <p><strong>Step 3: Calculate the Non-Peak Direction Volume ($V_{\text{non-peak}}$)</strong>
 The non-peak direction carries the remaining percentage of the total two-way volume during the design hour.</p>
 <ul>
-<li>Peak direction carries $65% \implies$ non-peak direction carries $1 - 0.65 = 35% = 0.35$ of the traffic.
+<li>Peak direction carries $65\% \implies$ non-peak direction carries $1 - 0.65 = 35\% = 0.35$ of the traffic.
+
 $$V_{\text{non-peak}} = DHV \times (1 - D)$$
+
 $$V_{\text{non-peak}} = 2,880 \times 0.35 = 1,008 \text{ vehicles/hour}$$</li>
 </ul>
 <p><em>Check:</em>
-$$DDHV + V_{\text{non-peak}} = 1,872 + 1,008 = 2,880 \text{ vehicles/hour (matches DHV)}$$</p>
-<hr>
+</p>
+$$DDHV + V_{\text{non-peak}} = 1,872 + 1,008 = 2,880 \text{ vehicles/hour (matches DHV)}$$<hr>
 <h2 id="crucial-pitfalls-and-exam-traps">Crucial Pitfalls and Exam Traps</h2>
 <ul>
 <li><strong>Confusing ADT and AADT:</strong> Remember that ADT represents counts taken over a short window (e.g., 2 or 7 days) and does not represent the full year. If the exam provides ADT and a seasonal adjustment factor, apply the factor to get AADT before calculating DDHV.</li>
 <li><strong>Directional Split (D) Basis:</strong> Always read the D-factor carefully. If a problem states the directional split is 60/40, then $D = 0.60$.</li>
 <li><strong>One-Way vs. Two-Way Volumes:</strong> Geometric design elements (such as the number of lanes needed) are calculated using the one-way <strong>DDHV</strong>, not the two-way <strong>DHV</strong>. Using DHV instead of DDHV will lead to an over-designed highway with double the required lanes.</li>
-<li><strong>K-Factor Representation:</strong> Ensure $K$ is treated as a decimal in your calculations ($10% = 0.10$).</li>
+<li><strong>K-Factor Representation:</strong> Ensure $K$ is treated as a decimal in your calculations ($10\% = 0.10$).</li>
 </ul>
 
         

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Soil Classification for Pavements and Subgrades">
     <meta property="og:description" content="Soil Classification for Pavements and Subgrades Soil classification is a fundamental topic on the PE Civil Transportation exam. In transportation engineering, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Soil Classification for Pavements and Subgrades">
     <meta name="twitter:description" content="Soil Classification for Pavements and Subgrades Soil classification is a fundamental topic on the PE Civil Transportation exam. In transportation engineering, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/80-soil-classification/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/80-soil-classification/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/80-soil-classification/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -245,30 +259,33 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>No. 4 (4.75 mm):</strong> Separates gravel from sand.</li>
 <li><strong>No. 200 (0.075 mm):</strong> Separates coarse-grained soils (gravel and sand) from fine-grained soils (silt and clay).</li>
 </ul>
-<p>From the cumulative grain size distribution curve, we identify the following diameters (where $D_x$ is the particle diameter corresponding to $x%$ passing by weight):</p>
+<p>From the cumulative grain size distribution curve, we identify the following diameters (where $D_x$ is the particle diameter corresponding to $x\%$ passing by weight):</p>
 <ul>
 <li>$D_{10}$: Effective size.</li>
-<li>$D_{30}$: Diameter at $30%$ passing.</li>
-<li>$D_{60}$: Diameter at $60%$ passing.</li>
+<li>$D_{30}$: Diameter at $30\%$ passing.</li>
+<li>$D_{60}$: Diameter at $60\%$ passing.</li>
 </ul>
 <p>These diameters are used to calculate two shape coefficients:
-$$\text{Coefficient of Uniformity } (C_u) = \frac{D_{60}}{D_{10}}$$
-$$\text{Coefficient of Curvature } (C_c) = \frac{(D_{30})^2}{D_{60} \cdot D_{10}}$$</p>
-<h3 id="atterberg-limits-and-plasticity">Atterberg Limits and Plasticity</h3>
+</p>
+$$\text{Coefficient of Uniformity } (C_u) = \frac{D_{60}}{D_{10}}$$<p>
+</p>
+$$\text{Coefficient of Curvature } (C_c) = \frac{(D_{30})^2}{D_{60} \cdot D_{10}}$$<h3 id="atterberg-limits-and-plasticity">Atterberg Limits and Plasticity</h3>
 <p>Atterberg limits define the boundaries between different states of fine-grained soil consistency as water content ($w$) changes:</p>
 <ul>
 <li><strong>Liquid Limit (LL):</strong> The water content at which soil transitions from a plastic state to a liquid state.</li>
 <li><strong>Plastic Limit (PL):</strong> The water content at which soil transitions from a semi-solid state to a plastic state.</li>
 <li><strong>Plasticity Index (PI):</strong> The range of water content over which the soil exhibits plastic behavior:
+
 $$PI = LL - PL$$</li>
 <li><strong>Shrinkage Limit (SL):</strong> The water content at which further moisture loss will not cause a decrease in soil volume.</li>
 </ul>
 <p>The <strong>Plasticity Chart</strong> (used in USCS) plots $PI$ against $LL$. The key line on this chart is the <strong>A-line</strong>, which separates clays from silts:
-$$\text{A-line: } PI = 0.73(LL - 20)$$</p>
-<ul>
-<li><strong>Clays (C):</strong> Generally plot above the A-line and have $PI &gt; 7$.</li>
-<li><strong>Silts (M):</strong> Generally plot below the A-line or have $PI &lt; 4$.</li>
+</p>
+$$\text{A-line: } PI = 0.73(LL - 20)$$<ul>
+<li><strong>Clays (C):</strong> Generally plot above the A-line and have $PI > 7$.</li>
+<li><strong>Silts (M):</strong> Generally plot below the A-line or have $PI < 4$.</li>
 <li><strong>U-line:</strong> Represents the upper limit of valid test data for natural soils:
+
 $$\text{U-line: } PI = 0.9(LL - 8)$$</li>
 </ul>
 <hr>
@@ -284,24 +301,24 @@ $$\text{U-line: } PI = 0.9(LL - 8)$$</li>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><strong>G:</strong> Gravel ($\ge 50%$ coarse fraction retained on No. 4)</td>
+          <td style="text-align: left"><strong>G:</strong> Gravel ($\ge 50\%$ coarse fraction retained on No. 4)</td>
           <td style="text-align: left"><strong>W:</strong> Well-graded ($C_u$ and $C_c$ meet criteria)</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>S:</strong> Sand ($&gt; 50%$ coarse fraction passing No. 4)</td>
+          <td style="text-align: left"><strong>S:</strong> Sand ($> 50\%$ coarse fraction passing No. 4)</td>
           <td style="text-align: left"><strong>P:</strong> Poorly-graded (fails well-graded criteria)</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>M:</strong> Silt (plots below A-line or $PI &lt; 4$)</td>
+          <td style="text-align: left"><strong>M:</strong> Silt (plots below A-line or $PI < 4$)</td>
           <td style="text-align: left"><strong>M:</strong> Silty (used as a suffix for dirty sands/gravels)</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>C:</strong> Clay (plots on/above A-line and $PI &gt; 7$)</td>
+          <td style="text-align: left"><strong>C:</strong> Clay (plots on/above A-line and $PI > 7$)</td>
           <td style="text-align: left"><strong>C:</strong> Clayey (used as a suffix for dirty sands/gravels)</td>
       </tr>
       <tr>
           <td style="text-align: left"><strong>O:</strong> Organic</td>
-          <td style="text-align: left"><strong>L:</strong> Low plasticity ($LL &lt; 50$)</td>
+          <td style="text-align: left"><strong>L:</strong> Low plasticity ($LL < 50$)</td>
       </tr>
       <tr>
           <td style="text-align: left"><strong>Pt:</strong> Peat / Highly organic</td>
@@ -313,8 +330,8 @@ $$\text{U-line: } PI = 0.9(LL - 8)$$</li>
 <ol>
 <li><strong>Coarse vs. Fine:</strong> Determine the percentage passing the No. 200 sieve ($F_{200}$).
 <ul>
-<li>If $F_{200} &lt; 50%$, the soil is <strong>Coarse-Grained</strong> (proceed to Step 2).</li>
-<li>If $F_{200} \ge 50%$, the soil is <strong>Fine-Grained</strong> (proceed to Step 3).</li>
+<li>If $F_{200} < 50\%$, the soil is <strong>Coarse-Grained</strong> (proceed to Step 2).</li>
+<li>If $F_{200} \ge 50\%$, the soil is <strong>Fine-Grained</strong> (proceed to Step 3).</li>
 </ul>
 </li>
 <li><strong>Coarse-Grained Classification:</strong>
@@ -322,8 +339,8 @@ $$\text{U-line: } PI = 0.9(LL - 8)$$</li>
 <li>Determine the coarse fraction ($R = 100 - F_{200}$).</li>
 <li>Determine the percentage of the coarse fraction retained on the No. 4 sieve.
 <ul>
-<li>If gravel fraction ($G = 100 - F_4$) is $\ge 50%$ of the coarse fraction, it is a <strong>Gravel (G)</strong>.</li>
-<li>If sand fraction ($S = F_4 - F_{200}$) is $&gt; 50%$ of the coarse fraction, it is a <strong>Sand (S)</strong>.</li>
+<li>If gravel fraction ($G = 100 - F_4$) is $\ge 50\%$ of the coarse fraction, it is a <strong>Gravel (G)</strong>.</li>
+<li>If sand fraction ($S = F_4 - F_{200}$) is $> 50\%$ of the coarse fraction, it is a <strong>Sand (S)</strong>.</li>
 </ul>
 </li>
 <li>Evaluate the fines content ($F_{200}$):
@@ -336,8 +353,8 @@ $$\text{U-line: } PI = 0.9(LL - 8)$$</li>
 </li>
 <li><strong>Dirty (&gt; 12% passing No. 200):</strong> Check Atterberg limits of fines.
 <ul>
-<li><em>Gravel:</em> <strong>GC</strong> if $PI &gt; 7$ and plots on/above A-line; <strong>GM</strong> if $PI &lt; 4$ or plots below A-line. (Dual symbol GC-GM if $4 \le PI \le 7$ and plots on/above A-line).</li>
-<li><em>Sand:</em> <strong>SC</strong> if $PI &gt; 7$ and plots on/above A-line; <strong>SM</strong> if $PI &lt; 4$ or plots below A-line. (Dual symbol SC-SM if $4 \le PI \le 7$ and plots on/above A-line).</li>
+<li><em>Gravel:</em> <strong>GC</strong> if $PI > 7$ and plots on/above A-line; <strong>GM</strong> if $PI < 4$ or plots below A-line. (Dual symbol GC-GM if $4 \le PI \le 7$ and plots on/above A-line).</li>
+<li><em>Sand:</em> <strong>SC</strong> if $PI > 7$ and plots on/above A-line; <strong>SM</strong> if $PI < 4$ or plots below A-line. (Dual symbol SC-SM if $4 \le PI \le 7$ and plots on/above A-line).</li>
 </ul>
 </li>
 <li><strong>Borderline (5% to 12% passing No. 200):</strong> Requires dual symbols (e.g., GW-GM, SP-SC) representing both gradation and fines characteristics.</li>
@@ -349,14 +366,14 @@ $$\text{U-line: } PI = 0.9(LL - 8)$$</li>
 <ul>
 <li>Identify the Liquid Limit ($LL$).
 <ul>
-<li>If $LL &lt; 50$, the soil is <strong>Low Plasticity (L)</strong>.</li>
+<li>If $LL < 50$, the soil is <strong>Low Plasticity (L)</strong>.</li>
 <li>If $LL \ge 50$, the soil is <strong>High Plasticity (H)</strong>.</li>
 </ul>
 </li>
 <li>Plot $PI$ vs. $LL$ on the Plasticity Chart:
 <ul>
-<li>If on/above the A-line and $PI &gt; 7$, it is a <strong>Clay (CL or CH)</strong>.</li>
-<li>If below the A-line or $PI &lt; 4$, it is a <strong>Silt (ML or MH)</strong>.</li>
+<li>If on/above the A-line and $PI > 7$, it is a <strong>Clay (CL or CH)</strong>.</li>
+<li>If below the A-line or $PI < 4$, it is a <strong>Silt (ML or MH)</strong>.</li>
 <li>If $4 \le PI \le 7$ and plots on/above the A-line, it is a borderline <strong>CL-ML</strong>.</li>
 </ul>
 </li>
@@ -368,7 +385,8 @@ $$\text{U-line: } PI = 0.9(LL - 8)$$</li>
 <p>The AASHTO system classifies soils specifically for highway subgrade performance. It categorizes soils into seven major groups, A-1 through A-7, based on sieve analysis and Atterberg limits.</p>
 <h3 id="group-index-gi">Group Index (GI)</h3>
 <p>The Group Index is a numerical rating appended in parentheses to the AASHTO classification (e.g., A-7-6(12)) to indicate the relative quality of the subgrade. A lower GI indicates a better subgrade material.
-$$GI = (F_{200} - 35)[0.2 + 0.005(LL - 40)] + 0.01(F_{200} - 15)(PI - 10)$$
+</p>
+$$GI = (F_{200} - 35)[0.2 + 0.005(LL - 40)] + 0.01(F_{200} - 15)(PI - 10)$$<p>
 Where:</p>
 <ul>
 <li>$F_{200} = \text{percent passing No. 200 sieve expressed as a whole number}$ (e.g., 45, not 0.45).</li>
@@ -377,9 +395,10 @@ Where:</p>
 </ul>
 <h4 id="group-index-rules">Group Index Rules:</h4>
 <ul>
-<li>If the calculated $GI &lt; 0$, report $GI = 0$.</li>
+<li>If the calculated $GI < 0$, report $GI = 0$.</li>
 <li>Round the calculated $GI$ to the nearest whole number (e.g., 4.5 rounds to 5, 4.4 rounds to 4).</li>
 <li>For groups <strong>A-2-6</strong> and <strong>A-2-7</strong>, use only the partial group index (the second term of the equation):
+
 $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <li>The group index is always <strong>0</strong> for groups <strong>A-1-a, A-1-b, A-3, A-2-4</strong>, and <strong>A-2-5</strong>.</li>
 </ul>
@@ -484,15 +503,15 @@ $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <p><em>Note on A-7 subgroups:</em></p>
 <ul>
 <li><strong>A-7-5:</strong> $PI \le LL - 30$. (Behavior is moderately plastic, behaves like silt).</li>
-<li><strong>A-7-6:</strong> $PI &gt; LL - 30$. (Highly plastic clay behavior).</li>
+<li><strong>A-7-6:</strong> $PI > LL - 30$. (Highly plastic clay behavior).</li>
 </ul>
 <hr>
 <h2 id="4-worked-examples">4. Worked Examples</h2>
 <h3 id="worked-example-1-unified-soil-classification-system-uscs">Worked Example 1: Unified Soil Classification System (USCS)</h3>
 <p>A soil sample exhibits the following sieve analysis and plasticity test results:</p>
 <ul>
-<li>Percent passing No. 4 sieve = $78%$</li>
-<li>Percent passing No. 200 sieve = $8%$</li>
+<li>Percent passing No. 4 sieve = $78\%$</li>
+<li>Percent passing No. 200 sieve = $8\%$</li>
 <li>$D_{10} = 0.08\text{ mm}$, $D_{30} = 0.25\text{ mm}$, $D_{60} = 0.80\text{ mm}$</li>
 <li>Liquid Limit ($LL$) = $32$, Plastic Limit ($PL$) = $24$</li>
 </ul>
@@ -501,21 +520,21 @@ $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <ol>
 <li><strong>Evaluate Coarse vs. Fine:</strong>
 <ul>
-<li>$F_{200} = 8%$.</li>
-<li>Since $F_{200} &lt; 50%$, the soil is <strong>Coarse-Grained</strong>.</li>
+<li>$F_{200} = 8\%$.</li>
+<li>Since $F_{200} < 50\%$, the soil is <strong>Coarse-Grained</strong>.</li>
 </ul>
 </li>
 <li><strong>Determine Gravel vs. Sand:</strong>
 <ul>
-<li>Coarse fraction ($R = 100 - F_{200} = 100 - 8 = 92%$).</li>
-<li>Gravel fraction ($G = 100 - F_4 = 100 - 78 = 22%$).</li>
-<li>Sand fraction ($S = F_4 - F_{200} = 78 - 8 = 70%$).</li>
-<li>Since sand ($70%$) represents more than half of the coarse fraction ($92 / 2 = 46%$), the soil is a <strong>Sand (S)</strong>.</li>
+<li>Coarse fraction ($R = 100 - F_{200} = 100 - 8 = 92\%$).</li>
+<li>Gravel fraction ($G = 100 - F_4 = 100 - 78 = 22\%$).</li>
+<li>Sand fraction ($S = F_4 - F_{200} = 78 - 8 = 70\%$).</li>
+<li>Since sand ($70\%$) represents more than half of the coarse fraction ($92 / 2 = 46\%$), the soil is a <strong>Sand (S)</strong>.</li>
 </ul>
 </li>
 <li><strong>Evaluate Fines Content:</strong>
 <ul>
-<li>Since $F_{200} = 8%$, which falls between $5%$ and $12%$, this is a borderline soil requiring a <strong>dual symbol</strong> (e.g., SW-SM, SP-SC, etc.).</li>
+<li>Since $F_{200} = 8\%$, which falls between $5\%$ and $12\%$, this is a borderline soil requiring a <strong>dual symbol</strong> (e.g., SW-SM, SP-SC, etc.).</li>
 </ul>
 </li>
 <li><strong>Calculate Gradation Parameters (Clean Suffix):</strong>
@@ -523,7 +542,7 @@ $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <li>$C_u = \frac{D_{60}}{D_{10}} = \frac{0.80}{0.08} = 10.0$</li>
 <li>$C_c = \frac{(D_{30})^2}{D_{60} \cdot D_{10}} = \frac{(0.25)^2}{0.80 \cdot 0.08} = \frac{0.0625}{0.064} = 0.98$</li>
 <li>For a sand to be well-graded ($W$), it must satisfy $C_u \ge 6$ and $1 \le C_c \le 3$.</li>
-<li>$C_u = 10.0 \ge 6$ (Satisfied), but $C_c = 0.98 &lt; 1.0$ (Not satisfied).</li>
+<li>$C_u = 10.0 \ge 6$ (Satisfied), but $C_c = 0.98 < 1.0$ (Not satisfied).</li>
 <li>Therefore, the gradation symbol is <strong>SP</strong> (poorly-graded sand).</li>
 </ul>
 </li>
@@ -531,7 +550,7 @@ $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <ul>
 <li>$PI = LL - PL = 32 - 24 = 8$.</li>
 <li>A-line: $PI_{\text{A-line}} = 0.73(LL - 20) = 0.73(32 - 20) = 8.76$.</li>
-<li>Since the soil&rsquo;s $PI = 8$ is less than $8.76$ and $LL &lt; 50$, the fines plot below the A-line, indicating silt-like behavior (<strong>M</strong>).</li>
+<li>Since the soil&rsquo;s $PI = 8$ is less than $8.76$ and $LL < 50$, the fines plot below the A-line, indicating silt-like behavior (<strong>M</strong>).</li>
 <li>Therefore, the dirty suffix is <strong>SM</strong> (silty sand).</li>
 </ul>
 </li>
@@ -545,9 +564,9 @@ $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <h3 id="worked-example-2-aashto-classification-and-group-index">Worked Example 2: AASHTO Classification and Group Index</h3>
 <p>A highway subgrade soil has the following characteristics:</p>
 <ul>
-<li>Percent passing No. 10 sieve = $88%$</li>
-<li>Percent passing No. 40 sieve = $72%$</li>
-<li>Percent passing No. 200 sieve = $48%$</li>
+<li>Percent passing No. 10 sieve = $88\%$</li>
+<li>Percent passing No. 40 sieve = $72\%$</li>
+<li>Percent passing No. 200 sieve = $48\%$</li>
 <li>Liquid Limit ($LL$) = $45$, Plastic Limit ($PL$) = $20$</li>
 </ul>
 <p><strong>Goal:</strong> Classify the soil using the AASHTO system and determine its Group Index.</p>
@@ -555,8 +574,8 @@ $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <ol>
 <li><strong>Classify Soil Group (Elimination Process):</strong>
 <ul>
-<li>Percent passing No. 200 sieve ($F_{200} = 48%$).</li>
-<li>Since $F_{200} &gt; 35%$, the soil is a <strong>Silt-Clay Material</strong> (A-4, A-5, A-6, or A-7).</li>
+<li>Percent passing No. 200 sieve ($F_{200} = 48\%$).</li>
+<li>Since $F_{200} > 35\%$, the soil is a <strong>Silt-Clay Material</strong> (A-4, A-5, A-6, or A-7).</li>
 <li>Calculate Plasticity Index: $PI = LL - PL = 45 - 20 = 25$.</li>
 <li>Test against group criteria from left to right:
 <ul>
@@ -572,7 +591,7 @@ $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <li>Compare $PI$ to $LL - 30$:
 <ul>
 <li>$PI = 25$</li>
-<li>Since $PI &gt; LL - 30$ ($25 &gt; 15$), the subgroup is <strong>A-7-6</strong>.</li>
+<li>Since $PI > LL - 30$ ($25 > 15$), the subgroup is <strong>A-7-6</strong>.</li>
 </ul>
 </li>
 </ul>
@@ -583,9 +602,13 @@ $$GI = 0.01(F_{200} - 15)(PI - 10)$$</li>
 <ul>
 <li>Formula: $GI = (F_{200} - 35)[0.2 + 0.005(LL - 40)] + 0.01(F_{200} - 15)(PI - 10)$</li>
 <li>Substitute known values:
+
 $$GI = (48 - 35)[0.2 + 0.005(45 - 40)] + 0.01(48 - 15)(25 - 10)$$
+
 $$GI = (13)[0.2 + 0.005(5)] + 0.01(33)(15)$$
+
 $$GI = (13)[0.225] + 0.01(495)$$
+
 $$GI = 2.925 + 4.95 = 7.875$$</li>
 <li>Round to the nearest whole number: $GI \approx 8$.</li>
 </ul>
@@ -600,10 +623,10 @@ $$GI = 2.925 + 4.95 = 7.875$$</li>
 <h2 id="5-exam-pitfalls-and-tips">5. Exam Pitfalls and Tips</h2>
 <ul>
 <li><strong>Process of Elimination for AASHTO:</strong> Always apply the AASHTO table from left to right. If a soil passes the criteria for A-1-b, it is A-1-b, even if it also fits the looser criteria for A-2 or A-4.</li>
-<li><strong>Dual Symbols in USCS:</strong> A common mistake is forgetting that soils with $5%$ to $12%$ passing the No. 200 sieve require dual symbols. Always check the No. 200 percent first.</li>
+<li><strong>Dual Symbols in USCS:</strong> A common mistake is forgetting that soils with $5\%$ to $12\%$ passing the No. 200 sieve require dual symbols. Always check the No. 200 percent first.</li>
 <li><strong>Gravel/Sand Split: Coarse Fraction vs. Total Soil:</strong> The USCS determines Gravel vs. Sand based on the percentage of the <em>coarse fraction</em> (the fraction retained on the No. 200 sieve), not the <em>total soil</em>.
 <ul>
-<li><em>Example:</em> If a soil has $30%$ passing the No. 200 sieve, the coarse fraction is $70%$. The boundary between Gravel and Sand is half of this coarse fraction ($35%$). If the gravel fraction is $40%$ of the total soil, it is greater than $35%$, classifying it as a Gravel.</li>
+<li><em>Example:</em> If a soil has $30\%$ passing the No. 200 sieve, the coarse fraction is $70\%$. The boundary between Gravel and Sand is half of this coarse fraction ($35\%$). If the gravel fraction is $40\%$ of the total soil, it is greater than $35\%$, classifying it as a Gravel.</li>
 </ul>
 </li>
 <li><strong>Group Index (GI) Subgroup Exceptions:</strong> For A-2-6 and A-2-7, remember to only compute the partial Group Index (the second term in the GI equation). For A-1, A-3, A-2-4, and A-2-5, the Group Index is 0 by definition; do not calculate a value using the formula.</li>

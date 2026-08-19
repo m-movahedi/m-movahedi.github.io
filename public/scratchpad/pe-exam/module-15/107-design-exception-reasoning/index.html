@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Design Exception Reasoning">
     <meta property="og:description" content="Design Exception Reasoning When a roadway project cannot meet the minimum design standards due to physical, environmental, or economic constraints, designers …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Design Exception Reasoning">
     <meta name="twitter:description" content="Design Exception Reasoning When a roadway project cannot meet the minimum design standards due to physical, environmental, or economic constraints, designers …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-15/107-design-exception-reasoning/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-15/107-design-exception-reasoning/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-15/107-design-exception-reasoning/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -247,7 +261,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>Vertical Clearance:</strong> Clearance above the road surface to structures (bridges, signs).</li>
 <li><strong>Design Loading Structural Capacity:</strong> Bridge structural capacity to carry design vehicles.</li>
 </ol>
-<p><em>Key Change:</em> For low-speed roadways (Design Speed $&lt; 50\text{ mph}$), the list of controlling criteria was reduced to only two: <strong>Design Speed</strong> and <strong>Design Loading Structural Capacity</strong>. Other design criteria are managed at the state or local DOT level.</p>
+<p><em>Key Change:</em> For low-speed roadways (Design Speed $< 50\text{ mph}$), the list of controlling criteria was reduced to only two: <strong>Design Speed</strong> and <strong>Design Loading Structural Capacity</strong>. Other design criteria are managed at the state or local DOT level.</p>
 <hr>
 <h2 id="design-exception-justification-process">Design Exception Justification Process</h2>
 <p>To justify a design exception, engineers must perform a multi-disciplinary analysis:</p>
@@ -276,26 +290,28 @@ gtag('config', 'G-1WZSE8DHZ9');
 <strong>2. Calculate the expected increase in crashes over a 10-year design life.</strong>
 <strong>3. If installing rumble strips has a CMF of 0.85, evaluate the net crash frequency ($N_{net}$) if rumble strips are installed as a mitigation measure.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-proposed-crash-frequency-n_proposed">Step 1: Calculate proposed crash frequency ($N_{proposed}$)</h4>
+<h4 id="step-1-calculate-proposed-crash-frequency-">Step 1: Calculate proposed crash frequency ($N_{proposed}$)</h4>
 <p>Using the CMF for the reduced shoulder width:
-$$N_{proposed} = N_{base} \cdot \text{CMF}<em>{shoulder}$$
-$$N</em>{proposed} = 3.2\text{ crashes/year} \cdot 1.15 = 3.68\text{ crashes/year}$$</p>
-<h4 id="step-2-calculate-the-10-year-crash-increase">Step 2: Calculate the 10-year crash increase</h4>
-<p>$$\text{Crash Increase} = (N_{proposed} - N_{base}) \cdot 10\text{ years}$$
-$$\text{Crash Increase} = (3.68 - 3.20) \cdot 10 = 0.48 \cdot 10 = 4.8\text{ crashes}$$</p>
-<p><em>Result:</em> The design exception is expected to result in approximately <strong>4.8 additional crashes</strong> over 10 years.</p>
+</p>
+$$N_{proposed} = N_{base} \cdot \text{CMF}_{shoulder}$$<p>
+</p>
+$$N_{proposed} = 3.2\text{ crashes/year} \cdot 1.15 = 3.68\text{ crashes/year}$$<h4 id="step-2-calculate-the-10-year-crash-increase">Step 2: Calculate the 10-year crash increase</h4>
+$$\text{Crash Increase} = (N_{proposed} - N_{base}) \cdot 10\text{ years}$$<p>
+</p>
+$$\text{Crash Increase} = (3.68 - 3.20) \cdot 10 = 0.48 \cdot 10 = 4.8\text{ crashes}$$<p><em>Result:</em> The design exception is expected to result in approximately <strong>4.8 additional crashes</strong> over 10 years.</p>
 <h4 id="step-3-evaluate-mitigation-with-rumble-strips">Step 3: Evaluate mitigation with rumble strips</h4>
 <p>If rumble strips are added, we apply both CMFs multiplicatively (assuming their safety effects are independent):
-$$\text{CMF}<em>{net} = \text{CMF}</em>{shoulder} \cdot \text{CMF}_{rumble_strips} = 1.15 \cdot 0.85 = 0.9775$$</p>
-<p>Calculate the net expected crash frequency:
-$$N_{net} = N_{base} \cdot \text{CMF}<em>{net}$$
-$$N</em>{net} = 3.2\text{ crashes/year} \cdot 0.9775 \approx 3.13\text{ crashes/year}$$</p>
-<p><em>Conclusion:</em> Because $N_{net} = 3.13 &lt; N_{base} = 3.20$, the proposed design exception <em>with</em> the rumble strip mitigation is expected to be slightly safer than the baseline standard design without rumble strips. This provides a strong justification for the design exception.</p>
+</p>
+$$\text{CMF}_{net} = \text{CMF}_{shoulder} \cdot \text{CMF}_{rumble\_strips} = 1.15 \cdot 0.85 = 0.9775$$<p>Calculate the net expected crash frequency:
+</p>
+$$N_{net} = N_{base} \cdot \text{CMF}_{net}$$<p>
+</p>
+$$N_{net} = 3.2\text{ crashes/year} \cdot 0.9775 \approx 3.13\text{ crashes/year}$$<p><em>Conclusion:</em> Because $N_{net} = 3.13 < N_{base} = 3.20$, the proposed design exception <em>with</em> the rumble strip mitigation is expected to be slightly safer than the baseline standard design without rumble strips. This provides a strong justification for the design exception.</p>
 <hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>
 <ul>
 <li><strong>Multiplicative CMF Trap:</strong> When applying multiple CMFs, always multiply them ($CMF_1 \cdot CMF_2$), never add them ($CMF_1 + CMF_2$).</li>
-<li><strong>CMF Interpretation:</strong> A CMF $&lt; 1.0$ indicates a safety <em>improvement</em> (reduction in crashes), while a CMF $&gt; 1.0$ indicates a safety <em>degradation</em> (increase in crashes).</li>
+<li><strong>CMF Interpretation:</strong> A CMF $< 1.0$ indicates a safety <em>improvement</em> (reduction in crashes), while a CMF $> 1.0$ indicates a safety <em>degradation</em> (increase in crashes).</li>
 <li><strong>Controlling Criteria Speed Threshold:</strong> Remember the <strong>50 mph</strong> threshold. Under 50 mph, only design speed and structural loading are controlling criteria for FHWA. Above 50 mph, all 10 criteria apply.</li>
 </ul>
 

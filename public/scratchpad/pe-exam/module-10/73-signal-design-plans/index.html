@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Traffic Signal Design and Plans">
     <meta property="og:description" content="Traffic Signal Design and Plans Traffic signal design plans are highly detailed engineering documents that specify the physical layout, structural support, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Traffic Signal Design and Plans">
     <meta name="twitter:description" content="Traffic Signal Design and Plans Traffic signal design plans are highly detailed engineering documents that specify the physical layout, structural support, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-10/73-signal-design-plans/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/73-signal-design-plans/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-10/73-signal-design-plans/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -295,7 +309,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="phasing-and-wiring-layouts">Phasing and Wiring Layouts</h2>
 <ul>
 <li><strong>Phasing Diagrams:</strong> Included in plans to map NEMA phases to the physical movements.</li>
-<li><strong>Conduit Design:</strong> Wires are routed through underground conduits. Conduits must not exceed standard fill capacities (typically a <strong>$40%$ fill limit</strong> for conduits containing three or more conductors) to prevent heat buildup and wire damage.</li>
+<li><strong>Conduit Design:</strong> Wires are routed through underground conduits. Conduits must not exceed standard fill capacities (typically a <strong>$40\%$ fill limit</strong> for conduits containing three or more conductors) to prevent heat buildup and wire damage.</li>
 </ul>
 <hr>
 <h2 id="worked-example-high-speed-advance-detector-placement">Worked Example: High-Speed Advance Detector Placement</h2>
@@ -309,30 +323,34 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>If the engineer wants to place a single detector at the safe stopping sight distance ($SSD$) position, calculate that distance using standard parameters (perception time $t = 1.0\text{ s}$, deceleration $a = 10\text{ ft/s}^2$, flat grade).</li>
 </ol>
 <h3 id="step-by-step-solution">Step-by-Step Solution</h3>
-<h4 id="step-1-convert-design-speed-to-textfts">Step 1: Convert Design Speed to $\text{ft/s}$</h4>
-<p>$$v = 50\text{ mph} \times 1.467 = 73.35\text{ ft/s}$$</p>
-<h4 id="step-2-calculate-near-boundary-loop-distance-d_textnear">Step 2: Calculate Near Boundary Loop Distance ($d_{\text{near}}$)</h4>
+<h4 id="step-1-convert-design-speed-to">Step 1: Convert Design Speed to $\text{ft/s}$</h4>
+$$v = 50\text{ mph} \times 1.467 = 73.35\text{ ft/s}$$<h4 id="step-2-calculate-near-boundary-loop-distance-">Step 2: Calculate Near Boundary Loop Distance ($d_{\text{near}}$)</h4>
 <p>The near boundary is at $2.5\text{ seconds}$ of travel time:
-$$d_{\text{near}} = v \times 2.5\text{ s}$$
-$$d_{\text{near}} = 73.35\text{ ft/s} \times 2.5\text{ s} = 183.375\text{ feet}$$</p>
-<p>Rounding to the nearest foot:
-$$d_{\text{near}} \approx 183\text{ feet}$$</p>
-<h4 id="step-3-calculate-far-boundary-loop-distance-d_textfar">Step 3: Calculate Far Boundary Loop Distance ($d_{\text{far}}$)</h4>
+</p>
+$$d_{\text{near}} = v \times 2.5\text{ s}$$<p>
+</p>
+$$d_{\text{near}} = 73.35\text{ ft/s} \times 2.5\text{ s} = 183.375\text{ feet}$$<p>Rounding to the nearest foot:
+</p>
+$$d_{\text{near}} \approx 183\text{ feet}$$<h4 id="step-3-calculate-far-boundary-loop-distance-">Step 3: Calculate Far Boundary Loop Distance ($d_{\text{far}}$)</h4>
 <p>The far boundary is at $5.0\text{ seconds}$ of travel time:
-$$d_{\text{far}} = v \times 5.0\text{ s}$$
-$$d_{\text{far}} = 73.35\text{ ft/s} \times 5.0\text{ s} = 366.75\text{ feet}$$</p>
-<p>Rounding to the nearest foot:
-$$d_{\text{far}} \approx 367\text{ feet}$$</p>
-<p><em>Note: Vehicles within the zone between $183\text{ feet}$ and $367\text{ feet}$ upstream are in their dilemma zone when the signal turns yellow. Detectors placed here will extend the green phase to prevent vehicles from being trapped.</em></p>
-<h4 id="step-4-calculate-stopping-sight-distance-detector-placement-d_textssd">Step 4: Calculate Stopping Sight Distance Detector Placement ($d_{\text{SSD}}$)</h4>
+</p>
+$$d_{\text{far}} = v \times 5.0\text{ s}$$<p>
+</p>
+$$d_{\text{far}} = 73.35\text{ ft/s} \times 5.0\text{ s} = 366.75\text{ feet}$$<p>Rounding to the nearest foot:
+</p>
+$$d_{\text{far}} \approx 367\text{ feet}$$<p><em>Note: Vehicles within the zone between $183\text{ feet}$ and $367\text{ feet}$ upstream are in their dilemma zone when the signal turns yellow. Detectors placed here will extend the green phase to prevent vehicles from being trapped.</em></p>
+<h4 id="step-4-calculate-stopping-sight-distance-detector-placement-">Step 4: Calculate Stopping Sight Distance Detector Placement ($d_{\text{SSD}}$)</h4>
 <p>Using the kinematic stopping distance formula:
-$$d_{\text{SSD}} = v \cdot t + \frac{v^2}{2a}$$
-$$d_{\text{SSD}} = (73.35\text{ ft/s} \times 1.0\text{ s}) + \frac{(73.35\text{ ft/s})^2}{2(10\text{ ft/s}^2)}$$
-$$d_{\text{SSD}} = 73.35 + \frac{5,380.22}{20}$$
-$$d_{\text{SSD}} = 73.35 + 269.01 = 342.36\text{ feet}$$</p>
-<p>Rounding to the nearest foot:
-$$d_{\text{SSD}} \approx 342\text{ feet}$$</p>
-<p>Therefore, the advance detector should be placed <strong>$342\text{ feet}$</strong> upstream of the stop line.</p>
+</p>
+$$d_{\text{SSD}} = v \cdot t + \frac{v^2}{2a}$$<p>
+</p>
+$$d_{\text{SSD}} = (73.35\text{ ft/s} \times 1.0\text{ s}) + \frac{(73.35\text{ ft/s})^2}{2(10\text{ ft/s}^2)}$$<p>
+</p>
+$$d_{\text{SSD}} = 73.35 + \frac{5,380.22}{20}$$<p>
+</p>
+$$d_{\text{SSD}} = 73.35 + 269.01 = 342.36\text{ feet}$$<p>Rounding to the nearest foot:
+</p>
+$$d_{\text{SSD}} \approx 342\text{ feet}$$<p>Therefore, the advance detector should be placed <strong>$342\text{ feet}$</strong> upstream of the stop line.</p>
 
         
     </div>

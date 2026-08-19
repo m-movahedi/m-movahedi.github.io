@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Crash Data Fundamentals">
     <meta property="og:description" content="Crash Data Fundamentals Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Crash Data Fundamentals">
     <meta name="twitter:description" content="Crash Data Fundamentals Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-5/31-crash-data-fundamentals/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -241,10 +255,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="traffic-exposure-and-crash-rate-equations">Traffic Exposure and Crash Rate Equations</h2>
 <p>To compute crash rates, we use different exposure metrics depending on whether the study area is a roadway segment or an intersection. These equations are found in the NCEES PE Civil Reference Handbook.</p>
-<h3 id="1-roadway-segments-crashes-per-100-million-vehicle-miles-of-travel-r_seg">1. Roadway Segments (Crashes per 100 Million Vehicle-Miles of Travel, $R_{seg}$)</h3>
+<h3 id="1-roadway-segments-crashes-per-100-million-vehicle-miles-of-travel-">1. Roadway Segments (Crashes per 100 Million Vehicle-Miles of Travel, $R_{seg}$)</h3>
 <p>For roadway segments, exposure is measured in Million Vehicle-Miles of Travel (MVM) or 100 Million Vehicle-Miles (100 MVM):</p>
-<p>$$R_{seg} = \frac{C \times 10^8}{\text{ADT} \times 365 \times L \times Y}$$</p>
-<p>Where:</p>
+$$R_{seg} = \frac{C \times 10^8}{\text{ADT} \times 365 \times L \times Y}$$<p>Where:</p>
 <ul>
 <li>$R_{seg}$ = segment crash rate (crashes per $100 \text{ million vehicle-miles}$)</li>
 <li>$C$ = number of crashes observed during the study period</li>
@@ -252,10 +265,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>$L$ = length of the roadway segment ($\text{miles}$)</li>
 <li>$Y$ = number of years in the study period</li>
 </ul>
-<h3 id="2-intersections-crashes-per-million-entering-vehicles-r_int">2. Intersections (Crashes per Million Entering Vehicles, $R_{int}$)</h3>
+<h3 id="2-intersections-crashes-per-million-entering-vehicles-">2. Intersections (Crashes per Million Entering Vehicles, $R_{int}$)</h3>
 <p>For intersections, exposure is measured in Million Entering Vehicles (MEV):</p>
-<p>$$R_{int} = \frac{C \times 10^6}{\sum \text{ADT}_{\text{app}} \times 365 \times Y}$$</p>
-<p>Where:</p>
+$$R_{int} = \frac{C \times 10^6}{\sum \text{ADT}_{\text{app}} \times 365 \times Y}$$<p>Where:</p>
 <ul>
 <li>$R_{int}$ = intersection crash rate (crashes per $\text{million entering vehicles}$)</li>
 <li>$C$ = number of crashes observed at the intersection during the study period</li>
@@ -274,8 +286,8 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <h3 id="equivalent-property-damage-only-epdo">Equivalent Property Damage Only (EPDO)</h3>
 <p>To compare sites based on severity rather than just crash counts, engineers use the EPDO index. Different weightings are applied to fatal/injury crashes relative to PDO crashes (e.g., a fatal crash might be weighted as 542, an injury as 30, and a PDO as 1). The total EPDO crashes is:
-$$\text{EPDO} = w_K \cdot C_K + w_A \cdot C_A + w_B \cdot C_B + w_C \cdot C_C + w_O \cdot C_O$$</p>
-<hr>
+</p>
+$$\text{EPDO} = w_K \cdot C_K + w_A \cdot C_A + w_B \cdot C_B + w_C \cdot C_C + w_O \cdot C_O$$<hr>
 <h2 id="critical-pitfalls-and-exam-traps">Critical Pitfalls and Exam Traps</h2>
 <ol>
 <li>
@@ -308,10 +320,12 @@ Ensure you sum the ADT of all entering approaches. For a standard 4-leg intersec
 <li>$Y = 3 \text{ years}$</li>
 </ul>
 <p>Apply the segment crash rate equation:
-$$R_{seg} = \frac{C \times 10^8}{\text{ADT} \times 365 \times L \times Y}$$
-$$R_{seg} = \frac{95 \times 10^8}{12,500 \times 365 \times 4.5 \times 3}$$
-$$R_{seg} = \frac{9,500,000,000}{61,593,750} = 154.24 \text{ crashes/100 MVM}$$</p>
-<hr>
+</p>
+$$R_{seg} = \frac{C \times 10^8}{\text{ADT} \times 365 \times L \times Y}$$<p>
+</p>
+$$R_{seg} = \frac{95 \times 10^8}{12,500 \times 365 \times 4.5 \times 3}$$<p>
+</p>
+$$R_{seg} = \frac{9,500,000,000}{61,593,750} = 154.24 \text{ crashes/100 MVM}$$<hr>
 <h3 id="worked-example-2-intersection-crash-rate">Worked Example 2: Intersection Crash Rate</h3>
 <p>A 4-leg urban intersection has the following Average Daily Traffic (ADT) values on its approaches:</p>
 <ul>
@@ -327,14 +341,17 @@ $$R_{seg} = \frac{9,500,000,000}{61,593,750} = 154.24 \text{ crashes/100 MVM}$$<
 <ul>
 <li>$C = 32$ crashes</li>
 <li>$Y = 5$ years</li>
-<li>Calculate $\sum \text{ADT}<em>{\text{app}}$:
-$$\sum \text{ADT}</em>{\text{app}} = 6,500 + 5,800 + 3,200 + 2,900 = 18,400 \text{ veh/day}$$</li>
+<li>Calculate $\sum \text{ADT}_{\text{app}}$:
+
+$$\sum \text{ADT}_{\text{app}} = 6,500 + 5,800 + 3,200 + 2,900 = 18,400 \text{ veh/day}$$</li>
 </ul>
 <p>Apply the intersection crash rate equation:
-$$R_{int} = \frac{C \times 10^6}{\sum \text{ADT}<em>{\text{app}} \times 365 \times Y}$$
-$$R</em>{int} = \frac{32 \times 10^6}{18,400 \times 365 \times 5}$$
-$$R_{int} = \frac{32,000,000}{33,580,000} = 0.953 \text{ crashes/MEV}$$</p>
-<hr>
+</p>
+$$R_{int} = \frac{C \times 10^6}{\sum \text{ADT}_{\text{app}} \times 365 \times Y}$$<p>
+</p>
+$$R_{int} = \frac{32 \times 10^6}{18,400 \times 365 \times 5}$$<p>
+</p>
+$$R_{int} = \frac{32,000,000}{33,580,000} = 0.953 \text{ crashes/MEV}$$<hr>
 <h2 id="references-and-standards">References and Standards</h2>
 <ul>
 <li><em>NCEES PE Civil Reference Handbook</em>, Section 6.3 (Traffic Safety).</li>

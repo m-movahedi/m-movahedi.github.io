@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hurricane Evacuation on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/hurricane-evacuation/</link>
+    <description>Recent content in Hurricane Evacuation on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hurricane-evacuation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Persona-Based Hurricane Evacuation Travel Demand Analysis</title>
+      <link>http://localhost:1313/research/persona-based-hurricane-evacuation/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/persona-based-hurricane-evacuation/</guid>
+      <description>&lt;div style=&#34;background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xA;  &lt;h4 style=&#34;margin-top: 0; color: #2980b9; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🌀&lt;/span&gt; The Challenge of Rural Evacuation Planning&lt;/h4&gt;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #154360;&#34;&gt;Florida continues to be the most hurricane-prone state in the United States. While evacuation orders play a significant role in reducing casualties, their effectiveness relies heavily on household decision-making. In rural communities, such as the Florida Panhandle, this is complicated by limited infrastructure, longer travel distances, and resource constraints. Current evacuation demand models often rely on oversimplified assumptions of rational decision-making, failing to capture the stress, urgency, and irrationality inherent in disaster scenarios.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

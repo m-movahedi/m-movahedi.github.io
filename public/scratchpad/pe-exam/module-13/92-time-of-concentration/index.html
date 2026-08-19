@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Time of Concentration ($t_c$)">
     <meta property="og:description" content="Time of Concentration ($t_c$) The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Time of Concentration ($t_c$)">
     <meta name="twitter:description" content="Time of Concentration ($t_c$) The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/92-time-of-concentration/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -229,17 +243,15 @@ gtag('config', 'G-1WZSE8DHZ9');
     </div>
 
     <div class="post-content">
-        <h1 id="time-of-concentration-t_c">Time of Concentration ($t_c$)</h1>
+        <h1 id="time-of-concentration-">Time of Concentration ($t_c$)</h1>
 <p>The time of concentration ($t_c$) is the travel time required for runoff to flow from the hydraulically most remote point of the watershed to the outlet. In the Rational Method, the design storm duration is set equal to $t_c$ because this corresponds to the maximum peak runoff rate.</p>
 <hr>
 <h2 id="components-of-time-of-concentration">Components of Time of Concentration</h2>
 <p>Runoff travels through a watershed in three distinct phases. The total time of concentration is the sum of the travel times for each phase:</p>
-<p>$$t_c = t_{sheet} + t_{shallow} + t_{channel}$$</p>
-<h3 id="1-sheet-flow-overland-flow">1. Sheet Flow (Overland Flow)</h3>
+$$t_c = t_{sheet} + t_{shallow} + t_{channel}$$<h3 id="1-sheet-flow-overland-flow">1. Sheet Flow (Overland Flow)</h3>
 <p>Sheet flow occurs very early in the runoff process, where water flows in a thin sheet across a plane surface. This flow is dominated by friction against the ground surface.
 The NRCS (SCS) method uses the Manning&rsquo;s Kinematic Wave equation:</p>
-<p>$$t_{sheet} = \frac{0.007 (n \cdot L)^{0.8}}{(P_2)^{0.5} \cdot S^{0.4}}$$</p>
-<p>Where:</p>
+$$t_{sheet} = \frac{0.007 (n \cdot L)^{0.8}}{(P_2)^{0.5} \cdot S^{0.4}}$$<p>Where:</p>
 <ul>
 <li>$t_{sheet}$ = Travel time (<strong>hours</strong>)</li>
 <li>$n$ = Manning&rsquo;s roughness coefficient for sheet flow (values differ significantly from channel roughness; e.g., asphalt = 0.011, dense grass = 0.24, woods = 0.40)</li>
@@ -250,8 +262,7 @@ The NRCS (SCS) method uses the Manning&rsquo;s Kinematic Wave equation:</p>
 <h3 id="2-shallow-concentrated-flow">2. Shallow Concentrated Flow</h3>
 <p>After a maximum of 100 to 300 feet, sheet flow begins to accumulate in small rills, shallow gullies, or roadway gutters.
 The velocity of shallow concentrated flow is calculated as:</p>
-<p>$$V = k \cdot S^{0.5}$$</p>
-<p>Where:</p>
+$$V = k \cdot S^{0.5}$$<p>Where:</p>
 <ul>
 <li>$V$ = Average velocity (<strong>feet per second, ft/s</strong>)</li>
 <li>$S$ = Longitudinal slope (<strong>ft/ft</strong> or percent depending on standard; in NCEES, $S$ is in <strong>ft/ft</strong> or percent. Let&rsquo;s use the explicit formulas):
@@ -263,12 +274,11 @@ The velocity of shallow concentrated flow is calculated as:</p>
 <li>$k$ = Intercept coefficient (paved = 20.3, unpaved = 16.1)</li>
 </ul>
 <p>Travel time for shallow concentrated flow:
-$$t_{shallow} = \frac{L_{shallow}}{60 \cdot V}\text{ (minutes)} = \frac{L_{shallow}}{3600 \cdot V}\text{ (hours)}$$</p>
-<h3 id="3-channel-or-conduit-flow">3. Channel or Conduit Flow</h3>
+</p>
+$$t_{shallow} = \frac{L_{shallow}}{60 \cdot V}\text{ (minutes)} = \frac{L_{shallow}}{3600 \cdot V}\text{ (hours)}$$<h3 id="3-channel-or-conduit-flow">3. Channel or Conduit Flow</h3>
 <p>Channel flow occurs when runoff is collected in a distinct ditch, stream, open channel, or storm sewer pipe.
 Use Manning&rsquo;s Equation to determine the velocity:</p>
-<p>$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$</p>
-<p>Where:</p>
+$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$<p>Where:</p>
 <ul>
 <li>$V$ = Mean flow velocity (<strong>ft/s</strong>)</li>
 <li>$n$ = Manning&rsquo;s roughness coefficient for channels/conduits (e.g., concrete pipe = 0.012, ditch with grass = 0.035)</li>
@@ -276,34 +286,36 @@ Use Manning&rsquo;s Equation to determine the velocity:</p>
 <li>$S$ = Friction/channel slope (<strong>ft/ft</strong>)</li>
 </ul>
 <p>Travel time for channel flow:
-$$t_{channel} = \frac{L_{channel}}{60 \cdot V}\text{ (minutes)}$$</p>
-<hr>
+</p>
+$$t_{channel} = \frac{L_{channel}}{60 \cdot V}\text{ (minutes)}$$<hr>
 <h2 id="worked-example-composite-time-of-concentration-calculation">Worked Example: Composite Time of Concentration Calculation</h2>
 <p>A design engineer is calculating the time of concentration ($t_c$) for a roadside drainage area. The path of the hydraulically most remote point consists of three segments:</p>
 <ol>
-<li><strong>Segment 1 (Sheet Flow):</strong> Lawn grass ($n = 0.15$), length $L = 100\text{ ft}$, slope $S = 2.0% = 0.02\text{ ft/ft}$. The local 2-year, 24-hour rainfall depth $P_2 = 3.2\text{ inches}$.</li>
-<li><strong>Segment 2 (Shallow Concentrated Flow):</strong> Unpaved dirt path, length $L = 450\text{ ft}$, slope $S = 4.0% = 0.04\text{ ft/ft}$.</li>
-<li><strong>Segment 3 (Channel Flow):</strong> Trapezoidal turf-lined ditch ($n = 0.035$) with bottom width $b = 4\text{ ft}$, side slopes of 3:1 (H:V), longitudinal slope $S = 1.0% = 0.01\text{ ft/ft}$, length $L = 1200\text{ ft}$. The design depth of flow is $y = 1.5\text{ ft}$.</li>
+<li><strong>Segment 1 (Sheet Flow):</strong> Lawn grass ($n = 0.15$), length $L = 100\text{ ft}$, slope $S = 2.0\% = 0.02\text{ ft/ft}$. The local 2-year, 24-hour rainfall depth $P_2 = 3.2\text{ inches}$.</li>
+<li><strong>Segment 2 (Shallow Concentrated Flow):</strong> Unpaved dirt path, length $L = 450\text{ ft}$, slope $S = 4.0\% = 0.04\text{ ft/ft}$.</li>
+<li><strong>Segment 3 (Channel Flow):</strong> Trapezoidal turf-lined ditch ($n = 0.035$) with bottom width $b = 4\text{ ft}$, side slopes of 3:1 (H:V), longitudinal slope $S = 1.0\% = 0.01\text{ ft/ft}$, length $L = 1200\text{ ft}$. The design depth of flow is $y = 1.5\text{ ft}$.</li>
 </ol>
 <p><strong>Calculate the total time of concentration ($t_c$) in minutes.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-sheet-flow-travel-time-t_sheet">Step 1: Sheet Flow Travel Time ($t_{sheet}$)</h4>
+<h4 id="step-1-sheet-flow-travel-time-">Step 1: Sheet Flow Travel Time ($t_{sheet}$)</h4>
 <p>Using the Manning&rsquo;s Kinematic Wave equation:
-$$t_{sheet} = \frac{0.007 (n \cdot L)^{0.8}}{(P_2)^{0.5} \cdot S^{0.4}}$$
-$$t_{sheet} = \frac{0.007 \cdot (0.15 \cdot 100)^{0.8}}{(3.2)^{0.5} \cdot (0.02)^{0.4}}$$</p>
-<ul>
+</p>
+$$t_{sheet} = \frac{0.007 (n \cdot L)^{0.8}}{(P_2)^{0.5} \cdot S^{0.4}}$$<p>
+</p>
+$$t_{sheet} = \frac{0.007 \cdot (0.15 \cdot 100)^{0.8}}{(3.2)^{0.5} \cdot (0.02)^{0.4}}$$<ul>
 <li>$(0.15 \cdot 100)^{0.8} = 15^{0.8} \approx 8.725$</li>
 <li>$(3.2)^{0.5} \approx 1.789$</li>
 <li>$(0.02)^{0.4} \approx 0.209$</li>
 </ul>
-<p>$$t_{sheet} = \frac{0.007 \cdot 8.725}{1.789 \cdot 0.209} = \frac{0.061075}{0.3739} \approx 0.1633\text{ hours}$$
-$$t_{sheet} = 0.1633\text{ hours} \cdot 60\text{ minutes/hour} \approx 9.80\text{ minutes}$$</p>
-<h4 id="step-2-shallow-concentrated-flow-travel-time-t_shallow">Step 2: Shallow Concentrated Flow Travel Time ($t_{shallow}$)</h4>
+$$t_{sheet} = \frac{0.007 \cdot 8.725}{1.789 \cdot 0.209} = \frac{0.061075}{0.3739} \approx 0.1633\text{ hours}$$<p>
+</p>
+$$t_{sheet} = 0.1633\text{ hours} \cdot 60\text{ minutes/hour} \approx 9.80\text{ minutes}$$<h4 id="step-2-shallow-concentrated-flow-travel-time-">Step 2: Shallow Concentrated Flow Travel Time ($t_{shallow}$)</h4>
 <p>For unpaved surfaces, velocity is:
-$$V = 16.1345 \sqrt{S} = 16.1345 \sqrt{0.04} = 16.1345 \cdot 0.2 = 3.227\text{ ft/s}$$
+</p>
+$$V = 16.1345 \sqrt{S} = 16.1345 \sqrt{0.04} = 16.1345 \cdot 0.2 = 3.227\text{ ft/s}$$<p>
 Calculate travel time:
-$$t_{shallow} = \frac{L}{60 \cdot V} = \frac{450\text{ ft}}{60 \cdot 3.227\text{ ft/s}} = \frac{450}{193.62} \approx 2.32\text{ minutes}$$</p>
-<h4 id="step-3-channel-flow-travel-time-t_channel">Step 3: Channel Flow Travel Time ($t_{channel}$)</h4>
+</p>
+$$t_{shallow} = \frac{L}{60 \cdot V} = \frac{450\text{ ft}}{60 \cdot 3.227\text{ ft/s}} = \frac{450}{193.62} \approx 2.32\text{ minutes}$$<h4 id="step-3-channel-flow-travel-time-">Step 3: Channel Flow Travel Time ($t_{channel}$)</h4>
 <p>For the trapezoidal ditch, calculate the cross-sectional area ($A$) and wetted perimeter ($P_w$) for a depth of $y = 1.5\text{ ft}$:</p>
 <ul>
 <li>$b = 4\text{ ft}$, side slope $z = 3$</li>
@@ -312,19 +324,20 @@ $$t_{shallow} = \frac{L}{60 \cdot V} = \frac{450\text{ ft}}{60 \cdot 3.227\text{
 <li>Hydraulic Radius: $R = \frac{A}{P_w} = \frac{12.75}{13.487} \approx 0.945\text{ ft}$</li>
 </ul>
 <p>Calculate velocity using Manning&rsquo;s equation:
-$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$
-$$V = \frac{1.486}{0.035} \cdot (0.945)^{2/3} \cdot (0.01)^{1/2}$$</p>
-<ul>
+</p>
+$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$<p>
+</p>
+$$V = \frac{1.486}{0.035} \cdot (0.945)^{2/3} \cdot (0.01)^{1/2}$$<ul>
 <li>$1.486 / 0.035 \approx 42.457$</li>
 <li>$(0.945)^{2/3} \approx 0.963$</li>
 <li>$(0.01)^{1/2} = 0.10$
+
 $$V = 42.457 \cdot 0.963 \cdot 0.10 \approx 4.09\text{ ft/s}$$</li>
 </ul>
 <p>Calculate travel time:
-$$t_{channel} = \frac{L}{60 \cdot V} = \frac{1200\text{ ft}}{60 \cdot 4.09\text{ ft/s}} = \frac{1200}{245.4} \approx 4.89\text{ minutes}$$</p>
-<h4 id="step-4-total-time-of-concentration-t_c">Step 4: Total Time of Concentration ($t_c$)</h4>
-<p>$$t_c = t_{sheet} + t_{shallow} + t_{channel} = 9.80 + 2.32 + 4.89 = 17.01\text{ minutes}$$</p>
-<hr>
+</p>
+$$t_{channel} = \frac{L}{60 \cdot V} = \frac{1200\text{ ft}}{60 \cdot 4.09\text{ ft/s}} = \frac{1200}{245.4} \approx 4.89\text{ minutes}$$<h4 id="step-4-total-time-of-concentration-">Step 4: Total Time of Concentration ($t_c$)</h4>
+$$t_c = t_{sheet} + t_{shallow} + t_{channel} = 9.80 + 2.32 + 4.89 = 17.01\text{ minutes}$$<hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>
 <ul>
 <li><strong>Unit mismatch in Manning&rsquo;s kinematic equation:</strong> The resulting travel time is in <strong>hours</strong>. You must multiply by 60 to convert to minutes.</li>

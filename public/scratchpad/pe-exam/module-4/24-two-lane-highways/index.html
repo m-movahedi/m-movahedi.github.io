@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Two-Lane Highways">
     <meta property="og:description" content="Two-Lane Highways A two-lane highway is a undivided roadway with one lane of traffic in each direction. On these facilities, passing maneuvers must take place …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Two-Lane Highways">
     <meta name="twitter:description" content="Two-Lane Highways A two-lane highway is a undivided roadway with one lane of traffic in each direction. On these facilities, passing maneuvers must take place …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/24-two-lane-highways/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/24-two-lane-highways/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/24-two-lane-highways/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -254,15 +268,14 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="free-flow-speed-ffs-estimation">Free-Flow Speed (FFS) Estimation</h2>
 <p>If FFS is not measured in the field, estimate it using:</p>
-<p>$$\text{FFS} = \text{BFFS} - f_{LS} - f_{A}$$</p>
-<p>Where:</p>
+$$\text{FFS} = \text{BFFS} - f_{LS} - f_{A}$$<p>Where:</p>
 <ul>
 <li>$\text{FFS}$ = estimated free-flow speed ($mph$)</li>
 <li>$\text{BFFS}$ = base free-flow speed ($mph$), typically assumed to be $60 \text{ mph}$ if not specified.</li>
 <li>$f_{LS}$ = adjustment for lane width and shoulder width ($mph$)</li>
 <li>$f_{A}$ = adjustment for access-point density ($mph$)</li>
 </ul>
-<h3 id="1-lane-and-shoulder-width-adjustment-f_ls">1. Lane and Shoulder Width Adjustment ($f_{LS}$)</h3>
+<h3 id="1-lane-and-shoulder-width-adjustment-">1. Lane and Shoulder Width Adjustment ($f_{LS}$)</h3>
 <p>Narrow lanes or narrow shoulders restrict lateral movement and reduce FFS:</p>
 <table>
   <thead>
@@ -305,15 +318,15 @@ gtag('config', 'G-1WZSE8DHZ9');
       </tr>
   </tbody>
 </table>
-<h3 id="2-access-point-density-adjustment-f_a">2. Access-Point Density Adjustment ($f_{A}$)</h3>
+<h3 id="2-access-point-density-adjustment-">2. Access-Point Density Adjustment ($f_{A}$)</h3>
 <p>Access points per mile (APD) are counted on both sides of the roadway. The speed reduction is:
-$$f_{A} = 0.25 \times \text{APD}$$</p>
-<hr>
+</p>
+$$f_{A} = 0.25 \times \text{APD}$$<hr>
 <h2 id="flow-rate-adjustment-for-directional-analysis">Flow Rate Adjustment for Directional Analysis</h2>
 <p>To analyze a specific direction of travel on a two-lane highway, the directional volume ($V_d$) and opposing volume ($V_o$) are adjusted to equivalent passenger-car flow rates ($v_d$ and $v_o$):</p>
-<p>$$v_d = \frac{V_d}{\text{PHF} \times f_g \times f_{HV}}$$
-$$v_o = \frac{V_o}{\text{PHF} \times f_g \times f_{HV}}$$</p>
-<p>Where:</p>
+$$v_d = \frac{V_d}{\text{PHF} \times f_g \times f_{HV}}$$<p>
+</p>
+$$v_o = \frac{V_o}{\text{PHF} \times f_g \times f_{HV}}$$<p>Where:</p>
 <ul>
 <li>$v_d$ = adjusted directional flow rate ($pc/h$)</li>
 <li>$v_o$ = adjusted opposing flow rate ($pc/h$)</li>
@@ -322,31 +335,31 @@ $$v_o = \frac{V_o}{\text{PHF} \times f_g \times f_{HV}}$$</p>
 <li>$\text{PHF}$ = Peak Hour Factor</li>
 <li>$f_g$ = grade adjustment factor (ranges from $0.60$ to $1.00$; corrects for the impact of grade on speed/PTSF).</li>
 <li>$f_{HV}$ = heavy vehicle adjustment factor:
+
 $$f_{HV} = \frac{1}{1 + P_T(E_T - 1) + P_R(E_R - 1)}$$</li>
 </ul>
 <p><em>Note: For two-lane highways, $E_T$ (truck equivalents) and $E_R$ (RV equivalents) are looked up using tables that vary by flow rate ($v_d$), grade percentage, and terrain type.</em></p>
 <hr>
 <h2 id="performance-measures-calculation">Performance Measures Calculation</h2>
-<h3 id="1-average-travel-speed-textats">1. Average Travel Speed ($\text{ATS}$)</h3>
+<h3 id="1-average-travel-speed-">1. Average Travel Speed ($\text{ATS}$)</h3>
 <p>The average travel speed in the direction of analysis ($\text{ATS}_d$) is calculated as:</p>
-<p>$$\text{ATS}_d = \text{FFS}<em>d - 0.00776(v_d + v_o) - f</em>{np, \text{ATS}}$$</p>
-<p>Where:</p>
+$$\text{ATS}_d = \text{FFS}_d - 0.00776(v_d + v_o) - f_{np, \text{ATS}}$$<p>Where:</p>
 <ul>
 <li>$\text{ATS}_d$ = average travel speed in the analysis direction ($mph$)</li>
 <li>$\text{FFS}_d$ = estimated free-flow speed in the analysis direction ($mph$)</li>
 <li>$v_d, v_o$ = adjusted directional and opposing flow rates ($pc/h$)</li>
 <li>$f_{np, \text{ATS}}$ = adjustment for percentage of no-passing zones in the analysis direction ($mph$). This is looked up from HCM tables based on the opposing flow rate ($v_o$) and percentage of no-passing zones.</li>
 </ul>
-<h3 id="2-percent-time-spent-following-textptsf">2. Percent Time-Spent-Following ($\text{PTSF}$)</h3>
+<h3 id="2-percent-time-spent-following-">2. Percent Time-Spent-Following ($\text{PTSF}$)</h3>
 <p>The percent time-spent-following in the direction of analysis ($\text{PTSF}_d$) represents the average percentage of time travelers are stuck in platoons behind slow vehicles:</p>
-<p>$$\text{PTSF}_d = \text{BPTSF}<em>d + f</em>{np, \text{PTSF}}$$</p>
-<p>Where:</p>
+$$\text{PTSF}_d = \text{BPTSF}_d + f_{np, \text{PTSF}}$$<p>Where:</p>
 <ul>
-<li>$\text{PTSF}_d$ = percent time-spent-following in the analysis direction ($%$)</li>
+<li>$\text{PTSF}_d$ = percent time-spent-following in the analysis direction ($\%$)</li>
 <li>$\text{BPTSF}_d$ = base percent time-spent-following:
+
 $$\text{BPTSF}_d = 100 \left(1 - e^{a \cdot v_d^b}\right)$$
 <em>(where $a$ and $b$ are coefficients determined from HCM tables based on the opposing flow rate $v_o$).</em></li>
-<li>$f_{np, \text{PTSF}}$ = adjustment for no-passing zones in the analysis direction ($%$) based on opposing flow rate and passing zone availability.</li>
+<li>$f_{np, \text{PTSF}}$ = adjustment for no-passing zones in the analysis direction ($\%$) based on opposing flow rate and passing zone availability.</li>
 </ul>
 <hr>
 <h2 id="level-of-service-los-criteria">Level of Service (LOS) Criteria</h2>
@@ -364,26 +377,26 @@ $$\text{BPTSF}_d = 100 \left(1 - e^{a \cdot v_d^b}\right)$$
       <tr>
           <td><strong>A</strong></td>
           <td>$\le 35$</td>
-          <td>$&gt; 55$</td>
+          <td>$> 55$</td>
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 35$ to $50$</td>
-          <td>$&gt; 50$ to $55$</td>
+          <td>$> 35$ to $50$</td>
+          <td>$> 50$ to $55$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 50$ to $65$</td>
-          <td>$&gt; 45$ to $50$</td>
+          <td>$> 50$ to $65$</td>
+          <td>$> 45$ to $50$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 65$ to $80$</td>
-          <td>$&gt; 40$ to $45$</td>
+          <td>$> 65$ to $80$</td>
+          <td>$> 40$ to $45$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 80$</td>
+          <td>$> 80$</td>
           <td>$\le 40$</td>
       </tr>
   </tbody>
@@ -404,19 +417,19 @@ $$\text{BPTSF}_d = 100 \left(1 - e^{a \cdot v_d^b}\right)$$
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 45$ to $60$</td>
+          <td>$> 45$ to $60$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 60$ to $75$</td>
+          <td>$> 60$ to $75$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 75$ to $90$</td>
+          <td>$> 75$ to $90$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 90$</td>
+          <td>$> 90$</td>
       </tr>
   </tbody>
 </table>
@@ -432,19 +445,19 @@ $$\text{BPTSF}_d = 100 \left(1 - e^{a \cdot v_d^b}\right)$$
   <tbody>
       <tr>
           <td><strong>A</strong></td>
-          <td>$&gt; 91.7$</td>
+          <td>$> 91.7$</td>
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 83.3$ to $91.7$</td>
+          <td>$> 83.3$ to $91.7$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 75.0$ to $83.3$</td>
+          <td>$> 75.0$ to $83.3$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 66.7$ to $75.0$</td>
+          <td>$> 66.7$ to $75.0$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
@@ -467,8 +480,9 @@ Unlike multilane highways where you only count access points on the right side i
 <li>
 <p><strong>Mixing Up Directional and Opposing Flow Rates</strong>:
 In the ATS formula:
-$$\text{ATS}<em>d = \text{FFS}<em>d - 0.00776(v_d + v_o) - f</em>{np, \text{ATS}}$$
-The term $(v_d + v_o)$ represents the sum of the directional and opposing flow rates. Be careful not to use only the directional flow rate here. However, the no-passing zone adjustments ($f</em>{np, \text{ATS}}$ and $f_{np, \text{PTSF}}$) are looked up based on the <em>opposing</em> flow rate ($v_o$) only.</p>
+</p>
+$$\text{ATS}_d = \text{FFS}_d - 0.00776(v_d + v_o) - f_{np, \text{ATS}}$$<p>
+The term $(v_d + v_o)$ represents the sum of the directional and opposing flow rates. Be careful not to use only the directional flow rate here. However, the no-passing zone adjustments ($f_{np, \text{ATS}}$ and $f_{np, \text{PTSF}}$) are looked up based on the <em>opposing</em> flow rate ($v_o$) only.</p>
 </li>
 </ol>
 <hr>
@@ -485,52 +499,54 @@ The term $(v_d + v_o)$ represents the sum of the directional and opposing flow r
 <li>Grade adjustment factor ($f_g$): $0.95$ for ATS, $0.92$ for PTSF</li>
 <li>Heavy vehicle factor ($f_{HV}$): $0.88$ for ATS, $0.85$ for PTSF</li>
 <li>No-passing zone adjustment ($f_{np, \text{ATS}}$): $1.8 \text{ mph}$</li>
-<li>Base percent time-spent-following ($BPTSF_d$): $55%$</li>
-<li>No-passing zone PTSF adjustment ($f_{np, \text{PTSF}}$): $12%$</li>
+<li>Base percent time-spent-following ($BPTSF_d$): $55\%$</li>
+<li>No-passing zone PTSF adjustment ($f_{np, \text{PTSF}}$): $12\%$</li>
 </ul>
 <p><strong>Determine the Level of Service (LOS) of the highway segment in the analysis direction.</strong></p>
 <h3 id="solution">Solution:</h3>
 <h4 id="step-1-calculate-free-flow-speed-ffs">Step 1: Calculate Free-Flow Speed (FFS)</h4>
-<p>$$\text{FFS} = \text{BFFS} - f_{LS} - f_{A}$$</p>
-<ol>
+$$\text{FFS} = \text{BFFS} - f_{LS} - f_{A}$$<ol>
 <li><strong>BFFS</strong>: $60 \text{ mph}$</li>
 <li><strong>Lane and Shoulder Width Adjustment ($f_{LS}$)</strong>:
 From the width adjustment table, for $11 \text{ ft}$ lanes and $4 \text{ ft}$ shoulders:
+
 $$f_{LS} = 2.0 \text{ mph}$$</li>
 <li><strong>Access-Point Density Adjustment ($f_{A}$)</strong>:
+
 $$f_{A} = 0.25 \times 12 = 3.0 \text{ mph}$$</li>
 <li><strong>Calculate FFS</strong>:
+
 $$\text{FFS} = 60.0 - 2.0 - 3.0 = 55.0 \text{ mph}$$</li>
 </ol>
-<h4 id="step-2-calculate-equivalent-flow-rates-for-speed-v_d-textats-and-v_o-textats">Step 2: Calculate Equivalent Flow Rates for Speed ($v_{d, \text{ATS}}$ and $v_{o, \text{ATS}}$)</h4>
-<p>$$v_{d, \text{ATS}} = \frac{V_d}{\text{PHF} \times f_g \times f_{HV}} = \frac{450}{0.90 \times 0.95 \times 0.88} = \frac{450}{0.7524} = 598.1 \text{ pc/h}$$
-$$v_{o, \text{ATS}} = \frac{V_o}{\text{PHF} \times f_g \times f_{HV}} = \frac{300}{0.90 \times 0.95 \times 0.88} = \frac{300}{0.7524} = 398.7 \text{ pc/h}$$</p>
-<h4 id="step-3-calculate-average-travel-speed-textats_d">Step 3: Calculate Average Travel Speed ($\text{ATS}_d$)</h4>
-<p>$$\text{ATS}<em>d = \text{FFS} - 0.00776(v</em>{d, \text{ATS}} + v_{o, \text{ATS}}) - f_{np, \text{ATS}}$$
-$$\text{ATS}_d = 55.0 - 0.00776(598.1 + 398.7) - 1.8$$
-$$\text{ATS}_d = 55.0 - 0.00776(996.8) - 1.8 = 55.0 - 7.74 - 1.8 = 45.46 \text{ mph}$$</p>
-<h4 id="step-4-calculate-equivalent-flow-rates-for-ptsf-v_d-textptsf-and-v_o-textptsf">Step 4: Calculate Equivalent Flow Rates for PTSF ($v_{d, \text{PTSF}}$ and $v_{o, \text{PTSF}}$)</h4>
-<p>$$v_{d, \text{PTSF}} = \frac{V_d}{\text{PHF} \times f_g \times f_{HV}} = \frac{450}{0.90 \times 0.92 \times 0.85} = \frac{450}{0.7038} = 639.4 \text{ pc/h}$$</p>
-<h4 id="step-5-calculate-percent-time-spent-following-textptsf_d">Step 5: Calculate Percent Time-Spent-Following ($\text{PTSF}_d$)</h4>
-<p>$$\text{PTSF}_d = \text{BPTSF}<em>d + f</em>{np, \text{PTSF}}$$
-$$\text{PTSF}_d = 55% + 12% = 67.0%$$</p>
-<h4 id="step-6-determine-level-of-service-los">Step 6: Determine Level of Service (LOS)</h4>
+<h4 id="step-2-calculate-equivalent-flow-rates-for-speed--and-">Step 2: Calculate Equivalent Flow Rates for Speed ($v_{d, \text{ATS}}$ and $v_{o, \text{ATS}}$)</h4>
+$$v_{d, \text{ATS}} = \frac{V_d}{\text{PHF} \times f_g \times f_{HV}} = \frac{450}{0.90 \times 0.95 \times 0.88} = \frac{450}{0.7524} = 598.1 \text{ pc/h}$$<p>
+</p>
+$$v_{o, \text{ATS}} = \frac{V_o}{\text{PHF} \times f_g \times f_{HV}} = \frac{300}{0.90 \times 0.95 \times 0.88} = \frac{300}{0.7524} = 398.7 \text{ pc/h}$$<h4 id="step-3-calculate-average-travel-speed-">Step 3: Calculate Average Travel Speed ($\text{ATS}_d$)</h4>
+$$\text{ATS}_d = \text{FFS} - 0.00776(v_{d, \text{ATS}} + v_{o, \text{ATS}}) - f_{np, \text{ATS}}$$<p>
+</p>
+$$\text{ATS}_d = 55.0 - 0.00776(598.1 + 398.7) - 1.8$$<p>
+</p>
+$$\text{ATS}_d = 55.0 - 0.00776(996.8) - 1.8 = 55.0 - 7.74 - 1.8 = 45.46 \text{ mph}$$<h4 id="step-4-calculate-equivalent-flow-rates-for-ptsf--and-">Step 4: Calculate Equivalent Flow Rates for PTSF ($v_{d, \text{PTSF}}$ and $v_{o, \text{PTSF}}$)</h4>
+$$v_{d, \text{PTSF}} = \frac{V_d}{\text{PHF} \times f_g \times f_{HV}} = \frac{450}{0.90 \times 0.92 \times 0.85} = \frac{450}{0.7038} = 639.4 \text{ pc/h}$$<h4 id="step-5-calculate-percent-time-spent-following-">Step 5: Calculate Percent Time-Spent-Following ($\text{PTSF}_d$)</h4>
+$$\text{PTSF}_d = \text{BPTSF}_d + f_{np, \text{PTSF}}$$<p>
+</p>
+$$\text{PTSF}_d = 55\% + 12\% = 67.0\%$$<h4 id="step-6-determine-level-of-service-los">Step 6: Determine Level of Service (LOS)</h4>
 <p>Since this is a <strong>Class I</strong> highway, we compare both $\text{ATS}_d$ and $\text{PTSF}_d$ to the Class I thresholds:</p>
 <ol>
 <li><strong>Based on Speed ($\text{ATS}_d = 45.46 \text{ mph}$)</strong>:
 <ul>
-<li>$45.0 &lt; \text{ATS}_d \le 50.0 \rightarrow$ <strong>LOS C</strong></li>
+<li>$45.0 < \text{ATS}_d \le 50.0 \rightarrow$ <strong>LOS C</strong></li>
 </ul>
 </li>
-<li><strong>Based on PTSF ($\text{PTSF}_d = 67.0%$)</strong>:
+<li><strong>Based on PTSF ($\text{PTSF}_d = 67.0\%$)</strong>:
 <ul>
-<li>$65.0 &lt; \text{PTSF}_d \le 80.0 \rightarrow$ <strong>LOS D</strong></li>
+<li>$65.0 < \text{PTSF}_d \le 80.0 \rightarrow$ <strong>LOS D</strong></li>
 </ul>
 </li>
 </ol>
 <p>Taking the worse of the two conditions:
-$$\text{LOS} = \max(\text{LOS C}, \text{LOS D}) = \text{LOS D}$$</p>
-<p><strong>Conclusion:</strong> The two-lane highway operates at <strong>LOS D</strong> in the analysis direction.</p>
+</p>
+$$\text{LOS} = \max(\text{LOS C}, \text{LOS D}) = \text{LOS D}$$<p><strong>Conclusion:</strong> The two-lane highway operates at <strong>LOS D</strong> in the analysis direction.</p>
 <hr>
 <h2 id="references-and-standards">References and Standards</h2>
 <ul>

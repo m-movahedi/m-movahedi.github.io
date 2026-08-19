@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Superelevation Basics">
     <meta property="og:description" content="Superelevation Basics When a vehicle travels along a horizontal curve, it experiences a centrifugal force that acts to push it outward, away from the center of …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Superelevation Basics">
     <meta name="twitter:description" content="Superelevation Basics When a vehicle travels along a horizontal curve, it experiences a centrifugal force that acts to push it outward, away from the center of …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-7/47-superelevation-basics/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/47-superelevation-basics/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-7/47-superelevation-basics/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -235,17 +249,16 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="the-physics-of-superelevation">The Physics of Superelevation</h2>
 <p>The forces acting on a vehicle traversing a horizontal curve include gravity, lateral tire friction, and centrifugal force. Balancing these forces yields the fundamental superelevation equation:</p>
-<p>$$e + f = \frac{V^2}{15 R}$$</p>
-<p>Where:</p>
+$$e + f = \frac{V^2}{15 R}$$<p>Where:</p>
 <ul>
-<li>$e$ = Superelevation rate (expressed as a decimal, e.g., $0.06$ for a $6%$ cross slope).</li>
+<li>$e$ = Superelevation rate (expressed as a decimal, e.g., $0.06$ for a $6\%$ cross slope).</li>
 <li>$f$ = Side friction factor (dimensionless, representing the lateral friction coefficient between the tires and pavement).</li>
 <li>$V$ = Design speed (mph).</li>
 <li>$R$ = Radius of the horizontal curve (ft).</li>
 <li><strong>15</strong> = Conversion constant that reconciles gravity ($g = 32.2\text{ ft/s}^2$) and units (converting mph to ft/s).</li>
 </ul>
 <hr>
-<h2 id="maximum-superelevation-rates-e_max">Maximum Superelevation Rates ($e_{max}$)</h2>
+<h2 id="maximum-superelevation-rates-">Maximum Superelevation Rates ($e_{max}$)</h2>
 <p>The maximum rate of superelevation ($e_{max}$) is restricted by environmental and operational factors:</p>
 <ol>
 <li><strong>Climate and Terrain:</strong> In areas subject to ice and snow, $e_{max}$ is typically limited to <strong>6% to 8%</strong> to prevent slow-moving vehicles from sliding down the banked surface toward the inside of the curve. In southern climates, rates up to <strong>10% to 12%</strong> are acceptable.</li>
@@ -257,7 +270,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 </li>
 </ol>
 <hr>
-<h2 id="side-friction-factors-f_max">Side Friction Factors ($f_{max}$)</h2>
+<h2 id="side-friction-factors-">Side Friction Factors ($f_{max}$)</h2>
 <p>The maximum comfortable side friction factor ($f_{max}$) represents the threshold at which passengers feel a distinct outward pull and begin to feel uncomfortable. It is not the physical limit of tire-pavement adhesion.</p>
 <ul>
 <li><strong>Speed Dependency:</strong> $f_{max}$ decreases as design speed increases. This is because drivers are more sensitive to lateral acceleration at higher speeds.</li>
@@ -273,40 +286,46 @@ gtag('config', 'G-1WZSE8DHZ9');
 </li>
 </ul>
 <hr>
-<h2 id="minimum-radius-of-curve-r_min">Minimum Radius of Curve ($R_{min}$)</h2>
+<h2 id="minimum-radius-of-curve-">Minimum Radius of Curve ($R_{min}$)</h2>
 <p>The minimum radius of a curve ($R_{min}$) represents the sharpest curve that can be safely traversed at a given design speed, using the maximum allowable superelevation ($e_{max}$) and the maximum side friction factor ($f_{max}$):</p>
-<p>$$R_{min} = \frac{V^2}{15(e_{max} + f_{max})}$$</p>
-<hr>
+$$R_{min} = \frac{V^2}{15(e_{max} + f_{max})}$$<hr>
 <h2 id="worked-example-minimum-radius-and-friction-demand">Worked Example: Minimum Radius and Friction Demand</h2>
 <h3 id="problem-statement">Problem Statement</h3>
 <p>A new rural highway segment is being designed. The design parameters are as follows:</p>
 <ul>
 <li>Design Speed ($V$): $65\text{ mph}$</li>
-<li>Maximum allowable superelevation ($e_{max}$): $8.0%$ ($0.08$)</li>
+<li>Maximum allowable superelevation ($e_{max}$): $8.0\%$ ($0.08$)</li>
 <li>Maximum side friction factor ($f_{max}$) at $65\text{ mph}$: $0.11$</li>
 </ul>
 <ol>
 <li>Calculate the minimum allowable radius ($R_{min}$) for the horizontal curve.</li>
-<li>If the designer uses a radius of $R = 2,200\text{ ft}$ for a curve on this highway, and the design superelevation rate ($e_d$) is set to $5.4%$ ($0.054$), calculate the actual side friction demand ($f$) felt by a vehicle traveling at $65\text{ mph}$. Verify if it is within comfortable limits.</li>
+<li>If the designer uses a radius of $R = 2,200\text{ ft}$ for a curve on this highway, and the design superelevation rate ($e_d$) is set to $5.4\%$ ($0.054$), calculate the actual side friction demand ($f$) felt by a vehicle traveling at $65\text{ mph}$. Verify if it is within comfortable limits.</li>
 </ol>
 <h3 id="solution">Solution</h3>
 <ol>
 <li>
 <p><strong>Calculate the Minimum Radius ($R_{min}$):</strong>
 Use the minimum radius formula:
-$$R_{min} = \frac{V^2}{15(e_{max} + f_{max})}$$
-$$R_{min} = \frac{65^2}{15(0.08 + 0.11)} = \frac{4225}{15(0.19)}$$
-$$R_{min} = \frac{4225}{2.85} = 1482.46\text{ ft}$$
+</p>
+$$R_{min} = \frac{V^2}{15(e_{max} + f_{max})}$$<p>
+</p>
+$$R_{min} = \frac{65^2}{15(0.08 + 0.11)} = \frac{4225}{15(0.19)}$$<p>
+</p>
+$$R_{min} = \frac{4225}{2.85} = 1482.46\text{ ft}$$<p>
 <em>Rounding up for design:</em> <strong>$1,485\text{ ft}$</strong> (or the exact math value of <strong>$1,482.5\text{ ft}$</strong> for exam selection).</p>
 </li>
 <li>
 <p><strong>Calculate the Side Friction Demand ($f$):</strong>
 Use the fundamental superelevation equation solved for $f$:
-$$f = \frac{V^2}{15 R} - e$$
+</p>
+$$f = \frac{V^2}{15 R} - e$$<p>
 <em>Substitute the given values:</em>
-$$f = \frac{65^2}{15(2200)} - 0.054$$
-$$f = \frac{4225}{33000} - 0.054$$
-$$f = 0.12803 - 0.054 = 0.074$$
+</p>
+$$f = \frac{65^2}{15(2200)} - 0.054$$<p>
+</p>
+$$f = \frac{4225}{33000} - 0.054$$<p>
+</p>
+$$f = 0.12803 - 0.054 = 0.074$$<p>
 <em>Verify with Comfort Limit:</em> The friction demand is $0.074$. The maximum comfortable friction factor at $65\text{ mph}$ is $0.11$. Since $0.074 \le 0.11$, the lateral friction is well within the comfortable range for drivers.</p>
 </li>
 </ol>
@@ -318,7 +337,7 @@ $$f = 0.12803 - 0.054 = 0.074$$
 <hr>
 <h2 id="crucial-exam-tips">Crucial Exam Tips</h2>
 <ul>
-<li><strong>Decimal vs. Percent Form:</strong> Always convert superelevation percentages to decimals before calculating. For example, a superelevation of $6%$ must be entered as $0.06$, not $6$. Entering $6$ will throw off your answer by a factor of 100.</li>
+<li><strong>Decimal vs. Percent Form:</strong> Always convert superelevation percentages to decimals before calculating. For example, a superelevation of $6\%$ must be entered as $0.06$, not $6$. Entering $6$ will throw off your answer by a factor of 100.</li>
 <li><strong>The Comfort vs. Limit Trap:</strong> Do not assume that every curve is designed to maximize friction. In practice, designers use AASHTO Tables 3-7 to 3-12 to lookup the <em>design</em> superelevation rate ($e_d$) for a given radius, which distributes the centrifugal force such that the friction demand is much lower than $f_{max}$. Only use $f_{max}$ when calculating the limiting condition ($R_{min}$).</li>
 <li><strong>Friction Sign Conventions:</strong> If a vehicle is traveling <em>below</em> the design speed on a heavily banked curve, the friction force can actually act <em>upward</em> along the slope to prevent the vehicle from sliding down. The equation is self-correcting: if you calculate a negative $f$, it simply means friction is acting to prevent the vehicle from sliding down the slope.</li>
 </ul>

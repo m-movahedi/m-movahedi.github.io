@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Crest Vertical Curves">
     <meta property="og:description" content="Crest Vertical Curves Crest vertical curves are designed to connect an uphill grade to a downhill grade (or a steeper uphill grade to a flatter uphill grade, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Crest Vertical Curves">
     <meta name="twitter:description" content="Crest Vertical Curves Crest vertical curves are designed to connect an uphill grade to a downhill grade (or a steeper uphill grade to a flatter uphill grade, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-8/55-crest-vertical-curves/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-8/55-crest-vertical-curves/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-8/55-crest-vertical-curves/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -230,7 +244,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 
     <div class="post-content">
         <h1 id="crest-vertical-curves">Crest Vertical Curves</h1>
-<p>Crest vertical curves are designed to connect an uphill grade to a downhill grade (or a steeper uphill grade to a flatter uphill grade, etc.), where the algebraic difference in grade is negative ($g_1 &gt; g_2$). The primary design control for a crest vertical curve is ensuring adequate sight distance—specifically Stopping Sight Distance (SSD)—so that a driver can see a hazard over the crest of the hill.</p>
+<p>Crest vertical curves are designed to connect an uphill grade to a downhill grade (or a steeper uphill grade to a flatter uphill grade, etc.), where the algebraic difference in grade is negative ($g_1 > g_2$). The primary design control for a crest vertical curve is ensuring adequate sight distance—specifically Stopping Sight Distance (SSD)—so that a driver can see a hazard over the crest of the hill.</p>
 <h2 id="design-parameters-for-sight-distance">Design Parameters for Sight Distance</h2>
 <p>The relationship between the length of the curve, the grades, and the sight distance is based on the height of the driver&rsquo;s eye and the height of the object. AASHTO Green Book standard values for SSD are:</p>
 <ul>
@@ -287,18 +301,18 @@ gtag('config', 'G-1WZSE8DHZ9');
 </div>
 <hr>
 <h2 id="length-of-curve-equations">Length of Curve Equations</h2>
-<p>The minimum length of a crest vertical curve ($L$) depends on whether the required sight distance ($S$) is less than or equal to the curve length ($S \le L$) or greater than the curve length ($S &gt; L$).</p>
+<p>The minimum length of a crest vertical curve ($L$) depends on whether the required sight distance ($S$) is less than or equal to the curve length ($S \le L$) or greater than the curve length ($S > L$).</p>
 <h3 id="1-uscs-english-units">1. USCS (English) Units</h3>
 <p>With $h_1 = 3.50\text{ ft}$ and $h_2 = 2.00\text{ ft}$, the equations simplify as follows:</p>
 <ul>
 <li>
 <p><strong>Case 1: Sight Distance $\le$ Curve Length ($S \le L$)</strong>
-$$L = \frac{A S^2}{100 \left(\sqrt{2h_1} + \sqrt{2h_2}\right)^2} = \frac{A S^2}{2158}$$</p>
-</li>
+</p>
+$$L = \frac{A S^2}{100 \left(\sqrt{2h_1} + \sqrt{2h_2}\right)^2} = \frac{A S^2}{2158}$$</li>
 <li>
-<p><strong>Case 2: Sight Distance $&gt;$ Curve Length ($S &gt; L$)</strong>
-$$L = 2S - \frac{2158}{A}$$</p>
-</li>
+<p><strong>Case 2: Sight Distance $>$ Curve Length ($S > L$)</strong>
+</p>
+$$L = 2S - \frac{2158}{A}$$</li>
 </ul>
 <p>Where:</p>
 <ul>
@@ -311,34 +325,31 @@ $$L = 2S - \frac{2158}{A}$$</p>
 <ul>
 <li>
 <p><strong>Case 1: Sight Distance $\le$ Curve Length ($S \le L$)</strong>
-$$L = \frac{A S^2}{658}$$</p>
-</li>
+</p>
+$$L = \frac{A S^2}{658}$$</li>
 <li>
-<p><strong>Case 2: Sight Distance $&gt;$ Curve Length ($S &gt; L$)</strong>
-$$L = 2S - \frac{658}{A}$$</p>
-</li>
+<p><strong>Case 2: Sight Distance $>$ Curve Length ($S > L$)</strong>
+</p>
+$$L = 2S - \frac{658}{A}$$</li>
 </ul>
 <p>Where $L$ and $S$ are in meters, and $A$ is in percent.</p>
 <hr>
-<h2 id="the-rate-of-vertical-curvature-k">The Rate of Vertical Curvature ($K$)</h2>
+<h2 id="the-rate-of-vertical-curvature-">The Rate of Vertical Curvature ($K$)</h2>
 <p>The design rate of vertical curvature, $K$, represents the horizontal distance in feet required to change the grade by 1%. For the case where $S \le L$:</p>
-<p>$$K = \frac{L}{A} = \frac{S^2}{2158}$$</p>
-<p>The required minimum $K$-value is a function of the sight distance ($S$) and is independent of the grades. AASHTO tables list minimum $K$-values for each design speed based on the standard level SSD. Once you have the design $K$-value, the minimum curve length is calculated directly as:</p>
-<p>$$L_{\text{min}} = K \times A$$</p>
-<h3 id="minimum-length-for-comfort-and-aesthetics">Minimum Length for Comfort and Aesthetics</h3>
+$$K = \frac{L}{A} = \frac{S^2}{2158}$$<p>The required minimum $K$-value is a function of the sight distance ($S$) and is independent of the grades. AASHTO tables list minimum $K$-values for each design speed based on the standard level SSD. Once you have the design $K$-value, the minimum curve length is calculated directly as:</p>
+$$L_{\text{min}} = K \times A$$<h3 id="minimum-length-for-comfort-and-aesthetics">Minimum Length for Comfort and Aesthetics</h3>
 <p>If the grades are very close (small $A$), the equations might yield an extremely short curve length. AASHTO recommends a minimum curve length to ensure passenger comfort and visual smoothness. A common rule of thumb is:</p>
-<p>$$L_{\text{min}} \ge 3 V$$</p>
-<p>Where $V$ is the design speed in mph.</p>
+$$L_{\text{min}} \ge 3 V$$<p>Where $V$ is the design speed in mph.</p>
 <hr>
-<h2 id="drainage-control-the-max-k-limit">Drainage Control (The Max $K$ Limit)</h2>
+<h2 id="drainage-control-the-max--limit">Drainage Control (The Max $K$ Limit)</h2>
 <p>While a larger $K$-value provides a flatter, safer curve with more sight distance, it can introduce drainage issues. If a curve is too flat, water will not drain off the roadway surface, which increases the risk of hydroplaning.</p>
 <ul>
-<li><strong>Drainage Criterion:</strong> On curbed pavements, drainage problems may occur if the rate of vertical curvature $K$ exceeds <strong>$167\text{ ft/%}$</strong> (or <strong>$51\text{ m/%}$</strong>).</li>
-<li><strong>The 0.3% Rule:</strong> If $K &gt; 167$, designers must verify that a minimum longitudinal slope of $0.3%$ is reached within $50\text{ ft}$ of the high point of the curve.</li>
+<li><strong>Drainage Criterion:</strong> On curbed pavements, drainage problems may occur if the rate of vertical curvature $K$ exceeds <strong>$167\text{ ft/\%}$</strong> (or <strong>$51\text{ m/\%}$</strong>).</li>
+<li><strong>The 0.3% Rule:</strong> If $K > 167$, designers must verify that a minimum longitudinal slope of $0.3\%$ is reached within $50\text{ ft}$ of the high point of the curve.</li>
 </ul>
 <hr>
 <h2 id="worked-example">Worked Example</h2>
-<p>A crest vertical curve is to connect an initial grade $g_1 = +3.5%$ and a final grade $g_2 = -1.5%$ on a highway with a design speed of $60\text{ mph}$.</p>
+<p>A crest vertical curve is to connect an initial grade $g_1 = +3.5\%$ and a final grade $g_2 = -1.5\%$ on a highway with a design speed of $60\text{ mph}$.</p>
 <p>Determine:</p>
 <ol>
 <li>The minimum required length of the vertical curve using the $K$-value method.</li>
@@ -350,26 +361,30 @@ $$L = 2S - \frac{658}{A}$$</p>
 <ul>
 <li>From AASHTO tables (or our SSD table), the design SSD for $60\text{ mph}$ is $570\text{ ft}$.</li>
 <li>The required design $K$-value for $60\text{ mph}$ (crest curve) is:
-$$K = \frac{S^2}{2158} = \frac{570^2}{2158} = 150.56 \approx 151\text{ ft/%}$$</li>
+
+$$K = \frac{S^2}{2158} = \frac{570^2}{2158} = 150.56 \approx 151\text{ ft/\%}$$</li>
 <li>Calculate algebraic grade difference:
-$$A = |g_2 - g_1| = |-1.5 - 3.5| = 5.0%$$</li>
+
+$$A = |g_2 - g_1| = |-1.5 - 3.5| = 5.0\%$$</li>
 <li>Calculate minimum curve length:
+
 $$L_{\text{min}} = K \times A = 151 \times 5.0 = 755\text{ ft}$$</li>
 </ul>
 <p><strong>2. Solve case-based equations from scratch:</strong></p>
 <ul>
 <li><em>Assumption:</em> Assume $S \le L$.
+
 $$L = \frac{A S^2}{2158} = \frac{5.0 \times 570^2}{2158} = \frac{5.0 \times 324,900}{2158} = \frac{1,624,500}{2158} = 752.78\text{ ft}$$</li>
 <li><em>Verify assumption:</em> Is $S \le L$? Since $570\text{ ft} \le 752.78\text{ ft}$, the assumption is correct.</li>
 <li>Thus, the calculated minimum length is $753\text{ ft}$ (AASHTO tables round this up slightly to $755\text{ ft}$ based on the rounded $K$ of $151$).</li>
 </ul>
-<p><em>What if $S &gt; L$ had occurred?</em>
+<p><em>What if $S > L$ had occurred?</em>
 If the calculated $L$ was less than $570\text{ ft}$ (which happens for small $A$ values), we would have to use the Case 2 formula: $L = 2S - \frac{2158}{A}$.</p>
 <p><strong>3. Drainage Criteria Check:</strong></p>
 <ul>
-<li>Our design $K$ is $151\text{ ft/%}$ (or $150.56\text{ ft/%}$).</li>
-<li>AASHTO drainage limit for curbed roadways: $K_{\text{max}} = 167\text{ ft/%}$.</li>
-<li>Since $151 &lt; 167$, the curve is steep enough to avoid drainage ponding near the high point, and special drainage design is not required.</li>
+<li>Our design $K$ is $151\text{ ft/\%}$ (or $150.56\text{ ft/\%}$).</li>
+<li>AASHTO drainage limit for curbed roadways: $K_{\text{max}} = 167\text{ ft/\%}$.</li>
+<li>Since $151 < 167$, the curve is steep enough to avoid drainage ponding near the high point, and special drainage design is not required.</li>
 </ul>
 <h2 id="references">References</h2>
 <ul>

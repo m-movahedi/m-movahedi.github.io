@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Traffic Signal Terminology">
     <meta property="og:description" content="Traffic Signal Terminology Traffic signal timing and design questions on the PE Civil Transportation exam require a precise understanding of terminology. On the …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Traffic Signal Terminology">
     <meta name="twitter:description" content="Traffic Signal Terminology Traffic signal timing and design questions on the PE Civil Transportation exam require a precise understanding of terminology. On the …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-10/67-signal-terminology/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/67-signal-terminology/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-10/67-signal-terminology/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -259,7 +273,8 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>Cycle Length ($C$):</strong> The total time required to complete one full sequence of all phases (expressed in seconds).</li>
 <li><strong>Interval:</strong> A discrete portion of a phase during which all signal indications (colors) remain constant. For example, a single phase consists of a green interval, a yellow change interval, and an all-red clearance interval.</li>
 <li><strong>Split:</strong> The segment of the cycle length allocated to a particular phase. It represents the sum of the green, yellow, and all-red intervals for that phase:
-$$\text{Split}<em>i = G_i + Y_i + R</em>{ci}$$
+
+$$\text{Split}_i = G_i + Y_i + R_{ci}$$
 Where:
 <ul>
 <li>$G_i$ = Displayed green interval (seconds)</li>
@@ -272,28 +287,31 @@ Where:
 <hr>
 <h2 id="saturation-flow-lost-time-and-capacity">Saturation Flow, Lost Time, and Capacity</h2>
 <p>Analyzing capacity requires translating displayed timing into effective timing.</p>
-<h3 id="saturation-flow-rate-s">Saturation Flow Rate ($s$)</h3>
-<p>The saturation flow rate ($s$) represents the maximum capacity of a lane group if the signal were green $100%$ of the time. It is expressed in passenger cars per hour of green per lane (pc/h/g/ln) or vehicles per hour of green (veh/h/g). The default base saturation flow rate ($s_0$) in the HCM is typically $1,900 \text{ pc/h/g/ln}$, which is then adjusted for lane width, grade, heavy vehicles, turning movements, and parking.</p>
-<h3 id="lost-time-t_l">Lost Time ($t_L$)</h3>
+<h3 id="saturation-flow-rate-">Saturation Flow Rate ($s$)</h3>
+<p>The saturation flow rate ($s$) represents the maximum capacity of a lane group if the signal were green $100\%$ of the time. It is expressed in passenger cars per hour of green per lane (pc/h/g/ln) or vehicles per hour of green (veh/h/g). The default base saturation flow rate ($s_0$) in the HCM is typically $1,900 \text{ pc/h/g/ln}$, which is then adjusted for lane width, grade, heavy vehicles, turning movements, and parking.</p>
+<h3 id="lost-time-">Lost Time ($t_L$)</h3>
 <p>Every time a signal changes phases, time is lost due to vehicle physics and driver perception:</p>
 <ol>
 <li><strong>Start-up Lost Time ($l_1$):</strong> When the signal turns green, the first few drivers react slowly and accelerate from a stop. This typically consumes about $2.0$ seconds at the start of green.</li>
 <li><strong>Clearance Lost Time ($l_2$):</strong> The portion of the yellow and all-red clearance intervals not utilized by traffic. This is typically modeled as the time at the end of the phase when the intersection is empty.</li>
 </ol>
 <p>Total lost time per phase ($t_L$) is:
-$$t_L = l_1 + l_2$$</p>
-<p>If specific values are not provided on the exam, a common default is $t_L = 4.0\text{ seconds}$ per phase. The total lost time per cycle ($L$) is the sum of the lost times for the critical phases (those that dictate the cycle length):
-$$L = \sum t_{L, \text{critical}}$$</p>
-<h3 id="effective-green-g-and-effective-red-r">Effective Green ($g$) and Effective Red ($r$)</h3>
+</p>
+$$t_L = l_1 + l_2$$<p>If specific values are not provided on the exam, a common default is $t_L = 4.0\text{ seconds}$ per phase. The total lost time per cycle ($L$) is the sum of the lost times for the critical phases (those that dictate the cycle length):
+</p>
+$$L = \sum t_{L, \text{critical}}$$<h3 id="effective-green--and-effective-red-">Effective Green ($g$) and Effective Red ($r$)</h3>
 <ul>
 <li><strong>Effective Green Time ($g$):</strong> The actual usable green time allocated to a lane group:
+
 $$g = G + Y + R_c - t_L$$</li>
 <li><strong>Effective Red Time ($r$):</strong> The time during which the lane group is effectively blocked from flowing:
+
 $$r = C - g$$</li>
 </ul>
-<h3 id="lane-group-capacity-c">Lane Group Capacity ($c$)</h3>
+<h3 id="lane-group-capacity-">Lane Group Capacity ($c$)</h3>
 <p>Capacity is the maximum rate of flow that can pass through the intersection under prevailing conditions. It is calculated by scaling the saturation flow rate by the ratio of effective green to cycle length:
-$$c = s \cdot \left( \frac{g}{C} \right)$$
+</p>
+$$c = s \cdot \left( \frac{g}{C} \right)$$<p>
 Where:</p>
 <ul>
 <li>$c$ = Capacity of the lane group (veh/h or pc/h)</li>
@@ -313,24 +331,29 @@ Where:</p>
 <li>The capacity of the two-lane approach ($c$)</li>
 </ol>
 <h3 id="step-by-step-solution">Step-by-Step Solution</h3>
-<h4 id="step-1-calculate-the-phase-lost-time-t_l">Step 1: Calculate the phase lost time ($t_L$)</h4>
+<h4 id="step-1-calculate-the-phase-lost-time-">Step 1: Calculate the phase lost time ($t_L$)</h4>
 <p>Using the lost time components:
-$$t_L = l_1 + l_2 = 2.0\text{ s} + 2.0\text{ s} = 4.0\text{ s}$$</p>
-<h4 id="step-2-calculate-the-effective-green-time-g">Step 2: Calculate the effective green time ($g$)</h4>
+</p>
+$$t_L = l_1 + l_2 = 2.0\text{ s} + 2.0\text{ s} = 4.0\text{ s}$$<h4 id="step-2-calculate-the-effective-green-time-">Step 2: Calculate the effective green time ($g$)</h4>
 <p>Using the effective green equation:
-$$g = G + Y + R_c - t_L$$
-$$g = 35\text{ s} + 4.0\text{ s} + 2.0\text{ s} - 4.0\text{ s}$$
-$$g = 37\text{ s}$$</p>
-<p><em>Exam Tip: Note that when the sum of yellow and all-red ($4.0 + 2.0 = 6.0\text{ s}$) exceeds the phase lost time ($4.0\text{ s}$), the effective green time is actually longer than the displayed green time ($37\text{ s} &gt; 35\text{ s}$).</em></p>
-<h4 id="step-3-calculate-the-total-capacity-c-for-the-approach">Step 3: Calculate the total capacity ($c$) for the approach</h4>
+</p>
+$$g = G + Y + R_c - t_L$$<p>
+</p>
+$$g = 35\text{ s} + 4.0\text{ s} + 2.0\text{ s} - 4.0\text{ s}$$<p>
+</p>
+$$g = 37\text{ s}$$<p><em>Exam Tip: Note that when the sum of yellow and all-red ($4.0 + 2.0 = 6.0\text{ s}$) exceeds the phase lost time ($4.0\text{ s}$), the effective green time is actually longer than the displayed green time ($37\text{ s} > 35\text{ s}$).</em></p>
+<h4 id="step-3-calculate-the-total-capacity--for-the-approach">Step 3: Calculate the total capacity ($c$) for the approach</h4>
 <p>First, calculate the total saturation flow ($s$) for the two lanes:
-$$s = 1,800\text{ veh/h/g/ln} \times 2\text{ lanes} = 3,600\text{ veh/h/g}$$</p>
-<p>Now, apply the capacity formula:
-$$c = s \cdot \left( \frac{g}{C} \right)$$
-$$c = 3,600\text{ veh/h/g} \times \left( \frac{37\text{ s}}{90\text{ s}} \right)$$
-$$c = 3,600 \times 0.4111$$
-$$c = 1,480\text{ veh/h}$$</p>
-<h3 id="verification-checklist">Verification checklist</h3>
+</p>
+$$s = 1,800\text{ veh/h/g/ln} \times 2\text{ lanes} = 3,600\text{ veh/h/g}$$<p>Now, apply the capacity formula:
+</p>
+$$c = s \cdot \left( \frac{g}{C} \right)$$<p>
+</p>
+$$c = 3,600\text{ veh/h/g} \times \left( \frac{37\text{ s}}{90\text{ s}} \right)$$<p>
+</p>
+$$c = 3,600 \times 0.4111$$<p>
+</p>
+$$c = 1,480\text{ veh/h}$$<h3 id="verification-checklist">Verification checklist</h3>
 <ul>
 <li>Are units consistent? Yes, saturation flow is in veh/h/g and capacity is in veh/h.</li>
 <li>Was the lane count factored in? Yes, multiplied the lane rate by 2.</li>

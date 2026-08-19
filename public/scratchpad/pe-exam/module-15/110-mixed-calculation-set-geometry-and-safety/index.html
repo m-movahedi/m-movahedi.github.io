@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mixed Calculation Set: Geometry and Safety">
     <meta property="og:description" content="Mixed Calculation Set: Geometry and Safety This calculation set covers geometric alignment design and roadside safety calculations typical of the PE Civil …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Mixed Calculation Set: Geometry and Safety">
     <meta name="twitter:description" content="Mixed Calculation Set: Geometry and Safety This calculation set covers geometric alignment design and roadside safety calculations typical of the PE Civil …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-15/110-mixed-calculation-set-geometry-and-safety/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-15/110-mixed-calculation-set-geometry-and-safety/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-15/110-mixed-calculation-set-geometry-and-safety/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -235,7 +249,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="problem-1-horizontal-curve-stationing">Problem 1: Horizontal Curve Stationing</h2>
 <p>A simple horizontal curve is being designed for a two-lane highway.</p>
 <ul>
-<li>The intersection angle (deflection angle) $\Delta = 38^{\circ} 30&rsquo; = 38.5^{\circ}$.</li>
+<li>The intersection angle (deflection angle) $\Delta = 38^{\circ} 30' = 38.5^{\circ}$.</li>
 <li>The degree of curve (arc definition) is $D_a = 4.0^{\circ}$ (measured over a 100-foot arc length).</li>
 <li>The station of the Point of Intersection (PI) is $244 + 50.00$.</li>
 </ul>
@@ -246,25 +260,32 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>The stations of the Point of Curvature (PC) and Point of Tangency (PT).</strong></li>
 </ol>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-radius-r">Step 1: Calculate Radius ($R$)</h4>
+<h4 id="step-1-calculate-radius-">Step 1: Calculate Radius ($R$)</h4>
 <p>Using the standard relationship for degree of curve (arc definition) in feet:
-$$R = \frac{5729.58}{D_a} = \frac{5729.58}{4.0} = 1,432.40\text{ feet}$$</p>
-<h4 id="step-2-calculate-tangent-t-and-curve-length-l">Step 2: Calculate Tangent ($T$) and Curve Length ($L$)</h4>
+</p>
+$$R = \frac{5729.58}{D_a} = \frac{5729.58}{4.0} = 1,432.40\text{ feet}$$<h4 id="step-2-calculate-tangent--and-curve-length-">Step 2: Calculate Tangent ($T$) and Curve Length ($L$)</h4>
 <ul>
 <li><strong>Tangent Length ($T$):</strong>
+
 $$T = R \cdot \tan\left(\frac{\Delta}{2}\right) = 1,432.40 \cdot \tan\left(\frac{38.5^{\circ}}{2}\right) = 1,432.40 \cdot \tan(19.25^{\circ})$$
+
 $$T = 1,432.40 \cdot 0.3492 \approx 500.22\text{ feet}$$</li>
 <li><strong>Curve Length ($L$):</strong>
+
 $$L = \frac{100 \cdot \Delta}{D_a} = \frac{100 \cdot 38.5^{\circ}}{4.0^{\circ}} = 962.50\text{ feet}$$
 <em>(Alternatively, using arc length formula: $L = R \cdot \Delta \cdot \frac{\pi}{180} = 1,432.40 \cdot 38.5 \cdot 0.017453 \approx 962.88\text{ ft}$; on the PE exam, the NCEES handbook specifies the degree of curve relation, so $L = 100 \Delta/D$ is standard).</em></li>
 </ul>
 <h4 id="step-3-determine-stationing-of-pc-and-pt">Step 3: Determine Stationing of PC and PT</h4>
 <ul>
 <li><strong>Station of PC:</strong>
+
 $$\text{PC Station} = \text{PI Station} - T = (244 + 50.00) - 500.22\text{ ft}$$
+
 $$(244 \cdot 100 + 50.00) - 500.22 = 24,450.00 - 500.22 = 23,949.78\text{ ft} \implies 239 + 49.78$$</li>
 <li><strong>Station of PT:</strong>
+
 $$\text{PT Station} = \text{PC Station} + L = (239 + 49.78) + 962.50\text{ ft}$$
+
 $$(23,949.78) + 962.50 = 24,912.28\text{ ft} \implies 249 + 12.28$$
 <em>Trap Check:</em> Remember to calculate the PT station by adding the curve length ($L$) to the PC station. Never add the tangent length ($T$) to the PI station to find the PT station.</li>
 </ul>
@@ -272,8 +293,8 @@ $$(23,949.78) + 962.50 = 24,912.28\text{ ft} \implies 249 + 12.28$$
 <h2 id="problem-2-vertical-curve-high-point-and-elevation">Problem 2: Vertical Curve High Point and Elevation</h2>
 <p>An equal-tangent crest vertical curve has a length $L = 600\text{ feet}$.</p>
 <ul>
-<li>The entering grade is $g_1 = +3.0% = +0.03\text{ ft/ft}$.</li>
-<li>The exiting grade is $g_2 = -2.0% = -0.02\text{ ft/ft}$.</li>
+<li>The entering grade is $g_1 = +3.0\% = +0.03\text{ ft/ft}$.</li>
+<li>The exiting grade is $g_2 = -2.0\% = -0.02\text{ ft/ft}$.</li>
 <li>The Point of Vertical Curvature (PVC) is at station $120 + 00.00$ and elevation $540.50\text{ feet}$.</li>
 </ul>
 <p><strong>1. Determine the station and elevation of the Point of Vertical Intersection (PVI).</strong>
@@ -283,20 +304,24 @@ $$(23,949.78) + 962.50 = 24,912.28\text{ ft} \implies 249 + 12.28$$
 <p>An equal-tangent vertical curve has the PVI exactly at the midpoint of the curve ($L/2$ from PVC):</p>
 <ul>
 <li><strong>PVI Station:</strong>
+
 $$\text{PVI Station} = \text{PVC Station} + \frac{L}{2} = (120 + 00.00) + 300\text{ ft} = 123 + 00.00$$</li>
 <li><strong>PVI Elevation:</strong>
+
 $$\text{PVI Elev} = \text{PVC Elev} + g_1 \cdot \left(\frac{L}{2}\right) = 540.50 + 0.03 \cdot 300\text{ ft} = 540.50 + 9.0 = 549.50\text{ feet}$$</li>
 </ul>
 <h4 id="step-2-calculate-high-point-station">Step 2: Calculate High Point Station</h4>
 <p>The distance ($x_{hp}$) from the PVC to the highest point of a crest vertical curve is:
-$$x_{hp} = \frac{g_1 \cdot L}{g_1 - g_2}$$
+</p>
+$$x_{hp} = \frac{g_1 \cdot L}{g_1 - g_2}$$<p>
 Where $g_1$ and $g_2$ are in percent:
-$$x_{hp} = \frac{3.0 \cdot 600\text{ ft}}{3.0 - (-2.0)} = \frac{1800}{5.0} = 360\text{ feet}$$</p>
-<p>Convert to station:
-$$\text{High Point Station} = \text{PVC Station} + x_{hp} = (120 + 00.00) + 360\text{ ft} = 123 + 60.00$$</p>
-<h4 id="step-3-calculate-high-point-elevation">Step 3: Calculate High Point Elevation</h4>
+</p>
+$$x_{hp} = \frac{3.0 \cdot 600\text{ ft}}{3.0 - (-2.0)} = \frac{1800}{5.0} = 360\text{ feet}$$<p>Convert to station:
+</p>
+$$\text{High Point Station} = \text{PVC Station} + x_{hp} = (120 + 00.00) + 360\text{ ft} = 123 + 60.00$$<h4 id="step-3-calculate-high-point-elevation">Step 3: Calculate High Point Elevation</h4>
 <p>Use the general vertical curve offset equation:
-$$y = y_{PVC} + g_1 \cdot x + \frac{r \cdot x^2}{2}$$
+</p>
+$$y = y_{PVC} + g_1 \cdot x + \frac{r \cdot x^2}{2}$$<p>
 Where:</p>
 <ul>
 <li>$y_{PVC} = 540.50\text{ feet}$</li>
@@ -305,10 +330,12 @@ Where:</p>
 <li>$x = x_{hp} = 360\text{ feet}$</li>
 </ul>
 <p>Evaluate elevation ($y_{hp}$):
-$$y_{hp} = 540.50 + (0.03 \cdot 360) + \frac{-0.0000833 \cdot 360^2}{2}$$
-$$y_{hp} = 540.50 + 10.80 - \frac{0.0000833 \cdot 129,600}{2}$$
-$$y_{hp} = 551.30 - \frac{10.80}{2} = 551.30 - 5.40 = 545.90\text{ feet}$$</p>
-<hr>
+</p>
+$$y_{hp} = 540.50 + (0.03 \cdot 360) + \frac{-0.0000833 \cdot 360^2}{2}$$<p>
+</p>
+$$y_{hp} = 540.50 + 10.80 - \frac{0.0000833 \cdot 129,600}{2}$$<p>
+</p>
+$$y_{hp} = 551.30 - \frac{10.80}{2} = 551.30 - 5.40 = 545.90\text{ feet}$$<hr>
 <h2 id="problem-3-segment-crash-rate-calculation">Problem 3: Segment Crash Rate Calculation</h2>
 <p>A $2.4\text{-mile}$ rural roadway segment experienced a total of 18 crashes over a 3-year study period.</p>
 <ul>
@@ -317,8 +344,7 @@ $$y_{hp} = 551.30 - \frac{10.80}{2} = 551.30 - 5.40 = 545.90\text{ feet}$$</p>
 <p><strong>Calculate the crash rate ($R$) for this segment in terms of crashes per 100 Million Vehicle Miles Traveled (MVMT).</strong></p>
 <h3 id="solution-2">Solution:</h3>
 <p>Use the standard equation for segment crash rates:</p>
-<p>$$R = \frac{N \cdot 10^8}{365 \cdot ADT \cdot L \cdot Y}$$</p>
-<p>Where:</p>
+$$R = \frac{N \cdot 10^8}{365 \cdot ADT \cdot L \cdot Y}$$<p>Where:</p>
 <ul>
 <li>$R$ = Crash rate (<strong>crashes per 100 MVMT</strong>)</li>
 <li>$N$ = Number of crashes = 18</li>
@@ -327,10 +353,12 @@ $$y_{hp} = 551.30 - \frac{10.80}{2} = 551.30 - 5.40 = 545.90\text{ feet}$$</p>
 <li>$Y$ = Study period length (<strong>years</strong>) = 3</li>
 </ul>
 <p>Substitute the values:
-$$R = \frac{18 \cdot 10^8}{365 \cdot 8,500 \cdot 2.4 \cdot 3}$$
-$$R = \frac{1,800,000,000}{365 \cdot 8,500 \cdot 7.2}$$
-$$R = \frac{1,800,000,000}{22,338,000} \approx 80.58$$</p>
-<p><em>Result:</em> The segment crash rate is <strong>80.6 crashes per 100 MVMT</strong>.</p>
+</p>
+$$R = \frac{18 \cdot 10^8}{365 \cdot 8,500 \cdot 2.4 \cdot 3}$$<p>
+</p>
+$$R = \frac{1,800,000,000}{365 \cdot 8,500 \cdot 7.2}$$<p>
+</p>
+$$R = \frac{1,800,000,000}{22,338,000} \approx 80.58$$<p><em>Result:</em> The segment crash rate is <strong>80.6 crashes per 100 MVMT</strong>.</p>
 <hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>
 <ul>

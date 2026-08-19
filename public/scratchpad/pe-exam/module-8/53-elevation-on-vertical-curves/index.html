@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Elevation on Vertical Curves">
     <meta property="og:description" content="Elevation on Vertical Curves Determining elevations along a parabolic vertical curve is a frequent task in road design and a heavily tested topic on the PE …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Elevation on Vertical Curves">
     <meta name="twitter:description" content="Elevation on Vertical Curves Determining elevations along a parabolic vertical curve is a frequent task in road design and a heavily tested topic on the PE …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-8/53-elevation-on-vertical-curves/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-8/53-elevation-on-vertical-curves/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-8/53-elevation-on-vertical-curves/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -239,66 +253,57 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <p>There are two primary mathematical frameworks used to solve these problems.</p>
 <h3 id="1-the-decimal-grade-equation-recommended-for-dimensional-consistency">1. The Decimal-Grade Equation (Recommended for dimensional consistency)</h3>
-<p>If grades $g_1$ and $g_2$ are converted to decimal fractions (e.g., $3% = 0.03$):</p>
-<p>$$y(x) = y_{\text{PVC}} + g_1 x + \left(\frac{g_2 - g_1}{2L}\right) x^2$$</p>
-<p>Where:</p>
+<p>If grades $g_1$ and $g_2$ are converted to decimal fractions (e.g., $3\% = 0.03$):</p>
+$$y(x) = y_{\text{PVC}} + g_1 x + \left(\frac{g_2 - g_1}{2L}\right) x^2$$<p>Where:</p>
 <ul>
 <li>$y_{\text{PVC}}$ = elevation of the PVC (ft)</li>
-<li>$g_1$ = initial grade (decimal, e.g., $+0.03$ for $+3%$)</li>
-<li>$g_2$ = final grade (decimal, e.g., $-0.02$ for $-2%$)</li>
+<li>$g_1$ = initial grade (decimal, e.g., $+0.03$ for $+3\%$)</li>
+<li>$g_2$ = final grade (decimal, e.g., $-0.02$ for $-2\%$)</li>
 <li>$L$ = length of the vertical curve (ft)</li>
 <li>$x$ = horizontal distance from the PVC (ft)</li>
 </ul>
 <h3 id="2-the-percent-grade-and-station-equation">2. The Percent-Grade and Station Equation</h3>
 <p>If grades are kept in percent (e.g., $3.0$ and $-2.0$), and distances are expressed in stations ($X = x / 100$ and $L_{\text{sta}} = L / 100$):</p>
-<p>$$y(X) = y_{\text{PVC}} + g_1 X + a X^2$$</p>
-<p>Where the parabolic constant $a$ is defined as:
-$$a = \frac{g_2 - g_1}{2 L_{\text{sta}}}$$</p>
-<hr>
-<h2 id="tangent-offsets-and-the-pvi-offset-e">Tangent Offsets and the PVI Offset ($E$)</h2>
+$$y(X) = y_{\text{PVC}} + g_1 X + a X^2$$<p>Where the parabolic constant $a$ is defined as:
+</p>
+$$a = \frac{g_2 - g_1}{2 L_{\text{sta}}}$$<hr>
+<h2 id="tangent-offsets-and-the-pvi-offset-">Tangent Offsets and the PVI Offset ($E$)</h2>
 <p>The elevation of the curve is the algebraic sum of the tangent elevation and the parabolic offset ($Y$):</p>
-<p>$$\text{Elev}<em>{\text{curve}} = \text{Elev}</em>{\text{tangent}} + Y$$</p>
-<p>The offset $Y$ at any distance $x$ from the PVC is:</p>
-<p>$$Y(x) = \left(\frac{g_2 - g_1}{2L}\right) x^2 = \left(\frac{A}{200L}\right) x^2$$</p>
-<p>Where $A = |g_2 - g_1|$ (in percent). Note that $Y$ is positive for sag curves (curve lies above the tangent) and negative for crest curves (curve lies below the tangent).</p>
-<h3 id="the-pvi-offset-e">The PVI Offset ($E$)</h3>
+$$\text{Elev}_{\text{curve}} = \text{Elev}_{\text{tangent}} + Y$$<p>The offset $Y$ at any distance $x$ from the PVC is:</p>
+$$Y(x) = \left(\frac{g_2 - g_1}{2L}\right) x^2 = \left(\frac{A}{200L}\right) x^2$$<p>Where $A = |g_2 - g_1|$ (in percent). Note that $Y$ is positive for sag curves (curve lies above the tangent) and negative for crest curves (curve lies below the tangent).</p>
+<h3 id="the-pvi-offset-">The PVI Offset ($E$)</h3>
 <p>The maximum vertical offset between the tangent intersection (PVI) and the curve occurs at the center of the curve ($x = L/2$). This offset is designated as $E$:</p>
-<p>$$E = \frac{AL}{800}$$</p>
-<p>Where:</p>
+$$E = \frac{AL}{800}$$<p>Where:</p>
 <ul>
 <li>$E$ = vertical offset at the PVI (ft)</li>
 <li>$A$ = algebraic grade difference (%)</li>
 <li>$L$ = length of the vertical curve (ft)</li>
 </ul>
 <p>Because of parabolic symmetry, the offset at the PVC and PVT is zero, and the offset at any other point is related to $E$ by:</p>
-<p>$$Y(x) = E \left(\frac{x}{L/2}\right)^2 = 4E \left(\frac{x}{L}\right)^2$$</p>
-<hr>
+$$Y(x) = E \left(\frac{x}{L/2}\right)^2 = 4E \left(\frac{x}{L}\right)^2$$<hr>
 <h2 id="grade-at-any-station">Grade at Any Station</h2>
 <p>The instantaneous slope (grade) at any point along the curve changes linearly. By taking the first derivative of the elevation equation with respect to $x$:</p>
-<p>$$g(x) = g_1 + \left(\frac{g_2 - g_1}{L}\right) x$$</p>
-<p>If using grades in percent:
-$$g(x) = g_1 + \left(\frac{g_2 - g_1}{L}\right) x = g_1 + \frac{x}{K}$$</p>
-<p>Where $K = L / A$ is the rate of vertical curvature. This equation is highly useful for checking grade transitions and verifying clearances.</p>
+$$g(x) = g_1 + \left(\frac{g_2 - g_1}{L}\right) x$$<p>If using grades in percent:
+</p>
+$$g(x) = g_1 + \left(\frac{g_2 - g_1}{L}\right) x = g_1 + \frac{x}{K}$$<p>Where $K = L / A$ is the rate of vertical curvature. This equation is highly useful for checking grade transitions and verifying clearances.</p>
 <hr>
 <h2 id="high-and-low-points-on-a-curve">High and Low Points on a Curve</h2>
 <p>The high point (on a crest curve) or low point (on a sag curve) is critical for drainage design (locating inlets) and clearance checks. The high or low point occurs where the slope of the curve is exactly zero ($g(x) = 0$).</p>
 <h3 id="location-distance-from-pvc">Location (Distance from PVC)</h3>
 <p>Solving $g(x) = 0$ for $x$ yields the horizontal distance from the PVC to the high/low point ($x_{\text{hl}}$):</p>
-<p>$$x_{\text{hl}} = \frac{g_1 L}{g_1 - g_2} = g_1 K$$</p>
-<p><em>Important Conditions:</em></p>
+$$x_{\text{hl}} = \frac{g_1 L}{g_1 - g_2} = g_1 K$$<p><em>Important Conditions:</em></p>
 <ul>
-<li>The high/low point only lies within the limits of the curve ($0 &lt; x_{\text{hl}} &lt; L$) if $g_1$ and $g_2$ have opposite signs.</li>
+<li>The high/low point only lies within the limits of the curve ($0 < x_{\text{hl}} < L$) if $g_1$ and $g_2$ have opposite signs.</li>
 <li>If both grades are positive, the lowest point is at the PVC ($x=0$) and the highest is at the PVT ($x=L$).</li>
 <li>If both grades are negative, the highest point is at the PVC and the lowest is at the PVT.</li>
-<li>In the formula $x_{\text{hl}} = g_1 K$, $g_1$ is entered in percent (e.g. $2.5$ for $2.5%$), and $K$ is in ft/percent.</li>
+<li>In the formula $x_{\text{hl}} = g_1 K$, $g_1$ is entered in percent (e.g. $2.5$ for $2.5\%$), and $K$ is in ft/percent.</li>
 </ul>
 <h3 id="elevation-of-highlow-point">Elevation of High/Low Point</h3>
 <p>Once $x_{\text{hl}}$ is determined, substitute it back into the elevation equation, which simplifies to:</p>
-<p>$$\text{Elev}<em>{\text{hl}} = y</em>{\text{PVC}} + \frac{g_1^2 K}{200}$$</p>
-<p>Where $g_1$ is in percent and $K$ is in ft/percent.</p>
+$$\text{Elev}_{\text{hl}} = y_{\text{PVC}} + \frac{g_1^2 K}{200}$$<p>Where $g_1$ is in percent and $K$ is in ft/percent.</p>
 <hr>
 <h2 id="worked-example">Worked Example</h2>
-<p>A crest vertical curve has a length of $800\text{ ft}$. The initial grade is $+3.0%$ and the final grade is $-2.0%$. The PVC is at Station $50+00$ and has an elevation of $450.00\text{ ft}$.</p>
+<p>A crest vertical curve has a length of $800\text{ ft}$. The initial grade is $+3.0\%$ and the final grade is $-2.0\%$. The PVC is at Station $50+00$ and has an elevation of $450.00\text{ ft}$.</p>
 <p>Calculate:</p>
 <ol>
 <li>The elevation of the curve at Station $53+00$.</li>
@@ -309,38 +314,42 @@ $$g(x) = g_1 + \left(\frac{g_2 - g_1}{L}\right) x = g_1 + \frac{x}{K}$$</p>
 <p><strong>1. Calculate Curve Elevation at Station $53+00$:</strong></p>
 <ul>
 <li>$y_{\text{PVC}} = 450.00\text{ ft}$</li>
-<li>$g_1 = +3.0% = +0.03$</li>
-<li>$g_2 = -2.0% = -0.02$</li>
+<li>$g_1 = +3.0\% = +0.03$</li>
+<li>$g_2 = -2.0\% = -0.02$</li>
 <li>$L = 800\text{ ft}$</li>
 <li>Target Station = $53+00$</li>
 <li>$x$ = distance from PVC = $(5,300 - 5,000) = 300\text{ ft}$</li>
 </ul>
 <p>Use the decimal-grade curve equation:</p>
-<p>$$y(x) = y_{\text{PVC}} + g_1 x + \left(\frac{g_2 - g_1}{2L}\right) x^2$$
-$$y(300) = 450.00 + (0.03)(300) + \left(\frac{-0.02 - 0.03}{2 \times 800}\right) (300)^2$$
-$$y(300) = 450.00 + 9.00 + \left(\frac{-0.05}{1600}\right) (90000)$$
-$$y(300) = 459.00 - 2.8125 = 456.19\text{ ft}$$</p>
-<p><em>Alternatively, using the tangent offset method:</em></p>
+$$y(x) = y_{\text{PVC}} + g_1 x + \left(\frac{g_2 - g_1}{2L}\right) x^2$$<p>
+</p>
+$$y(300) = 450.00 + (0.03)(300) + \left(\frac{-0.02 - 0.03}{2 \times 800}\right) (300)^2$$<p>
+</p>
+$$y(300) = 450.00 + 9.00 + \left(\frac{-0.05}{1600}\right) (90000)$$<p>
+</p>
+$$y(300) = 459.00 - 2.8125 = 456.19\text{ ft}$$<p><em>Alternatively, using the tangent offset method:</em></p>
 <ul>
 <li>Tangent elevation at $x = 300$: $\text{Elev}_{\text{tangent}} = 450.00 + (0.03)(300) = 459.00\text{ ft}$</li>
-<li>$A = |-2.0 - 3.0| = 5.0%$</li>
+<li>$A = |-2.0 - 3.0| = 5.0\%$</li>
 <li>Offset $Y(300) = -\frac{A x^2}{200L} = -\frac{5.0 \times (300)^2}{200 \times 800} = -\frac{450,000}{160,000} = -2.8125\text{ ft}$</li>
 <li>$\text{Elev}_{\text{curve}} = 459.00 - 2.8125 = 456.19\text{ ft}$</li>
 </ul>
 <p><strong>2. Calculate High Point Station:</strong></p>
 <ul>
-<li>$K = L / A = 800 / 5.0 = 160\text{ ft/%}$</li>
+<li>$K = L / A = 800 / 5.0 = 160\text{ ft/\%}$</li>
 <li>$x_{\text{hl}} = g_1 K = 3.0 \times 160 = 480\text{ ft}$ from the PVC.</li>
 <li>$\text{Station}_{\text{PVC}} = 50+00$ (or $5,000\text{ ft}$)</li>
 <li>$\text{Station}_{\text{hl}} = 5,000 + 480 = 5,480\text{ ft} \implies 54+80$</li>
 </ul>
 <p><strong>3. Calculate High Point Elevation:</strong>
 Using the simplified high-point elevation formula:</p>
-<p>$$\text{Elev}<em>{\text{hl}} = y</em>{\text{PVC}} + \frac{g_1^2 K}{200}$$
-$$\text{Elev}_{\text{hl}} = 450.00 + \frac{(3.0)^2 \times 160}{200} = 450.00 + \frac{9.0 \times 160}{200} = 450.00 + 7.20 = 457.20\text{ ft}$$</p>
-<p><em>Double-check using the standard curve equation at $x = 480\text{ ft}$:</em>
-$$y(480) = 450.00 + (0.03)(480) + \left(\frac{-0.05}{1600}\right)(480)^2$$
-$$y(480) = 450.00 + 14.40 - 0.00003125(230,400) = 464.40 - 7.20 = 457.20\text{ ft}$$
+$$\text{Elev}_{\text{hl}} = y_{\text{PVC}} + \frac{g_1^2 K}{200}$$<p>
+</p>
+$$\text{Elev}_{\text{hl}} = 450.00 + \frac{(3.0)^2 \times 160}{200} = 450.00 + \frac{9.0 \times 160}{200} = 450.00 + 7.20 = 457.20\text{ ft}$$<p><em>Double-check using the standard curve equation at $x = 480\text{ ft}$:</em>
+</p>
+$$y(480) = 450.00 + (0.03)(480) + \left(\frac{-0.05}{1600}\right)(480)^2$$<p>
+</p>
+$$y(480) = 450.00 + 14.40 - 0.00003125(230,400) = 464.40 - 7.20 = 457.20\text{ ft}$$<p>
 The calculations match perfectly.</p>
 <h2 id="references">References</h2>
 <ul>

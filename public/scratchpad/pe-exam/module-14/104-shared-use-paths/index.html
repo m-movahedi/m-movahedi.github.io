@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Shared Use Paths">
     <meta property="og:description" content="Shared Use Paths Shared-use paths (often called multi-use paths) are physically separated from motorized vehicle traffic and designed for use by bicyclists, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Shared Use Paths">
     <meta name="twitter:description" content="Shared Use Paths Shared-use paths (often called multi-use paths) are physically separated from motorized vehicle traffic and designed for use by bicyclists, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-14/104-shared-use-paths/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-14/104-shared-use-paths/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-14/104-shared-use-paths/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -252,24 +266,23 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>Shared-use paths must be accessible to users with disabilities, bringing them under ADA jurisdiction.</p>
 <ul>
 <li><strong>Maximum Longitudinal Grade:</strong> <strong>5.0%</strong> is the maximum slope allowed for independent alignments. If a path runs parallel to a roadway, its grade may match the highway grade.</li>
-<li><strong>Maximum Cross Slope:</strong> <strong>2.0%</strong> (typically designed at $1.5%$ to provide a safety margin under the $2.0%$ ADA limit) to facilitate drainage.</li>
+<li><strong>Maximum Cross Slope:</strong> <strong>2.0%</strong> (typically designed at $1.5\%$ to provide a safety margin under the $2.0\%$ ADA limit) to facilitate drainage.</li>
 </ul>
 <hr>
-<h2 id="stopping-sight-distance-ssd-for-bicycles">Stopping Sight Distance ($SSD$) for Bicycles</h2>
+<h2 id="stopping-sight-distance--for-bicycles">Stopping Sight Distance ($SSD$) for Bicycles</h2>
 <p>Stopping sight distance for a bicyclist is calculated using a formulation similar to that for motor vehicles, adjusted for bicycle speeds, reaction times, and braking characteristics.</p>
 <h3 id="governing-equation-aashto-bike-guide">Governing Equation (AASHTO Bike Guide):</h3>
-<p>$$S = \frac{V^2}{30 \cdot (f \pm G)} + 1.47 \cdot V \cdot t$$</p>
-<p>Where:</p>
+$$S = \frac{V^2}{30 \cdot (f \pm G)} + 1.47 \cdot V \cdot t$$<p>Where:</p>
 <ul>
 <li>$S$ = Stopping sight distance (<strong>feet</strong>)</li>
-<li>$V$ = Bicycle design speed (<strong>mph</strong>; typically $15\text{ mph}$ on flat terrain, up to $30\text{ mph}$ on downgrades $\ge 4%$).</li>
+<li>$V$ = Bicycle design speed (<strong>mph</strong>; typically $15\text{ mph}$ on flat terrain, up to $30\text{ mph}$ on downgrades $\ge 4\%$).</li>
 <li>$t$ = Bicyclist perception-reaction time (<strong>2.0 seconds</strong>).</li>
 <li>$f$ = Coefficient of friction (deceleration factor; standard is <strong>0.16</strong> for clean, wet pavement).</li>
 <li>$G$ = Longitudinal grade (<strong>ft/ft</strong>; positive for upgrades, negative for downgrades).</li>
 </ul>
 <hr>
 <h2 id="worked-example-stopping-sight-distance-on-a-downgrade">Worked Example: Stopping Sight Distance on a Downgrade</h2>
-<p>A shared-use path is being designed on an independent alignment with a segment constructed on a continuous $4.0%$ downgrade ($G = -0.04\text{ ft/ft}$).</p>
+<p>A shared-use path is being designed on an independent alignment with a segment constructed on a continuous $4.0\%$ downgrade ($G = -0.04\text{ ft/ft}$).</p>
 <ul>
 <li>The design speed for cyclists on this segment is determined to be $20\text{ mph}$.</li>
 <li>Bicyclist perception-reaction time is $2.0\text{ seconds}$.</li>
@@ -289,23 +302,26 @@ gtag('config', 'G-1WZSE8DHZ9');
 </li>
 <li>
 <p><strong>Apply the AASHTO Bike SSD Equation:</strong>
-$$S = \frac{V^2}{30 \cdot (f + G)} + 1.47 \cdot V \cdot t$$
+</p>
+$$S = \frac{V^2}{30 \cdot (f + G)} + 1.47 \cdot V \cdot t$$<p>
 <em>Note: Since it is a downgrade, we add the negative grade ($f - G$):</em>
-$$S = \frac{20^2}{30 \cdot (0.16 - 0.04)} + (1.47 \cdot 20 \cdot 2.0)$$</p>
-</li>
+</p>
+$$S = \frac{20^2}{30 \cdot (0.16 - 0.04)} + (1.47 \cdot 20 \cdot 2.0)$$</li>
 <li>
 <p><strong>Evaluate the terms:</strong></p>
 <ul>
 <li><strong>Braking Distance:</strong>
+
 $$\text{Braking Distance} = \frac{400}{30 \cdot 0.12} = \frac{400}{3.6} \approx 111.1\text{ feet}$$</li>
 <li><strong>Perception-Reaction Distance:</strong>
+
 $$\text{Reaction Distance} = 1.47 \cdot 20 \cdot 2.0 = 58.8\text{ feet}$$</li>
 </ul>
 </li>
 <li>
 <p><strong>Sum the components:</strong>
-$$S = 111.1 + 58.8 = 169.9\text{ feet}$$</p>
-</li>
+</p>
+$$S = 111.1 + 58.8 = 169.9\text{ feet}$$</li>
 </ol>
 <p><em>Result:</em> The minimum required stopping sight distance for this downgrade segment is <strong>170 feet</strong>.</p>
 <hr>

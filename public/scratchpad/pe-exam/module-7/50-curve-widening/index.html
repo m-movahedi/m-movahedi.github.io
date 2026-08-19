@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Curve Widening">
     <meta property="og:description" content="Curve Widening On sharp horizontal curves, roadways are often widened to ensure that vehicles—especially large trucks—remain within their designated travel …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Curve Widening">
     <meta name="twitter:description" content="Curve Widening On sharp horizontal curves, roadways are often widened to ensure that vehicles—especially large trucks—remain within their designated travel …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-7/50-curve-widening/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/50-curve-widening/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-7/50-curve-widening/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -240,8 +254,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="off-tracking-and-vehicle-swept-path">Off-Tracking and Vehicle Swept Path</h2>
 <p>Off-tracking ($U$) is the physical offset between the paths of the front and rear axles. For a single unit vehicle or a semi-trailer with a single pivot, the maximum off-tracking is calculated using the vehicle&rsquo;s wheelbase ($L$):</p>
-<p>$$\text{Off-Tracking } (U_o) = R - \sqrt{R^2 - L^2}$$</p>
-<p>Where:</p>
+$$\text{Off-Tracking } (U_o) = R - \sqrt{R^2 - L^2}$$<p>Where:</p>
 <ul>
 <li>$R$ = Radius of the curve (ft).</li>
 <li>$L$ = Wheelbase length of the design vehicle (ft) (distance from steering axle to rear axle).</li>
@@ -249,13 +262,12 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="aashto-curve-widening-equation">AASHTO Curve Widening Equation</h2>
 <p>The total widening ($w_c$) required on a horizontal curve is the difference between the required roadway width on the curve ($W_c$) and the standard roadway width on the tangent ($W_n$):</p>
-<p>$$w_c = W_c - W_n$$</p>
-<p>Where the required roadway width on the curve ($W_c$) for a multi-lane roadway is:</p>
-<p>$$W_c = N(U + C) + (N - 1)F_A + Z$$</p>
-<p>And:</p>
+$$w_c = W_c - W_n$$<p>Where the required roadway width on the curve ($W_c$) for a multi-lane roadway is:</p>
+$$W_c = N(U + C) + (N - 1)F_A + Z$$<p>And:</p>
 <ul>
 <li><strong>$N$:</strong> Number of travel lanes.</li>
 <li><strong>$U$:</strong> Track width of the design vehicle on the curve (ft):
+
 $$U = u + R - \sqrt{R^2 - L^2}$$
 <em>(where $u$ is the out-to-out tire width on a tangent, typically <strong>8.5 ft</strong> for trucks).</em></li>
 <li><strong>$C$:</strong> Lateral clearance per lane (ft). AASHTO recommends:
@@ -266,9 +278,11 @@ $$U = u + R - \sqrt{R^2 - L^2}$$
 </ul>
 </li>
 <li><strong>$F_A$:</strong> Width of the front overhang (ft):
+
 $$F_A = \sqrt{R^2 + A(2L + A)} - R$$
 <em>(where $A$ is the front overhang length of the vehicle, typically <strong>3.0 ft</strong>).</em></li>
 <li><strong>$Z$:</strong> Extra width for difficulty of driving on the curve (ft):
+
 $$Z = \frac{V}{\sqrt{R}}$$
 <em>(where $V$ is the design speed in mph).</em></li>
 </ul>
@@ -276,7 +290,7 @@ $$Z = \frac{V}{\sqrt{R}}$$
 <h2 id="warrants-for-curve-widening">Warrants for Curve Widening</h2>
 <p>Widening is expensive and complex to build. Therefore, AASHTO establishes a threshold warrant:</p>
 <ul>
-<li><strong>The 2.0-ft Rule:</strong> Curve widening is only implemented if the calculated widening ($w_c$) is <strong>$2.0\text{ ft}$ or greater</strong>. If $w_c &lt; 2.0\text{ ft}$, no widening is required, and the standard tangent width is maintained.</li>
+<li><strong>The 2.0-ft Rule:</strong> Curve widening is only implemented if the calculated widening ($w_c$) is <strong>$2.0\text{ ft}$ or greater</strong>. If $w_c < 2.0\text{ ft}$, no widening is required, and the standard tangent width is maintained.</li>
 <li><strong>Low-Speed Curves:</strong> For low-speed facilities (such as intersections, turning roadways, and low-speed ramps), the $Z$ term (difficulty of driving) is omitted from the equation ($Z = 0$).</li>
 </ul>
 <hr>
@@ -301,35 +315,45 @@ The design vehicle is a WB-50 semi-trailer with the following parameters:</p>
 <ol>
 <li>
 <p><strong>Calculate Track Width ($U$):</strong>
-$$U = u + R - \sqrt{R^2 - L^2}$$
-$$U = 8.5 + 600 - \sqrt{600^2 - 50^2}$$
-$$U = 608.5 - \sqrt{360000 - 2500} = 608.5 - \sqrt{357500}$$
-$$U = 608.5 - 597.91 = 10.59\text{ ft}$$</p>
-</li>
+</p>
+$$U = u + R - \sqrt{R^2 - L^2}$$<p>
+</p>
+$$U = 8.5 + 600 - \sqrt{600^2 - 50^2}$$<p>
+</p>
+$$U = 608.5 - \sqrt{360000 - 2500} = 608.5 - \sqrt{357500}$$<p>
+</p>
+$$U = 608.5 - 597.91 = 10.59\text{ ft}$$</li>
 <li>
 <p><strong>Calculate Front Overhang Width ($F_A$):</strong>
-$$F_A = \sqrt{R^2 + A(2L + A)} - R$$
-$$F_A = \sqrt{600^2 + 3.0(2 \times 50 + 3.0)} - 600$$
-$$F_A = \sqrt{360000 + 3.0(103)} - 600 = \sqrt{360000 + 309} - 600$$
-$$F_A = \sqrt{360309} - 600 = 600.26 - 600 = 0.26\text{ ft}$$</p>
-</li>
+</p>
+$$F_A = \sqrt{R^2 + A(2L + A)} - R$$<p>
+</p>
+$$F_A = \sqrt{600^2 + 3.0(2 \times 50 + 3.0)} - 600$$<p>
+</p>
+$$F_A = \sqrt{360000 + 3.0(103)} - 600 = \sqrt{360000 + 309} - 600$$<p>
+</p>
+$$F_A = \sqrt{360309} - 600 = 600.26 - 600 = 0.26\text{ ft}$$</li>
 <li>
 <p><strong>Calculate Driving Difficulty Factor ($Z$):</strong>
-$$Z = \frac{V}{\sqrt{R}} = \frac{50}{\sqrt{600}} = \frac{50}{24.49} = 2.04\text{ ft}$$</p>
-</li>
+</p>
+$$Z = \frac{V}{\sqrt{R}} = \frac{50}{\sqrt{600}} = \frac{50}{24.49} = 2.04\text{ ft}$$</li>
 <li>
 <p><strong>Calculate Total Curve Roadway Width ($W_c$):</strong>
 The roadway has 2 lanes, so $N = 2$.
-$$W_c = N(U + C) + (N - 1)F_A + Z$$
-$$W_c = 2(10.59 + 3.0) + (2 - 1)(0.26) + 2.04$$
-$$W_c = 2(13.59) + 1(0.26) + 2.04$$
-$$W_c = 27.18 + 0.26 + 2.04 = 29.48\text{ ft}$$</p>
-</li>
+</p>
+$$W_c = N(U + C) + (N - 1)F_A + Z$$<p>
+</p>
+$$W_c = 2(10.59 + 3.0) + (2 - 1)(0.26) + 2.04$$<p>
+</p>
+$$W_c = 2(13.59) + 1(0.26) + 2.04$$<p>
+</p>
+$$W_c = 27.18 + 0.26 + 2.04 = 29.48\text{ ft}$$</li>
 <li>
 <p><strong>Determine Widening Warranty and Value ($w_c$):</strong></p>
 <ul>
 <li>Tangent width ($W_n$) = $24\text{ ft}$.</li>
 <li>Calculated widening ($w_c$) = $W_c - W_n$:
+
 $$w_c = 29.48\text{ ft} - 24\text{ ft} = 5.48\text{ ft}$$</li>
 <li><em>Warrant Check:</em> Since $5.48\text{ ft} \ge 2.0\text{ ft}$, widening <strong>is warranted</strong>.</li>
 <li><em>Design Value:</em> In practice, widening values are rounded to the nearest half-foot. The design widening is <strong>$5.5\text{ ft}$</strong> (giving a total curve width of $29.5\text{ ft}$).</li>

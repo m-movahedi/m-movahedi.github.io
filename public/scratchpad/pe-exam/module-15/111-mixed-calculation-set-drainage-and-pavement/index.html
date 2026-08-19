@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mixed Calculation Set: Drainage and Pavement">
     <meta property="og:description" content="Mixed Calculation Set: Drainage and Pavement This calculation set covers hydrology/drainage and pavement design calculations typical of the PE Civil …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Mixed Calculation Set: Drainage and Pavement">
     <meta name="twitter:description" content="Mixed Calculation Set: Drainage and Pavement This calculation set covers hydrology/drainage and pavement design calculations typical of the PE Civil …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-15/111-mixed-calculation-set-drainage-and-pavement/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-15/111-mixed-calculation-set-drainage-and-pavement/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-15/111-mixed-calculation-set-drainage-and-pavement/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -245,65 +259,72 @@ The proposed pavement structure consists of three layers:</p>
 <strong>3. Round $D_1$ to the nearest half-inch (as is standard in highway specs) and verify the final SN.</strong></p>
 <h3 id="solution">Solution:</h3>
 <h4 id="step-1-write-the-sn-equation">Step 1: Write the SN equation</h4>
-<p>$$SN = a_1 D_1 + a_2 D_2 m_2 + a_3 D_3 m_3$$</p>
-<h4 id="step-2-solve-for-d_1">Step 2: Solve for $D_1$</h4>
+$$SN = a_1 D_1 + a_2 D_2 m_2 + a_3 D_3 m_3$$<h4 id="step-2-solve-for">Step 2: Solve for $D_1$</h4>
 <p>Substitute the known values into the equation:
-$$4.2 = (0.44 \cdot D_1) + (0.14 \cdot 8.0 \cdot 1.0) + (0.11 \cdot 10.0 \cdot 0.8)$$
-$$4.2 = (0.44 \cdot D_1) + 1.12 + 0.88$$
-$$4.2 = (0.44 \cdot D_1) + 2.00$$
-$$4.2 - 2.00 = 0.44 \cdot D_1 \implies 2.20 = 0.44 \cdot D_1$$
-$$D_1 = \frac{2.20}{0.44} = 5.0\text{ inches}$$</p>
-<h4 id="step-3-round-and-verify">Step 3: Round and verify</h4>
+</p>
+$$4.2 = (0.44 \cdot D_1) + (0.14 \cdot 8.0 \cdot 1.0) + (0.11 \cdot 10.0 \cdot 0.8)$$<p>
+</p>
+$$4.2 = (0.44 \cdot D_1) + 1.12 + 0.88$$<p>
+</p>
+$$4.2 = (0.44 \cdot D_1) + 2.00$$<p>
+</p>
+$$4.2 - 2.00 = 0.44 \cdot D_1 \implies 2.20 = 0.44 \cdot D_1$$<p>
+</p>
+$$D_1 = \frac{2.20}{0.44} = 5.0\text{ inches}$$<h4 id="step-3-round-and-verify">Step 3: Round and verify</h4>
 <p>Since $D_1 = 5.0\text{ inches}$ is already a whole half-inch value, no additional rounding is required.
-$$\text{Final } SN = (0.44 \cdot 5.0) + 1.12 + 0.88 = 2.20 + 2.00 = 4.20 \ge 4.2\text{ (OK)}$$</p>
-<hr>
+</p>
+$$\text{Final } SN = (0.44 \cdot 5.0) + 1.12 + 0.88 = 2.20 + 2.00 = 4.20 \ge 4.2\text{ (OK)}$$<hr>
 <h2 id="problem-2-esal-calculations">Problem 2: ESAL Calculations</h2>
 <p>A four-lane divided highway (two lanes in each direction) has an initial year Average Annual Daily Traffic ($AADT$) of $15,000\text{ vehicles per day}$.</p>
 <ul>
-<li>The truck percentage is $12%$.</li>
-<li>The traffic growth rate is $3.0%$ per year.</li>
+<li>The truck percentage is $12\%$.</li>
+<li>The traffic growth rate is $3.0\%$ per year.</li>
 <li>The design life of the pavement is $20\text{ years}$.</li>
 <li>The average truck factor (ESALs per truck) is $TF = 1.4$.</li>
-<li>The directional distribution factor is $D_d = 50% = 0.50$.</li>
-<li>The lane distribution factor for a four-lane highway is $D_L = 90% = 0.90$ (representing the percentage of one-directional trucks in the design lane).</li>
+<li>The directional distribution factor is $D_d = 50\% = 0.50$.</li>
+<li>The lane distribution factor for a four-lane highway is $D_L = 90\% = 0.90$ (representing the percentage of one-directional trucks in the design lane).</li>
 </ul>
 <p><strong>Calculate the total design ESALs ($W_{18}$) in the design lane over the 20-year design life.</strong></p>
 <h3 id="solution-1">Solution:</h3>
-<h4 id="step-1-calculate-the-20-year-growth-factor-g_f">Step 1: Calculate the 20-year Growth Factor ($G_f$)</h4>
+<h4 id="step-1-calculate-the-20-year-growth-factor-">Step 1: Calculate the 20-year Growth Factor ($G_f$)</h4>
 <p>Using the standard traffic growth factor equation:
-$$G_f = \frac{(1 + r)^n - 1}{r}$$
+</p>
+$$G_f = \frac{(1 + r)^n - 1}{r}$$<p>
 Where $r = 0.03$ and $n = 20$:
-$$G_f = \frac{(1 + 0.03)^{20} - 1}{0.03} = \frac{(1.03)^{20} - 1}{0.03}$$</p>
-<ul>
+</p>
+$$G_f = \frac{(1 + 0.03)^{20} - 1}{0.03} = \frac{(1.03)^{20} - 1}{0.03}$$<ul>
 <li>$(1.03)^{20} \approx 1.8061$
+
 $$G_f = \frac{1.8061 - 1}{0.03} = \frac{0.8061}{0.03} \approx 26.87\text{ years}$$</li>
 </ul>
-<h4 id="step-2-calculate-the-initial-year-design-lane-esals-w_18-textyear-1">Step 2: Calculate the Initial Year Design Lane ESALs ($W_{18, \text{year 1}}$)</h4>
+<h4 id="step-2-calculate-the-initial-year-design-lane-esals-">Step 2: Calculate the Initial Year Design Lane ESALs ($W_{18, \text{year 1}}$)</h4>
 <p>The initial year daily truck traffic in the design lane is:
-$$\text{Daily Trucks}<em>{\text{design lane}} = AADT \cdot %Trucks \cdot D_d \cdot D_L$$
-$$\text{Daily Trucks}</em>{\text{design lane}} = 15,000 \cdot 0.12 \cdot 0.50 \cdot 0.90 = 810\text{ trucks/day}$$</p>
-<p>Calculate initial year annual ESALs:
-$$W_{18, \text{year 1}} = 810\text{ trucks/day} \cdot 365\text{ days/year} \cdot TF$$
-$$W_{18, \text{year 1}} = 810 \cdot 365 \cdot 1.4 = 413,910\text{ ESALs/year}$$</p>
-<h4 id="step-3-calculate-the-total-design-life-esals-w_18">Step 3: Calculate the Total Design Life ESALs ($W_{18}$)</h4>
-<p>$$W_{18} = W_{18, \text{year 1}} \cdot G_f$$
-$$W_{18} = 413,910\text{ ESALs/year} \cdot 26.87\text{ years} \approx 11,121,760\text{ ESALs}$$</p>
-<p><em>Result:</em> The total design ESALs for the design lane is approximately <strong>$1.11 \times 10^7$ ESALs</strong>.</p>
+</p>
+$$\text{Daily Trucks}_{\text{design lane}} = AADT \cdot \%Trucks \cdot D_d \cdot D_L$$<p>
+</p>
+$$\text{Daily Trucks}_{\text{design lane}} = 15,000 \cdot 0.12 \cdot 0.50 \cdot 0.90 = 810\text{ trucks/day}$$<p>Calculate initial year annual ESALs:
+</p>
+$$W_{18, \text{year 1}} = 810\text{ trucks/day} \cdot 365\text{ days/year} \cdot TF$$<p>
+</p>
+$$W_{18, \text{year 1}} = 810 \cdot 365 \cdot 1.4 = 413,910\text{ ESALs/year}$$<h4 id="step-3-calculate-the-total-design-life-esals-">Step 3: Calculate the Total Design Life ESALs ($W_{18}$)</h4>
+$$W_{18} = W_{18, \text{year 1}} \cdot G_f$$<p>
+</p>
+$$W_{18} = 413,910\text{ ESALs/year} \cdot 26.87\text{ years} \approx 11,121,760\text{ ESALs}$$<p><em>Result:</em> The total design ESALs for the design lane is approximately <strong>$1.11 \times 10^7$ ESALs</strong>.</p>
 <hr>
 <h2 id="problem-3-gutter-spread-and-flow">Problem 3: Gutter Spread and Flow</h2>
 <p>A municipal roadway section is being designed to carry a storm gutter flow rate of $Q = 1.25\text{ cfs}$ during a design storm.</p>
 <ul>
-<li>The pavement cross slope is $S_x = 2.0% = 0.02\text{ ft/ft}$.</li>
-<li>The roadway longitudinal grade is $S = 1.0% = 0.01\text{ ft/ft}$.</li>
+<li>The pavement cross slope is $S_x = 2.0\% = 0.02\text{ ft/ft}$.</li>
+<li>The roadway longitudinal grade is $S = 1.0\% = 0.01\text{ ft/ft}$.</li>
 <li>The pavement roughness is $n = 0.016$.</li>
 </ul>
 <p><strong>Determine the resulting gutter spread ($T$) in feet.</strong></p>
 <h3 id="solution-2">Solution:</h3>
 <p>Use the Modified Manning&rsquo;s equation for triangular gutter flow:
-$$Q = \frac{0.56}{n} S_x^{5/3} S^{1/2} T^{8/3}$$</p>
-<p>Rearrange the equation to solve for $T$:
-$$T^{8/3} = \frac{Q \cdot n}{0.56 \cdot S_x^{5/3} \cdot S^{1/2}}$$</p>
-<ol>
+</p>
+$$Q = \frac{0.56}{n} S_x^{5/3} S^{1/2} T^{8/3}$$<p>Rearrange the equation to solve for $T$:
+</p>
+$$T^{8/3} = \frac{Q \cdot n}{0.56 \cdot S_x^{5/3} \cdot S^{1/2}}$$<ol>
 <li>
 <p><strong>Evaluate the denominator terms:</strong></p>
 <ul>
@@ -320,12 +341,12 @@ $$T^{8/3} = \frac{Q \cdot n}{0.56 \cdot S_x^{5/3} \cdot S^{1/2}}$$</p>
 </li>
 <li>
 <p><strong>Solve for $T^{8/3}$:</strong>
-$$T^{8/3} = \frac{0.020}{0.00008254} \approx 242.31$$</p>
-</li>
+</p>
+$$T^{8/3} = \frac{0.020}{0.00008254} \approx 242.31$$</li>
 <li>
 <p><strong>Solve for $T$ (raise both sides to the power of $3/8 = 0.375$):</strong>
-$$T = (242.31)^{0.375} \approx 7.84\text{ feet}$$</p>
-</li>
+</p>
+$$T = (242.31)^{0.375} \approx 7.84\text{ feet}$$</li>
 </ol>
 <p><em>Result:</em> The water will spread <strong>7.8 feet</strong> from the curb face.</p>
 <hr>

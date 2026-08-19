@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ramp Geometry">
     <meta property="og:description" content="Ramp Geometry Ramps are the connecting roadways that facilitate vehicle transfers between intersecting facilities at interchanges. Designing ramp geometry …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Ramp Geometry">
     <meta name="twitter:description" content="Ramp Geometry Ramps are the connecting roadways that facilitate vehicle transfers between intersecting facilities at interchanges. Designing ramp geometry …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-9/65-ramp-geometry/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-9/65-ramp-geometry/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-9/65-ramp-geometry/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -280,10 +294,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="horizontal-alignment">Horizontal Alignment</h2>
 <p>Ramps consist of tangent sections, circular curves, and transition curves (spirals).</p>
-<h3 id="minimum-radius-r_textmin">Minimum Radius ($R_{\text{min}}$)</h3>
+<h3 id="minimum-radius-">Minimum Radius ($R_{\text{min}}$)</h3>
 <p>The minimum radius of a ramp curve is determined by its design speed, maximum super-elevation rate ($e$), and the maximum side friction factor ($f$):</p>
-<p>$$R_{\text{min}} = \frac{V^2}{15 (e + f)}$$</p>
-<p>Where:</p>
+$$R_{\text{min}} = \frac{V^2}{15 (e + f)}$$<p>Where:</p>
 <ul>
 <li>$R_{\text{min}}$ = minimum radius of curvature (ft)</li>
 <li>$V$ = design speed of the ramp (mph)</li>
@@ -291,32 +304,33 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>$f$ = maximum side friction factor (varies by speed; e.g., $f = 0.16$ at $40\text{ mph}$, and $f = 0.23$ at $25\text{ mph}$)</li>
 </ul>
 <h3 id="super-elevation-transition">Super-elevation Transition</h3>
-<p>Because ramps transition from a mainline freeway cross slope (typically $-2.0%$) to a sharp ramp curve, designers must carefully design the <strong>super-elevation runoff</strong> (the distance over which the pavement is rotated). This transition must occur gradually to prevent driver loss-of-control and ensure proper drainage.</p>
+<p>Because ramps transition from a mainline freeway cross slope (typically $-2.0\%$) to a sharp ramp curve, designers must carefully design the <strong>super-elevation runoff</strong> (the distance over which the pavement is rotated). This transition must occur gradually to prevent driver loss-of-control and ensure proper drainage.</p>
 <hr>
 <h2 id="vertical-alignment">Vertical Alignment</h2>
 <p>Ramp vertical alignments can generally accommodate steeper grades than the mainline freeway because speeds are lower.</p>
 <h3 id="maximum-ramp-grades">Maximum Ramp Grades</h3>
 <p>According to AASHTO, maximum ramp grades are determined by the ramp design speed:</p>
 <ul>
-<li><strong>Design Speed $\ge 50\text{ mph}$:</strong> Maximum grade is typically <strong>$3%$ to $5%$</strong>.</li>
-<li><strong>Design Speed $35$ to $45\text{ mph}$:</strong> Maximum grade is typically <strong>$5%$ to $7%$</strong>.</li>
-<li><strong>Design Speed $\le 30\text{ mph}$ (Loop Ramps):</strong> Maximum grade can be up to <strong>$7%$ to $8%$</strong> (up to $8%$ is acceptable for one-way downgrades).</li>
+<li><strong>Design Speed $\ge 50\text{ mph}$:</strong> Maximum grade is typically <strong>$3\%$ to $5\%$</strong>.</li>
+<li><strong>Design Speed $35$ to $45\text{ mph}$:</strong> Maximum grade is typically <strong>$5\%$ to $7\%$</strong>.</li>
+<li><strong>Design Speed $\le 30\text{ mph}$ (Loop Ramps):</strong> Maximum grade can be up to <strong>$7\%$ to $8\%$</strong> (up to $8\%$ is acceptable for one-way downgrades).</li>
 </ul>
 <h3 id="vertical-curves">Vertical Curves</h3>
 <p>Vertical curves on ramps should be designed using the standard crest and sag formulas. Special attention must be paid to satisfying stopping sight distance ($SSD$) at all points along the ramp profile, particularly where the ramp passes under a bridge girder or sign structure.</p>
 <hr>
 <h2 id="worked-example">Worked Example</h2>
-<p>A right-turning ramp connects a freeway with a design speed of $70\text{ mph}$ to an arterial road. The ramp is designed using the <strong>Middle Range</strong> design speed. The maximum super-elevation rate ($e_{\text{max}}$) permitted for this ramp is $6.0%$ ($0.06$). The maximum side friction factor ($f$) for the selected design speed is $0.16$.</p>
+<p>A right-turning ramp connects a freeway with a design speed of $70\text{ mph}$ to an arterial road. The ramp is designed using the <strong>Middle Range</strong> design speed. The maximum super-elevation rate ($e_{\text{max}}$) permitted for this ramp is $6.0\%$ ($0.06$). The maximum side friction factor ($f$) for the selected design speed is $0.16$.</p>
 <ol>
 <li>Identify the design speed ($V$) of the ramp.</li>
 <li>Calculate the minimum allowable radius ($R_{\text{min}}$) for the ramp curve.</li>
-<li>If the designer uses a radius of $650\text{ ft}$ and wants to restrict the super-elevation to $4.0%$ ($e = 0.04$), calculate the actual side friction factor ($f_{\text{actual}}$) experienced by a vehicle traveling at the ramp design speed, and determine if it is acceptable.</li>
+<li>If the designer uses a radius of $650\text{ ft}$ and wants to restrict the super-elevation to $4.0\%$ ($e = 0.04$), calculate the actual side friction factor ($f_{\text{actual}}$) experienced by a vehicle traveling at the ramp design speed, and determine if it is acceptable.</li>
 </ol>
 <h3 id="solution">Solution</h3>
 <p><strong>1. Identify Ramp Design Speed ($V$):</strong></p>
 <ul>
 <li>Freeway design speed = $70\text{ mph}$.</li>
 <li>Using AASHTO table for &ldquo;Middle Range&rdquo;:
+
 $$V = 50\text{ mph}$$</li>
 </ul>
 <p><strong>2. Calculate Minimum Radius ($R_{\text{min}}$):</strong></p>
@@ -325,19 +339,20 @@ $$V = 50\text{ mph}$$</li>
 <li>$e = 0.06$</li>
 <li>$f = 0.16$</li>
 </ul>
-<p>$$R_{\text{min}} = \frac{V^2}{15 (e + f)}$$
-$$R_{\text{min}} = \frac{50^2}{15 (0.06 + 0.16)} = \frac{2500}{15 (0.22)} = \frac{2500}{3.3} = 757.58\text{ ft} \approx 760\text{ ft}$$</p>
-<p><strong>3. Calculate Actual Side Friction for $R = 650\text{ ft}$ with $e = 0.04$:</strong></p>
+$$R_{\text{min}} = \frac{V^2}{15 (e + f)}$$<p>
+</p>
+$$R_{\text{min}} = \frac{50^2}{15 (0.06 + 0.16)} = \frac{2500}{15 (0.22)} = \frac{2500}{3.3} = 757.58\text{ ft} \approx 760\text{ ft}$$<p><strong>3. Calculate Actual Side Friction for $R = 650\text{ ft}$ with $e = 0.04$:</strong></p>
 <ul>
-<li>First, note that since $R = 650\text{ ft} &lt; R_{\text{min}} = 758\text{ ft}$ (calculated with $e=0.06$), we cannot use a super-elevation as low as $0.04$ at $50\text{ mph}$. Let&rsquo;s calculate the required side friction to verify this mathematically:</li>
+<li>First, note that since $R = 650\text{ ft} < R_{\text{min}} = 758\text{ ft}$ (calculated with $e=0.06$), we cannot use a super-elevation as low as $0.04$ at $50\text{ mph}$. Let&rsquo;s calculate the required side friction to verify this mathematically:</li>
 </ul>
-<p>$$R = \frac{V^2}{15(e + f)} \implies e + f = \frac{V^2}{15 R}$$
-$$f_{\text{actual}} = \frac{V^2}{15 R} - e$$
-$$f_{\text{actual}} = \frac{50^2}{15 \times 650} - 0.04 = \frac{2500}{9750} - 0.04 = 0.2564 - 0.04 = 0.2164 \approx 0.22$$</p>
-<p><em>Evaluate:</em></p>
+$$R = \frac{V^2}{15(e + f)} \implies e + f = \frac{V^2}{15 R}$$<p>
+</p>
+$$f_{\text{actual}} = \frac{V^2}{15 R} - e$$<p>
+</p>
+$$f_{\text{actual}} = \frac{50^2}{15 \times 650} - 0.04 = \frac{2500}{9750} - 0.04 = 0.2564 - 0.04 = 0.2164 \approx 0.22$$<p><em>Evaluate:</em></p>
 <ul>
 <li>The maximum allowable side friction factor ($f$) at $50\text{ mph}$ is $0.16$.</li>
-<li>Since $f_{\text{actual}} = 0.22 &gt; 0.16$, this design is <strong>unacceptable</strong>. Drivers would experience excessive lateral discomfort, and vehicles would be at risk of skidding off the curve.</li>
+<li>Since $f_{\text{actual}} = 0.22 > 0.16$, this design is <strong>unacceptable</strong>. Drivers would experience excessive lateral discomfort, and vehicles would be at risk of skidding off the curve.</li>
 <li><em>Solution:</em> The designer must either increase the radius to at least $758\text{ ft}$ (at $e=0.06$), increase the super-elevation, or lower the design speed of the ramp.</li>
 </ul>
 <h2 id="references">References</h2>

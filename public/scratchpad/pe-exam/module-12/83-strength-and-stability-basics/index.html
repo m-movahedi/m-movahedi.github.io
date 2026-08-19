@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Shear Strength and Lateral Earth Pressures">
     <meta property="og:description" content="Shear Strength and Lateral Earth Pressures Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Shear Strength and Lateral Earth Pressures">
     <meta name="twitter:description" content="Shear Strength and Lateral Earth Pressures Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/83-strength-and-stability-basics/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -236,25 +250,27 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>Soil is a particulate material that derives its shear strength from friction between particles and cohesion (cementation or electrostatic bonding) between clay minerals.</p>
 <h3 id="mohr-coulomb-failure-criterion">Mohr-Coulomb Failure Criterion</h3>
 <p>The shear strength ($\tau$) of a soil at any point along a failure plane is modeled by the Mohr-Coulomb failure criterion:
-$$\tau = c + \sigma \tan(\phi) \quad \text{(Total Stress Basis)}$$
-$$\tau = c&rsquo; + \sigma&rsquo; \tan(\phi&rsquo;) \quad \text{(Effective Stress Basis)}$$</p>
-<p>Where:</p>
+</p>
+$$\tau = c + \sigma \tan(\phi) \quad \text{(Total Stress Basis)}$$<p>
+</p>
+$$\tau = c' + \sigma' \tan(\phi') \quad \text{(Effective Stress Basis)}$$<p>Where:</p>
 <ul>
 <li>$\tau = \text{shear strength of the soil}$</li>
-<li>$c, c&rsquo; = \text{cohesion (total and effective, respectively)}$</li>
-<li>$\phi, \phi&rsquo; = \text{internal friction angle (total and effective, respectively)}$</li>
+<li>$c, c' = \text{cohesion (total and effective, respectively)}$</li>
+<li>$\phi, \phi' = \text{internal friction angle (total and effective, respectively)}$</li>
 <li>$\sigma = \text{total normal stress on the failure plane}$</li>
-<li>$\sigma&rsquo; = \text{effective normal stress on the failure plane} = \sigma - u$</li>
+<li>$\sigma' = \text{effective normal stress on the failure plane} = \sigma - u$</li>
 <li>$u = \text{pore water pressure}$</li>
 </ul>
 <h3 id="cohesive-vs-cohesionless-soils">Cohesive vs. Cohesionless Soils</h3>
 <ul>
-<li><strong>Cohesionless (Granular) Soils (Sands, Gravels):</strong> Have no long-term cohesion ($c&rsquo; = 0$). Strength depends entirely on effective normal stress and the friction angle:
-$$\tau = \sigma&rsquo; \tan(\phi&rsquo;)$$</li>
+<li><strong>Cohesionless (Granular) Soils (Sands, Gravels):</strong> Have no long-term cohesion ($c' = 0$). Strength depends entirely on effective normal stress and the friction angle:
+
+$$\tau = \sigma' \tan(\phi')$$</li>
 <li><strong>Cohesive (Fine-Grained) Soils (Clays, Silts):</strong> Exhibit cohesion.
 <ul>
 <li><em>Undrained Condition (Short-Term):</em> Loading occurs faster than water can drain, generating excess pore pressures. Typically modeled using total stress: $\tau = s_u$ (where $s_u = c$ is the undrained shear strength, and $\phi = 0$).</li>
-<li><em>Drained Condition (Long-Term):</em> Pore pressures dissipate. Modeled using effective stress: $\tau = c&rsquo; + \sigma&rsquo; \tan(\phi&rsquo;)$.</li>
+<li><em>Drained Condition (Long-Term):</em> Pore pressures dissipate. Modeled using effective stress: $\tau = c' + \sigma' \tan(\phi')$.</li>
 </ul>
 </li>
 </ul>
@@ -308,65 +324,72 @@ $$\tau = \sigma&rsquo; \tan(\phi&rsquo;)$$</li>
   </defs>
 </svg>
 </div>
-<h3 id="coefficients-of-earth-pressure-k">Coefficients of Earth Pressure ($K$)</h3>
-<p>The ratio of horizontal effective stress ($\sigma&rsquo;_h$) to vertical effective stress ($\sigma&rsquo;_v$) is defined as the earth pressure coefficient:
-$$K = \frac{\sigma&rsquo;_h}{\sigma&rsquo;_v}$$</p>
-<ol>
+<h3 id="coefficients-of-earth-pressure-">Coefficients of Earth Pressure ($K$)</h3>
+<p>The ratio of horizontal effective stress ($\sigma'_h$) to vertical effective stress ($\sigma'_v$) is defined as the earth pressure coefficient:
+</p>
+$$K = \frac{\sigma'_h}{\sigma'_v}$$<ol>
 <li><strong>At-Rest Earth Pressure ($K_0$):</strong> Occurs when the wall is completely rigid and undergoes zero lateral displacement.
 <ul>
 <li>For normally consolidated soils, Jaky&rsquo;s equation is used:
-$$K_0 = 1 - \sin(\phi&rsquo;)$$</li>
+
+$$K_0 = 1 - \sin(\phi')$$</li>
 </ul>
 </li>
 <li><strong>Active Earth Pressure ($K_a$):</strong> Occurs when the wall moves <em>away</em> from the backfill, allowing the soil to expand laterally and fail along a shear plane. Rankine&rsquo;s coefficient is:
-$$K_a = \frac{1 - \sin(\phi&rsquo;)}{1 + \sin(\phi&rsquo;)} = \tan^2\left(45^\circ - \frac{\phi&rsquo;}{2}\right)$$</li>
+
+$$K_a = \frac{1 - \sin(\phi')}{1 + \sin(\phi')} = \tan^2\left(45^\circ - \frac{\phi'}{2}\right)$$</li>
 <li><strong>Passive Earth Pressure ($K_p$):</strong> Occurs when the wall is pushed <em>into</em> the backfill, compressing the soil laterally until failure occurs. Rankine&rsquo;s coefficient is:
-$$K_p = \frac{1 + \sin(\phi&rsquo;)}{1 - \sin(\phi&rsquo;)} = \tan^2\left(45^\circ + \frac{\phi&rsquo;}{2}\right)$$</li>
+
+$$K_p = \frac{1 + \sin(\phi')}{1 - \sin(\phi')} = \tan^2\left(45^\circ + \frac{\phi'}{2}\right)$$</li>
 </ol>
-<p><em>Note:</em> $K_p$ is the mathematical inverse of $K_a$ ($K_p = 1 / K_a$). The relationship is always $K_a &lt; K_0 &lt; K_p$. Active pressure requires very little wall rotation to mobilize, while passive pressure requires significant displacement to be fully mobilized.</p>
+<p><em>Note:</em> $K_p$ is the mathematical inverse of $K_a$ ($K_p = 1 / K_a$). The relationship is always $K_a < K_0 < K_p$. Active pressure requires very little wall rotation to mobilize, while passive pressure requires significant displacement to be fully mobilized.</p>
 <hr>
 <h2 id="3-lateral-earth-pressure-distribution-rankine-theory">3. Lateral Earth Pressure Distribution (Rankine Theory)</h2>
 <p>For a vertical wall of height $H$ with dry cohesionless backfill ($\gamma$, $\phi$, $c=0$), the active lateral pressure increases linearly with depth ($z$):
-$$\sigma&rsquo;_h(z) = K_a \cdot \sigma&rsquo;_v(z) = K_a \cdot \gamma \cdot z$$</p>
-<p>The total active lateral force (thrust) per unit length of the wall ($P_a$) is the area under the triangular pressure distribution:
-$$P_a = \frac{1}{2} K_a \gamma H^2$$
+</p>
+$$\sigma'_h(z) = K_a \cdot \sigma'_v(z) = K_a \cdot \gamma \cdot z$$<p>The total active lateral force (thrust) per unit length of the wall ($P_a$) is the area under the triangular pressure distribution:
+</p>
+$$P_a = \frac{1}{2} K_a \gamma H^2$$<p>
 This resultant force acts at a height of $H/3$ from the base of the wall.</p>
 <h3 id="surcharge-and-water-table-effects">Surcharge and Water Table Effects</h3>
 <p>If a uniform surcharge ($q$) is applied to the surface, and a water table is present at depth $d$ behind the wall:</p>
 <ol>
 <li><strong>Surcharge Pressure:</strong> Adds a uniform lateral pressure over the entire height of the wall:
+
 $$\sigma_{h,\text{surcharge}} = K_a \cdot q$$
 The resultant force is $P_{\text{surcharge}} = K_a q H$, acting at $H/2$ from the base.</li>
 <li><strong>Water Pressure:</strong> Water pressure is hydrostatic and isotropic ($K = 1.0$). It must be calculated separately from soil pressure:
+
 $$u(z) = \gamma_w (z - d) \quad (\text{for } z \ge d)$$
 The resultant water force is $P_w = \frac{1}{2} \gamma_w (H - d)^2$, acting at $(H-d)/3$ from the base.</li>
-<li><strong>Effective Soil Stress below Water Table:</strong> Below the water table, the vertical effective stress must use the submerged unit weight ($\gamma&rsquo; = \gamma_{\text{sat}} - \gamma_w$):
-$$\sigma&rsquo;_v(z) = \gamma \cdot d + \gamma&rsquo; \cdot (z - d) \quad (\text{for } z \ge d)$$
-$$\sigma&rsquo;_h(z) = K_a \cdot \sigma&rsquo;_v(z)$$</li>
+<li><strong>Effective Soil Stress below Water Table:</strong> Below the water table, the vertical effective stress must use the submerged unit weight ($\gamma' = \gamma_{\text{sat}} - \gamma_w$):
+
+$$\sigma'_v(z) = \gamma \cdot d + \gamma' \cdot (z - d) \quad (\text{for } z \ge d)$$
+
+$$\sigma'_h(z) = K_a \cdot \sigma'_v(z)$$</li>
 </ol>
 <hr>
 <h2 id="4-slope-stability-basics">4. Slope Stability Basics</h2>
 <p>Slope stability is measured by the Factor of Safety ($FS$), which is the ratio of resisting forces/moments to driving forces/moments:
-$$FS = \frac{\tau_{\text{resisting}}}{\tau_{\text{driving}}}$$</p>
-<h3 id="infinite-slope-analysis">Infinite Slope Analysis</h3>
+</p>
+$$FS = \frac{\tau_{\text{resisting}}}{\tau_{\text{driving}}}$$<h3 id="infinite-slope-analysis">Infinite Slope Analysis</h3>
 <p>An infinite slope has a failure plane parallel to the slope face. For a cohesionless dry soil slope inclined at an angle $\beta$:</p>
 <ul>
 <li>The shear stress driving failure is $\tau_{\text{driving}} = \gamma z \sin(\beta) \cos(\beta)$.</li>
-<li>The normal stress on the plane is $\sigma&rsquo; = \gamma z \cos^2(\beta)$.</li>
-<li>The resisting shear strength is $\tau_{\text{resisting}} = \sigma&rsquo; \tan(\phi&rsquo;) = \gamma z \cos^2(\beta) \tan(\phi&rsquo;)$.</li>
+<li>The normal stress on the plane is $\sigma' = \gamma z \cos^2(\beta)$.</li>
+<li>The resisting shear strength is $\tau_{\text{resisting}} = \sigma' \tan(\phi') = \gamma z \cos^2(\beta) \tan(\phi')$.</li>
 </ul>
-<p>$$FS = \frac{\gamma z \cos^2(\beta) \tan(\phi&rsquo;)}{\gamma z \sin(\beta) \cos(\beta)} = \frac{\tan(\phi&rsquo;)}{\tan(\beta)}$$</p>
-<p><em>Key Takeaway:</em> For a dry sand slope, the factor of safety is independent of depth ($z$) and unit weight. If $FS = 1.0$, the slope angle $\beta$ equals the internal friction angle $\phi&rsquo;$ (angle of repose).</p>
+$$FS = \frac{\gamma z \cos^2(\beta) \tan(\phi')}{\gamma z \sin(\beta) \cos(\beta)} = \frac{\tan(\phi')}{\tan(\beta)}$$<p><em>Key Takeaway:</em> For a dry sand slope, the factor of safety is independent of depth ($z$) and unit weight. If $FS = 1.0$, the slope angle $\beta$ equals the internal friction angle $\phi'$ (angle of repose).</p>
 <p>If seepage occurs parallel to the slope surface and is coincident with the slope face, the factor of safety is reduced by approximately half due to pore pressures:
-$$FS = \frac{\gamma&rsquo;}{\gamma_{\text{sat}}} \frac{\tan(\phi&rsquo;)}{\tan(\beta)} \approx 0.5 \frac{\tan(\phi&rsquo;)}{\tan(\beta)}$$</p>
-<hr>
+</p>
+$$FS = \frac{\gamma'}{\gamma_{\text{sat}}} \frac{\tan(\phi')}{\tan(\beta)} \approx 0.5 \frac{\tan(\phi')}{\tan(\beta)}$$<hr>
 <h2 id="5-worked-examples">5. Worked Examples</h2>
 <h3 id="worked-example-1-active-pressure-with-surcharge-and-water">Worked Example 1: Active Pressure with Surcharge and Water</h3>
 <p>A retaining wall with a height of $20\text{ ft}$ has a vertical back face and supports a level sand backfill. The soil has the following properties:</p>
 <ul>
 <li>$\gamma = 115\text{ lb/ft}^3$ (above water table)</li>
 <li>$\gamma_{\text{sat}} = 125\text{ lb/ft}^3$ (below water table)</li>
-<li>$\phi&rsquo; = 30^\circ$, $c&rsquo; = 0$</li>
+<li>$\phi' = 30^\circ$, $c' = 0$</li>
 <li>Water table is located at $12\text{ ft}$ below the ground surface.</li>
 <li>A uniform surcharge $q = 250\text{ lb/ft}^2$ is applied on the backfill surface.</li>
 </ul>
@@ -374,28 +397,29 @@ $$FS = \frac{\gamma&rsquo;}{\gamma_{\text{sat}}} \frac{\tan(\phi&rsquo;)}{\tan(\
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Calculate $K_a$:</strong>
+
 $$K_a = \tan^2(45^\circ - 30^\circ / 2) = \tan^2(30^\circ) = 0.333$$</li>
 <li><strong>Identify Pressures at Key Depths ($z = 0\text{ ft}$, $z = 12\text{ ft}$, $z = 20\text{ ft}$):</strong>
 <ul>
 <li><strong>At $z = 0\text{ ft}$:</strong>
 <ul>
-<li>$\sigma&rsquo;_v = 0$</li>
-<li>$\sigma&rsquo;_h = K_a q = 0.333(250) = 83.3\text{ lb/ft}^2$</li>
+<li>$\sigma'_v = 0$</li>
+<li>$\sigma'_h = K_a q = 0.333(250) = 83.3\text{ lb/ft}^2$</li>
 <li>$u = 0$</li>
 </ul>
 </li>
 <li><strong>At $z = 12\text{ ft}$ (just above water table):</strong>
 <ul>
-<li>$\sigma&rsquo;_v = \gamma z = 115(12) = 1380\text{ lb/ft}^2$</li>
-<li>$\sigma&rsquo;_h = K_a (\sigma&rsquo;_v + q) = 0.333(1380 + 250) = 0.333(1630) = 543.3\text{ lb/ft}^2$</li>
+<li>$\sigma'_v = \gamma z = 115(12) = 1380\text{ lb/ft}^2$</li>
+<li>$\sigma'_h = K_a (\sigma'_v + q) = 0.333(1380 + 250) = 0.333(1630) = 543.3\text{ lb/ft}^2$</li>
 <li>$u = 0$</li>
 </ul>
 </li>
 <li><strong>At $z = 20\text{ ft}$ (base of wall):</strong>
 <ul>
-<li>Submerged unit weight: $\gamma&rsquo; = 125 - 62.4 = 62.6\text{ lb/ft}^3$</li>
-<li>$\sigma&rsquo;_v = \gamma(12) + \gamma&rsquo;(8) = 1380 + 62.6(8) = 1380 + 500.8 = 1880.8\text{ lb/ft}^2$</li>
-<li>$\sigma&rsquo;_h = K_a (\sigma&rsquo;_v + q) = 0.333(1880.8 + 250) = 0.333(2130.8) = 710.3\text{ lb/ft}^2$</li>
+<li>Submerged unit weight: $\gamma' = 125 - 62.4 = 62.6\text{ lb/ft}^3$</li>
+<li>$\sigma'_v = \gamma(12) + \gamma'(8) = 1380 + 62.6(8) = 1380 + 500.8 = 1880.8\text{ lb/ft}^2$</li>
+<li>$\sigma'_h = K_a (\sigma'_v + q) = 0.333(1880.8 + 250) = 0.333(2130.8) = 710.3\text{ lb/ft}^2$</li>
 <li>$u = \gamma_w (20 - 12) = 62.4(8) = 499.2\text{ lb/ft}^2$</li>
 </ul>
 </li>
@@ -404,45 +428,58 @@ $$K_a = \tan^2(45^\circ - 30^\circ / 2) = \tan^2(30^\circ) = 0.333$$</li>
 <li><strong>Break Down Lateral Forces (Thrusts) per foot of wall:</strong>
 <ul>
 <li><strong>Force 1 (Surcharge):</strong> Uniform rectangular pressure distribution of $K_a q = 83.3\text{ lb/ft}^2$ over height $H=20\text{ ft}$.
+
 $$P_1 = 83.3 \cdot 20 = 1666\text{ lb/ft}$$
 <em>Moment arm from base:</em> $y_1 = 20 / 2 = 10\text{ ft}$</li>
 <li><strong>Force 2 (Soil Dry Triangle):</strong> Triangular pressure increasing from $0$ at $z=0$ to $K_a \gamma (12) = 0.333(115)(12) = 460\text{ lb/ft}^2$ at $z=12\text{ ft}$.
+
 $$P_2 = \frac{1}{2} \cdot 460 \cdot 12 = 2760\text{ lb/ft}$$
 <em>Moment arm from base:</em> $y_2 = (20 - 12) + \frac{12}{3} = 8 + 4 = 12\text{ ft}$</li>
 <li><strong>Force 3 (Soil Wet Rectangle):</strong> Uniform pressure of $460\text{ lb/ft}^2$ acting over the lower $8\text{ ft}$ (due to soil overhead).
+
 $$P_3 = 460 \cdot 8 = 3680\text{ lb/ft}$$
 <em>Moment arm from base:</em> $y_3 = 8 / 2 = 4\text{ ft}$</li>
-<li><strong>Force 4 (Soil Wet Triangle):</strong> Triangular pressure increasing from $0$ at $z=12$ to $K_a \gamma&rsquo; (8) = 0.333(62.6)(8) = 167.0\text{ lb/ft}^2$ at $z=20\text{ ft}$.
+<li><strong>Force 4 (Soil Wet Triangle):</strong> Triangular pressure increasing from $0$ at $z=12$ to $K_a \gamma' (8) = 0.333(62.6)(8) = 167.0\text{ lb/ft}^2$ at $z=20\text{ ft}$.
+
 $$P_4 = \frac{1}{2} \cdot 167.0 \cdot 8 = 668\text{ lb/ft}$$
 <em>Moment arm from base:</em> $y_4 = 8 / 3 = 2.67\text{ ft}$</li>
 <li><strong>Force 5 (Water Pressure Triangle):</strong> Hydrostatic water pressure increasing from $0$ at $z=12$ to $499.2\text{ lb/ft}^2$ at $z=20\text{ ft}$.
+
 $$P_5 = \frac{1}{2} \cdot 499.2 \cdot 8 = 1996.8\text{ lb/ft}$$
 <em>Moment arm from base:</em> $y_5 = 8 / 3 = 2.67\text{ ft}$</li>
 </ul>
 </li>
 <li><strong>Calculate Total Thrust ($P_{\text{total}}$):</strong>
+
 $$P_{\text{total}} = P_1 + P_2 + P_3 + P_4 + P_5 = 1666 + 2760 + 3680 + 668 + 1996.8 = 10,770.8\text{ lb/ft}$$</li>
 <li><strong>Calculate Height of Resultant Force ($\bar{y}$):</strong>
 Use moment equilibrium about the base of the wall:
+
 $$\bar{y} = \frac{\sum P_i y_i}{P_{\text{total}}}$$
+
 $$\sum P_i y_i = (1666 \cdot 10) + (2760 \cdot 12) + (3680 \cdot 4) + (668 \cdot 2.67) + (1996.8 \cdot 2.67)$$
+
 $$\sum P_i y_i = 16,660 + 33,120 + 14,720 + 1783.6 + 5331.5 = 71,615.1\text{ ft-lb/ft}$$
+
 $$\bar{y} = \frac{71,615.1}{10,770.8} = 6.65\text{ ft}$$</li>
 </ol>
 <p><em>Result:</em> Total lateral force is <strong>$10,771\text{ lb/ft}$</strong> acting at <strong>$6.65\text{ ft}$</strong> above the base.</p>
 <hr>
 <h3 id="worked-example-2-infinite-slope-stability">Worked Example 2: Infinite Slope Stability</h3>
-<p>A steep highway cut slope is constructed in dry sand. The slope angle is $24^\circ$. The sand has a friction angle of $\phi&rsquo; = 32^\circ$ and dry unit weight of $112\text{ lb/ft}^3$.</p>
+<p>A steep highway cut slope is constructed in dry sand. The slope angle is $24^\circ$. The sand has a friction angle of $\phi' = 32^\circ$ and dry unit weight of $112\text{ lb/ft}^3$.</p>
 <p><strong>Goal:</strong> Calculate the Factor of Safety ($FS$) against sliding. If seepage develops parallel to the slope and is coincident with the ground surface, calculate the new Factor of Safety. (Assume saturated unit weight is $122\text{ lb/ft}^3$).</p>
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Calculate Dry Slope $FS$:</strong>
-$$FS = \frac{\tan(\phi&rsquo;)}{\tan(\beta)} = \frac{\tan(32^\circ)}{\tan(24^\circ)} = \frac{0.6249}{0.4452} = 1.40$$</li>
+
+$$FS = \frac{\tan(\phi')}{\tan(\beta)} = \frac{\tan(32^\circ)}{\tan(24^\circ)} = \frac{0.6249}{0.4452} = 1.40$$</li>
 <li><strong>Calculate Wet Slope $FS$ (with seepage):</strong>
 <ul>
-<li>$\gamma&rsquo; = \gamma_{\text{sat}} - \gamma_w = 122 - 62.4 = 59.6\text{ lb/ft}^3$</li>
+<li>$\gamma' = \gamma_{\text{sat}} - \gamma_w = 122 - 62.4 = 59.6\text{ lb/ft}^3$</li>
 <li>Seepage formula:
-$$FS = \left(\frac{\gamma&rsquo;}{\gamma_{\text{sat}}}\right) \frac{\tan(\phi&rsquo;)}{\tan(\beta)}$$
+
+$$FS = \left(\frac{\gamma'}{\gamma_{\text{sat}}}\right) \frac{\tan(\phi')}{\tan(\beta)}$$
+
 $$FS = \left(\frac{59.6}{122}\right) \cdot 1.403 = 0.4885 \cdot 1.403 = 0.69$$</li>
 </ul>
 </li>
@@ -454,7 +491,7 @@ $$FS = \left(\frac{59.6}{122}\right) \cdot 1.403 = 0.4885 \cdot 1.403 = 0.69$$</
 <li><strong>Pore Pressure Neglect:</strong> Always subtract pore water pressure from total vertical stress before multiplying by $K_a$ or $K_p$. Soil grain lateral pressure depends only on effective stress.</li>
 <li><strong>Water pressure coefficient:</strong> Water has no shear strength, so it does not have a friction angle. Therefore, water pressure is never multiplied by $K_a$ or $K_p$. It is calculated simply as $u = \gamma_w h$ (using $K=1.0$).</li>
 <li><strong>Resultant Locations:</strong> Rectangular surcharge forces act at $H/2$. Triangular soil/water forces act at $H/3$. If there are multiple layers, be careful with the geometry of the pressure segments. Sketching the pressure diagram will prevent errors.</li>
-<li><strong>Cohesive Active Pressures:</strong> If a soil has cohesion, the active pressure is $\sigma&rsquo;_h = K_a \sigma&rsquo;<em>v - 2c\sqrt{K_a}$. Cohesion reduces lateral earth pressure and can create a theoretical tension crack zone near the surface ($z</em>{\text{crack}} = \frac{2c}{\gamma\sqrt{K_a}}$) where pressure is assumed to be zero.</li>
+<li><strong>Cohesive Active Pressures:</strong> If a soil has cohesion, the active pressure is $\sigma'_h = K_a \sigma'_v - 2c\sqrt{K_a}$. Cohesion reduces lateral earth pressure and can create a theoretical tension crack zone near the surface ($z_{\text{crack}} = \frac{2c}{\gamma\sqrt{K_a}}$) where pressure is assumed to be zero.</li>
 </ul>
 
         

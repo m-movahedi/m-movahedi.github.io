@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Soil Compaction">
     <meta property="og:description" content="Soil Compaction Compaction is the densification of soil by the application of mechanical energy, which expels air from the void spaces. Densifying the soil …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Soil Compaction">
     <meta name="twitter:description" content="Soil Compaction Compaction is the densification of soil by the application of mechanical energy, which expels air from the void spaces. Densifying the soil …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/82-compaction/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/82-compaction/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/82-compaction/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -240,8 +254,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>Modified Proctor Test (ASTM D1557):</strong> Developed to simulate heavier compaction equipment. Uses a $10.0\text{ lb}$ hammer dropped from a height of $18\text{ inches}$. The soil is compacted in $5$ layers with $25$ blows per layer.</li>
 </ul>
 <h4 id="compaction-energy-formula">Compaction Energy Formula:</h4>
-<p>$$E = \frac{N_{\text{blows}} \cdot N_{\text{layers}} \cdot W_{\text{hammer}} \cdot h_{\text{drop}}}{V_{\text{mold}}}$$</p>
-<p>Where:</p>
+$$E = \frac{N_{\text{blows}} \cdot N_{\text{layers}} \cdot W_{\text{hammer}} \cdot h_{\text{drop}}}{V_{\text{mold}}}$$<p>Where:</p>
 <ul>
 <li>$E = \text{compaction energy per unit volume}$</li>
 <li>$N_{\text{blows}} = \text{number of blows per layer}$</li>
@@ -292,9 +305,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>Wet Side of Optimum:</strong> Water content is greater than OMC. Soil structure is <em>dispersed</em> (particles oriented parallel), leading to lower shear strength, higher compressibility, lower permeability, and ductile behavior.</li>
 </ul>
 <h3 id="zero-air-voids-zav-curve">Zero-Air-Voids (ZAV) Curve</h3>
-<p>The Zero-Air-Voids curve represents the theoretical maximum dry unit weight of a soil at $100%$ saturation ($S = 1.0$). It is physically impossible for a compaction curve to plot to the right of or cross the ZAV curve, because voids can never contain less than zero air.
-$$\gamma_{\text{zav}} = \frac{G_s \cdot \gamma_w}{1 + w \cdot G_s} = \frac{\gamma_w}{w + \frac{1}{G_s}}$$</p>
-<p>Where:</p>
+<p>The Zero-Air-Voids curve represents the theoretical maximum dry unit weight of a soil at $100\%$ saturation ($S = 1.0$). It is physically impossible for a compaction curve to plot to the right of or cross the ZAV curve, because voids can never contain less than zero air.
+</p>
+$$\gamma_{\text{zav}} = \frac{G_s \cdot \gamma_w}{1 + w \cdot G_s} = \frac{\gamma_w}{w + \frac{1}{G_s}}$$<p>Where:</p>
 <ul>
 <li>$\gamma_w = 62.4\text{ lb/ft}^3 \text{ or } 9.81\text{ kN/m}^3$</li>
 <li>$w = \text{water content (expressed as a decimal)}$</li>
@@ -312,11 +325,12 @@ $$\gamma_{\text{zav}} = \frac{G_s \cdot \gamma_w}{1 + w \cdot G_s} = \frac{\gamm
 </ul>
 <h3 id="relative-compaction-rc">Relative Compaction (RC)</h3>
 <p>Specifications for highway earthwork usually require a minimum relative compaction, which is the ratio of field dry density to the laboratory maximum dry density:
-$$RC = \frac{\gamma_{d,\text{field}}}{\gamma_{d,\text{max-lab}}} \cdot 100%$$</p>
-<p><em>Note:</em> Standard specifications typically require $95%$ to $100%$ relative compaction of the Standard or Modified Proctor maximum dry unit weight.</p>
+</p>
+$$RC = \frac{\gamma_{d,\text{field}}}{\gamma_{d,\text{max-lab}}} \cdot 100\%$$<p><em>Note:</em> Standard specifications typically require $95\%$ to $100\%$ relative compaction of the Standard or Modified Proctor maximum dry unit weight.</p>
 <h3 id="field-unit-weight-measurements">Field Unit Weight Measurements</h3>
 <p>To verify compliance in the field, the wet unit weight ($\gamma$) and water content ($w$) are measured, and the dry unit weight is calculated:
-$$\gamma_{d,\text{field}} = \frac{\gamma_{\text{field}}}{1 + w_{\text{field}}}$$
+</p>
+$$\gamma_{d,\text{field}} = \frac{\gamma_{\text{field}}}{1 + w_{\text{field}}}$$<p>
 Common field tests include:</p>
 <ul>
 <li><strong>Sand Cone Test:</strong> Measures the volume of a hand-dug hole by filling it with standard sand of a known density.</li>
@@ -325,49 +339,58 @@ Common field tests include:</p>
 <hr>
 <h2 id="4-worked-examples">4. Worked Examples</h2>
 <h3 id="worked-example-1-field-relative-compaction">Worked Example 1: Field Relative Compaction</h3>
-<p>A Sand Cone test was performed to verify compaction of a clayey sand subgrade. The laboratory maximum dry unit weight is $\gamma_{d,\text{max}} = 124.0\text{ lb/ft}^3$ at an optimum moisture content of $12.5%$. The field test data is as follows:</p>
+<p>A Sand Cone test was performed to verify compaction of a clayey sand subgrade. The laboratory maximum dry unit weight is $\gamma_{d,\text{max}} = 124.0\text{ lb/ft}^3$ at an optimum moisture content of $12.5\%$. The field test data is as follows:</p>
 <ul>
 <li>Total weight of wet soil excavated from the hole = $8.82\text{ lb}$</li>
 <li>Weight of dry soil (after oven drying) = $7.84\text{ lb}$</li>
 <li>Volume of the test hole = $0.064\text{ ft}^3$</li>
 </ul>
-<p><strong>Goal:</strong> Determine the field dry unit weight, field water content, and whether the compaction meets a specification of $95%$ Relative Compaction.</p>
+<p><strong>Goal:</strong> Determine the field dry unit weight, field water content, and whether the compaction meets a specification of $95\%$ Relative Compaction.</p>
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Calculate Field Water Content ($w_{\text{field}}$):</strong>
+
 $$W_w = W_{\text{wet}} - W_{\text{dry}} = 8.82\text{ lb} - 7.84\text{ lb} = 0.98\text{ lb}$$
-$$w_{\text{field}} = \frac{W_w}{W_{\text{dry}}} = \frac{0.98\text{ lb}}{7.84\text{ lb}} = 0.125\text{ (or } 12.5%)$$</li>
+
+$$w_{\text{field}} = \frac{W_w}{W_{\text{dry}}} = \frac{0.98\text{ lb}}{7.84\text{ lb}} = 0.125\text{ (or } 12.5\%)$$</li>
 <li><strong>Calculate Field Wet Unit Weight ($\gamma_{\text{field}}$):</strong>
+
 $$\gamma_{\text{field}} = \frac{W_{\text{wet}}}{V_{\text{hole}}} = \frac{8.82\text{ lb}}{0.064\text{ ft}^3} = 137.81\text{ lb/ft}^3$$</li>
 <li><strong>Calculate Field Dry Unit Weight ($\gamma_{d,\text{field}}$):</strong>
+
 $$\gamma_{d,\text{field}} = \frac{\gamma_{\text{field}}}{1 + w_{\text{field}}} = \frac{137.81\text{ lb/ft}^3}{1 + 0.125} = 122.5\text{ lb/ft}^3$$
 <em>(Alternatively: $\gamma_{d,\text{field}} = \frac{W_{\text{dry}}}{V_{\text{hole}}} = \frac{7.84}{0.064} = 122.5\text{ lb/ft}^3$. The values match.)</em></li>
 <li><strong>Calculate Relative Compaction ($RC$):</strong>
-$$RC = \frac{\gamma_{d,\text{field}}}{\gamma_{d,\text{max}}} \cdot 100% = \frac{122.5\text{ lb/ft}^3}{124.0\text{ lb/ft}^3} \cdot 100% = 98.8%$$</li>
+
+$$RC = \frac{\gamma_{d,\text{field}}}{\gamma_{d,\text{max}}} \cdot 100\% = \frac{122.5\text{ lb/ft}^3}{124.0\text{ lb/ft}^3} \cdot 100\% = 98.8\%$$</li>
 <li><strong>Evaluate Against Specification:</strong>
-Since $98.8% \ge 95.0%$, the compaction <strong>meets</strong> the project specification.</li>
+Since $98.8\% \ge 95.0\%$, the compaction <strong>meets</strong> the project specification.</li>
 </ol>
 <hr>
 <h3 id="worked-example-2-zero-air-voids-curve-calculations">Worked Example 2: Zero-Air-Voids Curve Calculations</h3>
 <p>A soil has a specific gravity of solids $G_s = 2.70$.</p>
-<p><strong>Goal:</strong> Calculate the dry unit weight corresponding to the Zero-Air-Voids (ZAV) curve at moisture contents of $10%$, $15%$, and $20%$.</p>
+<p><strong>Goal:</strong> Calculate the dry unit weight corresponding to the Zero-Air-Voids (ZAV) curve at moisture contents of $10\%$, $15\%$, and $20\%$.</p>
 <p><strong>Solution:</strong>
 Using the Zero-Air-Voids equation:
-$$\gamma_{\text{zav}} = \frac{G_s \cdot \gamma_w}{1 + w \cdot G_s}$$
+</p>
+$$\gamma_{\text{zav}} = \frac{G_s \cdot \gamma_w}{1 + w \cdot G_s}$$<p>
 Where $\gamma_w = 62.4\text{ lb/ft}^3$. Note that $G_s \cdot \gamma_w = 2.70 \cdot 62.4 = 168.48\text{ lb/ft}^3$.</p>
 <ol>
-<li><strong>For $w = 10% = 0.10$:</strong>
+<li><strong>For $w = 10\% = 0.10$:</strong>
+
 $$\gamma_{\text{zav}} = \frac{168.48}{1 + (0.10 \cdot 2.70)} = \frac{168.48}{1 + 0.27} = \frac{168.48}{1.27} = 132.66\text{ lb/ft}^3$$</li>
-<li><strong>For $w = 15% = 0.15$:</strong>
+<li><strong>For $w = 15\% = 0.15$:</strong>
+
 $$\gamma_{\text{zav}} = \frac{168.48}{1 + (0.15 \cdot 2.70)} = \frac{168.48}{1 + 0.405} = \frac{168.48}{1.405} = 119.91\text{ lb/ft}^3$$</li>
-<li><strong>For $w = 20% = 0.20$:</strong>
+<li><strong>For $w = 20\% = 0.20$:</strong>
+
 $$\gamma_{\text{zav}} = \frac{168.48}{1 + (0.20 \cdot 2.70)} = \frac{168.48}{1 + 0.54} = \frac{168.48}{1.54} = 109.40\text{ lb/ft}^3$$</li>
 </ol>
 <p><em>Summary of ZAV values:</em></p>
 <ul>
-<li>At $w = 10%$, $\gamma_{\text{zav}} = 132.7\text{ lb/ft}^3$</li>
-<li>At $w = 15%$, $\gamma_{\text{zav}} = 119.9\text{ lb/ft}^3$</li>
-<li>At $w = 20%$, $\gamma_{\text{zav}} = 109.4\text{ lb/ft}^3$</li>
+<li>At $w = 10\%$, $\gamma_{\text{zav}} = 132.7\text{ lb/ft}^3$</li>
+<li>At $w = 15\%$, $\gamma_{\text{zav}} = 119.9\text{ lb/ft}^3$</li>
+<li>At $w = 20\%$, $\gamma_{\text{zav}} = 109.4\text{ lb/ft}^3$</li>
 </ul>
 <p>As the moisture content increases, the maximum allowable dry unit weight decreases along the ZAV curve.</p>
 <hr>

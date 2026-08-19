@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hydrology Fundamentals">
     <meta property="og:description" content="Hydrology Fundamentals Hydrology focuses on estimating the quantity and timing of runoff from a watershed. In PE Civil Transportation, hydrologic analysis is …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Hydrology Fundamentals">
     <meta name="twitter:description" content="Hydrology Fundamentals Hydrology focuses on estimating the quantity and timing of runoff from a watershed. In PE Civil Transportation, hydrologic analysis is …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/90-hydrology-fundamentals/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/90-hydrology-fundamentals/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/90-hydrology-fundamentals/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -234,27 +248,27 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="key-parameters-of-hydrologic-analysis">Key Parameters of Hydrologic Analysis</h2>
 <p>Understanding how these core parameters interact is crucial for solving NCEES-style questions.</p>
-<h3 id="1-drainage-area-a">1. Drainage Area ($A$)</h3>
+<h3 id="1-drainage-area-">1. Drainage Area ($A$)</h3>
 <p>The drainage area (or watershed) is the contributing planimetric area from which runoff drains to a specific point of interest.</p>
 <ul>
 <li><strong>Units:</strong> Typically measured in <strong>acres (ac)</strong> for the Rational Method, or <strong>square miles ($mi^2$)</strong> for larger watershed methods.</li>
 <li><strong>Conversions:</strong> $1\text{ acre} = 43,560\text{ ft}^2$. $1\text{ square mile} = 640\text{ acres}$.</li>
 </ul>
-<h3 id="2-rainfall-intensity-i-duration-d-and-frequency-f">2. Rainfall Intensity ($i$), Duration ($d$), and Frequency ($f$)</h3>
+<h3 id="2-rainfall-intensity--duration--and-frequency-">2. Rainfall Intensity ($i$), Duration ($d$), and Frequency ($f$)</h3>
 <p>Rainfall characteristics are represented by Intensity-Duration-Frequency (IDF) curves or tables.</p>
 <ul>
 <li><strong>Rainfall Intensity ($i$):</strong> The rate of rainfall accumulation, typically expressed in <strong>inches per hour (in/hr)</strong>.</li>
 <li><strong>Duration ($d$):</strong> The length of time over which rainfall occurs. In hydrologic design, the design rainfall duration is set equal to the <strong>time of concentration ($t_c$)</strong> of the watershed to find the peak runoff rate.</li>
-<li><strong>Frequency ($f$) / Return Period ($T$):</strong> The average recurrence interval of a storm. A &ldquo;10-year storm&rdquo; has a $10%$ probability of occurring or being exceeded in any given year ($P = 1/T$). Highway design standards prescribe return periods based on facility type (e.g., interstate highways typically require 50-year or 100-year storms; local streets may use 10-year storms).</li>
+<li><strong>Frequency ($f$) / Return Period ($T$):</strong> The average recurrence interval of a storm. A &ldquo;10-year storm&rdquo; has a $10\%$ probability of occurring or being exceeded in any given year ($P = 1/T$). Highway design standards prescribe return periods based on facility type (e.g., interstate highways typically require 50-year or 100-year storms; local streets may use 10-year storms).</li>
 </ul>
-<h3 id="3-time-of-concentration-t_c">3. Time of Concentration ($t_c$)</h3>
+<h3 id="3-time-of-concentration-">3. Time of Concentration ($t_c$)</h3>
 <p>The time required for water to travel from the hydraulically most remote point of the watershed to the point of interest. It is the sum of travel times for different flow segments:</p>
 <ol>
 <li><strong>Sheet Flow:</strong> Shallow flow over plane surfaces (usually limited to the first 100 to 300 feet).</li>
 <li><strong>Shallow Concentrated Flow:</strong> Flow in rills, shallow gullies, or gutter flow.</li>
 <li><strong>Channel Flow:</strong> Flow in open channels, streams, or closed conduits.</li>
 </ol>
-<h3 id="4-runoff-coefficient-c-and-curve-number-cn">4. Runoff Coefficient ($C$) and Curve Number ($CN$)</h3>
+<h3 id="4-runoff-coefficient--and-curve-number-">4. Runoff Coefficient ($C$) and Curve Number ($CN$)</h3>
 <p>These represent the watershed&rsquo;s cover and soil characteristics, representing the fraction of rainfall that becomes runoff.</p>
 <ul>
 <li><strong>Rational Runoff Coefficient ($C$):</strong> Ranges from 0.0 (fully pervious, no runoff) to 1.0 (fully impervious, 100% runoff). Heavy commercial areas typically have $C$ values from 0.70 to 0.95, while rural forested areas may have $C$ values from 0.10 to 0.30.</li>
@@ -313,19 +327,21 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ol>
 <li>
 <p><strong>Calculate the Total Watershed Area ($A_{total}$):</strong>
-$$A_{total} = A_1 + A_2 + A_3 = 2.5 + 4.2 + 6.8 = 13.5\text{ acres}$$</p>
-</li>
+</p>
+$$A_{total} = A_1 + A_2 + A_3 = 2.5 + 4.2 + 6.8 = 13.5\text{ acres}$$</li>
 <li>
 <p><strong>Calculate the Weighted Runoff Coefficient ($C_{comp}$):</strong>
-$$C_{comp} = \frac{\sum (C_i \cdot A_i)}{A_{total}}$$
-$$C_{comp} = \frac{(0.90 \cdot 2.5) + (0.20 \cdot 4.2) + (0.85 \cdot 6.8)}{13.5}$$
-$$C_{comp} = \frac{2.25 + 0.84 + 5.78}{13.5} = \frac{8.87}{13.5} \approx 0.657$$</p>
-</li>
+</p>
+$$C_{comp} = \frac{\sum (C_i \cdot A_i)}{A_{total}}$$<p>
+</p>
+$$C_{comp} = \frac{(0.90 \cdot 2.5) + (0.20 \cdot 4.2) + (0.85 \cdot 6.8)}{13.5}$$<p>
+</p>
+$$C_{comp} = \frac{2.25 + 0.84 + 5.78}{13.5} = \frac{8.87}{13.5} \approx 0.657$$</li>
 <li>
 <p><strong>Calculate the Peak Runoff ($Q$):</strong>
 Using $Q = C i A$:
-$$Q = 0.657 \cdot 4.5\text{ in/hr} \cdot 13.5\text{ acres} \approx 39.9\text{ cfs}$$</p>
-</li>
+</p>
+$$Q = 0.657 \cdot 4.5\text{ in/hr} \cdot 13.5\text{ acres} \approx 39.9\text{ cfs}$$</li>
 </ol>
 <hr>
 <h2 id="important-hydrologic-design-concepts">Important Hydrologic Design Concepts</h2>

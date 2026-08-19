@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Open Channel Flow">
     <meta property="og:description" content="Open Channel Flow Open channel flow is flow with a free water surface exposed to atmospheric pressure. Roadside ditches, natural streams, and gravity storm …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Open Channel Flow">
     <meta name="twitter:description" content="Open Channel Flow Open channel flow is flow with a free water surface exposed to atmospheric pressure. Roadside ditches, natural streams, and gravity storm …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/97-open-channel-flow/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/97-open-channel-flow/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/97-open-channel-flow/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -235,12 +249,12 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="governing-equation-mannings-equation">Governing Equation: Manning&rsquo;s Equation</h2>
 <p>The velocity and capacity of open channels are determined using Manning&rsquo;s equation.</p>
 <h3 id="uscs-units">USCS Units:</h3>
-<p>$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$
-$$Q = V \cdot A = \frac{1.486}{n} A R^{2/3} S^{1/2}$$</p>
-<h3 id="si-metric-units">SI (Metric) Units:</h3>
-<p>$$V = \frac{1}{n} R^{2/3} S^{1/2}$$
-$$Q = V \cdot A = \frac{1}{n} A R^{2/3} S^{1/2}$$</p>
-<p>Where:</p>
+$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$<p>
+</p>
+$$Q = V \cdot A = \frac{1.486}{n} A R^{2/3} S^{1/2}$$<h3 id="si-metric-units">SI (Metric) Units:</h3>
+$$V = \frac{1}{n} R^{2/3} S^{1/2}$$<p>
+</p>
+$$Q = V \cdot A = \frac{1}{n} A R^{2/3} S^{1/2}$$<p>Where:</p>
 <ul>
 <li>$V$ = Mean velocity (<strong>ft/s</strong> or <strong>m/s</strong>)</li>
 <li>$Q$ = Flow rate (<strong>cfs</strong> or <strong>$m^3/s$</strong>)</li>
@@ -289,8 +303,7 @@ $$Q = V \cdot A = \frac{1}{n} A R^{2/3} S^{1/2}$$</p>
 <hr>
 <h2 id="critical-flow-and-froude-number">Critical Flow and Froude Number</h2>
 <p>The Froude number ($Fr$) defines the state of flow relative to gravity wave velocity:</p>
-<p>$$Fr = \frac{V}{\sqrt{g \cdot D}}$$</p>
-<p>Where:</p>
+$$Fr = \frac{V}{\sqrt{g \cdot D}}$$<p>Where:</p>
 <ul>
 <li>$V$ = Velocity (<strong>ft/s</strong> or <strong>m/s</strong>)</li>
 <li>$g$ = Acceleration of gravity ($32.2\text{ ft/s}^2$ or $9.81\text{ m/s}^2$)</li>
@@ -298,25 +311,26 @@ $$Q = V \cdot A = \frac{1}{n} A R^{2/3} S^{1/2}$$</p>
 </ul>
 <h3 id="states-of-flow">States of Flow:</h3>
 <ul>
-<li><strong>$Fr &lt; 1.0$ (Subcritical Flow):</strong> Tranquil, low velocity, deep flow. Downstream conditions control the flow depth.</li>
+<li><strong>$Fr < 1.0$ (Subcritical Flow):</strong> Tranquil, low velocity, deep flow. Downstream conditions control the flow depth.</li>
 <li><strong>$Fr = 1.0$ (Critical Flow):</strong> Minimum specific energy for a given discharge.</li>
-<li><strong>$Fr &gt; 1.0$ (Supercritical Flow):</strong> Rapid, high velocity, shallow flow. Upstream conditions control the flow depth.</li>
+<li><strong>$Fr > 1.0$ (Supercritical Flow):</strong> Rapid, high velocity, shallow flow. Upstream conditions control the flow depth.</li>
 </ul>
 <hr>
-<h2 id="specific-energy-e">Specific Energy ($E$)</h2>
+<h2 id="specific-energy-">Specific Energy ($E$)</h2>
 <p>Specific energy is the energy head relative to the channel bottom:</p>
-<p>$$E = y + \frac{V^2}{2g}$$</p>
-<p>For a rectangular channel of bottom width $b$:</p>
+$$E = y + \frac{V^2}{2g}$$<p>For a rectangular channel of bottom width $b$:</p>
 <ul>
 <li><strong>Flow per unit width:</strong> $q = Q/b$</li>
 <li><strong>Critical Depth ($y_c$):</strong>
+
 $$y_c = \sqrt[3]{\frac{q^2}{g}}$$</li>
 <li><strong>Minimum Specific Energy ($E_{min}$):</strong>
+
 $$E_{min} = 1.5 \cdot y_c$$</li>
 </ul>
 <hr>
 <h2 id="worked-example-1-trapezoidal-channel-mannings-capacity">Worked Example 1: Trapezoidal Channel Manning&rsquo;s Capacity</h2>
-<p>A roadside trapezoidal channel has a bottom width $b = 3.0\text{ ft}$ and side slopes $z = 2$ (2H:1V). The channel is lined with turf grass ($n = 0.040$) and is laid on a longitudinal slope $S = 0.8% = 0.008\text{ ft/ft}$.</p>
+<p>A roadside trapezoidal channel has a bottom width $b = 3.0\text{ ft}$ and side slopes $z = 2$ (2H:1V). The channel is lined with turf grass ($n = 0.040$) and is laid on a longitudinal slope $S = 0.8\% = 0.008\text{ ft/ft}$.</p>
 <p><strong>Calculate the flow rate ($Q$) and average velocity ($V$) when the water depth is $1.2\text{ ft}$.</strong></p>
 <h3 id="solution">Solution:</h3>
 <ol>
@@ -331,19 +345,19 @@ $$E_{min} = 1.5 \cdot y_c$$</li>
 </li>
 <li>
 <p><strong>Apply Manning&rsquo;s Equation for Velocity ($V$):</strong>
-$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$
-$$V = \frac{1.486}{0.040} \cdot (0.7745)^{2/3} \cdot (0.008)^{1/2}$$</p>
-<ul>
+</p>
+$$V = \frac{1.486}{n} R^{2/3} S^{1/2}$$<p>
+</p>
+$$V = \frac{1.486}{0.040} \cdot (0.7745)^{2/3} \cdot (0.008)^{1/2}$$<ul>
 <li>$\frac{1.486}{0.040} = 37.15$</li>
 <li>$(0.7745)^{2/3} \approx 0.8437$</li>
 <li>$(0.008)^{1/2} \approx 0.08944$</li>
 </ul>
-<p>$$V = 37.15 \cdot 0.8437 \cdot 0.08944 \approx 2.80\text{ ft/s}$$</p>
-</li>
+$$V = 37.15 \cdot 0.8437 \cdot 0.08944 \approx 2.80\text{ ft/s}$$</li>
 <li>
 <p><strong>Calculate flow rate ($Q$):</strong>
-$$Q = V \cdot A = 2.80\text{ ft/s} \cdot 6.48\text{ ft}^2 \approx 18.1\text{ cfs}$$</p>
-</li>
+</p>
+$$Q = V \cdot A = 2.80\text{ ft/s} \cdot 6.48\text{ ft}^2 \approx 18.1\text{ cfs}$$</li>
 </ol>
 <hr>
 <h2 id="worked-example-2-critical-depth--flow-state-in-a-rectangular-channel">Worked Example 2: Critical Depth &amp; Flow State in a Rectangular Channel</h2>
@@ -353,24 +367,24 @@ $$Q = V \cdot A = 2.80\text{ ft/s} \cdot 6.48\text{ ft}^2 \approx 18.1\text{ cfs
 <ol>
 <li>
 <p><strong>Calculate flow per unit width ($q$):</strong>
-$$q = \frac{Q}{b} = \frac{64.0\text{ cfs}}{8.0\text{ ft}} = 8.0\text{ cfs/ft}$$</p>
-</li>
+</p>
+$$q = \frac{Q}{b} = \frac{64.0\text{ cfs}}{8.0\text{ ft}} = 8.0\text{ cfs/ft}$$</li>
 <li>
 <p><strong>Calculate critical depth ($y_c$):</strong>
-$$y_c = \sqrt[3]{\frac{q^2}{g}} = \sqrt[3]{\frac{8.0^2}{32.2}} = \sqrt[3]{\frac{64.0}{32.2}} = \sqrt[3]{1.9876} \approx 1.26\text{ feet}$$</p>
-</li>
+</p>
+$$y_c = \sqrt[3]{\frac{q^2}{g}} = \sqrt[3]{\frac{8.0^2}{32.2}} = \sqrt[3]{\frac{64.0}{32.2}} = \sqrt[3]{1.9876} \approx 1.26\text{ feet}$$</li>
 <li>
 <p><strong>Calculate velocity ($V$):</strong>
-$$V = \frac{Q}{A} = \frac{64.0}{8.0 \cdot 1.2} = \frac{64.0}{9.6} \approx 6.67\text{ ft/s}$$</p>
-</li>
+</p>
+$$V = \frac{Q}{A} = \frac{64.0}{8.0 \cdot 1.2} = \frac{64.0}{9.6} \approx 6.67\text{ ft/s}$$</li>
 <li>
 <p><strong>Calculate Froude number ($Fr$):</strong>
 For a rectangular channel, hydraulic depth $D = y = 1.2\text{ ft}$.
-$$Fr = \frac{V}{\sqrt{g \cdot y}} = \frac{6.67}{\sqrt{32.2 \cdot 1.2}} = \frac{6.67}{\sqrt{38.64}} = \frac{6.67}{6.216} \approx 1.07$$</p>
-</li>
+</p>
+$$Fr = \frac{V}{\sqrt{g \cdot y}} = \frac{6.67}{\sqrt{32.2 \cdot 1.2}} = \frac{6.67}{\sqrt{38.64}} = \frac{6.67}{6.216} \approx 1.07$$</li>
 <li>
 <p><strong>Determine the state of flow:</strong>
-Since $Fr = 1.07 &gt; 1.0$ (and actual depth $y = 1.2\text{ ft} &lt; y_c = 1.26\text{ ft}$), the flow is <strong>supercritical</strong>.</p>
+Since $Fr = 1.07 > 1.0$ (and actual depth $y = 1.2\text{ ft} < y_c = 1.26\text{ ft}$), the flow is <strong>supercritical</strong>.</p>
 </li>
 </ol>
 <hr>

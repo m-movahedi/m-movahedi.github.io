@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Travel Time and Delay Studies">
     <meta property="og:description" content="Travel Time and Delay Studies Travel time and delay studies determine the amount of time required to traverse a specific route and identify the locations, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Travel Time and Delay Studies">
     <meta name="twitter:description" content="Travel Time and Delay Studies Travel time and delay studies determine the amount of time required to traverse a specific route and identify the locations, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-3/16-travel-time-and-delay-studies/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-3/16-travel-time-and-delay-studies/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-3/16-travel-time-and-delay-studies/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -238,6 +252,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li><strong>Travel Time:</strong> The total time taken by a vehicle to traverse a given section of a highway.</li>
 <li><strong>Running Time:</strong> The time a vehicle is in actual motion while traversing a given section of a highway.
+
 $$\text{Travel Time} = \text{Running Time} + \text{Delay}$$</li>
 <li><strong>Stopped-Time Delay (Stopped Delay):</strong> The time a vehicle is completely stationary (speed = 0) due to traffic controls or congestion.</li>
 <li><strong>Control Delay:</strong> The total delay caused by a traffic control device (e.g., traffic signal, stop sign). It includes:
@@ -253,9 +268,10 @@ $$\text{Travel Time} = \text{Running Time} + \text{Delay}$$</li>
 <ul>
 <li><strong>Travel Speed:</strong> The distance divided by the total travel time.</li>
 <li><strong>Running Speed:</strong> The distance divided by the running time.
+
 $$\text{Travel Speed} = \frac{\text{Distance}}{\text{Travel Time}}$$
-$$\text{Running Speed} = \frac{\text{Distance}}{\text{Running Time}}$$
-<ul>
+
+$$\text{Running Speed} = \frac{\text{Distance}}{\text{Running Time}}$$<ul>
 <li>Since Running Time $\le$ Travel Time, <strong>Running Speed is always $\ge$ Travel Speed</strong>.</li>
 </ul>
 </li>
@@ -287,12 +303,12 @@ A test vehicle makes runs in both directions along a corridor (with and against 
 <ul>
 <li>
 <p><strong>Traffic Flow Rate ($q$) in the direction of interest:</strong>
-$$q = \frac{x + y}{t_w + t_a}$$</p>
-</li>
+</p>
+$$q = \frac{x + y}{t_w + t_a}$$</li>
 <li>
 <p><strong>Average Travel Time ($\bar{t}$) of the traffic stream:</strong>
-$$\bar{t} = t_w - \frac{y}{q}$$</p>
-</li>
+</p>
+$$\bar{t} = t_w - \frac{y}{q}$$</li>
 </ul>
 <p>Where:</p>
 <ul>
@@ -302,8 +318,8 @@ $$\bar{t} = t_w - \frac{y}{q}$$</p>
 <li>$t_a$ = travel time of the test vehicle when traveling <em>against</em> the stream (minutes or seconds)</li>
 <li>$x$ = number of vehicles met by the test vehicle when traveling <em>against</em> the stream (in the opposite direction)</li>
 <li>$y$ = net number of vehicles overtaking the test vehicle when traveling <em>with</em> the stream.
-$$y = N_{\text{overtaking}} - N_{\text{overtaken}}$$
-<ul>
+
+$$y = N_{\text{overtaking}} - N_{\text{overtaken}}$$<ul>
 <li>$N_{\text{overtaking}}$ = number of vehicles that passed the test vehicle.</li>
 <li>$N_{\text{overtaken}}$ = number of vehicles that the test vehicle passed.</li>
 </ul>
@@ -328,29 +344,38 @@ A moving observer study is conducted on a $2.0\text{-mile}$ segment of an arteri
 </ol>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Net Overtaking Vehicles ($y$)</strong>
-$$y = N_{\text{overtaking}} - N_{\text{overtaken}}$$
-$$y = 12 - 4 = +8 \text{ vehicles}$$</p>
-<p><strong>Step 2: Calculate Traffic Flow Rate ($q$)</strong></p>
+</p>
+$$y = N_{\text{overtaking}} - N_{\text{overtaken}}$$<p>
+</p>
+$$y = 12 - 4 = +8 \text{ vehicles}$$<p><strong>Step 2: Calculate Traffic Flow Rate ($q$)</strong></p>
 <ul>
 <li>$t_w = 4.5 \text{ minutes}$</li>
 <li>$t_a = 3.5 \text{ minutes}$</li>
 <li>$x = 125 \text{ vehicles}$
+
 $$q = \frac{x + y}{t_w + t_a}$$
+
 $$q = \frac{125 + 8}{4.5 + 3.5} = \frac{133 \text{ vehicles}}{8.0 \text{ minutes}} = 16.625 \text{ vehicles/minute}$$</li>
 </ul>
 <p>Convert flow rate to vehicles per hour:
-$$q_{\text{veh/hr}} = 16.625 \text{ vehicles/minute} \times 60 \text{ minutes/hour} = 997.5 \text{ vehicles/hour}$$
-$$\text{Flow Rate } (q) \approx 998 \text{ vehicles/hour}$$</p>
-<p><strong>Step 3: Calculate Average Travel Time ($\bar{t}$)</strong>
-$$\bar{t} = t_w - \frac{y}{q}$$
-$$\bar{t} = 4.5 \text{ minutes} - \frac{8 \text{ vehicles}}{16.625 \text{ vehicles/minute}}$$
-$$\bar{t} = 4.5 - 0.481 = 4.02 \text{ minutes}$$
-$$\text{Average Travel Time } (\bar{t}) \approx 4.0 \text{ minutes}$$</p>
-<p><strong>Step 4: Calculate Average Travel Speed ($S$)</strong></p>
+</p>
+$$q_{\text{veh/hr}} = 16.625 \text{ vehicles/minute} \times 60 \text{ minutes/hour} = 997.5 \text{ vehicles/hour}$$<p>
+</p>
+$$\text{Flow Rate } (q) \approx 998 \text{ vehicles/hour}$$<p><strong>Step 3: Calculate Average Travel Time ($\bar{t}$)</strong>
+</p>
+$$\bar{t} = t_w - \frac{y}{q}$$<p>
+</p>
+$$\bar{t} = 4.5 \text{ minutes} - \frac{8 \text{ vehicles}}{16.625 \text{ vehicles/minute}}$$<p>
+</p>
+$$\bar{t} = 4.5 - 0.481 = 4.02 \text{ minutes}$$<p>
+</p>
+$$\text{Average Travel Time } (\bar{t}) \approx 4.0 \text{ minutes}$$<p><strong>Step 4: Calculate Average Travel Speed ($S$)</strong></p>
 <ul>
 <li>Segment Length = $2.0 \text{ miles}$</li>
 <li>Average Travel Time ($\bar{t}$) = $4.02 \text{ minutes} = 4.02 \div 60 = 0.067 \text{ hours}$
+
 $$\text{Speed } (S) = \frac{\text{Distance}}{\bar{t}} = \frac{2.0 \text{ miles}}{0.067 \text{ hours}} \approx 29.85 \text{ mph}$$
+
 $$\text{Average Travel Speed } \approx 29.9 \text{ mph}$$</li>
 </ul>
 <hr>

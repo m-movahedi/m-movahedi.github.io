@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hydrographs and Detention">
     <meta property="og:description" content="Hydrographs and Detention A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Hydrographs and Detention">
     <meta name="twitter:description" content="Hydrographs and Detention A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/93-hydrographs-and-detention/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -235,10 +249,8 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="scs-curve-number-method-for-runoff-depth">SCS Curve Number Method for Runoff Depth</h2>
 <p>To construct a runoff hydrograph, we must first determine the depth of excess rainfall (direct runoff) using the NRCS (SCS) Curve Number method.</p>
 <h3 id="governing-equations">Governing Equations:</h3>
-<p>$$Q = \frac{(P - I_a)^2}{P - I_a + S}$$</p>
-<p>Using the standard assumption that initial abstraction $I_a = 0.2 \cdot S$:</p>
-<p>$$Q = \frac{(P - 0.2S)^2}{P + 0.8S}$$</p>
-<p>Where:</p>
+$$Q = \frac{(P - I_a)^2}{P - I_a + S}$$<p>Using the standard assumption that initial abstraction $I_a = 0.2 \cdot S$:</p>
+$$Q = \frac{(P - 0.2S)^2}{P + 0.8S}$$<p>Where:</p>
 <ul>
 <li>$Q$ = Depth of direct runoff (<strong>inches</strong>)</li>
 <li>$P$ = Depth of total rainfall (<strong>inches</strong>)</li>
@@ -246,8 +258,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>$I_a$ = Initial abstraction (<strong>inches</strong>), representing losses from ponding, interception, and initial infiltration.</li>
 </ul>
 <p>The potential maximum retention $S$ is calculated from the Curve Number ($CN$):</p>
-<p>$$S = \frac{1000}{CN} - 10$$</p>
-<p><em>Note:</em> Direct runoff only occurs when $P &gt; 0.2S$. If $P \le 0.2S$, then $Q = 0$.</p>
+$$S = \frac{1000}{CN} - 10$$<p><em>Note:</em> Direct runoff only occurs when $P > 0.2S$. If $P \le 0.2S$, then $Q = 0$.</p>
 <hr>
 <h2 id="unit-hydrographs">Unit Hydrographs</h2>
 <p>A <strong>Unit Hydrograph (UH)</strong> is defined as the direct runoff hydrograph resulting from 1 inch of excess rainfall (effective rainfall) distributed uniformly over the watershed at a constant rate for a specified duration.</p>
@@ -255,8 +266,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>SCS Dimensionless Unit Hydrograph:</strong> A standard synthetic hydrograph that expresses flow as a ratio of peak flow ($q/q_p$) and time as a ratio of time to peak ($t/t_p$).</li>
 </ul>
 <h3 id="peak-flow-equation-for-scs-uh-uscs">Peak Flow Equation for SCS UH (USCS):</h3>
-<p>$$q_p = \frac{484 \cdot A \cdot Q}{t_p}$$</p>
-<p>Where:</p>
+$$q_p = \frac{484 \cdot A \cdot Q}{t_p}$$<p>Where:</p>
 <ul>
 <li>$q_p$ = Peak discharge (<strong>cfs</strong>)</li>
 <li>$A$ = Drainage area (<strong>square miles, $mi^2$</strong>)</li>
@@ -264,9 +274,8 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>$t_p$ = Time to peak (<strong>hours</strong>)</li>
 <li><strong>484</strong> = Standard peak factor (varies from 300 in flat coastal plains to 600 in steep mountain areas, but 484 is the NCEES standard default).</li>
 </ul>
-<h3 id="time-to-peak-t_p">Time to Peak ($t_p$):</h3>
-<p>$$t_p = \frac{D}{2} + t_L$$</p>
-<p>Where:</p>
+<h3 id="time-to-peak-">Time to Peak ($t_p$):</h3>
+$$t_p = \frac{D}{2} + t_L$$<p>Where:</p>
 <ul>
 <li>$D$ = Duration of excess rainfall (<strong>hours</strong>)</li>
 <li>$t_L$ = Lag time from center of mass of rainfall to peak flow (<strong>hours</strong>)</li>
@@ -274,10 +283,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <hr>
 <h2 id="detention-basin-sizing-the-modified-rational-method">Detention Basin Sizing: The Modified Rational Method</h2>
-<p>Detention basins temporarily store stormwater to reduce peak downstream runoff. The <strong>Modified Rational Method</strong> is a common technique to estimate the storage volume required for small developments ($A &lt; 20$ acres).</p>
+<p>Detention basins temporarily store stormwater to reduce peak downstream runoff. The <strong>Modified Rational Method</strong> is a common technique to estimate the storage volume required for small developments ($A < 20$ acres).</p>
 <p>The storage volume is determined by evaluating the difference between the inflow hydrograph (Rational Method peak flows for various storm durations) and a constant allowable outflow rate ($Q_{out}$):</p>
-<p>$$V_{storage} = (Q_{in} - Q_{out}) \cdot t_d \cdot 60$$</p>
-<p>Where:</p>
+$$V_{storage} = (Q_{in} - Q_{out}) \cdot t_d \cdot 60$$<p>Where:</p>
 <ul>
 <li>$V_{storage}$ = Required storage volume (<strong>cubic feet, $\text{ft}^3$</strong>)</li>
 <li>$Q_{in}$ = Peak inflow rate (<strong>cfs</strong>; calculated as $C \cdot i \cdot A$ for a storm of duration $t_d$)</li>
@@ -294,22 +302,24 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ol>
 <li>
 <p><strong>Calculate the potential maximum retention ($S$):</strong>
-$$S = \frac{1000}{CN} - 10 = \frac{1000}{78} - 10 = 12.82 - 10 = 2.82\text{ inches}$$</p>
-</li>
+</p>
+$$S = \frac{1000}{CN} - 10 = \frac{1000}{78} - 10 = 12.82 - 10 = 2.82\text{ inches}$$</li>
 <li>
-<p><strong>Verify if runoff occurs ($P &gt; 0.2S$):</strong>
-$$0.2S = 0.2 \cdot 2.82 = 0.564\text{ inches}$$
-Since $P = 4.5\text{ inches} &gt; 0.564\text{ inches}$, runoff will occur.</p>
+<p><strong>Verify if runoff occurs ($P > 0.2S$):</strong>
+</p>
+$$0.2S = 0.2 \cdot 2.82 = 0.564\text{ inches}$$<p>
+Since $P = 4.5\text{ inches} > 0.564\text{ inches}$, runoff will occur.</p>
 </li>
 <li>
 <p><strong>Calculate the depth of direct runoff ($Q$):</strong>
-$$Q = \frac{(P - 0.2S)^2}{P + 0.8S} = \frac{(4.5 - 0.564)^2}{4.5 + 0.8 \cdot 2.82}$$
-$$Q = \frac{(3.936)^2}{4.5 + 2.256} = \frac{15.492}{6.756} \approx 2.29\text{ inches}$$</p>
-</li>
+</p>
+$$Q = \frac{(P - 0.2S)^2}{P + 0.8S} = \frac{(4.5 - 0.564)^2}{4.5 + 0.8 \cdot 2.82}$$<p>
+</p>
+$$Q = \frac{(3.936)^2}{4.5 + 2.256} = \frac{15.492}{6.756} \approx 2.29\text{ inches}$$</li>
 <li>
 <p><strong>Calculate the total runoff volume:</strong>
-$$\text{Runoff Volume} = \text{Area} \cdot Q = 120\text{ acres} \cdot \left(\frac{2.29\text{ inches}}{12\text{ inches/ft}}\right) = 120 \cdot 0.191\text{ ft} = 22.9\text{ acre-feet}$$</p>
-</li>
+</p>
+$$\text{Runoff Volume} = \text{Area} \cdot Q = 120\text{ acres} \cdot \left(\frac{2.29\text{ inches}}{12\text{ inches/ft}}\right) = 120 \cdot 0.191\text{ ft} = 22.9\text{ acre-feet}$$</li>
 </ol>
 <hr>
 <h2 id="worked-example-2-storage-sizing-via-modified-rational-method">Worked Example 2: Storage Sizing via Modified Rational Method</h2>
@@ -341,14 +351,16 @@ $$\text{Runoff Volume} = \text{Area} \cdot Q = 120\text{ acres} \cdot \left(\fra
 <ol>
 <li>
 <p><strong>Calculate the peak inflow ($Q_{in}$) for the 30-minute duration:</strong>
-$$Q_{in} = C \cdot i \cdot A = 0.85 \cdot 3.5\text{ in/hr} \cdot 6.0\text{ acres} = 17.85\text{ cfs}$$</p>
-</li>
+</p>
+$$Q_{in} = C \cdot i \cdot A = 0.85 \cdot 3.5\text{ in/hr} \cdot 6.0\text{ acres} = 17.85\text{ cfs}$$</li>
 <li>
 <p><strong>Calculate the required storage volume for this duration:</strong>
-$$V_{storage} = (Q_{in} - Q_{out}) \cdot t_d \cdot 60$$
-$$V_{storage} = (17.85\text{ cfs} - 8.0\text{ cfs}) \cdot 30\text{ minutes} \cdot 60\text{ s/min}$$
-$$V_{storage} = 9.85\text{ cfs} \cdot 1800\text{ seconds} = 17,730\text{ ft}^3$$</p>
-</li>
+</p>
+$$V_{storage} = (Q_{in} - Q_{out}) \cdot t_d \cdot 60$$<p>
+</p>
+$$V_{storage} = (17.85\text{ cfs} - 8.0\text{ cfs}) \cdot 30\text{ minutes} \cdot 60\text{ s/min}$$<p>
+</p>
+$$V_{storage} = 9.85\text{ cfs} \cdot 1800\text{ seconds} = 17,730\text{ ft}^3$$</li>
 </ol>
 <hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Safety Countermeasure Selection and Economic Evaluation">
     <meta property="og:description" content="Safety Countermeasure Selection and Economic Evaluation The final step in traffic safety engineering is selecting and economically evaluating safety …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Safety Countermeasure Selection and Economic Evaluation">
     <meta name="twitter:description" content="Safety Countermeasure Selection and Economic Evaluation The final step in traffic safety engineering is selecting and economically evaluating safety …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-5/36-safety-countermeasure-selection/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-5/36-safety-countermeasure-selection/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-5/36-safety-countermeasure-selection/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -240,7 +254,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>Protected Left-Turn Phase</strong>: Installs a dedicated left-turn green arrow to eliminate conflicts between left-turning vehicles and opposing through-traffic. Highly effective for left-turn angle crashes.</li>
 <li><strong>Retroreflective Signal Backplates</strong>: Adds a yellow reflective border to signal heads, making them more visible to drivers, especially at night. Highly effective for rear-end crashes.</li>
 <li><strong>Clearing Sight Triangles</strong>: Removes trees, signs, or structures in the corners of an intersection. Effective for angle crashes at stop-controlled intersections.</li>
-<li><strong>Roundabout Conversion</strong>: Converts a stop-controlled or signalized intersection to a roundabout. Eliminates crossing conflicts, reducing injury crashes by $70 - 80%$.</li>
+<li><strong>Roundabout Conversion</strong>: Converts a stop-controlled or signalized intersection to a roundabout. Eliminates crossing conflicts, reducing injury crashes by $70 - 80\%$.</li>
 </ul>
 <h3 id="2-roadway-and-curve-countermeasures">2. Roadway and Curve Countermeasures</h3>
 <ul>
@@ -256,27 +270,24 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="economic-evaluation-of-safety-projects">Economic Evaluation of Safety Projects</h2>
 <p>A safety project is evaluated by comparing its annual safety benefit (monetary savings from crash reduction) to its annualized cost.</p>
-<h3 id="1-annual-safety-benefit-b">1. Annual Safety Benefit ($B$)</h3>
+<h3 id="1-annual-safety-benefit-">1. Annual Safety Benefit ($B$)</h3>
 <p>Using Crash Modification Factors (CMFs) and average societal crash costs:</p>
-<p>$$B = \sum \left( N_{\text{observed, } s} \times \left(1 - \text{CMF}_s\right) \times \text{Cost}_s \right)$$</p>
-<p>Where:</p>
+$$B = \sum \left( N_{\text{observed, } s} \times \left(1 - \text{CMF}_s\right) \times \text{Cost}_s \right)$$<p>Where:</p>
 <ul>
 <li>$s$ = crash severity level (Fatal/Injury, Property Damage Only)</li>
 <li>$\text{Cost}_s$ = average societal cost per crash for severity level $s$ (established by USDOT or local DOTs)</li>
 <li>$N_{\text{observed, } s}$ = annual observed crashes of severity $s$</li>
 </ul>
-<h3 id="2-annualized-project-cost-c">2. Annualized Project Cost ($C$)</h3>
+<h3 id="2-annualized-project-cost-">2. Annualized Project Cost ($C$)</h3>
 <p>The initial capital cost of the countermeasure ($P$) must be annualized over the project&rsquo;s service life ($n$, in years) using the interest rate ($i$) and the <strong>Capital Recovery Factor ($A/P, i, n$)</strong>:</p>
-<p>$$A = P \times \left[ \frac{i(1+i)^n}{(1+i)^n - 1} \right] = P \times (A/P, i, n)$$</p>
-<p>The total annual cost ($C$) is the sum of the annualized capital cost and any annual maintenance costs ($M$) minus the annualized salvage value ($S$), if any:</p>
-<p>$$C = A + M - S \times (A/F, i, n)$$
+$$A = P \times \left[ \frac{i(1+i)^n}{(1+i)^n - 1} \right] = P \times (A/P, i, n)$$<p>The total annual cost ($C$) is the sum of the annualized capital cost and any annual maintenance costs ($M$) minus the annualized salvage value ($S$), if any:</p>
+$$C = A + M - S \times (A/F, i, n)$$<p>
 <em>(where $(A/F, i, n) = \frac{i}{(1+i)^n - 1}$ is the Sinking Fund Factor).</em></p>
-<h3 id="3-benefit-cost-ratio-bc">3. Benefit-Cost Ratio ($B/C$)</h3>
+<h3 id="3-benefit-cost-ratio-">3. Benefit-Cost Ratio ($B/C$)</h3>
 <p>A countermeasure is economically viable if the $B/C$ ratio is greater than or equal to $1.0$:</p>
-<p>$$\text{B/C Ratio} = \frac{B}{C}$$</p>
-<ul>
+$$\text{B/C Ratio} = \frac{B}{C}$$<ul>
 <li><strong>$B/C \ge 1.0$</strong>: The project is economically justified (benefits exceed costs).</li>
-<li><strong>$B/C &lt; 1.0$</strong>: The project is not economically justified.</li>
+<li><strong>$B/C < 1.0$</strong>: The project is not economically justified.</li>
 </ul>
 <hr>
 <h2 id="critical-pitfalls-and-exam-traps">Critical Pitfalls and Exam Traps</h2>
@@ -309,47 +320,53 @@ If the problem provides separate CMFs and costs for Fatal/Injury (FI) and Proper
 </ul>
 <p>Societal costs per crash:</p>
 <ul>
-<li>Fatal/Injury crash: $$150,000$</li>
-<li>Property Damage Only crash: $$8,000$</li>
+<li>Fatal/Injury crash: $\$150,000$</li>
+<li>Property Damage Only crash: $\$8,000$</li>
 </ul>
 <p>Project financial data:</p>
 <ul>
-<li>Initial capital cost ($P$): $$450,000$</li>
-<li>Annual maintenance cost ($M$): $$5,000$</li>
+<li>Initial capital cost ($P$): $\$450,000$</li>
+<li>Annual maintenance cost ($M$): $\$5,000$</li>
 <li>Project service life ($n$): $20 \text{ years}$</li>
-<li>Interest rate ($i$): $4%$ per year ($0.04$)</li>
-<li>Salvage value ($S$): $$0$</li>
+<li>Interest rate ($i$): $4\%$ per year ($0.04$)</li>
+<li>Salvage value ($S$): $\$0$</li>
 </ul>
 <p><strong>Calculate the Benefit-Cost ($B/C$) ratio of the project.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-the-annual-safety-benefit-b">Step 1: Calculate the Annual Safety Benefit ($B$)</h4>
+<h4 id="step-1-calculate-the-annual-safety-benefit-">Step 1: Calculate the Annual Safety Benefit ($B$)</h4>
 <ol>
 <li><strong>Injury crash reduction</strong>:
-$$\Delta N_{\text{FI}} = N_{\text{observed, FI}} \times (1 - \text{CMF}<em>{\text{FI}}) = 6.0 \times (1 - 0.25) = 4.5 \text{ crashes/year}$$
-$$\text{Benefit}</em>{\text{FI}} = 4.5 \times $150,000 = $675,000/year$$</li>
+
+$$\Delta N_{\text{FI}} = N_{\text{observed, FI}} \times (1 - \text{CMF}_{\text{FI}}) = 6.0 \times (1 - 0.25) = 4.5 \text{ crashes/year}$$
+
+$$\text{Benefit}_{\text{FI}} = 4.5 \times \$150,000 = \$675,000/year$$</li>
 <li><strong>PDO crash reduction</strong>:
-$$\Delta N_{\text{PDO}} = N_{\text{observed, PDO}} \times (1 - \text{CMF}<em>{\text{PDO}}) = 10.0 \times (1 - 0.60) = 4.0 \text{ crashes/year}$$
-$$\text{Benefit}</em>{\text{PDO}} = 4.0 \times $8,000 = $32,000/year$$</li>
+
+$$\Delta N_{\text{PDO}} = N_{\text{observed, PDO}} \times (1 - \text{CMF}_{\text{PDO}}) = 10.0 \times (1 - 0.60) = 4.0 \text{ crashes/year}$$
+
+$$\text{Benefit}_{\text{PDO}} = 4.0 \times \$8,000 = \$32,000/year$$</li>
 <li><strong>Total Annual Benefit ($B$)</strong>:
-$$B = $675,000 + $32,000 = $707,000/year$$</li>
+
+$$B = \$675,000 + \$32,000 = \$707,000/year$$</li>
 </ol>
-<h4 id="step-2-calculate-the-annualized-project-cost-c">Step 2: Calculate the Annualized Project Cost ($C$)</h4>
+<h4 id="step-2-calculate-the-annualized-project-cost-">Step 2: Calculate the Annualized Project Cost ($C$)</h4>
 <ol>
-<li><strong>Calculate the Capital Recovery Factor ($A/P, 4%, 20$)</strong>:
-$$(A/P, 4%, 20) = \frac{i(1+i)^n}{(1+i)^n - 1} = \frac{0.04(1.04)^{20}}{(1.04)^{20} - 1}$$
-<ul>
+<li><strong>Calculate the Capital Recovery Factor ($A/P, 4\%, 20$)</strong>:
+
+$$(A/P, 4\%, 20) = \frac{i(1+i)^n}{(1+i)^n - 1} = \frac{0.04(1.04)^{20}}{(1.04)^{20} - 1}$$<ul>
 <li>$(1.04)^{20} = 2.1911$</li>
-<li>$(A/P, 4%, 20) = \frac{0.04 \times 2.1911}{2.1911 - 1} = \frac{0.0876}{1.1911} = 0.0736$</li>
+<li>$(A/P, 4\%, 20) = \frac{0.04 \times 2.1911}{2.1911 - 1} = \frac{0.0876}{1.1911} = 0.0736$</li>
 </ul>
 </li>
 <li><strong>Annualize the initial capital cost</strong>:
-$$A = P \times (A/P, 4%, 20) = $450,000 \times 0.0736 = $33,120/year$$</li>
+
+$$A = P \times (A/P, 4\%, 20) = \$450,000 \times 0.0736 = \$33,120/year$$</li>
 <li><strong>Calculate total annual cost ($C$)</strong>:
-$$C = A + M = $33,120 + $5,000 = $38,120/year$$</li>
+
+$$C = A + M = \$33,120 + \$5,000 = \$38,120/year$$</li>
 </ol>
-<h4 id="step-3-calculate-the-benefit-cost-bc-ratio">Step 3: Calculate the Benefit-Cost ($B/C$) Ratio</h4>
-<p>$$\text{B/C Ratio} = \frac{B}{C} = \frac{$707,000}{$38,120} = 18.55$$</p>
-<p><strong>Conclusion:</strong> The Benefit-Cost ratio is $18.55$. Since $18.55 \ge 1.0$, the roundabout conversion is highly justified economically.</p>
+<h4 id="step-3-calculate-the-benefit-cost--ratio">Step 3: Calculate the Benefit-Cost ($B/C$) Ratio</h4>
+$$\text{B/C Ratio} = \frac{B}{C} = \frac{\$707,000}{\$38,120} = 18.55$$<p><strong>Conclusion:</strong> The Benefit-Cost ratio is $18.55$. Since $18.55 \ge 1.0$, the roundabout conversion is highly justified economically.</p>
 <hr>
 <h2 id="references-and-standards">References and Standards</h2>
 <ul>

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="ADA Curb Ramps and Accessible Routes">
     <meta property="og:description" content="ADA Curb Ramps and Accessible Routes Accessibility in the public right-of-way is governed by the Americans with Disabilities Act (ADA) Standards for Accessible …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="ADA Curb Ramps and Accessible Routes">
     <meta name="twitter:description" content="ADA Curb Ramps and Accessible Routes Accessibility in the public right-of-way is governed by the Americans with Disabilities Act (ADA) Standards for Accessible …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-14/102-ada-curb-ramps-and-accessible-routes/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-14/102-ada-curb-ramps-and-accessible-routes/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-14/102-ada-curb-ramps-and-accessible-routes/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -245,13 +259,13 @@ gtag('config', 'G-1WZSE8DHZ9');
   <tbody>
       <tr>
           <td><strong>Max Ramp Running Slope</strong></td>
-          <td><strong>1:12</strong> ($8.33%$)</td>
-          <td><strong>1:12</strong> ($8.33%$) (Ramps) / Roadway grade (Sidewalks)</td>
+          <td><strong>1:12</strong> ($8.33\%$)</td>
+          <td><strong>1:12</strong> ($8.33\%$) (Ramps) / Roadway grade (Sidewalks)</td>
       </tr>
       <tr>
           <td><strong>Max Ramp Cross Slope</strong></td>
-          <td><strong>1:50</strong> ($2.0%$)</td>
-          <td><strong>1:50</strong> ($2.0%$)</td>
+          <td><strong>1:50</strong> ($2.0\%$)</td>
+          <td><strong>1:50</strong> ($2.0\%$)</td>
       </tr>
       <tr>
           <td><strong>Min Clear Width</strong></td>
@@ -270,8 +284,8 @@ gtag('config', 'G-1WZSE8DHZ9');
       </tr>
       <tr>
           <td><strong>Max Landing Slope (any direction)</strong></td>
-          <td><strong>1:50</strong> ($2.0%$)</td>
-          <td><strong>1:50</strong> ($2.0%$)</td>
+          <td><strong>1:50</strong> ($2.0\%$)</td>
+          <td><strong>1:50</strong> ($2.0\%$)</td>
       </tr>
   </tbody>
 </table>
@@ -295,9 +309,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>An engineer is designing a curb ramp to connect a sidewalk to a street level crosswalk.</p>
 <ul>
 <li>The vertical elevation difference between the sidewalk and the street is $\Delta z = 18.0\text{ inches}$.</li>
-<li>The sidewalk has a cross slope of $1.5%$.</li>
-<li>The ramp is to be constructed with a running slope of $1:14$ ($7.14%$) to provide a safety margin under the maximum $1:12$ limit.</li>
-<li>Due to space constraints, the ramp must be split into two runs with a flat landing in between. The landing is $5.0\text{ ft} \times 5.0\text{ ft}$ with a slope of $0.0%$.</li>
+<li>The sidewalk has a cross slope of $1.5\%$.</li>
+<li>The ramp is to be constructed with a running slope of $1:14$ ($7.14\%$) to provide a safety margin under the maximum $1:12$ limit.</li>
+<li>Due to space constraints, the ramp must be split into two runs with a flat landing in between. The landing is $5.0\text{ ft} \times 5.0\text{ ft}$ with a slope of $0.0\%$.</li>
 </ul>
 <p><strong>1. Calculate the total horizontal length of the ramp runs (excluding the landing) required to overcome the $18.0\text{-inch}$ vertical change.</strong>
 <strong>2. Verify if a landing is required, and explain the rise limit constraint.</strong></p>
@@ -305,27 +319,30 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h4 id="step-1-convert-units">Step 1: Convert units</h4>
 <ul>
 <li>Vertical rise:
+
 $$\Delta z = 18.0\text{ inches} = 1.5\text{ feet}$$</li>
 <li>Target running slope ($S$):
+
 $$S = \frac{1}{14} \approx 0.0714\text{ ft/ft}$$</li>
 </ul>
-<h4 id="step-2-calculate-the-horizontal-length-l-of-the-ramp-runs">Step 2: Calculate the horizontal length ($L$) of the ramp runs</h4>
+<h4 id="step-2-calculate-the-horizontal-length--of-the-ramp-runs">Step 2: Calculate the horizontal length ($L$) of the ramp runs</h4>
 <p>Using the relation:
-$$S = \frac{\text{Rise}}{\text{Run}} \implies \text{Run} = \frac{\text{Rise}}{S}$$
-$$L = \frac{1.5\text{ ft}}{0.0714\text{ ft/ft}} = 21.0\text{ feet}$$</p>
-<p><em>Note:</em> If the ramp was built as a single continuous run, the total run length would be $21.0\text{ feet}$.</p>
+</p>
+$$S = \frac{\text{Rise}}{\text{Run}} \implies \text{Run} = \frac{\text{Rise}}{S}$$<p>
+</p>
+$$L = \frac{1.5\text{ ft}}{0.0714\text{ ft/ft}} = 21.0\text{ feet}$$<p><em>Note:</em> If the ramp was built as a single continuous run, the total run length would be $21.0\text{ feet}$.</p>
 <h4 id="step-3-check-landing-requirements-and-rise-constraints">Step 3: Check landing requirements and rise constraints</h4>
 <ul>
 <li>Under ADA standards, the maximum vertical rise for a single ramp run is <strong>30 inches</strong> ($2.5\text{ feet}$).</li>
-<li>Since our total rise is $\Delta z = 18.0\text{ inches} &lt; 30\text{ inches}$, a landing is <strong>not</strong> legally required solely due to the rise limit.</li>
+<li>Since our total rise is $\Delta z = 18.0\text{ inches} < 30\text{ inches}$, a landing is <strong>not</strong> legally required solely due to the rise limit.</li>
 <li>However, if the site layout requires a change of direction, a landing is required. If a landing is placed, the landing does not add to the rise, but it does add $5.0\text{ feet}$ to the overall footprint length of the facility (total footprint = $21.0\text{ ft} + 5.0\text{ ft} = 26.0\text{ ft}$).</li>
 </ul>
 <hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>
 <ul>
-<li><strong>Confusing running slope and cross slope:</strong> A ramp can have up to $8.33%$ running slope but only $2.0%$ cross slope. Using the $8.33%$ value for cross slope is a major design violation and a common exam trap.</li>
+<li><strong>Confusing running slope and cross slope:</strong> A ramp can have up to $8.33\%$ running slope but only $2.0\%$ cross slope. Using the $8.33\%$ value for cross slope is a major design violation and a common exam trap.</li>
 <li><strong>Rise limit:</strong> Always check the vertical rise limit of 30 inches. If a problem states the elevation change is 40 inches and asks for the minimum number of landings, you must divide the rise into at least two runs with at least one intermediate landing (since a single run cannot exceed 30 inches of rise).</li>
-<li><strong>Slope ratios vs. Percentages:</strong> Make sure you can convert easily: $1:12 \approx 8.33%$, $1:20 = 5.0%$, $1:50 = 2.0%$.</li>
+<li><strong>Slope ratios vs. Percentages:</strong> Make sure you can convert easily: $1:12 \approx 8.33\%$, $1:20 = 5.0\%$, $1:50 = 2.0\%$.</li>
 </ul>
 
         

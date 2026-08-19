@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Crash Modification Factors">
     <meta property="og:description" content="Crash Modification Factors A Crash Modification Factor (CMF) is a multiplicative factor used to compute the expected number of crashes after implementing a …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Crash Modification Factors">
     <meta name="twitter:description" content="Crash Modification Factors A Crash Modification Factor (CMF) is a multiplicative factor used to compute the expected number of crashes after implementing a …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-5/34-crash-modification-factors/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-5/34-crash-modification-factors/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-5/34-crash-modification-factors/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -235,18 +249,17 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="cmf-vs-crf">CMF vs. CRF</h2>
 <p>While a CMF represents the multiplier for expected crashes, the Crash Reduction Factor (CRF) represents the percentage reduction in crashes:</p>
-<p>$$\text{CRF} = 1 - \text{CMF}$$
-$$\text{CRF} (%) = (1 - \text{CMF}) \times 100%$$</p>
-<ul>
-<li><strong>CMF &lt; 1.0</strong>: Indicates the countermeasure is expected to <strong>decrease</strong> crashes. For example, a CMF of $0.80$ corresponds to a CRF of $20%$ (crashes decrease by $20%$).</li>
+$$\text{CRF} = 1 - \text{CMF}$$<p>
+</p>
+$$\text{CRF} (\%) = (1 - \text{CMF}) \times 100\%$$<ul>
+<li><strong>CMF &lt; 1.0</strong>: Indicates the countermeasure is expected to <strong>decrease</strong> crashes. For example, a CMF of $0.80$ corresponds to a CRF of $20\%$ (crashes decrease by $20\%$).</li>
 <li><strong>CMF = 1.0</strong>: Indicates the countermeasure has <strong>no effect</strong> on safety.</li>
-<li><strong>CMF &gt; 1.0</strong>: Indicates the countermeasure is expected to <strong>increase</strong> crashes. For example, a CMF of $1.15$ corresponds to a CRF of $-15%$ (crashes increase by $15%$).</li>
+<li><strong>CMF &gt; 1.0</strong>: Indicates the countermeasure is expected to <strong>increase</strong> crashes. For example, a CMF of $1.15$ corresponds to a CRF of $-15\%$ (crashes increase by $15\%$).</li>
 </ul>
 <hr>
 <h2 id="single-cmf-application">Single CMF Application</h2>
 <p>To find the expected crash frequency after implementing a safety treatment:</p>
-<p>$$N_{\text{expected, treated}} = N_{\text{observed, untreated}} \times \text{CMF}$$</p>
-<p>Where:</p>
+$$N_{\text{expected, treated}} = N_{\text{observed, untreated}} \times \text{CMF}$$<p>Where:</p>
 <ul>
 <li>$N_{\text{expected, treated}}$ = expected annual crash frequency after treatment</li>
 <li>$N_{\text{observed, untreated}}$ = baseline (observed) annual crash frequency before treatment</li>
@@ -255,23 +268,26 @@ $$\text{CRF} (%) = (1 - \text{CMF}) \times 100%$$</p>
 <hr>
 <h2 id="combining-multiple-cmfs">Combining Multiple CMFs</h2>
 <p>When multiple independent safety countermeasures are implemented at a single location, their cumulative effect is estimated by multiplying the individual CMFs:</p>
-<p>$$\text{CMF}_{\text{combined}} = \text{CMF}_1 \times \text{CMF}_2 \times \dots \times \text{CMF}_n$$</p>
-<p>The expected crash frequency after implementing all treatments is:
-$$N_{\text{expected, treated}} = N_{\text{observed, untreated}} \times \text{CMF}_{\text{combined}}$$</p>
-<h3 id="hsm-caveat-on-combining-cmfs">HSM Caveat on Combining CMFs</h3>
+$$\text{CMF}_{\text{combined}} = \text{CMF}_1 \times \text{CMF}_2 \times \dots \times \text{CMF}_n$$<p>The expected crash frequency after implementing all treatments is:
+</p>
+$$N_{\text{expected, treated}} = N_{\text{observed, untreated}} \times \text{CMF}_{\text{combined}}$$<h3 id="hsm-caveat-on-combining-cmfs">HSM Caveat on Combining CMFs</h3>
 <p>Multiplying CMFs assumes that the effects of the countermeasures are completely independent. In reality, implementing multiple treatments at the same site often leads to diminishing returns. Overestimating crash reduction is a common error. However, for the NCEES PE exam, direct multiplication is the standard method unless the problem specifies an adjustment factor.</p>
 <hr>
 <h2 id="safety-benefit-assessment-monetary-value">Safety Benefit Assessment (Monetary Value)</h2>
 <p>To evaluate the economic viability of a countermeasure, we calculate the annual monetary benefit from crash reduction:</p>
 <ol>
 <li><strong>Calculate the Annual Crash Reduction ($\Delta N$)</strong>:
-$$\Delta N = N_{\text{observed}} \times \left(1 - \text{CMF}<em>{\text{combined}}\right) = N</em>{\text{observed}} \times \text{CRF}_{\text{combined}}$$</li>
+
+$$\Delta N = N_{\text{observed}} \times \left(1 - \text{CMF}_{\text{combined}}\right) = N_{\text{observed}} \times \text{CRF}_{\text{combined}}$$</li>
 <li><strong>Apply Unit Crash Costs by Severity</strong>:
 If crash data is split by severity (e.g., Fatal/Injury vs. Property Damage Only), calculate the reduction for each category separately:
-$$\Delta N_{\text{FI}} = N_{\text{FI}} \times \left(1 - \text{CMF}<em>{\text{FI}}\right)$$
-$$\Delta N</em>{\text{PDO}} = N_{\text{PDO}} \times \left(1 - \text{CMF}_{\text{PDO}}\right)$$</li>
+
+$$\Delta N_{\text{FI}} = N_{\text{FI}} \times \left(1 - \text{CMF}_{\text{FI}}\right)$$
+
+$$\Delta N_{\text{PDO}} = N_{\text{PDO}} \times \left(1 - \text{CMF}_{\text{PDO}}\right)$$</li>
 <li><strong>Calculate the Annual Benefit ($B$)</strong>:
-$$\text{Annual Benefit (B)} = \left(\Delta N_{\text{FI}} \times \text{Cost}<em>{\text{FI}}\right) + \left(\Delta N</em>{\text{PDO}} \times \text{Cost}_{\text{PDO}}\right)$$</li>
+
+$$\text{Annual Benefit (B)} = \left(\Delta N_{\text{FI}} \times \text{Cost}_{\text{FI}}\right) + \left(\Delta N_{\text{PDO}} \times \text{Cost}_{\text{PDO}}\right)$$</li>
 </ol>
 <p>This annual benefit can then be compared to the annualized cost of the countermeasures to perform a Benefit-Cost ($B/C$) analysis.</p>
 <hr>
@@ -279,10 +295,11 @@ $$\text{Annual Benefit (B)} = \left(\Delta N_{\text{FI}} \times \text{Cost}<em>{
 <ol>
 <li>
 <p><strong>Adding CRFs instead of Multiplying CMFs</strong>:
-If Countermeasure A has a CRF of $30%$ ($\text{CMF} = 0.70$) and Countermeasure B has a CRF of $20%$ ($\text{CMF} = 0.80$), a common trap is adding the CRFs to get a $50%$ reduction. This is mathematically incorrect. You must convert to CMFs, multiply them, and then convert back to CRF:
-$$\text{CMF}<em>{\text{combined}} = 0.70 \times 0.80 = 0.56$$
-$$\text{CRF}</em>{\text{combined}} = 1 - 0.56 = 0.44 \text{ or } 44% \text{ (not 50%)}$$</p>
-</li>
+If Countermeasure A has a CRF of $30\%$ ($\text{CMF} = 0.70$) and Countermeasure B has a CRF of $20\%$ ($\text{CMF} = 0.80$), a common trap is adding the CRFs to get a $50\%$ reduction. This is mathematically incorrect. You must convert to CMFs, multiply them, and then convert back to CRF:
+</p>
+$$\text{CMF}_{\text{combined}} = 0.70 \times 0.80 = 0.56$$<p>
+</p>
+$$\text{CRF}_{\text{combined}} = 1 - 0.56 = 0.44 \text{ or } 44\% \text{ (not 50%)}$$</li>
 <li>
 <p><strong>Applying a CMF to the Wrong Crash Type</strong>:
 CMFs are often specific to certain crash types or severities. For example, &ldquo;installing center rumble strips&rdquo; might have a CMF of $0.60$ for head-on crashes, but a CMF of $1.00$ for rear-end crashes. Ensure you only apply the CMF to the crash subset it is designed for. Do not multiply the <em>total</em> crash count by a CMF that only applies to run-off-road crashes.</p>
@@ -310,16 +327,16 @@ Ensure crash counts and cost benefits are on the same time scale (usually annual
 <ol>
 <li>
 <p><strong>Calculate the combined CMF</strong>:
-$$\text{CMF}_{\text{combined}} = \text{CMF}_1 \times \text{CMF}_2 = 0.85 \times 0.90 = 0.765$$</p>
-</li>
+</p>
+$$\text{CMF}_{\text{combined}} = \text{CMF}_1 \times \text{CMF}_2 = 0.85 \times 0.90 = 0.765$$</li>
 <li>
 <p><strong>Calculate the expected crash frequency</strong>:
-$$N_{\text{expected}} = N_{\text{observed}} \times \text{CMF}_{\text{combined}} = 24.0 \times 0.765 = 18.36 \text{ crashes/year}$$</p>
-</li>
+</p>
+$$N_{\text{expected}} = N_{\text{observed}} \times \text{CMF}_{\text{combined}} = 24.0 \times 0.765 = 18.36 \text{ crashes/year}$$</li>
 <li>
 <p><strong>Calculate the combined CRF</strong>:
-$$\text{CRF}<em>{\text{combined}} = 1 - \text{CMF}</em>{\text{combined}} = 1 - 0.765 = 0.235 \text{ or } 23.5%$$</p>
-</li>
+</p>
+$$\text{CRF}_{\text{combined}} = 1 - \text{CMF}_{\text{combined}} = 1 - 0.765 = 0.235 \text{ or } 23.5\%$$</li>
 </ol>
 <hr>
 <h3 id="worked-example-2-safety-benefit-analysis">Worked Example 2: Safety Benefit Analysis</h3>
@@ -328,24 +345,26 @@ $$\text{CRF}<em>{\text{combined}} = 1 - \text{CMF}</em>{\text{combined}} = 1 - 0
 <li>$\text{CMF}_{\text{inj}} = 0.82$ for injury crashes</li>
 <li>$\text{CMF}_{\text{PDO}} = 0.88$ for PDO crashes</li>
 </ul>
-<p>The average societal cost of an injury crash is $$120,000$, and the average cost of a PDO crash is $$10,000$.</p>
+<p>The average societal cost of an injury crash is $\$120,000$, and the average cost of a PDO crash is $$10,000$.</p>
 <p><strong>Calculate the expected annual monetary benefit ($B$) of this project.</strong></p>
 <h4 id="solution-1">Solution:</h4>
 <ol>
 <li>
 <p><strong>Calculate the annual reduction in injury crashes ($\Delta N_{\text{inj}}$)</strong>:
-$$\Delta N_{\text{inj}} = N_{\text{observed, inj}} \times \left(1 - \text{CMF}_{\text{inj}}\right) = 8.0 \times (1 - 0.82) = 8.0 \times 0.18 = 1.44 \text{ crashes/year}$$</p>
-</li>
+</p>
+$$\Delta N_{\text{inj}} = N_{\text{observed, inj}} \times \left(1 - \text{CMF}_{\text{inj}}\right) = 8.0 \times (1 - 0.82) = 8.0 \times 0.18 = 1.44 \text{ crashes/year}$$</li>
 <li>
 <p><strong>Calculate the annual reduction in PDO crashes ($\Delta N_{\text{PDO}}$)</strong>:
-$$\Delta N_{\text{PDO}} = N_{\text{observed, PDO}} \times \left(1 - \text{CMF}_{\text{PDO}}\right) = 15.0 \times (1 - 0.88) = 15.0 \times 0.12 = 1.80 \text{ crashes/year}$$</p>
-</li>
+</p>
+$$\Delta N_{\text{PDO}} = N_{\text{observed, PDO}} \times \left(1 - \text{CMF}_{\text{PDO}}\right) = 15.0 \times (1 - 0.88) = 15.0 \times 0.12 = 1.80 \text{ crashes/year}$$</li>
 <li>
 <p><strong>Calculate the annual monetary benefit ($B$)</strong>:
-$$\text{Benefit (B)} = \left(\Delta N_{\text{inj}} \times \text{Cost}<em>{\text{inj}}\right) + \left(\Delta N</em>{\text{PDO}} \times \text{Cost}_{\text{PDO}}\right)$$
-$$\text{Benefit (B)} = (1.44 \times $120,000) + (1.80 \times $10,000)$$
-$$\text{Benefit (B)} = $172,800 + $18,000 = $190,800 \text{ per year}$$</p>
-</li>
+</p>
+$$\text{Benefit (B)} = \left(\Delta N_{\text{inj}} \times \text{Cost}_{\text{inj}}\right) + \left(\Delta N_{\text{PDO}} \times \text{Cost}_{\text{PDO}}\right)$$<p>
+</p>
+$$\text{Benefit (B)} = (1.44 \times \$120,000) + (1.80 \times \$10,000)$$<p>
+</p>
+$$\text{Benefit (B)} = \$172,800 + \$18,000 = \$190,800 \text{ per year}$$</li>
 </ol>
 <hr>
 <h2 id="references-and-standards">References and Standards</h2>

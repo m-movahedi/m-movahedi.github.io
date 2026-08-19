@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Traffic Impact Studies">
     <meta property="og:description" content="Traffic Impact Studies A Traffic Impact Study (TIS) is a specialized engineering study that evaluates the effects of a proposed land development on the …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Traffic Impact Studies">
     <meta name="twitter:description" content="Traffic Impact Studies A Traffic Impact Study (TIS) is a specialized engineering study that evaluates the effects of a proposed land development on the …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-3/19-traffic-impact-studies/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-3/19-traffic-impact-studies/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-3/19-traffic-impact-studies/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -262,10 +276,8 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="projecting-background-traffic">Projecting Background Traffic</h2>
 <p>Background traffic at the horizon year is modeled using either linear or compound growth models.</p>
 <h3 id="1-linear-growth-model">1. Linear Growth Model:</h3>
-<p>$$V_{\text{horizon}} = V_{\text{existing}} \times (1 + r \times n)$$</p>
-<h3 id="2-compound-growth-model">2. Compound Growth Model:</h3>
-<p>$$V_{\text{horizon}} = V_{\text{existing}} \times (1 + r)^n$$</p>
-<p>Where:</p>
+$$V_{\text{horizon}} = V_{\text{existing}} \times (1 + r \times n)$$<h3 id="2-compound-growth-model">2. Compound Growth Model:</h3>
+$$V_{\text{horizon}} = V_{\text{existing}} \times (1 + r)^n$$<p>Where:</p>
 <ul>
 <li>$V_{\text{existing}}$ = current traffic volume</li>
 <li>$r$ = annual growth rate (expressed as a decimal)</li>
@@ -277,9 +289,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 A developer plans to build an office park that will generate $400\text{ vehicles/hour}$ during the PM peak hour (inbound and outbound combined). The study focuses on an adjacent signalized intersection.</p>
 <ul>
 <li><strong>Existing Eastbound Left-Turn (EBLT) Volume:</strong> $150 \text{ vehicles/hour}$</li>
-<li><strong>Annual Background Growth Rate:</strong> $3.0%$ (compounded annually)</li>
+<li><strong>Annual Background Growth Rate:</strong> $3.0\%$ (compounded annually)</li>
 <li><strong>TIS Horizon Year:</strong> $5\text{ years}$ from today</li>
-<li><strong>Trip Distribution:</strong> Market analysis indicates that $35%$ of the site-generated traffic will perform the Eastbound Left-Turn (EBLT) movement at the intersection.</li>
+<li><strong>Trip Distribution:</strong> Market analysis indicates that $35\%$ of the site-generated traffic will perform the Eastbound Left-Turn (EBLT) movement at the intersection.</li>
 </ul>
 <p>Calculate:</p>
 <ol>
@@ -291,27 +303,31 @@ A developer plans to build an office park that will generate $400\text{ vehicles
 Apply the compound growth formula to the existing EBLT volume:</p>
 <ul>
 <li>$V_{\text{existing}} = 150 \text{ veh/hr}$</li>
-<li>$r = 3.0% = 0.03$</li>
+<li>$r = 3.0\% = 0.03$</li>
 <li>$n = 5 \text{ years}$
+
 $$V_{\text{No-Build}} = V_{\text{existing}} \times (1 + r)^n$$
+
 $$V_{\text{No-Build}} = 150 \times (1 + 0.03)^5 = 150 \times (1.03)^5 = 150 \times 1.1593 \approx 173.9 \text{ veh/hr}$$</li>
 </ul>
 <p>Rounding to the nearest whole vehicle:
-$$V_{\text{No-Build}} \approx 174 \text{ veh/hr}$$</p>
-<p><strong>Step 2: Calculate Site-Generated Trips Performing the EBLT Movement</strong><br>
+</p>
+$$V_{\text{No-Build}} \approx 174 \text{ veh/hr}$$<p><strong>Step 2: Calculate Site-Generated Trips Performing the EBLT Movement</strong><br>
 Determine how many office park trips will be added to this specific movement:</p>
 <ul>
 <li>$\text{Total Site Trips} = 400 \text{ veh/hr}$</li>
-<li>$\text{EBLT Split} = 35% = 0.35$
+<li>$\text{EBLT Split} = 35\% = 0.35$
+
 $$V_{\text{site-EBLT}} = 400 \times 0.35 = 140 \text{ veh/hr}$$</li>
 </ul>
 <p><strong>Step 3: Calculate the 5-Year Build Volume</strong><br>
 Add the site-generated EBLT trips to the projected No-Build EBLT volume:
-$$V_{\text{Build}} = V_{\text{No-Build}} + V_{\text{site-EBLT}}$$
-$$V_{\text{Build}} = 173.9 \text{ veh/hr} + 140 \text{ veh/hr} = 313.9 \text{ veh/hr}$$</p>
-<p>Rounding to the nearest whole vehicle:
-$$V_{\text{Build}} \approx 314 \text{ veh/hr}$$</p>
-<hr>
+</p>
+$$V_{\text{Build}} = V_{\text{No-Build}} + V_{\text{site-EBLT}}$$<p>
+</p>
+$$V_{\text{Build}} = 173.9 \text{ veh/hr} + 140 \text{ veh/hr} = 313.9 \text{ veh/hr}$$<p>Rounding to the nearest whole vehicle:
+</p>
+$$V_{\text{Build}} \approx 314 \text{ veh/hr}$$<hr>
 <h2 id="intersection-mitigation-decisions">Intersection Mitigation Decisions</h2>
 <p>A TIS is used to determine if mitigations are necessary. Standard triggers include:</p>
 <ul>

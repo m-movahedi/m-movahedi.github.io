@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Engineering Economics">
     <meta property="og:description" content="Engineering Economics Engineering economics evaluates the systematic worth of projects and alternatives. On the PE Civil Transportation exam, this topic is …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Engineering Economics">
     <meta name="twitter:description" content="Engineering Economics Engineering economics evaluates the systematic worth of projects and alternatives. On the PE Civil Transportation exam, this topic is …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-2/11-engineering-economics/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/11-engineering-economics/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-2/11-engineering-economics/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -312,29 +326,32 @@ An agency plans to upgrade a local intersection. The project has the following p
 <li>Year 3 (Major repaving): $45,000 (one-time)</li>
 <li>Year 5 (Salvage value / revenue): $80,000 (one-time inflow)</li>
 </ul>
-<p>Calculate the Net Present Value (NPV) of this project at an annual interest rate of $6%$.</p>
+<p>Calculate the Net Present Value (NPV) of this project at an annual interest rate of $6\%$.</p>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Write down the Net Present Value equation</strong><br>
 We will treat costs as negative values and benefits/inflows as positive values.
-$$NPV = -P_{\text{initial}} - PW_{\text{maintenance}} - PW_{\text{repaving}} + PW_{\text{salvage}}$$</p>
-<p><strong>Step 2: Identify and calculate interest factors for $i = 6%$ and appropriate $n$</strong></p>
+</p>
+$$NPV = -P_{\text{initial}} - PW_{\text{maintenance}} - PW_{\text{repaving}} + PW_{\text{salvage}}$$<p><strong>Step 2: Identify and calculate interest factors for $i = 6\%$ and appropriate $n$</strong></p>
 <ul>
-<li>For annual maintenance: $n = 5$ years. Use $(P/A, 6%, 5)$.
-$$(P/A, 6%, 5) = \frac{(1 + 0.06)^5 - 1}{0.06(1 + 0.06)^5} = 4.2124$$</li>
-<li>For Year 3 repaving: $n = 3$ years. Use $(P/F, 6%, 3)$.
-$$(P/F, 6%, 3) = (1 + 0.06)^{-3} = 0.8396$$</li>
-<li>For Year 5 salvage: $n = 5$ years. Use $(P/F, 6%, 5)$.
-$$(P/F, 6%, 5) = (1 + 0.06)^{-5} = 0.7473$$</li>
+<li>For annual maintenance: $n = 5$ years. Use $(P/A, 6\%, 5)$.
+
+$$(P/A, 6\%, 5) = \frac{(1 + 0.06)^5 - 1}{0.06(1 + 0.06)^5} = 4.2124$$</li>
+<li>For Year 3 repaving: $n = 3$ years. Use $(P/F, 6\%, 3)$.
+
+$$(P/F, 6\%, 3) = (1 + 0.06)^{-3} = 0.8396$$</li>
+<li>For Year 5 salvage: $n = 5$ years. Use $(P/F, 6\%, 5)$.
+
+$$(P/F, 6\%, 5) = (1 + 0.06)^{-5} = 0.7473$$</li>
 </ul>
 <p><strong>Step 3: Compute Present Worths</strong></p>
 <ul>
-<li>$PW_{\text{maintenance}} = $12,000 \times 4.2124 = $50,548.80$</li>
-<li>$PW_{\text{repaving}} = $45,000 \times 0.8396 = $37,782.00$</li>
-<li>$PW_{\text{salvage}} = $80,000 \times 0.7473 = $59,784.00$</li>
+<li>$PW_{\text{maintenance}} = \$12,000 \times 4.2124 = $50,548.80$</li>
+<li>$PW_{\text{repaving}} = \$45,000 \times 0.8396 = $37,782.00$</li>
+<li>$PW_{\text{salvage}} = \$80,000 \times 0.7473 = $59,784.00$</li>
 </ul>
 <p><strong>Step 4: Calculate Net Present Value</strong>
-$$NPV = -$450,000 - $50,548.80 - $37,782.00 + $59,784.00 = -$478,546.80$$</p>
-<hr>
+</p>
+$$NPV = -\$450,000 - \$50,548.80 - \$37,782.00 + \$59,784.00 = -\$478,546.80$$<hr>
 <h2 id="arithmetic-gradient-cash-flows">Arithmetic Gradient Cash Flows</h2>
 <p>Arithmetic gradients increase or decrease by a constant amount ($G$) each period.
 <strong>Important Convention:</strong> The gradient $G$ begins at the end of <strong>Period 2</strong>, not Period 1. At Period 1, the cash flow is simply the base annuity amount ($A_1$).</p>
@@ -345,44 +362,48 @@ t = 3:  A_1 + 2G
 ...
 t = n:  A_1 + (n-1)G
 </code></pre><p>To find the Present Worth of an arithmetic gradient cash flow:
-$$P_{\text{total}} = A_1(P/A, i, n) \pm G(P/G, i, n)$$</p>
-<hr>
+</p>
+$$P_{\text{total}} = A_1(P/A, i, n) \pm G(P/G, i, n)$$<hr>
 <h2 id="worked-example-arithmetic-gradient">Worked Example: Arithmetic Gradient</h2>
 <p><strong>Problem:</strong><br>
-A municipal parking garage generates $100,000 in revenue in Year 1. Due to structural aging and competitor garages, revenue is expected to decrease by $8,000 each year starting in Year 2 and continuing through Year 10. Using an interest rate of $8%$ per year, calculate the equivalent Present Worth of this garage&rsquo;s revenue over the 10-year period.</p>
+A municipal parking garage generates $100,000 in revenue in Year 1. Due to structural aging and competitor garages, revenue is expected to decrease by $8,000 each year starting in Year 2 and continuing through Year 10. Using an interest rate of $8\%$ per year, calculate the equivalent Present Worth of this garage&rsquo;s revenue over the 10-year period.</p>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Identify Parameters</strong></p>
 <ul>
 <li>Base annuity ($A_1$) = $100,000</li>
 <li>Gradient ($G$) = -$8,000 (negative because it is a decrease)</li>
-<li>$i = 8% = 0.08$</li>
+<li>$i = 8\% = 0.08$</li>
 <li>$n = 10$</li>
 </ul>
 <p><strong>Step 2: Calculate Interest Factors (using algebraic formulas or tables)</strong></p>
 <ul>
-<li>$(P/A, 8%, 10)$:
-$$(P/A, 8%, 10) = \frac{(1 + 0.08)^{10} - 1}{0.08(1 + 0.08)^{10}} = 6.7101$$</li>
-<li>$(P/G, 8%, 10)$:
-$$(P/G, 8%, 10) = \frac{(1 + 0.08)^{10} - 0.08(10) - 1}{0.08^2(1 + 0.08)^{10}} = 25.9768$$</li>
+<li>$(P/A, 8\%, 10)$:
+
+$$(P/A, 8\%, 10) = \frac{(1 + 0.08)^{10} - 1}{0.08(1 + 0.08)^{10}} = 6.7101$$</li>
+<li>$(P/G, 8\%, 10)$:
+
+$$(P/G, 8\%, 10) = \frac{(1 + 0.08)^{10} - 0.08(10) - 1}{0.08^2(1 + 0.08)^{10}} = 25.9768$$</li>
 </ul>
 <p><strong>Step 3: Calculate Present Worth</strong>
-$$P_{\text{total}} = A_1(P/A, 8%, 10) - G(P/G, 8%, 10)$$
-$$P_{\text{total}} = $100,000 \times 6.7101 - $8,000 \times 25.9768$$
-$$P_{\text{total}} = $671,010 - $207,814.40 = $463,195.60$$</p>
-<hr>
+</p>
+$$P_{\text{total}} = A_1(P/A, 8\%, 10) - G(P/G, 8\%, 10)$$<p>
+</p>
+$$P_{\text{total}} = \$100,000 \times 6.7101 - \$8,000 \times 25.9768$$<p>
+</p>
+$$P_{\text{total}} = \$671,010 - \$207,814.40 = \$463,195.60$$<hr>
 <h2 id="nominal-and-effective-interest-rates">Nominal and Effective Interest Rates</h2>
 <p>When interest compounding frequency does not match the payment frequency, you must calculate the effective interest rate.</p>
 <ul>
 <li>
-<p><strong>Nominal Interest Rate ($r$):</strong> The stated annual rate without compounding considerations (e.g., $12%$ per year, compounded monthly).</p>
+<p><strong>Nominal Interest Rate ($r$):</strong> The stated annual rate without compounding considerations (e.g., $12\%$ per year, compounded monthly).</p>
 </li>
 <li>
 <p><strong>Effective Interest Rate per Period ($i$):</strong> The actual interest earned per period.</p>
 </li>
 <li>
 <p><strong>Effective Annual Interest Rate ($i_e$):</strong>
-$$i_e = \left(1 + \frac{r}{m}\right)^m - 1$$</p>
-<p>Where:</p>
+</p>
+$$i_e = \left(1 + \frac{r}{m}\right)^m - 1$$<p>Where:</p>
 <ul>
 <li>$r$ = nominal annual interest rate</li>
 <li>$m$ = number of compounding periods per year</li>
@@ -393,7 +414,7 @@ $$i_e = \left(1 + \frac{r}{m}\right)^m - 1$$</p>
 <hr>
 <h2 id="worked-example-nominal-vs-effective-interest">Worked Example: Nominal vs. Effective Interest</h2>
 <p><strong>Problem:</strong><br>
-A contractor borrows $50,000 to purchase a skid steer. The loan specifies an interest rate of $12%$ per year, compounded quarterly.</p>
+A contractor borrows $50,000 to purchase a skid steer. The loan specifies an interest rate of $12\%$ per year, compounded quarterly.</p>
 <ol>
 <li>Determine the effective annual interest rate.</li>
 <li>If the loan is paid off in a single lump-sum payment at the end of 3 years, calculate the required payoff amount.</li>
@@ -401,25 +422,28 @@ A contractor borrows $50,000 to purchase a skid steer. The loan specifies an int
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Effective Annual Interest Rate ($i_e$)</strong></p>
 <ul>
-<li>$r = 12% = 0.12$</li>
+<li>$r = 12\% = 0.12$</li>
 <li>$m = 4$ compounding periods per year (quarterly)
-$$i_e = \left(1 + \frac{0.12}{4}\right)^4 - 1 = (1 + 0.03)^4 - 1 = 1.1255 - 1 = 0.1255 \text{ or } 12.55%$$</li>
+
+$$i_e = \left(1 + \frac{0.12}{4}\right)^4 - 1 = (1 + 0.03)^4 - 1 = 1.1255 - 1 = 0.1255 \text{ or } 12.55\%$$</li>
 </ul>
 <p><strong>Step 2: Calculate Payoff Amount after 3 Years ($F$)</strong>
 We can solve this in two equivalent ways:</p>
 <p><em>Method A: Using annual interest periods</em></p>
 <ul>
-<li>$P = $50,000$</li>
-<li>$i = i_e = 12.55% = 0.1255$</li>
+<li>$P = \$50,000$</li>
+<li>$i = i_e = 12.55\% = 0.1255$</li>
 <li>$n = 3$ years
-$$F = P(1 + i_e)^n = $50,000(1 + 0.1255)^3 = $50,000(1.4258) \approx $71,288.04$$</li>
+
+$$F = P(1 + i_e)^n = \$50,000(1 + 0.1255)^3 = \$50,000(1.4258) \approx \$71,288.04$$</li>
 </ul>
 <p><em>Method B: Using quarterly interest periods (simpler and safer)</em></p>
 <ul>
-<li>$P = $50,000$</li>
-<li>$i_{\text{quarter}} = \frac{r}{m} = \frac{12%}{4} = 3%$ per quarter</li>
+<li>$P = \$50,000$</li>
+<li>$i_{\text{quarter}} = \frac{r}{m} = \frac{12\%}{4} = 3\%$ per quarter</li>
 <li>$n_{\text{quarters}} = 3 \text{ years} \times 4 \text{ quarters/year} = 12$ quarters
-$$F = P(1 + i_{\text{quarter}})^{n_{\text{quarters}}} = $50,000(1 + 0.03)^{12} = $50,000(1.4258) \approx $71,288.04$$</li>
+
+$$F = P(1 + i_{\text{quarter}})^{n_{\text{quarters}}} = \$50,000(1 + 0.03)^{12} = \$50,000(1.4258) \approx \$71,288.04$$</li>
 </ul>
 <hr>
 <h2 id="crucial-pitfalls-and-exam-traps">Crucial Pitfalls and Exam Traps</h2>
@@ -427,7 +451,7 @@ $$F = P(1 + i_{\text{quarter}})^{n_{\text{quarters}}} = $50,000(1 + 0.03)^{12} =
 <li><strong>Gradient Start Time:</strong> Remember that the gradient factor $G$ represents the incremental change starting at $t=2$. If a cash flow increases from Year 1 to Year 10, Year 1 is the base annuity $A$, and Year 2 is $A + G$. Do not offset the gradient by an extra year.</li>
 <li><strong>Compounding Frequency Match:</strong> Always verify that the interest rate period matches the payment period. If you have monthly payments, you must use a monthly interest rate. Do not use an annual rate with monthly payments unless you convert the interest rate to an effective monthly rate first.</li>
 <li><strong>Salvage Value Sign:</strong> Salvage value is an inflow (positive value when finding NPV). Do not subtract it from the NPV as if it were a disposal cost, unless it is specified as a negative cost (e.g., cleanup fee).</li>
-<li><strong>Rounding Interest Factors:</strong> When using tables, interpolating intermediate interest rates (e.g., $6.5%$) can lead to small discrepancies. If possible, calculate factors directly using formulas to verify exact answers.</li>
+<li><strong>Rounding Interest Factors:</strong> When using tables, interpolating intermediate interest rates (e.g., $6.5\%$) can lead to small discrepancies. If possible, calculate factors directly using formulas to verify exact answers.</li>
 </ul>
 
         

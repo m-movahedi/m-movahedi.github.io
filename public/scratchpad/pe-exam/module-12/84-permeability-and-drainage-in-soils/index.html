@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Permeability and Drainage in Soils">
     <meta property="og:description" content="Permeability and Drainage in Soils Water flow through soil is a key parameter in civil engineering design. It affects seepage under dams, stability of slopes, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Permeability and Drainage in Soils">
     <meta name="twitter:description" content="Permeability and Drainage in Soils Water flow through soil is a key parameter in civil engineering design. It affects seepage under dams, stability of slopes, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/84-permeability-and-drainage-in-soils/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -234,12 +248,12 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="1-darcys-law">1. Darcy&rsquo;s Law</h2>
 <p>Water flows through soil pores due to differences in total energy (hydraulic head). The rate of water flow is governed by Darcy&rsquo;s Law, which states that flow velocity is directly proportional to the hydraulic gradient.</p>
-<p>$$q = k \cdot i \cdot A$$</p>
-<p>Where:</p>
+$$q = k \cdot i \cdot A$$<p>Where:</p>
 <ul>
 <li>$q = \text{flow rate (discharge volume per unit time, e.g., ft}^3/\text{sec or m}^3/\text{sec)}$</li>
 <li>$k = \text{hydraulic conductivity (permeability, e.g., ft/day, cm/sec, m/s)}$</li>
 <li>$i = \text{hydraulic gradient}$ (dimensionless head loss per unit distance of flow path):
+
 $$i = \frac{\Delta h}{L}$$
 <em>(where $\Delta h$ is the total head loss across the soil length $L$)</em></li>
 <li>$A = \text{cross-sectional area of soil perpendicular to the direction of flow}$</li>
@@ -247,8 +261,10 @@ $$i = \frac{\Delta h}{L}$$
 <h3 id="discharge-velocity-vs-seepage-velocity">Discharge Velocity vs. Seepage Velocity</h3>
 <ul>
 <li><strong>Discharge Velocity ($v$):</strong> The apparent velocity of flow calculated over the gross cross-sectional area of the soil:
+
 $$v = \frac{q}{A} = k \cdot i$$</li>
 <li><strong>Seepage Velocity ($v_s$):</strong> The actual velocity of water as it flows through the pore channels. Since water can only flow through the void spaces, the seepage velocity is always greater than the discharge velocity:
+
 $$v_s = \frac{v}{n} = v \cdot \left(\frac{1+e}{e}\right)$$
 Where:
 <ul>
@@ -270,11 +286,11 @@ Where:
       ============================                 ============================
 </code></pre><h3 id="flow-parallel-to-soil-layers-eg-horizontal-seepage">Flow Parallel to Soil Layers (e.g., Horizontal Seepage)</h3>
 <p>When flow is parallel to the stratification, the hydraulic gradient is the same in all layers. The equivalent permeability is a weighted average based on layer thicknesses:
-$$k_{eq,p} = \frac{k_1 H_1 + k_2 H_2 + \dots + k_n H_n}{\sum H_i}$$</p>
-<h3 id="flow-perpendicular-to-soil-layers-eg-vertical-seepage">Flow Perpendicular to Soil Layers (e.g., Vertical Seepage)</h3>
+</p>
+$$k_{eq,p} = \frac{k_1 H_1 + k_2 H_2 + \dots + k_n H_n}{\sum H_i}$$<h3 id="flow-perpendicular-to-soil-layers-eg-vertical-seepage">Flow Perpendicular to Soil Layers (e.g., Vertical Seepage)</h3>
 <p>When flow is perpendicular to the stratification, the flow rate per unit area ($v$) is the same through all layers, but the hydraulic gradient varies. The equivalent permeability is a harmonic weighted average:
-$$k_{eq,v} = \frac{\sum H_i}{\frac{H_1}{k_1} + \frac{H_2}{k_2} + \dots + \frac{H_n}{k_n}}$$</p>
-<p><em>Key Note:</em> The equivalent permeability parallel to layering ($k_{eq,p}$) is always greater than the equivalent permeability perpendicular to layering ($k_{eq,v}$).</p>
+</p>
+$$k_{eq,v} = \frac{\sum H_i}{\frac{H_1}{k_1} + \frac{H_2}{k_2} + \dots + \frac{H_n}{k_n}}$$<p><em>Key Note:</em> The equivalent permeability parallel to layering ($k_{eq,p}$) is always greater than the equivalent permeability perpendicular to layering ($k_{eq,v}$).</p>
 <hr>
 <h2 id="3-seepage-and-flow-nets">3. Seepage and Flow Nets</h2>
 <p>A <strong>flow net</strong> is a graphical representation of the Laplace equation for two-dimensional flow through an isotropic medium. It consists of:</p>
@@ -285,8 +301,8 @@ $$k_{eq,v} = \frac{\sum H_i}{\frac{H_1}{k_1} + \frac{H_2}{k_2} + \dots + \frac{H
 </ol>
 <h3 id="seepage-discharge-from-a-flow-net">Seepage Discharge from a Flow Net</h3>
 <p>For an isotropic soil, the total seepage flow rate per unit width of the structure is calculated as:
-$$q = k \cdot H \cdot \frac{N_f}{N_d}$$</p>
-<p>Where:</p>
+</p>
+$$q = k \cdot H \cdot \frac{N_f}{N_d}$$<p>Where:</p>
 <ul>
 <li>$k = \text{hydraulic conductivity}$</li>
 <li>$H = \text{total head loss between upstream and downstream water levels}$</li>
@@ -302,9 +318,10 @@ $$q = k \cdot H \cdot \frac{N_f}{N_d}$$</p>
 <li><strong>Longitudinal Edge Drains:</strong> Perforated collector pipes placed in trenches along the edge of the pavement to intercept water flowing horizontally out of the base course.</li>
 <li><strong>Filter Fabric (Geotextile):</strong> Placed around the drain trench to prevent fine soil particles from clogging the drainage aggregate while allowing water to pass.</li>
 </ul>
-<h3 id="hydraulic-transmissivity-t">Hydraulic Transmissivity ($T$)</h3>
+<h3 id="hydraulic-transmissivity-">Hydraulic Transmissivity ($T$)</h3>
 <p>The capacity of a drainage layer to transmit water per unit width is defined as transmissivity:
-$$T = k \cdot H_{\text{drain}}$$
+</p>
+$$T = k \cdot H_{\text{drain}}$$<p>
 Where $H_{\text{drain}}$ is the thickness of the permeable drainage layer.</p>
 <hr>
 <h2 id="5-worked-examples">5. Worked Examples</h2>
@@ -314,34 +331,45 @@ Where $H_{\text{drain}}$ is the thickness of the permeable drainage layer.</p>
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Calculate Flow Rate ($q$):</strong>
+
 $$q = \frac{\text{Volume}}{\text{Time}} = \frac{0.082\text{ ft}^3}{5\text{ min}} = 0.0164\text{ ft}^3/\text{min}$$
 Convert to $\text{ft}^3/\text{day}$:
+
 $$q = 0.0164\text{ ft}^3/\text{min} \cdot 1440\text{ min/day} = 23.616\text{ ft}^3/\text{day}$$</li>
 <li><strong>Calculate Cross-Sectional Area ($A$):</strong>
 Diameter $D = 4\text{ inches} = 0.333\text{ ft}$.
+
 $$A = \frac{\pi D^2}{4} = \frac{\pi (0.333)^2}{4} = 0.0873\text{ ft}^2$$</li>
 <li><strong>Calculate Hydraulic Gradient ($i$):</strong>
 Head loss $\Delta h = 12\text{ inches}$, Length $L = 6\text{ inches}$.
+
 $$i = \frac{\Delta h}{L} = \frac{12.0}{6.0} = 2.0$$</li>
 <li><strong>Calculate Hydraulic Conductivity ($k$):</strong>
 From Darcy&rsquo;s Law: $q = k \cdot i \cdot A \implies k = \frac{q}{i \cdot A}$
+
 $$k = \frac{23.616\text{ ft}^3/\text{day}}{2.0 \cdot 0.0873\text{ ft}^2} = 135.26\text{ ft/day}$$</li>
 <li><strong>Calculate Porosity ($n$) to find Seepage Velocity:</strong>
 <ul>
 <li>Volume of solid particles ($V_s$):
+
 $$V_s = \frac{W_s}{G_s \cdot \gamma_w} = \frac{5.20\text{ lb}}{2.65 \cdot 62.4\text{ lb/ft}^3} = 0.0314\text{ ft}^3$$</li>
 <li>Total volume of sample ($V = A \cdot L$):
+
 $$L = 6\text{ inches} = 0.50\text{ ft}$$
+
 $$V = 0.0873\text{ ft}^2 \cdot 0.50\text{ ft} = 0.0437\text{ ft}^3$$</li>
 <li>Porosity ($n$):
+
 $$n = \frac{V_v}{V} = \frac{V - V_s}{V} = \frac{0.0437 - 0.0314}{0.0437} = \frac{0.0123}{0.0437} = 0.281$$</li>
 </ul>
 </li>
 <li><strong>Calculate Seepage Velocity ($v_s$):</strong>
 <ul>
 <li>Discharge velocity ($v = k \cdot i$):
+
 $$v = 135.26\text{ ft/day} \cdot 2.0 = 270.52\text{ ft/day}$$</li>
 <li>Seepage velocity ($v_s$):
+
 $$v_s = \frac{v}{n} = \frac{270.52\text{ ft/day}}{0.281} = 962.7\text{ ft/day}$$</li>
 </ul>
 </li>
@@ -358,12 +386,18 @@ $$v_s = \frac{v}{n} = \frac{270.52\text{ ft/day}}{0.281} = 962.7\text{ ft/day}$$
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Equivalent Horizontal Permeability ($k_{eq,h}$):</strong>
+
 $$k_{eq,h} = \frac{k_1 H_1 + k_2 H_2}{H_1 + H_2}$$
+
 $$k_{eq,h} = \frac{(0.25 \cdot 6) + (85.0 \cdot 4)}{6 + 4} = \frac{1.5 + 340.0}{10} = \frac{341.5}{10} = 34.15\text{ ft/day}$$</li>
 <li><strong>Equivalent Vertical Permeability ($k_{eq,v}$):</strong>
+
 $$k_{eq,v} = \frac{H_1 + H_2}{\frac{H_1}{k_1} + \frac{H_2}{k_2}}$$
+
 $$\frac{H_1}{k_1} = \frac{6}{0.25} = 24.0\text{ days}$$
+
 $$\frac{H_2}{k_2} = \frac{4}{85.0} = 0.047\text{ days}$$
+
 $$k_{eq,v} = \frac{10}{24.0 + 0.047} = \frac{10}{24.047} = 0.416\text{ ft/day}$$</li>
 </ol>
 <p><em>Result:</em> Equivalent horizontal permeability is <strong>$34.15\text{ ft/day}$</strong> (dominated by the sand layer) and vertical permeability is <strong>$0.416\text{ ft/day}$</strong> (restricted by the silt layer).</p>
@@ -373,6 +407,7 @@ $$k_{eq,v} = \frac{10}{24.0 + 0.047} = \frac{10}{24.047} = 0.416\text{ ft/day}$$
 <li><strong>Pore Velocity vs. Bulk Velocity:</strong> Make sure to distinguish between $v$ (discharge velocity) and $v_s$ (seepage velocity). PE questions will often ask for the &ldquo;velocity of flow through the voids&rdquo; or &ldquo;water travel time,&rdquo; which requires using $v_s$, not $v$.</li>
 <li><strong>Porosity vs. Void Ratio:</strong> In the seepage velocity equation $v_s = v/n$, remember that $n$ is porosity. If the problem gives you void ratio ($e$), you must convert it to porosity first using $n = e / (1+e)$.</li>
 <li><strong>Unit Conversions:</strong> Permeability is often given in laboratory units like $\text{cm/s}$, while the dimensions of the structure are in feet or meters. A standard conversion to memorize is:
+
 $$1.0\text{ cm/sec} \approx 2835\text{ ft/day}$$</li>
 <li><strong>Flow Net Counting:</strong> When counting flow channels ($N_f$) and equipotential drops ($N_d$) in a flow net, remember:
 <ul>

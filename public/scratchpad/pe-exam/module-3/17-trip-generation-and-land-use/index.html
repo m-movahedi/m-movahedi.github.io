@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Trip Generation and Land Use">
     <meta property="og:description" content="Trip Generation and Land Use Trip generation is the first step in the traditional Four-Step Transportation Planning Process (Trip Generation, Trip Distribution, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Trip Generation and Land Use">
     <meta name="twitter:description" content="Trip Generation and Land Use Trip generation is the first step in the traditional Four-Step Transportation Planning Process (Trip Generation, Trip Distribution, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-3/17-trip-generation-and-land-use/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-3/17-trip-generation-and-land-use/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-3/17-trip-generation-and-land-use/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -252,14 +266,14 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>The ITE manual provides two methods for estimating trips ($T$):</p>
 <h4 id="1-average-rate-method">1. Average Rate Method</h4>
 <p>Assumes a constant linear relationship between the independent variable and trip generation.
-$$T = r \times X$$</p>
-<ul>
+</p>
+$$T = r \times X$$<ul>
 <li><strong>Use:</strong> Recommended when the relationship is highly linear, the sample size is small, or the standard deviation of the rate is low.</li>
 </ul>
 <h4 id="2-fitted-curve-regression-method">2. Fitted Curve (Regression) Method</h4>
 <p>Uses non-linear or linear regression equations to model the dataset.
-$$T = a \times X + b \quad \text{or} \quad T = a \times X^b \quad \text{or} \quad \ln(T) = a \ln(X) + b$$</p>
-<ul>
+</p>
+$$T = a \times X + b \quad \text{or} \quad T = a \times X^b \quad \text{or} \quad \ln(T) = a \ln(X) + b$$<ul>
 <li><strong>Use:</strong> Recommended when a strong non-linear trend exists (e.g., economies of scale where larger developments generate fewer trips per unit area than smaller ones) and the coefficient of determination $R^2 \ge 0.75$.</li>
 </ul>
 <hr>
@@ -278,16 +292,19 @@ A developer proposes building a $150,000\text{ sq ft}$ shopping center. The ITE 
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Identify the Independent Variable ($X$)</strong>
 The independent variable is GFA in units of $1,000\text{ sq ft}$:
-$$X = \frac{150,000\text{ sq ft}}{1,000} = 150 \text{ units}$$</p>
-<p><strong>Step 2: Calculate Trips using the Average Rate Method</strong>
-$$T = r \times X$$
-$$T = 3.80 \times 150 = 570 \text{ trips}$$</p>
-<p><strong>Step 3: Calculate Trips using the Fitted Curve Method</strong>
-$$T = 12.50 \times (X)^{0.65}$$
-$$T = 12.50 \times (150)^{0.65} = 12.50 \times 26.04 \approx 325.5 \text{ trips}$$
+</p>
+$$X = \frac{150,000\text{ sq ft}}{1,000} = 150 \text{ units}$$<p><strong>Step 2: Calculate Trips using the Average Rate Method</strong>
+</p>
+$$T = r \times X$$<p>
+</p>
+$$T = 3.80 \times 150 = 570 \text{ trips}$$<p><strong>Step 3: Calculate Trips using the Fitted Curve Method</strong>
+</p>
+$$T = 12.50 \times (X)^{0.65}$$<p>
+</p>
+$$T = 12.50 \times (150)^{0.65} = 12.50 \times 26.04 \approx 325.5 \text{ trips}$$<p>
 Rounding to the nearest whole vehicle:
-$$T \approx 326 \text{ trips}$$</p>
-<p><strong>Step 4: Comparison</strong><br>
+</p>
+$$T \approx 326 \text{ trips}$$<p><strong>Step 4: Comparison</strong><br>
 The Fitted Curve method yields $326$ trips, which is significantly lower than the $570$ trips predicted by the Average Rate method. In large developments, the fitted curve is generally more accurate because trip generation efficiency increases with size (i.e., people make multi-purpose stops within a larger shopping center).</p>
 <hr>
 <h2 id="trip-type-adjustments">Trip Type Adjustments</h2>
@@ -318,14 +335,13 @@ The Fitted Curve method yields $326$ trips, which is significantly lower than th
 <li><em>Impact:</em> These trips stay inside the development and never enter the external public street system.</li>
 </ul>
 <h3 id="net-new-trips-formula">Net New Trips Formula:</h3>
-<p>$$\text{Net New Trips} = \text{Total Generated Trips} \times (1 - \text{Internal Capture Rate}) \times (1 - \text{Pass-by Trip Rate})$$</p>
-<hr>
+$$\text{Net New Trips} = \text{Total Generated Trips} \times (1 - \text{Internal Capture Rate}) \times (1 - \text{Pass-by Trip Rate})$$<hr>
 <h2 id="worked-example-calculating-net-new-trips">Worked Example: Calculating Net New Trips</h2>
 <p><strong>Problem:</strong><br>
 A mixed-use development generates $850 \text{ PM peak hour trips}$ (combined inbound and outbound) at its driveways. Traffic engineering studies estimate:</p>
 <ul>
-<li><strong>Internal Capture Rate:</strong> $15%$</li>
-<li><strong>Pass-By Trip Rate:</strong> $30%$ of the external trips</li>
+<li><strong>Internal Capture Rate:</strong> $15\%$</li>
+<li><strong>Pass-By Trip Rate:</strong> $30\%$ of the external trips</li>
 </ul>
 <p>Calculate:</p>
 <ol>
@@ -335,24 +351,28 @@ A mixed-use development generates $850 \text{ PM peak hour trips}$ (combined inb
 </ol>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Internal Trips</strong>
-$$\text{Internal Trips} = \text{Total Trips} \times \text{Internal Capture Rate}$$
-$$\text{Internal Trips} = 850 \times 0.15 = 127.5 \approx 128 \text{ trips}$$</p>
-<p><strong>Step 2: Calculate External Trips</strong>
-$$\text{External Trips} = \text{Total Trips} - \text{Internal Trips}$$
-$$\text{External Trips} = 850 - 127.5 = 722.5 \approx 723 \text{ trips}$$</p>
-<p><strong>Step 3: Calculate Net New Trips (Subtracting Pass-By Trips)</strong><br>
+</p>
+$$\text{Internal Trips} = \text{Total Trips} \times \text{Internal Capture Rate}$$<p>
+</p>
+$$\text{Internal Trips} = 850 \times 0.15 = 127.5 \approx 128 \text{ trips}$$<p><strong>Step 2: Calculate External Trips</strong>
+</p>
+$$\text{External Trips} = \text{Total Trips} - \text{Internal Trips}$$<p>
+</p>
+$$\text{External Trips} = 850 - 127.5 = 722.5 \approx 723 \text{ trips}$$<p><strong>Step 3: Calculate Net New Trips (Subtracting Pass-By Trips)</strong><br>
 Pass-by trips are already on the highway network. They enter the site and leave, but do not represent new regional traffic.
-$$\text{Net New Trips} = \text{External Trips} \times (1 - \text{Pass-by Rate})$$
-$$\text{Net New Trips} = 722.5 \times (1 - 0.30) = 722.5 \times 0.70 = 505.75 \text{ trips}$$
+</p>
+$$\text{Net New Trips} = \text{External Trips} \times (1 - \text{Pass-by Rate})$$<p>
+</p>
+$$\text{Net New Trips} = 722.5 \times (1 - 0.30) = 722.5 \times 0.70 = 505.75 \text{ trips}$$<p>
 Rounding to the nearest whole vehicle:
-$$\text{Net New Trips} \approx 506 \text{ trips}$$</p>
-<hr>
+</p>
+$$\text{Net New Trips} \approx 506 \text{ trips}$$<hr>
 <h2 id="crucial-pitfalls-and-exam-traps">Crucial Pitfalls and Exam Traps</h2>
 <ul>
 <li><strong>Unit Scale Trap:</strong> The independent variable in ITE equations is often scaled (e.g., $1,000 \text{ sq ft}$ of Gross Leasable Area). If a building is $45,000 \text{ sq ft}$, you must plug $X = 45$ into the equation, not $45,000$. Plentiful wrong answers on the PE exam will match the factor-of-1,000 error.</li>
 <li><strong>Applying Pass-by to Driveway Design:</strong> Never subtract pass-by trips when designing the width or capacity of the site&rsquo;s driveways or turn lanes. The driveways must handle every single vehicle entering and exiting, regardless of whether it is a primary, pass-by, or diverted trip. Pass-by trips are only subtracted when evaluating the capacity of the <em>surrounding</em> highway intersections.</li>
 <li><strong>Logarithmic Equations:</strong> Some fitted curves use natural logarithms (e.g., $\ln(T) = a \ln(X) + b$). When solving, remember to use the exponential function $e^x$ to solve for $T$: $T = e^{a \ln(X) + b}$.</li>
-<li><strong>Inbound vs. Outbound Split:</strong> Check if the question asks for <em>total</em> trips, <em>inbound</em> trips, or <em>outbound</em> trips. ITE provides directional splits (e.g., $60%$ entering, $40%$ exiting).</li>
+<li><strong>Inbound vs. Outbound Split:</strong> Check if the question asks for <em>total</em> trips, <em>inbound</em> trips, or <em>outbound</em> trips. ITE provides directional splits (e.g., $60\%$ entering, $40\%$ exiting).</li>
 </ul>
 
         

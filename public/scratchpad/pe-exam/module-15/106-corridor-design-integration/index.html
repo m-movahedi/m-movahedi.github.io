@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Corridor Design Integration">
     <meta property="og:description" content="Corridor Design Integration Corridor design integration represents the synthesis of horizontal alignment, vertical alignment, cross-section design, drainage, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Corridor Design Integration">
     <meta name="twitter:description" content="Corridor Design Integration Corridor design integration represents the synthesis of horizontal alignment, vertical alignment, cross-section design, drainage, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-15/106-corridor-design-integration/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-15/106-corridor-design-integration/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-15/106-corridor-design-integration/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -253,10 +267,13 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h3 id="swell-and-shrinkage-equations">Swell and Shrinkage Equations:</h3>
 <ul>
 <li><strong>Swell Factor ($S_w$):</strong>
+
 $$V_L = V_B \cdot (1 + S_w)$$</li>
 <li><strong>Shrinkage Factor ($S_h$):</strong>
+
 $$V_C = V_B \cdot (1 - S_h)$$</li>
 <li><strong>Cut/Fill Conversion Relation:</strong>
+
 $$V_B\text{ (Required Cut)} = \frac{V_C\text{ (Required Fill)}}{1 - S_h}$$</li>
 </ul>
 <hr>
@@ -274,22 +291,24 @@ $$V_B\text{ (Required Cut)} = \frac{V_C\text{ (Required Fill)}}{1 - S_h}$$</li>
 <p>A roadway project requires an embankment fill volume ($V_C$) of $45,000\text{ cubic yards (CY)}$ of compacted clay soil.</p>
 <ul>
 <li>The soil is to be excavated from a nearby borrow source.</li>
-<li>The clay has a shrinkage factor of $S_h = 15% = 0.15$.</li>
-<li>The clay has a swell factor of $S_w = 20% = 0.20$.</li>
+<li>The clay has a shrinkage factor of $S_h = 15\% = 0.15$.</li>
+<li>The clay has a swell factor of $S_w = 20\% = 0.20$.</li>
 </ul>
 <p><strong>1. Calculate the required excavation volume in bank cubic yards (BCY).</strong>
 <strong>2. Calculate the volume of soil that will be transported by haul trucks in loose cubic yards (LCY).</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-bank-volume-v_b-required">Step 1: Calculate Bank Volume ($V_B$) required</h4>
+<h4 id="step-1-calculate-bank-volume--required">Step 1: Calculate Bank Volume ($V_B$) required</h4>
 <p>The compacted fill volume must be converted back to bank volume using the shrinkage factor:
-$$V_B = \frac{V_C}{1 - S_h}$$
-$$V_B = \frac{45,000\text{ CY}}{1 - 0.15} = \frac{45,000}{0.85} \approx 52,941.2\text{ BCY}$$</p>
-<p><em>Result:</em> The contractor must excavate <strong>52,941 BCY</strong> of undisturbed soil.</p>
-<h4 id="step-2-calculate-loose-volume-v_l-for-transportation">Step 2: Calculate Loose Volume ($V_L$) for transportation</h4>
+</p>
+$$V_B = \frac{V_C}{1 - S_h}$$<p>
+</p>
+$$V_B = \frac{45,000\text{ CY}}{1 - 0.15} = \frac{45,000}{0.85} \approx 52,941.2\text{ BCY}$$<p><em>Result:</em> The contractor must excavate <strong>52,941 BCY</strong> of undisturbed soil.</p>
+<h4 id="step-2-calculate-loose-volume--for-transportation">Step 2: Calculate Loose Volume ($V_L$) for transportation</h4>
 <p>Once excavated, the soil swells. We calculate the loose volume based on the bank volume and swell factor:
-$$V_L = V_B \cdot (1 + S_w)$$
-$$V_L = 52,941.2\text{ BCY} \cdot (1 + 0.20) = 52,941.2 \cdot 1.20 \approx 63,529.4\text{ LCY}$$</p>
-<p><em>Result:</em> The haul trucks must transport <strong>63,529 LCY</strong> of loose soil.</p>
+</p>
+$$V_L = V_B \cdot (1 + S_w)$$<p>
+</p>
+$$V_L = 52,941.2\text{ BCY} \cdot (1 + 0.20) = 52,941.2 \cdot 1.20 \approx 63,529.4\text{ LCY}$$<p><em>Result:</em> The haul trucks must transport <strong>63,529 LCY</strong> of loose soil.</p>
 <hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>
 <ul>

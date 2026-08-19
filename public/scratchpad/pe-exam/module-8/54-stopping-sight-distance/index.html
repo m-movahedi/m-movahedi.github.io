@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Stopping Sight Distance">
     <meta property="og:description" content="Stopping Sight Distance Stopping Sight Distance (SSD) is the minimum distance required for a driver traveling at a given speed to see a hazard on the roadway, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Stopping Sight Distance">
     <meta name="twitter:description" content="Stopping Sight Distance Stopping Sight Distance (SSD) is the minimum distance required for a driver traveling at a given speed to see a hazard on the roadway, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-8/54-stopping-sight-distance/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-8/54-stopping-sight-distance/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-8/54-stopping-sight-distance/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -247,24 +261,20 @@ Driver sees hazard                 Brakes applied                               
 <h2 id="governing-equations">Governing Equations</h2>
 <h3 id="1-uscs-english-units">1. USCS (English) Units</h3>
 <p>The general formula for SSD in USCS units is:</p>
-<p>$$SSD = 1.47 V t + \frac{V^2}{30 \left( \frac{a}{g} \pm G \right)}$$</p>
-<p>Where:</p>
+$$SSD = 1.47 V t + \frac{V^2}{30 \left( \frac{a}{g} \pm G \right)}$$<p>Where:</p>
 <ul>
 <li>$SSD$ = stopping sight distance (ft)</li>
 <li>$V$ = design speed or operating speed (mph)</li>
 <li>$t$ = perception-reaction time (standard design value is $2.5\text{ s}$)</li>
 <li>$a$ = deceleration rate (standard design value is $11.2\text{ ft/s}^2$)</li>
 <li>$g$ = acceleration due to gravity ($32.2\text{ ft/s}^2$)</li>
-<li>$G$ = roadway grade expressed as a decimal (e.g., $4% = 0.04$). Use $+$ for upgrades (assisting braking) and $-$ for downgrades (hindering braking).</li>
+<li>$G$ = roadway grade expressed as a decimal (e.g., $4\% = 0.04$). Use $+$ for upgrades (assisting braking) and $-$ for downgrades (hindering braking).</li>
 </ul>
 <p>Using the standard design values ($t = 2.5\text{ s}$ and $a/g = 11.2/32.2 \approx 0.35$), the equation simplifies to:</p>
-<p>$$SSD = 3.675 V + \frac{V^2}{30 (0.35 \pm G)}$$</p>
-<p>For level roadways ($G = 0$):</p>
-<p>$$SSD = 3.675 V + \frac{V^2}{10.5}$$</p>
-<h3 id="2-metric-si-units">2. Metric (SI) Units</h3>
+$$SSD = 3.675 V + \frac{V^2}{30 (0.35 \pm G)}$$<p>For level roadways ($G = 0$):</p>
+$$SSD = 3.675 V + \frac{V^2}{10.5}$$<h3 id="2-metric-si-units">2. Metric (SI) Units</h3>
 <p>The general formula for SSD in metric units is:</p>
-<p>$$SSD = 0.278 V t + \frac{V^2}{254 \left( \frac{a}{g} \pm G \right)}$$</p>
-<p>Where:</p>
+$$SSD = 0.278 V t + \frac{V^2}{254 \left( \frac{a}{g} \pm G \right)}$$<p>Where:</p>
 <ul>
 <li>$SSD$ = stopping sight distance (m)</li>
 <li>$V$ = design speed or operating speed (km/h)</li>
@@ -274,10 +284,8 @@ Driver sees hazard                 Brakes applied                               
 <li>$G$ = roadway grade (decimal)</li>
 </ul>
 <p>Using standard design values ($t = 2.5\text{ s}$ and $a/g = 3.4/9.81 \approx 0.35$), the equation simplifies to:</p>
-<p>$$SSD = 0.694 V + \frac{V^2}{254 (0.35 \pm G)}$$</p>
-<p>For level roadways ($G = 0$):</p>
-<p>$$SSD = 0.694 V + \frac{V^2}{88.9}$$</p>
-<hr>
+$$SSD = 0.694 V + \frac{V^2}{254 (0.35 \pm G)}$$<p>For level roadways ($G = 0$):</p>
+$$SSD = 0.694 V + \frac{V^2}{88.9}$$<hr>
 <h2 id="design-standards-and-aashto-values">Design Standards and AASHTO Values</h2>
 <p>The AASHTO Green Book defines standard SSD values for flat terrain based on design speed. On the PE exam, if you are given a design speed on flat terrain, you can either compute the SSD using the level equation or lookup the rounded design value from the AASHTO tables (reproduced in the NCEES Reference Handbook):</p>
 <table>
@@ -364,11 +372,11 @@ Driver sees hazard                 Brakes applied                               
 <p><em>Note: For two-way undivided roads, design is controlled by the direction with the steepest downgrade, as it yields the longest (worst-case) stopping distance.</em></p>
 <hr>
 <h2 id="worked-example">Worked Example</h2>
-<p>A highway has a design speed of $65\text{ mph}$. A critical vertical curve has a segment on a $-5.0%$ downgrade.</p>
+<p>A highway has a design speed of $65\text{ mph}$. A critical vertical curve has a segment on a $-5.0\%$ downgrade.</p>
 <p>Calculate:</p>
 <ol>
 <li>The stopping sight distance required on a level segment of the highway.</li>
-<li>The stopping sight distance required on the $-5.0%$ downgrade segment.</li>
+<li>The stopping sight distance required on the $-5.0\%$ downgrade segment.</li>
 <li>The percent increase in stopping sight distance caused by the downgrade.</li>
 </ol>
 <h3 id="solution">Solution</h3>
@@ -378,19 +386,20 @@ Driver sees hazard                 Brakes applied                               
 <li>$t = 2.5\text{ s}$</li>
 <li>$a/g = 0.35$</li>
 </ul>
-<p>$$SSD_{\text{level}} = 3.675 V + \frac{V^2}{10.5}$$
-$$SSD_{\text{level}} = 3.675(65) + \frac{65^2}{10.5} = 238.875 + \frac{4225}{10.5} = 238.875 + 402.381 = 641.26\text{ ft}$$</p>
-<p><em>Note: The AASHTO design table rounds this computed value to $645\text{ ft}$. For exam problems, pay attention to whether the question asks for the &ldquo;computed&rdquo; value or &ldquo;AASHTO design&rdquo; value. We will use the exact computed value of $641.26\text{ ft}$ for comparisons.</em></p>
-<p><strong>2. Calculate SSD on a $-5.0%$ Downgrade ($G = -0.05$):</strong></p>
+$$SSD_{\text{level}} = 3.675 V + \frac{V^2}{10.5}$$<p>
+</p>
+$$SSD_{\text{level}} = 3.675(65) + \frac{65^2}{10.5} = 238.875 + \frac{4225}{10.5} = 238.875 + 402.381 = 641.26\text{ ft}$$<p><em>Note: The AASHTO design table rounds this computed value to $645\text{ ft}$. For exam problems, pay attention to whether the question asks for the &ldquo;computed&rdquo; value or &ldquo;AASHTO design&rdquo; value. We will use the exact computed value of $641.26\text{ ft}$ for comparisons.</em></p>
+<p><strong>2. Calculate SSD on a $-5.0\%$ Downgrade ($G = -0.05$):</strong></p>
 <ul>
 <li>Because it is a downgrade, we subtract $G$:</li>
 </ul>
-<p>$$SSD_{\text{grade}} = 3.675 V + \frac{V^2}{30 (0.35 - G)}$$
-$$SSD_{\text{grade}} = 3.675(65) + \frac{65^2}{30 (0.35 - 0.05)}$$
-$$SSD_{\text{grade}} = 238.875 + \frac{4225}{30(0.30)} = 238.875 + \frac{4225}{9} = 238.875 + 469.444 = 708.32\text{ ft}$$</p>
-<p><strong>3. Calculate Percent Increase:</strong>
-$$% \text{ Increase} = \frac{708.32 - 641.26}{641.26} \times 100% = \frac{67.06}{641.26} \times 100% \approx 10.46%$$</p>
-<p>The downgrade increases the required stopping distance by $67\text{ ft}$ (or about $10.5%$), showing why designing alignment for the steepest downgrade is safety-critical.</p>
+$$SSD_{\text{grade}} = 3.675 V + \frac{V^2}{30 (0.35 - G)}$$<p>
+</p>
+$$SSD_{\text{grade}} = 3.675(65) + \frac{65^2}{30 (0.35 - 0.05)}$$<p>
+</p>
+$$SSD_{\text{grade}} = 238.875 + \frac{4225}{30(0.30)} = 238.875 + \frac{4225}{9} = 238.875 + 469.444 = 708.32\text{ ft}$$<p><strong>3. Calculate Percent Increase:</strong>
+</p>
+$$\% \text{ Increase} = \frac{708.32 - 641.26}{641.26} \times 100\% = \frac{67.06}{641.26} \times 100\% \approx 10.46\%$$<p>The downgrade increases the required stopping distance by $67\text{ ft}$ (or about $10.5\%$), showing why designing alignment for the steepest downgrade is safety-critical.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><em>A Policy on Geometric Design of Highways and Streets</em> (AASHTO Green Book), 7th Edition, 2018, Section 3.1.2.</li>

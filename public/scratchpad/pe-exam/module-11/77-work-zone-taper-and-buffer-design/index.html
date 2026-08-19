@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Work Zone Taper and Buffer Design">
     <meta property="og:description" content="Work Zone Taper and Buffer Design Tapers and buffer spaces are the core geometric design elements of a Temporary Traffic Control (TTC) zone. A taper uses a …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Work Zone Taper and Buffer Design">
     <meta name="twitter:description" content="Work Zone Taper and Buffer Design Tapers and buffer spaces are the core geometric design elements of a Temporary Traffic Control (TTC) zone. A taper uses a …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-11/77-work-zone-taper-and-buffer-design/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-11/77-work-zone-taper-and-buffer-design/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-11/77-work-zone-taper-and-buffer-design/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -263,11 +277,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 </li>
 </ol>
 <hr>
-<h2 id="taper-length-l-formulas">Taper Length ($L$) Formulas</h2>
+<h2 id="taper-length--formulas">Taper Length ($L$) Formulas</h2>
 <p>The standard merging taper length ($L$) is calculated using two formulas, depending on the speed limit.</p>
-<p>$$\text{For } S &lt; 45\text{ mph:} \quad L = \frac{W \cdot S^2}{60}$$</p>
-<p>$$\text{For } S \ge 45\text{ mph:} \quad L = W \cdot S$$</p>
-<p>Where:</p>
+$$\text{For } S < 45\text{ mph:} \quad L = \frac{W \cdot S^2}{60}$$$$\text{For } S \ge 45\text{ mph:} \quad L = W \cdot S$$<p>Where:</p>
 <ul>
 <li>$L$ = Merging taper length (feet)</li>
 <li>$W$ = Width of the lateral shift or lane width (feet)</li>
@@ -275,7 +287,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <p><em>Common Trap: On the PE exam, check the speed limit ($S$) carefully to determine which formula to use. Using the wrong formula is the most common distractor for this topic.</em></p>
 <hr>
-<h2 id="longitudinal-buffer-space-l_b">Longitudinal Buffer Space ($L_b$)</h2>
+<h2 id="longitudinal-buffer-space-">Longitudinal Buffer Space ($L_b$)</h2>
 <p>The longitudinal buffer space is an empty recovery zone placed upstream of the work space. It is designed to let an out-of-control vehicle stop before hitting workers.</p>
 <p>The MUTCD (Table 6C-2) lists recommended longitudinal buffer space lengths based on speed. These distances correspond to AASHTO stopping sight distances on level, wet concrete pavements:</p>
 <table>
@@ -359,39 +371,41 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ol>
 <h3 id="step-by-step-solution">Step-by-Step Solution</h3>
 <hr>
-<h3 id="part-a-40text-mph-scenario-low-speed-s--45text-mph">Part A: $40\text{-mph}$ Scenario (Low-Speed, $S &lt; 45\text{ mph}$)</h3>
-<h4 id="1-merging-taper-length-l_m">1. Merging Taper Length ($L_m$)</h4>
-<p>Since the speed is $40\text{ mph}$ ($S &lt; 45\text{ mph}$), use the low-speed quadratic formula:
-$$L_m = \frac{W \cdot S^2}{60} = \frac{12\text{ ft} \times (40\text{ mph})^2}{60}$$
-$$L_m = \frac{12 \times 1,600}{60} = \frac{19,200}{60} = 320\text{ feet}$$</p>
-<h4 id="2-shifting-taper-length-l_s">2. Shifting Taper Length ($L_s$)</h4>
-<p>A shifting taper is $50%$ of the merging taper:
-$$L_s = 0.5 \cdot L_m = 0.5 \times 320\text{ ft} = 160\text{ feet}$$</p>
-<h4 id="3-shoulder-taper-length-l_textshoulder">3. Shoulder Taper Length ($L_{\text{shoulder}}$)</h4>
+<h3 id="part-a--scenario-low-speed-">Part A: $40\text{-mph}$ Scenario (Low-Speed, $S < 45\text{ mph}$)</h3>
+<h4 id="1-merging-taper-length-">1. Merging Taper Length ($L_m$)</h4>
+<p>Since the speed is $40\text{ mph}$ ($S < 45\text{ mph}$), use the low-speed quadratic formula:
+</p>
+$$L_m = \frac{W \cdot S^2}{60} = \frac{12\text{ ft} \times (40\text{ mph})^2}{60}$$<p>
+</p>
+$$L_m = \frac{12 \times 1,600}{60} = \frac{19,200}{60} = 320\text{ feet}$$<h4 id="2-shifting-taper-length-">2. Shifting Taper Length ($L_s$)</h4>
+<p>A shifting taper is $50\%$ of the merging taper:
+</p>
+$$L_s = 0.5 \cdot L_m = 0.5 \times 320\text{ ft} = 160\text{ feet}$$<h4 id="3-shoulder-taper-length-">3. Shoulder Taper Length ($L_{\text{shoulder}}$)</h4>
 <p>A shoulder taper is $1/3$ of the merging taper, using the shoulder width ($W_{\text{shoulder}} = 10\text{ ft}$) as the shift width:
 First, calculate the merging taper ($L$) for a $10\text{-foot}$ width at $40\text{ mph}$:
-$$L = \frac{10\text{ ft} \times 40^2}{60} = 266.67\text{ feet}$$
+</p>
+$$L = \frac{10\text{ ft} \times 40^2}{60} = 266.67\text{ feet}$$<p>
 Now, apply the $1/3$ factor:
-$$L_{\text{shoulder}} = 0.33 \cdot L = \frac{266.67\text{ ft}}{3} = 88.89\text{ feet} \approx 89\text{ feet}$$</p>
-<h4 id="4-longitudinal-buffer-space-l_b">4. Longitudinal Buffer Space ($L_b$)</h4>
+</p>
+$$L_{\text{shoulder}} = 0.33 \cdot L = \frac{266.67\text{ ft}}{3} = 88.89\text{ feet} \approx 89\text{ feet}$$<h4 id="4-longitudinal-buffer-space-">4. Longitudinal Buffer Space ($L_b$)</h4>
 <p>Lookup the value for $40\text{ mph}$ in the MUTCD Buffer table:
-$$L_b = 305\text{ feet}$$</p>
-<hr>
-<h3 id="part-b-55text-mph-scenario-high-speed-s-ge-45text-mph">Part B: $55\text{-mph}$ Scenario (High-Speed, $S \ge 45\text{ mph}$)</h3>
-<h4 id="1-merging-taper-length-l_m-1">1. Merging Taper Length ($L_m$)</h4>
+</p>
+$$L_b = 305\text{ feet}$$<hr>
+<h3 id="part-b--scenario-high-speed-">Part B: $55\text{-mph}$ Scenario (High-Speed, $S \ge 45\text{ mph}$)</h3>
+<h4 id="1-merging-taper-length--1">1. Merging Taper Length ($L_m$)</h4>
 <p>Since the speed is $55\text{ mph}$ ($S \ge 45\text{ mph}$), use the high-speed linear formula:
-$$L_m = W \cdot S = 12\text{ ft} \times 55\text{ mph} = 660\text{ feet}$$</p>
-<h4 id="2-shifting-taper-length-l_s-1">2. Shifting Taper Length ($L_s$)</h4>
-<p>$$L_s = 0.5 \cdot L_m = 0.5 \times 660\text{ ft} = 330\text{ feet}$$</p>
-<h4 id="3-shoulder-taper-length-l_textshoulder-1">3. Shoulder Taper Length ($L_{\text{shoulder}}$)</h4>
+</p>
+$$L_m = W \cdot S = 12\text{ ft} \times 55\text{ mph} = 660\text{ feet}$$<h4 id="2-shifting-taper-length--1">2. Shifting Taper Length ($L_s$)</h4>
+$$L_s = 0.5 \cdot L_m = 0.5 \times 660\text{ ft} = 330\text{ feet}$$<h4 id="3-shoulder-taper-length--1">3. Shoulder Taper Length ($L_{\text{shoulder}}$)</h4>
 <p>First, calculate the merging taper ($L$) for a $10\text{-foot}$ shoulder shift at $55\text{ mph}$:
-$$L = W_{\text{shoulder}} \cdot S = 10\text{ ft} \times 55\text{ mph} = 550\text{ feet}$$
+</p>
+$$L = W_{\text{shoulder}} \cdot S = 10\text{ ft} \times 55\text{ mph} = 550\text{ feet}$$<p>
 Now, apply the $1/3$ factor:
-$$L_{\text{shoulder}} = 0.33 \cdot L = \frac{550\text{ ft}}{3} = 183.33\text{ feet} \approx 183\text{ feet}$$</p>
-<h4 id="4-longitudinal-buffer-space-l_b-1">4. Longitudinal Buffer Space ($L_b$)</h4>
+</p>
+$$L_{\text{shoulder}} = 0.33 \cdot L = \frac{550\text{ ft}}{3} = 183.33\text{ feet} \approx 183\text{ feet}$$<h4 id="4-longitudinal-buffer-space--1">4. Longitudinal Buffer Space ($L_b$)</h4>
 <p>Lookup the value for $55\text{ mph}$ in the MUTCD Buffer table:
-$$L_b = 495\text{ feet}$$</p>
-
+</p>
+$$L_b = 495\text{ feet}$$
         
     </div>
 

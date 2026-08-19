@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Coordination of Horizontal and Vertical Alignment">
     <meta property="og:description" content="Coordination of Horizontal and Vertical Alignment Roadway design is a three-dimensional challenge. Although horizontal alignment (curves and tangents in plan …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Coordination of Horizontal and Vertical Alignment">
     <meta name="twitter:description" content="Coordination of Horizontal and Vertical Alignment Roadway design is a three-dimensional challenge. Although horizontal alignment (curves and tangents in plan …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-7/51-coordination-of-horizontal-and-vertical-alignment/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/51-coordination-of-horizontal-and-vertical-alignment/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-7/51-coordination-of-horizontal-and-vertical-alignment/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -267,7 +281,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li><strong>The Trap:</strong> Introducing a sharp horizontal curve at or near the top of a crest vertical curve.</li>
 <li><strong>The Hazard:</strong> As a driver ascends the crest, their line of sight is cut off by the pavement. They cannot see that the road curves ahead until they top the crest, leaving them with insufficient time to react and steer.</li>
-<li><strong>Mitigation:</strong> Shift the horizontal PC so that the turn begins well before the vertical curve starts ($\text{PC} &lt; \text{PVC}$).</li>
+<li><strong>Mitigation:</strong> Shift the horizontal PC so that the turn begins well before the vertical curve starts ($\text{PC} < \text{PVC}$).</li>
 </ul>
 <h3 id="2-sag-vertical-curves-on-horizontal-curves">2. Sag Vertical Curves on Horizontal Curves</h3>
 <ul>
@@ -275,7 +289,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>The Hazard:</strong>
 <ul>
 <li><em>Nighttime Visibility:</em> Vehicle headlights project straight ahead, parallel to the car&rsquo;s chassis. At the bottom of a sag, the headlights will shine off the roadway (into space or adjacent fields) rather than illuminating the curved path ahead.</li>
-<li><em>Pavement Drainage:</em> The bottom of a sag curve has a flat grade ($0%$). When combined with superelevation transition, water can pool, creating a hydroplaning hazard.</li>
+<li><em>Pavement Drainage:</em> The bottom of a sag curve has a flat grade ($0\%$). When combined with superelevation transition, water can pool, creating a hydroplaning hazard.</li>
 <li><em>Structural Load:</em> Centrifugal forces from the horizontal curve combine with the downward vertical momentum from the sag curve, increasing structural load on vehicle suspensions and tires.</li>
 </ul>
 </li>
@@ -290,14 +304,14 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h3 id="problem-statement">Problem Statement</h3>
 <p>A plan-profile sheet for a new rural arterial (design speed $50\text{ mph}$) lists the following curve stations:</p>
 <ul>
-<li><strong>Vertical Alignment:</strong> A crest vertical curve connects a $+4.0%$ grade and a $-3.0%$ grade.
+<li><strong>Vertical Alignment:</strong> A crest vertical curve connects a $+4.0\%$ grade and a $-3.0\%$ grade.
 <ul>
 <li>PVC Station: $45+00.00$</li>
 <li>PVI Station: $47+50.00$</li>
 <li>PVT Station: $50+00.00$</li>
 </ul>
 </li>
-<li><strong>Horizontal Alignment:</strong> A simple circular curve with deflection angle $\Delta = 12^\circ 00&rsquo;$ and radius $R = 1,150\text{ ft}$.
+<li><strong>Horizontal Alignment:</strong> A simple circular curve with deflection angle $\Delta = 12^\circ 00'$ and radius $R = 1,150\text{ ft}$.
 <ul>
 <li>PC Station: $45+80.00$</li>
 <li>PT Station: $49+20.00$</li>
@@ -329,7 +343,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p><strong>Formulate Recommendation (Enveloping Rule):</strong></p>
 <ul>
 <li>To satisfy the enveloping rule, the horizontal curve must begin before the vertical curve and end after the vertical curve:
+
 $$\text{PC} \le \text{PVC}$$
+
 $$\text{PT} \ge \text{PVT}$$</li>
 <li>Since $\text{PVC} = 45+00.00$ and $\text{PVT} = 50+00.00$:
 <ul>
@@ -343,13 +359,13 @@ $$\text{PT} \ge \text{PVT}$$</li>
 </ol>
 <h3 id="answer">Answer</h3>
 <ol>
-<li>The proposed coordination is <strong>unsafe</strong>. The horizontal curve is nested inside the crest vertical curve ($\text{PC} &gt; \text{PVC}$), hiding the turn from approaching drivers.</li>
+<li>The proposed coordination is <strong>unsafe</strong>. The horizontal curve is nested inside the crest vertical curve ($\text{PC} > \text{PVC}$), hiding the turn from approaching drivers.</li>
 <li>Adjust the horizontal curve so that it envelopes the vertical curve: <strong>$\text{PC} \le 45+00.00$</strong> and <strong>$\text{PT} \ge 50+00.00$</strong>.</li>
 </ol>
 <hr>
 <h2 id="crucial-exam-tips">Crucial Exam Tips</h2>
 <ul>
-<li><strong>PC/PVC Ordering:</strong> Remember the safe design rule: &ldquo;Horizontal leads vertical.&rdquo; The horizontal curve must always start first. On the exam, verify that $\text{PC} &lt; \text{PVC}$ and $\text{PT} &gt; \text{PVT}$.</li>
+<li><strong>PC/PVC Ordering:</strong> Remember the safe design rule: &ldquo;Horizontal leads vertical.&rdquo; The horizontal curve must always start first. On the exam, verify that $\text{PC} < \text{PVC}$ and $\text{PT} > \text{PVT}$.</li>
 <li><strong>Identifying Headlight Sight Distance Issues:</strong> If a question describes a vehicle having trouble seeing around a curve at night, look for a sag vertical curve nested inside a horizontal curve. The headlight beam drop is the physical cause.</li>
 <li><strong>Qualitative Questions:</strong> Many PE questions on this topic are purely conceptual and do not require calculations. Look for key phrases like &ldquo;hidden dip,&rdquo; &ldquo;nested curve,&rdquo; or &ldquo;crest on tangent&rdquo; to quickly identify the correct design answer.</li>
 </ul>

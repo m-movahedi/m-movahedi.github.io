@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Railroad Crossings and Preemption">
     <meta property="og:description" content="Railroad Crossings and Preemption Highway-rail grade crossings are intersections where a roadway crosses railroad tracks at grade. Due to the massive difference …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Railroad Crossings and Preemption">
     <meta name="twitter:description" content="Railroad Crossings and Preemption Highway-rail grade crossings are intersections where a roadway crosses railroad tracks at grade. Due to the massive difference …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-11/79-railroad-crossings-and-preemption/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-11/79-railroad-crossings-and-preemption/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-11/79-railroad-crossings-and-preemption/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -290,33 +304,36 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>Determine if advance preemption is required, and if so, calculate the required advance preemption time.</li>
 </ol>
 <h3 id="step-by-step-solution">Step-by-Step Solution</h3>
-<h4 id="step-1-calculate-the-clearance-travel-time-t_textclear">Step 1: Calculate the Clearance Travel Time ($t_{\text{clear}}$)</h4>
+<h4 id="step-1-calculate-the-clearance-travel-time-">Step 1: Calculate the Clearance Travel Time ($t_{\text{clear}}$)</h4>
 <p>Using the basic kinematic equation for acceleration from a stop:
-$$d = \frac{1}{2} \cdot a \cdot t_{\text{clear}}^2$$</p>
-<p>Solving for $t_{\text{clear}}$:
-$$t_{\text{clear}} = \sqrt{\frac{2 \cdot d}{a}}$$</p>
-<p>Where $d = 135\text{ feet}$ and $a = 2.4\text{ ft/s}^2$:
-$$t_{\text{clear}} = \sqrt{\frac{2 \times 135}{2.4}} = \sqrt{\frac{270}{2.4}} = \sqrt{112.5} = 10.61\text{ seconds}$$</p>
-<h4 id="step-2-calculate-the-total-queue-clearance-time-t_textqc">Step 2: Calculate the Total Queue Clearance Time ($t_{\text{qc}}$)</h4>
+</p>
+$$d = \frac{1}{2} \cdot a \cdot t_{\text{clear}}^2$$<p>Solving for $t_{\text{clear}}$:
+</p>
+$$t_{\text{clear}} = \sqrt{\frac{2 \cdot d}{a}}$$<p>Where $d = 135\text{ feet}$ and $a = 2.4\text{ ft/s}^2$:
+</p>
+$$t_{\text{clear}} = \sqrt{\frac{2 \times 135}{2.4}} = \sqrt{\frac{270}{2.4}} = \sqrt{112.5} = 10.61\text{ seconds}$$<h4 id="step-2-calculate-the-total-queue-clearance-time-">Step 2: Calculate the Total Queue Clearance Time ($t_{\text{qc}}$)</h4>
 <p>The queue clearance time includes the startup delay and the travel time:
-$$t_{\text{qc}} = t_{\text{start}} + t_{\text{clear}}$$
-$$t_{\text{qc}} = 2.0\text{ s} + 10.61\text{ s} = 12.61\text{ seconds}$$</p>
-<p>Rounding to the nearest tenth:
-$$t_{\text{qc}} \approx 12.6\text{ seconds}$$</p>
-<h4 id="step-3-calculate-the-minimum-warning-time-t_textwarning">Step 3: Calculate the Minimum Warning Time ($T_{\text{warning}}$)</h4>
+</p>
+$$t_{\text{qc}} = t_{\text{start}} + t_{\text{clear}}$$<p>
+</p>
+$$t_{\text{qc}} = 2.0\text{ s} + 10.61\text{ s} = 12.61\text{ seconds}$$<p>Rounding to the nearest tenth:
+</p>
+$$t_{\text{qc}} \approx 12.6\text{ seconds}$$<h4 id="step-3-calculate-the-minimum-warning-time-">Step 3: Calculate the Minimum Warning Time ($T_{\text{warning}}$)</h4>
 <p>The minimum preemption warning time is the sum of the right-of-way transfer time (time to get a green light for the track approach) and the time to clear the queue:
-$$T_{\text{warning}} = T_{\text{transfer}} + t_{\text{qc}}$$
-$$T_{\text{warning}} = 7.5\text{ s} + 12.6\text{ s} = 20.1\text{ seconds}$$</p>
-<h4 id="step-4-evaluate-the-need-for-advance-preemption">Step 4: Evaluate the Need for Advance Preemption</h4>
+</p>
+$$T_{\text{warning}} = T_{\text{transfer}} + t_{\text{qc}}$$<p>
+</p>
+$$T_{\text{warning}} = 7.5\text{ s} + 12.6\text{ s} = 20.1\text{ seconds}$$<h4 id="step-4-evaluate-the-need-for-advance-preemption">Step 4: Evaluate the Need for Advance Preemption</h4>
 <ul>
 <li>The required warning time ($T_{\text{warning}}$) is $20.1\text{ seconds}$.</li>
 <li>The standard railroad warning time is $20.0\text{ seconds}$.</li>
 </ul>
 <p>Since the required warning time ($20.1\text{ seconds}$) exceeds the standard railroad warning time ($20.0\text{ seconds}$), <strong>advance preemption is required</strong>.</p>
 <p>The required advance preemption time ($T_{\text{advance}}$) is:
-$$T_{\text{advance}} = T_{\text{warning}} - \text{Standard Warning Time}$$
-$$T_{\text{advance}} = 20.1\text{ s} - 20.0\text{ s} = 0.1\text{ seconds}$$</p>
-<p>In practice, a safety factor is added, but the absolute minimum advance warning call from the railroad track circuits to the traffic signal controller must be at least <strong>$0.1\text{ seconds}$</strong> before the crossing gates/lights activate.</p>
+</p>
+$$T_{\text{advance}} = T_{\text{warning}} - \text{Standard Warning Time}$$<p>
+</p>
+$$T_{\text{advance}} = 20.1\text{ s} - 20.0\text{ s} = 0.1\text{ seconds}$$<p>In practice, a safety factor is added, but the absolute minimum advance warning call from the railroad track circuits to the traffic signal controller must be at least <strong>$0.1\text{ seconds}$</strong> before the crossing gates/lights activate.</p>
 
         
     </div>

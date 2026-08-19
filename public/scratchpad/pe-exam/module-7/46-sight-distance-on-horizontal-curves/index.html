@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sight Distance on Horizontal Curves">
     <meta property="og:description" content="Sight Distance on Horizontal Curves When a vehicle travels along a horizontal curve, the driver&rsquo;s line of sight can be obstructed by objects on the inside …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Sight Distance on Horizontal Curves">
     <meta name="twitter:description" content="Sight Distance on Horizontal Curves When a vehicle travels along a horizontal curve, the driver&rsquo;s line of sight can be obstructed by objects on the inside …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-7/46-sight-distance-on-horizontal-curves/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/46-sight-distance-on-horizontal-curves/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-7/46-sight-distance-on-horizontal-curves/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -233,7 +247,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>When a vehicle travels along a horizontal curve, the driver&rsquo;s line of sight can be obstructed by objects on the inside of the curve, such as retaining walls, bridge abutments, building facades, rock cuts, or dense vegetation. Designers must ensure that the lateral clearance between the travel lane and any obstruction is sufficient to provide the required stopping sight distance (SSD).</p>
 <p>For the PE Civil Transportation exam, sight distance on horizontal curves is calculated using formulas from the <strong>NCEES PE Civil Reference Handbook</strong> and guidelines in the <strong>AASHTO Green Book (GDHS)</strong>, Chapter 3.</p>
 <hr>
-<h2 id="horizontal-sight-offset-hso-and-middle-ordinate-m_s">Horizontal Sight Offset (HSO) and Middle Ordinate ($M_s$)</h2>
+<h2 id="horizontal-sight-offset-hso-and-middle-ordinate-">Horizontal Sight Offset (HSO) and Middle Ordinate ($M_s$)</h2>
 <p>The lateral clearance required to maintain sight distance is called the <strong>Horizontal Sight Offset (HSO)</strong>, often designated as $M_s$ (which acts as a middle ordinate for the line-of-sight chord).</p>
 <pre tabindex="0"><code>                          Line of Sight (Chord)
                  ---------------------------------------
@@ -254,31 +268,28 @@ gtag('config', 'G-1WZSE8DHZ9');
 </li>
 </ul>
 <hr>
-<h2 id="math-equations-for-hso-m_s">Math Equations for HSO ($M_s$)</h2>
+<h2 id="math-equations-for-hso-">Math Equations for HSO ($M_s$)</h2>
 <p>There are two primary cases depending on the relative lengths of the Stopping Sight Distance ($S$) and the horizontal curve length ($L$):</p>
-<h3 id="case-1-sight-distance-is-less-than-or-equal-to-curve-length-s-le-l">Case 1: Sight Distance is Less than or Equal to Curve Length ($S \le L$)</h3>
+<h3 id="case-1-sight-distance-is-less-than-or-equal-to-curve-length-">Case 1: Sight Distance is Less than or Equal to Curve Length ($S \le L$)</h3>
 <p>When the required sight distance is shorter than the curve, both the driver and the hazard are on the circular curve. The exact AASHTO formula is:</p>
-<p>$$M_s = R \left[ 1 - \cos \left( \frac{28.65 \times S}{R} \right) \right]$$</p>
-<p>Where:</p>
+$$M_s = R \left[ 1 - \cos \left( \frac{28.65 \times S}{R} \right) \right]$$<p>Where:</p>
 <ul>
 <li>$R$ = Radius of the centerline of the inside lane (ft).</li>
 <li>$S$ = Required Stopping Sight Distance (ft).</li>
 <li>The term $\frac{28.65 \times S}{R}$ represents half the central angle of the sight distance arc (in degrees).</li>
 </ul>
-<h3 id="case-2-sight-distance-is-greater-than-curve-length-s--l">Case 2: Sight Distance is Greater than Curve Length ($S &gt; L$)</h3>
+<h3 id="case-2-sight-distance-is-greater-than-curve-length-">Case 2: Sight Distance is Greater than Curve Length ($S > L$)</h3>
 <p>When the required sight distance is longer than the curve, the driver, the hazard, or both may be on the tangent sections leading into or out of the curve. The line of sight is a chord that cuts across the curve. The standard approximation for $M_s$ in this case is:</p>
-<p>$$M_s = \frac{L(2S - L)}{8R}$$</p>
-<p>Where:</p>
+$$M_s = \frac{L(2S - L)}{8R}$$<p>Where:</p>
 <ul>
 <li>$L$ = Length of the horizontal curve (ft).</li>
 <li>$S$ = Required Stopping Sight Distance (ft).</li>
 <li>$R$ = Radius of the centerline of the inside lane (ft).</li>
 </ul>
 <hr>
-<h2 id="calculating-stopping-sight-distance-s">Calculating Stopping Sight Distance ($S$)</h2>
+<h2 id="calculating-stopping-sight-distance-">Calculating Stopping Sight Distance ($S$)</h2>
 <p>If the stopping sight distance ($S$) is not directly provided in the problem statement, calculate it using the standard AASHTO equation:</p>
-<p>$$S = 1.47 V t + \frac{V^2}{30 \left( \frac{a}{32.2} \pm G \right)} = 1.47 V t + \frac{V^2}{30 (0.348 \pm G)}$$</p>
-<p>Where:</p>
+$$S = 1.47 V t + \frac{V^2}{30 \left( \frac{a}{32.2} \pm G \right)} = 1.47 V t + \frac{V^2}{30 (0.348 \pm G)}$$<p>Where:</p>
 <ul>
 <li>$V$ = Design speed (mph).</li>
 <li>$t$ = Perception-reaction time = <strong>2.5 seconds</strong> (AASHTO standard).</li>
@@ -301,8 +312,10 @@ A new concrete retaining wall is proposed on the inside of the curve, located $1
 <li>
 <p><strong>Calculate the Stopping Sight Distance ($S$):</strong>
 Using the standard AASHTO formula:
-$$S = 1.47(60\text{ mph})(2.5\text{ s}) + \frac{60^2}{30(0.348 + 0.00)}$$
-$$S = 220.5 + \frac{3600}{10.44} = 220.5 + 344.83 = 565.33\text{ ft}$$
+</p>
+$$S = 1.47(60\text{ mph})(2.5\text{ s}) + \frac{60^2}{30(0.348 + 0.00)}$$<p>
+</p>
+$$S = 220.5 + \frac{3600}{10.44} = 220.5 + 344.83 = 565.33\text{ ft}$$<p>
 <em>Round up to standard AASHTO value:</em> <strong>$570\text{ ft}$</strong> (or use the theoretical $565.33\text{ ft}$. We will proceed with the theoretical value of $565.33\text{ ft}$ for precision).</p>
 </li>
 <li>
@@ -313,14 +326,19 @@ $$S = 220.5 + \frac{3600}{10.44} = 220.5 + 344.83 = 565.33\text{ ft}$$
 <li>The inside lane is the lane closest to the inside edge of the curve.</li>
 <li>The highway centerline separates the two directions of travel.</li>
 <li>Therefore, the inside travel lane is shifted toward the inside of the curve by:
+
 $$\text{Shift} = \text{Width of the adjacent lane} + \text{Half the width of the inside lane}$$
+
 $$\text{Shift} = 12\text{ ft} + \frac{12\text{ ft}}{2} = 18\text{ ft}$$
 <em>(This assumes standard layout. Let&rsquo;s make it simple: the inside lane is the lane closest to the inside curve. The centerline of this inside lane is at radius:)</em>
+
 $$R = R_{centerline} - 12\text{ ft} - 6\text{ ft} = 1500 - 18 = 1482\text{ ft}$$</li>
 <li>Let&rsquo;s check the lane position: the highway centerline is at radius $1,500\text{ ft}$. The inside lane (the rightmost lane for traffic turning right) is shifted outward or inward. If the curve bends to the right, the rightmost lane is the inside lane. Its centerline is at:
-$$R = 1500 - 6\text{ ft} = 1494\text{ ft}$$ (if it was a 2-lane road)
+
+$$R = 1500 - 6\text{ ft} = 1494\text{ ft}$$(if it was a 2-lane road)
 For a 4-lane divided highway with 2 lanes in each direction: the centerline separates the two directions. The inside direction is the right curve. The lanes are: Lane 1 (inside/right) and Lane 2 (outside/left, adjacent to centerline).
 Therefore, the centerline of Lane 1 (the inside lane) is at:
+
 $$R = 1500\text{ ft} - (\text{Lane 2 width}) - (\text{Half of Lane 1 width}) = 1500 - 12 - 6 = 1482\text{ ft}$$</li>
 </ul>
 </li>
@@ -332,11 +350,16 @@ $$R = 1500\text{ ft} - (\text{Lane 2 width}) - (\text{Half of Lane 1 width}) = 1
 <li>$S = 565.33\text{ ft}$</li>
 <li>$L = 800\text{ ft}$</li>
 <li>Since $S \le L$ ($565.33\text{ ft} \le 800\text{ ft}$), we use <strong>Case 1</strong>:
+
 $$M_s = R \left[ 1 - \cos \left( \frac{28.65 \times S}{R} \right) \right]$$
+
 $$M_s = 1482 \left[ 1 - \cos \left( \frac{28.65 \times 565.33}{1482} \right) \right]$$
 <em>Calculate the angle inside the cosine:</em>
+
 $$\text{Angle} = \frac{16196.7}{1482} = 10.929^\circ$$
+
 $$M_s = 1482 [1 - \cos(10.929^\circ)]$$
+
 $$M_s = 1482 [1 - 0.98186] = 1482 \times 0.01814 = 26.88\text{ ft}$$</li>
 </ul>
 </li>
@@ -350,9 +373,12 @@ $$M_s = 1482 [1 - 0.98186] = 1482 \times 0.01814 = 26.88\text{ ft}$$</li>
 <li>We measure $M_s$ from the <em>centerline</em> of the inside travel lane.</li>
 <li>The distance from the centerline of the inside lane to the edge of the travel lane is half the lane width: $12\text{ ft} / 2 = 6\text{ ft}$.</li>
 <li>Therefore, the actual physical distance ($M_{actual}$) from the inside lane centerline to the wall is:
+
 $$M_{actual} = 6\text{ ft} \text{ (half-lane)} + 4\text{ ft} \text{ (shoulder)} + 18\text{ ft} \text{ (clearance)} = 28\text{ ft}$$</li>
 <li>Compare the actual clearance with the required HSO:
+
 $$M_{actual} = 28\text{ ft}$$
+
 $$M_{required} = 26.88\text{ ft}$$</li>
 <li>Since $28\text{ ft} \ge 26.88\text{ ft}$, the wall is placed far enough back to satisfy the sight distance requirements. The design is <strong>satisfactory</strong>.</li>
 </ul>
@@ -369,7 +395,7 @@ $$M_{required} = 26.88\text{ ft}$$</li>
 <h2 id="crucial-exam-tips">Crucial Exam Tips</h2>
 <ul>
 <li><strong>Highway Centerline vs. Lane Centerline Radius:</strong> Always read carefully to see if the radius given is for the <em>highway centerline</em> or the <em>inside lane</em>. If it&rsquo;s the highway centerline, you must subtract half the width of the inner lanes to get the radius of the inside lane centerline.</li>
-<li><strong>Deciding Case 1 vs. Case 2:</strong> Always perform the $S$ vs. $L$ check first. If $S &gt; L$ and you use the Case 1 cosine equation, your result will be mathematically incorrect because the cosine equation assumes a continuous curve that doesn&rsquo;t exist beyond the PT.</li>
+<li><strong>Deciding Case 1 vs. Case 2:</strong> Always perform the $S$ vs. $L$ check first. If $S > L$ and you use the Case 1 cosine equation, your result will be mathematically incorrect because the cosine equation assumes a continuous curve that doesn&rsquo;t exist beyond the PT.</li>
 <li><strong>Angle Conversion Check:</strong> In the formula $M_s = R[1 - \cos(\theta)]$, the angle $\theta = \frac{28.65 S}{R}$ is in <strong>degrees</strong>. Do not use radians in your calculator unless you convert the term $\frac{28.65 S}{R}$ (which is $\frac{S}{2R}$ in radians).</li>
 </ul>
 

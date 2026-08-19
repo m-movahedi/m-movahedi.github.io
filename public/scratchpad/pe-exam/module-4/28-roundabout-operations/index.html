@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Roundabout Operations">
     <meta property="og:description" content="Roundabout Operations Roundabouts are unsignalized intersections with a circular central island, where entering traffic yields to circulating traffic. Their …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Roundabout Operations">
     <meta name="twitter:description" content="Roundabout Operations Roundabouts are unsignalized intersections with a circular central island, where entering traffic yields to circulating traffic. Their …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/28-roundabout-operations/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/28-roundabout-operations/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/28-roundabout-operations/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -246,8 +260,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>Roundabout capacity is determined by the entry capacity ($c_e$), which decreases exponentially as the circulating (conflicting) flow rate ($v_c$) increases.</p>
 <h3 id="1-single-lane-roundabout-entry-capacity">1. Single-Lane Roundabout Entry Capacity</h3>
 <p>For a single-lane entry conflicting with a single circulating lane, the capacity is:</p>
-<p>$$c_e = 1,420 \times e^{-0.00091 \times v_c}$$</p>
-<p>Where:</p>
+$$c_e = 1,420 \times e^{-0.00091 \times v_c}$$<p>Where:</p>
 <ul>
 <li>$c_e$ = entry capacity ($pc/h$)</li>
 <li>$v_c$ = conflicting circulating flow rate ($pc/h$)</li>
@@ -255,11 +268,11 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>This formula is derived from a critical headway ($t_c$) of $4.11 \text{ seconds}$ and a follow-up headway ($t_f$) of $2.91 \text{ seconds}$.</p>
 <h3 id="2-multi-lane-roundabout-entry-capacity">2. Multi-Lane Roundabout Entry Capacity</h3>
 <p>For multi-lane roundabouts, capacity is calculated separately for the left entry lane ($c_{e,L}$) and right entry lane ($c_{e,R}$):</p>
-<p>$$\text{Left Lane Entry Capacity: } c_{e,L} = 1,420 \times e^{-0.00085 \times v_c}$$
-$$\text{Right Lane Entry Capacity: } c_{e,R} = 1,420 \times e^{-0.00085 \times v_c}$$</p>
-<p><em>(Note: These capacities are looked up or calculated based on the circulating flow across all circulating lanes).</em></p>
+$$\text{Left Lane Entry Capacity: } c_{e,L} = 1,420 \times e^{-0.00085 \times v_c}$$<p>
+</p>
+$$\text{Right Lane Entry Capacity: } c_{e,R} = 1,420 \times e^{-0.00085 \times v_c}$$<p><em>(Note: These capacities are looked up or calculated based on the circulating flow across all circulating lanes).</em></p>
 <hr>
-<h2 id="identifying-conflicting-circulating-flow-v_c">Identifying Conflicting (Circulating) Flow ($v_c$)</h2>
+<h2 id="identifying-conflicting-circulating-flow-">Identifying Conflicting (Circulating) Flow ($v_c$)</h2>
 <p>A common exam challenge is calculating the circulating flow ($v_c$) in front of a specific entry from an origin-destination (O-D) matrix or approach volume diagram.</p>
 <pre tabindex="0"><code>       North
          |
@@ -281,11 +294,10 @@ $$\text{Right Lane Entry Capacity: } c_{e,R} = 1,420 \times e^{-0.00085 \times v
 <li>Be careful: movements exiting at the South leg (e.g., East to South right turn, or North to South through) do <em>not</em> circulate in front of the South entry if they exit before reaching the entry point.</li>
 </ul>
 <hr>
-<h2 id="control-delay-d-and-level-of-service-los">Control Delay ($d$) and Level of Service (LOS)</h2>
-<h3 id="control-delay-d">Control Delay ($d$)</h3>
+<h2 id="control-delay--and-level-of-service-los">Control Delay ($d$) and Level of Service (LOS)</h2>
+<h3 id="control-delay-">Control Delay ($d$)</h3>
 <p>The average control delay per vehicle ($sec/veh$) for a roundabout entry lane is calculated using the standard unsignalized intersection delay formula:</p>
-<p>$$d = \frac{3,600}{c_e} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_e \times T}} \right] + 5$$</p>
-<p>Where:</p>
+$$d = \frac{3,600}{c_e} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_e \times T}} \right] + 5$$<p>Where:</p>
 <ul>
 <li>$c_e$ = entry capacity ($pc/h$)</li>
 <li>$T$ = analysis period (hours); typically $0.25 \text{ h}$ (15 minutes).</li>
@@ -308,23 +320,23 @@ $$\text{Right Lane Entry Capacity: } c_{e,R} = 1,420 \times e^{-0.00085 \times v
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 10.0$ to $\le 15.0$</td>
+          <td>$> 10.0$ to $\le 15.0$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 15.0$ to $\le 25.0$</td>
+          <td>$> 15.0$ to $\le 25.0$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 25.0$ to $\le 35.0$</td>
+          <td>$> 25.0$ to $\le 35.0$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 35.0$ to $\le 50.0$</td>
+          <td>$> 35.0$ to $\le 50.0$</td>
       </tr>
       <tr>
           <td><strong>F</strong></td>
-          <td>$&gt; 50.0$ OR if $X &gt; 1.0$</td>
+          <td>$> 50.0$ OR if $X > 1.0$</td>
       </tr>
   </tbody>
 </table>
@@ -349,17 +361,18 @@ In the delay equation, the analysis period $T$ is in <strong>hours</strong>. For
 <p>A single-lane roundabout entry has a circulating flow ($v_c$) of $600 \text{ veh/h}$ in front of it during the peak hour. The entry approach has an hourly demand volume of $450 \text{ veh/h}$ and a Peak Hour Factor (PHF) of $0.90$.</p>
 <p><strong>Determine the entry capacity, $v/c$ ratio, average control delay, and Level of Service (LOS) for the entry.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-entry-capacity-c_e">Step 1: Calculate Entry Capacity ($c_e$)</h4>
-<p>$$c_e = 1,420 \times e^{-0.00091 \times v_c}$$
-$$c_e = 1,420 \times e^{-0.00091 \times 600} = 1,420 \times e^{-0.546}$$
-$$c_e = 1,420 \times 0.5793 = 822.6 \text{ veh/h}$$</p>
-<h4 id="step-2-calculate-demand-flow-rate-v_e-and-vc-ratio-x">Step 2: Calculate Demand Flow Rate ($v_e$) and $v/c$ Ratio ($X$)</h4>
-<p>$$v_e = \frac{V}{\text{PHF}} = \frac{450}{0.90} = 500 \text{ veh/h}$$
-$$X = \frac{v_e}{c_e} = \frac{500}{822.6} = 0.608$$</p>
-<h4 id="step-3-calculate-control-delay-d">Step 3: Calculate Control Delay ($d$)</h4>
+<h4 id="step-1-calculate-entry-capacity-">Step 1: Calculate Entry Capacity ($c_e$)</h4>
+$$c_e = 1,420 \times e^{-0.00091 \times v_c}$$<p>
+</p>
+$$c_e = 1,420 \times e^{-0.00091 \times 600} = 1,420 \times e^{-0.546}$$<p>
+</p>
+$$c_e = 1,420 \times 0.5793 = 822.6 \text{ veh/h}$$<h4 id="step-2-calculate-demand-flow-rate--and--ratio-">Step 2: Calculate Demand Flow Rate ($v_e$) and $v/c$ Ratio ($X$)</h4>
+$$v_e = \frac{V}{\text{PHF}} = \frac{450}{0.90} = 500 \text{ veh/h}$$<p>
+</p>
+$$X = \frac{v_e}{c_e} = \frac{500}{822.6} = 0.608$$<h4 id="step-3-calculate-control-delay-">Step 3: Calculate Control Delay ($d$)</h4>
 <p>Using $T = 0.25 \text{ hours}$ (15-minute peak):
-$$d = \frac{3,600}{c_e} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_e \times T}} \right] + 5$$</p>
-<ol>
+</p>
+$$d = \frac{3,600}{c_e} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_e \times T}} \right] + 5$$<ol>
 <li>
 <p><strong>Calculate individual terms</strong>:</p>
 <ul>
@@ -372,15 +385,17 @@ $$d = \frac{3,600}{c_e} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{
 </li>
 <li>
 <p><strong>Solve for delay</strong>:
-$$d = 4.38 + 900 \times 0.25 \left[ -0.392 + 1.1036 \right] + 5$$
-$$d = 4.38 + 225 \left[ 0.7116 \right] + 5$$
-$$d = 4.38 + 160.11 + 5 = 169.49 \text{ sec/veh}$$</p>
-</li>
+</p>
+$$d = 4.38 + 900 \times 0.25 \left[ -0.392 + 1.1036 \right] + 5$$<p>
+</p>
+$$d = 4.38 + 225 \left[ 0.7116 \right] + 5$$<p>
+</p>
+$$d = 4.38 + 160.11 + 5 = 169.49 \text{ sec/veh}$$</li>
 </ol>
 <h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4>
 <p>Compare $d = 169.49 \text{ sec/veh}$ to the roundabout/unsignalized LOS criteria:</p>
 <ul>
-<li>$d &gt; 50.0 \text{ sec/veh} \rightarrow$ <strong>LOS F</strong></li>
+<li>$d > 50.0 \text{ sec/veh} \rightarrow$ <strong>LOS F</strong></li>
 </ul>
 <p><strong>Conclusion:</strong> The roundabout entry operates at <strong>LOS F</strong>.</p>
 <hr>

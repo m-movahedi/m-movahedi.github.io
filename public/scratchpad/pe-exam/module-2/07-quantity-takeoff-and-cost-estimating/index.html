@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Quantity Takeoff and Cost Estimating">
     <meta property="og:description" content="Quantity Takeoff and Cost Estimating This lesson covers the fundamentals of estimating material quantities and associated costs for civil engineering projects, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Quantity Takeoff and Cost Estimating">
     <meta name="twitter:description" content="Quantity Takeoff and Cost Estimating This lesson covers the fundamentals of estimating material quantities and associated costs for civil engineering projects, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-2/07-quantity-takeoff-and-cost-estimating/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/07-quantity-takeoff-and-cost-estimating/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-2/07-quantity-takeoff-and-cost-estimating/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -236,16 +250,14 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>Earthwork estimating involves calculating the volumes of material to be excavated (cut) or deposited (fill) to achieve the design grade.</p>
 <h3 id="1-volume-calculation-average-end-area-method">1. Volume Calculation: Average End Area Method</h3>
 <p>For linear projects (highways, railways, runways), cross-sections are taken at regular intervals (stations). The volume between two consecutive cross-sections is calculated using the Average End Area formula:</p>
-<p>$$V = \frac{A_1 + A_2}{2} \times L$$</p>
-<p>Where:</p>
+$$V = \frac{A_1 + A_2}{2} \times L$$<p>Where:</p>
 <ul>
 <li>$V$ = volume (cubic feet, $\text{ft}^3$)</li>
 <li>$A_1, A_2$ = cross-sectional areas of cut or fill at stations 1 and 2 ($\text{ft}^2$)</li>
 <li>$L$ = horizontal distance between the stations ($\text{ft}$)</li>
 </ul>
 <p><strong>Unit Conversion Trap:</strong> The PE exam almost always requests earthwork volumes in <strong>cubic yards ($\text{yd}^3$ or CY)</strong>. Since $1\text{ yd}^3 = 27\text{ ft}^3$, you must divide the result by 27:</p>
-<p>$$V_{\text{CY}} = \frac{A_1 + A_2}{2 \times 27} \times L = \frac{A_1 + A_2}{54} \times L$$</p>
-<h3 id="2-material-states-and-swellshrinkage-factors">2. Material States and Swell/Shrinkage Factors</h3>
+$$V_{\text{CY}} = \frac{A_1 + A_2}{2 \times 27} \times L = \frac{A_1 + A_2}{54} \times L$$<h3 id="2-material-states-and-swellshrinkage-factors">2. Material States and Swell/Shrinkage Factors</h3>
 <p>Soil exists in three distinct states, and each state has a different density and volume:</p>
 <ol>
 <li><strong>Bank (In-Situ / Natural State):</strong> Soil in its natural, undisturbed state. Measured in <strong>Bank Cubic Yards (BCY)</strong>.</li>
@@ -259,28 +271,31 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li>
 <p><strong>Swell Factor ($S_w$ or Swell %):</strong>
-$$LCY = BCY \times (1 + S_w)$$
-$$S_w = \left(\frac{\text{Bank Density}}{\text{Loose Density}} - 1\right) \times 100%$$</p>
-</li>
+</p>
+$$LCY = BCY \times (1 + S_w)$$<p>
+</p>
+$$S_w = \left(\frac{\text{Bank Density}}{\text{Loose Density}} - 1\right) \times 100\%$$</li>
 <li>
 <p><strong>Shrinkage Factor ($S_h$ or Shrinkage %):</strong>
-$$CCY = BCY \times (1 - S_h)$$
-$$S_h = \left(1 - \frac{\text{Bank Density}}{\text{Compacted Density}}\right) \times 100%$$</p>
-</li>
+</p>
+$$CCY = BCY \times (1 - S_h)$$<p>
+</p>
+$$S_h = \left(1 - \frac{\text{Bank Density}}{\text{Compacted Density}}\right) \times 100\%$$</li>
 <li>
 <p><strong>Load Factor ($L_f$):</strong> Converts loose volume back to bank volume.
-$$BCY = LCY \times L_f$$
-$$L_f = \frac{1}{1 + S_w} = \frac{\text{Loose Density}}{\text{Bank Density}}$$</p>
-</li>
+</p>
+$$BCY = LCY \times L_f$$<p>
+</p>
+$$L_f = \frac{1}{1 + S_w} = \frac{\text{Loose Density}}{\text{Bank Density}}$$</li>
 <li>
 <p><strong>Shrinkage Limit / Compaction Factor ($C_f$):</strong> Converts compacted volume back to bank volume.
-$$BCY = \frac{CCY}{1 - S_h}$$</p>
-</li>
+</p>
+$$BCY = \frac{CCY}{1 - S_h}$$</li>
 </ul>
 <hr>
 <h2 id="worked-example-earthwork-and-soil-states">Worked Example: Earthwork and Soil States</h2>
 <p><strong>Problem:</strong><br>
-A roadway construction project requires a compacted fill volume of $18,500\text{ CCY}$. The borrow pit soil has a swell factor of $20%$ and a shrinkage factor of $15%$.</p>
+A roadway construction project requires a compacted fill volume of $18,500\text{ CCY}$. The borrow pit soil has a swell factor of $20\%$ and a shrinkage factor of $15\%$.</p>
 <ol>
 <li>Determine the volume of soil that must be excavated from the borrow pit in Bank Cubic Yards (BCY).</li>
 <li>If the haul trucks have a capacity of $12\text{ LCY}$ each, calculate the number of truckloads required to transport the material.</li>
@@ -288,55 +303,59 @@ A roadway construction project requires a compacted fill volume of $18,500\text{
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Bank Volume (BCY) from Compacted Volume (CCY)</strong><br>
 The borrow pit material is in the natural bank state. We must find the BCY needed to yield $18,500\text{ CCY}$ after compaction.
-$$BCY = \frac{CCY}{1 - S_h}$$
-$$BCY = \frac{18,500}{1 - 0.15} = \frac{18,500}{0.85} \approx 21,764.7\text{ BCY}$$</p>
-<p><strong>Step 2: Calculate Loose Volume (LCY) for Hauling</strong><br>
+</p>
+$$BCY = \frac{CCY}{1 - S_h}$$<p>
+</p>
+$$BCY = \frac{18,500}{1 - 0.15} = \frac{18,500}{0.85} \approx 21,764.7\text{ BCY}$$<p><strong>Step 2: Calculate Loose Volume (LCY) for Hauling</strong><br>
 Truck capacity is given in Loose Cubic Yards (LCY). We must find the loose volume of the excavated soil.
-$$LCY = BCY \times (1 + S_w)$$
-$$LCY = 21,764.7 \times (1 + 0.20) = 26,117.6\text{ LCY}$$</p>
-<p><strong>Step 3: Calculate the Number of Truckloads</strong><br>
-$$\text{Truckloads} = \frac{\text{Total Loose Volume}}{\text{Truck Capacity}}$$
-$$\text{Truckloads} = \frac{26,117.6\text{ LCY}}{12\text{ LCY/truck}} \approx 2176.47 \text{ loads}$$</p>
-<p>Since we cannot run a fraction of a truckload, round up to the nearest whole integer:
-$$\text{Truckloads Required} = 2,177 \text{ loads}$$</p>
-<hr>
+</p>
+$$LCY = BCY \times (1 + S_w)$$<p>
+</p>
+$$LCY = 21,764.7 \times (1 + 0.20) = 26,117.6\text{ LCY}$$<p><strong>Step 3: Calculate the Number of Truckloads</strong><br>
+</p>
+$$\text{Truckloads} = \frac{\text{Total Loose Volume}}{\text{Truck Capacity}}$$<p>
+</p>
+$$\text{Truckloads} = \frac{26,117.6\text{ LCY}}{12\text{ LCY/truck}} \approx 2176.47 \text{ loads}$$<p>Since we cannot run a fraction of a truckload, round up to the nearest whole integer:
+</p>
+$$\text{Truckloads Required} = 2,177 \text{ loads}$$<hr>
 <h2 id="pavement-material-quantities">Pavement Material Quantities</h2>
 <p>Pavement takeoffs generally involve estimating structural asphalt layers (Hot Mix Asphalt - HMA), aggregate bases, and subbases.</p>
 <h3 id="1-volume-calculations">1. Volume Calculations</h3>
 <p>Volume is simply the surface area multiplied by the design thickness.
-$$V = \text{Length} \times \text{Width} \times \text{Thickness}$$</p>
-<p>Ensure all units are consistent (convert thickness in inches and width in feet to yards before computing cubic yards):
-$$V_{\text{CY}} = \frac{\text{Length (ft)} \times \text{Width (ft)} \times \text{Thickness (in)}}{12 \text{ in/ft} \times 27 \text{ ft}^3/\text{yd}^3} = \frac{L \times W \times t}{324}$$</p>
-<h3 id="2-tonnage-of-asphalt-hma">2. Tonnage of Asphalt (HMA)</h3>
+</p>
+$$V = \text{Length} \times \text{Width} \times \text{Thickness}$$<p>Ensure all units are consistent (convert thickness in inches and width in feet to yards before computing cubic yards):
+</p>
+$$V_{\text{CY}} = \frac{\text{Length (ft)} \times \text{Width (ft)} \times \text{Thickness (in)}}{12 \text{ in/ft} \times 27 \text{ ft}^3/\text{yd}^3} = \frac{L \times W \times t}{324}$$<h3 id="2-tonnage-of-asphalt-hma">2. Tonnage of Asphalt (HMA)</h3>
 <p>Hot Mix Asphalt is purchased and paid for by weight (tons).</p>
 <ul>
 <li>Standard HMA compacted unit weight is typically assumed to be <strong>$140 \text{ lb/ft}^3$ to $150 \text{ lb/ft}^3$</strong>, or a rule of thumb of <strong>$110 \text{ lb/yd}^2$ per inch of thickness</strong>.</li>
 <li>Always use the specific unit weight or density provided in the problem.</li>
 </ul>
-<p>$$\text{Weight (Tons)} = \frac{V_{\text{ft}^3} \times \text{Density (lb/ft}^3)}{2,000 \text{ lb/ton}}$$</p>
-<p>Alternatively, using the area-based rule:
-$$\text{Weight (Tons)} = \frac{\text{Area (yd}^2) \times \text{Thickness (in)} \times 110\text{ lb/yd}^2\text{/in}}{2,000 \text{ lb/ton}}$$</p>
-<hr>
+$$\text{Weight (Tons)} = \frac{V_{\text{ft}^3} \times \text{Density (lb/ft}^3)}{2,000 \text{ lb/ton}}$$<p>Alternatively, using the area-based rule:
+</p>
+$$\text{Weight (Tons)} = \frac{\text{Area (yd}^2) \times \text{Thickness (in)} \times 110\text{ lb/yd}^2\text{/in}}{2,000 \text{ lb/ton}}$$<hr>
 <h2 id="worked-example-asphalt-pavement-tonnage">Worked Example: Asphalt Pavement Tonnage</h2>
 <p><strong>Problem:</strong><br>
-A new highway section is $2.5\text{ miles}$ long and has four lanes, each $12\text{ feet}$ wide. The structural design specifies a Hot Mix Asphalt (HMA) surface course of $2.5\text{ inches}$ thick. The compacted density of the asphalt mix is $145 \text{ lb/ft}^3$. Calculate the total weight of HMA required for this project in tons. Include a $5%$ waste factor.</p>
+A new highway section is $2.5\text{ miles}$ long and has four lanes, each $12\text{ feet}$ wide. The structural design specifies a Hot Mix Asphalt (HMA) surface course of $2.5\text{ inches}$ thick. The compacted density of the asphalt mix is $145 \text{ lb/ft}^3$. Calculate the total weight of HMA required for this project in tons. Include a $5\%$ waste factor.</p>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Total Pavement Surface Area</strong></p>
 <ul>
 <li>$\text{Total Width} = 4 \text{ lanes} \times 12 \text{ ft/lane} = 48\text{ ft}$</li>
 <li>$\text{Total Length} = 2.5 \text{ miles} \times 5,280 \text{ ft/mile} = 13,200\text{ ft}$
+
 $$\text{Area} = 13,200\text{ ft} \times 48\text{ ft} = 633,600\text{ ft}^2$$</li>
 </ul>
 <p><strong>Step 2: Calculate Volume in Cubic Feet</strong></p>
 <ul>
 <li>$\text{Thickness} = 2.5\text{ inches} = \frac{2.5}{12}\text{ ft} \approx 0.2083\text{ ft}$
+
 $$\text{Volume} = 633,600\text{ ft}^2 \times 0.2083\text{ ft} = 132,000\text{ ft}^3$$</li>
 </ul>
 <p><strong>Step 3: Calculate Weight in Tons</strong>
-$$\text{Theoretical Weight (Tons)} = \frac{132,000\text{ ft}^3 \times 145 \text{ lb/ft}^3}{2,000 \text{ lb/ton}} = 9,570 \text{ tons}$$</p>
-<p><strong>Step 4: Apply Waste Factor</strong>
-$$\text{Total Weight Required} = 9,570\text{ tons} \times (1 + 0.05) = 10,048.5\text{ tons}$$</p>
-<hr>
+</p>
+$$\text{Theoretical Weight (Tons)} = \frac{132,000\text{ ft}^3 \times 145 \text{ lb/ft}^3}{2,000 \text{ lb/ton}} = 9,570 \text{ tons}$$<p><strong>Step 4: Apply Waste Factor</strong>
+</p>
+$$\text{Total Weight Required} = 9,570\text{ tons} \times (1 + 0.05) = 10,048.5\text{ tons}$$<hr>
 <h2 id="concrete-structural-elements">Concrete Structural Elements</h2>
 <p>Concrete quantity takeoff is generally a pure geometric exercise. The output is usually requested in <strong>Cubic Yards (CY)</strong>.</p>
 <h3 id="common-structures">Common Structures:</h3>
@@ -347,12 +366,13 @@ $$\text{Total Weight Required} = 9,570\text{ tons} \times (1 + 0.05) = 10,048.5\
 </ul>
 <h3 id="crucial-waste-factor-rule">Crucial Waste Factor Rule:</h3>
 <p>Unlike earthwork, concrete does not have &ldquo;swell&rdquo; or &ldquo;shrinkage&rdquo; factors in the soil sense, but it does have <strong>spillage and waste</strong> during placement.
-$$\text{Concrete Ordered} = \text{Theoretical Volume} \times (1 + \text{Waste Factor})$$
-Typical waste factors range from $2%$ to $10%$.</p>
+</p>
+$$\text{Concrete Ordered} = \text{Theoretical Volume} \times (1 + \text{Waste Factor})$$<p>
+Typical waste factors range from $2\%$ to $10\%$.</p>
 <hr>
 <h2 id="worked-example-retaining-wall-concrete">Worked Example: Retaining Wall Concrete</h2>
 <p><strong>Problem:</strong><br>
-A concrete cantilever retaining wall has a uniform cross-section shown below. The stem is $12\text{ inches}$ wide at the top, $18\text{ inches}$ wide at the bottom, and $15\text{ feet}$ high above the footing. The footing is $10\text{ feet}$ wide, $2\text{ feet}$ thick, and runs the entire length of the wall. The wall is $250\text{ feet}$ long. Calculate the total concrete volume required in Cubic Yards, assuming a $4%$ waste factor.</p>
+A concrete cantilever retaining wall has a uniform cross-section shown below. The stem is $12\text{ inches}$ wide at the top, $18\text{ inches}$ wide at the bottom, and $15\text{ feet}$ high above the footing. The footing is $10\text{ feet}$ wide, $2\text{ feet}$ thick, and runs the entire length of the wall. The wall is $250\text{ feet}$ long. Calculate the total concrete volume required in Cubic Yards, assuming a $4\%$ waste factor.</p>
 <div style="text-align: center; margin: 20px 0;">
   <svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
     <style>
@@ -377,18 +397,19 @@ A concrete cantilever retaining wall has a uniform cross-section shown below. Th
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate the Area of the Stem</strong><br>
 The stem is a trapezoid with top width $a = 1.0\text{ ft}$, bottom width $b = 1.5\text{ ft}$, and height $h = 15.0\text{ ft}$.
-$$\text{Area}_{\text{stem}} = \frac{a + b}{2} \times h = \frac{1.0 + 1.5}{2} \times 15.0 = 18.75\text{ ft}^2$$</p>
-<p><strong>Step 2: Calculate the Area of the Footing</strong><br>
+</p>
+$$\text{Area}_{\text{stem}} = \frac{a + b}{2} \times h = \frac{1.0 + 1.5}{2} \times 15.0 = 18.75\text{ ft}^2$$<p><strong>Step 2: Calculate the Area of the Footing</strong><br>
 The footing is a rectangle with width $w = 10.0\text{ ft}$ and thickness $t = 2.0\text{ ft}$.
-$$\text{Area}_{\text{footing}} = w \times t = 10.0 \times 2.0 = 20.0\text{ ft}^2$$</p>
-<p><strong>Step 3: Calculate Total Cross-Sectional Area</strong><br>
-$$\text{Area}_{\text{total}} = 18.75 + 20.0 = 38.75\text{ ft}^2$$</p>
-<p><strong>Step 4: Calculate Total Volume in Cubic Feet and Cubic Yards</strong><br>
-$$\text{Volume}<em>{\text{ft}^3} = \text{Area}</em>{\text{total}} \times \text{Length} = 38.75\text{ ft}^2 \times 250\text{ ft} = 9,687.5\text{ ft}^3$$
-$$\text{Volume}_{\text{CY}} = \frac{9,687.5}{27} \approx 358.80\text{ CY}$$</p>
-<p><strong>Step 5: Apply Waste Factor</strong><br>
-$$\text{Total Concrete to Order} = 358.80\text{ CY} \times 1.04 = 373.15\text{ CY}$$</p>
-<hr>
+</p>
+$$\text{Area}_{\text{footing}} = w \times t = 10.0 \times 2.0 = 20.0\text{ ft}^2$$<p><strong>Step 3: Calculate Total Cross-Sectional Area</strong><br>
+</p>
+$$\text{Area}_{\text{total}} = 18.75 + 20.0 = 38.75\text{ ft}^2$$<p><strong>Step 4: Calculate Total Volume in Cubic Feet and Cubic Yards</strong><br>
+</p>
+$$\text{Volume}_{\text{ft}^3} = \text{Area}_{\text{total}} \times \text{Length} = 38.75\text{ ft}^2 \times 250\text{ ft} = 9,687.5\text{ ft}^3$$<p>
+</p>
+$$\text{Volume}_{\text{CY}} = \frac{9,687.5}{27} \approx 358.80\text{ CY}$$<p><strong>Step 5: Apply Waste Factor</strong><br>
+</p>
+$$\text{Total Concrete to Order} = 358.80\text{ CY} \times 1.04 = 373.15\text{ CY}$$<hr>
 <h2 id="trench-excavation-bedding-and-backfill">Trench Excavation, Bedding, and Backfill</h2>
 <p>Drainage pipelines require calculating trench excavation volumes, pipe volumes, bedding material volumes, and backfill.</p>
 <div style="text-align: center; margin: 20px 0;">
@@ -429,13 +450,17 @@ $$\text{Total Concrete to Order} = 358.80\text{ CY} \times 1.04 = 373.15\text{ C
 <h3 id="key-equations">Key Equations:</h3>
 <ol>
 <li><strong>Total Excavation Volume ($V_{\text{exc}}$):</strong>
+
 $$V_{\text{exc}} = W_{\text{trench}} \times H_{\text{trench}} \times L$$</li>
 <li><strong>Bedding Volume ($V_{\text{bed}}$):</strong>
+
 $$V_{\text{bed}} = W_{\text{trench}} \times d_{\text{bed}} \times L$$</li>
 <li><strong>Pipe Displaced Volume ($V_{\text{pipe}}$):</strong><br>
 Use the <strong>Outer Diameter (OD)</strong> of the pipe, not the inner nominal diameter!
+
 $$V_{\text{pipe}} = \frac{\pi \times OD^2}{4} \times L$$</li>
 <li><strong>Net Backfill Volume ($V_{\text{back}}$):</strong>
+
 $$V_{\text{back}} = V_{\text{exc}} - V_{\text{bed}} - V_{\text{pipe}}$$</li>
 </ol>
 <hr>
@@ -444,14 +469,16 @@ $$V_{\text{back}} = V_{\text{exc}} - V_{\text{bed}} - V_{\text{pipe}}$$</li>
 <h3 id="1-pavement-striping">1. Pavement Striping</h3>
 <p>Striping is estimated in linear feet (LF) of line or gallons of paint.</p>
 <ul>
-<li><strong>Skip Lines:</strong> Usually written as a pattern, e.g., &ldquo;10-foot segment with 30-foot gap&rdquo;. This represents a <strong>40-foot cycle</strong> where only <strong>$25%$</strong> of the length is painted.</li>
+<li><strong>Skip Lines:</strong> Usually written as a pattern, e.g., &ldquo;10-foot segment with 30-foot gap&rdquo;. This represents a <strong>40-foot cycle</strong> where only <strong>$25\%$</strong> of the length is painted.</li>
 <li><strong>Paint Volume:</strong> Given a coverage rate (e.g., $320\text{ linear feet per gallon}$ for a $4\text{-inch}$ wide line), determine the total gallons.</li>
 </ul>
 <h3 id="2-roadside-seeding-sodding-and-blankets">2. Roadside Seeding, Sodding, and Blankets</h3>
 <ul>
 <li><strong>Sodding/Erosion Blankets:</strong> Typically measured in <strong>Square Yards (SY)</strong>.
+
 $$\text{Area (SY)} = \frac{\text{Area (ft}^2)}{9}$$</li>
 <li><strong>Seeding:</strong> Typically measured in <strong>Acres</strong> or <strong>Pounds of seed</strong>.
+
 $$\text{Area (Acres)} = \frac{\text{Area (ft}^2)}{43,560}$$</li>
 </ul>
 <hr>

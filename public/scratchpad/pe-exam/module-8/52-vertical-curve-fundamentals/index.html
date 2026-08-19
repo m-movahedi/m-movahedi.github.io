@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Vertical Curve Fundamentals">
     <meta property="og:description" content="Vertical Curve Fundamentals Vertical curves are used in highway design to provide a smooth transition between two intersecting grade tangents. Unlike horizontal …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Vertical Curve Fundamentals">
     <meta name="twitter:description" content="Vertical Curve Fundamentals Vertical curves are used in highway design to provide a smooth transition between two intersecting grade tangents. Unlike horizontal …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-8/52-vertical-curve-fundamentals/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-8/52-vertical-curve-fundamentals/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-8/52-vertical-curve-fundamentals/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -234,8 +248,8 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="curve-classifications">Curve Classifications</h2>
 <p>Vertical curves are classified based on the relative direction of the grade change:</p>
 <ul>
-<li><strong>Crest Vertical Curves:</strong> Occur when the algebraic change in grade is negative ($g_1 &gt; g_2$). Graphically, these curves curve downward, resembling a hill. The intersection of the tangents (Point of Vertical Intersection, or PVI) lies above the curve.</li>
-<li><strong>Sag Vertical Curves:</strong> Occur when the algebraic change in grade is positive ($g_1 &lt; g_2$). Graphically, these curves curve upward, resembling a valley. The PVI lies below the curve.</li>
+<li><strong>Crest Vertical Curves:</strong> Occur when the algebraic change in grade is negative ($g_1 > g_2$). Graphically, these curves curve downward, resembling a hill. The intersection of the tangents (Point of Vertical Intersection, or PVI) lies above the curve.</li>
+<li><strong>Sag Vertical Curves:</strong> Occur when the algebraic change in grade is positive ($g_1 < g_2$). Graphically, these curves curve upward, resembling a valley. The PVI lies below the curve.</li>
 </ul>
 <pre tabindex="0"><code>       Crest Curve (g1 &gt; g2)                 Sag Curve (g1 &lt; g2)
        
@@ -257,26 +271,25 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>$g_2$ (Final Grade):</strong> The slope of the departure tangent, expressed as a percentage (%) or a decimal (ft/ft).</li>
 <li><strong>$L$ (Length of Curve):</strong> The total horizontal distance from the PVC to the PVT, typically measured in feet (or meters) or in 100-foot stations.</li>
 <li><strong>$A$ (Algebraic Grade Difference):</strong> The absolute value of the difference between the two grades:
+
 $$A = |g_2 - g_1|$$
-<em>Note: When using AASHTO formulas, $A$ is typically entered as a percentage (e.g., for $g_1 = +3%$ and $g_2 = -2%$, $A = |-2 - 3| = 5$).</em></li>
+<em>Note: When using AASHTO formulas, $A$ is typically entered as a percentage (e.g., for $g_1 = +3\%$ and $g_2 = -2\%$, $A = |-2 - 3| = 5$).</em></li>
 <li><strong>$r$ (Rate of Change of Grade):</strong> The change in grade per unit length of the curve:
+
 $$r = \frac{g_2 - g_1}{L}$$</li>
 <li><strong>$K$ (Rate of Vertical Curvature):</strong> The horizontal distance required to effect a 1% change in grade:
+
 $$K = \frac{L}{A}$$
 Where $L$ is in feet and $A$ is in percent. The $K$-value is a critical design metric used to determine minimum curve lengths for stopping, passing, and headlight sight distances.</li>
 </ul>
 <h2 id="stationing-and-elevation-relationships">Stationing and Elevation Relationships</h2>
 <p>Because vertical parabolas are symmetric, the PVI is located exactly halfway along the horizontal length of the curve. Consequently, the horizontal distance from the PVC to the PVI is $L/2$, and from the PVI to the PVT is also $L/2$.</p>
 <p>This symmetry establishes the following stationing equations:</p>
-<p>$$\text{Station}<em>{\text{PVC}} = \text{Station}</em>{\text{PVI}} - \frac{L}{2}$$</p>
-<p>$$\text{Station}<em>{\text{PVT}} = \text{Station}</em>{\text{PVI}} + \frac{L}{2} = \text{Station}_{\text{PVC}} + L$$</p>
-<p>Similarly, the elevations of the tangent points can be calculated from the PVI elevation using the constant tangent grades:</p>
-<p>$$\text{Elev}<em>{\text{PVC}} = \text{Elev}</em>{\text{PVI}} - g_1 \left(\frac{L}{2}\right)$$</p>
-<p>$$\text{Elev}<em>{\text{PVT}} = \text{Elev}</em>{\text{PVI}} + g_2 \left(\frac{L}{2}\right)$$</p>
-<p><em>Caution: In these elevation equations, the grades ($g_1, g_2$) must be expressed in decimal form (e.g., $3% = 0.03$) if the length $L$ is in feet, to ensure that the units are dimensionally consistent.</em></p>
+$$\text{Station}_{\text{PVC}} = \text{Station}_{\text{PVI}} - \frac{L}{2}$$$$\text{Station}_{\text{PVT}} = \text{Station}_{\text{PVI}} + \frac{L}{2} = \text{Station}_{\text{PVC}} + L$$<p>Similarly, the elevations of the tangent points can be calculated from the PVI elevation using the constant tangent grades:</p>
+$$\text{Elev}_{\text{PVC}} = \text{Elev}_{\text{PVI}} - g_1 \left(\frac{L}{2}\right)$$$$\text{Elev}_{\text{PVT}} = \text{Elev}_{\text{PVI}} + g_2 \left(\frac{L}{2}\right)$$<p><em>Caution: In these elevation equations, the grades ($g_1, g_2$) must be expressed in decimal form (e.g., $3\% = 0.03$) if the length $L$ is in feet, to ensure that the units are dimensionally consistent.</em></p>
 <hr>
 <h2 id="worked-example">Worked Example</h2>
-<p>A vertical curve is to connect an initial grade of $+2.5%$ and a final grade of $-1.5%$. The PVI is located at Station $124+50$ with an elevation of $850.00\text{ ft}$. The design speed requires a minimum curve length of $600\text{ ft}$.</p>
+<p>A vertical curve is to connect an initial grade of $+2.5\%$ and a final grade of $-1.5\%$. The PVI is located at Station $124+50$ with an elevation of $850.00\text{ ft}$. The design speed requires a minimum curve length of $600\text{ ft}$.</p>
 <p>Calculate:</p>
 <ol>
 <li>The algebraic grade difference ($A$) and rate of vertical curvature ($K$).</li>
@@ -286,23 +299,23 @@ Where $L$ is in feet and $A$ is in percent. The $K$-value is a critical design m
 <h3 id="solution">Solution</h3>
 <p><strong>1. Calculate $A$ and $K$:</strong></p>
 <ul>
-<li>$g_1 = +2.5%$</li>
-<li>$g_2 = -1.5%$</li>
+<li>$g_1 = +2.5\%$</li>
+<li>$g_2 = -1.5\%$</li>
 <li>$L = 600\text{ ft}$</li>
 </ul>
-<p>$$A = |g_2 - g_1| = |-1.5 - 2.5| = 4.0%$$
-$$K = \frac{L}{A} = \frac{600\text{ ft}}{4.0} = 150\text{ ft/%}$$</p>
-<p><strong>2. Calculate PVC and PVT Stations:</strong>
+$$A = |g_2 - g_1| = |-1.5 - 2.5| = 4.0\%$$<p>
+</p>
+$$K = \frac{L}{A} = \frac{600\text{ ft}}{4.0} = 150\text{ ft/\%}$$<p><strong>2. Calculate PVC and PVT Stations:</strong>
 Convert PVI Station $124+50$ to a distance: $12,450\text{ ft}$.</p>
 <ul>
-<li>$\text{Station}<em>{\text{PVC}} = \text{Station}</em>{\text{PVI}} - \frac{L}{2} = 12,450 - \frac{600}{2} = 12,150\text{ ft} \implies 121+50$</li>
-<li>$\text{Station}<em>{\text{PVT}} = \text{Station}</em>{\text{PVI}} + \frac{L}{2} = 12,450 + \frac{600}{2} = 12,750\text{ ft} \implies 127+50$</li>
+<li>$\text{Station}_{\text{PVC}} = \text{Station}_{\text{PVI}} - \frac{L}{2} = 12,450 - \frac{600}{2} = 12,150\text{ ft} \implies 121+50$</li>
+<li>$\text{Station}_{\text{PVT}} = \text{Station}_{\text{PVI}} + \frac{L}{2} = 12,450 + \frac{600}{2} = 12,750\text{ ft} \implies 127+50$</li>
 </ul>
 <p><strong>3. Calculate PVC and PVT Elevations:</strong>
 Use grades as decimals: $g_1 = +0.025$ and $g_2 = -0.015$.</p>
 <ul>
-<li>$\text{Elev}<em>{\text{PVC}} = \text{Elev}</em>{\text{PVI}} - g_1 \left(\frac{L}{2}\right) = 850.00 - (0.025)(300) = 850.00 - 7.50 = 842.50\text{ ft}$</li>
-<li>$\text{Elev}<em>{\text{PVT}} = \text{Elev}</em>{\text{PVI}} + g_2 \left(\frac{L}{2}\right) = 850.00 + (-0.015)(300) = 850.00 - 4.50 = 845.50\text{ ft}$</li>
+<li>$\text{Elev}_{\text{PVC}} = \text{Elev}_{\text{PVI}} - g_1 \left(\frac{L}{2}\right) = 850.00 - (0.025)(300) = 850.00 - 7.50 = 842.50\text{ ft}$</li>
+<li>$\text{Elev}_{\text{PVT}} = \text{Elev}_{\text{PVI}} + g_2 \left(\frac{L}{2}\right) = 850.00 + (-0.015)(300) = 850.00 - 4.50 = 845.50\text{ ft}$</li>
 </ul>
 <h2 id="references">References</h2>
 <ul>

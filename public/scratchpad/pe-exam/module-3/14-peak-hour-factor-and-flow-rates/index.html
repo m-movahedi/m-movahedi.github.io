@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Peak Hour Factor and Flow Rates">
     <meta property="og:description" content="Peak Hour Factor and Flow Rates In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Peak Hour Factor and Flow Rates">
     <meta name="twitter:description" content="Peak Hour Factor and Flow Rates In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-3/14-peak-hour-factor-and-flow-rates/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -235,8 +249,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="the-peak-hour-factor-phf">The Peak Hour Factor (PHF)</h2>
 <p>The Peak Hour Factor represents the relationship between the hourly volume and the peak rate of flow within that hour (typically measured in 15-minute intervals).</p>
 <h3 id="formula">Formula:</h3>
-<p>$$PHF = \frac{V}{4 \times V_{15}}$$</p>
-<p>Where:</p>
+$$PHF = \frac{V}{4 \times V_{15}}$$<p>Where:</p>
 <ul>
 <li>$V$ = total hourly volume during the peak hour ($\text{vehicles/hour}$)</li>
 <li>$V_{15}$ = volume during the single busiest 15-minute interval of the peak hour ($\text{vehicles/15-min}$)</li>
@@ -254,18 +267,16 @@ gtag('config', 'G-1WZSE8DHZ9');
 </li>
 </ul>
 <hr>
-<h2 id="peak-flow-rate-v">Peak Flow Rate ($v$)</h2>
+<h2 id="peak-flow-rate-">Peak Flow Rate ($v$)</h2>
 <p>To evaluate the operational capacity and level of service (LOS) of a facility, we use the equivalent hourly flow rate ($v$) based on the peak 15-minute interval. This represents the rate of flow if the peak 15-minute surge were to persist for a full hour.</p>
-<p>$$v = \frac{V}{PHF}$$</p>
-<p>Where:</p>
+$$v = \frac{V}{PHF}$$<p>Where:</p>
 <ul>
 <li>$v$ = equivalent peak hourly flow rate ($\text{vehicles/hour}$ or $\text{passenger cars/hour}$)</li>
 <li>$V$ = total hourly volume ($\text{vehicles/hour}$)</li>
 <li>$PHF$ = Peak Hour Factor</li>
 </ul>
 <p><strong>Note:</strong> If the problem asks for flow rate in <em>passenger cars per hour per lane</em> ($\text{pc/h/ln}$ or $\text{pcphpl}$), we must also adjust the volume for lane counts, heavy vehicles ($f_{HV}$), and driver population ($f_p$) using the standard HCM capacity adjustment formulas:</p>
-<p>$$v_p = \frac{V}{PHF \times N \times f_{HV} \times f_p}$$</p>
-<hr>
+$$v_p = \frac{V}{PHF \times N \times f_{HV} \times f_p}$$<hr>
 <h2 id="worked-example-calculating-phf-and-peak-flow-rate-from-15-minute-counts">Worked Example: Calculating PHF and Peak Flow Rate from 15-Minute Counts</h2>
 <p><strong>Problem:</strong><br>
 A direction of a freeway has the following traffic counts recorded during the peak hour:</p>
@@ -285,19 +296,22 @@ A direction of a freeway has the following traffic counts recorded during the pe
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Total Hourly Volume ($V$)</strong><br>
 Sum the volumes of the four 15-minute intervals:
-$$V = 450 + 520 + 610 + 480 = 2,060 \text{ vehicles}$$</p>
-<p><strong>Step 2: Identify Peak 15-Minute Volume ($V_{15}$)</strong><br>
+</p>
+$$V = 450 + 520 + 610 + 480 = 2,060 \text{ vehicles}$$<p><strong>Step 2: Identify Peak 15-Minute Volume ($V_{15}$)</strong><br>
 The busiest 15-minute interval is between 5:30 PM and 5:45 PM:
-$$V_{15} = 610 \text{ vehicles}$$</p>
-<p><strong>Step 3: Calculate the Peak Hour Factor (PHF)</strong><br>
-$$PHF = \frac{V}{4 \times V_{15}}$$
-$$PHF = \frac{2,060}{4 \times 610} = \frac{2,060}{2,440} \approx 0.844$$</p>
-<p><strong>Step 4: Calculate the Peak Flow Rate ($v$)</strong><br>
-$$v = \frac{V}{PHF}$$
-$$v = \frac{2,060}{0.844} \approx 2,440 \text{ vehicles/hour}$$</p>
-<p><em>Alternative Check:</em><br>
+</p>
+$$V_{15} = 610 \text{ vehicles}$$<p><strong>Step 3: Calculate the Peak Hour Factor (PHF)</strong><br>
+</p>
+$$PHF = \frac{V}{4 \times V_{15}}$$<p>
+</p>
+$$PHF = \frac{2,060}{4 \times 610} = \frac{2,060}{2,440} \approx 0.844$$<p><strong>Step 4: Calculate the Peak Flow Rate ($v$)</strong><br>
+</p>
+$$v = \frac{V}{PHF}$$<p>
+</p>
+$$v = \frac{2,060}{0.844} \approx 2,440 \text{ vehicles/hour}$$<p><em>Alternative Check:</em><br>
 The equivalent flow rate is simply the peak 15-minute count scaled up to an hour:
-$$v = V_{15} \times 4 = 610 \times 4 = 2,440 \text{ vehicles/hour}$$
+</p>
+$$v = V_{15} \times 4 = 610 \times 4 = 2,440 \text{ vehicles/hour}$$<p>
 Both methods yield the same results.</p>
 <hr>
 <h2 id="worked-example-estimating-peak-15-minute-volume">Worked Example: Estimating Peak 15-Minute Volume</h2>
@@ -305,11 +319,12 @@ Both methods yield the same results.</p>
 A highway is carrying an hourly volume of $1,600 \text{ vehicles/hour}$. If the Peak Hour Factor (PHF) is $0.80$, calculate the number of vehicles that pass through the segment during the busiest 15-minute interval.</p>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Rearrange the PHF equation to solve for $V_{15}$</strong>
-$$PHF = \frac{V}{4 \times V_{15}} \implies V_{15} = \frac{V}{4 \times PHF}$$</p>
-<p><strong>Step 2: Substitute values and solve</strong></p>
+</p>
+$$PHF = \frac{V}{4 \times V_{15}} \implies V_{15} = \frac{V}{4 \times PHF}$$<p><strong>Step 2: Substitute values and solve</strong></p>
 <ul>
 <li>$V = 1,600 \text{ vehicles}$</li>
 <li>$PHF = 0.80$
+
 $$V_{15} = \frac{1,600}{4 \times 0.80} = \frac{1,600}{3.2} = 500 \text{ vehicles}$$</li>
 </ul>
 <p><em>Interpretation:</em> During the peak hour, the busiest 15 minutes will see $500$ vehicles. If this rate persisted for the entire hour, the flow rate would be $500 \times 4 = 2,000 \text{ vehicles/hour}$, which is significantly higher than the actual hourly volume of $1,600$ vehicles.</p>

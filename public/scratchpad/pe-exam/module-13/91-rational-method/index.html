@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Rational Method">
     <meta property="og:description" content="Rational Method The Rational Method is the most widely used hydrologic model for sizing storm drainage systems, gutter inlets, roadside ditches, and small …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Rational Method">
     <meta name="twitter:description" content="Rational Method The Rational Method is the most widely used hydrologic model for sizing storm drainage systems, gutter inlets, roadside ditches, and small …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/91-rational-method/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/91-rational-method/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/91-rational-method/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -234,8 +248,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="governing-equations">Governing Equations</h2>
 <h3 id="uscs-units">USCS Units</h3>
-<p>$$Q = C i A$$</p>
-<p>Where:</p>
+$$Q = C i A$$<p>Where:</p>
 <ul>
 <li>$Q$ = Peak runoff rate (<strong>cubic feet per second, cfs</strong>)</li>
 <li>$C$ = Runoff coefficient (dimensionless)</li>
@@ -244,8 +257,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <p><em>Note:</em> Technically, $1\text{ in/hr} \cdot 1\text{ acre} = 1.008\text{ cfs}$. Because this conversion is so close to $1.0$, the conversion factor is neglected.</p>
 <h3 id="si-metric-units">SI (Metric) Units</h3>
-<p>$$Q = \frac{C i A}{360} \approx 0.00278 C i A$$</p>
-<p>Where:</p>
+$$Q = \frac{C i A}{360} \approx 0.00278 C i A$$<p>Where:</p>
 <ul>
 <li>$Q$ = Peak runoff rate (<strong>cubic meters per second, $m^3/s$</strong>)</li>
 <li>$C$ = Runoff coefficient (dimensionless)</li>
@@ -254,11 +266,11 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <p><em>Conversion:</em> $1\text{ hectare} = 10,000\text{ m}^2 \approx 2.471\text{ acres}$.</p>
 <hr>
-<h2 id="runoff-coefficient-frequency-adjustment-c_f">Runoff Coefficient Frequency Adjustment ($C_f$)</h2>
+<h2 id="runoff-coefficient-frequency-adjustment-">Runoff Coefficient Frequency Adjustment ($C_f$)</h2>
 <p>For severe, rare storm events (return period $T \ge 25\text{ years}$), infiltration capacity is reduced due to soil saturation. To account for this, a frequency adjustment factor ($C_f$) is applied to the runoff coefficient.</p>
 <p>The adjusted peak flow equation becomes:
-$$Q = C_f C i A$$</p>
-<p>The NCEES Reference Handbook provides the following standard adjustment factors:</p>
+</p>
+$$Q = C_f C i A$$<p>The NCEES Reference Handbook provides the following standard adjustment factors:</p>
 <table>
   <thead>
       <tr>
@@ -285,7 +297,7 @@ $$Q = C_f C i A$$</p>
       </tr>
   </tbody>
 </table>
-<p><em>Critical Constraint:</em> The product of $C_f \cdot C$ must never exceed $1.0$ (i.e., you cannot have more runoff than rainfall). If $C_f \cdot C &gt; 1.0$, use $C_{adj} = 1.0$.</p>
+<p><em>Critical Constraint:</em> The product of $C_f \cdot C$ must never exceed $1.0$ (i.e., you cannot have more runoff than rainfall). If $C_f \cdot C > 1.0$, use $C_{adj} = 1.0$.</p>
 <hr>
 <h2 id="limitations-of-the-rational-method">Limitations of the Rational Method</h2>
 <p>The Rational Method is based on simplified assumptions and should only be applied within its limits:</p>
@@ -308,23 +320,28 @@ An analysis of the local IDF curves indicates that for a duration equal to the w
 <ol>
 <li>
 <p><strong>Calculate the Composite Runoff Coefficient ($C_{comp}$):</strong>
-$$C_{comp} = \frac{\sum (C_i \cdot A_i)}{A_{total}}$$
-$$A_{total} = 15 + 30 = 45\text{ acres}$$
-$$C_{comp} = \frac{(0.90 \cdot 15) + (0.40 \cdot 30)}{45} = \frac{13.5 + 12.0}{45} = \frac{25.5}{45} = 0.567$$</p>
-</li>
+</p>
+$$C_{comp} = \frac{\sum (C_i \cdot A_i)}{A_{total}}$$<p>
+</p>
+$$A_{total} = 15 + 30 = 45\text{ acres}$$<p>
+</p>
+$$C_{comp} = \frac{(0.90 \cdot 15) + (0.40 \cdot 30)}{45} = \frac{13.5 + 12.0}{45} = \frac{25.5}{45} = 0.567$$</li>
 <li>
 <p><strong>Select and Apply the Frequency Adjustment Factor ($C_f$):</strong>
 For a 50-year storm, the frequency adjustment factor is $C_f = 1.20$.</p>
 <p>Verify if the adjusted coefficient exceeds 1.0:
-$$C_{adj} = C_f \cdot C_{comp} = 1.20 \cdot 0.567 = 0.680$$
+</p>
+$$C_{adj} = C_f \cdot C_{comp} = 1.20 \cdot 0.567 = 0.680$$<p>
 Since $0.680 \le 1.0$, this value is valid.</p>
 </li>
 <li>
 <p><strong>Calculate Peak Flow rate ($Q$):</strong>
-$$Q = C_{adj} i A$$
-$$Q = 0.680 \cdot 5.8\text{ in/hr} \cdot 45\text{ acres}$$
-$$Q = 177.5\text{ cfs}$$</p>
-</li>
+</p>
+$$Q = C_{adj} i A$$<p>
+</p>
+$$Q = 0.680 \cdot 5.8\text{ in/hr} \cdot 45\text{ acres}$$<p>
+</p>
+$$Q = 177.5\text{ cfs}$$</li>
 </ol>
 <hr>
 <h2 id="key-exam-pitfalls">Key Exam Pitfalls</h2>

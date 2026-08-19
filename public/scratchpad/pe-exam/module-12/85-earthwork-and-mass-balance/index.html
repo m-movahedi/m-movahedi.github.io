@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Earthwork and Mass Balance">
     <meta property="og:description" content="Earthwork and Mass Balance Earthwork operations are a major component of highway construction projects. Designers must balance the volume of soil excavated from …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Earthwork and Mass Balance">
     <meta name="twitter:description" content="Earthwork and Mass Balance Earthwork operations are a major component of highway construction projects. Designers must balance the volume of soil excavated from …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/85-earthwork-and-mass-balance/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/85-earthwork-and-mass-balance/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/85-earthwork-and-mass-balance/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -282,28 +296,30 @@ gtag('config', 'G-1WZSE8DHZ9');
 </div>
 <h3 id="the-fundamental-conservation-rule">The Fundamental Conservation Rule</h3>
 <p>Throughout all three states, the weight of the solid soil particles ($W_s$) remains constant. Only the volume of voids changes:
-$$W_s = \gamma_{d,\text{bank}} \cdot V_B = \gamma_{d,\text{loose}} \cdot V_L = \gamma_{d,\text{compacted}} \cdot V_C$$</p>
-<hr>
+</p>
+$$W_s = \gamma_{d,\text{bank}} \cdot V_B = \gamma_{d,\text{loose}} \cdot V_L = \gamma_{d,\text{compacted}} \cdot V_C$$<hr>
 <h2 id="2-swell-shrinkage-and-conversion-factors">2. Swell, Shrinkage, and Conversion Factors</h2>
-<h3 id="swell-s_w">Swell ($S_w$)</h3>
+<h3 id="swell-">Swell ($S_w$)</h3>
 <p>Swell is the increase in volume of a soil when it is excavated from its natural bank state into a loose state. It is expressed as a percentage of the bank volume:
-$$S_w (%) = \left(\frac{V_L}{V_B} - 1\right) \cdot 100% = \left(\frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{loose}}} - 1\right) \cdot 100%$$</p>
-<p>To convert between volumes:
-$$V_L = V_B \cdot (1 + S_w)$$</p>
-<h4 id="load-factor-l_f">Load Factor ($L_f$):</h4>
+</p>
+$$S_w (\%) = \left(\frac{V_L}{V_B} - 1\right) \cdot 100\% = \left(\frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{loose}}} - 1\right) \cdot 100\%$$<p>To convert between volumes:
+</p>
+$$V_L = V_B \cdot (1 + S_w)$$<h4 id="load-factor-">Load Factor ($L_f$):</h4>
 <p>The load factor is the ratio of bank volume to loose volume:
-$$L_f = \frac{V_B}{V_L} = \frac{\gamma_{d,\text{loose}}}{\gamma_{d,\text{bank}}} = \frac{1}{1 + S_w}$$
-$$V_B = V_L \cdot L_f$$</p>
-<h3 id="shrinkage-s_h">Shrinkage ($S_h$)</h3>
+</p>
+$$L_f = \frac{V_B}{V_L} = \frac{\gamma_{d,\text{loose}}}{\gamma_{d,\text{bank}}} = \frac{1}{1 + S_w}$$<p>
+</p>
+$$V_B = V_L \cdot L_f$$<h3 id="shrinkage-">Shrinkage ($S_h$)</h3>
 <p>Shrinkage is the decrease in volume of a soil when it is compacted from its natural bank state into a compacted state. It is expressed as a percentage of the bank volume:
-$$S_h (%) = \left(1 - \frac{V_C}{V_B}\right) \cdot 100% = \left(1 - \frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{compacted}}}\right) \cdot 100%$$</p>
-<p>To convert between volumes:
-$$V_C = V_B \cdot (1 - S_h)$$</p>
-<h4 id="shrinkage-factor-s_f">Shrinkage Factor ($S_f$):</h4>
+</p>
+$$S_h (\%) = \left(1 - \frac{V_C}{V_B}\right) \cdot 100\% = \left(1 - \frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{compacted}}}\right) \cdot 100\%$$<p>To convert between volumes:
+</p>
+$$V_C = V_B \cdot (1 - S_h)$$<h4 id="shrinkage-factor-">Shrinkage Factor ($S_f$):</h4>
 <p>The shrinkage factor is the ratio of compacted volume to bank volume:
-$$S_f = \frac{V_C}{V_B} = \frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{compacted}}} = 1 - S_h$$
-$$V_B = \frac{V_C}{S_f} = \frac{V_C}{1 - S_h}$$</p>
-<hr>
+</p>
+$$S_f = \frac{V_C}{V_B} = \frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{compacted}}} = 1 - S_h$$<p>
+</p>
+$$V_B = \frac{V_C}{S_f} = \frac{V_C}{1 - S_h}$$<hr>
 <h2 id="3-the-mass-diagram">3. The Mass Diagram</h2>
 <p>A <strong>mass diagram</strong> is a cumulative plot of the net earthwork volume along the centerline of a roadway. The horizontal axis represents the stationing ($x$), and the vertical axis represents the cumulative net volume ($y$), where:</p>
 <ul>
@@ -384,31 +400,38 @@ $$V_B = \frac{V_C}{S_f} = \frac{V_C}{1 - S_h}$$</p>
 <li><strong>Calculate Swell ($S_w$) and Shrinkage ($S_h$):</strong>
 <ul>
 <li><strong>Swell:</strong>
-$$S_w = \frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{loose}}} - 1 = \frac{110.0}{90.0} - 1 = 1.222 - 1.0 = 0.222\text{ (or } 22.2%)$$</li>
+
+$$S_w = \frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{loose}}} - 1 = \frac{110.0}{90.0} - 1 = 1.222 - 1.0 = 0.222\text{ (or } 22.2\%)$$</li>
 <li><strong>Shrinkage:</strong>
-$$S_h = 1 - \frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{comp}}} = 1 - \frac{110.0}{125.0} = 1 - 0.88 = 0.12\text{ (or } 12.0%)$$
+
+$$S_h = 1 - \frac{\gamma_{d,\text{bank}}}{\gamma_{d,\text{comp}}} = 1 - \frac{110.0}{125.0} = 1 - 0.88 = 0.12\text{ (or } 12.0\%)$$
 <em>(Shrinkage factor $S_f = 1 - S_h = 0.88$)</em></li>
 </ul>
 </li>
 <li><strong>Calculate Bank Volume Required ($V_B$):</strong>
 Using the compacted-to-bank conversion:
+
 $$V_B = \frac{V_C}{1 - S_h} = \frac{45,000\text{ CCY}}{0.88} = 51,136.4\text{ BCY}$$</li>
 <li><strong>Calculate Loose Volume Required ($V_L$):</strong>
 Using the bank-to-loose conversion:
+
 $$V_L = V_B \cdot (1 + S_w) = 51,136.4\text{ BCY} \cdot (1 + 0.222) = 51,136.4 \cdot 1.222 = 62,499.7\text{ LCY}$$
 <em>(Alternatively, use dry weight conservation: $V_L = V_C \cdot \frac{\gamma_{d,\text{comp}}}{\gamma_{d,\text{loose}}} = 45,000 \cdot \frac{125}{90} = 62,500\text{ LCY}$. The values check out!)</em></li>
 <li><strong>Calculate Number of Truck Loads:</strong>
+
 $$\text{Loads} = \frac{V_L}{\text{Truck Capacity}} = \frac{62,500\text{ LCY}}{12.0\text{ LCY/load}} = 5208.33\text{ loads}$$
 Since you cannot run a fraction of a load, round up:
+
 $$\text{Loads} = 5209\text{ loads}$$</li>
 </ol>
 <hr>
 <h3 id="worked-example-2-earthwork-balancing">Worked Example 2: Earthwork Balancing</h3>
-<p>A project has a cut section with a volume of $8000\text{ BCY}$. This soil is to be placed in an adjacent fill section that has a designed compacted volume of $7200\text{ CCY}$. The soil shrinkage factor is $S_f = 0.85$ (meaning $S_h = 15%$).</p>
+<p>A project has a cut section with a volume of $8000\text{ BCY}$. This soil is to be placed in an adjacent fill section that has a designed compacted volume of $7200\text{ CCY}$. The soil shrinkage factor is $S_f = 0.85$ (meaning $S_h = 15\%$).</p>
 <p><strong>Goal:</strong> Determine if there is a surplus or deficit of soil, and calculate the volume of borrow required or waste generated in BCY.</p>
 <p><strong>Solution:</strong></p>
 <ol>
 <li><strong>Convert Compacted Fill Volume to Bank Cubic Yards (BCY):</strong>
+
 $$V_{F,\text{bank}} = \frac{V_C}{S_f} = \frac{7200\text{ CCY}}{0.85} = 8470.6\text{ BCY}$$
 This is the amount of bank soil required to satisfy the fill.</li>
 <li><strong>Compare Cut Volume to Required Fill Volume:</strong>
@@ -420,16 +443,18 @@ This is the amount of bank soil required to satisfy the fill.</li>
 </li>
 <li><strong>Determine Borrow or Waste:</strong>
 Since the balance is negative, there is a <strong>deficit</strong> of soil.
+
 $$\text{Borrow Required} = 471\text{ BCY}$$</li>
 </ol>
 <hr>
 <h2 id="5-exam-pitfalls-and-tips">5. Exam Pitfalls and Tips</h2>
 <ul>
 <li><strong>Forgetting to Adjust Fill Volumes:</strong> When reading a mass diagram or balancing earthwork, never compare bank cut volumes directly to compacted fill volumes. You must convert the fill volume to bank equivalent volume first:
+
 $$V_{\text{fill (BCY)}} = \frac{V_{\text{fill (CCY)}}}{1 - S_h}$$</li>
 <li><strong>Multiplication vs. Division Confusions:</strong> Remember:
 <ul>
-<li>Loose volume ($V_L$) is the <em>largest</em> volume ($V_L &gt; V_B &gt; V_C$).</li>
+<li>Loose volume ($V_L$) is the <em>largest</em> volume ($V_L > V_B > V_C$).</li>
 <li>Compacted volume ($V_C$) is the <em>smallest</em> volume.</li>
 <li>If you convert from bank to loose, you multiply by $(1+S_w)$. If you convert from loose to bank, you divide by $(1+S_w)$ or multiply by $L_f$.</li>
 </ul>

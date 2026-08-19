@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Floodplain and Roadway Overtopping">
     <meta property="og:description" content="Floodplain and Roadway Overtopping Roadway designs must accommodate extreme flood events without causing hazardous roadway overtopping or flooding adjacent …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Floodplain and Roadway Overtopping">
     <meta name="twitter:description" content="Floodplain and Roadway Overtopping Roadway designs must accommodate extreme flood events without causing hazardous roadway overtopping or flooding adjacent …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/100-floodplain-and-roadway-overtopping/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/100-floodplain-and-roadway-overtopping/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/100-floodplain-and-roadway-overtopping/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -235,7 +249,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="fema-floodplain-definitions">FEMA Floodplain Definitions</h2>
 <p>FEMA (Federal Emergency Management Agency) regulates development within flood-prone areas.</p>
 <ul>
-<li><strong>Base Flood Elevation (BFE):</strong> The computed water surface elevation resulting from a flood that has a $1%$ chance of occurring in any given year (also called the 100-year flood or &ldquo;Base Flood&rdquo;).</li>
+<li><strong>Base Flood Elevation (BFE):</strong> The computed water surface elevation resulting from a flood that has a $1\%$ chance of occurring in any given year (also called the 100-year flood or &ldquo;Base Flood&rdquo;).</li>
 <li><strong>Regulatory Floodway:</strong> The channel of a river or stream plus the adjacent land area that must be kept free of development so that the 100-year flood can be discharged without increasing the water surface elevation by more than a designated height (typically <strong>1.0 foot</strong> under FEMA standards).</li>
 <li><strong>Floodway Fringe:</strong> The portion of the 100-year floodplain outside of the regulatory floodway. Development is permitted here if structures are elevated above the BFE.</li>
 </ul>
@@ -243,8 +257,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="roadway-overtopping-hydraulics">Roadway Overtopping Hydraulics</h2>
 <p>When water level exceeds the highest point of a roadway cross-section (the crown or shoulder elevation), the roadway behaves as a <strong>broad-crested weir</strong>.</p>
 <h3 id="weir-flow-equation-uscs">Weir Flow Equation (USCS):</h3>
-<p>$$Q_{overtop} = C_w \cdot L \cdot H^{1.5}$$</p>
-<p>Where:</p>
+$$Q_{overtop} = C_w \cdot L \cdot H^{1.5}$$<p>Where:</p>
 <ul>
 <li>$Q_{overtop}$ = Overtopping discharge (<strong>cfs</strong>)</li>
 <li>$C_w$ = Weir discharge coefficient (dimensionless; for roadway overtopping, $C_w$ typically ranges from <strong>2.5 to 3.0</strong> depending on the pavement roughness and shoulder shape. A standard value of <strong>2.63</strong> or <strong>3.0</strong> is common; check your NCEES handbook or problem parameters).</li>
@@ -253,8 +266,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <h3 id="combined-flow-capacity">Combined Flow Capacity:</h3>
 <p>If a culvert or bridge is located beneath the overtopped road, the total discharge is the sum of the conduit capacity and the overtopping flow:</p>
-<p>$$Q_{total} = Q_{conduit} + Q_{overtop}$$</p>
-<hr>
+$$Q_{total} = Q_{conduit} + Q_{overtop}$$<hr>
 <h2 id="worked-example-combined-culvert-and-overtopping-discharge">Worked Example: Combined Culvert and Overtopping Discharge</h2>
 <p>A two-lane highway crosses a creek via a $4.0\text{-foot}$ diameter concrete culvert. During a major flood, the creek flow rate is $95.0\text{ cfs}$.</p>
 <ul>
@@ -268,18 +280,21 @@ gtag('config', 'G-1WZSE8DHZ9');
 <strong>2. Calculate the flow rate overtopping the roadway ($Q_{overtop}$).</strong>
 <strong>3. Verify if the combined capacity ($Q_{total}$) is sufficient to convey the $95.0\text{ cfs}$ flood flow.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-headwater-depth-above-the-roadway-crest-h">Step 1: Calculate headwater depth above the roadway crest ($H$)</h4>
+<h4 id="step-1-calculate-headwater-depth-above-the-roadway-crest-">Step 1: Calculate headwater depth above the roadway crest ($H$)</h4>
 <ul>
 <li>Roadway crest elevation = $105.5\text{ ft}$</li>
 <li>Headwater elevation = $106.8\text{ ft}$
+
 $$H = 106.8\text{ ft} - 105.5\text{ ft} = 1.3\text{ feet}$$</li>
 </ul>
-<h4 id="step-2-calculate-overtopping-flow-q_overtop">Step 2: Calculate overtopping flow ($Q_{overtop}$)</h4>
+<h4 id="step-2-calculate-overtopping-flow-">Step 2: Calculate overtopping flow ($Q_{overtop}$)</h4>
 <p>Using the broad-crested weir equation:
-$$Q_{overtop} = C_w \cdot L \cdot H^{1.5}$$
-$$Q_{overtop} = 2.65 \cdot 180\text{ ft} \cdot (1.3\text{ ft})^{1.5}$$</p>
-<ul>
+</p>
+$$Q_{overtop} = C_w \cdot L \cdot H^{1.5}$$<p>
+</p>
+$$Q_{overtop} = 2.65 \cdot 180\text{ ft} \cdot (1.3\text{ ft})^{1.5}$$<ul>
 <li>$(1.3)^{1.5} = \sqrt{1.3^3} = \sqrt{2.197} \approx 1.482$
+
 $$Q_{overtop} = 2.65 \cdot 180 \cdot 1.482 \approx 707.4\text{ cfs? Wait!}$$
 <em>Wait, let&rsquo;s recalculate:</em>
 $2.65 \cdot 180 \cdot 1.4822 = 477 \cdot 1.4822 = 707\text{ cfs}$.
@@ -287,8 +302,8 @@ Yes, $707\text{ cfs}$ is correct for $L = 180\text{ ft}$ and $H = 1.3\text{ ft}$
 </ul>
 <h4 id="step-3-combined-capacity-verification">Step 3: Combined Capacity Verification</h4>
 <p>The total capacity of the culvert and roadway combination at this headwater elevation is:
-$$Q_{total} = Q_{conduit} + Q_{overtop} = 55.0\text{ cfs} + 707.0\text{ cfs} = 762.0\text{ cfs}$$</p>
-<p>Since $Q_{total} = 762.0\text{ cfs} \ge 95.0\text{ cfs}$, the system is capable of discharging the $95.0\text{ cfs}$ storm event. (In fact, the headwater elevation will stabilize at a much lower level than $106.8\text{ ft}$ because the overtopping capacity is so high).</p>
+</p>
+$$Q_{total} = Q_{conduit} + Q_{overtop} = 55.0\text{ cfs} + 707.0\text{ cfs} = 762.0\text{ cfs}$$<p>Since $Q_{total} = 762.0\text{ cfs} \ge 95.0\text{ cfs}$, the system is capable of discharging the $95.0\text{ cfs}$ storm event. (In fact, the headwater elevation will stabilize at a much lower level than $106.8\text{ ft}$ because the overtopping capacity is so high).</p>
 <hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>
 <ul>

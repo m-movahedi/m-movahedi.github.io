@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Yellow and All-Red Clearance Intervals">
     <meta property="og:description" content="Yellow and All-Red Clearance Intervals The yellow change and all-red clearance intervals are critical safety timings at signalized intersections. Their primary …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Yellow and All-Red Clearance Intervals">
     <meta name="twitter:description" content="Yellow and All-Red Clearance Intervals The yellow change and all-red clearance intervals are critical safety timings at signalized intersections. Their primary …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-10/69-yellow-and-all-red-intervals/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/69-yellow-and-all-red-intervals/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-10/69-yellow-and-all-red-intervals/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -243,24 +257,21 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="governing-equations">Governing Equations</h2>
 <p>The NCEES Reference Handbook uses the standard Institute of Transportation Engineers (ITE) formulas for yellow change and all-red clearance times.</p>
-<h3 id="1-yellow-change-interval-y">1. Yellow Change Interval ($y$)</h3>
+<h3 id="1-yellow-change-interval-">1. Yellow Change Interval ($y$)</h3>
 <p>The yellow change interval alerts drivers that the green interval is ending and they should prepare to stop if safe to do so. The formula is based on stopping kinematics:</p>
-<p>$$y = t + \frac{v}{2a + 2gG}$$</p>
-<p>In US Customary units, substituting gravity $g = 32.2\text{ ft/s}^2$, the formula is:</p>
-<p>$$y = t + \frac{v}{2a + 64.4G}$$</p>
-<p>Where:</p>
+$$y = t + \frac{v}{2a + 2gG}$$<p>In US Customary units, substituting gravity $g = 32.2\text{ ft/s}^2$, the formula is:</p>
+$$y = t + \frac{v}{2a + 64.4G}$$<p>Where:</p>
 <ul>
 <li>$y$ = Yellow change interval (seconds)</li>
 <li>$t$ = Driver perception-reaction time (standard default is $1.0\text{ second}$)</li>
 <li>$v$ = Approach speed (feet per second, $\text{ft/s}$). <em>Note: $v = V \times 1.467$, where $V$ is speed in mph.</em></li>
 <li>$a$ = Deceleration rate (standard default is $10\text{ ft/s}^2$)</li>
 <li>$g$ = Acceleration due to gravity ($32.2\text{ ft/s}^2$)</li>
-<li>$G$ = Grade of the approach (percent grade expressed as a decimal; e.g., $-3%$ grade is $-0.03$, uphill grades are positive, downhill grades are negative)</li>
+<li>$G$ = Grade of the approach (percent grade expressed as a decimal; e.g., $-3\%$ grade is $-0.03$, uphill grades are positive, downhill grades are negative)</li>
 </ul>
-<h3 id="2-all-red-clearance-interval-r">2. All-Red Clearance Interval ($r$)</h3>
+<h3 id="2-all-red-clearance-interval-">2. All-Red Clearance Interval ($r$)</h3>
 <p>The all-red clearance interval displays a red indication to all approaches, allowing vehicles that entered the intersection at the end of the yellow interval to completely clear the conflict area before cross-traffic receives a green light.</p>
-<p>$$r = \frac{W + L}{v}$$</p>
-<p>Where:</p>
+$$r = \frac{W + L}{v}$$<p>Where:</p>
 <ul>
 <li>$r$ = All-red clearance interval (seconds)</li>
 <li>$W$ = Intersection width (feet), measured from the near-side stop line to the far edge of the conflicting traffic lane</li>
@@ -269,13 +280,13 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <h3 id="total-clearance-interval">Total Clearance Interval</h3>
 <p>The total clearance interval ($Y + R_c$) is simply:
-$$\text{Total Clearance} = y + r$$</p>
-<hr>
+</p>
+$$\text{Total Clearance} = y + r$$<hr>
 <h2 id="common-traps-to-avoid-on-the-pe-exam">Common Traps to Avoid on the PE Exam</h2>
 <ol>
 <li><strong>Speed Unit Conversion:</strong> The speed $V$ is almost always given in miles per hour ($\text{mph}$). You must convert it to feet per second ($\text{ft/s}$) by multiplying by $1.467$ before plugging it into the yellow and all-red formulas.</li>
 <li><strong>Grade Sign Conviction:</strong> A downhill approach has a negative grade. Substituting a negative grade reduces the denominator in the yellow interval formula, which mathematically increases the required yellow time. This matches physical reality (it takes longer to stop on a downhill slope).</li>
-<li><strong>Grade Percentage Form:</strong> The grade $G$ must be in decimal form. For a $-4%$ grade, $G = -0.04$, not $-4.0$.</li>
+<li><strong>Grade Percentage Form:</strong> The grade $G$ must be in decimal form. For a $-4\%$ grade, $G = -0.04$, not $-4.0$.</li>
 <li><strong>Width Definition:</strong> Ensure $W$ represents the full distance from the stop line to the far side of the conflicting lane. Read the question carefully; sometimes they give the width of the cross street, and sometimes they give the distance to the far-side crosswalk.</li>
 </ol>
 <hr>
@@ -284,7 +295,7 @@ $$\text{Total Clearance} = y + r$$</p>
 <p>A signalized intersection approach has the following characteristics:</p>
 <ul>
 <li>Approach speed: $40\text{ mph}$</li>
-<li>Approach grade: $-4%$ (downhill)</li>
+<li>Approach grade: $-4\%$ (downhill)</li>
 <li>Width of intersection ($W$): $75\text{ feet}$</li>
 <li>Design vehicle length ($L$): $20\text{ feet}$</li>
 <li>Perception-reaction time ($t$): $1.0\text{ s}$</li>
@@ -292,27 +303,31 @@ $$\text{Total Clearance} = y + r$$</p>
 </ul>
 <p>Calculate the required yellow change interval ($y$), the all-red clearance interval ($r$), and the total clearance interval. Round the final values to the nearest tenth of a second.</p>
 <h3 id="step-by-step-solution">Step-by-Step Solution</h3>
-<h4 id="step-1-convert-approach-speed-to-textfts">Step 1: Convert Approach Speed to $\text{ft/s}$</h4>
-<p>$$v = 40\text{ mph} \times 1.467\frac{\text{ft/s}}{\text{mph}} = 58.68\text{ ft/s}$$</p>
-<h4 id="step-2-calculate-yellow-change-interval-y">Step 2: Calculate Yellow Change Interval ($y$)</h4>
+<h4 id="step-1-convert-approach-speed-to">Step 1: Convert Approach Speed to $\text{ft/s}$</h4>
+$$v = 40\text{ mph} \times 1.467\frac{\text{ft/s}}{\text{mph}} = 58.68\text{ ft/s}$$<h4 id="step-2-calculate-yellow-change-interval-">Step 2: Calculate Yellow Change Interval ($y$)</h4>
 <p>Using the approach grade $G = -0.04$ (negative because it is downhill):
-$$y = t + \frac{v}{2a + 64.4G}$$
-$$y = 1.0 + \frac{58.68}{2(10) + 64.4(-0.04)}$$
-$$y = 1.0 + \frac{58.68}{20 - 2.576}$$
-$$y = 1.0 + \frac{58.68}{17.424}$$
-$$y = 1.0 + 3.368\text{ s} = 4.368\text{ s}$$</p>
-<p>Rounding to the nearest tenth of a second gives:
-$$y \approx 4.4\text{ s}$$</p>
-<h4 id="step-3-calculate-all-red-clearance-interval-r">Step 3: Calculate All-Red Clearance Interval ($r$)</h4>
+</p>
+$$y = t + \frac{v}{2a + 64.4G}$$<p>
+</p>
+$$y = 1.0 + \frac{58.68}{2(10) + 64.4(-0.04)}$$<p>
+</p>
+$$y = 1.0 + \frac{58.68}{20 - 2.576}$$<p>
+</p>
+$$y = 1.0 + \frac{58.68}{17.424}$$<p>
+</p>
+$$y = 1.0 + 3.368\text{ s} = 4.368\text{ s}$$<p>Rounding to the nearest tenth of a second gives:
+</p>
+$$y \approx 4.4\text{ s}$$<h4 id="step-3-calculate-all-red-clearance-interval-">Step 3: Calculate All-Red Clearance Interval ($r$)</h4>
 <p>Using the intersection width $W = 75\text{ ft}$ and vehicle length $L = 20\text{ ft}$:
-$$r = \frac{W + L}{v}$$
-$$r = \frac{75\text{ ft} + 20\text{ ft}}{58.68\text{ ft/s}}$$
-$$r = \frac{95}{58.68} = 1.619\text{ s}$$</p>
-<p>Rounding to the nearest tenth of a second gives:
-$$r \approx 1.6\text{ s}$$</p>
-<h4 id="step-4-calculate-total-clearance-interval">Step 4: Calculate Total Clearance Interval</h4>
-<p>$$\text{Total Clearance} = y + r = 4.4\text{ s} + 1.6\text{ s} = 6.0\text{ s}$$</p>
-<p><em>(Note: Adding the rounded values or rounding the exact sum $4.368 + 1.619 = 5.987\text{ s}$ both result in $6.0\text{ s}$).</em></p>
+</p>
+$$r = \frac{W + L}{v}$$<p>
+</p>
+$$r = \frac{75\text{ ft} + 20\text{ ft}}{58.68\text{ ft/s}}$$<p>
+</p>
+$$r = \frac{95}{58.68} = 1.619\text{ s}$$<p>Rounding to the nearest tenth of a second gives:
+</p>
+$$r \approx 1.6\text{ s}$$<h4 id="step-4-calculate-total-clearance-interval">Step 4: Calculate Total Clearance Interval</h4>
+$$\text{Total Clearance} = y + r = 4.4\text{ s} + 1.6\text{ s} = 6.0\text{ s}$$<p><em>(Note: Adding the rounded values or rounding the exact sum $4.368 + 1.619 = 5.987\text{ s}$ both result in $6.0\text{ s}$).</em></p>
 
         
     </div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weekend Projects on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/weekend-projects/</link>
+    <description>Recent content in Weekend Projects on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/weekend-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wallpaper Manager Release 0.1</title>
+      <link>http://localhost:1313/blog/wallpaper-manager/</link>
+      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/wallpaper-manager/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m excited to introduce Wallpaper Manager, a local-first desktop app for organizing and automatically rotating your wallpapers.&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/images/blog/wallpaper-manager-release01.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;figcaption&gt; Wallpaper Manager Release 0.1 &lt;/figcaption&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Instead of limiting you to one wallpaper provider, Wallpaper Manager lets you create collections from local folders, RSS and Atom feeds, and other sources. You can combine collections into custom pools, mark images as favorites, choose their playback order, and control how frequently your background changes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

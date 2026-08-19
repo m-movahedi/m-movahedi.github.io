@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Curve Stationing">
     <meta property="og:description" content="Curve Stationing Stationing is a standard system used in highway engineering to measure distances along the centerline of a project alignment. Stationing is …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Curve Stationing">
     <meta name="twitter:description" content="Curve Stationing Stationing is a standard system used in highway engineering to measure distances along the centerline of a project alignment. Stationing is …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-7/45-curve-stationing/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-7/45-curve-stationing/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-7/45-curve-stationing/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -236,9 +250,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="horizontal-curve-stationing-calculations">Horizontal Curve Stationing Calculations</h2>
 <p>When a highway alignment curves, the stationing must follow the physical path of the vehicle—meaning it runs along the tangents until it reaches the PC, follows the circular arc of length $L$ to the PT, and then continues along the forward tangent.</p>
 <p>However, during design, the location of the Point of Intersection (PI) is established first. The stationing of the PC and PT are then derived from the PI stationing:</p>
-<p>$$\text{PC Station} = \text{PI Station} - T$$
-$$\text{PT Station} = \text{PC Station} + L$$</p>
-<p>Where:</p>
+$$\text{PC Station} = \text{PI Station} - T$$<p>
+</p>
+$$\text{PT Station} = \text{PC Station} + L$$<p>Where:</p>
 <ul>
 <li>$T$ = Tangent length of the curve (ft).</li>
 <li>$L$ = Arc length of the curve (ft).</li>
@@ -253,7 +267,8 @@ $$\text{PT Station} = \text{PC Station} + L$$</p>
 </code></pre><blockquote>
 <p>[!WARNING]
 <strong>The Ultimate Stationing Trap:</strong> A common and fatal mistake is calculating the PT station as $\text{PT} = \text{PI} + T$. This is incorrect because it measures the distance along the two tangents ($T + T$) instead of along the actual curve arc ($L$).
-$$\text{PT Station} \neq \text{PI Station} + T$$
+</p>
+$$\text{PT Station} \neq \text{PI Station} + T$$<p>
 The stationing along the forward tangent past the PT is calculated from the PT station, not the PI station.</p>
 </blockquote>
 <hr>
@@ -264,8 +279,7 @@ The stationing along the forward tangent past the PT is calculated from the PT s
 <li>Two independent projects are joined together.</li>
 </ul>
 <h3 id="notation">Notation:</h3>
-<p>$$\text{Station } 152+40.30\text{ Back} = \text{Station } 152+00.00\text{ Ahead}$$</p>
-<ul>
+$$\text{Station } 152+40.30\text{ Back} = \text{Station } 152+00.00\text{ Ahead}$$<ul>
 <li><strong>Back (BK):</strong> The stationing prior to the equation (incoming chain).</li>
 <li><strong>Ahead (AH):</strong> The stationing after the equation (outgoing chain).</li>
 <li>To calculate distances across a station equation:
@@ -281,8 +295,7 @@ The stationing along the forward tangent past the PT is calculated from the PT s
 <p>To stake a circular curve in the field, surveyors set up a transit at the PC and measure deflection angles ($\delta$) and chord lengths ($c$) to intermediate stations along the curve.</p>
 <h3 id="1-deflection-angle-to-an-intermediate-station">1. Deflection Angle to an Intermediate Station</h3>
 <p>The deflection angle $\delta_i$ (in degrees) from the tangent at the PC to any intermediate station $S_i$ on the curve is proportional to the distance along the curve:</p>
-<p>$$\delta_i = \frac{d_i \times D_a}{200}\text{ degrees}$$</p>
-<p>Where:</p>
+$$\delta_i = \frac{d_i \times D_a}{200}\text{ degrees}$$<p>Where:</p>
 <ul>
 <li>$d_i$ = Arc distance along the curve from the PC to the intermediate station $S_i$ (ft).</li>
 <li>$D_a$ = Degree of curve (arc definition, degrees).</li>
@@ -290,8 +303,7 @@ The stationing along the forward tangent past the PT is calculated from the PT s
 </ul>
 <h3 id="2-chord-length-to-an-intermediate-station">2. Chord Length to an Intermediate Station</h3>
 <p>The straight-line chord distance ($c_i$) from the PC to the intermediate station $S_i$ is calculated using the radius ($R$):</p>
-<p>$$c_i = 2 R \sin(\delta_i)$$</p>
-<p>Where $\delta_i$ is the deflection angle for that station.</p>
+$$c_i = 2 R \sin(\delta_i)$$<p>Where $\delta_i$ is the deflection angle for that station.</p>
 <hr>
 <h2 id="worked-example-stationing-and-field-layout">Worked Example: Stationing and Field Layout</h2>
 <h3 id="problem-statement">Problem Statement</h3>
@@ -311,17 +323,25 @@ The stationing along the forward tangent past the PT is calculated from the PT s
 <p><strong>Calculate PC and PT Stations:</strong></p>
 <ul>
 <li>First, find the Radius ($R$):
+
 $$R = \frac{5729.58}{D_a} = \frac{5729.58}{4.0} = 1432.40\text{ ft}$$</li>
 <li>Find the Tangent Length ($T$):
+
 $$T = R \tan\left(\frac{\Delta}{2}\right) = 1432.40 \tan\left(\frac{32^\circ}{2}\right) = 1432.40 \tan(16^\circ)$$
+
 $$T = 1432.40 \times 0.28675 = 410.74\text{ ft}$$</li>
 <li>Find the Curve Length ($L$):
+
 $$L = \frac{100 \Delta}{D_a} = \frac{100 \times 32.0}{4.0} = 800.00\text{ ft}$$</li>
 <li><strong>PC Station:</strong>
+
 $$\text{PC Station} = \text{PI} - T = (148+50.00) - 410.74\text{ ft}$$
+
 $$\text{PC Station} = 14850.00 - 410.74 = 14439.26 \implies \text{Station } 144+39.26$$</li>
 <li><strong>PT Station:</strong>
+
 $$\text{PT Station} = \text{PC} + L = (144+39.26) + 800.00\text{ ft}$$
+
 $$\text{PT Station} = 14439.26 + 800.00 = 15239.26 \implies \text{Station } 152+39.26$$</li>
 </ul>
 </li>
@@ -331,13 +351,18 @@ $$\text{PT Station} = 14439.26 + 800.00 = 15239.26 \implies \text{Station } 152+
 <li>The PC Station is $144+39.26$.</li>
 <li>The next consecutive even-hundred station is <strong>Station $145+00.00$</strong>.</li>
 <li>Calculate the arc distance ($d_1$) from the PC to Station $145+00.00$:
+
 $$d_1 = (145+00.00) - (144+39.26) = 14500.00 - 14439.26 = 60.74\text{ ft}$$</li>
 <li>Calculate the deflection angle ($\delta_1$) for this station:
+
 $$\delta_1 = \frac{d_1 \times D_a}{200} = \frac{60.74 \times 4.0}{200} = 1.2148^\circ$$
 <em>Convert to Degrees-Minutes-Seconds (DMS) for surveying:</em>
-$$\delta_1 = 1^\circ 12&rsquo; 53&rsquo;&rsquo;$$</li>
+
+$$\delta_1 = 1^\circ 12' 53''$$</li>
 <li>Calculate the chord length ($c_1$):
+
 $$c_1 = 2 R \sin(\delta_1) = 2 \times 1432.40 \sin(1.2148^\circ)$$
+
 $$c_1 = 2864.80 \times 0.02120 = 60.73\text{ ft}$$
 <em>Note:</em> For short arcs, the chord length is extremely close to the arc distance ($60.73\text{ ft}$ vs. $60.74\text{ ft}$).</li>
 </ul>
@@ -346,7 +371,7 @@ $$c_1 = 2864.80 \times 0.02120 = 60.73\text{ ft}$$
 <h3 id="answer">Answer</h3>
 <ol>
 <li>PC Station: <strong>144+39.26</strong>; PT Station: <strong>152+39.26</strong></li>
-<li>For Station $145+00$: Arc distance $d_1 = \mathbf{60.74\text{ ft}}$, Deflection angle $\delta_1 = \mathbf{1.2148^\circ}$ ($1^\circ 12&rsquo; 53&rsquo;&rsquo;$), Chord length $c_1 = \mathbf{60.73\text{ ft}}$.</li>
+<li>For Station $145+00$: Arc distance $d_1 = \mathbf{60.74\text{ ft}}$, Deflection angle $\delta_1 = \mathbf{1.2148^\circ}$ ($1^\circ 12' 53''$), Chord length $c_1 = \mathbf{60.73\text{ ft}}$.</li>
 </ol>
 <hr>
 <h2 id="crucial-exam-tips">Crucial Exam Tips</h2>

@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Culvert Hydraulics">
     <meta property="og:description" content="Culvert Hydraulics Culverts are conduits used to convey water through highway embankments. Culvert hydraulics is governed by FHWA Hydraulic Design Series No. 5 …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Culvert Hydraulics">
     <meta name="twitter:description" content="Culvert Hydraulics Culverts are conduits used to convey water through highway embankments. Culvert hydraulics is governed by FHWA Hydraulic Design Series No. 5 …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/96-culvert-hydraulics/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -240,9 +254,11 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li><strong>Flow Condition:</strong> Flow passes through critical depth ($y_c$) at or near the inlet, and flow inside the barrel is supercritical.</li>
 <li><strong>Equations (from NCEES handbook):</strong>
 <ul>
-<li><strong>Unsubmerged ($HW/D &lt; 1.2$):</strong>
+<li><strong>Unsubmerged ($HW/D < 1.2$):</strong>
+
 $$\frac{HW_i}{D} = \frac{H_c}{D} + K \left[\frac{Q}{A D^{0.5}}\right]^M - 0.5 S_o$$</li>
 <li><strong>Submerged ($HW/D \ge 1.2$):</strong>
+
 $$\frac{HW_i}{D} = c \left[\frac{Q}{A D^{0.5}}\right]^2 + Y - 0.5 S_o$$
 <em>(where $H_c$ is specific head at critical depth, $S_o$ is culvert barrel slope, and $K, M, c, Y$ are inlet constants based on shape and edge configuration).</em></li>
 </ul>
@@ -254,21 +270,24 @@ $$\frac{HW_i}{D} = c \left[\frac{Q}{A D^{0.5}}\right]^2 + Y - 0.5 S_o$$
 <li><strong>Key Factors:</strong> Barrel length ($L$), roughness ($n$), slope ($S_o$), tailwater depth ($TW$), and entrance loss coefficient ($K_e$) all influence capacity.</li>
 <li><strong>Flow Condition:</strong> Flow in the barrel is subcritical, and the culvert is often flowing full or nearly full.</li>
 <li><strong>Energy Equation for Outlet Control:</strong>
+
 $$HW = H + h_o - L \cdot S_o$$</li>
 </ul>
 <p>Where:</p>
 <ul>
 <li>$HW$ = Headwater depth above inlet invert (<strong>feet</strong>)</li>
 <li>$H$ = Total head loss (<strong>feet</strong>) through the culvert:
+
 $$H = h_e + h_f + h_v = \left[ 1 + K_e + \frac{29.16 \cdot n^2 \cdot L}{R^{1.33}} \right] \frac{V^2}{2g}$$
 <em>(where $K_e$ is the entrance loss coefficient, $n$ is Manning&rsquo;s roughness, $L$ is length in feet, $R$ is hydraulic radius in feet, and $V$ is velocity in ft/s).</em></li>
 <li>$h_o$ = Downstream tailwater height above outlet invert, calculated as:
+
 $$h_o = \max\left(TW, \frac{y_c + D}{2}\right)$$
 <em>(where $y_c$ is critical depth, and $D$ is pipe diameter).</em></li>
 <li>$L \cdot S_o$ = Elevation drop along the culvert length (<strong>feet</strong>).</li>
 </ul>
 <hr>
-<h2 id="entrance-loss-coefficients-k_e">Entrance Loss Coefficients ($K_e$)</h2>
+<h2 id="entrance-loss-coefficients-">Entrance Loss Coefficients ($K_e$)</h2>
 <p>The entrance loss coefficient ($K_e$) is a major factor in outlet control design:</p>
 <table>
   <thead>
@@ -309,7 +328,7 @@ Using the NCEES handbook inlet control parameters for a concrete pipe with a hea
 <li>$M = 2.0$</li>
 <li>Critical depth for this flow is $y_c = 1.95\text{ ft}$</li>
 <li>Specific head at critical depth is $H_c = y_c + \frac{V_c^2}{2g} = 2.65\text{ ft}$</li>
-<li>The culvert slope is $S_o = 1.0% = 0.01\text{ ft/ft}$</li>
+<li>The culvert slope is $S_o = 1.0\% = 0.01\text{ ft/ft}$</li>
 </ul>
 <p><strong>Calculate the required headwater depth ($HW$) in feet.</strong></p>
 <h3 id="solution">Solution:</h3>
@@ -323,8 +342,8 @@ Using the NCEES handbook inlet control parameters for a concrete pipe with a hea
 </li>
 <li>
 <p><strong>Apply the Unsubmerged Inlet Control Equation:</strong>
-$$\frac{HW_i}{D} = \frac{H_c}{D} + K \left[\frac{Q}{A D^{0.5}}\right]^M - 0.5 S_o$$</p>
-</li>
+</p>
+$$\frac{HW_i}{D} = \frac{H_c}{D} + K \left[\frac{Q}{A D^{0.5}}\right]^M - 0.5 S_o$$</li>
 <li>
 <p><strong>Evaluate the terms:</strong></p>
 <ul>
@@ -336,9 +355,10 @@ $$\frac{HW_i}{D} = \frac{H_c}{D} + K \left[\frac{Q}{A D^{0.5}}\right]^M - 0.5 S_
 </li>
 <li>
 <p><strong>Solve for $HW_i$:</strong>
-$$\frac{HW_i}{D} = 0.883 + 0.080 - 0.005 = 0.958$$
-$$HW_i = 0.958 \cdot D = 0.958 \cdot 3.0\text{ ft} \approx 2.87\text{ feet}$$</p>
-</li>
+</p>
+$$\frac{HW_i}{D} = 0.883 + 0.080 - 0.005 = 0.958$$<p>
+</p>
+$$HW_i = 0.958 \cdot D = 0.958 \cdot 3.0\text{ ft} \approx 2.87\text{ feet}$$</li>
 </ol>
 <hr>
 <h2 id="worked-example-2-outlet-control-headwater-depth">Worked Example 2: Outlet Control Headwater Depth</h2>
@@ -364,26 +384,28 @@ $$HW_i = 0.958 \cdot D = 0.958 \cdot 3.0\text{ ft} \approx 2.87\text{ feet}$$</p
 </li>
 <li>
 <p><strong>Calculate head loss ($H$):</strong>
-$$H = \left[ 1 + K_e + \frac{29.16 \cdot n^2 \cdot L}{R^{1.33}} \right] \frac{V^2}{2g}$$</p>
-<ul>
+</p>
+$$H = \left[ 1 + K_e + \frac{29.16 \cdot n^2 \cdot L}{R^{1.33}} \right] \frac{V^2}{2g}$$<ul>
 <li>$1 + K_e = 1 + 0.5 = 1.5$</li>
 <li>$\frac{29.16 \cdot (0.012)^2 \cdot 120}{(0.5)^{1.33}} = \frac{29.16 \cdot 0.000144 \cdot 120}{0.3976} = \frac{0.5039}{0.3976} \approx 1.267$</li>
 <li>Velocity Head $\frac{V^2}{2g} = \frac{(3.82)^2}{2 \cdot 32.2} = \frac{14.592}{64.4} \approx 0.227\text{ feet}$</li>
 </ul>
 <p>Total loss:
-$$H = [1.5 + 1.267] \cdot 0.227 = 2.767 \cdot 0.227 \approx 0.63\text{ feet}$$</p>
-</li>
+</p>
+$$H = [1.5 + 1.267] \cdot 0.227 = 2.767 \cdot 0.227 \approx 0.63\text{ feet}$$</li>
 <li>
 <p><strong>Determine $h_o$:</strong>
 Since $TW = 2.2\text{ feet}$ (pipe is submerged downstream):
-$$h_o = TW = 2.2\text{ feet}$$</p>
-</li>
+</p>
+$$h_o = TW = 2.2\text{ feet}$$</li>
 <li>
 <p><strong>Calculate Headwater ($HW$):</strong>
-$$HW = H + h_o - L \cdot S_o$$
-$$HW = 0.63\text{ ft} + 2.2\text{ ft} - (120\text{ ft} \cdot 0.005\text{ ft/ft})$$
-$$HW = 2.83 - 0.60 = 2.23\text{ feet}$$</p>
-</li>
+</p>
+$$HW = H + h_o - L \cdot S_o$$<p>
+</p>
+$$HW = 0.63\text{ ft} + 2.2\text{ ft} - (120\text{ ft} \cdot 0.005\text{ ft/ft})$$<p>
+</p>
+$$HW = 2.83 - 0.60 = 2.23\text{ feet}$$</li>
 </ol>
 <hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>

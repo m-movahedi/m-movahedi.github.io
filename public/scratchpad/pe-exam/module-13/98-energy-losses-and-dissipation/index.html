@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Energy Losses and Dissipation">
     <meta property="og:description" content="Energy Losses and Dissipation Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Energy Losses and Dissipation">
     <meta name="twitter:description" content="Energy Losses and Dissipation Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-13/98-energy-losses-and-dissipation/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -235,8 +249,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h2 id="minor-head-losses">Minor Head Losses</h2>
 <p>Minor head losses occur due to changes in velocity, flow direction, or cross-sectional area at inlets, bends, expansions, contractions, and manholes.</p>
 <h3 id="governing-equation">Governing Equation:</h3>
-<p>$$h_L = K \cdot \frac{V^2}{2g}$$</p>
-<p>Where:</p>
+$$h_L = K \cdot \frac{V^2}{2g}$$<p>Where:</p>
 <ul>
 <li>$h_L$ = Head loss (<strong>feet</strong> or <strong>meters</strong>)</li>
 <li>$K$ = Minor loss coefficient (dimensionless)</li>
@@ -245,21 +258,20 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <hr>
 <h2 id="hydraulic-jumps-in-rectangular-channels">Hydraulic Jumps in Rectangular Channels</h2>
-<p>A <strong>Hydraulic Jump</strong> occurs when supercritical flow ($Fr_1 &gt; 1.0$) transitions abruptly to subcritical flow ($Fr_2 &lt; 1.0$). This transition creates high turbulence and dissipates a significant amount of kinetic energy.</p>
+<p>A <strong>Hydraulic Jump</strong> occurs when supercritical flow ($Fr_1 > 1.0$) transitions abruptly to subcritical flow ($Fr_2 < 1.0$). This transition creates high turbulence and dissipates a significant amount of kinetic energy.</p>
 <h3 id="sequent-depth-conjugate-depth-equation">Sequent Depth (Conjugate Depth) Equation:</h3>
 <p>The relationship between the depth before the jump ($y_1$) and the depth after the jump ($y_2$) in a horizontal rectangular channel is:</p>
-<p>$$\frac{y_2}{y_1} = \frac{1}{2} \left( \sqrt{1 + 8 Fr_1^2} - 1 \right)$$</p>
-<p>Where:</p>
+$$\frac{y_2}{y_1} = \frac{1}{2} \left( \sqrt{1 + 8 Fr_1^2} - 1 \right)$$<p>Where:</p>
 <ul>
 <li>$y_1$ = Upstream (supercritical) depth (<strong>feet</strong> or <strong>meters</strong>)</li>
 <li>$y_2$ = Downstream (subcritical) depth (<strong>feet</strong> or <strong>meters</strong>)</li>
 <li>$Fr_1$ = Upstream Froude number:
+
 $$Fr_1 = \frac{V_1}{\sqrt{g \cdot y_1}}$$</li>
 </ul>
-<h3 id="head-loss-in-a-jump-delta-e">Head Loss in a Jump ($\Delta E$):</h3>
+<h3 id="head-loss-in-a-jump-">Head Loss in a Jump ($\Delta E$):</h3>
 <p>The energy dissipated during a hydraulic jump is:</p>
-<p>$$H_L = \Delta E = E_1 - E_2 = \frac{(y_2 - y_1)^3}{4 \cdot y_1 \cdot y_2}$$</p>
-<hr>
+$$H_L = \Delta E = E_1 - E_2 = \frac{(y_2 - y_1)^3}{4 \cdot y_1 \cdot y_2}$$<hr>
 <h2 id="energy-dissipators">Energy Dissipators</h2>
 <p>Energy dissipators are structured outlets designed to reduce velocities before runoff enters natural watercourses.</p>
 <ul>
@@ -272,32 +284,35 @@ $$Fr_1 = \frac{V_1}{\sqrt{g \cdot y_1}}$$</li>
 <p><strong>1. Calculate the conjugate depth ($y_2$) downstream of the jump.</strong>
 <strong>2. Determine the energy head loss ($H_L$) across the jump.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-upstream-velocity-v_1-and-froude-number-fr_1">Step 1: Calculate upstream velocity ($V_1$) and Froude number ($Fr_1$)</h4>
+<h4 id="step-1-calculate-upstream-velocity--and-froude-number-">Step 1: Calculate upstream velocity ($V_1$) and Froude number ($Fr_1$)</h4>
 <ul>
 <li>Width $b = 6.0\text{ ft}$, Depth $y_1 = 0.50\text{ ft}$</li>
 <li>Area $A_1 = b \cdot y_1 = 6.0 \cdot 0.50 = 3.0\text{ ft}^2$</li>
 <li>Velocity $V_1 = \frac{Q}{A_1} = \frac{72}{3.0} = 24.0\text{ ft/s}$</li>
 </ul>
 <p>Calculate $Fr_1$:
-$$Fr_1 = \frac{V_1}{\sqrt{g \cdot y_1}} = \frac{24.0}{\sqrt{32.2 \cdot 0.50}} = \frac{24.0}{\sqrt{16.1}} = \frac{24.0}{4.0125} \approx 5.98$$
-<em>Note:</em> Since $Fr_1 \approx 5.98 &gt; 1.0$, the flow is supercritical, validating the occurrence of a hydraulic jump.</p>
-<h4 id="step-2-calculate-conjugate-depth-y_2">Step 2: Calculate conjugate depth ($y_2$)</h4>
-<p>$$\frac{y_2}{y_1} = \frac{1}{2} \left( \sqrt{1 + 8 Fr_1^2} - 1 \right)$$
-$$\frac{y_2}{0.50} = 0.5 \cdot \left( \sqrt{1 + 8 \cdot (5.98)^2} - 1 \right)$$</p>
-<ul>
+</p>
+$$Fr_1 = \frac{V_1}{\sqrt{g \cdot y_1}} = \frac{24.0}{\sqrt{32.2 \cdot 0.50}} = \frac{24.0}{\sqrt{16.1}} = \frac{24.0}{4.0125} \approx 5.98$$<p>
+<em>Note:</em> Since $Fr_1 \approx 5.98 > 1.0$, the flow is supercritical, validating the occurrence of a hydraulic jump.</p>
+<h4 id="step-2-calculate-conjugate-depth-">Step 2: Calculate conjugate depth ($y_2$)</h4>
+$$\frac{y_2}{y_1} = \frac{1}{2} \left( \sqrt{1 + 8 Fr_1^2} - 1 \right)$$<p>
+</p>
+$$\frac{y_2}{0.50} = 0.5 \cdot \left( \sqrt{1 + 8 \cdot (5.98)^2} - 1 \right)$$<ul>
 <li>$(5.98)^2 \approx 35.76$</li>
 <li>$8 \cdot 35.76 = 286.08$</li>
 <li>$\sqrt{1 + 286.08} = \sqrt{287.08} \approx 16.94$</li>
 <li>$\sqrt{287.08} - 1 = 15.94$</li>
 </ul>
 <p>Solve for $y_2$:
-$$\frac{y_2}{0.50} = 0.5 \cdot 15.94 = 7.97$$
-$$y_2 = 7.97 \cdot 0.50 \approx 3.99\text{ feet}$$</p>
-<h4 id="step-3-calculate-energy-loss-h_l">Step 3: Calculate energy loss ($H_L$)</h4>
-<p>$$H_L = \frac{(y_2 - y_1)^3}{4 \cdot y_1 \cdot y_2}$$
-$$H_L = \frac{(3.99 - 0.50)^3}{4 \cdot 0.50 \cdot 3.99} = \frac{(3.49)^3}{7.98}$$</p>
-<ul>
+</p>
+$$\frac{y_2}{0.50} = 0.5 \cdot 15.94 = 7.97$$<p>
+</p>
+$$y_2 = 7.97 \cdot 0.50 \approx 3.99\text{ feet}$$<h4 id="step-3-calculate-energy-loss-">Step 3: Calculate energy loss ($H_L$)</h4>
+$$H_L = \frac{(y_2 - y_1)^3}{4 \cdot y_1 \cdot y_2}$$<p>
+</p>
+$$H_L = \frac{(3.99 - 0.50)^3}{4 \cdot 0.50 \cdot 3.99} = \frac{(3.49)^3}{7.98}$$<ul>
 <li>$(3.49)^3 \approx 42.51$
+
 $$H_L = \frac{42.51}{7.98} \approx 5.33\text{ feet of head loss}$$</li>
 </ul>
 <hr>
@@ -305,10 +320,11 @@ $$H_L = \frac{42.51}{7.98} \approx 5.33\text{ feet of head loss}$$</li>
 <p>A $12\text{-inch}$ storm sewer pipe carries flow at $V = 6.0\text{ ft/s}$. The pipe passes through a manhole junction that causes a minor loss of $K = 0.35$ for a straight-through configuration.</p>
 <p><strong>Calculate the head loss ($h_L$) at the manhole.</strong></p>
 <h3 id="solution-1">Solution:</h3>
-<p>$$h_L = K \cdot \frac{V^2}{2g}$$
-$$h_L = 0.35 \cdot \frac{6.0^2}{2 \cdot 32.2} = 0.35 \cdot \frac{36.0}{64.4}$$
-$$h_L = 0.35 \cdot 0.559 \approx 0.20\text{ feet}$$</p>
-<hr>
+$$h_L = K \cdot \frac{V^2}{2g}$$<p>
+</p>
+$$h_L = 0.35 \cdot \frac{6.0^2}{2 \cdot 32.2} = 0.35 \cdot \frac{36.0}{64.4}$$<p>
+</p>
+$$h_L = 0.35 \cdot 0.559 \approx 0.20\text{ feet}$$<hr>
 <h2 id="technical-pitfalls">Technical Pitfalls</h2>
 <ul>
 <li><strong>Sequent Depth vs Alternate Depth:</strong> Do not confuse <em>sequent</em> (or conjugate) depths with <em>alternate</em> depths. Conjugate depths represent the depths before and after a hydraulic jump (where momentum is conserved, but energy is lost). Alternate depths are depths that share the exact same specific energy ($E_1 = E_2$), which occurs under frictionless transitions without a jump.</li>

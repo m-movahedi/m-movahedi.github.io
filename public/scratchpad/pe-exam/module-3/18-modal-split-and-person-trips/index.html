@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Modal Split and Person Trips">
     <meta property="og:description" content="Modal Split and Person Trips Modal split (or mode choice) is the third step in the traditional Four-Step Transportation Planning Process. It determines the …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Modal Split and Person Trips">
     <meta name="twitter:description" content="Modal Split and Person Trips Modal split (or mode choice) is the third step in the traditional Four-Step Transportation Planning Process. It determines the …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-3/18-modal-split-and-person-trips/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-3/18-modal-split-and-person-trips/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-3/18-modal-split-and-person-trips/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -240,8 +254,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 </ul>
 <h3 id="the-conversion-formula">The Conversion Formula:</h3>
 <p>To find the number of auto vehicle trips from the number of auto person trips, we divide by the average auto occupancy:</p>
-<p>$$\text{Vehicle Trips (VT)} = \frac{\text{Person Trips (PT)}_{\text{auto}}}{\text{Average Auto Occupancy (AO)}}$$</p>
-<p>Where:</p>
+$$\text{Vehicle Trips (VT)} = \frac{\text{Person Trips (PT)}_{\text{auto}}}{\text{Average Auto Occupancy (AO)}}$$<p>Where:</p>
 <ul>
 <li>$\text{Person Trips}_{\text{auto}}$ = total person trips made by automobile</li>
 <li>$\text{Average Auto Occupancy}$ = average number of persons per vehicle (usually ranges from $1.05$ to $1.60$)</li>
@@ -251,8 +264,8 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p><strong>Problem:</strong><br>
 A regional shopping mall is projected to generate $4,500\text{ person trips}$ during the Saturday peak hour. Planning surveys indicate the following travel characteristics for the site:</p>
 <ul>
-<li><strong>Transit Share:</strong> $12%$ of total person trips</li>
-<li><strong>Pedestrian/Bicycle Share:</strong> $8%$ of total person trips</li>
+<li><strong>Transit Share:</strong> $12\%$ of total person trips</li>
+<li><strong>Pedestrian/Bicycle Share:</strong> $8\%$ of total person trips</li>
 <li><strong>Auto Share:</strong> The remaining portion of total person trips</li>
 <li><strong>Average Auto Occupancy (AO):</strong> $1.8\text{ persons/vehicle}$</li>
 </ul>
@@ -263,22 +276,26 @@ A regional shopping mall is projected to generate $4,500\text{ person trips}$ du
 </ol>
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate the Auto Mode Share</strong>
-$$\text{Auto Share} = 100% - \text{Transit Share} - \text{Pedestrian/Bicycle Share}$$
-$$\text{Auto Share} = 100% - 12% - 8% = 80% = 0.80$$</p>
-<p><strong>Step 2: Calculate Auto Person Trips</strong>
-$$\text{Person Trips}<em>{\text{auto}} = \text{Total Person Trips} \times \text{Auto Share}$$
-$$\text{Person Trips}</em>{\text{auto}} = 4,500 \times 0.80 = 3,600 \text{ person trips}$$</p>
-<p><strong>Step 3: Convert to Auto Vehicle Trips</strong>
-$$\text{Vehicle Trips (VT)} = \frac{\text{Person Trips}_{\text{auto}}}{\text{Average Auto Occupancy}}$$
-$$\text{Vehicle Trips (VT)} = \frac{3,600 \text{ person trips}}{1.8 \text{ persons/vehicle}} = 2,000 \text{ vehicle trips}$$</p>
-<p><strong>Conclusion:</strong><br>
+</p>
+$$\text{Auto Share} = 100\% - \text{Transit Share} - \text{Pedestrian/Bicycle Share}$$<p>
+</p>
+$$\text{Auto Share} = 100\% - 12\% - 8\% = 80\% = 0.80$$<p><strong>Step 2: Calculate Auto Person Trips</strong>
+</p>
+$$\text{Person Trips}_{\text{auto}} = \text{Total Person Trips} \times \text{Auto Share}$$<p>
+</p>
+$$\text{Person Trips}_{\text{auto}} = 4,500 \times 0.80 = 3,600 \text{ person trips}$$<p><strong>Step 3: Convert to Auto Vehicle Trips</strong>
+</p>
+$$\text{Vehicle Trips (VT)} = \frac{\text{Person Trips}_{\text{auto}}}{\text{Average Auto Occupancy}}$$<p>
+</p>
+$$\text{Vehicle Trips (VT)} = \frac{3,600 \text{ person trips}}{1.8 \text{ persons/vehicle}} = 2,000 \text{ vehicle trips}$$<p><strong>Conclusion:</strong><br>
 The mall generates $3,600\text{ auto person trips}$ which translates into $2,000\text{ vehicle trips}$ at the driveways.</p>
 <hr>
 <h2 id="mode-choice-modeling-the-multinomial-logit-model">Mode Choice Modeling: The Multinomial Logit Model</h2>
 <p>The most common mathematical tool used to predict mode share is the <strong>Multinomial Logit Model</strong>. It assumes that travelers choose a mode that maximizes their &ldquo;utility&rdquo; (satisfaction).</p>
-<h3 id="1-utility-function-u">1. Utility Function ($U$)</h3>
+<h3 id="1-utility-function-">1. Utility Function ($U$)</h3>
 <p>The utility of a mode is typically represented by a linear equation combining travel time, travel cost, and convenience.
-$$U_x = a_0 + a_1(X_1) + a_2(X_2) + \dots$$
+</p>
+$$U_x = a_0 + a_1(X_1) + a_2(X_2) + \dots$$<p>
 Where:</p>
 <ul>
 <li>$U_x$ = utility of mode $x$ (usually negative, representing the &ldquo;disutility&rdquo; or cost/time penalty of travel)</li>
@@ -287,11 +304,11 @@ Where:</p>
 </ul>
 <h3 id="2-logit-probability-equation">2. Logit Probability Equation</h3>
 <p>The probability ($P_m$) of a traveler choosing a specific mode $m$ from a set of available modes is:</p>
-<p>$$P_m = \frac{e^{U_m}}{\sum_{i} e^{U_i}}$$</p>
-<p>For a simple two-mode choice (e.g., Auto vs. Transit):
-$$P_{\text{transit}} = \frac{e^{U_{\text{transit}}}}{e^{U_{\text{transit}}} + e^{U_{\text{auto}}}}$$
-$$P_{\text{auto}} = \frac{e^{U_{\text{auto}}}}{e^{U_{\text{transit}}} + e^{U_{\text{auto}}}} = 1 - P_{\text{transit}}$$</p>
-<hr>
+$$P_m = \frac{e^{U_m}}{\sum_{i} e^{U_i}}$$<p>For a simple two-mode choice (e.g., Auto vs. Transit):
+</p>
+$$P_{\text{transit}} = \frac{e^{U_{\text{transit}}}}{e^{U_{\text{transit}}} + e^{U_{\text{auto}}}}$$<p>
+</p>
+$$P_{\text{auto}} = \frac{e^{U_{\text{auto}}}}{e^{U_{\text{transit}}} + e^{U_{\text{auto}}}} = 1 - P_{\text{transit}}$$<hr>
 <h2 id="worked-example-logit-model-calculations">Worked Example: Logit Model Calculations</h2>
 <p><strong>Problem:</strong><br>
 Commuters in a corridor choose between driving an automobile ($A$) or taking a bus rapid transit system ($T$). The utility functions for these two modes are:</p>
@@ -301,8 +318,8 @@ Commuters in a corridor choose between driving an automobile ($A$) or taking a b
 </ul>
 <p>For a typical commuter:</p>
 <ul>
-<li><strong>Auto:</strong> Travel time = $20 \text{ minutes}$, parking and toll cost = $$6.00$.</li>
-<li><strong>Transit:</strong> Travel time = $35 \text{ minutes}$, fare cost = $$2.00$.</li>
+<li><strong>Auto:</strong> Travel time = $20 \text{ minutes}$, parking and toll cost = $\$6.00$.</li>
+<li><strong>Transit:</strong> Travel time = $35 \text{ minutes}$, fare cost = $\$2.00$.</li>
 </ul>
 <ol>
 <li>Calculate the utility value for each mode.</li>
@@ -313,8 +330,10 @@ Commuters in a corridor choose between driving an automobile ($A$) or taking a b
 <p><strong>Step 1: Calculate Utilities ($U_A$ and $U_T$)</strong></p>
 <ul>
 <li><strong>Automobile Utility:</strong>
+
 $$U_A = -0.025(20) - 0.15(6.00) = -0.50 - 0.90 = -1.40$$</li>
 <li><strong>Transit Utility:</strong>
+
 $$U_T = -0.025(35) - 0.15(2.00) - 0.50 = -0.875 - 0.30 - 0.50 = -1.675$$</li>
 </ul>
 <p><strong>Step 2: Calculate Probabilities</strong>
@@ -325,21 +344,22 @@ Using the Logit equation:</p>
 </li>
 <li>
 <p>$e^{U_T} = e^{-1.675} \approx 0.1873$
-$$\text{Denominator} = e^{U_A} + e^{U_T} = 0.2466 + 0.1873 = 0.4339$$</p>
-</li>
+</p>
+$$\text{Denominator} = e^{U_A} + e^{U_T} = 0.2466 + 0.1873 = 0.4339$$</li>
 <li>
 <p><strong>Transit Probability ($P_T$):</strong>
-$$P_T = \frac{e^{U_T}}{\text{Denominator}} = \frac{0.1873}{0.4339} \approx 0.4316 \text{ or } 43.16%$$</p>
-</li>
+</p>
+$$P_T = \frac{e^{U_T}}{\text{Denominator}} = \frac{0.1873}{0.4339} \approx 0.4316 \text{ or } 43.16\%$$</li>
 <li>
 <p><strong>Auto Probability ($P_A$):</strong>
-$$P_A = \frac{e^{U_A}}{\text{Denominator}} = \frac{0.2466}{0.4339} \approx 0.5684 \text{ or } 56.84%$$</p>
-</li>
+</p>
+$$P_A = \frac{e^{U_A}}{\text{Denominator}} = \frac{0.2466}{0.4339} \approx 0.5684 \text{ or } 56.84\%$$</li>
 </ul>
 <p><strong>Step 3: Calculate Expected Transit Riders</strong>
-$$\text{Transit Riders} = \text{Total Commuters} \times P_T$$
-$$\text{Transit Riders} = 12,000 \times 0.4316 \approx 5,179 \text{ daily riders}$$</p>
-<hr>
+</p>
+$$\text{Transit Riders} = \text{Total Commuters} \times P_T$$<p>
+</p>
+$$\text{Transit Riders} = 12,000 \times 0.4316 \approx 5,179 \text{ daily riders}$$<hr>
 <h2 id="crucial-pitfalls-and-exam-traps">Crucial Pitfalls and Exam Traps</h2>
 <ul>
 <li><strong>Negative Exponents in Logit Math:</strong> Utility values ($U$) are almost always negative because time and cost represent disutilities. When using your calculator, be careful to enter the negative sign: $e^{-1.40}$, not $e^{1.40}$. An exponent error here will ruin the calculation.</li>

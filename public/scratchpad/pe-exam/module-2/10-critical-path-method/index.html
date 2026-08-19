@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Critical Path Method (CPM) and Crashing">
     <meta property="og:description" content="Critical Path Method (CPM) and Crashing The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Critical Path Method (CPM) and Crashing">
     <meta name="twitter:description" content="Critical Path Method (CPM) and Crashing The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-2/10-critical-path-method/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -272,20 +286,26 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>Moves from left to right through the network to determine the earliest possible start and finish times for each activity.</p>
 <ul>
 <li><strong>Rule 1 (First Activity):</strong><br>
+
 $$ES_{\text{Start}} = 0$$</li>
 <li><strong>Rule 2 (Early Finish):</strong><br>
+
 $$EF = ES + d$$</li>
 <li><strong>Rule 3 (Merge Activities):</strong> If a successor activity has multiple predecessors, its Early Start is the <strong>maximum</strong> of the Early Finish dates of its immediate predecessors.
+
 $$ES_{\text{successor}} = \max(EF_{\text{predecessor 1}}, EF_{\text{predecessor 2}}, \dots)$$</li>
 </ul>
 <h3 id="2-backward-pass-calculating-late-dates">2. Backward Pass (Calculating Late Dates)</h3>
 <p>Moves from right to left through the network to determine the latest possible start and finish times that will not delay the project finish.</p>
 <ul>
 <li><strong>Rule 1 (Last Activity):</strong> The Late Finish ($LF$) of the final activity is set equal to its Early Finish ($EF$) unless a contract deadline is specified.
+
 $$LF_{\text{End}} = EF_{\text{End}}$$</li>
 <li><strong>Rule 2 (Late Start):</strong><br>
+
 $$LS = LF - d$$</li>
 <li><strong>Rule 3 (Burst Activities):</strong> If a predecessor activity has multiple successors, its Late Finish is the <strong>minimum</strong> of the Late Start dates of its immediate successors.
+
 $$LF_{\text{predecessor}} = \min(LS_{\text{successor 1}}, LS_{\text{successor 2}}, \dots)$$</li>
 </ul>
 <hr>
@@ -293,15 +313,15 @@ $$LF_{\text{predecessor}} = \min(LS_{\text{successor 1}}, LS_{\text{successor 2}
 <p>Float represents schedule flexibility.</p>
 <h3 id="1-total-float-tf">1. Total Float (TF)</h3>
 <p>The maximum amount of time that an activity can be delayed from its early start without delaying the overall project completion date.
-$$TF = LS - ES = LF - EF$$</p>
-<ul>
+</p>
+$$TF = LS - ES = LF - EF$$<ul>
 <li>Activities on the critical path have <strong>$TF = 0$</strong>.</li>
-<li>A delay in any activity with $TF &gt; 0$ will eat into the project&rsquo;s buffer but won&rsquo;t delay the finish date until the delay exceeds $TF$.</li>
+<li>A delay in any activity with $TF > 0$ will eat into the project&rsquo;s buffer but won&rsquo;t delay the finish date until the delay exceeds $TF$.</li>
 </ul>
 <h3 id="2-free-float-ff">2. Free Float (FF)</h3>
 <p>The maximum amount of time an activity can be delayed without delaying the early start of <strong>any</strong> of its immediate successor activities.
-$$FF = \min(ES_{\text{successors}}) - EF_{\text{activity}}$$</p>
-<ul>
+</p>
+$$FF = \min(ES_{\text{successors}}) - EF_{\text{activity}}$$<ul>
 <li>Free float can never exceed total float ($FF \le TF$).</li>
 <li>An activity can have total float but zero free float if delaying it would immediately push its successors&rsquo; early start dates.</li>
 </ul>
@@ -484,7 +504,7 @@ A project network has the following activities, durations, and predecessor relat
 <li><strong>F:</strong> $ES_F = \max(EF_D, EF_E) = \max(15, 18) = 18$, $EF_F = 18 + 4 = 22$</li>
 <li><strong>Project Duration = 22 days.</strong></li>
 </ul>
-<h4 id="backward-pass-set-lf_f--ef_f--22">Backward Pass (Set $LF_F = EF_F = 22$):</h4>
+<h4 id="backward-pass-set-">Backward Pass (Set $LF_F = EF_F = 22$):</h4>
 <ul>
 <li><strong>F:</strong> $LF_F = 22$, $LS_F = 22 - 4 = 18$</li>
 <li><strong>E:</strong> $LF_E = LS_F = 18$, $LS_E = 18 - 8 = 10$</li>
@@ -577,8 +597,7 @@ A project network has the following activities, durations, and predecessor relat
 <p>Crashing is the process of reducing project duration by adding resources to critical activities at the lowest possible cost.</p>
 <h3 id="key-concept-the-cost-slope">Key Concept: The Cost Slope</h3>
 <p>The cost slope represents the crash cost per unit of time (e.g., dollars per day).</p>
-<p>$$\text{Cost Slope} = \frac{\text{Crash Cost} - \text{Normal Cost}}{\text{Normal Duration} - \text{Crash Duration}}$$</p>
-<h3 id="crashing-protocol">Crashing Protocol:</h3>
+$$\text{Cost Slope} = \frac{\text{Crash Cost} - \text{Normal Cost}}{\text{Normal Duration} - \text{Crash Duration}}$$<h3 id="crashing-protocol">Crashing Protocol:</h3>
 <ol>
 <li>Identify the current critical path(s) and project duration.</li>
 <li>Determine the cost slope for all activities.</li>
@@ -650,12 +669,12 @@ Using the previous network ($A \to B \to E \to F$ is critical, duration = 22 day
 <p><strong>Solution:</strong></p>
 <p><strong>Step 1: Calculate Cost Slopes</strong></p>
 <ul>
-<li><strong>A:</strong> $\frac{1,500 - 1,000}{4 - 3} = $500 / \text{day}$</li>
-<li><strong>B:</strong> $\frac{3,200 - 2,000}{6 - 4} = $600 / \text{day}$</li>
-<li><strong>C:</strong> $\frac{1,100 - 800}{3 - 2} = $300 / \text{day}$ (Non-critical)</li>
-<li><strong>D:</strong> $\frac{2,100 - 1,500}{5 - 3} = $300 / \text{day}$ (Non-critical)</li>
-<li><strong>E:</strong> $\frac{5,000 - 4,000}{8 - 6} = $500 / \text{day}$</li>
-<li><strong>F:</strong> $\frac{1,800 - 1,200}{4 - 3} = $600 / \text{day}$</li>
+<li><strong>A:</strong> $\frac{1,500 - 1,000}{4 - 3} = \$500 / \text{day}$</li>
+<li><strong>B:</strong> $\frac{3,200 - 2,000}{6 - 4} = \$600 / \text{day}$</li>
+<li><strong>C:</strong> $\frac{1,100 - 800}{3 - 2} = \$300 / \text{day}$ (Non-critical)</li>
+<li><strong>D:</strong> $\frac{2,100 - 1,500}{5 - 3} = \$300 / \text{day}$ (Non-critical)</li>
+<li><strong>E:</strong> $\frac{5,000 - 4,000}{8 - 6} = \$500 / \text{day}$</li>
+<li><strong>F:</strong> $\frac{1,800 - 1,200}{4 - 3} = \$600 / \text{day}$</li>
 </ul>
 <p><strong>Step 2: First Crashing Step (Reduce from 22 to 21 Days)</strong></p>
 <ul>
@@ -691,7 +710,7 @@ Using the previous network ($A \to B \to E \to F$ is critical, duration = 22 day
 <p><strong>Step 4: Summary</strong></p>
 <ul>
 <li>Target duration met: 20 days.</li>
-<li><strong>Total additional crash cost:</strong> $$500 + $500 = $1,000$.</li>
+<li><strong>Total additional crash cost:</strong> $\$500 + $500 = $1,000$.</li>
 <li>Modified activity durations: $d_A = 3 \text{ days}$, $d_E = 7 \text{ days}$.</li>
 </ul>
 <hr>
@@ -700,6 +719,7 @@ Using the previous network ($A \to B \to E \to F$ is critical, duration = 22 day
 <li><strong>Crashing Non-Critical Activities:</strong> Do not crash an activity just because it has the lowest cost slope. If it is not on the critical path, crashing it has zero effect on the project duration.</li>
 <li><strong>Multiple Critical Paths:</strong> When crashing creates a second critical path, you must crash both paths simultaneously. If you only crash one path, the project duration will not change because the other path remains at the original duration.</li>
 <li><strong>Free Float Calculation:</strong> Remember that free float is relative to the <em>immediate next</em> successors. If an activity connects to two successors, you must use the minimum ES of those successors in the formula:
+
 $$FF = \min(ES_{\text{successor 1}}, ES_{\text{successor 2}}) - EF_{\text{predecessor}}$$</li>
 </ul>
 

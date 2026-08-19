@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Traffic Characterization for Pavements">
     <meta property="og:description" content="Traffic Characterization for Pavements Pavements must be designed to withstand the repeated applications of traffic loads over their design life. Because …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Traffic Characterization for Pavements">
     <meta name="twitter:description" content="Traffic Characterization for Pavements Pavements must be designed to withstand the repeated applications of traffic loads over their design life. Because …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-12/89-traffic-characterization-for-pavements/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-12/89-traffic-characterization-for-pavements/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-12/89-traffic-characterization-for-pavements/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -240,16 +254,18 @@ gtag('config', 'G-1WZSE8DHZ9');
 <p>The <strong>Load Equivalency Factor (LEF)</strong> represents the relative damage caused by a specific axle configuration and weight compared to the standard 18-kip single axle ($LEF_{18\text{-kip single}} = 1.0$).</p>
 <h3 id="the-fourth-power-law-approximation">The Fourth-Power Law Approximation</h3>
 <p>For quick estimations when AASHTO tables are not available, the relative damage can be estimated using the <strong>Fourth-Power Law</strong>:</p>
-<p>$$\text{LEF}<em>{\text{single}} \approx \left(\frac{L_x}{18}\right)^4$$
-$$\text{LEF}</em>{\text{tandem}} \approx \left(\frac{L_x}{33.2}\right)^4$$
-$$\text{LEF}_{\text{tridem}} \approx \left(\frac{L_x}{46.2}\right)^4$$</p>
-<p>Where:</p>
+$$\text{LEF}_{\text{single}} \approx \left(\frac{L_x}{18}\right)^4$$<p>
+</p>
+$$\text{LEF}_{\text{tandem}} \approx \left(\frac{L_x}{33.2}\right)^4$$<p>
+</p>
+$$\text{LEF}_{\text{tridem}} \approx \left(\frac{L_x}{46.2}\right)^4$$<p>Where:</p>
 <ul>
 <li>$L_x = \text{axle weight in kips}$ (e.g., $22,000\text{ lb} = 22\text{ kips}$).</li>
 <li><em>Note:</em> Tandem axles have two axles spaced close together ($40\text{ to } 96\text{ inches}$ apart). Tridem axles have three axles spaced close together.</li>
 </ul>
 <p><em>Example:</em> A $36\text{-kip}$ single axle causes:
-$$LEF \approx \left(\frac{36}{18}\right)^4 = 2^4 = 16 \text{ ESALs}$$
+</p>
+$$LEF \approx \left(\frac{36}{18}\right)^4 = 2^4 = 16 \text{ ESALs}$$<p>
 The single passage of this $36\text{-kip}$ axle causes the same pavement damage as $16$ passes of the standard $18\text{-kip}$ axle.</p>
 <h3 id="aashto-lef-tables">AASHTO LEF Tables</h3>
 <p>In practice, AASHTO provides detailed tables to look up LEF values. These tables are based on:</p>
@@ -259,29 +275,29 @@ The single passage of this $36\text{-kip}$ axle causes the same pavement damage 
 <li><strong>Terminal Serviceability ($p_t$):</strong> Typically $2.0$ or $2.5$.</li>
 </ol>
 <hr>
-<h2 id="3-calculating-design-lane-esals-w_18">3. Calculating Design Lane ESALs ($W_{18}$)</h2>
+<h2 id="3-calculating-design-lane-esals-">3. Calculating Design Lane ESALs ($W_{18}$)</h2>
 <p>Pavement thickness is designed based on the loading in the <strong>design lane</strong> (the lane carrying the most heavy truck traffic, which is typically the outer right lane). The cumulative design lane ESALs ($W_{18}$) over a design life of $Y$ years is calculated as:</p>
-<p>$$W_{18} = \text{ADT}_0 \cdot T \cdot T_f \cdot G_f \cdot D_D \cdot D_L \cdot 365$$</p>
-<p>Where:</p>
+$$W_{18} = \text{ADT}_0 \cdot T \cdot T_f \cdot G_f \cdot D_D \cdot D_L \cdot 365$$<p>Where:</p>
 <ul>
 <li>$\text{ADT}_0 = \text{Average Daily Traffic (two-way) in the first year}$.</li>
 <li>$T = \text{percentage of trucks in the traffic stream (expressed as a decimal)}$.</li>
 <li>$T_f = \text{Truck Factor}$ (the average number of ESALs per truck in the traffic stream).</li>
 <li>$G_f = \text{Traffic Growth Factor}$ (calculates cumulative growth over the design period).</li>
-<li>$D_D = \text{Directional Distribution Factor}$ (accounts for the split of traffic in each direction, typically $0.50$ or $50%$).</li>
+<li>$D_D = \text{Directional Distribution Factor}$ (accounts for the split of traffic in each direction, typically $0.50$ or $50\%$).</li>
 <li>$D_L = \text{Lane Distribution Factor}$ (accounts for the portion of one-direction truck traffic that uses the design lane).</li>
 <li>$365 = \text{number of days in a year}$.</li>
 </ul>
-<h3 id="lane-distribution-factors-d_l">Lane Distribution Factors ($D_L$)</h3>
+<h3 id="lane-distribution-factors-">Lane Distribution Factors ($D_L$)</h3>
 <p>If a highway has multiple lanes in each direction, trucks will distribute across them, but the outer design lane carries the majority:</p>
 <ul>
-<li><strong>1 lane in each direction:</strong> $D_L = 1.00$ ($100%$)</li>
+<li><strong>1 lane in each direction:</strong> $D_L = 1.00$ ($100\%$)</li>
 <li><strong>2 lanes in each direction:</strong> $D_L = 0.80 \text{ to } 1.00$ (typically $0.90$)</li>
 <li><strong>3 or more lanes in each direction:</strong> $D_L = 0.60 \text{ to } 0.80$ (typically $0.70$)</li>
 </ul>
-<h3 id="traffic-growth-factor-g_f">Traffic Growth Factor ($G_f$)</h3>
+<h3 id="traffic-growth-factor-">Traffic Growth Factor ($G_f$)</h3>
 <p>To account for traffic growth at an annual rate $g$ (expressed as a decimal) over a design life of $Y$ years:
-$$G_f = \frac{(1 + g)^Y - 1}{g}$$
+</p>
+$$G_f = \frac{(1 + g)^Y - 1}{g}$$<p>
 <em>Note: If the growth rate is zero ($g = 0$), the growth factor is simply equal to the design life ($G_f = Y$).</em></p>
 <hr>
 <h2 id="4-mechanistic-empirical-mepdg-traffic-inputs">4. Mechanistic-Empirical (MEPDG) Traffic Inputs</h2>
@@ -294,13 +310,13 @@ $$G_f = \frac{(1 + g)^Y - 1}{g}$$
 </ul>
 <hr>
 <h2 id="5-worked-examples">5. Worked Examples</h2>
-<h3 id="worked-example-1-design-lane-esals-w_18">Worked Example 1: Design Lane ESALs ($W_{18}$)</h3>
+<h3 id="worked-example-1-design-lane-esals-">Worked Example 1: Design Lane ESALs ($W_{18}$)</h3>
 <p>A new 4-lane divided highway (2 lanes in each direction) is designed for a 20-year service life. The design parameters are:</p>
 <ul>
 <li>Initial two-way Average Daily Traffic ($\text{ADT}_0$) = $12,000\text{ vehicles/day}$</li>
-<li>Truck percentage ($T$) = $15%$</li>
+<li>Truck percentage ($T$) = $15\%$</li>
 <li>Average Truck Factor ($T_f$) = $1.45\text{ ESALs/truck}$</li>
-<li>Annual traffic growth rate ($g$) = $3.5%$</li>
+<li>Annual traffic growth rate ($g$) = $3.5\%$</li>
 <li>Directional distribution factor ($D_D$) = $0.50$</li>
 <li>Lane distribution factor ($D_L$) = $0.90$</li>
 </ul>
@@ -309,11 +325,14 @@ $$G_f = \frac{(1 + g)^Y - 1}{g}$$
 <ol>
 <li><strong>Calculate Traffic Growth Factor ($G_f$):</strong>
 For $g = 0.035$ and $Y = 20\text{ years}$:
+
 $$G_f = \frac{(1 + 0.035)^{20} - 1}{0.035} = \frac{(1.035)^{20} - 1}{0.035} = \frac{1.9898 - 1.0}{0.035} = \frac{0.9898}{0.035} = 28.28$$</li>
 <li><strong>Calculate Design Lane ESALs ($W_{18}$):</strong>
-$$W_{18} = \text{ADT}<em>0 \cdot T \cdot T_f \cdot G_f \cdot D_D \cdot D_L \cdot 365$$
+
+$$W_{18} = \text{ADT}_0 \cdot T \cdot T_f \cdot G_f \cdot D_D \cdot D_L \cdot 365$$
 Substitute the known values:
-$$W</em>{18} = 12,000 \cdot 0.15 \cdot 1.45 \cdot 28.28 \cdot 0.50 \cdot 0.90 \cdot 365$$
+
+$$W_{18} = 12,000 \cdot 0.15 \cdot 1.45 \cdot 28.28 \cdot 0.50 \cdot 0.90 \cdot 365$$
 Multiply step-by-step:
 <ul>
 <li>$\text{Daily Trucks} = 12,000 \cdot 0.15 = 1800\text{ trucks/day}$</li>
@@ -321,6 +340,7 @@ Multiply step-by-step:
 <li>$\text{Daily ESALs in Design Lane} = 2610 \cdot 0.50 \cdot 0.90 = 1174.5\text{ ESALs/day}$</li>
 <li>$\text{Year 1 ESALs in Design Lane} = 1174.5 \cdot 365 = 428,692.5\text{ ESALs/year}$</li>
 <li>$\text{Cumulative ESALs (with growth)} = 428,692.5 \cdot 28.28 = 12,123,424\text{ ESALs}$
+
 $$W_{18} \approx 12.12 \cdot 10^6 \text{ ESALs}$$</li>
 </ul>
 </li>
@@ -339,16 +359,23 @@ $$W_{18} \approx 12.12 \cdot 10^6 \text{ ESALs}$$</li>
 Calculate the Load Equivalency Factor (LEF) for each group:</p>
 <ol>
 <li><strong>Group 1: 12-kip Single Axles:</strong>
+
 $$LEF_1 = \left(\frac{12}{18}\right)^4 = (0.667)^4 = 0.198\text{ ESALs/axle}$$
+
 $$\text{ESAL}_1 = 150 \cdot 0.198 = 29.7\text{ ESALs}$$</li>
 <li><strong>Group 2: 22-kip Single Axles:</strong>
+
 $$LEF_2 = \left(\frac{22}{18}\right)^4 = (1.222)^4 = 2.23\text{ ESALs/axle}$$
+
 $$\text{ESAL}_2 = 40 \cdot 2.23 = 89.2\text{ ESALs}$$</li>
 <li><strong>Group 3: 36-kip Tandem Axles:</strong>
 <em>Remember to use the tandem denominator ($33.2\text{ kips}$):</em>
+
 $$LEF_3 = \left(\frac{36}{33.2}\right)^4 = (1.084)^4 = 1.38\text{ ESALs/axle}$$
+
 $$\text{ESAL}_3 = 25 \cdot 1.38 = 34.5\text{ ESALs}$$</li>
 <li><strong>Sum Total ESALs:</strong>
+
 $$\text{Total ESALs} = 29.7 + 89.2 + 34.5 = 153.4\text{ ESALs}$$</li>
 </ol>
 <p><em>Result:</em> The mixed traffic count equates to <strong>$153.4$ standard ESALs</strong> in that hour.</p>

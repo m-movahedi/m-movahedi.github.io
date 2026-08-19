@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Unsignalized Intersection Operations">
     <meta property="og:description" content="Unsignalized Intersection Operations Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Unsignalized Intersection Operations">
     <meta name="twitter:description" content="Unsignalized Intersection Operations Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/27-unsignalized-intersection-operations/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -250,7 +264,7 @@ Rank 4 (Most Impeded):
 </code></pre><hr>
 <h2 id="twsc-capacity-analysis-methodology">TWSC Capacity Analysis Methodology</h2>
 <p>To calculate the capacity of a minor street or major street left-turning movement, we use the conflicting flow rate, critical headway, and follow-up time.</p>
-<h3 id="1-conflicting-flow-rate-v_c">1. Conflicting Flow Rate ($V_c$)</h3>
+<h3 id="1-conflicting-flow-rate-">1. Conflicting Flow Rate ($V_c$)</h3>
 <p>The sum of all traffic streams that have priority over the movement being analyzed. For example, a minor-street left turn must conflict with:</p>
 <ul>
 <li>Major-street through traffic in both directions.</li>
@@ -258,25 +272,24 @@ Rank 4 (Most Impeded):
 <li>Major-street right-turn traffic (in some cases).</li>
 <li>Minor-street through and right-turn traffic from the opposing approach.</li>
 </ul>
-<h3 id="2-critical-headway-t_c-and-follow-up-time-t_f">2. Critical Headway ($t_c$) and Follow-Up Time ($t_f$)</h3>
+<h3 id="2-critical-headway--and-follow-up-time-">2. Critical Headway ($t_c$) and Follow-Up Time ($t_f$)</h3>
 <ul>
 <li><strong>Critical Headway ($t_c$)</strong>: The minimum time interval in the major-street traffic stream (seconds) that a minor-street driver requires to enter the intersection. If a gap is shorter than $t_c$, the driver will wait.</li>
 <li><strong>Follow-Up Time ($t_f$)</strong>: The time between the departure of one minor-street vehicle and the departure of the next vehicle using the same major-street gap (seconds).</li>
 </ul>
-<h3 id="3-potential-capacity-c_p">3. Potential Capacity ($c_p$)</h3>
+<h3 id="3-potential-capacity-">3. Potential Capacity ($c_p$)</h3>
 <p>The potential capacity ($c_p$) of a minor-street movement represents the maximum flow rate it can achieve, assuming it is the only minor-street movement operating and has no impedance from other minor movements:</p>
-<p>$$c_p = V_c \times \frac{e^{-V_c \cdot t_c / 3,600}}{1 - e^{-V_c \cdot t_f / 3,600}}$$</p>
-<p>Where:</p>
+$$c_p = V_c \times \frac{e^{-V_c \cdot t_c / 3,600}}{1 - e^{-V_c \cdot t_f / 3,600}}$$<p>Where:</p>
 <ul>
 <li>$c_p$ = potential capacity of the movement ($veh/h$)</li>
 <li>$V_c$ = conflicting flow rate ($veh/h$)</li>
 <li>$t_c$ = critical headway ($sec$)</li>
 <li>$t_f$ = follow-up time ($sec$)</li>
 </ul>
-<h3 id="4-movement-capacity-c_m">4. Movement Capacity ($c_m$)</h3>
+<h3 id="4-movement-capacity-">4. Movement Capacity ($c_m$)</h3>
 <p>The potential capacity is adjusted to account for impedance from higher-ranked movements. For example, if Rank 2 vehicles are queued and waiting, Rank 3 vehicles cannot utilize the gaps. The movement capacity is:
-$$c_m = c_p \times \prod \text{Impedance Factors}$$</p>
-<hr>
+</p>
+$$c_m = c_p \times \prod \text{Impedance Factors}$$<hr>
 <h2 id="all-way-stop-controlled-awsc-intersections">All-Way Stop-Controlled (AWSC) Intersections</h2>
 <p>In an AWSC intersection, all approaches are controlled by stop signs. Right-of-way is governed by a first-come, first-served rule, with drivers cooperating to discharge in turns.</p>
 <ul>
@@ -284,10 +297,9 @@ $$c_m = c_p \times \prod \text{Impedance Factors}$$</p>
 <li><strong>Service Time</strong>: The average time a vehicle spends at the stop line waiting to depart after the previous vehicle has gone.</li>
 </ul>
 <hr>
-<h2 id="control-delay-d">Control Delay ($d$)</h2>
+<h2 id="control-delay-">Control Delay ($d$)</h2>
 <p>The average control delay per vehicle ($sec/veh$) for any movement at an unsignalized intersection is calculated as:</p>
-<p>$$d = \frac{3,600}{c_m} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_m \times T}} \right] + 5$$</p>
-<p>Where:</p>
+$$d = \frac{3,600}{c_m} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_m \times T}} \right] + 5$$<p>Where:</p>
 <ul>
 <li>$c_m$ = movement capacity ($veh/h$)</li>
 <li>$T$ = analysis period (hours); typically $0.25 \text{ h}$ (15 minutes).</li>
@@ -311,23 +323,23 @@ $$c_m = c_p \times \prod \text{Impedance Factors}$$</p>
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 10.0$ to $\le 15.0$</td>
+          <td>$> 10.0$ to $\le 15.0$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 15.0$ to $\le 25.0$</td>
+          <td>$> 15.0$ to $\le 25.0$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 25.0$ to $\le 35.0$</td>
+          <td>$> 25.0$ to $\le 35.0$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 35.0$ to $\le 50.0$</td>
+          <td>$> 35.0$ to $\le 50.0$</td>
       </tr>
       <tr>
           <td><strong>F</strong></td>
-          <td>$&gt; 50.0$ OR if $X &gt; 1.0$</td>
+          <td>$> 50.0$ OR if $X > 1.0$</td>
       </tr>
   </tbody>
 </table>
@@ -363,22 +375,21 @@ In the delay equation, ensure that $c_m$ is in vehicles per hour, $T$ is in hour
 </ul>
 <p><strong>Determine the potential capacity, volume-to-capacity ratio, control delay, and Level of Service (LOS) for this right-turn movement.</strong></p>
 <h3 id="solution">Solution:</h3>
-<h4 id="step-1-calculate-potential-capacity-c_p">Step 1: Calculate Potential Capacity ($c_p$)</h4>
-<p>$$c_p = V_c \times \frac{e^{-V_c \cdot t_c / 3,600}}{1 - e^{-V_c \cdot t_f / 3,600}}$$</p>
-<p>Calculate exponents:</p>
+<h4 id="step-1-calculate-potential-capacity-">Step 1: Calculate Potential Capacity ($c_p$)</h4>
+$$c_p = V_c \times \frac{e^{-V_c \cdot t_c / 3,600}}{1 - e^{-V_c \cdot t_f / 3,600}}$$<p>Calculate exponents:</p>
 <ul>
 <li>$\frac{V_c \cdot t_c}{3,600} = \frac{800 \times 4.1}{3,600} = 0.9111 \rightarrow e^{-0.9111} = 0.4021$</li>
 <li>$\frac{V_c \cdot t_f}{3,600} = \frac{800 \times 2.2}{3,600} = 0.4889 \rightarrow e^{-0.4889} = 0.6133$</li>
 </ul>
 <p>Calculate capacity:
-$$c_p = 800 \times \frac{0.4021}{1 - 0.6133} = 800 \times \frac{0.4021}{0.3867} = 800 \times 1.0398 = 831.8 \text{ veh/h}$$
+</p>
+$$c_p = 800 \times \frac{0.4021}{1 - 0.6133} = 800 \times \frac{0.4021}{0.3867} = 800 \times 1.0398 = 831.8 \text{ veh/h}$$<p>
 Since impedance is neglected, $c_m = c_p = 831.8 \text{ veh/h}$.</p>
-<h4 id="step-2-calculate-adjusted-demand-flow-rate-v-and-vc-ratio-x">Step 2: Calculate Adjusted Demand Flow Rate ($v$) and $v/c$ Ratio ($X$)</h4>
-<p>$$v = \frac{V}{\text{PHF}} = \frac{180}{0.90} = 200 \text{ veh/h}$$
-$$X = \frac{v}{c_m} = \frac{200}{831.8} = 0.240$$</p>
-<h4 id="step-3-calculate-control-delay-d">Step 3: Calculate Control Delay ($d$)</h4>
-<p>$$d = \frac{3,600}{c_m} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_m \times T}} \right] + 5$$</p>
-<ul>
+<h4 id="step-2-calculate-adjusted-demand-flow-rate--and--ratio-">Step 2: Calculate Adjusted Demand Flow Rate ($v$) and $v/c$ Ratio ($X$)</h4>
+$$v = \frac{V}{\text{PHF}} = \frac{180}{0.90} = 200 \text{ veh/h}$$<p>
+</p>
+$$X = \frac{v}{c_m} = \frac{200}{831.8} = 0.240$$<h4 id="step-3-calculate-control-delay-">Step 3: Calculate Control Delay ($d$)</h4>
+$$d = \frac{3,600}{c_m} + 900 \times T \left[ (X - 1) + \sqrt{(X - 1)^2 + \frac{360 \times X}{c_m \times T}} \right] + 5$$<ul>
 <li>$\frac{3,600}{c_m} = \frac{3,600}{831.8} = 4.33 \text{ s}$</li>
 <li>$X - 1 = 0.240 - 1 = -0.760$</li>
 <li>$c_m \times T = 831.8 \times 0.25 = 207.95$</li>
@@ -386,13 +397,15 @@ $$X = \frac{v}{c_m} = \frac{200}{831.8} = 0.240$$</p>
 <li>$\sqrt{(X - 1)^2 + \frac{360 \times X}{c_m \times T}} = \sqrt{(-0.760)^2 + 0.4155} = \sqrt{0.5776 + 0.4155} = \sqrt{0.9931} = 0.9965$</li>
 </ul>
 <p>Now solve the delay terms:
-$$d = 4.33 + 900 \times 0.25 \left[ -0.760 + 0.9965 \right] + 5$$
-$$d = 4.33 + 225 \left[ 0.2365 \right] + 5$$
-$$d = 4.33 + 53.21 + 5 = 62.54 \text{ sec/veh}$$</p>
-<h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4>
+</p>
+$$d = 4.33 + 900 \times 0.25 \left[ -0.760 + 0.9965 \right] + 5$$<p>
+</p>
+$$d = 4.33 + 225 \left[ 0.2365 \right] + 5$$<p>
+</p>
+$$d = 4.33 + 53.21 + 5 = 62.54 \text{ sec/veh}$$<h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4>
 <p>Compare $d = 62.54 \text{ sec/veh}$ to the unsignalized intersection LOS criteria:</p>
 <ul>
-<li>$d &gt; 50.0 \text{ sec/veh} \rightarrow$ <strong>LOS F</strong></li>
+<li>$d > 50.0 \text{ sec/veh} \rightarrow$ <strong>LOS F</strong></li>
 </ul>
 <p><strong>Conclusion:</strong> The minor street right-turn movement operates at <strong>LOS F</strong>.</p>
 <hr>

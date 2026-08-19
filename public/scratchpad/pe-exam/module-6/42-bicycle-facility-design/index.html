@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Bicycle Facility Design">
     <meta property="og:description" content="Bicycle Facility Design Bicycle facility design focuses on providing safe, accessible, and comfortable infrastructure for cyclists. In the United States, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Bicycle Facility Design">
     <meta name="twitter:description" content="Bicycle Facility Design Bicycle facility design focuses on providing safe, accessible, and comfortable infrastructure for cyclists. In the United States, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-6/42-bicycle-facility-design/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -262,7 +276,7 @@ gtag('config', 'G-1WZSE8DHZ9');
 <h3 id="design-speed">Design Speed</h3>
 <ul>
 <li>Paved shared-use paths are typically designed for a bicyclist speed of <strong>18 mph (30 km/h)</strong>.</li>
-<li>On downgrades steeper than $4%$ or in areas with high-performance cyclists, the design speed should be increased to <strong>30 mph (50 km/h)</strong>.</li>
+<li>On downgrades steeper than $4\%$ or in areas with high-performance cyclists, the design speed should be increased to <strong>30 mph (50 km/h)</strong>.</li>
 </ul>
 <h3 id="maximum-grade">Maximum Grade</h3>
 <ul>
@@ -272,20 +286,18 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="stopping-sight-distance-ssd-for-bicyclists">Stopping Sight Distance (SSD) for Bicyclists</h2>
 <p>Bicyclists require adequate sight distance to see and stop for hazards. The SSD formula for bicyclists is identical in structure to the vehicle SSD formula:</p>
-<p>$$S = \frac{V^2}{30(f \pm G)} + 1.47 V t$$</p>
-<p>Where:</p>
+$$S = \frac{V^2}{30(f \pm G)} + 1.47 V t$$<p>Where:</p>
 <ul>
 <li>$S$ = Stopping Sight Distance (ft)</li>
 <li>$V$ = Bicyclist design speed (mph)</li>
 <li>$t$ = Perception-reaction time = <strong>2.5 seconds</strong> (standard for design)</li>
 <li>$f$ = Coefficient of friction (wet pavement condition, ranging from $0.16$ at $30\text{ mph}$ to $0.25$ at $10\text{ mph}$)</li>
-<li>$G$ = Longitudinal grade (decimal form; e.g., $-0.03$ for a $3%$ downgrade)</li>
+<li>$G$ = Longitudinal grade (decimal form; e.g., $-0.03$ for a $3\%$ downgrade)</li>
 </ul>
 <hr>
 <h2 id="horizontal-curve-geometry-for-bicyclists">Horizontal Curve Geometry for Bicyclists</h2>
 <p>Unlike vehicles, bicyclists lean into curves to maintain balance. The minimum horizontal curve radius ($R_{min}$) is governed by the bicycle design speed, side friction, and superelevation:</p>
-<p>$$R_{min} = \frac{V^2}{15 \left( \frac{e}{100} + f \right)}$$</p>
-<p>Where:</p>
+$$R_{min} = \frac{V^2}{15 \left( \frac{e}{100} + f \right)}$$<p>Where:</p>
 <ul>
 <li>$V$ = Bicyclist design speed (mph)</li>
 <li>$e$ = Superelevation rate (%). For shared-use paths, the maximum superelevation rate is <strong>2.0%</strong> to comply with pedestrian cross-slope limits.</li>
@@ -294,15 +306,15 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="worked-example-bicycle-sight-distance-and-horizontal-curve-design">Worked Example: Bicycle Sight Distance and Horizontal Curve Design</h2>
 <h3 id="problem-statement">Problem Statement</h3>
-<p>A shared-use path is being designed along an abandoned railway corridor. A curved section of the path descends a $4.0%$ grade ($G = -0.04$). The path design speed is $20\text{ mph}$.</p>
+<p>A shared-use path is being designed along an abandoned railway corridor. A curved section of the path descends a $4.0\%$ grade ($G = -0.04$). The path design speed is $20\text{ mph}$.</p>
 <ul>
 <li>Bicyclist perception-reaction time ($t$): $2.5\text{ seconds}$</li>
 <li>Coefficient of wet friction ($f$) at $20\text{ mph}$: $0.20$</li>
-<li>Maximum allowable superelevation rate ($e$): $2.0%$</li>
+<li>Maximum allowable superelevation rate ($e$): $2.0\%$</li>
 <li>Side friction factor ($f_s$) at $20\text{ mph}$: $0.27$</li>
 </ul>
 <ol>
-<li>Calculate the required stopping sight distance ($S$) for a bicyclist traveling down the $4.0%$ grade.</li>
+<li>Calculate the required stopping sight distance ($S$) for a bicyclist traveling down the $4.0\%$ grade.</li>
 <li>Determine the minimum horizontal curve radius ($R_{min}$) required for this section of the path.</li>
 </ol>
 <h3 id="solution">Solution</h3>
@@ -310,21 +322,29 @@ gtag('config', 'G-1WZSE8DHZ9');
 <li>
 <p><strong>Calculate the Stopping Sight Distance ($S$):</strong>
 Use the SSD formula:
-$$S = \frac{V^2}{30(f - G)} + 1.47 V t$$
+</p>
+$$S = \frac{V^2}{30(f - G)} + 1.47 V t$$<p>
 <em>Note: Since it is a downgrade, we subtract the grade ($G = 0.04$):</em>
-$$S = \frac{20^2}{30(0.20 - 0.04)} + 1.47(20)(2.5)$$
-$$S = \frac{400}{30(0.16)} + 73.5$$
-$$S = \frac{400}{4.8} + 73.5 = 83.33 + 73.5 = 156.83\text{ ft}$$
+</p>
+$$S = \frac{20^2}{30(0.20 - 0.04)} + 1.47(20)(2.5)$$<p>
+</p>
+$$S = \frac{400}{30(0.16)} + 73.5$$<p>
+</p>
+$$S = \frac{400}{4.8} + 73.5 = 83.33 + 73.5 = 156.83\text{ ft}$$<p>
 <em>Rounding up for design:</em> <strong>$157\text{ ft}$</strong></p>
 </li>
 <li>
 <p><strong>Calculate the Minimum Horizontal Curve Radius ($R_{min}$):</strong>
 Use the minimum radius formula:
-$$R_{min} = \frac{V^2}{15 \left( \frac{e}{100} + f_s \right)}$$
+</p>
+$$R_{min} = \frac{V^2}{15 \left( \frac{e}{100} + f_s \right)}$$<p>
 <em>Substitute the given values:</em>
-$$R_{min} = \frac{20^2}{15 \left( \frac{2.0}{100} + 0.27 \right)}$$
-$$R_{min} = \frac{400}{15(0.02 + 0.27)} = \frac{400}{15(0.29)}$$
-$$R_{min} = \frac{400}{4.35} = 91.95\text{ ft}$$
+</p>
+$$R_{min} = \frac{20^2}{15 \left( \frac{2.0}{100} + 0.27 \right)}$$<p>
+</p>
+$$R_{min} = \frac{400}{15(0.02 + 0.27)} = \frac{400}{15(0.29)}$$<p>
+</p>
+$$R_{min} = \frac{400}{4.35} = 91.95\text{ ft}$$<p>
 <em>Rounding up for design:</em> <strong>$92\text{ ft}$</strong></p>
 </li>
 </ol>
@@ -336,7 +356,7 @@ $$R_{min} = \frac{400}{4.35} = 91.95\text{ ft}$$
 <hr>
 <h2 id="crucial-exam-tips">Crucial Exam Tips</h2>
 <ul>
-<li><strong>The 2% Superelevation Cap:</strong> On the PE exam, if you are asked to design a shared-use path horizontal curve, do not use the standard highway superelevation rates (e.g., $6%$ or $8%$). Because pedestrians share the path, the cross slope cannot exceed <strong>2.0%</strong> to comply with ADA.</li>
+<li><strong>The 2% Superelevation Cap:</strong> On the PE exam, if you are asked to design a shared-use path horizontal curve, do not use the standard highway superelevation rates (e.g., $6\%$ or $8\%$). Because pedestrians share the path, the cross slope cannot exceed <strong>2.0%</strong> to comply with ADA.</li>
 <li><strong>Wet Friction vs. Dry Friction:</strong> Always verify whether the problem specifies wet or dry conditions. For standard safety design, always use the wet coefficient of friction provided in the tables.</li>
 <li><strong>Clearance to Barriers:</strong> Remember that fences or guardrails along a shared-use path must be placed at least <strong>2.0 ft</strong> from the edge of the path. A common exam question involves checking whether a path clearance layout violates this lateral clearance rule.</li>
 </ul>

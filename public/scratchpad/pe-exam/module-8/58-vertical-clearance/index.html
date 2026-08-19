@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Vertical Clearance">
     <meta property="og:description" content="Vertical Clearance Vertical clearance is the minimum vertical distance between the roadway surface and an overhead structure, such as an overpass bridge girder, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Vertical Clearance">
     <meta name="twitter:description" content="Vertical Clearance Vertical clearance is the minimum vertical distance between the roadway surface and an overhead structure, such as an overpass bridge girder, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-8/58-vertical-clearance/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-8/58-vertical-clearance/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-8/58-vertical-clearance/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -269,10 +283,9 @@ gtag('config', 'G-1WZSE8DHZ9');
   </svg>
 </div>
 <p>The vertical clearance at any horizontal distance $x$ from the PVC is:</p>
-<p>$$C(x) = \text{Elev}<em>{\text{bridge}}(x) - \text{Elev}</em>{\text{road}}(x)$$</p>
-<p>Where:</p>
+$$C(x) = \text{Elev}_{\text{bridge}}(x) - \text{Elev}_{\text{road}}(x)$$<p>Where:</p>
 <ul>
-<li>$\text{Elev}<em>{\text{road}}(x) = y</em>{\text{PVC}} + g_1 x + \left(\frac{g_2 - g_1}{2L}\right) x^2$ (with $g_1, g_2$ as decimals)</li>
+<li>$\text{Elev}_{\text{road}}(x) = y_{\text{PVC}} + g_1 x + \left(\frac{g_2 - g_1}{2L}\right) x^2$ (with $g_1, g_2$ as decimals)</li>
 <li>$\text{Elev}_{\text{bridge}}(x)$ = bottom elevation of the bridge girder at distance $x$. Note that the bridge structure itself may be flat, on a constant slope, or on a vertical curve.</li>
 </ul>
 <p><em>Critical Point:</em> The minimum clearance does not always occur at the center of the bridge. Designers must check the clearance at both bridge faces (the edges of the structure) and at the low point of the roadway curve if it falls under the bridge.</p>
@@ -326,12 +339,12 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li>
 <p><strong>Case 1: Sight Distance $\le$ Curve Length ($S \le L$)</strong>
-$$L = \frac{A S^2}{800 \left( C - \frac{h_1 + h_2}{2} \right)} = \frac{A S^2}{800(C - 5)}$$</p>
-</li>
+</p>
+$$L = \frac{A S^2}{800 \left( C - \frac{h_1 + h_2}{2} \right)} = \frac{A S^2}{800(C - 5)}$$</li>
 <li>
-<p><strong>Case 2: Sight Distance $&gt;$ Curve Length ($S &gt; L$)</strong>
-$$L = 2S - \frac{800(C - 5)}{A}$$</p>
-</li>
+<p><strong>Case 2: Sight Distance $>$ Curve Length ($S > L$)</strong>
+</p>
+$$L = 2S - \frac{800(C - 5)}{A}$$</li>
 </ul>
 <p>Where:</p>
 <ul>
@@ -345,17 +358,17 @@ $$L = 2S - \frac{800(C - 5)}{A}$$</p>
 <ul>
 <li>
 <p><strong>Case 1: Sight Distance $\le$ Curve Length ($S \le L$)</strong>
-$$L = \frac{A S^2}{800(C - 1.5)}$$</p>
-</li>
+</p>
+$$L = \frac{A S^2}{800(C - 1.5)}$$</li>
 <li>
-<p><strong>Case 2: Sight Distance $&gt;$ Curve Length ($S &gt; L$)</strong>
-$$L = 2S - \frac{800(C - 1.5)}{A}$$</p>
-</li>
+<p><strong>Case 2: Sight Distance $>$ Curve Length ($S > L$)</strong>
+</p>
+$$L = 2S - \frac{800(C - 1.5)}{A}$$</li>
 </ul>
 <p>Where $L, S,$ and $C$ are in meters, and $A$ is in percent.</p>
 <hr>
 <h2 id="worked-example">Worked Example</h2>
-<p>An overpass bridge is $80\text{ ft}$ wide, spanning from Station $45+20$ to Station $46+00$. The bottom elevation of the bridge girder is constant at $152.00\text{ ft}$. The roadway below the bridge is on a sag vertical curve with $L = 600\text{ ft}$, $g_1 = -4.0%$, $g_2 = +2.0%$. The PVC is located at Station $42+00$ at an elevation of $146.00\text{ ft}$. The highway has a design speed of $45\text{ mph}$ (design SSD = $360\text{ ft}$).</p>
+<p>An overpass bridge is $80\text{ ft}$ wide, spanning from Station $45+20$ to Station $46+00$. The bottom elevation of the bridge girder is constant at $152.00\text{ ft}$. The roadway below the bridge is on a sag vertical curve with $L = 600\text{ ft}$, $g_1 = -4.0\%$, $g_2 = +2.0\%$. The PVC is located at Station $42+00$ at an elevation of $146.00\text{ ft}$. The highway has a design speed of $45\text{ mph}$ (design SSD = $360\text{ ft}$).</p>
 <p>Determine:</p>
 <ol>
 <li>The elevation of the roadway at the bridge entry face (Station $45+20$) and exit face (Station $46+00$).</li>
@@ -375,13 +388,17 @@ $$L = 2S - \frac{800(C - 1.5)}{A}$$</p>
 <p><em>At Station $45+20$ (Entry Face):</em></p>
 <ul>
 <li>$x_1 = 4,520 - 4,200 = 320\text{ ft}$
+
 $$y(320) = 146.00 + (-0.04)(320) + \left(\frac{0.02 - (-0.04)}{2 \times 600}\right) (320)^2$$
+
 $$y(320) = 146.00 - 12.80 + \left(\frac{0.06}{1200}\right)(102,400) = 133.20 + 0.00005(102,400) = 133.20 + 5.12 = 138.32\text{ ft}$$</li>
 </ul>
 <p><em>At Station $46+00$ (Exit Face):</em></p>
 <ul>
 <li>$x_2 = 4,600 - 4,200 = 400\text{ ft}$
+
 $$y(400) = 146.00 + (-0.04)(400) + \left(\frac{0.06}{1200}\right) (400)^2$$
+
 $$y(400) = 146.00 - 16.00 + 0.00005(160,000) = 130.00 + 8.00 = 138.00\text{ ft}$$</li>
 </ul>
 <p><strong>2. Calculate Clearance at Bridge Faces:</strong></p>
@@ -392,7 +409,7 @@ $$y(400) = 146.00 - 16.00 + 0.00005(160,000) = 130.00 + 8.00 = 138.00\text{ ft}$
 <p><strong>3. Determine Minimum Clearance:</strong>
 Since the roadway is on a sag curve, the low point of the curve represents the maximum dip in the road.</p>
 <ul>
-<li>$K = L/A = 600 / 6.0 = 100\text{ ft/%}$</li>
+<li>$K = L/A = 600 / 6.0 = 100\text{ ft/\%}$</li>
 <li>Distance from PVC to low point: $x_{\text{lp}} = g_1 K = 4.0 \times 100 = 400\text{ ft}$.</li>
 <li>The low point occurs at Station $42+00 + 400\text{ ft} = 46+00$.</li>
 <li>Since Station $46+00$ is exactly at the exit face of the bridge, the minimum clearance under the bridge occurs at this face and is equal to <strong>$14.00\text{ ft}$</strong>.</li>
@@ -401,12 +418,14 @@ Since the roadway is on a sag curve, the low point of the curve represents the m
 <p><strong>4. Underpass Sight Distance Check:</strong></p>
 <ul>
 <li>Design SSD ($S$) = $360\text{ ft}$</li>
-<li>Algebraic grade difference ($A$) = $6.0%$</li>
+<li>Algebraic grade difference ($A$) = $6.0\%$</li>
 <li>Clearance ($C$) = $14.00\text{ ft}$ (at the critical point)</li>
 <li><em>Assumption:</em> Assume $S \le L$.
+
 $$L = \frac{A S^2}{800(C - 5)} = \frac{6.0 \times (360)^2}{800(14.00 - 5)} = \frac{6.0 \times 129,600}{800(9.0)} = \frac{777,600}{7200} = 108.0\text{ ft}$$</li>
-<li><em>Verify assumption:</em> Is $S \le L$? Since $360\text{ ft} &gt; 108.0\text{ ft}$, the assumption is <strong>false</strong>.</li>
-<li><em>Recalculate using Case 2 ($S &gt; L$):</em>
+<li><em>Verify assumption:</em> Is $S \le L$? Since $360\text{ ft} > 108.0\text{ ft}$, the assumption is <strong>false</strong>.</li>
+<li><em>Recalculate using Case 2 ($S > L$):</em>
+
 $$L = 2S - \frac{800(C-5)}{A} = 2(360) - \frac{800(14.00 - 5)}{6.0} = 720 - \frac{800(9.0)}{6.0} = 720 - 1200 = -480\text{ ft}$$</li>
 <li><em>Interpretation:</em> A negative value indicates that no vertical curve is geometrically required to maintain underpass sight distance at this clearance (meaning the straight tangents would provide enough sight line). However, because the roadway is a major facility, the minimum length would be governed by passenger comfort ($L_{\text{comfort}} = 6 \times 45^2 / 46.5 = 261\text{ ft}$) or aesthetics ($L = 3V = 135\text{ ft}$).</li>
 </ul>

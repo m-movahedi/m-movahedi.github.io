@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Weaving Segments">
     <meta property="og:description" content="Weaving Segments A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Weaving Segments">
     <meta name="twitter:description" content="Weaving Segments A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -238,22 +252,24 @@ gtag('config', 'G-1WZSE8DHZ9');
 <ul>
 <li><strong>Weaving Length ($L_W$)</strong>: The physical distance (feet) from the gore point where the merge begins to the gore point where the diverge begins. Short weaving lengths increase turbulence and reduce capacity.</li>
 <li><strong>Weaving Flow Rate ($v_W$)</strong>: The sum of the two crossing flows:
-$$v_W = v_{RF} + v_{FR}$$
-<ul>
+
+$$v_W = v_{RF} + v_{FR}$$<ul>
 <li>$v_{RF}$ = flow originating on the ramp and exiting onto the freeway ($pc/h$)</li>
 <li>$v_{FR}$ = flow originating on the freeway and exiting onto the ramp ($pc/h$)</li>
 </ul>
 </li>
 <li><strong>Non-Weaving Flow Rate ($v_{NW}$)</strong>: The sum of the two through-flows:
-$$v_{NW} = v_{FF} + v_{RR}$$
-<ul>
+
+$$v_{NW} = v_{FF} + v_{RR}$$<ul>
 <li>$v_{FF}$ = freeway-to-freeway through-flow ($pc/h$)</li>
 <li>$v_{RR}$ = ramp-to-ramp through-flow ($pc/h$)</li>
 </ul>
 </li>
 <li><strong>Total Flow Rate ($v$)</strong>: The sum of all movements:
+
 $$v = v_W + v_{NW}$$</li>
 <li><strong>Volume Ratio ($VR$)</strong>: The proportion of total traffic that consists of weaving vehicles:
+
 $$VR = \frac{v_W}{v}$$</li>
 </ul>
 <hr>
@@ -281,18 +297,16 @@ $$VR = \frac{v_W}{v}$$</li>
     F --&gt; G[Calculate Density D = v_p / S * N]
     G --&gt; H[Determine Level of Service LOS]
 </code></pre><hr>
-<h2 id="step-1-calculate-average-speed-s">Step 1: Calculate Average Speed ($S$)</h2>
+<h2 id="step-1-calculate-average-speed-">Step 1: Calculate Average Speed ($S$)</h2>
 <p>The HCM utilizes separate regression equations to estimate the average speed of weaving vehicles ($S_W$) and non-weaving vehicles ($S_{NW}$):</p>
-<p>$$\text{Weaving Speed: } S_W = \text{BFFS} - \text{adjustments based on geometry and flow}$$
-$$\text{Non-Weaving Speed: } S_{NW} = \text{BFFS} - \text{adjustments based on geometry and flow}$$</p>
-<p>Once $S_W$ and $S_{NW}$ are determined, the average speed of the entire traffic stream ($S$, in $mph$) is calculated as a weighted harmonic mean:</p>
-<p>$$S = \frac{v_W + v_{NW}}{\frac{v_W}{S_W} + \frac{v_{NW}}{S_{NW}}}$$</p>
-<p><em>Note: On the PE exam, the individual speeds $S_W$ and $S_{NW}$ are typically either given, or the problem will simplify the system so that you can apply the harmonic mean formula directly.</em></p>
+$$\text{Weaving Speed: } S_W = \text{BFFS} - \text{adjustments based on geometry and flow}$$<p>
+</p>
+$$\text{Non-Weaving Speed: } S_{NW} = \text{BFFS} - \text{adjustments based on geometry and flow}$$<p>Once $S_W$ and $S_{NW}$ are determined, the average speed of the entire traffic stream ($S$, in $mph$) is calculated as a weighted harmonic mean:</p>
+$$S = \frac{v_W + v_{NW}}{\frac{v_W}{S_W} + \frac{v_{NW}}{S_{NW}}}$$<p><em>Note: On the PE exam, the individual speeds $S_W$ and $S_{NW}$ are typically either given, or the problem will simplify the system so that you can apply the harmonic mean formula directly.</em></p>
 <hr>
-<h2 id="step-2-calculate-density-d">Step 2: Calculate Density ($D$)</h2>
+<h2 id="step-2-calculate-density-">Step 2: Calculate Density ($D$)</h2>
 <p>Calculate the density of the weaving segment ($D$, in $pc/mi/ln$):</p>
-<p>$$D = \frac{v}{S \times N}$$</p>
-<p>Where:</p>
+$$D = \frac{v}{S \times N}$$<p>Where:</p>
 <ul>
 <li>$v$ = total adjusted flow rate in the weaving segment ($pc/h$)</li>
 <li>$S$ = average speed of the traffic stream ($mph$)</li>
@@ -315,23 +329,23 @@ $$\text{Non-Weaving Speed: } S_{NW} = \text{BFFS} - \text{adjustments based on g
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 10.0$ to $\le 20.0$</td>
+          <td>$> 10.0$ to $\le 20.0$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 20.0$ to $\le 28.0$</td>
+          <td>$> 20.0$ to $\le 28.0$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 28.0$ to $\le 35.0$</td>
+          <td>$> 28.0$ to $\le 35.0$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 35.0$ to $\le 43.0$</td>
+          <td>$> 35.0$ to $\le 43.0$</td>
       </tr>
       <tr>
           <td><strong>F</strong></td>
-          <td>$&gt; 43.0$ OR if $v/c &gt; 1.0$</td>
+          <td>$> 43.0$ OR if $v/c > 1.0$</td>
       </tr>
   </tbody>
 </table>
@@ -371,23 +385,24 @@ Ensure you identify the flows correctly:</p>
 <p><strong>Determine the average speed ($S$) of the traffic stream, the density ($D$) of the segment, and the Level of Service (LOS).</strong></p>
 <h3 id="solution">Solution:</h3>
 <h4 id="step-1-calculate-weaving-and-non-weaving-flow-rates">Step 1: Calculate Weaving and Non-Weaving Flow Rates</h4>
-<p>$$v_W = v_{RF} + v_{FR} = 800 + 600 = 1,400 \text{ pc/h}$$
-$$v_{NW} = v_{FF} + v_{RR} = 2,800 + 100 = 2,900 \text{ pc/h}$$
-$$v = v_W + v_{NW} = 1,400 + 2,900 = 4,300 \text{ pc/h}$$</p>
-<h4 id="step-2-calculate-weighted-average-speed-s">Step 2: Calculate Weighted Average Speed ($S$)</h4>
+$$v_W = v_{RF} + v_{FR} = 800 + 600 = 1,400 \text{ pc/h}$$<p>
+</p>
+$$v_{NW} = v_{FF} + v_{RR} = 2,800 + 100 = 2,900 \text{ pc/h}$$<p>
+</p>
+$$v = v_W + v_{NW} = 1,400 + 2,900 = 4,300 \text{ pc/h}$$<h4 id="step-2-calculate-weighted-average-speed-">Step 2: Calculate Weighted Average Speed ($S$)</h4>
 <p>Using the harmonic mean:
-$$S = \frac{v_W + v_{NW}}{\frac{v_W}{S_W} + \frac{v_{NW}}{S_{NW}}} = \frac{4,300}{\frac{1,400}{42} + \frac{2,900}{54}}$$</p>
-<ul>
+</p>
+$$S = \frac{v_W + v_{NW}}{\frac{v_W}{S_W} + \frac{v_{NW}}{S_{NW}}} = \frac{4,300}{\frac{1,400}{42} + \frac{2,900}{54}}$$<ul>
 <li>$\frac{1,400}{42} = 33.33$</li>
 <li>$\frac{2,900}{54} = 53.70$
+
 $$S = \frac{4,300}{33.33 + 53.70} = \frac{4,300}{87.03} = 49.41 \text{ mph}$$</li>
 </ul>
-<h4 id="step-3-calculate-density-d">Step 3: Calculate Density ($D$)</h4>
-<p>$$D = \frac{v}{S \times N} = \frac{4,300 \text{ pc/h}}{49.41 \text{ mph} \times 4 \text{ lanes}} = \frac{4,300}{197.64} = 21.76 \text{ pc/mi/ln}$$</p>
-<h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4>
+<h4 id="step-3-calculate-density-">Step 3: Calculate Density ($D$)</h4>
+$$D = \frac{v}{S \times N} = \frac{4,300 \text{ pc/h}}{49.41 \text{ mph} \times 4 \text{ lanes}} = \frac{4,300}{197.64} = 21.76 \text{ pc/mi/ln}$$<h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4>
 <p>Compare $D = 21.76 \text{ pc/mi/ln}$ to the weaving segment LOS criteria:</p>
 <ul>
-<li>$20.0 &lt; D \le 28.0 \rightarrow$ <strong>LOS C</strong></li>
+<li>$20.0 < D \le 28.0 \rightarrow$ <strong>LOS C</strong></li>
 </ul>
 <p><strong>Conclusion:</strong> The weaving segment operates at <strong>LOS C</strong>.</p>
 <hr>

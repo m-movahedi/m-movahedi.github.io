@@ -26,15 +26,15 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Multilane Highways">
     <meta property="og:description" content="Multilane Highways Multilane highways differ from freeways because they are not fully access-controlled. They often feature at-grade intersections, driveways, …">
-    <meta property="og:image" content="http://localhost:1313/images/profile.png">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/profile.png">
+    <meta property="og:image" content="http://localhost:1313/images/transparent.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/transparent.png">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Multilane Highways">
     <meta name="twitter:description" content="Multilane Highways Multilane highways differ from freeways because they are not fully access-controlled. They often feature at-grade intersections, driveways, …">
     <meta property="twitter:domain" content="http://localhost:1313/scratchpad/pe-exam/module-4/23-multilane-highways/">
     <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/23-multilane-highways/">
-    <meta name="twitter:image" content="http://localhost:1313/images/profile.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/transparent.png">
 
     
     <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/23-multilane-highways/">
@@ -76,6 +76,20 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
 </script>
 
 
@@ -243,17 +257,16 @@ gtag('config', 'G-1WZSE8DHZ9');
 <hr>
 <h2 id="step-1-determine-free-flow-speed-ffs">Step 1: Determine Free-Flow Speed (FFS)</h2>
 <p>If FFS is not measured directly in the field, estimate it using:</p>
-<p>$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{M} - f_{A}$$</p>
-<p>Where:</p>
+$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{M} - f_{A}$$<p>Where:</p>
 <ul>
 <li>$\text{FFS}$ = estimated free-flow speed ($mph$)</li>
-<li>$\text{BFFS}$ = base free-flow speed ($mph$); typically assumed to be $60 \text{ mph}$ if not specified, or estimated based on the posted speed limit (e.g., speed limit plus $5 \text{ mph}$ for speed limits $\ge 50 \text{ mph}$, and speed limit plus $7 \text{ mph}$ for speed limits $&lt; 50 \text{ mph}$).</li>
+<li>$\text{BFFS}$ = base free-flow speed ($mph$); typically assumed to be $60 \text{ mph}$ if not specified, or estimated based on the posted speed limit (e.g., speed limit plus $5 \text{ mph}$ for speed limits $\ge 50 \text{ mph}$, and speed limit plus $7 \text{ mph}$ for speed limits $< 50 \text{ mph}$).</li>
 <li>$f_{LW}$ = adjustment for lane width ($mph$)</li>
 <li>$f_{LC}$ = adjustment for total lateral clearance ($mph$)</li>
 <li>$f_{M}$ = adjustment for median type ($mph$)</li>
 <li>$f_{A}$ = adjustment for access-point density ($mph$)</li>
 </ul>
-<h3 id="1-lane-width-adjustment-f_lw">1. Lane Width Adjustment ($f_{LW}$)</h3>
+<h3 id="1-lane-width-adjustment-">1. Lane Width Adjustment ($f_{LW}$)</h3>
 <p>Standard lane width is $12 \text{ ft}$. The reductions for narrower lanes match those for freeways:</p>
 <table>
   <thead>
@@ -277,9 +290,10 @@ gtag('config', 'G-1WZSE8DHZ9');
       </tr>
   </tbody>
 </table>
-<h3 id="2-total-lateral-clearance-adjustment-f_lc">2. Total Lateral Clearance Adjustment ($f_{LC}$)</h3>
+<h3 id="2-total-lateral-clearance-adjustment-">2. Total Lateral Clearance Adjustment ($f_{LC}$)</h3>
 <p>Total Lateral Clearance (TLC) is the sum of the lateral clearances from the edge of the travel lanes to obstructions on both the right and left (median) sides:
-$$\text{TLC} = L_R + L_L$$
+</p>
+$$\text{TLC} = L_R + L_L$$<p>
 Where:</p>
 <ul>
 <li>$L_R$ = right-shoulder lateral clearance (measured from the right edge of the travel lanes; capped at $6 \text{ ft}$ for calculation).</li>
@@ -332,7 +346,7 @@ Where:</p>
       </tr>
   </tbody>
 </table>
-<h3 id="3-median-type-adjustment-f_m">3. Median Type Adjustment ($f_{M}$)</h3>
+<h3 id="3-median-type-adjustment-">3. Median Type Adjustment ($f_{M}$)</h3>
 <p>Medians provide physical separation that increases safety and comfort, which increases FFS:</p>
 <table>
   <thead>
@@ -356,15 +370,15 @@ Where:</p>
       </tr>
   </tbody>
 </table>
-<h3 id="4-access-point-density-adjustment-f_a">4. Access-Point Density Adjustment ($f_{A}$)</h3>
+<h3 id="4-access-point-density-adjustment-">4. Access-Point Density Adjustment ($f_{A}$)</h3>
 <p>Access points (driveways and intersections on the right side of the highway in the direction of analysis) are counted and expressed as a density (access points per mile). The FFS reduction is:
-$$f_{A} = 0.25 \times \text{APD}$$
+</p>
+$$f_{A} = 0.25 \times \text{APD}$$<p>
 Where $\text{APD}$ is the access-point density in access points per mile.</p>
 <hr>
-<h2 id="step-2-determine-equivalent-passenger-car-flow-rate-v_p">Step 2: Determine Equivalent Passenger-Car Flow Rate ($v_p$)</h2>
+<h2 id="step-2-determine-equivalent-passenger-car-flow-rate-">Step 2: Determine Equivalent Passenger-Car Flow Rate ($v_p$)</h2>
 <p>This step is identical to the freeway analysis:</p>
-<p>$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p}$$</p>
-<p>Where:</p>
+$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p}$$<p>Where:</p>
 <ul>
 <li>$v_p$ = demand flow rate under equivalent passenger-car conditions ($pc/h/ln$)</li>
 <li>$V$ = hourly demand volume ($veh/h$)</li>
@@ -374,19 +388,21 @@ Where $\text{APD}$ is the access-point density in access points per mile.</p>
 <li>$f_p$ = driver population adjustment factor (typically $1.00$)</li>
 </ul>
 <p>The heavy vehicle adjustment factor is:
-$$f_{HV} = \frac{1}{1 + P_T(E_T - 1) + P_R(E_R - 1)}$$</p>
-<ul>
+</p>
+$$f_{HV} = \frac{1}{1 + P_T(E_T - 1) + P_R(E_R - 1)}$$<ul>
 <li><strong>Level Terrain</strong>: $E_T = 1.5$, $E_R = 1.2$</li>
 <li><strong>Rolling Terrain</strong>: $E_T = 2.5$, $E_R = 2.0$</li>
 </ul>
 <hr>
-<h2 id="step-3-determine-speed-s-and-density-d">Step 3: Determine Speed ($S$) and Density ($D$)</h2>
-<h3 id="average-speed-s">Average Speed ($S$)</h3>
+<h2 id="step-3-determine-speed--and-density-">Step 3: Determine Speed ($S$) and Density ($D$)</h2>
+<h3 id="average-speed-">Average Speed ($S$)</h3>
 <p>For multilane highways, the breakpoint is a constant <strong>1,400 pc/h/ln</strong> for all free-flow speeds.</p>
 <ul>
 <li><strong>For $v_p \le 1,400 \text{ pc/h/ln}$</strong>:
+
 $$S = \text{FFS}$$</li>
-<li><strong>For $1,400 &lt; v_p \le \text{Capacity}$</strong>:
+<li><strong>For $1,400 < v_p \le \text{Capacity}$</strong>:
+
 $$S = \text{FFS} - \frac{(\text{FFS} - 45)(v_p - 1,400)^{1.31}}{(\text{Capacity} - 1,400)^{1.31}}$$</li>
 </ul>
 <p>The capacity of a multilane highway depends on its FFS:</p>
@@ -416,10 +432,10 @@ $$S = \text{FFS} - \frac{(\text{FFS} - 45)(v_p - 1,400)^{1.31}}{(\text{Capacity}
       </tr>
   </tbody>
 </table>
-<h3 id="density-d">Density ($D$)</h3>
+<h3 id="density-">Density ($D$)</h3>
 <p>Calculate density using the fundamental relationship:
-$$D = \frac{v_p}{S}$$</p>
-<hr>
+</p>
+$$D = \frac{v_p}{S}$$<hr>
 <h2 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h2>
 <p>LOS for multilane highways is determined by density ($D$, in $pc/mi/ln$):</p>
 <table>
@@ -436,23 +452,23 @@ $$D = \frac{v_p}{S}$$</p>
       </tr>
       <tr>
           <td><strong>B</strong></td>
-          <td>$&gt; 11.0$ to $\le 16.0$</td>
+          <td>$> 11.0$ to $\le 16.0$</td>
       </tr>
       <tr>
           <td><strong>C</strong></td>
-          <td>$&gt; 16.0$ to $\le 26.0$</td>
+          <td>$> 16.0$ to $\le 26.0$</td>
       </tr>
       <tr>
           <td><strong>D</strong></td>
-          <td>$&gt; 26.0$ to $\le 35.0$</td>
+          <td>$> 26.0$ to $\le 35.0$</td>
       </tr>
       <tr>
           <td><strong>E</strong></td>
-          <td>$&gt; 35.0$ to $\le 45.0$</td>
+          <td>$> 35.0$ to $\le 45.0$</td>
       </tr>
       <tr>
           <td><strong>F</strong></td>
-          <td>$&gt; 45.0$ OR if $v_p &gt; \text{Capacity}$ ($v/c &gt; 1.0$)</td>
+          <td>$> 45.0$ OR if $v_p > \text{Capacity}$ ($v/c > 1.0$)</td>
       </tr>
   </tbody>
 </table>
@@ -483,15 +499,15 @@ Freeway breakpoints vary from $1,000$ to $1,800 \text{ pc/h/ln}$ depending on FF
 <li>Access-point density: $16 \text{ access points/mi}$ on the right side</li>
 <li>Directional hourly demand volume: $1,400 \text{ veh/h}$</li>
 <li>Peak Hour Factor (PHF): $0.85$</li>
-<li>Traffic composition: $10%$ trucks, $0%$ RVs</li>
+<li>Traffic composition: $10\%$ trucks, $0\%$ RVs</li>
 <li>Driver population: Familiar commuters ($f_p = 1.00$)</li>
 </ul>
 <p><strong>Determine the density and Level of Service (LOS).</strong></p>
 <h3 id="solution">Solution:</h3>
 <h4 id="step-1-calculate-free-flow-speed-ffs">Step 1: Calculate Free-Flow Speed (FFS)</h4>
-<p>$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{M} - f_{A}$$</p>
-<ol>
+$$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{M} - f_{A}$$<ol>
 <li><strong>Base Free-Flow Speed</strong>:
+
 $$\text{BFFS} = 55 \text{ mph}$$</li>
 <li><strong>Lane Width Adjustment</strong>:
 For $11 \text{ ft}$ lanes, $f_{LW} = 1.9 \text{ mph}$.</li>
@@ -501,37 +517,41 @@ For $11 \text{ ft}$ lanes, $f_{LW} = 1.9 \text{ mph}$.</li>
 <li>Left (median) clearance $L_L = 6 \text{ ft}$ (default for undivided highways).</li>
 <li>$\text{TLC} = L_R + L_L = 3 + 6 = 9 \text{ ft}$.</li>
 <li>Interpolate $f_{LC}$ for a 4-lane highway between $\text{TLC} = 8 \text{ ft}$ ($f_{LC} = 0.9$) and $\text{TLC} = 10 \text{ ft}$ ($f_{LC} = 0.4$):
+
 $$f_{LC} = 0.9 - \frac{9 - 8}{10 - 8} \times (0.9 - 0.4) = 0.65 \text{ mph}$$</li>
 </ul>
 </li>
 <li><strong>Median Type Adjustment</strong>:
 For an undivided highway, $f_{M} = 1.6 \text{ mph}$.</li>
 <li><strong>Access-Point Density Adjustment</strong>:
+
 $$f_{A} = 0.25 \times 16 = 4.0 \text{ mph}$$</li>
 <li><strong>Calculate FFS</strong>:
+
 $$\text{FFS} = 55 - 1.9 - 0.65 - 1.6 - 4.0 = 46.85 \text{ mph}$$</li>
 </ol>
-<h4 id="step-2-calculate-heavy-vehicle-adjustment-factor-f_hv">Step 2: Calculate Heavy Vehicle Adjustment Factor ($f_{HV}$)</h4>
+<h4 id="step-2-calculate-heavy-vehicle-adjustment-factor-">Step 2: Calculate Heavy Vehicle Adjustment Factor ($f_{HV}$)</h4>
 <ul>
 <li>Rolling terrain: $E_T = 2.5$.</li>
 <li>Proportion of trucks: $P_T = 0.10$.
+
 $$f_{HV} = \frac{1}{1 + P_T(E_T - 1)} = \frac{1}{1 + 0.10(2.5 - 1)} = \frac{1}{1.15} = 0.870$$</li>
 </ul>
-<h4 id="step-3-calculate-equivalent-flow-rate-v_p">Step 3: Calculate Equivalent Flow Rate ($v_p$)</h4>
-<p>$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p} = \frac{1,400}{0.85 \times 2 \times 0.870 \times 1.00} = \frac{1,400}{1.479} = 946.6 \text{ pc/h/ln}$$</p>
-<h4 id="step-4-determine-average-speed-s">Step 4: Determine Average Speed ($S$)</h4>
+<h4 id="step-3-calculate-equivalent-flow-rate-">Step 3: Calculate Equivalent Flow Rate ($v_p$)</h4>
+$$v_p = \frac{V}{\text{PHF} \times N \times f_{HV} \times f_p} = \frac{1,400}{0.85 \times 2 \times 0.870 \times 1.00} = \frac{1,400}{1.479} = 946.6 \text{ pc/h/ln}$$<h4 id="step-4-determine-average-speed-">Step 4: Determine Average Speed ($S$)</h4>
 <ul>
 <li>Compare $v_p$ to the breakpoint:
+
 $$v_p = 946.6 \text{ pc/h/ln} \le 1,400 \text{ pc/h/ln}$$</li>
 <li>Since the flow rate is below the breakpoint, the average speed equals FFS:
+
 $$S = \text{FFS} = 46.85 \text{ mph}$$</li>
 </ul>
-<h4 id="step-5-calculate-density-d-and-determine-los">Step 5: Calculate Density ($D$) and Determine LOS</h4>
-<p>$$D = \frac{v_p}{S} = \frac{946.6 \text{ pc/h/ln}}{46.85 \text{ mph}} = 20.21 \text{ pc/mi/ln}$$</p>
-<ul>
+<h4 id="step-5-calculate-density--and-determine-los">Step 5: Calculate Density ($D$) and Determine LOS</h4>
+$$D = \frac{v_p}{S} = \frac{946.6 \text{ pc/h/ln}}{46.85 \text{ mph}} = 20.21 \text{ pc/mi/ln}$$<ul>
 <li>Look up $D = 20.21 \text{ pc/mi/ln}$ in the LOS criteria table:
 <ul>
-<li>$16.0 &lt; D \le 26.0 \rightarrow$ <strong>LOS C</strong></li>
+<li>$16.0 < D \le 26.0 \rightarrow$ <strong>LOS C</strong></li>
 </ul>
 </li>
 </ul>
