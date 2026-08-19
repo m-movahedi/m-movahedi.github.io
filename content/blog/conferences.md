@@ -30,6 +30,13 @@ Welcome to the conference countdown page! Here are the upcoming events I am look
     tag="General Civil Engineering"
     location="Tsinghua University, Beijing"
     url="https://cibworld.org/" >}}
+    {{< countdown
+    title="Associated Schools of Construction 2027"
+    subtitle="Full paper submission"
+    date="2026-11-07T23:59:00Z"
+    tag="Construction Management"
+    location="Oklahoma City, Oklahoma"
+    url="http://ascpro.ascweb.org/" >}}
     <!-- Transportation Engineering -->
     {{< countdown 
     title="IEEE ITSC 2027" 
