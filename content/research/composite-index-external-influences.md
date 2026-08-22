@@ -18,7 +18,6 @@ journal: "Journal of Management in Engineering"
 <link rel="stylesheet" href="/css/composite-index-research.css">
 
 <div id="cif-post">
-
 <section class="cif-hero" aria-labelledby="cif-hero-title">
   <p class="cif-eyebrow">Interactive research explainer</p>
   <h2 id="cif-hero-title">Infrastructure does not change in isolation.</h2>
