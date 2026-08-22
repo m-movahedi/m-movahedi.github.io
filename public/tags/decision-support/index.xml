@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decision Support on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/decision-support/</link>
+    <description>Recent content in Decision Support on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 21 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/decision-support/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Composite Index Framework for Quantifying External Influences on Built Environment Planning and Decision Making</title>
+      <link>http://localhost:1313/research/composite-index-external-influences/</link>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/composite-index-external-influences/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/composite-index-research.css&#34;&gt;&#xA;&lt;div id=&#34;cif-post&#34;&gt;&#xA;&lt;section class=&#34;cif-hero&#34; aria-labelledby=&#34;cif-hero-title&#34;&gt;&#xA;  &lt;p class=&#34;cif-eyebrow&#34;&gt;Interactive research explainer&lt;/p&gt;&#xA;  &lt;h2 id=&#34;cif-hero-title&#34;&gt;Infrastructure does not change in isolation.&lt;/h2&gt;&#xA;  &lt;p class=&#34;cif-lede&#34;&gt;Population, employment, economic cycles, extreme weather, technology, and policy all reshape what infrastructure must deliver. Our framework turns those scattered external signals into an updateable, traceable planning index—without hiding where the signal came from.&lt;/p&gt;&#xA;  &lt;div class=&#34;cif-hero-stats&#34; aria-label=&#34;Case study at a glance&#34;&gt;&#xA;    &lt;div class=&#34;cif-stat&#34;&gt;&lt;strong&gt;98&lt;/strong&gt;&lt;span&gt;candidate external factors&lt;/span&gt;&lt;/div&gt;&#xA;    &lt;div class=&#34;cif-stat&#34;&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;span&gt;transportation modes&lt;/span&gt;&lt;/div&gt;&#xA;    &lt;div class=&#34;cif-stat&#34;&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;span&gt;latent dimensions per mode&lt;/span&gt;&lt;/div&gt;&#xA;    &lt;div class=&#34;cif-stat&#34;&gt;&lt;strong&gt;2005–21&lt;/strong&gt;&lt;span&gt;Florida study period&lt;/span&gt;&lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/section&gt;&#xA;&lt;p&gt;Traditional plans often monitor indicators one at a time or depend on static forecasts. That makes it difficult to see a slow shift forming across many datasets—or to explain why a statewide signal changed. The problem is not simply “too much data.” It is that the data arrive at different frequencies, operate with delays, interact across domains, and matter at different levels of the infrastructure hierarchy.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

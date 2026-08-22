@@ -242,7 +242,6 @@ By tapping into crowdsourced probe data from the Waze application, we extracted 
       <p style="font-size: 0.9em; line-height: 1.5; color: #dcdde1; margin-bottom: 0;">By combining crowdsourced GPS data from <strong>Waze</strong> with the <strong>California Method</strong>, we can automatically pinpoint these incidents in real-time.</p>
     </div>
   </div>
-  
   <div class="waze-card">
     <div class="waze-title">Spatiotemporal Speed Profile</div>
     <div class="waze-chart-bg">

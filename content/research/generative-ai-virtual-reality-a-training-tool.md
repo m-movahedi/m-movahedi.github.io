@@ -32,7 +32,6 @@ In a conference paper titled “Generative Artificial Intelligence and Virtual R
 <br>
 You can find more information about this framework at the following links:
 
-
 <div style="margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
   <a href="https://github.com/m-movahedi/Gen-AI-VR-Asset-Generator"
      style="
