@@ -1,182 +1,193 @@
 ---
-title : "Simulating Community Behaviors with LLMs"
-date : "2026-04-16"
-draft : false
-type : "post"
+title: "Simulating Community Behaviors with LLM Personas"
+date: "2026-04-16"
+draft: false
+type: "post"
+description: "An interactive explanation of an empirically grounded LLM-persona framework for exploring community debris-management policies after disasters."
 tags:
-  - "Artificial Intelligence"
-  - "Resilience"
-  - "Disaster Management"
-  - "Agent-Based Modeling"
   - "Large Language Models"
+  - "Persona Agents"
+  - "Disaster Debris Management"
+  - "Community Behavior"
+  - "Policy Evaluation"
+  - "Human-Centered Infrastructure"
   - "Post-disaster Recovery"
-  - "Infrastructure Management"
-  - "Infrastructure Planning"
 journal: "ASCE Construction Research Congress 2026"
 ---
 
-<div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #856404; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🚧</span> The Challenge of Debris Management</h4>
-  <p style="margin-bottom: 0; color: #533f03;">Following catastrophic events like Hurricane Ian, post-disaster debris management becomes a critical, time-sensitive logistical challenge. Traditional planning relies heavily on volume estimation and routing, treating communities as passive entities. However, emergent human behaviors—such as <strong>illegal debris dumping</strong>—introduce highly stochastic burdens that derail recovery efficiency, amplify health risks, and drastically increase municipal costs.</p>
-</div>
+<link rel="stylesheet" href="/css/llm-persona-policy.css">
 
-Our latest research introduces a pioneering approach: **a Large Language Model (LLM)-based persona framework** designed to simulate complex, heterogeneous community behaviors. By utilizing generative AI to role-play specific community personas, we can test policy interventions in a simulated environment before deploying them in the real world.
+<div id="llmp-post">
 
-### Moving Beyond Traditional Agent-Based Models
-
-Historically, predicting household behavior relied on static demographic assumptions or traditional Agent-Based Modeling (ABM). While ABMs represent diverse decisions, their accuracy is constrained by rigid rulesets, and scaling them requires massive computational resources. 
-
-Our framework bridges this gap by deploying LLMs as context-aware, role-playing surrogate agents. By grounding these AI models in empirical survey data, they internalize the social, economic, and psychological nuances of real residents. 
-
-### The 4-Phase LLM Persona Framework
-
-To systematically integrate behavioral heterogeneity into disaster management decision support, we developed an iterative four-step workflow.
-
-<style>
-  .llm-framework-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 15px;
-    background: #f8f9fa;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #dee2e6;
-    margin: 30px 0;
-    font-family: Arial, sans-serif;
-  }
-  .llm-phase-box {
-    flex: 1;
-    background: #fff;
-    border: 2px solid #a5b1c2;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-width: 0;
-  }
-  .llm-phase-title {
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 2px solid #ecf0f1;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    font-size: 0.95em;
-  }
-  .llm-phase-content {
-    font-size: 0.85em;
-    color: #4b6584;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .llm-tag {
-    background: #f1f2f6;
-    padding: 5px 8px;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: bold;
-    color: #2f3640;
-    border: 1px solid #dcdde1;
-  }
-  .llm-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #a5b1c2;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  @media (max-width: 768px) {
-    .llm-framework-container { flex-direction: column; }
-    .llm-arrow { transform: rotate(90deg); margin: 10px 0; }
-  }
-</style>
-<div class="llm-framework-container">
-  <!-- Phase A -->
-  <div class="llm-phase-box" style="border-color: #e74c3c;">
-    <div class="llm-phase-title" style="color: #c0392b;">A. Data Collection</div>
-    <div class="llm-phase-content">
-      <div style="text-align: center; font-size: 2em; margin-bottom: 5px;">📊</div>
-      <div class="llm-tag">Socioeconomic Data</div>
-      <div class="llm-tag">Behavioral Factors</div>
-      <div class="llm-tag">KAP Surveys</div>
-    </div>
+<section class="llmp-hero" aria-labelledby="llmp-hero-title">
+  <p class="llmp-eyebrow">Interactive research explainer</p>
+  <h2 id="llmp-hero-title">What if a policy could meet the community before it reaches the street?</h2>
+  <p class="llmp-lede">Debris planning is usually framed as a logistics problem: estimate volume, select sites, and optimize routes. Our work adds the missing human layer by grounding LLM persona agents in observed community behavior, then using them to explore how different residents may respond to an intervention.</p>
+  <div class="llmp-hero-stats" aria-label="Proof-of-concept at a glance">
+    <div class="llmp-stat"><strong>6</strong><span>behavioral persona clusters</span></div>
+    <div class="llmp-stat"><strong>80 / 20</strong><span>conditioning and evaluation split</span></div>
+    <div class="llmp-stat"><strong>~75%</strong><span>persona-agent decision alignment</span></div>
+    <div class="llmp-stat"><strong>Ian</strong><span>Hurricane case context</span></div>
   </div>
-  
-  <div class="llm-arrow">➔</div>
+</section>
 
-  <!-- Phase B -->
-  <div class="llm-phase-box" style="border-color: #27ae60;">
-    <div class="llm-phase-title" style="color: #1e8449;">B. Behavioral Analysis</div>
-    <div class="llm-phase-content">
-      <div style="text-align: center; font-size: 2em; margin-bottom: 5px;">🧠</div>
-      <div class="llm-tag" style="background: #e8f8f5; border-color: #a3e4d7; color: #117a65;">Factor Analysis</div>
-      <div class="llm-tag" style="background: #e8f8f5; border-color: #a3e4d7; color: #117a65;">KAP Modeling</div>
-      <div class="llm-tag" style="background: #e8f8f5; border-color: #a3e4d7; color: #117a65;">Latent Behaviors</div>
-    </div>
+After a disaster, residents make debris-disposal decisions under pressure. A legal disposal site may be too far away. Municipal pickup may be delayed. Families may weigh safety, time, cost, convenience, trust, and social expectations differently. Those choices can create illegal dumping that slows recovery, raises municipal costs, and adds environmental and health risks.
+
+Traditional behavioral models commonly rely on static rules or aggregated demographics. They can represent an “average household,” but struggle with the heterogeneous motivations and thresholds that shape actual decisions. Our paper, **“Large Language Model-Based Framework for Simulating Community Behaviors in Policy Evaluation: Application to Community Debris Management,”** proposes a different approach: use survey-grounded LLM personas as transparent, testable surrogates for exploring possible community responses before a policy is deployed.
+
+<section class="llmp-section" aria-labelledby="llmp-workflow-title">
+  <div class="llmp-section-heading">
+    <p class="llmp-eyebrow">The framework</p>
+    <h3 id="llmp-workflow-title">Four phases connect evidence to exploration</h3>
+    <p>Select a phase to follow the information from community survey to evaluated persona agent.</p>
   </div>
-  <div class="llm-arrow">➔</div>
-  <!-- Phase C -->
-  <div class="llm-phase-box" style="border-color: #3498db;">
-    <div class="llm-phase-title" style="color: #2874a6;">C. Persona Tuning</div>
-    <div class="llm-phase-content">
-      <div style="text-align: center; font-size: 2em; margin-bottom: 5px;">🤖</div>
-      <div style="display: flex; justify-content: space-between; align-items: center; background: #ebf5fb; padding: 5px; border-radius: 4px; border: 1px solid #aed6f1;">
-        <div style="font-size: 0.8em; font-weight: bold; color: #2874a6; text-align: center; width: 45%;">Moderator Agent</div>
-        <div style="display: flex; flex-direction: column; gap: 4px; width: 50%;">
-           <div class="llm-tag" style="font-size: 0.75em; padding: 3px;">Persona A</div>
-           <div class="llm-tag" style="font-size: 0.75em; padding: 3px;">Persona B</div>
-        </div>
+  <div class="llmp-figure">
+    <div class="llmp-toolbar">
+      <span class="llmp-figure-label">Framework explorer</span>
+      <div class="llmp-tabs" aria-label="Framework phases">
+        <button type="button" class="llmp-tab" data-llmp-phase="0" aria-pressed="true">A · Collect</button>
+        <button type="button" class="llmp-tab" data-llmp-phase="1" aria-pressed="false">B · Analyze</button>
+        <button type="button" class="llmp-tab" data-llmp-phase="2" aria-pressed="false">C · Develop</button>
+        <button type="button" class="llmp-tab" data-llmp-phase="3" aria-pressed="false">D · Evaluate</button>
       </div>
-      <div class="llm-tag" style="background: #ebf5fb; border-color: #aed6f1; color: #2874a6;">Bias Evaluation</div>
+    </div>
+    <div class="llmp-workflow-body">
+      <div class="llmp-workflow-copy" aria-live="polite">
+        <p class="llmp-eyebrow" data-llmp-phase-kicker></p>
+        <h4 data-llmp-phase-title></h4>
+        <p data-llmp-phase-body></p>
+        <div class="llmp-output" data-llmp-phase-output></div>
+      </div>
+      <div class="llmp-workflow-map" aria-hidden="true">
+        <svg viewBox="0 0 520 250">
+          <defs><marker id="llmp-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="currentColor" opacity=".55"></path></marker></defs>
+          <path class="llmp-flow-line" d="M120 95 H165"></path><path class="llmp-flow-line" d="M250 95 H295"></path><path class="llmp-flow-line" d="M380 95 H425"></path><path class="llmp-feedback-line" d="M467 143 C467 214 70 214 70 143"></path>
+          <g class="llmp-phase-node" data-llmp-phase-node="0"><circle cx="70" cy="95" r="50"></circle><text x="70" y="87" text-anchor="middle">Community</text><text x="70" y="104" text-anchor="middle">data</text></g>
+          <g class="llmp-phase-node" data-llmp-phase-node="1"><circle cx="200" cy="95" r="50"></circle><text x="200" y="87" text-anchor="middle">Behavioral</text><text x="200" y="104" text-anchor="middle">personas</text></g>
+          <g class="llmp-phase-node" data-llmp-phase-node="2"><circle cx="330" cy="95" r="50"></circle><text x="330" y="87" text-anchor="middle">Persona</text><text x="330" y="104" text-anchor="middle">agents</text></g>
+          <g class="llmp-phase-node" data-llmp-phase-node="3"><circle cx="460" cy="95" r="50"></circle><text x="460" y="87" text-anchor="middle">Withheld-data</text><text x="460" y="104" text-anchor="middle">evaluation</text></g>
+          <text x="265" y="232" text-anchor="middle" fill="currentColor" opacity=".58" font-size="11">Evaluation gaps feed the next refinement cycle</text>
+        </svg>
+      </div>
     </div>
   </div>
-  <div class="llm-arrow">➔</div>
-  <!-- Phase D -->
-  <div class="llm-phase-box" style="border-color: #e67e22;">
-    <div class="llm-phase-title" style="color: #b9770e;">D. Testing & Eval</div>
-    <div class="llm-phase-content">
-      <div style="text-align: center; font-size: 2em; margin-bottom: 5px;">🎯</div>
-      <div class="llm-tag" style="background: #fef5e7; border-color: #f5cba7; color: #b9770e;">Testing Data</div>
-      <div class="llm-tag" style="background: #fef5e7; border-color: #f5cba7; color: #b9770e;">Decision Analysis</div>
-      <div class="llm-tag" style="background: #fef5e7; border-color: #f5cba7; color: #b9770e;">Review Feedback</div>
+  <p class="llmp-caption">Interactive Figure 1. The framework is iterative: new empirical observations can refine persona definitions, agent conditioning, and subsequent evaluation.</p>
+</section>
+
+### From demographics to behavioral personas
+
+The process begins with localized **Knowledge, Attitudes, and Practices (KAP)** survey data. For this application, the survey captured residents’ disposal practices after Hurricane Ian, knowledge of debris-handling procedures, perceptions of possible interventions, prior disaster experience, service access, responsibility beliefs, sustainability attitudes, and personality-linked features such as risk tolerance.
+
+Principal Component Analysis reduces the high-dimensional responses into interpretable behavioral components. K-means clustering then groups residents who share decision patterns rather than merely demographic labels. In the Tampa application, this produced **six persona clusters** with different mixtures of legal, mixed, and illegal disposal behavior.
+
+<section class="llmp-section" aria-labelledby="llmp-persona-title">
+  <div class="llmp-section-heading">
+    <p class="llmp-eyebrow">What makes a persona?</p>
+    <h3 id="llmp-persona-title">Build the agent from behavioral evidence</h3>
+    <p>Explore the four evidence layers that give a persona context beyond a demographic profile.</p>
+  </div>
+  <div class="llmp-figure">
+    <div class="llmp-persona-layout">
+      <div class="llmp-lens-list" aria-label="Persona evidence layers">
+        <button type="button" class="llmp-lens" data-llmp-lens="household" aria-pressed="true"><span>01</span> Household & access</button>
+        <button type="button" class="llmp-lens" data-llmp-lens="knowledge" aria-pressed="false"><span>02</span> Knowledge & practice</button>
+        <button type="button" class="llmp-lens" data-llmp-lens="attitudes" aria-pressed="false"><span>03</span> Attitudes & psychology</button>
+        <button type="button" class="llmp-lens" data-llmp-lens="context" aria-pressed="false"><span>04</span> Disaster context</button>
+      </div>
+      <div class="llmp-persona-card" aria-live="polite">
+        <div class="llmp-persona-head"><div class="llmp-avatar" aria-hidden="true"><span></span><span></span><span></span></div><div><p class="llmp-eyebrow">Evidence layer</p><h4 data-llmp-lens-title></h4></div></div>
+        <p data-llmp-lens-body></p>
+        <div class="llmp-chip-list" data-llmp-lens-chips></div>
+        <div class="llmp-translation"><span class="llmp-figure-label">Why it matters to the agent</span><p data-llmp-lens-translation></p></div>
+      </div>
     </div>
   </div>
-</div>
-<p style="text-align: center; font-size: 0.85em; color: #666; font-style: italic;">Figure 1: Workflow for LLM persona modeling, spanning empirical data collection to agent evaluation.</p>
+  <p class="llmp-caption">Interactive Figure 2. These layers describe categories used to ground persona development; they do not expose or recreate any individual survey respondent.</p>
+</section>
 
-### Scientific Grounding & Empirical Calibration
+### A moderator around the personas
 
-1. **Community Data Collection**: We started with empirical Knowledge, Attitudes, and Practices (KAP) survey data collected from Tampa residents following Hurricane Ian. This provided real-world baselines on hazard sensitivity, risk tolerance, and municipal trust.
-2. **Behavioral Analysis**: Using Principal Component Analysis (PCA) and K-means clustering ($k=6$), we moved beyond demographics. We identified distinct "personas" driven by behavior—segmenting the population into groups prone to legal, mixed, or illegal disposal practices based on shared socio-psychological traits.
-3. **Persona Development**: We conditioned a frontier LLM (GPT-4o-mini) to role-play these specific clusters. To ensure scientific rigor, a **Moderator Agent** was deployed to monitor behavioral coherence via the Population Stability Index (PSI) and Kullback-Leibler Divergence (KLD), preventing hallucinations and ensuring the agent didn't drift from empirical data distributions.
-4. **Model Evaluation**: We tested the AI agents against a 20% withheld subset of the survey data.
+Persona agents are not left to self-validate. The conceptual framework places a **moderator agent** around development and evaluation to check behavioral coherence, compare simulated and empirical distributions, and flag drift using measures such as Population Stability Index and Kullback–Leibler divergence. Ensemble responses can reduce dependence on a single generation, while human reviewers and community stakeholders can correct behavior that departs from realistic expectations.
 
-<div style="display: flex; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 250px; background: #eafaf1; padding: 20px; border-radius: 8px; border-top: 4px solid #2ecc71; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-    <h3 style="color: #27ae60; margin-top: 0;">75% Alignment Accuracy</h3>
-    <p style="color: #2c3e50; font-size: 0.95em;">The conditioned persona agents achieved a ~75% decision alignment accuracy when predicting illegal dumping tendencies, significantly outperforming conventional baselines like standard Gradient Boosting models (~60%).</p>
+This oversight matters because an LLM’s explanation is a post-hoc rationale, not direct access to its internal reasoning. Rationales can support interpretation and auditing, but they remain prompt-sensitive and vulnerable to hallucination. The paper therefore treats them as evidence to inspect—not ground truth.
+
+<section class="llmp-section" aria-labelledby="llmp-scenario-title">
+  <div class="llmp-section-heading">
+    <p class="llmp-eyebrow">Proof-of-concept behavior</p>
+    <h3 id="llmp-scenario-title">Stress-test a disposal scenario</h3>
+    <p>Adjust the two conditions highlighted in the Persona 1 evaluation. The response summarizes qualitative reasoning observed in the study.</p>
   </div>
-  <div style="flex: 1; min-width: 250px; background: #f4f6f6; padding: 20px; border-radius: 8px; border-top: 4px solid #34495e; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-    <h3 style="color: #2c3e50; margin-top: 0;">Context-Sensitive Reasoning</h3>
-    <p style="color: #4b6584; font-size: 0.95em;">The agents didn't just mimic choices; they produced human-like rationales. For example, if travel time to a disposal site exceeded <strong>30 minutes</strong>, or if municipal collection was delayed past <strong>14 days</strong>, the agent's reasoning shifted from family safety compliance to frustration, accurately triggering illegal dumping behaviors mirroring real residents.</p>
+  <div class="llmp-figure">
+    <div class="llmp-scenario-grid">
+      <div class="llmp-controls">
+        <label for="llmp-travel">Travel time to a legal disposal site <strong><span data-llmp-travel-value>30</span> min</strong></label>
+        <input id="llmp-travel" class="llmp-range" type="range" min="10" max="90" step="10" value="30">
+        <div class="llmp-range-ends"><span>Nearby</span><span>Distant</span></div>
+        <label for="llmp-delay">Municipal collection delay <strong><span data-llmp-delay-value>7</span> days</strong></label>
+        <input id="llmp-delay" class="llmp-range" type="range" min="0" max="28" step="1" value="7">
+        <div class="llmp-range-ends"><span>Prompt</span><span>Prolonged</span></div>
+        <button type="button" class="llmp-reset" data-llmp-reset>Reset scenario</button>
+      </div>
+      <div class="llmp-scenario-result" aria-live="polite">
+        <p class="llmp-eyebrow">Persona 1 response pattern</p>
+        <div class="llmp-pressure-row"><h4 data-llmp-pressure-title></h4><span class="llmp-pressure-badge" data-llmp-pressure-badge></span></div>
+        <div class="llmp-pressure-track" role="img" aria-label="Qualitative disposal pressure"><span data-llmp-pressure-bar></span></div>
+        <p data-llmp-scenario-body></p>
+        <div class="llmp-reason-box"><span class="llmp-figure-label">Reasoning emphasis</span><p data-llmp-reason></p></div>
+      </div>
+    </div>
   </div>
+  <p class="llmp-caption">Interactive Figure 3. “Disposal pressure” is a qualitative explainer, not a predicted probability. The 30-minute and 14-day thresholds reflect scenarios discussed in the proof-of-concept evaluation.</p>
+</section>
+
+When the legal disposal site was presented as **30 minutes away or less**, Persona 1 emphasized safety and family welfare and favored legal disposal, consistent with the cluster’s hazard sensitivity. Beyond 30 minutes, the agent’s rationale shifted toward inconvenience. When collection delays exceeded **14 days**, frustration became more prominent. These context-sensitive shifts mirrored drivers observed in the cluster-level survey data.
+
+<section class="llmp-section" aria-labelledby="llmp-eval-title">
+  <div class="llmp-section-heading"><p class="llmp-eyebrow">Evaluation, not prediction</p><h3 id="llmp-eval-title">How closely did the proof-of-concept align?</h3><p>The persona agent and conventional baseline were evaluated using the same cluster-specific data.</p></div>
+  <div class="llmp-figure">
+    <div class="llmp-eval-chart" role="img" aria-label="Persona agent approximately 75 percent decision alignment; XGBoost baseline approximately 60 percent">
+      <div class="llmp-eval-row"><div><strong>Persona agent</strong><span>GPT-4o-mini, survey-conditioned</span></div><div class="llmp-eval-track"><span style="width:75%"></span></div><b>~75%</b></div>
+      <div class="llmp-eval-row llmp-baseline"><div><strong>Conventional baseline</strong><span>eXtreme Gradient Boosting</span></div><div class="llmp-eval-track"><span style="width:60%"></span></div><b>~60%</b></div>
+    </div>
+    <div class="llmp-meaning-panel">
+      <div class="llmp-tabs" aria-label="Interpretation of evaluation result"><button type="button" class="llmp-tab" data-llmp-meaning="means" aria-pressed="true">What it means</button><button type="button" class="llmp-tab" data-llmp-meaning="limits" aria-pressed="false">What it does not mean</button></div>
+      <p data-llmp-meaning-text aria-live="polite"></p>
+    </div>
+  </div>
+  <p class="llmp-caption">Interactive Figure 4. Accuracy is reported as decision alignment with observed cluster-level behavior. The baseline comparison provides context and is not a hypothesis test or claim of general model superiority.</p>
+</section>
+
+The persona agent achieved approximately **75% decision alignment accuracy**, compared with about **60%** for XGBoost on the same data. The result is promising because the LLM also produced context-sensitive rationales that could be inspected alongside its choices. But it remains a proof of concept based on one persona, one survey dataset, and one disaster context—not evidence that the agent can predict a new community without recalibration.
+
+<div class="llmp-evidence-grid" aria-label="Study design highlights">
+  <div class="llmp-evidence"><strong>6 clusters</strong><p>PCA and K-means represented heterogeneous household, access, and KAP patterns.</p></div>
+  <div class="llmp-evidence"><strong>1 persona</strong><p>Persona 1 was selected for the demonstration because of its illegal-dumping tendency and sensitivity to convenience.</p></div>
+  <div class="llmp-evidence"><strong>20% held out</strong><p>Cluster-specific survey responses were reserved exclusively for agent evaluation.</p></div>
 </div>
 
-### Implications for Resilient Infrastructure
+### A policy sandbox—with guardrails
 
-By treating LLMs as surrogate stand-ins for affected communities, stakeholders gain a powerful, data-driven sandbox. Instead of rolling out expensive and untested awareness campaigns or enforcement strategies, municipalities can simulate how different intervention thresholds resonate with highly specific neighborhood personas. 
+The value of this framework is not automated policymaking. It is the ability to ask structured “what if” questions before spending scarce recovery resources: Which communities might respond to closer disposal access? Where could a service delay undermine an outreach campaign? Which trade-offs or unintended effects deserve direct community investigation?
 
-This framework represents a paradigm shift—moving disaster recovery from a purely logistical operation to a human-centered, socio-psychological science.
+<div class="llmp-guardrail"><strong>Surrogate agents do not replace people.</strong>LLM personas are synthetic approximations and may inherit bias from training data, prompts, or calibration. Responsible application requires IRB approval, informed consent, removal of personally identifiable information, transparent auditing, withheld-data validation, and meaningful human and community oversight. The framework is an exploratory decision-support tool—not a substitute for engagement with affected residents.</div>
 
+Beyond debris management, the same four-phase workflow can be adapted to recycling, demolition planning, transportation, evacuation, and other human–infrastructure systems. Each new application would require localized behavioral evidence, domain-specific constraints, and fresh evaluation; the persona is never assumed to transfer unchanged.
 
-    @inproceedings{Baldwin2026,
-    address = {San Antonio, TX},
-    author = {Baldwin, Alex and Movahedi, Mohammad and Choi, Juyeong},
-    booktitle = {ASCE Construction Research Congress 2026},
-    title = {{Large-Language Model-based Framework for Simulating Community Behavior in Policy Evaluation: Application to Community Debris Management}},
-    year = {2026}
-    }
+<p><a class="llmp-paper-link" href="https://doi.org/10.1061/9780784487006.071" target="_blank" rel="noopener">Read the published paper <span aria-hidden="true">↗</span></a></p>
+
+### Citation
+
+<pre class="llmp-bibtex"><code>@inproceedings{Baldwin2026LLMPersonas,
+  author    = {Baldwin, Alexander J. and Movahedi, Mohammad and Choi, Juyeong},
+  title     = {Large Language Model-Based Framework for Simulating Community Behaviors in Policy Evaluation: Application to Community Debris Management},
+  booktitle = {Construction Research Congress 2026},
+  pages     = {718--728},
+  address   = {San Antonio, Texas},
+  publisher = {American Society of Civil Engineers},
+  year      = {2026},
+  doi       = {10.1061/9780784487006.071}
+}</code></pre>
+
+</div>
+
+<script defer src="/js/llm-persona-policy.js"></script>
