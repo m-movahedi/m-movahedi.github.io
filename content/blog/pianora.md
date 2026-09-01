@@ -14,12 +14,26 @@ Today I'm releasing **Pianora**, a free and open-source piano learning app for a
 
 Pianora turns Standard MIDI files into interactive practice sessions. Import a piece, connect a MIDI keyboard if you have one, and work through the music with falling notes, traditional staff notation, or a combination of both. Instead of supplying a fixed catalog, Pianora is built around your own music library.
 
+<figure>
+<center>
+<img src="/images/blog/pianora-1.png" alt="The proposed framework" />
+<figcaption> Pianora's welcome page</figcaption>
+</center>
+</figure>
+
 ## Two ways to practice
 
 Not every practice session should work the same way. Pianora includes two complementary modes:
 
 - **Play along** keeps the song moving at its chosen tempo while Pianora follows your performance and measures note accuracy.
 - **Pause & play** removes the time pressure. The music waits until you play the required note or chord, making it useful for learning unfamiliar passages one step at a time.
+
+<figure>
+<center>
+<img src="/images/blog/pianora-2.png" alt="The proposed framework" />
+<figcaption> Pianora's practice page</figcaption>
+</center>
+</figure>
 
 You can practice both hands together or isolate the left or right hand. Tempo controls, a metronome, count-in, note names, section looping, bookmarks, and an automatic tempo ramp help turn a difficult passage into a manageable routine.
 
