@@ -1,8 +1,8 @@
 ---
 title: "Pianora: a free, open-source piano trainer built around your music"
-description: "Pianora turns MIDI files into interactive piano practice sessions with live keyboard input, notation, learning paths, and progress tracking."
 date: 2026-09-01
 draft : false
+type : "post"
 featured_image: "/images/blog/pianora.png"
 tags:
   - "Weekend Projects"
