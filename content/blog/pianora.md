@@ -1,5 +1,5 @@
 ---
-title: "Pianora: a free, open-source piano trainer built around your music"
+title: "Pianora: a free, open-source piano trainer"
 date: 2026-09-01
 draft : false
 type : "post"
