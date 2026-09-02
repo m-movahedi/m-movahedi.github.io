@@ -3,7 +3,7 @@ title: "Piano-ish: a free, open-source piano trainer"
 date: 2026-09-01
 draft : false
 type : "post"
-featured_image: "/images/blog/Piano-ish.png"
+featured_image: "/images/blog/piano-ish.png"
 tags:
   - "Weekend Projects"
 ---
@@ -16,7 +16,7 @@ Piano-ish turns Standard MIDI files into interactive practice sessions. Import a
 
 <figure>
 <center>
-<img src="/images/blog/Piano-ish-1.png" alt="The proposed framework" />
+<img src="/images/blog/piano-ish-1.png" alt="The proposed framework" />
 <figcaption> Piano-ish's welcome page</figcaption>
 </center>
 </figure>
@@ -30,7 +30,7 @@ Not every practice session should work the same way. Piano-ish includes two comp
 
 <figure>
 <center>
-<img src="/images/blog/Piano-ish-2.png" alt="The proposed framework" />
+<img src="/images/blog/piano-ish-2.png" alt="The proposed framework" />
 <figcaption> Piano-ish's practice page</figcaption>
 </center>
 </figure>
