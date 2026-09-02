@@ -86,7 +86,7 @@ This release is a starting point. If you try Piano-ish, feedback on MIDI hardwar
      ">
      GitHub Repository    
   </a>
-  <a href="https://github.com/m-movahedi/Piano-ish/releases/download/v1.2.0-beta.1/Piano-ish-Piano-tranier-Setup-1.2.0-build5.exe"
+  <a href="https://github.com/m-movahedi/Piano-ish/releases/download/v1.2.0-beta.1/Piano-ish-Setup-1.2.0-build5.exe"
      style="
       padding:10px 18px;
       border-radius:36px;
@@ -98,7 +98,7 @@ This release is a starting point. If you try Piano-ish, feedback on MIDI hardwar
      ">
      Windows x64    
   </a>
-  <a href="https://github.com/m-movahedi/Piano-ish/releases/download/v1.2.0-beta.1/Piano-ish-Piano-tranier-Android-1.2.0-build5.apk"
+  <a href="https://github.com/m-movahedi/Piano-ish/releases/download/v1.2.0-beta.1/Piano-ish-Setup-1.2.0-build5.apk"
      style="
       padding:10px 18px;
       border-radius:36px;
@@ -110,7 +110,7 @@ This release is a starting point. If you try Piano-ish, feedback on MIDI hardwar
      ">
      Android APK    
   </a>
-  <a href="https://github.com/m-movahedi/Piano-ish/releases/download/v1.2.0-beta.1/Piano-ish-Piano-Trainer-macOS-1.2.0-build5.dmg"
+  <a href="https://github.com/m-movahedi/Piano-ish/releases/download/v1.2.0-beta.1/Piano-ish-macOS-1.2.0-build5.dmg"
      style="
       padding:10px 18px;
       border-radius:36px;
