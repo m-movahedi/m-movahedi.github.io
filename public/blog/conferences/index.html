@@ -46,9 +46,6 @@
     <link rel="stylesheet" type="text/css" href="/css/main.min.css">
 
     
-    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
-
-    
     <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
 
     
@@ -97,6 +94,9 @@ gtag('config', 'G-1WZSE8DHZ9');
 
     
     <link rel="stylesheet" href="/css/custom.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 </head>
 <body>
         <script>
@@ -231,181 +231,6 @@ gtag('config', 'G-1WZSE8DHZ9');
     <div class="post-content">
         <p>Welcome to the conference countdown page! Here are the upcoming events I am looking forward to:</p>
 <div class="countdown-container">
-    
-      
-      <style>
-      .countdown-container {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-          gap: 2rem;
-          margin: 2rem 0;
-      }
-    
-      .conference-card {
-          display: flex;
-          flex-direction: column;
-          border: 1px solid rgba(128, 128, 128, 0.2);
-          border-radius: 8px;
-          padding: 1.5rem;
-          box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-          transition: transform 0.2s ease-in-out;
-      }
-    
-      .conference-card:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-      }
-    
-      .conference-card h3 {
-          margin-top: 0;
-          margin-bottom: 0.5rem;
-      }
-    
-      .conference-dates {
-          font-size: 0.85rem;
-          margin-bottom: 1.5rem;
-          opacity: 0.8;
-      }
-    
-      .countdown {
-          display: flex;
-          gap: 0.5rem;
-          justify-content: flex-start;
-          flex-wrap: wrap;
-      }
-    
-      .countdown-item {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 0 0.25rem;
-          min-width: 45px;
-      }
-    
-      .countdown-value {
-          font-size: 1.5rem;
-          font-weight: bold;
-          line-height: 1;
-          margin-bottom: 0.3rem;
-          color: #007bff;
-      }
-    
-      @media (prefers-color-scheme: dark) {
-          .conference-card {
-              border-color: rgba(255, 255, 255, 0.1);
-              box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-          }
-          .countdown-value {
-              color: #4da3ff;
-          }
-      }
-    
-      .countdown-label {
-          font-size: 0.75rem;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          opacity: 0.8;
-      }
-    
-      .conference-tag {
-          margin-top: auto;
-          align-self: flex-start;
-          background-color: rgba(0, 123, 255, 0.1);
-          color: #007bff;
-          padding: 0.2rem 0.6rem;
-          border-radius: 12px;
-          font-size: 0.55rem;
-          font-weight: 600;
-          text-transform: uppercase;
-          white-space: nowrap;
-      }
-    
-      .conference-location {
-          font-size: 0.9rem;
-          opacity: 0.9;
-      }
-      
-      .conference-link {
-          color: inherit;
-          text-decoration: none;
-          transition: color 0.2s;
-      }
-      
-      .conference-link:hover {
-          color: #007bff;
-          text-decoration: underline;
-      }
-      
-      @media (prefers-color-scheme: dark) {
-          .conference-tag {
-              background-color: rgba(77, 163, 255, 0.15);
-              color: #4da3ff;
-          }
-          .conference-link:hover {
-              color: #4da3ff;
-          }
-      }
-      </style>
-    
-      <script>
-      (function() {
-          
-          if (window.countdownIntervalLoaded) return;
-          window.countdownIntervalLoaded = true;
-    
-          function updateCountdowns() {
-              const cards = document.querySelectorAll('.conference-card');
-              const now = new Date().getTime();
-    
-              cards.forEach(card => {
-                  const dateAttr = card.getAttribute('data-date');
-                  if (!dateAttr) return;
-                  
-                  const targetDate = new Date(dateAttr).getTime();
-                  if (isNaN(targetDate)) return;
-                  
-                  const distance = targetDate - now;
-    
-                  if (distance < 0) {
-                      const container = card.querySelector('.countdown');
-                      if (container && !container.classList.contains('ended')) {
-                          container.innerHTML = "<strong>Event has started!</strong>";
-                          container.classList.add('ended');
-                      }
-                      return;
-                  }
-    
-                  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-                  const daysEl = card.querySelector('.days');
-                  const hoursEl = card.querySelector('.hours');
-                  const minutesEl = card.querySelector('.minutes');
-                  const secondsEl = card.querySelector('.seconds');
-                  
-                  if (daysEl && hoursEl && minutesEl && secondsEl) {
-                      daysEl.innerText = String(days).padStart(2, '0');
-                      hoursEl.innerText = String(hours).padStart(2, '0');
-                      minutesEl.innerText = String(minutes).padStart(2, '0');
-                      secondsEl.innerText = String(seconds).padStart(2, '0');
-                  }
-              });
-          }
-    
-          function initCountdowns() {
-              setInterval(updateCountdowns, 1000);
-              updateCountdowns();
-          }
-    
-          if (document.readyState === 'loading') {
-              document.addEventListener('DOMContentLoaded', initCountdowns);
-          } else {
-              initCountdowns();
-          }
-      })();
-      </script>
     
     
     <div class="conference-card" data-date="2027-08-02T11:59:00Z">
