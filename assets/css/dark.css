@@ -1,0 +1,14 @@
+/* Enabled and disabled by Gokarna's existing theme switcher. */
+:root {
+  color-scheme: dark;
+  --page-rgb: 36, 36, 36;
+  --surface-color: #2c2c2b;
+  --text-color: #e9e2d4;
+  --muted-color: #b3aa98;
+  --accent-color: #e8bf42;
+  --gold-color: #f0c64a;
+  --gold-rgb: 232, 191, 66;
+  --border-color: #514a39;
+  --soft-color: #3b3a32;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
