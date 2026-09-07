@@ -56,9 +56,9 @@
     {{ .Site.Params.CustomHeadHTML | safeHTML }}
     {{ end }}
 
-    {{ $custom := resources.Get "css/custom.css" | minify }}
+    {{ $custom := resources.Get "css/custom.css" | minify | resources.Fingerprint "sha256" }}
     <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
 
-    {{ $cssDark := resources.Get "css/dark.css" | minify }}
+    {{ $cssDark := resources.Get "css/dark.css" | minify | resources.Fingerprint "sha256" }}
     <link id="dark-theme" rel="stylesheet" href="{{ $cssDark.RelPermalink }}">
 </head>
