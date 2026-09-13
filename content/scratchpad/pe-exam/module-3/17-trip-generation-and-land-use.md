@@ -79,18 +79,65 @@ The Fitted Curve method yields $326$ trips, which is significantly lower than th
 
 When a new development opens, the trips entering its driveways are not all "new" trips on the surrounding roadway network. We must classify trips to avoid double-counting.
 
-```
-                  ===========================================
-                                 Main Highway
-                  ===========+===================+===========
-                             |                   ^
-                        (Pass-by)             (Primary)
-                             |                   |
-                             v                   |
-                         +---------------------------+
-                         |     New Shopping Center   |
-                         +---------------------------+
-```
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>Transportation Network Trip Classifications</span>
+    </div>
+    <p class="diagram-caption">
+      Trip classification geometry for site impact studies. Primary trips add net new vehicular load to the external highway network. Pass-by trips pull from existing background traffic, adding driveway turning movements without increasing total link volumes.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-trip" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+        <marker id="arrow-amber" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f59e0b"/>
+        </marker>
+        <marker id="arrow-green-trip" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+        </marker>
+      </defs>
+      <!-- Highway Roadway Corridor -->
+      <rect x="20" y="20" width="640" height="50" rx="4" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5"/>
+      <line x1="20" y1="45" x2="660" y2="45" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="8 6" opacity="0.4"/>
+      <text x="50" y="38" fill="currentColor" opacity="0.8" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Main Highway (Through Traffic Stream)</text>
+      <!-- Site Development Area -->
+      <rect x="160" y="125" width="360" height="70" rx="8" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="340" y="153" fill="#0284c7" font-size="14" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">New Commercial / Mixed-Use Development</text>
+      <text x="340" y="173" fill="currentColor" opacity="0.75" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Shopping Center &amp; Residential Pods</text>
+      <!-- Trip Trajectory 1: Primary Trip (Net New) -->
+      <path d="M 90 70 L 90 145 L 160 145" stroke="#10b981" stroke-width="2.2" fill="none" marker-end="url(#arrow-green-trip)"/>
+      <text x="80" y="112" fill="#10b981" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="end">Primary Trip (Net New)</text>
+      <!-- Trip Trajectory 2: Pass-By Trip -->
+      <path d="M 230 45 C 230 90 280 120 300 125" stroke="#f59e0b" stroke-width="2.2" fill="none" marker-end="url(#arrow-amber)"/>
+      <path d="M 380 125 C 400 120 450 90 450 45" stroke="#f59e0b" stroke-width="2.2" fill="none" marker-end="url(#arrow-amber)"/>
+      <text x="340" y="105" fill="#f59e0b" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Pass-By Diversion (Turn In &amp; Out)</text>
+      <!-- Trip Trajectory 3: Internal Capture -->
+      <path d="M 460 178 C 490 188 500 162 485 145" stroke="#ec4899" stroke-width="2" stroke-dasharray="4 2" fill="none" marker-end="url(#arrow-trip)"/>
+      <text x="530" y="165" fill="#ec4899" font-size="10" font-weight="700" font-family="system-ui, sans-serif">Internal Capture</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>Primary Trips (100% Impact)</strong>
+      <p>Vehicles whose sole destination is this site. Adds load to highways and driveways.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #f59e0b;">
+      <strong>Pass-By Trips (Driveway Only)</strong>
+      <p>Intermediate stop from traffic already on the road. Impacts driveways, but not regional highway links.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #ec4899;">
+      <strong>Internal Capture</strong>
+      <p>Multi-use site trips (e.g. resident walks to grocer) that never access public highways.</p>
+    </div>
+  </div>
+</div>
+
 
 ### 1. Primary Trips
 Trips made for the specific, single purpose of visiting the site. These are **net new trips** added to the regional road network.

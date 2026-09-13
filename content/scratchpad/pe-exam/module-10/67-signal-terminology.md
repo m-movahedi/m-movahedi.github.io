@@ -32,12 +32,82 @@ Modern traffic signal operations are defined by the National Electrical Manufact
 1.  **Ring:** A sequence of phases that run in a pre-determined order. In a dual-ring controller, there are two rings (Ring 1 and Ring 2) running concurrently.
 2.  **Barrier:** A conceptual separator in the controller sequence. Both Ring 1 and Ring 2 must cross the barrier at the same time. The barrier separates major-street phases (typically phases 1 through 4) from minor-street phases (typically phases 5 through 8). Conflicting movements (e.g., East-West movements vs. North-South movements) are placed on opposite sides of the barrier to guarantee safety.
 
-```mermaid
-grid-layout
-| Ring 1 | Phase 1 (OLT) | Phase 2 (ET)  | B | Phase 3 (SLT) | Phase 4 (NT)  |
-| Ring 2 | Phase 5 (ELT) | Phase 6 (WT)  | R | Phase 7 (NLT) | Phase 8 (ST)  |
-```
-*Note: OLT = Opposing Left Turn, ET = Eastbound Through, etc.*
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>NEMA Dual-Ring 8-Phase Controller Structure</span>
+    </div>
+    <p class="diagram-caption">
+      A standard 8-phase dual-ring controller. Ring 1 and Ring 2 run concurrently. Both rings must cross the barrier simultaneously to guarantee that conflicting major-street and minor-street movements never receive green at the same time.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Section Headers -->
+      <rect x="75" y="10" width="260" height="24" rx="4" fill="rgba(99, 102, 241, 0.08)"/>
+      <text x="205" y="26" fill="#6366f1" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">MAJOR STREET PHASES (1–4)</text>
+      <rect x="355" y="10" width="260" height="24" rx="4" fill="rgba(16, 185, 129, 0.08)"/>
+      <text x="485" y="26" fill="#10b981" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">MINOR STREET PHASES (5–8)</text>
+      <!-- Ring Labels -->
+      <text x="55" y="75" fill="currentColor" opacity="0.8" font-size="12" font-weight="700" font-family="system-ui, sans-serif" text-anchor="end">Ring 1</text>
+      <text x="55" y="145" fill="currentColor" opacity="0.8" font-size="12" font-weight="700" font-family="system-ui, sans-serif" text-anchor="end">Ring 2</text>
+      <!-- RING 1 BLOCKS -->
+      <!-- Phase 1: WBLT -->
+      <rect x="75" y="45" width="115" height="50" rx="6" fill="rgba(2, 132, 199, 0.12)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="132" y="68" fill="#0284c7" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Phase 1</text>
+      <text x="132" y="84" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">WB Left Turn</text>
+      <!-- Phase 2: EBT -->
+      <rect x="200" y="45" width="135" height="50" rx="6" fill="rgba(16, 185, 129, 0.12)" stroke="#10b981" stroke-width="1.8"/>
+      <text x="267" y="68" fill="#10b981" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Phase 2</text>
+      <text x="267" y="84" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">EB Through</text>
+      <!-- Phase 3: SBLT -->
+      <rect x="355" y="45" width="115" height="50" rx="6" fill="rgba(2, 132, 199, 0.12)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="412" y="68" fill="#0284c7" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Phase 3</text>
+      <text x="412" y="84" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">SB Left Turn</text>
+      <!-- Phase 4: NBT -->
+      <rect x="480" y="45" width="135" height="50" rx="6" fill="rgba(16, 185, 129, 0.12)" stroke="#10b981" stroke-width="1.8"/>
+      <text x="547" y="68" fill="#10b981" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Phase 4</text>
+      <text x="547" y="84" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">NB Through</text>
+      <!-- RING 2 BLOCKS -->
+      <!-- Phase 5: EBLT -->
+      <rect x="75" y="115" width="115" height="50" rx="6" fill="rgba(2, 132, 199, 0.12)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="132" y="138" fill="#0284c7" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Phase 5</text>
+      <text x="132" y="154" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">EB Left Turn</text>
+      <!-- Phase 6: WBT -->
+      <rect x="200" y="115" width="135" height="50" rx="6" fill="rgba(16, 185, 129, 0.12)" stroke="#10b981" stroke-width="1.8"/>
+      <text x="267" y="138" fill="#10b981" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Phase 6</text>
+      <text x="267" y="154" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">WB Through</text>
+      <!-- Phase 7: NBLT -->
+      <rect x="355" y="115" width="115" height="50" rx="6" fill="rgba(2, 132, 199, 0.12)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="412" y="138" fill="#0284c7" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Phase 7</text>
+      <text x="412" y="154" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">NB Left Turn</text>
+      <!-- Phase 8: SBT -->
+      <rect x="480" y="115" width="135" height="50" rx="6" fill="rgba(16, 185, 129, 0.12)" stroke="#10b981" stroke-width="1.8"/>
+      <text x="547" y="138" fill="#10b981" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Phase 8</text>
+      <text x="547" y="154" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">SB Through</text>
+      <!-- THE BARRIER -->
+      <rect x="342" y="38" width="6" height="134" rx="3" fill="#ef4444"/>
+      <rect x="339" y="38" width="12" height="134" rx="3" fill="none" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="345" y="185" fill="#ef4444" font-size="10" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">BARRIER</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #0284c7;">
+      <strong>Odd Phases (1, 3, 5, 7)</strong>
+      <p>Dedicated Left-Turn movements across the intersection approaches.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>Even Phases (2, 4, 6, 8)</strong>
+      <p>Through and right-turn main stream vehicular movements.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #ef4444;">
+      <strong>The Dual Barrier Rule</strong>
+      <p>Both rings must terminate phases and cross the barrier concurrently before opposing street phases can start.</p>
+    </div>
+  </div>
+</div>
+
 
 ---
 

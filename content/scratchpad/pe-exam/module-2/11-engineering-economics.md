@@ -27,14 +27,53 @@ Every engineering economics problem can be represented as a cash flow diagram. W
 
 The NCEES Reference Handbook provides both algebraic formulas and tables for standard interest factors. The factors are written in the bracket notation: **(To Find / Given, Interest Rate, Periods)**.
 
-```
-       ( P / A,  i,  n )
-         |    |  |   |
-         |    |  |   +-- Number of periods (n)
-         |    |  +------ Interest rate per period (i)
-         |    +--------- Given value type (A)
-         +-------------- Value to find (P)
-```
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>NCEES Economic Interest Factor Syntax Anatomy</span>
+    </div>
+    <p class="diagram-caption">
+      Standard bracketed interest factor syntax: $(X / Y, i, n)$ signifies <em>"Find $X$, given $Y$, at interest rate $i$, over $n$ periods"</em>. Multiplying this factor by the given amount yields the unknown quantity: $X = Y \times (X / Y, i, n)$.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-econ" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+      </defs>
+      <!-- Main Syntax Display Box -->
+      <rect x="190" y="20" width="300" height="55" rx="10" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5"/>
+      <text x="215" y="56" fill="#94a3b8" font-size="28" font-weight="600" font-family="monospace">(</text>
+      <text x="235" y="56" fill="#6366f1" font-size="26" font-weight="800" font-family="monospace">P</text>
+      <text x="260" y="56" fill="#94a3b8" font-size="24" font-weight="600" font-family="monospace">/</text>
+      <text x="285" y="56" fill="#10b981" font-size="26" font-weight="800" font-family="monospace">A</text>
+      <text x="310" y="56" fill="#94a3b8" font-size="24" font-weight="600" font-family="monospace">,</text>
+      <text x="345" y="56" fill="#f59e0b" font-size="26" font-weight="800" font-family="monospace">i</text>
+      <text x="375" y="56" fill="#94a3b8" font-size="24" font-weight="600" font-family="monospace">,</text>
+      <text x="415" y="56" fill="#ec4899" font-size="26" font-weight="800" font-family="monospace">n</text>
+      <text x="450" y="56" fill="#94a3b8" font-size="28" font-weight="600" font-family="monospace">)</text>
+      <!-- Connecting Callout Lines & Labels -->
+      <!-- P: Find -->
+      <path d="M 242 75 L 242 110 L 130 110" stroke="#6366f1" stroke-width="1.6" fill="none" marker-end="url(#arrow-econ)"/>
+      <text x="120" y="114" fill="#6366f1" font-size="12" font-weight="700" font-family="system-ui, sans-serif" text-anchor="end">Value to Find (P)</text>
+      <text x="120" y="130" fill="currentColor" opacity="0.7" font-size="10" font-family="system-ui, sans-serif" text-anchor="end">e.g. Present Worth</text>
+      <!-- A: Given -->
+      <path d="M 292 75 L 292 110 L 260 140" stroke="#10b981" stroke-width="1.6" fill="none"/>
+      <text x="260" y="152" fill="#10b981" font-size="12" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Given Value (A)</text>
+      <!-- i: Interest -->
+      <path d="M 350 75 L 350 110 L 410 140" stroke="#f59e0b" stroke-width="1.6" fill="none"/>
+      <text x="410" y="152" fill="#f59e0b" font-size="12" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Interest Rate (i)</text>
+      <!-- n: Periods -->
+      <path d="M 422 75 L 422 110 L 540 110" stroke="#ec4899" stroke-width="1.6" fill="none" marker-end="url(#arrow-econ)"/>
+      <text x="550" y="114" fill="#ec4899" font-size="12" font-weight="700" font-family="system-ui, sans-serif" text-anchor="start">Number of Periods (n)</text>
+      <text x="550" y="130" fill="currentColor" opacity="0.7" font-size="10" font-family="system-ui, sans-serif" text-anchor="start">Years, months, or quarters</text>
+    </svg>
+  </div>
+</div>
+
 
 | Factor Notation | Name | Algebraic Formula |
 | :--- | :--- | :--- |

@@ -1,89 +1,135 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>AI Agents on Mohammad Movahedi</title>
-    <link>http://localhost:1313/tags/ai-agents/</link>
-    <description>Recent content in AI Agents on Mohammad Movahedi</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai-agents/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Scaling and Maintaining: Sustaining Your Research Team</title>
-      <link>http://localhost:1313/scratchpad/research-agents/08-scaling-and-maintaining/</link>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/08-scaling-and-maintaining/</guid>
-      <description>&lt;p&gt;You built a research team. It produced a literature review in 2 weeks. Now what?&lt;/p&gt;&#xA;&lt;p&gt;Research does not stop. New papers arrive every week. New questions emerge. Maybe you want to run a second research project while the first one continues. Maybe you want to share the workflow with collaborators. Maybe you realize your Scout is expensive because it&amp;rsquo;s calling hosted APIs every search.&lt;/p&gt;&#xA;&lt;p&gt;This post is about the infrastructure and practices that let your research team scale from &amp;ldquo;one project&amp;rdquo; to &amp;ldquo;long-running research operations.&amp;rdquo;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>From Idea to First Draft: An End-to-End Walkthrough</title>
-      <link>http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/</link>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/</guid>
-      <description>&lt;p&gt;You have a research question. You have a research team (5 specialized agents). Now what?&lt;/p&gt;&#xA;&lt;p&gt;This post walks through a complete workflow from idea to polished first draft. You will see what agents do, where humans intervene, what surprises appear, and how the team navigates them.&lt;/p&gt;&#xA;&lt;p&gt;We will use a real research question: &lt;strong&gt;How do household evacuation decisions integrate social networks and behavioral heterogeneity?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;phase-1-setup-day-0&#34;&gt;Phase 1: Setup (Day 0)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-define-the-scope&#34;&gt;Step 1: Define the scope&lt;/h3&gt;&#xA;&lt;p&gt;You sit down with a clear research question:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Multi-Agent Workflows: Coordination and Conflict Resolution</title>
-      <link>http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/</link>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/</guid>
-      <description>&lt;p&gt;Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe each other&amp;rsquo;s findings, discover contradictions, and learn from feedback.&lt;/p&gt;&#xA;&lt;p&gt;This post is about how agents work together when they disagree, when they discover something surprising, and when the human researcher needs to intervene.&lt;/p&gt;&#xA;&lt;h2 id=&#34;coordination-patterns-revisited&#34;&gt;Coordination patterns revisited&lt;/h2&gt;&#xA;&lt;p&gt;Recall three coordination patterns from earlier:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sequential pipeline&lt;/strong&gt; - Scout → Analyzer → Gap Finder → Synthesis → Critic&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Parallel exploration&lt;/strong&gt; - Multiple Scouts search in parallel, results merge&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Continuous loop&lt;/strong&gt; - Agents direct each other; workflow runs indefinitely&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Each pattern handles coordination differently.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Synthesis Agent: From Data to Narrative</title>
-      <link>http://localhost:1313/scratchpad/research-agents/05-synthesis-agent/</link>
-      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/05-synthesis-agent/</guid>
-      <description>&lt;p&gt;You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.&lt;/p&gt;&#xA;&lt;p&gt;But you still do not have a story. You do not have sentences that connect findings. You do not have a narrative that says: &amp;ldquo;Here is what we know. Here is what we do not know. Here is why your research matters.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;This is where the Synthesis Agent works. It is not a writer (narrative is not its strength). It is a &lt;em&gt;storyteller&lt;/em&gt;: taking structured data and proposing connections, identifying themes, drafting sections, building the backbone of a literature review.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Methodology Analyzer: Extracting Structured Research Data</title>
-      <link>http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/</link>
-      <pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/04-methodology-analyzer-agent/</guid>
-      <description>&lt;p&gt;The Scout brought you 200 papers. Now what? You could read them all, but that takes weeks. Instead, let the Methodology Analyzer extract the important structure: what dataset did they use? What method? How did they validate? What did they claim and what are the limitations?&lt;/p&gt;&#xA;&lt;p&gt;This extraction enables the Gap Finder to spot what is missing, and the Synthesis Writer to build a coherent narrative.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-analyzers-challenge&#34;&gt;The Analyzer&amp;rsquo;s challenge&lt;/h2&gt;&#xA;&lt;p&gt;If you read 200 papers and manually extract data, you will:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Literature Scout Agent: Systematic Paper Search</title>
-      <link>http://localhost:1313/scratchpad/research-agents/03-literature-scout-agent/</link>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/03-literature-scout-agent/</guid>
-      <description>&lt;p&gt;The Literature Scout&amp;rsquo;s job sounds simple: find papers. In practice, it is the most consequential agent on your team. If the Scout misses papers, the rest of the team never sees them. Everything downstream is incomplete.&lt;/p&gt;&#xA;&lt;p&gt;This post is about building a Scout that is exhaustive, systematic, and reliable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-scouts-challenge&#34;&gt;The Scout&amp;rsquo;s challenge&lt;/h2&gt;&#xA;&lt;p&gt;A typical researcher manually searches:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Google Scholar: &amp;#34;evacuation behavior&amp;#34;&#xD;&#xA;Google Scholar: &amp;#34;disaster evacuation&amp;#34;&#xD;&#xA;Google Scholar: &amp;#34;agent-based evacuation&amp;#34;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then stops, satisfied they have found &amp;ldquo;the papers.&amp;rdquo; But they have missed:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Designing Your Research Team: Agent Roles and Coordination</title>
-      <link>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</link>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</guid>
-      <description>&lt;p&gt;Once you decide to use agents for research, the next question is immediate: what should each agent do?&lt;/p&gt;&#xA;&lt;p&gt;The temptation is to build one big &amp;ldquo;research agent&amp;rdquo; that does everything. That is a mistake. A research team is useful precisely because it is specialized. Each agent does one thing well. They coordinate through shared knowledge.&lt;/p&gt;&#xA;&lt;p&gt;This post is about designing that team: what roles make sense, how they specialize, how they coordinate, and when to merge or split roles.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Research as an Agent Problem</title>
-      <link>http://localhost:1313/scratchpad/research-agents/01-research-as-agent-problem/</link>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/01-research-as-agent-problem/</guid>
-      <description>&lt;p&gt;A researcher&amp;rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas across domains, and revising your own methods based on what you find. Most of this work is done alone or in small teams. Each researcher becomes a bottleneck.&lt;/p&gt;&#xA;&lt;p&gt;What if instead of one person reading papers, summarizing, and synthesizing, you had specialized agents exploring in parallel?&lt;/p&gt;&#xA;&lt;p&gt;This is not about replacing researchers. It is about freeing researchers to focus on the hard thinking while agents handle the systematic, observable, and repeatable work.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Local LLMs 209: A Practical Local Agent Stack</title>
-      <link>http://localhost:1313/scratchpad/local-llms/local-llms-209-practical-local-agent-stack/</link>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/local-llms/local-llms-209-practical-local-agent-stack/</guid>
-      <description>&lt;p&gt;After the tools, models, routers, agents, skills, and MCP servers, it helps to put the pieces into one practical stack.&lt;/p&gt;&#xA;&lt;p&gt;The goal is not to build the most complicated local AI system. The goal is to build a workflow you can understand, debug, and improve.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-start-local-add-power-only-when-needed&#34;&gt;Mental model: start local, add power only when needed&lt;/h2&gt;&#xA;&lt;p&gt;A practical beginner stack has layers:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Layer&lt;/th&gt;&#xA;          &lt;th&gt;Default choice&lt;/th&gt;&#xA;          &lt;th&gt;Why&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Runtime&lt;/td&gt;&#xA;          &lt;td&gt;Ollama or another beginner-friendly local server&lt;/td&gt;&#xA;          &lt;td&gt;Gets a model running quickly&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Model&lt;/td&gt;&#xA;          &lt;td&gt;Small or medium instruct model&lt;/td&gt;&#xA;          &lt;td&gt;Establishes a stable baseline&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;API shape&lt;/td&gt;&#xA;          &lt;td&gt;OpenAI-compatible endpoint when possible&lt;/td&gt;&#xA;          &lt;td&gt;Works with many clients&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Evaluation&lt;/td&gt;&#xA;          &lt;td&gt;Fixed prompt set&lt;/td&gt;&#xA;          &lt;td&gt;Prevents vibe-based model choice&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Tools&lt;/td&gt;&#xA;          &lt;td&gt;MCP servers or app-native tools&lt;/td&gt;&#xA;          &lt;td&gt;Adds controlled access to context&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Instructions&lt;/td&gt;&#xA;          &lt;td&gt;Rules, skills, or project notes&lt;/td&gt;&#xA;          &lt;td&gt;Makes behavior repeatable&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hosted fallback&lt;/td&gt;&#xA;          &lt;td&gt;OpenRouter or direct provider API&lt;/td&gt;&#xA;          &lt;td&gt;Handles tasks local models cannot&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Coding agent&lt;/td&gt;&#xA;          &lt;td&gt;Claude Code, Codex, Antigravity, or another tool&lt;/td&gt;&#xA;          &lt;td&gt;Handles repository actions and verification&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;llm-diagram-container&#34; id=&#34;diagram-209&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;llm-diagram-header&#34;&gt;&#xD;&#xA;    &lt;h4&gt;The Practical Local Agent Stack&lt;/h4&gt;&#xD;&#xA;    &lt;p&gt;Click a layer to see when to add it&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Local LLMs 208: MCP and How Local LLMs Get Tools and Context</title>
-      <link>http://localhost:1313/scratchpad/local-llms/local-llms-208-mcp-how-local-llms-get-tools-and-context/</link>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/local-llms/local-llms-208-mcp-how-local-llms-get-tools-and-context/</guid>
-      <description>&lt;p&gt;A local model by itself only sees the prompt you give it. It cannot read your files, inspect GitHub issues, search a database, or check a calendar unless something connects it to those sources.&lt;/p&gt;&#xA;&lt;p&gt;MCP, the Model Context Protocol, is one way to standardize that connection.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-mcp-is-a-tool-plug&#34;&gt;Mental model: MCP is a tool plug&lt;/h2&gt;&#xA;&lt;p&gt;Anthropic&amp;rsquo;s MCP documentation describes MCP as an open protocol that standardizes how applications provide context to LLMs. The common analogy is a standard connector between AI applications and data or tools.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Local LLMs 207: Skills, Rules, Agents, and Subagents</title>
-      <link>http://localhost:1313/scratchpad/local-llms/local-llms-207-skills-rules-agents-subagents-local-llms/</link>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/local-llms/local-llms-207-skills-rules-agents-subagents-local-llms/</guid>
-      <description>&lt;p&gt;Once you use LLM tools for more than casual chat, you run into a problem: you keep repeating the same instructions. &amp;ldquo;Use this style.&amp;rdquo; &amp;ldquo;Check these files.&amp;rdquo; &amp;ldquo;Run this test.&amp;rdquo; &amp;ldquo;Prefer this source.&amp;rdquo; &amp;ldquo;Do not edit generated files.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Skills, rules, agents, and subagents are different ways of making those instructions reusable.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-durable-context-for-repeatable-work&#34;&gt;Mental model: durable context for repeatable work&lt;/h2&gt;&#xA;&lt;p&gt;Think of these concepts as layers of reusable behavior:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Concept&lt;/th&gt;&#xA;          &lt;th&gt;Beginner meaning&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Rule&lt;/td&gt;&#xA;          &lt;td&gt;A standing instruction or constraint&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Skill&lt;/td&gt;&#xA;          &lt;td&gt;A reusable workflow with instructions, references, scripts, or assets&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Agent&lt;/td&gt;&#xA;          &lt;td&gt;A model-driven worker with tools and a task&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Subagent&lt;/td&gt;&#xA;          &lt;td&gt;A specialized helper agent delegated by a main agent&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Project instructions&lt;/td&gt;&#xA;          &lt;td&gt;Repo-specific guidance for how work should be done&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;MCP tool&lt;/td&gt;&#xA;          &lt;td&gt;A live capability exposed to a model, such as reading issues or querying a database&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;div class=&#34;llm-diagram-container&#34; id=&#34;diagram-207&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;llm-diagram-header&#34;&gt;&#xD;&#xA;    &lt;h4&gt;Durable Context Hierarchy&lt;/h4&gt;&#xD;&#xA;    &lt;p&gt;Click an entity to see its role&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI Agents on Mohammad Movahedi</title><link>https://m-movahedi.com/tags/ai-agents/</link><description>Recent content in AI Agents on Mohammad Movahedi</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://m-movahedi.com/tags/ai-agents/index.xml" rel="self" type="application/rss+xml"/><item><title>Scaling and Maintaining: Sustaining Your Research Team</title><link>https://m-movahedi.com/scratchpad/research-agents/08-scaling-and-maintaining/</link><pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/08-scaling-and-maintaining/</guid><description>&lt;p&gt;You built a research team. It produced a literature review in 2 weeks. Now what?&lt;/p&gt;
+&lt;p&gt;Research does not stop. New papers arrive every week. New questions emerge. Maybe you want to run a second research project while the first one continues. Maybe you want to share the workflow with collaborators. Maybe you realize your Scout is expensive because it&amp;rsquo;s calling hosted APIs every search.&lt;/p&gt;
+&lt;p&gt;This post is about the infrastructure and practices that let your research team scale from &amp;ldquo;one project&amp;rdquo; to &amp;ldquo;long-running research operations.&amp;rdquo;&lt;/p&gt;</description></item><item><title>From Idea to First Draft: An End-to-End Walkthrough</title><link>https://m-movahedi.com/scratchpad/research-agents/07-idea-to-first-draft/</link><pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/07-idea-to-first-draft/</guid><description>&lt;p&gt;You have a research question. You have a research team (5 specialized agents). Now what?&lt;/p&gt;
+&lt;p&gt;This post walks through a complete workflow from idea to polished first draft. You will see what agents do, where humans intervene, what surprises appear, and how the team navigates them.&lt;/p&gt;
+&lt;p&gt;We will use a real research question: &lt;strong&gt;How do household evacuation decisions integrate social networks and behavioral heterogeneity?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="phase-1-setup-day-0"&gt;Phase 1: Setup (Day 0)&lt;/h2&gt;
+&lt;h3 id="step-1-define-the-scope"&gt;Step 1: Define the scope&lt;/h3&gt;
+&lt;p&gt;You sit down with a clear research question:&lt;/p&gt;</description></item><item><title>Multi-Agent Workflows: Coordination and Conflict Resolution</title><link>https://m-movahedi.com/scratchpad/research-agents/06-multi-agent-workflows/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/06-multi-agent-workflows/</guid><description>&lt;p&gt;Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe each other&amp;rsquo;s findings, discover contradictions, and learn from feedback.&lt;/p&gt;
+&lt;p&gt;This post is about how agents work together when they disagree, when they discover something surprising, and when the human researcher needs to intervene.&lt;/p&gt;
+&lt;h2 id="coordination-patterns-revisited"&gt;Coordination patterns revisited&lt;/h2&gt;
+&lt;p&gt;Recall three coordination patterns from earlier:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Sequential pipeline&lt;/strong&gt; - Scout → Analyzer → Gap Finder → Synthesis → Critic&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parallel exploration&lt;/strong&gt; - Multiple Scouts search in parallel, results merge&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Continuous loop&lt;/strong&gt; - Agents direct each other; workflow runs indefinitely&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Each pattern handles coordination differently.&lt;/p&gt;</description></item><item><title>The Synthesis Agent: From Data to Narrative</title><link>https://m-movahedi.com/scratchpad/research-agents/05-synthesis-agent/</link><pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/05-synthesis-agent/</guid><description>&lt;p&gt;You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.&lt;/p&gt;
+&lt;p&gt;But you still do not have a story. You do not have sentences that connect findings. You do not have a narrative that says: &amp;ldquo;Here is what we know. Here is what we do not know. Here is why your research matters.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;This is where the Synthesis Agent works. It is not a writer (narrative is not its strength). It is a &lt;em&gt;storyteller&lt;/em&gt;: taking structured data and proposing connections, identifying themes, drafting sections, building the backbone of a literature review.&lt;/p&gt;</description></item><item><title>The Methodology Analyzer: Extracting Structured Research Data</title><link>https://m-movahedi.com/scratchpad/research-agents/04-methodology-analyzer-agent/</link><pubDate>Tue, 09 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/04-methodology-analyzer-agent/</guid><description>&lt;p&gt;The Scout brought you 200 papers. Now what? You could read them all, but that takes weeks. Instead, let the Methodology Analyzer extract the important structure: what dataset did they use? What method? How did they validate? What did they claim and what are the limitations?&lt;/p&gt;
+&lt;p&gt;This extraction enables the Gap Finder to spot what is missing, and the Synthesis Writer to build a coherent narrative.&lt;/p&gt;
+&lt;h2 id="the-analyzers-challenge"&gt;The Analyzer&amp;rsquo;s challenge&lt;/h2&gt;
+&lt;p&gt;If you read 200 papers and manually extract data, you will:&lt;/p&gt;</description></item><item><title>The Literature Scout Agent: Systematic Paper Search</title><link>https://m-movahedi.com/scratchpad/research-agents/03-literature-scout-agent/</link><pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/03-literature-scout-agent/</guid><description>&lt;p&gt;The Literature Scout&amp;rsquo;s job sounds simple: find papers. In practice, it is the most consequential agent on your team. If the Scout misses papers, the rest of the team never sees them. Everything downstream is incomplete.&lt;/p&gt;
+&lt;p&gt;This post is about building a Scout that is exhaustive, systematic, and reliable.&lt;/p&gt;
+&lt;h2 id="the-scouts-challenge"&gt;The Scout&amp;rsquo;s challenge&lt;/h2&gt;
+&lt;p&gt;A typical researcher manually searches:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Google Scholar: &amp;#34;evacuation behavior&amp;#34;
+Google Scholar: &amp;#34;disaster evacuation&amp;#34;
+Google Scholar: &amp;#34;agent-based evacuation&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then stops, satisfied they have found &amp;ldquo;the papers.&amp;rdquo; But they have missed:&lt;/p&gt;</description></item><item><title>Designing Your Research Team: Agent Roles and Coordination</title><link>https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/</link><pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/</guid><description>&lt;p&gt;Once you decide to use agents for research, the next question is immediate: what should each agent do?&lt;/p&gt;
+&lt;p&gt;The temptation is to build one big &amp;ldquo;research agent&amp;rdquo; that does everything. That is a mistake. A research team is useful precisely because it is specialized. Each agent does one thing well. They coordinate through shared knowledge.&lt;/p&gt;
+&lt;p&gt;This post is about designing that team: what roles make sense, how they specialize, how they coordinate, and when to merge or split roles.&lt;/p&gt;</description></item><item><title>Research as an Agent Problem</title><link>https://m-movahedi.com/scratchpad/research-agents/01-research-as-agent-problem/</link><pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/01-research-as-agent-problem/</guid><description>&lt;p&gt;A researcher&amp;rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas across domains, and revising your own methods based on what you find. Most of this work is done alone or in small teams. Each researcher becomes a bottleneck.&lt;/p&gt;
+&lt;p&gt;What if instead of one person reading papers, summarizing, and synthesizing, you had specialized agents exploring in parallel?&lt;/p&gt;
+&lt;p&gt;This is not about replacing researchers. It is about freeing researchers to focus on the hard thinking while agents handle the systematic, observable, and repeatable work.&lt;/p&gt;</description></item><item><title>Local LLMs 209: A Practical Local Agent Stack</title><link>https://m-movahedi.com/scratchpad/local-llms/local-llms-209-practical-local-agent-stack/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-209-practical-local-agent-stack/</guid><description>&lt;p&gt;After the tools, models, routers, agents, skills, and MCP servers, it helps to put the pieces into one practical stack.&lt;/p&gt;
+&lt;p&gt;The goal is not to build the most complicated local AI system. The goal is to build a workflow you can understand, debug, and improve.&lt;/p&gt;
+&lt;h2 id="mental-model-start-local-add-power-only-when-needed"&gt;Mental model: start local, add power only when needed&lt;/h2&gt;
+&lt;p&gt;A practical beginner stack has layers:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Layer&lt;/th&gt;
+ &lt;th&gt;Default choice&lt;/th&gt;
+ &lt;th&gt;Why&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Runtime&lt;/td&gt;
+ &lt;td&gt;Ollama or another beginner-friendly local server&lt;/td&gt;
+ &lt;td&gt;Gets a model running quickly&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Model&lt;/td&gt;
+ &lt;td&gt;Small or medium instruct model&lt;/td&gt;
+ &lt;td&gt;Establishes a stable baseline&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;API shape&lt;/td&gt;
+ &lt;td&gt;OpenAI-compatible endpoint when possible&lt;/td&gt;
+ &lt;td&gt;Works with many clients&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Evaluation&lt;/td&gt;
+ &lt;td&gt;Fixed prompt set&lt;/td&gt;
+ &lt;td&gt;Prevents vibe-based model choice&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Tools&lt;/td&gt;
+ &lt;td&gt;MCP servers or app-native tools&lt;/td&gt;
+ &lt;td&gt;Adds controlled access to context&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Instructions&lt;/td&gt;
+ &lt;td&gt;Rules, skills, or project notes&lt;/td&gt;
+ &lt;td&gt;Makes behavior repeatable&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Hosted fallback&lt;/td&gt;
+ &lt;td&gt;OpenRouter or direct provider API&lt;/td&gt;
+ &lt;td&gt;Handles tasks local models cannot&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Coding agent&lt;/td&gt;
+ &lt;td&gt;Claude Code, Codex, Antigravity, or another tool&lt;/td&gt;
+ &lt;td&gt;Handles repository actions and verification&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="llm-diagram-container" id="diagram-209"&gt;
+ &lt;div class="llm-diagram-header"&gt;
+ &lt;h4&gt;The Practical Local Agent Stack&lt;/h4&gt;
+ &lt;p&gt;Click a layer to see when to add it&lt;/p&gt;</description></item><item><title>Local LLMs 208: MCP and How Local LLMs Get Tools and Context</title><link>https://m-movahedi.com/scratchpad/local-llms/local-llms-208-mcp-how-local-llms-get-tools-and-context/</link><pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-208-mcp-how-local-llms-get-tools-and-context/</guid><description>&lt;p&gt;A local model by itself only sees the prompt you give it. It cannot read your files, inspect GitHub issues, search a database, or check a calendar unless something connects it to those sources.&lt;/p&gt;
+&lt;p&gt;MCP, the Model Context Protocol, is one way to standardize that connection.&lt;/p&gt;
+&lt;h2 id="mental-model-mcp-is-a-tool-plug"&gt;Mental model: MCP is a tool plug&lt;/h2&gt;
+&lt;p&gt;Anthropic&amp;rsquo;s MCP documentation describes MCP as an open protocol that standardizes how applications provide context to LLMs. The common analogy is a standard connector between AI applications and data or tools.&lt;/p&gt;</description></item><item><title>Local LLMs 207: Skills, Rules, Agents, and Subagents</title><link>https://m-movahedi.com/scratchpad/local-llms/local-llms-207-skills-rules-agents-subagents-local-llms/</link><pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-207-skills-rules-agents-subagents-local-llms/</guid><description>&lt;p&gt;Once you use LLM tools for more than casual chat, you run into a problem: you keep repeating the same instructions. &amp;ldquo;Use this style.&amp;rdquo; &amp;ldquo;Check these files.&amp;rdquo; &amp;ldquo;Run this test.&amp;rdquo; &amp;ldquo;Prefer this source.&amp;rdquo; &amp;ldquo;Do not edit generated files.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Skills, rules, agents, and subagents are different ways of making those instructions reusable.&lt;/p&gt;
+&lt;h2 id="mental-model-durable-context-for-repeatable-work"&gt;Mental model: durable context for repeatable work&lt;/h2&gt;
+&lt;p&gt;Think of these concepts as layers of reusable behavior:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Concept&lt;/th&gt;
+ &lt;th&gt;Beginner meaning&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Rule&lt;/td&gt;
+ &lt;td&gt;A standing instruction or constraint&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Skill&lt;/td&gt;
+ &lt;td&gt;A reusable workflow with instructions, references, scripts, or assets&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Agent&lt;/td&gt;
+ &lt;td&gt;A model-driven worker with tools and a task&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Subagent&lt;/td&gt;
+ &lt;td&gt;A specialized helper agent delegated by a main agent&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Project instructions&lt;/td&gt;
+ &lt;td&gt;Repo-specific guidance for how work should be done&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;MCP tool&lt;/td&gt;
+ &lt;td&gt;A live capability exposed to a model, such as reading issues or querying a database&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="llm-diagram-container" id="diagram-207"&gt;
+ &lt;div class="llm-diagram-header"&gt;
+ &lt;h4&gt;Durable Context Hierarchy&lt;/h4&gt;
+ &lt;p&gt;Click an entity to see its role&lt;/p&gt;</description></item></channel></rss>

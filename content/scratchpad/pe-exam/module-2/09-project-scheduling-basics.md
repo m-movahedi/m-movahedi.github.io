@@ -27,25 +27,93 @@ A project schedule is a model that translates project activities, durations, res
 
 Activities are linked using logical dependencies. There are four types of relationships, which can be modified by **lags** or **leads**.
 
-```mermaid
-flowchart TD
-    subgraph FS ["1. Finish-to-Start (FS)"]
-        direction TB
-        A1[A] -->|FS| B1[B]
-    end
-    subgraph SS ["2. Start-to-Start (SS)"]
-        direction TB
-        A2[A] -->|SS| B2[B]
-    end
-    subgraph FF ["3. Finish-to-Finish (FF)"]
-        direction TB
-        A3[A] -->|FF| B3[B]
-    end
-    subgraph SF ["4. Start-to-Finish (SF)"]
-        direction TB
-        A4[A] -->|SF| B4[B]
-    end
-```
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>The 4 Activity Precedence Relationships (Gantt Logic)</span>
+    </div>
+    <p class="diagram-caption">
+      Graphical timeline logic for the four CPM precedence dependencies. Activity bars represent work durations; connecting arrows indicate the binding constraint between early/late start ($ES, LS$) and early/late finish ($EF, LF$).
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-cpm" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+      </defs>
+      <!-- Panel 1: Finish-to-Start (FS) -->
+      <rect x="20" y="15" width="310" height="105" rx="8" fill="rgba(2, 132, 199, 0.06)" stroke="#0284c7" stroke-width="1.4"/>
+      <text x="35" y="36" fill="#0284c7" font-size="12" font-weight="700" font-family="system-ui, sans-serif">1. Finish-to-Start (FS) — Default</text>
+      <!-- Activity A Bar -->
+      <rect x="40" y="48" width="100" height="24" rx="4" fill="#0284c7" fill-opacity="0.8"/>
+      <text x="90" y="64" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Activity A</text>
+      <!-- Activity B Bar -->
+      <rect x="175" y="78" width="115" height="24" rx="4" fill="#10b981" fill-opacity="0.8"/>
+      <text x="232" y="94" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Activity B</text>
+      <!-- Dependency Arrow -->
+      <path d="M 140 60 L 158 60 L 158 90 L 170 90" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow-cpm)"/>
+      <text x="315" y="64" fill="currentColor" opacity="0.8" font-size="10" font-family="monospace" text-anchor="end">ES_B ≥ EF_A</text>
+      <!-- Panel 2: Start-to-Start (SS) -->
+      <rect x="350" y="15" width="310" height="105" rx="8" fill="rgba(16, 185, 129, 0.06)" stroke="#10b981" stroke-width="1.4"/>
+      <text x="365" y="36" fill="#10b981" font-size="12" font-weight="700" font-family="system-ui, sans-serif">2. Start-to-Start (SS) — Overlapping</text>
+      <!-- Activity A Bar -->
+      <rect x="375" y="48" width="120" height="24" rx="4" fill="#0284c7" fill-opacity="0.8"/>
+      <text x="435" y="64" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Activity A</text>
+      <!-- Activity B Bar -->
+      <rect x="420" y="78" width="120" height="24" rx="4" fill="#10b981" fill-opacity="0.8"/>
+      <text x="480" y="94" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Activity B</text>
+      <!-- Dependency Arrow -->
+      <path d="M 375 60 L 360 60 L 360 90 L 413 90" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow-cpm)"/>
+      <text x="645" y="64" fill="currentColor" opacity="0.8" font-size="10" font-family="monospace" text-anchor="end">ES_B ≥ ES_A + Lag</text>
+      <!-- Panel 3: Finish-to-Finish (FF) -->
+      <rect x="20" y="130" width="310" height="105" rx="8" fill="rgba(245, 158, 11, 0.06)" stroke="#f59e0b" stroke-width="1.4"/>
+      <text x="35" y="151" fill="#f59e0b" font-size="12" font-weight="700" font-family="system-ui, sans-serif">3. Finish-to-Finish (FF) — Concurrent</text>
+      <!-- Activity A Bar -->
+      <rect x="40" y="163" width="125" height="24" rx="4" fill="#0284c7" fill-opacity="0.8"/>
+      <text x="102" y="179" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Activity A</text>
+      <!-- Activity B Bar -->
+      <rect x="75" y="193" width="150" height="24" rx="4" fill="#10b981" fill-opacity="0.8"/>
+      <text x="150" y="209" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Activity B</text>
+      <!-- Dependency Arrow -->
+      <path d="M 165 175 L 240 175 L 240 205 L 230 205" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow-cpm)"/>
+      <text x="315" y="179" fill="currentColor" opacity="0.8" font-size="10" font-family="monospace" text-anchor="end">EF_B ≥ EF_A + Lag</text>
+      <!-- Panel 4: Start-to-Finish (SF) -->
+      <rect x="350" y="130" width="310" height="105" rx="8" fill="rgba(239, 68, 68, 0.06)" stroke="#ef4444" stroke-width="1.4"/>
+      <text x="365" y="151" fill="#ef4444" font-size="12" font-weight="700" font-family="system-ui, sans-serif">4. Start-to-Finish (SF) — Rare Handover</text>
+      <!-- Activity A Bar -->
+      <rect x="475" y="163" width="120" height="24" rx="4" fill="#0284c7" fill-opacity="0.8"/>
+      <text x="535" y="179" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Activity A (New)</text>
+      <!-- Activity B Bar -->
+      <rect x="380" y="193" width="110" height="24" rx="4" fill="#10b981" fill-opacity="0.8"/>
+      <text x="435" y="209" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Activity B (Old)</text>
+      <!-- Dependency Arrow -->
+      <path d="M 475 175 L 505 175 L 505 205 L 495 205" stroke="#6366f1" stroke-width="2" fill="none" marker-end="url(#arrow-cpm)"/>
+      <text x="645" y="179" fill="currentColor" opacity="0.8" font-size="10" font-family="monospace" text-anchor="end">EF_B ≥ ES_A</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #0284c7;">
+      <strong>Finish-to-Start (FS)</strong>
+      <p>Most pervasive relationship in civil contracts (e.g. pour concrete $\to$ strip forms).</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>Start-to-Start (SS)</strong>
+      <p>Used for progressive line-of-balance operations (e.g. trench excavation $\to$ pipe laying).</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #f59e0b;">
+      <strong>Finish-to-Finish (FF)</strong>
+      <p>Ensures following work finishes after preceding work (e.g. subgrade compaction $\to$ paving).</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #ef4444;">
+      <strong>Start-to-Finish (SF)</strong>
+      <p>Rare; used primarily in security handover shifts and continuous plant commissioning.</p>
+    </div>
+  </div>
+</div>
+
 
 ### 1. Finish-to-Start (FS)
 The successor activity cannot start until the predecessor activity finishes. This is the most common relationship.

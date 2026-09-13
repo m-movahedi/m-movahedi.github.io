@@ -1,33 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Multi-Agent Systems on Mohammad Movahedi</title>
-    <link>http://localhost:1313/tags/multi-agent-systems/</link>
-    <description>Recent content in Multi-Agent Systems on Mohammad Movahedi</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/multi-agent-systems/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Multi-Agent Workflows: Coordination and Conflict Resolution</title>
-      <link>http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/</link>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/06-multi-agent-workflows/</guid>
-      <description>&lt;p&gt;Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe each other&amp;rsquo;s findings, discover contradictions, and learn from feedback.&lt;/p&gt;&#xA;&lt;p&gt;This post is about how agents work together when they disagree, when they discover something surprising, and when the human researcher needs to intervene.&lt;/p&gt;&#xA;&lt;h2 id=&#34;coordination-patterns-revisited&#34;&gt;Coordination patterns revisited&lt;/h2&gt;&#xA;&lt;p&gt;Recall three coordination patterns from earlier:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sequential pipeline&lt;/strong&gt; - Scout → Analyzer → Gap Finder → Synthesis → Critic&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Parallel exploration&lt;/strong&gt; - Multiple Scouts search in parallel, results merge&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Continuous loop&lt;/strong&gt; - Agents direct each other; workflow runs indefinitely&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Each pattern handles coordination differently.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Designing Your Research Team: Agent Roles and Coordination</title>
-      <link>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</link>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</guid>
-      <description>&lt;p&gt;Once you decide to use agents for research, the next question is immediate: what should each agent do?&lt;/p&gt;&#xA;&lt;p&gt;The temptation is to build one big &amp;ldquo;research agent&amp;rdquo; that does everything. That is a mistake. A research team is useful precisely because it is specialized. Each agent does one thing well. They coordinate through shared knowledge.&lt;/p&gt;&#xA;&lt;p&gt;This post is about designing that team: what roles make sense, how they specialize, how they coordinate, and when to merge or split roles.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Research as an Agent Problem</title>
-      <link>http://localhost:1313/scratchpad/research-agents/01-research-as-agent-problem/</link>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/research-agents/01-research-as-agent-problem/</guid>
-      <description>&lt;p&gt;A researcher&amp;rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas across domains, and revising your own methods based on what you find. Most of this work is done alone or in small teams. Each researcher becomes a bottleneck.&lt;/p&gt;&#xA;&lt;p&gt;What if instead of one person reading papers, summarizing, and synthesizing, you had specialized agents exploring in parallel?&lt;/p&gt;&#xA;&lt;p&gt;This is not about replacing researchers. It is about freeing researchers to focus on the hard thinking while agents handle the systematic, observable, and repeatable work.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Multi-Agent Systems on Mohammad Movahedi</title><link>https://m-movahedi.com/tags/multi-agent-systems/</link><description>Recent content in Multi-Agent Systems on Mohammad Movahedi</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://m-movahedi.com/tags/multi-agent-systems/index.xml" rel="self" type="application/rss+xml"/><item><title>Multi-Agent Workflows: Coordination and Conflict Resolution</title><link>https://m-movahedi.com/scratchpad/research-agents/06-multi-agent-workflows/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/06-multi-agent-workflows/</guid><description>&lt;p&gt;Five agents now exist: Scout, Analyzer, Gap Finder, Synthesis, Critic. They do not work in isolation. They coordinate through a shared knowledge base, observe each other&amp;rsquo;s findings, discover contradictions, and learn from feedback.&lt;/p&gt;
+&lt;p&gt;This post is about how agents work together when they disagree, when they discover something surprising, and when the human researcher needs to intervene.&lt;/p&gt;
+&lt;h2 id="coordination-patterns-revisited"&gt;Coordination patterns revisited&lt;/h2&gt;
+&lt;p&gt;Recall three coordination patterns from earlier:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Sequential pipeline&lt;/strong&gt; - Scout → Analyzer → Gap Finder → Synthesis → Critic&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parallel exploration&lt;/strong&gt; - Multiple Scouts search in parallel, results merge&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Continuous loop&lt;/strong&gt; - Agents direct each other; workflow runs indefinitely&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Each pattern handles coordination differently.&lt;/p&gt;</description></item><item><title>Designing Your Research Team: Agent Roles and Coordination</title><link>https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/</link><pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/</guid><description>&lt;p&gt;Once you decide to use agents for research, the next question is immediate: what should each agent do?&lt;/p&gt;
+&lt;p&gt;The temptation is to build one big &amp;ldquo;research agent&amp;rdquo; that does everything. That is a mistake. A research team is useful precisely because it is specialized. Each agent does one thing well. They coordinate through shared knowledge.&lt;/p&gt;
+&lt;p&gt;This post is about designing that team: what roles make sense, how they specialize, how they coordinate, and when to merge or split roles.&lt;/p&gt;</description></item><item><title>Research as an Agent Problem</title><link>https://m-movahedi.com/scratchpad/research-agents/01-research-as-agent-problem/</link><pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/scratchpad/research-agents/01-research-as-agent-problem/</guid><description>&lt;p&gt;A researcher&amp;rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas across domains, and revising your own methods based on what you find. Most of this work is done alone or in small teams. Each researcher becomes a bottleneck.&lt;/p&gt;
+&lt;p&gt;What if instead of one person reading papers, summarizing, and synthesizing, you had specialized agents exploring in parallel?&lt;/p&gt;
+&lt;p&gt;This is not about replacing researchers. It is about freeing researchers to focus on the hard thinking while agents handle the systematic, observable, and repeatable work.&lt;/p&gt;</description></item></channel></rss>

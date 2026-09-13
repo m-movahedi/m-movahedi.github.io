@@ -15,16 +15,81 @@ Basic freeway segments are outside the influence of merging, diverging, or weavi
 
 The operational analysis of a basic freeway segment follows a structured, step-by-step procedure to determine its Level of Service (LOS) and capacity:
 
-```mermaid
-graph TD
-    A[Determine Base Free-Flow Speed BFFS] --> B[Adjust FFS for Width, Clearance, Ramp Density]
-    B --> C[Calculate Adjusted Free-Flow Speed FFS]
-    D[Identify Demand Volume V] --> E[Calculate Heavy Vehicle Factor f_HV]
-    E --> F[Calculate Equivalent Passenger-Car Flow Rate v_p]
-    C & F --> G[Determine Average Passenger-Car Speed S]
-    G & F --> H[Calculate Density D = v_p / S]
-    H --> I[Determine Level of Service LOS]
-```
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>HCM Freeway Operational Analysis Pipeline</span>
+    </div>
+    <p class="diagram-caption">
+      Two-stream computational workflow for basic freeway segments: Track 1 determines adjusted Free-Flow Speed ($FFS$) from geometric features; Track 2 calculates passenger-car equivalent flow rate ($v_p$) from demand. Both streams converge to determine average speed ($S$), density ($D = v_p / S$), and Level of Service ($LOS$).
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-flow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+        </marker>
+      </defs>
+      <!-- TRACK 1: SPEED & GEOMETRY (Top Row) -->
+      <rect x="20" y="20" width="130" height="60" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="85" y="44" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Base FFS (BFFS)</text>
+      <text x="85" y="62" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">75 rural / 70 urban</text>
+      <path d="M 150 50 L 175 50" stroke="#0284c7" stroke-width="1.8" marker-end="url(#arrow-flow)"/>
+      <rect x="180" y="20" width="145" height="60" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="252" y="44" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Geometric Adjustments</text>
+      <text x="252" y="62" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">- f_LW - f_LC - f_TRD</text>
+      <path d="M 325 50 L 350 50" stroke="#0284c7" stroke-width="1.8" marker-end="url(#arrow-flow)"/>
+      <rect x="355" y="20" width="125" height="60" rx="6" fill="rgba(2, 132, 199, 0.14)" stroke="#0284c7" stroke-width="2"/>
+      <text x="417" y="44" fill="#0284c7" font-size="12" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">Adjusted FFS</text>
+      <text x="417" y="62" fill="currentColor" opacity="0.8" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Free-Flow Speed</text>
+      <!-- TRACK 2: DEMAND & FLOW (Bottom Row) -->
+      <rect x="20" y="105" width="130" height="60" rx="6" fill="rgba(16, 185, 129, 0.08)" stroke="#10b981" stroke-width="1.6"/>
+      <text x="85" y="129" fill="#10b981" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Demand Volume (V)</text>
+      <text x="85" y="147" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Hourly Count (veh/h)</text>
+      <path d="M 150 135 L 175 135" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+      <rect x="180" y="105" width="145" height="60" rx="6" fill="rgba(16, 185, 129, 0.08)" stroke="#10b981" stroke-width="1.6"/>
+      <text x="252" y="129" fill="#10b981" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Heavy Vehicle (f_HV)</text>
+      <text x="252" y="147" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Truck / Bus Equivalents</text>
+      <path d="M 325 135 L 350 135" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+      <rect x="355" y="105" width="125" height="60" rx="6" fill="rgba(16, 185, 129, 0.14)" stroke="#10b981" stroke-width="2"/>
+      <text x="417" y="129" fill="#10b981" font-size="12" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">Flow Rate (v_p)</text>
+      <text x="417" y="147" fill="currentColor" opacity="0.8" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">pc/h/ln equivalent</text>
+      <!-- CONVERGENCE TO SPEED S -->
+      <path d="M 480 50 L 515 80" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-flow)"/>
+      <path d="M 480 135 L 515 105" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-flow)"/>
+      <rect x="520" y="65" width="140" height="55" rx="6" fill="rgba(99, 102, 241, 0.12)" stroke="#6366f1" stroke-width="1.8"/>
+      <text x="590" y="88" fill="#6366f1" font-size="12" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">Determine Speed (S)</text>
+      <text x="590" y="106" fill="currentColor" opacity="0.8" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">HCM Speed-Flow Curves</text>
+      <!-- CONVERGENCE TO DENSITY & LOS -->
+      <path d="M 590 120 L 590 145" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#arrow-flow)"/>
+      <!-- Final Evaluation Block -->
+      <rect x="505" y="150" width="165" height="75" rx="8" fill="rgba(245, 158, 11, 0.1)" stroke="#f59e0b" stroke-width="2"/>
+      <text x="587" y="174" fill="#f59e0b" font-size="12" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">Density &amp; LOS</text>
+      <text x="587" y="193" fill="currentColor" opacity="0.9" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">D = v_p / S (pc/mi/ln)</text>
+      <text x="587" y="211" fill="#f59e0b" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">LOS A – F</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #0284c7;">
+      <strong>Free-Flow Speed</strong>
+      <p>$\text{FFS} = \text{BFFS} - f_{LW} - f_{LC} - f_{TRD}$.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>Equivalent Flow Rate</strong>
+      <p>$v_p = \frac{V}{\text{PHF} \times N \times f_{HV}}$, in $\text{pc/h/ln}$.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #f59e0b;">
+      <strong>Density & LOS</strong>
+      <p>$D = \frac{v_p}{S}$, mapped to LOS thresholds ($11, 18, 26, 35, 45\text{ pc/mi/ln}$).</p>
+    </div>
+  </div>
+</div>
+
 
 ---
 

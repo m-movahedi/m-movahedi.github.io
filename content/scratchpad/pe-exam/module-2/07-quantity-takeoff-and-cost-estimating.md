@@ -35,11 +35,73 @@ Soil exists in three distinct states, and each state has a different density and
 2. **Loose:** Soil after it is excavated and disturbed. The soil grains separate, introducing air pockets and increasing volume (swelling). Measured in **Loose Cubic Yards (LCY)**.
 3. **Compacted:** Soil after it is placed and compacted in the fill area. The air is forced out, making it denser than the bank state (shrinking). Measured in **Compacted Cubic Yards (CCY)**.
 
-```mermaid
-flowchart TD
-    A[Bank State <br/> BCY] -- Excavation --> B[Loose State <br/> LCY]
-    B -- Compaction --> C[Compacted State <br/> CCY]
-```
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>Soil Volume States and Conversion Factors</span>
+    </div>
+    <p class="diagram-caption">
+      Transitions between the three physical states of soil: Bank (in-situ), Loose (excavated), and Compacted (fill). Density increases from Loose $\to$ Bank $\to$ Compacted, while volume decreases correspondingly.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-soil" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+        <marker id="arrow-ret" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f59e0b"/>
+        </marker>
+      </defs>
+      <!-- State 1: Bank (BCY) -->
+      <rect x="25" y="45" width="180" height="95" rx="8" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="115" y="72" fill="#0284c7" font-size="14" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">1. Bank State (BCY)</text>
+      <text x="115" y="92" fill="currentColor" opacity="0.8" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">In-Situ / Undisturbed</text>
+      <text x="115" y="112" fill="currentColor" opacity="0.65" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Baseline Pay Volume</text>
+      <text x="115" y="128" fill="#0284c7" font-size="10" font-weight="700" font-family="monospace" text-anchor="middle">γ_bank (Medium Density)</text>
+      <!-- Arrow 1: Excavation & Swell -->
+      <path d="M 205 75 L 245 75" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow-soil)"/>
+      <text x="225" y="65" fill="#6366f1" font-size="10" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Excavation</text>
+      <text x="225" y="95" fill="#10b981" font-size="10" font-weight="700" font-family="monospace" text-anchor="middle">+ Swell (S_w)</text>
+      <!-- State 2: Loose (LCY) -->
+      <rect x="250" y="45" width="180" height="95" rx="8" fill="rgba(16, 185, 129, 0.08)" stroke="#10b981" stroke-width="1.8"/>
+      <text x="340" y="72" fill="#10b981" font-size="14" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">2. Loose State (LCY)</text>
+      <text x="340" y="92" fill="currentColor" opacity="0.8" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Excavated / Hauling</text>
+      <text x="340" y="112" fill="currentColor" opacity="0.65" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Truck Payload Volume</text>
+      <text x="340" y="128" fill="#10b981" font-size="10" font-weight="700" font-family="monospace" text-anchor="middle">γ_loose (Lowest Density)</text>
+      <!-- Arrow 2: Placement & Compaction -->
+      <path d="M 430 75 L 470 75" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow-soil)"/>
+      <text x="450" y="65" fill="#6366f1" font-size="10" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Compaction</text>
+      <text x="450" y="95" fill="#ef4444" font-size="10" font-weight="700" font-family="monospace" text-anchor="middle">- Shrink (S_h)</text>
+      <!-- State 3: Compacted (CCY) -->
+      <rect x="475" y="45" width="180" height="95" rx="8" fill="rgba(245, 158, 11, 0.08)" stroke="#f59e0b" stroke-width="1.8"/>
+      <text x="565" y="72" fill="#f59e0b" font-size="14" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">3. Compacted (CCY)</text>
+      <text x="565" y="92" fill="currentColor" opacity="0.8" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Embankment / Fill</text>
+      <text x="565" y="112" fill="currentColor" opacity="0.65" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Final Structure Volume</text>
+      <text x="565" y="128" fill="#f59e0b" font-size="10" font-weight="700" font-family="monospace" text-anchor="middle">γ_compact (Highest Density)</text>
+      <!-- Reverse Curve: CCY back to BCY -->
+      <path d="M 565 140 C 565 175 115 175 115 145" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 3" fill="none" marker-end="url(#arrow-ret)"/>
+      <text x="340" y="172" fill="#f59e0b" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Borrow Pit Required: BCY = CCY / (1 - S_h)</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>Swell (Bank $\to$ Loose)</strong>
+      <p>$LCY = BCY \times (1 + S_w)$, Load Factor $L_f = \frac{1}{1 + S_w}$.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #f59e0b;">
+      <strong>Shrinkage (Bank $\to$ Compacted)</strong>
+      <p>$CCY = BCY \times (1 - S_h)$, Compaction Factor $C_f = 1 - S_h$.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #0284c7;">
+      <strong>Borrow Calculation</strong>
+      <p>To place $1,000\text{ CCY}$ with $S_h = 15\%$, you must excavate $1,000 / 0.85 = 1,176\text{ BCY}$.</p>
+    </div>
+  </div>
+</div>
+
 
 #### Formulas for Transitions:
 - **Swell Factor ($S_w$ or Swell %):**

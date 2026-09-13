@@ -1,32 +1,356 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog on Mohammad Movahedi</title>
-    <link>http://localhost:1313/blog/</link>
-    <description>Recent content in Blog on Mohammad Movahedi</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Piano-ish: a free, open-source piano trainer</title>
-      <link>http://localhost:1313/blog/piano-ish/</link>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/piano-ish/</guid>
-      <description>&lt;h1 id=&#34;piano-ish-practice-piano-with-the-music-you-choose&#34;&gt;Piano-ish: practice piano with the music you choose&lt;/h1&gt;&#xA;&lt;p&gt;Today I&amp;rsquo;m releasing &lt;strong&gt;Piano-ish&lt;/strong&gt;, a free and open-source piano learning app for anyone who wants a more focused way to practice with a digital piano.&lt;/p&gt;&#xA;&lt;p&gt;Piano-ish turns Standard MIDI files into interactive practice sessions. Import a piece, connect a MIDI keyboard if you have one, and work through the music with falling notes, traditional staff notation, or a combination of both. Instead of supplying a fixed catalog, Piano-ish is built around your own music library.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Wallpaper Manager</title>
-      <link>http://localhost:1313/blog/wallpaper-manager/</link>
-      <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/wallpaper-manager/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m excited to introduce Wallpaper Manager, a local-first desktop app for organizing and automatically rotating your wallpapers.&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/images/blog/wallpaper-manager-release01.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;figcaption&gt; Wallpaper Manager Release 0.1 &lt;/figcaption&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Instead of limiting you to one wallpaper provider, Wallpaper Manager lets you create collections from local folders, RSS and Atom feeds, and other sources. You can combine collections into custom pools, mark images as favorites, choose their playback order, and control how frequently your background changes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Conference Deadlines</title>
-      <link>http://localhost:1313/blog/conferences/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/conferences/</guid>
-      <description>&lt;p&gt;Welcome to the conference countdown page! Here are the upcoming events I am looking forward to:&lt;/p&gt;&#xA;&lt;div class=&#34;countdown-container&#34;&gt;&#xD;&#xA;    &#xA;    &#xA;    &lt;div class=&#34;conference-card&#34; data-date=&#34;2027-08-02T11:59:00Z&#34;&gt;&#xA;        &lt;h3&gt;&#xA;            &#xA;            &lt;a href=&#34;https://www.nationalacademies.org/trb/transportation-research-board&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;conference-link&#34;&gt;TRB 107th Annual Meeting&lt;/a&gt;&#xA;            &#xA;        &lt;/h3&gt;&#xA;        &lt;div class=&#34;conference-dates&#34;&gt;&#xA;            Full paper submission deadline&#xA;            &#xA;            &lt;br&gt;&#xA;            &lt;span class=&#34;conference-location&#34;&gt;📍 Washington, D.C.&lt;/span&gt;&#xA;            &#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;countdown&#34;&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value days&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Days&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value hours&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Hours&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value minutes&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Mins&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value seconds&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Secs&lt;/span&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;        &lt;div style=&#34;margin-top: auto; padding-top: 1.5rem;&#34;&gt;&#xA;            &lt;span class=&#34;conference-tag&#34;&gt;Transportation&lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;    &lt;/div&gt;&#xA;&#xD;&#xA;    &#xA;    &#xA;    &lt;div class=&#34;conference-card&#34; data-date=&#34;2026-10-16T23:59:00Z&#34;&gt;&#xA;        &lt;h3&gt;&#xA;            &#xA;            &lt;a href=&#34;https://www.asce.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;conference-link&#34;&gt;ASCE 2028&lt;/a&gt;&#xA;            &#xA;        &lt;/h3&gt;&#xA;        &lt;div class=&#34;conference-dates&#34;&gt;&#xA;            Expected call opening&#xA;            &#xA;            &lt;br&gt;&#xA;            &lt;span class=&#34;conference-location&#34;&gt;📍 Seattle, Washington&lt;/span&gt;&#xA;            &#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;countdown&#34;&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value days&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Days&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value hours&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Hours&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value minutes&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Mins&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value seconds&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Secs&lt;/span&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;        &lt;div style=&#34;margin-top: auto; padding-top: 1.5rem;&#34;&gt;&#xA;            &lt;span class=&#34;conference-tag&#34;&gt;General Civil Engineering&lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;    &lt;/div&gt;&#xA;&#xD;&#xA;    &#xA;    &#xA;    &lt;div class=&#34;conference-card&#34; data-date=&#34;2027-05-01T23:59:00Z&#34;&gt;&#xA;        &lt;h3&gt;&#xA;            &#xA;            &lt;a href=&#34;https://cibworld.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;conference-link&#34;&gt;World Building Congress 2028&lt;/a&gt;&#xA;            &#xA;        &lt;/h3&gt;&#xA;        &lt;div class=&#34;conference-dates&#34;&gt;&#xA;            Expected call opening&#xA;            &#xA;            &lt;br&gt;&#xA;            &lt;span class=&#34;conference-location&#34;&gt;📍 Tsinghua University, Beijing&lt;/span&gt;&#xA;            &#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;countdown&#34;&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value days&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Days&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value hours&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Hours&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value minutes&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Mins&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value seconds&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Secs&lt;/span&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;        &lt;div style=&#34;margin-top: auto; padding-top: 1.5rem;&#34;&gt;&#xA;            &lt;span class=&#34;conference-tag&#34;&gt;General Civil Engineering&lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;    &lt;/div&gt;&#xA;&#xD;&#xA;    &#xA;    &#xA;    &lt;div class=&#34;conference-card&#34; data-date=&#34;2026-11-07T23:59:00Z&#34;&gt;&#xA;        &lt;h3&gt;&#xA;            &#xA;            &lt;a href=&#34;http://ascpro.ascweb.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;conference-link&#34;&gt;Associated Schools of Construction 2027&lt;/a&gt;&#xA;            &#xA;        &lt;/h3&gt;&#xA;        &lt;div class=&#34;conference-dates&#34;&gt;&#xA;            Full paper submission&#xA;            &#xA;            &lt;br&gt;&#xA;            &lt;span class=&#34;conference-location&#34;&gt;📍 Oklahoma City, Oklahoma&lt;/span&gt;&#xA;            &#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;countdown&#34;&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value days&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Days&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value hours&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Hours&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value minutes&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Mins&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value seconds&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Secs&lt;/span&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;        &lt;div style=&#34;margin-top: auto; padding-top: 1.5rem;&#34;&gt;&#xA;            &lt;span class=&#34;conference-tag&#34;&gt;Construction Management&lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;    &lt;/div&gt;&#xA;&#xD;&#xA;    &lt;!-- Transportation Engineering --&gt;&#xD;&#xA;    &#xA;    &#xA;    &lt;div class=&#34;conference-card&#34; data-date=&#34;2027-03-01T23:59:00Z&#34;&gt;&#xA;        &lt;h3&gt;&#xA;            &#xA;            &lt;a href=&#34;https://ieee-itss.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;conference-link&#34;&gt;IEEE ITSC 2027&lt;/a&gt;&#xA;            &#xA;        &lt;/h3&gt;&#xA;        &lt;div class=&#34;conference-dates&#34;&gt;&#xA;            Intelligent Transportation Systems Conference&#xA;            &#xA;            &lt;br&gt;&#xA;            &lt;span class=&#34;conference-location&#34;&gt;📍 Boston, Massachusetts&lt;/span&gt;&#xA;            &#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;countdown&#34;&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value days&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Days&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value hours&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Hours&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value minutes&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Mins&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value seconds&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Secs&lt;/span&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;        &lt;div style=&#34;margin-top: auto; padding-top: 1.5rem;&#34;&gt;&#xA;            &lt;span class=&#34;conference-tag&#34;&gt;Transportation&lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;    &lt;/div&gt;&#xA;&#xD;&#xA;    &#xA;    &#xA;    &lt;div class=&#34;conference-card&#34; data-date=&#34;2026-12-06T23:59:00Z&#34;&gt;&#xA;        &lt;h3&gt;&#xA;            &#xA;            &lt;a href=&#34;https://www.ite.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; class=&#34;conference-link&#34;&gt;ITE Annual Meeting 2027&lt;/a&gt;&#xA;            &#xA;        &lt;/h3&gt;&#xA;        &lt;div class=&#34;conference-dates&#34;&gt;&#xA;            Institute of Transportation Engineers&#xA;            &#xA;            &lt;br&gt;&#xA;            &lt;span class=&#34;conference-location&#34;&gt;📍 Calgary, Canada&lt;/span&gt;&#xA;            &#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;countdown&#34;&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value days&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Days&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value hours&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Hours&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value minutes&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Mins&lt;/span&gt;&lt;/div&gt;&#xA;            &lt;div class=&#34;countdown-item&#34;&gt;&lt;span class=&#34;countdown-value seconds&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;countdown-label&#34;&gt;Secs&lt;/span&gt;&lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;        &lt;div style=&#34;margin-top: auto; padding-top: 1.5rem;&#34;&gt;&#xA;            &lt;span class=&#34;conference-tag&#34;&gt;Transportation&lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &#xA;    &lt;/div&gt;&#xA;&#xD;&#xA;&lt;/div&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Mohammad Movahedi</title><link>https://m-movahedi.com/blog/</link><description>Recent content in Blog on Mohammad Movahedi</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://m-movahedi.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Piano-ish: a free, open-source piano trainer</title><link>https://m-movahedi.com/blog/piano-ish/</link><pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/blog/piano-ish/</guid><description>&lt;h1 id="piano-ish-practice-piano-with-the-music-you-choose"&gt;Piano-ish: practice piano with the music you choose&lt;/h1&gt;
+&lt;p&gt;Today I&amp;rsquo;m releasing &lt;strong&gt;Piano-ish&lt;/strong&gt;, a free and open-source piano learning app for anyone who wants a more focused way to practice with a digital piano.&lt;/p&gt;
+&lt;p&gt;Piano-ish turns Standard MIDI files into interactive practice sessions. Import a piece, connect a MIDI keyboard if you have one, and work through the music with falling notes, traditional staff notation, or a combination of both. Instead of supplying a fixed catalog, Piano-ish is built around your own music library.&lt;/p&gt;</description></item><item><title>Wallpaper Manager</title><link>https://m-movahedi.com/blog/wallpaper-manager/</link><pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/blog/wallpaper-manager/</guid><description>&lt;p&gt;I&amp;rsquo;m excited to introduce Wallpaper Manager, a local-first desktop app for organizing and automatically rotating your wallpapers.&lt;/p&gt;
+&lt;figure&gt;
+&lt;center&gt;
+&lt;img src="https://m-movahedi.com/images/blog/wallpaper-manager-release01.png" alt="The proposed framework" /&gt;
+&lt;figcaption&gt; Wallpaper Manager Release 0.1 &lt;/figcaption&gt;
+&lt;/center&gt;
+&lt;/figure&gt;
+&lt;p&gt;Instead of limiting you to one wallpaper provider, Wallpaper Manager lets you create collections from local folders, RSS and Atom feeds, and other sources. You can combine collections into custom pools, mark images as favorites, choose their playback order, and control how frequently your background changes.&lt;/p&gt;</description></item><item><title>Conference Deadlines</title><link>https://m-movahedi.com/blog/conferences/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://m-movahedi.com/blog/conferences/</guid><description>&lt;p&gt;Welcome to the conference countdown page! Here are the upcoming events I am looking forward to:&lt;/p&gt;
+&lt;div class="countdown-container"&gt;
+ 
+ 
+ &lt;style&gt;
+ .countdown-container {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+ gap: 2rem;
+ margin: 2rem 0;
+ }
+ 
+ .conference-card {
+ display: flex;
+ flex-direction: column;
+ border: 1px solid rgba(128, 128, 128, 0.2);
+ border-radius: 8px;
+ padding: 1.5rem;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+ transition: transform 0.2s ease-in-out;
+ }
+ 
+ .conference-card:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+ }
+ 
+ .conference-card h3 {
+ margin-top: 0;
+ margin-bottom: 0.5rem;
+ }
+ 
+ .conference-dates {
+ font-size: 0.85rem;
+ margin-bottom: 1.5rem;
+ opacity: 0.8;
+ }
+ 
+ .countdown {
+ display: flex;
+ gap: 0.5rem;
+ justify-content: flex-start;
+ flex-wrap: wrap;
+ }
+ 
+ .countdown-item {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 0 0.25rem;
+ min-width: 45px;
+ }
+ 
+ .countdown-value {
+ font-size: 1.5rem;
+ font-weight: bold;
+ line-height: 1;
+ margin-bottom: 0.3rem;
+ color: #daac4b;
+ }
+ 
+ @media (prefers-color-scheme: dark) {
+ .conference-card {
+ border-color: rgba(255, 255, 255, 0.1);
+ box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+ }
+ .countdown-value {
+ color: #daac4b;
+ }
+ }
+ 
+ .countdown-label {
+ font-size: 0.75rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ opacity: 0.8;
+ }
+ 
+ .conference-tag {
+ margin-top: auto;
+ align-self: flex-start;
+ background-color: rgba(0, 123, 255, 0.1);
+ color: #b38014;
+ padding: 0.2rem 0.6rem;
+ border-radius: 12px;
+ font-size: 0.55rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ white-space: nowrap;
+ }
+ 
+ .conference-location {
+ font-size: 0.9rem;
+ opacity: 0.9;
+ }
+ 
+ .conference-link {
+ color: inherit;
+ text-decoration: none;
+ transition: color 0.2s;
+ }
+ 
+ .conference-link:hover {
+ color: #be8917;
+ text-decoration: underline;
+ }
+ 
+ @media (prefers-color-scheme: dark) {
+ .conference-tag {
+ background-color: rgba(77, 163, 255, 0.15);
+ color: #daac4b;
+ }
+ .conference-link:hover {
+ color: #ca941f;
+ }
+ }
+ &lt;/style&gt;
+ 
+ &lt;script&gt;
+ (function() {
+ 
+ if (window.countdownIntervalLoaded) return;
+ window.countdownIntervalLoaded = true;
+ 
+ function updateCountdowns() {
+ const cards = document.querySelectorAll('.conference-card');
+ const now = new Date().getTime();
+ 
+ cards.forEach(card =&gt; {
+ const dateAttr = card.getAttribute('data-date');
+ if (!dateAttr) return;
+ 
+ const targetDate = new Date(dateAttr).getTime();
+ if (isNaN(targetDate)) return;
+ 
+ const distance = targetDate - now;
+ 
+ if (distance &lt; 0) {
+ const container = card.querySelector('.countdown');
+ if (container &amp;&amp; !container.classList.contains('ended')) {
+ container.innerHTML = "&lt;strong&gt;Event has started!&lt;/strong&gt;";
+ container.classList.add('ended');
+ }
+ return;
+ }
+ 
+ const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+ const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+ const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+ const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+ const daysEl = card.querySelector('.days');
+ const hoursEl = card.querySelector('.hours');
+ const minutesEl = card.querySelector('.minutes');
+ const secondsEl = card.querySelector('.seconds');
+ 
+ if (daysEl &amp;&amp; hoursEl &amp;&amp; minutesEl &amp;&amp; secondsEl) {
+ daysEl.innerText = String(days).padStart(2, '0');
+ hoursEl.innerText = String(hours).padStart(2, '0');
+ minutesEl.innerText = String(minutes).padStart(2, '0');
+ secondsEl.innerText = String(seconds).padStart(2, '0');
+ }
+ });
+ }
+ 
+ function initCountdowns() {
+ setInterval(updateCountdowns, 1000);
+ updateCountdowns();
+ }
+ 
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', initCountdowns);
+ } else {
+ initCountdowns();
+ }
+ })();
+ &lt;/script&gt;
+ 
+ 
+ &lt;div class="conference-card" data-date="2027-08-02T11:59:00Z"&gt;
+ &lt;h3&gt;
+ 
+ &lt;a href="https://www.nationalacademies.org/trb/transportation-research-board" target="_blank" rel="noopener noreferrer" class="conference-link"&gt;TRB 107th Annual Meeting&lt;/a&gt;
+ 
+ &lt;/h3&gt;
+ &lt;div class="conference-dates"&gt;
+ Full paper submission deadline
+ 
+ &lt;br&gt;
+ &lt;span class="conference-location"&gt;📍 Washington, D.C.&lt;/span&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="countdown"&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value days"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Days&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value hours"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Hours&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value minutes"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Mins&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value seconds"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Secs&lt;/span&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div style="margin-top: auto; padding-top: 1.5rem;"&gt;
+ &lt;span class="conference-tag"&gt;Transportation&lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+
+ 
+ 
+ &lt;div class="conference-card" data-date="2026-10-16T23:59:00Z"&gt;
+ &lt;h3&gt;
+ 
+ &lt;a href="https://www.asce.org/" target="_blank" rel="noopener noreferrer" class="conference-link"&gt;ASCE 2028&lt;/a&gt;
+ 
+ &lt;/h3&gt;
+ &lt;div class="conference-dates"&gt;
+ Expected call opening
+ 
+ &lt;br&gt;
+ &lt;span class="conference-location"&gt;📍 Seattle, Washington&lt;/span&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="countdown"&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value days"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Days&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value hours"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Hours&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value minutes"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Mins&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value seconds"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Secs&lt;/span&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div style="margin-top: auto; padding-top: 1.5rem;"&gt;
+ &lt;span class="conference-tag"&gt;General Civil Engineering&lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+
+ 
+ 
+ &lt;div class="conference-card" data-date="2027-05-01T23:59:00Z"&gt;
+ &lt;h3&gt;
+ 
+ &lt;a href="https://cibworld.org/" target="_blank" rel="noopener noreferrer" class="conference-link"&gt;World Building Congress 2028&lt;/a&gt;
+ 
+ &lt;/h3&gt;
+ &lt;div class="conference-dates"&gt;
+ Expected call opening
+ 
+ &lt;br&gt;
+ &lt;span class="conference-location"&gt;📍 Tsinghua University, Beijing&lt;/span&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="countdown"&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value days"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Days&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value hours"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Hours&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value minutes"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Mins&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value seconds"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Secs&lt;/span&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div style="margin-top: auto; padding-top: 1.5rem;"&gt;
+ &lt;span class="conference-tag"&gt;General Civil Engineering&lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+
+ 
+ 
+ &lt;div class="conference-card" data-date="2026-11-07T23:59:00Z"&gt;
+ &lt;h3&gt;
+ 
+ &lt;a href="http://ascpro.ascweb.org/" target="_blank" rel="noopener noreferrer" class="conference-link"&gt;Associated Schools of Construction 2027&lt;/a&gt;
+ 
+ &lt;/h3&gt;
+ &lt;div class="conference-dates"&gt;
+ Full paper submission
+ 
+ &lt;br&gt;
+ &lt;span class="conference-location"&gt;📍 Oklahoma City, Oklahoma&lt;/span&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="countdown"&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value days"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Days&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value hours"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Hours&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value minutes"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Mins&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value seconds"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Secs&lt;/span&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div style="margin-top: auto; padding-top: 1.5rem;"&gt;
+ &lt;span class="conference-tag"&gt;Construction Management&lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+
+ &lt;!-- Transportation Engineering --&gt;
+ 
+ 
+ &lt;div class="conference-card" data-date="2027-03-01T23:59:00Z"&gt;
+ &lt;h3&gt;
+ 
+ &lt;a href="https://ieee-itss.org/" target="_blank" rel="noopener noreferrer" class="conference-link"&gt;IEEE ITSC 2027&lt;/a&gt;
+ 
+ &lt;/h3&gt;
+ &lt;div class="conference-dates"&gt;
+ Intelligent Transportation Systems Conference
+ 
+ &lt;br&gt;
+ &lt;span class="conference-location"&gt;📍 Boston, Massachusetts&lt;/span&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="countdown"&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value days"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Days&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value hours"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Hours&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value minutes"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Mins&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value seconds"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Secs&lt;/span&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div style="margin-top: auto; padding-top: 1.5rem;"&gt;
+ &lt;span class="conference-tag"&gt;Transportation&lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+
+ 
+ 
+ &lt;div class="conference-card" data-date="2026-12-06T23:59:00Z"&gt;
+ &lt;h3&gt;
+ 
+ &lt;a href="https://www.ite.org/" target="_blank" rel="noopener noreferrer" class="conference-link"&gt;ITE Annual Meeting 2027&lt;/a&gt;
+ 
+ &lt;/h3&gt;
+ &lt;div class="conference-dates"&gt;
+ Institute of Transportation Engineers
+ 
+ &lt;br&gt;
+ &lt;span class="conference-location"&gt;📍 Calgary, Canada&lt;/span&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="countdown"&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value days"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Days&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value hours"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Hours&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value minutes"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Mins&lt;/span&gt;&lt;/div&gt;
+ &lt;div class="countdown-item"&gt;&lt;span class="countdown-value seconds"&gt;00&lt;/span&gt;&lt;span class="countdown-label"&gt;Secs&lt;/span&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;div style="margin-top: auto; padding-top: 1.5rem;"&gt;
+ &lt;span class="conference-tag"&gt;Transportation&lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;/div&gt;
+
+&lt;/div&gt;</description></item></channel></rss>

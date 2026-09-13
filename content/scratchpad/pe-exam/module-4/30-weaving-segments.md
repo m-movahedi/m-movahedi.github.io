@@ -50,16 +50,78 @@ Occur when a left-side ramp is followed by a right-side ramp (or vice versa). We
 
 ## Step-by-Step Analysis Methodology
 
-```mermaid
-graph TD
-    A[Identify Flow Volumes: V_FF, V_RF, V_FR, V_RR] --> B[Adjust for PHF and Heavy Vehicles to pc/h]
-    B --> C[Classify Weaving Configuration and Length L_W]
-    C --> D[Calculate Weaving Flow v_W and Non-Weaving Flow v_NW]
-    D --> E[Calculate Weaving Speed S_W and Non-Weaving Speed S_NW]
-    E --> F[Calculate Average Speed S of all vehicles]
-    F --> G[Calculate Density D = v_p / S * N]
-    G --> H[Determine Level of Service LOS]
-```
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>HCM Weaving Segment Analysis Pipeline</span>
+    </div>
+    <p class="diagram-caption">
+      Sequential procedure for operational analysis of freeway weaving segments. Weaving and non-weaving movements generate differing friction and turbulence, requiring separate speed regressions before computing harmonic stream speed and segment density.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-wv" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+      </defs>
+      <!-- Row 1: Steps 1 to 4 -->
+      <!-- Step 1 -->
+      <rect x="20" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="90" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">1. Identify Volumes</text>
+      <text x="90" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">V_FF, V_RF, V_FR, V_RR</text>
+      <path d="M 160 49 L 180 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 2 -->
+      <rect x="185" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="255" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">2. Adjust to pc/h</text>
+      <text x="255" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Apply PHF &amp; f_HV</text>
+      <path d="M 325 49 L 345 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 3 -->
+      <rect x="350" y="20" width="145" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="422" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">3. Classify Geometry</text>
+      <text x="422" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Weaving Length L_W &amp; VR</text>
+      <path d="M 495 49 L 515 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 4 -->
+      <rect x="520" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="590" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">4. Split Flows</text>
+      <text x="590" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">v_W and v_NW (pc/h)</text>
+      <!-- Connecting Downward Curve -->
+      <path d="M 590 78 C 590 98 480 100 480 105" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Row 2: Steps 5 to 7 -->
+      <!-- Step 5 -->
+      <rect x="20" y="105" width="200" height="60" rx="6" fill="rgba(99, 102, 241, 0.1)" stroke="#6366f1" stroke-width="1.6"/>
+      <text x="120" y="129" fill="#6366f1" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">5. Calculate Speeds (S_W, S_NW)</text>
+      <text x="120" y="147" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Separate regression formulas</text>
+      <path d="M 220 135 L 245 135" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 6 -->
+      <rect x="250" y="105" width="220" height="60" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1.6"/>
+      <text x="360" y="129" fill="#10b981" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">6. Weighted Harmonic Speed (S)</text>
+      <text x="360" y="147" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">S = (v_W + v_NW) / [v_W/S_W + v_NW/S_NW]</text>
+      <path d="M 470 135 L 495 135" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 7 -->
+      <rect x="500" y="105" width="160" height="60" rx="6" fill="rgba(245, 158, 11, 0.12)" stroke="#f59e0b" stroke-width="1.8"/>
+      <text x="580" y="129" fill="#f59e0b" font-size="12" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">7. Density &amp; LOS</text>
+      <text x="580" y="147" fill="currentColor" opacity="0.8" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">D = (v / N) / S → LOS A–F</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #0284c7;">
+      <strong>Volume Ratio ($VR$)</strong>
+      <p>$VR = v_W / v$, proportion of total flow that weaves.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>Harmonic Mean Speed</strong>
+      <p>Speeds must be averaged harmonically across vehicle volumes, not via simple arithmetic mean.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #f59e0b;">
+      <strong>Weaving LOS Thresholds</strong>
+      <p>LOS thresholds for weaving: $\le 10, 20, 28, 35, 43\text{ pc/mi/ln}$.</p>
+    </div>
+  </div>
+</div>
+
 
 ---
 

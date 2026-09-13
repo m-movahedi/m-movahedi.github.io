@@ -102,17 +102,80 @@ $$u_s = \frac{4}{\frac{1}{45.45} + \frac{1}{37.87} + \frac{1}{56.80} + \frac{1}{
 
 When speed data is collected, it is organized into a frequency distribution to analyze driver behavior.
 
-```
-Cumulative %
-  100% |                                      *
-   85% |                                 *---|
-   50% |                           *-----|   |
-   15% |                     *-----|     |   |
-    0% +---------------------+-----+-----+---+--
-                             |     |     |   |
-                            15th  50th  85th |
-                                 Speeds (mph)
-```
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>Cumulative Speed Distribution (S-Curve) &amp; Operational Percentiles</span>
+    </div>
+    <p class="diagram-caption">
+      Cumulative frequency distribution curve for spot speed studies. The 85th percentile speed governs regulatory speed limits, the 50th percentile reflects median operational speed, and the 10-mph pace defines the modal speed band.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-speed" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#94a3b8"/>
+        </marker>
+      </defs>
+      <!-- Plot Background -->
+      <rect x="70" y="20" width="560" height="190" rx="6" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.08)"/>
+      <!-- 10-mph Pace Shaded Band (Between x=320 [40mph] and x=440 [50mph]) -->
+      <rect x="310" y="20" width="130" height="190" fill="rgba(245, 158, 11, 0.08)"/>
+      <text x="375" y="38" fill="#f59e0b" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">10-mph Pace Window (~70% of Traffic)</text>
+      <!-- Gridlines -->
+      <line x1="70" y1="50" x2="630" y2="50" stroke="rgba(255, 255, 255, 0.06)" stroke-dasharray="3 3"/>
+      <line x1="70" y1="115" x2="630" y2="115" stroke="rgba(255, 255, 255, 0.06)" stroke-dasharray="3 3"/>
+      <line x1="70" y1="180" x2="630" y2="180" stroke="rgba(255, 255, 255, 0.06)" stroke-dasharray="3 3"/>
+      <!-- Axes -->
+      <line x1="70" y1="210" x2="645" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow-speed)"/>
+      <line x1="70" y1="210" x2="70" y2="10" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow-speed)"/>
+      <!-- Axis Labels -->
+      <text x="640" y="228" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="end">Observed Speed (mph)</text>
+      <text x="65" y="14" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="start">Cumulative Percentage (%)</text>
+      <!-- Y-Axis Percentile Marks -->
+      <text x="62" y="213" fill="#94a3b8" font-size="10" font-family="monospace" text-anchor="end">0%</text>
+      <text x="62" y="183" fill="#f43f5e" font-size="10" font-weight="700" font-family="monospace" text-anchor="end">15%</text>
+      <text x="62" y="118" fill="#6366f1" font-size="10" font-weight="700" font-family="monospace" text-anchor="end">50%</text>
+      <text x="62" y="53" fill="#10b981" font-size="10" font-weight="700" font-family="monospace" text-anchor="end">85%</text>
+      <text x="62" y="25" fill="#94a3b8" font-size="10" font-family="monospace" text-anchor="end">100%</text>
+      <!-- 85th Percentile Reference Lines -->
+      <line x1="70" y1="48" x2="465" y2="48" stroke="#10b981" stroke-width="1.6" stroke-dasharray="5 3"/>
+      <line x1="465" y1="48" x2="465" y2="210" stroke="#10b981" stroke-width="1.6" stroke-dasharray="5 3"/>
+      <circle cx="465" cy="48" r="5" fill="#10b981"/>
+      <text x="465" y="226" fill="#10b981" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">85th (52 mph)</text>
+      <!-- 50th Percentile Reference Lines -->
+      <line x1="70" y1="115" x2="365" y2="115" stroke="#6366f1" stroke-width="1.6" stroke-dasharray="5 3"/>
+      <line x1="365" y1="115" x2="365" y2="210" stroke="#6366f1" stroke-width="1.6" stroke-dasharray="5 3"/>
+      <circle cx="365" cy="115" r="5" fill="#6366f1"/>
+      <text x="365" y="226" fill="#6366f1" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">50th / Median (45 mph)</text>
+      <!-- 15th Percentile Reference Lines -->
+      <line x1="70" y1="181" x2="265" y2="181" stroke="#f43f5e" stroke-width="1.6" stroke-dasharray="5 3"/>
+      <line x1="265" y1="181" x2="265" y2="210" stroke="#f43f5e" stroke-width="1.6" stroke-dasharray="5 3"/>
+      <circle cx="265" cy="181" r="5" fill="#f43f5e"/>
+      <text x="265" y="226" fill="#f43f5e" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">15th (38 mph)</text>
+      <!-- Cumulative S-Curve (Smooth Sigmoid) -->
+      <path d="M 120 208 C 220 205 270 185 320 150 C 370 115 410 70 470 45 C 530 25 580 21 610 20" stroke="#0284c7" stroke-width="3.2" stroke-linecap="round"/>
+      <text x="590" y="40" fill="#0284c7" font-size="12" font-weight="700" font-family="system-ui, sans-serif">Cumulative S-Curve</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>85th Percentile (Speed Limit)</strong>
+      <p>Standard design speed threshold; captures the speed 85% of prudent drivers do not exceed.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #6366f1;">
+      <strong>50th Percentile (Median)</strong>
+      <p>Middle velocity of the stream (half faster, half slower).</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #f59e0b;">
+      <strong>10-mph Pace</strong>
+      <p>10-mph speed interval containing the modal bulk (typically 60%–80%) of vehicles.</p>
+    </div>
+  </div>
+</div>
+
 
 - **85th Percentile Speed:** The speed at or below which $85\%$ of the vehicles travel. This is the industry standard used to establish **regulatory speed limits**, under the assumption that $85\%$ of drivers naturally choose a safe and reasonable speed.
 - **50th Percentile Speed (Median Speed):** The speed at which half the vehicles are traveling faster and half are traveling slower.

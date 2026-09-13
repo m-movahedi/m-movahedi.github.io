@@ -45,11 +45,60 @@ For standard intersections with single lanes on all approaches and no turn restr
 | **Standard 3-Leg (T) Intersection** | 3 | 3 | 3 | **9** |
 | **Single-Lane Roundabout** | 0 | 4 | 4 | **8** |
 
-```mermaid
-graph TD
-    A[Traditional 4-Leg: 32 Conflict Points] -->|Reduce conflicts| B[Convert to Roundabout: 8 Conflict Points]
-    A -->|Reduce conflicts| C[Restrict turns: e.g., Right-In/Right-Out]
-```
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>Intersection Conflict Reduction Strategies</span>
+    </div>
+    <p class="diagram-caption">
+      Comparison of vehicular conflict points across intersection types. Converting a standard 4-leg intersection to a modern roundabout completely eliminates high-severity crossing conflicts (from 16 down to 0) and reduces total conflict points by 75%.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-conflict" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+      </defs>
+      <!-- Card 1: Traditional 4-Leg (Source) -->
+      <rect x="20" y="30" width="200" height="120" rx="8" fill="rgba(239, 68, 68, 0.08)" stroke="#ef4444" stroke-width="1.8"/>
+      <text x="120" y="55" fill="#ef4444" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Traditional 4-Leg</text>
+      <text x="120" y="75" fill="currentColor" opacity="0.9" font-size="18" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">32 Conflicts</text>
+      <line x1="35" y1="85" x2="205" y2="85" stroke="#ef4444" stroke-width="1" stroke-opacity="0.3"/>
+      <text x="120" y="103" fill="#ef4444" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">16 Crossing (Severe)</text>
+      <text x="120" y="120" fill="currentColor" opacity="0.75" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">8 Merge • 8 Diverge</text>
+      <text x="120" y="137" fill="#ef4444" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">High Angle/T-Bone Risk</text>
+      <!-- Connecting Arrows -->
+      <path d="M 220 70 L 300 50" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow-conflict)"/>
+      <text x="255" y="48" fill="#6366f1" font-size="10" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Roundabout</text>
+      <path d="M 220 110 L 300 130" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow-conflict)"/>
+      <text x="255" y="132" fill="#6366f1" font-size="10" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Restriction</text>
+      <!-- Card 2: Modern Roundabout (Top Solution) -->
+      <rect x="310" y="10" width="345" height="75" rx="8" fill="rgba(16, 185, 129, 0.08)" stroke="#10b981" stroke-width="1.8"/>
+      <text x="325" y="32" fill="#10b981" font-size="13" font-weight="700" font-family="system-ui, sans-serif">Single-Lane Roundabout: 8 Conflicts (-75%)</text>
+      <text x="325" y="50" fill="currentColor" opacity="0.85" font-size="11" font-family="system-ui, sans-serif">0 Crossing Conflicts (Eliminates high-speed T-bone collisions)</text>
+      <text x="325" y="68" fill="#10b981" font-size="11" font-weight="600" font-family="system-ui, sans-serif">4 Merging • 4 Diverging (Low-speed, low-angle maneuvers)</text>
+      <!-- Card 3: Access Management / RIRO (Bottom Solution) -->
+      <rect x="310" y="95" width="345" height="75" rx="8" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="325" y="117" fill="#0284c7" font-size="13" font-weight="700" font-family="system-ui, sans-serif">Turn Restrictions: RIRO / RCUT</text>
+      <text x="325" y="135" fill="currentColor" opacity="0.85" font-size="11" font-family="system-ui, sans-serif">Replaces direct left turns with right turns + downstream U-turns</text>
+      <text x="325" y="153" fill="#0284c7" font-size="11" font-weight="600" font-family="system-ui, sans-serif">Cuts crossing points by &gt; 50% while maintaining corridor throughput</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #ef4444;">
+      <strong>Crossing Conflicts (Most Dangerous)</strong>
+      <p>Vehicles cross paths at ~90°. Result in severe right-angle / T-bone injuries.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>The Roundabout Advantage</strong>
+      <p>Roundabouts convert crossing conflicts into gentle low-speed merges and diverges.</p>
+    </div>
+  </div>
+</div>
+
 
 ### Why Roundabouts are Safer
 A single-lane roundabout has **zero crossing conflicts** and only 8 total conflicts. All movements entering the roundabout yield and merge in the same direction, eliminating high-severity crossing maneuvers.

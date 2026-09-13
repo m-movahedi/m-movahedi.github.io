@@ -13,24 +13,105 @@ Horizontal curves provide smooth transitions between tangent sections of a highw
 
 ## Circular Curve Geometry and Terms
 
-Understanding the spatial layout and definitions of horizontal curve components is critical. 
+Understanding the spatial layout and definitions of horizontal curve components is critical.
 
-```mermaid
-graph TD
-    classDef point fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef line fill:#fff,stroke:#333,stroke-width:1px;
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>Horizontal Circular Curve Geometry and Components</span>
+    </div>
+    <p class="diagram-caption">
+      Geometric elements of a simple horizontal circular curve connecting two tangents. Tangent distances ($T$), radius ($R$), long chord ($LC$), curve length ($L$), external distance ($E$), and middle ordinate ($M$) are all uniquely determined by the radius $R$ and intersection angle $\Delta$.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-geo" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#94a3b8"/>
+        </marker>
+        <marker id="arrow-accent" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+      </defs>
+      <!-- Background Grid Panel -->
+      <rect x="20" y="15" width="640" height="310" rx="8" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.08)"/>
+      <!-- Center O Radial lines -->
+      <line x1="340" y1="290" x2="180" y2="160" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <line x1="340" y1="290" x2="500" y2="160" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <line x1="340" y1="290" x2="340" y2="45" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 3" opacity="0.6"/>
+      <!-- Central Angle Delta Arc at O -->
+      <path d="M 305 262 A 45 45 0 0 1 375 262" stroke="#f59e0b" stroke-width="1.8" fill="none"/>
+      <text x="340" y="252" fill="#f59e0b" font-size="12" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Δ (Central Angle)</text>
+      <!-- Tangents -->
+      <line x1="60" y1="257" x2="340" y2="45" stroke="#0284c7" stroke-width="2.2"/>
+      <line x1="340" y1="45" x2="620" y2="257" stroke="#0284c7" stroke-width="2.2"/>
+      <!-- Tangent Deflection Extension Line -->
+      <line x1="340" y1="45" x2="440" y2="-31" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3"/>
+      <!-- Deflection Angle Delta at PI -->
+      <path d="M 385 11 A 55 55 0 0 1 405 94" stroke="#f59e0b" stroke-width="1.6" fill="none"/>
+      <text x="415" y="42" fill="#f59e0b" font-size="11" font-weight="700" font-family="system-ui, sans-serif">Δ (Deflection)</text>
+      <!-- Circular Arc Curve (L) -->
+      <path d="M 180 160 A 206 206 0 0 1 500 160" stroke="#10b981" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Long Chord (LC) -->
+      <line x1="180" y1="160" x2="500" y2="160" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="6 4"/>
+      <!-- External Distance E and Middle Ordinate M on centerline -->
+      <!-- Apex is at (340, 126.8), Chord midpoint is at (340, 160) -->
+      <line x1="340" y1="45" x2="340" y2="127" stroke="#ec4899" stroke-width="2.2"/>
+      <line x1="340" y1="127" x2="340" y2="160" stroke="#f97316" stroke-width="2.2"/>
+      <!-- Dimension Callouts -->
+      <!-- Tangent Length T labels -->
+      <text x="245" y="90" fill="#0284c7" font-size="12" font-weight="700" font-family="system-ui, sans-serif" transform="rotate(-37 245 90)">Tangent Length T</text>
+      <text x="435" y="90" fill="#0284c7" font-size="12" font-weight="700" font-family="system-ui, sans-serif" transform="rotate(37 435 90)">Tangent Length T</text>
+      <!-- Radius R labels -->
+      <text x="240" y="240" fill="#94a3b8" font-size="12" font-weight="700" font-family="system-ui, sans-serif" transform="rotate(39 240 240)">Radius R</text>
+      <text x="440" y="240" fill="#94a3b8" font-size="12" font-weight="700" font-family="system-ui, sans-serif" transform="rotate(-39 440 240)">Radius R</text>
+      <!-- Curve Length L Label -->
+      <text x="340" y="112" fill="#10b981" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Curve Length (L)</text>
+      <!-- Long Chord LC Label -->
+      <text x="340" y="178" fill="#8b5cf6" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">Long Chord (LC)</text>
+      <!-- E and M Labels -->
+      <text x="352" y="85" fill="#ec4899" font-size="11" font-weight="700" font-family="system-ui, sans-serif">E (External)</text>
+      <text x="352" y="148" fill="#f97316" font-size="11" font-weight="700" font-family="system-ui, sans-serif">M (Middle Ord.)</text>
+      <!-- Points (PC, PI, PT, O) -->
+      <!-- Point O -->
+      <circle cx="340" cy="290" r="5" fill="#f59e0b"/>
+      <text x="340" y="315" fill="#f59e0b" font-size="12" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">O (Curve Center)</text>
+      <!-- Point PI -->
+      <circle cx="340" cy="45" r="6" fill="#0284c7"/>
+      <circle cx="340" cy="45" r="10" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="3 2"/>
+      <text x="340" y="30" fill="#0284c7" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">PI (Point of Intersection)</text>
+      <!-- Point PC -->
+      <circle cx="180" cy="160" r="6" fill="#10b981"/>
+      <circle cx="180" cy="160" r="10" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 2"/>
+      <text x="155" y="145" fill="#10b981" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="end">PC (Point of Curvature)</text>
+      <!-- Point PT -->
+      <circle cx="500" cy="160" r="6" fill="#10b981"/>
+      <circle cx="500" cy="160" r="10" stroke="#10b981" stroke-width="1.5" stroke-dasharray="3 2"/>
+      <text x="525" y="145" fill="#10b981" font-size="13" font-weight="700" font-family="system-ui, sans-serif" text-anchor="start">PT (Point of Tangency)</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>Arc & Tangents ($L, T$)</strong>
+      <p>$T = R \tan(\Delta/2)$, $L = \frac{\pi R \Delta}{180^\circ}$.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #8b5cf6;">
+      <strong>Long Chord ($LC$)</strong>
+      <p>$LC = 2R \sin(\Delta/2)$, straight distance from PC to PT.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #ec4899;">
+      <strong>External Distance ($E$)</strong>
+      <p>$E = R \left[\frac{1}{\cos(\Delta/2)} - 1\right] = R [\sec(\Delta/2) - 1]$.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #f97316;">
+      <strong>Middle Ordinate ($M$)</strong>
+      <p>$M = R [1 - \cos(\Delta/2)]$, distance from chord to curve apex.</p>
+    </div>
+  </div>
+</div>
 
-    PI((PI: Point of Intersection)):::point
-    PC((PC: Point of Curvature)):::point
-    PT((PT: Point of Tangency)):::point
-    O((O: Center of Curve)):::point
-
-    PC -->|Tangent Length T| PI
-    PI -->|Tangent Length T| PT
-    PC -->|Radius R| O
-    PT -->|Radius R| O
-    PC -.->|Long Chord LC| PT
-```
 
 ### Definitions:
 *   **PI (Point of Intersection):** The point where the back tangent and forward tangent intersect.

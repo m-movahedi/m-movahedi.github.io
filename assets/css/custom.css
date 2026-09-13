@@ -1086,3 +1086,96 @@ main#content {
     margin-top: 86px;
   }
 }
+
+/* ==========================================================================
+   Universal Responsive Diagram Cards & Vector Visualizations
+   ========================================================================== */
+.diagram-card {
+  margin: 2.25rem 0;
+  padding: 1.4rem;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.diagram-card:hover {
+  border-color: rgba(var(--accent-rgb), 0.35);
+  box-shadow: 0 8px 30px var(--shadow-color);
+}
+
+.diagram-header {
+  margin-bottom: 1.25rem;
+}
+
+.diagram-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--display-accent-color);
+  letter-spacing: -0.015em;
+  margin-bottom: 0.35rem;
+}
+
+.diagram-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.6);
+}
+
+.diagram-caption {
+  font-size: 0.88rem;
+  color: var(--muted-color);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.diagram-svg-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 0;
+}
+
+.diagram-svg-wrap svg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.diagram-badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.diagram-badge {
+  padding: 0.75rem 1rem;
+  background: rgba(var(--accent-rgb), 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.diagram-badge strong {
+  display: block;
+  font-size: 0.88rem;
+  margin-bottom: 0.2rem;
+  color: var(--text-color);
+}
+
+.diagram-badge p {
+  margin: 0;
+  color: var(--muted-color);
+}
