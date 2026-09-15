@@ -4,10 +4,7 @@ weight: 73
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Traffic Signal Design and Plans
-
-Traffic signal design plans are highly detailed engineering documents that specify the physical layout, structural support, electrical wiring, and detection systems for a signalized intersection. 
+---Traffic signal design plans are highly detailed engineering documents that specify the physical layout, structural support, electrical wiring, and detection systems for a signalized intersection. 
 
 On the PE Civil Transportation exam, you must understand the MUTCD design standards for signal head placement, detection technologies, support configurations, and conduit fill calculations.
 

@@ -30,12 +30,12 @@ These are different jobs:
 
 <div class="llm-diagram-container" id="diagram-202">
   <div class="llm-diagram-header">
-    <h4>The Toolchain Divide</h4>
+    <h3>The Toolchain Divide</h3>
     <p>Click a tool to see its primary job</p>
   </div>
   <div class="llm-flow-layout">
     <div style="text-align:center;">
-      <h5 style="margin-bottom:0.5rem;">Python Management</h5>
+      <h4 style="margin-bottom:0.5rem;">Python Management</h4>
       <div class="llm-node" data-target="panel-202-uv">
         <div class="llm-node-title">uv / uvx</div>
         <div class="llm-node-subtitle">Dependencies & CLI Tools</div>
@@ -43,7 +43,7 @@ These are different jobs:
     </div>
     <div class="llm-edge">← Integrates →</div>
     <div style="text-align:center;">
-      <h5 style="margin-bottom:0.5rem;">Local Models</h5>
+      <h4 style="margin-bottom:0.5rem;">Local Models</h4>
       <div class="llm-stack-layout" style="gap:0.2rem;">
         <div class="llm-node" data-target="panel-202-ollama">
           <div class="llm-node-title">Ollama</div>
@@ -59,15 +59,15 @@ These are different jobs:
   </div>
   <div class="llm-detail-panel" id="detail-202">
     <div id="panel-202-uv" class="llm-panel-content" style="display:none;">
-      <h5>uv and uvx</h5>
+      <h4>uv and uvx</h4>
       <p>Use <code>uv</code> to manage your Python projects, and <code>uvx</code> to run isolated scripts (like evals) without breaking your environment.</p>
     </div>
     <div id="panel-202-ollama" class="llm-panel-content" style="display:none;">
-      <h5>Ollama (Runtime)</h5>
+      <h4>Ollama (Runtime)</h4>
       <p>Downloads models and exposes them via a local API (e.g., <code>localhost:11434</code>). Your Python scripts talk to this API, not the model directly.</p>
     </div>
     <div id="panel-202-model" class="llm-panel-content" style="display:none;">
-      <h5>Model File</h5>
+      <h4>Model File</h4>
       <p>The actual neural network. Managed and loaded by Ollama.</p>
     </div>
   </div>

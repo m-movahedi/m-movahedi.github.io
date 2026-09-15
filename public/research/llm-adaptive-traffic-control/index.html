@@ -1,7 +1,594 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>The Crossroads of LLMs and Traffic Control</title><meta name=description content=" 🚦 The Urban Gridlock Challenge Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems …"><meta name=keywords content='Large Language Models,Intelligent Transportation Systems,Traffic Signal Control,Adaptive Control,Reinforcement Learning,Traffic Modeling,Intelligent Transportation'><meta property="og:url" content="https://m-movahedi.com/research/llm-adaptive-traffic-control/"><meta property="og:type" content="website"><meta property="og:title" content="The Crossroads of LLMs and Traffic Control"><meta property="og:description" content=" 🚦 The Urban Gridlock Challenge Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems …"><meta property="og:image" content="https://m-movahedi.com/images/transparent.png"><meta property="og:image:secure_url" content="https://m-movahedi.com/images/transparent.png"><meta name=twitter:card content="summary"><meta name=twitter:title content="The Crossroads of LLMs and Traffic Control"><meta name=twitter:description content=" 🚦 The Urban Gridlock Challenge Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems …"><meta property="twitter:domain" content="https://m-movahedi.com/research/llm-adaptive-traffic-control/"><meta property="twitter:url" content="https://m-movahedi.com/research/llm-adaptive-traffic-control/"><meta name=twitter:image content="https://m-movahedi.com/images/transparent.png"><link rel=canonical href=https://m-movahedi.com/research/llm-adaptive-traffic-control/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><script src=/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script><link rel=icon type=image/png href=/favicon.png><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href=/css/llm-series.css><link rel=stylesheet href=/css/hbm-series.css><link rel=stylesheet href=/css/llm-diagrams.css><link rel=stylesheet href=/css/tm-series.css><link rel=stylesheet href=/css/mc-series.css><script defer src=/js/hbm-widgets.js></script><script defer src=/js/llm-diagrams.js></script><script defer src=/js/tm-series.js></script><script defer src=/js/mc-scrollytelling.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-1WZSE8DHZ9")</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css integrity=sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js integrity=sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js integrity=sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script><link rel=stylesheet href=/css/custom.min.18ec29952add11924d403cdc5312cbc8a1ccdfa9f875450326ee02939271a377.css><link id=dark-theme rel=stylesheet href=/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://m-movahedi.com/><img src=/images/profile.png alt="Mohammad Movahedi"></a></div><div class=nav-title><a class=nav-brand href=https://m-movahedi.com/>Mohammad Movahedi</a></div><div class=nav-links><div class=nav-link><a href=https://m-movahedi.com/ aria-label>Home</a></div><div class=nav-link><a href=https://m-movahedi.com/background/ aria-label>Background</a></div><div class=nav-link><a href=https://m-movahedi.com/webinars/ aria-label>Webinars</a></div><div class=nav-link><a href=https://m-movahedi.com/research/ aria-label>Research</a></div><div class=nav-link><a href=https://m-movahedi.com/blog/ aria-label>Blog</a></div><div class=nav-link><a href=https://m-movahedi.com/scratchpad/ aria-label>Scratchpad</a></div><div class=nav-link><a href=https://m-movahedi.com/about/ aria-label>About</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://m-movahedi.com/>Home</a></li><li class=nav-item><a href=https://m-movahedi.com/background/>Background</a></li><li class=nav-item><a href=https://m-movahedi.com/webinars/>Webinars</a></li><li class=nav-item><a href=https://m-movahedi.com/research/>Research</a></li><li class=nav-item><a href=https://m-movahedi.com/blog/>Blog</a></li><li class=nav-item><a href=https://m-movahedi.com/scratchpad/>Scratchpad</a></li><li class=nav-item><a href=https://m-movahedi.com/about/>About</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>The Crossroads of LLMs and Traffic Control</h1><small role=doc-subtitle></small><p class=post-date>December 16, 2024</p><ul class=post-tags><li class=post-tag><a href=https://m-movahedi.com/tags/large-language-models>Large Language Models</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/intelligent-transportation-systems>Intelligent Transportation Systems</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/traffic-signal-control>Traffic Signal Control</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/adaptive-control>Adaptive Control</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/reinforcement-learning>Reinforcement Learning</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/traffic-modeling>Traffic Modeling</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/intelligent-transportation>Intelligent Transportation</a></li></ul></div><div class=post-content><div style="background-color:#e8f4f8;border-left:6px solid #3498db;padding:15px 20px;border-radius:4px;margin-bottom:30px;box-shadow:0 2px 4px rgba(0,0,0,5%)"><h4 style=margin-top:0;color:#2c3e50;display:flex;align-items:center><span style=font-size:1.5em;margin-right:10px>🚦</span> The Urban Gridlock Challenge</h4><p style=margin-bottom:0;color:#34495e>Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems (ATCS)—which rely on fixed-time, gap-based, or delay-based logic—often struggle to adapt to dynamic, complex, and unpredictable real-world traffic flows. Designing a truly responsive traffic controller requires a system capable of human-like <strong>reasoning and planning</strong>.</p></div><p>Our latest research, published in <em>IEEE Transactions on Intelligent Transportation Systems</em>, explores a groundbreaking application of Generative AI: utilizing <strong>Large Language Models (LLMs)</strong> as the core cognitive engine for Adaptive Traffic Signal Control.</p><h3 id=why-llms-for-traffic-signals>Why LLMs for Traffic Signals?</h3><p>Recent advancements have demonstrated that LLMs possess vast knowledge bases and sophisticated understanding of interrelations, enabling them to act as highly capable agents. We developed a novel framework that applies these cognitive abilities to traffic management.</p><p>Instead of hard-coded rules, the LLM-based agent perceives the real-time traffic state (e.g., queue lengths, waiting times) and logically reasons through the optimal sequence of green and red lights to alleviate congestion.</p><h3 id=the-gca-framework-learning-from-interaction>The GCA Framework: Learning from Interaction</h3><p>In our study, we introduced two types of LLM traffic controllers:</p><ol><li><strong>Zero-Shot Chain of Thought (CoT):</strong> The agent relies purely on logical deduction without prior interaction.</li><li><strong>Generally Capable Agent (GCA):</strong> A more advanced approach where the agent actively integrates new knowledge from its environmental interactions, continuously enhancing its reasoning and planning capabilities.</li></ol><style>.traffic-dash{font-family:segoe ui,Tahoma,Geneva,Verdana,sans-serif;background:#1e272e;border-radius:12px;padding:30px;color:#d2dae2;margin:30px 0;box-shadow:0 10px 25px rgba(0,0,0,.2);display:grid;grid-template-columns:1fr 1.2fr;gap:20px}.td-section{background:#2c3e50;border-radius:8px;padding:20px;border:1px solid #34495e;position:relative;overflow:hidden}.td-title{font-size:1.1em;font-weight:600;color:#0fb9b1;margin-bottom:20px;text-transform:uppercase;letter-spacing:1px}.td-stats{display:flex;justify-content:space-around;text-align:center}.td-stat-val{font-size:2.2em;font-weight:700;color:#0be881}.td-stat-label{font-size:.75em;color:#808e9b;text-transform:uppercase;font-weight:700}.td-intersection{width:120px;height:120px;background:#3d3d3d;margin:30px auto 10px;position:relative;border-radius:5px}.road-v,.road-h{position:absolute;background:#575fcf}.road-v{top:0;bottom:0;left:40px;right:40px}.road-h{left:0;right:0;top:40px;bottom:40px}.td-light{width:12px;height:12px;border-radius:50%;position:absolute;background:#ff3f34;box-shadow:0 0 10px rgba(255,63,52,.8);animation:pulse-light 2s infinite alternate}@keyframes pulse-light{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.2);opacity:1}}.td-light-n{top:22px;left:54px;background:#0be881;box-shadow:0 0 10px rgba(11,232,129,.8)}.td-light-s{bottom:22px;left:54px;background:#0be881;box-shadow:0 0 10px rgba(11,232,129,.8)}.td-light-e{top:54px;right:22px}.td-light-w{top:54px;left:22px}.td-flow{display:flex;flex-direction:column;gap:12px}.td-step{background:#3c6382;padding:12px 15px;border-radius:6px;font-size:.85em;display:flex;align-items:center;gap:15px;transition:transform .3s;cursor:default}.td-step:hover{transform:translateX(10px);background:#0fb9b1;color:#1e272e}.td-step-num{background:rgba(0,0,0,.2);min-width:28px;height:28px;display:flex;justify-content:center;align-items:center;border-radius:50%;font-weight:700;font-size:1.1em}@media(max-width:768px){.traffic-dash{grid-template-columns:1fr}}</style><div class=traffic-dash><div class=td-section><div class=td-title>GCA Controller Performance</div><div class=td-stats><div><div class=td-stat-val>↓48%</div><div class=td-stat-label>Halted Vehicles</div></div><div><div class=td-stat-val>↑25%</div><div class=td-stat-label>Average Speed</div></div></div><div class=td-intersection><div class=road-v></div><div class=road-h></div><div class="td-light td-light-n"></div><div class="td-light td-light-s"></div><div class="td-light td-light-e"></div><div class="td-light td-light-w"></div></div></div><div class=td-section><div class=td-title>The GCA Reasoning Loop</div><div class=td-flow><div class=td-step><div class=td-step-num>1</div><div><strong>Environment State:</strong> LLM processes real-time traffic data (queue lengths, delays) from the SUMO simulation.</div></div><div class=td-step><div class=td-step-num>2</div><div><strong>Reasoning & Planning:</strong> LLM analyzes current constraints and formulates a plan to maximize throughput.</div></div><div class=td-step><div class=td-step-num>3</div><div><strong>Action Selection:</strong> Generates diverse phase patterns dynamically to adapt to sudden traffic changes.</div></div><div class=td-step><div class=td-step-num>4</div><div><strong>Feedback Integration:</strong> The outcome updates the LLM's knowledge base, improving future decisions.</div></div></div></div></div><p style=text-align:center;font-size:.85em;color:#666;font-style:italic;margin-top:-15px>Interactive Dashboard: Evaluating the GCA-based LLM Traffic Controller.</p><h3 id=simulation-results--impact>Simulation Results & Impact</h3><p>We implemented and compared these controllers within a simulated traffic flow scenario at a single intersection using the <strong>Simulation of Urban Mobility (SUMO)</strong>. The LLM agents were pitted against conventional traffic control methods, including fixed-time, gap-based, and delay-based controllers.</p><p>The results were remarkable. The GCA-based controllers notably outperformed traditional systems:</p><ul><li><strong>Reduced Congestion:</strong> Halted vehicle numbers plummeted by <strong>48.03%</strong>.</li><li><strong>Improved Flow:</strong> The average vehicle speed across the intersection increased by <strong>25.29%</strong>.</li></ul><p>Furthermore, unlike static systems, the LLM controllers exhibited superior flexibility, generating diverse phase patterns that dynamically adapted to wildly changing traffic conditions in real-time.</p><h3 id=looking-ahead>Looking Ahead</h3><p>This study underscores the transformative potential of Large Language Models in traffic management. By injecting human-like reasoning and planning into urban infrastructure, we are looking at significant enhancements in efficiency, responsiveness, and versatility. Ultimately, LLM-driven ATCS has the potential to dramatically improve urban life by mitigating the economic and environmental impacts of severe traffic congestion.</p><p><em>For full details, read the paper in <a href=https://ieeexplore.ieee.org/document/10768207/>IEEE Transactions on Intelligent Transportation Systems</a>.</em></p><pre><code>@article{Movahedi2024,
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>The Crossroads of LLMs and Traffic Control | Mohammad Movahedi</title>
+    <meta name="description" content="🚦 The Urban Gridlock ChallengeUrban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems …">
+    
+    <meta name="keywords" content='Large Language Models, Intelligent Transportation Systems, Traffic Signal Control, Adaptive Control, Reinforcement Learning, Traffic Modeling, Intelligent Transportation'>
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+        
+      
+    
+    <meta property="og:url" content="http://localhost:1313/research/llm-adaptive-traffic-control/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="The Crossroads of LLMs and Traffic Control | Mohammad Movahedi">
+    <meta property="og:description" content="🚦 The Urban Gridlock ChallengeUrban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The Crossroads of LLMs and Traffic Control">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="The Crossroads of LLMs and Traffic Control | Mohammad Movahedi">
+    <meta name="twitter:description" content="🚦 The Urban Gridlock ChallengeUrban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/research/llm-adaptive-traffic-control/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/research/llm-adaptive-traffic-control/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "\"The Crossroads of LLMs and Traffic Control\"",
+  "description": "\"\\r🚦 The Urban Gridlock Challenge\\rUrban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems …\"",
+  "url": "http:\/\/localhost:1313\/research\/llm-adaptive-traffic-control\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/research\/llm-adaptive-traffic-control\/"
+  },
+  "datePublished": "2024-12-16T00:00:00Z",
+  "dateModified": "2024-12-16T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Research\"",
+      "item": "https:\/\/m-movahedi.com\/research\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"The Crossroads of LLMs and Traffic Control\"",
+      "item": "http:\/\/localhost:1313\/research\/llm-adaptive-traffic-control\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.46f64924e715031ec2daf5fad084fa1e35a175ab207cff3c6daf5eaf942796d4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>The Crossroads of LLMs and Traffic Control</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              December 16, 2024
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/large-language-models">Large Language Models</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/intelligent-transportation-systems">Intelligent Transportation Systems</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/traffic-signal-control">Traffic Signal Control</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/adaptive-control">Adaptive Control</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/reinforcement-learning">Reinforcement Learning</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/traffic-modeling">Traffic Modeling</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/intelligent-transportation">Intelligent Transportation</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <div style="background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <h2 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🚦</span> The Urban Gridlock Challenge</h2>
+  <p style="margin-bottom: 0; color: #34495e;">Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems (ATCS)—which rely on fixed-time, gap-based, or delay-based logic—often struggle to adapt to dynamic, complex, and unpredictable real-world traffic flows. Designing a truly responsive traffic controller requires a system capable of human-like <strong>reasoning and planning</strong>.</p>
+</div>
+<p>Our latest research, published in <em>IEEE Transactions on Intelligent Transportation Systems</em>, explores a groundbreaking application of Generative AI: utilizing <strong>Large Language Models (LLMs)</strong> as the core cognitive engine for Adaptive Traffic Signal Control.</p>
+<h3 id="why-llms-for-traffic-signals">Why LLMs for Traffic Signals?</h3>
+<p>Recent advancements have demonstrated that LLMs possess vast knowledge bases and sophisticated understanding of interrelations, enabling them to act as highly capable agents. We developed a novel framework that applies these cognitive abilities to traffic management.</p>
+<p>Instead of hard-coded rules, the LLM-based agent perceives the real-time traffic state (e.g., queue lengths, waiting times) and logically reasons through the optimal sequence of green and red lights to alleviate congestion.</p>
+<h3 id="the-gca-framework-learning-from-interaction">The GCA Framework: Learning from Interaction</h3>
+<p>In our study, we introduced two types of LLM traffic controllers:</p>
+<ol>
+<li><strong>Zero-Shot Chain of Thought (CoT):</strong> The agent relies purely on logical deduction without prior interaction.</li>
+<li><strong>Generally Capable Agent (GCA):</strong> A more advanced approach where the agent actively integrates new knowledge from its environmental interactions, continuously enhancing its reasoning and planning capabilities.</li>
+</ol>
+<style>
+.traffic-dash {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e272e;
+  border-radius: 12px;
+  padding: 30px;
+  color: #d2dae2;
+  margin: 30px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
+}
+.td-section {
+  background: #2c3e50;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #34495e;
+  position: relative;
+  overflow: hidden;
+}
+.td-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #0fb9b1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.td-stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.td-stat-val {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #0be881;
+}
+.td-stat-label {
+  font-size: 0.75em;
+  color: #808e9b;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.td-intersection {
+  width: 120px;
+  height: 120px;
+  background: #3d3d3d;
+  margin: 30px auto 10px;
+  position: relative;
+  border-radius: 5px;
+}
+.road-v, .road-h {
+  position: absolute;
+  background: #575fcf;
+}
+.road-v { top: 0; bottom: 0; left: 40px; right: 40px; }
+.road-h { left: 0; right: 0; top: 40px; bottom: 40px; }
+.td-light {
+  width: 12px; height: 12px; border-radius: 50%; position: absolute; background: #ff3f34;
+  box-shadow: 0 0 10px rgba(255, 63, 52, 0.8);
+  animation: pulse-light 2s infinite alternate;
+}
+@keyframes pulse-light {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.2); opacity: 1; }
+}
+.td-light-n { top: 22px; left: 54px; background: #0be881; box-shadow: 0 0 10px rgba(11, 232, 129, 0.8); }
+.td-light-s { bottom: 22px; left: 54px; background: #0be881; box-shadow: 0 0 10px rgba(11, 232, 129, 0.8); }
+.td-light-e { top: 54px; right: 22px; }
+.td-light-w { top: 54px; left: 22px; }
+
+/* Framework Diagram */
+.td-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.td-step {
+  background: #3c6382;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s;
+  cursor: default;
+}
+.td-step:hover {
+  transform: translateX(10px);
+  background: #0fb9b1;
+  color: #1e272e;
+}
+.td-step-num {
+  background: rgba(0,0,0,0.2);
+  min-width: 28px; height: 28px;
+  display: flex; justify-content: center; align-items: center;
+  border-radius: 50%; font-weight: bold;
+  font-size: 1.1em;
+}
+@media (max-width: 768px) {
+  .traffic-dash { grid-template-columns: 1fr; }
+}
+</style>
+<div class="traffic-dash">
+  <div class="td-section">
+    <div class="td-title">GCA Controller Performance</div>
+    <div class="td-stats">
+      <div>
+        <div class="td-stat-val">↓48%</div>
+        <div class="td-stat-label">Halted Vehicles</div>
+      </div>
+      <div>
+        <div class="td-stat-val">↑25%</div>
+        <div class="td-stat-label">Average Speed</div>
+      </div>
+    </div>
+    <div class="td-intersection">
+      <div class="road-v"></div>
+      <div class="road-h"></div>
+      <div class="td-light td-light-n"></div>
+      <div class="td-light td-light-s"></div>
+      <div class="td-light td-light-e"></div>
+      <div class="td-light td-light-w"></div>
+    </div>
+  </div>
+  <div class="td-section">
+    <div class="td-title">The GCA Reasoning Loop</div>
+    <div class="td-flow">
+      <div class="td-step"><div class="td-step-num">1</div> <div><strong>Environment State:</strong> LLM processes real-time traffic data (queue lengths, delays) from the SUMO simulation.</div></div>
+      <div class="td-step"><div class="td-step-num">2</div> <div><strong>Reasoning & Planning:</strong> LLM analyzes current constraints and formulates a plan to maximize throughput.</div></div>
+      <div class="td-step"><div class="td-step-num">3</div> <div><strong>Action Selection:</strong> Generates diverse phase patterns dynamically to adapt to sudden traffic changes.</div></div>
+      <div class="td-step"><div class="td-step-num">4</div> <div><strong>Feedback Integration:</strong> The outcome updates the LLM's knowledge base, improving future decisions.</div></div>
+    </div>
+  </div>
+</div>
+<p style="text-align: center; font-size: 0.85em; color: #666; font-style: italic; margin-top: -15px;">Interactive Dashboard: Evaluating the GCA-based LLM Traffic Controller.</p>
+<h3 id="simulation-results--impact">Simulation Results &amp; Impact</h3>
+<p>We implemented and compared these controllers within a simulated traffic flow scenario at a single intersection using the <strong>Simulation of Urban Mobility (SUMO)</strong>. The LLM agents were pitted against conventional traffic control methods, including fixed-time, gap-based, and delay-based controllers.</p>
+<p>The results were remarkable. The GCA-based controllers notably outperformed traditional systems:</p>
+<ul>
+<li><strong>Reduced Congestion:</strong> Halted vehicle numbers plummeted by <strong>48.03%</strong>.</li>
+<li><strong>Improved Flow:</strong> The average vehicle speed across the intersection increased by <strong>25.29%</strong>.</li>
+</ul>
+<p>Furthermore, unlike static systems, the LLM controllers exhibited superior flexibility, generating diverse phase patterns that dynamically adapted to wildly changing traffic conditions in real-time.</p>
+<h3 id="looking-ahead">Looking Ahead</h3>
+<p>This study underscores the transformative potential of Large Language Models in traffic management. By injecting human-like reasoning and planning into urban infrastructure, we are looking at significant enhancements in efficiency, responsiveness, and versatility. Ultimately, LLM-driven ATCS has the potential to dramatically improve urban life by mitigating the economic and environmental impacts of severe traffic congestion.</p>
+<p><em>For full details, read the paper in <a href="https://ieeexplore.ieee.org/document/10768207/">IEEE Transactions on Intelligent Transportation Systems</a>.</em></p>
+<pre><code>@article{Movahedi2024,
 author = {Movahedi, Mohammad and Choi, Juyeong},
 doi = {10.1109/TITS.2024.3498735},
 issn = {1524-9050},
@@ -11,9 +598,150 @@ title = {{The Crossroads of LLM and Traffic Control: A Study on Large Language M
 url = {https://ieeexplore.ieee.org/document/10768207/},
 year = {2024}
 }
-</code></pre></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/research/ev-charging-network-hurricane-ian/>&#8592;
-Previous:
-Network Robustness of EV Charging Infrastructure During Extreme Weather</a></p><p class=prev-post-date>June 15, 2024</p></div><div class=next-post><p><a href=/research/generative-ai-virtual-reality-a-training-tool/>Next:
-Generative AI + Virtual Reality: A training tool
-&#8594;</a></p><p class=next-post-date>July 8, 2025</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>© 2017-2026 / Mohammad Movahedi. All rights reserved</a>.</span></footer></body></html>
+</code></pre>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/research/ev-charging-network-hurricane-ian/">
+                &#8592;
+                Previous:
+                Network Robustness of EV Charging Infrastructure During Extreme Weather
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 15, 2024
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/research/generative-ai-virtual-reality-a-training-tool/">
+                Next:
+                Generative AI + Virtual Reality: A training tool
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            July 8, 2025
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

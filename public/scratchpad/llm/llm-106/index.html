@@ -1,28 +1,821 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>LLM 106: Fine-Tuning, Adaptation, and When to Train</title><meta name=description content="In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you …"><meta name=keywords content><meta property="og:url" content="https://m-movahedi.com/scratchpad/llm/llm-106/"><meta property="og:type" content="website"><meta property="og:title" content="LLM 106: Fine-Tuning, Adaptation, and When to Train"><meta property="og:description" content="In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you …"><meta property="og:image" content="https://m-movahedi.com/images/transparent.png"><meta property="og:image:secure_url" content="https://m-movahedi.com/images/transparent.png"><meta name=twitter:card content="summary"><meta name=twitter:title content="LLM 106: Fine-Tuning, Adaptation, and When to Train"><meta name=twitter:description content="In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you …"><meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/llm/llm-106/"><meta property="twitter:url" content="https://m-movahedi.com/scratchpad/llm/llm-106/"><meta name=twitter:image content="https://m-movahedi.com/images/transparent.png"><link rel=canonical href=https://m-movahedi.com/scratchpad/llm/llm-106/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><script src=/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script><link rel=icon type=image/png href=/favicon.png><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href=/css/llm-series.css><link rel=stylesheet href=/css/hbm-series.css><link rel=stylesheet href=/css/llm-diagrams.css><link rel=stylesheet href=/css/tm-series.css><link rel=stylesheet href=/css/mc-series.css><script defer src=/js/hbm-widgets.js></script><script defer src=/js/llm-diagrams.js></script><script defer src=/js/tm-series.js></script><script defer src=/js/mc-scrollytelling.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-1WZSE8DHZ9")</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css integrity=sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js integrity=sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js integrity=sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script><link rel=stylesheet href=/css/custom.min.18ec29952add11924d403cdc5312cbc8a1ccdfa9f875450326ee02939271a377.css><link id=dark-theme rel=stylesheet href=/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://m-movahedi.com/><img src=/images/profile.png alt="Mohammad Movahedi"></a></div><div class=nav-title><a class=nav-brand href=https://m-movahedi.com/>Mohammad Movahedi</a></div><div class=nav-links><div class=nav-link><a href=https://m-movahedi.com/ aria-label>Home</a></div><div class=nav-link><a href=https://m-movahedi.com/background/ aria-label>Background</a></div><div class=nav-link><a href=https://m-movahedi.com/webinars/ aria-label>Webinars</a></div><div class=nav-link><a href=https://m-movahedi.com/research/ aria-label>Research</a></div><div class=nav-link><a href=https://m-movahedi.com/blog/ aria-label>Blog</a></div><div class=nav-link><a href=https://m-movahedi.com/scratchpad/ aria-label>Scratchpad</a></div><div class=nav-link><a href=https://m-movahedi.com/about/ aria-label>About</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://m-movahedi.com/>Home</a></li><li class=nav-item><a href=https://m-movahedi.com/background/>Background</a></li><li class=nav-item><a href=https://m-movahedi.com/webinars/>Webinars</a></li><li class=nav-item><a href=https://m-movahedi.com/research/>Research</a></li><li class=nav-item><a href=https://m-movahedi.com/blog/>Blog</a></li><li class=nav-item><a href=https://m-movahedi.com/scratchpad/>Scratchpad</a></li><li class=nav-item><a href=https://m-movahedi.com/about/>About</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>LLM 106: Fine-Tuning, Adaptation, and When to Train</h1><small role=doc-subtitle></small><p class=post-date>May 6, 2026</p><ul class=post-tags></ul></div><div class=post-content><p>In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you know where a model fails, you can decide how to improve it.</p><p>The tempting answer is often &ldquo;fine-tune it.&rdquo; Sometimes that is right. Often it is not. Many LLM problems are better solved with a clearer prompt, better retrieval, a tool call, stronger evaluation, or a narrower workflow. Fine-tuning is powerful, but it is not magic. It changes model behavior; it does not automatically add fresh facts, guarantee truthfulness, or replace system design.</p><h2 id=1-adaptation-is-a-spectrum>1. Adaptation Is a Spectrum</h2><p>There are many ways to adapt an LLM system. Fine-tuning is only one of them.</p><div class=llm-flow role=img aria-label="LLM adaptation spectrum"><div class=llm-card><strong>Prompting</strong><p>Change instructions and examples.</p></div><div class=llm-card><strong>RAG</strong><p>Add external evidence at inference time.</p></div><div class=llm-card><strong>Tools</strong><p>Let systems compute, search, or act.</p></div><div class=llm-card><strong>Fine-tuning</strong><p>Update model behavior with examples.</p></div><div class=llm-card><strong>Preference tuning</strong><p>Shape outputs using chosen/rejected examples.</p></div></div><p>The right choice depends on the failure mode. If the model lacks current facts, use retrieval. If it does arithmetic poorly, use a calculator or code tool. If it writes in the wrong format every time, fine-tuning may help. If it gives answers users dislike even when they are technically valid, preference tuning may help.</p><div class=llm-note><p><strong>Simple rule:</strong> use fine-tuning to change behavior, not to store facts. Use RAG or tools when the answer needs inspectable, updateable information.</p></div><h2 id=2-prompting-vs-rag-vs-fine-tuning>2. Prompting vs RAG vs Fine-Tuning</h2><p>These methods solve different problems.</p><div class=llm-grid><div class=llm-card><strong>Prompting</strong><p>Best when the model can already do the task but needs clearer instructions.</p></div><div class=llm-card><strong>RAG</strong><p>Best when the model needs external documents, current facts, or citations.</p></div><div class=llm-card><strong>Fine-tuning</strong><p>Best when the model needs durable behavior across many examples.</p></div></div><p>Suppose you are building a research assistant for evacuation papers.</p><ul><li>If it summarizes too verbosely, adjust the prompt.</li><li>If it misses project-specific documents, improve RAG.</li><li>If it consistently fails to follow your lab&rsquo;s structured review template, consider fine-tuning.</li><li>If it invents statistics, add evidence requirements and evaluation before training.</li></ul><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2109.01652>Wei et al. (2021), "Finetuned Language Models Are Zero-Shot Learners"</a>: the FLAN paper, showing the value of instruction tuning across many tasks.</li><li><a href=https://arxiv.org/abs/2203.02155>Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: shows how supervised fine-tuning and human feedback can improve instruction following.</li></ul></div><h2 id=3-supervised-fine-tuning>3. Supervised Fine-Tuning</h2><p>Supervised fine-tuning (SFT) trains the model on input-output examples. The model learns to produce outputs that look like the target examples.</p><div class=llm-code>Training example<p>Input:
-Summarize this evacuation paper for a transportation planning audience.</p><p>Target output:</p><ul><li>Research question: &mldr;</li><li>Data source: &mldr;</li><li>Method: &mldr;</li><li>Key behavioral factors: &mldr;</li><li>Planning implication: &mldr;</li><li>Evidence gaps: &mldr;</div></li></ul><p>SFT is useful for formats, domain style, recurring workflows, and task conventions. It is less useful for facts that change. If you fine-tune on old policy documents, the model may internalize outdated information. A retriever is usually a better home for facts.</p><p>Good SFT data has:</p><ul><li>consistent instructions;</li><li>high-quality target outputs;</li><li>realistic examples;</li><li>edge cases;</li><li>refusals or uncertainty cases;</li><li>clear formatting;</li><li>held-out evaluation examples.</li></ul><div class=llm-note><p>Fine-tuning amplifies the quality of your examples. If the examples are inconsistent, vague, or casually wrong, the model will learn those patterns too.</p></div><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2210.11416>Chung et al. (2022), "Scaling Instruction-Finetuned Language Models"</a>: studies how instruction tuning scales with model size, task count, and chain-of-thought data.</li><li><a href=https://arxiv.org/abs/2212.10560>Wang et al. (2022), "Self-Instruct"</a>: explores generating instruction data from a model itself to support instruction tuning.</li></ul></div><h2 id=4-full-fine-tuning-vs-parameter-efficient-fine-tuning>4. Full Fine-Tuning vs Parameter-Efficient Fine-Tuning</h2><p>Full fine-tuning updates all model parameters. This can be powerful, but it is expensive and can require storing a full copy of the adapted model.</p><p>Parameter-efficient fine-tuning (PEFT) updates only a small number of additional parameters or selected components. The base model stays mostly frozen.</p><div class=llm-two-col><div class=llm-panel><strong>Full fine-tuning</strong><p>Updates most or all parameters.</p><p>High compute and storage cost.</p><p>Useful when deep adaptation is needed.</p></div><div class=llm-panel><strong>PEFT</strong><p>Updates small adapter modules or low-rank matrices.</p><p>Lower compute and storage cost.</p><p>Useful for many practical domain adaptations.</p></div></div><p>LoRA is one of the most influential PEFT methods. Instead of changing a large weight matrix directly, it learns small low-rank updates. QLoRA goes further by fine-tuning adapters while the base model is quantized, reducing memory requirements.</p><div class=llm-panel><strong>Resource intuition</strong><div class=llm-row><span>Full tuning</span><div class=llm-bar><span style=width:92%></span></div><span>high</span></div><div class=llm-row><span>LoRA</span><div class=llm-bar><span style=width:38%></span></div><span>med</span></div><div class=llm-row><span>QLoRA</span><div class=llm-bar><span style=width:24%></span></div><span>low</span></div><p class=llm-small>Illustrative only. Actual cost depends on model size, sequence length, hardware, batch size, and training setup.</p></div><p>Here is a typical LoRA configuration to give you a sense of the moving parts:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Example: LoRA configuration (using Hugging Face PEFT)</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> peft <span style=color:#f92672>import</span> LoraConfig
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>lora_config <span style=color:#f92672>=</span> LoraConfig(
-</span></span><span style=display:flex><span>    r<span style=color:#f92672>=</span><span style=color:#ae81ff>16</span>,                   <span style=color:#75715e># rank of the low-rank matrices</span>
-</span></span><span style=display:flex><span>    lora_alpha<span style=color:#f92672>=</span><span style=color:#ae81ff>32</span>,          <span style=color:#75715e># scaling factor</span>
-</span></span><span style=display:flex><span>    target_modules<span style=color:#f92672>=</span>[        <span style=color:#75715e># which layers to adapt</span>
-</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;q_proj&#34;</span>, <span style=color:#e6db74>&#34;v_proj&#34;</span>
-</span></span><span style=display:flex><span>    ],
-</span></span><span style=display:flex><span>    lora_dropout<span style=color:#f92672>=</span><span style=color:#ae81ff>0.05</span>,
-</span></span><span style=display:flex><span>    bias<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;none&#34;</span>,
-</span></span><span style=display:flex><span>    task_type<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;CAUSAL_LM&#34;</span>
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span><span style=color:#75715e># This adds ~0.1% new parameters while keeping</span>
-</span></span><span style=display:flex><span><span style=color:#75715e># the base model frozen.</span>
-</span></span></code></pre></div><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2106.09685>Hu et al. (2021), "LoRA: Low-Rank Adaptation of Large Language Models"</a>: introduced low-rank adaptation for efficient fine-tuning.</li><li><a href=https://arxiv.org/abs/2305.14314>Dettmers et al. (2023), "QLoRA"</a>: showed memory-efficient fine-tuning of quantized LLMs with LoRA adapters.</li></ul></div><h2 id=5-distillation-learning-from-a-larger-model>5. Distillation: Learning from a Larger Model</h2><p>Distillation trains a smaller model (the student) to imitate the outputs of a larger model (the teacher). Instead of training the student from scratch on raw data, you use the teacher&rsquo;s probability distributions or generated outputs as the training signal. The student learns not just the correct answer, but the teacher&rsquo;s confidence and reasoning patterns.</p><p>Why does this matter? You get a smaller, faster, cheaper model that retains much of the teacher&rsquo;s capability for specific tasks. A 70B-parameter model may be too expensive to serve at scale, but a 7B student distilled from it can handle a well-defined task surprisingly well at a fraction of the cost.</p><div class=llm-two-col><div class=llm-panel><strong>Teacher model</strong><p>Large, expensive to run.</p><p>High capability across many tasks.</p><p>Used to generate the training signal: soft probabilities, chain-of-thought traces, or curated outputs.</p></div><div class=llm-panel><strong>Student model</strong><p>Smaller, faster, cheaper to serve.</p><p>Task-focused: trained on the teacher's outputs for a specific domain or workflow.</p><p>Can match or approach teacher quality on the target task.</p></div></div><div class=llm-note><p>Distillation works best when the target task is well-defined. A student model distilled for general chat may lose less breadth than one distilled for a narrow domain, but the narrow model can be surprisingly good at its specific job.</p></div><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/1503.02531>Hinton et al. (2015), "Distilling the Knowledge in a Neural Network"</a>: the foundational paper on knowledge distillation, showing how a smaller model can learn from a larger model's soft output distributions.</li><li><a href=https://arxiv.org/abs/2306.08543>Gu et al. (2023), "MiniLLM: Knowledge Distillation of Large Language Models"</a>: applies distillation specifically to LLMs, showing effective methods for transferring capability from large to small language models.</li></ul></div><h2 id=6-preference-tuning>6. Preference Tuning</h2><p>Sometimes you do not only want the model to imitate examples. You want it to prefer one kind of answer over another.</p><p>Preference data usually contains pairs:</p><div class=llm-code>Prompt:
-Explain why a RAG answer should cite sources.<p>Chosen:
-A RAG answer should cite sources because citations let users inspect the evidence and verify whether the answer is grounded.</p><p>Rejected:
-Citations are always necessary because they make the model smarter.</div></p><p>The chosen answer is not just a correct answer; it better matches the desired behavior. Preference tuning methods use these comparisons to shape model outputs.</p><p>RLHF uses reward modeling and reinforcement learning. DPO offers a simpler direct optimization route using preference pairs. Constitutional AI explores using written principles and AI feedback to critique and revise outputs.</p><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2203.02155>Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: a key RLHF paper for instruction-following models.</li><li><a href=https://arxiv.org/abs/2305.18290>Rafailov et al. (2023), "Direct Preference Optimization"</a>: introduces an RL-free method for optimizing language models from preference data.</li><li><a href=https://arxiv.org/abs/2212.08073>Bai et al. (2022), "Constitutional AI"</a>: explores harmlessness training using critique, revision, and AI feedback guided by principles.</li></ul></div><h2 id=7-data-quality-is-the-whole-game>7. Data Quality Is the Whole Game</h2><p>Fine-tuning is not mainly a modeling problem. For most teams, it is a data problem.</p><p>Bad training data can teach:</p><ul><li>wrong facts;</li><li>inconsistent formatting;</li><li>shallow reasoning;</li><li>unsupported citations;</li><li>overconfident answers;</li><li>hidden bias;</li><li>brittle refusal behavior;</li><li>leakage of private information.</li></ul><p>Before training, ask:</p><ol><li>Who wrote the examples?</li><li>Are they correct?</li><li>Are they representative of real use?</li><li>Do they include difficult cases?</li><li>Are sources and permissions clean?</li><li>Is there a separate evaluation set?</li><li>What behavior should the model <strong>not</strong> learn?</li></ol><div class=llm-note><p><strong>Small but sharp data beats large sloppy data.</strong> A hundred excellent examples can be more valuable than thousands of inconsistent ones, especially for narrow behavior changes.</p></div><h2 id=8-evaluation-before-and-after-training>8. Evaluation Before and After Training</h2><p>Fine-tuning without evaluation is vibes with a GPU bill.</p><p>Use the evaluation ideas from LLM 105 before training:</p><ul><li>create a local evaluation set;</li><li>define success metrics;</li><li>include edge cases;</li><li>separate factual grounding from style;</li><li>test baseline prompting and RAG first;</li><li>compare before and after fine-tuning;</li><li>check regressions on general behavior.</li></ul><div class=llm-grid><div class=llm-card><strong>Before</strong><p>Measure baseline failures.</p></div><div class=llm-card><strong>During</strong><p>Monitor loss and validation behavior.</p></div><div class=llm-card><strong>After</strong><p>Test task gains and regressions.</p></div></div><p>If fine-tuning improves format but harms truthfulness, you have not solved the problem. You have moved it. The strongest adaptation workflows evaluate both the target task and the behaviors you do not want to lose.</p><h2 id=9-when-fine-tuning-is-the-right-move>9. When Fine-Tuning Is the Right Move</h2><p>Fine-tuning is often worth considering when:</p><ul><li>the same task is repeated many times;</li><li>the desired format is stable;</li><li>the model needs a domain-specific style;</li><li>high-quality training examples exist;</li><li>prompting becomes too long or fragile;</li><li>RAG provides facts but the model still mishandles the task;</li><li>latency or cost improves by replacing long prompts with learned behavior;</li><li>evaluation shows a stable failure pattern.</li></ul><p>For example, a transportation research lab might fine-tune a model to produce a standard paper-review template. The facts still come from retrieved papers. The fine-tuning teaches the model the lab&rsquo;s review structure, level of detail, and cautious phrasing.</p><h2 id=10-when-fine-tuning-is-the-wrong-move>10. When Fine-Tuning Is the Wrong Move</h2><p>Fine-tuning is probably the wrong first move when:</p><ul><li>the facts change frequently;</li><li>the problem is missing retrieval;</li><li>the failure is caused by unclear instructions;</li><li>you do not have good examples;</li><li>the task requires exact computation;</li><li>the risk is from unsupported claims;</li><li>the workflow needs access control or citations;</li><li>you cannot evaluate the result.</li></ul><div class=llm-note><p>Do not train a model to remember a document collection that should be searchable. Do not train a model to do arithmetic that a calculator can do. Do not train a model to obey a workflow you have not clearly defined.</p></div><h2 id=11-a-practical-adaptation-checklist>11. A Practical Adaptation Checklist</h2><p>Before fine-tuning, I would walk through this checklist:</p><ol><li><strong>Name the failure.</strong> Is it style, format, reasoning, grounding, tool use, or factual knowledge?</li><li><strong>Try the simpler fix.</strong> Prompt, RAG, tool, schema, or evaluation change.</li><li><strong>Collect examples.</strong> Use realistic inputs and high-quality target outputs.</li><li><strong>Hold out eval data.</strong> Do not train on the examples you need for testing.</li><li><strong>Choose the tuning method.</strong> SFT, LoRA, QLoRA, DPO, or another preference method.</li><li><strong>Train narrowly.</strong> Avoid broad behavior changes unless you can evaluate them.</li><li><strong>Compare to baseline.</strong> Measure actual improvement, not just nicer demos.</li><li><strong>Check regressions.</strong> Truthfulness, safety, formatting, latency, cost, and refusal behavior.</li><li><strong>Keep facts external.</strong> Use RAG for updateable knowledge.</li></ol><div class=llm-note><p>Fine-tuning is most valuable when it teaches a model how to behave in a stable workflow. It is weakest when used as a substitute for evidence, tools, or clear product design.</p></div><div class=llm-exercises><strong>Exercises and Discussion Questions</strong><ol><li>Your model consistently writes summaries that are too long and miss the lab's required format. You have 200 examples of good summaries. Should you adjust the prompt, use RAG, or fine-tune? Justify your choice.</li><li>A team fine-tunes a model on 5,000 examples scraped from the internet without review. After training, the model occasionally produces confident but incorrect claims. Using the data quality section, explain what likely went wrong.</li><li>You fine-tune a model on a structured review template. The fine-tuned model follows the template perfectly but sometimes refuses to answer questions that the base model handled well. What happened, and how would you detect this during evaluation?</li></ol></div><p>In the next post, we can look at deployment: latency, cost, model choice, caching, monitoring, privacy, and how to make an LLM system behave well outside a notebook.</p></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/scratchpad/llm/llm-105/>&#8592;
-Previous:
-LLM 105: Evaluation, Benchmarks, and Measuring Usefulness</a></p><p class=prev-post-date>May 5, 2026</p></div><div class=next-post><p><a href=/scratchpad/llm/llm-107/>Next:
-LLM 107: Deployment, Cost, Latency, and Monitoring
-&#8594;</a></p><p class=next-post-date>May 7, 2026</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>© 2017-2026 / Mohammad Movahedi. All rights reserved</a>.</span></footer></body></html>
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>LLM 106: Fine-Tuning, Adaptation, and When to Train | Mohammad Movahedi</title>
+    <meta name="description" content="In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you …">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+    
+    <meta property="og:url" content="http://localhost:1313/scratchpad/llm/llm-106/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="LLM 106: Fine-Tuning, Adaptation, and When to Train | Mohammad Movahedi">
+    <meta property="og:description" content="In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LLM 106: Fine-Tuning, Adaptation, and When to Train">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="LLM 106: Fine-Tuning, Adaptation, and When to Train | Mohammad Movahedi">
+    <meta name="twitter:description" content="In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/llm/llm-106/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/llm/llm-106/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"LLM 106: Fine-Tuning, Adaptation, and When to Train\"",
+  "description": "\"In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you …\"",
+  "url": "http:\/\/localhost:1313\/scratchpad\/llm\/llm-106\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/scratchpad\/llm\/llm-106\/"
+  },
+  "datePublished": "2026-05-06T00:00:00Z",
+  "dateModified": "2026-05-06T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Scratchpad\"",
+      "item": "https:\/\/m-movahedi.com\/scratchpad\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"LLM 106: Fine-Tuning, Adaptation, and When to Train\"",
+      "item": "http:\/\/localhost:1313\/scratchpad\/llm\/llm-106\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.46f64924e715031ec2daf5fad084fa1e35a175ab207cff3c6daf5eaf942796d4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>LLM 106: Fine-Tuning, Adaptation, and When to Train</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 6, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>In LLM 105, we focused on evaluation: how to measure whether an LLM system is useful, faithful, and reliable. Evaluation naturally leads to adaptation. Once you know where a model fails, you can decide how to improve it.</p>
+<p>The tempting answer is often &ldquo;fine-tune it.&rdquo; Sometimes that is right. Often it is not. Many LLM problems are better solved with a clearer prompt, better retrieval, a tool call, stronger evaluation, or a narrower workflow. Fine-tuning is powerful, but it is not magic. It changes model behavior; it does not automatically add fresh facts, guarantee truthfulness, or replace system design.</p>
+<h2 id="1-adaptation-is-a-spectrum">1. Adaptation Is a Spectrum</h2>
+<p>There are many ways to adapt an LLM system. Fine-tuning is only one of them.</p>
+<div class="llm-flow" role="img" aria-label="LLM adaptation spectrum">
+  <div class="llm-card">
+    <strong>Prompting</strong>
+    <p>Change instructions and examples.</p>
+  </div>
+  <div class="llm-card">
+    <strong>RAG</strong>
+    <p>Add external evidence at inference time.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Tools</strong>
+    <p>Let systems compute, search, or act.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Fine-tuning</strong>
+    <p>Update model behavior with examples.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Preference tuning</strong>
+    <p>Shape outputs using chosen/rejected examples.</p>
+  </div>
+</div>
+<p>The right choice depends on the failure mode. If the model lacks current facts, use retrieval. If it does arithmetic poorly, use a calculator or code tool. If it writes in the wrong format every time, fine-tuning may help. If it gives answers users dislike even when they are technically valid, preference tuning may help.</p>
+<div class="llm-note">
+  <p><strong>Simple rule:</strong> use fine-tuning to change behavior, not to store facts. Use RAG or tools when the answer needs inspectable, updateable information.</p>
+</div>
+<h2 id="2-prompting-vs-rag-vs-fine-tuning">2. Prompting vs RAG vs Fine-Tuning</h2>
+<p>These methods solve different problems.</p>
+<div class="llm-grid">
+  <div class="llm-card">
+    <strong>Prompting</strong>
+    <p>Best when the model can already do the task but needs clearer instructions.</p>
+  </div>
+  <div class="llm-card">
+    <strong>RAG</strong>
+    <p>Best when the model needs external documents, current facts, or citations.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Fine-tuning</strong>
+    <p>Best when the model needs durable behavior across many examples.</p>
+  </div>
+</div>
+<p>Suppose you are building a research assistant for evacuation papers.</p>
+<ul>
+<li>If it summarizes too verbosely, adjust the prompt.</li>
+<li>If it misses project-specific documents, improve RAG.</li>
+<li>If it consistently fails to follow your lab&rsquo;s structured review template, consider fine-tuning.</li>
+<li>If it invents statistics, add evidence requirements and evaluation before training.</li>
+</ul>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2109.01652">Wei et al. (2021), "Finetuned Language Models Are Zero-Shot Learners"</a>: the FLAN paper, showing the value of instruction tuning across many tasks.</li>
+    <li><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: shows how supervised fine-tuning and human feedback can improve instruction following.</li>
+  </ul>
+</div>
+<h2 id="3-supervised-fine-tuning">3. Supervised Fine-Tuning</h2>
+<p>Supervised fine-tuning (SFT) trains the model on input-output examples. The model learns to produce outputs that look like the target examples.</p>
+<div class="llm-code">Training example
+<p>Input:
+Summarize this evacuation paper for a transportation planning audience.</p>
+<p>Target output:</p>
+<ul>
+<li>Research question: &hellip;</li>
+<li>Data source: &hellip;</li>
+<li>Method: &hellip;</li>
+<li>Key behavioral factors: &hellip;</li>
+<li>Planning implication: &hellip;</li>
+<li>Evidence gaps: &hellip;</div></li>
+</ul>
+<p>SFT is useful for formats, domain style, recurring workflows, and task conventions. It is less useful for facts that change. If you fine-tune on old policy documents, the model may internalize outdated information. A retriever is usually a better home for facts.</p>
+<p>Good SFT data has:</p>
+<ul>
+<li>consistent instructions;</li>
+<li>high-quality target outputs;</li>
+<li>realistic examples;</li>
+<li>edge cases;</li>
+<li>refusals or uncertainty cases;</li>
+<li>clear formatting;</li>
+<li>held-out evaluation examples.</li>
+</ul>
+<div class="llm-note">
+  <p>Fine-tuning amplifies the quality of your examples. If the examples are inconsistent, vague, or casually wrong, the model will learn those patterns too.</p>
+</div>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2210.11416">Chung et al. (2022), "Scaling Instruction-Finetuned Language Models"</a>: studies how instruction tuning scales with model size, task count, and chain-of-thought data.</li>
+    <li><a href="https://arxiv.org/abs/2212.10560">Wang et al. (2022), "Self-Instruct"</a>: explores generating instruction data from a model itself to support instruction tuning.</li>
+  </ul>
+</div>
+<h2 id="4-full-fine-tuning-vs-parameter-efficient-fine-tuning">4. Full Fine-Tuning vs Parameter-Efficient Fine-Tuning</h2>
+<p>Full fine-tuning updates all model parameters. This can be powerful, but it is expensive and can require storing a full copy of the adapted model.</p>
+<p>Parameter-efficient fine-tuning (PEFT) updates only a small number of additional parameters or selected components. The base model stays mostly frozen.</p>
+<div class="llm-two-col">
+  <div class="llm-panel">
+    <strong>Full fine-tuning</strong>
+    <p>Updates most or all parameters.</p>
+    <p>High compute and storage cost.</p>
+    <p>Useful when deep adaptation is needed.</p>
+  </div>
+  <div class="llm-panel">
+    <strong>PEFT</strong>
+    <p>Updates small adapter modules or low-rank matrices.</p>
+    <p>Lower compute and storage cost.</p>
+    <p>Useful for many practical domain adaptations.</p>
+  </div>
+</div>
+<p>LoRA is one of the most influential PEFT methods. Instead of changing a large weight matrix directly, it learns small low-rank updates. QLoRA goes further by fine-tuning adapters while the base model is quantized, reducing memory requirements.</p>
+<div class="llm-panel">
+  <strong>Resource intuition</strong>
+  <div class="llm-row"><span>Full tuning</span><div class="llm-bar"><span style="width: 92%;"></span></div><span>high</span></div>
+  <div class="llm-row"><span>LoRA</span><div class="llm-bar"><span style="width: 38%;"></span></div><span>med</span></div>
+  <div class="llm-row"><span>QLoRA</span><div class="llm-bar"><span style="width: 24%;"></span></div><span>low</span></div>
+  <p class="llm-small">Illustrative only. Actual cost depends on model size, sequence length, hardware, batch size, and training setup.</p>
+</div>
+<p>Here is a typical LoRA configuration to give you a sense of the moving parts:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Example: LoRA configuration (using Hugging Face PEFT)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> peft <span style="color:#f92672">import</span> LoraConfig
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>lora_config <span style="color:#f92672">=</span> LoraConfig(
+</span></span><span style="display:flex;"><span>    r<span style="color:#f92672">=</span><span style="color:#ae81ff">16</span>,                   <span style="color:#75715e"># rank of the low-rank matrices</span>
+</span></span><span style="display:flex;"><span>    lora_alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">32</span>,          <span style="color:#75715e"># scaling factor</span>
+</span></span><span style="display:flex;"><span>    target_modules<span style="color:#f92672">=</span>[        <span style="color:#75715e"># which layers to adapt</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;q_proj&#34;</span>, <span style="color:#e6db74">&#34;v_proj&#34;</span>
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    lora_dropout<span style="color:#f92672">=</span><span style="color:#ae81ff">0.05</span>,
+</span></span><span style="display:flex;"><span>    bias<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;none&#34;</span>,
+</span></span><span style="display:flex;"><span>    task_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;CAUSAL_LM&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This adds ~0.1% new parameters while keeping</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># the base model frozen.</span>
+</span></span></code></pre></div><div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2106.09685">Hu et al. (2021), "LoRA: Low-Rank Adaptation of Large Language Models"</a>: introduced low-rank adaptation for efficient fine-tuning.</li>
+    <li><a href="https://arxiv.org/abs/2305.14314">Dettmers et al. (2023), "QLoRA"</a>: showed memory-efficient fine-tuning of quantized LLMs with LoRA adapters.</li>
+  </ul>
+</div>
+<h2 id="5-distillation-learning-from-a-larger-model">5. Distillation: Learning from a Larger Model</h2>
+<p>Distillation trains a smaller model (the student) to imitate the outputs of a larger model (the teacher). Instead of training the student from scratch on raw data, you use the teacher&rsquo;s probability distributions or generated outputs as the training signal. The student learns not just the correct answer, but the teacher&rsquo;s confidence and reasoning patterns.</p>
+<p>Why does this matter? You get a smaller, faster, cheaper model that retains much of the teacher&rsquo;s capability for specific tasks. A 70B-parameter model may be too expensive to serve at scale, but a 7B student distilled from it can handle a well-defined task surprisingly well at a fraction of the cost.</p>
+<div class="llm-two-col">
+  <div class="llm-panel">
+    <strong>Teacher model</strong>
+    <p>Large, expensive to run.</p>
+    <p>High capability across many tasks.</p>
+    <p>Used to generate the training signal: soft probabilities, chain-of-thought traces, or curated outputs.</p>
+  </div>
+  <div class="llm-panel">
+    <strong>Student model</strong>
+    <p>Smaller, faster, cheaper to serve.</p>
+    <p>Task-focused: trained on the teacher's outputs for a specific domain or workflow.</p>
+    <p>Can match or approach teacher quality on the target task.</p>
+  </div>
+</div>
+<div class="llm-note">
+  <p>Distillation works best when the target task is well-defined. A student model distilled for general chat may lose less breadth than one distilled for a narrow domain, but the narrow model can be surprisingly good at its specific job.</p>
+</div>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/1503.02531">Hinton et al. (2015), "Distilling the Knowledge in a Neural Network"</a>: the foundational paper on knowledge distillation, showing how a smaller model can learn from a larger model's soft output distributions.</li>
+    <li><a href="https://arxiv.org/abs/2306.08543">Gu et al. (2023), "MiniLLM: Knowledge Distillation of Large Language Models"</a>: applies distillation specifically to LLMs, showing effective methods for transferring capability from large to small language models.</li>
+  </ul>
+</div>
+<h2 id="6-preference-tuning">6. Preference Tuning</h2>
+<p>Sometimes you do not only want the model to imitate examples. You want it to prefer one kind of answer over another.</p>
+<p>Preference data usually contains pairs:</p>
+<div class="llm-code">Prompt:
+Explain why a RAG answer should cite sources.
+<p>Chosen:
+A RAG answer should cite sources because citations let users inspect the evidence and verify whether the answer is grounded.</p>
+<p>Rejected:
+Citations are always necessary because they make the model smarter.</div></p>
+<p>The chosen answer is not just a correct answer; it better matches the desired behavior. Preference tuning methods use these comparisons to shape model outputs.</p>
+<p>RLHF uses reward modeling and reinforcement learning. DPO offers a simpler direct optimization route using preference pairs. Constitutional AI explores using written principles and AI feedback to critique and revise outputs.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2203.02155">Ouyang et al. (2022), "Training Language Models to Follow Instructions with Human Feedback"</a>: a key RLHF paper for instruction-following models.</li>
+    <li><a href="https://arxiv.org/abs/2305.18290">Rafailov et al. (2023), "Direct Preference Optimization"</a>: introduces an RL-free method for optimizing language models from preference data.</li>
+    <li><a href="https://arxiv.org/abs/2212.08073">Bai et al. (2022), "Constitutional AI"</a>: explores harmlessness training using critique, revision, and AI feedback guided by principles.</li>
+  </ul>
+</div>
+<h2 id="7-data-quality-is-the-whole-game">7. Data Quality Is the Whole Game</h2>
+<p>Fine-tuning is not mainly a modeling problem. For most teams, it is a data problem.</p>
+<p>Bad training data can teach:</p>
+<ul>
+<li>wrong facts;</li>
+<li>inconsistent formatting;</li>
+<li>shallow reasoning;</li>
+<li>unsupported citations;</li>
+<li>overconfident answers;</li>
+<li>hidden bias;</li>
+<li>brittle refusal behavior;</li>
+<li>leakage of private information.</li>
+</ul>
+<p>Before training, ask:</p>
+<ol>
+<li>Who wrote the examples?</li>
+<li>Are they correct?</li>
+<li>Are they representative of real use?</li>
+<li>Do they include difficult cases?</li>
+<li>Are sources and permissions clean?</li>
+<li>Is there a separate evaluation set?</li>
+<li>What behavior should the model <strong>not</strong> learn?</li>
+</ol>
+<div class="llm-note">
+  <p><strong>Small but sharp data beats large sloppy data.</strong> A hundred excellent examples can be more valuable than thousands of inconsistent ones, especially for narrow behavior changes.</p>
+</div>
+<h2 id="8-evaluation-before-and-after-training">8. Evaluation Before and After Training</h2>
+<p>Fine-tuning without evaluation is vibes with a GPU bill.</p>
+<p>Use the evaluation ideas from LLM 105 before training:</p>
+<ul>
+<li>create a local evaluation set;</li>
+<li>define success metrics;</li>
+<li>include edge cases;</li>
+<li>separate factual grounding from style;</li>
+<li>test baseline prompting and RAG first;</li>
+<li>compare before and after fine-tuning;</li>
+<li>check regressions on general behavior.</li>
+</ul>
+<div class="llm-grid">
+  <div class="llm-card">
+    <strong>Before</strong>
+    <p>Measure baseline failures.</p>
+  </div>
+  <div class="llm-card">
+    <strong>During</strong>
+    <p>Monitor loss and validation behavior.</p>
+  </div>
+  <div class="llm-card">
+    <strong>After</strong>
+    <p>Test task gains and regressions.</p>
+  </div>
+</div>
+<p>If fine-tuning improves format but harms truthfulness, you have not solved the problem. You have moved it. The strongest adaptation workflows evaluate both the target task and the behaviors you do not want to lose.</p>
+<h2 id="9-when-fine-tuning-is-the-right-move">9. When Fine-Tuning Is the Right Move</h2>
+<p>Fine-tuning is often worth considering when:</p>
+<ul>
+<li>the same task is repeated many times;</li>
+<li>the desired format is stable;</li>
+<li>the model needs a domain-specific style;</li>
+<li>high-quality training examples exist;</li>
+<li>prompting becomes too long or fragile;</li>
+<li>RAG provides facts but the model still mishandles the task;</li>
+<li>latency or cost improves by replacing long prompts with learned behavior;</li>
+<li>evaluation shows a stable failure pattern.</li>
+</ul>
+<p>For example, a transportation research lab might fine-tune a model to produce a standard paper-review template. The facts still come from retrieved papers. The fine-tuning teaches the model the lab&rsquo;s review structure, level of detail, and cautious phrasing.</p>
+<h2 id="10-when-fine-tuning-is-the-wrong-move">10. When Fine-Tuning Is the Wrong Move</h2>
+<p>Fine-tuning is probably the wrong first move when:</p>
+<ul>
+<li>the facts change frequently;</li>
+<li>the problem is missing retrieval;</li>
+<li>the failure is caused by unclear instructions;</li>
+<li>you do not have good examples;</li>
+<li>the task requires exact computation;</li>
+<li>the risk is from unsupported claims;</li>
+<li>the workflow needs access control or citations;</li>
+<li>you cannot evaluate the result.</li>
+</ul>
+<div class="llm-note">
+  <p>Do not train a model to remember a document collection that should be searchable. Do not train a model to do arithmetic that a calculator can do. Do not train a model to obey a workflow you have not clearly defined.</p>
+</div>
+<h2 id="11-a-practical-adaptation-checklist">11. A Practical Adaptation Checklist</h2>
+<p>Before fine-tuning, I would walk through this checklist:</p>
+<ol>
+<li><strong>Name the failure.</strong> Is it style, format, reasoning, grounding, tool use, or factual knowledge?</li>
+<li><strong>Try the simpler fix.</strong> Prompt, RAG, tool, schema, or evaluation change.</li>
+<li><strong>Collect examples.</strong> Use realistic inputs and high-quality target outputs.</li>
+<li><strong>Hold out eval data.</strong> Do not train on the examples you need for testing.</li>
+<li><strong>Choose the tuning method.</strong> SFT, LoRA, QLoRA, DPO, or another preference method.</li>
+<li><strong>Train narrowly.</strong> Avoid broad behavior changes unless you can evaluate them.</li>
+<li><strong>Compare to baseline.</strong> Measure actual improvement, not just nicer demos.</li>
+<li><strong>Check regressions.</strong> Truthfulness, safety, formatting, latency, cost, and refusal behavior.</li>
+<li><strong>Keep facts external.</strong> Use RAG for updateable knowledge.</li>
+</ol>
+<div class="llm-note">
+  <p>Fine-tuning is most valuable when it teaches a model how to behave in a stable workflow. It is weakest when used as a substitute for evidence, tools, or clear product design.</p>
+</div>
+<div class="llm-exercises">
+  <strong>Exercises and Discussion Questions</strong>
+  <ol>
+    <li>Your model consistently writes summaries that are too long and miss the lab's required format. You have 200 examples of good summaries. Should you adjust the prompt, use RAG, or fine-tune? Justify your choice.</li>
+    <li>A team fine-tunes a model on 5,000 examples scraped from the internet without review. After training, the model occasionally produces confident but incorrect claims. Using the data quality section, explain what likely went wrong.</li>
+    <li>You fine-tune a model on a structured review template. The fine-tuned model follows the template perfectly but sometimes refuses to answer questions that the base model handled well. What happened, and how would you detect this during evaluation?</li>
+  </ol>
+</div>
+<p>In the next post, we can look at deployment: latency, cost, model choice, caching, monitoring, privacy, and how to make an LLM system behave well outside a notebook.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/llm/llm-105/">
+                &#8592;
+                Previous:
+                LLM 105: Evaluation, Benchmarks, and Measuring Usefulness
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 5, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/llm/llm-107/">
+                Next:
+                LLM 107: Deployment, Cost, Latency, and Monitoring
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 7, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

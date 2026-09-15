@@ -4,10 +4,7 @@ weight: 44
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Circular Curve Fundamentals
-
-Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of constant radius connecting two tangents. For the PE Civil Transportation exam, horizontal alignment calculations are based on the equations found in the **NCEES PE Civil Reference Handbook** and design criteria in **AASHTO's Green Book (GDHS)**, Chapter 3.
+---Horizontal curves provide smooth transitions between tangent sections of a highway. A simple horizontal curve is a circular arc of constant radius connecting two tangents. For the PE Civil Transportation exam, horizontal alignment calculations are based on the equations found in the **NCEES PE Civil Reference Handbook** and design criteria in **AASHTO's Green Book (GDHS)**, Chapter 3.
 
 ---
 

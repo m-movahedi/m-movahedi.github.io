@@ -4,10 +4,7 @@ weight: 55
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Crest Vertical Curves
-
-Crest vertical curves are designed to connect an uphill grade to a downhill grade (or a steeper uphill grade to a flatter uphill grade, etc.), where the algebraic difference in grade is negative ($g_1 > g_2$). The primary design control for a crest vertical curve is ensuring adequate sight distance—specifically Stopping Sight Distance (SSD)—so that a driver can see a hazard over the crest of the hill.
+---Crest vertical curves are designed to connect an uphill grade to a downhill grade (or a steeper uphill grade to a flatter uphill grade, etc.), where the algebraic difference in grade is negative ($g_1 > g_2$). The primary design control for a crest vertical curve is ensuring adequate sight distance—specifically Stopping Sight Distance (SSD)—so that a driver can see a hazard over the crest of the hill.
 
 ## Design Parameters for Sight Distance
 

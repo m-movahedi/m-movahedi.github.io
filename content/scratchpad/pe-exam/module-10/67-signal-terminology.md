@@ -4,10 +4,7 @@ weight: 67
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Traffic Signal Terminology
-
-Traffic signal timing and design questions on the PE Civil Transportation exam require a precise understanding of terminology. On the exam, confusing a "phase" with an "interval" or failing to distinguish between "displayed green" and "effective green" will lead to incorrect calculations. 
+---Traffic signal timing and design questions on the PE Civil Transportation exam require a precise understanding of terminology. On the exam, confusing a "phase" with an "interval" or failing to distinguish between "displayed green" and "effective green" will lead to incorrect calculations. 
 
 This lesson establishes the fundamental vocabulary, operational structures, and mathematical relationships used in traffic signal analysis, grounding these concepts in the *Highway Capacity Manual (HCM)* and the *Manual on Uniform Traffic Control Devices (MUTCD)*.
 

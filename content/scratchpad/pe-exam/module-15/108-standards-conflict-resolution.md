@@ -4,10 +4,7 @@ weight: 108
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Standards Conflict Resolution
-
-Highway engineering projects frequently involve multiple reference manuals, state specifications, local guidelines, and federal regulations. When these standards conflict, engineers must apply a systematic hierarchy to determine which standard governs.
+---Highway engineering projects frequently involve multiple reference manuals, state specifications, local guidelines, and federal regulations. When these standards conflict, engineers must apply a systematic hierarchy to determine which standard governs.
 
 ---
 

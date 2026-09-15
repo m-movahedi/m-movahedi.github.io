@@ -4,10 +4,7 @@ weight: 60
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# At-Grade Intersection Layout
-
-At-grade intersection layout involves the geometric design of intersections where two or more roadways cross at the same elevation. The layout must balance the competing needs of through vehicles, turning vehicles, pedestrians, bicyclists, and transit vehicles.
+---At-grade intersection layout involves the geometric design of intersections where two or more roadways cross at the same elevation. The layout must balance the competing needs of through vehicles, turning vehicles, pedestrians, bicyclists, and transit vehicles.
 
 ---
 

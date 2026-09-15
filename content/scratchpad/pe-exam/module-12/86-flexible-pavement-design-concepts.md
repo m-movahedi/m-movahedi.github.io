@@ -4,10 +4,7 @@ weight: 86
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Flexible Pavement Design Concepts
-
-Flexible pavements consist of a bituminous (asphalt) surface layer underlaid by granular base and subbase courses, resting on the prepared subgrade. They distribute traffic loads through a layered system, dispersing stresses with depth so that the stress reaching the subgrade does not exceed its bearing capacity. On the PE Civil Transportation exam, flexible pavement design is governed by the **AASHTO 1993 Guide for Design of Pavement Structures**.
+---Flexible pavements consist of a bituminous (asphalt) surface layer underlaid by granular base and subbase courses, resting on the prepared subgrade. They distribute traffic loads through a layered system, dispersing stresses with depth so that the stress reaching the subgrade does not exceed its bearing capacity. On the PE Civil Transportation exam, flexible pavement design is governed by the **AASHTO 1993 Guide for Design of Pavement Structures**.
 
 ---
 

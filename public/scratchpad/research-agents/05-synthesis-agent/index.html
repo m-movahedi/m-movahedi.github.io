@@ -1,10 +1,433 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>The Synthesis Agent: From Data to Narrative</title><meta name=description content="You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.
-But …"><meta name=keywords content='AI Agents,Literature synthesis,Narrative generation,Research writing,Knowledge synthesis'><meta property="og:url" content="https://m-movahedi.com/scratchpad/research-agents/05-synthesis-agent/"><meta property="og:type" content="website"><meta property="og:title" content="The Synthesis Agent: From Data to Narrative"><meta property="og:description" content="You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.
-But …"><meta property="og:image" content="https://m-movahedi.com/images/transparent.png"><meta property="og:image:secure_url" content="https://m-movahedi.com/images/transparent.png"><meta name=twitter:card content="summary"><meta name=twitter:title content="The Synthesis Agent: From Data to Narrative"><meta name=twitter:description content="You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.
-But …"><meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/research-agents/05-synthesis-agent/"><meta property="twitter:url" content="https://m-movahedi.com/scratchpad/research-agents/05-synthesis-agent/"><meta name=twitter:image content="https://m-movahedi.com/images/transparent.png"><link rel=canonical href=https://m-movahedi.com/scratchpad/research-agents/05-synthesis-agent/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><script src=/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script><link rel=icon type=image/png href=/favicon.png><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href=/css/llm-series.css><link rel=stylesheet href=/css/hbm-series.css><link rel=stylesheet href=/css/llm-diagrams.css><link rel=stylesheet href=/css/tm-series.css><link rel=stylesheet href=/css/mc-series.css><script defer src=/js/hbm-widgets.js></script><script defer src=/js/llm-diagrams.js></script><script defer src=/js/tm-series.js></script><script defer src=/js/mc-scrollytelling.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-1WZSE8DHZ9")</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css integrity=sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js integrity=sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js integrity=sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script><link rel=stylesheet href=/css/custom.min.18ec29952add11924d403cdc5312cbc8a1ccdfa9f875450326ee02939271a377.css><link id=dark-theme rel=stylesheet href=/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://m-movahedi.com/><img src=/images/profile.png alt="Mohammad Movahedi"></a></div><div class=nav-title><a class=nav-brand href=https://m-movahedi.com/>Mohammad Movahedi</a></div><div class=nav-links><div class=nav-link><a href=https://m-movahedi.com/ aria-label>Home</a></div><div class=nav-link><a href=https://m-movahedi.com/background/ aria-label>Background</a></div><div class=nav-link><a href=https://m-movahedi.com/webinars/ aria-label>Webinars</a></div><div class=nav-link><a href=https://m-movahedi.com/research/ aria-label>Research</a></div><div class=nav-link><a href=https://m-movahedi.com/blog/ aria-label>Blog</a></div><div class=nav-link><a href=https://m-movahedi.com/scratchpad/ aria-label>Scratchpad</a></div><div class=nav-link><a href=https://m-movahedi.com/about/ aria-label>About</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://m-movahedi.com/>Home</a></li><li class=nav-item><a href=https://m-movahedi.com/background/>Background</a></li><li class=nav-item><a href=https://m-movahedi.com/webinars/>Webinars</a></li><li class=nav-item><a href=https://m-movahedi.com/research/>Research</a></li><li class=nav-item><a href=https://m-movahedi.com/blog/>Blog</a></li><li class=nav-item><a href=https://m-movahedi.com/scratchpad/>Scratchpad</a></li><li class=nav-item><a href=https://m-movahedi.com/about/>About</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>The Synthesis Agent: From Data to Narrative</h1><small role=doc-subtitle></small><p class=post-date>June 10, 2026</p><ul class=post-tags><li class=post-tag><a href=https://m-movahedi.com/tags/ai-agents>AI Agents</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/literature-synthesis>Literature synthesis</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/narrative-generation>Narrative generation</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/research-writing>Research writing</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/knowledge-synthesis>Knowledge synthesis</a></li></ul></div><div class=post-content><p>You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.</p><p>But you still do not have a story. You do not have sentences that connect findings. You do not have a narrative that says: &ldquo;Here is what we know. Here is what we do not know. Here is why your research matters.&rdquo;</p><p>This is where the Synthesis Agent works. It is not a writer (narrative is not its strength). It is a <em>storyteller</em>: taking structured data and proposing connections, identifying themes, drafting sections, building the backbone of a literature review.</p><h2 id=the-synthesis-agents-challenge>The Synthesis Agent&rsquo;s challenge</h2><p>A researcher reads 200 papers and internalizes patterns: &ldquo;Three papers use agent-based models. They all found that social networks matter. But only one validated against real data.&rdquo;</p><p>An agent cannot read 200 papers. But an agent can query the methodology database and spot the same pattern if you ask the right questions.</p><p>The challenge is: how do you get an agent to propose narrative structure from data?</p><h2 id=three-types-of-synthesis-tasks>Three types of synthesis tasks</h2><h3 id=type-1-thematic-organization>Type 1: Thematic organization</h3><p>Group papers by theme and draft sections.</p><pre tabindex=0><code>Question to agent:
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>The Synthesis Agent: From Data to Narrative | Mohammad Movahedi</title>
+    <meta name="description" content="You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.
+But …">
+    
+    <meta name="keywords" content='AI Agents, Literature synthesis, Narrative generation, Research writing, Knowledge synthesis'>
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+    
+    <meta property="og:url" content="http://localhost:1313/scratchpad/research-agents/05-synthesis-agent/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="The Synthesis Agent: From Data to Narrative | Mohammad Movahedi">
+    <meta property="og:description" content="You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.
+But …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The Synthesis Agent: From Data to Narrative">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="The Synthesis Agent: From Data to Narrative | Mohammad Movahedi">
+    <meta name="twitter:description" content="You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.
+But …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/research-agents/05-synthesis-agent/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/research-agents/05-synthesis-agent/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"The Synthesis Agent: From Data to Narrative\"",
+  "description": "\"You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.\\nBut …\"",
+  "url": "http:\/\/localhost:1313\/scratchpad\/research-agents\/05-synthesis-agent\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/scratchpad\/research-agents\/05-synthesis-agent\/"
+  },
+  "datePublished": "2026-06-10T00:00:00Z",
+  "dateModified": "2026-06-10T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Scratchpad\"",
+      "item": "https:\/\/m-movahedi.com\/scratchpad\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"The Synthesis Agent: From Data to Narrative\"",
+      "item": "http:\/\/localhost:1313\/scratchpad\/research-agents\/05-synthesis-agent\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.46f64924e715031ec2daf5fad084fa1e35a175ab207cff3c6daf5eaf942796d4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>The Synthesis Agent: From Data to Narrative</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              June 10, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/ai-agents">AI Agents</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/literature-synthesis">Literature synthesis</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/narrative-generation">Narrative generation</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/research-writing">Research writing</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/knowledge-synthesis">Knowledge synthesis</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>You now have a methodology database with 200 papers. Structured. Deduplicated. Consistent. You know who studied what, using what methods, and found what.</p>
+<p>But you still do not have a story. You do not have sentences that connect findings. You do not have a narrative that says: &ldquo;Here is what we know. Here is what we do not know. Here is why your research matters.&rdquo;</p>
+<p>This is where the Synthesis Agent works. It is not a writer (narrative is not its strength). It is a <em>storyteller</em>: taking structured data and proposing connections, identifying themes, drafting sections, building the backbone of a literature review.</p>
+<h2 id="the-synthesis-agents-challenge">The Synthesis Agent&rsquo;s challenge</h2>
+<p>A researcher reads 200 papers and internalizes patterns: &ldquo;Three papers use agent-based models. They all found that social networks matter. But only one validated against real data.&rdquo;</p>
+<p>An agent cannot read 200 papers. But an agent can query the methodology database and spot the same pattern if you ask the right questions.</p>
+<p>The challenge is: how do you get an agent to propose narrative structure from data?</p>
+<h2 id="three-types-of-synthesis-tasks">Three types of synthesis tasks</h2>
+<h3 id="type-1-thematic-organization">Type 1: Thematic organization</h3>
+<p>Group papers by theme and draft sections.</p>
+<pre tabindex="0"><code>Question to agent:
 &#34;The methodology database shows papers grouped by:
 - Methodology: agent-based (40), survey (35), flow-based (25), hybrid (30)
 - Validation: real-world (20), simulated (120), hybrid (30)
@@ -34,7 +457,9 @@ Survey research provides empirical foundations. Common findings:
 - Family composition affects decision-making (7 papers)
 ...
 &#34;
-</code></pre><h3 id=type-2-gap-identification-and-questioning>Type 2: Gap identification and questioning</h3><p>Use data to spot what is missing, then propose research directions.</p><pre tabindex=0><code>Question to agent:
+</code></pre><h3 id="type-2-gap-identification-and-questioning">Type 2: Gap identification and questioning</h3>
+<p>Use data to spot what is missing, then propose research directions.</p>
+<pre tabindex="0"><code>Question to agent:
 &#34;Papers in methodology_db show:
 - 40 agent-based evacuation papers
 - Of these, 40 study general populations
@@ -58,7 +483,9 @@ Research question: Can we integrate real-time mobile phone data to update evacua
 Current state: 200 papers assume single-event evacuation
 Research question: How do consecutive natural disasters (hurricane → flooding) affect household evacuation decisions?
 &#34;
-</code></pre><h3 id=type-3-conflict-identification-and-synthesis>Type 3: Conflict identification and synthesis</h3><p>Spot papers with contradictory findings and propose explanations.</p><pre tabindex=0><code>Question to agent:
+</code></pre><h3 id="type-3-conflict-identification-and-synthesis">Type 3: Conflict identification and synthesis</h3>
+<p>Spot papers with contradictory findings and propose explanations.</p>
+<pre tabindex="0"><code>Question to agent:
 &#34;Papers show contradictory findings:
 - Paper A: Social network effects increase evacuation compliance by 23%
 - Paper B: Social networks have no significant effect on evacuation decisions
@@ -93,21 +520,27 @@ The contradiction likely stems from differences in:
 
 Unified explanation: Social networks influence evacuation decisions when (a) actual social ties are measured, (b) evacuation is discretionary, and (c) populations are family-oriented. These conditions hold in papers A and C but not B.
 &#34;
-</code></pre><h2 id=how-synthesis-agent-works-the-flow>How Synthesis Agent works: the flow</h2><h3 id=step-1-query-the-methodology-database>Step 1: Query the methodology database</h3><p>The agent asks targeted questions:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#75715e>-- Query 1: How many papers per methodology type?
-</span></span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> methodology_type, <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>) <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>count</span> <span style=color:#66d9ef>FROM</span> papers <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> methodology_type
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>-- Query 2: What datasets are used most?
-</span></span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> dataset, <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>) <span style=color:#66d9ef>as</span> frequency <span style=color:#66d9ef>FROM</span> papers <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dataset <span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> frequency <span style=color:#66d9ef>DESC</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>-- Query 3: Which papers validate against real-world data?
-</span></span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> authors, <span style=color:#66d9ef>year</span>, methodology_type <span style=color:#66d9ef>FROM</span> papers <span style=color:#66d9ef>WHERE</span> validation <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;real-world&#39;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>-- Query 4: What main claims appear most frequently?
-</span></span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> main_claim, <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>) <span style=color:#66d9ef>as</span> frequency <span style=color:#66d9ef>FROM</span> papers <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> main_claim <span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> frequency <span style=color:#66d9ef>DESC</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>-- Query 5: What populations are underrepresented?
-</span></span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> population, <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>) <span style=color:#66d9ef>as</span> <span style=color:#66d9ef>count</span> <span style=color:#66d9ef>FROM</span> papers <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> population <span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> <span style=color:#66d9ef>count</span> <span style=color:#66d9ef>ASC</span>
-</span></span></code></pre></div><p>These queries reveal patterns a human might miss.</p><h3 id=step-2-identify-themes-and-organize>Step 2: Identify themes and organize</h3><p>From patterns, the agent proposes structure:</p><pre tabindex=0><code>Observation: 40 papers use agent-based, 35 papers use surveys, 25 papers use flow models
+</code></pre><h2 id="how-synthesis-agent-works-the-flow">How Synthesis Agent works: the flow</h2>
+<h3 id="step-1-query-the-methodology-database">Step 1: Query the methodology database</h3>
+<p>The agent asks targeted questions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- Query 1: How many papers per methodology type?
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> methodology_type, <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">count</span> <span style="color:#66d9ef">FROM</span> papers <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> methodology_type
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Query 2: What datasets are used most?
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> dataset, <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">as</span> frequency <span style="color:#66d9ef">FROM</span> papers <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> dataset <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> frequency <span style="color:#66d9ef">DESC</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Query 3: Which papers validate against real-world data?
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> authors, <span style="color:#66d9ef">year</span>, methodology_type <span style="color:#66d9ef">FROM</span> papers <span style="color:#66d9ef">WHERE</span> validation <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;real-world&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Query 4: What main claims appear most frequently?
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> main_claim, <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">as</span> frequency <span style="color:#66d9ef">FROM</span> papers <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> main_claim <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> frequency <span style="color:#66d9ef">DESC</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- Query 5: What populations are underrepresented?
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> population, <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">count</span> <span style="color:#66d9ef">FROM</span> papers <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> population <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">count</span> <span style="color:#66d9ef">ASC</span>
+</span></span></code></pre></div><p>These queries reveal patterns a human might miss.</p>
+<h3 id="step-2-identify-themes-and-organize">Step 2: Identify themes and organize</h3>
+<p>From patterns, the agent proposes structure:</p>
+<pre tabindex="0"><code>Observation: 40 papers use agent-based, 35 papers use surveys, 25 papers use flow models
 Organization: Three methodological traditions
 
 Observation: Agent-based papers cite each other frequently; flow model papers form a separate cluster
@@ -121,7 +554,9 @@ Proposed outline:
 - Three traditions (ABM, survey, flow)
 - Emerging hybrid methods
 - Comparative validation (which validate well?)
-</code></pre><h3 id=step-3-draft-prose-for-each-section>Step 3: Draft prose for each section</h3><p>The agent drafts:</p><pre tabindex=0><code>## Methodological Approaches to Evacuation Research
+</code></pre><h3 id="step-3-draft-prose-for-each-section">Step 3: Draft prose for each section</h3>
+<p>The agent drafts:</p>
+<pre tabindex="0"><code>## Methodological Approaches to Evacuation Research
 
 Evacuation research has evolved through three distinct traditions. 
 The agent-based modeling tradition, emerging in the early 2000s, 
@@ -159,101 +594,165 @@ Limitations: Survey bias, limited to stated preferences
 Flow models, borrowed from traffic theory, treat evacuation 
 as optimization of capacity and routing. Key papers: [citations].
 ...
-</code></pre><p>This is not final prose. It is structured draft that you review, edit, and refine.</p><h2 id=implementation-three-approaches>Implementation: three approaches</h2><h3 id=approach-1-prompted-generation-simplest>Approach 1: Prompted generation (simplest)</h3><p>Give the agent a template and let it fill it:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span>template <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>## </span><span style=color:#e6db74>{theme}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>{description}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>### Thematic breakdown
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>{themes}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>### Key papers
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>{papers}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>### Limitations and gaps
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>{gaps}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>### Research questions
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>{questions}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>agent_prompt <span style=color:#f92672>=</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>You have a database of </span><span style=color:#e6db74>{</span>len(papers)<span style=color:#e6db74>}</span><span style=color:#e6db74> papers on evacuation research.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>The database shows:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>- </span><span style=color:#e6db74>{</span>stat1<span style=color:#e6db74>}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>- </span><span style=color:#e6db74>{</span>stat2<span style=color:#e6db74>}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>- </span><span style=color:#e6db74>{</span>stat3<span style=color:#e6db74>}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Using the template below, generate a literature review section on &#34;</span><span style=color:#e6db74>{</span>topic<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Template:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>{</span>template<span style=color:#e6db74>}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Fill in each placeholder with content based on the database.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>synthesis_agent<span style=color:#f92672>.</span>run(agent_prompt)
+</code></pre><p>This is not final prose. It is structured draft that you review, edit, and refine.</p>
+<h2 id="implementation-three-approaches">Implementation: three approaches</h2>
+<h3 id="approach-1-prompted-generation-simplest">Approach 1: Prompted generation (simplest)</h3>
+<p>Give the agent a template and let it fill it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>template <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">## </span><span style="color:#e6db74">{theme}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{description}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">### Thematic breakdown
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{themes}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">### Key papers
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{papers}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">### Limitations and gaps
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{gaps}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">### Research questions
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{questions}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>agent_prompt <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">You have a database of </span><span style="color:#e6db74">{</span>len(papers)<span style="color:#e6db74">}</span><span style="color:#e6db74"> papers on evacuation research.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">The database shows:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">- </span><span style="color:#e6db74">{</span>stat1<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">- </span><span style="color:#e6db74">{</span>stat2<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">- </span><span style="color:#e6db74">{</span>stat3<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Using the template below, generate a literature review section on &#34;</span><span style="color:#e6db74">{</span>topic<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Template:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{</span>template<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Fill in each placeholder with content based on the database.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>synthesis_agent<span style="color:#f92672">.</span>run(agent_prompt)
 </span></span></code></pre></div><p><strong>Pros:</strong> Simple, fast, predictable output
-<strong>Cons:</strong> Requires good template; output may be generic</p><h3 id=approach-2-iterative-refinement>Approach 2: Iterative refinement</h3><p>Give the agent a task, it generates, you review, it iterates:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Round 1: Initial draft</span>
-</span></span><span style=display:flex><span>draft1 <span style=color:#f92672>=</span> agent<span style=color:#f92672>.</span>generate(task<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Draft methodology section&#34;</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Review</span>
-</span></span><span style=display:flex><span>feedback <span style=color:#f92672>=</span> human_review(draft1)  <span style=color:#75715e># &#34;Add more on validation&#34;; &#34;Expand gap analysis&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Round 2: Refined draft</span>
-</span></span><span style=display:flex><span>draft2 <span style=color:#f92672>=</span> agent<span style=color:#f92672>.</span>generate(
-</span></span><span style=display:flex><span>  task<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Draft methodology section&#34;</span>,
-</span></span><span style=display:flex><span>  previous_draft<span style=color:#f92672>=</span>draft1,
-</span></span><span style=display:flex><span>  feedback<span style=color:#f92672>=</span>feedback
-</span></span><span style=display:flex><span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Review again...</span>
+<strong>Cons:</strong> Requires good template; output may be generic</p>
+<h3 id="approach-2-iterative-refinement">Approach 2: Iterative refinement</h3>
+<p>Give the agent a task, it generates, you review, it iterates:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Round 1: Initial draft</span>
+</span></span><span style="display:flex;"><span>draft1 <span style="color:#f92672">=</span> agent<span style="color:#f92672">.</span>generate(task<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Draft methodology section&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Review</span>
+</span></span><span style="display:flex;"><span>feedback <span style="color:#f92672">=</span> human_review(draft1)  <span style="color:#75715e"># &#34;Add more on validation&#34;; &#34;Expand gap analysis&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Round 2: Refined draft</span>
+</span></span><span style="display:flex;"><span>draft2 <span style="color:#f92672">=</span> agent<span style="color:#f92672">.</span>generate(
+</span></span><span style="display:flex;"><span>  task<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Draft methodology section&#34;</span>,
+</span></span><span style="display:flex;"><span>  previous_draft<span style="color:#f92672">=</span>draft1,
+</span></span><span style="display:flex;"><span>  feedback<span style="color:#f92672">=</span>feedback
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Review again...</span>
 </span></span></code></pre></div><p><strong>Pros:</strong> Better quality, agent learns from feedback
-<strong>Cons:</strong> Slower, requires human involvement</p><h3 id=approach-3-multi-step-synthesis>Approach 3: Multi-step synthesis</h3><p>Agent first plans structure, then drafts:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Step 1: Plan</span>
-</span></span><span style=display:flex><span>plan <span style=color:#f92672>=</span> agent<span style=color:#f92672>.</span>run(task<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Analyze papers and create outline.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  For each section:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  - What is the theme?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  - How many papers support it?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  - What are the key papers?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  - What are the gaps?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Step 2: Draft each section from plan</span>
-</span></span><span style=display:flex><span>sections <span style=color:#f92672>=</span> {}
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> section <span style=color:#f92672>in</span> plan:
-</span></span><span style=display:flex><span>  draft <span style=color:#f92672>=</span> agent<span style=color:#f92672>.</span>run(task<span style=color:#f92672>=</span><span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Draft a literature review section on &#34;</span><span style=color:#e6db74>{</span>section<span style=color:#f92672>.</span>theme<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Key papers: </span><span style=color:#e6db74>{</span>section<span style=color:#f92672>.</span>key_papers<span style=color:#e6db74>}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Common findings: </span><span style=color:#e6db74>{</span>section<span style=color:#f92672>.</span>findings<span style=color:#e6db74>}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Gaps: </span><span style=color:#e6db74>{</span>section<span style=color:#f92672>.</span>gaps<span style=color:#e6db74>}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  &#34;&#34;&#34;</span>)
-</span></span><span style=display:flex><span>  sections[section<span style=color:#f92672>.</span>theme] <span style=color:#f92672>=</span> draft
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Step 3: Integrate sections</span>
-</span></span><span style=display:flex><span>full_draft <span style=color:#f92672>=</span> agent<span style=color:#f92672>.</span>run(task<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Combine these sections into one coherent literature review.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Make sure transitions between sections are smooth.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>  Sections: </span><span style=color:#e6db74>{sections}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>)
+<strong>Cons:</strong> Slower, requires human involvement</p>
+<h3 id="approach-3-multi-step-synthesis">Approach 3: Multi-step synthesis</h3>
+<p>Agent first plans structure, then drafts:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Step 1: Plan</span>
+</span></span><span style="display:flex;"><span>plan <span style="color:#f92672">=</span> agent<span style="color:#f92672">.</span>run(task<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Analyze papers and create outline.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  For each section:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  - What is the theme?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  - How many papers support it?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  - What are the key papers?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  - What are the gaps?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 2: Draft each section from plan</span>
+</span></span><span style="display:flex;"><span>sections <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> section <span style="color:#f92672">in</span> plan:
+</span></span><span style="display:flex;"><span>  draft <span style="color:#f92672">=</span> agent<span style="color:#f92672">.</span>run(task<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Draft a literature review section on &#34;</span><span style="color:#e6db74">{</span>section<span style="color:#f92672">.</span>theme<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Key papers: </span><span style="color:#e6db74">{</span>section<span style="color:#f92672">.</span>key_papers<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Common findings: </span><span style="color:#e6db74">{</span>section<span style="color:#f92672">.</span>findings<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Gaps: </span><span style="color:#e6db74">{</span>section<span style="color:#f92672">.</span>gaps<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  &#34;&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>  sections[section<span style="color:#f92672">.</span>theme] <span style="color:#f92672">=</span> draft
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 3: Integrate sections</span>
+</span></span><span style="display:flex;"><span>full_draft <span style="color:#f92672">=</span> agent<span style="color:#f92672">.</span>run(task<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Combine these sections into one coherent literature review.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Make sure transitions between sections are smooth.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  Sections: </span><span style="color:#e6db74">{sections}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>)
 </span></span></code></pre></div><p><strong>Pros:</strong> Higher quality, agent reasons about structure first
-<strong>Cons:</strong> Slower, more API calls (if hosted)</p><h2 id=common-synthesis-mistakes>Common Synthesis mistakes</h2><h3 id=mistake-1-hallucinating-papers>Mistake 1: Hallucinating papers</h3><p>Agent invents a paper: &ldquo;Smith et al. 2024 found that evacuees prefer trains to cars.&rdquo;</p><p>But Smith et al. 2024 says no such thing (or does not exist).</p><p><strong>Fix:</strong></p><ul><li>Synthesis agent must cite specific papers from the database</li><li>Every claim should be: &ldquo;According to [papers], [finding].&rdquo;</li><li>Require citations to paper IDs, not paraphrased claims</li></ul><h3 id=mistake-2-overgeneralizing-from-few-examples>Mistake 2: Overgeneralizing from few examples</h3><p>&ldquo;Papers show that social networks matter&rdquo; (based on 3 papers)</p><p>But database has 200 papers; most do not study social networks.</p><p><strong>Fix:</strong></p><ul><li>Agent must quantify: &ldquo;3 of 40 agent-based papers study social networks&rdquo;</li><li>Distinguish between &ldquo;universal finding&rdquo; and &ldquo;one group&rsquo;s finding&rdquo;</li><li>Flag when a finding is paper-specific vs. cross-paper consensus</li></ul><h3 id=mistake-3-ignoring-contradictions>Mistake 3: Ignoring contradictions</h3><p>Agent writes smoothly over conflicting papers, hiding disagreement.</p><p>&ldquo;Papers show evacuation compliance ranges from 20% to 95%.&rdquo;</p><p>But does not explain why the range is so wide.</p><p><strong>Fix:</strong></p><ul><li>Synthesis agent must identify contradictions explicitly</li><li>Propose explanations for why papers differ</li><li>Resist the urge to smooth over real disagreement</li></ul><h3 id=mistake-4-narrative-drift>Mistake 4: Narrative drift</h3><p>Synthesis starts as &ldquo;A review of evacuation methods&rdquo; but drifts into &ldquo;A defense of agent-based models.&rdquo;</p><p><strong>Fix:</strong></p><ul><li>Set a clear scope before synthesis starts</li><li>Use a Critic agent (next post) to catch bias</li><li>Track what scope you started with vs. what you ended up writing</li></ul><h3 id=mistake-5-missing-the-research-question>Mistake 5: Missing the research question</h3><p>Agent writes competent literature review but never connects it to your research.</p><p>&ldquo;Here is what is known. Here is what is unknown. [Silence on why your question matters.]&rdquo;</p><p><strong>Fix:</strong></p><ul><li>Include your research question in the synthesis prompt</li><li>Ask agent: &ldquo;How does each section relate to my question?&rdquo;</li><li>End synthesis with: &ldquo;Your research fills gap X by doing Y.&rdquo;</li></ul><h2 id=connecting-synthesis-to-critic>Connecting Synthesis to Critic</h2><p>Synthesis produces a draft. Now Critic reviews it:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span>critic_prompt <span style=color:#f92672>=</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;&#34;&#34;
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Review this literature review section:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>{</span>draft<span style=color:#e6db74>}</span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>Questions to address:
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>1. Are all claims cited? Any unsupported statements?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>2. Are contradictions handled or glossed over?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>3. Does it answer the original research question?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>4. Are there logical gaps in the narrative?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>5. Does it favor one tradition over others?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>6. What should the author revise?
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>critique <span style=color:#f92672>=</span> critic_agent<span style=color:#f92672>.</span>run(critic_prompt)
-</span></span></code></pre></div><p>Then you decide which critiques to incorporate into the next synthesis draft.</p><h2 id=synthesis-examples-evacuation-research>Synthesis examples: evacuation research</h2><h3 id=example-1-thematic-synthesis>Example 1: Thematic synthesis</h3><p>Agent query: &ldquo;Organize papers by validation approach.&rdquo;</p><p>Agent response:</p><pre tabindex=0><code>## Validation Approaches
+<strong>Cons:</strong> Slower, more API calls (if hosted)</p>
+<h2 id="common-synthesis-mistakes">Common Synthesis mistakes</h2>
+<h3 id="mistake-1-hallucinating-papers">Mistake 1: Hallucinating papers</h3>
+<p>Agent invents a paper: &ldquo;Smith et al. 2024 found that evacuees prefer trains to cars.&rdquo;</p>
+<p>But Smith et al. 2024 says no such thing (or does not exist).</p>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Synthesis agent must cite specific papers from the database</li>
+<li>Every claim should be: &ldquo;According to [papers], [finding].&rdquo;</li>
+<li>Require citations to paper IDs, not paraphrased claims</li>
+</ul>
+<h3 id="mistake-2-overgeneralizing-from-few-examples">Mistake 2: Overgeneralizing from few examples</h3>
+<p>&ldquo;Papers show that social networks matter&rdquo; (based on 3 papers)</p>
+<p>But database has 200 papers; most do not study social networks.</p>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Agent must quantify: &ldquo;3 of 40 agent-based papers study social networks&rdquo;</li>
+<li>Distinguish between &ldquo;universal finding&rdquo; and &ldquo;one group&rsquo;s finding&rdquo;</li>
+<li>Flag when a finding is paper-specific vs. cross-paper consensus</li>
+</ul>
+<h3 id="mistake-3-ignoring-contradictions">Mistake 3: Ignoring contradictions</h3>
+<p>Agent writes smoothly over conflicting papers, hiding disagreement.</p>
+<p>&ldquo;Papers show evacuation compliance ranges from 20% to 95%.&rdquo;</p>
+<p>But does not explain why the range is so wide.</p>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Synthesis agent must identify contradictions explicitly</li>
+<li>Propose explanations for why papers differ</li>
+<li>Resist the urge to smooth over real disagreement</li>
+</ul>
+<h3 id="mistake-4-narrative-drift">Mistake 4: Narrative drift</h3>
+<p>Synthesis starts as &ldquo;A review of evacuation methods&rdquo; but drifts into &ldquo;A defense of agent-based models.&rdquo;</p>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Set a clear scope before synthesis starts</li>
+<li>Use a Critic agent (next post) to catch bias</li>
+<li>Track what scope you started with vs. what you ended up writing</li>
+</ul>
+<h3 id="mistake-5-missing-the-research-question">Mistake 5: Missing the research question</h3>
+<p>Agent writes competent literature review but never connects it to your research.</p>
+<p>&ldquo;Here is what is known. Here is what is unknown. [Silence on why your question matters.]&rdquo;</p>
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Include your research question in the synthesis prompt</li>
+<li>Ask agent: &ldquo;How does each section relate to my question?&rdquo;</li>
+<li>End synthesis with: &ldquo;Your research fills gap X by doing Y.&rdquo;</li>
+</ul>
+<h2 id="connecting-synthesis-to-critic">Connecting Synthesis to Critic</h2>
+<p>Synthesis produces a draft. Now Critic reviews it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>critic_prompt <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Review this literature review section:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{</span>draft<span style="color:#e6db74">}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Questions to address:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">1. Are all claims cited? Any unsupported statements?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">2. Are contradictions handled or glossed over?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">3. Does it answer the original research question?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">4. Are there logical gaps in the narrative?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">5. Does it favor one tradition over others?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">6. What should the author revise?
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>critique <span style="color:#f92672">=</span> critic_agent<span style="color:#f92672">.</span>run(critic_prompt)
+</span></span></code></pre></div><p>Then you decide which critiques to incorporate into the next synthesis draft.</p>
+<h2 id="synthesis-examples-evacuation-research">Synthesis examples: evacuation research</h2>
+<h3 id="example-1-thematic-synthesis">Example 1: Thematic synthesis</h3>
+<p>Agent query: &ldquo;Organize papers by validation approach.&rdquo;</p>
+<p>Agent response:</p>
+<pre tabindex="0"><code>## Validation Approaches
 
 ### Real-World Validation (20 papers)
 Papers comparing models to actual evacuation data during real events.
@@ -277,7 +776,10 @@ Common limitation: No ground truth; hard to know if results are realistic.
 Papers proposing methods but not validating them.
 
 Research gap: Most evacuation models remain untested against real data.
-</code></pre><h3 id=example-2-gap-synthesis>Example 2: Gap synthesis</h3><p>Agent query: &ldquo;What research questions are unexamined?&rdquo;</p><p>Agent response:</p><pre tabindex=0><code>## Research Gaps
+</code></pre><h3 id="example-2-gap-synthesis">Example 2: Gap synthesis</h3>
+<p>Agent query: &ldquo;What research questions are unexamined?&rdquo;</p>
+<p>Agent response:</p>
+<pre tabindex="0"><code>## Research Gaps
 
 ### Gap 1: Intersectional Populations
 Most papers study &#34;general population&#34; or single demographic groups.
@@ -304,7 +806,10 @@ Papers on cascading disasters (hurricane → flooding → recovery): 2
 
 Research question: How do repeated evacuations (or failed evacuation) 
 affect subsequent evacuation decisions?
-</code></pre><h3 id=example-3-contradiction-synthesis>Example 3: Contradiction synthesis</h3><p>Agent query: &ldquo;Find papers with contradictory findings on social factors.&rdquo;</p><p>Agent response:</p><pre tabindex=0><code>## Contradictory Findings on Social Factors
+</code></pre><h3 id="example-3-contradiction-synthesis">Example 3: Contradiction synthesis</h3>
+<p>Agent query: &ldquo;Find papers with contradictory findings on social factors.&rdquo;</p>
+<p>Agent response:</p>
+<pre tabindex="0"><code>## Contradictory Findings on Social Factors
 
 ### The Contradiction
 - Study A (Smith 2024): Social networks increase evacuation by 23%
@@ -348,9 +853,192 @@ Instead, their effect depends on:
 4. Whether households coordinate or decide independently
 
 Future research should control for these factors.
-</code></pre><h2 id=tools-for-synthesis>Tools for synthesis</h2><table><thead><tr><th>Tool</th><th>Purpose</th><th>Cost</th></tr></thead><tbody><tr><td>Claude 3.5 Sonnet</td><td>High-quality reasoning for organizing/drafting</td><td>API cost</td></tr><tr><td>GPT-4</td><td>Strong narrative generation</td><td>API cost</td></tr><tr><td>LangChain</td><td>Agent framework for multi-step synthesis</td><td>Free</td></tr><tr><td>Jinja2</td><td>Template rendering (fill outline with content)</td><td>Free (Python)</td></tr><tr><td>SQLite</td><td>Query methodology database</td><td>Free</td></tr><tr><td>Markdown</td><td>Output format for draft sections</td><td>Free</td></tr></tbody></table><h2 id=what-comes-next>What comes next</h2><p>With a draft synthesis, two more agents contribute:</p><ol><li><strong>Critic Agent</strong> - Questions assumptions, finds gaps, suggests alternatives</li><li><strong>Gap Finder Agent</strong> - (in previous post) identifies what is missing</li></ol><p>Then you review and decide which feedback to incorporate.</p><p>Finally, you write. The agents built the scaffolding. You add the building.</p><h2 id=the-practical-lesson>The practical lesson</h2><p>Synthesis is not creativity (that is still your job). It is pattern recognition at scale.</p><p>The Synthesis Agent spots what is common, what is rare, what contradicts, and what is missing. It proposes structure. It drafts prose that captures those patterns.</p><p>But it cannot judge whether a pattern matters. It cannot decide whether a contradiction is interesting or trivial. It cannot make the leap from &ldquo;here is what we know&rdquo; to &ldquo;here is what we should study next.&rdquo;</p><p>That is where your research judgment comes in.</p><p>A research team works when agents handle the mechanical parts (search, extract, organize) and humans handle the thinking parts (interpret, decide, judge).</p><p>The Synthesis Agent is the bridge: it does enough pattern recognition to make your thinking more efficient.</p></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/scratchpad/research-agents/04-methodology-analyzer-agent/>&#8592;
-Previous:
-The Methodology Analyzer: Extracting Structured Research Data</a></p><p class=prev-post-date>June 9, 2026</p></div><div class=next-post><p><a href=/scratchpad/research-agents/06-multi-agent-workflows/>Next:
-Multi-Agent Workflows: Coordination and Conflict Resolution
-&#8594;</a></p><p class=next-post-date>June 11, 2026</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>© 2017-2026 / Mohammad Movahedi. All rights reserved</a>.</span></footer></body></html>
+</code></pre><h2 id="tools-for-synthesis">Tools for synthesis</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Purpose</th>
+          <th>Cost</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Claude 3.5 Sonnet</td>
+          <td>High-quality reasoning for organizing/drafting</td>
+          <td>API cost</td>
+      </tr>
+      <tr>
+          <td>GPT-4</td>
+          <td>Strong narrative generation</td>
+          <td>API cost</td>
+      </tr>
+      <tr>
+          <td>LangChain</td>
+          <td>Agent framework for multi-step synthesis</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td>Jinja2</td>
+          <td>Template rendering (fill outline with content)</td>
+          <td>Free (Python)</td>
+      </tr>
+      <tr>
+          <td>SQLite</td>
+          <td>Query methodology database</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td>Markdown</td>
+          <td>Output format for draft sections</td>
+          <td>Free</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="what-comes-next">What comes next</h2>
+<p>With a draft synthesis, two more agents contribute:</p>
+<ol>
+<li><strong>Critic Agent</strong> - Questions assumptions, finds gaps, suggests alternatives</li>
+<li><strong>Gap Finder Agent</strong> - (in previous post) identifies what is missing</li>
+</ol>
+<p>Then you review and decide which feedback to incorporate.</p>
+<p>Finally, you write. The agents built the scaffolding. You add the building.</p>
+<h2 id="the-practical-lesson">The practical lesson</h2>
+<p>Synthesis is not creativity (that is still your job). It is pattern recognition at scale.</p>
+<p>The Synthesis Agent spots what is common, what is rare, what contradicts, and what is missing. It proposes structure. It drafts prose that captures those patterns.</p>
+<p>But it cannot judge whether a pattern matters. It cannot decide whether a contradiction is interesting or trivial. It cannot make the leap from &ldquo;here is what we know&rdquo; to &ldquo;here is what we should study next.&rdquo;</p>
+<p>That is where your research judgment comes in.</p>
+<p>A research team works when agents handle the mechanical parts (search, extract, organize) and humans handle the thinking parts (interpret, decide, judge).</p>
+<p>The Synthesis Agent is the bridge: it does enough pattern recognition to make your thinking more efficient.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/research-agents/04-methodology-analyzer-agent/">
+                &#8592;
+                Previous:
+                The Methodology Analyzer: Extracting Structured Research Data
+            </a>
+        </p>
+        <p class="prev-post-date">
+            June 9, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/research-agents/06-multi-agent-workflows/">
+                Next:
+                Multi-Agent Workflows: Coordination and Conflict Resolution
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            June 11, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

@@ -14,7 +14,7 @@ journal: "International Conference on Civil Engineering, Architecture and Urban 
 ---
 
 <div style="background-color: #fdf5e6; border-left: 6px solid #e67e22; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #d35400; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🧠</span> The Cognitive Cost of Distracted Driving</h4>
+  <h2 style="margin-top: 0; color: #d35400; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🧠</span> The Cognitive Cost of Distracted Driving</h2>
   <p style="margin-bottom: 0; color: #555;">With motor vehicle crashes remaining a leading cause of fatalities worldwide, understanding the human factors behind the wheel is more critical than ever. Inattention and aggressive driving are major culprits. But what if we could predict a driver's likelihood to make aggressive errors based on a simple cognitive test? This study bridges cognitive psychology and transportation engineering to explore exactly that.</p>
 </div>
 

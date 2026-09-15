@@ -4,10 +4,7 @@ weight: 79
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Railroad Crossings and Preemption
-
-Highway-rail grade crossings are intersections where a roadway crosses railroad tracks at grade. Due to the massive difference in mass and braking capability between trains and motor vehicles, these crossings require specialized signs, pavement markings, and signal preemption systems.
+---Highway-rail grade crossings are intersections where a roadway crosses railroad tracks at grade. Due to the massive difference in mass and braking capability between trains and motor vehicles, these crossings require specialized signs, pavement markings, and signal preemption systems.
 
 On the PE Civil Transportation exam, you will encounter questions regarding grade crossing control devices, preemption types (simultaneous vs. advance), track clearance timing, and queue clearance calculations.
 

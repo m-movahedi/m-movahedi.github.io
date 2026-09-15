@@ -30,7 +30,7 @@ A model name is only the label at the top of the stack. Behavior comes from the 
 
 <div class="llm-diagram-container" id="diagram-204">
   <div class="llm-diagram-header">
-    <h4>The "Same Model" Stack</h4>
+    <h3>The "Same Model" Stack</h3>
     <p>A model name is just the top layer.</p>
   </div>
   <div class="llm-grid-layout" style="grid-template-columns: repeat(4, 1fr); gap: 0.5rem; text-align: center;">

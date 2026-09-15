@@ -4,10 +4,7 @@ weight: 29
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Ramp Merge and Diverge Operations
-
-Ramp merge and diverge segments represent major points of traffic turbulence on freeways. The operational analysis focuses on the **Ramp Influence Area**, which is defined as the area extending $1,500 \text{ feet}$ along the freeway outer lanes (lanes 1 and 2) and including the acceleration or deceleration lane.
+---Ramp merge and diverge segments represent major points of traffic turbulence on freeways. The operational analysis focuses on the **Ramp Influence Area**, which is defined as the area extending $1,500 \text{ feet}$ along the freeway outer lanes (lanes 1 and 2) and including the acceleration or deceleration lane.
 
 The NCEES PE Civil Transportation exam frequently tests these operations. The analysis is governed by Chapter 14 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.
 

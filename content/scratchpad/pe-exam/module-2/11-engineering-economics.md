@@ -4,10 +4,7 @@ weight: 11
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Engineering Economics
-
-Engineering economics evaluates the systematic worth of projects and alternatives. On the PE Civil Transportation exam, this topic is highly predictable and relies heavily on the economic tables and formulas in the NCEES PE Civil Reference Handbook. 
+---Engineering economics evaluates the systematic worth of projects and alternatives. On the PE Civil Transportation exam, this topic is highly predictable and relies heavily on the economic tables and formulas in the NCEES PE Civil Reference Handbook. 
 
 ---
 

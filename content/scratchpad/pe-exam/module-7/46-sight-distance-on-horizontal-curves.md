@@ -4,10 +4,7 @@ weight: 46
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Sight Distance on Horizontal Curves
-
-When a vehicle travels along a horizontal curve, the driver's line of sight can be obstructed by objects on the inside of the curve, such as retaining walls, bridge abutments, building facades, rock cuts, or dense vegetation. Designers must ensure that the lateral clearance between the travel lane and any obstruction is sufficient to provide the required stopping sight distance (SSD).
+---When a vehicle travels along a horizontal curve, the driver's line of sight can be obstructed by objects on the inside of the curve, such as retaining walls, bridge abutments, building facades, rock cuts, or dense vegetation. Designers must ensure that the lateral clearance between the travel lane and any obstruction is sufficient to provide the required stopping sight distance (SSD).
 
 For the PE Civil Transportation exam, sight distance on horizontal curves is calculated using formulas from the **NCEES PE Civil Reference Handbook** and guidelines in the **AASHTO Green Book (GDHS)**, Chapter 3.
 

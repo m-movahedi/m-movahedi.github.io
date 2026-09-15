@@ -4,10 +4,7 @@ weight: 20
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Forecasting and Growth Factors
-
-Traffic forecasting estimates future traffic volumes on road facilities, which is essential for determining design requirements (such as the number of lanes or pavement thickness). On the PE Civil Transportation exam, forecasting questions cover two primary categories: projecting traffic into the future using **linear and compound growth models**, and expanding short-term traffic counts into estimated annual averages using **seasonal, daily, and hourly adjustment factors**.
+---Traffic forecasting estimates future traffic volumes on road facilities, which is essential for determining design requirements (such as the number of lanes or pavement thickness). On the PE Civil Transportation exam, forecasting questions cover two primary categories: projecting traffic into the future using **linear and compound growth models**, and expanding short-term traffic counts into estimated annual averages using **seasonal, daily, and hourly adjustment factors**.
 
 ---
 

@@ -4,10 +4,7 @@ weight: 21
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Capacity and Level of Service Overview
-
-The Highway Capacity Manual (HCM) defines capacity and Level of Service (LOS) as the core performance metrics used to analyze and design transportation facilities. In the NCEES PE Civil Transportation exam, understanding these foundational concepts, knowing how they differ across facility types, and mastering the basic traffic flow relationships is essential. This lesson covers the fundamentals of capacity, demand, volume-to-capacity ($v/c$) ratios, service flow rates, density, delay, and how these performance measures translate into LOS.
+---The Highway Capacity Manual (HCM) defines capacity and Level of Service (LOS) as the core performance metrics used to analyze and design transportation facilities. In the NCEES PE Civil Transportation exam, understanding these foundational concepts, knowing how they differ across facility types, and mastering the basic traffic flow relationships is essential. This lesson covers the fundamentals of capacity, demand, volume-to-capacity ($v/c$) ratios, service flow rates, density, delay, and how these performance measures translate into LOS.
 
 ## Fundamentals of Capacity and demand
 

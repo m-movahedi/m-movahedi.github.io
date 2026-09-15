@@ -4,12 +4,23 @@ title = "Mohammad Movahedi"
 theme = "gokarna-hugo"
 enableEmoji = true
 googleAnalytics = "G-1WZSE8DHZ9"
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = "tags"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.8
+  filename = "sitemap.xml"
 
 [params]
   description = "Construction & Infrastructure Management Researcher"
   avatarURL = "/images/profile.png"
   avatarAltText = "Mohammad Movahedi"
   avatarSize = "size-m"
+  ogImage = "/images/og-image.png"
+  googleSiteVerification = ""
   showBackToTopButton = true
   togglePreviousAndNextButtons = true
   customHeadHTML = '''

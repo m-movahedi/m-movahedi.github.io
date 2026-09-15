@@ -1,0 +1,130 @@
+{{- $authorName := "Mohammad Movahedi" -}}
+{{- $authorUrl := "https://m-movahedi.com/" -}}
+{{- $avatarUrl := "https://m-movahedi.com/images/profile.png" -}}
+{{- $ogImage := .Params.image | default (.Params.featured_image | default "/images/og-image.png") | absURL -}}
+{{- $title := .Title | markdownify | default .Site.Title -}}
+{{- $desc := ((.Description | default (.Summary | default .Content) | default .Site.Params.Description) | plainify | truncate 160) -}}
+
+<!-- WebSite Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Site.Params.Description }}",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+<!-- Person Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "{{ $authorName }}",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "{{ $authorUrl }}",
+  "image": "{{ $avatarUrl }}",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+{{ if and .IsPage (not .IsHome) }}
+<!-- Article / BlogPosting Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ if eq .Section "research" }}ScholarlyArticle{{ else }}BlogPosting{{ end }}",
+  "headline": {{ $title | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "url": "{{ .Permalink }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  {{ with .Date }}"datePublished": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+  {{ with .Lastmod }}"dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+  "image": "{{ $ogImage }}",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    {{ with .Section }}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ . | humanize | title | jsonify }},
+      "item": "{{ printf "https://m-movahedi.com/%s/" . }}"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ $title | jsonify }},
+      "item": "{{ $.Permalink }}"
+    }
+    {{ else }}
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ $title | jsonify }},
+      "item": "{{ $.Permalink }}"
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}

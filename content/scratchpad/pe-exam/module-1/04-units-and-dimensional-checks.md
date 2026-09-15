@@ -4,10 +4,7 @@ weight: 4
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Units and Dimensional Checks
-
-If there is one absolute truth about the PE Civil Transportation exam, it is this: **Unit errors will sink your score.** 
+---If there is one absolute truth about the PE Civil Transportation exam, it is this: **Unit errors will sink your score.** 
 
 Transportation engineering is heavily reliant on empirical formulas (formulas derived from observation rather than pure physics). Because of this, equations frequently mix units—taking a speed in miles per hour (mph) and a time in seconds (s) to produce a distance in feet (ft). 
 

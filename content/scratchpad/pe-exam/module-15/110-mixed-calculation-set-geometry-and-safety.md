@@ -4,10 +4,7 @@ weight: 110
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Mixed Calculation Set: Geometry and Safety
-
-This calculation set covers geometric alignment design and roadside safety calculations typical of the PE Civil Transportation exam.
+---This calculation set covers geometric alignment design and roadside safety calculations typical of the PE Civil Transportation exam.
 
 ---
 

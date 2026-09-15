@@ -55,7 +55,7 @@ Our study proposes a **hierarchy-aligned composite index (CI)** for continuous m
     <div class="cif-process-body">
       <div class="cif-process-copy" aria-live="polite">
         <p class="cif-eyebrow" data-cif-process-kicker></p>
-        <h4 data-cif-process-title></h4>
+        <h2 data-cif-process-title></h2>
         <p data-cif-process-body></p>
         <div class="cif-process-output" data-cif-process-output></div>
       </div>
@@ -134,7 +134,7 @@ Dynamic factor analysis then asks a different question: *which selected indicato
       </div>
       <div class="cif-detail" aria-live="polite">
         <p class="cif-eyebrow">Selected mode</p>
-        <h4 data-cif-detail-name>Auto</h4>
+        <h2 data-cif-detail-name>Auto</h2>
         <p class="cif-breadcrumb" data-cif-detail-path></p>
         <p data-cif-detail-intro></p>
         <div class="cif-dimension-list" data-cif-dimensions></div>

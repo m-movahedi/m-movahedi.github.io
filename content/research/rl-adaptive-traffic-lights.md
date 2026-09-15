@@ -13,7 +13,7 @@ journal: "8th National Conference on Civil Engineering, Architecture and Sustain
 ---
 
 <div style="background-color: #f4f6f7; border-left: 6px solid #8e44ad; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🤖</span> Smarter Intersections, Smoother Cities</h4>
+  <h2 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🤖</span> Smarter Intersections, Smoother Cities</h2>
   <p style="margin-bottom: 0; color: #34495e;">In sprawling metropolises like Tehran, drivers spend nearly 24% of their travel time idling at intersections. Traditional fixed-time traffic lights simply cannot adapt to the chaotic, stochastic nature of urban traffic flow. To solve this, our research deploys <strong>Reinforcement Learning (RL)</strong>—an advanced branch of Artificial Intelligence—to create traffic signals that learn, adapt, and optimize the network in real-time.</p>
 </div>
 

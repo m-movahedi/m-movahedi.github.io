@@ -4,10 +4,7 @@ weight: 33
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Conflict Analysis
-
-Conflict analysis is a proactive traffic safety methodology that evaluates "near-miss" events instead of waiting for historical crash data to accumulate. A traffic conflict is an event involving two or more road users where an unexpected maneuver by one user forces another to take evasive action (such as braking or swerving) to avoid a collision.
+---Conflict analysis is a proactive traffic safety methodology that evaluates "near-miss" events instead of waiting for historical crash data to accumulate. A traffic conflict is an event involving two or more road users where an unexpected maneuver by one user forces another to take evasive action (such as braking or swerving) to avoid a collision.
 
 On the NCEES PE Civil Transportation exam, conflict analysis is tested conceptually through surrogate safety measures and quantitatively through the calculation of conflict points for different intersection configurations.
 

@@ -4,10 +4,7 @@ weight: 41
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Pedestrian Facility Design
-
-Pedestrian facilities must accommodate users of all ages and abilities. In public rights-of-way, design is heavily governed by the **Americans with Disabilities Act (ADA)** standards and the **AASHTO Guide for the Planning, Design, and Operation of Pedestrian Facilities (GPF-2)**. For the PE Civil Transportation exam, understanding ADA geometry, sidewalk widths, curb ramp configurations, and pedestrian routing is critical.
+---Pedestrian facilities must accommodate users of all ages and abilities. In public rights-of-way, design is heavily governed by the **Americans with Disabilities Act (ADA)** standards and the **AASHTO Guide for the Planning, Design, and Operation of Pedestrian Facilities (GPF-2)**. For the PE Civil Transportation exam, understanding ADA geometry, sidewalk widths, curb ramp configurations, and pedestrian routing is critical.
 
 ---
 

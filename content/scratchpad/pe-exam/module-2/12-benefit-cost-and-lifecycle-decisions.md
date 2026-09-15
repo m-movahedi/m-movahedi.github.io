@@ -4,10 +4,7 @@ weight: 12
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Benefit-Cost and Life-Cycle Decisions
-
-Benefit-Cost (B/C) analysis and Life-Cycle Cost Analysis (LCCA) are decision-making tools used to evaluate public infrastructure projects, such as highway safety treatments, pavement alternatives, and transit systems. These analyses extend basic engineering economics to compare options with different lifespans and balance initial capital costs against ongoing operational benefits and user savings.
+---Benefit-Cost (B/C) analysis and Life-Cycle Cost Analysis (LCCA) are decision-making tools used to evaluate public infrastructure projects, such as highway safety treatments, pavement alternatives, and transit systems. These analyses extend basic engineering economics to compare options with different lifespans and balance initial capital costs against ongoing operational benefits and user savings.
 
 ---
 

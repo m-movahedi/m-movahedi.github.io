@@ -54,7 +54,7 @@ Traditional behavioral models commonly rely on static rules or aggregated demogr
     <div class="llmp-workflow-body">
       <div class="llmp-workflow-copy" aria-live="polite">
         <p class="llmp-eyebrow" data-llmp-phase-kicker></p>
-        <h4 data-llmp-phase-title></h4>
+        <h2 data-llmp-phase-title></h2>
         <p data-llmp-phase-body></p>
         <div class="llmp-output" data-llmp-phase-output></div>
       </div>
@@ -95,7 +95,7 @@ Principal Component Analysis reduces the high-dimensional responses into interpr
         <button type="button" class="llmp-lens" data-llmp-lens="context" aria-pressed="false"><span>04</span> Disaster context</button>
       </div>
       <div class="llmp-persona-card" aria-live="polite">
-        <div class="llmp-persona-head"><div class="llmp-avatar" aria-hidden="true"><span></span><span></span><span></span></div><div><p class="llmp-eyebrow">Evidence layer</p><h4 data-llmp-lens-title></h4></div></div>
+        <div class="llmp-persona-head"><div class="llmp-avatar" aria-hidden="true"><span></span><span></span><span></span></div><div><p class="llmp-eyebrow">Evidence layer</p><h2 data-llmp-lens-title></h2></div></div>
         <p data-llmp-lens-body></p>
         <div class="llmp-chip-list" data-llmp-lens-chips></div>
         <div class="llmp-translation"><span class="llmp-figure-label">Why it matters to the agent</span><p data-llmp-lens-translation></p></div>
@@ -130,7 +130,7 @@ This oversight matters because an LLM’s explanation is a post-hoc rationale, n
       </div>
       <div class="llmp-scenario-result" aria-live="polite">
         <p class="llmp-eyebrow">Persona 1 response pattern</p>
-        <div class="llmp-pressure-row"><h4 data-llmp-pressure-title></h4><span class="llmp-pressure-badge" data-llmp-pressure-badge></span></div>
+        <div class="llmp-pressure-row"><h2 data-llmp-pressure-title></h2><span class="llmp-pressure-badge" data-llmp-pressure-badge></span></div>
         <div class="llmp-pressure-track" role="img" aria-label="Qualitative disposal pressure"><span data-llmp-pressure-bar></span></div>
         <p data-llmp-scenario-body></p>
         <div class="llmp-reason-box"><span class="llmp-figure-label">Reasoning emphasis</span><p data-llmp-reason></p></div>

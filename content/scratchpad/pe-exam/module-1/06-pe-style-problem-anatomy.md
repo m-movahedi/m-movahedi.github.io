@@ -4,10 +4,7 @@ weight: 6
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Anatomy of a PE-Style Problem
-
-The NCEES PE exam does not test your ability to blindly plug numbers into formulas. It tests your ability to act as a licensed professional engineer: evaluating a scenario, identifying what information is relevant, discarding what is not, and applying the correct standard.
+---The NCEES PE exam does not test your ability to blindly plug numbers into formulas. It tests your ability to act as a licensed professional engineer: evaluating a scenario, identifying what information is relevant, discarding what is not, and applying the correct standard.
 
 To succeed, you must understand how NCEES writes their questions. Once you can deconstruct the anatomy of a PE problem, you can avoid the traps they deliberately set for you.
 

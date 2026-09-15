@@ -25,7 +25,7 @@ A useful model is the intersection of three things:
 
 <div class="llm-diagram-container" id="diagram-203">
   <div class="llm-diagram-header">
-    <h4>Model Selection Matrix</h4>
+    <h3>Model Selection Matrix</h3>
     <p>Click a pillar to see what happens when it's ignored</p>
   </div>
   <div class="llm-grid-layout">
@@ -44,15 +44,15 @@ A useful model is the intersection of three things:
   </div>
   <div class="llm-detail-panel" id="detail-203">
     <div id="panel-203-task" class="llm-panel-content" style="display:none;">
-      <h5>If you ignore Task Fit:</h5>
+      <h4>If you ignore Task Fit:</h4>
       <p>You might end up using a massive reasoning model just to summarize an email, wasting time and compute. Or you use a base model instead of an instruct model, and it fails to answer.</p>
     </div>
     <div id="panel-203-hardware" class="llm-panel-content" style="display:none;">
-      <h5>If you ignore Hardware Fit:</h5>
+      <h4>If you ignore Hardware Fit:</h4>
       <p>You download a 70B parameter model that spills entirely into system RAM. It generates 1 token per second, making it practically useless for interactive chat.</p>
     </div>
     <div id="panel-203-constraints" class="llm-panel-content" style="display:none;">
-      <h5>If you ignore Constraints:</h5>
+      <h4>If you ignore Constraints:</h4>
       <p>You build a tool around an open-weights model, but its license prohibits commercial use. Or you rely on an API that is too expensive at scale.</p>
     </div>
   </div>

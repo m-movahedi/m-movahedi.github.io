@@ -4,10 +4,7 @@ weight: 50
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Curve Widening
-
-On sharp horizontal curves, roadways are often widened to ensure that vehicles—especially large trucks—remain within their designated travel lanes. This widening is necessary for two primary physical reasons:
+---On sharp horizontal curves, roadways are often widened to ensure that vehicles—especially large trucks—remain within their designated travel lanes. This widening is necessary for two primary physical reasons:
 1.  **Off-Tracking:** The rear wheels of a vehicle do not follow the exact path of the front wheels when turning; they track inward, toward the center of the curve.
 2.  **Front Overhang ($F_A$):** The front bumper and body overhang of a vehicle project outward, sweeping a wider path than the wheels.
 3.  **Difficulty of Driving ($Z$):** Drivers experience more difficulty holding a vehicle precisely centered in a lane on a curve than on a tangent.

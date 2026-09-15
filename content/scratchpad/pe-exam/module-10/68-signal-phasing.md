@@ -4,10 +4,7 @@ weight: 68
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Traffic Signal Phasing
-
-Signal phasing is the sequence of right-of-way allocations designed to prevent conflicts between vehicles and pedestrians at an intersection. In the PE Civil Transportation exam, you will encounter questions regarding standard NEMA phase numbering, ring-barrier configurations, left-turn treatment operations, and overlaps.
+---Signal phasing is the sequence of right-of-way allocations designed to prevent conflicts between vehicles and pedestrians at an intersection. In the PE Civil Transportation exam, you will encounter questions regarding standard NEMA phase numbering, ring-barrier configurations, left-turn treatment operations, and overlaps.
 
 ---
 

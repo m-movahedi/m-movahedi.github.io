@@ -1,9 +1,794 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>Local LLMs 203: Choosing a Model Without Guessing</title><meta name=description content="Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small …"><meta name=keywords content='Local LLMs,AI Models,Model Selection'><meta property="og:url" content="https://m-movahedi.com/scratchpad/local-llms/local-llms-203-choosing-a-local-llm-without-guessing/"><meta property="og:type" content="website"><meta property="og:title" content="Local LLMs 203: Choosing a Model Without Guessing"><meta property="og:description" content="Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small …"><meta property="og:image" content="https://m-movahedi.com/images/transparent.png"><meta property="og:image:secure_url" content="https://m-movahedi.com/images/transparent.png"><meta name=twitter:card content="summary"><meta name=twitter:title content="Local LLMs 203: Choosing a Model Without Guessing"><meta name=twitter:description content="Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small …"><meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/local-llms/local-llms-203-choosing-a-local-llm-without-guessing/"><meta property="twitter:url" content="https://m-movahedi.com/scratchpad/local-llms/local-llms-203-choosing-a-local-llm-without-guessing/"><meta name=twitter:image content="https://m-movahedi.com/images/transparent.png"><link rel=canonical href=https://m-movahedi.com/scratchpad/local-llms/local-llms-203-choosing-a-local-llm-without-guessing/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><script src=/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script><link rel=icon type=image/png href=/favicon.png><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href=/css/llm-series.css><link rel=stylesheet href=/css/hbm-series.css><link rel=stylesheet href=/css/llm-diagrams.css><link rel=stylesheet href=/css/tm-series.css><link rel=stylesheet href=/css/mc-series.css><script defer src=/js/hbm-widgets.js></script><script defer src=/js/llm-diagrams.js></script><script defer src=/js/tm-series.js></script><script defer src=/js/mc-scrollytelling.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-1WZSE8DHZ9")</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css integrity=sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js integrity=sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js integrity=sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script><link rel=stylesheet href=/css/custom.min.18ec29952add11924d403cdc5312cbc8a1ccdfa9f875450326ee02939271a377.css><link id=dark-theme rel=stylesheet href=/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://m-movahedi.com/><img src=/images/profile.png alt="Mohammad Movahedi"></a></div><div class=nav-title><a class=nav-brand href=https://m-movahedi.com/>Mohammad Movahedi</a></div><div class=nav-links><div class=nav-link><a href=https://m-movahedi.com/ aria-label>Home</a></div><div class=nav-link><a href=https://m-movahedi.com/background/ aria-label>Background</a></div><div class=nav-link><a href=https://m-movahedi.com/webinars/ aria-label>Webinars</a></div><div class=nav-link><a href=https://m-movahedi.com/research/ aria-label>Research</a></div><div class=nav-link><a href=https://m-movahedi.com/blog/ aria-label>Blog</a></div><div class=nav-link><a href=https://m-movahedi.com/scratchpad/ aria-label>Scratchpad</a></div><div class=nav-link><a href=https://m-movahedi.com/about/ aria-label>About</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://m-movahedi.com/>Home</a></li><li class=nav-item><a href=https://m-movahedi.com/background/>Background</a></li><li class=nav-item><a href=https://m-movahedi.com/webinars/>Webinars</a></li><li class=nav-item><a href=https://m-movahedi.com/research/>Research</a></li><li class=nav-item><a href=https://m-movahedi.com/blog/>Blog</a></li><li class=nav-item><a href=https://m-movahedi.com/scratchpad/>Scratchpad</a></li><li class=nav-item><a href=https://m-movahedi.com/about/>About</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>Local LLMs 203: Choosing a Model Without Guessing</h1><small role=doc-subtitle></small><p class=post-date>May 30, 2026</p><ul class=post-tags><li class=post-tag><a href=https://m-movahedi.com/tags/local-llms>Local LLMs</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/ai-models>AI Models</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/model-selection>Model Selection</a></li></ul></div><div class=post-content><p>Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small models, giant models, quantized models, preview models: it is a lot.</p><p>The goal is not to memorize every release. The goal is to choose a model with a reason.</p><h2 id=mental-model-model-choice-is-task-fit-plus-hardware-fit>Mental model: model choice is task fit plus hardware fit</h2><p>A useful model is the intersection of three things:</p><table><thead><tr><th>Question</th><th>Why it matters</th></tr></thead><tbody><tr><td>What task do I need?</td><td>Chat, coding, summarization, research, structured extraction, multilingual work, or tool use require different strengths</td></tr><tr><td>What hardware do I have?</td><td>A model that barely fits may be less useful than a smaller model that runs smoothly</td></tr><tr><td>What constraints matter?</td><td>Privacy, license, cost, speed, context length, and reliability change the decision</td></tr></tbody></table><div class=llm-diagram-container id=diagram-203><div class=llm-diagram-header><h4>Model Selection Matrix</h4><p>Click a pillar to see what happens when it's ignored</p></div><div class=llm-grid-layout><div class=llm-node data-target=panel-203-task><div class=llm-node-title>Task Fit</div><div class=llm-node-subtitle>Coding, Chat, RAG</div></div><div class=llm-node data-target=panel-203-hardware><div class=llm-node-title>Hardware Fit</div><div class=llm-node-subtitle>VRAM, RAM, CPU</div></div><div class=llm-node data-target=panel-203-constraints><div class=llm-node-title>Constraints</div><div class=llm-node-subtitle>Privacy, Speed, Cost</div></div></div><div class=llm-detail-panel id=detail-203><div id=panel-203-task class=llm-panel-content style=display:none><h5>If you ignore Task Fit:</h5><p>You might end up using a massive reasoning model just to summarize an email, wasting time and compute. Or you use a base model instead of an instruct model, and it fails to answer.</p></div><div id=panel-203-hardware class=llm-panel-content style=display:none><h5>If you ignore Hardware Fit:</h5><p>You download a 70B parameter model that spills entirely into system RAM. It generates 1 token per second, making it practically useless for interactive chat.</p></div><div id=panel-203-constraints class=llm-panel-content style=display:none><h5>If you ignore Constraints:</h5><p>You build a tool around an open-weights model, but its license prohibits commercial use. Or you rely on an API that is too expensive at scale.</p></div></div></div>The "best" model on a leaderboard may be the wrong model for your laptop.<h2 id=common-model-families>Common model families</h2><p>As of May 2026, these are common families beginners will encounter:</p><table><thead><tr><th>Family</th><th>Why people use it</th><th>What to check</th></tr></thead><tbody><tr><td>Llama</td><td>Strong general open model ecosystem, many variants and quantizations</td><td>License, exact generation, context length, tool support</td></tr><tr><td>Qwen</td><td>Strong multilingual and coding options, many sizes</td><td>Prompt format, reasoning behavior, quantization availability</td></tr><tr><td>Gemma</td><td>Compact Google model family with accessible sizes</td><td>License, local runtime support, task fit</td></tr><tr><td>Mistral</td><td>Efficient models and strong European open model ecosystem</td><td>Instruct format, license, model age</td></tr><tr><td>DeepSeek</td><td>Popular for reasoning and coding variants</td><td>Distilled vs original variants, runtime behavior</td></tr><tr><td>Phi</td><td>Small models that can be practical on modest hardware</td><td>Whether the small size is enough for your task</td></tr><tr><td>gpt-oss</td><td>Open-weight OpenAI model family for local or self-hosted use</td><td>Official release notes, license, recommended runtime</td></tr><tr><td>Coder models</td><td>Specialized models for code completion, refactoring, and repository tasks</td><td>Language support, tool calling, repo-context handling</td></tr></tbody></table><p>This table is a map, not a ranking. Model families evolve, and each family contains multiple checkpoints.</p><h2 id=size-is-not-intelligence>Size is not intelligence</h2><p>Model size matters, but it is not the only thing that matters. A larger model often knows more patterns and handles harder tasks better, but it also needs more memory and compute. A smaller model can be better if it responds quickly, fits the task, and is paired with good context.</p><p>Watch for labels such as:</p><table><thead><tr><th>Label</th><th>Meaning</th></tr></thead><tbody><tr><td>3B, 7B, 8B, 14B, 32B, 70B</td><td>Approximate parameter scale</td></tr><tr><td>instruct</td><td>Tuned to follow instructions</td></tr><tr><td>base</td><td>Rawer pretrained model, usually not ideal for chat</td></tr><tr><td>coder</td><td>Tuned or optimized for programming tasks</td></tr><tr><td>reasoning</td><td>Tuned to spend more effort on complex problems</td></tr><tr><td>vision</td><td>Can accept image inputs</td></tr><tr><td>tool use</td><td>Can produce structured calls to tools</td></tr></tbody></table><p>For beginners, an instruct or chat model is usually the right starting point.</p><h2 id=evaluation-beats-vibes>Evaluation beats vibes</h2><p>Instead of asking which model is best, create a tiny local evaluation set:</p><ol><li>A short writing task you actually care about.</li><li>A factual explanation task where you know the answer.</li><li>A coding or technical task from your real work.</li><li>A summarization task using your own text.</li><li>A structured output task, such as producing JSON or a table.</li></ol><p>Run the same tasks across two or three candidate models. Score them with simple labels: good, usable, weak, failed. Add notes on speed and memory.</p><style>.llm-papers{border:1px solid rgba(128,128,128,.28);border-radius:14px;background:rgba(128,128,128,6%);margin:1.2rem 0 1.6rem;padding:.9rem 1rem}.llm-papers strong{display:block;margin-bottom:.35rem}.llm-papers ul{margin:.35rem 0 0;padding-left:1.2rem}.llm-papers li{margin:.35rem 0}</style><div class=llm-papers><strong>Key papers on model evaluation and selection</strong><ul><li><a href=https://arxiv.org/abs/2305.10241>Liang et al. (2023), "Holistic Evaluation of Language Models"</a>: comprehensive framework for evaluating LLMs across multiple dimensions, moving beyond single-metric leaderboards.</li><li><a href=https://arxiv.org/abs/2210.14313>Wang et al. (2022), "SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems"</a>: influential multi-task evaluation benchmark that highlights why no single model works best for all tasks.</li><li><a href=https://arxiv.org/abs/2306.05685>Wei et al. (2023), "Emergent Abilities of Large Language Models"</a>: explains why performance varies with model size, scale, and task selection—useful for informed model choice.</li></ul></div><h2 id=what-about-llmfit>What about <code>llmfit</code>?</h2><p>Tools such as <code>llmfit</code> are meant to help answer &ldquo;what can run on this machine?&rdquo; by inspecting hardware and ranking candidate local models. That is a useful category of tool, but do not treat any helper as an oracle.</p><p>Before recommending or installing a newer CLI, verify:</p><table><thead><tr><th>Check</th><th>Why</th></tr></thead><tbody><tr><td>Official repository</td><td>Avoid package-name confusion</td></tr><tr><td>Package publisher</td><td>Confirm it matches the project</td></tr><tr><td>Release history</td><td>New projects can change quickly</td></tr><tr><td>Install method</td><td>Prefer official docs over copied commands</td></tr><tr><td>Local data behavior</td><td>Hardware scanners may collect system details</td></tr></tbody></table><p>Use fit tools to narrow the search, then test the final candidates yourself.</p><h2 id=a-practical-model-selection-workflow>A practical model selection workflow</h2><ol><li>Define the task: chat, coding, research, summarization, extraction, or agent use.</li><li>Write down hardware: RAM, VRAM, CPU/GPU, operating system.</li><li>Pick a size class that should comfortably fit.</li><li>Choose two model families, not ten.</li><li>Start with instruct variants.</li><li>Prefer popular quantizations with active runtime support.</li><li>Run your tiny evaluation set.</li><li>Keep the faster model if quality is close.</li></ol><h2 id=what-to-verify-because-models-change>What to verify because models change</h2><p>Verify the current model list, license, context length, supported parameters, and runtime compatibility at drafting time. For hosted endpoints, check the provider&rsquo;s metadata, not only the model card. For local files, check the exact checkpoint and quantization.</p><p>Useful places to verify:</p><ul><li><a href=https://ollama.com/models>Ollama model library</a></li><li><a href=https://openrouter.ai/docs/guides/overview/models>OpenRouter models API documentation</a></li><li>Official model cards from the model publisher</li></ul><p>The most reliable model choice is not glamorous. It is the smallest model that does your real task well enough, fast enough, and within your constraints.</p></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/>&#8592;
-Previous:
-Local LLMs 202: The Local LLM Toolchain: uv, uvx, Ollama, and Model Files</a></p><p class=prev-post-date>May 29, 2026</p></div><div class=next-post><p><a href=/scratchpad/local-llms/local-llms-204-why-the-same-local-llm-is-not-the-same/>Next:
-Local LLMs 204: Why the Same Model Is Not Always the Same
-&#8594;</a></p><p class=next-post-date>May 31, 2026</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>© 2017-2026 / Mohammad Movahedi. All rights reserved</a>.</span></footer></body></html>
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>Local LLMs 203: Choosing a Model Without Guessing | Mohammad Movahedi</title>
+    <meta name="description" content="Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small …">
+    
+    <meta name="keywords" content='Local LLMs, AI Models, Model Selection'>
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+    
+    <meta property="og:url" content="http://localhost:1313/scratchpad/local-llms/local-llms-203-choosing-a-local-llm-without-guessing/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="Local LLMs 203: Choosing a Model Without Guessing | Mohammad Movahedi">
+    <meta property="og:description" content="Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Local LLMs 203: Choosing a Model Without Guessing">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="Local LLMs 203: Choosing a Model Without Guessing | Mohammad Movahedi">
+    <meta name="twitter:description" content="Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/local-llms/local-llms-203-choosing-a-local-llm-without-guessing/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/local-llms/local-llms-203-choosing-a-local-llm-without-guessing/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"Local LLMs 203: Choosing a Model Without Guessing\"",
+  "description": "\"Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small …\"",
+  "url": "http:\/\/localhost:1313\/scratchpad\/local-llms\/local-llms-203-choosing-a-local-llm-without-guessing\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/scratchpad\/local-llms\/local-llms-203-choosing-a-local-llm-without-guessing\/"
+  },
+  "datePublished": "2026-05-30T00:00:00Z",
+  "dateModified": "2026-05-30T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Scratchpad\"",
+      "item": "https:\/\/m-movahedi.com\/scratchpad\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"Local LLMs 203: Choosing a Model Without Guessing\"",
+      "item": "http:\/\/localhost:1313\/scratchpad\/local-llms\/local-llms-203-choosing-a-local-llm-without-guessing\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.46f64924e715031ec2daf5fad084fa1e35a175ab207cff3c6daf5eaf942796d4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>Local LLMs 203: Choosing a Model Without Guessing</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 30, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/local-llms">Local LLMs</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/ai-models">AI Models</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/model-selection">Model Selection</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>Local model choice can turn into name collecting very quickly. Llama, Qwen, Gemma, Mistral, DeepSeek, Phi, gpt-oss, coder models, reasoning models, small models, giant models, quantized models, preview models: it is a lot.</p>
+<p>The goal is not to memorize every release. The goal is to choose a model with a reason.</p>
+<h2 id="mental-model-model-choice-is-task-fit-plus-hardware-fit">Mental model: model choice is task fit plus hardware fit</h2>
+<p>A useful model is the intersection of three things:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Question</th>
+          <th>Why it matters</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>What task do I need?</td>
+          <td>Chat, coding, summarization, research, structured extraction, multilingual work, or tool use require different strengths</td>
+      </tr>
+      <tr>
+          <td>What hardware do I have?</td>
+          <td>A model that barely fits may be less useful than a smaller model that runs smoothly</td>
+      </tr>
+      <tr>
+          <td>What constraints matter?</td>
+          <td>Privacy, license, cost, speed, context length, and reliability change the decision</td>
+      </tr>
+  </tbody>
+</table>
+<div class="llm-diagram-container" id="diagram-203">
+  <div class="llm-diagram-header">
+    <h3>Model Selection Matrix</h3>
+    <p>Click a pillar to see what happens when it's ignored</p>
+  </div>
+  <div class="llm-grid-layout">
+    <div class="llm-node" data-target="panel-203-task">
+      <div class="llm-node-title">Task Fit</div>
+      <div class="llm-node-subtitle">Coding, Chat, RAG</div>
+    </div>
+    <div class="llm-node" data-target="panel-203-hardware">
+      <div class="llm-node-title">Hardware Fit</div>
+      <div class="llm-node-subtitle">VRAM, RAM, CPU</div>
+    </div>
+    <div class="llm-node" data-target="panel-203-constraints">
+      <div class="llm-node-title">Constraints</div>
+      <div class="llm-node-subtitle">Privacy, Speed, Cost</div>
+    </div>
+  </div>
+  <div class="llm-detail-panel" id="detail-203">
+    <div id="panel-203-task" class="llm-panel-content" style="display:none;">
+      <h4>If you ignore Task Fit:</h4>
+      <p>You might end up using a massive reasoning model just to summarize an email, wasting time and compute. Or you use a base model instead of an instruct model, and it fails to answer.</p>
+    </div>
+    <div id="panel-203-hardware" class="llm-panel-content" style="display:none;">
+      <h4>If you ignore Hardware Fit:</h4>
+      <p>You download a 70B parameter model that spills entirely into system RAM. It generates 1 token per second, making it practically useless for interactive chat.</p>
+    </div>
+    <div id="panel-203-constraints" class="llm-panel-content" style="display:none;">
+      <h4>If you ignore Constraints:</h4>
+      <p>You build a tool around an open-weights model, but its license prohibits commercial use. Or you rely on an API that is too expensive at scale.</p>
+    </div>
+  </div>
+</div>
+The "best" model on a leaderboard may be the wrong model for your laptop.
+<h2 id="common-model-families">Common model families</h2>
+<p>As of May 2026, these are common families beginners will encounter:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Family</th>
+          <th>Why people use it</th>
+          <th>What to check</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Llama</td>
+          <td>Strong general open model ecosystem, many variants and quantizations</td>
+          <td>License, exact generation, context length, tool support</td>
+      </tr>
+      <tr>
+          <td>Qwen</td>
+          <td>Strong multilingual and coding options, many sizes</td>
+          <td>Prompt format, reasoning behavior, quantization availability</td>
+      </tr>
+      <tr>
+          <td>Gemma</td>
+          <td>Compact Google model family with accessible sizes</td>
+          <td>License, local runtime support, task fit</td>
+      </tr>
+      <tr>
+          <td>Mistral</td>
+          <td>Efficient models and strong European open model ecosystem</td>
+          <td>Instruct format, license, model age</td>
+      </tr>
+      <tr>
+          <td>DeepSeek</td>
+          <td>Popular for reasoning and coding variants</td>
+          <td>Distilled vs original variants, runtime behavior</td>
+      </tr>
+      <tr>
+          <td>Phi</td>
+          <td>Small models that can be practical on modest hardware</td>
+          <td>Whether the small size is enough for your task</td>
+      </tr>
+      <tr>
+          <td>gpt-oss</td>
+          <td>Open-weight OpenAI model family for local or self-hosted use</td>
+          <td>Official release notes, license, recommended runtime</td>
+      </tr>
+      <tr>
+          <td>Coder models</td>
+          <td>Specialized models for code completion, refactoring, and repository tasks</td>
+          <td>Language support, tool calling, repo-context handling</td>
+      </tr>
+  </tbody>
+</table>
+<p>This table is a map, not a ranking. Model families evolve, and each family contains multiple checkpoints.</p>
+<h2 id="size-is-not-intelligence">Size is not intelligence</h2>
+<p>Model size matters, but it is not the only thing that matters. A larger model often knows more patterns and handles harder tasks better, but it also needs more memory and compute. A smaller model can be better if it responds quickly, fits the task, and is paired with good context.</p>
+<p>Watch for labels such as:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Label</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>3B, 7B, 8B, 14B, 32B, 70B</td>
+          <td>Approximate parameter scale</td>
+      </tr>
+      <tr>
+          <td>instruct</td>
+          <td>Tuned to follow instructions</td>
+      </tr>
+      <tr>
+          <td>base</td>
+          <td>Rawer pretrained model, usually not ideal for chat</td>
+      </tr>
+      <tr>
+          <td>coder</td>
+          <td>Tuned or optimized for programming tasks</td>
+      </tr>
+      <tr>
+          <td>reasoning</td>
+          <td>Tuned to spend more effort on complex problems</td>
+      </tr>
+      <tr>
+          <td>vision</td>
+          <td>Can accept image inputs</td>
+      </tr>
+      <tr>
+          <td>tool use</td>
+          <td>Can produce structured calls to tools</td>
+      </tr>
+  </tbody>
+</table>
+<p>For beginners, an instruct or chat model is usually the right starting point.</p>
+<h2 id="evaluation-beats-vibes">Evaluation beats vibes</h2>
+<p>Instead of asking which model is best, create a tiny local evaluation set:</p>
+<ol>
+<li>A short writing task you actually care about.</li>
+<li>A factual explanation task where you know the answer.</li>
+<li>A coding or technical task from your real work.</li>
+<li>A summarization task using your own text.</li>
+<li>A structured output task, such as producing JSON or a table.</li>
+</ol>
+<p>Run the same tasks across two or three candidate models. Score them with simple labels: good, usable, weak, failed. Add notes on speed and memory.</p>
+<style>
+  .llm-papers {
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 14px;
+    background: rgba(128, 128, 128, 0.06);
+    margin: 1.2rem 0 1.6rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .llm-papers strong {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .llm-papers ul {
+    margin: 0.35rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .llm-papers li {
+    margin: 0.35rem 0;
+  }
+</style>
+<div class="llm-papers">
+  <strong>Key papers on model evaluation and selection</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2305.10241">Liang et al. (2023), "Holistic Evaluation of Language Models"</a>: comprehensive framework for evaluating LLMs across multiple dimensions, moving beyond single-metric leaderboards.</li>
+    <li><a href="https://arxiv.org/abs/2210.14313">Wang et al. (2022), "SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems"</a>: influential multi-task evaluation benchmark that highlights why no single model works best for all tasks.</li>
+    <li><a href="https://arxiv.org/abs/2306.05685">Wei et al. (2023), "Emergent Abilities of Large Language Models"</a>: explains why performance varies with model size, scale, and task selection—useful for informed model choice.</li>
+  </ul>
+</div>
+<h2 id="what-about-llmfit">What about <code>llmfit</code>?</h2>
+<p>Tools such as <code>llmfit</code> are meant to help answer &ldquo;what can run on this machine?&rdquo; by inspecting hardware and ranking candidate local models. That is a useful category of tool, but do not treat any helper as an oracle.</p>
+<p>Before recommending or installing a newer CLI, verify:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Check</th>
+          <th>Why</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Official repository</td>
+          <td>Avoid package-name confusion</td>
+      </tr>
+      <tr>
+          <td>Package publisher</td>
+          <td>Confirm it matches the project</td>
+      </tr>
+      <tr>
+          <td>Release history</td>
+          <td>New projects can change quickly</td>
+      </tr>
+      <tr>
+          <td>Install method</td>
+          <td>Prefer official docs over copied commands</td>
+      </tr>
+      <tr>
+          <td>Local data behavior</td>
+          <td>Hardware scanners may collect system details</td>
+      </tr>
+  </tbody>
+</table>
+<p>Use fit tools to narrow the search, then test the final candidates yourself.</p>
+<h2 id="a-practical-model-selection-workflow">A practical model selection workflow</h2>
+<ol>
+<li>Define the task: chat, coding, research, summarization, extraction, or agent use.</li>
+<li>Write down hardware: RAM, VRAM, CPU/GPU, operating system.</li>
+<li>Pick a size class that should comfortably fit.</li>
+<li>Choose two model families, not ten.</li>
+<li>Start with instruct variants.</li>
+<li>Prefer popular quantizations with active runtime support.</li>
+<li>Run your tiny evaluation set.</li>
+<li>Keep the faster model if quality is close.</li>
+</ol>
+<h2 id="what-to-verify-because-models-change">What to verify because models change</h2>
+<p>Verify the current model list, license, context length, supported parameters, and runtime compatibility at drafting time. For hosted endpoints, check the provider&rsquo;s metadata, not only the model card. For local files, check the exact checkpoint and quantization.</p>
+<p>Useful places to verify:</p>
+<ul>
+<li><a href="https://ollama.com/models">Ollama model library</a></li>
+<li><a href="https://openrouter.ai/docs/guides/overview/models">OpenRouter models API documentation</a></li>
+<li>Official model cards from the model publisher</li>
+</ul>
+<p>The most reliable model choice is not glamorous. It is the smallest model that does your real task well enough, fast enough, and within your constraints.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/local-llms/local-llms-202-local-llm-toolchain-uv-uvx-ollama-model-files/">
+                &#8592;
+                Previous:
+                Local LLMs 202: The Local LLM Toolchain: uv, uvx, Ollama, and Model Files
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 29, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/local-llms/local-llms-204-why-the-same-local-llm-is-not-the-same/">
+                Next:
+                Local LLMs 204: Why the Same Model Is Not Always the Same
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 31, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

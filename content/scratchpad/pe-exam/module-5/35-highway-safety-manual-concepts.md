@@ -4,10 +4,7 @@ weight: 35
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Highway Safety Manual Concepts
-
-The AASHTO Highway Safety Manual (HSM) provides a science-based, quantitative approach to traffic safety. It moves the profession away from subjective design standards and toward the prediction of crash frequency and severity.
+---The AASHTO Highway Safety Manual (HSM) provides a science-based, quantitative approach to traffic safety. It moves the profession away from subjective design standards and toward the prediction of crash frequency and severity.
 
 On the NCEES PE Civil Transportation exam, you must understand the structure of the HSM, the predictive method, Safety Performance Functions (SPFs), and statistical concepts like Regression-to-the-Mean (RTM) and the Empirical Bayes (EB) method.
 

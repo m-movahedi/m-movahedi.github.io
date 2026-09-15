@@ -4,10 +4,7 @@ weight: 16
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Travel Time and Delay Studies
-
-Travel time and delay studies determine the amount of time required to traverse a specific route and identify the locations, causes, and durations of delays. On the PE Civil Transportation exam, you must understand the key definitions of time and speed, field measurement methodologies, and the equations for the **Moving Observer Method** (also known as the Moving Vehicle Method).
+---Travel time and delay studies determine the amount of time required to traverse a specific route and identify the locations, causes, and durations of delays. On the PE Civil Transportation exam, you must understand the key definitions of time and speed, field measurement methodologies, and the equations for the **Moving Observer Method** (also known as the Moving Vehicle Method).
 
 ---
 

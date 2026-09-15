@@ -4,10 +4,7 @@ weight: 85
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Earthwork and Mass Balance
-
-Earthwork operations are a major component of highway construction projects. Designers must balance the volume of soil excavated from cut sections with the volume of soil required for fill (embankment) sections. Because soil volume changes when it is excavated, hauled, and compacted, engineers must apply volumetric conversion factors to calculate hauling costs and borrow-pit requirements. These concepts are frequently tested on the PE Civil Transportation exam.
+---Earthwork operations are a major component of highway construction projects. Designers must balance the volume of soil excavated from cut sections with the volume of soil required for fill (embankment) sections. Because soil volume changes when it is excavated, hauled, and compacted, engineers must apply volumetric conversion factors to calculate hauling costs and borrow-pit requirements. These concepts are frequently tested on the PE Civil Transportation exam.
 
 ---
 

@@ -4,10 +4,7 @@ weight: 14
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Peak Hour Factor and Flow Rates
-
-In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a brief portion of the hour (e.g., a 15-minute surge) even if the total hourly volume is within the roadway's theoretical capacity. To account for this variation, the Highway Capacity Manual (HCM) uses the **Peak Hour Factor (PHF)** to convert hourly volumes into equivalent peak-period flow rates.
+---In traffic analysis, traffic flow is not uniform throughout an hour. A roadway segment may experience high congestion during a brief portion of the hour (e.g., a 15-minute surge) even if the total hourly volume is within the roadway's theoretical capacity. To account for this variation, the Highway Capacity Manual (HCM) uses the **Peak Hour Factor (PHF)** to convert hourly volumes into equivalent peak-period flow rates.
 
 ---
 

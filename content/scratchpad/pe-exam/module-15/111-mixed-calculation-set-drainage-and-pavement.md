@@ -4,10 +4,7 @@ weight: 111
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Mixed Calculation Set: Drainage and Pavement
-
-This calculation set covers hydrology/drainage and pavement design calculations typical of the PE Civil Transportation exam.
+---This calculation set covers hydrology/drainage and pavement design calculations typical of the PE Civil Transportation exam.
 
 ---
 

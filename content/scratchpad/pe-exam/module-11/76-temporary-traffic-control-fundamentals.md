@@ -4,10 +4,7 @@ weight: 76
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Temporary Traffic Control Fundamentals
-
-Temporary Traffic Control (TTC) zones are established to safely redirect traffic when construction, maintenance, or utility work occurs on or adjacent to a roadway. The design and operation of TTC zones must prioritize the safety of both road users (motorists, pedestrians, bicyclists) and workers.
+---Temporary Traffic Control (TTC) zones are established to safely redirect traffic when construction, maintenance, or utility work occurs on or adjacent to a roadway. The design and operation of TTC zones must prioritize the safety of both road users (motorists, pedestrians, bicyclists) and workers.
 
 TTC standards are governed by the *Manual on Uniform Traffic Control Devices (MUTCD)* Part 6. On the PE Civil Transportation exam, you must understand the components of a TTC zone, sign spacing requirements, channelizing device selection, and worker safety protocols.
 

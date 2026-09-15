@@ -4,10 +4,7 @@ weight: 43
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Traffic Calming and Complete Streets
-
-Complete Streets is a design philosophy that requires roads to be planned, designed, operated, and maintained to enable safe, convenient, and comfortable travel for all users, including pedestrians, bicyclists, transit riders, and motorists. Traffic calming represents the physical, self-enforcing measures used to support this philosophy by managing vehicle speeds and volumes.
+---Complete Streets is a design philosophy that requires roads to be planned, designed, operated, and maintained to enable safe, convenient, and comfortable travel for all users, including pedestrians, bicyclists, transit riders, and motorists. Traffic calming represents the physical, self-enforcing measures used to support this philosophy by managing vehicle speeds and volumes.
 
 For the PE Civil Transportation exam, traffic calming is tested through the lenses of **AASHTO's Green Book (GDHS)**, the **AASHTO Pedestrian Guide (GPF-2)**, and Federal Highway Administration (FHWA) guidelines.
 

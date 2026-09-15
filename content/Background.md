@@ -2,6 +2,8 @@
 title: "Background"
 hideTitle: true
 type: "cv"
+url: "/background/"
+aliases: ["/Background/"]
 description: "Mohammad Movahedi's academic CV: research, publications, sponsored projects, teaching, awards, and service."
 ---
 

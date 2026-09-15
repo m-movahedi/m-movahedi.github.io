@@ -4,10 +4,7 @@ weight: 93
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Hydrographs and Detention
-
-A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational Method) are sufficient for sizing pipes and channels, detention basin design requires an understanding of how flow rate changes over the entire duration of a storm.
+---A hydrograph represents flow rate ($Q$) over time ($t$) at a specific point in a watershed. While peak flow methods (like the Rational Method) are sufficient for sizing pipes and channels, detention basin design requires an understanding of how flow rate changes over the entire duration of a storm.
 
 ---
 

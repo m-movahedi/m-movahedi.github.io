@@ -4,10 +4,7 @@ weight: 24
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Two-Lane Highways
-
-A two-lane highway is a undivided roadway with one lane of traffic in each direction. On these facilities, passing maneuvers must take place in the lane of opposing traffic when gaps permit. Consequently, operations are highly sensitive to opposing traffic volume and the availability of passing zones. 
+---A two-lane highway is a undivided roadway with one lane of traffic in each direction. On these facilities, passing maneuvers must take place in the lane of opposing traffic when gaps permit. Consequently, operations are highly sensitive to opposing traffic volume and the availability of passing zones. 
 
 The NCEES PE Civil Transportation exam frequently tests two-lane highway operations. The methodology is governed by Chapter 15 of the Highway Capacity Manual (HCM 6th Edition).
 

@@ -4,10 +4,7 @@ weight: 88
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Pavement Distress and Rehabilitation
-
-Over time, pavements deteriorate due to the combined effects of traffic loading and environmental conditions. Pavement rehabilitation involves restoring an existing pavement's structural capacity or functional performance. On the PE Civil Transportation exam, you must be able to identify types of pavement distress, select appropriate rehabilitation strategies, and calculate structural overlay thickness requirements.
+---Over time, pavements deteriorate due to the combined effects of traffic loading and environmental conditions. Pavement rehabilitation involves restoring an existing pavement's structural capacity or functional performance. On the PE Civil Transportation exam, you must be able to identify types of pavement distress, select appropriate rehabilitation strategies, and calculate structural overlay thickness requirements.
 
 ---
 

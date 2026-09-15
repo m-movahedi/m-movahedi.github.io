@@ -4,10 +4,7 @@ weight: 13
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Traffic Volume Concepts
-
-Traffic volume is the number of vehicles passing a given point on a roadway during a specified time interval. On the PE Civil Transportation exam, understanding the relationships between daily traffic volumes, design hourly volumes, and directional splits is fundamental to roadway planning, capacity analysis, and geometric design.
+---Traffic volume is the number of vehicles passing a given point on a roadway during a specified time interval. On the PE Civil Transportation exam, understanding the relationships between daily traffic volumes, design hourly volumes, and directional splits is fundamental to roadway planning, capacity analysis, and geometric design.
 
 ---
 

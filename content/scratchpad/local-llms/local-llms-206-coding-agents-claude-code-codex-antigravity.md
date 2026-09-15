@@ -30,7 +30,7 @@ A coding agent is not just a model. It is a system:
 
 <div class="llm-diagram-container" id="diagram-206">
   <div class="llm-diagram-header">
-    <h4>The Agentic Loop</h4>
+    <h3>The Agentic Loop</h3>
     <p><button id="btn-206-play" style="padding:4px 8px; cursor:pointer;">Play Agent Loop</button></p>
   </div>
   <div class="llm-loop-layout">
@@ -44,19 +44,19 @@ A coding agent is not just a model. It is a system:
   </div>
   <div class="llm-detail-panel" id="detail-206">
     <div id="panel-node-206-observe" class="llm-panel-content" style="display:none;">
-      <h5>1. Observe</h5>
+      <h4>1. Observe</h4>
       <p>The agent reads the initial prompt, inspects the workspace, and gathers necessary context from files or tool outputs.</p>
     </div>
     <div id="panel-node-206-decide" class="llm-panel-content" style="display:none;">
-      <h5>2. Decide</h5>
+      <h4>2. Decide</h4>
       <p>The model reasons about what to do next based on the rules, skills, and current state. It decides which tool to call.</p>
     </div>
     <div id="panel-node-206-act" class="llm-panel-content" style="display:none;">
-      <h5>3. Act</h5>
+      <h4>3. Act</h4>
       <p>The agent executes a tool call. For example, it writes code to a file, runs a bash command, or searches the web.</p>
     </div>
     <div id="panel-node-206-verify" class="llm-panel-content" style="display:none;">
-      <h5>4. Verify</h5>
+      <h4>4. Verify</h4>
       <p>The agent observes the result of the action (e.g., test passed or failed). If failed, it loops back to decide how to fix it.</p>
     </div>
   </div>

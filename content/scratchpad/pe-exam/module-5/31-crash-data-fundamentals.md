@@ -4,10 +4,7 @@ weight: 31
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Crash Data Fundamentals
-
-Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam frequently tests safety calculations, specifically focusing on exposure measures, crash rates for segments and intersections, crash frequency, and crash severity classification.
+---Traffic safety analysis begins with the collection and quantitative assessment of crash data. The NCEES PE Civil Transportation exam frequently tests safety calculations, specifically focusing on exposure measures, crash rates for segments and intersections, crash frequency, and crash severity classification.
 
 ---
 

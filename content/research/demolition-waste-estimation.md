@@ -15,7 +15,7 @@ journal: "ASCE Construction Research Congress 2024"
 ---
 
 <div style="background-color: #fff3cd; border-left: 6px solid #ffc107; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #856404; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🏗️</span> The Demolition Data Gap</h4>
+  <h2 style="margin-top: 0; color: #856404; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🏗️</span> The Demolition Data Gap</h2>
   <p style="margin-bottom: 0; color: #533f03;">In the United States, construction and demolition waste (CDW) accounts for roughly 67% of the total solid waste stream, with a staggering <strong>90% originating directly from demolition sites</strong>. For a transition toward a circular economy, accurately estimating the <em>recoverable</em> portion of this waste is crucial. Yet, traditional estimation models remain heavily focused on total volume rather than recyclable potential.</p>
 </div>
 
@@ -157,7 +157,7 @@ We tested the sensitivity and accuracy of each model across three target metrics
   </div>
   <!-- Content 1: Concrete -->
   <div id="dw-content1" class="dw-content">
-    <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Recoverable Concrete</h4>
+    <h2 style="text-align:center; color:#333; margin:0;">Model Accuracy: Recoverable Concrete</h2>
     <div class="dw-chart">
       <div class="dw-bar-group">
         <div class="dw-bar-bg"><div class="dw-bar-fill c-mra" style="height: 73.09%;" data-val="73.09" data-std="31.99"></div></div>
@@ -179,7 +179,7 @@ We tested the sensitivity and accuracy of each model across three target metrics
   </div>
   <!-- Content 2: Cost -->
   <div id="dw-content2" class="dw-content">
-    <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Demolition Cost</h4>
+    <h2 style="text-align:center; color:#333; margin:0;">Model Accuracy: Demolition Cost</h2>
     <div class="dw-chart">
       <div class="dw-bar-group">
         <div class="dw-bar-bg"><div class="dw-bar-fill c-mra" style="height: 76.12%;" data-val="76.12" data-std="30.31"></div></div>
@@ -201,7 +201,7 @@ We tested the sensitivity and accuracy of each model across three target metrics
   </div>
   <!-- Content 3: Other -->
   <div id="dw-content3" class="dw-content">
-    <h4 style="text-align:center; color:#333; margin:0;">Model Accuracy: Other Materials</h4>
+    <h2 style="text-align:center; color:#333; margin:0;">Model Accuracy: Other Materials</h2>
     <div class="dw-chart">
       <div class="dw-bar-group">
         <div class="dw-bar-bg"><div class="dw-bar-fill c-mra" style="height: 65.65%;" data-val="65.65" data-std="36.01"></div></div>

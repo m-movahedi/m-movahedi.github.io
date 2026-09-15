@@ -22,7 +22,7 @@ The path to an efficient sightseeing tour plan requires both demand evaluation a
   style="border:none;">
 </iframe>
 
-# Major Mode
+## Major Mode
 The major mode usually follows certain criteria, which can later be interpreted into a cost function, some of which can be named as:
 
 - The distance between attractions from each other. (in meters)
@@ -33,11 +33,11 @@ The major mode usually follows certain criteria, which can later be interpreted 
 
 The easiest way to embed such an idea is to calculate a matrix with arrays Rij presenting the cost of the cheapest route when the agent travels from the origin i to the destination j. The problem of finding such routes calls for a different post. In this case, we assume we have an algorithm that returns this route. It is obvious that the Rij would not be equal to the Rji, as the cheapest route may differ.
 
-# Minor Mode
+## Minor Mode
 
 In this project, the minor mode refers to the walking routes planned in part of the study area that might induce tourism or any related activity. These areas usually pass through either cultural or historical streets. The criteria for these routes are quite different from normal walking streets, especially when it comes to the desired walking distance and duration, since the visitors are willing to interact with what they come upon.
 
-# Route
+## Route
 
 In this case, the routing problem is not finding a way but finding an optimal sequence that visits all the stations with the lowest cost. The problem is a well-known graph routing problem, also known as the traveling salesman problem.
 

@@ -4,10 +4,7 @@ weight: 36
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Safety Countermeasure Selection and Economic Evaluation
-
-The final step in traffic safety engineering is selecting and economically evaluating safety countermeasures. The goal is to identify treatments that address diagnosed crash patterns (e.g., from collision diagrams or conflict analysis) and determine if they are economically viable.
+---The final step in traffic safety engineering is selecting and economically evaluating safety countermeasures. The goal is to identify treatments that address diagnosed crash patterns (e.g., from collision diagrams or conflict analysis) and determine if they are economically viable.
 
 On the NCEES PE Civil Transportation exam, this topic is tested through qualitative countermeasure matching and quantitative economic evaluations, including Benefit-Cost ($B/C$) ratios and Net Present Value (NPV) calculations.
 

@@ -4,10 +4,7 @@ weight: 1
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Exam Format, Interface, and Pacing Strategy
-
-Preparing for the PE Civil Transportation exam involves more than just mastering formulas and design standards. The format of the exam itself—how it is delivered, how you interact with the software, and how you manage your time—is a vital part of your passing strategy.
+---Preparing for the PE Civil Transportation exam involves more than just mastering formulas and design standards. The format of the exam itself—how it is delivered, how you interact with the software, and how you manage your time—is a vital part of your passing strategy.
 
 This lesson breaks down the Computer-Based Testing (CBT) environment, the structure of the exam, and a battle-tested pacing methodology to maximize your score over the 8-hour testing period.
 

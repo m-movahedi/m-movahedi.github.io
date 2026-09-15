@@ -4,10 +4,7 @@ weight: 7
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Quantity Takeoff and Cost Estimating
-
-This lesson covers the fundamentals of estimating material quantities and associated costs for civil engineering projects, a core topic on the NCEES PE Civil Transportation exam. In the exam, quantity takeoff problems test your attention to detail, unit conversions, and application of swell/shrinkage factors rather than complex mathematical theory.
+---This lesson covers the fundamentals of estimating material quantities and associated costs for civil engineering projects, a core topic on the NCEES PE Civil Transportation exam. In the exam, quantity takeoff problems test your attention to detail, unit conversions, and application of swell/shrinkage factors rather than complex mathematical theory.
 
 ---
 

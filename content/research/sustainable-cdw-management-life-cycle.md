@@ -16,7 +16,7 @@ journal: "ASCE Journal of Management in Engineering"
 ---
 
 <div style="background-color: #f4f6f7; border-left: 6px solid #27ae60; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">♻️</span> Breaking the Linear Fate</h4>
+  <h2 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">♻️</span> Breaking the Linear Fate</h2>
   <p style="margin-bottom: 0; color: #34495e;">In the built environment, every structure has a life cycle—from natural resource extraction to final disposition. Unfortunately, the vast majority of waste generated at the end of a building's life meets a "linear fate," terminating in landfills. To achieve a truly circular economy, we must continuously extend the life of materials through <strong>Reduction, Reuse, Repair, Recycling, and Recovery (the 5Rs)</strong>.</p>
 </div>
 

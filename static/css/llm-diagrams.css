@@ -19,6 +19,7 @@
   text-align: center;
 }
 
+.llm-diagram-header h3,
 .llm-diagram-header h4 {
   margin: 0 0 0.5rem 0;
   color: inherit;

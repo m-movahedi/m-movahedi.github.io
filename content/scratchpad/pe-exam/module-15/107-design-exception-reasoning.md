@@ -4,10 +4,7 @@ weight: 107
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Design Exception Reasoning
-
-When a roadway project cannot meet the minimum design standards due to physical, environmental, or economic constraints, designers must seek a formal **Design Exception**. This process requires documentation demonstrating that safety and operations will not be significantly compromised, or that suitable mitigation measures are implemented.
+---When a roadway project cannot meet the minimum design standards due to physical, environmental, or economic constraints, designers must seek a formal **Design Exception**. This process requires documentation demonstrating that safety and operations will not be significantly compromised, or that suitable mitigation measures are implemented.
 
 ---
 

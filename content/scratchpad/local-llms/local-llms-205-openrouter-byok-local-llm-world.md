@@ -26,7 +26,7 @@ A simple hybrid workflow looks like this:
 
 <div class="llm-diagram-container" id="diagram-205">
   <div class="llm-diagram-header">
-    <h4>Hybrid Routing Workflow</h4>
+    <h3>Hybrid Routing Workflow</h3>
     <p><button id="btn-205-toggle" style="padding:4px 8px; cursor:pointer;">Switch to Hosted Route</button></p>
   </div>
   <div class="llm-flow-layout" style="align-items: stretch;">
@@ -50,11 +50,11 @@ A simple hybrid workflow looks like this:
   </div>
   <div class="llm-detail-panel active" id="detail-205">
     <div id="panel-205-local" class="llm-panel-content">
-      <h5>The Local Route</h5>
+      <h4>The Local Route</h4>
       <p>Used for routine tasks, exploring ideas, offline work, and keeping sensitive data strictly on your machine. Costs nothing per prompt.</p>
     </div>
     <div id="panel-205-hosted" class="llm-panel-content" style="display:none;">
-      <h5>The Hosted Route</h5>
+      <h4>The Hosted Route</h4>
       <p>Used as an escape hatch. When a task requires a massive context window or reasoning capabilities beyond your hardware's limits, the request is routed here.</p>
     </div>
   </div>

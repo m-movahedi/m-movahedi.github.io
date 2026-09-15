@@ -4,10 +4,7 @@ weight: 64
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Interchange Forms
-
-An interchange is a system of interconnecting roadways (ramps) in conjunction with one or more grade separations (bridges) that provides for the movement of traffic between two or more roadways on different levels. Interchanges are used to eliminate at-grade conflicts, maximize capacity, and improve safety on high-speed roadways.
+---An interchange is a system of interconnecting roadways (ramps) in conjunction with one or more grade separations (bridges) that provides for the movement of traffic between two or more roadways on different levels. Interchanges are used to eliminate at-grade conflicts, maximize capacity, and improve safety on high-speed roadways.
 
 ---
 

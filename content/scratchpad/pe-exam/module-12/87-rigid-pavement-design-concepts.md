@@ -4,10 +4,7 @@ weight: 87
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Rigid Pavement Design Concepts
-
-Rigid pavements are constructed using Portland cement concrete (PCC) slabs resting on a subbase or directly on the subgrade. Unlike flexible pavements, which distribute loads through a layered system, rigid pavements distribute traffic wheel loads over a wide area through the bending stiffness (flexural rigidity) of the concrete slab itself. On the PE Civil Transportation exam, rigid pavement design is based on the **AASHTO 1993 rigid pavement design methodology**.
+---Rigid pavements are constructed using Portland cement concrete (PCC) slabs resting on a subbase or directly on the subgrade. Unlike flexible pavements, which distribute loads through a layered system, rigid pavements distribute traffic wheel loads over a wide area through the bending stiffness (flexural rigidity) of the concrete slab itself. On the PE Civil Transportation exam, rigid pavement design is based on the **AASHTO 1993 rigid pavement design methodology**.
 
 ---
 

@@ -1,53 +1,745 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>Weaving Segments</title><meta name=description content="Weaving Segments A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs …"><meta name=keywords content><meta property="og:url" content="https://m-movahedi.com/scratchpad/pe-exam/module-4/30-weaving-segments/"><meta property="og:type" content="website"><meta property="og:title" content="Weaving Segments"><meta property="og:description" content="Weaving Segments A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs …"><meta property="og:image" content="https://m-movahedi.com/images/transparent.png"><meta property="og:image:secure_url" content="https://m-movahedi.com/images/transparent.png"><meta name=twitter:card content="summary"><meta name=twitter:title content="Weaving Segments"><meta name=twitter:description content="Weaving Segments A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs …"><meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/pe-exam/module-4/30-weaving-segments/"><meta property="twitter:url" content="https://m-movahedi.com/scratchpad/pe-exam/module-4/30-weaving-segments/"><meta name=twitter:image content="https://m-movahedi.com/images/transparent.png"><link rel=canonical href=https://m-movahedi.com/scratchpad/pe-exam/module-4/30-weaving-segments/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><script src=/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script><link rel=icon type=image/png href=/favicon.png><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href=/css/llm-series.css><link rel=stylesheet href=/css/hbm-series.css><link rel=stylesheet href=/css/llm-diagrams.css><link rel=stylesheet href=/css/tm-series.css><link rel=stylesheet href=/css/mc-series.css><script defer src=/js/hbm-widgets.js></script><script defer src=/js/llm-diagrams.js></script><script defer src=/js/tm-series.js></script><script defer src=/js/mc-scrollytelling.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-1WZSE8DHZ9")</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css integrity=sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js integrity=sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js integrity=sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script><link rel=stylesheet href=/css/custom.min.18ec29952add11924d403cdc5312cbc8a1ccdfa9f875450326ee02939271a377.css><link id=dark-theme rel=stylesheet href=/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://m-movahedi.com/><img src=/images/profile.png alt="Mohammad Movahedi"></a></div><div class=nav-title><a class=nav-brand href=https://m-movahedi.com/>Mohammad Movahedi</a></div><div class=nav-links><div class=nav-link><a href=https://m-movahedi.com/ aria-label>Home</a></div><div class=nav-link><a href=https://m-movahedi.com/background/ aria-label>Background</a></div><div class=nav-link><a href=https://m-movahedi.com/webinars/ aria-label>Webinars</a></div><div class=nav-link><a href=https://m-movahedi.com/research/ aria-label>Research</a></div><div class=nav-link><a href=https://m-movahedi.com/blog/ aria-label>Blog</a></div><div class=nav-link><a href=https://m-movahedi.com/scratchpad/ aria-label>Scratchpad</a></div><div class=nav-link><a href=https://m-movahedi.com/about/ aria-label>About</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://m-movahedi.com/>Home</a></li><li class=nav-item><a href=https://m-movahedi.com/background/>Background</a></li><li class=nav-item><a href=https://m-movahedi.com/webinars/>Webinars</a></li><li class=nav-item><a href=https://m-movahedi.com/research/>Research</a></li><li class=nav-item><a href=https://m-movahedi.com/blog/>Blog</a></li><li class=nav-item><a href=https://m-movahedi.com/scratchpad/>Scratchpad</a></li><li class=nav-item><a href=https://m-movahedi.com/about/>About</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>Weaving Segments</h1><small role=doc-subtitle></small><p class=post-date>May 4, 2026</p><ul class=post-tags></ul></div><div class=post-content><h1 id=weaving-segments>Weaving Segments</h1><p>A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of traffic signals or other control devices. Weaving segments are characterized by high turbulence, as vehicles must make lane changes over a limited distance.</p><p>The NCEES PE Civil Transportation exam frequently tests weaving segment operations. The methodology is governed by Chapter 13 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.</p><hr><h2 id=weaving-segment-characteristics>Weaving Segment Characteristics</h2><p>To analyze a weaving segment, we must define its geometry and flow components:</p><ul><li><strong>Weaving Length ($L_W$)</strong>: The physical distance (feet) from the gore point where the merge begins to the gore point where the diverge begins. Short weaving lengths increase turbulence and reduce capacity.</li><li><strong>Weaving Flow Rate ($v_W$)</strong>: The sum of the two crossing flows:
-$$v_W = v_{RF} + v_{FR}$$<ul><li>$v_{RF}$ = flow originating on the ramp and exiting onto the freeway ($pc/h$)</li><li>$v_{FR}$ = flow originating on the freeway and exiting onto the ramp ($pc/h$)</li></ul></li><li><strong>Non-Weaving Flow Rate ($v_{NW}$)</strong>: The sum of the two through-flows:
-$$v_{NW} = v_{FF} + v_{RR}$$<ul><li>$v_{FF}$ = freeway-to-freeway through-flow ($pc/h$)</li><li>$v_{RR}$ = ramp-to-ramp through-flow ($pc/h$)</li></ul></li><li><strong>Total Flow Rate ($v$)</strong>: The sum of all movements:
-$$v = v_W + v_{NW}$$</li><li><strong>Volume Ratio ($VR$)</strong>: The proportion of total traffic that consists of weaving vehicles:
-$$VR = \frac{v_W}{v}$$</li></ul><hr><h2 id=weaving-configurations>Weaving Configurations</h2><p>The configuration determines the minimum number of lane changes that weaving vehicles must perform. The HCM classifies weaving segments based on these lane-change requirements:</p><h3 id=one-sided-weaving-segments>One-Sided Weaving Segments</h3><p>The most common type. An on-ramp is followed closely by an off-ramp, and the two are connected by a continuous auxiliary lane.</p><ul><li>Vehicles entering from the ramp must make <strong>1 lane change</strong> to enter the freeway ($L_{CR} = 1$).</li><li>Vehicles exiting from the freeway must make <strong>1 lane change</strong> to enter the auxiliary lane ($L_{CF} = 1$).</li></ul><h3 id=two-sided-weaving-segments>Two-Sided Weaving Segments</h3><p>Occur when a left-side ramp is followed by a right-side ramp (or vice versa). Weaving vehicles must cross all lanes of the freeway.</p><ul><li>The number of lane changes required is equal to the number of freeway lanes. These configurations create extreme turbulence.</li></ul><hr><h2 id=step-by-step-analysis-methodology>Step-by-Step Analysis Methodology</h2><div class=diagram-card><div class=diagram-header><div class=diagram-title><span class=diagram-indicator></span>
-<span>HCM Weaving Segment Analysis Pipeline</span></div><p class=diagram-caption>Sequential procedure for operational analysis of freeway weaving segments. Weaving and non-weaving movements generate differing friction and turbulence, requiring separate speed regressions before computing harmonic stream speed and segment density.</p></div><div class=diagram-svg-wrap><svg viewBox="0 0 680 180" fill="none"><defs><marker id="arrow-wv" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 1.5 8 5 0 8.5z" fill="#6366f1"/></marker></defs><pre><code>&lt;!-- Row 1: Steps 1 to 4 --&gt;
-&lt;!-- Step 1 --&gt;
-&lt;rect x="20" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/&gt;
-&lt;text x="90" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle"&gt;1. Identify Volumes&lt;/text&gt;
-&lt;text x="90" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle"&gt;V_FF, V_RF, V_FR, V_RR&lt;/text&gt;
-&lt;path d="M 160 49 L 180 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/&gt;
-&lt;!-- Step 2 --&gt;
-&lt;rect x="185" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/&gt;
-&lt;text x="255" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle"&gt;2. Adjust to pc/h&lt;/text&gt;
-&lt;text x="255" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle"&gt;Apply PHF &amp;amp; f_HV&lt;/text&gt;
-&lt;path d="M 325 49 L 345 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/&gt;
-&lt;!-- Step 3 --&gt;
-&lt;rect x="350" y="20" width="145" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/&gt;
-&lt;text x="422" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle"&gt;3. Classify Geometry&lt;/text&gt;
-&lt;text x="422" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle"&gt;Weaving Length L_W &amp;amp; VR&lt;/text&gt;
-&lt;path d="M 495 49 L 515 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/&gt;
-&lt;!-- Step 4 --&gt;
-&lt;rect x="520" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/&gt;
-&lt;text x="590" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle"&gt;4. Split Flows&lt;/text&gt;
-&lt;text x="590" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle"&gt;v_W and v_NW (pc/h)&lt;/text&gt;
-&lt;!-- Connecting Downward Curve --&gt;
-&lt;path d="M 590 78 C 590 98 480 100 480 105" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/&gt;
-&lt;!-- Row 2: Steps 5 to 7 --&gt;
-&lt;!-- Step 5 --&gt;
-&lt;rect x="20" y="105" width="200" height="60" rx="6" fill="rgba(99, 102, 241, 0.1)" stroke="#6366f1" stroke-width="1.6"/&gt;
-&lt;text x="120" y="129" fill="#6366f1" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle"&gt;5. Calculate Speeds (S_W, S_NW)&lt;/text&gt;
-&lt;text x="120" y="147" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle"&gt;Separate regression formulas&lt;/text&gt;
-&lt;path d="M 220 135 L 245 135" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/&gt;
-&lt;!-- Step 6 --&gt;
-&lt;rect x="250" y="105" width="220" height="60" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1.6"/&gt;
-&lt;text x="360" y="129" fill="#10b981" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle"&gt;6. Weighted Harmonic Speed (S)&lt;/text&gt;
-&lt;text x="360" y="147" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle"&gt;S = (v_W + v_NW) / [v_W/S_W + v_NW/S_NW]&lt;/text&gt;
-&lt;path d="M 470 135 L 495 135" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrow-wv)"/&gt;
-&lt;!-- Step 7 --&gt;
-&lt;rect x="500" y="105" width="160" height="60" rx="6" fill="rgba(245, 158, 11, 0.12)" stroke="#f59e0b" stroke-width="1.8"/&gt;
-&lt;text x="580" y="129" fill="#f59e0b" font-size="12" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle"&gt;7. Density &amp;amp; LOS&lt;/text&gt;
-&lt;text x="580" y="147" fill="currentColor" opacity="0.8" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle"&gt;D = (v / N) / S → LOS A–F&lt;/text&gt;
-&lt;/svg&gt;</code></pre></div><div class="diagram-badges"><div class="diagram-badge" style="border-left:3px solid #0284c7"><strong>Volume Ratio ($VR$)</strong><p>$VR = v_W / v$, proportion of total flow that weaves.</p></div><div class="diagram-badge" style="border-left:3px solid #10b981"><strong>Harmonic Mean Speed</strong><p>Speeds must be averaged harmonically across vehicle volumes, not via simple arithmetic mean.</p></div><div class="diagram-badge" style="border-left:3px solid #f59e0b"><strong>Weaving LOS Thresholds</strong><p>LOS thresholds for weaving: $\le 10, 20, 28, 35, 43\text{ pc/mi/ln}$.</p></div></div></div><hr><h2 id="step-1-calculate-average-speed-">Step 1: Calculate Average Speed ($S$)</h2><p>The HCM utilizes separate regression equations to estimate the average speed of weaving vehicles ($S_W$) and non-weaving vehicles ($S_{NW}$):</p>$$\text{Weaving Speed: } S_W = \text{BFFS} - \text{adjustments based on geometry and flow}$$<p/>$$\text{Non-Weaving Speed: } S_{NW} = \text{BFFS} - \text{adjustments based on geometry and flow}$$<p>Once $S_W$ and $S_{NW}$ are determined, the average speed of the entire traffic stream ($S$, in $mph$) is calculated as a weighted harmonic mean:</p>$$S = \frac{v_W + v_{NW}}{\frac{v_W}{S_W} + \frac{v_{NW}}{S_{NW}}}$$<p><em>Note: On the PE exam, the individual speeds $S_W$ and $S_{NW}$ are typically either given, or the problem will simplify the system so that you can apply the harmonic mean formula directly.</em></p><hr><h2 id="step-2-calculate-density-">Step 2: Calculate Density ($D$)</h2><p>Calculate the density of the weaving segment ($D$, in $pc/mi/ln$):</p>$$D = \frac{v}{S \times N}$$<p>Where:</p><ul><li>$v$ = total adjusted flow rate in the weaving segment ($pc/h$)</li><li>$S$ = average speed of the traffic stream ($mph$)</li><li>$N$ = number of lanes within the weaving segment (including the auxiliary lane, if present).</li></ul><hr><h2 id="step-3-determine-level-of-service-los">Step 3: Determine Level of Service (LOS)</h2><p>LOS for weaving segments is determined by density ($D$):</p><table><thead><tr><th>Level of Service (LOS)</th><th>Density Range ($pc/mi/ln$)</th></tr></thead><tbody><tr><td><strong>A</strong></td><td>$\le 10.0$</td></tr><tr><td><strong>B</strong></td><td>$> 10.0$ to $\le 20.0$</td></tr><tr><td><strong>C</strong></td><td>$> 20.0$ to $\le 28.0$</td></tr><tr><td><strong>D</strong></td><td>$> 28.0$ to $\le 35.0$</td></tr><tr><td><strong>E</strong></td><td>$> 35.0$ to $\le 43.0$</td></tr><tr><td><strong>F</strong></td><td>$> 43.0$ OR if $v/c > 1.0$</td></tr></tbody></table><p><em>Note: The maximum density for LOS E in a weaving segment is $43.0 \text{ pc/mi/ln}$, which is slightly lower than the $45.0 \text{ pc/mi/ln}$ limit for basic freeway segments.</em></p><hr><h2 id="critical-pitfalls-and-exam-traps">Critical Pitfalls and Exam Traps</h2><ol><li><p><strong>Incorrect Calculation of Weighted Speed</strong>:
-A common error is calculating the average speed using a simple arithmetic mean: $S = (S_W + S_{NW})/2$. You<strong>must</strong>use the harmonic mean formula weighted by flow rates.</p></li><li><p><strong>Forgetting the Auxiliary Lane in $N$</strong>:
-When counting the number of lanes ($N$) in the weaving segment, you must include the auxiliary lane that connects the on-ramp and off-ramp. If the freeway has 3 through-lanes and a 1-lane auxiliary lane connects the ramps, then $N = 4$.</p></li><li><p><strong>Confusing Weaving Flow components</strong>:
-Ensure you identify the flows correctly:</p><ul><li>Weaving flows ($v_W$) are the crossing movements: freeway-to-ramp and ramp-to-freeway.</li><li>Non-weaving flows ($v_{NW}$) are the through movements: freeway-to-freeway and ramp-to-ramp.</li></ul></li></ol><hr><h2 id="worked-example">Worked Example</h2><p>A one-sided weaving segment on a freeway has the following adjusted peak passenger-car flow rates:</p><ul><li>Freeway-to-freeway through-flow: $v_{FF} = 2,800 \text{ pc/h}$</li><li>Freeway-to-ramp exiting flow: $v_{FR} = 600 \text{ pc/h}$</li><li>Ramp-to-freeway entering flow: $v_{RF} = 800 \text{ pc/h}$</li><li>Ramp-to-ramp through-flow: $v_{RR} = 100 \text{ pc/h}$</li><li>Number of lanes in the weaving segment (including auxiliary lane): $N = 4$</li><li>Estimated average speed of weaving vehicles: $S_W = 42 \text{ mph}$</li><li>Estimated average speed of non-weaving vehicles: $S_{NW} = 54 \text{ mph}$</li></ul><p><strong>Determine the average speed ($S$) of the traffic stream, the density ($D$) of the segment, and the Level of Service (LOS).</strong></p><h3 id="solution">Solution:</h3><h4 id="step-1-calculate-weaving-and-non-weaving-flow-rates">Step 1: Calculate Weaving and Non-Weaving Flow Rates</h4>$$v_W = v_{RF} + v_{FR} = 800 + 600 = 1,400 \text{ pc/h}$$<p/>$$v_{NW} = v_{FF} + v_{RR} = 2,800 + 100 = 2,900 \text{ pc/h}$$<p/>$$v = v_W + v_{NW} = 1,400 + 2,900 = 4,300 \text{ pc/h}$$<h4 id="step-2-calculate-weighted-average-speed-">Step 2: Calculate Weighted Average Speed ($S$)</h4><p>Using the harmonic mean:</p>$$S = \frac{v_W + v_{NW}}{\frac{v_W}{S_W} + \frac{v_{NW}}{S_{NW}}} = \frac{4,300}{\frac{1,400}{42} + \frac{2,900}{54}}$$<ul><li>$\frac{1,400}{42} = 33.33$</li><li>$\frac{2,900}{54} = 53.70$
-$$S = \frac{4,300}{33.33 + 53.70} = \frac{4,300}{87.03} = 49.41 \text{ mph}$$</li></ul><h4 id="step-3-calculate-density-">Step 3: Calculate Density ($D$)</h4>$$D = \frac{v}{S \times N} = \frac{4,300 \text{ pc/h}}{49.41 \text{ mph} \times 4 \text{ lanes}} = \frac{4,300}{197.64} = 21.76 \text{ pc/mi/ln}$$<h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4><p>Compare $D = 21.76 \text{ pc/mi/ln}$ to the weaving segment LOS criteria:</p><ul><li>$20.0< D="" \le="" 28.0="" \rightarrow$="" <strong="">LOS C</strong></li></ul><p><strong>Conclusion:</strong>The weaving segment operates at<strong>LOS C</strong>.</p><hr><h2 id="references-and-standards">References and Standards</h2><ul><li><em>NCEES PE Civil Reference Handbook</em>, Section 6.2 (Traffic Operations).</li><li><em>Highway Capacity Manual (HCM) 6th Edition</em>, Chapter 13 (Freeway Weaving Segments).</li></ul></div><div class="prev-next"><nav aria-label="Post navigation" class="post-navigation"><div class="prev-post"><p><a href="/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/">&#8592;
-Previous:
-Ramp Merge and Diverge Operations</a></p><p class="prev-post-date">May 4, 2026</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>© 2017-2026 / Mohammad Movahedi. All rights reserved</a>.</span></footer></body></html>
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>Weaving Segments | Mohammad Movahedi</title>
+    <meta name="description" content="A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of …">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+    
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="Weaving Segments | Mohammad Movahedi">
+    <meta property="og:description" content="A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Weaving Segments">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="Weaving Segments | Mohammad Movahedi">
+    <meta name="twitter:description" content="A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-4/30-weaving-segments/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"Weaving Segments\"",
+  "description": "\"A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of …\"",
+  "url": "http:\/\/localhost:1313\/scratchpad\/pe-exam\/module-4\/30-weaving-segments\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/scratchpad\/pe-exam\/module-4\/30-weaving-segments\/"
+  },
+  "datePublished": "2026-05-04T00:00:00Z",
+  "dateModified": "2026-05-04T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Scratchpad\"",
+      "item": "https:\/\/m-movahedi.com\/scratchpad\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"Weaving Segments\"",
+      "item": "http:\/\/localhost:1313\/scratchpad\/pe-exam\/module-4\/30-weaving-segments\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.46f64924e715031ec2daf5fad084fa1e35a175ab207cff3c6daf5eaf942796d4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>Weaving Segments</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of traffic signals or other control devices. Weaving segments are characterized by high turbulence, as vehicles must make lane changes over a limited distance.</p>
+<p>The NCEES PE Civil Transportation exam frequently tests weaving segment operations. The methodology is governed by Chapter 13 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.</p>
+<hr>
+<h2 id="weaving-segment-characteristics">Weaving Segment Characteristics</h2>
+<p>To analyze a weaving segment, we must define its geometry and flow components:</p>
+<ul>
+<li><strong>Weaving Length ($L_W$)</strong>: The physical distance (feet) from the gore point where the merge begins to the gore point where the diverge begins. Short weaving lengths increase turbulence and reduce capacity.</li>
+<li><strong>Weaving Flow Rate ($v_W$)</strong>: The sum of the two crossing flows:
+
+$$v_W = v_{RF} + v_{FR}$$<ul>
+<li>$v_{RF}$ = flow originating on the ramp and exiting onto the freeway ($pc/h$)</li>
+<li>$v_{FR}$ = flow originating on the freeway and exiting onto the ramp ($pc/h$)</li>
+</ul>
+</li>
+<li><strong>Non-Weaving Flow Rate ($v_{NW}$)</strong>: The sum of the two through-flows:
+
+$$v_{NW} = v_{FF} + v_{RR}$$<ul>
+<li>$v_{FF}$ = freeway-to-freeway through-flow ($pc/h$)</li>
+<li>$v_{RR}$ = ramp-to-ramp through-flow ($pc/h$)</li>
+</ul>
+</li>
+<li><strong>Total Flow Rate ($v$)</strong>: The sum of all movements:
+
+$$v = v_W + v_{NW}$$</li>
+<li><strong>Volume Ratio ($VR$)</strong>: The proportion of total traffic that consists of weaving vehicles:
+
+$$VR = \frac{v_W}{v}$$</li>
+</ul>
+<hr>
+<h2 id="weaving-configurations">Weaving Configurations</h2>
+<p>The configuration determines the minimum number of lane changes that weaving vehicles must perform. The HCM classifies weaving segments based on these lane-change requirements:</p>
+<h3 id="one-sided-weaving-segments">One-Sided Weaving Segments</h3>
+<p>The most common type. An on-ramp is followed closely by an off-ramp, and the two are connected by a continuous auxiliary lane.</p>
+<ul>
+<li>Vehicles entering from the ramp must make <strong>1 lane change</strong> to enter the freeway ($L_{CR} = 1$).</li>
+<li>Vehicles exiting from the freeway must make <strong>1 lane change</strong> to enter the auxiliary lane ($L_{CF} = 1$).</li>
+</ul>
+<h3 id="two-sided-weaving-segments">Two-Sided Weaving Segments</h3>
+<p>Occur when a left-side ramp is followed by a right-side ramp (or vice versa). Weaving vehicles must cross all lanes of the freeway.</p>
+<ul>
+<li>The number of lane changes required is equal to the number of freeway lanes. These configurations create extreme turbulence.</li>
+</ul>
+<hr>
+<h2 id="step-by-step-analysis-methodology">Step-by-Step Analysis Methodology</h2>
+<div class="diagram-card">
+  <div class="diagram-header">
+    <div class="diagram-title">
+      <span class="diagram-indicator"></span>
+      <span>HCM Weaving Segment Analysis Pipeline</span>
+    </div>
+    <p class="diagram-caption">
+      Sequential procedure for operational analysis of freeway weaving segments. Weaving and non-weaving movements generate differing friction and turbulence, requiring separate speed regressions before computing harmonic stream speed and segment density.
+    </p>
+  </div>
+  <div class="diagram-svg-wrap">
+    <svg viewBox="0 0 680 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrow-wv" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#6366f1"/>
+        </marker>
+      </defs>
+      <!-- Row 1: Steps 1 to 4 -->
+      <!-- Step 1 -->
+      <rect x="20" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="90" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">1. Identify Volumes</text>
+      <text x="90" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">V_FF, V_RF, V_FR, V_RR</text>
+      <path d="M 160 49 L 180 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 2 -->
+      <rect x="185" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="255" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">2. Adjust to pc/h</text>
+      <text x="255" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Apply PHF &amp; f_HV</text>
+      <path d="M 325 49 L 345 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 3 -->
+      <rect x="350" y="20" width="145" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="422" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">3. Classify Geometry</text>
+      <text x="422" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Weaving Length L_W &amp; VR</text>
+      <path d="M 495 49 L 515 49" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 4 -->
+      <rect x="520" y="20" width="140" height="58" rx="6" fill="rgba(2, 132, 199, 0.08)" stroke="#0284c7" stroke-width="1.6"/>
+      <text x="590" y="42" fill="#0284c7" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">4. Split Flows</text>
+      <text x="590" y="60" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">v_W and v_NW (pc/h)</text>
+      <!-- Connecting Downward Curve -->
+      <path d="M 590 78 C 590 98 480 100 480 105" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Row 2: Steps 5 to 7 -->
+      <!-- Step 5 -->
+      <rect x="20" y="105" width="200" height="60" rx="6" fill="rgba(99, 102, 241, 0.1)" stroke="#6366f1" stroke-width="1.6"/>
+      <text x="120" y="129" fill="#6366f1" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">5. Calculate Speeds (S_W, S_NW)</text>
+      <text x="120" y="147" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Separate regression formulas</text>
+      <path d="M 220 135 L 245 135" stroke="#6366f1" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 6 -->
+      <rect x="250" y="105" width="220" height="60" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1.6"/>
+      <text x="360" y="129" fill="#10b981" font-size="11" font-weight="700" font-family="system-ui, sans-serif" text-anchor="middle">6. Weighted Harmonic Speed (S)</text>
+      <text x="360" y="147" fill="currentColor" opacity="0.75" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">S = (v_W + v_NW) / [v_W/S_W + v_NW/S_NW]</text>
+      <path d="M 470 135 L 495 135" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrow-wv)"/>
+      <!-- Step 7 -->
+      <rect x="500" y="105" width="160" height="60" rx="6" fill="rgba(245, 158, 11, 0.12)" stroke="#f59e0b" stroke-width="1.8"/>
+      <text x="580" y="129" fill="#f59e0b" font-size="12" font-weight="800" font-family="system-ui, sans-serif" text-anchor="middle">7. Density &amp; LOS</text>
+      <text x="580" y="147" fill="currentColor" opacity="0.8" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">D = (v / N) / S → LOS A–F</text>
+    </svg>
+  </div>
+  <div class="diagram-badges">
+    <div class="diagram-badge" style="border-left: 3px solid #0284c7;">
+      <strong>Volume Ratio ($VR$)</strong>
+      <p>$VR = v_W / v$, proportion of total flow that weaves.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #10b981;">
+      <strong>Harmonic Mean Speed</strong>
+      <p>Speeds must be averaged harmonically across vehicle volumes, not via simple arithmetic mean.</p>
+    </div>
+    <div class="diagram-badge" style="border-left: 3px solid #f59e0b;">
+      <strong>Weaving LOS Thresholds</strong>
+      <p>LOS thresholds for weaving: $\le 10, 20, 28, 35, 43\text{ pc/mi/ln}$.</p>
+    </div>
+  </div>
+</div>
+<hr>
+<h2 id="step-1-calculate-average-speed-">Step 1: Calculate Average Speed ($S$)</h2>
+<p>The HCM utilizes separate regression equations to estimate the average speed of weaving vehicles ($S_W$) and non-weaving vehicles ($S_{NW}$):</p>
+$$\text{Weaving Speed: } S_W = \text{BFFS} - \text{adjustments based on geometry and flow}$$<p>
+</p>
+$$\text{Non-Weaving Speed: } S_{NW} = \text{BFFS} - \text{adjustments based on geometry and flow}$$<p>Once $S_W$ and $S_{NW}$ are determined, the average speed of the entire traffic stream ($S$, in $mph$) is calculated as a weighted harmonic mean:</p>
+$$S = \frac{v_W + v_{NW}}{\frac{v_W}{S_W} + \frac{v_{NW}}{S_{NW}}}$$<p><em>Note: On the PE exam, the individual speeds $S_W$ and $S_{NW}$ are typically either given, or the problem will simplify the system so that you can apply the harmonic mean formula directly.</em></p>
+<hr>
+<h2 id="step-2-calculate-density-">Step 2: Calculate Density ($D$)</h2>
+<p>Calculate the density of the weaving segment ($D$, in $pc/mi/ln$):</p>
+$$D = \frac{v}{S \times N}$$<p>Where:</p>
+<ul>
+<li>$v$ = total adjusted flow rate in the weaving segment ($pc/h$)</li>
+<li>$S$ = average speed of the traffic stream ($mph$)</li>
+<li>$N$ = number of lanes within the weaving segment (including the auxiliary lane, if present).</li>
+</ul>
+<hr>
+<h2 id="step-3-determine-level-of-service-los">Step 3: Determine Level of Service (LOS)</h2>
+<p>LOS for weaving segments is determined by density ($D$):</p>
+<table>
+  <thead>
+      <tr>
+          <th>Level of Service (LOS)</th>
+          <th>Density Range ($pc/mi/ln$)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>A</strong></td>
+          <td>$\le 10.0$</td>
+      </tr>
+      <tr>
+          <td><strong>B</strong></td>
+          <td>$> 10.0$ to $\le 20.0$</td>
+      </tr>
+      <tr>
+          <td><strong>C</strong></td>
+          <td>$> 20.0$ to $\le 28.0$</td>
+      </tr>
+      <tr>
+          <td><strong>D</strong></td>
+          <td>$> 28.0$ to $\le 35.0$</td>
+      </tr>
+      <tr>
+          <td><strong>E</strong></td>
+          <td>$> 35.0$ to $\le 43.0$</td>
+      </tr>
+      <tr>
+          <td><strong>F</strong></td>
+          <td>$> 43.0$ OR if $v/c > 1.0$</td>
+      </tr>
+  </tbody>
+</table>
+<p><em>Note: The maximum density for LOS E in a weaving segment is $43.0 \text{ pc/mi/ln}$, which is slightly lower than the $45.0 \text{ pc/mi/ln}$ limit for basic freeway segments.</em></p>
+<hr>
+<h2 id="critical-pitfalls-and-exam-traps">Critical Pitfalls and Exam Traps</h2>
+<ol>
+<li>
+<p><strong>Incorrect Calculation of Weighted Speed</strong>:
+A common error is calculating the average speed using a simple arithmetic mean: $S = (S_W + S_{NW})/2$. You <strong>must</strong> use the harmonic mean formula weighted by flow rates.</p>
+</li>
+<li>
+<p><strong>Forgetting the Auxiliary Lane in $N$</strong>:
+When counting the number of lanes ($N$) in the weaving segment, you must include the auxiliary lane that connects the on-ramp and off-ramp. If the freeway has 3 through-lanes and a 1-lane auxiliary lane connects the ramps, then $N = 4$.</p>
+</li>
+<li>
+<p><strong>Confusing Weaving Flow components</strong>:
+Ensure you identify the flows correctly:</p>
+<ul>
+<li>Weaving flows ($v_W$) are the crossing movements: freeway-to-ramp and ramp-to-freeway.</li>
+<li>Non-weaving flows ($v_{NW}$) are the through movements: freeway-to-freeway and ramp-to-ramp.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="worked-example">Worked Example</h2>
+<p>A one-sided weaving segment on a freeway has the following adjusted peak passenger-car flow rates:</p>
+<ul>
+<li>Freeway-to-freeway through-flow: $v_{FF} = 2,800 \text{ pc/h}$</li>
+<li>Freeway-to-ramp exiting flow: $v_{FR} = 600 \text{ pc/h}$</li>
+<li>Ramp-to-freeway entering flow: $v_{RF} = 800 \text{ pc/h}$</li>
+<li>Ramp-to-ramp through-flow: $v_{RR} = 100 \text{ pc/h}$</li>
+<li>Number of lanes in the weaving segment (including auxiliary lane): $N = 4$</li>
+<li>Estimated average speed of weaving vehicles: $S_W = 42 \text{ mph}$</li>
+<li>Estimated average speed of non-weaving vehicles: $S_{NW} = 54 \text{ mph}$</li>
+</ul>
+<p><strong>Determine the average speed ($S$) of the traffic stream, the density ($D$) of the segment, and the Level of Service (LOS).</strong></p>
+<h3 id="solution">Solution:</h3>
+<h4 id="step-1-calculate-weaving-and-non-weaving-flow-rates">Step 1: Calculate Weaving and Non-Weaving Flow Rates</h4>
+$$v_W = v_{RF} + v_{FR} = 800 + 600 = 1,400 \text{ pc/h}$$<p>
+</p>
+$$v_{NW} = v_{FF} + v_{RR} = 2,800 + 100 = 2,900 \text{ pc/h}$$<p>
+</p>
+$$v = v_W + v_{NW} = 1,400 + 2,900 = 4,300 \text{ pc/h}$$<h4 id="step-2-calculate-weighted-average-speed-">Step 2: Calculate Weighted Average Speed ($S$)</h4>
+<p>Using the harmonic mean:
+</p>
+$$S = \frac{v_W + v_{NW}}{\frac{v_W}{S_W} + \frac{v_{NW}}{S_{NW}}} = \frac{4,300}{\frac{1,400}{42} + \frac{2,900}{54}}$$<ul>
+<li>$\frac{1,400}{42} = 33.33$</li>
+<li>$\frac{2,900}{54} = 53.70$
+
+$$S = \frac{4,300}{33.33 + 53.70} = \frac{4,300}{87.03} = 49.41 \text{ mph}$$</li>
+</ul>
+<h4 id="step-3-calculate-density-">Step 3: Calculate Density ($D$)</h4>
+$$D = \frac{v}{S \times N} = \frac{4,300 \text{ pc/h}}{49.41 \text{ mph} \times 4 \text{ lanes}} = \frac{4,300}{197.64} = 21.76 \text{ pc/mi/ln}$$<h4 id="step-4-determine-level-of-service-los">Step 4: Determine Level of Service (LOS)</h4>
+<p>Compare $D = 21.76 \text{ pc/mi/ln}$ to the weaving segment LOS criteria:</p>
+<ul>
+<li>$20.0 < D \le 28.0 \rightarrow$ <strong>LOS C</strong></li>
+</ul>
+<p><strong>Conclusion:</strong> The weaving segment operates at <strong>LOS C</strong>.</p>
+<hr>
+<h2 id="references-and-standards">References and Standards</h2>
+<ul>
+<li><em>NCEES PE Civil Reference Handbook</em>, Section 6.2 (Traffic Operations).</li>
+<li><em>Highway Capacity Manual (HCM) 6th Edition</em>, Chapter 13 (Freeway Weaving Segments).</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-4/29-ramp-merge-and-diverge-operations/">
+                &#8592;
+                Previous:
+                Ramp Merge and Diverge Operations
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

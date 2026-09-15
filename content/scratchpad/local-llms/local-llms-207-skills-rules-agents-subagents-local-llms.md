@@ -29,7 +29,7 @@ Think of these concepts as layers of reusable behavior:
 
 <div class="llm-diagram-container" id="diagram-207">
   <div class="llm-diagram-header">
-    <h4>Durable Context Hierarchy</h4>
+    <h3>Durable Context Hierarchy</h3>
     <p>Click an entity to see its role</p>
   </div>
   <div class="llm-stack-layout">
@@ -55,19 +55,19 @@ Think of these concepts as layers of reusable behavior:
   </div>
   <div class="llm-detail-panel" id="detail-207">
     <div id="panel-207-rules" class="llm-panel-content" style="display:none;">
-      <h5>Rules</h5>
+      <h4>Rules</h4>
       <p>Always-on or context-triggered instructions. Example: "Never edit files in the <code>public/</code> directory."</p>
     </div>
     <div id="panel-207-skills" class="llm-panel-content" style="display:none;">
-      <h5>Skills</h5>
+      <h4>Skills</h4>
       <p>Packaged workflows. Example: A "PR Review" skill that tells the agent exactly what checklist to run against a diff.</p>
     </div>
     <div id="panel-207-main" class="llm-panel-content" style="display:none;">
-      <h5>Main Agent</h5>
+      <h4>Main Agent</h4>
       <p>The orchestrator. It holds the user's primary intent, applies the rules, uses skills, and delegates tasks.</p>
     </div>
     <div id="panel-207-sub" class="llm-panel-content" style="display:none;">
-      <h5>Subagents</h5>
+      <h4>Subagents</h4>
       <p>Focused workers spawned by the main agent. Example: A "Research Subagent" with read-only access that scans 50 files without cluttering the main agent's context.</p>
     </div>
   </div>

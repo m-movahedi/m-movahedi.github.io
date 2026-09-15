@@ -4,10 +4,7 @@ weight: 15
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Speed Studies
-
-Speed is a fundamental parameter of traffic flow. In traffic engineering, speed studies are conducted to evaluate traffic operations, assess safety, set speed limits, and perform capacity analyses. On the PE Civil Transportation exam, the most critical speed concepts are the mathematical distinctions between **Time Mean Speed** and **Space Mean Speed**, and the interpretation of speed distribution statistics.
+---Speed is a fundamental parameter of traffic flow. In traffic engineering, speed studies are conducted to evaluate traffic operations, assess safety, set speed limits, and perform capacity analyses. On the PE Civil Transportation exam, the most critical speed concepts are the mathematical distinctions between **Time Mean Speed** and **Space Mean Speed**, and the interpretation of speed distribution statistics.
 
 ---
 

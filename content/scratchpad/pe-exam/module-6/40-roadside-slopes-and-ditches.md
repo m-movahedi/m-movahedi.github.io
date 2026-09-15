@@ -4,10 +4,7 @@ weight: 40
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Roadside Slopes and Ditches
-
-Roadside slopes and drainage ditches are primary features of a roadway's edge design. They must serve two conflicting purposes: they must safely drain water away from the pavement structure (hydraulics) while remaining traversable and forgiving for errant vehicles that leave the road (roadside safety). The primary references are the **AASHTO Roadside Design Guide (RDG)**, Chapter 3, and **AASHTO's Green Book (GDHS)**, Chapter 4.
+---Roadside slopes and drainage ditches are primary features of a roadway's edge design. They must serve two conflicting purposes: they must safely drain water away from the pavement structure (hydraulics) while remaining traversable and forgiving for errant vehicles that leave the road (roadside safety). The primary references are the **AASHTO Roadside Design Guide (RDG)**, Chapter 3, and **AASHTO's Green Book (GDHS)**, Chapter 4.
 
 ---
 

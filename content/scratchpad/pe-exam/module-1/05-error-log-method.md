@@ -4,10 +4,7 @@ weight: 5
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# The Error Log Method
-
-The most common mistake PE candidates make is prioritizing *quantity* of practice problems over *quality* of review. Grinding through 500 practice problems is useless if you are making the exact same mistakes on problem 500 that you made on problem 1.
+---The most common mistake PE candidates make is prioritizing *quantity* of practice problems over *quality* of review. Grinding through 500 practice problems is useless if you are making the exact same mistakes on problem 500 that you made on problem 1.
 
 The **Error Log Method** is a study framework designed to force you to confront *why* you are getting problems wrong. It turns every missed practice problem into a targeted study directive.
 

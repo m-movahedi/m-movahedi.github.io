@@ -4,10 +4,7 @@ weight: 75
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Pavement Markings
-
-Pavement markings are traffic control devices applied directly to the roadway surface. They provide continuous guidance to drivers and define path restrictions. Pavement marking design is governed by the *Manual on Uniform Traffic Control Devices (MUTCD)* Chapter 3.
+---Pavement markings are traffic control devices applied directly to the roadway surface. They provide continuous guidance to drivers and define path restrictions. Pavement marking design is governed by the *Manual on Uniform Traffic Control Devices (MUTCD)* Chapter 3.
 
 On the PE Civil Transportation exam, you will encounter questions regarding longitudinal line color and pattern definitions, standard line dimensions, transverse markings, pavement symbols, raised pavement markers, and material quantity calculations.
 

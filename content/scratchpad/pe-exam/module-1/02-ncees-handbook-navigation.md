@@ -4,10 +4,7 @@ weight: 2
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Navigating the NCEES PE Civil Reference Handbook
-
-For the Computer-Based Testing (CBT) format of the PE exam, you can no longer bring your own milk crates full of tabbed textbooks. Your primary lifeline is the digital **NCEES PE Civil Reference Handbook**, provided on the left half of your screen.
+---For the Computer-Based Testing (CBT) format of the PE exam, you can no longer bring your own milk crates full of tabbed textbooks. Your primary lifeline is the digital **NCEES PE Civil Reference Handbook**, provided on the left half of your screen.
 
 Navigating this handbook quickly and efficiently is a fundamental skill. It is not just about using `Ctrl+F`; it is about understanding the architecture of the document so you know *when* to search, *how* to search, and when a formula isn't in the handbook at all.
 

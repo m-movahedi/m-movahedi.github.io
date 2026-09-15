@@ -15,7 +15,7 @@ journal: "IEEE Transactions on Intelligent Transportation Systems"
 ---
 
 <div style="background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🚦</span> The Urban Gridlock Challenge</h4>
+  <h2 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🚦</span> The Urban Gridlock Challenge</h2>
   <p style="margin-bottom: 0; color: #34495e;">Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems (ATCS)—which rely on fixed-time, gap-based, or delay-based logic—often struggle to adapt to dynamic, complex, and unpredictable real-world traffic flows. Designing a truly responsive traffic controller requires a system capable of human-like <strong>reasoning and planning</strong>.</p>
 </div>
 

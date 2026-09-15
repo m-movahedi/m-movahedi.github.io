@@ -4,10 +4,7 @@ weight: 72
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Traffic Signal Coordination
-
-Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. The primary goal of coordination is to reduce stops, delays, fuel consumption, and vehicle emissions. 
+---Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. The primary goal of coordination is to reduce stops, delays, fuel consumption, and vehicle emissions. 
 
 On the PE Civil Transportation exam, you will encounter questions regarding coordination fundamentals, cycle length determination, offset calculations, progression bandwidth, and the interpretation of time-space diagrams.
 

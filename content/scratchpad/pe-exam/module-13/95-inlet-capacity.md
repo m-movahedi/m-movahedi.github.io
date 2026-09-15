@@ -4,10 +4,7 @@ weight: 95
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Inlet Capacity
-
-Roadway drainage systems collect surface runoff through curb openings, grates, or combination inlets and convey it into the storm sewer system. The design goal is to limit the spread of water ($T$) onto the roadway travel lanes to maintain traffic safety.
+---Roadway drainage systems collect surface runoff through curb openings, grates, or combination inlets and convey it into the storm sewer system. The design goal is to limit the spread of water ($T$) onto the roadway travel lanes to maintain traffic safety.
 
 ---
 

@@ -4,10 +4,7 @@ weight: 48
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Superelevation Runoff and Transition
-
-Superelevation transition is the progressive rotation of the roadway cross-section from a normal crown (NC) to a fully superelevated section ($e_d$). Properly designing this transition is critical for driver comfort, vehicle stability, and drainage.
+---Superelevation transition is the progressive rotation of the roadway cross-section from a normal crown (NC) to a fully superelevated section ($e_d$). Properly designing this transition is critical for driver comfort, vehicle stability, and drainage.
 
 For the PE Civil Transportation exam, transition lengths and station-specific cross slopes are calculated using formulas from **AASHTO's Green Book (GDHS)**, Chapter 3.
 

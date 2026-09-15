@@ -4,10 +4,7 @@ weight: 104
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Shared Use Paths
-
-Shared-use paths (often called multi-use paths) are physically separated from motorized vehicle traffic and designed for use by bicyclists, pedestrians, runners, and skaters. Design standards are governed by the AASHTO Guide for the Development of Bicycle Facilities.
+---Shared-use paths (often called multi-use paths) are physically separated from motorized vehicle traffic and designed for use by bicyclists, pedestrians, runners, and skaters. Design standards are governed by the AASHTO Guide for the Development of Bicycle Facilities.
 
 ---
 

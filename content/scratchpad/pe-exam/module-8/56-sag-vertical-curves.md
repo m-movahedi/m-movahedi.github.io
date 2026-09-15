@@ -4,10 +4,7 @@ weight: 56
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Sag Vertical Curves
-
-Sag vertical curves connect a downgrade to an upgrade (or a steep downgrade to a flatter downgrade, etc.), where the algebraic difference in grade is positive ($g_1 < g_2$). Unlike crest curves, where sight distance is restricted by the roadway surface itself, sight distance on sag curves during the day is generally unrestricted. 
+---Sag vertical curves connect a downgrade to an upgrade (or a steep downgrade to a flatter downgrade, etc.), where the algebraic difference in grade is positive ($g_1 < g_2$). Unlike crest curves, where sight distance is restricted by the roadway surface itself, sight distance on sag curves during the day is generally unrestricted. 
 
 Consequently, the design of sag vertical curves is governed by four criteria:
 1.  **Headlight Sight Distance** (the primary safety control for nighttime driving)

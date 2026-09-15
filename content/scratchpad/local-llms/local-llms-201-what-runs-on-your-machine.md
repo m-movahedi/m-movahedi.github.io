@@ -25,7 +25,7 @@ Think of a local LLM setup as three separate things:
 
 <div class="llm-diagram-container" id="diagram-201">
   <div class="llm-diagram-header">
-    <h4>The Local LLM Stack</h4>
+    <h3>The Local LLM Stack</h3>
     <p>Click a layer to see more details</p>
   </div>
   <div class="llm-stack-layout">
@@ -46,17 +46,17 @@ Think of a local LLM setup as three separate things:
   </div>
   <div class="llm-detail-panel" id="detail-201">
     <div id="panel-201-model" class="llm-panel-content" style="display:none;">
-      <h5>The Model Layer</h5>
+      <h4>The Model Layer</h4>
       <p>The mathematical weights. Models are inert files until loaded.</p>
       <ul><li>Examples: Llama 3 8B, Qwen 2.5</li><li>Beginner question: What is this model good at?</li></ul>
     </div>
     <div id="panel-201-runtime" class="llm-panel-content" style="display:none;">
-      <h5>The Runtime Layer</h5>
+      <h4>The Runtime Layer</h4>
       <p>The engine that loads the model weights into memory and provides an API or chat interface.</p>
       <ul><li>Examples: Ollama, LM Studio, llama.cpp</li><li>Beginner question: Can this load this file format?</li></ul>
     </div>
     <div id="panel-201-hardware" class="llm-panel-content" style="display:none;">
-      <h5>The Hardware Layer</h5>
+      <h4>The Hardware Layer</h4>
       <p>Your physical machine. VRAM (GPU memory) is the most critical constraint for fast local inference.</p>
       <ul><li>Constraints: 8GB RAM (small), 16GB (medium), 24GB VRAM (large)</li><li>Beginner question: Will it be fast enough?</li></ul>
     </div>

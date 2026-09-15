@@ -4,10 +4,7 @@ weight: 27
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Unsignalized Intersection Operations
-
-Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are Two-Way Stop-Controlled (TWSC) intersections and All-Way Stop-Controlled (AWSC) intersections. Their operational analysis is a key topic on the NCEES PE Civil Transportation exam, focusing on critical headway, potential capacity, movement capacity, control delay, and Level of Service (LOS).
+---Unsignalized intersections are governed by priority rules rather than traffic signals. The two most common types are Two-Way Stop-Controlled (TWSC) intersections and All-Way Stop-Controlled (AWSC) intersections. Their operational analysis is a key topic on the NCEES PE Civil Transportation exam, focusing on critical headway, potential capacity, movement capacity, control delay, and Level of Service (LOS).
 
 The methodology is governed by Chapters 20 and 21 of the Highway Capacity Manual (HCM 6th Edition).
 

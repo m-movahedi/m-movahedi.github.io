@@ -6,18 +6,19 @@ type : "post"
 tags:
   - "Disaster resilience"
   - "post-disaster-recovery"
+slug: "nheri-rsr-spring-2025-otis"
+aliases: ["/webinars/NHERI_RSR_Spring2025-2/", "/webinars/nheri_rsr_spring2025-2/"]
+description: "NHERI GSC webinar with Dr. Juan Antonio Balderrama Garcia Mendez assessing Category 5 Hurricane Otis impacts and post-disaster infrastructure resilience."
 ---
 <div class="layout-container">
   <div class="left-section">
-    <img src="https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg" alt="Description of image" class="side-image" style="width:70px">
+    <img src="https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg" alt="NHERI Graduate Student Council logo" class="side-image" style="width:70px">
   </div>
   <div class="right-section">
-    <h3>NHERI Graduate Student Council</h3>
-    <h2>Reconnaissance RSR Meeting</h2>
+    <h2>NHERI Graduate Student Council</h2>
+    <h3>Reconnaissance RSR Meeting</h3>
   </div>
 </div>
-
-# Hurricane Otis Post-Disaster Assessment
 
 I hosted Juan Antonio Balderrama Garcia Mendez, Associate Professor of Instruction at The University of Texas at Arlington, as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.
 

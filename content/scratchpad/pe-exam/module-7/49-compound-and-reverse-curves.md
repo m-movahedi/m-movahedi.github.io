@@ -4,10 +4,7 @@ weight: 49
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Compound and Reverse Curves
-
-While simple horizontal curves are the most common horizontal alignment elements, complex alignments sometimes require combining multiple curves. Two such configurations are **compound curves** and **reverse curves**.
+---While simple horizontal curves are the most common horizontal alignment elements, complex alignments sometimes require combining multiple curves. Two such configurations are **compound curves** and **reverse curves**.
 
 For the PE Civil Transportation exam, you must understand their geometric relationships, coordinate calculations, stationing workflows, and critical design limitations set by **AASHTO's Green Book (GDHS)**, Chapter 3.
 

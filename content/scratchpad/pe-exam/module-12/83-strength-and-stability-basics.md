@@ -4,10 +4,7 @@ weight: 83
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Shear Strength and Lateral Earth Pressures
-
-Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern the design of retaining walls, abutments, excavation support systems, and highway embankments.
+---Soil strength and stability are core geotechnical topics on the PE Civil Transportation exam. These concepts govern the design of retaining walls, abutments, excavation support systems, and highway embankments.
 
 ---
 

@@ -17,7 +17,7 @@ journal: "Journal of Transport Geography"
 The transition to electric vehicles (EVs) introduces new paradigms for emergency management, particularly in hurricane-prone regions. During extreme weather events, the vulnerability of the power grid becomes a critical bottleneck. Structural failures within the transmission and distribution networks can disable permanently installed EV charging stations precisely when they are most necessary for mass population evacuations. 
 
 <div style="background-color: #f4f6f9; padding: 20px; border-left: 5px solid #0056b3; border-radius: 4px; margin: 25px 0;">
-  <h4 style="margin-top: 0; color: #0056b3;">The Research Problem</h4>
+  <h2 style="margin-top: 0; color: #0056b3;">The Research Problem</h2>
   <p style="margin-bottom: 0; font-size: 1.1em; color: #242424;">How can emergency managers systematically allocate limited mobile power resources to ensure EV operability when traditional grid-connected infrastructure fails?</p>
 </div>
 
@@ -417,7 +417,7 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
 <div class="grid-instruct">👆 Hover over the complex network above to simulate a focused hurricane strike. Watch the transmission lines in its path fail and observe the cascading power outages extending to nodes outside the path.</div>
 <div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 30px 0;">
   <div style="flex: 1 1 100%; background: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <h4 style="margin-top: 0; border-bottom: 2px solid #28a745; padding-bottom: 10px; color: #242424;">Multi-Criteria Decision Analysis (MCDA) via AHP</h4>
+    <h2 style="margin-top: 0; border-bottom: 2px solid #28a745; padding-bottom: 10px; color: #242424;">Multi-Criteria Decision Analysis (MCDA) via AHP</h2>
     <p style="margin-bottom: 10px; color: #242424;">To determine optimal MEVCS placement, we utilized the Analytical Hierarchy Process (AHP) to derive criteria weights based on consensus from a panel of 12 domain experts across emergency management, power systems resilience, and urban planning. The normalized weights ($\omega$) were established as:</p>
     <ul style="padding-left: 20px; line-height: 1.6; margin-bottom: 0; color: #242424;">
       <li><strong>EV Ownership Density ($\omega_1 = 0.30$):</strong> Quantifying local charging demand using ZIP code registration counts.</li>

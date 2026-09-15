@@ -1,24 +1,699 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>InspectXR: Turning Building Models into Traceable Immersive Training</title><meta name=description content="A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for …"><meta name=keywords content='Building Information Modeling,Extended Reality,Retrieval-Augmented Generation,Infrastructure Asset Management,Building Inspection,Human-AI Interaction,Learning Analytics,Digital Twins'><meta property="og:url" content="https://m-movahedi.com/research/inspect-xr/"><meta property="og:type" content="website"><meta property="og:title" content="InspectXR: Turning Building Models into Traceable Immersive Training"><meta property="og:description" content="A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for …"><meta property="og:image" content="https://m-movahedi.com/images/transparent.png"><meta property="og:image:secure_url" content="https://m-movahedi.com/images/transparent.png"><meta name=twitter:card content="summary"><meta name=twitter:title content="InspectXR: Turning Building Models into Traceable Immersive Training"><meta name=twitter:description content="A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for …"><meta property="twitter:domain" content="https://m-movahedi.com/research/inspect-xr/"><meta property="twitter:url" content="https://m-movahedi.com/research/inspect-xr/"><meta name=twitter:image content="https://m-movahedi.com/images/transparent.png"><link rel=canonical href=https://m-movahedi.com/research/inspect-xr/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><script src=/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script><link rel=icon type=image/png href=/favicon.png><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href=/css/llm-series.css><link rel=stylesheet href=/css/hbm-series.css><link rel=stylesheet href=/css/llm-diagrams.css><link rel=stylesheet href=/css/tm-series.css><link rel=stylesheet href=/css/mc-series.css><script defer src=/js/hbm-widgets.js></script><script defer src=/js/llm-diagrams.js></script><script defer src=/js/tm-series.js></script><script defer src=/js/mc-scrollytelling.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-1WZSE8DHZ9")</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css integrity=sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js integrity=sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js integrity=sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script><link rel=stylesheet href=/css/custom.min.18ec29952add11924d403cdc5312cbc8a1ccdfa9f875450326ee02939271a377.css><link id=dark-theme rel=stylesheet href=/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://m-movahedi.com/><img src=/images/profile.png alt="Mohammad Movahedi"></a></div><div class=nav-title><a class=nav-brand href=https://m-movahedi.com/>Mohammad Movahedi</a></div><div class=nav-links><div class=nav-link><a href=https://m-movahedi.com/ aria-label>Home</a></div><div class=nav-link><a href=https://m-movahedi.com/background/ aria-label>Background</a></div><div class=nav-link><a href=https://m-movahedi.com/webinars/ aria-label>Webinars</a></div><div class=nav-link><a href=https://m-movahedi.com/research/ aria-label>Research</a></div><div class=nav-link><a href=https://m-movahedi.com/blog/ aria-label>Blog</a></div><div class=nav-link><a href=https://m-movahedi.com/scratchpad/ aria-label>Scratchpad</a></div><div class=nav-link><a href=https://m-movahedi.com/about/ aria-label>About</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://m-movahedi.com/>Home</a></li><li class=nav-item><a href=https://m-movahedi.com/background/>Background</a></li><li class=nav-item><a href=https://m-movahedi.com/webinars/>Webinars</a></li><li class=nav-item><a href=https://m-movahedi.com/research/>Research</a></li><li class=nav-item><a href=https://m-movahedi.com/blog/>Blog</a></li><li class=nav-item><a href=https://m-movahedi.com/scratchpad/>Scratchpad</a></li><li class=nav-item><a href=https://m-movahedi.com/about/>About</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>InspectXR: Turning Building Models into Traceable Immersive Training</h1><small role=doc-subtitle>A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for building inspection training.</small><p class=post-date>September 3, 2026</p><ul class=post-tags><li class=post-tag><a href=https://m-movahedi.com/tags/building-information-modeling>Building Information Modeling</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/extended-reality>Extended Reality</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/retrieval-augmented-generation>Retrieval-Augmented Generation</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/infrastructure-asset-management>Infrastructure Asset Management</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/building-inspection>Building Inspection</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/human-ai-interaction>Human-AI Interaction</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/learning-analytics>Learning Analytics</a></li><li class=post-tag><a href=https://m-movahedi.com/tags/digital-twins>Digital Twins</a></li></ul></div><div class=post-content><h1 id=inspectxr-turning-building-models-into-traceable-immersive-training>InspectXR: Turning Building Models into Traceable Immersive Training</h1><p><em>A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for building inspection training.</em></p><h2 id=what-if-a-building-model-could-become-a-place-to-practicenot-just-a-file-to-view>What if a building model could become a place to practice—not just a file to view?</h2><p>Building inspectors learn to connect several kinds of evidence at once. They must recognize a physical component, understand how it should perform, identify signs of deterioration, consult technical guidance, and decide what action to take. Conventional training often separates those activities across manuals, slides, videos, and occasional field visits.</p><p>InspectXR explores a different model: place the learner inside an interactive digital building, let them inspect its components, and bring the relevant technical knowledge into the scene at the moment it is needed.</p><p>The project combines Industry Foundation Classes (IFC) building models, browser-based extended reality, retrieval-augmented generation (RAG), condition modeling, and event-based learning analytics. Its purpose is not simply to make BIM immersive. The deeper goal is to make every step of a training experience traceable—from the source building component and technical document to the learner&rsquo;s action, the assistance they received, and the score that followed.</p><table><thead><tr><th>1 identity spine</th><th>3 device tiers</th><th>2 reuse-before-generation funnels</th><th>72 FPS Quest target</th></tr></thead><tbody><tr><td>Links each component across the system</td><td>Quest, desktop, and degraded mobile/Cardboard</td><td>One for technical answers and one for visual assets</td><td>A comfort floor, not an optional quality setting</td></tr></tbody></table><h2 id=the-gap-between-bim-and-learning>The gap between BIM and learning</h2><p>BIM already contains rich information about walls, slabs, equipment, spaces, materials, and systems. Yet a model prepared for design or construction does not automatically become an effective learning environment. Geometry can be converted into a web-friendly 3D format, but conversion alone does not answer the instructional questions:</p><ul><li>Which object did the student select?</li><li>What source guidance applies to that exact component?</li><li>Is the visible defect consistent with the component&rsquo;s material and simulated condition?</li><li>Did the student inspect the right object, in the right order, for the right reason?</li><li>Can an instructor reconstruct the attempt after the environment, rubric, or AI model changes?</li></ul><p>These questions reveal a common weakness in digital-twin and XR workflows: identity is easy to lose. A component may have one identifier in an IFC file, another database record after ingestion, and only a mesh name after conversion to GLB. If those representations cannot be joined reliably, an immersive click becomes ambiguous. The system may show the wrong metadata, retrieve irrelevant guidance, or assign an action to the wrong asset.</p><p>InspectXR treats this problem as the architectural center of the project.</p><h2 id=the-identifier-spine>The identifier spine</h2><p>Every physical component receives an immutable internal <code>component_id</code>. The original IFC GUID remains attached as provenance, but the internal identifier becomes the cross-system join key.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>IFC component
-</span></span><span style=display:flex><span>    -&gt; database component
-</span></span><span style=display:flex><span>    -&gt; GLB node
-</span></span><span style=display:flex><span>    -&gt; selectable XR object
-</span></span><span style=display:flex><span>    -&gt; knowledge entity
-</span></span><span style=display:flex><span>    -&gt; training task
-</span></span><span style=display:flex><span>    -&gt; student event
-</span></span><span style=display:flex><span>    -&gt; assessment result
-</span></span></code></pre></div><p>During ingestion, the platform validates an uploaded IFC file, extracts component metadata and spatial relationships, and creates a versioned environment. Renderable geometry is converted to GLB, with the corresponding <code>component_id</code> written into each selectable node&rsquo;s <code>extras</code> metadata. A mapping-quality gate compares the IFC extraction, database records, and GLB nodes before the environment can be published.</p><p>This is more than a data-engineering detail. It makes later claims defensible. When a learner selects an air-handling unit, the browser sends only the component identifier. The server resolves the authoritative metadata and verifies that the component belongs to the learner&rsquo;s active environment version. The resulting event can then be traced back to both the imported IFC entity and the precise scene in which the action occurred.</p><p>The current prototype demonstrates this first vertical slice: IFC upload, component extraction, GLB conversion, identity-mapping quality assurance, browser-based selection, server-side component resolution, and stored telemetry. It is deliberately narrow because every later capability depends on this chain remaining intact.</p><h2 id=from-static-scene-to-inspection-scenario>From static scene to inspection scenario</h2><p>The broader research platform builds four layers around that identity spine.</p><h3 id=1-versioned-learning-environments>1. Versioned learning environments</h3><p>An instructor begins with an IFC model and authorized technical material. The model becomes an immutable environment version rather than a mutable scene that silently changes over time. Training modules similarly reference explicit versions of scenarios, knowledge sources, scoring rules, assistant policies, and condition models.</p><p>Versioning matters because a completed training session is a historical record. If an instructor later uploads a revised model or changes a rubric, the platform should still be able to explain what the learner originally saw and how the original result was calculated.</p><p>The web client is designed to deliver the same training logic through three capability tiers: immersive WebXR on Meta Quest 2 and 3, non-immersive desktop 3D, and a clearly labeled degraded mobile/Cardboard mode. The experiences are not assumed to be equivalent. Device profile is recorded so that usability, interaction, and learning outcomes can be compared rather than pooled without context.</p><h3 id=2-condition-aware-components>2. Condition-aware components</h3><p>Real inspection training requires more than clean geometry. Learners need to encounter components at different stages of deterioration.</p><p>InspectXR uses versioned Weibull profiles to represent expected condition over simulated time:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>CI(t) = CI_0 * exp(-((t + age_offset) / eta)^beta)
-</span></span></code></pre></div><p>Here, <code>CI_0</code> is the initial condition, <code>beta</code> controls the curve&rsquo;s shape, and <code>eta</code> represents characteristic life. The deterministic model produces the condition state; generative AI does not decide whether a component has deteriorated.</p><p>Visual appearance is handled through a controlled texture pipeline. The system first checks whether a visible change is needed. It then filters the texture bank by hard compatibility constraints such as component family, material, deterioration mechanism, severity, and device profile. A sufficiently similar approved asset can be reused. Only when no safe match exists may policy permit generation of a new, reviewable texture.</p><p>This separation is intentional: the engineering state is reproducible, while AI is limited to producing a visual representation of that state. A plausible-looking rusty texture must never redefine the underlying condition calculation.</p><h3 id=3-a-grounded-assistant-at-the-point-of-action>3. A grounded assistant at the point of action</h3><p>Technical guidance is often distributed across manuals, institutional procedures, and course material. InspectXR&rsquo;s planned RAG assistant connects those sources to the selected component, current task, module, and session state.</p><p>Not every question needs a language model. If a learner asks, “What component am I looking at?” or “How many tasks remain?”, the application already knows the answer. The assistant therefore follows a staged routing process:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-text data-lang=text><span style=display:flex><span>question
-</span></span><span style=display:flex><span>    -&gt; safety and assessment-policy checks
-</span></span><span style=display:flex><span>    -&gt; deterministic session answer
-</span></span><span style=display:flex><span>    -&gt; exact approved answer
-</span></span><span style=display:flex><span>    -&gt; compatible semantic answer reuse
-</span></span><span style=display:flex><span>    -&gt; retrieval-context reuse
-</span></span><span style=display:flex><span>    -&gt; full retrieval and language-model response
-</span></span></code></pre></div><p>The order serves both cost and correctness. Cached or generated answers are never reused on similarity alone; access scope, component identity, source version, policy version, and intent must also be compatible. Protected assessment answers, student-specific progress, revoked citations, unresolved references, and mismatched component questions are excluded from semantic final-answer reuse.</p><p>The assistant also changes behavior by instructional mode. In <strong>Teaching</strong> mode it may explain a procedure. In <strong>Coaching</strong> mode it should offer graduated hints without revealing the target decision. In <strong>Assessment</strong> mode application policy blocks answer leakage before any model call is made. Prompt text alone is not treated as a security boundary.</p><h3 id=4-process-level-assessment>4. Process-level assessment</h3><p>A final quiz score says little about how a learner reached an answer. InspectXR instead records an append-oriented stream of meaningful events: entering XR, selecting a component, recording a measurement, identifying a deficiency, requesting a hint, asking the assistant a question, submitting a maintenance action, and viewing feedback.</p><p>Explicit rubrics are scored deterministically on the server. An AI system may explain feedback, but it does not become the authoritative grader when a rule exists. Sub-scores are retained so that component recognition, procedural completeness, severity classification, time, retries, and hint dependence do not disappear inside one aggregate number.</p><p>This event stream supports three views of performance:</p><ul><li>a cohort view for completion, task-level errors, time distributions, and assistance use;</li><li>a student view for progress and recurring strengths or weaknesses; and</li><li>a session timeline that reconstructs the sequence of selections, decisions, questions, hints, and scoring events.</li></ul><p>The result is not merely a dashboard. It is a research record that can connect assistance to subsequent behavior—for example, whether a learner corrected an action after receiving a grounded explanation.</p><h2 id=reuse-before-generation>Reuse before generation</h2><p>Two parallel decision funnels run through the project. One governs technical answers; the other governs condition-aware textures. Both follow the same principle: deterministic resolution first, validated reuse second, generation last.</p><p>This principle addresses a practical weakness in AI-enhanced training systems. Sending every question and visual-state change to a generative model increases latency and cost while making repeated sessions less reproducible. InspectXR instead records how each request was resolved, including compatibility filters, thresholds, model and policy versions, cache decisions, latency, cost, and reviewer outcomes.</p><p>That provenance turns an optimization into a research question. The platform can measure not only how many calls were avoided, but whether reuse remained instructionally and visually appropriate. A missed cache hit wastes resources; an incorrect reuse can teach the wrong thing. Those errors do not have equal consequences, so similarity thresholds must be calibrated with labeled examples rather than chosen for maximum hit rate.</p><h2 id=a-platform-designed-as-a-research-instrument>A platform designed as a research instrument</h2><p>InspectXR is intended to support experiments at three levels.</p><h3 id=learning-effectiveness>Learning effectiveness</h3><p>Does immersive training with context-aware assistance improve component identification, deficiency classification, procedural completeness, or later unaided performance? A controlled study could compare conventional multimedia instruction, XR without RAG, XR with Teaching-mode assistance, and XR with Coaching-mode assistance.</p><h3 id=human-ai-interaction>Human-AI interaction</h3><p>What do learners ask while inspecting a building? When does assistance lead to correction, and when does it create dependence? Comparing Teaching and Coaching modes can reveal trade-offs among immediate task success, completion time, hint use, retention, and transfer.</p><h3 id=computational-efficiency>Computational efficiency</h3><p>How much latency and model cost can safe answer reuse and texture-bank reuse remove? What similarity thresholds preserve correctness across different intents, component types, and embedding models? Can large IFC-derived environments meet the 72 FPS comfort target on Quest hardware after partitioning and level-of-detail optimization?</p><p>A staged evaluation begins with subject-matter-expert validation of component mappings, deterioration states, answers, citations, and rubrics. A small usability pilot then examines navigation, voice interaction, latency, and simulator discomfort. Only after those gates should a controlled learning study estimate educational effects.</p><h2 id=guardrails-and-current-limitations>Guardrails and current limitations</h2><p>InspectXR is a training and research platform—not an authoritative facility-condition database and not a direct integration with the official CERL BUILDER application. Its CERL BUILDER grounding comes from instructor-provided, authorized documents and local instructions. Simulated condition states and training scores remain visibly separate from official asset records.</p><p>Several limitations are explicit research problems rather than hidden implementation details:</p><ul><li>IFC files vary widely in modeling quality, naming, properties, and geometry.</li><li>A mathematically consistent deterioration curve is not automatically a field-validated deterioration model.</li><li>Generated damage can look realistic while being technically wrong.</li><li>Semantic similarity can retrieve or reuse a confidently incorrect answer.</li><li>Quest, desktop, and mobile interfaces offer different levels of presence and control.</li><li>Detailed interaction histories are valuable for research but sensitive for learners.</li></ul><p>The system responds with publication gates, human review, conservative reuse rules, source and policy versioning, server-side authorization, configurable retention, and administrator-controlled research export. Raw voice audio is designed to remain transient; governed transcripts and event data are retained only according to institutional policy.</p><h2 id=why-this-project-matters>Why this project matters</h2><p>The value of immersive training does not come from putting a building model inside a headset. It comes from connecting space, evidence, decisions, and feedback without losing the provenance of any of them.</p><p>InspectXR&rsquo;s central contribution is therefore a traceable architecture for studying inspection learning. The same component can be followed from an IFC file into an XR interaction, a grounded technical conversation, a condition scenario, and an assessment event. Because models, documents, policies, and rubrics are versioned, the experience can be reconstructed and evaluated rather than remembered approximately.</p><p>The current prototype establishes the identity foundation. The next research stages will test whether the surrounding layers—condition-aware visualization, governed RAG assistance, and process-level analytics—produce training that is not only more immersive, but more effective, explainable, and reproducible.</p><hr><p><strong>Project status:</strong> Research prototype under active development. The implemented first slice validates IFC-to-GLB component identity, browser selection, server-side metadata resolution, and telemetry. The full instructional authoring, RAG, texture-generation, and controlled-evaluation workflows remain staged research and development work.</p><div style=margin-top:40px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap><a href=https://github.com/m-movahedi/InspectXR style="padding:10px 18px;border-radius:36px;text-decoration:none;background:#1f1f1f;color:#fff;font-weight:600;display:inline-block">GitHub Repository
-</a><a href="https://youtu.be/QuG1z6oe_Sg?si=tSttXb_fucftxiWB" style="padding:10px 18px;border-radius:36px;text-decoration:none;background:#db2d21;color:#fff;font-weight:600;display:inline-block">YouTube Demo</a></div></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/research/composite-index-external-influences/>&#8592;
-Previous:
-A Composite Index Framework for Quantifying External Influences on Built Environment Planning and Decision Making</a></p><p class=prev-post-date>August 21, 2026</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>© 2017-2026 / Mohammad Movahedi. All rights reserved</a>.</span></footer></body></html>
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>InspectXR: Turning Building Models into Traceable Immersive Training | Mohammad Movahedi</title>
+    <meta name="description" content="A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for …">
+    
+    <meta name="keywords" content='Building Information Modeling, Extended Reality, Retrieval-Augmented Generation, Infrastructure Asset Management, Building Inspection, Human-AI Interaction, Learning Analytics, Digital Twins'>
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+        
+      
+    
+    <meta property="og:url" content="http://localhost:1313/research/inspect-xr/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="InspectXR: Turning Building Models into Traceable Immersive Training | Mohammad Movahedi">
+    <meta property="og:description" content="A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="InspectXR: Turning Building Models into Traceable Immersive Training">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="InspectXR: Turning Building Models into Traceable Immersive Training | Mohammad Movahedi">
+    <meta name="twitter:description" content="A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/research/inspect-xr/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/research/inspect-xr/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "\"InspectXR: Turning Building Models into Traceable Immersive Training\"",
+  "description": "\"A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for …\"",
+  "url": "http:\/\/localhost:1313\/research\/inspect-xr\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/research\/inspect-xr\/"
+  },
+  "datePublished": "2026-09-03T00:00:00Z",
+  "dateModified": "2026-09-03T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Research\"",
+      "item": "https:\/\/m-movahedi.com\/research\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"InspectXR: Turning Building Models into Traceable Immersive Training\"",
+      "item": "http:\/\/localhost:1313\/research\/inspect-xr\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.46f64924e715031ec2daf5fad084fa1e35a175ab207cff3c6daf5eaf942796d4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>InspectXR: Turning Building Models into Traceable Immersive Training</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle">A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for building inspection training.</small>
+	
+
+	
+          <p class="post-date">
+              
+
+              September 3, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/building-information-modeling">Building Information Modeling</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/extended-reality">Extended Reality</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/retrieval-augmented-generation">Retrieval-Augmented Generation</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/infrastructure-asset-management">Infrastructure Asset Management</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/building-inspection">Building Inspection</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/human-ai-interaction">Human-AI Interaction</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/learning-analytics">Learning Analytics</a></li>
+           
+         
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/digital-twins">Digital Twins</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p><em>A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for building inspection training.</em></p>
+<h2 id="what-if-a-building-model-could-become-a-place-to-practicenot-just-a-file-to-view">What if a building model could become a place to practice—not just a file to view?</h2>
+<p>Building inspectors learn to connect several kinds of evidence at once. They must recognize a physical component, understand how it should perform, identify signs of deterioration, consult technical guidance, and decide what action to take. Conventional training often separates those activities across manuals, slides, videos, and occasional field visits.</p>
+<p>InspectXR explores a different model: place the learner inside an interactive digital building, let them inspect its components, and bring the relevant technical knowledge into the scene at the moment it is needed.</p>
+<p>The project combines Industry Foundation Classes (IFC) building models, browser-based extended reality, retrieval-augmented generation (RAG), condition modeling, and event-based learning analytics. Its purpose is not simply to make BIM immersive. The deeper goal is to make every step of a training experience traceable—from the source building component and technical document to the learner&rsquo;s action, the assistance they received, and the score that followed.</p>
+<table>
+  <thead>
+      <tr>
+          <th>1 identity spine</th>
+          <th>3 device tiers</th>
+          <th>2 reuse-before-generation funnels</th>
+          <th>72 FPS Quest target</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Links each component across the system</td>
+          <td>Quest, desktop, and degraded mobile/Cardboard</td>
+          <td>One for technical answers and one for visual assets</td>
+          <td>A comfort floor, not an optional quality setting</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="the-gap-between-bim-and-learning">The gap between BIM and learning</h2>
+<p>BIM already contains rich information about walls, slabs, equipment, spaces, materials, and systems. Yet a model prepared for design or construction does not automatically become an effective learning environment. Geometry can be converted into a web-friendly 3D format, but conversion alone does not answer the instructional questions:</p>
+<ul>
+<li>Which object did the student select?</li>
+<li>What source guidance applies to that exact component?</li>
+<li>Is the visible defect consistent with the component&rsquo;s material and simulated condition?</li>
+<li>Did the student inspect the right object, in the right order, for the right reason?</li>
+<li>Can an instructor reconstruct the attempt after the environment, rubric, or AI model changes?</li>
+</ul>
+<p>These questions reveal a common weakness in digital-twin and XR workflows: identity is easy to lose. A component may have one identifier in an IFC file, another database record after ingestion, and only a mesh name after conversion to GLB. If those representations cannot be joined reliably, an immersive click becomes ambiguous. The system may show the wrong metadata, retrieve irrelevant guidance, or assign an action to the wrong asset.</p>
+<p>InspectXR treats this problem as the architectural center of the project.</p>
+<h2 id="the-identifier-spine">The identifier spine</h2>
+<p>Every physical component receives an immutable internal <code>component_id</code>. The original IFC GUID remains attached as provenance, but the internal identifier becomes the cross-system join key.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>IFC component
+</span></span><span style="display:flex;"><span>    -&gt; database component
+</span></span><span style="display:flex;"><span>    -&gt; GLB node
+</span></span><span style="display:flex;"><span>    -&gt; selectable XR object
+</span></span><span style="display:flex;"><span>    -&gt; knowledge entity
+</span></span><span style="display:flex;"><span>    -&gt; training task
+</span></span><span style="display:flex;"><span>    -&gt; student event
+</span></span><span style="display:flex;"><span>    -&gt; assessment result
+</span></span></code></pre></div><p>During ingestion, the platform validates an uploaded IFC file, extracts component metadata and spatial relationships, and creates a versioned environment. Renderable geometry is converted to GLB, with the corresponding <code>component_id</code> written into each selectable node&rsquo;s <code>extras</code> metadata. A mapping-quality gate compares the IFC extraction, database records, and GLB nodes before the environment can be published.</p>
+<p>This is more than a data-engineering detail. It makes later claims defensible. When a learner selects an air-handling unit, the browser sends only the component identifier. The server resolves the authoritative metadata and verifies that the component belongs to the learner&rsquo;s active environment version. The resulting event can then be traced back to both the imported IFC entity and the precise scene in which the action occurred.</p>
+<p>The current prototype demonstrates this first vertical slice: IFC upload, component extraction, GLB conversion, identity-mapping quality assurance, browser-based selection, server-side component resolution, and stored telemetry. It is deliberately narrow because every later capability depends on this chain remaining intact.</p>
+<h2 id="from-static-scene-to-inspection-scenario">From static scene to inspection scenario</h2>
+<p>The broader research platform builds four layers around that identity spine.</p>
+<h3 id="1-versioned-learning-environments">1. Versioned learning environments</h3>
+<p>An instructor begins with an IFC model and authorized technical material. The model becomes an immutable environment version rather than a mutable scene that silently changes over time. Training modules similarly reference explicit versions of scenarios, knowledge sources, scoring rules, assistant policies, and condition models.</p>
+<p>Versioning matters because a completed training session is a historical record. If an instructor later uploads a revised model or changes a rubric, the platform should still be able to explain what the learner originally saw and how the original result was calculated.</p>
+<p>The web client is designed to deliver the same training logic through three capability tiers: immersive WebXR on Meta Quest 2 and 3, non-immersive desktop 3D, and a clearly labeled degraded mobile/Cardboard mode. The experiences are not assumed to be equivalent. Device profile is recorded so that usability, interaction, and learning outcomes can be compared rather than pooled without context.</p>
+<h3 id="2-condition-aware-components">2. Condition-aware components</h3>
+<p>Real inspection training requires more than clean geometry. Learners need to encounter components at different stages of deterioration.</p>
+<p>InspectXR uses versioned Weibull profiles to represent expected condition over simulated time:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>CI(t) = CI_0 * exp(-((t + age_offset) / eta)^beta)
+</span></span></code></pre></div><p>Here, <code>CI_0</code> is the initial condition, <code>beta</code> controls the curve&rsquo;s shape, and <code>eta</code> represents characteristic life. The deterministic model produces the condition state; generative AI does not decide whether a component has deteriorated.</p>
+<p>Visual appearance is handled through a controlled texture pipeline. The system first checks whether a visible change is needed. It then filters the texture bank by hard compatibility constraints such as component family, material, deterioration mechanism, severity, and device profile. A sufficiently similar approved asset can be reused. Only when no safe match exists may policy permit generation of a new, reviewable texture.</p>
+<p>This separation is intentional: the engineering state is reproducible, while AI is limited to producing a visual representation of that state. A plausible-looking rusty texture must never redefine the underlying condition calculation.</p>
+<h3 id="3-a-grounded-assistant-at-the-point-of-action">3. A grounded assistant at the point of action</h3>
+<p>Technical guidance is often distributed across manuals, institutional procedures, and course material. InspectXR&rsquo;s planned RAG assistant connects those sources to the selected component, current task, module, and session state.</p>
+<p>Not every question needs a language model. If a learner asks, “What component am I looking at?” or “How many tasks remain?”, the application already knows the answer. The assistant therefore follows a staged routing process:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>question
+</span></span><span style="display:flex;"><span>    -&gt; safety and assessment-policy checks
+</span></span><span style="display:flex;"><span>    -&gt; deterministic session answer
+</span></span><span style="display:flex;"><span>    -&gt; exact approved answer
+</span></span><span style="display:flex;"><span>    -&gt; compatible semantic answer reuse
+</span></span><span style="display:flex;"><span>    -&gt; retrieval-context reuse
+</span></span><span style="display:flex;"><span>    -&gt; full retrieval and language-model response
+</span></span></code></pre></div><p>The order serves both cost and correctness. Cached or generated answers are never reused on similarity alone; access scope, component identity, source version, policy version, and intent must also be compatible. Protected assessment answers, student-specific progress, revoked citations, unresolved references, and mismatched component questions are excluded from semantic final-answer reuse.</p>
+<p>The assistant also changes behavior by instructional mode. In <strong>Teaching</strong> mode it may explain a procedure. In <strong>Coaching</strong> mode it should offer graduated hints without revealing the target decision. In <strong>Assessment</strong> mode application policy blocks answer leakage before any model call is made. Prompt text alone is not treated as a security boundary.</p>
+<h3 id="4-process-level-assessment">4. Process-level assessment</h3>
+<p>A final quiz score says little about how a learner reached an answer. InspectXR instead records an append-oriented stream of meaningful events: entering XR, selecting a component, recording a measurement, identifying a deficiency, requesting a hint, asking the assistant a question, submitting a maintenance action, and viewing feedback.</p>
+<p>Explicit rubrics are scored deterministically on the server. An AI system may explain feedback, but it does not become the authoritative grader when a rule exists. Sub-scores are retained so that component recognition, procedural completeness, severity classification, time, retries, and hint dependence do not disappear inside one aggregate number.</p>
+<p>This event stream supports three views of performance:</p>
+<ul>
+<li>a cohort view for completion, task-level errors, time distributions, and assistance use;</li>
+<li>a student view for progress and recurring strengths or weaknesses; and</li>
+<li>a session timeline that reconstructs the sequence of selections, decisions, questions, hints, and scoring events.</li>
+</ul>
+<p>The result is not merely a dashboard. It is a research record that can connect assistance to subsequent behavior—for example, whether a learner corrected an action after receiving a grounded explanation.</p>
+<h2 id="reuse-before-generation">Reuse before generation</h2>
+<p>Two parallel decision funnels run through the project. One governs technical answers; the other governs condition-aware textures. Both follow the same principle: deterministic resolution first, validated reuse second, generation last.</p>
+<p>This principle addresses a practical weakness in AI-enhanced training systems. Sending every question and visual-state change to a generative model increases latency and cost while making repeated sessions less reproducible. InspectXR instead records how each request was resolved, including compatibility filters, thresholds, model and policy versions, cache decisions, latency, cost, and reviewer outcomes.</p>
+<p>That provenance turns an optimization into a research question. The platform can measure not only how many calls were avoided, but whether reuse remained instructionally and visually appropriate. A missed cache hit wastes resources; an incorrect reuse can teach the wrong thing. Those errors do not have equal consequences, so similarity thresholds must be calibrated with labeled examples rather than chosen for maximum hit rate.</p>
+<h2 id="a-platform-designed-as-a-research-instrument">A platform designed as a research instrument</h2>
+<p>InspectXR is intended to support experiments at three levels.</p>
+<h3 id="learning-effectiveness">Learning effectiveness</h3>
+<p>Does immersive training with context-aware assistance improve component identification, deficiency classification, procedural completeness, or later unaided performance? A controlled study could compare conventional multimedia instruction, XR without RAG, XR with Teaching-mode assistance, and XR with Coaching-mode assistance.</p>
+<h3 id="human-ai-interaction">Human-AI interaction</h3>
+<p>What do learners ask while inspecting a building? When does assistance lead to correction, and when does it create dependence? Comparing Teaching and Coaching modes can reveal trade-offs among immediate task success, completion time, hint use, retention, and transfer.</p>
+<h3 id="computational-efficiency">Computational efficiency</h3>
+<p>How much latency and model cost can safe answer reuse and texture-bank reuse remove? What similarity thresholds preserve correctness across different intents, component types, and embedding models? Can large IFC-derived environments meet the 72 FPS comfort target on Quest hardware after partitioning and level-of-detail optimization?</p>
+<p>A staged evaluation begins with subject-matter-expert validation of component mappings, deterioration states, answers, citations, and rubrics. A small usability pilot then examines navigation, voice interaction, latency, and simulator discomfort. Only after those gates should a controlled learning study estimate educational effects.</p>
+<h2 id="guardrails-and-current-limitations">Guardrails and current limitations</h2>
+<p>InspectXR is a training and research platform—not an authoritative facility-condition database and not a direct integration with the official CERL BUILDER application. Its CERL BUILDER grounding comes from instructor-provided, authorized documents and local instructions. Simulated condition states and training scores remain visibly separate from official asset records.</p>
+<p>Several limitations are explicit research problems rather than hidden implementation details:</p>
+<ul>
+<li>IFC files vary widely in modeling quality, naming, properties, and geometry.</li>
+<li>A mathematically consistent deterioration curve is not automatically a field-validated deterioration model.</li>
+<li>Generated damage can look realistic while being technically wrong.</li>
+<li>Semantic similarity can retrieve or reuse a confidently incorrect answer.</li>
+<li>Quest, desktop, and mobile interfaces offer different levels of presence and control.</li>
+<li>Detailed interaction histories are valuable for research but sensitive for learners.</li>
+</ul>
+<p>The system responds with publication gates, human review, conservative reuse rules, source and policy versioning, server-side authorization, configurable retention, and administrator-controlled research export. Raw voice audio is designed to remain transient; governed transcripts and event data are retained only according to institutional policy.</p>
+<h2 id="why-this-project-matters">Why this project matters</h2>
+<p>The value of immersive training does not come from putting a building model inside a headset. It comes from connecting space, evidence, decisions, and feedback without losing the provenance of any of them.</p>
+<p>InspectXR&rsquo;s central contribution is therefore a traceable architecture for studying inspection learning. The same component can be followed from an IFC file into an XR interaction, a grounded technical conversation, a condition scenario, and an assessment event. Because models, documents, policies, and rubrics are versioned, the experience can be reconstructed and evaluated rather than remembered approximately.</p>
+<p>The current prototype establishes the identity foundation. The next research stages will test whether the surrounding layers—condition-aware visualization, governed RAG assistance, and process-level analytics—produce training that is not only more immersive, but more effective, explainable, and reproducible.</p>
+<hr>
+<p><strong>Project status:</strong> Research prototype under active development. The implemented first slice validates IFC-to-GLB component identity, browser selection, server-side metadata resolution, and telemetry. The full instructional authoring, RAG, texture-generation, and controlled-evaluation workflows remain staged research and development work.</p>
+<div style="margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+  <a href="https://github.com/m-movahedi/InspectXR"
+     style="
+      padding:10px 18px;
+      border-radius:36px;
+      text-decoration:none;
+      background:#1f1f1f;
+      color:white;
+      font-weight:600;
+      display:inline-block;
+     ">
+     GitHub Repository    
+  </a>
+  <a href="https://youtu.be/QuG1z6oe_Sg?si=tSttXb_fucftxiWB"
+     style="
+      padding:10px 18px;
+      border-radius:36px;
+      text-decoration:none;
+      background:#db2d21;
+      color:white;
+      font-weight:600;
+      display:inline-block;
+     ">
+     YouTube Demo   
+  </a>
+</div>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/research/composite-index-external-influences/">
+                &#8592;
+                Previous:
+                A Composite Index Framework for Quantifying External Influences on Built Environment Planning and Decision Making
+            </a>
+        </p>
+        <p class="prev-post-date">
+            August 21, 2026
+        </p>
+    </div>
+    
+
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

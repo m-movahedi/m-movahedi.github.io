@@ -14,7 +14,7 @@ journal: "10th Bitumen, Asphalt & Machinery Conference and Exhibition"
 ---
 
 <div style="background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">♻️</span> The Growing Crisis of Construction Waste</h4>
+  <h2 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">♻️</span> The Growing Crisis of Construction Waste</h2>
   <p style="margin-bottom: 0; color: #34495e;">Every year, nearly 50% of the raw materials extracted globally are consumed by the construction industry. Simultaneously, the demolition and renovation of urban infrastructure generate massive amounts of Construction and Demolition Waste (CDW). Finding sustainable ways to repurpose this waste is critical for reducing environmental degradation and achieving true sustainable development.</p>
 </div>
 

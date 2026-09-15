@@ -4,10 +4,7 @@ weight: 74
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Regulatory, Warning, and Guide Signs
-
-Traffic signs are the primary means of communicating regulatory constraints, hazardous conditions, and route guidance to road users. Design and placement standards for signs are established by the *Manual on Uniform Traffic Control Devices (MUTCD)*.
+---Traffic signs are the primary means of communicating regulatory constraints, hazardous conditions, and route guidance to road users. Design and placement standards for signs are established by the *Manual on Uniform Traffic Control Devices (MUTCD)*.
 
 On the PE Civil Transportation exam, you will need to apply standards for sign categorization, color and shape coding, physical placement (lateral offset and mounting height), and retroreflectivity management.
 

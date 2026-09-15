@@ -6,18 +6,19 @@ type : "post"
 tags:
   - "Disaster resilience"
   - "post-disaster-recovery"
+slug: "nheri-rsr-spring-2025"
+aliases: ["/webinars/NHERI_RSR_Spring2025/", "/webinars/nheri_rsr_spring2025/"]
+description: "NHERI Graduate Student Council webinar featuring Dr. Brad Wham on Marshal Fire field reconnaissance and buried lifeline infrastructure resilience."
 ---
 <div class="layout-container">
   <div class="left-section">
-    <img src="https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg" alt="Description of image" class="side-image" style="width:70px">
+    <img src="https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg" alt="NHERI Graduate Student Council logo" class="side-image" style="width:70px">
   </div>
   <div class="right-section">
-    <h3>NHERI Graduate Student Council</h3>
-    <h2>Reconnaissance RSR Meeting</h2>
+    <h2>NHERI Graduate Student Council</h2>
+    <h3>Reconnaissance RSR Meeting</h3>
   </div>
 </div>
-
-## Marshal Fire, Colorado: Field Reconnaissance Overvirew
 
 I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.
 

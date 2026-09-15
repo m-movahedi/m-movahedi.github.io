@@ -4,10 +4,7 @@ weight: 66
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Freeway Merge and Exit Design
-
-Freeway merge and exit terminals are critical locations on a highway network where traffic transitions between high-speed through lanes and lower-speed ramp terminals. The design of these segments focuses on providing adequate length for vehicles to accelerate or decelerate safely, and providing clear, predictable geometric paths (gores) to minimize conflicts.
+---Freeway merge and exit terminals are critical locations on a highway network where traffic transitions between high-speed through lanes and lower-speed ramp terminals. The design of these segments focuses on providing adequate length for vehicles to accelerate or decelerate safely, and providing clear, predictable geometric paths (gores) to minimize conflicts.
 
 ---
 

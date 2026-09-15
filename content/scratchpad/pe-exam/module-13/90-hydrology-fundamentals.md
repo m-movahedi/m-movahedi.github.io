@@ -4,10 +4,7 @@ weight: 90
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Hydrology Fundamentals
-
-Hydrology focuses on estimating the quantity and timing of runoff from a watershed. In PE Civil Transportation, hydrologic analysis is the precursor to hydraulic design. Before sizing a ditch, pipe, inlet, or culvert, you must determine the design flow rate ($Q$).
+---Hydrology focuses on estimating the quantity and timing of runoff from a watershed. In PE Civil Transportation, hydrologic analysis is the precursor to hydraulic design. Before sizing a ditch, pipe, inlet, or culvert, you must determine the design flow rate ($Q$).
 
 ---
 

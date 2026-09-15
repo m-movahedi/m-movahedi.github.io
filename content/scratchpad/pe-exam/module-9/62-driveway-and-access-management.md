@@ -4,10 +4,7 @@ weight: 62
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Driveway and Access Management
-
-Access management is the systematic control of the location, spacing, design, and operations of driveways, median openings, interchanges, and street connections to a roadway. The primary objective is to balance the competing needs of roadway mobility (moving through traffic safely and efficiently) and land access (providing entry to roadside properties).
+---Access management is the systematic control of the location, spacing, design, and operations of driveways, median openings, interchanges, and street connections to a roadway. The primary objective is to balance the competing needs of roadway mobility (moving through traffic safely and efficiently) and land access (providing entry to roadside properties).
 
 ---
 

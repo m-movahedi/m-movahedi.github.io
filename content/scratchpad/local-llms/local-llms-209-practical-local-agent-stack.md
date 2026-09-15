@@ -32,7 +32,7 @@ A practical beginner stack has layers:
 
 <div class="llm-diagram-container" id="diagram-209">
   <div class="llm-diagram-header">
-    <h4>The Practical Local Agent Stack</h4>
+    <h3>The Practical Local Agent Stack</h3>
     <p>Click a layer to see when to add it</p>
   </div>
   <div class="llm-stack-layout" style="max-width: 500px;">
@@ -47,35 +47,35 @@ A practical beginner stack has layers:
   </div>
   <div class="llm-detail-panel" id="detail-209">
     <div id="panel-209-agent" class="llm-panel-content" style="display:none;">
-      <h5>Coding Agent</h5>
+      <h4>Coding Agent</h4>
       <p>Add this when you need autonomous repository edits, test execution, and multi-step verification.</p>
     </div>
     <div id="panel-209-hosted" class="llm-panel-content" style="display:none;">
-      <h5>Hosted Fallback</h5>
+      <h4>Hosted Fallback</h4>
       <p>Add this when local models fail on reasoning-heavy tasks or when you need a massive context window.</p>
     </div>
     <div id="panel-209-instructions" class="llm-panel-content" style="display:none;">
-      <h5>Instructions (Rules/Skills)</h5>
+      <h4>Instructions (Rules/Skills)</h4>
       <p>Add these when you find yourself typing the same prompts over and over.</p>
     </div>
     <div id="panel-209-tools" class="llm-panel-content" style="display:none;">
-      <h5>Tools (MCP)</h5>
+      <h4>Tools (MCP)</h4>
       <p>Add tools when the model needs real-time context (reading files, searching docs).</p>
     </div>
     <div id="panel-209-eval" class="llm-panel-content" style="display:none;">
-      <h5>Evaluation</h5>
+      <h4>Evaluation</h4>
       <p>Add this as soon as you have a model running to prevent "vibe-based" model swapping.</p>
     </div>
     <div id="panel-209-api" class="llm-panel-content" style="display:none;">
-      <h5>API Shape</h5>
+      <h4>API Shape</h4>
       <p>Ensuring your local runtime exposes an OpenAI-compatible API allows you to use almost any modern client UI.</p>
     </div>
     <div id="panel-209-model" class="llm-panel-content" style="display:none;">
-      <h5>Model</h5>
+      <h4>Model</h4>
       <p>Start here. Get one model responding reliably before adding frontends.</p>
     </div>
     <div id="panel-209-runtime" class="llm-panel-content" style="display:none;">
-      <h5>Runtime</h5>
+      <h4>Runtime</h4>
       <p>The foundation of the local stack. It talks to the hardware so you don't have to.</p>
     </div>
   </div>

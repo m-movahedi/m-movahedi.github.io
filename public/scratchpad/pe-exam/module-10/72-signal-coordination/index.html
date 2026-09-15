@@ -1,11 +1,636 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>Traffic Signal Coordination</title><meta name=description content="Traffic Signal Coordination Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous …"><meta name=keywords content><meta property="og:url" content="https://m-movahedi.com/scratchpad/pe-exam/module-10/72-signal-coordination/"><meta property="og:type" content="website"><meta property="og:title" content="Traffic Signal Coordination"><meta property="og:description" content="Traffic Signal Coordination Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous …"><meta property="og:image" content="https://m-movahedi.com/images/transparent.png"><meta property="og:image:secure_url" content="https://m-movahedi.com/images/transparent.png"><meta name=twitter:card content="summary"><meta name=twitter:title content="Traffic Signal Coordination"><meta name=twitter:description content="Traffic Signal Coordination Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous …"><meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/pe-exam/module-10/72-signal-coordination/"><meta property="twitter:url" content="https://m-movahedi.com/scratchpad/pe-exam/module-10/72-signal-coordination/"><meta name=twitter:image content="https://m-movahedi.com/images/transparent.png"><link rel=canonical href=https://m-movahedi.com/scratchpad/pe-exam/module-10/72-signal-coordination/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><script src=/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script><link rel=icon type=image/png href=/favicon.png><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href=/css/llm-series.css><link rel=stylesheet href=/css/hbm-series.css><link rel=stylesheet href=/css/llm-diagrams.css><link rel=stylesheet href=/css/tm-series.css><link rel=stylesheet href=/css/mc-series.css><script defer src=/js/hbm-widgets.js></script><script defer src=/js/llm-diagrams.js></script><script defer src=/js/tm-series.js></script><script defer src=/js/mc-scrollytelling.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-1WZSE8DHZ9")</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css integrity=sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js integrity=sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js integrity=sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script><link rel=stylesheet href=/css/custom.min.18ec29952add11924d403cdc5312cbc8a1ccdfa9f875450326ee02939271a377.css><link id=dark-theme rel=stylesheet href=/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://m-movahedi.com/><img src=/images/profile.png alt="Mohammad Movahedi"></a></div><div class=nav-title><a class=nav-brand href=https://m-movahedi.com/>Mohammad Movahedi</a></div><div class=nav-links><div class=nav-link><a href=https://m-movahedi.com/ aria-label>Home</a></div><div class=nav-link><a href=https://m-movahedi.com/background/ aria-label>Background</a></div><div class=nav-link><a href=https://m-movahedi.com/webinars/ aria-label>Webinars</a></div><div class=nav-link><a href=https://m-movahedi.com/research/ aria-label>Research</a></div><div class=nav-link><a href=https://m-movahedi.com/blog/ aria-label>Blog</a></div><div class=nav-link><a href=https://m-movahedi.com/scratchpad/ aria-label>Scratchpad</a></div><div class=nav-link><a href=https://m-movahedi.com/about/ aria-label>About</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://m-movahedi.com/>Home</a></li><li class=nav-item><a href=https://m-movahedi.com/background/>Background</a></li><li class=nav-item><a href=https://m-movahedi.com/webinars/>Webinars</a></li><li class=nav-item><a href=https://m-movahedi.com/research/>Research</a></li><li class=nav-item><a href=https://m-movahedi.com/blog/>Blog</a></li><li class=nav-item><a href=https://m-movahedi.com/scratchpad/>Scratchpad</a></li><li class=nav-item><a href=https://m-movahedi.com/about/>About</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>Traffic Signal Coordination</h1><small role=doc-subtitle></small><p class=post-date>May 4, 2026</p><ul class=post-tags></ul></div><div class=post-content><h1 id=traffic-signal-coordination>Traffic Signal Coordination</h1><p>Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. The primary goal of coordination is to reduce stops, delays, fuel consumption, and vehicle emissions.</p><p>On the PE Civil Transportation exam, you will encounter questions regarding coordination fundamentals, cycle length determination, offset calculations, progression bandwidth, and the interpretation of time-space diagrams.</p><hr><h2 id=fundamentals-of-coordination>Fundamentals of Coordination</h2><p>To maintain a constant phase relationship over time, <strong>all signalized intersections within a coordinated system must operate on the same cycle length</strong> (or a sub-multiple, such as $C/2$ for minor intersections). The system cycle length is typically dictated by the &ldquo;critical intersection&rdquo;—the intersection in the network that requires the longest cycle length to satisfy its capacity and pedestrian timing demands.</p><h3 id=key-terminology>Key Terminology:</h3><ul><li><strong>Platoon:</strong> A group of vehicles traveling together along a corridor, released from an upstream signal.</li><li><strong>Progression Speed ($v_p$):</strong> The speed at which a platoon of vehicles travels through the coordinated system (typically equal to the speed limit or the 85th-percentile speed, expressed in $\text{ft/s}$ or $\text{mph}$).</li><li><strong>Bandwidth ($B$):</strong> The window of time (in seconds) during which a vehicle starting at the first intersection can travel through the entire coordinated corridor at the progression speed without stopping. A larger bandwidth indicates better coordination.</li><li><strong>Bandwidth Efficiency ($E$):</strong> The ratio of the green bandwidth to the cycle length, expressed as a percentage:
-$$E = \left( \frac{B}{C} \right) \times 100\%$$</li><li><strong>Offset ($O_{ij}$):</strong> The time difference (in seconds or as a percentage of the cycle length) between the start of the green phase for the coordinated movement at a downstream intersection ($j$) relative to a reference point (usually the start of green) at an upstream intersection ($i$).</li></ul><hr><h2 id=time-space-diagrams>Time-Space Diagrams</h2><p>A time-space diagram is the primary tool for designing and visualizing signal coordination.</p><ul><li><strong>Vertical Axis ($y$-axis):</strong> Distance along the corridor (feet or miles). The locations of the signalized intersections are marked.</li><li><strong>Horizontal Axis ($x$-axis):</strong> Time (seconds). The signal indications (green, yellow, red) for each intersection are plotted.</li><li><strong>Green Band:</strong> The shaded path running diagonally through the green phases of the intersections. The slope of this band represents the progression speed:
-$$\text{Slope} = \frac{\Delta \text{Distance}}{\Delta \text{Time}} = v_p$$</li></ul><div style="background:#fff;border-radius:8px;border:1px solid #e2e8f0;padding:24px;margin:24px 0;overflow-x:auto"><svg viewBox="0 0 600 250" width="600" height="250"><defs><marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0V8L8 4z" fill="#0f172a"/></marker></defs><line x1="40" y1="200" x2="560" y2="200" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow-axis)"/><line x1="40" y1="200" x2="40" y2="20" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow-axis)"/><text x="540" y="220" font-family="sans-serif" font-size="12" fill="#0f172a" text-anchor="end">Time (seconds)</text><text x="25" y="30" font-family="sans-serif" font-size="12" fill="#0f172a" transform="rotate(-90, 25, 30)" text-anchor="end">Distance (ft)</text><line x1="40" y1="160" x2="560" y2="160" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/><text x="570" y="165" font-family="sans-serif" font-size="11" fill="#475569">Int. 1</text><line x1="40" y1="60" x2="560" y2="60" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/><text x="570" y="65" font-family="sans-serif" font-size="11" fill="#475569">Int. 2</text><polygon points="120,160 220,160 300,60 200,60" fill="#10b981" fill-opacity=".2" stroke="#10b981" stroke-width="1"/><text x="215" y="85" font-family="sans-serif" font-size="11" fill="#047857" font-weight="bold" transform="rotate(-50, 280, 110)">Green Band (B)</text><rect x="120" y="155" width="100" height="10" fill="#10b981" rx="2"/><text x="170" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text><rect x="220" y="155" width="80" height="10" fill="#ef4444" rx="2"/><text x="260" y="150" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text><rect x="300" y="155" width="100" height="10" fill="#10b981" rx="2"/><text x="350" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text><rect x="120" y="55" width="80" height="10" fill="#ef4444" rx="2"/><text x="160" y="50" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text><rect x="200" y="55" width="100" height="10" fill="#10b981" rx="2"/><text x="250" y="50" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text><rect x="300" y="55" width="80" height="10" fill="#ef4444" rx="2"/><text x="340" y="50" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text></svg></div><hr><h2 id=one-way-vs-two-way-coordination>One-Way vs. Two-Way Coordination</h2><h3 id=one-way-coordination>One-Way Coordination</h3><p>For a one-way street (or a corridor where traffic is heavily directional, such as inbound during AM peak), coordinating the signal is straightforward. The ideal offset between intersection $i$ and downstream intersection $j$ is simply the travel time between them:</p>$$O_{ideal} = \frac{L_{ij}}{v_p}$$<p>Where:</p><ul><li>$O_{ideal}$ = Ideal offset (seconds)</li><li>$L_{ij}$ = Distance between intersections $i$ and $j$ (feet)</li><li>$v_p$ = Progression speed (feet per second, $\text{ft/s}$)</li></ul><h3 id=two-way-coordination>Two-Way Coordination</h3><p>Coordinating traffic in both directions concurrently is challenging. Perfect two-way coordination (where maximum bandwidth is achieved in both directions) is only possible under specific geometric conditions.</p><p>Specifically, the travel time ($t_{\text{travel}}$) between two intersections must be a multiple of half the cycle length ($C/2$):</p>$$t_{\text{travel}} = n \cdot \left( \frac{C}{2} \right)$$<p>Where $n$ is an integer ($0, 1, 2, \dots$).</p><ul><li>If $n$ is even (e.g., $t_{\text{travel}} = C, 2C$), the ideal offset is <strong>$0\text{ seconds}$</strong> (simultaneous green onset).</li><li>If $n$ is odd (e.g., $t_{\text{travel}} = C/2, 3C/2$), the ideal offset is <strong>$C/2\text{ seconds}$</strong> (single-alternate green onset).</li></ul><p>When travel times do not match these criteria, traffic engineers must compromise by unequalizing the bandwidths (e.g., giving the peak direction a wider bandwidth and the off-peak direction a narrower bandwidth).</p><hr><h2 id=worked-example-progression-and-offset-design>Worked Example: Progression and Offset Design</h2><h3 id=problem-statement>Problem Statement</h3><p>Two signalized intersections along an arterial corridor are separated by a distance of $1,760\text{ feet}$ (exactly 1/3 of a mile). The corridor operates on a coordinated system with a common cycle length of $80\text{ seconds}$. The design progression speed is $30\text{ mph}$.</p><ol><li>Calculate the travel time between the two intersections in seconds.</li><li>Determine the ideal offset for one-way progression from the first intersection to the second.</li><li>Evaluate the feasibility of achieving perfect two-way coordination (equal bandwidth in both directions).</li></ol><h3 id=step-by-step-solution>Step-by-Step Solution</h3><h4 id=step-1-convert-progression-speed-and-calculate-travel-time>Step 1: Convert Progression Speed and Calculate Travel Time</h4><p>First, convert the progression speed from $\text{mph}$ to $\text{ft/s}$:</p>$$v_p = 30\text{ mph} \times 1.467 = 44\text{ ft/s}$$<p>Now, calculate the travel time ($t_{\text{travel}}$) over the $1,760\text{-foot}$ distance:</p>$$t_{\text{travel}} = \frac{L}{v_p} = \frac{1,760\text{ ft}}{44\text{ ft/s}} = 40.0\text{ seconds}$$<h4 id=step-2-determine-the-ideal-one-way-offset>Step 2: Determine the Ideal One-Way Offset</h4><p>For one-way progression, the downstream signal&rsquo;s green phase should start exactly when the platoon arrives. Thus, the ideal offset is equal to the travel time:</p>$$\text{Offset} = 40.0\text{ seconds}$$<p>As a percentage of the cycle length ($C = 80\text{ s}$):</p>$$\text{Offset (\%)} = \left( \frac{40\text{ s}}{80\text{ s}} \right) \times 100\% = 50\%$$<h4 id=step-3-evaluate-two-way-coordination-feasibility>Step 3: Evaluate Two-Way Coordination Feasibility</h4><p>For perfect two-way coordination, the travel time must satisfy:</p>$$t_{\text{travel}} = n \cdot \left( \frac{C}{2} \right)$$<p>Let&rsquo;s test this relationship with our values ($t_{\text{travel}} = 40.0\text{ s}$ and $C = 80\text{ s}$):</p>$$\frac{C}{2} = \frac{80\text{ s}}{2} = 40.0\text{ seconds}$$<p></p>$$t_{\text{travel}} = 40.0\text{ s} = 1 \cdot (40.0\text{ s})$$<p>Here, $n = 1$, which is an integer.</p><p>Because the travel time ($40.0\text{ seconds}$) is exactly equal to half the cycle length ($C/2 = 40.0\text{ seconds}$), <strong>perfect two-way coordination is feasible</strong>. By setting the offset at the second intersection to $40.0\text{ seconds}$ (or $C/2$), the green bands in both directions will be maximized and identical.</p><p><em>Exam Tip: If the travel time had been 30 seconds, perfect two-way progression would not be possible without changing the cycle length. If the cycle length could be adjusted to 60 seconds ($C/2 = 30\text{ s}$), then two-way coordination would become perfect. This is why cycle length selection and coordination are iterative.</em></p></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/scratchpad/pe-exam/module-10/71-signal-warrants/>&#8592;
-Previous:
-Traffic Signal Warrants</a></p><p class=prev-post-date>May 4, 2026</p></div><div class=next-post><p><a href=/scratchpad/pe-exam/module-10/73-signal-design-plans/>Next:
-Traffic Signal Design and Plans
-&#8594;</a></p><p class=next-post-date>May 4, 2026</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>© 2017-2026 / Mohammad Movahedi. All rights reserved</a>.</span></footer></body></html>
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>Traffic Signal Coordination | Mohammad Movahedi</title>
+    <meta name="description" content="Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. …">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+    
+    <meta property="og:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="Traffic Signal Coordination | Mohammad Movahedi">
+    <meta property="og:description" content="Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Traffic Signal Coordination">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="Traffic Signal Coordination | Mohammad Movahedi">
+    <meta name="twitter:description" content="Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/pe-exam/module-10/72-signal-coordination/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"Traffic Signal Coordination\"",
+  "description": "\"Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. …\"",
+  "url": "http:\/\/localhost:1313\/scratchpad\/pe-exam\/module-10\/72-signal-coordination\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/scratchpad\/pe-exam\/module-10\/72-signal-coordination\/"
+  },
+  "datePublished": "2026-05-04T00:00:00Z",
+  "dateModified": "2026-05-04T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Scratchpad\"",
+      "item": "https:\/\/m-movahedi.com\/scratchpad\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"Traffic Signal Coordination\"",
+      "item": "http:\/\/localhost:1313\/scratchpad\/pe-exam\/module-10\/72-signal-coordination\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.46f64924e715031ec2daf5fad084fa1e35a175ab207cff3c6daf5eaf942796d4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>Traffic Signal Coordination</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 4, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>Signal coordination is the technique of synchronization of multiple traffic signals along a corridor to facilitate the continuous movement of vehicle platoons. The primary goal of coordination is to reduce stops, delays, fuel consumption, and vehicle emissions.</p>
+<p>On the PE Civil Transportation exam, you will encounter questions regarding coordination fundamentals, cycle length determination, offset calculations, progression bandwidth, and the interpretation of time-space diagrams.</p>
+<hr>
+<h2 id="fundamentals-of-coordination">Fundamentals of Coordination</h2>
+<p>To maintain a constant phase relationship over time, <strong>all signalized intersections within a coordinated system must operate on the same cycle length</strong> (or a sub-multiple, such as $C/2$ for minor intersections). The system cycle length is typically dictated by the &ldquo;critical intersection&rdquo;—the intersection in the network that requires the longest cycle length to satisfy its capacity and pedestrian timing demands.</p>
+<h3 id="key-terminology">Key Terminology:</h3>
+<ul>
+<li><strong>Platoon:</strong> A group of vehicles traveling together along a corridor, released from an upstream signal.</li>
+<li><strong>Progression Speed ($v_p$):</strong> The speed at which a platoon of vehicles travels through the coordinated system (typically equal to the speed limit or the 85th-percentile speed, expressed in $\text{ft/s}$ or $\text{mph}$).</li>
+<li><strong>Bandwidth ($B$):</strong> The window of time (in seconds) during which a vehicle starting at the first intersection can travel through the entire coordinated corridor at the progression speed without stopping. A larger bandwidth indicates better coordination.</li>
+<li><strong>Bandwidth Efficiency ($E$):</strong> The ratio of the green bandwidth to the cycle length, expressed as a percentage:
+
+$$E = \left( \frac{B}{C} \right) \times 100\%$$</li>
+<li><strong>Offset ($O_{ij}$):</strong> The time difference (in seconds or as a percentage of the cycle length) between the start of the green phase for the coordinated movement at a downstream intersection ($j$) relative to a reference point (usually the start of green) at an upstream intersection ($i$).</li>
+</ul>
+<hr>
+<h2 id="time-space-diagrams">Time-Space Diagrams</h2>
+<p>A time-space diagram is the primary tool for designing and visualizing signal coordination.</p>
+<ul>
+<li><strong>Vertical Axis ($y$-axis):</strong> Distance along the corridor (feet or miles). The locations of the signalized intersections are marked.</li>
+<li><strong>Horizontal Axis ($x$-axis):</strong> Time (seconds). The signal indications (green, yellow, red) for each intersection are plotted.</li>
+<li><strong>Green Band:</strong> The shaded path running diagonally through the green phases of the intersections. The slope of this band represents the progression speed:
+
+$$\text{Slope} = \frac{\Delta \text{Distance}}{\Delta \text{Time}} = v_p$$</li>
+</ul>
+<div style="background: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin: 24px 0; overflow-x: auto;">
+  <svg viewBox="0 0 600 250" width="600" height="250" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+        <path d="M0,0 L0,8 L8,4 z" fill="#0f172a" />
+      </marker>
+    </defs>
+    <!-- Axes -->
+    <line x1="40" y1="200" x2="560" y2="200" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow-axis)" />
+    <line x1="40" y1="200" x2="40" y2="20" stroke="#0f172a" stroke-width="2" marker-end="url(#arrow-axis)" />
+    <text x="540" y="220" font-family="sans-serif" font-size="12" fill="#0f172a" text-anchor="end">Time (seconds)</text>
+    <text x="25" y="30" font-family="sans-serif" font-size="12" fill="#0f172a" transform="rotate(-90, 25, 30)" text-anchor="end">Distance (ft)</text>
+    <!-- Intersection lines (horizontal dashed) -->
+    <line x1="40" y1="160" x2="560" y2="160" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4" />
+    <text x="570" y="165" font-family="sans-serif" font-size="11" fill="#475569">Int. 1</text>
+    <line x1="40" y1="60" x2="560" y2="60" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4" />
+    <text x="570" y="65" font-family="sans-serif" font-size="11" fill="#475569">Int. 2</text>    
+    <!-- Green Band -->
+    <polygon points="120,160 220,160 300,60 200,60" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
+    <text x="215" y="85" font-family="sans-serif" font-size="11" fill="#047857" font-weight="bold" transform="rotate(-50, 280, 110)">Green Band (B)</text>
+    <!-- Signal Timings - Intersection 1 (Bottom) -->
+    <rect x="120" y="155" width="100" height="10" fill="#10b981" rx="2" />
+    <text x="170" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
+    <rect x="220" y="155" width="80" height="10" fill="#ef4444" rx="2" />
+    <text x="260" y="150" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>
+    <rect x="300" y="155" width="100" height="10" fill="#10b981" rx="2" />
+    <text x="350" y="150" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
+    <!-- Signal Timings - Intersection 2 (Top) -->
+    <rect x="120" y="55" width="80" height="10" fill="#ef4444" rx="2" />
+    <text x="160" y="50" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>
+    <rect x="200" y="55" width="100" height="10" fill="#10b981" rx="2" />
+    <text x="250" y="50" font-family="sans-serif" font-size="10" fill="#10b981" text-anchor="middle">Green</text>
+    <rect x="300" y="55" width="80" height="10" fill="#ef4444" rx="2" />
+    <text x="340" y="50" font-family="sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">Red</text>
+  </svg>
+</div>
+<hr>
+<h2 id="one-way-vs-two-way-coordination">One-Way vs. Two-Way Coordination</h2>
+<h3 id="one-way-coordination">One-Way Coordination</h3>
+<p>For a one-way street (or a corridor where traffic is heavily directional, such as inbound during AM peak), coordinating the signal is straightforward. The ideal offset between intersection $i$ and downstream intersection $j$ is simply the travel time between them:</p>
+$$O_{ideal} = \frac{L_{ij}}{v_p}$$<p>Where:</p>
+<ul>
+<li>$O_{ideal}$ = Ideal offset (seconds)</li>
+<li>$L_{ij}$ = Distance between intersections $i$ and $j$ (feet)</li>
+<li>$v_p$ = Progression speed (feet per second, $\text{ft/s}$)</li>
+</ul>
+<h3 id="two-way-coordination">Two-Way Coordination</h3>
+<p>Coordinating traffic in both directions concurrently is challenging. Perfect two-way coordination (where maximum bandwidth is achieved in both directions) is only possible under specific geometric conditions.</p>
+<p>Specifically, the travel time ($t_{\text{travel}}$) between two intersections must be a multiple of half the cycle length ($C/2$):
+</p>
+$$t_{\text{travel}} = n \cdot \left( \frac{C}{2} \right)$$<p>
+Where $n$ is an integer ($0, 1, 2, \dots$).</p>
+<ul>
+<li>If $n$ is even (e.g., $t_{\text{travel}} = C, 2C$), the ideal offset is <strong>$0\text{ seconds}$</strong> (simultaneous green onset).</li>
+<li>If $n$ is odd (e.g., $t_{\text{travel}} = C/2, 3C/2$), the ideal offset is <strong>$C/2\text{ seconds}$</strong> (single-alternate green onset).</li>
+</ul>
+<p>When travel times do not match these criteria, traffic engineers must compromise by unequalizing the bandwidths (e.g., giving the peak direction a wider bandwidth and the off-peak direction a narrower bandwidth).</p>
+<hr>
+<h2 id="worked-example-progression-and-offset-design">Worked Example: Progression and Offset Design</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>Two signalized intersections along an arterial corridor are separated by a distance of $1,760\text{ feet}$ (exactly 1/3 of a mile). The corridor operates on a coordinated system with a common cycle length of $80\text{ seconds}$. The design progression speed is $30\text{ mph}$.</p>
+<ol>
+<li>Calculate the travel time between the two intersections in seconds.</li>
+<li>Determine the ideal offset for one-way progression from the first intersection to the second.</li>
+<li>Evaluate the feasibility of achieving perfect two-way coordination (equal bandwidth in both directions).</li>
+</ol>
+<h3 id="step-by-step-solution">Step-by-Step Solution</h3>
+<h4 id="step-1-convert-progression-speed-and-calculate-travel-time">Step 1: Convert Progression Speed and Calculate Travel Time</h4>
+<p>First, convert the progression speed from $\text{mph}$ to $\text{ft/s}$:
+</p>
+$$v_p = 30\text{ mph} \times 1.467 = 44\text{ ft/s}$$<p>Now, calculate the travel time ($t_{\text{travel}}$) over the $1,760\text{-foot}$ distance:
+</p>
+$$t_{\text{travel}} = \frac{L}{v_p} = \frac{1,760\text{ ft}}{44\text{ ft/s}} = 40.0\text{ seconds}$$<h4 id="step-2-determine-the-ideal-one-way-offset">Step 2: Determine the Ideal One-Way Offset</h4>
+<p>For one-way progression, the downstream signal&rsquo;s green phase should start exactly when the platoon arrives. Thus, the ideal offset is equal to the travel time:
+</p>
+$$\text{Offset} = 40.0\text{ seconds}$$<p>As a percentage of the cycle length ($C = 80\text{ s}$):
+</p>
+$$\text{Offset (\%)} = \left( \frac{40\text{ s}}{80\text{ s}} \right) \times 100\% = 50\%$$<h4 id="step-3-evaluate-two-way-coordination-feasibility">Step 3: Evaluate Two-Way Coordination Feasibility</h4>
+<p>For perfect two-way coordination, the travel time must satisfy:
+</p>
+$$t_{\text{travel}} = n \cdot \left( \frac{C}{2} \right)$$<p>Let&rsquo;s test this relationship with our values ($t_{\text{travel}} = 40.0\text{ s}$ and $C = 80\text{ s}$):
+</p>
+$$\frac{C}{2} = \frac{80\text{ s}}{2} = 40.0\text{ seconds}$$<p>
+</p>
+$$t_{\text{travel}} = 40.0\text{ s} = 1 \cdot (40.0\text{ s})$$<p>Here, $n = 1$, which is an integer.</p>
+<p>Because the travel time ($40.0\text{ seconds}$) is exactly equal to half the cycle length ($C/2 = 40.0\text{ seconds}$), <strong>perfect two-way coordination is feasible</strong>. By setting the offset at the second intersection to $40.0\text{ seconds}$ (or $C/2$), the green bands in both directions will be maximized and identical.</p>
+<p><em>Exam Tip: If the travel time had been 30 seconds, perfect two-way progression would not be possible without changing the cycle length. If the cycle length could be adjusted to 60 seconds ($C/2 = 30\text{ s}$), then two-way coordination would become perfect. This is why cycle length selection and coordination are iterative.</em></p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-10/71-signal-warrants/">
+                &#8592;
+                Previous:
+                Traffic Signal Warrants
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/pe-exam/module-10/73-signal-design-plans/">
+                Next:
+                Traffic Signal Design and Plans
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

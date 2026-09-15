@@ -4,10 +4,7 @@ weight: 8
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Construction Productivity
-
-Construction productivity calculations on the PE Civil Transportation exam focus on determining crew sizes, estimating cycle times, optimizing equipment configurations, and predicting activity durations. Managing and calculating the output rates of labor and machinery directly impacts both cost and project schedules.
+---Construction productivity calculations on the PE Civil Transportation exam focus on determining crew sizes, estimating cycle times, optimizing equipment configurations, and predicting activity durations. Managing and calculating the output rates of labor and machinery directly impacts both cost and project schedules.
 
 ---
 

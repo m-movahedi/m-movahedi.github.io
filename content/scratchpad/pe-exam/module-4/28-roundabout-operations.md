@@ -4,10 +4,7 @@ weight: 28
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Roundabout Operations
-
-Roundabouts are unsignalized intersections with a circular central island, where entering traffic yields to circulating traffic. Their analysis is performed on an entry-lane-by-entry-lane basis. The NCEES PE Civil Transportation exam frequently tests roundabout capacity, circulating flow calculation, control delay, and Level of Service (LOS).
+---Roundabouts are unsignalized intersections with a circular central island, where entering traffic yields to circulating traffic. Their analysis is performed on an entry-lane-by-entry-lane basis. The NCEES PE Civil Transportation exam frequently tests roundabout capacity, circulating flow calculation, control delay, and Level of Service (LOS).
 
 The methodology is governed by Chapter 22 of the Highway Capacity Manual (HCM 6th Edition) and is outlined in the NCEES PE Civil Reference Handbook.
 

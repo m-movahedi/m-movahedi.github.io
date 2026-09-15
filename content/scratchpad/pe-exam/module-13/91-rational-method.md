@@ -4,10 +4,7 @@ weight: 91
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Rational Method
-
-The Rational Method is the most widely used hydrologic model for sizing storm drainage systems, gutter inlets, roadside ditches, and small culverts. It is designed to estimate the peak runoff rate from small watersheds.
+---The Rational Method is the most widely used hydrologic model for sizing storm drainage systems, gutter inlets, roadside ditches, and small culverts. It is designed to estimate the peak runoff rate from small watersheds.
 
 ---
 

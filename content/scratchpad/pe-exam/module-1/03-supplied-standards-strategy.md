@@ -4,10 +4,7 @@ weight: 3
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Supplied Standards Strategy
-
-While the NCEES PE Civil Reference Handbook covers the foundational math and physics, the **PE Civil Transportation exam** requires you to navigate a vast library of specialized, discipline-specific design manuals. These are referred to as the "Supplied Standards."
+---While the NCEES PE Civil Reference Handbook covers the foundational math and physics, the **PE Civil Transportation exam** requires you to navigate a vast library of specialized, discipline-specific design manuals. These are referred to as the "Supplied Standards."
 
 In the CBT environment, these standards are provided as searchable PDFs on the left side of your monitor. You do not need to memorize the tables within them, but you **must** instantly know *which* standard to open when reading a problem statement.
 

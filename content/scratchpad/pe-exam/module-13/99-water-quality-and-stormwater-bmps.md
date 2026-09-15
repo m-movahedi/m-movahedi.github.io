@@ -4,10 +4,7 @@ weight: 99
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Water Quality and Stormwater BMPs
-
-Stormwater Best Management Practices (BMPs) are structural and non-structural controls designed to mitigate the water quality impacts of urban runoff. Urbanization increases impervious surfaces, leading to higher peak flows and increased pollutant wash-off (suspended solids, metals, nutrients, hydrocarbons).
+---Stormwater Best Management Practices (BMPs) are structural and non-structural controls designed to mitigate the water quality impacts of urban runoff. Urbanization increases impervious surfaces, leading to higher peak flows and increased pollutant wash-off (suspended solids, metals, nutrients, hydrocarbons).
 
 ---
 

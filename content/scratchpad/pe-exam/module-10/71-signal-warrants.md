@@ -4,10 +4,7 @@ weight: 71
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Traffic Signal Warrants
-
-A traffic control signal should only be installed if an engineering study indicates that the installation is justified. The *Manual on Uniform Traffic Control Devices (MUTCD)* Chapter 4C defines nine specific traffic signal warrants. 
+---A traffic control signal should only be installed if an engineering study indicates that the installation is justified. The *Manual on Uniform Traffic Control Devices (MUTCD)* Chapter 4C defines nine specific traffic signal warrants. 
 
 Meeting one or more of these warrants does not mandate the installation of a signal; rather, it indicates that a signal may be considered. Conversely, if no warrants are met, a signal should not be installed.
 

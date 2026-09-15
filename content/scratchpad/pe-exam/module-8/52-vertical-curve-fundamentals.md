@@ -4,10 +4,7 @@ weight: 52
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Vertical Curve Fundamentals
-
-Vertical curves are used in highway design to provide a smooth transition between two intersecting grade tangents. Unlike horizontal curves, which are typically circular arcs, vertical curves are designed as parabolic arcs. A parabolic profile provides a constant rate of change of grade, which minimizes vertical acceleration and passenger discomfort while maintaining consistent steering control.
+---Vertical curves are used in highway design to provide a smooth transition between two intersecting grade tangents. Unlike horizontal curves, which are typically circular arcs, vertical curves are designed as parabolic arcs. A parabolic profile provides a constant rate of change of grade, which minimizes vertical acceleration and passenger discomfort while maintaining consistent steering control.
 
 ## Curve Classifications
 

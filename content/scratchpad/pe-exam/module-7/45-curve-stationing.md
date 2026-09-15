@@ -4,10 +4,7 @@ weight: 45
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Curve Stationing
-
-Stationing is a standard system used in highway engineering to measure distances along the centerline of a project alignment. Stationing is written in the format **$XX+YY.ZZ$**, where each "station" represents **$100\text{ ft}$**. For example, Station $14+25.30$ represents a physical distance of $1,425.30\text{ ft}$ from the project origin.
+---Stationing is a standard system used in highway engineering to measure distances along the centerline of a project alignment. Stationing is written in the format **$XX+YY.ZZ$**, where each "station" represents **$100\text{ ft}$**. For example, Station $14+25.30$ represents a physical distance of $1,425.30\text{ ft}$ from the project origin.
 
 For the PE Civil Transportation exam, you must master the horizontal curve stationing workflow, know how to handle station equations, and understand how curves are laid out in the field using deflection angles and chords.
 

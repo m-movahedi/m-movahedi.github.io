@@ -4,10 +4,7 @@ weight: 32
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Collision Diagrams
-
-A collision diagram is a schematic representation of crashes that have occurred at a specific location (typically an intersection or a short roadway segment) over a designated time period. It is one of the most powerful diagnostic tools in traffic safety engineering, used to visually identify crash clusters, spatial patterns, and common conflict types.
+---A collision diagram is a schematic representation of crashes that have occurred at a specific location (typically an intersection or a short roadway segment) over a designated time period. It is one of the most powerful diagnostic tools in traffic safety engineering, used to visually identify crash clusters, spatial patterns, and common conflict types.
 
 On the NCEES PE Civil Transportation exam, you may need to interpret a collision diagram, identify a safety pattern, and link that pattern to effective safety countermeasures.
 

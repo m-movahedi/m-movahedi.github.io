@@ -4,10 +4,7 @@ weight: 70
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Pedestrian Signal Timing
-
-Pedestrian safety is a key constraint in traffic signal design. When pedestrians are present at an intersection, the signal timing must provide sufficient green and clearance time for a pedestrian to react, step off the curb, and completely cross the roadway before conflicting traffic is released. 
+---Pedestrian safety is a key constraint in traffic signal design. When pedestrians are present at an intersection, the signal timing must provide sufficient green and clearance time for a pedestrian to react, step off the curb, and completely cross the roadway before conflicting traffic is released. 
 
 On the PE Civil Transportation exam, you will need to calculate minimum green times and pedestrian clearance intervals based on crossing distance, pedestrian walking speed, and vehicle clearance times.
 

@@ -13,7 +13,7 @@ journal: "2nd International Congress on Civil, Architecture and Urbanism"
 ---
 
 <div style="background-color: #f9f2f4; border-left: 6px solid #c0392b; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #900C3F; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🚨</span> Every Second Counts in an Emergency</h4>
+  <h2 style="margin-top: 0; color: #900C3F; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🚨</span> Every Second Counts in an Emergency</h2>
   <p style="margin-bottom: 0; color: #555;">Traffic accidents account for approximately 5% of all traffic congestion, creating what engineers call "non-recurring bottlenecks." In developing nations, the most pressing issue isn't just the delay—it's the pre-hospital time for trauma patients. Identifying the exact location of an accident immediately is the first critical step in dispatching rescue teams and saving lives.</p>
 </div>
 

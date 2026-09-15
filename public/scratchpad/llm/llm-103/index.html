@@ -1,40 +1,836 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{--accent-color:#FF4D4D;--font-size:1.1rem}</style><title>LLM 103: Retrieval-Augmented Generation in Practice</title><meta name=description content="In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We …"><meta name=keywords content><meta property="og:url" content="https://m-movahedi.com/scratchpad/llm/llm-103/"><meta property="og:type" content="website"><meta property="og:title" content="LLM 103: Retrieval-Augmented Generation in Practice"><meta property="og:description" content="In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We …"><meta property="og:image" content="https://m-movahedi.com/images/transparent.png"><meta property="og:image:secure_url" content="https://m-movahedi.com/images/transparent.png"><meta name=twitter:card content="summary"><meta name=twitter:title content="LLM 103: Retrieval-Augmented Generation in Practice"><meta name=twitter:description content="In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We …"><meta property="twitter:domain" content="https://m-movahedi.com/scratchpad/llm/llm-103/"><meta property="twitter:url" content="https://m-movahedi.com/scratchpad/llm/llm-103/"><meta name=twitter:image content="https://m-movahedi.com/images/transparent.png"><link rel=canonical href=https://m-movahedi.com/scratchpad/llm/llm-103/><link rel=stylesheet type=text/css href=/css/normalize.min.css media=print><link rel=stylesheet type=text/css href=/css/main.min.css><script src=/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script><link rel=icon type=image/png href=/favicon.png><link rel=stylesheet href=https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css><link rel=stylesheet href=/css/llm-series.css><link rel=stylesheet href=/css/hbm-series.css><link rel=stylesheet href=/css/llm-diagrams.css><link rel=stylesheet href=/css/tm-series.css><link rel=stylesheet href=/css/mc-series.css><script defer src=/js/hbm-widgets.js></script><script defer src=/js/llm-diagrams.js></script><script defer src=/js/tm-series.js></script><script defer src=/js/mc-scrollytelling.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-1WZSE8DHZ9")</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css integrity=sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js integrity=sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js integrity=sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh crossorigin=anonymous onload='renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"\\[",right:"\\]",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1}]})'></script><link rel=stylesheet href=/css/custom.min.18ec29952add11924d403cdc5312cbc8a1ccdfa9f875450326ee02939271a377.css><link id=dark-theme rel=stylesheet href=/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css></head><body><script>setThemeByUserPref()</script><header class=header><nav class=header-nav><div class=avatar><a href=https://m-movahedi.com/><img src=/images/profile.png alt="Mohammad Movahedi"></a></div><div class=nav-title><a class=nav-brand href=https://m-movahedi.com/>Mohammad Movahedi</a></div><div class=nav-links><div class=nav-link><a href=https://m-movahedi.com/ aria-label>Home</a></div><div class=nav-link><a href=https://m-movahedi.com/background/ aria-label>Background</a></div><div class=nav-link><a href=https://m-movahedi.com/webinars/ aria-label>Webinars</a></div><div class=nav-link><a href=https://m-movahedi.com/research/ aria-label>Research</a></div><div class=nav-link><a href=https://m-movahedi.com/blog/ aria-label>Blog</a></div><div class=nav-link><a href=https://m-movahedi.com/scratchpad/ aria-label>Scratchpad</a></div><div class=nav-link><a href=https://m-movahedi.com/about/ aria-label>About</a></div><span class=nav-icons-divider></span><div class="nav-link dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a aria-hidden=true role=switch><span class=theme-toggle-icon data-feather=moon></span></a></div><div class=nav-link id=hamburger-menu-toggle><span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-<a aria-checked=false aria-labelledby=hamburger-menu-toggle id=hamburger-menu-toggle-target role=switch><span data-feather=menu></span></a></div><ul class="nav-hamburger-list visibility-hidden"><li class=nav-item><a href=https://m-movahedi.com/>Home</a></li><li class=nav-item><a href=https://m-movahedi.com/background/>Background</a></li><li class=nav-item><a href=https://m-movahedi.com/webinars/>Webinars</a></li><li class=nav-item><a href=https://m-movahedi.com/research/>Research</a></li><li class=nav-item><a href=https://m-movahedi.com/blog/>Blog</a></li><li class=nav-item><a href=https://m-movahedi.com/scratchpad/>Scratchpad</a></li><li class=nav-item><a href=https://m-movahedi.com/about/>About</a></li><li class="nav-item dark-theme-toggle"><span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
-<a role=switch><span class=theme-toggle-icon data-feather=moon></span></a></li></ul></div></nav></header><main id=content><div class="post container"><div class=post-header-section><h1>LLM 103: Retrieval-Augmented Generation in Practice</h1><small role=doc-subtitle></small><p class=post-date>May 3, 2026</p><ul class=post-tags></ul></div><div class=post-content><p>In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We will look at how a RAG system actually works: embeddings, chunking, vector search, reranking, prompt assembly, citations, and evaluation.</p><p>The basic idea is simple: when the model needs knowledge, do not ask it to rely only on its parameters. Retrieve relevant evidence, place that evidence into the context window, and ask the model to answer from that evidence.</p><h2 id=1-why-rag-exists>1. Why RAG Exists</h2><p>LLMs store some knowledge in their parameters, but that knowledge can be incomplete, stale, private, or difficult to inspect. RAG adds a second memory: an external collection of documents that can be searched at inference time.</p><p>This distinction matters:</p><div class=llm-two-col><div class=llm-panel><strong>Parametric memory</strong><p>Knowledge stored in model weights.</p><p>Fast to use, but hard to update directly.</p><p>Can be wrong or outdated.</p></div><div class=llm-panel><strong>Retrieved memory</strong><p>Knowledge stored in documents, databases, or files.</p><p>Easier to update, inspect, cite, and restrict.</p><p>Only useful if retrieval finds the right evidence.</p></div></div><p>For research, RAG is useful when the model needs to answer from papers, reports, datasets, lab notes, interview transcripts, policy documents, or project-specific files. Instead of asking, &ldquo;What do you know about this?&rdquo;, we ask, &ldquo;Given these retrieved sources, what answer is supported?&rdquo;</p><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2005.11401>Lewis et al. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"</a>: the core RAG paper connecting generation with retrieved external knowledge.</li><li><a href=https://arxiv.org/abs/2002.08909>Guu et al. (2020), "REALM"</a>: an important retrieval-augmented pretraining approach for open-domain question answering.</li></ul></div><h2 id=2-the-rag-pipeline>2. The RAG Pipeline</h2><p>A RAG system has two sides: indexing and answering.</p><p>Indexing happens before the user asks a question. Documents are loaded, split into chunks, embedded, and stored. Answering happens at query time. The user question is embedded, similar chunks are retrieved, the best evidence is selected, and the LLM writes an answer.</p><div class=llm-flow-6 role=img aria-label="RAG pipeline from documents to answer"><div class=llm-card><strong>Load</strong><p>Collect documents and metadata.</p></div><div class=llm-card><strong>Chunk</strong><p>Split into useful passages.</p></div><div class=llm-card><strong>Embed</strong><p>Convert chunks into vectors.</p></div><div class=llm-card><strong>Retrieve</strong><p>Find likely evidence.</p></div><div class=llm-card><strong>Rerank</strong><p>Choose the strongest passages.</p></div><div class=llm-card><strong>Answer</strong><p>Generate with citations.</p></div></div><p>The design choices in the middle matter more than people expect. A weak chunking strategy can bury evidence. A weak retriever can miss it. A weak prompt can cause the model to ignore it. RAG is a system problem, not just a vector database problem.</p><p>Here is a minimal pseudocode sketch of the full loop — from question to grounded answer:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Minimal RAG pipeline (pseudocode)</span>
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> embedding_model <span style=color:#f92672>import</span> embed
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> vector_store <span style=color:#f92672>import</span> search
-</span></span><span style=display:flex><span><span style=color:#f92672>from</span> llm <span style=color:#f92672>import</span> generate
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>answer</span>(question, corpus_index):
-</span></span><span style=display:flex><span>    <span style=color:#75715e># 1. Embed the question</span>
-</span></span><span style=display:flex><span>    query_vec <span style=color:#f92672>=</span> embed(question)
-</span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    <span style=color:#75715e># 2. Retrieve top-k similar chunks</span>
-</span></span><span style=display:flex><span>    chunks <span style=color:#f92672>=</span> search(corpus_index, query_vec, top_k<span style=color:#f92672>=</span><span style=color:#ae81ff>5</span>)
-</span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    <span style=color:#75715e># 3. Assemble prompt with evidence</span>
-</span></span><span style=display:flex><span>    context <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span><span style=color:#f92672>.</span>join(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;[S</span><span style=color:#e6db74>{</span>i<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span><span style=color:#e6db74>}</span><span style=color:#e6db74>] </span><span style=color:#e6db74>{</span>c<span style=color:#f92672>.</span>text<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span> <span style=color:#66d9ef>for</span> i, c <span style=color:#f92672>in</span> enumerate(chunks))
-</span></span><span style=display:flex><span>    prompt <span style=color:#f92672>=</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;&#34;&#34;Use only the evidence below. Cite sources using [S1], [S2], etc.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    If evidence is insufficient, say what is missing.
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    
-</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Evidence:</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>{</span>context<span style=color:#e6db74>}</span><span style=color:#ae81ff>\n\n</span><span style=color:#e6db74>Question: </span><span style=color:#e6db74>{</span>question<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;&#34;&#34;</span>
-</span></span><span style=display:flex><span>    
-</span></span><span style=display:flex><span>    <span style=color:#75715e># 4. Generate grounded answer</span>
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> generate(prompt)
-</span></span></code></pre></div><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2312.10997>Gao et al. (2023), "Retrieval-Augmented Generation for Large Language Models: A Survey"</a>: maps the RAG design space from naive pipelines to advanced and modular systems.</li><li><a href=https://arxiv.org/abs/2307.03172>Liu et al. (2023), "Lost in the Middle"</a>: explains why retrieved evidence placement inside the context window can affect whether the model uses it.</li></ul></div><h2 id=3-embeddings-turning-text-into-searchable-vectors>3. Embeddings: Turning Text into Searchable Vectors</h2><p>An embedding model converts text into a vector. Similar meanings should land near each other in vector space. This lets us search semantically, not just by exact keyword overlap.</p><p>For example, a question like:</p><div class=llm-code>How do residents decide whether to evacuate before a hurricane?</div><p>might retrieve chunks containing terms like:</p><div class=llm-pill-row aria-label="Semantically related retrieval terms"><span class=llm-pill>risk perception</span>
-<span class=llm-pill>protective action decision</span>
-<span class=llm-pill>warning response</span>
-<span class=llm-pill>household evacuation</span>
-<span class=llm-pill>social cues</span></div><p>This is the strength of dense retrieval: it can connect related concepts even when the words differ. The weakness is that semantic similarity is not the same as factual usefulness. A passage can be topically similar but still not answer the question.</p><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/1908.10084>Reimers and Gurevych (2019), "Sentence-BERT"</a>: a foundational sentence embedding paper for efficient semantic similarity.</li><li><a href=https://arxiv.org/abs/2004.04906>Karpukhin et al. (2020), "Dense Passage Retrieval"</a>: a major dense retrieval paper for open-domain question answering.</li><li><a href=https://arxiv.org/abs/2112.09118>Izacard et al. (2021), "Contriever"</a>: important for unsupervised dense retrieval using contrastive learning.</li></ul></div><h2 id=4-chunking-the-quiet-part-that-breaks-everything>4. Chunking: The Quiet Part That Breaks Everything</h2><p>Chunking is the process of splitting documents into pieces. It sounds mundane, but it is one of the most important RAG decisions.</p><p>Chunks that are too small may lose context. Chunks that are too large may bury the answer and waste the context window. Chunks that ignore document structure may separate a table from its explanation, a figure from its caption, or a claim from its citation.</p><div class=llm-grid><div class=llm-card><strong>Small chunks</strong><p>Precise retrieval, but context may be missing.</p><div class=llm-score><span style=width:38%></span></div></div><div class=llm-card><strong>Medium chunks</strong><p>Often a practical starting point.</p><div class=llm-score><span style=width:72%></span></div></div><div class=llm-card><strong>Large chunks</strong><p>More context, but more noise.</p><div class=llm-score><span style=width:54%></span></div></div></div><p>There is no universal best chunk size. A legal document, a research paper, a spreadsheet, and a meeting transcript need different handling. Good chunking preserves meaning, source location, and metadata.</p><p>Useful metadata often includes:</p><ul><li>document title;</li><li>author or source;</li><li>date;</li><li>section heading;</li><li>page number;</li><li>file path;</li><li>table or figure identifier;</li><li>access permissions.</li></ul><div class=llm-note><p><strong>Practical starting point:</strong> chunk by document structure first, then use token length as a constraint. Headings, paragraphs, tables, and captions usually know more about meaning than a fixed character count does.</p></div><h2 id=5-retrieval-sparse-dense-and-hybrid-search>5. Retrieval: Sparse, Dense, and Hybrid Search</h2><p>RAG systems often combine several retrieval methods.</p><p><strong>Sparse retrieval</strong> uses exact or near-exact term matching. BM25 is the classic example. It works well when the query uses distinctive terms, names, citations, acronyms, or technical phrases.</p><p><strong>Dense retrieval</strong> uses embedding similarity. It works well when the query and document use different words for similar ideas.</p><p><strong>Hybrid retrieval</strong> combines both. In practice, hybrid search is often a strong default because keyword matching and semantic matching fail in different ways.</p><div class=llm-two-col><div class=llm-panel><strong>Keyword strength</strong><p>Finds exact terms like "NHERI", "AASHTO", "TPB", or "Table 3".</p></div><div class=llm-panel><strong>Embedding strength</strong><p>Finds related meaning like "evacuation intention" and "willingness to leave".</p></div></div><p>After retrieval, many systems use approximate nearest-neighbor indexes to make vector search fast at scale. That is where algorithms and libraries such as HNSW and FAISS enter the picture.</p><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2004.04906>Karpukhin et al. (2020), "Dense Passage Retrieval"</a>: a key reference for dense retrieval in open-domain QA.</li><li><a href=https://arxiv.org/abs/1603.09320>Malkov and Yashunin (2016), "Efficient and Robust Approximate Nearest Neighbor Search Using HNSW"</a>: foundational for HNSW-style approximate vector search.</li><li><a href=https://arxiv.org/abs/1702.08734>Johnson, Douze, and Jegou (2017), "Billion-Scale Similarity Search with GPUs"</a>: the FAISS paper, important for large-scale vector search systems.</li></ul></div><h2 id=6-reranking-retrieval-is-not-the-final-answer>6. Reranking: Retrieval Is Not the Final Answer</h2><p>Initial retrieval is usually broad. It tries to avoid missing relevant evidence. Reranking is more careful. It takes the candidate passages and scores which ones are actually useful for the specific question.</p><p>The difference is subtle but important:</p><div class=llm-grid><div class=llm-card><strong>Candidate A</strong><p>Topically similar but too general.</p><div class=llm-score><span style=width:45%></span></div></div><div class=llm-card><strong>Candidate B</strong><p>Directly answers the question.</p><div class=llm-score><span style=width:91%></span></div></div><div class=llm-card><strong>Candidate C</strong><p>Shares words but wrong context.</p><div class=llm-score><span style=width:24%></span></div></div></div><p>Reranking can be done with cross-encoders, late-interaction models, LLM judges, or task-specific scoring rules. The tradeoff is speed versus quality. A reranker is slower than first-stage retrieval, but it can sharply improve what enters the prompt.</p><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2004.12832>Khattab and Zaharia (2020), "ColBERT"</a>: introduced late interaction as an effective middle ground between efficient retrieval and expressive matching.</li><li><a href=https://arxiv.org/abs/1908.10084>Reimers and Gurevych (2019), "Sentence-BERT"</a>: useful for understanding the bi-encoder versus cross-encoder tradeoff in semantic matching.</li></ul></div><h2 id=7-prompt-assembly-and-citations>7. Prompt Assembly and Citations</h2><p>After retrieval and reranking, the system must assemble the prompt. This is where many RAG systems quietly succeed or fail.</p><p>A practical prompt should separate the user&rsquo;s question from the retrieved evidence and make the model&rsquo;s obligations clear:</p><div class=llm-code>Use only the evidence below.
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>LLM 103: Retrieval-Augmented Generation in Practice | Mohammad Movahedi</title>
+    <meta name="description" content="In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We …">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+    
+    <meta property="og:url" content="http://localhost:1313/scratchpad/llm/llm-103/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="LLM 103: Retrieval-Augmented Generation in Practice | Mohammad Movahedi">
+    <meta property="og:description" content="In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LLM 103: Retrieval-Augmented Generation in Practice">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="LLM 103: Retrieval-Augmented Generation in Practice | Mohammad Movahedi">
+    <meta name="twitter:description" content="In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/llm/llm-103/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/llm/llm-103/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"LLM 103: Retrieval-Augmented Generation in Practice\"",
+  "description": "\"In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We …\"",
+  "url": "http:\/\/localhost:1313\/scratchpad\/llm\/llm-103\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/scratchpad\/llm\/llm-103\/"
+  },
+  "datePublished": "2026-05-03T00:00:00Z",
+  "dateModified": "2026-05-03T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Scratchpad\"",
+      "item": "https:\/\/m-movahedi.com\/scratchpad\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"LLM 103: Retrieval-Augmented Generation in Practice\"",
+      "item": "http:\/\/localhost:1313\/scratchpad\/llm\/llm-103\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.b49aceda9eb0c4a1c26f79dde146ea75e2cbb4b320dcd0e2623cb4c195ee7af6.js" integrity="sha256-tJrO2p6wxKHCb3nd4UbqdeLLtLMg3NDiYjy0wZXuevY="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.46f64924e715031ec2daf5fad084fa1e35a175ab207cff3c6daf5eaf942796d4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.90b21ff12ce51ba44256a022f3846026e1a78432649c095a9ea78c01e906984b.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
+                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>LLM 103: Retrieval-Augmented Generation in Practice</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              May 3, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>In LLM 102, we introduced Retrieval-Augmented Generation (RAG) as a way to connect a language model to external knowledge. This post goes one layer deeper. We will look at how a RAG system actually works: embeddings, chunking, vector search, reranking, prompt assembly, citations, and evaluation.</p>
+<p>The basic idea is simple: when the model needs knowledge, do not ask it to rely only on its parameters. Retrieve relevant evidence, place that evidence into the context window, and ask the model to answer from that evidence.</p>
+<h2 id="1-why-rag-exists">1. Why RAG Exists</h2>
+<p>LLMs store some knowledge in their parameters, but that knowledge can be incomplete, stale, private, or difficult to inspect. RAG adds a second memory: an external collection of documents that can be searched at inference time.</p>
+<p>This distinction matters:</p>
+<div class="llm-two-col">
+  <div class="llm-panel">
+    <strong>Parametric memory</strong>
+    <p>Knowledge stored in model weights.</p>
+    <p>Fast to use, but hard to update directly.</p>
+    <p>Can be wrong or outdated.</p>
+  </div>
+  <div class="llm-panel">
+    <strong>Retrieved memory</strong>
+    <p>Knowledge stored in documents, databases, or files.</p>
+    <p>Easier to update, inspect, cite, and restrict.</p>
+    <p>Only useful if retrieval finds the right evidence.</p>
+  </div>
+</div>
+<p>For research, RAG is useful when the model needs to answer from papers, reports, datasets, lab notes, interview transcripts, policy documents, or project-specific files. Instead of asking, &ldquo;What do you know about this?&rdquo;, we ask, &ldquo;Given these retrieved sources, what answer is supported?&rdquo;</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2005.11401">Lewis et al. (2020), "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"</a>: the core RAG paper connecting generation with retrieved external knowledge.</li>
+    <li><a href="https://arxiv.org/abs/2002.08909">Guu et al. (2020), "REALM"</a>: an important retrieval-augmented pretraining approach for open-domain question answering.</li>
+  </ul>
+</div>
+<h2 id="2-the-rag-pipeline">2. The RAG Pipeline</h2>
+<p>A RAG system has two sides: indexing and answering.</p>
+<p>Indexing happens before the user asks a question. Documents are loaded, split into chunks, embedded, and stored. Answering happens at query time. The user question is embedded, similar chunks are retrieved, the best evidence is selected, and the LLM writes an answer.</p>
+<div class="llm-flow-6" role="img" aria-label="RAG pipeline from documents to answer">
+  <div class="llm-card">
+    <strong>Load</strong>
+    <p>Collect documents and metadata.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Chunk</strong>
+    <p>Split into useful passages.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Embed</strong>
+    <p>Convert chunks into vectors.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Retrieve</strong>
+    <p>Find likely evidence.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Rerank</strong>
+    <p>Choose the strongest passages.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Answer</strong>
+    <p>Generate with citations.</p>
+  </div>
+</div>
+<p>The design choices in the middle matter more than people expect. A weak chunking strategy can bury evidence. A weak retriever can miss it. A weak prompt can cause the model to ignore it. RAG is a system problem, not just a vector database problem.</p>
+<p>Here is a minimal pseudocode sketch of the full loop — from question to grounded answer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Minimal RAG pipeline (pseudocode)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> embedding_model <span style="color:#f92672">import</span> embed
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> vector_store <span style="color:#f92672">import</span> search
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> llm <span style="color:#f92672">import</span> generate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">answer</span>(question, corpus_index):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 1. Embed the question</span>
+</span></span><span style="display:flex;"><span>    query_vec <span style="color:#f92672">=</span> embed(question)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 2. Retrieve top-k similar chunks</span>
+</span></span><span style="display:flex;"><span>    chunks <span style="color:#f92672">=</span> search(corpus_index, query_vec, top_k<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 3. Assemble prompt with evidence</span>
+</span></span><span style="display:flex;"><span>    context <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;[S</span><span style="color:#e6db74">{</span>i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74">] </span><span style="color:#e6db74">{</span>c<span style="color:#f92672">.</span>text<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">for</span> i, c <span style="color:#f92672">in</span> enumerate(chunks))
+</span></span><span style="display:flex;"><span>    prompt <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&#34;&#34;Use only the evidence below. Cite sources using [S1], [S2], etc.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    If evidence is insufficient, say what is missing.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Evidence:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">{</span>context<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">Question: </span><span style="color:#e6db74">{</span>question<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 4. Generate grounded answer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> generate(prompt)
+</span></span></code></pre></div><div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2312.10997">Gao et al. (2023), "Retrieval-Augmented Generation for Large Language Models: A Survey"</a>: maps the RAG design space from naive pipelines to advanced and modular systems.</li>
+    <li><a href="https://arxiv.org/abs/2307.03172">Liu et al. (2023), "Lost in the Middle"</a>: explains why retrieved evidence placement inside the context window can affect whether the model uses it.</li>
+  </ul>
+</div>
+<h2 id="3-embeddings-turning-text-into-searchable-vectors">3. Embeddings: Turning Text into Searchable Vectors</h2>
+<p>An embedding model converts text into a vector. Similar meanings should land near each other in vector space. This lets us search semantically, not just by exact keyword overlap.</p>
+<p>For example, a question like:</p>
+<div class="llm-code">How do residents decide whether to evacuate before a hurricane?</div>
+<p>might retrieve chunks containing terms like:</p>
+<div class="llm-pill-row" aria-label="Semantically related retrieval terms">
+  <span class="llm-pill">risk perception</span>
+  <span class="llm-pill">protective action decision</span>
+  <span class="llm-pill">warning response</span>
+  <span class="llm-pill">household evacuation</span>
+  <span class="llm-pill">social cues</span>
+</div>
+<p>This is the strength of dense retrieval: it can connect related concepts even when the words differ. The weakness is that semantic similarity is not the same as factual usefulness. A passage can be topically similar but still not answer the question.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/1908.10084">Reimers and Gurevych (2019), "Sentence-BERT"</a>: a foundational sentence embedding paper for efficient semantic similarity.</li>
+    <li><a href="https://arxiv.org/abs/2004.04906">Karpukhin et al. (2020), "Dense Passage Retrieval"</a>: a major dense retrieval paper for open-domain question answering.</li>
+    <li><a href="https://arxiv.org/abs/2112.09118">Izacard et al. (2021), "Contriever"</a>: important for unsupervised dense retrieval using contrastive learning.</li>
+  </ul>
+</div>
+<h2 id="4-chunking-the-quiet-part-that-breaks-everything">4. Chunking: The Quiet Part That Breaks Everything</h2>
+<p>Chunking is the process of splitting documents into pieces. It sounds mundane, but it is one of the most important RAG decisions.</p>
+<p>Chunks that are too small may lose context. Chunks that are too large may bury the answer and waste the context window. Chunks that ignore document structure may separate a table from its explanation, a figure from its caption, or a claim from its citation.</p>
+<div class="llm-grid">
+  <div class="llm-card">
+    <strong>Small chunks</strong>
+    <p>Precise retrieval, but context may be missing.</p>
+    <div class="llm-score"><span style="width: 38%;"></span></div>
+  </div>
+  <div class="llm-card">
+    <strong>Medium chunks</strong>
+    <p>Often a practical starting point.</p>
+    <div class="llm-score"><span style="width: 72%;"></span></div>
+  </div>
+  <div class="llm-card">
+    <strong>Large chunks</strong>
+    <p>More context, but more noise.</p>
+    <div class="llm-score"><span style="width: 54%;"></span></div>
+  </div>
+</div>
+<p>There is no universal best chunk size. A legal document, a research paper, a spreadsheet, and a meeting transcript need different handling. Good chunking preserves meaning, source location, and metadata.</p>
+<p>Useful metadata often includes:</p>
+<ul>
+<li>document title;</li>
+<li>author or source;</li>
+<li>date;</li>
+<li>section heading;</li>
+<li>page number;</li>
+<li>file path;</li>
+<li>table or figure identifier;</li>
+<li>access permissions.</li>
+</ul>
+<div class="llm-note">
+  <p><strong>Practical starting point:</strong> chunk by document structure first, then use token length as a constraint. Headings, paragraphs, tables, and captions usually know more about meaning than a fixed character count does.</p>
+</div>
+<h2 id="5-retrieval-sparse-dense-and-hybrid-search">5. Retrieval: Sparse, Dense, and Hybrid Search</h2>
+<p>RAG systems often combine several retrieval methods.</p>
+<p><strong>Sparse retrieval</strong> uses exact or near-exact term matching. BM25 is the classic example. It works well when the query uses distinctive terms, names, citations, acronyms, or technical phrases.</p>
+<p><strong>Dense retrieval</strong> uses embedding similarity. It works well when the query and document use different words for similar ideas.</p>
+<p><strong>Hybrid retrieval</strong> combines both. In practice, hybrid search is often a strong default because keyword matching and semantic matching fail in different ways.</p>
+<div class="llm-two-col">
+  <div class="llm-panel">
+    <strong>Keyword strength</strong>
+    <p>Finds exact terms like "NHERI", "AASHTO", "TPB", or "Table 3".</p>
+  </div>
+  <div class="llm-panel">
+    <strong>Embedding strength</strong>
+    <p>Finds related meaning like "evacuation intention" and "willingness to leave".</p>
+  </div>
+</div>
+<p>After retrieval, many systems use approximate nearest-neighbor indexes to make vector search fast at scale. That is where algorithms and libraries such as HNSW and FAISS enter the picture.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2004.04906">Karpukhin et al. (2020), "Dense Passage Retrieval"</a>: a key reference for dense retrieval in open-domain QA.</li>
+    <li><a href="https://arxiv.org/abs/1603.09320">Malkov and Yashunin (2016), "Efficient and Robust Approximate Nearest Neighbor Search Using HNSW"</a>: foundational for HNSW-style approximate vector search.</li>
+    <li><a href="https://arxiv.org/abs/1702.08734">Johnson, Douze, and Jegou (2017), "Billion-Scale Similarity Search with GPUs"</a>: the FAISS paper, important for large-scale vector search systems.</li>
+  </ul>
+</div>
+<h2 id="6-reranking-retrieval-is-not-the-final-answer">6. Reranking: Retrieval Is Not the Final Answer</h2>
+<p>Initial retrieval is usually broad. It tries to avoid missing relevant evidence. Reranking is more careful. It takes the candidate passages and scores which ones are actually useful for the specific question.</p>
+<p>The difference is subtle but important:</p>
+<div class="llm-grid">
+  <div class="llm-card">
+    <strong>Candidate A</strong>
+    <p>Topically similar but too general.</p>
+    <div class="llm-score"><span style="width: 45%;"></span></div>
+  </div>
+  <div class="llm-card">
+    <strong>Candidate B</strong>
+    <p>Directly answers the question.</p>
+    <div class="llm-score"><span style="width: 91%;"></span></div>
+  </div>
+  <div class="llm-card">
+    <strong>Candidate C</strong>
+    <p>Shares words but wrong context.</p>
+    <div class="llm-score"><span style="width: 24%;"></span></div>
+  </div>
+</div>
+<p>Reranking can be done with cross-encoders, late-interaction models, LLM judges, or task-specific scoring rules. The tradeoff is speed versus quality. A reranker is slower than first-stage retrieval, but it can sharply improve what enters the prompt.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2004.12832">Khattab and Zaharia (2020), "ColBERT"</a>: introduced late interaction as an effective middle ground between efficient retrieval and expressive matching.</li>
+    <li><a href="https://arxiv.org/abs/1908.10084">Reimers and Gurevych (2019), "Sentence-BERT"</a>: useful for understanding the bi-encoder versus cross-encoder tradeoff in semantic matching.</li>
+  </ul>
+</div>
+<h2 id="7-prompt-assembly-and-citations">7. Prompt Assembly and Citations</h2>
+<p>After retrieval and reranking, the system must assemble the prompt. This is where many RAG systems quietly succeed or fail.</p>
+<p>A practical prompt should separate the user&rsquo;s question from the retrieved evidence and make the model&rsquo;s obligations clear:</p>
+<div class="llm-code">Use only the evidence below.
 If the evidence is insufficient, say what is missing.
-Cite sources using [source_id].<p>Question:
-What factors influenced evacuation intention?</p><p>Evidence:
-[S1] &mldr;
-[S2] &mldr;
-[S3] &mldr;</div></p><p>Citations should point to the retrieved source, not just decorate the answer. A useful citation lets the reader inspect the document, page, section, or chunk that supports the claim.</p><p>Good RAG answers tend to:</p><ul><li>answer the question directly;</li><li>cite each factual claim;</li><li>distinguish evidence from inference;</li><li>avoid using retrieved text that is irrelevant;</li><li>say when the sources do not support an answer.</li></ul><div class=llm-note><p><strong>Important habit:</strong> make unsupported answers visibly worse than cautious answers. If the system rewards polished confidence, it will produce polished confidence.</p></div><h2 id=8-evaluation-measuring-the-whole-system>8. Evaluation: Measuring the Whole System</h2><p>RAG evaluation is not one number. You need to evaluate retrieval and generation separately, then evaluate the complete workflow.</p><p>For retrieval, ask:</p><ul><li>Did the system retrieve a source that contains the answer?</li><li>Was the source ranked high enough to fit into the context window?</li><li>Did retrieval work for paraphrased queries?</li><li>Did it handle acronyms, dates, tables, and domain terms?</li></ul><p>For generation, ask:</p><ul><li>Is the answer faithful to the retrieved evidence?</li><li>Are citations attached to the right claims?</li><li>Does the model admit when evidence is missing?</li><li>Is the answer useful for the intended audience?</li></ul><div class=llm-grid><div class=llm-card><strong>Retrieval recall</strong><p>Can the system find the right evidence?</p></div><div class=llm-card><strong>Faithfulness</strong><p>Does the answer stay grounded in evidence?</p></div><div class=llm-card><strong>Usefulness</strong><p>Does the final response solve the user's task?</p></div></div><p>A small hand-built evaluation set is often more valuable than a big vague one. For a research website or lab assistant, you might create 30-50 representative questions with known supporting sources and expected answer traits.</p><div class=llm-papers><strong>Important papers for this section</strong><ul><li><a href=https://arxiv.org/abs/2303.08896>Manakul, Liusie, and Gales (2023), "SelfCheckGPT"</a>: useful for thinking about consistency-based hallucination detection.</li><li><a href=https://arxiv.org/abs/2109.07958>Lin, Hilton, and Evans (2021), "TruthfulQA"</a>: a benchmark for truthfulness and imitative falsehoods in language models.</li><li><a href=https://arxiv.org/abs/2312.10997>Gao et al. (2023), "Retrieval-Augmented Generation for Large Language Models: A Survey"</a>: includes discussion of RAG evaluation challenges and system variants.</li></ul></div><h2 id=9-common-failure-modes>9. Common Failure Modes</h2><p>RAG reduces some LLM risks, but it creates its own stack of failure modes.</p><div class=llm-grid><div class=llm-card><strong>Bad chunks</strong><p>The answer is split away from needed context.</p></div><div class=llm-card><strong>Missed retrieval</strong><p>The right source never reaches the model.</p></div><div class=llm-card><strong>Context overload</strong><p>Too much retrieved text dilutes the important passage.</p></div><div class=llm-card><strong>Wrong citation</strong><p>The answer is plausible but points to the wrong source.</p></div><div class=llm-card><strong>Stale index</strong><p>The document store is not synchronized with reality.</p></div><div class=llm-card><strong>Permission leak</strong><p>The retriever exposes sources the user should not see.</p></div></div><p>The last one is easy to underestimate. RAG systems need access control at retrieval time, not only at the user interface. If a user cannot access a document, the retriever should not place that document into the prompt.</p><h2 id=10-a-practical-rag-checklist>10. A Practical RAG Checklist</h2><p>When building a RAG system, I would start with this checklist:</p><ol><li><strong>Define the corpus.</strong> What documents are allowed sources?</li><li><strong>Preserve metadata.</strong> Can every chunk point back to a document, page, section, or table?</li><li><strong>Chunk by meaning.</strong> Do not split blindly if document structure is available.</li><li><strong>Use hybrid retrieval.</strong> Combine keyword and semantic search when domain terms matter.</li><li><strong>Rerank before generation.</strong> Put the strongest evidence into the limited context window.</li><li><strong>Require grounded answers.</strong> Tell the model to cite and to admit missing evidence.</li><li><strong>Evaluate with real questions.</strong> Test retrieval recall, citation quality, and answer usefulness.</li><li><strong>Monitor drift.</strong> Re-index when documents change and retest when models change.</li></ol><div class=llm-note><p>RAG is not "chat with your PDFs." A serious RAG system is an evidence pipeline: document processing, search, ranking, prompt construction, generation, citation, and evaluation.</p></div><p>In the next post, we can move from RAG to LLM agents: planning, tool use, memory, guardrails, and why agent workflows are powerful but easy to overbuild.</p><div class=llm-exercises><strong>Exercises and Discussion Questions</strong><ol><li>Your RAG system retrieves 10 chunks but the model's answer ignores the most relevant one (ranked 7th). List three possible causes and one fix for each.</li><li>You are building a RAG system for a collection of evacuation planning reports. Some reports contain tables with numerical data. What chunking strategy problems might arise, and how would you handle tables?</li><li>A user searches for "AASHTO bridge inspection requirements" but your embedding model has never seen this acronym. Would sparse retrieval (BM25) or dense retrieval handle this better? Why might hybrid retrieval help?</li></ol></div></div><div class=prev-next><nav aria-label="Post navigation" class=post-navigation><div class=prev-post><p><a href=/scratchpad/llm/llm-102/>&#8592;
-Previous:
-LLM 102: Prompting, Context, RAG, and Hallucinations</a></p><p class=prev-post-date>May 2, 2026</p></div><div class=next-post><p><a href=/scratchpad/llm/llm-104/>Next:
-LLM 104: Agents, Tools, Memory, and Guardrails
-&#8594;</a></p><p class=next-post-date>May 4, 2026</p></div></nav></div><svg id="btt-button" class="arrow-logo" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6.0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9.0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9.0L7 329.7c-9.4-9.4-9.4-24.6.0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
-<script>let backToTopButton=document.getElementById("btt-button");window.onscroll=function(){scrollFunction()};function scrollFunction(){document.body.scrollTop>20||document.documentElement.scrollTop>20?backToTopButton.style.display="block":backToTopButton.style.display="none"}function scrollToTop(){window.scrollTo(0,0)}</script></div></main><footer class=footer><span>© 2017-2026 / Mohammad Movahedi. All rights reserved</a>.</span></footer></body></html>
+Cite sources using [source_id].
+<p>Question:
+What factors influenced evacuation intention?</p>
+<p>Evidence:
+[S1] &hellip;
+[S2] &hellip;
+[S3] &hellip;</div></p>
+<p>Citations should point to the retrieved source, not just decorate the answer. A useful citation lets the reader inspect the document, page, section, or chunk that supports the claim.</p>
+<p>Good RAG answers tend to:</p>
+<ul>
+<li>answer the question directly;</li>
+<li>cite each factual claim;</li>
+<li>distinguish evidence from inference;</li>
+<li>avoid using retrieved text that is irrelevant;</li>
+<li>say when the sources do not support an answer.</li>
+</ul>
+<div class="llm-note">
+  <p><strong>Important habit:</strong> make unsupported answers visibly worse than cautious answers. If the system rewards polished confidence, it will produce polished confidence.</p>
+</div>
+<h2 id="8-evaluation-measuring-the-whole-system">8. Evaluation: Measuring the Whole System</h2>
+<p>RAG evaluation is not one number. You need to evaluate retrieval and generation separately, then evaluate the complete workflow.</p>
+<p>For retrieval, ask:</p>
+<ul>
+<li>Did the system retrieve a source that contains the answer?</li>
+<li>Was the source ranked high enough to fit into the context window?</li>
+<li>Did retrieval work for paraphrased queries?</li>
+<li>Did it handle acronyms, dates, tables, and domain terms?</li>
+</ul>
+<p>For generation, ask:</p>
+<ul>
+<li>Is the answer faithful to the retrieved evidence?</li>
+<li>Are citations attached to the right claims?</li>
+<li>Does the model admit when evidence is missing?</li>
+<li>Is the answer useful for the intended audience?</li>
+</ul>
+<div class="llm-grid">
+  <div class="llm-card">
+    <strong>Retrieval recall</strong>
+    <p>Can the system find the right evidence?</p>
+  </div>
+  <div class="llm-card">
+    <strong>Faithfulness</strong>
+    <p>Does the answer stay grounded in evidence?</p>
+  </div>
+  <div class="llm-card">
+    <strong>Usefulness</strong>
+    <p>Does the final response solve the user's task?</p>
+  </div>
+</div>
+<p>A small hand-built evaluation set is often more valuable than a big vague one. For a research website or lab assistant, you might create 30-50 representative questions with known supporting sources and expected answer traits.</p>
+<div class="llm-papers">
+  <strong>Important papers for this section</strong>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2303.08896">Manakul, Liusie, and Gales (2023), "SelfCheckGPT"</a>: useful for thinking about consistency-based hallucination detection.</li>
+    <li><a href="https://arxiv.org/abs/2109.07958">Lin, Hilton, and Evans (2021), "TruthfulQA"</a>: a benchmark for truthfulness and imitative falsehoods in language models.</li>
+    <li><a href="https://arxiv.org/abs/2312.10997">Gao et al. (2023), "Retrieval-Augmented Generation for Large Language Models: A Survey"</a>: includes discussion of RAG evaluation challenges and system variants.</li>
+  </ul>
+</div>
+<h2 id="9-common-failure-modes">9. Common Failure Modes</h2>
+<p>RAG reduces some LLM risks, but it creates its own stack of failure modes.</p>
+<div class="llm-grid">
+  <div class="llm-card">
+    <strong>Bad chunks</strong>
+    <p>The answer is split away from needed context.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Missed retrieval</strong>
+    <p>The right source never reaches the model.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Context overload</strong>
+    <p>Too much retrieved text dilutes the important passage.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Wrong citation</strong>
+    <p>The answer is plausible but points to the wrong source.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Stale index</strong>
+    <p>The document store is not synchronized with reality.</p>
+  </div>
+  <div class="llm-card">
+    <strong>Permission leak</strong>
+    <p>The retriever exposes sources the user should not see.</p>
+  </div>
+</div>
+<p>The last one is easy to underestimate. RAG systems need access control at retrieval time, not only at the user interface. If a user cannot access a document, the retriever should not place that document into the prompt.</p>
+<h2 id="10-a-practical-rag-checklist">10. A Practical RAG Checklist</h2>
+<p>When building a RAG system, I would start with this checklist:</p>
+<ol>
+<li><strong>Define the corpus.</strong> What documents are allowed sources?</li>
+<li><strong>Preserve metadata.</strong> Can every chunk point back to a document, page, section, or table?</li>
+<li><strong>Chunk by meaning.</strong> Do not split blindly if document structure is available.</li>
+<li><strong>Use hybrid retrieval.</strong> Combine keyword and semantic search when domain terms matter.</li>
+<li><strong>Rerank before generation.</strong> Put the strongest evidence into the limited context window.</li>
+<li><strong>Require grounded answers.</strong> Tell the model to cite and to admit missing evidence.</li>
+<li><strong>Evaluate with real questions.</strong> Test retrieval recall, citation quality, and answer usefulness.</li>
+<li><strong>Monitor drift.</strong> Re-index when documents change and retest when models change.</li>
+</ol>
+<div class="llm-note">
+  <p>RAG is not "chat with your PDFs." A serious RAG system is an evidence pipeline: document processing, search, ranking, prompt construction, generation, citation, and evaluation.</p>
+</div>
+<p>In the next post, we can move from RAG to LLM agents: planning, tool use, memory, guardrails, and why agent workflows are powerful but easy to overbuild.</p>
+<div class="llm-exercises">
+  <strong>Exercises and Discussion Questions</strong>
+  <ol>
+    <li>Your RAG system retrieves 10 chunks but the model's answer ignores the most relevant one (ranked 7th). List three possible causes and one fix for each.</li>
+    <li>You are building a RAG system for a collection of evacuation planning reports. Some reports contain tables with numerical data. What chunking strategy problems might arise, and how would you handle tables?</li>
+    <li>A user searches for "AASHTO bridge inspection requirements" but your embedding model has never seen this acronym. Would sparse retrieval (BM25) or dense retrieval handle this better? Why might hybrid retrieval help?</li>
+  </ol>
+</div>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/llm/llm-102/">
+                &#8592;
+                Previous:
+                LLM 102: Prompting, Context, RAG, and Hallucinations
+            </a>
+        </p>
+        <p class="prev-post-date">
+            May 2, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/llm/llm-104/">
+                Next:
+                LLM 104: Agents, Tools, Memory, and Guardrails
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            May 4, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

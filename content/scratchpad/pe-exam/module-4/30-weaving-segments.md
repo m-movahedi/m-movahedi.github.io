@@ -4,10 +4,7 @@ weight: 30
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Weaving Segments
-
-A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of traffic signals or other control devices. Weaving segments are characterized by high turbulence, as vehicles must make lane changes over a limited distance.
+---A weaving segment is a length of highway where an entering movement and an exiting movement cross paths. This crossing of vehicles occurs without the aid of traffic signals or other control devices. Weaving segments are characterized by high turbulence, as vehicles must make lane changes over a limited distance.
 
 The NCEES PE Civil Transportation exam frequently tests weaving segment operations. The methodology is governed by Chapter 13 of the Highway Capacity Manual (HCM 6th Edition) and is summarized in the NCEES PE Civil Reference Handbook.
 

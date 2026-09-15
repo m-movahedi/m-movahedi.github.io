@@ -4,10 +4,7 @@ weight: 25
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Urban Street Segments
-
-Urban streets are characterized by interrupted flow, where traffic signals, stop signs, and turning vehicles at intersections dominate the travel time and operational quality. Unlike freeways and multilane highways where density is the primary measure of service, urban street segments are evaluated using **Average Travel Speed ($S_D$)** or its ratio to the segment's **Free-Flow Speed (FFS)**.
+---Urban streets are characterized by interrupted flow, where traffic signals, stop signs, and turning vehicles at intersections dominate the travel time and operational quality. Unlike freeways and multilane highways where density is the primary measure of service, urban street segments are evaluated using **Average Travel Speed ($S_D$)** or its ratio to the segment's **Free-Flow Speed (FFS)**.
 
 The operational analysis of urban street segments is governed by Chapters 16 and 18 of the Highway Capacity Manual (HCM 6th Edition).
 

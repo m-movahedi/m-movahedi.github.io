@@ -3,7 +3,7 @@ title: "Wallpaper Manager"
 date : "2026-07-12"
 draft : false
 type : "post"
-featured_image: "/images/blog/wallpaper -manager.png"
+featured_image: "/images/blog/wallpaper-manager.png"
 tags:
   - "Weekend Projects"
 ---

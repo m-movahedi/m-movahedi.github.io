@@ -4,10 +4,7 @@ weight: 10
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Critical Path Method (CPM) and Crashing
-
-The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the critical path, calculate floats, and manage project schedules. This is a highly tested, calculation-heavy topic on the PE Civil Transportation exam.
+---The Critical Path Method (CPM) is a step-by-step project management technique used to identify activities on the critical path, calculate floats, and manage project schedules. This is a highly tested, calculation-heavy topic on the PE Civil Transportation exam.
 
 ---
 

@@ -4,10 +4,7 @@ weight: 69
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Yellow and All-Red Clearance Intervals
-
-The yellow change and all-red clearance intervals are critical safety timings at signalized intersections. Their primary purpose is to transition the right-of-way safely between conflicting phases. On the PE Civil Transportation exam, you must be prepared to calculate these intervals using the standard kinematic formulas found in the NCEES PE Civil Reference Handbook and the MUTCD.
+---The yellow change and all-red clearance intervals are critical safety timings at signalized intersections. Their primary purpose is to transition the right-of-way safely between conflicting phases. On the PE Civil Transportation exam, you must be prepared to calculate these intervals using the standard kinematic formulas found in the NCEES PE Civil Reference Handbook and the MUTCD.
 
 ---
 

@@ -16,7 +16,7 @@ journal: "International Conference on Transportation and Development 2024"
 ---
 
 <div style="background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🌩️</span> The Vulnerability of Electric Evacuations</h4>
+  <h2 style="margin-top: 0; color: #2c3e50; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🌩️</span> The Vulnerability of Electric Evacuations</h2>
   <p style="margin-bottom: 0; color: #34495e;">As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during natural disasters is paramount. During events like Hurricane Ian, mass evacuations put immense stress on the EV charging infrastructure. If transmission lines fail and charging stations go dark, it can profoundly hinder evacuation efficiency and public safety, leading to widespread vehicle immobilization.</p>
 </div>
 

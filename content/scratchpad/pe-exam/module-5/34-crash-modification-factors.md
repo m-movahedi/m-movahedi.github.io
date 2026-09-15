@@ -4,10 +4,7 @@ weight: 34
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Crash Modification Factors
-
-A Crash Modification Factor (CMF) is a multiplicative factor used to compute the expected number of crashes after implementing a specific countermeasure at a transportation facility. A CMF represents the relative change in crash frequency compared to a baseline condition.
+---A Crash Modification Factor (CMF) is a multiplicative factor used to compute the expected number of crashes after implementing a specific countermeasure at a transportation facility. A CMF represents the relative change in crash frequency compared to a baseline condition.
 
 The NCEES PE Civil Transportation exam frequently tests CMF and Crash Reduction Factor (CRF) calculations, including multi-CMF combinations and safety benefit assessments.
 

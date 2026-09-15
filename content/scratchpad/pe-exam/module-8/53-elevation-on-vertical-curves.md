@@ -4,10 +4,7 @@ weight: 53
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Elevation on Vertical Curves
-
-Determining elevations along a parabolic vertical curve is a frequent task in road design and a heavily tested topic on the PE Civil Transportation exam. Geometric calculations utilize the properties of a vertical parabola, where the vertical offset from a tangent grade is proportional to the square of the horizontal distance from the tangent point.
+---Determining elevations along a parabolic vertical curve is a frequent task in road design and a heavily tested topic on the PE Civil Transportation exam. Geometric calculations utilize the properties of a vertical parabola, where the vertical offset from a tangent grade is proportional to the square of the horizontal distance from the tangent point.
 
 ## The Parabolic Curve Equations
 

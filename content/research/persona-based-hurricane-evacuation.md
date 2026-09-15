@@ -14,7 +14,7 @@ tags:
 ---
 
 <div style="background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: #2980b9; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🌀</span> The Challenge of Rural Evacuation Planning</h4>
+  <h2 style="margin-top: 0; color: #2980b9; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">🌀</span> The Challenge of Rural Evacuation Planning</h2>
   <p style="margin-bottom: 0; color: #154360;">Florida continues to be the most hurricane-prone state in the United States. While evacuation orders play a significant role in reducing casualties, their effectiveness relies heavily on household decision-making. In rural communities, such as the Florida Panhandle, this is complicated by limited infrastructure, longer travel distances, and resource constraints. Current evacuation demand models often rely on oversimplified assumptions of rational decision-making, failing to capture the stress, urgency, and irrationality inherent in disaster scenarios.</p>
 </div>
 

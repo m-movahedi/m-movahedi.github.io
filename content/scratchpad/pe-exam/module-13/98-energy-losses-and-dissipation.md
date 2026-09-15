@@ -4,10 +4,7 @@ weight: 98
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Energy Losses and Dissipation
-
-Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or channels can cause scour at outfalls, which is prevented using energy dissipation structures (like riprap aprons or stilling basins) and by managing transitions.
+---Hydraulic structures must be designed to manage energy losses and prevent erosion. High-velocity discharge from culverts or channels can cause scour at outfalls, which is prevented using energy dissipation structures (like riprap aprons or stilling basins) and by managing transitions.
 
 ---
 

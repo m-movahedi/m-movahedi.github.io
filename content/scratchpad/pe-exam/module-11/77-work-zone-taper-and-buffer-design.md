@@ -4,10 +4,7 @@ weight: 77
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Work Zone Taper and Buffer Design
-
-Tapers and buffer spaces are the core geometric design elements of a Temporary Traffic Control (TTC) zone. A taper uses a series of channelizing devices or pavement markings to laterally transition traffic. A buffer space provides longitudinal and lateral clearance between active traffic and workers.
+---Tapers and buffer spaces are the core geometric design elements of a Temporary Traffic Control (TTC) zone. A taper uses a series of channelizing devices or pavement markings to laterally transition traffic. A buffer space provides longitudinal and lateral clearance between active traffic and workers.
 
 On the PE Civil Transportation exam, you will frequently be asked to calculate the lengths of various taper types and determine buffer space requirements using MUTCD criteria and mathematical formulas.
 

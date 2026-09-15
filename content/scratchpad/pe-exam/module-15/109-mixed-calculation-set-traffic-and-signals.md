@@ -4,10 +4,7 @@ weight: 109
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Mixed Calculation Set: Traffic and Signals
-
-This calculation set covers core traffic engineering and signal design problems typical of the PE Civil Transportation exam.
+---This calculation set covers core traffic engineering and signal design problems typical of the PE Civil Transportation exam.
 
 ---
 

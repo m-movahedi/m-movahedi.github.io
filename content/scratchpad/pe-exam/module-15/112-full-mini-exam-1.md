@@ -4,10 +4,7 @@ weight: 112
 date : "2026-05-04"
 draft : false
 type : "post"
----
-# Full Mini-Exam 1
-
-This exam is designed to simulate the PE Civil Transportation morning and afternoon sessions. It contains five representative multiple-choice questions spanning hydrology/drainage, nonmotorized design, and corridor integration.
+---This exam is designed to simulate the PE Civil Transportation morning and afternoon sessions. It contains five representative multiple-choice questions spanning hydrology/drainage, nonmotorized design, and corridor integration.
 
 ---
 
