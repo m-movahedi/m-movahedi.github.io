@@ -9,18 +9,50 @@
   }
 
   .conference-card {
+      --conference-accent: var(--palette-1-color);
+      --conference-accent-rgb: var(--palette-1-rgb);
       display: flex;
       flex-direction: column;
-      border: 1px solid rgba(128, 128, 128, 0.2);
-      border-radius: 8px;
+      background: var(--surface-color);
+      border: 1px solid rgba(var(--conference-accent-rgb), 0.28);
+      border-radius: 20px;
       padding: 1.5rem;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease-in-out;
+      box-shadow: inset 4px 0 0 var(--conference-accent),
+          0 2px 8px var(--shadow-color);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease,
+          transform 0.2s ease;
+  }
+
+  .conference-card:nth-of-type(6n + 2) {
+      --conference-accent: var(--palette-2-color);
+      --conference-accent-rgb: var(--palette-2-rgb);
+  }
+
+  .conference-card:nth-of-type(6n + 3) {
+      --conference-accent: var(--palette-3-color);
+      --conference-accent-rgb: var(--palette-3-rgb);
+  }
+
+  .conference-card:nth-of-type(6n + 4) {
+      --conference-accent: var(--palette-4-color);
+      --conference-accent-rgb: var(--palette-4-rgb);
+  }
+
+  .conference-card:nth-of-type(6n + 5) {
+      --conference-accent: var(--palette-5-color);
+      --conference-accent-rgb: var(--palette-5-rgb);
+  }
+
+  .conference-card:nth-of-type(6n) {
+      --conference-accent: var(--palette-6-color);
+      --conference-accent-rgb: var(--palette-6-rgb);
   }
 
   .conference-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      border-color: var(--conference-accent);
+      box-shadow: inset 4px 0 0 var(--conference-accent),
+          0 9px 24px var(--shadow-color);
   }
 
   .conference-card h3 {
@@ -54,17 +86,7 @@
       font-weight: bold;
       line-height: 1;
       margin-bottom: 0.3rem;
-      color: #daac4b;
-  }
-
-  @media (prefers-color-scheme: dark) {
-      .conference-card {
-          border-color: rgba(255, 255, 255, 0.1);
-          box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      }
-      .countdown-value {
-          color: #daac4b;
-      }
+      color: var(--conference-accent);
   }
 
   .countdown-label {
@@ -77,8 +99,9 @@
   .conference-tag {
       margin-top: auto;
       align-self: flex-start;
-      background-color: rgba(0, 123, 255, 0.1);
-      color: #b38014;
+      background-color: rgba(var(--conference-accent-rgb), 0.13);
+      border: 1px solid rgba(var(--conference-accent-rgb), 0.24);
+      color: var(--conference-accent);
       padding: 0.2rem 0.6rem;
       border-radius: 12px;
       font-size: 0.55rem;
@@ -99,17 +122,16 @@
   }
   
   .conference-link:hover {
-      color: #be8917;
+      color: var(--conference-accent);
       text-decoration: underline;
+      text-decoration-color: var(--conference-accent);
   }
-  
-  @media (prefers-color-scheme: dark) {
-      .conference-tag {
-          background-color: rgba(77, 163, 255, 0.15);
-          color: #daac4b;
-      }
-      .conference-link:hover {
-          color: #ca941f;
+
+  @media (prefers-reduced-motion: reduce) {
+      .conference-card,
+      .conference-link {
+          transition: none;
+          transform: none;
       }
   }
   </style>
