@@ -36,8 +36,8 @@ Wallpaper Manager is built with Flutter and designed to eventually support Windo
       padding:10px 18px;
       border-radius:36px;
       text-decoration:none;
-      background:#1f1f1f;
-      color:white;
+      background:#2C3134;
+      color:#F0DED3;
       font-weight:600;
       display:inline-block;
      ">
@@ -48,8 +48,8 @@ Wallpaper Manager is built with Flutter and designed to eventually support Windo
       padding:10px 18px;
       border-radius:36px;
       text-decoration:none;
-      background:#db2d21;
-      color:white;
+      background:#DE634D;
+      color:#F0DED3;
       font-weight:600;
       display:inline-block;
      ">

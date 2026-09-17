@@ -196,6 +196,90 @@ main#content > h1 {
   letter-spacing: 0.015em;
 }
 
+/* Editorial accents keep text-led posts visually connected to the palette. */
+.post .post-header-section {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 0 26px 20px;
+  position: relative;
+}
+
+.post .post-header-section::before {
+  background: linear-gradient(
+    to bottom,
+    var(--palette-1-color),
+    var(--palette-2-color) 48%,
+    var(--palette-3-color)
+  );
+  border-radius: 999px;
+  bottom: 26px;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 6px;
+  width: 4px;
+}
+
+.post .post-header-section h1 {
+  color: var(--text-color);
+}
+
+.post .post-header-section small[role="doc-subtitle"] {
+  color: var(--muted-color);
+}
+
+.post .post-content > h2 {
+  border-left: 3px solid var(--palette-2-color);
+  color: var(--palette-3-color);
+  padding-left: 0.75rem;
+}
+
+.post .post-content > h3 {
+  color: var(--palette-6-color);
+}
+
+.post .post-content figure {
+  background: var(--surface-color);
+  border: 1px solid rgba(var(--palette-4-rgb), 0.28);
+  border-radius: 20px;
+  box-shadow: 0 8px 28px var(--shadow-color);
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.post .post-content figure img {
+  border-radius: 14px;
+}
+
+.post .post-content figcaption {
+  color: var(--muted-color);
+  padding: 8px 10px 2px;
+  text-align: center;
+}
+
+.post .post-content blockquote {
+  background: rgba(var(--palette-4-rgb), 0.1);
+  border-left-color: var(--palette-4-color);
+}
+
+.post .post-tags .post-tag:nth-child(6n + 1) { --tag-accent: var(--palette-1-color); --tag-rgb: var(--palette-1-rgb); }
+.post .post-tags .post-tag:nth-child(6n + 2) { --tag-accent: var(--palette-2-color); --tag-rgb: var(--palette-2-rgb); }
+.post .post-tags .post-tag:nth-child(6n + 3) { --tag-accent: var(--palette-3-color); --tag-rgb: var(--palette-3-rgb); }
+.post .post-tags .post-tag:nth-child(6n + 4) { --tag-accent: var(--palette-4-color); --tag-rgb: var(--palette-4-rgb); }
+.post .post-tags .post-tag:nth-child(6n + 5) { --tag-accent: var(--palette-5-color); --tag-rgb: var(--palette-5-rgb); }
+.post .post-tags .post-tag:nth-child(6n) { --tag-accent: var(--palette-6-color); --tag-rgb: var(--palette-6-rgb); }
+
+.post .post-tags .post-tag {
+  background: rgba(var(--tag-rgb), 0.1);
+  border-color: rgba(var(--tag-rgb), 0.28);
+}
+
+.post .post-tags .post-tag:hover {
+  background: var(--tag-accent);
+  border-color: var(--tag-accent);
+}
+
 .post-content a, .home-content a {
   text-decoration-color: var(--accent-color);
   text-underline-offset: 0.2em;

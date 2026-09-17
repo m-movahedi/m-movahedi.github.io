@@ -77,8 +77,8 @@ This release is a starting point. If you try Piano-ish, feedback on MIDI hardwar
       padding:10px 18px;
       border-radius:36px;
       text-decoration:none;
-      background:#1f1f1f;
-      color:white;
+      background:#2C3134;
+      color:#F0DED3;
       font-weight:600;
       display:inline-block;
      ">
@@ -89,8 +89,8 @@ This release is a starting point. If you try Piano-ish, feedback on MIDI hardwar
       padding:10px 18px;
       border-radius:36px;
       text-decoration:none;
-      background:#db2d21;
-      color:white;
+      background:#DE634D;
+      color:#F0DED3;
       font-weight:600;
       display:inline-block;
      ">
@@ -101,8 +101,8 @@ This release is a starting point. If you try Piano-ish, feedback on MIDI hardwar
       padding:10px 18px;
       border-radius:36px;
       text-decoration:none;
-      background:#A4C639;
-      color:white;
+      background:#3C4423;
+      color:#F0DED3;
       font-weight:600;
       display:inline-block;
      ">
@@ -113,8 +113,8 @@ This release is a starting point. If you try Piano-ish, feedback on MIDI hardwar
       padding:10px 18px;
       border-radius:36px;
       text-decoration:none;
-      background:#42A5F5;
-      color:white;
+      background:#759194;
+      color:#2C3134;
       font-weight:600;
       display:inline-block;
      ">
