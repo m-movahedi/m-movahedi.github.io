@@ -3,7 +3,7 @@ title: "Simulating Community Behaviors with LLM Personas"
 date: "2026-04-16"
 draft: false
 type: "post"
-description: "An interactive explanation of an empirically grounded LLM-persona framework for exploring community debris-management policies after disasters."
+description: "An explanation of an empirically grounded LLM-persona framework for exploring community debris-management policies after disasters."
 tags:
   - "Large Language Models"
   - "Persona Agents"
@@ -20,7 +20,7 @@ journal: "ASCE Construction Research Congress 2026"
 <div id="llmp-post">
 
 <section class="llmp-hero" aria-labelledby="llmp-hero-title">
-  <p class="llmp-eyebrow">Interactive research explainer</p>
+  <p class="llmp-eyebrow">Research explainer</p>
   <h2 id="llmp-hero-title">What if a policy could meet the community before it reaches the street?</h2>
   <p class="llmp-lede">Debris planning is usually framed as a logistics problem: estimate volume, select sites, and optimize routes. Our work adds the missing human layer by grounding LLM persona agents in observed community behavior, then using them to explore how different residents may respond to an intervention.</p>
   <div class="llmp-hero-stats" aria-label="Proof-of-concept at a glance">

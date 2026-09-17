@@ -3,7 +3,7 @@ title: "A Composite Index Framework for Quantifying External Influences on Built
 date: "2026-08-21"
 draft: false
 type: "post"
-description: "An interactive explanation of a hierarchy-aligned composite index for monitoring external pressures on infrastructure and diagnosing planning needs."
+description: "A hierarchy-aligned composite index for monitoring external pressures on infrastructure and diagnosing planning needs."
 tags:
   - "Infrastructure Planning"
   - "Composite Index"
@@ -19,7 +19,7 @@ journal: "Journal of Management in Engineering"
 
 <div id="cif-post">
 <section class="cif-hero" aria-labelledby="cif-hero-title">
-  <p class="cif-eyebrow">Interactive research explainer</p>
+  <p class="cif-eyebrow">Research explainer</p>
   <h2 id="cif-hero-title">Infrastructure does not change in isolation.</h2>
   <p class="cif-lede">Population, employment, economic cycles, extreme weather, technology, and policy all reshape what infrastructure must deliver. Our framework turns those scattered external signals into an updateable, traceable planning index—without hiding where the signal came from.</p>
   <div class="cif-hero-stats" aria-label="Case study at a glance">

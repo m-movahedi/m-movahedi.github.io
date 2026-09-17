@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Central Limit Theorem on Mohammad Movahedi</title>
-    <link>http://localhost:1313/tags/central-limit-theorem/</link>
+    <link>http://localhost:8502/tags/central-limit-theorem/</link>
     <description>Recent content in Central Limit Theorem on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/central-limit-theorem/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:8502/tags/central-limit-theorem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MC 06: The Law of Large Numbers, Central Limit Theorem, and Estimator Unbiasedness</title>
-      <link>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-06/</link>
+      <link>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-06/</link>
       <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-06/</guid>
+      <guid>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-06/</guid>
       <description>&lt;div class=&#34;mc-hero&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;mc-series-badge&#34;&gt;Monte Carlo Simulation • Layer 2: The Core Estimation Engine&lt;/span&gt;&#xD;&#xA;  &lt;h1 class=&#34;mc-gradient-title&#34;&gt;The Law of Large Numbers, Central Limit Theorem, and Estimator Unbiasedness&lt;/h1&gt;&#xD;&#xA;  &lt;p class=&#34;mc-lead-hook&#34;&gt;&#xD;&#xA;    Why does taking the arithmetic average of millions of computer-generated pseudo-random numbers yield the exact truth of a physical system? The entire edifice of Monte Carlo simulation rests on two asymptotic pillars: the Law of Large Numbers, which guarantees convergence, and the Central Limit Theorem, which dictates the rate and statistical shape of error. Yet, behind these textbook guarantees lurk critical engineering pitfalls: finite-sample variance bias, skewness-induced confidence interval collapse, and the sudden failure of convergence under heavy-tailed extremes.&#xD;&#xA;  &lt;/p&gt;</description>
     </item>
   </channel>
