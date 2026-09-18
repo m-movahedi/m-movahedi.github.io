@@ -97,6 +97,7 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
   .l-s5-s6 { top: 350px; left: 550px; width: 164px; transform: translateY(-50%) rotate(-52.4deg); }
   /* Hurricane Overlay */
   .ev-hurricane {
+    box-sizing: border-box;
     position: absolute; top: 150px; left: 0; width: 800px; height: 300px;
     background: repeating-linear-gradient(45deg, rgba(231,76,60,0.05), rgba(231,76,60,0.05) 10px, rgba(231,76,60,0.1) 10px, rgba(231,76,60,0.1) 20px);
     opacity: 0; pointer-events: none; transition: opacity 0.8s; z-index: 1;
@@ -110,22 +111,22 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
     min-width: 250px;
   }
   /* Interaction */
-  .ev-grid-container:hover .ev-hurricane { opacity: 1; }
+  .ev-grid-container:is(:hover, :focus) .ev-hurricane { opacity: 1; }
   /* Broken Lines */
-  .ev-grid-container:hover .l-ren-s4,
-  .ev-grid-container:hover .l-ren-s2,
-  .ev-grid-container:hover .l-s4-s5,
-  .ev-grid-container:hover .l-s5-s6 {
+  .ev-grid-container:is(:hover, :focus) .l-ren-s4,
+  .ev-grid-container:is(:hover, :focus) .l-ren-s2,
+  .ev-grid-container:is(:hover, :focus) .l-s4-s5,
+  .ev-grid-container:is(:hover, :focus) .l-s5-s6 {
     background-color: #c0392b; opacity: 0.2; box-shadow: 0 0 8px rgba(231, 76, 60, 0.8);
   }
   /* Failed Nodes */
-  .ev-grid-container:hover .p-ren,
-  .ev-grid-container:hover .s4,
-  .ev-grid-container:hover .s5 {
+  .ev-grid-container:is(:hover, :focus) .p-ren,
+  .ev-grid-container:is(:hover, :focus) .s4,
+  .ev-grid-container:is(:hover, :focus) .s5 {
     background-color: #7f8c8d; box-shadow: none; color: #ccc;
   }
-  .ev-grid-container:hover .ev-status { background: rgba(231, 76, 60, 0.9); }
-  .ev-grid-container:hover .ev-state::after {
+  .ev-grid-container:is(:hover, :focus) .ev-status { background: rgba(231, 76, 60, 0.9); }
+  .ev-grid-container:is(:hover, :focus) .ev-state::after {
     content: "Hurricane Strike! Weather-dependent plant (Group A) forced offline. Associated EV stations lose power. Nuclear-connected stations maintain 66% network functionality.";
   }
   .ev-grid-container .ev-state::after {
@@ -139,7 +140,8 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
   .ev-dot { width: 12px; height: 12px; border-radius: 50%; }
 </style>
 
-<div class="ev-grid-container">
+<div class="research-diagram-scroll" role="region" aria-label="EV charging network; scroll horizontally to explore">
+<div class="ev-grid-container" tabindex="0">
   <div class="ev-bg"></div>
   <div class="ev-hurricane">🌀 Hurricane Impact Zone</div>
   <div class="ev-status">
@@ -170,7 +172,8 @@ We then ran thousands of **Monte Carlo simulations** to evaluate the network's o
   <div class="ev-node ev-station s5">🔋</div>
   <div class="ev-node ev-station s6">🔋</div>
 </div>
-<p style="text-align: center; font-size: 0.85em; color: #666; font-style: italic; margin-bottom: 40px;">Interactive Figure 1: Hover over the network to simulate Hurricane Ian. Observe how a diversified energy mix (Nuclear vs Weather-dependent) affects grid resilience and localized EV station functionality.</p>
+</div>
+<p style="text-align: center; font-size: 0.85em; color: #666; font-style: italic; margin-bottom: 40px;">Interactive Figure 1: Tap, focus, or hover over the network to simulate Hurricane Ian. Observe how a diversified energy mix (Nuclear vs Weather-dependent) affects grid resilience and localized EV station functionality.</p>
 
 
 ### The Critical Role of Energy Diversity

@@ -19,7 +19,7 @@ Soil exists in one of three states during earthwork operations, each with a diff
   <!-- Bank State -->
   <div style="width: 25%;">
     <div style="font-weight: bold; margin-bottom: 5px;">BANK STATE<br><span style="font-size: 0.8em; font-weight: normal;">(Undisturbed)</span></div>
-    <div style="border: 2px solid currentColor; border-radius: 4px; overflow: hidden; margin: 0 auto; width: 100px;">
+    <div style="border: 2px solid currentColor; border-radius: 4px; overflow: hidden; margin: 0 auto; width: 100px; max-width: 100%;">
       <div style="height: 60px; background-color: rgba(200,200,200,0.2); border-bottom: 1px solid currentColor; display: flex; align-items: center; justify-content: center;">Voids</div>
       <div style="height: 50px; background-color: rgba(139, 69, 19, 0.4); display: flex; align-items: center; justify-content: center; font-weight: bold;">Solids</div>
     </div>
@@ -34,7 +34,7 @@ Soil exists in one of three states during earthwork operations, each with a diff
   <!-- Loose State -->
   <div style="width: 25%;">
     <div style="font-weight: bold; margin-bottom: 5px;">LOOSE STATE<br><span style="font-size: 0.8em; font-weight: normal;">(Excavated)</span></div>
-    <div style="border: 2px solid currentColor; border-radius: 4px; overflow: hidden; margin: 0 auto; width: 100px;">
+    <div style="border: 2px solid currentColor; border-radius: 4px; overflow: hidden; margin: 0 auto; width: 100px; max-width: 100%;">
       <div style="height: 80px; background-color: rgba(200,200,200,0.2); border-bottom: 1px solid currentColor; display: flex; align-items: center; justify-content: center;">Air Voids</div>
       <div style="height: 50px; background-color: rgba(139, 69, 19, 0.4); display: flex; align-items: center; justify-content: center; font-weight: bold;">Solids</div>
     </div>
@@ -49,7 +49,7 @@ Soil exists in one of three states during earthwork operations, each with a diff
   <!-- Compacted State -->
   <div style="width: 25%;">
     <div style="font-weight: bold; margin-bottom: 5px;">COMPACTED<br><span style="font-size: 0.8em; font-weight: normal;">(Placed)</span></div>
-    <div style="border: 2px solid currentColor; border-radius: 4px; overflow: hidden; margin: 0 auto; width: 100px;">
+    <div style="border: 2px solid currentColor; border-radius: 4px; overflow: hidden; margin: 0 auto; width: 100px; max-width: 100%;">
       <div style="height: 40px; background-color: rgba(200,200,200,0.2); border-bottom: 1px solid currentColor; display: flex; align-items: center; justify-content: center;">Voids</div>
       <div style="height: 50px; background-color: rgba(139, 69, 19, 0.4); display: flex; align-items: center; justify-content: center; font-weight: bold;">Solids</div>
     </div>

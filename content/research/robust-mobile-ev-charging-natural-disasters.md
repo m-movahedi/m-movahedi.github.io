@@ -318,31 +318,31 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
 }
 
 /* Hover States (Hurricane Hit) */
-.grid-container-v2:hover .hurricane-zone {
+.grid-container-v2:is(:hover, :focus) .hurricane-zone {
   opacity: 1;
 }
 
 /* Broken Lines inside/crossing Hurricane */
-.grid-container-v2:hover .e-n1-n4,
-.grid-container-v2:hover .e-n4-n13,
-.grid-container-v2:hover .e-n3-n4,
-.grid-container-v2:hover .e-n3-n8,
-.grid-container-v2:hover .e-n4-n8,
-.grid-container-v2:hover .e-n4-n9,
-.grid-container-v2:hover .e-n8-n9,
-.grid-container-v2:hover .e-n8-n15,
-.grid-container-v2:hover .e-n9-n10,
-.grid-container-v2:hover .e-n4-n5 {
+.grid-container-v2:is(:hover, :focus) .e-n1-n4,
+.grid-container-v2:is(:hover, :focus) .e-n4-n13,
+.grid-container-v2:is(:hover, :focus) .e-n3-n4,
+.grid-container-v2:is(:hover, :focus) .e-n3-n8,
+.grid-container-v2:is(:hover, :focus) .e-n4-n8,
+.grid-container-v2:is(:hover, :focus) .e-n4-n9,
+.grid-container-v2:is(:hover, :focus) .e-n8-n9,
+.grid-container-v2:is(:hover, :focus) .e-n8-n15,
+.grid-container-v2:is(:hover, :focus) .e-n9-n10,
+.grid-container-v2:is(:hover, :focus) .e-n4-n5 {
   background-color: #e74c3c;
   box-shadow: 0 0 8px rgba(231, 76, 60, 0.8);
   opacity: 0.2;
 }
 /* Nodes losing power (Inside & Cascading Outside) */
-.grid-container-v2:hover .n4,
-.grid-container-v2:hover .n8,
-.grid-container-v2:hover .n9,
-.grid-container-v2:hover .n13,
-.grid-container-v2:hover .n15 {
+.grid-container-v2:is(:hover, :focus) .n4,
+.grid-container-v2:is(:hover, :focus) .n8,
+.grid-container-v2:is(:hover, :focus) .n9,
+.grid-container-v2:is(:hover, :focus) .n13,
+.grid-container-v2:is(:hover, :focus) .n15 {
   background-color: #7f8c8d;
   box-shadow: none;
 }
@@ -359,10 +359,10 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   z-index: 20;
   transition: background 0.5s ease;
 }
-.grid-container-v2:hover .grid-status-v2 {
+.grid-container-v2:is(:hover, :focus) .grid-status-v2 {
   background: rgba(231, 76, 60, 0.9);
 }
-.grid-container-v2:hover .grid-state-v2::after {
+.grid-container-v2:is(:hover, :focus) .grid-state-v2::after {
   content: "Hurricane Strike! Lines in path broken. 5 nodes lost power (including 2 outside the path).";
 }
 .grid-container-v2 .grid-state-v2::after {
@@ -376,7 +376,8 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   font-style: italic;
 }
 </style>
-<div class="grid-container-v2">
+<div class="research-diagram-scroll" role="region" aria-label="Power grid resilience; scroll horizontally to explore">
+<div class="grid-container-v2" tabindex="0">
   <div class="grid-bg-v2"></div>
   <div class="hurricane-zone"></div>
   <!-- Lines -->
@@ -417,7 +418,8 @@ The probability of transmission segment failure ($P_{failure}$) was calculated a
   <div class="n-node n15"></div>
   <div class="grid-status-v2"><strong>Network Status:</strong> <span class="grid-state-v2"></span></div>
 </div>
-<div class="grid-instruct">👆 Hover over the complex network above to simulate a focused hurricane strike. Watch the transmission lines in its path fail and observe the cascading power outages extending to nodes outside the path.</div>
+</div>
+<div class="grid-instruct">👆 Tap, focus, or hover over the complex network above to simulate a focused hurricane strike. Watch the transmission lines in its path fail and observe the cascading power outages extending to nodes outside the path.</div>
 <div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 30px 0;">
   <div style="flex: 1 1 100%; background: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
     <h2 style="margin-top: 0; border-bottom: 2px solid #28a745; padding-bottom: 10px; color: #242424;">Multi-Criteria Decision Analysis (MCDA) via AHP</h2>
@@ -520,15 +522,15 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
     z-index: 20;
     transition: background 0.5s ease;
   }
-  .ntl-container:hover .ntl-vuln {
+  .ntl-container:is(:hover, :focus) .ntl-vuln {
     opacity: 0.1;
     background-color: #333;
     box-shadow: none;
   }  
-  .ntl-container:hover .ntl-status {
+  .ntl-container:is(:hover, :focus) .ntl-status {
     background: rgba(220, 53, 69, 0.8);
   }  
-  .ntl-container:hover .ntl-state::after {
+  .ntl-container:is(:hover, :focus) .ntl-state::after {
     content: "Post-Landfall (Outages Detected)";
   }
   .ntl-container .ntl-state::after {
@@ -542,7 +544,8 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
     font-style: italic;
   }
 </style>
-<div class="ntl-container">
+<div class="research-diagram-scroll" role="region" aria-label="Nighttime satellite lights; scroll horizontally to explore">
+<div class="ntl-container" tabindex="0">
   <div class="ntl-grid"></div>
   <div class="ntl-sat-wrapper">
     <div class="ntl-sat">🛰️</div>
@@ -561,6 +564,7 @@ To ensure the theoretical vulnerability model accurately reflected empirical con
   <div class="ntl-light ntl-l11"></div>
   <div class="ntl-light ntl-l12 ntl-vuln"></div>  
   <div class="ntl-status"><strong>Satellite NTL View:</strong> <span class="ntl-state"></span></div>
+</div>
 </div>
 <div class="ntl-instruct">👆 Hover over the interactive map above to simulate the hurricane landfall and observe the power outages.</div>
 

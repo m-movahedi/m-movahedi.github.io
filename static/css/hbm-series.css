@@ -188,6 +188,15 @@
 
 /* ---------- responsive ------------------------------ */
 @media (max-width: 900px) {
+  .hbm-stages {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hbm-stages > :not(.ttm-step) {
+    display: none;
+  }
+
   .hbm-flow,
   .hbm-flow-4,
   .hbm-flow-6,

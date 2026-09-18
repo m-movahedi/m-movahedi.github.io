@@ -231,6 +231,9 @@ By tapping into crowdsourced probe data from the Waze application, we extracted 
 
 @media (max-width: 768px) {
   .waze-grid { grid-template-columns: 1fr; }
+  .waze-dash { padding: 16px; }
+  .waze-pin { max-width: 50%; }
+  .waze-pin span { white-space: normal !important; }
 }
 </style>
 

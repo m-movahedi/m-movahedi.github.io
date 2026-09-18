@@ -58,17 +58,19 @@ function ready() {
         });
     }
 
-    document.getElementById('hamburger-menu-toggle').addEventListener('click', () => {
-        const hamburgerMenu = document.getElementsByClassName('nav-hamburger-list')[0]
-        const hamburgerMenuToggleTarget = document.getElementById("hamburger-menu-toggle-target")
-        if (hamburgerMenu.classList.contains('visibility-hidden')) {
-            hamburgerMenu.classList.remove('visibility-hidden');
-            hamburgerMenuToggleTarget.setAttribute("aria-checked", "true");
-        } else {
+    const hamburgerMenu = document.querySelector('.nav-hamburger-list');
+    const hamburgerButton = document.getElementById('hamburger-menu-toggle-target');
+    hamburgerButton.addEventListener('click', () => {
+        const hidden = hamburgerMenu.classList.toggle('visibility-hidden');
+        hamburgerButton.setAttribute('aria-expanded', String(!hidden));
+    });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !hamburgerMenu.classList.contains('visibility-hidden')) {
             hamburgerMenu.classList.add('visibility-hidden');
-            hamburgerMenuToggleTarget.setAttribute("aria-checked", "false");
+            hamburgerButton.setAttribute('aria-expanded', 'false');
+            hamburgerButton.focus();
         }
-    })
+    });
 }
 
 window.addEventListener('scroll', () => {

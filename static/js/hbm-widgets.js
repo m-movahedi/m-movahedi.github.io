@@ -11,7 +11,7 @@ class HBMRoadmapWidget extends HTMLElement {
             <div style="border: 2px solid var(--hbm-accent, #D97706); border-radius: 8px; padding: 1.5rem; margin: 2rem 0; background: var(--hbm-bg-light, #FFFBEB); font-family: sans-serif;">
                 <h3 style="margin-top: 0; color: var(--hbm-accent, #D97706); text-align: center;">Interactive HBM Roadmap</h3>
                 <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem;">
-                    <div style="flex: 1; min-width: 250px;">
+                    <div style="flex: 1; min-width: min(100%, 250px);">
                         <ul style="list-style: none; padding: 0; margin: 0; cursor: pointer; display: flex; flex-direction: column; gap: 0.5rem;" id="hbm-roadmap-list">
                             <li data-layer="1" style="padding: 0.75rem; background: #FDE68A; border-radius: 6px; font-weight: bold; border-left: 4px solid #D97706; transition: all 0.2s;">Part 1: Foundations</li>
                             <li data-layer="2" style="padding: 0.75rem; background: #FEF3C7; border-radius: 6px; border-left: 4px solid transparent; transition: all 0.2s;">Part 2: Risk & Safety</li>
@@ -21,7 +21,7 @@ class HBMRoadmapWidget extends HTMLElement {
                             <li data-layer="6" style="padding: 0.75rem; background: #FEF3C7; border-radius: 6px; border-left: 4px solid transparent; transition: all 0.2s;">Part 6: Computational Modeling</li>
                         </ul>
                     </div>
-                    <div style="flex: 1.5; min-width: 300px; padding: 1.5rem; background: #fff; border-radius: 8px; border: 1px solid #FCD34D; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" id="hbm-roadmap-content">
+                    <div style="flex: 1.5; min-width: min(100%, 300px); padding: 1.5rem; background: #fff; border-radius: 8px; border: 1px solid #FCD34D; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" id="hbm-roadmap-content">
                         <h4 style="margin-top:0; color:#B45309;">Part 1: Foundations</h4>
                         <p><strong>Key Focus:</strong> Basic cognitive frameworks like Knowledge-Attitude-Practice (KAP) and the Theory of Planned Behavior (TPB).</p>
                         <p><strong>Key Question:</strong> Why doesn't simply knowing facts change our behavior?</p>
@@ -260,7 +260,7 @@ class HBMTPBWidget extends HTMLElement {
                 <h3 style="margin-top: 0; color: #D97706; text-align: center;">Theory of Planned Behavior Simulator</h3>
                 <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; justify-content: center;">
                     <!-- Controls -->
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <div style="margin-bottom: 1rem;">
                             <label style="display: block; font-weight: bold; margin-bottom: 0.25rem;">Attitude</label>
                             <input type="range" id="tpb-att" min="0" max="100" value="70" style="width: 100%; accent-color: #3B82F6;">
@@ -279,7 +279,7 @@ class HBMTPBWidget extends HTMLElement {
                     </div>
                     
                     <!-- Diagram -->
-                    <div style="flex: 1; min-width: 300px; position: relative; height: 250px; background: #fff; border-radius: 8px; border: 1px solid #ccc; padding: 1rem;">
+                    <div style="flex: 1; min-width: min(100%, 300px); position: relative; height: 250px; background: #fff; border-radius: 8px; border: 1px solid #ccc; padding: 1rem;">
                         <svg width="100%" height="100%" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid meet">
                             <!-- Paths -->
                             <line x1="100" y1="40" x2="200" y2="100" stroke="#3B82F6" id="path-att" stroke-width="2" />
@@ -345,7 +345,7 @@ class HBMTPBWidget extends HTMLElement {
             // Int-Beh path thickness
             pIntBeh.setAttribute('stroke-width', Math.max(1, int / 10));
             
-            output.innerHTML = \`Intention: \${Math.round(int)}% | Action: \${Math.round(act)}%\`;
+            output.innerHTML = `Intention: ${Math.round(int)}% | Action: ${Math.round(act)}%`;
         };
 
         sAtt.addEventListener('input', update);
@@ -365,14 +365,14 @@ class HBMKapTpbCompareWidget extends HTMLElement {
         this.innerHTML = `
             <div style="border: 2px solid #D97706; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; background: #FFFBEB; font-family: sans-serif;">
                 <h3 style="margin-top: 0; color: #D97706; text-align: center;">KAP vs. TPB Diagnosis Simulator</h3>
-                <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem;">
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 1.5rem;">
                     <button data-profile="idealist" style="padding: 0.5rem 1rem; border: none; border-radius: 4px; background: #D97706; color: white; cursor: pointer; font-weight: bold;">The Frustrated Idealist</button>
                     <button data-profile="follower" style="padding: 0.5rem 1rem; border: none; border-radius: 4px; background: #FCD34D; color: #92400E; cursor: pointer;">The Reluctant Follower</button>
                     <button data-profile="uninformed" style="padding: 0.5rem 1rem; border: none; border-radius: 4px; background: #FCD34D; color: #92400E; cursor: pointer;">The Uninformed Rider</button>
                 </div>
                 
                 <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#4B5563; text-align: center;">KAP Diagnosis</h4>
                         <p id="kaptpb-kap-diag" style="font-style: italic; color: #1F2937;">Select a profile to see how KAP evaluates it.</p>
                         <div style="font-size: 0.9rem; background: #F3F4F6; padding: 0.5rem; border-radius: 4px;">
@@ -382,7 +382,7 @@ class HBMKapTpbCompareWidget extends HTMLElement {
                         </div>
                     </div>
                     
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#4B5563; text-align: center;">TPB Diagnosis</h4>
                         <p id="kaptpb-tpb-diag" style="font-style: italic; color: #1F2937;">Select a profile to see how TPB evaluates it.</p>
                         <div style="font-size: 0.9rem; background: #F3F4F6; padding: 0.5rem; border-radius: 4px;">
@@ -449,7 +449,7 @@ class HBMHbmWidget extends HTMLElement {
             <div style="border: 2px solid #D97706; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; background: #FFFBEB; font-family: sans-serif;">
                 <h3 style="margin-top: 0; color: #D97706; text-align: center;">Health Belief Model Calculator: Cycling to Work</h3>
                 <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#B45309;">Threat Perception</h4>
                         <div style="margin-bottom: 1rem;">
                             <label style="display: flex; justify-content: space-between; font-weight: bold;">
@@ -468,7 +468,7 @@ class HBMHbmWidget extends HTMLElement {
                         </div>
                     </div>
                     
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#059669;">Action Evaluation</h4>
                         <div style="margin-bottom: 1rem;">
                             <label style="display: flex; justify-content: space-between; font-weight: bold;">
@@ -553,11 +553,11 @@ class HBMPmtWidget extends HTMLElement {
             <div style="border: 2px solid #D97706; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; background: #FFFBEB; font-family: sans-serif;">
                 <h3 style="margin-top: 0; color: #D97706; text-align: center;">PMT Fear vs. Coping Simulator: Evacuation</h3>
                 <div style="display: flex; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap;">
-                    <div style="background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; min-width: 200px;">
+                    <div style="background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; min-width: min(100%, 200px);">
                         <label style="display: block; font-weight: bold;">Threat Appraisal (Fear)</label>
                         <input type="range" id="pmt-threat" min="0" max="100" value="80" style="width: 100%; accent-color: #EF4444;">
                     </div>
-                    <div style="background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; min-width: 200px;">
+                    <div style="background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; min-width: min(100%, 200px);">
                         <label style="display: block; font-weight: bold;">Coping Appraisal (Efficacy)</label>
                         <input type="range" id="pmt-coping" min="0" max="100" value="20" style="width: 100%; accent-color: #10B981;">
                     </div>
@@ -612,7 +612,7 @@ class HBMTtmWidget extends HTMLElement {
         this.innerHTML = `
             <div style="border: 2px solid #D97706; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; background: #FFFBEB; font-family: sans-serif;">
                 <h3 style="margin-top: 0; color: #D97706; text-align: center;">TTM Stages of Change: Adopting Transit</h3>
-                <div style="display: flex; justify-content: space-between; position: relative; margin: 2rem 0;">
+                <div class="hbm-stages" style="display: flex; justify-content: space-between; position: relative; margin: 2rem 0;">
                     <!-- Line behind steps -->
                     <div style="position: absolute; top: 20px; left: 10%; right: 10%; height: 4px; background: #ccc; z-index: 1;"></div>
                     
@@ -712,7 +712,7 @@ class HBMSctWidget extends HTMLElement {
                     </div>
                     
                     <!-- Explanation Panel -->
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; text-align: left;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; text-align: left;">
                         <h4 id="sct-title" style="margin-top: 0; color: #4B5563;">Select a starting point</h4>
                         <p id="sct-desc">The triad of reciprocal determinism implies that changing any one factor ultimately changes the other two.</p>
                     </div>
@@ -796,7 +796,7 @@ class HBMSdtWidget extends HTMLElement {
             typeEl.textContent = data[val].type;
             typeEl.style.color = data[val].color;
             descEl.textContent = data[val].desc;
-            sustainEl.innerHTML = \`<strong>Sustainability:</strong> <span style="color: \${data[val].color}">\${data[val].sustain}</span>\`;
+            sustainEl.innerHTML = `<strong>Sustainability:</strong> <span style="color: ${data[val].color}">${data[val].sustain}</span>`;
         };
 
         slider.addEventListener('input', update);
@@ -851,7 +851,7 @@ class HBMDoiWidget extends HTMLElement {
                 const cat = seg.getAttribute('data-cat');
                 title.textContent = data[cat].title;
                 desc.textContent = data[cat].desc;
-                strategy.innerHTML = \`<strong>\${data[cat].strat}</strong>\`;
+                strategy.innerHTML = `<strong>${data[cat].strat}</strong>`;
             });
         });
         
@@ -870,7 +870,7 @@ class HBMNamWidget extends HTMLElement {
                 <h3 style="margin-top: 0; color: #D97706; text-align: center;">Norm Activation Model: Idling Engines</h3>
                 
                 <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#4B5563;">Preconditions</h4>
                         <div style="margin-bottom: 1rem;">
                             <label style="display: block; font-weight: bold; margin-bottom: 0.25rem;">Awareness of Consequences (AC)</label>
@@ -884,7 +884,7 @@ class HBMNamWidget extends HTMLElement {
                         </div>
                     </div>
                     
-                    <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; justify-content: center; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; text-align: center;">
+                    <div style="flex: 1; min-width: min(100%, 250px); display: flex; flex-direction: column; justify-content: center; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; text-align: center;">
                         <h4 style="margin-top:0; color:#059669;">Personal Norm</h4>
                         <p style="font-size: 0.9rem; color: #555;">Sense of moral obligation to turn off the engine.</p>
                         <div style="margin: 1rem 0; height: 30px; background: #eee; border-radius: 15px; overflow: hidden;">
@@ -1006,7 +1006,7 @@ class HBMSptWidget extends HTMLElement {
                         <button class="spt-node" data-node="meanings" style="position: absolute; bottom: 0; right: 0; width: 100px; padding: 0.5rem; border: 2px solid #8B5CF6; background: #fff; border-radius: 8px; cursor: pointer; z-index: 2; font-weight: bold;">Meanings</button>
                     </div>
                     
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; text-align: left;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; text-align: left;">
                         <h4 id="spt-title" style="margin-top: 0; color: #4B5563;">Status: The Practice is Stable</h4>
                         <p id="spt-desc">The car, the driving skills, and the meaning of convenience all align perfectly to sustain the practice.</p>
                         <div id="spt-status" style="margin-top: 1rem; padding: 0.5rem; background: #D1FAE5; color: #065F46; border-radius: 4px; font-weight: bold; text-align: center;">Practice Intact</div>
@@ -1056,7 +1056,7 @@ class HBMDcmWidget extends HTMLElement {
                 <p style="text-align: center; font-size: 0.9rem; color: #555;">Adjust the attributes to see how the probability of choosing Car vs. Transit changes.</p>
                 
                 <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#4B5563;">Car Attributes</h4>
                         <div style="margin-bottom: 0.5rem;">
                             <label style="display:flex; justify-content:space-between; font-size:0.8rem;"><span>Travel Time (min)</span> <span id="val-car-time">30</span></label>
@@ -1078,7 +1078,7 @@ class HBMDcmWidget extends HTMLElement {
                         </div>
                     </div>
                     
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; display: flex; flex-direction: column; justify-content: center;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc; display: flex; flex-direction: column; justify-content: center;">
                         <h4 style="margin-top:0; color:#1F2937; text-align: center;">Choice Probabilities (Logit Model)</h4>
                         
                         <div style="margin-bottom: 1rem;">
@@ -1156,8 +1156,8 @@ class HBMDcmWidget extends HTMLElement {
                 barCar.style.width = (P_car * 100) + '%';
                 barTr.style.width = (P_tr * 100) + '%';
                 
-                utilCarStr.textContent = \`Utility: \${U_car.toFixed(2)}\`;
-                utilTrStr.textContent = \`Utility: \${U_tr.toFixed(2)}\`;
+                utilCarStr.textContent = `Utility: ${U_car.toFixed(2)}`;
+                utilTrStr.textContent = `Utility: ${U_tr.toFixed(2)}`;
             };
 
             update();
@@ -1178,7 +1178,7 @@ class HBMPtWidget extends HTMLElement {
                 
                 <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
                     <!-- Chart area -->
-                    <div style="flex: 1; position: relative; height: 250px; background: #fff; border: 1px solid #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; min-width: 250px;">
+                    <div style="flex: 1; position: relative; height: 250px; background: #fff; border: 1px solid #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; min-width: min(100%, 250px);">
                         <svg width="100%" height="100%" viewBox="-100 -100 200 200" preserveAspectRatio="xMidYMid meet">
                             <!-- Axes -->
                             <line x1="-100" y1="0" x2="100" y2="0" stroke="#ccc" stroke-width="1" />
@@ -1200,7 +1200,7 @@ class HBMPtWidget extends HTMLElement {
                     </div>
                     
                     <!-- Controls -->
-                    <div style="flex: 1; background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; text-align: left; min-width: 250px;">
+                    <div style="flex: 1; background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; text-align: left; min-width: min(100%, 250px);">
                         <h4 style="margin-top:0;">Commute Time Scenarios</h4>
                         <p style="font-size:0.8rem; color:#666;">Reference point: Your usual 30-minute commute.</p>
                         
@@ -1282,7 +1282,7 @@ class HBMBoundedWidget extends HTMLElement {
 
             if (threshInput && threshVal && searchBtn) {
                 threshInput.addEventListener('input', () => {
-                    threshVal.textContent = \`Will accept any spot within \${threshInput.value} minutes walking.\`;
+                    threshVal.textContent = `Will accept any spot within ${threshInput.value} minutes walking.`;
                 });
 
                 searchBtn.addEventListener('click', async () => {
@@ -1307,7 +1307,7 @@ class HBMBoundedWidget extends HTMLElement {
                         if (dist <= threshold) {
                             spot.style.background = '#10B981';
                             spot.style.color = 'white';
-                            result.textContent = \`Satisficed! Parked at Spot \${i+1} (\${dist} min). Ignored better spots because this was "good enough."\`;
+                            result.textContent = `Satisficed! Parked at Spot ${i+1} (${dist} min). Ignored better spots because this was "good enough."`;
                             searchBtn.disabled = false;
                             return;
                         } else {
@@ -1430,10 +1430,10 @@ class HBMDualWidget extends HTMLElement {
                 <h3 style="margin-top: 0; color: #D97706; text-align: center;">Dual-Process Model: Navigating Traffic</h3>
                 
                 <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                    <button id="sys1-btn" style="flex: 1; min-width: 200px; padding: 1rem; border: 2px solid #3B82F6; background: #DBEAFE; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem;">
+                    <button id="sys1-btn" style="flex: 1; min-width: min(100%, 200px); padding: 1rem; border: 2px solid #3B82F6; background: #DBEAFE; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem;">
                         SYSTEM 1<br><small style="font-weight:normal;">Fast, Automatic, Unconscious</small>
                     </button>
-                    <button id="sys2-btn" style="flex: 1; min-width: 200px; padding: 1rem; border: 2px solid #ccc; background: #fff; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem;">
+                    <button id="sys2-btn" style="flex: 1; min-width: min(100%, 200px); padding: 1rem; border: 2px solid #ccc; background: #fff; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem;">
                         SYSTEM 2<br><small style="font-weight:normal;">Slow, Deliberate, Conscious</small>
                     </button>
                 </div>
@@ -1570,17 +1570,17 @@ class HBMBcwWidget extends HTMLElement {
                 </div>
                 
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 200px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 200px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#EF4444;">1. Source of Behavior (COM-B)</h4>
                         <p id="bcw-source" style="font-size: 0.9rem;">Select a button above.</p>
                     </div>
-                    <div style="flex: 1; min-width: 200px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 200px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#F59E0B;">2. Intervention Functions</h4>
                         <ul id="bcw-interventions" style="font-size: 0.9rem; padding-left: 1.2rem; margin: 0;">
                             <li>Select above.</li>
                         </ul>
                     </div>
-                    <div style="flex: 1; min-width: 200px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 200px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#10B981;">3. Policy Categories</h4>
                         <ul id="bcw-policies" style="font-size: 0.9rem; padding-left: 1.2rem; margin: 0;">
                             <li>Select above.</li>
@@ -1610,8 +1610,8 @@ class HBMBcwWidget extends HTMLElement {
                         
                         const t = btn.getAttribute('data-type');
                         source.textContent = data[t].s;
-                        intv.innerHTML = data[t].i.map(x => \`<li>\${x}</li>\`).join('');
-                        pol.innerHTML = data[t].p.map(x => \`<li>\${x}</li>\`).join('');
+                        intv.innerHTML = data[t].i.map(x => `<li>${x}</li>`).join('');
+                        pol.innerHTML = data[t].p.map(x => `<li>${x}</li>`).join('');
                     });
                 });
             }
@@ -1685,7 +1685,7 @@ class HBMNudgeWidget extends HTMLElement {
                 <p style="text-align: center; font-size: 0.9rem; color: #555;">An employer offers a pre-tax transit pass. Compare the results of two different choice architectures.</p>
                 
                 <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; text-align: center;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; text-align: center;">
                         <h4 style="margin-top:0; color:#EF4444;">Opt-In (Status Quo)</h4>
                         <p style="font-size: 0.8rem;">Employees must actively sign a form to join the program.</p>
                         <div style="margin: 1.5rem 0; font-size: 2.5rem; color: #EF4444; font-weight: bold;">
@@ -1695,7 +1695,7 @@ class HBMNudgeWidget extends HTMLElement {
                         <button class="nudge-btn" data-type="optin" style="padding: 0.5rem 1rem; background: #eee; border: 1px solid #ccc; border-radius: 4px; cursor: pointer;">Why so low?</button>
                     </div>
                     
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1.5rem; border-radius: 8px; border: 2px solid #10B981; text-align: center;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1.5rem; border-radius: 8px; border: 2px solid #10B981; text-align: center;">
                         <h4 style="margin-top:0; color:#10B981;">Opt-Out (Nudge)</h4>
                         <p style="font-size: 0.8rem;">Employees are automatically enrolled unless they sign a form to decline.</p>
                         <div style="margin: 1.5rem 0; font-size: 2.5rem; color: #10B981; font-weight: bold;">
@@ -1748,7 +1748,7 @@ class HBMAbmWidget extends HTMLElement {
                         <!-- Grid cells will be injected here -->
                     </div>
                     
-                    <div style="background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; min-width: 200px; text-align: left;">
+                    <div style="background: #fff; padding: 1.5rem; border-radius: 8px; border: 1px solid #ccc; min-width: min(100%, 200px); text-align: left;">
                         <h4 style="margin-top: 0;">Controls</h4>
                         <button id="abm-step" style="padding: 0.5rem 1rem; width: 100%; margin-bottom: 0.5rem; background: #3B82F6; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Step Forward</button>
                         <button id="abm-reset" style="padding: 0.5rem 1rem; width: 100%; background: #eee; border: 1px solid #ccc; border-radius: 4px; cursor: pointer;">Reset Grid</button>
@@ -1787,7 +1787,7 @@ class HBMAbmWidget extends HTMLElement {
                         cell.style.width = '20px';
                         cell.style.height = '20px';
                         cell.style.background = state ? '#10B981' : '#fff';
-                        cell.id = \`cell-\${i}-\${j}\`;
+                        cell.id = `cell-${i}-${j}`;
                         gridEl.appendChild(cell);
                     }
                     grid.push(row);
@@ -1832,7 +1832,7 @@ class HBMAbmWidget extends HTMLElement {
                 grid = next;
                 for(let i=0; i<SIZE; i++) {
                     for(let j=0; j<SIZE; j++) {
-                        document.getElementById(\`cell-\${i}-\${j}\`).style.background = grid[i][j] ? '#10B981' : '#fff';
+                        document.getElementById(`cell-${i}-${j}`).style.background = grid[i][j] ? '#10B981' : '#fff';
                     }
                 }
                 updateCount();
@@ -1872,7 +1872,7 @@ class HBMActivityWidget extends HTMLElement {
             const content = this.querySelector('#act-content');
             if(!btns || !content) return;
             
-            const tripHTML = \`
+            const tripHTML = `
                 <h4 style="color: #6B7280; margin-top:0;">Isolated Trips</h4>
                 <div style="display: flex; flex-direction: column; gap: 1rem;">
                     <div style="padding: 0.5rem; border: 1px solid #ccc; background: #f9f9f9;">Trip 1: Home → Work (Purpose: HBW)</div>
@@ -1880,9 +1880,9 @@ class HBMActivityWidget extends HTMLElement {
                     <div style="padding: 0.5rem; border: 1px solid #ccc; background: #f9f9f9;">Trip 3: Shop → Home (Purpose: HBO)</div>
                 </div>
                 <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">Limitation: Treats trips as independent. Ignores that taking the bus to work means you can't drive from work to the shop.</p>
-            \`;
+            `;
             
-            const actHTML = \`
+            const actHTML = `
                 <h4 style="color: #3B82F6; margin-top:0;">Continuous Tour</h4>
                 <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
                     <div style="padding: 1rem; background: #DBEAFE; border: 1px solid #3B82F6; border-radius: 8px; text-align: center;">Home<br><small>7am - 8am</small></div>
@@ -1894,7 +1894,7 @@ class HBMActivityWidget extends HTMLElement {
                     <div style="padding: 1rem; background: #DBEAFE; border: 1px solid #3B82F6; border-radius: 8px; text-align: center;">Home<br><small>6:30pm+</small></div>
                 </div>
                 <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">Advantage: Captures time constraints and trip chaining. The mode chosen for the whole tour must accommodate the shopping stop.</p>
-            \`;
+            `;
 
             btns.forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -2037,7 +2037,7 @@ class HBMMlWidget extends HTMLElement {
             <div style="border: 2px solid #D97706; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; background: #FFFBEB; font-family: sans-serif; text-align: center;">
                 <h3 style="margin-top: 0; color: #D97706;">Machine Learning vs. Discrete Choice</h3>
                 <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#3B82F6;">Random Forest (ML)</h4>
                         <p style="font-size: 0.9rem; text-align:left;"><strong>Goal:</strong> Maximize predictive accuracy.</p>
                         <p style="font-size: 0.9rem; text-align:left;"><strong>Output:</strong> Feature Importance (Gini)</p>
@@ -2049,7 +2049,7 @@ class HBMMlWidget extends HTMLElement {
                         <p style="font-size: 0.8rem; text-align:left; color:#EF4444; font-weight:bold;">Cannot estimate Willingness to Pay (WTP).</p>
                     </div>
                     
-                    <div style="flex: 1; min-width: 250px; background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
+                    <div style="flex: 1; min-width: min(100%, 250px); background: #fff; padding: 1rem; border-radius: 8px; border: 1px solid #ccc;">
                         <h4 style="margin-top:0; color:#10B981;">Logit Model (Econometrics)</h4>
                         <p style="font-size: 0.9rem; text-align:left;"><strong>Goal:</strong> Causal inference and policy simulation.</p>
                         <p style="font-size: 0.9rem; text-align:left;"><strong>Output:</strong> Beta Coefficients</p>

@@ -33,7 +33,7 @@ A model name is only the label at the top of the stack. Behavior comes from the 
     <h3>The "Same Model" Stack</h3>
     <p>A model name is just the top layer.</p>
   </div>
-  <div class="llm-grid-layout" style="grid-template-columns: repeat(4, 1fr); gap: 0.5rem; text-align: center;">
+  <div class="llm-grid-layout" style="gap: 0.5rem; text-align: center;">
     <div class="llm-node"><div class="llm-node-title">Family</div><div class="llm-node-subtitle">e.g. Qwen</div></div>
     <div class="llm-node"><div class="llm-node-title">Checkpoint</div><div class="llm-node-subtitle">e.g. Instruct</div></div>
     <div class="llm-node"><div class="llm-node-title">Format</div><div class="llm-node-subtitle">e.g. GGUF</div></div>

@@ -31,14 +31,13 @@
             </div>
 
             <div class="nav-link" id="hamburger-menu-toggle">
-                <span class="sr-only hamburger-menu-toggle-screen-reader-target">menu</span>
-                <a aria-checked="false" aria-labelledby="hamburger-menu-toggle" id="hamburger-menu-toggle-target" role="switch">
+                <button type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Toggle navigation" id="hamburger-menu-toggle-target">
                     <span data-feather="menu"></span>
-                </a>
+                </button>
             </div>
 
             <!-- For mobile -->
-            <ul class="nav-hamburger-list visibility-hidden">
+            <ul id="mobile-navigation" class="nav-hamburger-list visibility-hidden">
                 {{ range .Site.Menus.main }}
                 <li class="nav-item">
                     <a href="{{ .URL | absURL }}" {{ if .Params.NewPage -}} target="_blank"{{- end -}}>

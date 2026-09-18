@@ -21,7 +21,7 @@ KAP is not a causal theory. It does not explain why people behave the way they d
 
 The KAP framework assesses three dimensions of a population's relationship with a behavior or issue:
 
-<div class="hbm-flow" style="grid-template-columns: repeat(3, minmax(140px, 1fr));">
+<div class="hbm-grid">
   <div class="hbm-card">
     <strong>Knowledge (K)</strong>
     <p>What do people know or believe to be true about a topic? This includes factual knowledge, awareness of services or risks, and understanding of rules or procedures.</p>
