@@ -8,7 +8,10 @@ tags:
   - "Open Data"
   - "Probe Data"
   - "Incident Detection"
-  - "ITS"
+  - "Intelligent Transportation Systems"
+  - "Traffic Modeling"
+  - "Traffic Flow Modeling"
+  - "Traffic Safety"
 journal: "2nd International Congress on Civil, Architecture and Urbanism"
 ---
 

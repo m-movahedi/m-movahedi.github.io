@@ -4,8 +4,13 @@ date : "2025-01-17"
 draft : false
 type : "post"
 tags:
-  - "Disaster resilience"
-  - "post-disaster-recovery"
+  - "Resilience"
+  - "Post-disaster Recovery"
+  - "Disaster Management"
+  - "NHERI GSC"
+  - "NHERI RAPID"
+  - "Reconnaissance"
+
 slug: "nheri-rsr-spring-2025-otis"
 aliases: ["/webinars/NHERI_RSR_Spring2025-2/", "/webinars/nheri_rsr_spring2025-2/"]
 description: "NHERI GSC webinar with Dr. Juan Antonio Balderrama Garcia Mendez assessing Category 5 Hurricane Otis impacts and post-disaster infrastructure resilience."

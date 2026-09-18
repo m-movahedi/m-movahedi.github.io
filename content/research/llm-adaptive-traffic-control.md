@@ -4,13 +4,16 @@ date : "2024-12-16"
 draft : false
 type : "post"
 tags:
+  - "Reasoning and Planning"
+  - "Traffic Control"
   - "Large Language Models"
   - "Intelligent Transportation Systems"
-  - "Traffic Signal Control"
-  - "Adaptive Control"
+  - "Adaptive Traffic Signal Control"
   - "Reinforcement Learning"
   - "Traffic Modeling"
   - "Intelligent Transportation"
+  - "Traffic Flow Modeling"
+
 journal: "IEEE Transactions on Intelligent Transportation Systems"
 ---
 

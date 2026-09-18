@@ -7,7 +7,6 @@ tags:
   - "Traffic Safety"
   - "Aggressive Driving"
   - "Selective Attention"
-  - "Stroop Test"
   - "Driving Simulation"
   - "Human Factors"
 journal: "International Conference on Civil Engineering, Architecture and Urban Development Management"

@@ -4,11 +4,13 @@ date : "2020-10-15"
 draft : false
 type : "post"
 tags:
-  - "Reinforcement Learning"
-  - "Adaptive Traffic Control"
+  - "Traffic Control"
   - "Intelligent Transportation Systems"
-  - "SUMO Simulation"
-  - "Network Optimization"
+  - "Adaptive Traffic Signal Control"
+  - "Reinforcement Learning"
+  - "Traffic Modeling"
+  - "Intelligent Transportation"
+  - "Traffic Flow Modeling"
 journal: "8th National Conference on Civil Engineering, Architecture and Sustainable Urban Development of Iran"
 ---
 

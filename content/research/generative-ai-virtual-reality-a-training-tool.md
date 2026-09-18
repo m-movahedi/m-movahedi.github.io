@@ -8,6 +8,15 @@ tags:
   - "Virtual reality"
   - "Generative-AI"
   - "Artificial Intelligence"
+  - "Large Language Models"
+  - "Vision‑Language Model"
+  - "Workforce Training"
+  - "Building Information Modeling"
+  - "Extended Reality"
+  - "Infrastructure Asset Management"
+  - "Building Inspection"
+  - "Human-AI Interaction"
+
 journal: "23rd CIB World Building Congress"
 ---
 

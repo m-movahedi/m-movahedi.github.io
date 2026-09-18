@@ -4,7 +4,11 @@ date : "2018-11-15"
 draft : false
 type : "post"
 tags:
+  - "Sustainability"
   - "Sustainable Development"
+  - "Demolition"
+  - "Debris"
+  - "Construction Waste"
   - "Construction and Demolition Waste"
   - "Pavement Engineering"
   - "Recycling"

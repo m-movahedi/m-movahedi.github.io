@@ -7,9 +7,10 @@ description: "An explanation of an empirically grounded LLM-persona framework fo
 tags:
   - "Human Behavior Modeling"
   - "Disaster Management"
-  -  "Resilience"
+  - "Resilience"
   - "Community Behavior"
   - "Disaster Debris Management"
+  - "Debris"
   - "Large Language Models"
   - "Persona Agents"
   - "Policy Evaluation"

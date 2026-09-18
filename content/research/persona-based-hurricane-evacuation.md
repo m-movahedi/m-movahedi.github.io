@@ -4,13 +4,17 @@ date : "2026-05-15"
 draft : false
 type : "post"
 tags:
-  - "Artificial Intelligence"
-  - "Resilience"
+  - "Human Behavior Modeling"
+  - "Infrastructure Management"
+  - "Infrastructure Planning"
+  - "Transportation Planning"
   - "Disaster Management"
+  - "Resilience"
+  - "Hurricane Evacuation"
   - "Agent-Based Modeling"
   - "Large Language Models"
-  - "Hurricane Evacuation"
-  - "Transportation Planning"
+  - "Role-playing Agents"
+  - "Artificial Intelligence"
 ---
 
 <div style="background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">

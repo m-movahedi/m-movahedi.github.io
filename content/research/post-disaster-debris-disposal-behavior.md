@@ -6,14 +6,16 @@ type: "post"
 description: "An exploration of staged debris-disposal behavior after Hurricane Ian and a county-level screening framework for illegal dumping tendency."
 tags:
   - "Human Behavior Modeling"
+  - "Infrastructure Management"
+  - "Infrastructure Planning"
   - "Disaster Management"
   - "Community Behavior"
   - "Knowledge Attitudes Practices"
   - "Resilience"
   - "Disaster Debris Management"
-  - "Community Behavior"
   - "Post-disaster Recovery"
   - "Human-Centered Infrastructure"
+  - "Debris"
 
 journal: "Natural Hazards Review"
 ---

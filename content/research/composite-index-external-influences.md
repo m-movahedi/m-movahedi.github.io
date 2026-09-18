@@ -6,12 +6,10 @@ type: "post"
 description: "A hierarchy-aligned composite index for monitoring external pressures on infrastructure and diagnosing planning needs."
 tags:
   - "Infrastructure Planning"
-  - "Composite Index"
+  - "Infrastructure Management"
   - "Transportation Planning"
-  - "Causal Inference"
-  - "Dynamic Factor Analysis"
+  - "Composite Index"
   - "Decision Support"
-  - "Deep Uncertainty"
 journal: "Journal of Management in Engineering"
 ---
 

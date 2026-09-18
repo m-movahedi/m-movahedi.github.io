@@ -4,8 +4,13 @@ date : "2026-02-20"
 draft : false
 type : "post"
 tags:
-  - "Disaster resilience"
-  - "post-disaster-recovery"
+  - "Resilience"
+  - "Post-disaster Recovery"
+  - "Disaster Management"
+  - "Risk Modeling"
+  - "NHERI GSC"
+  - "Simulation"
+  - "Computational Methods"
 slug: "nheri-rsr-spring-2026"
 aliases: ["/webinars/NHERI_RSR_Spring2026/", "/webinars/nheri_rsr_spring2026/"]
 description: "NHERI GSC webinar with SoungEil Houng on scalable scenario-based earthquake risk modeling via linearized ground-motion coupling and probabilistic PCA."

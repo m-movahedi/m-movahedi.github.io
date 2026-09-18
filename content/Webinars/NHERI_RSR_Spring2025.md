@@ -4,8 +4,12 @@ date : "2025-01-17"
 draft : false
 type : "post"
 tags:
-  - "Disaster resilience"
-  - "post-disaster-recovery"
+  - "Resilience"
+  - "Post-disaster Recovery"
+  - "Disaster Management"
+  - "NHERI GSC"
+  - "NHERI RAPID"
+  - "Reconnaissance"
 slug: "nheri-rsr-spring-2025"
 aliases: ["/webinars/NHERI_RSR_Spring2025/", "/webinars/nheri_rsr_spring2025/"]
 description: "NHERI Graduate Student Council webinar featuring Dr. Brad Wham on Marshal Fire field reconnaissance and buried lifeline infrastructure resilience."

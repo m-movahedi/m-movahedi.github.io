@@ -4,14 +4,14 @@ date : "2024-06-15"
 draft : false
 type : "post"
 tags:
+  - "Infrastructure Management"
+  - "Infrastructure Planning"
+  - "Transportation Planning"
   - "Electric Vehicles"
   - "Resilience"
   - "Disaster Management"
-  - "Infrastructure Management"
-  - "Infrastructure Planning"
-  - "Spatial Analytics"
+  - "Electric Grid"
   - "Post-disaster Recovery"
-  - "Transportation Planning"
 journal: "International Conference on Transportation and Development 2024"
 ---
 

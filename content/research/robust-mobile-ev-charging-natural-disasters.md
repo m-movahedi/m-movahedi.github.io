@@ -4,13 +4,16 @@ date : "2026-06-15"
 draft : false
 type : "post"
 tags:
-  - "Resilience"
-  - "Transportation planning"
-  - "Electric Vehicles"
-  - "Disaster Management"
-  - "Multi-Criteria Decision Analysis"
   - "Infrastructure Management"
   - "Infrastructure Planning"
+  - "Transportation Planning"
+  - "Electric Vehicles"
+  - "Resilience"
+  - "Disaster Management"
+  - "Electric Grid"
+  - "Post-disaster Recovery"
+  - "Multi-Criteria Decision Analysis"
+
 journal: "Journal of Transport Geography"
 ---
 

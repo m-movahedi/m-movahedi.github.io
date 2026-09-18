@@ -1,16 +1,19 @@
 ---
-title : "Advanced Estimation Models for Demolition Waste"
+title : "Advanced-CBR Estimation Tool for Demolition Waste"
 date : "2024-03-20"
 draft : false
 type : "post"
 tags:
-  - "Construction Waste"
-  - "Machine Learning"
-  - "Sustainability"
-  - "Artificial Intelligence"
-  - "Circular Economy"
   - "Construction Management"
   - "Asset Management"
+  - "Circular Economy"
+  - "Sustainability"
+  - "ACBR"
+  - "Demolition"
+  - "Debris"
+  - "Construction Waste"
+  - "Construction and Demolition Waste"
+
 journal: "ASCE Construction Research Congress 2024"
 ---
 
