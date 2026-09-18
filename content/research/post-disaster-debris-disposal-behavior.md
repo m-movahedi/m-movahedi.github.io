@@ -39,7 +39,7 @@ journal: "Natural Hazards Review"
 
 
 <div style="background-color: #9ad39f; border-left: 6px solid #07ff13; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-  <h2 style="margin-top: 0; color: #00440b; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">✅</span> In press</h2>
+  <h2 style="margin-top: 0; color: #00440b; display: flex; align-items: center;"><span style="font-size: 1.5em; margin-right: 10px;">📰</span> In press</h2>
   <p style="margin-bottom: 0; color: #001a0a;">
   Please note that the paper has been <span style="color:red"><b>accepted</b></span> and is currently <span style="color:red"><b>in press</b></span>.
 </p>
