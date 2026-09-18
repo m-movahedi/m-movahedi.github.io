@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computational Modeling on Mohammad Movahedi</title>
-    <link>http://localhost:8502/tags/computational-modeling/</link>
+    <link>http://localhost:1313/tags/computational-modeling/</link>
     <description>Recent content in Computational Modeling on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8502/tags/computational-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/computational-modeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MC 05: Sampling Correlated Variates, Copulas, and Cholesky Factorization</title>
-      <link>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-05/</link>
+      <link>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-05/</link>
       <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-05/</guid>
+      <guid>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-05/</guid>
       <description>&lt;div class=&#34;mc-hero&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;mc-series-badge&#34;&gt;Monte Carlo Simulation • Layer 1: Foundations&lt;/span&gt;&#xD;&#xA;  &lt;h1 class=&#34;mc-gradient-title&#34;&gt;Sampling Correlated Variates, Copulas, and Cholesky Factorization&lt;/h1&gt;&#xD;&#xA;  &lt;p class=&#34;mc-lead-hook&#34;&gt;&#xD;&#xA;    Nature rarely presents uncertainty in independent, isolated silos. In extreme engineering events, hazards strike in concert: hurricane storm surge peaks in tandem with hurricane wind gusts; earthquake ground shaking duration compounds peak ground acceleration; and concrete compressive strength degrades hand-in-hand with its elastic modulus. Assuming independence in risk assessment severely underestimates joint catastrophe—often by two to three orders of magnitude.&#xD;&#xA;  &lt;/p&gt;</description>
     </item>
     <item>
       <title>MC 04: Acceptance-Rejection Sampling: Geometry, Bounding Envelopes, and Efficiency</title>
-      <link>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-04/</link>
+      <link>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-04/</link>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-04/</guid>
+      <guid>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-04/</guid>
       <description>&lt;div class=&#34;mc-hero&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;mc-series-badge&#34;&gt;Monte Carlo Simulation • Layer 1: Foundations&lt;/span&gt;&#xD;&#xA;  &lt;h1 class=&#34;mc-gradient-title&#34;&gt;Acceptance-Rejection Sampling: Geometry, Bounding Envelopes, and Efficiency&lt;/h1&gt;&#xD;&#xA;  &lt;p class=&#34;mc-lead-hook&#34;&gt;&#xD;&#xA;    In 1951, while computing neutron diffusion trajectories at Los Alamos, John von Neumann confronted a fundamental impasse: physical probability distributions frequently possess cumulative distribution functions that cannot be integrated in closed form or inverted analytically. His solution was brilliant in its geometric simplicity: &lt;em&gt;If you cannot directly sample along the curve of a target distribution, enclose it within an easily sampled bounding envelope, throw random darts uniformly beneath the envelope, and accept only those darts that land underneath the target density.&lt;/em&gt;&#xD;&#xA;  &lt;/p&gt;</description>
     </item>
     <item>
       <title>MC 03: The Inverse Transform Method: Exact Variates from Non-Uniform Distributions</title>
-      <link>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-03/</link>
+      <link>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-03/</link>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-03/</guid>
+      <guid>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-03/</guid>
       <description>&lt;div class=&#34;mc-hero&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;mc-series-badge&#34;&gt;Monte Carlo Simulation • Layer 1: Foundations&lt;/span&gt;&#xD;&#xA;  &lt;h1 class=&#34;mc-gradient-title&#34;&gt;The Inverse Transform Method: Exact Variates from Non-Uniform Distributions&lt;/h1&gt;&#xD;&#xA;  &lt;p class=&#34;mc-lead-hook&#34;&gt;&#xD;&#xA;    Every pseudo-random number generator on modern hardware produces a flat, uniform float $U \sim \mathcal{U}(0, 1)$. Yet the physical universe is profoundly non-uniform: concrete bridge decks fatigue according to Weibull aging curves, flood peak river stages follow heavy-tailed Pareto distributions, and earthquake inter-arrival times obey Poisson-exponential processes. How does an engineer transform a sequence of uniform points into exact non-uniform physical variates without introducing numerical bias?&#xD;&#xA;  &lt;/p&gt;</description>
     </item>
     <item>
       <title>MC 02: Pseudo-Random Number Generators (PRNGs): Entropy, Periodicity, and Seed Hygiene</title>
-      <link>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-02/</link>
+      <link>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-02/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-02/</guid>
+      <guid>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-02/</guid>
       <description>&lt;div class=&#34;mc-hero&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;mc-series-badge&#34;&gt;Monte Carlo Simulation • Layer 1: Foundations&lt;/span&gt;&#xD;&#xA;  &lt;h1 class=&#34;mc-gradient-title&#34;&gt;Pseudo-Random Number Generators: Entropy, Periodicity, and Seed Hygiene&lt;/h1&gt;&#xD;&#xA;  &lt;p class=&#34;mc-lead-hook&#34;&gt;&#xD;&#xA;    In 1951, John von Neumann famously remarked: &lt;em&gt;&#34;Anyone who considers arithmetical methods of producing random digits is, of course, in a state of sin.&#34;&lt;/em&gt; Computers are strictly deterministic finite-state machines; they cannot roll dice. Yet modern scientific computing hinges entirely on deterministic sequences that mimic the statistical properties of genuine entropy. When an engineer selects an outdated or flawed generator, the simulation silently collapses into low-dimensional hyperplanes—producing false correlations and corrupted structural risk assessments.&#xD;&#xA;  &lt;/p&gt;</description>
     </item>
     <item>
       <title>MC 01: The Monte Carlo Paradigm: From Ulam&#39;s Solitaire to Modern Engineering</title>
-      <link>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-01/</link>
+      <link>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-01/</link>
       <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/monte-carlo-simulation/mc-01/</guid>
+      <guid>http://localhost:1313/scratchpad/monte-carlo-simulation/mc-01/</guid>
       <description>&lt;div class=&#34;mc-hero&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;mc-series-badge&#34;&gt;Monte Carlo Simulation • Layer 1: Foundations&lt;/span&gt;&#xD;&#xA;  &lt;h1 class=&#34;mc-gradient-title&#34;&gt;The Monte Carlo Paradigm: From Ulam&#39;s Solitaire to Modern Engineering&lt;/h1&gt;&#xD;&#xA;  &lt;p class=&#34;mc-lead-hook&#34;&gt;&#xD;&#xA;    In 1946, while convalescing from an illness and playing Canfield solitaire, mathematician Stanislaw Ulam wondered: what is the exact probability of winning a randomly dealt game? After filling sheets of paper with combinatorial calculations that grew hopelessly convoluted, he realized something radical: instead of computing all possible card permutations analytically, why not simply deal 100 random games, count the wins, and obtain a practical estimate?&#xD;&#xA;  &lt;/p&gt;</description>
     </item>
     <item>
       <title>Monte Carlo Simulation</title>
-      <link>http://localhost:8502/scratchpad/monte-carlo-simulation/</link>
+      <link>http://localhost:1313/scratchpad/monte-carlo-simulation/</link>
       <pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/monte-carlo-simulation/</guid>
+      <guid>http://localhost:1313/scratchpad/monte-carlo-simulation/</guid>
       <description>&lt;p&gt;Welcome to the &lt;strong&gt;Monte Carlo Simulation &amp;amp; Computational Uncertainty&lt;/strong&gt; scratchpad. This curriculum is designed as an interactive, scrollytelling learning journey exploring how pseudo-randomness can be transformed into a computational instrument for scientific estimation, high-dimensional integration, Bayesian inference, and decision-making under deep uncertainty.&lt;/p&gt;&#xA;&lt;p&gt;Each page in this series pairs rigorous mathematical foundations (convergence proofs, variance formulations, Central Limit bounds) with &lt;strong&gt;interactive scrollytelling visualizers&lt;/strong&gt; and &lt;strong&gt;vectorized Python implementations&lt;/strong&gt; (NumPy/SciPy). The running case studies are grounded in civil infrastructure resilience, transportation network reliability, disaster evacuation dynamics, electric vehicle charging demands, and extreme weather risk analysis.&lt;/p&gt;</description>
     </item>
   </channel>

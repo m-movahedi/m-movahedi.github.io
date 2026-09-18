@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning Analytics on Mohammad Movahedi</title>
-    <link>http://localhost:8502/tags/learning-analytics/</link>
+    <link>http://localhost:1313/tags/learning-analytics/</link>
     <description>Recent content in Learning Analytics on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8502/tags/learning-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/learning-analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>InspectXR: Turning Building Models into Traceable Immersive Training</title>
-      <link>http://localhost:8502/research/inspect-xr/</link>
+      <link>http://localhost:1313/research/inspect-xr/</link>
       <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/research/inspect-xr/</guid>
+      <guid>http://localhost:1313/research/inspect-xr/</guid>
       <description>&lt;p&gt;&lt;em&gt;A research platform that connects BIM, browser-based XR, grounded AI assistance, condition-aware visualization, and process-level learning analytics for building inspection training.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-if-a-building-model-could-become-a-place-to-practicenot-just-a-file-to-view&#34;&gt;What if a building model could become a place to practice—not just a file to view?&lt;/h2&gt;&#xA;&lt;p&gt;Building inspectors learn to connect several kinds of evidence at once. They must recognize a physical component, understand how it should perform, identify signs of deterioration, consult technical guidance, and decide what action to take. Conventional training often separates those activities across manuals, slides, videos, and occasional field visits.&lt;/p&gt;</description>
     </item>
   </channel>

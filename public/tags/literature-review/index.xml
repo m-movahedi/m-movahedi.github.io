@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Literature Review on Mohammad Movahedi</title>
-    <link>http://localhost:8502/tags/literature-review/</link>
+    <link>http://localhost:1313/tags/literature-review/</link>
     <description>Recent content in Literature Review on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8502/tags/literature-review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/literature-review/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Idea to First Draft: An End-to-End Walkthrough</title>
-      <link>http://localhost:8502/scratchpad/research-agents/07-idea-to-first-draft/</link>
+      <link>http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/</link>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/research-agents/07-idea-to-first-draft/</guid>
+      <guid>http://localhost:1313/scratchpad/research-agents/07-idea-to-first-draft/</guid>
       <description>&lt;p&gt;You have a research question. You have a research team (5 specialized agents). Now what?&lt;/p&gt;&#xA;&lt;p&gt;This post walks through a complete workflow from idea to polished first draft. You will see what agents do, where humans intervene, what surprises appear, and how the team navigates them.&lt;/p&gt;&#xA;&lt;p&gt;We will use a real research question: &lt;strong&gt;How do household evacuation decisions integrate social networks and behavioral heterogeneity?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;phase-1-setup-day-0&#34;&gt;Phase 1: Setup (Day 0)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-define-the-scope&#34;&gt;Step 1: Define the scope&lt;/h3&gt;&#xA;&lt;p&gt;You sit down with a clear research question:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Research as an Agent Problem</title>
-      <link>http://localhost:8502/scratchpad/research-agents/01-research-as-agent-problem/</link>
+      <link>http://localhost:1313/scratchpad/research-agents/01-research-as-agent-problem/</link>
       <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/research-agents/01-research-as-agent-problem/</guid>
+      <guid>http://localhost:1313/scratchpad/research-agents/01-research-as-agent-problem/</guid>
       <description>&lt;p&gt;A researcher&amp;rsquo;s workflow is full of repetitive work: scanning papers, summarizing findings, tracking who did what and when, spotting gaps, connecting ideas across domains, and revising your own methods based on what you find. Most of this work is done alone or in small teams. Each researcher becomes a bottleneck.&lt;/p&gt;&#xA;&lt;p&gt;What if instead of one person reading papers, summarizing, and synthesizing, you had specialized agents exploring in parallel?&lt;/p&gt;&#xA;&lt;p&gt;This is not about replacing researchers. It is about freeing researchers to focus on the hard thinking while agents handle the systematic, observable, and repeatable work.&lt;/p&gt;</description>
     </item>
   </channel>

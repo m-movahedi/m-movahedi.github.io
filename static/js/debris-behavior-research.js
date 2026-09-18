@@ -94,5 +94,46 @@
   };
   root.querySelectorAll("[data-dbr-policy]").forEach(button => button.addEventListener("click", () => setPolicy(button.dataset.dbrPolicy)));
 
-  setStage(0); setOutcome("legal"); setEvidence("counts"); setTarget("survey"); setPolicy("awareness");
+  const gamePeople = root.querySelector("[data-dbr-game-people]");
+  const homePoints = [[104,205],[122,215],[142,205],[160,215],[181,226],[201,236],[111,225],[131,235],[151,225],[171,235],[191,246],[211,256],[118,245],[138,255],[158,245],[178,255],[198,266],[218,276]];
+  const destinations = {
+    legal: [[515,122],[538,134],[562,146],[588,158],[615,144],[642,130],[664,116],[538,110],[565,123],[594,136],[622,122],[648,108]],
+    curb: [[250,300],[274,313],[300,326],[326,312],[352,298],[378,284],[292,296],[320,282],[348,269],[376,257]],
+    offsite: [[520,314],[546,327],[574,341],[603,327],[631,313],[660,298],[557,311],[585,297],[614,283]]
+  };
+  const seeds = [.03,.09,.14,.19,.25,.31,.36,.42,.47,.53,.58,.64,.69,.75,.81,.86,.92,.97];
+  gamePeople.innerHTML = homePoints.map((point, index) => `<g class="dbr-game-person" data-dbr-person="${index}" transform="translate(${point[0]} ${point[1]})"><ellipse class="shadow" cy="14" rx="7" ry="3"></ellipse><circle class="head" cy="-8" r="4"></circle><path class="body" d="M0,-3 V8 M-6,2 L0,0 L6,2 M-4,15 L0,8 L4,15"></path></g>`).join("");
+
+  const updateGame = () => {
+    const knowledge = Number(root.querySelector('[data-dbr-game-control="knowledge"]').value);
+    const access = Number(root.querySelector('[data-dbr-game-control="access"]').value);
+    const delay = Number(root.querySelector('[data-dbr-game-control="delay"]').value);
+    const k = knowledge / 100, a = access / 100, d = delay / 21;
+    const raw = {
+      legal: .28 + .38 * k + .32 * a - .12 * d,
+      curb: .22 + .12 * k + .15 * (1 - a) + .16 * d,
+      offsite: .12 + .30 * (1 - a) + .22 * d - .08 * k
+    };
+    const total = raw.legal + raw.curb + raw.offsite;
+    const cutLegal = raw.legal / total;
+    const cutCurb = cutLegal + raw.curb / total;
+    const counts = { legal: 0, curb: 0, offsite: 0 };
+
+    seeds.forEach((seed, index) => {
+      const outcome = seed < cutLegal ? "legal" : seed < cutCurb ? "curb" : "offsite";
+      const point = destinations[outcome][counts[outcome] % destinations[outcome].length];
+      counts[outcome] += 1;
+      const person = root.querySelector(`[data-dbr-person="${index}"]`);
+      person.dataset.outcome = outcome;
+      person.setAttribute("transform", `translate(${point[0]} ${point[1]})`);
+    });
+
+    Object.entries({ knowledge, access, delay }).forEach(([name, value]) => root.querySelector(`[data-dbr-game-value="${name}"]`).textContent = value);
+    Object.entries(counts).forEach(([name, value]) => root.querySelector(`[data-dbr-game-count="${name}"]`).textContent = `${value} resident${value === 1 ? "" : "s"}`);
+    const pressure = access < 35 || delay > 14 ? "Access friction and delay push more residents toward improvised placement." : knowledge > 70 && access > 60 ? "Knowledge and reachable services reinforce authorized disposal." : "Residents split across available options as knowledge and access compete with delay.";
+    root.querySelector("[data-dbr-game-status]").textContent = pressure;
+  };
+  root.querySelectorAll("[data-dbr-game-control]").forEach(control => control.addEventListener("input", updateGame));
+
+  setStage(0); setOutcome("legal"); setEvidence("counts"); setTarget("survey"); setPolicy("awareness"); updateGame();
 })();

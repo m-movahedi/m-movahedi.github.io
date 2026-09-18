@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post-Disaster-Recovery on Mohammad Movahedi</title>
-    <link>http://localhost:8502/tags/post-disaster-recovery/</link>
+    <link>http://localhost:1313/tags/post-disaster-recovery/</link>
     <description>Recent content in Post-Disaster-Recovery on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8502/tags/post-disaster-recovery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/post-disaster-recovery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Simulating Community Behaviors with LLM Personas</title>
-      <link>http://localhost:8502/research/llm-persona-debris-management/</link>
+      <link>http://localhost:1313/research/llm-persona-debris-management/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/research/llm-persona-debris-management/</guid>
-      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:8502/css/llm-persona-policy.css&#34;&gt;&#xD;&#xA;&lt;div id=&#34;llmp-post&#34;&gt;&#xD;&#xA;&lt;section class=&#34;llmp-hero&#34; aria-labelledby=&#34;llmp-hero-title&#34;&gt;&#xD;&#xA;  &lt;p class=&#34;llmp-eyebrow&#34;&gt;Research explainer&lt;/p&gt;&#xD;&#xA;  &lt;h2 id=&#34;llmp-hero-title&#34;&gt;What if a policy could meet the community before it reaches the street?&lt;/h2&gt;&#xD;&#xA;  &lt;p class=&#34;llmp-lede&#34;&gt;Debris planning is usually framed as a logistics problem: estimate volume, select sites, and optimize routes. Our work adds the missing human layer by grounding LLM persona agents in observed community behavior, then using them to explore how different residents may respond to an intervention.&lt;/p&gt;&#xD;&#xA;  &lt;div class=&#34;llmp-hero-stats&#34; aria-label=&#34;Proof-of-concept at a glance&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;span&gt;behavioral persona clusters&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;80 / 20&lt;/strong&gt;&lt;span&gt;conditioning and evaluation split&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;~75%&lt;/strong&gt;&lt;span&gt;persona-agent decision alignment&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;Ian&lt;/strong&gt;&lt;span&gt;Hurricane case context&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&lt;p&gt;After a disaster, residents make debris-disposal decisions under pressure. A legal disposal site may be too far away. Municipal pickup may be delayed. Families may weigh safety, time, cost, convenience, trust, and social expectations differently. Those choices can create illegal dumping that slows recovery, raises municipal costs, and adds environmental and health risks.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/research/llm-persona-debris-management/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/llm-persona-policy.css&#34;&gt;&#xD;&#xA;&lt;div id=&#34;llmp-post&#34;&gt;&#xD;&#xA;&lt;section class=&#34;llmp-hero&#34; aria-labelledby=&#34;llmp-hero-title&#34;&gt;&#xD;&#xA;  &lt;p class=&#34;llmp-eyebrow&#34;&gt;Research explainer&lt;/p&gt;&#xD;&#xA;  &lt;h2 id=&#34;llmp-hero-title&#34;&gt;What if a policy could meet the community before it reaches the street?&lt;/h2&gt;&#xD;&#xA;  &lt;p class=&#34;llmp-lede&#34;&gt;Debris planning is usually framed as a logistics problem: estimate volume, select sites, and optimize routes. Our work adds the missing human layer by grounding LLM persona agents in observed community behavior, then using them to explore how different residents may respond to an intervention.&lt;/p&gt;&#xD;&#xA;  &lt;div class=&#34;llmp-hero-stats&#34; aria-label=&#34;Proof-of-concept at a glance&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;span&gt;behavioral persona clusters&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;80 / 20&lt;/strong&gt;&lt;span&gt;conditioning and evaluation split&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;~75%&lt;/strong&gt;&lt;span&gt;persona-agent decision alignment&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;Ian&lt;/strong&gt;&lt;span&gt;Hurricane case context&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&lt;p&gt;After a disaster, residents make debris-disposal decisions under pressure. A legal disposal site may be too far away. Municipal pickup may be delayed. Families may weigh safety, time, cost, convenience, trust, and social expectations differently. Those choices can create illegal dumping that slows recovery, raises municipal costs, and adds environmental and health risks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>NHERI GSC RSR: Scalable Scenario-based Earthquake Risk Modeling via Linearized Ground-Motion–Fragility Coupling and Probabilistic PCA</title>
-      <link>http://localhost:8502/webinars/nheri-rsr-spring-2026/</link>
+      <link>http://localhost:1313/webinars/nheri-rsr-spring-2026/</link>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/webinars/nheri-rsr-spring-2026/</guid>
+      <guid>http://localhost:1313/webinars/nheri-rsr-spring-2026/</guid>
       <description>&lt;div class=&#34;layout-container&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;left-section&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg&#34; alt=&#34;NHERI Graduate Student Council logo&#34; class=&#34;side-image&#34; style=&#34;width:70px&#34;&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;right-section&#34;&gt;&#xD;&#xA;    &lt;h2&gt;NHERI Graduate Student Council&lt;/h2&gt;&#xD;&#xA;    &lt;h3&gt;Simulation and Computational Methods RSR Meeting&lt;/h3&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;I hosted SoungEil Houng as part of the ongoing NHERI GSC webinar series on simulation and computational methods in natural hazard research.&lt;/p&gt;&#xA;&lt;p&gt;SoungEil Houng is a Ph.D. candidate in the Department of Civil and Environmental Engineering at UC Berkeley. Prior to beginning his doctoral studies, he gained professional experience in seismic hazard analysis for nuclear power plant sites in South Korea. He holds master’s degrees in both Seismology and Civil and Environmental Engineering, as well as a bachelor’s degree in Earth System Sciences. His research interests include seismic hazard and risk analysis, with a particular focus on developing scalable computational frameworks for large-scale regional risk assessments.&lt;/p&gt;</description>
     </item>
     <item>
       <title>NHERI GSC RSR: Hurricane Otis Post-Disaster Assessment</title>
-      <link>http://localhost:8502/webinars/nheri-rsr-spring-2025-otis/</link>
+      <link>http://localhost:1313/webinars/nheri-rsr-spring-2025-otis/</link>
       <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/webinars/nheri-rsr-spring-2025-otis/</guid>
+      <guid>http://localhost:1313/webinars/nheri-rsr-spring-2025-otis/</guid>
       <description>&lt;div class=&#34;layout-container&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;left-section&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg&#34; alt=&#34;NHERI Graduate Student Council logo&#34; class=&#34;side-image&#34; style=&#34;width:70px&#34;&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;right-section&#34;&gt;&#xD;&#xA;    &lt;h2&gt;NHERI Graduate Student Council&lt;/h2&gt;&#xD;&#xA;    &lt;h3&gt;Reconnaissance RSR Meeting&lt;/h3&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;I hosted Juan Antonio Balderrama Garcia Mendez, Associate Professor of Instruction at The University of Texas at Arlington, as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.&lt;/p&gt;&#xA;&lt;p&gt;In this talk, he discussed how his team assessed the impacts of Hurricane Otis, a Category 5 hurricane that made devastating landfall near the Mexican city of Acapulco in October 2023.&lt;/p&gt;</description>
     </item>
     <item>
       <title>NHERI GSC RSR: Marshal Fire, Colorado: Field Reconnaissance Overvirew</title>
-      <link>http://localhost:8502/webinars/nheri-rsr-spring-2025/</link>
+      <link>http://localhost:1313/webinars/nheri-rsr-spring-2025/</link>
       <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/webinars/nheri-rsr-spring-2025/</guid>
+      <guid>http://localhost:1313/webinars/nheri-rsr-spring-2025/</guid>
       <description>&lt;div class=&#34;layout-container&#34;&gt;&#xD;&#xA;  &lt;div class=&#34;left-section&#34;&gt;&#xD;&#xA;    &lt;img src=&#34;https://pbs.twimg.com/profile_images/1505903444888113154/W1WFyofq.jpg&#34; alt=&#34;NHERI Graduate Student Council logo&#34; class=&#34;side-image&#34; style=&#34;width:70px&#34;&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;  &lt;div class=&#34;right-section&#34;&gt;&#xD;&#xA;    &lt;h2&gt;NHERI Graduate Student Council&lt;/h2&gt;&#xD;&#xA;    &lt;h3&gt;Reconnaissance RSR Meeting&lt;/h3&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;I hosted Dr. Brad Wham as part of the ongoing NHERI GSC webinar series on reconnaissance research and data collection.&lt;/p&gt;&#xA;&lt;p&gt;Dr. Brad Wham is a civil and geotechnical engineering researcher specializing in lifeline infrastructure resilience, pipeline performance, and earthquake engineering. Based at the University of Nevada, Reno, he leads research that informs the design and protection of buried utilities against extreme ground deformation events.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network Robustness of EV Charging Infrastructure During Extreme Weather</title>
-      <link>http://localhost:8502/research/ev-charging-network-hurricane-ian/</link>
+      <link>http://localhost:1313/research/ev-charging-network-hurricane-ian/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/research/ev-charging-network-hurricane-ian/</guid>
+      <guid>http://localhost:1313/research/ev-charging-network-hurricane-ian/</guid>
       <description>&lt;div style=&#34;background-color: #f8f9fa; border-left: 6px solid #2980b9; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xD;&#xA;  &lt;h2 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🌩️&lt;/span&gt; The Vulnerability of Electric Evacuations&lt;/h2&gt;&#xD;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;As Electric Vehicles (EVs) increasingly dominate the transportation landscape, ensuring their reliability during natural disasters is paramount. During events like Hurricane Ian, mass evacuations put immense stress on the EV charging infrastructure. If transmission lines fail and charging stations go dark, it can profoundly hinder evacuation efficiency and public safety, leading to widespread vehicle immobilization.&lt;/p&gt;</description>
     </item>
   </channel>

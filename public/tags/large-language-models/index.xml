@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Large Language Models on Mohammad Movahedi</title>
-    <link>http://localhost:8502/tags/large-language-models/</link>
+    <link>http://localhost:1313/tags/large-language-models/</link>
     <description>Recent content in Large Language Models on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:8502/tags/large-language-models/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/large-language-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agentic AI as a Research Tool</title>
-      <link>http://localhost:8502/scratchpad/research-agents/</link>
+      <link>http://localhost:1313/scratchpad/research-agents/</link>
       <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/research-agents/</guid>
+      <guid>http://localhost:1313/scratchpad/research-agents/</guid>
       <description>&lt;p&gt;This scratchpad explores how agentic AI can be used as a practical research tool. It focuses on understanding how AI agents can support literature review, data analysis, writing, coding, workflow automation, and knowledge organization.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local LLMs</title>
-      <link>http://localhost:8502/scratchpad/local-llms/</link>
+      <link>http://localhost:1313/scratchpad/local-llms/</link>
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/local-llms/</guid>
+      <guid>http://localhost:1313/scratchpad/local-llms/</guid>
       <description>&lt;p&gt;This scratchpad collects my notes on running and working with local large language models. It is meant to better understand model deployment, inference tools, hardware requirements, quantization, fine-tuning, evaluation, and practical workflows for using LLMs outside cloud-based platforms.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Persona-Based Hurricane Evacuation Travel Demand Analysis</title>
-      <link>http://localhost:8502/research/persona-based-hurricane-evacuation/</link>
+      <link>http://localhost:1313/research/persona-based-hurricane-evacuation/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/research/persona-based-hurricane-evacuation/</guid>
+      <guid>http://localhost:1313/research/persona-based-hurricane-evacuation/</guid>
       <description>&lt;div style=&#34;background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xD;&#xA;  &lt;h2 style=&#34;margin-top: 0; color: #2980b9; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🌀&lt;/span&gt; The Challenge of Rural Evacuation Planning&lt;/h2&gt;&#xD;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #154360;&#34;&gt;Florida continues to be the most hurricane-prone state in the United States. While evacuation orders play a significant role in reducing casualties, their effectiveness relies heavily on household decision-making. In rural communities, such as the Florida Panhandle, this is complicated by limited infrastructure, longer travel distances, and resource constraints. Current evacuation demand models often rely on oversimplified assumptions of rational decision-making, failing to capture the stress, urgency, and irrationality inherent in disaster scenarios.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to LLM</title>
-      <link>http://localhost:8502/scratchpad/llm/</link>
+      <link>http://localhost:1313/scratchpad/llm/</link>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/scratchpad/llm/</guid>
+      <guid>http://localhost:1313/scratchpad/llm/</guid>
       <description>&lt;p&gt;This scratchpad collects the &lt;strong&gt;LLM introduction series&lt;/strong&gt;, an eight-part walkthrough from transformer basics to responsible deployment. Many examples use evacuation and transportation planning as a running case, but the concepts apply broadly.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simulating Community Behaviors with LLM Personas</title>
-      <link>http://localhost:8502/research/llm-persona-debris-management/</link>
+      <link>http://localhost:1313/research/llm-persona-debris-management/</link>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/research/llm-persona-debris-management/</guid>
-      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:8502/css/llm-persona-policy.css&#34;&gt;&#xD;&#xA;&lt;div id=&#34;llmp-post&#34;&gt;&#xD;&#xA;&lt;section class=&#34;llmp-hero&#34; aria-labelledby=&#34;llmp-hero-title&#34;&gt;&#xD;&#xA;  &lt;p class=&#34;llmp-eyebrow&#34;&gt;Research explainer&lt;/p&gt;&#xD;&#xA;  &lt;h2 id=&#34;llmp-hero-title&#34;&gt;What if a policy could meet the community before it reaches the street?&lt;/h2&gt;&#xD;&#xA;  &lt;p class=&#34;llmp-lede&#34;&gt;Debris planning is usually framed as a logistics problem: estimate volume, select sites, and optimize routes. Our work adds the missing human layer by grounding LLM persona agents in observed community behavior, then using them to explore how different residents may respond to an intervention.&lt;/p&gt;&#xD;&#xA;  &lt;div class=&#34;llmp-hero-stats&#34; aria-label=&#34;Proof-of-concept at a glance&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;span&gt;behavioral persona clusters&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;80 / 20&lt;/strong&gt;&lt;span&gt;conditioning and evaluation split&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;~75%&lt;/strong&gt;&lt;span&gt;persona-agent decision alignment&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;Ian&lt;/strong&gt;&lt;span&gt;Hurricane case context&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&lt;p&gt;After a disaster, residents make debris-disposal decisions under pressure. A legal disposal site may be too far away. Municipal pickup may be delayed. Families may weigh safety, time, cost, convenience, trust, and social expectations differently. Those choices can create illegal dumping that slows recovery, raises municipal costs, and adds environmental and health risks.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/research/llm-persona-debris-management/</guid>
+      <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/llm-persona-policy.css&#34;&gt;&#xD;&#xA;&lt;div id=&#34;llmp-post&#34;&gt;&#xD;&#xA;&lt;section class=&#34;llmp-hero&#34; aria-labelledby=&#34;llmp-hero-title&#34;&gt;&#xD;&#xA;  &lt;p class=&#34;llmp-eyebrow&#34;&gt;Research explainer&lt;/p&gt;&#xD;&#xA;  &lt;h2 id=&#34;llmp-hero-title&#34;&gt;What if a policy could meet the community before it reaches the street?&lt;/h2&gt;&#xD;&#xA;  &lt;p class=&#34;llmp-lede&#34;&gt;Debris planning is usually framed as a logistics problem: estimate volume, select sites, and optimize routes. Our work adds the missing human layer by grounding LLM persona agents in observed community behavior, then using them to explore how different residents may respond to an intervention.&lt;/p&gt;&#xD;&#xA;  &lt;div class=&#34;llmp-hero-stats&#34; aria-label=&#34;Proof-of-concept at a glance&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;span&gt;behavioral persona clusters&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;80 / 20&lt;/strong&gt;&lt;span&gt;conditioning and evaluation split&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;~75%&lt;/strong&gt;&lt;span&gt;persona-agent decision alignment&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;    &lt;div class=&#34;llmp-stat&#34;&gt;&lt;strong&gt;Ian&lt;/strong&gt;&lt;span&gt;Hurricane case context&lt;/span&gt;&lt;/div&gt;&#xD;&#xA;  &lt;/div&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&lt;p&gt;After a disaster, residents make debris-disposal decisions under pressure. A legal disposal site may be too far away. Municipal pickup may be delayed. Families may weigh safety, time, cost, convenience, trust, and social expectations differently. Those choices can create illegal dumping that slows recovery, raises municipal costs, and adds environmental and health risks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Crossroads of LLMs and Traffic Control</title>
-      <link>http://localhost:8502/research/llm-adaptive-traffic-control/</link>
+      <link>http://localhost:1313/research/llm-adaptive-traffic-control/</link>
       <pubDate>Mon, 16 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:8502/research/llm-adaptive-traffic-control/</guid>
+      <guid>http://localhost:1313/research/llm-adaptive-traffic-control/</guid>
       <description>&lt;div style=&#34;background-color: #e8f4f8; border-left: 6px solid #3498db; padding: 15px 20px; border-radius: 4px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);&#34;&gt;&#xD;&#xA;  &lt;h2 style=&#34;margin-top: 0; color: #2c3e50; display: flex; align-items: center;&#34;&gt;&lt;span style=&#34;font-size: 1.5em; margin-right: 10px;&#34;&gt;🚦&lt;/span&gt; The Urban Gridlock Challenge&lt;/h2&gt;&#xD;&#xA;  &lt;p style=&#34;margin-bottom: 0; color: #34495e;&#34;&gt;Urban traffic congestion has severe economic and environmental impacts. Traditional Adaptive Traffic Control Systems (ATCS)—which rely on fixed-time, gap-based, or delay-based logic—often struggle to adapt to dynamic, complex, and unpredictable real-world traffic flows. Designing a truly responsive traffic controller requires a system capable of human-like &lt;strong&gt;reasoning and planning&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
