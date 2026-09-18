@@ -39,7 +39,7 @@ My research focuses on sustainable infrastructure systems, intelligent transport
 
 ## References
 <ol class="cv-publication-list">
-    <li><b><b>M. Movahedi,</b>, A. Baldwin, M. Grussing, and J. Choi, "ReBuild: A Reinforcement-Learning Ensemble for Probabilistic Building-Component Deterioration Forecasting under Sparse Inspection Data" 2026.</li>
+    <li><b>M. Movahedi,</b>, A. Baldwin, M. Grussing, and J. Choi, "ReBuild: A Reinforcement-Learning Ensemble for Probabilistic Building-Component Deterioration Forecasting under Sparse Inspection Data" 2026.</li>
     <li><b>M. Movahedi,</b> and J. Choi, "Advanced Case-Based Reasoning for Sustainable Demolition Management and Resource Recovery," 2026.</li>
     <li><b>M. Movahedi,</b>, R. Khayamim, J. Choi, and M. A. Dulebenets, "Enhancing Transportation System Robustness: The Impact of Weather-Induced Traffic Incidents on Hurricane Evacuation," 2026.</li>
     <li>A. Baldwin, <b>M. Movahedi,</b>, and J. Choi, "LLM-Enabled Community Role-Play for Policy Testing in Post-Hurricane Recovery,"submitted to <em>Journal of Management in Engineering</em>, 2026.</li></li>
