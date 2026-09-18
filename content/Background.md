@@ -61,7 +61,7 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
       <a class="cv-tag" href="/tags/post-disaster-recovery/">Post-disaster recovery</a>
       <a class="cv-tag" href="/tags/virtual-reality/">Virtual reality</a>
       <a class="cv-tag" href="/tags/generative-ai/">Generative-AI</a>
-      <a class="cv-tag" href="/tags/">...</a>
+      <a class="cv-tag" href="/tags/"> ... </a>
     </div>
     <h2 class="cv-section-heading">Professional Experience</h2>
     <details class="cv-slider">
