@@ -12,7 +12,7 @@ tags:
   - "Knowledge Attitudes Practices"
   - "Natural Hazards"
   - "Decision Support"
-journal: "Natural Hazards Review (research manuscript)"
+journal: "Natural Hazards Review"
 ---
 
 <link rel="stylesheet" href="/css/debris-behavior-research.css">
