@@ -4,7 +4,7 @@ hideTitle: true
 description: "About Mohammad Movahedi: PhD candidate at Florida State University and Graduate Research Assistant at the RIDER Center investigating sustainable infrastructure systems."
 ---
 
-<center> <h1> Exploring the Journey of a PhD Candidate at FSU RIDER Center: Insights into Sustainable Infrastructure Management</h1> </center>
+<center> <h1>Infrastructure and Transportation Management and Planning</h1> </center>
 
 
 
