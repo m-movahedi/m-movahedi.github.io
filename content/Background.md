@@ -51,15 +51,17 @@ description: "Mohammad Movahedi's academic CV: research, publications, sponsored
     <div class="cv-tag-list">
       <a class="cv-tag" href="/tags/infrastructure-management/">Infrastructure management</a>
       <a class="cv-tag" href="/tags/infrastructure-planning/">Infrastructure planning</a>
-      <a class="cv-tag" href="/tags/intelligent-transportation/">Intelligent transportation</a>
       <a class="cv-tag" href="/tags/transportation-planning/">Transportation planning</a>
+      <a class="cv-tag" href="/tags/intelligent-transportation-systems/">Intelligent transportation systems</a>
+      <a class="cv-tag" href="/tags/construction-management/">Construction Management</a>
       <a class="cv-tag" href="/tags/asset-management/">Asset management</a>
       <a class="cv-tag" href="/tags/traffic-modeling/">Traffic Modeling</a>
       <a class="cv-tag" href="/tags/construction-management/">Construction Management</a>
-      <a class="cv-tag" href="/tags/disaster-resilience/">Disaster resilience</a>
+      <a class="cv-tag" href="/tags/resilience/">Resilience</a>
       <a class="cv-tag" href="/tags/post-disaster-recovery/">Post-disaster recovery</a>
       <a class="cv-tag" href="/tags/virtual-reality/">Virtual reality</a>
       <a class="cv-tag" href="/tags/generative-ai/">Generative-AI</a>
+      <a class="cv-tag" href="/tags/">...</a>
     </div>
     <h2 class="cv-section-heading">Professional Experience</h2>
     <details class="cv-slider">
