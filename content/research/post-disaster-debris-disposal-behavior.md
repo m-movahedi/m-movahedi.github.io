@@ -16,7 +16,7 @@ tags:
   - "Post-disaster Recovery"
   - "Human-Centered Infrastructure"
   - "Debris"
-
+featured_image: "https://www.researchgate.net/profile/Mohammad-Movahedi-3/publication/399934127/figure/fig37/AS:11431282305662157@1784994495092/Statewide-screening-indices-with-the-Hurricane-Ian-gust-swath-red-higher-wind-blue_W640.jpg"
 journal: "Natural Hazards Review"
 ---
 
