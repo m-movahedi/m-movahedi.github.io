@@ -4,7 +4,7 @@ hideTitle: false
 description: "Academic and research website of Mohammad Movahedi, PhD Candidate at FAMU-FSU College of Engineering specializing in transportation planning, AI, infrastructure resilience, and digital twins."
 ---
 
-I am a PhD candidate working on transportation planning, infrastructure systems, traffic engineering, urban mobility, and asset management at the **FAMU-FSU College of Engineering**, affiliated with the **RIDER Center**.
+I am a PhD candidate working on applications of AI in human-AI interaction, human behavior modeling, transportation planning, infrastructure & construction managment, and asset management at the **FAMU-FSU College of Engineering**, affiliated with the **RIDER Center**.
 
 My research focuses on data-driven methods for understanding, managing, and improving transportation and infrastructure systems under uncertainty. Explore my published work in [Research](/research/), my academic CV and projects in [Background](/background/), technical tutorials in [Scratchpad](/scratchpad/), and hosted academic seminars in [Webinars](/webinars/).
 
