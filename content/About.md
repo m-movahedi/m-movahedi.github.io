@@ -39,10 +39,7 @@ My research focuses on sustainable infrastructure systems, intelligent transport
 
 ## References
 <ol>
-    <li><b>M. Movahedi,</b>, A. Baldwin, M. Grussing, and J. Choi, "ReBuild: A Reinforcement-Learning Ensemble for Probabilistic Building-Component Deterioration Forecasting under Sparse Inspection Data" 2026.</li>
-    <li><b>M. Movahedi,</b> and J. Choi, "Advanced Case-Based Reasoning for Sustainable Demolition Management and Resource Recovery," 2026.</li>
-    <li><b>M. Movahedi,</b>, R. Khayamim, J. Choi, and M. A. Dulebenets, "Enhancing Transportation System Robustness: The Impact of Weather-Induced Traffic Incidents on Hurricane Evacuation," 2026.</li>
-    <li>A. Baldwin, <b>M. Movahedi,</b>, and J. Choi, "LLM-Enabled Community Role-Play for Policy Testing in Post-Hurricane Recovery,"submitted to <em>Journal of Management in Engineering</em>, 2026.</li></li>
+    <li>A. Baldwin, <b>M. Movahedi,</b>, and J. Choi, "LLM-Enabled Community Role-Play for Policy Testing in Post-Hurricane Recovery,"submitted to <em>Journal of Management in Engineering</em> (Under Review), 2026.</li></li>
     <li><b>M. Movahedi,</b>, N. Nickdoost, and J. Choi, "Uncovering Community Debris Disposal Behavior During Post-Disaster Recovery: A Case Study of Illegal Dumping After Hurricane Ian," <em>Natural Hazards Review</em> (In Press), 2025.</li>
     <li>N. Nickdoost, <b>M. Movahedi,</b>, and J. Choi, "Quantifying Transportation Resilience Across Florida: Development of the Florida Index for Transportation (FIT),", <em>Journal of Management in Engineering</em>, 2026. DOI: <a href="https://ascelibrary.org/doi/abs/10.1061/JMENEA.MEENG-7710">10.1061/JMENEA.MEENG-7710</a>.</li>
     <li>R. Khayamim, <b>M. Movahedi,</b>, M. A. Dulebenets, and E. E. Ozguven, "Robust Mobile Vehicle Charging Solutions for Natural Disasters: A Multi-Criteria Resilience Analysis in Florida," submitted to <em>Journal of Transport Geography</em>, 2026. DOI: <a href="https://doi.org/10.1016/j.jtrangeo.2026.104739">10.1016/j.jtrangeo.2026.104739</a>.</li>
