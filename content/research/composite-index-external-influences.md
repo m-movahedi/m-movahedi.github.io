@@ -11,7 +11,7 @@ tags:
   - "Composite Index"
   - "Decision Support"
 journal: "Journal of Management in Engineering"
-featured_image: "/images/research/2026JME-FIT/2026JME-FIT-fig.png.png"
+featured_image: "/images/research/2026JME-FIT/2026JME-FIT-fig.png"
 ---
 
 <link rel="stylesheet" href="/css/composite-index-research.css">
