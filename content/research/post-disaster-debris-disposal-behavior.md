@@ -16,7 +16,7 @@ tags:
   - "Post-disaster Recovery"
   - "Human-Centered Infrastructure"
   - "Debris"
-featured_image: "/static/images/research/NHR2026_IDDTI-A.png"
+featured_image: "/static/images/research/NHR2026_IDDTI-B.png"
 journal: "Natural Hazards Review"
 ---
 
