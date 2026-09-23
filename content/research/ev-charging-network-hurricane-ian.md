@@ -196,21 +196,12 @@ A grid overly reliant on weather-dependent energy sources is vulnerable during a
 You can find the published paper [here](https://www.doi.org/10.1061/9780784485538.058). 
 
     @inproceedings{Movahedi2024a,
-    address = {Reston, VA},
-    archivePrefix = {arXiv},
-    arxivId = {arXiv:1011.1669v3},
-    author = {Movahedi, Mohammad and Khayamim, Razieh and Choi, Juyeong and Ozguven, Eren Erman},
+    author = {Mohammad Movahedi  and Razieh Khayamim  and Juyeong Choi  and Eren Erman Ozguven },
+    title = {Network Robustness Analysis of Electric Vehicle Charging Infrastructure during Extreme Weather Conditions: A Case Study of Hurricane Ian},
     booktitle = {International Conference on Transportation and Development 2024},
+    chapter = {},
+    pages = {657-669},
     doi = {10.1061/9780784485538.058},
-    eprint = {arXiv:1011.1669v3},
-    isbn = {9780784485538},
-    issn = {20711050},
-    month = {jun},
-    number = {1},
-    pages = {657--669},
-    pmid = {25246403},
-    publisher = {American Society of Civil Engineers},
-    title = {{Network Robustness Analysis of Electric Vehicle Charging Infrastructure during Extreme Weather Conditions: A Case Study of Hurricane Ian}},
-    volume = {11},
-    year = {2024}
+    URL = {https://ascelibrary.org/doi/abs/10.1061/9780784485538.058},
+    eprint = {https://ascelibrary.org/doi/pdf/10.1061/9780784485538.058},
     }
