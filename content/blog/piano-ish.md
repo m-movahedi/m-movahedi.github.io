@@ -8,7 +8,7 @@ tags:
   - "Weekend Projects"
 ---
 
-Today I'm releasing **Piano-ish**, a free and open-source piano learning app for anyone who wants a more focused way to practice with a digital piano.
+**Piano-ish** is a free and open-source piano learning app for anyone who wants a more focused way to practice with a digital piano.
 
 Piano-ish turns Standard MIDI files into interactive practice sessions. Import a piece, connect a MIDI keyboard if you have one, and work through the music with falling notes, traditional staff notation, or a combination of both. Instead of supplying a fixed catalog, Piano-ish is built around your own music library.
 

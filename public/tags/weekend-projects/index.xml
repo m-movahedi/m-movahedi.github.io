@@ -6,14 +6,21 @@
     <description>Recent content in Weekend Projects on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/weekend-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calibre-Goodreads auto sync plugin</title>
+      <link>http://localhost:1313/blog/piano-ish-copy/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/piano-ish-copy/</guid>
+      <description>&lt;h1 id=&#34;automatically-sync-calibre-reading-progress-to-goodreads&#34;&gt;Automatically Sync Calibre Reading Progress to Goodreads&lt;/h1&gt;&#xA;&lt;p&gt;If you read books using Calibre’s built-in E-book Viewer and track your reading on Goodreads, there is one annoying gap: Calibre knows exactly how far you have read, but Goodreads does not automatically receive that progress. I built a small Calibre plugin to bridge that gap.&lt;/p&gt;&#xA;&lt;div style=&#34;margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;&#34;&gt;&#xD;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/files/goodreads_progress_auto_sync_v0.4.zip&#34;&#xD;&#xA;style=&#34;&#xD;&#xA;padding:10px 18px;&#xD;&#xA;border-radius:36px;&#xD;&#xA;text-decoration:none;&#xD;&#xA;background:#DE634D;&#xD;&#xA;color:#F0DED3;&#xD;&#xA;font-weight:600;&#xD;&#xA;display:inline-block;&#xD;&#xA;&#34;&gt;&#xA;Goodreads Progress Auto Sync v 0.4&lt;br&gt;&#xA;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Piano-ish: a free, open-source piano trainer</title>
       <link>http://localhost:1313/blog/piano-ish/</link>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/piano-ish/</guid>
-      <description>&lt;p&gt;Today I&amp;rsquo;m releasing &lt;strong&gt;Piano-ish&lt;/strong&gt;, a free and open-source piano learning app for anyone who wants a more focused way to practice with a digital piano.&lt;/p&gt;&#xA;&lt;p&gt;Piano-ish turns Standard MIDI files into interactive practice sessions. Import a piece, connect a MIDI keyboard if you have one, and work through the music with falling notes, traditional staff notation, or a combination of both. Instead of supplying a fixed catalog, Piano-ish is built around your own music library.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Piano-ish&lt;/strong&gt; is a free and open-source piano learning app for anyone who wants a more focused way to practice with a digital piano.&lt;/p&gt;&#xA;&lt;p&gt;Piano-ish turns Standard MIDI files into interactive practice sessions. Import a piece, connect a MIDI keyboard if you have one, and work through the music with falling notes, traditional staff notation, or a combination of both. Instead of supplying a fixed catalog, Piano-ish is built around your own music library.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wallpaper Manager</title>
