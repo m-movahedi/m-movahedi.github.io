@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>Calibre-Goodreads auto sync plugin | Mohammad Movahedi</title>
+    <meta name="description" content="Automatically Sync Calibre Reading Progress to Goodreads If you read books using Calibre’s built-in E-book Viewer and track your reading on Goodreads, there is …">
+    
+    <meta name="keywords" content='Weekend Projects'>
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+        
+      
+    
+    <meta property="og:url" content="http://localhost:1313/blog/piano-ish-copy/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="Calibre-Goodreads auto sync plugin | Mohammad Movahedi">
+    <meta property="og:description" content="Automatically Sync Calibre Reading Progress to Goodreads If you read books using Calibre’s built-in E-book Viewer and track your reading on Goodreads, there is …">
+    <meta property="og:image" content="http://localhost:1313/images/blog/Calibre-.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/blog/Calibre-.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Calibre-Goodreads auto sync plugin">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="Calibre-Goodreads auto sync plugin | Mohammad Movahedi">
+    <meta name="twitter:description" content="Automatically Sync Calibre Reading Progress to Goodreads If you read books using Calibre’s built-in E-book Viewer and track your reading on Goodreads, there is …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/blog/piano-ish-copy/">
+    <meta name="twitter:image" content="http://localhost:1313/images/blog/Calibre-.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/blog/piano-ish-copy/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"Calibre-Goodreads auto sync plugin\"",
+  "description": "\"Automatically Sync Calibre Reading Progress to Goodreads If you read books using Calibre’s built-in E-book Viewer and track your reading on Goodreads, there is …\"",
+  "url": "http:\/\/localhost:1313\/blog\/piano-ish-copy\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/blog\/piano-ish-copy\/"
+  },
+  "datePublished": "2026-09-25T00:00:00Z",
+  "dateModified": "2026-09-25T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/blog\/Calibre-.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Blog\"",
+      "item": "https:\/\/m-movahedi.com\/blog\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"Calibre-Goodreads auto sync plugin\"",
+      "item": "http:\/\/localhost:1313\/blog\/piano-ish-copy\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.d3547df4aafab8ca9e9490410b4a3f5cc515f00096fb2cab7875f5253c42ff8f.js" integrity="sha256-01R99Kr6uMqelJBBC0o/XMUV8ACW&#43;yyreHX1JTxC/48="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.213a5a99cd60572f09df5c8d163108fa0e2d6e927d6af2e5ede43628749ab8e4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.433ef8b502dee2a6501981b1d3ad834b49bbbbde5299de64639645e38bbb4be7.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <button type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Toggle navigation" id="hamburger-menu-toggle-target">
+                    <span data-feather="menu"></span>
+                </button>
+            </div>
+
+            
+            <ul id="mobile-navigation" class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>Calibre-Goodreads auto sync plugin</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              September 25, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+           
+             <li class="post-tag"><a href="http://localhost:1313/tags/weekend-projects">Weekend Projects</a></li>
+           
+         
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="automatically-sync-calibre-reading-progress-to-goodreads">Automatically Sync Calibre Reading Progress to Goodreads</h1>
+<p>If you read books using Calibre’s built-in E-book Viewer and track your reading on Goodreads, there is one annoying gap: Calibre knows exactly how far you have read, but Goodreads does not automatically receive that progress. I built a small Calibre plugin to bridge that gap.</p>
+<div style="margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+<p><a href="/files/goodreads_progress_auto_sync_v0.4.zip"
+style="
+padding:10px 18px;
+border-radius:36px;
+text-decoration:none;
+background:#DE634D;
+color:#F0DED3;
+font-weight:600;
+display:inline-block;
+">
+Goodreads Progress Auto Sync v 0.4<br>
+</a></p>
+</div>
+<p>The plugin reads your saved progress from Calibre’s built-in viewer, compares it with the last progress value sent to Goodreads, and silently updates Goodreads when your progress changes. It can run automatically once per day at a configurable time, or manually from a toolbar button.</p>
+<p>The result is a workflow like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Calibre E-book Viewer
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Saved reading progress
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Goodreads Progress Auto Sync
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Goodreads
+</span></span></code></pre></div><h2 id="what-the-plugin-does">What the plugin does</h2>
+<p>The plugin is designed around one simple idea: Calibre already stores your reading position, so there is no reason to manually type a percentage into Goodreads.</p>
+<p>It:</p>
+<ul>
+<li>scans your entire Calibre library;</li>
+<li>reads progress from Calibre’s built-in E-book Viewer;</li>
+<li>ignores books that do not have a Goodreads link;</li>
+<li>checks whether the current progress differs from the last successfully synced value;</li>
+<li>sends the new percentage to Goodreads;</li>
+<li>updates your Calibre progress column only after Goodreads accepts the update;</li>
+<li>runs without opening the normal Goodreads Sync confirmation window;</li>
+<li>supports an automatic daily sync time;</li>
+<li>includes a toolbar button for immediate manual syncing.</li>
+</ul>
+<p>For example, if Calibre shows that you are at 47% and the last value sent to Goodreads was 39%, the plugin sends 47% to Goodreads and then records 47 as the new synced value.</p>
+<p>If you are still at 47% the next day, it does nothing.</p>
+<hr>
+<h1 id="prerequisites">Prerequisites</h1>
+<p>Before installing the plugin, you need the following.</p>
+<h2 id="calibre-95-or-newer">Calibre 9.5 or newer</h2>
+<p>The plugin relies on Calibre’s built-in reading-progress functionality for the E-book Viewer.</p>
+<p>You should be reading your books using the standard <strong>Calibre E-book Viewer</strong>.</p>
+<h2 id="goodreads-sync-plugin">Goodreads Sync plugin</h2>
+<p>The plugin does not implement Goodreads authentication itself.</p>
+<p>Instead, it uses the existing <strong>Goodreads Sync</strong> Calibre plugin for:</p>
+<ul>
+<li>your Goodreads authorization;</li>
+<li>Goodreads book IDs;</li>
+<li>the Goodreads connection;</li>
+<li>sending reading-progress updates.</li>
+</ul>
+<p>So Goodreads Sync must already be installed.</p>
+<h2 id="a-goodreads-account-configured-in-goodreads-sync">A Goodreads account configured in Goodreads Sync</h2>
+<p>You need to authorize Goodreads Sync with your Goodreads account before this plugin can send anything.</p>
+<h2 id="a-numeric-progress-column">A numeric progress column</h2>
+<p>Goodreads Sync expects a numeric custom column for reading progress.</p>
+<p>I recommend using an <strong>Integer</strong> column.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Lookup name:
+</span></span><span style="display:flex;"><span>#goodreads_progress
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Column heading:
+</span></span><span style="display:flex;"><span>Goodreads Progress
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Type:
+</span></span><span style="display:flex;"><span>Integer
+</span></span></code></pre></div><p>The plugin uses this column as the <strong>last successfully synced progress value</strong>.</p>
+<h2 id="goodreads-linked-books">Goodreads-linked books</h2>
+<p>Each book you want to sync must have a Goodreads identifier in Calibre.</p>
+<p>The plugin intentionally does not guess which Goodreads book corresponds to a Calibre book.</p>
+<hr>
+<h1 id="step-by-step-setup">Step-by-step setup</h1>
+<h2 id="step-1-install-goodreads-sync">Step 1: Install Goodreads Sync</h2>
+<p>In Calibre, open:</p>
+<p><strong>Preferences → Plugins → Get new plugins</strong></p>
+<p>Search for:</p>
+<p><strong>Goodreads Sync</strong></p>
+<p>Install it and restart Calibre if prompted.</p>
+<hr>
+<h2 id="step-2-authorize-goodreads-sync">Step 2: Authorize Goodreads Sync</h2>
+<p>Open:</p>
+<p><strong>Preferences → Plugins → Goodreads Sync → Customize plugin</strong></p>
+<p>Configure your Goodreads account and complete the authorization process.</p>
+<p>Before continuing, make sure the normal Goodreads Sync plugin works manually.</p>
+<p>For example, you should be able to link a book to Goodreads or perform a normal Goodreads Sync operation.</p>
+<hr>
+<h2 id="step-3-create-a-numeric-progress-column">Step 3: Create a numeric progress column</h2>
+<p>Open:</p>
+<p><strong>Preferences → Add your own columns</strong></p>
+<p>Click the <strong>+</strong> button and create a new column.</p>
+<p>Use something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Lookup name:
+</span></span><span style="display:flex;"><span>goodreads_progress
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Column heading:
+</span></span><span style="display:flex;"><span>Goodreads Progress
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Column type:
+</span></span><span style="display:flex;"><span>Integers
+</span></span></code></pre></div><p>Calibre will expose the lookup name as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>#goodreads_progress
+</span></span></code></pre></div><p>Restart Calibre if requested.</p>
+<hr>
+<h2 id="step-4-configure-goodreads-sync-to-use-that-column">Step 4: Configure Goodreads Sync to use that column</h2>
+<p>Go back to:</p>
+<p><strong>Preferences → Plugins → Goodreads Sync → Customize plugin</strong></p>
+<p>Find the reading-progress settings.</p>
+<p>Set:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Reading progress column:
+</span></span><span style="display:flex;"><span>#goodreads_progress
+</span></span></code></pre></div><p>Enable:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Reading progress is % read
+</span></span></code></pre></div><p>You can also enable the normal Goodreads Sync <strong>Update reading progress</strong> menu item if you want, but the automatic plugin does not depend on the dialog-based workflow.</p>
+<hr>
+<h2 id="step-5-link-your-books-to-goodreads">Step 5: Link your books to Goodreads</h2>
+<p>For a book to be updated automatically, Calibre needs to know its Goodreads book ID.</p>
+<p>Select a book and use:</p>
+<p><strong>Goodreads → Link to Goodreads</strong></p>
+<p>Choose the correct edition.</p>
+<p>Once linked, the Calibre book should contain a Goodreads identifier.</p>
+<p>You only need to do this once per book.</p>
+<hr>
+<h2 id="step-6-install-goodreads-progress-auto-sync">Step 6: Install Goodreads Progress Auto Sync</h2>
+<p>In Calibre, open:</p>
+<p><strong>Preferences → Plugins → Load plugin from file</strong></p>
+<p>Select the plugin ZIP file.</p>
+<p>Accept the security warning if you trust the plugin, then restart Calibre.</p>
+<hr>
+<h2 id="step-7-add-the-toolbar-button">Step 7: Add the toolbar button</h2>
+<p>Open:</p>
+<p><strong>Preferences → Toolbars &amp; menus</strong></p>
+<p>Choose:</p>
+<p><strong>The main toolbar</strong></p>
+<p>From the list of available actions, find:</p>
+<p><strong>Sync Goodreads Progress</strong></p>
+<p>Move it to the current toolbar actions.</p>
+<p>Click <strong>Apply</strong>.</p>
+<p>You should now have a Goodreads progress-sync button in the Calibre toolbar.</p>
+<p>The main button performs an immediate sync.</p>
+<p>Its dropdown menu includes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Sync now
+</span></span><span style="display:flex;"><span>Set automatic sync time...
+</span></span><span style="display:flex;"><span>Automatic sync schedule
+</span></span></code></pre></div><hr>
+<h1 id="setting-the-automatic-sync-time">Setting the automatic sync time</h1>
+<p>You can configure the schedule in two ways.</p>
+<h2 id="method-1-from-the-toolbar">Method 1: From the toolbar</h2>
+<p>Click the dropdown arrow next to:</p>
+<p><strong>Sync Goodreads Progress</strong></p>
+<p>Choose:</p>
+<p><strong>Set automatic sync time&hellip;</strong></p>
+<p>Select your preferred daily time.</p>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>11:00 PM
+</span></span></code></pre></div><p>Click OK.</p>
+<hr>
+<h2 id="method-2-from-plugin-settings">Method 2: From plugin settings</h2>
+<p>Open:</p>
+<p><strong>Preferences → Plugins</strong></p>
+<p>Find:</p>
+<p><strong>Goodreads Progress Auto Sync</strong></p>
+<p>Click:</p>
+<p><strong>Customize plugin</strong></p>
+<p>You should see:</p>
+<p><strong>Daily sync time</strong></p>
+<p>Choose the time you want and save the settings.</p>
+<p>The default is 11:00 PM.</p>
+<p>One important limitation is that <strong>Calibre must be running at the scheduled time</strong>. The plugin runs inside the Calibre application, so it cannot wake up Calibre or run while Calibre is closed.</p>
+<hr>
+<h1 id="testing-the-plugin">Testing the plugin</h1>
+<p>You should test it manually before relying on the daily schedule.</p>
+<p>Open a book in the Calibre E-book Viewer.</p>
+<p>Move to an obvious position, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>35%
+</span></span></code></pre></div><p>Close the viewer so Calibre saves your position.</p>
+<p>Make sure that:</p>
+<ul>
+<li>the book is linked to Goodreads;</li>
+<li>Goodreads Sync is authorized;</li>
+<li>your progress column is configured.</li>
+</ul>
+<p>Then click:</p>
+<p><strong>Sync Goodreads Progress</strong></p>
+<p>The plugin scans the library and updates any eligible books whose progress has changed.</p>
+<p>You should see a status message similar to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Goodreads progress sync:
+</span></span><span style="display:flex;"><span>1 sent, 4 unchanged, 0 failed.
+</span></span></code></pre></div><p>Then check Goodreads.</p>
+<p>Your reading percentage should now reflect your Calibre reading position.</p>
+<hr>
+<h1 id="how-the-progress-tracking-works">How the progress tracking works</h1>
+<p>One design decision is worth explaining.</p>
+<p>The custom column does <strong>not</strong> simply mirror the current Calibre reading position.</p>
+<p>Instead, it represents:</p>
+<p><strong>the last progress value successfully sent to Goodreads</strong></p>
+<p>Suppose your current state is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Calibre viewer progress:     63%
+</span></span><span style="display:flex;"><span>Goodreads Progress column:   55
+</span></span></code></pre></div><p>The plugin detects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>63 != 55
+</span></span></code></pre></div><p>It sends 63% to Goodreads.</p>
+<p>If Goodreads accepts the request, the plugin updates the Calibre column:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Goodreads Progress column:   63
+</span></span></code></pre></div><p>The next time the plugin runs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>63 == 63
+</span></span></code></pre></div><p>so no new update is sent.</p>
+<p>This prevents duplicate Goodreads status posts every day.</p>
+<hr>
+<h1 id="which-books-are-synced">Which books are synced?</h1>
+<p>The plugin scans the entire current Calibre library.</p>
+<p>It does not depend on which book is selected.</p>
+<p>A book is considered for syncing when:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Calibre viewer progress exists
+</span></span><span style="display:flex;"><span>AND
+</span></span><span style="display:flex;"><span>progress is greater than 0
+</span></span><span style="display:flex;"><span>AND
+</span></span><span style="display:flex;"><span>the book has a Goodreads identifier
+</span></span><span style="display:flex;"><span>AND
+</span></span><span style="display:flex;"><span>the progress differs from the last synced value
+</span></span></code></pre></div><p>Books without Goodreads links are skipped.</p>
+<p>Books with no saved viewer progress are also skipped.</p>
+<hr>
+<h1 id="what-happens-at-100">What happens at 100%?</h1>
+<p>The current plugin can send:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>100%
+</span></span></code></pre></div><p>as reading progress.</p>
+<p>However, it does not currently perform a separate Goodreads shelf transition to automatically move the book to the <strong>Read</strong> shelf.</p>
+<p>That could be added as a future enhancement.</p>
+<hr>
+<h1 id="using-the-plugin-on-another-computer">Using the plugin on another computer</h1>
+<p>To use the plugin on another machine, you need to repeat the basic setup:</p>
+<ol>
+<li>Install Calibre 9.5 or newer.</li>
+<li>Install Goodreads Sync.</li>
+<li>Authorize Goodreads Sync.</li>
+<li>Create the numeric Goodreads progress column.</li>
+<li>Configure Goodreads Sync to use that column.</li>
+<li>Make sure your books have Goodreads identifiers.</li>
+<li>Install Goodreads Progress Auto Sync.</li>
+<li>Add the toolbar button.</li>
+<li>Choose your automatic sync time.</li>
+</ol>
+<p>If both computers use the same Calibre library metadata, your Goodreads identifiers and custom progress column can travel with the library.</p>
+<p>The plugin itself does not synchronize your Calibre library between computers.</p>
+<hr>
+<h1 id="why-use-this-instead-of-the-normal-goodreads-sync-progress-window">Why use this instead of the normal Goodreads Sync progress window?</h1>
+<p>Goodreads Sync already has an <strong>Update reading progress</strong> command, but it is designed as an interactive workflow.</p>
+<p>It:</p>
+<ul>
+<li>works with selected books;</li>
+<li>opens a progress dialog;</li>
+<li>expects user confirmation.</li>
+</ul>
+<p>That is useful for manual control, but less useful for automation.</p>
+<p>This plugin uses Goodreads Sync’s underlying Goodreads connection directly, allowing the process to happen silently.</p>
+<p>That makes it much better suited for a daily automated workflow.</p>
+<hr>
+<h1 id="final-setup">Final setup</h1>
+<p>Once everything is configured, the workflow is almost invisible:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Read normally in Calibre
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Close the E-book Viewer
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Calibre saves your position
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>At your configured daily time
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Plugin scans your library
+</span></span><span style="display:flex;"><span>        ↓
+</span></span><span style="display:flex;"><span>Changed progress is sent to Goodreads
+</span></span></code></pre></div><p>You can still use the toolbar button whenever you want an immediate sync.</p>
+<p>For anyone who prefers reading inside Calibre but still uses Goodreads to track reading activity, this removes one of the most repetitive manual steps from the process.</p>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/blog/piano-ish/">
+                &#8592;
+                Previous:
+                Piano-ish: a free, open-source piano trainer
+            </a>
+        </p>
+        <p class="prev-post-date">
+            September 1, 2026
+        </p>
+    </div>
+    
+
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>
