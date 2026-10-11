@@ -1289,100 +1289,98 @@ $$\text{New Upfront Intensity} = 413.10 - 61.33 = 351.77\text{ kgCO}_2\text{e}/\
         // Average freight factor: 0.106 kgCO2e / (t * km) per UK Gov / IStructE HGV average
         const massTonnesPerM2 = archetype.mass_per_m2 / 1000.0;
         const a4_per_m2 = massTonnesPerM2 * distKm * 0.000106 * (1 + wastePct);
-<pre><code>    // 3. A5 (Site Installation energy &amp; packaging waste management)
-    // Site plant diesel/electricity + packaging: typical 25 kgCO2e/m2 + waste penalty
-    const a5_site_energy = 22.0;
-    const a5_waste_disposal = rawA1A3 * wastePct * 0.04; // processing waste
-    const a5_per_m2 = a5_site_energy + a5_waste_disposal;
-    const upfront_per_m2 = a1a3_effective + a4_per_m2 + a5_per_m2;
-    // 4. B1–B5 (Use Stage Replacements over RSP)
-    // Replacement formula per EN 15978 / RICS: ceil(RSP / ESL) - 1
-    const mepReplacements = Math.max(0, Math.ceil(rsp / mepLife) - 1);
-    const facadeReplacements = Math.max(0, Math.ceil(rsp / facadeLife) - 1);
-    // Initial embodied intensity of MEP ~ 75 kgCO2e/m2; Facade ~ 90 kgCO2e/m2
-    const mepPerReplacement = 70.0;
-    const facadePerReplacement = 85.0;
-    const b_replacements_per_m2 = (mepReplacements * mepPerReplacement) + (facadeReplacements * facadePerReplacement);
-    const b_maintenance_per_m2 = 15.0; // B2/B3 general maintenance
-    const b_total_per_m2 = b_replacements_per_m2 + b_maintenance_per_m2;
-    // 5. C1–C4 (End of Life)
-    // Demolition C1 ~ 8 kgCO2e/m2; Transport C2 ~ 4 kgCO2e/m2; C3/C4 sorting/disposal ~ 18 kgCO2e/m2
-    const c_total_per_m2 = 30.0;
-    // 6. Total Cradle-to-Grave WLC (A1–C4)
-    const wlc_embodied_per_m2 = upfront_per_m2 + b_total_per_m2 + c_total_per_m2;
-    // 7. Module D (Circularity Benefit)
-    // Net scrap benefit proportional to circular recovery rate
-    const module_d_per_m2 = archetype.d_factor * (circPct / 0.80);
-    // Render Values
-    document.getElementById('res-a1a3').textContent = a1a3_effective.toFixed(1);
-    document.getElementById('res-a1a3-t').textContent = ((a1a3_effective * gia) / 1000).toFixed(0);
-    document.getElementById('res-a4').textContent = a4_per_m2.toFixed(1);
-    document.getElementById('res-a4-t').textContent = ((a4_per_m2 * gia) / 1000).toFixed(0);
-    document.getElementById('res-a5').textContent = a5_per_m2.toFixed(1);
-    document.getElementById('res-a5-t').textContent = ((a5_per_m2 * gia) / 1000).toFixed(0);
-    document.getElementById('subtotal-upfront').textContent = upfront_per_m2.toFixed(1);
-    document.getElementById('subtotal-upfront-t').textContent = ((upfront_per_m2 * gia) / 1000).toFixed(0);
-    document.getElementById('res-b').textContent = b_total_per_m2.toFixed(1);
-    document.getElementById('res-b-t').textContent = ((b_total_per_m2 * gia) / 1000).toFixed(0);
-    document.getElementById('res-c').textContent = c_total_per_m2.toFixed(1);
-    document.getElementById('res-c-t').textContent = ((c_total_per_m2 * gia) / 1000).toFixed(0);
-    document.getElementById('res-total').textContent = wlc_embodied_per_m2.toFixed(1);
-    document.getElementById('res-total-t').textContent = ((wlc_embodied_per_m2 * gia) / 1000).toFixed(0);
-    document.getElementById('res-d').textContent = module_d_per_m2.toFixed(1);
-    document.getElementById('res-d-t').textContent = ((module_d_per_m2 * gia) / 1000).toFixed(0);
-    document.getElementById('summary-a1a5').textContent = upfront_per_m2.toFixed(1);
-    document.getElementById('summary-wlc').textContent = wlc_embodied_per_m2.toFixed(1);
-    document.getElementById('summary-tonnes').textContent = ((wlc_embodied_per_m2 * gia) / 1000).toFixed(0);
-    // Chart widths
-    const pctA = (upfront_per_m2 / wlc_embodied_per_m2) * 100;
-    const pctB = (b_total_per_m2 / wlc_embodied_per_m2) * 100;
-    const pctC = (c_total_per_m2 / wlc_embodied_per_m2) * 100;
-    document.getElementById('bar-a').style.width = pctA.toFixed(1) + '%';
-    document.getElementById('bar-b').style.width = pctB.toFixed(1) + '%';
-    document.getElementById('bar-c').style.width = pctC.toFixed(1) + '%';
-    document.getElementById('chart-percent-label').textContent = 'A1-A5: ' + pctA.toFixed(0) + '% | B1-B5: ' + pctB.toFixed(0) + '% | C1-C4: ' + pctC.toFixed(0) + '%';
-
-    // LETI Benchmark assessment
-    const ratingEl = document.getElementById('benchmark-rating');
-    if (upfront_per_m2 &lt; 300) {
-      ratingEl.textContent = 'LETI Band A++ (Pacesetter, Ultra-Low Embodied Carbon)';
-      ratingEl.style.color = '#15803d';
-    } else if (upfront_per_m2 &lt; 350) {
-      ratingEl.textContent = 'LETI Band A (LETI 2030 Target compliant for commercial offices)';
-      ratingEl.style.color = '#15803d';
-    } else if (upfront_per_m2 &lt; 450) {
-      ratingEl.textContent = 'LETI Band B (Good Practice)';
-      ratingEl.style.color = '#0284c7';
-    } else if (upfront_per_m2 &lt; 600) {
-      ratingEl.textContent = 'LETI Band C (LETI 2020 Standard Practice Baseline)';
-      ratingEl.style.color = '#d97706';
-    } else {
-      ratingEl.textContent = 'LETI Band D or below (Standard High-Carbon Construction)';
-      ratingEl.style.color = '#dc2626';
-    }
-  }
-  function showError(msg) {
-    errorBanner.textContent = msg;
-    errorBanner.style.display = 'block';
-  }
-  function resetDefaults() {
-    giaInput.value = '5000';
-    rspInput.value = '60';
-    frameSelect.value = 'rc_lowcarbon';
-    distRange.value = '80';
-    distVal.textContent = '80 km';
-    wasteRange.value = '5';
-    wasteVal.textContent = '5 %';
-    mepLifeInput.value = '20';
-    facadeLifeInput.value = '30';
-    circRange.value = '80';
-    circVal.textContent = '80 %';
-    calculate();
-  }
-  calcBtn.addEventListener('click', calculate);
-  resetBtn.addEventListener('click', resetDefaults);
-
-  // Trigger initial calculation
+        // 3. A5 (Site Installation energy & packaging waste management)
+        // Site plant diesel/electricity + packaging: typical 25 kgCO2e/m2 + waste penalty
+        const a5_site_energy = 22.0;
+        const a5_waste_disposal = rawA1A3 * wastePct * 0.04; // processing waste
+        const a5_per_m2 = a5_site_energy + a5_waste_disposal;
+        const upfront_per_m2 = a1a3_effective + a4_per_m2 + a5_per_m2;
+        // 4. B1–B5 (Use Stage Replacements over RSP)
+        // Replacement formula per EN 15978 / RICS: ceil(RSP / ESL) - 1
+        const mepReplacements = Math.max(0, Math.ceil(rsp / mepLife) - 1);
+        const facadeReplacements = Math.max(0, Math.ceil(rsp / facadeLife) - 1);
+        // Initial embodied intensity of MEP ~ 75 kgCO2e/m2; Facade ~ 90 kgCO2e/m2
+        const mepPerReplacement = 70.0;
+        const facadePerReplacement = 85.0;
+        const b_replacements_per_m2 = (mepReplacements * mepPerReplacement) + (facadeReplacements * facadePerReplacement);
+        const b_maintenance_per_m2 = 15.0; // B2/B3 general maintenance
+        const b_total_per_m2 = b_replacements_per_m2 + b_maintenance_per_m2;
+        // 5. C1–C4 (End of Life)
+        // Demolition C1 ~ 8 kgCO2e/m2; Transport C2 ~ 4 kgCO2e/m2; C3/C4 sorting/disposal ~ 18 kgCO2e/m2
+        const c_total_per_m2 = 30.0;
+        // 6. Total Cradle-to-Grave WLC (A1–C4)
+        const wlc_embodied_per_m2 = upfront_per_m2 + b_total_per_m2 + c_total_per_m2;
+        // 7. Module D (Circularity Benefit)
+        // Net scrap benefit proportional to circular recovery rate
+        const module_d_per_m2 = archetype.d_factor * (circPct / 0.80);
+        // Render Values
+        document.getElementById('res-a1a3').textContent = a1a3_effective.toFixed(1);
+        document.getElementById('res-a1a3-t').textContent = ((a1a3_effective * gia) / 1000).toFixed(0);
+        document.getElementById('res-a4').textContent = a4_per_m2.toFixed(1);
+        document.getElementById('res-a4-t').textContent = ((a4_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-a5').textContent = a5_per_m2.toFixed(1);
+        document.getElementById('res-a5-t').textContent = ((a5_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('subtotal-upfront').textContent = upfront_per_m2.toFixed(1);
+        document.getElementById('subtotal-upfront-t').textContent = ((upfront_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-b').textContent = b_total_per_m2.toFixed(1);
+        document.getElementById('res-b-t').textContent = ((b_total_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-c').textContent = c_total_per_m2.toFixed(1);
+        document.getElementById('res-c-t').textContent = ((c_total_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-total').textContent = wlc_embodied_per_m2.toFixed(1);
+        document.getElementById('res-total-t').textContent = ((wlc_embodied_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-d').textContent = module_d_per_m2.toFixed(1);
+        document.getElementById('res-d-t').textContent = ((module_d_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('summary-a1a5').textContent = upfront_per_m2.toFixed(1);
+        document.getElementById('summary-wlc').textContent = wlc_embodied_per_m2.toFixed(1);
+        document.getElementById('summary-tonnes').textContent = ((wlc_embodied_per_m2 * gia) / 1000).toFixed(0);
+        // Chart widths
+        const pctA = (upfront_per_m2 / wlc_embodied_per_m2) * 100;
+        const pctB = (b_total_per_m2 / wlc_embodied_per_m2) * 100;
+        const pctC = (c_total_per_m2 / wlc_embodied_per_m2) * 100;
+        document.getElementById('bar-a').style.width = pctA.toFixed(1) + '%';
+        document.getElementById('bar-b').style.width = pctB.toFixed(1) + '%';
+        document.getElementById('bar-c').style.width = pctC.toFixed(1) + '%';
+        document.getElementById('chart-percent-label').textContent = 'A1-A5: ' + pctA.toFixed(0) + '% | B1-B5: ' + pctB.toFixed(0) + '% | C1-C4: ' + pctC.toFixed(0) + '%';
+        // LETI Benchmark assessment
+        const ratingEl = document.getElementById('benchmark-rating');
+        if (upfront_per_m2 < 300) {
+          ratingEl.textContent = 'LETI Band A++ (Pacesetter, Ultra-Low Embodied Carbon)';
+          ratingEl.style.color = '#15803d';
+        } else if (upfront_per_m2 < 350) {
+          ratingEl.textContent = 'LETI Band A (LETI 2030 Target compliant for commercial offices)';
+          ratingEl.style.color = '#15803d';
+        } else if (upfront_per_m2 < 450) {
+          ratingEl.textContent = 'LETI Band B (Good Practice)';
+          ratingEl.style.color = '#0284c7';
+        } else if (upfront_per_m2 < 600) {
+          ratingEl.textContent = 'LETI Band C (LETI 2020 Standard Practice Baseline)';
+          ratingEl.style.color = '#d97706';
+        } else {
+          ratingEl.textContent = 'LETI Band D or below (Standard High-Carbon Construction)';
+          ratingEl.style.color = '#dc2626';
+        }
+      }
+      function showError(msg) {
+        errorBanner.textContent = msg;
+        errorBanner.style.display = 'block';
+      }
+      function resetDefaults() {
+        giaInput.value = '5000';
+        rspInput.value = '60';
+        frameSelect.value = 'rc_lowcarbon';
+        distRange.value = '80';
+        distVal.textContent = '80 km';
+        wasteRange.value = '5';
+        wasteVal.textContent = '5 %';
+        mepLifeInput.value = '20';
+        facadeLifeInput.value = '30';
+        circRange.value = '80';
+        circVal.textContent = '80 %';
+        calculate();
+      }
+      calcBtn.addEventListener('click', calculate);
+      resetBtn.addEventListener('click', resetDefaults);
+<pre><code>  // Trigger initial calculation
   calculate();
 })();
 </code></pre>

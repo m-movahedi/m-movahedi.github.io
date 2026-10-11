@@ -786,7 +786,6 @@ Congratulations! You have completed the comprehensive five-lesson curriculum on 
         // Average freight factor: 0.106 kgCO2e / (t * km) per UK Gov / IStructE HGV average
         const massTonnesPerM2 = archetype.mass_per_m2 / 1000.0;
         const a4_per_m2 = massTonnesPerM2 * distKm * 0.000106 * (1 + wastePct);
-
         // 3. A5 (Site Installation energy & packaging waste management)
         // Site plant diesel/electricity + packaging: typical 25 kgCO2e/m2 + waste penalty
         const a5_site_energy = 22.0;
@@ -839,7 +838,6 @@ Congratulations! You have completed the comprehensive five-lesson curriculum on 
         document.getElementById('bar-b').style.width = pctB.toFixed(1) + '%';
         document.getElementById('bar-c').style.width = pctC.toFixed(1) + '%';
         document.getElementById('chart-percent-label').textContent = 'A1-A5: ' + pctA.toFixed(0) + '% | B1-B5: ' + pctB.toFixed(0) + '% | C1-C4: ' + pctC.toFixed(0) + '%';
-
         // LETI Benchmark assessment
         const ratingEl = document.getElementById('benchmark-rating');
         if (upfront_per_m2 < 300) {
