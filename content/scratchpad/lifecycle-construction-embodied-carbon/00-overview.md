@@ -68,23 +68,6 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 <span class="wlc-card-action">Explore Lesson &rarr;</span>
 </a>
 </div>
-<details class="wlc-mermaid-toggle">
-<summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Standard Schematic (Mermaid Code)</summary>
-<div class="wlc-mermaid-wrapper">
-<div class="mermaid">flowchart LR
-Start["00. Orientation &amp; Scope"] --> L1["01. Foundations &amp; Standards<br/>(EN 15978 / ISO 21930)"]
-L1 --> L2["02. Upfront Carbon<br/>(Modules A1–A5)"]
-L2 --> L3["03. In-Use Stage<br/>(Modules B1–B5)"]
-L3 --> L4["04. End-of-Life &amp; Module D<br/>(C1–C4 &amp; Circularity)"]
-L4 --> L5["05. Practical Calculation<br/>(Full Case Study)"]
-L2 -.-> Sim["Interactive Simulator"]
-L5 -.-> Sim
-classDef stage fill:#fdfbf7,stroke:#de634d,stroke-width:2px;
-classDef sim fill:#eff6ff,stroke:#3b827e,stroke-width:2px,stroke-dasharray: 4 4;
-class Start,L1,L2,L3,L4,L5,Bib stage;
-class Sim sim;</div>
-</div>
-</details>
 </div>
 
 ### Table of Contents
