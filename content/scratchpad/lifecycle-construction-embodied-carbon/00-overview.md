@@ -22,7 +22,7 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 <span class="wlc-tag live">Interactive Syllabus</span>
 </div>
 <div class="wlc-roadmap-grid">
-<a href="01-foundations-and-frameworks.md" class="wlc-roadmap-card">
+<a href="https://m-movahedi.com/scratchpad/lifecycle-construction-embodied-carbon/01-foundations-and-frameworks.md" class="wlc-roadmap-card">
 <div class="wlc-roadmap-card-top">
 <span class="wlc-step-pill">Lesson 01</span>
 <span class="wlc-node-badge" style="background:var(--wlc-stage-a-bg);color:var(--wlc-stage-a)">WLC Baseline</span>
@@ -31,7 +31,7 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 <p>EN 15978 &amp; ISO 21930 modular stages, system boundaries, functional units, and GIA normalization.</p>
 <span class="wlc-card-action">Explore Lesson &rarr;</span>
 </a>
-<a href="02-upfront-carbon-a1-a5.md" class="wlc-roadmap-card">
+<a href="https://m-movahedi.com/scratchpad/lifecycle-construction-embodied-carbon/02-upfront-carbon-a1-a5.md" class="wlc-roadmap-card">
 <div class="wlc-roadmap-card-top">
 <span class="wlc-step-pill">Lesson 02</span>
 <span class="wlc-node-badge" style="background:var(--wlc-stage-trans-bg);color:var(--wlc-stage-trans)">Modules A1–A5</span>
@@ -40,7 +40,7 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 <p>Cradle-to-gate extraction, freight logistics, site diesel, and compounded material wastage equations.</p>
 <span class="wlc-card-action">Explore Lesson &rarr;</span>
 </a>
-<a href="03-use-stage-b1-b5.md" class="wlc-roadmap-card">
+<a href="https://m-movahedi.com/scratchpad/lifecycle-construction-embodied-carbon/03-use-stage-b1-b5.md" class="wlc-roadmap-card">
 <div class="wlc-roadmap-card-top">
 <span class="wlc-step-pill">Lesson 03</span>
 <span class="wlc-node-badge" style="background:var(--wlc-stage-b-bg);color:var(--wlc-stage-b)">Modules B1–B5</span>
@@ -49,7 +49,7 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 <p>Component service lives (ESL vs RSP), MEP/facade replacements, and embodied vs operational trade-offs.</p>
 <span class="wlc-card-action">Explore Lesson &rarr;</span>
 </a>
-<a href="04-end-of-life-and-module-d.md" class="wlc-roadmap-card">
+<a href="https://m-movahedi.com/scratchpad/lifecycle-construction-embodied-carbon/04-end-of-life-and-module-d.md" class="wlc-roadmap-card">
 <div class="wlc-roadmap-card-top">
 <span class="wlc-step-pill">Lesson 04</span>
 <span class="wlc-node-badge" style="background:var(--wlc-stage-c-bg);color:var(--wlc-stage-c)">Modules C1–C4 &amp; D</span>
@@ -58,7 +58,7 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 <p>Demolition emissions, End-of-Waste threshold, Net Scrap accounting, and Module D avoided burdens.</p>
 <span class="wlc-card-action">Explore Lesson &rarr;</span>
 </a>
-<a href="05-calculation-methodology-and-case-study.md" class="wlc-roadmap-card">
+<a href="https://m-movahedi.com/scratchpad/lifecycle-construction-embodied-carbon/05-calculation-methodology-and-case-study.md" class="wlc-roadmap-card">
 <div class="wlc-roadmap-card-top">
 <span class="wlc-step-pill">Lesson 05</span>
 <span class="wlc-node-badge" style="background:var(--wlc-stage-flow-bg);color:var(--wlc-stage-flow)">LCA Pipeline</span>
@@ -66,15 +66,6 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 <h5>Practical LCA &amp; Comparative Case Study</h5>
 <p>BIM data hierarchy, contingency markups, uncertainty ranges, and full 4-bay commercial building case study.</p>
 <span class="wlc-card-action">Explore Lesson &rarr;</span>
-</a>
-<a href="99-bibliography.md" class="wlc-roadmap-card" style="border-style:dashed;">
-<div class="wlc-roadmap-card-top">
-<span class="wlc-step-pill" style="background:rgba(128,128,128,0.12);color:var(--wlc-muted)">Reference</span>
-<span class="wlc-node-badge" style="background:var(--wlc-container-bg);color:var(--wlc-muted)">Audit Ledger</span>
-</div>
-<h5>Annotated Bibliography &amp; Sources</h5>
-<p>Full academic citations, standard access classifications, and verified parameter cross-references [S01–S12].</p>
-<span class="wlc-card-action">View Bibliography &rarr;</span>
 </a>
 </div>
 <details class="wlc-mermaid-toggle">
@@ -86,7 +77,6 @@ L1 --> L2["02. Upfront Carbon<br/>(Modules A1–A5)"]
 L2 --> L3["03. In-Use Stage<br/>(Modules B1–B5)"]
 L3 --> L4["04. End-of-Life &amp; Module D<br/>(C1–C4 &amp; Circularity)"]
 L4 --> L5["05. Practical Calculation<br/>(Full Case Study)"]
-L5 --> Bib["99. Annotated Ledger"]
 L2 -.-> Sim["Interactive Simulator"]
 L5 -.-> Sim
 classDef stage fill:#fdfbf7,stroke:#de634d,stroke-width:2px;
