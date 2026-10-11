@@ -206,33 +206,90 @@ The glazing achieves only $12\text{ kgCO}_2\text{e}/\text{m}^2$ of operational c
 
 The diagram below tracks the cumulative carbon trajectory of a building over 60 years, showing how Upfront Carbon (A1–A5) establishes the Day 1 baseline and B4/B5 replacements create periodic upward "steps" in the embodied carbon inventory.
 
-```mermaid
-flowchart TD
-    subgraph Timeline["60-Year Whole Life Carbon Progression"]
-        Y0["Year 0: Practical Completion<br/>Upfront Carbon (A1–A5)<br/>~400 kgCO2e/m²"]
-        Y10["Year 10: Fit-out Churn #1<br/>+35 kgCO2e/m²"]
-        Y20["Year 20: MEP Replacement #1 + Fit-out #2<br/>+100 kgCO2e/m²"]
-        Y30["Year 30: Facade Replacement #1 + Fit-out #3<br/>+115 kgCO2e/m²"]
-        Y40["Year 40: MEP Replacement #2 + Fit-out #4<br/>+100 kgCO2e/m²"]
-        Y50["Year 50: Fit-out Churn #5<br/>+35 kgCO2e/m²"]
-        Y60["Year 60: End of Life Demolition (C1–C4)<br/>+30 kgCO2e/m²"]
-    end
+<div class="wlc-diagram-box" id="wlc-timeline-box">
+  <div class="wlc-diagram-header">
+    <div class="wlc-diagram-header-left">
+      <h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 10"></polyline></svg> 60-Year Whole Life Carbon Step Progression</h4>
+      <p>Interactive lifecycle accumulator. Click any timeline milestone to inspect the replacement cycle, affected building layer, and cumulative carbon intensity.</p>
+    </div>
+    <span class="wlc-tag live">Interactive Timeline</span>
+  </div>
 
-    Y0 --> Y10
-    Y10 --> Y20
-    Y20 --> Y30
-    Y30 --> Y40
-    Y40 --> Y50
-    Y50 --> Y60
+  <div class="wlc-timeline-steps">
+    <button class="wlc-time-btn active" data-year="y0">
+      <span class="yr">Year 0</span>
+      <span class="inc">A1–A5 Baseline</span>
+    </button>
+    <button class="wlc-time-btn" data-year="y10">
+      <span class="yr">Year 10</span>
+      <span class="inc">+35 kgCO2e/m²</span>
+    </button>
+    <button class="wlc-time-btn" data-year="y20">
+      <span class="yr">Year 20</span>
+      <span class="inc">+100 kgCO2e/m²</span>
+    </button>
+    <button class="wlc-time-btn" data-year="y30">
+      <span class="yr">Year 30</span>
+      <span class="inc">+115 kgCO2e/m²</span>
+    </button>
+    <button class="wlc-time-btn" data-year="y40">
+      <span class="yr">Year 40</span>
+      <span class="inc">+100 kgCO2e/m²</span>
+    </button>
+    <button class="wlc-time-btn" data-year="y50">
+      <span class="yr">Year 50</span>
+      <span class="inc">+35 kgCO2e/m²</span>
+    </button>
+    <button class="wlc-time-btn" data-year="y60">
+      <span class="yr">Year 60</span>
+      <span class="inc">+30 kgCO2e/m²</span>
+    </button>
+  </div>
 
-    classDef initial fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px;
-    classDef step fill:#fef3c7,stroke:#d97706,stroke-width:2px;
-    classDef eol fill:#fee2e2,stroke:#dc2626,stroke-width:2px;
+  <div class="wlc-progress-box">
+    <div class="wlc-progress-header">
+      <div>
+        <strong>Cumulative Embodied Carbon:</strong>
+        <span class="wlc-node-badge" style="background:var(--wlc-stage-b-bg);color:var(--wlc-stage-b);margin-left:0.5rem;" class="wlc-timeline-layer">Primary Structure (60-yr design life) &amp; Core Envelope</span>
+      </div>
+      <div class="wlc-progress-val">400 kgCO2e/m²</div>
+    </div>
+    <div class="wlc-meter-track">
+      <div class="wlc-meter-fill" style="width: 49%;"></div>
+    </div>
+  </div>
 
-    class Y0 initial;
-    class Y10,Y20,Y30,Y40,Y50 step;
-    class Y60 eol;
-```
+  <div class="wlc-inspector" style="margin-top:0;">
+    <h5 class="wlc-timeline-title">Year 0: Practical Completion (Upfront Baseline)</h5>
+    <p class="wlc-timeline-desc">Day 1 spent upfront carbon before building occupancy begins. Embodied in primary frame, foundations, sub-structure, and initial shell.</p>
+    <div class="wlc-inspector-meta">
+      <span><strong>Active Building Layer:</strong> <span class="wlc-timeline-layer">Primary Structure (60-yr design life) &amp; Core Envelope</span></span>
+      <span><strong>Replacement Standard:</strong> ISO 15686-1 Service Life Factor Method</span>
+      <span><strong>Formula:</strong> \(N_{\text{repl}} = \lceil RSP / ESL \rceil - 1\)</span>
+    </div>
+  </div>
+
+  <details class="wlc-mermaid-toggle">
+    <summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Standard Schematic (Mermaid Code)</summary>
+    <div class="wlc-mermaid-wrapper">
+      <div class="mermaid">flowchart LR
+Y0["Year 0: Upfront A1–A5<br/>400 kgCO2e/m²"] --> Y10["Year 10: Fit-out #1<br/>+35 (Cum: 435)"]
+Y10 --> Y20["Year 20: MEP #1 + Fit-out #2<br/>+100 (Cum: 535)"]
+Y20 --> Y30["Year 30: Facade #1 + Fit-out #3<br/>+115 (Cum: 650)"]
+Y30 --> Y40["Year 40: MEP #2 + Fit-out #4<br/>+100 (Cum: 750)"]
+Y40 --> Y50["Year 50: Fit-out #5<br/>+35 (Cum: 785)"]
+Y50 --> Y60["Year 60: Demolition C1–C4<br/>+30 (Cum: 815)"]
+classDef init fill:#fdfbf7,stroke:#de634d,stroke-width:2px;
+classDef step fill:#fdfbf7,stroke:#e1a102,stroke-width:2px;
+classDef mid fill:#fdfbf7,stroke:#3b827e,stroke-width:2px;
+classDef eol fill:#fdfbf7,stroke:#ab613c,stroke-width:2px;
+class Y0 init;
+class Y10,Y20,Y40,Y50 step;
+class Y30 mid;
+class Y60 eol;</div>
+    </div>
+  </details>
+</div>
 
 ### Reading the Diagram
 

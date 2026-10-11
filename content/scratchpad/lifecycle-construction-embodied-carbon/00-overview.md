@@ -13,17 +13,89 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 
 ## Course Navigation and Lesson Path
 
-```mermaid
-flowchart TD
-    Start["00. Orientation & Prerequisites"] --> L1["01. Foundations & Standards Framework<br/>(WLC Concepts, EN 15978, ISO 21930, RICS)"]
-    L1 --> L2["02. Upfront Carbon: Modules A1–A5<br/>(Product Stage, Logistics, Site Wastage & Assembly)"]
-    L2 --> L3["03. In-Use Stage: Modules B1–B5<br/>(Service Life, Replacement Cycles & Operational Trade-offs)"]
-    L3 --> L4["04. End-of-Life & Beyond: Modules C1–C4 and D<br/>(Deconstruction, Waste Scenarios, Net Scrap & Circularity)"]
-    L4 --> L5["05. Practical Calculation Methodology & Case Study<br/>(Data Hierarchy, Uncertainty, Benchmarks & Full Comparative LCA)"]
-    L5 --> Bib["99. Annotated Bibliography & Sources Ledger"]
-    L2 -.-> Sim["Interactive Tool: Lifecycle Carbon Simulator"]
-    L5 -.-> Sim
-```
+<div class="wlc-diagram-box" id="wlc-course-roadmap-box">
+<div class="wlc-diagram-header">
+<div class="wlc-diagram-header-left">
+<h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Whole Life Carbon Curriculum Pathway</h4>
+<p>Modular roadmap tracking international standards (EN 15978, ISO 21930, RICS) from extraction to circularity.</p>
+</div>
+<span class="wlc-tag live">Interactive Syllabus</span>
+</div>
+<div class="wlc-roadmap-grid">
+<a href="01-foundations-and-frameworks.md" class="wlc-roadmap-card">
+<div class="wlc-roadmap-card-top">
+<span class="wlc-step-pill">Lesson 01</span>
+<span class="wlc-node-badge" style="background:var(--wlc-stage-a-bg);color:var(--wlc-stage-a)">WLC Baseline</span>
+</div>
+<h5>Foundations &amp; Standards Framework</h5>
+<p>EN 15978 &amp; ISO 21930 modular stages, system boundaries, functional units, and GIA normalization.</p>
+<span class="wlc-card-action">Explore Lesson &rarr;</span>
+</a>
+<a href="02-upfront-carbon-a1-a5.md" class="wlc-roadmap-card">
+<div class="wlc-roadmap-card-top">
+<span class="wlc-step-pill">Lesson 02</span>
+<span class="wlc-node-badge" style="background:var(--wlc-stage-trans-bg);color:var(--wlc-stage-trans)">Modules A1–A5</span>
+</div>
+<h5>Upfront Carbon: Product &amp; Site</h5>
+<p>Cradle-to-gate extraction, freight logistics, site diesel, and compounded material wastage equations.</p>
+<span class="wlc-card-action">Explore Lesson &rarr;</span>
+</a>
+<a href="03-use-stage-b1-b5.md" class="wlc-roadmap-card">
+<div class="wlc-roadmap-card-top">
+<span class="wlc-step-pill">Lesson 03</span>
+<span class="wlc-node-badge" style="background:var(--wlc-stage-b-bg);color:var(--wlc-stage-b)">Modules B1–B5</span>
+</div>
+<h5>Use Stage: 60-Year In-Service Life</h5>
+<p>Component service lives (ESL vs RSP), MEP/facade replacements, and embodied vs operational trade-offs.</p>
+<span class="wlc-card-action">Explore Lesson &rarr;</span>
+</a>
+<a href="04-end-of-life-and-module-d.md" class="wlc-roadmap-card">
+<div class="wlc-roadmap-card-top">
+<span class="wlc-step-pill">Lesson 04</span>
+<span class="wlc-node-badge" style="background:var(--wlc-stage-c-bg);color:var(--wlc-stage-c)">Modules C1–C4 &amp; D</span>
+</div>
+<h5>End-of-Life &amp; Circularity</h5>
+<p>Demolition emissions, End-of-Waste threshold, Net Scrap accounting, and Module D avoided burdens.</p>
+<span class="wlc-card-action">Explore Lesson &rarr;</span>
+</a>
+<a href="05-calculation-methodology-and-case-study.md" class="wlc-roadmap-card">
+<div class="wlc-roadmap-card-top">
+<span class="wlc-step-pill">Lesson 05</span>
+<span class="wlc-node-badge" style="background:var(--wlc-stage-flow-bg);color:var(--wlc-stage-flow)">LCA Pipeline</span>
+</div>
+<h5>Practical LCA &amp; Comparative Case Study</h5>
+<p>BIM data hierarchy, contingency markups, uncertainty ranges, and full 4-bay commercial building case study.</p>
+<span class="wlc-card-action">Explore Lesson &rarr;</span>
+</a>
+<a href="99-bibliography.md" class="wlc-roadmap-card" style="border-style:dashed;">
+<div class="wlc-roadmap-card-top">
+<span class="wlc-step-pill" style="background:rgba(128,128,128,0.12);color:var(--wlc-muted)">Reference</span>
+<span class="wlc-node-badge" style="background:var(--wlc-container-bg);color:var(--wlc-muted)">Audit Ledger</span>
+</div>
+<h5>Annotated Bibliography &amp; Sources</h5>
+<p>Full academic citations, standard access classifications, and verified parameter cross-references [S01–S12].</p>
+<span class="wlc-card-action">View Bibliography &rarr;</span>
+</a>
+</div>
+<details class="wlc-mermaid-toggle">
+<summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Standard Schematic (Mermaid Code)</summary>
+<div class="wlc-mermaid-wrapper">
+<div class="mermaid">flowchart LR
+Start["00. Orientation &amp; Scope"] --> L1["01. Foundations &amp; Standards<br/>(EN 15978 / ISO 21930)"]
+L1 --> L2["02. Upfront Carbon<br/>(Modules A1–A5)"]
+L2 --> L3["03. In-Use Stage<br/>(Modules B1–B5)"]
+L3 --> L4["04. End-of-Life &amp; Module D<br/>(C1–C4 &amp; Circularity)"]
+L4 --> L5["05. Practical Calculation<br/>(Full Case Study)"]
+L5 --> Bib["99. Annotated Ledger"]
+L2 -.-> Sim["Interactive Simulator"]
+L5 -.-> Sim
+classDef stage fill:#fdfbf7,stroke:#de634d,stroke-width:2px;
+classDef sim fill:#eff6ff,stroke:#3b827e,stroke-width:2px,stroke-dasharray: 4 4;
+class Start,L1,L2,L3,L4,L5,Bib stage;
+class Sim sim;</div>
+</div>
+</details>
+</div>
 
 ### Table of Contents
 

@@ -1,0 +1,782 @@
+/* ==========================================================================
+   Whole Life Carbon (WLC) & Embodied Carbon Diagrams & Flowcharts
+   Interactive, Responsive & Publication-Grade Visualisations
+   Compatible with Gokarna Light & Dark Themes
+   ========================================================================== */
+
+:root {
+  --wlc-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --wlc-radius: 12px;
+  --wlc-radius-sm: 8px;
+  --wlc-radius-pill: 9999px;
+  --wlc-transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --wlc-border: var(--border-color, rgba(128, 128, 128, 0.22));
+  --wlc-card-bg: var(--surface-color, rgba(255, 255, 255, 0.85));
+  --wlc-container-bg: rgba(128, 128, 128, 0.04);
+  --wlc-text: var(--text-color, #2c3134);
+  --wlc-muted: var(--muted-color, #696e70);
+
+  /* Curated Earthy WLC Stage Color Palette */
+  --wlc-stage-a: #de634d;        /* Upfront / Product & Site (Warm Coral/Terracotta) */
+  --wlc-stage-a-bg: rgba(222, 99, 77, 0.12);
+  --wlc-stage-a-border: rgba(222, 99, 77, 0.35);
+
+  --wlc-stage-trans: #e1a102;    /* Logistics A4 (Golden Amber) */
+  --wlc-stage-trans-bg: rgba(225, 161, 2, 0.12);
+  --wlc-stage-trans-border: rgba(225, 161, 2, 0.35);
+
+  --wlc-stage-b: #3b827e;        /* In-Use B1-B7 (Sage / Ocean Teal) */
+  --wlc-stage-b-bg: rgba(59, 130, 126, 0.12);
+  --wlc-stage-b-border: rgba(59, 130, 126, 0.35);
+
+  --wlc-stage-c: #ab613c;        /* End of Life C1-C4 (Rust / Crimson) */
+  --wlc-stage-c-bg: rgba(171, 97, 60, 0.12);
+  --wlc-stage-c-border: rgba(171, 97, 60, 0.35);
+
+  --wlc-stage-d: #10b981;        /* Circularity Module D (Emerald Green) */
+  --wlc-stage-d-bg: rgba(16, 185, 129, 0.12);
+  --wlc-stage-d-border: rgba(16, 185, 129, 0.38);
+
+  --wlc-stage-flow: #6366f1;      /* Process / Engineering Flow (Indigo) */
+  --wlc-stage-flow-bg: rgba(99, 102, 241, 0.12);
+  --wlc-stage-flow-border: rgba(99, 102, 241, 0.35);
+}
+
+/* Base Diagram Container */
+.wlc-diagram-box {
+  margin: 2.2rem 0;
+  padding: 1.6rem;
+  background: var(--wlc-container-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius);
+  font-family: var(--wlc-font);
+  color: var(--wlc-text);
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.wlc-diagram-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--wlc-border);
+}
+
+.wlc-diagram-header-left h4 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wlc-diagram-header-left p {
+  margin: 0.25rem 0 0;
+  font-size: 0.88rem;
+  color: var(--wlc-muted);
+}
+
+.wlc-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--wlc-radius-pill);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  color: var(--wlc-muted);
+}
+
+.wlc-tag.live {
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Toolbar & Filters */
+.wlc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.4rem;
+}
+
+.wlc-filter-btn {
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  color: var(--wlc-text);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--wlc-radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--wlc-transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.wlc-filter-btn:hover {
+  border-color: var(--wlc-stage-a);
+  transform: translateY(-1px);
+}
+
+.wlc-filter-btn.active {
+  background: var(--wlc-stage-a);
+  color: #ffffff;
+  border-color: var(--wlc-stage-a);
+  box-shadow: 0 4px 10px rgba(222, 99, 77, 0.3);
+}
+
+/* Interactive Card Nodes */
+.wlc-node {
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  padding: 0.95rem;
+  cursor: pointer;
+  transition: var(--wlc-transition);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wlc-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -2px rgba(0, 0, 0, 0.09);
+  border-color: currentColor;
+}
+
+.wlc-node.active {
+  box-shadow: 0 0 0 2px currentColor;
+  transform: translateY(-2px);
+}
+
+.wlc-node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+}
+
+.wlc-node-code {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.wlc-node-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0.2rem 0;
+  line-height: 1.35;
+}
+
+.wlc-node-sub {
+  font-size: 0.8rem;
+  color: var(--wlc-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.wlc-node-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--wlc-radius-pill);
+  align-self: flex-start;
+}
+
+/* Node Color Schemes */
+.wlc-node.stage-a {
+  border-left: 4px solid var(--wlc-stage-a);
+}
+.wlc-node.stage-a .wlc-node-code {
+  background: var(--wlc-stage-a-bg);
+  color: var(--wlc-stage-a);
+}
+.wlc-node.stage-a .wlc-node-badge {
+  background: var(--wlc-stage-a-bg);
+  color: var(--wlc-stage-a);
+}
+
+.wlc-node.stage-trans {
+  border-left: 4px solid var(--wlc-stage-trans);
+}
+.wlc-node.stage-trans .wlc-node-code {
+  background: var(--wlc-stage-trans-bg);
+  color: var(--wlc-stage-trans);
+}
+.wlc-node.stage-trans .wlc-node-badge {
+  background: var(--wlc-stage-trans-bg);
+  color: var(--wlc-stage-trans);
+}
+
+.wlc-node.stage-b {
+  border-left: 4px solid var(--wlc-stage-b);
+}
+.wlc-node.stage-b .wlc-node-code {
+  background: var(--wlc-stage-b-bg);
+  color: var(--wlc-stage-b);
+}
+.wlc-node.stage-b .wlc-node-badge {
+  background: var(--wlc-stage-b-bg);
+  color: var(--wlc-stage-b);
+}
+
+.wlc-node.stage-c {
+  border-left: 4px solid var(--wlc-stage-c);
+}
+.wlc-node.stage-c .wlc-node-code {
+  background: var(--wlc-stage-c-bg);
+  color: var(--wlc-stage-c);
+}
+.wlc-node.stage-c .wlc-node-badge {
+  background: var(--wlc-stage-c-bg);
+  color: var(--wlc-stage-c);
+}
+
+.wlc-node.stage-d {
+  border-left: 4px solid var(--wlc-stage-d);
+  border-style: dashed;
+}
+.wlc-node.stage-d .wlc-node-code {
+  background: var(--wlc-stage-d-bg);
+  color: var(--wlc-stage-d);
+}
+.wlc-node.stage-d .wlc-node-badge {
+  background: var(--wlc-stage-d-bg);
+  color: var(--wlc-stage-d);
+}
+
+.wlc-node.stage-flow {
+  border-left: 4px solid var(--wlc-stage-flow);
+}
+.wlc-node.stage-flow .wlc-node-code {
+  background: var(--wlc-stage-flow-bg);
+  color: var(--wlc-stage-flow);
+}
+.wlc-node.stage-flow .wlc-node-badge {
+  background: var(--wlc-stage-flow-bg);
+  color: var(--wlc-stage-flow);
+}
+
+/* Connecting Flow Arrows */
+.wlc-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wlc-muted);
+  opacity: 0.6;
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+/* Detail Inspector Drawer */
+.wlc-inspector {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.4rem;
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  border-left: 4px solid var(--wlc-stage-a);
+  border-radius: var(--wlc-radius-sm);
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+  transition: var(--wlc-transition);
+  animation: wlcFadeIn 0.3s ease;
+}
+
+@keyframes wlcFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.wlc-inspector h5 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wlc-inspector p {
+  margin: 0.35rem 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.wlc-inspector-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--wlc-border);
+  font-size: 0.82rem;
+}
+
+.wlc-inspector-meta span strong {
+  color: var(--wlc-text);
+}
+
+/* ==========================================================================
+   FLOWCHART 0: Course Roadmap (Lesson 00)
+   ========================================================================== */
+.wlc-roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.wlc-roadmap-card {
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--wlc-transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.wlc-roadmap-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--wlc-stage-a);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.08);
+}
+
+.wlc-roadmap-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.6rem;
+}
+
+.wlc-step-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--wlc-radius-pill);
+  background: var(--wlc-stage-a-bg);
+  color: var(--wlc-stage-a);
+}
+
+.wlc-roadmap-card h5 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.wlc-roadmap-card p {
+  font-size: 0.82rem;
+  color: var(--wlc-muted);
+  margin: 0 0 0.8rem;
+  line-height: 1.45;
+}
+
+.wlc-card-action {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--wlc-stage-a);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   FLOWCHART 1: Modular Lifecycle Boundary Matrix (Lesson 01)
+   ========================================================================== */
+.wlc-stage-lanes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  margin: 1.2rem 0;
+}
+
+@media (max-width: 960px) {
+  .wlc-stage-lanes {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wlc-lane {
+  background: var(--wlc-container-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: var(--wlc-transition);
+}
+
+.wlc-lane-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid;
+  margin-bottom: 0.2rem;
+}
+
+.wlc-lane.lane-a .wlc-lane-title { color: var(--wlc-stage-a); border-color: var(--wlc-stage-a); }
+.wlc-lane.lane-upfront .wlc-lane-title { color: var(--wlc-stage-trans); border-color: var(--wlc-stage-trans); }
+.wlc-lane.lane-b .wlc-lane-title { color: var(--wlc-stage-b); border-color: var(--wlc-stage-b); }
+.wlc-lane.lane-c .wlc-lane-title { color: var(--wlc-stage-c); border-color: var(--wlc-stage-c); }
+.wlc-lane.lane-d .wlc-lane-title { color: var(--wlc-stage-d); border-color: var(--wlc-stage-d); }
+
+.wlc-lane.dimmed {
+  opacity: 0.25;
+  filter: grayscale(80%);
+}
+
+.wlc-lane.highlighted {
+  box-shadow: 0 0 0 2px var(--wlc-stage-a);
+}
+
+/* ==========================================================================
+   FLOWCHART 2: Upfront Industrial Supply Chain (Lesson 02)
+   ========================================================================== */
+.wlc-dual-stream-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.wlc-streams-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .wlc-streams-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wlc-stream-col {
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  padding: 1.1rem;
+}
+
+.wlc-stream-col-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--wlc-border);
+}
+
+.wlc-stream-nodes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.wlc-convergence-gate {
+  background: var(--wlc-card-bg);
+  border: 2px dashed var(--wlc-stage-a);
+  border-radius: var(--wlc-radius-sm);
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   FLOWCHART 3: 60-Year Whole Life Carbon Progression Timeline (Lesson 03)
+   ========================================================================== */
+.wlc-timeline-container {
+  margin: 1.5rem 0;
+}
+
+.wlc-timeline-steps {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1.4rem;
+}
+
+@media (max-width: 820px) {
+  .wlc-timeline-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .wlc-timeline-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.wlc-time-btn {
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--wlc-transition);
+}
+
+.wlc-time-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--wlc-stage-b);
+}
+
+.wlc-time-btn.active {
+  background: var(--wlc-stage-b);
+  color: #ffffff;
+  border-color: var(--wlc-stage-b);
+  box-shadow: 0 4px 12px rgba(59, 130, 126, 0.35);
+}
+
+.wlc-time-btn .yr {
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: block;
+}
+
+.wlc-time-btn .inc {
+  font-size: 0.75rem;
+  opacity: 0.85;
+  margin-top: 0.2rem;
+  display: block;
+}
+
+.wlc-progress-box {
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.wlc-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+}
+
+.wlc-progress-header strong {
+  font-size: 1.05rem;
+}
+
+.wlc-progress-val {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--wlc-stage-a);
+  font-feature-settings: "tnum";
+}
+
+.wlc-meter-track {
+  width: 100%;
+  height: 18px;
+  background: var(--wlc-container-bg);
+  border-radius: var(--wlc-radius-pill);
+  overflow: hidden;
+  border: 1px solid var(--wlc-border);
+  display: flex;
+}
+
+.wlc-meter-fill {
+  height: 100%;
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  background: linear-gradient(90deg, #de634d, #e1a102, #3b827e);
+}
+
+/* ==========================================================================
+   FLOWCHART 4: End-of-Waste & Circular Economy Loop (Lesson 04)
+   ========================================================================== */
+.wlc-circular-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+@media (max-width: 820px) {
+  .wlc-circular-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wlc-boundary-divider {
+  position: relative;
+  border-left: 2px dashed var(--wlc-stage-d);
+  padding-left: 1.2rem;
+}
+
+.wlc-threshold-banner {
+  background: var(--wlc-stage-d-bg);
+  border: 1px solid var(--wlc-stage-d-border);
+  color: var(--wlc-stage-d);
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--wlc-radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.wlc-circular-loop-callout {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: var(--wlc-radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.wlc-circular-loop-callout svg {
+  flex-shrink: 0;
+  color: var(--wlc-stage-d);
+}
+
+/* ==========================================================================
+   FLOWCHART 5: 4-Stage LCA Calculation Pipeline (Lesson 05)
+   ========================================================================== */
+.wlc-pipeline-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+  margin: 1.2rem 0;
+}
+
+@media (max-width: 900px) {
+  .wlc-pipeline-track {
+    grid-template-columns: 1fr;
+  }
+}
+
+.wlc-pipe-step {
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  transition: var(--wlc-transition);
+  cursor: pointer;
+  position: relative;
+}
+
+.wlc-pipe-step:hover {
+  transform: translateY(-2px);
+  border-color: var(--wlc-stage-flow);
+}
+
+.wlc-pipe-step.active {
+  box-shadow: 0 0 0 2px var(--wlc-stage-flow);
+}
+
+.wlc-step-num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--wlc-stage-flow-bg);
+  color: var(--wlc-stage-flow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+
+.wlc-pipe-step h5 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.wlc-pipe-step p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--wlc-muted);
+  line-height: 1.45;
+}
+
+.wlc-pipe-badge {
+  margin-top: 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--wlc-radius-pill);
+  background: var(--wlc-container-bg);
+  align-self: flex-start;
+  color: var(--wlc-muted);
+}
+
+/* ==========================================================================
+   Mermaid Fallback & Toggle Style
+   ========================================================================== */
+.wlc-mermaid-toggle {
+  margin-top: 1.5rem;
+  border: 1px dashed var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  padding: 0.6rem 0.9rem;
+  background: rgba(128, 128, 128, 0.02);
+}
+
+.wlc-mermaid-toggle summary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--wlc-muted);
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  user-select: none;
+}
+
+.wlc-mermaid-toggle summary:hover {
+  color: var(--wlc-text);
+}
+
+.wlc-mermaid-wrapper {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  border-radius: var(--wlc-radius-sm);
+  overflow-x: auto;
+  text-align: center;
+}
+
+.wlc-mermaid-wrapper svg {
+  max-width: 100%;
+  height: auto;
+}

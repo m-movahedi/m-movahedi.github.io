@@ -206,11 +206,13 @@
 <link rel="stylesheet" href="/css/llm-diagrams.css">
 <link rel="stylesheet" href="/css/tm-series.css">
 <link rel="stylesheet" href="/css/mc-series.css">
+<link rel="stylesheet" href="/css/wlc-diagrams.css">
 
 <script defer src="/js/hbm-widgets.js"></script>
 <script defer src="/js/llm-diagrams.js"></script>
 <script defer src="/js/tm-series.js"></script>
 <script defer src="/js/mc-scrollytelling.js"></script>
+<script defer src="/js/wlc-diagrams.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
 <script>
@@ -573,32 +575,108 @@ $$\text{Module D} = -(90.45\text{ tonnes} \times 1{,}850\text{ kgCO}_2\text{e}/\
 <hr>
 <h2 id="visual-explanation">Visual explanation</h2>
 <p>The diagram below tracks materials passing through demolition and the <strong>End-of-Waste</strong> boundary into the circular secondary materials market.</p>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TD
-    subgraph StageC[&#34;Stage C: End-of-Life (Inside System Boundary)&#34;]
-        Decon[&#34;C1: Deconstruction &amp; Demolition&lt;br/&gt;Hydraulic Shears &amp; Cranes&#34;]
-        Transport[&#34;C2: Transport to Waste Depot&lt;br/&gt;Haulage Trucks (50 km)&#34;]
-        Decon --&gt; Transport
-        Transport --&gt; Separation[&#34;C3: Material Separation&lt;br/&gt;Magnetic Sorting &amp; Crushing&#34;]
-        Separation --&gt; Landfill[&#34;C4: Inert Landfill&lt;br/&gt;(4% Unrecovered Loss)&#34;]
-    end
-
-    subgraph Boundary[&#34;End-of-Waste State&#34;]
-        Separation --&gt; CleanScrap[&#34;Clean Secondary Scrap / Crushed Aggregate&lt;br/&gt;[Ceases to be Waste]&#34;]
-    end
-
-    subgraph ModuleD[&#34;Module D: Beyond the System Boundary&#34;]
-        CleanScrap --&gt; NetCalc[&#34;Net Scrap Calculation:&lt;br/&gt;(Recovered EoL Scrap) - (Virgin Scrap Input A1-A3)&#34;]
-        NetCalc --&gt; Avoided[&#34;Avoided Burden Credit:&lt;br/&gt;Displaces Primary Blast Furnace Steelmaking&#34;]
-    end
-
-    classDef stageC fill:#fee2e2,stroke:#dc2626,stroke-width:2px;
-    classDef eow fill:#fef3c7,stroke:#d97706,stroke-width:2px;
-    classDef stageD fill:#dcfce7,stroke:#16a34a,stroke-width:2px,stroke-dasharray: 5 5;
-
-    class Decon,Transport,Separation,Landfill stageC;
-    class CleanScrap stageeow;
-    class NetCalc,Avoided stageD;
-</code></pre><h3 id="reading-the-diagram">Reading the Diagram</h3>
+<div class="wlc-diagram-box" id="wlc-circular-box">
+<div class="wlc-diagram-header">
+<div class="wlc-diagram-header-left">
+<h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg> End-of-Life Demolition &amp; Circular Secondary Market (C1–C4 &amp; Module D)</h4>
+<p>Tracking material deconstruction across the regulatory End-of-Waste threshold into the secondary materials market. Toggle scenarios to test Net Scrap rules.</p>
+</div>
+<span class="wlc-tag live">Circularity Loop</span>
+</div>
+<div class="wlc-toolbar">
+<button class="wlc-filter-btn active" data-circ-scen="bof">Scenario A: BOF Steel (25% recycled input)</button>
+<button class="wlc-filter-btn" data-circ-scen="eaf">Scenario B: High-Scrap EAF Steel (95% recycled)</button>
+<button class="wlc-filter-btn" data-circ-scen="concrete">Scenario C: Concrete Rubble Downcycling</button>
+</div>
+<div class="wlc-circular-layout">
+<div>
+<div class="wlc-stream-col-title" style="color:var(--wlc-stage-c);">
+<span class="wlc-step-pill" style="background:var(--wlc-stage-c-bg);color:var(--wlc-stage-c);">Stage C</span>
+Inside Cradle-to-Grave Boundary (Decommissioning)
+</div>
+<div class="wlc-stream-nodes">
+<div class="wlc-node stage-c active" data-code="C1" data-title="Deconstruction &amp; Demolition" data-desc="High-reach excavators, hydraulic shears, and selective dismantling to segregate clean structural elements before bulk demolition." data-formula="Diesel_{shears} \times 2.68\text{ kgCO}_2\text{e/L}" data-standard="EN 15978 &sect;7.5.2" data-benchmark="Typically 4–8 kgCO2e/m² GIA">
+<div class="wlc-node-header"><span class="wlc-node-code">C1</span></div>
+<div class="wlc-node-title">C1: Selective Deconstruction</div>
+<p class="wlc-node-sub">Hydraulic shears &amp; high-reach excavators</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-c" data-code="C2" data-title="Haulage to Waste Transfer Depot" data-desc="Tipper truck transport of mixed rubble and recovered rebar to local recycling/processing facilities (standard 50 km haulage distance)." data-formula="M_{rubble} \times 50\text{ km} \times EF_{tipper}" data-standard="RICS WLCPS 2023 &sect;3.6.2" data-benchmark="Typically 3–7 kgCO2e/m² GIA">
+<div class="wlc-node-header"><span class="wlc-node-code">C2</span></div>
+<div class="wlc-node-title">C2: Transport to Waste Depot</div>
+<p class="wlc-node-sub">Tipper haulage trucks (50 km)</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-c" data-code="C3–C4" data-title="Separation, Crushing &amp; Landfill" data-desc="Overband magnetic separators extract 96% of reinforcing steel. Concrete is crushed into aggregate. Residual 4% unrecovered fraction sent to inert landfill." data-formula="M_{landfill} \times EF_{landfill} + M_{proc} \times EF_{crush}" data-standard="EN 15978 &sect;7.5.4" data-benchmark="Recovers ~96% steel, ~90% aggregate for secondary use">
+<div class="wlc-node-header"><span class="wlc-node-code">C3–C4</span></div>
+<div class="wlc-node-title">C3–C4: Magnetic Separation &amp; Disposal</div>
+<p class="wlc-node-sub">96% recovery to scrap market; 4% unrecovered loss</p>
+</div>
+</div>
+</div>
+<div class="wlc-boundary-divider">
+<div class="wlc-threshold-banner">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+End-of-Waste Regulatory State
+</div>
+<div class="wlc-stream-col-title" style="color:var(--wlc-stage-d);">
+<span class="wlc-step-pill" style="background:var(--wlc-stage-d-bg);color:var(--wlc-stage-d);">Module D</span>
+Beyond Boundary (Circularity Ledger)
+</div>
+<div class="wlc-stream-nodes">
+<div class="wlc-node stage-d" data-code="Net Scrap" data-title="Net Scrap Mass Determination" data-desc="Under EN 15804+A2, credits are restricted strictly to net scrap exported beyond the project to prevent double counting." data-formula="M_{net scrap} = M_{recovered, EoL} - M_{recycled input, A1-A3}" data-standard="EN 15804+A2 &sect;6.4.3.3" data-benchmark="Prevents fraudulent double counting across lifecycles">
+<div class="wlc-node-header"><span class="wlc-node-code">Balance</span></div>
+<div class="wlc-node-title">Net Scrap Accounting</div>
+<p class="wlc-node-sub wlc-circ-net-val">+105.75 tonnes net scrap credit</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-d" data-code="Mod D Credit" data-title="Avoided Primary Production Burden" data-desc="Clean scrap exported displaces carbon-intensive primary blast furnace smelting, conferring an avoided burden credit onto future industries." data-formula="Credit = M_{net scrap} \times (EF_{primary} - EF_{secondary})" data-standard="ISO 21930:2017 &sect;7.1.7.5" data-benchmark="Reported separately; never subtracted from A–C total">
+<div class="wlc-node-header"><span class="wlc-node-code">Credit</span></div>
+<div class="wlc-node-title">Avoided Burden Credit</div>
+<p class="wlc-node-sub wlc-circ-credit-val">-195.6 tCO2e credit to Module D</p>
+</div>
+</div>
+<div class="wlc-circular-loop-callout">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+<span style="font-size:0.82rem;line-height:1.4;" class="wlc-circ-expl">Standard BOF steel with only 25% virgin scrap input. High net scrap surplus is exported to secondary market, displacing carbon-intensive primary blast furnace smelting.</span>
+</div>
+</div>
+</div>
+<div class="wlc-inspector">
+<h5 class="wlc-ins-title"><strong>[C1]</strong> Deconstruction &amp; Selective Demolition</h5>
+<p class="wlc-ins-desc">High-reach excavators, hydraulic shears, and selective dismantling to segregate clean structural elements before bulk demolition.</p>
+<div class="wlc-inspector-meta">
+<span class="wlc-ins-formula"><strong>Formula:</strong> <span>Diesel_{shears} \times 2.68\text{ kgCO}_2\text{e/L}</span></span>
+<span class="wlc-ins-standard"><strong>Standard:</strong> <span>EN 15978 &sect;7.5.2</span></span>
+<span class="wlc-ins-bench"><strong>Benchmark:</strong> <span>Typically 4–8 kgCO2e/m² GIA</span></span>
+</div>
+</div>
+<details class="wlc-mermaid-toggle">
+<summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Standard Schematic (Mermaid Code)</summary>
+<div class="wlc-mermaid-wrapper">
+<div class="mermaid">flowchart LR
+subgraph StageC["Stage C: End of Life (C1–C4)"]
+    C1["C1: Deconstruction"] --> C2["C2: Transport Waste"]
+    C2 --> C3["C3: Magnetic Separation"]
+    C3 --> C4["C4: Inert Landfill (4%)"]
+end
+subgraph Threshold["Threshold"]
+    C3 --> EOW["End-of-Waste State"]
+end
+subgraph ModuleD["Module D: Beyond Boundary"]
+    EOW --> NetScrap["Net Scrap: Recovered - Recycled Input"]
+    NetScrap --> Credit["Avoided Burden Credit"]
+end
+classDef stageC fill:#fdfbf7,stroke:#ab613c,stroke-width:2px;
+classDef eow fill:#fef3c7,stroke:#e1a102,stroke-width:2px;
+classDef stageD fill:#fdfbf7,stroke:#10b981,stroke-width:2px,stroke-dasharray: 4 4;
+class C1,C2,C3,C4 stageC;
+class EOW eow;
+class NetScrap,Credit stageD;</div>
+</div>
+</details>
+</div>
+<h3 id="reading-the-diagram">Reading the Diagram</h3>
 <ol>
 <li>Operations inside <strong>Stage C</strong> represent activities funded and managed as part of the building&rsquo;s decommissioning.</li>
 <li>The <strong>End-of-Waste</strong> state is the regulatory and physical threshold where processed material becomes commercially tradable secondary raw material.</li>

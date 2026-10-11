@@ -209,11 +209,13 @@ Differentiate …">
 <link rel="stylesheet" href="/css/llm-diagrams.css">
 <link rel="stylesheet" href="/css/tm-series.css">
 <link rel="stylesheet" href="/css/mc-series.css">
+<link rel="stylesheet" href="/css/wlc-diagrams.css">
 
 <script defer src="/js/hbm-widgets.js"></script>
 <script defer src="/js/llm-diagrams.js"></script>
 <script defer src="/js/tm-series.js"></script>
 <script defer src="/js/mc-scrollytelling.js"></script>
+<script defer src="/js/wlc-diagrams.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
 <script>
@@ -603,48 +605,137 @@ $$\text{Module D Intensity} = \frac{-640{,}000\text{ kgCO}_2\text{e}}{8{,}000\te
 <hr>
 <h2 id="visual-explanation">Visual explanation</h2>
 <p>The diagram below outlines the modular stages defined by EN 15978 [S01] and ISO 21930 [S03], highlighting the system boundaries and the strict separation of Module D.</p>
-<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart LR
-    subgraph CradleToGate[&#34;Cradle-to-Gate (EPD Boundary)&#34;]
-        A1[&#34;A1: Raw Material Supply&#34;] --&gt; A2[&#34;A2: Transport to Mill&#34;]
-        A2 --&gt; A3[&#34;A3: Manufacturing&#34;]
-    end
-
-    subgraph Upfront[&#34;Upfront Carbon Boundary (A1–A5)&#34;]
-        CradleToGate --&gt; A4[&#34;A4: Transport to Site&#34;]
-        A4 --&gt; A5[&#34;A5: Site Installation &amp; Waste&#34;]
-    end
-
-    subgraph InUse[&#34;Use Stage (B1–B7)&#34;]
-        Upfront --&gt; B1[&#34;B1: In-Situ Use&#34;]
-        B1 --&gt; B2[&#34;B2: Maintenance&#34;]
-        B2 --&gt; B3[&#34;B3: Repair&#34;]
-        B3 --&gt; B4[&#34;B4: Replacement&#34;]
-        B4 --&gt; B5[&#34;B5: Refurbishment&#34;]
-        B5 --&gt; B6[&#34;B6: Operational Energy&#34;]
-        B6 --&gt; B7[&#34;B7: Operational Water&#34;]
-    end
-
-    subgraph EndOfLife[&#34;End-of-Life Stage (C1–C4)&#34;]
-        InUse --&gt; C1[&#34;C1: Demolition&#34;]
-        C1 --&gt; C2[&#34;C2: Transport Waste&#34;]
-        C2 --&gt; C3[&#34;C3: Waste Processing&#34;]
-        C3 --&gt; C4[&#34;C4: Final Disposal&#34;]
-    end
-
-    subgraph Beyond[&#34;Beyond System Boundary&#34;]
-        EndOfLife -. &#34;Recycled Scrap &amp; Reused Elements&#34; .-&gt; D[&#34;Module D: Benefits &amp; Loads Beyond Boundary&#34;]
-    end
-
-    classDef stageA fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px;
-    classDef stageB fill:#fef3c7,stroke:#d97706,stroke-width:2px;
-    classDef stageC fill:#fee2e2,stroke:#dc2626,stroke-width:2px;
-    classDef stageD fill:#dcfce7,stroke:#16a34a,stroke-width:2px,stroke-dasharray: 5 5;
-
-    class A1,A2,A3,A4,A5 stageA;
-    class B1,B2,B3,B4,B5,B6,B7 stageB;
-    class C1,C2,C3,C4 stageC;
-    class D stageD;
-</code></pre><h3 id="reading-the-diagram">Reading the Diagram</h3>
+<div class="wlc-diagram-box" id="wlc-boundary-matrix-box">
+<div class="wlc-diagram-header">
+<div class="wlc-diagram-header-left">
+<h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> Modular Lifecycle Stages &amp; System Boundaries</h4>
+<p>Interactive EN 15978 / ISO 21930 / RICS stage matrix. Select a boundary filter or click any module to inspect its accounting rules.</p>
+</div>
+<span class="wlc-tag live">Interactive Matrix</span>
+</div>
+<div class="wlc-toolbar">
+<button class="wlc-filter-btn active" data-boundary="all">All Modules</button>
+<button class="wlc-filter-btn" data-boundary="cradle-to-gate">Cradle-to-Gate (A1–A3)</button>
+<button class="wlc-filter-btn" data-boundary="upfront">Upfront Carbon (A1–A5)</button>
+<button class="wlc-filter-btn" data-boundary="cradle-to-grave">Cradle-to-Grave (A1–C4)</button>
+<button class="wlc-filter-btn" data-boundary="wlc-module-d">WLC + Module D Circularity</button>
+</div>
+<div class="wlc-stage-lanes">
+<div class="wlc-lane lane-a" data-lane-type="a1-a3">
+<div class="wlc-lane-title">Product (A1–A3)</div>
+<div class="wlc-node stage-a active" data-code="A1" data-title="Raw Material Extraction" data-desc="Quarrying limestone, mining iron ore, felling timber, harvesting crude petroleum feedstocks. Includes resource depletion burdens." data-formula="Mass (kg) &times; Raw Material Extraction EF" data-standard="EN 15804+A2 &sect;6.2.2 / ISO 21930" data-benchmark="Dominates embodied baseline (~40–60% of total A1–A3)">
+<div class="wlc-node-header"><span class="wlc-node-code">A1</span></div>
+<div class="wlc-node-title">Raw Materials</div>
+<p class="wlc-node-sub">Quarrying, mining, forestry</p>
+</div>
+<div class="wlc-node stage-a" data-code="A2" data-title="Transport to Manufacturer" data-desc="Haulage of raw limestone, clay, scrap metal, and aggregate minerals from extraction quarries to manufacturing mills and processing works." data-formula="Tonnes &times; Freight Distance &times; Vehicle EF" data-standard="EN 15804+A2 &sect;6.2.3" data-benchmark="Typically 2–6% of Product Stage A1–A3">
+<div class="wlc-node-header"><span class="wlc-node-code">A2</span></div>
+<div class="wlc-node-title">Transport to Mill</div>
+<p class="wlc-node-sub">Heavy freight &amp; rail haulage</p>
+</div>
+<div class="wlc-node stage-a" data-code="A3" data-title="Manufacturing &amp; Processing" data-desc="High-temperature kiln calcination of clinker, electric arc or blast furnace smelting of steel, rolling, autoclaving, packaging." data-formula="Factory thermal energy + grid electricity + direct chemical emissions" data-standard="EN 15804+A2 &sect;6.2.4" data-benchmark="Primary decarbonization lever (SCM replacement, green steel)">
+<div class="wlc-node-header"><span class="wlc-node-code">A3</span></div>
+<div class="wlc-node-title">Manufacturing</div>
+<p class="wlc-node-sub">Kiln calcination &amp; smelting</p>
+</div>
+</div>
+<div class="wlc-lane lane-upfront" data-lane-type="a4-a5">
+<div class="wlc-lane-title">Construction (A4–A5)</div>
+<div class="wlc-node stage-trans" data-code="A4" data-title="Logistics to Site" data-desc="Transport of manufactured finished products from gate to site. Governed by vehicle size, payload capacity factor, and empty return rates." data-formula="Q_i &times; d_i &times; EF_{mode}" data-standard="RICS WLCPS 2023 &sect;3.4.2" data-benchmark="Typically 15–40 kgCO2e/m² GIA">
+<div class="wlc-node-header"><span class="wlc-node-code">A4</span></div>
+<div class="wlc-node-title">Transport to Site</div>
+<p class="wlc-node-sub">Ready-mix trucks &amp; articulated HGVs</p>
+</div>
+<div class="wlc-node stage-a" data-code="A5" data-title="Installation &amp; Wastage" data-desc="Compounded upstream emissions embedded in off-cuts, spillage, and packaging waste, plus on-site plant fuel (cranes, excavators, diesel generators)." data-formula="M_i &times; W_i &times; EF_{A1-A4} + E_{plant}" data-standard="RICS WLCPS 2023 &sect;3.4.3" data-benchmark="Site wastage adds 3%–15% markup on structural materials">
+<div class="wlc-node-header"><span class="wlc-node-code">A5</span></div>
+<div class="wlc-node-title">Site Erection &amp; Waste</div>
+<p class="wlc-node-sub">Plant diesel &amp; material scrap</p>
+</div>
+</div>
+<div class="wlc-lane lane-b" data-lane-type="b">
+<div class="wlc-lane-title">Use Stage (B1–B7)</div>
+<div class="wlc-node stage-b" data-code="B1–B3" data-title="Use, Maintenance &amp; Repair" data-desc="Day-to-day cleaning, periodic surface repainting, minor patching, sealant replacement, and routine servicing over 60 years." data-formula="Annual consumables + maintenance trips" data-standard="EN 15978 &sect;7.4.3" data-benchmark="~10–25 kgCO2e/m² over 60-year lifespan">
+<div class="wlc-node-header"><span class="wlc-node-code">B1–B3</span></div>
+<div class="wlc-node-title">Maintenance &amp; Repair</div>
+<p class="wlc-node-sub">Routine upkeep &amp; surface preservation</p>
+</div>
+<div class="wlc-node stage-b" data-code="B4–B5" data-title="Replacement &amp; Refurbishment" data-desc="Major component replacements based on Estimated Service Life (ESL) vs 60-yr Reference Study Period: interior fit-out (10 yr), MEP (20 yr), facade (30 yr)." data-formula="N_{repl} = ceil(RSP / ESL) - 1" data-standard="ISO 15686-1 / RICS WLCPS &sect;3.5" data-benchmark="Often equals or exceeds original upfront fit-out carbon">
+<div class="wlc-node-header"><span class="wlc-node-code">B4–B5</span></div>
+<div class="wlc-node-title">Replacement Cycles</div>
+<p class="wlc-node-sub">Fit-out, MEP &amp; envelope renewal</p>
+</div>
+<div class="wlc-node stage-b" data-code="B6–B7" data-title="Operational Energy &amp; Water" data-desc="Operational carbon from heating, ventilation, air conditioning, artificial lighting, and domestic hot water. Accounted separately from embodied modules." data-formula="kWh_{grid} &times; EF_{grid}(t) + kWh_{gas} &times; EF_{gas}" data-standard="EN 15978 &sect;7.4.5" data-benchmark="Decarbonizes dynamically with national grid intensity">
+<div class="wlc-node-header"><span class="wlc-node-code">B6–B7</span></div>
+<div class="wlc-node-title">Operational Carbon</div>
+<p class="wlc-node-sub">HVAC, power &amp; water consumption</p>
+</div>
+</div>
+<div class="wlc-lane lane-c" data-lane-type="c">
+<div class="wlc-lane-title">End-of-Life (C1–C4)</div>
+<div class="wlc-node stage-c" data-code="C1–C2" data-title="Deconstruction &amp; Waste Transport" data-desc="Selective dismantling, hydraulic shearing, high-reach excavators, and haulage of demolished debris to waste transfer and processing depots." data-formula="Diesel_{shears} + M_{waste} &times; d_{depot} &times; EF_{HGV}" data-standard="EN 15978 &sect;7.5" data-benchmark="Typically 15–35 kgCO2e/m² GIA">
+<div class="wlc-node-header"><span class="wlc-node-code">C1–C2</span></div>
+<div class="wlc-node-title">Demolition &amp; Haulage</div>
+<p class="wlc-node-sub">Plant diesel &amp; debris transport</p>
+</div>
+<div class="wlc-node stage-c" data-code="C3–C4" data-title="Waste Processing &amp; Final Disposal" data-desc="Magnetic sorting of scrap, concrete rubble crushing, sorting inert debris, and methane/landfill emissions for unrecovered timber or organics." data-formula="M_{landfill} &times; EF_{landfill} + M_{proc} &times; EF_{crush}" data-standard="EN 15978 &sect;7.5.4" data-benchmark="Concrete re-carbonation can be accounted here under EN 16757">
+<div class="wlc-node-header"><span class="wlc-node-code">C3–C4</span></div>
+<div class="wlc-node-title">Processing &amp; Landfill</div>
+<p class="wlc-node-sub">Sorting, crushing &amp; inert disposal</p>
+</div>
+</div>
+<div class="wlc-lane lane-d" data-lane-type="d">
+<div class="wlc-lane-title">Circularity (Module D)</div>
+<div class="wlc-node stage-d" data-code="Module D" data-title="Beyond System Boundary Benefits" data-desc="Supplementary disclosure of net benefits exported outside the building's physical lifecycle: recycled structural scrap steel displacing primary blast furnace production." data-formula="M_{net scrap} &times; (EF_{primary} - EF_{secondary})" data-standard="EN 15804+A2 &sect;6.4.3.3 / ISO 21930" data-benchmark="Reported separately; NEVER subtracted from Cradle-to-Grave total">
+<div class="wlc-node-header"><span class="wlc-node-code">Mod D</span></div>
+<div class="wlc-node-title">Avoided Burdens</div>
+<p class="wlc-node-sub">Secondary scrap &amp; material reuse credits</p>
+</div>
+</div>
+</div>
+<div class="wlc-inspector">
+<h5 class="wlc-ins-title"><strong>[A1]</strong> Raw Material Extraction &amp; Processing</h5>
+<p class="wlc-ins-desc">Quarrying limestone, mining iron ore, felling timber, harvesting crude petroleum feedstocks. Includes resource depletion burdens.</p>
+<div class="wlc-inspector-meta">
+<span class="wlc-ins-formula"><strong>Formula:</strong> <span>Mass (kg) &times; Raw Material Extraction EF</span></span>
+<span class="wlc-ins-standard"><strong>Standard:</strong> <span>EN 15804+A2 &sect;6.2.2 / ISO 21930</span></span>
+<span class="wlc-ins-bench"><strong>Benchmark:</strong> <span>Dominates embodied baseline (~40–60% of total A1–A3)</span></span>
+</div>
+</div>
+<details class="wlc-mermaid-toggle">
+<summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Standard Schematic (Mermaid Code)</summary>
+<div class="wlc-mermaid-wrapper">
+<div class="mermaid">flowchart LR
+subgraph CradleToGate["Cradle-to-Gate (EPD Boundary)"]
+    A1["A1: Raw Materials"] --> A2["A2: Transport to Mill"]
+    A2 --> A3["A3: Manufacturing"]
+end
+subgraph Upfront["Upfront Boundary (A1–A5)"]
+    CradleToGate --> A4["A4: Transport to Site"]
+    A4 --> A5["A5: Site Installation"]
+end
+subgraph InUse["Use Stage (B1–B7)"]
+    Upfront --> B1_B5["B1–B5: Maintenance &amp; Replacements"]
+    B1_B5 --> B6_B7["B6–B7: Operational Energy &amp; Water"]
+end
+subgraph EndOfLife["End-of-Life Stage (C1–C4)"]
+    InUse --> C1_C2["C1–C2: Demolition &amp; Haulage"]
+    C1_C2 --> C3_C4["C3–C4: Processing &amp; Disposal"]
+end
+subgraph Beyond["Beyond System Boundary"]
+    EndOfLife -. "Clean Secondary Scrap" .-> D["Module D: Avoided Burden Credit"]
+end
+classDef stageA fill:#fdfbf7,stroke:#de634d,stroke-width:2px;
+classDef stageB fill:#fdfbf7,stroke:#3b827e,stroke-width:2px;
+classDef stageC fill:#fdfbf7,stroke:#ab613c,stroke-width:2px;
+classDef stageD fill:#fdfbf7,stroke:#10b981,stroke-width:2px,stroke-dasharray: 4 4;
+class A1,A2,A3,A4,A5 stageA;
+class B1_B5,B6_B7 stageB;
+class C1_C2,C3_C4 stageC;
+class D stageD;</div>
+</div>
+</details>
+</div>
+<h3 id="reading-the-diagram">Reading the Diagram</h3>
 <ol>
 <li><strong>Modules A1–A3</strong> represent the industrial supply chain. Product manufacturers declare this cradle-to-gate boundary in Type III Environmental Product Declarations (EPDs).</li>
 <li><strong>Modules A4–A5</strong> add transport logistics to the project site, construction plant machinery, and on-site material waste disposal, forming the <strong>Upfront Carbon</strong> boundary.</li>

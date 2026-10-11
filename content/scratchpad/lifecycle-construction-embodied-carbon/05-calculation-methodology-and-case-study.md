@@ -237,45 +237,87 @@ The multidisciplinary design team is comparing two structural and envelope strat
 
 The diagram below maps the complete data architecture of a Whole Life Carbon assessment, linking BIM geometry, the data hierarchy, and modular calculations to final benchmarking.
 
-```mermaid
-flowchart TD
-    subgraph Input["1. Primary Engineering Inputs"]
-        BIM["BIM Model & Drawings"] --> BoQ["Bill of Quantities (BoQ)<br/>Net Material Masses ($M_i$)"]
-        Cost["Cost Plan & Schedule"] --> Elements["Elemental Breakdown<br/>(Substructure, Frame, Facade, MEP)"]
-    end
-
-    subgraph Hierarchy["2. Carbon Data Hierarchy Matching"]
-        BoQ --> TierSelect{"Data Availability"}
-        TierSelect -->|"Tier 1"| T1["Product-Specific EPDs<br/>(EN 15804+A2)"]
-        TierSelect -->|"Tier 2"| T2["Industry Average EPDs<br/>(MPA / BCSA)"]
-        TierSelect -->|"Tier 3"| T3["National Generic Databases<br/>(ICE Database v3.0)"]
-    end
-
-    subgraph Assembly["3. Modular LCA Engine"]
-        T1 & T2 & T3 --> ModA["Upfront (A1–A5):<br/>$M_i(1+W_i) \times [EF + d \cdot EF_t]$"]
-        Elements --> ModB["In-Use (B1–B5):<br/>$\lceil RSP / ESL \rceil - 1$"]
-        Elements --> ModC["End of Life (C1–C4):<br/>Demolition & Landfill"]
-        Elements --> ModD["Module D (Beyond Boundary):<br/>Net Scrap $\times \Delta EF$"]
-    end
-
-    subgraph Output["4. Benchmarking & Reporting"]
-        ModA & ModB & ModC --> WLC["Cradle-to-Grave Intensity<br/>($kgCO_2e/m^2$ GIA)"]
-        ModD --> CircReport["Separate Circularity Disclosure<br/>($kgCO_2e/m^2$ GIA)"]
-        WLC --> Benchmark{"Climate Target Check"}
-        Benchmark -->|"LETI Target"| Pass["LETI Band A (<350) / Band B (<450)"]
-        Benchmark -->|"RICS Standard"| Standard["RICS Professional Disclosure"]
-    end
-
-    classDef in fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px;
-    classDef hier fill:#fed7aa,stroke:#ea580c,stroke-width:2px;
-    classDef lca fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
-    classDef out fill:#f3e8ff,stroke:#7e22ce,stroke-width:2px;
-
-    class BIM,BoQ,Cost,Elements in;
-    class TierSelect,T1,T2,T3 hier;
-    class ModA,ModB,ModC,ModD lca;
-    class WLC,CircReport,Benchmark,Pass,Standard out;
-```
+<div class="wlc-diagram-box" id="wlc-pipeline-box">
+<div class="wlc-diagram-header">
+<div class="wlc-diagram-header-left">
+<h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> Complete Whole Life Carbon Assessment Architecture</h4>
+<p>Interactive 4-stage engineering pipeline linking 3D BIM geometry to EPD matching, modular LCA equations, and LETI climate benchmarking.</p>
+</div>
+<span class="wlc-tag live">4-Stage Pipeline</span>
+</div>
+<div class="wlc-pipeline-track">
+<div class="wlc-pipe-step active" data-step-num="1" data-title="Primary Engineering Inputs" data-desc="Extracting 3D geometry from BIM models, compiling structural Bills of Quantities (BoQ) with net masses \(M_i\), and aligning with RICS elemental classifications (Substructure, Superstructure, Envelope, Finishes, MEP)." data-formula="M_i = \text{Volume } (m^3) \times \text{Density } (\text{kg}/m^3)" data-standard="RICS WLCPS 2023 &sect;3.2 / NRM 1" data-benchmark="Primary source of measurement error; requires design contingency markups">
+<div class="wlc-step-num">1</div>
+<h5>Engineering Inputs</h5>
+<p>BIM geometry, Bill of Quantities &amp; RICS cost breakdown.</p>
+<span class="wlc-pipe-badge">Net Quantities</span>
+</div>
+<div class="wlc-pipe-step" data-step-num="2" data-title="Data Hierarchy Matching" data-desc="Matching each physical material with the highest-tier carbon factor available: Tier 1 (Product-Specific Type III EPDs, &plusmn;5%), Tier 2 (Industry Average EPDs, &plusmn;15%), or Tier 3 (National Generic Databases like ICE v3.0, &plusmn;25%)." data-formula="\text{Hierarchy: Tier 1 (Product EPD)} \succ \text{Tier 2 (Trade EPD)} \succ \text{Tier 3 (Generic)}" data-standard="EN 15804+A2 &sect;6.3 / ISO 21930 &sect;7.1" data-benchmark="Tier 1 reduces assessment variance by up to 30%">
+<div class="wlc-step-num">2</div>
+<h5>Data Hierarchy</h5>
+<p>EPD pairing: Tier 1 (Specific) &rarr; Tier 2 (Average) &rarr; Tier 3 (ICE).</p>
+<span class="wlc-pipe-badge">Uncertainty Screening</span>
+</div>
+<div class="wlc-pipe-step" data-step-num="3" data-title="Modular LCA Calculation Engine" data-desc="Executing modular carbon accounting algorithms across all life cycle modules: compounding site wastage in A5, calculating in-use replacement cycles in B4, modeling deconstruction in C1–C4, and computing net scrap circularity in Module D." data-formula="E_{total} = \sum E_{A1-A5} + \sum E_{B1-B5} + \sum E_{C1-C4}" data-standard="BS EN 15978:2011 &sect;8 / ISO 21930" data-benchmark="Module D kept strictly separate as non-subtracted circular ledger">
+<div class="wlc-step-num">3</div>
+<h5>Modular LCA Engine</h5>
+<p>Automated execution of A1–A5, B1–B5, C1–C4 and Module D equations.</p>
+<span class="wlc-pipe-badge">Algorithmic Solver</span>
+</div>
+<div class="wlc-pipe-step" data-step-num="4" data-title="Benchmarking &amp; Compliance Reporting" data-desc="Normalizing total cradle-to-grave emissions by Gross Internal Area (GIA) to determine carbon intensity (\(\text{kgCO}_2\text{e}/\text{m}^2\)). Comparing directly against LETI Climate Emergency Design Guide and RICS professional limits." data-formula="\text{Carbon Intensity} = \frac{E_{A-C}}{\text{GIA } (m^2)}" data-standard="LETI Climate Emergency Guide / RICS Standard 2023" data-benchmark="LETI Band A: &lt;350; Band B: &lt;450; Baseline: 492 kgCO2e/m²">
+<div class="wlc-step-num">4</div>
+<h5>Benchmarking</h5>
+<p>GIA normalization and comparison against LETI Bands A/B &amp; RICS targets.</p>
+<span class="wlc-pipe-badge">Target Check</span>
+</div>
+</div>
+<div class="wlc-inspector">
+<h5 class="wlc-ins-title"><strong>[Stage 1]</strong> Primary Engineering Inputs</h5>
+<p class="wlc-ins-desc">Extracting 3D geometry from BIM models, compiling structural Bills of Quantities (BoQ) with net masses \(M_i\), and aligning with RICS elemental classifications (Substructure, Superstructure, Envelope, Finishes, MEP).</p>
+<div class="wlc-inspector-meta">
+<span class="wlc-ins-formula"><strong>Formula:</strong> <span>M_i = \text{Volume } (m^3) \times \text{Density } (\text{kg}/m^3)</span></span>
+<span class="wlc-ins-standard"><strong>Standard:</strong> <span>RICS WLCPS 2023 &sect;3.2 / NRM 1</span></span>
+<span class="wlc-ins-bench"><strong>Benchmark:</strong> <span>Primary source of measurement error; requires design contingency markups</span></span>
+</div>
+</div>
+<details class="wlc-mermaid-toggle">
+<summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Standard Schematic (Mermaid Code)</summary>
+<div class="wlc-mermaid-wrapper">
+<div class="mermaid">flowchart TD
+subgraph Inputs["1. Engineering Inputs"]
+    BIM["BIM Model &amp; Drawings"] --> BoQ["Bill of Quantities (BoQ)<br/>Net Masses M_i"]
+    Cost["Cost Plan &amp; Schedule"] --> Elements["Elemental Breakdown<br/>(Substructure, Frame, MEP)"]
+end
+subgraph Hierarchy["2. Carbon Data Hierarchy"]
+    BoQ --> Tier{"Data Tier Matching"}
+    Tier -->|"Tier 1 (&plusmn;5%)"| T1["Product-Specific EPDs"]
+    Tier -->|"Tier 2 (&plusmn;15%)"| T2["Industry Average EPDs"]
+    Tier -->|"Tier 3 (&plusmn;25%)"| T3["Generic ICE Database"]
+end
+subgraph LCA["3. Modular LCA Engine"]
+    T1 &amp; T2 &amp; T3 --> ModA["Upfront (A1–A5):<br/>M_i(1+W_i) &times; (EF + d &times; EF_t)"]
+    Elements --> ModB["In-Use (B1–B5):<br/>Replacement Churn"]
+    Elements --> ModC["End of Life (C1–C4):<br/>Demolition &amp; Landfill"]
+    Elements --> ModD["Module D (Circularity):<br/>Net Scrap &times; &Delta;EF"]
+end
+subgraph Output["4. Benchmarking &amp; Targets"]
+    ModA &amp; ModB &amp; ModC --> WLC["Cradle-to-Grave WLC<br/>(kgCO2e/m² GIA)"]
+    ModD --> Circ["Module D Circularity Ledger"]
+    WLC --> Bench{"LETI Target Check"}
+    Bench -->|"Band A (&lt;350)"| Pass["Achieves LETI Band A"]
+    Bench -->|"Band B (&lt;450)"| BPass["Achieves LETI Band B"]
+end
+classDef in fill:#fdfbf7,stroke:#6366f1,stroke-width:2px;
+classDef hier fill:#fdfbf7,stroke:#e1a102,stroke-width:2px;
+classDef lca fill:#fdfbf7,stroke:#3b827e,stroke-width:2px;
+classDef out fill:#fdfbf7,stroke:#de634d,stroke-width:2px;
+class BIM,BoQ,Cost,Elements in;
+class Tier,T1,T2,T3 hier;
+class ModA,ModB,ModC,ModD lca;
+class WLC,Circ,Bench,Pass,BPass out;</div>
+</div>
+</details>
+</div>
 
 ---
 

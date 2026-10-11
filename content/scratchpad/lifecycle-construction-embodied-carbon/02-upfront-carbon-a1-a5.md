@@ -205,42 +205,146 @@ Notice that **Product Stage (A1–A3)** dominates upfront carbon by over 90%, hi
 
 The diagram below tracks how raw materials are extracted, transported, and compounded by on-site wastage during physical erection.
 
-```mermaid
-flowchart TD
-    subgraph A1_A3["Module A1–A3: Product Stage"]
-        Agg["Aggregates & SCM Quarrying"] --> Kiln["Cement Calcination & Clinker Burning"]
-        Iron["Iron Ore / Scrap Metal"] --> Smelt["Steel Melting (BOF / EAF)"]
-        Kiln --> Batch["Concrete Batching Plant"]
-        Smelt --> Mill["Rebar Rolling Mill"]
-    end
-
-    subgraph Logistics["Module A4: Transport Logistics"]
-        Batch --> Transit["Transit Mixers (50 km)"]
-        Mill --> Artic["Articulated HGVs (150–300 km)"]
-    end
-
-    subgraph Site["Module A5: Construction Site"]
-        Transit --> SiteDelivery["Site Delivery Gate"]
-        Artic --> SiteDelivery
-        SiteDelivery --> Storage["Material Handling & Storage"]
-        Storage --> Wastage["On-site Wastage (3%–5%)<br/>Off-cuts & Spillage"]
-        Storage --> Installed["Permanently Installed Element"]
-        Wastage --> Disposal["Waste Skip & Transport to Recycling"]
-        Plant["Site Cranes & Diesel Generators"] --> Erection["Bay Erection"]
-    end
-
-    Installed --> PracticalCompletion["Practical Completion<br/>(Total Upfront Carbon A1–A5)"]
-    Disposal --> PracticalCompletion
-    Erection --> PracticalCompletion
-
-    classDef mat fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px;
-    classDef trans fill:#fed7aa,stroke:#ea580c,stroke-width:2px;
-    classDef site fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
-
-    class Agg,Kiln,Iron,Smelt,Batch,Mill mat;
-    class Transit,Artic trans;
-    class SiteDelivery,Storage,Wastage,Installed,Disposal,Plant,Erection site;
-```
+<div class="wlc-diagram-box" id="wlc-upfront-box">
+<div class="wlc-diagram-header">
+<div class="wlc-diagram-header-left">
+<h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg> Upfront Carbon Industrial Supply Chain &amp; Site Wastage (A1–A5)</h4>
+<p>Dual-stream flow tracking raw material extraction through logistics and on-site wastage compounding to Practical Completion.</p>
+</div>
+<span class="wlc-tag live">Dual-Stream Process</span>
+</div>
+<div class="wlc-toolbar">
+<button class="wlc-filter-btn active" data-stream="all">All Operations</button>
+<button class="wlc-filter-btn" data-stream="concrete">Concrete Stream</button>
+<button class="wlc-filter-btn" data-stream="steel">Steel Stream</button>
+<button class="wlc-filter-btn" data-stream="site">Site Erection &amp; Wastage (A5)</button>
+</div>
+<div class="wlc-dual-stream-wrapper">
+<div class="wlc-streams-grid">
+<div class="wlc-stream-col stream-concrete">
+<div class="wlc-stream-col-title">
+<span class="wlc-step-pill" style="background:var(--wlc-stage-a-bg);color:var(--wlc-stage-a);">Stream 1</span>
+Concrete Supply Chain (A1–A4)
+</div>
+<div class="wlc-stream-nodes">
+<div class="wlc-node stage-a active" data-code="A1" data-title="Quarrying &amp; SCM Feedstock" data-desc="Limestone quarrying, clay extraction, and secondary cementitious sourcing (GGBS from blast furnace slag, PFA from pulverized fuel ash)." data-formula="Mass (t) &times; Quarrying Extraction EF" data-standard="EN 15804+A2 / MPA Generic" data-benchmark="Crushed aggregates ~0.008 kgCO2e/kg">
+<div class="wlc-node-header"><span class="wlc-node-code">A1</span></div>
+<div class="wlc-node-title">Quarrying &amp; SCM Feedstocks</div>
+<p class="wlc-node-sub">Limestone, aggregates, GGBS/PFA</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-a" data-code="A1–A3" data-title="Cement Calcination &amp; Clinker Burning" data-desc="High-temperature rotary kiln calcination of limestone (CaCO3 &rarr; CaO + CO2) at 1450&deg;C. Chemical decomposition emits ~0.53 tCO2/t clinker purely from raw chemistry." data-formula="Clinker EF \approx 830\text{ kgCO}_2\text{e/t} \text{ (CEM I)}" data-standard="BS EN 197-1 / GCCA EPDs" data-benchmark="Primary upfront hotspot (over 80% of concrete carbon)">
+<div class="wlc-node-header"><span class="wlc-node-code">A2–A3</span></div>
+<div class="wlc-node-title">Clinker Calcination Kiln</div>
+<p class="wlc-node-sub">High-heat chemical decarbonation</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-a" data-code="A3" data-title="Concrete Ready-Mix Batching Plant" data-desc="Automated dry/wet mixing of Portland cement, SCM replacements, water, sand, gravel, and chemical plasticizers." data-formula="Electricity + Plant thermal heating" data-standard="EN 206 / ISO 21930" data-benchmark="Batching process adds ~3–5 kgCO2e/m³">
+<div class="wlc-node-header"><span class="wlc-node-code">A3</span></div>
+<div class="wlc-node-title">Batching &amp; Blending</div>
+<p class="wlc-node-sub">CEM I vs CEM III SCM mix design</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-trans" data-code="A4" data-title="Transit Mixer Haulage (50 km)" data-desc="Specialized rotating drum mixer trucks carrying perishable ready-mix concrete within initial setting time limits (typically < 90 mins)." data-formula="36\text{ t} \times 50\text{ km} \times 0.088\text{ kgCO}_2\text{e}/(\text{t}\cdot\text{km})" data-standard="RICS WLCPS 2023 &sect;3.4.2" data-benchmark="~3.96 kgCO2e per m³ concrete delivered">
+<div class="wlc-node-header"><span class="wlc-node-code">A4</span></div>
+<div class="wlc-node-title">Transit Mixers (50 km)</div>
+<p class="wlc-node-sub">Time-constrained drum haulage</p>
+</div>
+</div>
+</div>
+<div class="wlc-stream-col stream-steel">
+<div class="wlc-stream-col-title">
+<span class="wlc-step-pill" style="background:var(--wlc-stage-trans-bg);color:var(--wlc-stage-trans);">Stream 2</span>
+Reinforcing Steel Chain (A1–A4)
+</div>
+<div class="wlc-stream-nodes">
+<div class="wlc-node stage-a" data-code="A1" data-title="Scrap Metal &amp; Iron Ore Sourcing" data-desc="Post-consumer recycled steel scrap shredding or raw iron ore pellet mining and coal coking." data-formula="Scrap preparation + collection logistics" data-standard="World Steel Association / ISO 21930" data-benchmark="Recycled scrap carries near-zero virgin burden">
+<div class="wlc-node-header"><span class="wlc-node-code">A1</span></div>
+<div class="wlc-node-title">Scrap Metal / Iron Sourcing</div>
+<p class="wlc-node-sub">EAF scrap yard collection</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-a" data-code="A2–A3" data-title="Electric Arc Furnace (EAF) Smelting" data-desc="Electric arc melting using high-power graphite electrodes. Consumes ~400–600 kWh grid electricity per tonne of molten steel." data-formula="EAF EF \approx 450\text{ kgCO}_2\text{e/t} \text{ vs BOF } 2,200\text{ kgCO}_2\text{e/t}" data-standard="EN 15804+A2 &sect;6.2" data-benchmark="EAF yields ~75% lower carbon than BOF">
+<div class="wlc-node-header"><span class="wlc-node-code">A2–A3</span></div>
+<div class="wlc-node-title">EAF Scrap Smelting</div>
+<p class="wlc-node-sub">Electrified high-recycle metallurgy</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-a" data-code="A3" data-title="Rebar Rolling Mill &amp; Fabrication" data-desc="Hot continuous billet rolling into ribbed reinforcing bars, cutting to schedule, bending into links, and strapping." data-formula="Thermal reheat furnace gas + rolling mill motors" data-standard="BS 4449 / CARES EPD" data-benchmark="Fabrication adds ~50–80 kgCO2e/tonne">
+<div class="wlc-node-header"><span class="wlc-node-code">A3</span></div>
+<div class="wlc-node-title">Rolling Mill &amp; Fabrication</div>
+<p class="wlc-node-sub">Billet rolling &amp; scheduled bending</p>
+</div>
+<div class="wlc-arrow">&darr;</div>
+<div class="wlc-node stage-trans" data-code="A4" data-title="Articulated HGV Haulage (200 km)" data-desc="Long-distance flatbed articulated haulage (150–300 km) from regional steel mills with 75% load factor and empty return markup." data-formula="3.08\text{ t} \times 200\text{ km} \times 0.088\text{ kgCO}_2\text{e}/(\text{t}\cdot\text{km})" data-standard="RICS WLCPS 2023 &sect;3.4.2" data-benchmark="~54.2 kgCO2e for 3 tonnes structural rebar">
+<div class="wlc-node-header"><span class="wlc-node-code">A4</span></div>
+<div class="wlc-node-title">Articulated HGVs (200 km)</div>
+<p class="wlc-node-sub">Regional freight with empty return</p>
+</div>
+</div>
+</div>
+</div>
+<div class="wlc-convergence-gate">
+<div class="wlc-node stage-a" data-code="A5" data-title="Material Handling &amp; On-Site Wastage" data-desc="Off-cuts, bent bar trimming, concrete pump pipeline residue, and formwork leakage (compounded wastage rate Wi = 3%–5%)." data-formula="Q_{purchased} = Q_{installed} \times (1 + W_i)" data-standard="RICS WLCPS 2023 &sect;3.4.3" data-benchmark="Adds ~3%–5% extra A1–A4 carbon directly to site tally">
+<div class="wlc-node-header"><span class="wlc-node-code">A5 Waste</span></div>
+<div class="wlc-node-title">Compounded Site Wastage</div>
+<p class="wlc-node-sub">Off-cuts, pump line washout &amp; skips</p>
+</div>
+<div class="wlc-node stage-a" data-code="A5" data-title="On-Site Erection &amp; Plant Equipment" data-desc="Mobile tower cranes, diesel excavators, concrete pump motors, generator fuel, and temporary works formwork." data-formula="Liters Diesel \times 2.68\text{ kgCO}_2\text{e/L} + \text{kWh} \times EF_{grid}" data-standard="RICS WLCPS 2023 &sect;3.4.4" data-benchmark="Typically 15–30 kgCO2e/m² GIA">
+<div class="wlc-node-header"><span class="wlc-node-code">A5 Plant</span></div>
+<div class="wlc-node-title">Site Erection &amp; Plant</div>
+<p class="wlc-node-sub">Tower cranes, pump trucks &amp; diesel</p>
+</div>
+<div class="wlc-node stage-flow" data-code="A1–A5 Total" data-title="Practical Completion Baseline" data-desc="The final consolidated Upfront Carbon tally when the physical building is handed over on Day 1. Locks in upfront climate impact." data-formula="E_{upfront} = \sum [M_i(1+W_i)(EF_{A1-A3} + d_i \cdot EF_{A4})] + E_{plant}" data-standard="EN 15978 / RICS Professional Standard 2023" data-benchmark="Baseline: 341.6 kgCO2e/m²; Low-carbon spec: 176.4 kgCO2e/m²">
+<div class="wlc-node-header"><span class="wlc-node-code" style="background:var(--wlc-stage-flow-bg);color:var(--wlc-stage-flow)">Day 1 Handover</span></div>
+<div class="wlc-node-title">Practical Completion</div>
+<p class="wlc-node-sub">Total locked-in Upfront Carbon (A1–A5)</p>
+</div>
+</div>
+</div>
+<div class="wlc-inspector">
+<h5 class="wlc-ins-title"><strong>[A1]</strong> Quarrying &amp; SCM Feedstocks</h5>
+<p class="wlc-ins-desc">Limestone quarrying, clay extraction, and secondary cementitious sourcing (GGBS from blast furnace slag, PFA from pulverized fuel ash).</p>
+<div class="wlc-inspector-meta">
+<span class="wlc-ins-formula"><strong>Formula:</strong> <span>Mass (t) &times; Quarrying Extraction EF</span></span>
+<span class="wlc-ins-standard"><strong>Standard:</strong> <span>EN 15804+A2 / MPA Generic</span></span>
+<span class="wlc-ins-bench"><strong>Benchmark:</strong> <span>Crushed aggregates ~0.008 kgCO2e/kg</span></span>
+</div>
+</div>
+<details class="wlc-mermaid-toggle">
+<summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Standard Schematic (Mermaid Code)</summary>
+<div class="wlc-mermaid-wrapper">
+<div class="mermaid">flowchart TD
+subgraph A1_A3["Module A1–A3: Product Stage"]
+    Agg["Aggregates &amp; SCM Quarrying"] --> Kiln["Cement Calcination Kiln"]
+    Kiln --> Batch["Concrete Batching Plant"]
+    Iron["Scrap &amp; Ore Sourcing"] --> Smelt["Steel Melting (EAF / BOF)"]
+    Smelt --> Mill["Rebar Rolling Mill"]
+end
+subgraph Logistics["Module A4: Transport Logistics"]
+    Batch --> Transit["Transit Mixers (50 km)"]
+    Mill --> Artic["Articulated HGVs (200 km)"]
+end
+subgraph Site["Module A5: Construction Site"]
+    Transit &amp; Artic --> SiteGate["Site Delivery Gate"]
+    SiteGate --> Storage["Material Handling &amp; Storage"]
+    Storage --> Wastage["On-site Wastage (3%–5%)"]
+    Storage --> Installed["Permanently Installed Bay"]
+    Wastage --> Disposal["Waste Skip &amp; Recycling"]
+    Plant["Cranes &amp; Diesel Generators"] --> Erection["Bay Erection"]
+end
+Installed &amp; Disposal &amp; Erection --> Complete["Practical Completion (Total A1–A5)"]
+classDef mat fill:#fdfbf7,stroke:#de634d,stroke-width:2px;
+classDef trans fill:#fdfbf7,stroke:#e1a102,stroke-width:2px;
+classDef site fill:#fdfbf7,stroke:#3b827e,stroke-width:2px;
+classDef out fill:#fdfbf7,stroke:#6366f1,stroke-width:2px;
+class Agg,Kiln,Batch,Iron,Smelt,Mill mat;
+class Transit,Artic trans;
+class SiteGate,Storage,Wastage,Installed,Disposal,Plant,Erection site;
+class Complete out;</div>
+</div>
+</details>
+</div>
 
 ### Reading the Diagram
 
