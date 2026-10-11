@@ -42,10 +42,18 @@
   --wlc-stage-flow-border: rgba(99, 102, 241, 0.35);
 }
 
+/* Ensure universal box-sizing within all WLC containers */
+.wlc-diagram-box,
+.wlc-diagram-box *,
+.wlc-diagram-box *::before,
+.wlc-diagram-box *::after {
+  box-sizing: border-box;
+}
+
 /* Base Diagram Container */
 .wlc-diagram-box {
   margin: 2.2rem 0;
-  padding: 1.6rem;
+  padding: 1.35rem;
   background: var(--wlc-container-bg);
   border: 1px solid var(--wlc-border);
   border-radius: var(--wlc-radius);
@@ -53,6 +61,8 @@
   color: var(--wlc-text);
   box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.05);
   position: relative;
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -150,6 +160,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 .wlc-node:hover {
@@ -168,6 +183,8 @@
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0.4rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .wlc-node-code {
@@ -183,6 +200,8 @@
   font-weight: 600;
   margin: 0.2rem 0;
   line-height: 1.35;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .wlc-node-sub {
@@ -190,6 +209,8 @@
   color: var(--wlc-muted);
   line-height: 1.4;
   margin: 0;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .wlc-node-badge {
@@ -407,12 +428,14 @@
    ========================================================================== */
 .wlc-stage-lanes {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.95rem;
   margin: 1.2rem 0;
+  width: 100%;
+  max-width: 100%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 680px) {
   .wlc-stage-lanes {
     grid-template-columns: 1fr;
   }
@@ -427,6 +450,9 @@
   flex-direction: column;
   gap: 0.6rem;
   transition: var(--wlc-transition);
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wlc-lane-title {
@@ -437,6 +463,8 @@
   padding-bottom: 0.5rem;
   border-bottom: 2px solid;
   margin-bottom: 0.2rem;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .wlc-lane.lane-a .wlc-lane-title { color: var(--wlc-stage-a); border-color: var(--wlc-stage-a); }
@@ -444,6 +472,13 @@
 .wlc-lane.lane-b .wlc-lane-title { color: var(--wlc-stage-b); border-color: var(--wlc-stage-b); }
 .wlc-lane.lane-c .wlc-lane-title { color: var(--wlc-stage-c); border-color: var(--wlc-stage-c); }
 .wlc-lane.lane-d .wlc-lane-title { color: var(--wlc-stage-d); border-color: var(--wlc-stage-d); }
+
+.wlc-lane.lane-d {
+  grid-column: 1 / -1;
+  border-style: dashed;
+  border-color: var(--wlc-stage-d-border);
+  background: var(--wlc-stage-d-bg);
+}
 
 .wlc-lane.dimmed {
   opacity: 0.25;
@@ -454,6 +489,10 @@
   box-shadow: 0 0 0 2px var(--wlc-stage-a);
 }
 
+.wlc-lane.lane-d.highlighted {
+  box-shadow: 0 0 0 2px var(--wlc-stage-d);
+}
+
 /* ==========================================================================
    FLOWCHART 2: Upfront Industrial Supply Chain (Lesson 02)
    ========================================================================== */
@@ -462,15 +501,19 @@
   flex-direction: column;
   gap: 1.2rem;
   margin: 1.2rem 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wlc-streams-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  width: 100%;
+  max-width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   .wlc-streams-grid {
     grid-template-columns: 1fr;
   }
@@ -481,6 +524,9 @@
   border: 1px solid var(--wlc-border);
   border-radius: var(--wlc-radius-sm);
   padding: 1.1rem;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wlc-stream-col-title {
@@ -492,12 +538,15 @@
   margin-bottom: 0.85rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--wlc-border);
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .wlc-stream-nodes {
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
+  width: 100%;
 }
 
 .wlc-convergence-gate {
@@ -506,8 +555,10 @@
   border-radius: var(--wlc-radius-sm);
   padding: 1.2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
   gap: 1rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* ==========================================================================
@@ -515,13 +566,17 @@
    ========================================================================== */
 .wlc-timeline-container {
   margin: 1.5rem 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wlc-timeline-steps {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 86px), 1fr));
+  gap: 0.45rem;
   margin-bottom: 1.4rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 @media (max-width: 820px) {
@@ -543,6 +598,8 @@
   text-align: center;
   cursor: pointer;
   transition: var(--wlc-transition);
+  min-width: 0;
+  width: 100%;
 }
 
 .wlc-time-btn:hover {
@@ -617,21 +674,25 @@
    ========================================================================== */
 .wlc-circular-layout {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 1.2rem;
   margin: 1.2rem 0;
+  width: 100%;
+  max-width: 100%;
 }
 
-@media (max-width: 820px) {
-  .wlc-circular-layout {
-    grid-template-columns: 1fr;
-  }
+.wlc-circular-col {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wlc-boundary-divider {
   position: relative;
   border-left: 2px dashed var(--wlc-stage-d);
   padding-left: 1.2rem;
+  min-width: 0;
+  width: 100%;
 }
 
 .wlc-threshold-banner {
@@ -646,6 +707,7 @@
   align-items: center;
   gap: 0.4rem;
   margin-bottom: 0.8rem;
+  max-width: 100%;
 }
 
 .wlc-circular-loop-callout {
@@ -657,6 +719,8 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wlc-circular-loop-callout svg {
@@ -669,12 +733,14 @@
    ========================================================================== */
 .wlc-pipeline-track {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
   gap: 0.85rem;
   margin: 1.2rem 0;
+  width: 100%;
+  max-width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .wlc-pipeline-track {
     grid-template-columns: 1fr;
   }
@@ -690,6 +756,9 @@
   transition: var(--wlc-transition);
   cursor: pointer;
   position: relative;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wlc-pipe-step:hover {
