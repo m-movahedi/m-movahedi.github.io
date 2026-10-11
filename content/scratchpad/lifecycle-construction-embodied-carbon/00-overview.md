@@ -104,10 +104,6 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
 
 6. [Interactive Simulation: Whole Life Embodied Carbon Simulator](assets/interactive/embodied-carbon-calculator.html)
    * Self-contained browser tool to model building dimensions, structural frames, transport distances, wastage rates, replacement lifespans, and end-of-life recycling rates.
-
-7. [Annotated Bibliography](99-bibliography.md)
-   * Full citations and evidence assessments for all referenced standards, guidance documents, and peer-reviewed studies.
-
 ---
 
 ## Prerequisites and Target Audience
@@ -129,8 +125,6 @@ Welcome to this comprehensive mini-textbook on Whole Life Carbon (WLC) and embod
   * Lesson 03: 75 minutes
   * Lesson 04: 75 minutes
   * Lesson 05 & Case Study: 90 minutes
-  * Interactive lab exercises & validation: 45 minutes
-
 ---
 
 ## Research Coverage and Limitations
