@@ -877,7 +877,6 @@ Congratulations! You have completed the comprehensive five-lesson curriculum on 
       }
       calcBtn.addEventListener('click', calculate);
       resetBtn.addEventListener('click', resetDefaults);
-
       // Trigger initial calculation
       calculate();
     })();
