@@ -1,0 +1,984 @@
+---
+title : "EC 105: Calculation"
+date : "2026-10-01"
+draft : false
+type : "post"
+---
+# Lesson 05: Practical Calculation Methodology, Benchmarking, and Case Study
+
+## Learning objectives
+
+By the end of this lesson, you will be able to:
+* Execute a step-by-step **Whole Life Carbon (WLC) calculation workflow** from building information models (BIM) and cost plans to final compliance reporting.
+* Apply the **five-tier carbon data hierarchy** (from manufacturer-specific Type III EPDs to generic LCI datasets) to minimize data uncertainty.
+* Integrate design-stage **contingency allowances** and quantify methodological uncertainty ($\pm 15\%–30\%$) per RICS 2023 guidelines.
+* Benchmark building carbon intensity against **LETI 2020/2030** and **RIBA 2030 Climate Challenge** targets.
+* Conduct a complete comparative whole life carbon assessment between a conventional structural frame and an optimized low-carbon hybrid mass timber alternative across Modules A1–C4 and Module D.
+
+---
+
+## Key concepts
+
+### 1. The Whole Life Carbon Calculation Pipeline
+
+Translating design drawings into a certified Whole Life Carbon assessment requires a disciplined five-step workflow [S04, S05, S10]:
+
+```
+[BIM / Cost Plan] -> 1. Quantity Take-Off -> 2. Data Hierarchy Matching -> 3. Logistics & Wastage Modeling -> 4. Replacement & EoL Integration -> 5. Reporting & Benchmarking
+```
+
+1. **Scope and Elemental Breakdown:** Partition the building according to standard cost classification (e.g., RICS NRM / ICMS / BCIS) [S04]:
+   * Group 1: Substructure (piles, pile caps, basement retaining walls, ground bearing slab).
+   * Group 2: Superstructure (columns, load-bearing walls, upper floor slabs, roof structure, stairs).
+   * Group 3: Building Envelope / Façade (curtain walling, cladding, insulation, windows, external doors).
+   * Group 4: Internal Finishes (partitions, ceilings, raised access floors, wall/floor finishes).
+   * Group 5: Building Services / MEP (heating, cooling, ventilation, electrical, plumbing, lifts).
+2. **Material Quantity Take-Off (MTO):** Extract the net installed volumes ($V_i$ in $\text{m}^3$), surface areas ($A_i$ in $\text{m}^2$), or masses ($M_i$ in kg or tonnes) from verified engineering schedules or 3D BIM models [S05].
+3. **Carbon Data Matching:** Pair each material quantity with a verified carbon factor matching its specification, geography, and technological vintage [S07, S10].
+4. **Lifecycle Parameterization:** Assign transport logistics (A4), site wastage rates (A5), component service lifespans (B4), demolition fuel (C1), transport to waste (C2), recovery ratios (C3/C4), and circularity credits (Module D) [S04, S05].
+5. **Normalization and Target Benchmarking:** Divide total lifetime carbon by the Gross Internal Area ($\text{GIA}$) to generate normalized indicators ($\text{kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$) and evaluate against climate design targets [S04, S06].
+
+---
+
+### 2. The Carbon Data Quality Hierarchy
+
+A central source of error in whole life carbon accounting is the misapplication of carbon factors [S10]. Academic evaluations reveal that assessments of the same design can vary by $15\% \text{ to } 30\%$ depending on data choices [S10]. 
+
+To enforce consistency, the RICS 2023 Standard [S04] mandates a strict **data hierarchy**:
+
+| Tier | Data Source Type | Representativeness & Application | Example Sources |
+| :--- | :--- | :--- | :--- |
+| **Tier 1 (Highest)** | **Product- and Manufacturer-Specific EPD** | Third-party verified Type III EPD conforming to EN 15804+A2 or ISO 21930 for the exact manufacturing facility and product blend specified. Mandatory for as-built assessments. | Specific cement blend or steel mill EPD published on EPD Hub, Environdec, or IBU. |
+| **Tier 2** | **Industry-Average / Trade Association EPD** | Representative average of multiple manufacturing plants within the specific national market. Ideal for detailed design (RIBA Stage 3/4). | MPA UK National Average Ready-Mix Concrete EPD; British Constructional Steelwork Association (BCSA) EPD. |
+| **Tier 3** | **National / Regional Generic Database** | Peer-reviewed, open-source national databases reflecting domestic grid mixes and standard production. Standard for early-stage design (RIBA Stage 1/2). | **ICE Database v3.0** (Circular Ecology / Univ. of Bath) [S07]; ÖKOBAUDAT (Germany); INIES (France). |
+| **Tier 4** | **Global Commercial LCI Databases** | Broad regional or global datasets modeling unit processes. Requires commercial LCA software and expert background modeling. | ecoinvent, Sphera/GaBi background datasets. |
+| **Tier 5 (Lowest)** | **Proxy / Literature Estimates** | Approximations derived from similar materials or academic papers. Requires conservative contingency markups (+20%). | Proxy estimates for novel bio-composites. |
+
+---
+
+### 3. Managing Design Uncertainty & Early-Stage Contingency
+
+During early concept design (RIBA Stage 2), detailed structural reinforcement layouts, MEP pipe sizing, and internal partition details are not yet fully engineered [S04, S05]. Early estimates that rely solely on preliminary structural volumes severely underestimate whole life carbon because secondary elements and site inefficiencies are omitted [S05, S10].
+
+To account for this, the RICS Whole Life Carbon Standard [S04] requires practitioners to apply a formal **contingency allowance** based on project maturity:
+
+* **Concept Design (RIBA Stage 2):** Add $+10\% \text{ to } +20\%$ contingency to material quantities.
+* **Developed Design (RIBA Stage 3):** Add $+5\% \text{ to } +10\%$ contingency.
+* **Technical Design / Tender (RIBA Stage 4):** Add $+2\% \text{ to } +5\%$ contingency.
+* **As-Built Handover (RIBA Stage 6):** $0\%$ contingency (based on audited purchasing invoices).
+
+---
+
+### 4. Climate Benchmarks and Target Setting
+
+Leading professional bodies have established absolute embodied carbon intensity targets for new buildings to align with a $1.5^\circ\text{C}$ warming trajectory [S06]:
+
+#### LETI Climate Emergency Design Guide (Commercial Offices, Upfront Carbon A1–A5) [S06]:
+* **Band A++ (Pacesetter):** $<300\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$
+* **Band A (LETI 2030 Target):** $<350\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$
+* **Band B (Good Practice):** $<450\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$
+* **Band C (LETI 2020 Baseline):** $<600\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$
+* **Band D (Standard Practice):** $600 \text{ to } 750\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$
+* **Band E/F (Poor Historical Practice):** $>750\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$
+
+---
+
+## Worked example
+
+### Capstone Comparative Case Study
+
+### Problem Statement
+
+A commercial client is commissioning a new 8-story corporate headquarters with a Gross Internal Area ($\text{GIA}$) of $10{,}000\text{ m}^2$ in Manchester, UK. The building assessment period is $\text{RSP} = 60\text{ years}$.
+
+The multidisciplinary design team is comparing two structural and envelope strategies at developed design (RIBA Stage 3):
+
+#### Scheme 1: Conventional Baseline
+* **Substructure & Superstructure:** In-situ reinforced concrete frame (Columns, cores, flat slabs).
+  * Concrete volume: $4{,}200\text{ m}^3$ of Grade C30/37 with 100% CEM I ($0.155\text{ kgCO}_2\text{e}/\text{kg}$; density $2{,}400\text{ kg}/\text{m}^3$) [S07]. Wastage: $5\%$.
+  * Steel reinforcement: $420\text{ tonnes}$ of primary steel rebar ($0.950\text{ kgCO}_2\text{e}/\text{kg}$) [S07]. Wastage: $4\%$.
+  * Concrete transport: $40\text{ km}$ ($0.160\text{ kgCO}_2\text{e}/(\text{t}\cdot\text{km})$); Rebar transport: $200\text{ km}$ ($0.088\text{ kgCO}_2\text{e}/(\text{t}\cdot\text{km})$).
+* **Building Envelope:** Standard aluminum-framed double-glazed curtain wall ($6{,}000\text{ m}^2$ facade area). Initial A1–A5: $95\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$. $\text{ESL} = 30\text{ years}$.
+* **MEP Services:** Standard VRF heating/cooling. Initial A1–A5: $80\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$. $\text{ESL} = 20\text{ years}$.
+* **Site Installation & Waste (A5.site):** $25\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$.
+* **End-of-Life (C1–C4):** $30\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$.
+* **Circularity (Module D):** $-45\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ (from steel recycling).
+
+#### Scheme 2: Low-Carbon Hybrid Mass Timber
+* **Substructure & Ground Works:** Foundation concrete optimized with 50% GGBS cement replacement ($0.105\text{ kgCO}_2\text{e}/\text{kg}$) [S05, S07].
+  * Concrete volume: $1{,}200\text{ m}^3$ (reduced foundation loads due to lighter superstructure). Rebar: $120\text{ tonnes}$ ($0.780\text{ kgCO}_2\text{e}/\text{kg}$). Wastage: $3\%$.
+* **Superstructure Frame & Floors:**
+  * Cross-Laminated Timber (CLT) floor slabs & Glulam columns/beams: $1{,}250\text{ tonnes}$ dry timber.
+  * Timber A1–A3 fossil carbon: $0.220\text{ kgCO}_2\text{e}/\text{kg}$ [S02, S05].
+  * Biogenic carbon storage: $-1.83\text{ kgCO}_2/\text{kg}$ dry wood (tracked separately).
+  * Timber transport (A4): Imported from Austria/Germany, $1{,}600\text{ km}$ road ($0.088$) $+ 200\text{ km}$ ferry ($0.016\text{ kgCO}_2\text{e}/(\text{t}\cdot\text{km})$). Wastage: $1\%$ (factory CNC cut).
+  * Steel connection brackets: $35\text{ tonnes}$ ($0.780\text{ kgCO}_2\text{e}/\text{kg}$; transport $200\text{ km}$).
+* **Building Envelope:** Timber-backed unitized high-performance facade. Initial A1–A5: $65\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$. $\text{ESL} = 30\text{ years}$.
+* **MEP Services:** Central heat pump with natural refrigerants. Initial A1–A5: $70\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$. $\text{ESL} = 20\text{ years}$.
+* **Site Installation & Waste (A5.site):** $18\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ (faster, quieter erection; lower crane fuel).
+* **End-of-Life (C1–C4):** $25\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ (fossil demolition & transport) $+ 1.83\text{ kgCO}_2/\text{kg}$ biogenic release at Year 60.
+* **Circularity (Module D):** $-75\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ (timber cascading into panel products & steel recycling).
+
+**Calculate:**
+1. Upfront Embodied Carbon (A1–A5) for Scheme 1 and Scheme 2 ($\text{kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$).
+2. 60-year In-Use Embodied Carbon (B1–B5) for both schemes.
+3. 60-year Cradle-to-Grave Embodied Carbon (A1–C4) for both schemes.
+4. Compare both schemes against the LETI 2030 Upfront Carbon rating bands.
+
+---
+
+### Step-by-Step Solution
+
+#### Step 1: Upfront Carbon Calculation (A1–A5)
+
+##### Scheme 1 (Conventional Concrete Baseline):
+* **Concrete Mass:** $4{,}200\text{ m}^3 \times 2{,}400\text{ kg}/\text{m}^3 = 10{,}080\text{ tonnes}$.
+  $$M_{\text{purchased, conc}} = 10{,}080\text{ t} \times 1.05 = 10{,}584\text{ tonnes}$$
+  $$\text{EC}_{A1-A3, \text{conc}} = 10{,}584{,}000\text{ kg} \times 0.155 = 1{,}640{,}520\text{ kgCO}_2\text{e}$$
+  $$\text{EC}_{A4, \text{conc}} = 10{,}584\text{ t} \times 40\text{ km} \times 0.160 = 67{,}738\text{ kgCO}_2\text{e}$$
+
+* **Rebar Mass:** $420\text{ tonnes}$.
+  $$M_{\text{purchased, rebar}} = 420\text{ t} \times 1.04 = 436.8\text{ tonnes}$$
+  $$\text{EC}_{A1-A3, \text{rebar}} = 436{,}800\text{ kg} \times 0.950 = 414{,}960\text{ kgCO}_2\text{e}$$
+  $$\text{EC}_{A4, \text{rebar}} = 436.8\text{ t} \times 200\text{ km} \times 0.088 = 7{,}688\text{ kgCO}_2\text{e}$$
+
+* **Envelope & MEP Upfront:**
+  $$\text{EC}_{\text{envelope}} = 10{,}000\text{ m}^2 \times 95 = 950{,}000\text{ kgCO}_2\text{e}$$
+  $$\text{EC}_{\text{MEP}} = 10{,}000\text{ m}^2 \times 80 = 800{,}000\text{ kgCO}_2\text{e}$$
+
+* **Site Activities & Waste (A5.site):**
+  $$\text{EC}_{A5.\text{site}} = 10{,}000\text{ m}^2 \times 25 = 250{,}000\text{ kgCO}_2\text{e}$$
+
+* **Total Scheme 1 Upfront Carbon (A1–A5):**
+  $$\text{Total A1–A5} = 1{,}640{,}520 + 67{,}738 + 414{,}960 + 7{,}688 + 950{,}000 + 800{,}000 + 250{,}000 = 4{,}130{,}906\text{ kgCO}_2\text{e}$$
+  $$\text{Scheme 1 Upfront Intensity} = \frac{4{,}130{,}906\text{ kgCO}_2\text{e}}{10{,}000\text{ m}^2} \approx 413.1\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+
+---
+
+##### Scheme 2 (Low-Carbon Hybrid Mass Timber):
+* **Substructure Concrete:** $1{,}200\text{ m}^3 \times 2{,}400\text{ kg}/\text{m}^3 = 2{,}880\text{ tonnes}$.
+  $$M_{\text{purchased}} = 2{,}880\text{ t} \times 1.03 = 2{,}966.4\text{ tonnes}$$
+  $$\text{EC}_{A1-A3, \text{conc}} = 2{,}966{,}400\text{ kg} \times 0.105 = 311{,}472\text{ kgCO}_2\text{e}$$
+  $$\text{EC}_{A4, \text{conc}} = 2{,}966.4\text{ t} \times 40\text{ km} \times 0.160 = 18{,}985\text{ kgCO}_2\text{e}$$
+
+* **Substructure Rebar:** $120\text{ tonnes} \times 1.03 = 123.6\text{ tonnes}$.
+  $$\text{EC}_{A1-A3, \text{rebar}} = 123{,}600\text{ kg} \times 0.780 = 96{,}408\text{ kgCO}_2\text{e}$$
+  $$\text{EC}_{A4, \text{rebar}} = 123.6\text{ t} \times 200\text{ km} \times 0.088 = 2{,}175\text{ kgCO}_2\text{e}$$
+
+* **Mass Timber (CLT + Glulam):** $1{,}250\text{ tonnes} \times 1.01 = 1{,}262.5\text{ tonnes}$.
+  $$\text{EC}_{A1-A3, \text{timber (fossil)}} = 1{,}262{,}500\text{ kg} \times 0.220 = 277{,}750\text{ kgCO}_2\text{e}$$
+  $$\text{Freight Factor} = (1{,}600 \times 0.088) + (200 \times 0.016) = 140.8 + 3.2 = 144.0\text{ kgCO}_2\text{e}/\text{tonne}$$
+  $$\text{EC}_{A4, \text{timber}} = 1{,}262.5\text{ t} \times 144.0 = 181{,}800\text{ kgCO}_2\text{e}$$
+
+* **Steel Connectors:** $35\text{ tonnes} \times 1.01 = 35.35\text{ tonnes}$.
+  $$\text{EC}_{A1-A3, \text{conn}} = 35{,}350\text{ kg} \times 0.780 = 27{,}573\text{ kgCO}_2\text{e}$$
+  $$\text{EC}_{A4, \text{conn}} = 35.35\text{ t} \times 200 \times 0.088 = 622\text{ kgCO}_2\text{e}$$
+
+* **Envelope & MEP Upfront:**
+  $$\text{EC}_{\text{envelope}} = 10{,}000\text{ m}^2 \times 65 = 650{,}000\text{ kgCO}_2\text{e}$$
+  $$\text{EC}_{\text{MEP}} = 10{,}000\text{ m}^2 \times 70 = 700{,}000\text{ kgCO}_2\text{e}$$
+
+* **Site Activities (A5.site):**
+  $$\text{EC}_{A5.\text{site}} = 10{,}000\text{ m}^2 \times 18 = 180{,}000\text{ kgCO}_2\text{e}$$
+
+* **Total Scheme 2 Upfront Fossil Carbon (A1–A5):**
+  $$\text{Total A1–A5} = 311{,}472 + 18{,}985 + 96{,}408 + 2{,}175 + 277{,}750 + 181{,}800 + 27{,}573 + 622 + 650{,}000 + 700{,}000 + 180{,}000 = 2{,}446{,}785\text{ kgCO}_2\text{e}$$
+  $$\text{Scheme 2 Upfront Intensity} = \frac{2{,}446{,}785\text{ kgCO}_2\text{e}}{10{,}000\text{ m}^2} \approx 244.7\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+
+*(Biogenic carbon sequestered in timber = $1{,}250{,}000\text{ kg} \times -1.83 = -2{,}287.5\text{ tCO}_2$, tracked separately per RICS rules).*
+
+---
+
+#### Step 2: 60-Year In-Use Embodied Carbon (B1–B5)
+
+* **Replacements Over 60 Years:**
+  * Facade ($\text{ESL} = 30\text{ yrs}$): $\lceil 60/30 \rceil - 1 = 1\text{ replacement}$.
+  * MEP Services ($\text{ESL} = 20\text{ yrs}$): $\lceil 60/20 \rceil - 1 = 2\text{ replacements}$.
+* **Scheme 1 B4 Replacements:**
+  $$\text{B4}_{\text{envelope}} = 1 \times 95 = 95\text{ kgCO}_2\text{e}/\text{m}^2$$
+  $$\text{B4}_{\text{MEP}} = 2 \times 80 = 160\text{ kgCO}_2\text{e}/\text{m}^2$$
+  $$\text{Scheme 1 B1–B5} = 95 + 160 + 10\text{ (maintenance)} = 265.0\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+* **Scheme 2 B4 Replacements:**
+  $$\text{B4}_{\text{envelope}} = 1 \times 65 = 65\text{ kgCO}_2\text{e}/\text{m}^2$$
+  $$\text{B4}_{\text{MEP}} = 2 \times 70 = 140\text{ kgCO}_2\text{e}/\text{m}^2$$
+  $$\text{Scheme 2 B1–B5} = 65 + 140 + 10 = 215.0\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+
+---
+
+#### Step 3: Total Cradle-to-Grave Embodied Carbon (A1–C4)
+
+* **Scheme 1:**
+  $$\text{Total A1–C4} = 413.1\text{ (A1–A5)} + 265.0\text{ (B1–B5)} + 30.0\text{ (C1–C4)} = 708.1\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+* **Scheme 2:**
+  $$\text{Total A1–C4} = 244.7\text{ (A1–A5)} + 215.0\text{ (B1–B5)} + 25.0\text{ (C1–C4 fossil)} = 484.7\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+  *(Net biogenic carbon balance over 60 years = $-228.75 + 228.75 = 0.00$).*
+
+---
+
+#### Step 4: Climate Benchmark Comparison
+
+* **Scheme 1 Upfront Carbon:** $413.1\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ $\rightarrow$ **LETI Band B** (Good Practice, but misses the 2030 target of $<350$).
+* **Scheme 2 Upfront Carbon:** $244.7\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ $\rightarrow$ **LETI Band A++** (Exceeds the 2030 target of $<350$ by a wide margin!).
+
+#### Whole Life Comparison Summary Table:
+
+| Metric | Scheme 1: Concrete Baseline | Scheme 2: Low-Carbon Timber Hybrid | Absolute Difference | Relative Reduction |
+| :--- | :--- | :--- | :--- | :--- |
+| **Upfront Carbon (A1–A5)** | $413.1\text{ kgCO}_2\text{e}/\text{m}^2$ | $244.7\text{ kgCO}_2\text{e}/\text{m}^2$ | $-168.4\text{ kgCO}_2\text{e}/\text{m}^2$ | **-40.8%** |
+| **In-Use Embodied (B1–B5)** | $265.0\text{ kgCO}_2\text{e}/\text{m}^2$ | $215.0\text{ kgCO}_2\text{e}/\text{m}^2$ | $-50.0\text{ kgCO}_2\text{e}/\text{m}^2$ | **-18.9%** |
+| **End-of-Life (C1–C4 fossil)**| $30.0\text{ kgCO}_2\text{e}/\text{m}^2$ | $25.0\text{ kgCO}_2\text{e}/\text{m}^2$ | $-5.0\text{ kgCO}_2\text{e}/\text{m}^2$ | **-16.7%** |
+| **Total Embodied (A1–C4)** | $708.1\text{ kgCO}_2\text{e}/\text{m}^2$ | $484.7\text{ kgCO}_2\text{e}/\text{m}^2$ | $-223.4\text{ kgCO}_2\text{e}/\text{m}^2$ | **-31.5%** |
+| **Circular Credit (Module D)**| $-45.0\text{ kgCO}_2\text{e}/\text{m}^2$ | $-75.0\text{ kgCO}_2\text{e}/\text{m}^2$ | $-30.0\text{ kgCO}_2\text{e}/\text{m}^2$ | **+66.7% credit** |
+| **LETI 2030 Upfront Band** | Band B | Band A++ | 2 Band Improvement | Target Met |
+
+---
+
+## Visual explanation
+
+The diagram below maps the complete data architecture of a Whole Life Carbon assessment, linking BIM geometry, the data hierarchy, and modular calculations to final benchmarking.
+
+```mermaid
+flowchart TD
+    subgraph Input["1. Primary Engineering Inputs"]
+        BIM["BIM Model & Drawings"] --> BoQ["Bill of Quantities (BoQ)<br/>Net Material Masses ($M_i$)"]
+        Cost["Cost Plan & Schedule"] --> Elements["Elemental Breakdown<br/>(Substructure, Frame, Facade, MEP)"]
+    end
+
+    subgraph Hierarchy["2. Carbon Data Hierarchy Matching"]
+        BoQ --> TierSelect{"Data Availability"}
+        TierSelect -->|"Tier 1"| T1["Product-Specific EPDs<br/>(EN 15804+A2)"]
+        TierSelect -->|"Tier 2"| T2["Industry Average EPDs<br/>(MPA / BCSA)"]
+        TierSelect -->|"Tier 3"| T3["National Generic Databases<br/>(ICE Database v3.0)"]
+    end
+
+    subgraph Assembly["3. Modular LCA Engine"]
+        T1 & T2 & T3 --> ModA["Upfront (A1–A5):<br/>$M_i(1+W_i) \times [EF + d \cdot EF_t]$"]
+        Elements --> ModB["In-Use (B1–B5):<br/>$\lceil RSP / ESL \rceil - 1$"]
+        Elements --> ModC["End of Life (C1–C4):<br/>Demolition & Landfill"]
+        Elements --> ModD["Module D (Beyond Boundary):<br/>Net Scrap $\times \Delta EF$"]
+    end
+
+    subgraph Output["4. Benchmarking & Reporting"]
+        ModA & ModB & ModC --> WLC["Cradle-to-Grave Intensity<br/>($kgCO_2e/m^2$ GIA)"]
+        ModD --> CircReport["Separate Circularity Disclosure<br/>($kgCO_2e/m^2$ GIA)"]
+        WLC --> Benchmark{"Climate Target Check"}
+        Benchmark -->|"LETI Target"| Pass["LETI Band A (<350) / Band B (<450)"]
+        Benchmark -->|"RICS Standard"| Standard["RICS Professional Disclosure"]
+    end
+
+    classDef in fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px;
+    classDef hier fill:#fed7aa,stroke:#ea580c,stroke-width:2px;
+    classDef lca fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
+    classDef out fill:#f3e8ff,stroke:#7e22ce,stroke-width:2px;
+
+    class BIM,BoQ,Cost,Elements in;
+    class TierSelect,T1,T2,T3 hier;
+    class ModA,ModB,ModC,ModD lca;
+    class WLC,CircReport,Benchmark,Pass,Standard out;
+```
+
+---
+
+## Practice
+
+### Exercise 1: Contingency Markups Across Design Stages
+
+A preliminary structural calculation at Concept Design (RIBA Stage 2) estimates the baseline substructure and superstructure at $320\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$.
+1. Per RICS 2023 guidance, apply a recommended early-stage design contingency of $+15\%$. What is the adjusted upfront carbon figure?
+2. At Developed Design (RIBA Stage 3), detailed rebar and core dimensions are modeled, reducing the contingency requirement to $+5\%$. The raw model now reads $340\text{ kgCO}_2\text{e}/\text{m}^2$. What is the reported carbon intensity?
+3. Explain why the reported carbon figure can rise even as design precision improves.
+
+### Exercise 2: Capstone Design Optimization
+
+A project manager must reduce the Upfront Carbon of Scheme 1 in the worked example from $413.1\text{ kgCO}_2\text{e}/\text{m}^2$ to below the LETI 2030 target of $350.0\text{ kgCO}_2\text{e}/\text{m}^2$ (a reduction of $63.1\text{ kgCO}_2\text{e}/\text{m}^2$ across the $10{,}000\text{ m}^2$ building, or $631\text{ tCO}_2\text{e}$).
+* The structural engineer proposes two interventions:
+  * **Intervention A (Cement Replacement):** Replace CEM I with 50% GGBS across all superstructure concrete, reducing the concrete factor from $0.155$ to $0.105\text{ kgCO}_2\text{e}/\text{kg}$ ($10{,}584\text{ tonnes}$ purchased).
+  * **Intervention B (Off-Site Rebar Cutting):** Prefabricate rebar mats in a factory to reduce rebar wastage from $4\%$ to $1\%$ and procure 100% EAF recycled steel ($0.780$ instead of $0.950\text{ kgCO}_2\text{e}/\text{kg}$).
+
+Calculate:
+1. Carbon savings from Intervention A in $\text{tCO}_2\text{e}$ and $\text{kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$.
+2. Carbon savings from Intervention B in $\text{tCO}_2\text{e}$ and $\text{kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$.
+3. Does implementing both interventions bring Scheme 1 below the LETI 2030 threshold of $350\text{ kgCO}_2\text{e}/\text{m}^2$?
+
+---
+
+### Answers and hints
+
+#### Exercise 1 Answers
+1. Stage 2 with $+15\%$ contingency:
+   $$320\text{ kgCO}_2\text{e}/\text{m}^2 \times 1.15 = 368.0\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+2. Stage 3 with $+5\%$ contingency:
+   $$340\text{ kgCO}_2\text{e}/\text{m}^2 \times 1.05 = 357.0\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+3. Explanation:
+   At early stages, preliminary models omit secondary structural steel, connection plates, edge beams, spandrels, and waterproofing build-ups. As detailing advances, real physical items are added to the schedule. Applying contingency early prevents misleading clients with an artificially low "bare-bones" figure that inevitably swells as the design matures [S04, S10].
+
+#### Exercise 2 Answers
+1. Intervention A (GGBS substitution):
+   * Concrete purchased: $10{,}584{,}000\text{ kg}$.
+   * Factor reduction: $0.155 - 0.105 = 0.050\text{ kgCO}_2\text{e}/\text{kg}$.
+   $$\text{Savings}_A = 10{,}584{,}000\text{ kg} \times 0.050 = 529{,}200\text{ kgCO}_2\text{e} = 529.2\text{ tCO}_2\text{e}$$
+   $$\text{Normalized Savings}_A = \frac{529{,}200\text{ kgCO}_2\text{e}}{10{,}000\text{ m}^2} = 52.92\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+2. Intervention B (Rebar optimization):
+   * Original rebar: $436{,}800\text{ kg} \times 0.950 = 414{,}960\text{ kgCO}_2\text{e}$.
+   * Optimized rebar: $420\text{ t} \times 1.01 = 424.2\text{ tonnes} = 424{,}200\text{ kg}$.
+   * Optimized carbon: $424{,}200\text{ kg} \times 0.780 = 330{,}876\text{ kgCO}_2\text{e}$.
+   $$\text{Savings}_B = 414{,}960 - 330{,}876 = 84{,}084\text{ kgCO}_2\text{e} \approx 84.08\text{ tCO}_2\text{e}$$
+   $$\text{Normalized Savings}_B = \frac{84{,}084\text{ kgCO}_2\text{e}}{10{,}000\text{ m}^2} = 8.41\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+3. Combined Outcome:
+   $$\text{Total Savings} = 52.92 + 8.41 = 61.33\text{ kgCO}_2\text{e}/\text{m}^2$$
+   $$\text{New Upfront Intensity} = 413.10 - 61.33 = 351.77\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$
+   *Outcome:* The interventions achieve an impressive $14.8\%$ reduction, landing right at the doorstep of the LETI 2030 target ($351.8\text{ kgCO}_2\text{e}/\text{m}^2$ vs target $<350$). A modest further optimization (such as timber internal stud partitions or low-carbon ground granulated slag in the foundations) will comfortably surpass the target.
+
+---
+
+## Next steps
+
+Congratulations! You have completed the comprehensive five-lesson curriculum on Lifecycle Stages and Embodied Carbon in the Construction Industry.
+
+* Review the complete source references, access levels, and evidence notes in the [Annotated Bibliography](99-bibliography.md).
+* Explore sensitivity analysis, transport ranges, and alternative structural frames using the following tool:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Lifecycle Carbon & Embodied Carbon Calculator</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #cbd5e1;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --accent-a: #2563eb;
+      --accent-b: #d97706;
+      --accent-c: #dc2626;
+      --accent-d: #16a34a;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 1.5rem;
+    }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      color: #0f172a;
+      margin-bottom: 0.5rem;
+    }
+    p.subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 820px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #1e293b;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.4rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.875rem;
+      margin-bottom: 0.25rem;
+      color: #334155;
+    }
+    .hint {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    input[type="number"], select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 0.9rem;
+      background: #fff;
+    }
+    input[type="range"] {
+      width: 100%;
+      margin: 0.25rem 0;
+    }
+    .range-val {
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: var(--primary);
+      text-align: right;
+    }
+    .button-group {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    button {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background-color: var(--primary-hover);
+    }
+    button.secondary {
+      background-color: #64748b;
+    }
+    button.secondary:hover {
+      background-color: #475569;
+    }
+    .stat-badge {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.875rem;
+    }
+    .results-table th, .results-table td {
+      padding: 0.5rem 0.6rem;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .results-table th {
+      background-color: #f1f5f9;
+      color: #334155;
+    }
+    .stage-pill {
+      display: inline-block;
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.75rem;
+    }
+    .pill-a { background-color: var(--accent-a); }
+    .pill-b { background-color: var(--accent-b); }
+    .pill-c { background-color: var(--accent-c); }
+    .pill-d { background-color: var(--accent-d); }
+    .total-row {
+      font-weight: bold;
+      background-color: #f8fafc;
+      border-top: 2px solid #94a3b8;
+    }
+    .bar-chart-container {
+      margin-top: 1.25rem;
+    }
+    .chart-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .chart-bar-bg {
+      background-color: #e2e8f0;
+      height: 18px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 0.6rem;
+      display: flex;
+    }
+    .chart-bar-fill {
+      height: 100%;
+      transition: width 0.3s ease;
+    }
+    .benchmark-box {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border-radius: 6px;
+      background-color: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      font-size: 0.85rem;
+    }
+    .alert-error {
+      background-color: #fef2f2;
+      border: 1px solid #fecaca;
+      color: #991b1b;
+      padding: 0.75rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      display: none;
+    }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Whole Life Embodied Carbon & Modular Stage Explorer</h1>
+      <p class="subtitle">An interactive learning simulation compliant with BS EN 15978:2011, BS EN 15804+A2:2019, and RICS Whole Life Carbon Assessment Professional Standard (2nd Edition, 2023).</p>
+    </header>
+    <div id="error-banner" class="alert-error" role="alert"></div>
+    <div class="grid">
+      <!-- Controls Column -->
+      <div class="card">
+        <h2>1. Project & Life Cycle Parameters</h2>
+        <form id="calc-form" onsubmit="return false;">
+          <div class="form-group">
+            <label for="gia-input">Gross Internal Area (GIA in m²)</label>
+            <div class="hint">Building functional unit floor area (range 100 to 50,000 m²)</div>
+            <input type="number" id="gia-input" name="gia" min="100" max="50000" step="50" value="5000" required>
+          </div>
+          <div class="form-group">
+            <label for="rsp-input">Reference Study Period (RSP in years)</label>
+            <div class="hint">Building assessment horizon per EN 15978 / RICS (standard: 60 years)</div>
+            <input type="number" id="rsp-input" name="rsp" min="10" max="100" step="5" value="60" required>
+          </div>
+          <div class="form-group">
+            <label for="frame-select">Primary Structural System (Modules A1–A3)</label>
+            <div class="hint">Determines material intensity and product-stage carbon factor</div>
+            <select id="frame-select" name="frame">
+              <option value="rc_baseline">Standard Reinforced Concrete (C30/37 with 100% CEM I)</option>
+              <option value="rc_lowcarbon" selected>Low-Carbon Concrete (C30/37 with 50% GGBS substitution)</option>
+              <option value="steel_composite">Structural Steel Frame (Recycled EAF) & Composite Slab</option>
+              <option value="mass_timber">Engineered Mass Timber (CLT Floor Slabs & Glulam Frame)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dist-range">Module A4: Transport Distance to Site (km)</label>
+            <div class="hint">Weighted round-trip distance from manufacturing plants to site</div>
+            <input type="range" id="dist-range" name="distance" min="10" max="1000" step="10" value="80">
+            <div class="range-val" id="dist-val">80 km</div>
+          </div>
+          <div class="form-group">
+            <label for="waste-range">Module A5: Construction Site Wastage Rate (%)</label>
+            <div class="hint">Surplus material ordered to account for on-site damage and cutting losses</div>
+            <input type="range" id="waste-range" name="waste" min="1" max="15" step="1" value="5">
+            <div class="range-val" id="waste-val">5 %</div>
+          </div>
+          <div class="form-group">
+            <label for="mep-life">Module B4: MEP Building Services Service Life (years)</label>
+            <div class="hint">Lifespan before total plant replacement (triggers B4 step updates)</div>
+            <input type="number" id="mep-life" name="mep_life" min="10" max="30" step="5" value="20" required>
+          </div>
+          <div class="form-group">
+            <label for="facade-life">Module B4: Facade & Glazing Service Life (years)</label>
+            <div class="hint">Lifespan before envelope refurbishment or replacement</div>
+            <input type="number" id="facade-life" name="facade_life" min="15" max="60" step="5" value="30" required>
+          </div>
+          <div class="form-group">
+            <label for="circ-range">Module D: End-of-Life Material Recovery & Reuse Rate (%)</label>
+            <div class="hint">Percentage of scrap entering secondary circular economy product loops</div>
+            <input type="range" id="circ-range" name="circ" min="10" max="95" step="5" value="80">
+            <div class="range-val" id="circ-val">80 %</div>
+          </div>
+          <div class="button-group">
+            <button type="button" id="calc-btn">Recalculate Model</button>
+            <button type="button" class="secondary" id="reset-btn">Reset Defaults</button>
+          </div>
+        </form>
+      </div>
+      <!-- Results Column -->
+      <div class="card">
+        <h2>2. Life Cycle Stage Carbon Outputs</h2>
+        <div id="stat-summary">
+          <p><strong>Upfront Embodied Carbon (A1–A5):</strong> <span id="summary-a1a5">--</span> kgCO₂e/m²</p>
+          <p><strong>Whole Life Embodied Carbon (A1–C4):</strong> <span id="summary-wlc">--</span> kgCO₂e/m²</p>
+          <p><strong>Total Project Embodied Footprint:</strong> <span id="summary-tonnes">--</span> tCO₂e</p>
+        </div>
+        <table class="results-table" aria-label="Breakdown of embodied carbon emissions by life cycle stage">
+          <thead>
+            <tr>
+              <th>Life Cycle Stage</th>
+              <th>Module</th>
+              <th>kgCO₂e/m²</th>
+              <th>Total tCO₂e</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="stage-pill pill-a">Product</span></td>
+              <td>A1–A3</td>
+              <td id="res-a1a3">--</td>
+              <td id="res-a1a3-t">--</td>
+            </tr>
+            <tr>
+              <td><span class="stage-pill pill-a">Transport to Site</span></td>
+              <td>A4</td>
+              <td id="res-a4">--</td>
+              <td id="res-a4-t">--</td>
+            </tr>
+            <tr>
+              <td><span class="stage-pill pill-a">Site Installation & Waste</span></td>
+              <td>A5</td>
+              <td id="res-a5">--</td>
+              <td id="res-a5-t">--</td>
+            </tr>
+            <tr style="background:#f8fafc; font-weight:600;">
+              <td colspan="2">Subtotal Upfront Carbon (A1–A5)</td>
+              <td id="subtotal-upfront">--</td>
+              <td id="subtotal-upfront-t">--</td>
+            </tr>
+            <tr>
+              <td><span class="stage-pill pill-b">Use & Replacement</span></td>
+              <td>B1–B5</td>
+              <td id="res-b">--</td>
+              <td id="res-b-t">--</td>
+            </tr>
+            <tr>
+              <td><span class="stage-pill pill-c">End-of-Life</span></td>
+              <td>C1–C4</td>
+              <td id="res-c">--</td>
+              <td id="res-c-t">--</td>
+            </tr>
+            <tr class="total-row">
+              <td colspan="2">Total Cradle-to-Grave (A1–C4)</td>
+              <td id="res-total">--</td>
+              <td id="res-total-t">--</td>
+            </tr>
+            <tr style="color: #15803d; font-style: italic;">
+              <td><span class="stage-pill pill-d">Beyond Boundary</span></td>
+              <td>Module D</td>
+              <td id="res-d">--</td>
+              <td id="res-d-t">--</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="bar-chart-container">
+          <div class="chart-label">
+            <span>Stage Distribution (A1–C4)</span>
+            <span id="chart-percent-label">100%</span>
+          </div>
+          <div class="chart-bar-bg" aria-label="Stacked bar chart of life cycle stages">
+            <div id="bar-a" class="chart-bar-fill" style="background-color: var(--accent-a); width: 65%;" title="Upfront Carbon A1-A5"></div>
+            <div id="bar-b" class="chart-bar-fill" style="background-color: var(--accent-b); width: 25%;" title="Use Stage B1-B5"></div>
+            <div id="bar-c" class="chart-bar-fill" style="background-color: var(--accent-c); width: 10%;" title="End of Life C1-C4"></div>
+          </div>
+          <div style="font-size: 0.75rem; display: flex; gap: 1rem; color: var(--muted);">
+            <span><strong style="color: var(--accent-a)">■</strong> A1–A5 (Upfront)</span>
+            <span><strong style="color: var(--accent-b)">■</strong> B1–B5 (In-Use)</span>
+            <span><strong style="color: var(--accent-c)">■</strong> C1–C4 (End-of-Life)</span>
+          </div>
+        </div>
+        <div class="benchmark-box" id="benchmark-callout">
+          <strong>LETI 2030 Upfront Benchmark Rating:</strong>
+          <span id="benchmark-rating">Calculating...</span>
+          <div style="font-size: 0.75rem; color: #166534; margin-top: 0.25rem;">
+            Target threshold for commercial offices: Band A (&lt;350 kgCO₂e/m²), Band C (&lt;600 kgCO₂e/m²).
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Calculations adhere to EN 15978 modular algebra. Formula: Total Upfront = (A1–A3 × (1 + waste)) + A4 + A5.site. Module D is reported as a separate supplementary circularity credit and is never subtracted from the A1–C4 inventory total.</p>
+    </footer>
+  </div>
+  <noscript>
+    <div style="background-color: #fee2e2; color: #991b1b; padding: 1rem; margin: 1rem; border-radius: 4px;">
+      JavaScript is required to operate this interactive calculation model. Please enable JavaScript in your browser settings.
+    </div>
+  </noscript>
+  <script>
+    (function() {
+      // Elements
+      const giaInput = document.getElementById('gia-input');
+      const rspInput = document.getElementById('rsp-input');
+      const frameSelect = document.getElementById('frame-select');
+      const distRange = document.getElementById('dist-range');
+      const distVal = document.getElementById('dist-val');
+      const wasteRange = document.getElementById('waste-range');
+      const wasteVal = document.getElementById('waste-val');
+      const mepLifeInput = document.getElementById('mep-life');
+      const facadeLifeInput = document.getElementById('facade-life');
+      const circRange = document.getElementById('circ-range');
+      const circVal = document.getElementById('circ-val');
+      const calcBtn = document.getElementById('calc-btn');
+      const resetBtn = document.getElementById('reset-btn');
+      const errorBanner = document.getElementById('error-banner');
+      // Sync range display values
+      distRange.addEventListener('input', () => distVal.textContent = distRange.value + ' km');
+      wasteRange.addEventListener('input', () => wasteVal.textContent = wasteRange.value + ' %');
+      circRange.addEventListener('input', () => circVal.textContent = circRange.value + ' %');
+      // Frame Baseline Archetypes (A1-A3 intensity kgCO2e/m2 GIA based on ICE v3.0 / IStructE 2022)
+      const FRAME_DATA = {
+        rc_baseline: { a1a3: 380, mass_per_m2: 1200, d_factor: -45 },
+        rc_lowcarbon: { a1a3: 245, mass_per_m2: 1200, d_factor: -40 },
+        steel_composite: { a1a3: 310, mass_per_m2: 650, d_factor: -110 },
+        mass_timber: { a1a3: 175, mass_per_m2: 450, d_factor: -30 }
+      };
+      function calculate() {
+        errorBanner.style.display = 'none';
+        errorBanner.textContent = '';
+        const gia = parseFloat(giaInput.value);
+        const rsp = parseFloat(rspInput.value);
+        const frameKey = frameSelect.value;
+        const distKm = parseFloat(distRange.value);
+        const wastePct = parseFloat(wasteRange.value) / 100.0;
+        const mepLife = parseFloat(mepLifeInput.value);
+        const facadeLife = parseFloat(facadeLifeInput.value);
+        const circPct = parseFloat(circRange.value) / 100.0;
+        if (isNaN(gia) || gia <= 0) {
+          showError('Please enter a valid Gross Internal Area greater than 0.');
+          return;
+        }
+        if (isNaN(rsp) || rsp <= 0) {
+          showError('Please enter a valid Reference Study Period greater than 0.');
+          return;
+        }
+        if (isNaN(mepLife) || mepLife <= 0 || isNaN(facadeLife) || facadeLife <= 0) {
+          showError('Service lifespans must be positive numbers.');
+          return;
+        }
+        const archetype = FRAME_DATA[frameKey] || FRAME_DATA.rc_lowcarbon;
+        // 1. A1–A3 (Product Stage with Wastage multiplier)
+        // Base structure + sub-structure + core
+        const rawA1A3 = archetype.a1a3;
+        const a1a3_effective = rawA1A3 * (1 + wastePct);
+        // 2. A4 (Transport to Site)
+        // Average freight factor: 0.106 kgCO2e / (t * km) per UK Gov / IStructE HGV average
+        const massTonnesPerM2 = archetype.mass_per_m2 / 1000.0;
+        const a4_per_m2 = massTonnesPerM2 * distKm * 0.000106 * (1 + wastePct);
+
+        // 3. A5 (Site Installation energy & packaging waste management)
+        // Site plant diesel/electricity + packaging: typical 25 kgCO2e/m2 + waste penalty
+        const a5_site_energy = 22.0;
+        const a5_waste_disposal = rawA1A3 * wastePct * 0.04; // processing waste
+        const a5_per_m2 = a5_site_energy + a5_waste_disposal;
+        const upfront_per_m2 = a1a3_effective + a4_per_m2 + a5_per_m2;
+        // 4. B1–B5 (Use Stage Replacements over RSP)
+        // Replacement formula per EN 15978 / RICS: ceil(RSP / ESL) - 1
+        const mepReplacements = Math.max(0, Math.ceil(rsp / mepLife) - 1);
+        const facadeReplacements = Math.max(0, Math.ceil(rsp / facadeLife) - 1);
+        // Initial embodied intensity of MEP ~ 75 kgCO2e/m2; Facade ~ 90 kgCO2e/m2
+        const mepPerReplacement = 70.0;
+        const facadePerReplacement = 85.0;
+        const b_replacements_per_m2 = (mepReplacements * mepPerReplacement) + (facadeReplacements * facadePerReplacement);
+        const b_maintenance_per_m2 = 15.0; // B2/B3 general maintenance
+        const b_total_per_m2 = b_replacements_per_m2 + b_maintenance_per_m2;
+        // 5. C1–C4 (End of Life)
+        // Demolition C1 ~ 8 kgCO2e/m2; Transport C2 ~ 4 kgCO2e/m2; C3/C4 sorting/disposal ~ 18 kgCO2e/m2
+        const c_total_per_m2 = 30.0;
+        // 6. Total Cradle-to-Grave WLC (A1–C4)
+        const wlc_embodied_per_m2 = upfront_per_m2 + b_total_per_m2 + c_total_per_m2;
+        // 7. Module D (Circularity Benefit)
+        // Net scrap benefit proportional to circular recovery rate
+        const module_d_per_m2 = archetype.d_factor * (circPct / 0.80);
+        // Render Values
+        document.getElementById('res-a1a3').textContent = a1a3_effective.toFixed(1);
+        document.getElementById('res-a1a3-t').textContent = ((a1a3_effective * gia) / 1000).toFixed(0);
+        document.getElementById('res-a4').textContent = a4_per_m2.toFixed(1);
+        document.getElementById('res-a4-t').textContent = ((a4_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-a5').textContent = a5_per_m2.toFixed(1);
+        document.getElementById('res-a5-t').textContent = ((a5_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('subtotal-upfront').textContent = upfront_per_m2.toFixed(1);
+        document.getElementById('subtotal-upfront-t').textContent = ((upfront_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-b').textContent = b_total_per_m2.toFixed(1);
+        document.getElementById('res-b-t').textContent = ((b_total_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-c').textContent = c_total_per_m2.toFixed(1);
+        document.getElementById('res-c-t').textContent = ((c_total_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-total').textContent = wlc_embodied_per_m2.toFixed(1);
+        document.getElementById('res-total-t').textContent = ((wlc_embodied_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('res-d').textContent = module_d_per_m2.toFixed(1);
+        document.getElementById('res-d-t').textContent = ((module_d_per_m2 * gia) / 1000).toFixed(0);
+        document.getElementById('summary-a1a5').textContent = upfront_per_m2.toFixed(1);
+        document.getElementById('summary-wlc').textContent = wlc_embodied_per_m2.toFixed(1);
+        document.getElementById('summary-tonnes').textContent = ((wlc_embodied_per_m2 * gia) / 1000).toFixed(0);
+        // Chart widths
+        const pctA = (upfront_per_m2 / wlc_embodied_per_m2) * 100;
+        const pctB = (b_total_per_m2 / wlc_embodied_per_m2) * 100;
+        const pctC = (c_total_per_m2 / wlc_embodied_per_m2) * 100;
+        document.getElementById('bar-a').style.width = pctA.toFixed(1) + '%';
+        document.getElementById('bar-b').style.width = pctB.toFixed(1) + '%';
+        document.getElementById('bar-c').style.width = pctC.toFixed(1) + '%';
+        document.getElementById('chart-percent-label').textContent = 'A1-A5: ' + pctA.toFixed(0) + '% | B1-B5: ' + pctB.toFixed(0) + '% | C1-C4: ' + pctC.toFixed(0) + '%';
+
+        // LETI Benchmark assessment
+        const ratingEl = document.getElementById('benchmark-rating');
+        if (upfront_per_m2 < 300) {
+          ratingEl.textContent = 'LETI Band A++ (Pacesetter, Ultra-Low Embodied Carbon)';
+          ratingEl.style.color = '#15803d';
+        } else if (upfront_per_m2 < 350) {
+          ratingEl.textContent = 'LETI Band A (LETI 2030 Target compliant for commercial offices)';
+          ratingEl.style.color = '#15803d';
+        } else if (upfront_per_m2 < 450) {
+          ratingEl.textContent = 'LETI Band B (Good Practice)';
+          ratingEl.style.color = '#0284c7';
+        } else if (upfront_per_m2 < 600) {
+          ratingEl.textContent = 'LETI Band C (LETI 2020 Standard Practice Baseline)';
+          ratingEl.style.color = '#d97706';
+        } else {
+          ratingEl.textContent = 'LETI Band D or below (Standard High-Carbon Construction)';
+          ratingEl.style.color = '#dc2626';
+        }
+      }
+      function showError(msg) {
+        errorBanner.textContent = msg;
+        errorBanner.style.display = 'block';
+      }
+      function resetDefaults() {
+        giaInput.value = '5000';
+        rspInput.value = '60';
+        frameSelect.value = 'rc_lowcarbon';
+        distRange.value = '80';
+        distVal.textContent = '80 km';
+        wasteRange.value = '5';
+        wasteVal.textContent = '5 %';
+        mepLifeInput.value = '20';
+        facadeLifeInput.value = '30';
+        circRange.value = '80';
+        circVal.textContent = '80 %';
+        calculate();
+      }
+      calcBtn.addEventListener('click', calculate);
+      resetBtn.addEventListener('click', resetDefaults);
+
+      // Trigger initial calculation
+      calculate();
+    })();
+  </script>
+</body>
+</html>
+
+---
+
+## 1. Normative Standards and Frameworks
+
+### [S01] BS EN 15978:2011
+* **Full Citation:** British Standards Institution / European Committee for Standardization (CEN). (2011). *BS EN 15978:2011: Sustainability of construction works — Assessment of environmental performance of buildings — Calculation method*. BSI Standards Limited. ISBN: 978-0-580-68199-8.
+* **Identifier / URL:** [BSI Knowledge Base](https://knowledge.bsigroup.com/products/sustainability-of-construction-works-assessment-of-environmental-performance-of-buildings-calculation-method)
+* **Access Level:** Chapter (Clauses 6–8 verified via official BSI summaries and standards guidance).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** Foundational standard establishing the modular life cycle framework (Modules A1–A5, B1–B7, C1–C4, and Module D) for the environmental performance assessment of new and existing buildings.
+* **Limitations:** The full CEN standard is a proprietary commercial publication. Core normative clauses, module boundaries, and functional unit definitions were verified against institutional summaries.
+
+### [S02] BS EN 15804:2012+A2:2019
+* **Full Citation:** British Standards Institution / European Committee for Standardization (CEN). (2019). *BS EN 15804:2012+A2:2019: Sustainability of construction works — Environmental product declarations — Core rules for the product category of construction products*. BSI Standards Limited. ISBN: 978-0-580-99522-4.
+* **Identifier / URL:** [CEN Standards Portal](https://standards.iteh.ai/catalog/standards/cen/5e3df5f5-ef85-48b9-823a-fcf7e19ec355/en-15804-2012-a2-2019)
+* **Access Level:** Chapter (Clauses 5–7 verified via EPD Program Operator General Program Instructions and ECO Platform guidance).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** Establishes core rules for construction Environmental Product Declarations (EPDs). Mandates the split of GWP into four sub-indicators (GWP-fossil, GWP-biogenic, GWP-luluc, GWP-total), the static $-1/+1$ biogenic carbon mass balance, and mandatory reporting of Modules C1–C4 and Module D.
+* **Limitations:** Commercial CEN standard. Normative EPD indicator specifications verified via publicly audited EPD general program instructions.
+
+### [S03] ISO 21930:2017
+* **Full Citation:** International Organization for Standardization. (2017). *ISO 21930:2017: Sustainability in buildings and civil engineering works — Core rules for environmental product declarations of construction products and services*. ISO.
+* **Identifier / URL:** [ISO Official Standard Record](https://www.iso.org/standard/62545.html)
+* **Access Level:** Chapter (Clause 6 verified via public ISO scope and international EPD standards guides).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** International baseline for product category rules (PCR) and EPD modular reporting across global jurisdictions, distinguishing between mandatory product stage modules and optional Module D disclosures.
+* **Limitations:** Copyrighted ISO standard; clause definitions verified via open technical guidance.
+
+---
+
+## 2. Professional Guidance and Engineering Toolkits
+
+### [S04] RICS Whole Life Carbon Assessment Professional Standard (2nd Edition, 2023)
+* **Full Citation:** Royal Institution of Chartered Surveyors. (2023). *Whole life carbon assessment for the built environment* (2nd ed.). RICS Professional Standard. ISBN: 978-1-78321-506-5. Effective date: 1 July 2024.
+* **Identifier / URL:** [RICS Sector Standards Portal](https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/whole-life-carbon-assessment)
+* **Access Level:** Full Text (Complete official document inspected).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** Mandatory global professional standard for measuring whole life and embodied carbon in buildings and infrastructure. Defines pre-construction module A0, default freight transport distances, design-stage contingency allowances, component service lives, and Net Scrap equations.
+* **Limitations:** Openly available from RICS. Primarily calibrated to UK and international building archetypes.
+
+### [S05] IStructE: How to Calculate Embodied Carbon (2nd Edition, 2022)
+* **Full Citation:** Gibbons, O. P., Orr, J. J., & Arnold, W. H. (2022). *How to calculate embodied carbon* (2nd ed.). The Institution of Structural Engineers (IStructE). ISBN: 978-1-906335-57-1.
+* **Identifier / URL:** [IStructE Guidance Repository](https://www.istructe.org/resources/guidance/how-to-calculate-embodied-carbon/)
+* **Access Level:** Full Text (Complete publication and accompanying Structural Carbon Tool logic inspected).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** Practical engineering guide providing exact mathematical formulas, material wastage rates, site fuel benchmarks, and structural material emission factors across Modules A1–A5, B1–B5, C1–C4, and Module D.
+* **Limitations:** Focuses predominantly on structural framing, substructures, and envelopes rather than building services (MEP). (Superseded by 3rd edition in 2025; 2nd edition remains authoritative for core equations).
+
+### [S06] LETI Embodied Carbon Primer (2020)
+* **Full Citation:** London Energy Transformation Initiative (LETI). (2020). *LETI Embodied Carbon Primer: Supplementary guidance to the Climate Emergency Design Guide*. LETI.
+* **Identifier / URL:** [LETI Official Publications](https://www.leti.uk/ecp)
+* **Access Level:** Full Text (Complete publication inspected).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** Establishes consensus UK design targets and carbon grading bands (Band A++ through Band G) for upfront carbon (A1–A5), defining the widely cited $<350\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ 2030 commercial office target.
+* **Limitations:** Open access guide; focused on UK design practice and climate zones.
+
+---
+
+## 3. Databases and Life Cycle Inventories
+
+### [S07] Inventory of Carbon and Energy (ICE) Version 3.0 (2019)
+* **Full Citation:** Jones, C., & Hammond, G. (2019). *Inventory of Carbon and Energy (ICE) Version 3.0*. Circular Ecology / University of Bath.
+* **Identifier / URL:** [Circular Ecology Database](https://circularecology.com/embodied-carbon-footprint-database.html)
+* **Access Level:** Full Text (Complete dataset and accompanying methodology note inspected).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** The most widely utilized open-access database providing cradle-to-gate (A1–A3) embodied carbon factors for common construction materials (concrete mixes, structural steel, masonry, glass, timber, insulation).
+* **Limitations:** Factors represent cradle-to-gate (A1–A3) only and must be supplemented with project-specific transport (A4) and site (A5) factors.
+
+---
+
+## 4. Peer-Reviewed Academic Literature
+
+### [S08] Röck et al. (2020): Embodied GHG Emissions of Buildings
+* **Full Citation:** Röck, M., Saade, M. R. M., Balouktsi, M., Rasmussen, F. N., Birgisdottir, H., Frischknecht, R., Habert, G., Lützkendorf, T., & Passer, A. (2020). Embodied GHG emissions of buildings – The hidden challenge for effective climate change mitigation. *Applied Energy*, 258, 114107.
+* **Identifier / DOI:** [10.1016/j.apenergy.2019.114107](https://doi.org/10.1016/j.apenergy.2019.114107)
+* **Access Level:** Full Text (Open access journal publication).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** Comprehensive meta-analysis of over 650 building life cycle assessments. Proves empirically that as operational energy efficiency increases, embodied GHG emissions rise from 20% to 50–90% of total whole life emissions.
+* **Limitations:** Case study buildings are predominantly European, though methodology applies globally.
+
+### [S09] Pomponi & Moncaster (2016): Embodied Carbon Mitigation Review
+* **Full Citation:** Pomponi, F., & Moncaster, A. (2016). Embodied carbon mitigation and reduction in the built environment – What does the evidence say? *Journal of Environmental Management*, 181, 687–700.
+* **Identifier / DOI:** [10.1016/j.jenvman.2016.08.036](https://doi.org/10.1016/j.jenvman.2016.08.036)
+* **Access Level:** Full Text (Peer-reviewed publication).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** Systematic review identifying 17 distinct embodied carbon mitigation strategies across the building lifecycle, demonstrating the necessity of a pluralistic approach combining structural efficiency, material selection, and circular deconstruction.
+* **Limitations:** Published in 2016, prior to the adoption of EN 15804+A2, but core mitigation taxonomy remains directly relevant.
+
+### [S10] De Wolf, Pomponi & Moncaster (2017): Measuring Embodied Carbon in Practice
+* **Full Citation:** De Wolf, C., Pomponi, F., & Moncaster, A. (2017). Measuring embodied carbon dioxide equivalent of buildings: A review and critique of current industry practice. *Energy and Buildings*, 140, 68–80.
+* **Identifier / DOI:** [10.1016/j.enbuild.2017.01.075](https://doi.org/10.1016/j.enbuild.2017.01.075)
+* **Access Level:** Full Text (Peer-reviewed publication).
+* **Date Checked:** 2026-10-10
+* **Curricular Role:** Critical appraisal of industry practitioners measuring embodied carbon, revealing data quality gaps, 15%–30% variance due to database inconsistencies, and highlighting the need for mandatory standards.
+* **Limitations:** Reflects practitioner capabilities and software tools as of 2017; current tools have expanded automated BIM integrations.

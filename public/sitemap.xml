@@ -652,28 +652,98 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/circular-economy/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>http://localhost:1313/blog/piano-ish-copy/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/construction-and-demolition-waste/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/construction-management/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/00-overview/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/01-foundations-and-frameworks/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/02-upfront-carbon-a1-a5/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/03-use-stage-b1-b5/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/04-end-of-life-and-module-d/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/05-calculation-methodology-and-case-study/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/infrastructure-management/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/infrastructure-planning/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/life-cycle-analysis/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/policy-and-regulation/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/scratchpad/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/sustainability/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/sustainable-management/</loc>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/weekend-projects/</loc>
-    <lastmod>2026-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2026-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
@@ -703,16 +773,6 @@
     <priority>0.8</priority>
   </url><url>
     <loc>http://localhost:1313/tags/human-centered-infrastructure/</loc>
-    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/infrastructure-management/</loc>
-    <lastmod>2026-09-17T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/infrastructure-planning/</loc>
     <lastmod>2026-09-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -817,7 +877,17 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2026-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
     <loc>http://localhost:1313/blog/piano-ish/</loc>
+    <lastmod>2026-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/weekend-projects/</loc>
     <lastmod>2026-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -863,11 +933,6 @@
     <priority>0.8</priority>
   </url><url>
     <loc>http://localhost:1313/tags/probability/</loc>
-    <lastmod>2026-07-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/scratchpad/</loc>
     <lastmod>2026-07-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1712,21 +1777,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/circular-economy/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/construction-and-demolition-waste/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/construction-management/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
     <loc>http://localhost:1313/tags/construction-waste/</loc>
     <lastmod>2024-03-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1734,26 +1784,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/demolition/</loc>
     <lastmod>2024-03-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/sustainability/</loc>
-    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/life-cycle-analysis/</loc>
-    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/policy-and-regulation/</loc>
-    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/sustainable-management/</loc>
-    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url><url>

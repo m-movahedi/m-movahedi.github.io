@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>EC 103: The In-Use Stage | Mohammad Movahedi</title>
+    <meta name="description" content="Lesson 03: The In-Use Stage (Modules B1–B5) and Operational Interplay Learning objectives By the end of this lesson, you will be able to:
+Differentiate embodied …">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+    
+    <meta property="og:url" content="http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/03-use-stage-b1-b5/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="EC 103: The In-Use Stage | Mohammad Movahedi">
+    <meta property="og:description" content="Lesson 03: The In-Use Stage (Modules B1–B5) and Operational Interplay Learning objectives By the end of this lesson, you will be able to:
+Differentiate embodied …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="EC 103: The In-Use Stage">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="EC 103: The In-Use Stage | Mohammad Movahedi">
+    <meta name="twitter:description" content="Lesson 03: The In-Use Stage (Modules B1–B5) and Operational Interplay Learning objectives By the end of this lesson, you will be able to:
+Differentiate embodied …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/03-use-stage-b1-b5/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/03-use-stage-b1-b5/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"EC 103: The In-Use Stage\"",
+  "description": "\"Lesson 03: The In-Use Stage (Modules B1–B5) and Operational Interplay Learning objectives By the end of this lesson, you will be able to:\\nDifferentiate embodied …\"",
+  "url": "http:\/\/localhost:1313\/scratchpad\/lifecycle-construction-embodied-carbon\/03-use-stage-b1-b5\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/scratchpad\/lifecycle-construction-embodied-carbon\/03-use-stage-b1-b5\/"
+  },
+  "datePublished": "2026-10-01T00:00:00Z",
+  "dateModified": "2026-10-01T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Scratchpad\"",
+      "item": "https:\/\/m-movahedi.com\/scratchpad\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"EC 103: The In-Use Stage\"",
+      "item": "http:\/\/localhost:1313\/scratchpad\/lifecycle-construction-embodied-carbon\/03-use-stage-b1-b5\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.d3547df4aafab8ca9e9490410b4a3f5cc515f00096fb2cab7875f5253c42ff8f.js" integrity="sha256-01R99Kr6uMqelJBBC0o/XMUV8ACW&#43;yyreHX1JTxC/48="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.213a5a99cd60572f09df5c8d163108fa0e2d6e927d6af2e5ede43628749ab8e4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.433ef8b502dee2a6501981b1d3ad834b49bbbbde5299de64639645e38bbb4be7.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <button type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Toggle navigation" id="hamburger-menu-toggle-target">
+                    <span data-feather="menu"></span>
+                </button>
+            </div>
+
+            
+            <ul id="mobile-navigation" class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>EC 103: The In-Use Stage</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              October 1, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="lesson-03-the-in-use-stage-modules-b1b5-and-operational-interplay">Lesson 03: The In-Use Stage (Modules B1–B5) and Operational Interplay</h1>
+<h2 id="learning-objectives">Learning objectives</h2>
+<p>By the end of this lesson, you will be able to:</p>
+<ul>
+<li>Differentiate embodied use-stage emissions (<strong>Modules B1–B5</strong>) from operational emissions (<strong>Modules B6–B7</strong>).</li>
+<li>Model component replacement schedules across a 60-year <strong>Reference Study Period (RSP)</strong> using service life planning equations.</li>
+<li>Apply the mathematical replacement step function $N_{\text{replace}} = \lceil \text{RSP}/\text{ESL} \rceil - 1$ to calculate cumulative B4 emissions.</li>
+<li>Analyze in-situ carbonation in concrete and refrigerant leakage in HVAC systems within <strong>Module B1</strong>.</li>
+<li>Calculate the <strong>embodied carbon payback period</strong> and evaluate the trade-off between embodied carbon investments and operational energy savings under a decarbonizing electrical grid.</li>
+</ul>
+<hr>
+<h2 id="key-concepts">Key concepts</h2>
+<h3 id="1-embodied-vs-operational-emissions-in-the-use-stage">1. Embodied vs. Operational Emissions in the Use Stage</h3>
+<p>Under BS EN 15978 [S01] and the RICS Whole Life Carbon Standard [S04], the building use stage (Stage B) spans all impacts occurring between handover (practical completion) and the final decommissioning of the asset. It divides into two operational modules and five embodied modules:</p>
+<pre tabindex="0"><code>Stage B = Embodied In-Use (B1–B5) + Operational Energy &amp; Water (B6–B7)
+</code></pre><ol>
+<li><strong>Operational Impacts (B6 &amp; B7):</strong>
+<ul>
+<li><strong>B6 (Operational Energy):</strong> Fuel and grid electricity consumed by space heating, mechanical ventilation, cooling, domestic hot water, artificial lighting, and tenant plug loads [S01].</li>
+<li><strong>B7 (Operational Water):</strong> Potable water extraction, municipal water treatment, and foul sewerage disposal [S01].</li>
+</ul>
+</li>
+<li><strong>Embodied Impacts (B1–B5):</strong>
+<ul>
+<li>Emissions stemming from the materials, maintenance crews, and replacement products needed to keep the physical asset functioning [S04].</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="2-breakdown-of-embodied-modules-b1b5">2. Breakdown of Embodied Modules B1–B5</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Module</th>
+          <th style="text-align: left">Designation</th>
+          <th style="text-align: left">Typical Activities &amp; Drivers</th>
+          <th style="text-align: left">Significance in Practice</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>B1</strong></td>
+          <td style="text-align: left">In-Use (In-situ processes)</td>
+          <td style="text-align: left">Direct physical or chemical releases occurring in-situ. Primary examples: fugitive leakage of high-GWP refrigerants (e.g., R-410A, R-32) from chillers and heat pumps; beneficial absorption of $\text{CO}_2$ via concrete carbonation [S04, S05].</td>
+          <td style="text-align: left">Can be significant if mechanical systems use high-GWP refrigerants with high annual leakage rates.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>B2</strong></td>
+          <td style="text-align: left">Maintenance</td>
+          <td style="text-align: left">Scheduled, routine preventive activities: facade washing, filter replacements, routine lubrication, cleaning.</td>
+          <td style="text-align: left">Typically modest ($\approx 5–15\text{ kgCO}_2\text{e}/\text{m}^2$ across 60 years) [S04].</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>B3</strong></td>
+          <td style="text-align: left">Repair</td>
+          <td style="text-align: left">Unscheduled, reactive fixes for localized failures: replacing damaged cladding panels, broken floor tiles, leaking pipes.</td>
+          <td style="text-align: left">Modeled as a small contingency allowance ($1\%–5\%$ of original component A1–A5) [S04, S05].</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>B4</strong></td>
+          <td style="text-align: left">Replacement</td>
+          <td style="text-align: left">Planned full-scale replacement of components reaching the end of their design life (e.g., MEP systems, roofing membranes, carpets, glazing).</td>
+          <td style="text-align: left"><strong>The dominant embodied module in Stage B</strong>, often exceeding $100–250\text{ kgCO}_2\text{e}/\text{m}^2$ over 60 years [S04, S08].</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>B5</strong></td>
+          <td style="text-align: left">Refurbishment</td>
+          <td style="text-align: left">Major tenant fit-out cycles, interior reconfigurations, or spatial adaptations. In commercial offices, tenants churn every 7–10 years, driving repeated fit-out stripping and replacement [S04, S09].</td>
+          <td style="text-align: left">Very significant in commercial real estate due to frequent aesthetic alterations.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="3-service-life-planning--the-replacement-formula-module-b4">3. Service Life Planning &amp; The Replacement Formula (Module B4)</h3>
+<p>While primary structural elements (foundations, columns, floor slabs) typically have a design life equal to or exceeding the building’s <strong>Reference Study Period (RSP)</strong> (typically 60 years) [S04], secondary components have substantially shorter <strong>Estimated Service Lives (ESLs)</strong> [S01, S05]:</p>
+<ul>
+<li>Building services (chillers, boilers, ventilation ducts, controls): 15 to 25 years</li>
+<li>Roof waterproofing membranes: 20 to 25 years</li>
+<li>Double/triple glazing units: 25 to 35 years</li>
+<li>Commercial carpet tiles and internal finishes: 5 to 10 years</li>
+</ul>
+<h4 id="the-mathematical-replacement-step-function">The Mathematical Replacement Step Function</h4>
+<p>To determine how many times a component must be replaced over the building&rsquo;s assessment horizon, standards use the integer ceiling step function [S01, S04]:</p>
+$$N_{\text{replace}, i} = \left\lceil \frac{\text{RSP}}{\text{ESL}_i} \right\rceil - 1$$<p>Where:</p>
+<ul>
+<li>$\text{RSP}$ = Reference Study Period of the building (years).</li>
+<li>$\text{ESL}_i$ = Estimated Service Life of component $i$ (years).</li>
+<li>$\lceil x \rceil$ = Ceiling function (rounds up to the nearest integer).</li>
+<li>The subtraction of $1$ accounts for the fact that the initial component was already manufactured and installed during the upfront stage (Modules A1–A5).</li>
+</ul>
+<h4 id="boundary-handling-at-the-end-of-life">Boundary Handling at the End of Life</h4>
+<p>If a component&rsquo;s lifespan matches an exact divisor of the RSP (e.g., a 30-year roof membrane in a 60-year building):
+</p>
+$$N_{\text{replace}} = \left\lceil \frac{60}{30} \right\rceil - 1 = 2 - 1 = 1\text{ replacement (at Year 30)}$$<p>
+At Year 60, the component reaches the end of its life concurrently with building demolition, so no second replacement is purchased [S04].</p>
+<h4 id="calculating-cumulative-b4-carbon">Calculating Cumulative B4 Carbon</h4>
+<p>Each replacement cycle incurs a full lifecycle loop: manufacturing the new unit ($A1–A3$), transporting it to site ($A4$), installing it ($A5$), and removing/disposing of the expired unit ($C1–C4$) [S04]:</p>
+$$\text{EC}_{B4, i} = N_{\text{replace}, i} \times \left( \text{EC}_{A1-A3, i} + \text{EC}_{A4, i} + \text{EC}_{A5, i} + \text{EC}_{C1-C4, i} \right)$$<hr>
+<h3 id="4-the-embodied-carbon-payback-trap-interplay-with-b6">4. The &ldquo;Embodied Carbon Payback&rdquo; Trap (Interplay with B6)</h3>
+<p>Designers frequently propose high-specification building components to reduce operational heating and cooling energy in Module B6 [S08, S09]. Examples include:</p>
+<ul>
+<li>Triple glazing with heavy insulated frames instead of double glazing.</li>
+<li>Thick petroleum-derived insulation (polyisocyanurate [PIR] or extruded polystyrene [XPS]).</li>
+<li>Highly complex mechanical ventilation with heat recovery (MVHR) and heat pumps.</li>
+</ul>
+<p>While these measures reduce annual operational energy ($\Delta \text{OC}_{\text{annual}}$ in $\text{kgCO}_2\text{e}/\text{year}$), they demand an immediate upfront embodied carbon investment ($\Delta \text{EC}_{\text{embodied}}$ in $\text{kgCO}_2\text{e}$) [S08]:</p>
+$$\text{Payback Period (years)} = \frac{\Delta \text{EC}_{\text{embodied}}}{\Delta \text{OC}_{\text{annual}}}$$<h4 id="the-grid-decarbonization-effect">The Grid Decarbonization Effect</h4>
+<p>As electricity grids decarbonize rapidly through renewable expansion (wind, solar, nuclear), the grid emission factor ($\text{EF}_{\text{grid}}$ in $\text{kgCO}_2\text{e}/\text{kWh}$) declines year over year [S08].</p>
+<p>Consequently, an operational energy saving of $10\text{ kWh}/\text{m}^2/\text{year}$ might save:</p>
+<ul>
+<li>In Year 1 (at $0.200\text{ kgCO}_2\text{e}/\text{kWh}$): $2.0\text{ kgCO}_2\text{e}/\text{m}^2/\text{year}$.</li>
+<li>In Year 20 (at $0.030\text{ kgCO}_2\text{e}/\text{kWh}$): only $0.3\text{ kgCO}_2\text{e}/\text{m}^2/\text{year}$.</li>
+</ul>
+<p>If the upfront embodied carbon investment was $50\text{ kgCO}_2\text{e}/\text{m}^2$, a static calculation would predict a 25-year payback, but under real grid decarbonization, the cumulative operational savings may <strong>never reach $50\text{ kgCO}_2\text{e}/\text{m}^2$ before the component must be replaced</strong> [S08]!</p>
+<hr>
+<h2 id="worked-example">Worked example</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>A sustainability consultancy is evaluating the 60-year Whole Life Carbon performance of two mechanical services and envelope strategies for an $8{,}000\text{ m}^2$ commercial office building ($\text{RSP} = 60\text{ years}$).</p>
+<h4 id="component-lifespans-and-inventories">Component Lifespans and Inventories:</h4>
+<ol>
+<li><strong>Mechanical, Electrical &amp; Plumbing (MEP) Plant:</strong>
+<ul>
+<li>Estimated Service Life ($\text{ESL}_{\text{MEP}}$): $20\text{ years}$.</li>
+<li>Initial Upfront &amp; Replacement Carbon per cycle ($\text{EC}_{\text{MEP}}$): $65\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ [S04].</li>
+</ul>
+</li>
+<li><strong>Curtain Wall Facade:</strong>
+<ul>
+<li>Estimated Service Life ($\text{ESL}_{\text{facade}}$): $30\text{ years}$.</li>
+<li>Initial Upfront &amp; Replacement Carbon per cycle ($\text{EC}_{\text{facade}}$): $80\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ [S04].</li>
+</ul>
+</li>
+<li><strong>Interior Tenant Fit-Out Churn (Module B5):</strong>
+<ul>
+<li>Tenant churn cycle: Every $10\text{ years}$ ($\text{ESL}_{\text{fitout}} = 10\text{ years}$).</li>
+<li>Carbon footprint per fit-out cycle: $35\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ [S04].</li>
+</ul>
+</li>
+<li><strong>Refrigerant Leakage (Module B1):</strong>
+<ul>
+<li>Chiller system charge: $300\text{ kg}$ of R-32 refrigerant ($\text{GWP} = 675\text{ kgCO}_2\text{e}/\text{kg}$) [S04].</li>
+<li>Annual leakage rate: $3\%$ per year over 60 years.</li>
+</ul>
+</li>
+</ol>
+<h4 id="proposed-envelope-upgrade">Proposed Envelope Upgrade:</h4>
+<p>The facade engineer proposes upgrading standard double glazing to high-performance triple glazing:</p>
+<ul>
+<li>Additional Upfront Embodied Carbon: $+22\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ (due to third glass pane, krypton gas, and reinforced mullions).</li>
+<li>Facade lifespan remains $30\text{ years}$ (so the $+22\text{ kgCO}_2\text{e}/\text{m}^2$ repeats at Year 30).</li>
+<li>Annual space heating reduction: $8\text{ kWh}/\text{m}^2/\text{year}$ of heat pump electricity.</li>
+<li>Average grid carbon factor over the next 30 years: $0.050\text{ kgCO}_2\text{e}/\text{kWh}$.</li>
+</ul>
+<p><strong>Calculate:</strong></p>
+<ol>
+<li>The number of replacements for MEP, Facade, and Fit-out over the 60-year RSP.</li>
+<li>The total baseline B4 + B5 embodied carbon intensity ($\text{kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$).</li>
+<li>The total B1 refrigerant leakage emissions over the building&rsquo;s life.</li>
+<li>The carbon payback period of the triple glazing upgrade and determine if it represents a net carbon reduction over its 30-year lifespan.</li>
+</ol>
+<hr>
+<h3 id="step-by-step-solution">Step-by-Step Solution</h3>
+<h4 id="step-1-number-of-replacements-">Step 1: Number of Replacements ($N_{\text{replace}}$)</h4>
+<ul>
+<li>
+<p><strong>MEP Services ($\text{ESL} = 20\text{ years}$):</strong>
+</p>
+$$N_{\text{replace, MEP}} = \left\lceil \frac{60}{20} \right\rceil - 1 = 3 - 1 = 2\text{ replacements (at Years 20 and 40)}$$</li>
+<li>
+<p><strong>Facade Envelope ($\text{ESL} = 30\text{ years}$):</strong>
+</p>
+$$N_{\text{replace, facade}} = \left\lceil \frac{60}{30} \right\rceil - 1 = 2 - 1 = 1\text{ replacement (at Year 30)}$$</li>
+<li>
+<p><strong>Tenant Fit-Out ($\text{ESL} = 10\text{ years}$):</strong>
+</p>
+$$N_{\text{replace, fitout}} = \left\lceil \frac{60}{10} \right\rceil - 1 = 6 - 1 = 5\text{ replacement cycles (at Years 10, 20, 30, 40, and 50)}$$</li>
+</ul>
+<hr>
+<h4 id="step-2-cumulative-b4-and-b5-emissions">Step 2: Cumulative B4 and B5 Emissions</h4>
+<ul>
+<li>
+<p><strong>MEP Replacements (B4):</strong>
+</p>
+$$\text{EC}_{B4, \text{MEP}} = 2 \times 65\text{ kgCO}_2\text{e}/\text{m}^2 = 130\text{ kgCO}_2\text{e}/\text{m}^2$$</li>
+<li>
+<p><strong>Facade Replacement (B4):</strong>
+</p>
+$$\text{EC}_{B4, \text{facade}} = 1 \times 80\text{ kgCO}_2\text{e}/\text{m}^2 = 80\text{ kgCO}_2\text{e}/\text{m}^2$$</li>
+<li>
+<p><strong>Tenant Fit-Out Churn (B5):</strong>
+</p>
+$$\text{EC}_{B5, \text{fitout}} = 5 \times 35\text{ kgCO}_2\text{e}/\text{m}^2 = 175\text{ kgCO}_2\text{e}/\text{m}^2$$</li>
+<li>
+<p><strong>Total B4 + B5 Intensity:</strong>
+</p>
+$$\text{EC}_{B4+B5} = 130 + 80 + 175 = 385\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$</li>
+</ul>
+<p><em>Across 60 years, component replacements and fit-outs alone add $385\text{ kgCO}_2\text{e}/\text{m}^2$, which often matches or exceeds the initial structural upfront carbon!</em></p>
+<hr>
+<h4 id="step-3-module-b1-refrigerant-leakage">Step 3: Module B1 Refrigerant Leakage</h4>
+<ul>
+<li>Annual leakage mass:
+
+$$\text{Leakage}_{\text{annual}} = 300\text{ kg} \times 0.03 = 9.0\text{ kg refrigerant/year}$$</li>
+<li>Total 60-year leakage mass:
+
+$$\text{Leakage}_{60\text{yr}} = 9.0\text{ kg/year} \times 60\text{ years} = 540\text{ kg of R-32}$$</li>
+<li>Total GHG emissions:
+
+$$\text{Emissions}_{B1} = 540\text{ kg} \times 675\text{ kgCO}_2\text{e}/\text{kg} = 364{,}500\text{ kgCO}_2\text{e}$$</li>
+<li>Normalized by GIA ($8{,}000\text{ m}^2$):
+
+$$\text{EC}_{B1} = \frac{364{,}500\text{ kgCO}_2\text{e}}{8{,}000\text{ m}^2} = 45.56\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$$</li>
+</ul>
+<hr>
+<h4 id="step-4-triple-glazing-carbon-payback-analysis">Step 4: Triple Glazing Carbon Payback Analysis</h4>
+<ul>
+<li><strong>Upfront Embodied Carbon Penalty:</strong>
+
+$$\Delta \text{EC}_{\text{upfront}} = +22\text{ kgCO}_2\text{e}/\text{m}^2$$</li>
+<li><strong>Annual Operational Carbon Saving (B6):</strong>
+
+$$\Delta \text{OC}_{\text{annual}} = 8\text{ kWh}/\text{m}^2/\text{year} \times 0.050\text{ kgCO}_2\text{e}/\text{kWh} = 0.40\text{ kgCO}_2\text{e}/\text{m}^2/\text{year}$$</li>
+<li><strong>Carbon Payback Period:</strong>
+
+$$\text{Payback Period} = \frac{22\text{ kgCO}_2\text{e}/\text{m}^2}{0.40\text{ kgCO}_2\text{e}/\text{m}^2/\text{year}} = 55.0\text{ years}$$</li>
+</ul>
+<h4 id="critical-finding">Critical Finding:</h4>
+<p>The estimated service life of the glazing is only <strong>30 years</strong>.
+Over 30 years, the cumulative operational savings total:
+</p>
+$$\text{Savings}_{30\text{yr}} = 30\text{ years} \times 0.40\text{ kgCO}_2\text{e}/\text{m}^2/\text{year} = 12.0\text{ kgCO}_2\text{e}/\text{m}^2$$<p>The glazing achieves only $12\text{ kgCO}_2\text{e}/\text{m}^2$ of operational carbon savings against an initial investment of $22\text{ kgCO}_2\text{e}/\text{m}^2$. At Year 30, it is replaced, incurring an <em>additional</em> $22\text{ kgCO}_2\text{e}/\text{m}^2$ before ever paying back the first!</p>
+<p><strong>Conclusion:</strong> Under a decarbonized electrical grid, this triple-glazing specification increases whole life carbon by $10\text{ kgCO}_2\text{e}/\text{m}^2$ per 30-year cycle. The design team should prioritize passive solar shading or low-embodied-carbon double glazing instead [S08, S09].</p>
+<hr>
+<h2 id="visual-explanation">Visual explanation</h2>
+<p>The diagram below tracks the cumulative carbon trajectory of a building over 60 years, showing how Upfront Carbon (A1–A5) establishes the Day 1 baseline and B4/B5 replacements create periodic upward &ldquo;steps&rdquo; in the embodied carbon inventory.</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TD
+    subgraph Timeline[&#34;60-Year Whole Life Carbon Progression&#34;]
+        Y0[&#34;Year 0: Practical Completion&lt;br/&gt;Upfront Carbon (A1–A5)&lt;br/&gt;~400 kgCO2e/m²&#34;]
+        Y10[&#34;Year 10: Fit-out Churn #1&lt;br/&gt;+35 kgCO2e/m²&#34;]
+        Y20[&#34;Year 20: MEP Replacement #1 + Fit-out #2&lt;br/&gt;+100 kgCO2e/m²&#34;]
+        Y30[&#34;Year 30: Facade Replacement #1 + Fit-out #3&lt;br/&gt;+115 kgCO2e/m²&#34;]
+        Y40[&#34;Year 40: MEP Replacement #2 + Fit-out #4&lt;br/&gt;+100 kgCO2e/m²&#34;]
+        Y50[&#34;Year 50: Fit-out Churn #5&lt;br/&gt;+35 kgCO2e/m²&#34;]
+        Y60[&#34;Year 60: End of Life Demolition (C1–C4)&lt;br/&gt;+30 kgCO2e/m²&#34;]
+    end
+
+    Y0 --&gt; Y10
+    Y10 --&gt; Y20
+    Y20 --&gt; Y30
+    Y30 --&gt; Y40
+    Y40 --&gt; Y50
+    Y50 --&gt; Y60
+
+    classDef initial fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px;
+    classDef step fill:#fef3c7,stroke:#d97706,stroke-width:2px;
+    classDef eol fill:#fee2e2,stroke:#dc2626,stroke-width:2px;
+
+    class Y0 initial;
+    class Y10,Y20,Y30,Y40,Y50 step;
+    class Y60 eol;
+</code></pre><h3 id="reading-the-diagram">Reading the Diagram</h3>
+<ul>
+<li>At Year 0, the building opens with its full Upfront Carbon already spent into the atmosphere.</li>
+<li>Operational emissions (B6) accumulate continuously year-on-year, but their slope flattens as the electricity grid decarbonizes.</li>
+<li>Embodied carbon accumulates in discrete upward jumps at Years 10, 20, 30, 40, and 50 as interior fit-outs and mechanical systems expire and are replaced.</li>
+</ul>
+<hr>
+<h2 id="practice">Practice</h2>
+<h3 id="exercise-1-replacement-calculation-for-roof-waterproofing">Exercise 1: Replacement Calculation for Roof Waterproofing</h3>
+<p>A distribution logistics warehouse has a roof area of $10{,}000\text{ m}^2$ ($\text{GIA} = 10{,}000\text{ m}^2$) evaluated over an $\text{RSP}$ of $60\text{ years}$.</p>
+<ul>
+<li>Roof waterproofing membrane: Single-ply PVC.</li>
+<li>Estimated Service Life ($\text{ESL}$): $20\text{ years}$.</li>
+<li>Unit A1–A5 upfront carbon of membrane: $8.5\text{ kgCO}_2\text{e}/\text{m}^2$ of roof.</li>
+<li>Unit C1–C4 disposal carbon upon stripping: $1.5\text{ kgCO}_2\text{e}/\text{m}^2$ of roof.</li>
+</ul>
+<p>Calculate:</p>
+<ol>
+<li>The number of replacement cycles ($N_{\text{replace}}$) over the 60-year lifespan.</li>
+<li>The total Module B4 carbon emissions generated across the building’s life.</li>
+<li>If the team switches to an EPDM membrane with an $\text{ESL}$ of $30\text{ years}$ and combined cycle carbon of $12.0\text{ kgCO}_2\text{e}/\text{m}^2$, what are the cumulative B4 emissions, and which option generates lower whole-life carbon?</li>
+</ol>
+<h3 id="exercise-2-refrigerant-selection">Exercise 2: Refrigerant Selection</h3>
+<p>An HVAC engineer compares two heat pump options with identical seasonal coefficient of performance (SCOP):</p>
+<ul>
+<li><strong>System 1:</strong> Uses R-410A ($\text{GWP} = 2{,}088\text{ kgCO}_2\text{e}/\text{kg}$). Total refrigerant charge: $120\text{ kg}$. Annual leakage: $4\%$.</li>
+<li><strong>System 2:</strong> Uses low-GWP R-290 (propane, $\text{GWP} = 3\text{ kgCO}_2\text{e}/\text{kg}$). Total charge: $80\text{ kg}$. Annual leakage: $2\%$.</li>
+</ul>
+<p>For a building with $\text{GIA} = 4{,}000\text{ m}^2$ and $\text{RSP} = 30\text{ years}$:</p>
+<ol>
+<li>Compute the Module B1 refrigerant leakage emissions for System 1 and System 2.</li>
+<li>What is the difference in B1 emissions expressed in $\text{kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$?</li>
+</ol>
+<hr>
+<h3 id="answers-and-hints">Answers and hints</h3>
+<h4 id="exercise-1-answers">Exercise 1 Answers</h4>
+<ol>
+<li>Number of replacements:
+<ul>
+<li>PVC ($\text{ESL} = 20\text{ yrs}$):
+
+$$N_{\text{replace}} = \left\lceil \frac{60}{20} \right\rceil - 1 = 3 - 1 = 2\text{ replacements (at Years 20 and 40)}$$</li>
+<li>EPDM ($\text{ESL} = 30\text{ yrs}$):
+
+$$N_{\text{replace}} = \left\lceil \frac{60}{30} \right\rceil - 1 = 2 - 1 = 1\text{ replacement (at Year 30)}$$</li>
+</ul>
+</li>
+<li>Total B4 for PVC:
+<ul>
+<li>Each cycle cost: $8.5 + 1.5 = 10.0\text{ kgCO}_2\text{e}/\text{m}^2$.</li>
+<li>Total B4: $2 \times 10.0\text{ kgCO}_2\text{e}/\text{m}^2 \times 10{,}000\text{ m}^2 = 200{,}000\text{ kgCO}_2\text{e} = 200\text{ tCO}_2\text{e}$.</li>
+</ul>
+</li>
+<li>Total B4 for EPDM:
+<ul>
+<li>Total B4: $1 \times 12.0\text{ kgCO}_2\text{e}/\text{m}^2 \times 10{,}000\text{ m}^2 = 120{,}000\text{ kgCO}_2\text{e} = 120\text{ tCO}_2\text{e}$.</li>
+<li><strong>Comparison:</strong> Despite higher per-cycle carbon, the EPDM membrane saves $80\text{ tonnes of CO}_2\text{e}$ over 60 years because it eliminates an entire replacement cycle!</li>
+</ul>
+</li>
+</ol>
+<h4 id="exercise-2-answers">Exercise 2 Answers</h4>
+<ol>
+<li>Module B1 refrigerant emissions:
+<ul>
+<li>System 1 (R-410A):
+
+$$\text{Annual Leakage} = 120\text{ kg} \times 0.04 = 4.8\text{ kg/yr}$$
+
+$$\text{Total 30-yr Leakage} = 4.8 \times 30 = 144\text{ kg}$$
+
+$$\text{Emissions} = 144\text{ kg} \times 2{,}088 = 300{,}672\text{ kgCO}_2\text{e} \approx 300.67\text{ tCO}_2\text{e}$$</li>
+<li>System 2 (R-290):
+
+$$\text{Annual Leakage} = 80\text{ kg} \times 0.02 = 1.6\text{ kg/yr}$$
+
+$$\text{Total 30-yr Leakage} = 1.6 \times 30 = 48\text{ kg}$$
+
+$$\text{Emissions} = 48\text{ kg} \times 3 = 144\text{ kgCO}_2\text{e} \approx 0.14\text{ tCO}_2\text{e}$$</li>
+</ul>
+</li>
+<li>Difference per $\text{m}^2 \text{ GIA}$:
+
+$$\text{System 1 Intensity} = \frac{300{,}672\text{ kgCO}_2\text{e}}{4{,}000\text{ m}^2} = 75.17\text{ kgCO}_2\text{e}/\text{m}^2$$
+
+$$\text{System 2 Intensity} = \frac{144\text{ kgCO}_2\text{e}}{4{,}000\text{ m}^2} = 0.04\text{ kgCO}_2\text{e}/\text{m}^2$$
+
+$$\text{Net Difference} \approx 75.1\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA saved}$$
+<em>Simply selecting a low-GWP refrigerant saves $75\text{ kgCO}_2\text{e}/\text{m}^2$, equivalent to ~20% of the entire building&rsquo;s upfront structural carbon!</em></li>
+</ol>
+<hr>
+<h2 id="next-steps">Next steps</h2>
+<p>In this lesson, you evaluated how component service life (ESL), maintenance, and replacement step functions dictate in-use embodied carbon (Modules B1–B5).</p>
+<p>Advance to <a href="04-end-of-life-and-module-d.md">Lesson 04: End-of-Life (Modules C1–C4), Circularity, and Beyond the Lifecycle (Module D)</a> to master deconstruction modeling, waste processing, biogenic carbon balance, and the net-scrap circularity formulation of Module D.</p>
+<p>Experiment with varying MEP and facade lifespans in the <a href="assets/interactive/embodied-carbon-calculator.html">Whole Life Embodied Carbon Simulator</a>.</p>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li>[S01] British Standards Institution / CEN. (2011). <em>BS EN 15978:2011: Sustainability of construction works — Assessment of environmental performance of buildings — Calculation method</em>. BSI Standards Limited. URL: <a href="https://knowledge.bsigroup.com/products/sustainability-of-construction-works-assessment-of-environmental-performance-of-buildings-calculation-method">https://knowledge.bsigroup.com/products/sustainability-of-construction-works-assessment-of-environmental-performance-of-buildings-calculation-method</a></li>
+<li>[S04] Royal Institution of Chartered Surveyors. (2023). <em>Whole life carbon assessment for the built environment</em> (2nd ed.). RICS Professional Standard. URL: <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/whole-life-carbon-assessment">https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/whole-life-carbon-assessment</a></li>
+<li>[S05] Gibbons, O. P., Orr, J. J., &amp; Arnold, W. H. (2022). <em>How to calculate embodied carbon</em> (2nd ed.). The Institution of Structural Engineers (IStructE). URL: <a href="https://www.istructe.org/resources/guidance/how-to-calculate-embodied-carbon/">https://www.istructe.org/resources/guidance/how-to-calculate-embodied-carbon/</a></li>
+<li>[S08] Röck, M., Saade, M. R. M., Balouktsi, M., Rasmussen, F. N., Birgisdottir, H., Frischknecht, R., Habert, G., Lützkendorf, T., &amp; Passer, A. (2020). <em>Embodied GHG emissions of buildings – The hidden challenge for effective climate change mitigation</em>. <em>Applied Energy</em>, 258, 114107. DOI: 10.1016/j.apenergy.2019.114107</li>
+<li>[S09] Pomponi, F., &amp; Moncaster, A. (2016). <em>Embodied carbon mitigation and reduction in the built environment – What does the evidence say?</em> <em>Journal of Environmental Management</em>, 181, 687–700. DOI: 10.1016/j.jenvman.2016.08.036</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/lifecycle-construction-embodied-carbon/02-upfront-carbon-a1-a5/">
+                &#8592;
+                Previous:
+                EC 102: Upfront Carbon
+            </a>
+        </p>
+        <p class="prev-post-date">
+            October 1, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/lifecycle-construction-embodied-carbon/04-end-of-life-and-module-d/">
+                Next:
+                EC 104: End-of-Life
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            October 1, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

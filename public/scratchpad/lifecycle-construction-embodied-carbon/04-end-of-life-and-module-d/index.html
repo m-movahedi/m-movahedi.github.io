@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>EC 104: End-of-Life | Mohammad Movahedi</title>
+    <meta name="description" content="Lesson 04: End-of-Life (Modules C1–C4), Circularity, and Beyond the Lifecycle (Module D) Learning objectives By the end of this lesson, you will be able to: …">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+      
+    
+    <meta property="og:url" content="http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/04-end-of-life-and-module-d/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="EC 104: End-of-Life | Mohammad Movahedi">
+    <meta property="og:description" content="Lesson 04: End-of-Life (Modules C1–C4), Circularity, and Beyond the Lifecycle (Module D) Learning objectives By the end of this lesson, you will be able to: …">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="EC 104: End-of-Life">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="EC 104: End-of-Life | Mohammad Movahedi">
+    <meta name="twitter:description" content="Lesson 04: End-of-Life (Modules C1–C4), Circularity, and Beyond the Lifecycle (Module D) Learning objectives By the end of this lesson, you will be able to: …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/04-end-of-life-and-module-d/">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/scratchpad/lifecycle-construction-embodied-carbon/04-end-of-life-and-module-d/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "\"EC 104: End-of-Life\"",
+  "description": "\"Lesson 04: End-of-Life (Modules C1–C4), Circularity, and Beyond the Lifecycle (Module D) Learning objectives By the end of this lesson, you will be able to: …\"",
+  "url": "http:\/\/localhost:1313\/scratchpad\/lifecycle-construction-embodied-carbon\/04-end-of-life-and-module-d\/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http:\/\/localhost:1313\/scratchpad\/lifecycle-construction-embodied-carbon\/04-end-of-life-and-module-d\/"
+  },
+  "datePublished": "2026-10-01T00:00:00Z",
+  "dateModified": "2026-10-01T00:00:00Z",
+  "image": "http:\/\/localhost:1313\/images\/og-image.png",
+  "author": {
+    "@id": "https://m-movahedi.com/#person"
+  },
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://m-movahedi.com/"
+    }
+    
+    ,{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "\"Scratchpad\"",
+      "item": "https:\/\/m-movahedi.com\/scratchpad\/"
+    }
+    ,{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "\"EC 104: End-of-Life\"",
+      "item": "http:\/\/localhost:1313\/scratchpad\/lifecycle-construction-embodied-carbon\/04-end-of-life-and-module-d\/"
+    }
+    
+  ]
+}
+</script>
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.d3547df4aafab8ca9e9490410b4a3f5cc515f00096fb2cab7875f5253c42ff8f.js" integrity="sha256-01R99Kr6uMqelJBBC0o/XMUV8ACW&#43;yyreHX1JTxC/48="></script>
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.213a5a99cd60572f09df5c8d163108fa0e2d6e927d6af2e5ede43628749ab8e4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.433ef8b502dee2a6501981b1d3ad834b49bbbbde5299de64639645e38bbb4be7.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <button type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Toggle navigation" id="hamburger-menu-toggle-target">
+                    <span data-feather="menu"></span>
+                </button>
+            </div>
+
+            
+            <ul id="mobile-navigation" class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+    <div class="post container">
+    <div class="post-header-section">
+        
+        <h1>EC 104: End-of-Life</h1>
+        
+
+        
+
+        
+	
+	
+	
+	
+        
+
+	
+
+	
+
+	
+          <small role="doc-subtitle"></small>
+	
+
+	
+          <p class="post-date">
+              
+
+              October 1, 2026
+
+              
+          </p>
+	
+
+        <ul class="post-tags">
+          
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <h1 id="lesson-04-end-of-life-modules-c1c4-circularity-and-beyond-the-lifecycle-module-d">Lesson 04: End-of-Life (Modules C1–C4), Circularity, and Beyond the Lifecycle (Module D)</h1>
+<h2 id="learning-objectives">Learning objectives</h2>
+<p>By the end of this lesson, you will be able to:</p>
+<ul>
+<li>Quantify emissions across all <strong>End-of-Life modules (C1–C4)</strong> per BS EN 15978 and RICS standards.</li>
+<li>Define the <strong>End-of-Waste</strong> boundary that separates Module C3 waste processing from Module D circularity credits.</li>
+<li>Apply the <strong>Net Scrap Formula</strong> under BS EN 15804+A2:2019 to prevent double counting of recycled content between Modules A1–A3 and Module D.</li>
+<li>Balance <strong>biogenic carbon accounting</strong> from cradle to grave under the static $-1/+1$ international standard rule.</li>
+<li>Formulate circular economy design strategies (such as Design for Deconstruction) that convert landfill burdens into secondary material credits.</li>
+</ul>
+<hr>
+<h2 id="key-concepts">Key concepts</h2>
+<h3 id="1-stage-c-the-end-of-life-phase-modules-c1c4">1. Stage C: The End-of-Life Phase (Modules C1–C4)</h3>
+<p>When a building reaches the conclusion of its functional life, the deconstruction, sorting, and disposal activities are categorized within <strong>Stage C</strong> [S01, S04]:</p>
+<ul>
+<li><strong>Module C1 (Deconstruction &amp; Demolition):</strong> On-site plant fuel (diesel excavators with hydraulic shears, concrete pulverizers, mobile cranes) consumed during tearing down the building structure and separating finishes.</li>
+<li><strong>Module C2 (Transport to Waste Processing / Disposal):</strong> Freight logistics transporting demolished rubble, scrap steel, and mixed waste from the site to local transfer stations, recycling depots, or landfills.</li>
+<li><strong>Module C3 (Waste Processing for Reuse, Recovery &amp; Recycling):</strong> Mechanical processing required to prepare secondary materials for a subsequent product system (e.g., crushing concrete into aggregate, shredding timber for biomass, baling scrap steel).</li>
+<li><strong>Module C4 (Final Disposal):</strong> Permanent deposition of unrecovered waste into landfills or incineration without energy recovery.</li>
+</ul>
+<h4 id="empirical-benchmark-values-for-stage-c">Empirical Benchmark Values for Stage C</h4>
+<p>In typical building life cycle assessments, Modules C1–C4 contribute approximately $15 \text{ to } 40\text{ kgCO}_2\text{e}/\text{m}^2 \text{ GIA}$ (typically 3% to 7% of total cradle-to-grave emissions) [S04, S05]:</p>
+<ul>
+<li>C1 (Demolition): $5 \text{ to } 12\text{ kgCO}_2\text{e}/\text{m}^2$ (based on diesel intensity of $0.035 \text{ to } 0.050\text{ liters/t}$ of demolished mass).</li>
+<li>C2 (Transport): $3 \text{ to } 8\text{ kgCO}_2\text{e}/\text{m}^2$ (assuming default distance of 50 km to transfer station).</li>
+<li>C3/C4 (Processing &amp; Landfill): $10 \text{ to } 25\text{ kgCO}_2\text{e}/\text{m}^2$.</li>
+</ul>
+<hr>
+<h3 id="2-module-d-benefits-and-loads-beyond-the-system-boundary">2. Module D: Benefits and Loads Beyond the System Boundary</h3>
+<p><strong>Module D</strong> quantifies the net environmental benefits or loads resulting from materials, products, or energy that exit the building system boundary and displace virgin production in another subsequent product system [S01, S02, S03]:</p>
+<ul>
+<li><strong>Recycled scrap:</strong> Displacing virgin iron ore, virgin bauxite, or virgin glass sand.</li>
+<li><strong>Reused elements:</strong> Displacing newly fabricated structural beams or bricks.</li>
+<li><strong>Energy recovery:</strong> Incinerating waste timber with heat and power recovery, displacing fossil electricity or gas heating on the municipal grid.</li>
+</ul>
+<h4 id="the-end-of-waste-state">The &ldquo;End-of-Waste&rdquo; State</h4>
+<p>Under EN 15804+A2 [S02], activities up to the point where a discarded material reaches the <strong>End-of-Waste state</strong> belong inside the building&rsquo;s own inventory (<strong>Module C3</strong>). Once the material has been cleaned, crushed, or sorted so that it can directly substitute for a primary raw material in an industrial process, all further transformations and the resulting displacement credits belong in <strong>Module D</strong>.</p>
+<pre tabindex="0"><code>Demolition (C1) -&gt; Haulage (C2) -&gt; Sorting &amp; Crushing (C3) | [END OF WASTE] | -&gt; Substituted Virgin Production (Module D)
+</code></pre><hr>
+<h3 id="3-the-net-scrap-method-preventing-double-counting">3. The Net Scrap Method: Preventing Double Counting</h3>
+<p>A major pitfall in carbon accounting is <strong>double counting</strong> recycled content [S04, S05]. If a structural steel beam already benefits from high recycled content during its upfront manufacturing stage (Module A1–A3), the project cannot claim credit for sending all of that steel to a recycler at end of life without adjusting for the scrap consumed at the outset!</p>
+<p>Under BS EN 15804+A2 [S02] and RICS 2023 [S04], Module D must be calculated using the <strong>Net Scrap</strong> formula:</p>
+$$\text{Net Scrap} = M_{\text{recovered at EoL}} - M_{\text{recycled scrap input at A1-A3}}$$$$\text{Module D Credit} = \text{Net Scrap} \times \left( \text{EF}_{\text{virgin primary}} - \text{EF}_{\text{scrap recycling}} \right)$$<p>Where:</p>
+<ul>
+<li>$M_{\text{recovered at EoL}} = M_{\text{installed}} \times R_{\text{recovery}}$ (where $R_{\text{recovery}}$ is the end-of-life recovery rate, e.g., 95% for structural steel).</li>
+<li>$M_{\text{recycled scrap input}} = M_{\text{purchased}} \times R_{\text{recycled input}}$ (the scrap percentage in the original product).</li>
+<li>$\text{EF}_{\text{virgin primary}}$ = Carbon factor for manufacturing 100% virgin material (e.g., BF-BOF primary steel: $\approx 2.30\text{ kgCO}_2\text{e}/\text{kg}$) [S05, S07].</li>
+<li>$\text{EF}_{\text{scrap recycling}}$ = Carbon factor for remelting scrap (e.g., EAF secondary steel: $\approx 0.45\text{ kgCO}_2\text{e}/\text{kg}$) [S05, S07].</li>
+</ul>
+<h4 id="interpreting-the-net-scrap-result">Interpreting the Net Scrap Result</h4>
+<ul>
+<li>If a building is a <strong>Net Producer of Scrap</strong> ($M_{\text{recovered}} > M_{\text{scrap input}}$), Module D yields a <strong>negative carbon value</strong> (a net climate benefit/credit).</li>
+<li>If a building is a <strong>Net Consumer of Scrap</strong> ($M_{\text{scrap input}} > M_{\text{recovered}}$), Module D yields a <strong>positive carbon value</strong> (a net burden).</li>
+<li>If a building uses $100\%$ virgin steel and recycles $95\%$ of it at end of life, its A1–A3 carbon is very high, but its Module D credit is very large.</li>
+<li>If a building uses $95\%$ recycled steel and recycles $95\%$ at end of life, its $\text{Net Scrap} \approx 0$, so its Module D is near zero—but its A1–A3 carbon was already exceptionally low!</li>
+</ul>
+<hr>
+<h3 id="4-biogenic-carbon-dynamics-the-static--rule">4. Biogenic Carbon Dynamics: The Static $-1/+1$ Rule</h3>
+<p>Timber and bio-based materials sequester atmospheric carbon dioxide during tree growth ($1\text{ kg}$ of dry wood stores approximately $1.83\text{ kgCO}_2$) [S02, S05].</p>
+<p>Under BS EN 15804+A2 [S02] and ISO 21930 [S03], lifecycle standards enforce a <strong>closed-loop static mass balance</strong>:</p>
+<ol>
+<li>In <strong>Module A1–A3</strong>, biogenic carbon uptake is recorded as a credit:
+
+$$\text{GWP-biogenic}_{A1-A3} = -1.83\text{ kgCO}_2/\text{kg dry wood}$$</li>
+<li>In <strong>Modules C3/C4</strong>, when the timber building is demolished and the wood is either incinerated or rots in landfill, that stored carbon is released back into the atmosphere:
+
+$$\text{GWP-biogenic}_{C3-C4} = +1.83\text{ kgCO}_2/\text{kg dry wood}$$</li>
+<li>Over the full cradle-to-grave cycle ($A1–C4$), the net biogenic carbon balance equals:
+
+$$-1.83 + 1.83 = 0.00\text{ kgCO}_2\text{e}$$</li>
+</ol>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>Permanence &amp; Energy Recovery:</strong> If timber is incinerated with energy recovery at end of life, the $+1.83\text{ kgCO}_2$ is booked into Module C3/C4, while the avoided fossil fuel emissions from the generated district heat or power are credited in <strong>Module D</strong> [S02, S04].</p>
+</blockquote>
+<hr>
+<h2 id="worked-example">Worked example</h2>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>A structural engineer is evaluating the end-of-life performance and Module D circularity credit for $150\text{ tonnes}$ of structural steelwork installed in a 5-story commercial frame.</p>
+<h4 id="project-data">Project Data:</h4>
+<ul>
+<li>Installed structural steel mass ($M_{\text{installed}}$): $150\text{ tonnes}$ ($150{,}000\text{ kg}$).</li>
+<li>Wastage rate in A5 ($W$): $2\%$ ($M_{\text{purchased}} = 153\text{ tonnes}$).</li>
+<li>Recycled scrap content in original product ($R_{\text{recycled input}}$): $35\%$ ($0.35$).</li>
+<li>Demolition &amp; sorting diesel consumption (C1): $0.040\text{ liters diesel/tonne}$ of steel.
+<ul>
+<li>Diesel emission factor: $3.18\text{ kgCO}_2\text{e}/\text{liter}$ [S04].</li>
+</ul>
+</li>
+<li>Transport to scrap processing depot (C2): $40\text{ km}$ via HGV ($\text{EF}_{\text{trans}} = 0.088\text{ kgCO}_2\text{e}/(\text{t}\cdot\text{km})$) [S04].</li>
+<li>End-of-Life steel recovery rate ($R_{\text{recovery}}$): $96\%$ ($0.96$ is recovered for recycling; $4\%$ is lost to landfill) [S05].</li>
+<li>Scrap shredding and sorting processing (C3): $12.0\text{ kgCO}_2\text{e}/\text{tonne}$ [S04].</li>
+<li>Landfill disposal of unrecovered metal (C4): $8.0\text{ kgCO}_2\text{e}/\text{tonne}$ [S04].</li>
+<li>Material replacement carbon factors for Module D:
+<ul>
+<li>Virgin steel production ($\text{EF}_{\text{virgin}}$): $2{,}300\text{ kgCO}_2\text{e}/\text{tonne}$ [S05, S07].</li>
+<li>Scrap remelting production ($\text{EF}_{\text{remelt}}$): $450\text{ kgCO}_2\text{e}/\text{tonne}$ [S05, S07].</li>
+</ul>
+</li>
+</ul>
+<p><strong>Calculate:</strong></p>
+<ol>
+<li>Total End-of-Life emissions across Modules C1, C2, C3, and C4.</li>
+<li>The Net Scrap tonnage exiting the system boundary.</li>
+<li>The Module D circularity credit.</li>
+<li>Explain how the results are reported alongside the building&rsquo;s cradle-to-grave inventory.</li>
+</ol>
+<hr>
+<h3 id="step-by-step-solution">Step-by-Step Solution</h3>
+<h4 id="step-1-module-c1-deconstruction--demolition">Step 1: Module C1 (Deconstruction / Demolition)</h4>
+<ul>
+<li>Total diesel consumed:
+
+$$\text{Diesel} = 150\text{ tonnes} \times 0.040\text{ liters/tonne} = 6.0\text{ liters}$$</li>
+<li>Carbon emissions:
+
+$$\text{EC}_{C1} = 6.0\text{ liters} \times 3.18\text{ kgCO}_2\text{e}/\text{liter} = 19.08\text{ kgCO}_2\text{e} \approx 0.02\text{ tCO}_2\text{e}$$</li>
+</ul>
+<hr>
+<h4 id="step-2-module-c2-transport-to-scrap-depot">Step 2: Module C2 (Transport to Scrap Depot)</h4>
+<ul>
+<li>Carbon emissions:
+
+$$\text{EC}_{C2} = 150\text{ tonnes} \times 40\text{ km} \times 0.088\text{ kgCO}_2\text{e}/(\text{t}\cdot\text{km}) = 528.0\text{ kgCO}_2\text{e} \approx 0.53\text{ tCO}_2\text{e}$$</li>
+</ul>
+<hr>
+<h4 id="step-3-modules-c3-and-c4-processing--disposal">Step 3: Modules C3 and C4 (Processing &amp; Disposal)</h4>
+<ul>
+<li>
+<p><strong>Recovered Steel Mass for Recycling (C3):</strong>
+</p>
+$$M_{\text{recovered}} = 150\text{ tonnes} \times 0.96 = 144.0\text{ tonnes}$$<p>
+</p>
+$$\text{EC}_{C3} = 144.0\text{ tonnes} \times 12.0\text{ kgCO}_2\text{e}/\text{tonne} = 1{,}728.0\text{ kgCO}_2\text{e} \approx 1.73\text{ tCO}_2\text{e}$$</li>
+<li>
+<p><strong>Unrecovered Steel Mass to Landfill (C4):</strong>
+</p>
+$$M_{\text{landfill}} = 150\text{ tonnes} \times 0.04 = 6.0\text{ tonnes}$$<p>
+</p>
+$$\text{EC}_{C4} = 6.0\text{ tonnes} \times 8.0\text{ kgCO}_2\text{e}/\text{tonne} = 48.0\text{ kgCO}_2\text{e} \approx 0.05\text{ tCO}_2\text{e}$$</li>
+<li>
+<p><strong>Total Stage C Emissions (C1–C4):</strong>
+</p>
+$$\text{EC}_{C1-C4} = 19.08 + 528.0 + 1{,}728.0 + 48.0 = 2{,}323.08\text{ kgCO}_2\text{e} \approx 2.32\text{ tCO}_2\text{e}$$</li>
+</ul>
+<hr>
+<h4 id="step-4-module-d-net-scrap-calculation">Step 4: Module D Net Scrap Calculation</h4>
+<ul>
+<li>
+<p><strong>Scrap Input at Production (A1–A3):</strong>
+</p>
+$$M_{\text{scrap input}} = M_{\text{purchased}} \times R_{\text{recycled input}} = 153.0\text{ tonnes} \times 0.35 = 53.55\text{ tonnes}$$</li>
+<li>
+<p><strong>Recovered Scrap Output at EoL:</strong>
+</p>
+$$M_{\text{recovered}} = 144.0\text{ tonnes}$$</li>
+<li>
+<p><strong>Net Scrap Output:</strong>
+</p>
+$$\text{Net Scrap} = M_{\text{recovered}} - M_{\text{scrap input}} = 144.0 - 53.55 = 90.45\text{ tonnes of net scrap}$$</li>
+<li>
+<p><strong>Unit Avoided Burden Factor:</strong>
+</p>
+$$\Delta \text{EF} = \text{EF}_{\text{virgin}} - \text{EF}_{\text{remelt}} = 2{,}300 - 450 = 1{,}850\text{ kgCO}_2\text{e}/\text{tonne}$$</li>
+<li>
+<p><strong>Total Module D Credit:</strong>
+</p>
+$$\text{Module D} = -\left( \text{Net Scrap} \times \Delta \text{EF} \right)$$<p>
+</p>
+$$\text{Module D} = -(90.45\text{ tonnes} \times 1{,}850\text{ kgCO}_2\text{e}/\text{tonne}) = -167{,}332.5\text{ kgCO}_2\text{e} \approx -167.33\text{ tCO}_2\text{e}$$</li>
+</ul>
+<hr>
+<h4 id="step-5-reporting-compliance">Step 5: Reporting Compliance</h4>
+<p>The project reports:</p>
+<ul>
+<li><strong>Stage C End-of-Life Total (C1–C4):</strong> $+2.32\text{ tCO}_2\text{e}$ (included in the cradle-to-grave sum).</li>
+<li><strong>Module D Circularity Potential:</strong> $-167.33\text{ tCO}_2\text{e}$ (reported in a separate column).</li>
+<li>Under EN 15978 [S01] and EN 15804+A2 [S02], the $-167.33\text{ tCO}_2\text{e}$ is <strong>never</strong> subtracted from the building’s A1–C4 total, ensuring transparent reporting of actual lifecycle emissions while demonstrating circular potential.</li>
+</ul>
+<hr>
+<h2 id="visual-explanation">Visual explanation</h2>
+<p>The diagram below tracks materials passing through demolition and the <strong>End-of-Waste</strong> boundary into the circular secondary materials market.</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TD
+    subgraph StageC[&#34;Stage C: End-of-Life (Inside System Boundary)&#34;]
+        Decon[&#34;C1: Deconstruction &amp; Demolition&lt;br/&gt;Hydraulic Shears &amp; Cranes&#34;]
+        Transport[&#34;C2: Transport to Waste Depot&lt;br/&gt;Haulage Trucks (50 km)&#34;]
+        Decon --&gt; Transport
+        Transport --&gt; Separation[&#34;C3: Material Separation&lt;br/&gt;Magnetic Sorting &amp; Crushing&#34;]
+        Separation --&gt; Landfill[&#34;C4: Inert Landfill&lt;br/&gt;(4% Unrecovered Loss)&#34;]
+    end
+
+    subgraph Boundary[&#34;End-of-Waste State&#34;]
+        Separation --&gt; CleanScrap[&#34;Clean Secondary Scrap / Crushed Aggregate&lt;br/&gt;[Ceases to be Waste]&#34;]
+    end
+
+    subgraph ModuleD[&#34;Module D: Beyond the System Boundary&#34;]
+        CleanScrap --&gt; NetCalc[&#34;Net Scrap Calculation:&lt;br/&gt;(Recovered EoL Scrap) - (Virgin Scrap Input A1-A3)&#34;]
+        NetCalc --&gt; Avoided[&#34;Avoided Burden Credit:&lt;br/&gt;Displaces Primary Blast Furnace Steelmaking&#34;]
+    end
+
+    classDef stageC fill:#fee2e2,stroke:#dc2626,stroke-width:2px;
+    classDef eow fill:#fef3c7,stroke:#d97706,stroke-width:2px;
+    classDef stageD fill:#dcfce7,stroke:#16a34a,stroke-width:2px,stroke-dasharray: 5 5;
+
+    class Decon,Transport,Separation,Landfill stageC;
+    class CleanScrap stageeow;
+    class NetCalc,Avoided stageD;
+</code></pre><h3 id="reading-the-diagram">Reading the Diagram</h3>
+<ol>
+<li>Operations inside <strong>Stage C</strong> represent activities funded and managed as part of the building&rsquo;s decommissioning.</li>
+<li>The <strong>End-of-Waste</strong> state is the regulatory and physical threshold where processed material becomes commercially tradable secondary raw material.</li>
+<li>Operations inside <strong>Module D</strong> calculate the avoided carbon burden conferred upon future industries, strictly kept outside the building&rsquo;s cradle-to-grave inventory.</li>
+</ol>
+<hr>
+<h2 id="practice">Practice</h2>
+<h3 id="exercise-1-net-scrap-with-high-recycled-input">Exercise 1: Net Scrap with High Recycled Input</h3>
+<p>Consider the same $150\text{ tonnes}$ of structural steelwork from the worked example, but this time fabricated via an Electric Arc Furnace with a very high recycled scrap content of $95\%$ ($R_{\text{recycled input}} = 0.95$).</p>
+<ul>
+<li>Installed mass: $150\text{ tonnes}$; Purchased mass ($2\%$ waste): $153\text{ tonnes}$.</li>
+<li>EoL Recovery rate: $96\%$ ($144\text{ tonnes}$ recovered).</li>
+<li>$\Delta \text{EF} = 1{,}850\text{ kgCO}_2\text{e}/\text{tonne}$.</li>
+</ul>
+<p>Calculate:</p>
+<ol>
+<li>The mass of scrap input consumed during upfront manufacturing (A1–A3).</li>
+<li>The Net Scrap tonnage at end of life.</li>
+<li>The Module D credit.</li>
+<li>Explain why Module D is drastically smaller here than in the worked example, and why this is fair.</li>
+</ol>
+<h3 id="exercise-2-biogenic-carbon-end-of-life-pathways">Exercise 2: Biogenic Carbon End-of-Life Pathways</h3>
+<p>A cross-laminated timber (CLT) structure contains $400\text{ tonnes}$ of dry timber.</p>
+<ul>
+<li>In Module A1–A3, biogenic uptake was booked as $-1.83\text{ kgCO}_2/\text{kg} = -732{,}000\text{ kgCO}_2$ ($-732\text{ tCO}_2$).</li>
+<li>At Year 60, two end-of-life disposal scenarios are evaluated:
+<ul>
+<li><strong>Scenario A (Incineration with Energy Recovery):</strong> $100\%$ of the timber is burned in an energy recovery plant, releasing $+732\text{ tCO}_2$ into Module C3, but displacing $450\text{ tCO}_2$ of fossil gas grid heating in Module D.</li>
+<li><strong>Scenario B (Landfill):</strong> $100\%$ of the timber is placed in an anaerobic landfill, where $50\%$ permanently remains stored as lignin, while $50\%$ decomposes into landfill gas ($50\% \text{ CO}_2$ and $50\% \text{ CH}_4$). Methane has a GWP of 28.</li>
+</ul>
+</li>
+</ul>
+<p>Evaluate:</p>
+<ol>
+<li>The net cradle-to-grave biogenic carbon balance ($A1–C4$) for Scenario A.</li>
+<li>The net Whole Life Carbon (including Module D) for Scenario A.</li>
+<li>Explain why Scenario B (landfill methane) can be disastrous for Whole Life Carbon despite &ldquo;permanent storage&rdquo; of part of the wood.</li>
+</ol>
+<hr>
+<h3 id="answers-and-hints">Answers and hints</h3>
+<h4 id="exercise-1-answers">Exercise 1 Answers</h4>
+<ol>
+<li>Scrap input in A1–A3:
+
+$$M_{\text{scrap input}} = 153\text{ tonnes} \times 0.95 = 145.35\text{ tonnes}$$</li>
+<li>Net Scrap:
+
+$$\text{Net Scrap} = M_{\text{recovered}} - M_{\text{scrap input}} = 144.0 - 145.35 = -1.35\text{ tonnes}$$</li>
+<li>Module D:
+
+$$\text{Module D} = -(-1.35\text{ tonnes} \times 1{,}850\text{ kgCO}_2\text{e}/\text{t}) = +2{,}497.5\text{ kgCO}_2\text{e} \approx +2.50\text{ tCO}_2\text{e}$$</li>
+<li>Explanation:
+Module D is near zero (in fact, slightly positive, representing a negligible net burden of $+2.5\text{ tCO}_2\text{e}$) because the building consumed as much scrap at the start ($145.35\text{ t}$) as it returned at the end ($144.0\text{ t}$). This is equitable because the project already captured the massive carbon benefit upfront in <strong>Module A1–A3</strong> through an exceptionally low initial carbon footprint ($0.45\text{ kgCO}_2\text{e}/\text{kg}$ instead of $2.30$)!</li>
+</ol>
+<h4 id="exercise-2-answers">Exercise 2 Answers</h4>
+<ol>
+<li>Scenario A ($A1–C4$):
+
+$$\text{Net Biogenic } (A1–C4) = -732\text{ tCO}_2 \text{ (A1–A3)} + 732\text{ tCO}_2 \text{ (C3)} = 0.00\text{ tCO}_2$$</li>
+<li>Scenario A including Module D:
+
+$$\text{Net WLC} = 0.00\text{ tCO}_2 + (-450\text{ tCO}_2 \text{ in Module D}) = -450\text{ tCO}_2$$</li>
+<li>Scenario B (Landfill):
+Even though half the carbon stays stored, the methane ($\text{CH}_4$) released from the decomposing half has a global warming potential 28 times greater than $\text{CO}_2$! The release of fugitive methane can generate far higher warming than the initial biogenic sequestration, turning the timber into a substantial net climate driver unless landfill gas capture rates exceed 90% [S02, S04].</li>
+</ol>
+<hr>
+<h2 id="next-steps">Next steps</h2>
+<p>In this lesson, you mastered the End-of-Life modules (C1–C4), the Net Scrap circularity formula, and the rules governing Module D and biogenic carbon.</p>
+<p>Proceed to <a href="05-calculation-methodology-and-case-study.md">Lesson 05: Practical Calculation Methodology, Benchmarking, and Case Study</a> for the synthesis lesson. We will connect bills of quantities, EPDs, uncertainty analysis, and climate benchmarks into a comprehensive comparative case study of a real building.</p>
+<p>You can also simulate various circular recovery rates ($10\% \text{ to } 95\%$) in the <a href="assets/interactive/embodied-carbon-calculator.html">Whole Life Embodied Carbon Simulator</a>.</p>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li>[S01] British Standards Institution / CEN. (2011). <em>BS EN 15978:2011: Sustainability of construction works — Assessment of environmental performance of buildings — Calculation method</em>. BSI Standards Limited. URL: <a href="https://knowledge.bsigroup.com/products/sustainability-of-construction-works-assessment-of-environmental-performance-of-buildings-calculation-method">https://knowledge.bsigroup.com/products/sustainability-of-construction-works-assessment-of-environmental-performance-of-buildings-calculation-method</a></li>
+<li>[S02] British Standards Institution / CEN. (2019). <em>BS EN 15804:2012+A2:2019: Sustainability of construction works — Environmental product declarations — Core rules for the product category of construction products</em>. BSI Standards Limited. URL: <a href="https://standards.iteh.ai/catalog/standards/cen/5e3df5f5-ef85-48b9-823a-fcf7e19ec355/en-15804-2012-a2-2019">https://standards.iteh.ai/catalog/standards/cen/5e3df5f5-ef85-48b9-823a-fcf7e19ec355/en-15804-2012-a2-2019</a></li>
+<li>[S03] International Organization for Standardization. (2017). <em>ISO 21930:2017: Sustainability in buildings and civil engineering works — Core rules for environmental product declarations of construction products and services</em>. ISO. URL: <a href="https://www.iso.org/standard/62545.html">https://www.iso.org/standard/62545.html</a></li>
+<li>[S04] Royal Institution of Chartered Surveyors. (2023). <em>Whole life carbon assessment for the built environment</em> (2nd ed.). RICS Professional Standard. URL: <a href="https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/whole-life-carbon-assessment">https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/building-surveying-standards/whole-life-carbon-assessment</a></li>
+<li>[S05] Gibbons, O. P., Orr, J. J., &amp; Arnold, W. H. (2022). <em>How to calculate embodied carbon</em> (2nd ed.). The Institution of Structural Engineers (IStructE). URL: <a href="https://www.istructe.org/resources/guidance/how-to-calculate-embodied-carbon/">https://www.istructe.org/resources/guidance/how-to-calculate-embodied-carbon/</a></li>
+<li>[S07] Jones, C., &amp; Hammond, G. (2019). <em>Inventory of Carbon and Energy (ICE) Version 3.0</em>. Circular Ecology / University of Bath. URL: <a href="https://circularecology.com/embodied-carbon-footprint-database.html">https://circularecology.com/embodied-carbon-footprint-database.html</a></li>
+<li>[S09] Pomponi, F., &amp; Moncaster, A. (2016). <em>Embodied carbon mitigation and reduction in the built environment – What does the evidence say?</em> <em>Journal of Environmental Management</em>, 181, 687–700. DOI: 10.1016/j.jenvman.2016.08.036</li>
+</ul>
+
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+
+
+
+
+
+    
+        
+    
+
+    
+        
+    
+
+
+
+<nav aria-label="Post navigation" class="post-navigation">
+    
+    <div class="prev-post">
+        <p>
+            <a href="/scratchpad/lifecycle-construction-embodied-carbon/03-use-stage-b1-b5/">
+                &#8592;
+                Previous:
+                EC 103: The In-Use Stage
+            </a>
+        </p>
+        <p class="prev-post-date">
+            October 1, 2026
+        </p>
+    </div>
+    
+
+    
+    <div class="next-post">
+        <p>
+            <a href="/scratchpad/lifecycle-construction-embodied-carbon/05-calculation-methodology-and-case-study/">
+                Next:
+                EC 105: Calculation
+                &#8594;
+            </a>
+        </p>
+        <p class="next-post-date">
+            October 1, 2026
+        </p>
+    </div>
+    
+</nav>
+
+
+            
+        
+    </div>
+
+    
+    
+        <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="scrollToTop()" title="Go to top">
+    
+    <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+</svg>
+<script>
+    let backToTopButton = document.getElementById("btt-button");
+
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+    
+    
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>
