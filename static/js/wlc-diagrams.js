@@ -159,6 +159,7 @@ function initBoundaryMatrix() {
 
   const filterBtns = matrixBox.querySelectorAll('.wlc-filter-btn[data-boundary]');
   const lanes = matrixBox.querySelectorAll('.wlc-lane');
+  const milestones = matrixBox.querySelectorAll('.wlc-milestone-marker');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -189,6 +190,23 @@ function initBoundaryMatrix() {
         } else {
           lane.classList.add('dimmed');
           lane.classList.remove('highlighted');
+        }
+      });
+
+      milestones.forEach(m => {
+        const after = m.getAttribute('data-milestone-after');
+        let mIncluded = true;
+        if (boundary === 'cradle-to-gate') {
+          mIncluded = (after === 'a1-a3');
+        } else if (boundary === 'upfront') {
+          mIncluded = (after === 'a1-a3' || after === 'a4-a5');
+        } else if (boundary === 'cradle-to-grave') {
+          mIncluded = (after !== 'c');
+        }
+        if (mIncluded) {
+          m.classList.remove('dimmed');
+        } else {
+          m.classList.add('dimmed');
         }
       });
     });

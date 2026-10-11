@@ -425,56 +425,77 @@
 
 /* ==========================================================================
    FLOWCHART 1: Modular Lifecycle Boundary Matrix (Lesson 01)
+   Vertical Chronological Order
    ========================================================================== */
 .wlc-stage-lanes {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
   margin: 1.2rem 0;
   width: 100%;
   max-width: 100%;
-}
-
-@media (max-width: 680px) {
-  .wlc-stage-lanes {
-    grid-template-columns: 1fr;
-  }
 }
 
 .wlc-lane {
   background: var(--wlc-container-bg);
   border: 1px solid var(--wlc-border);
   border-radius: var(--wlc-radius-sm);
-  padding: 0.85rem;
+  padding: 1.1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.75rem;
   transition: var(--wlc-transition);
   min-width: 0;
   width: 100%;
   max-width: 100%;
 }
 
+.wlc-lane-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 2px solid;
+  margin-bottom: 0.25rem;
+}
+
 .wlc-lane-title {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid;
-  margin-bottom: 0.2rem;
   min-width: 0;
+  margin: 0;
   overflow-wrap: break-word;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
 }
 
-.wlc-lane.lane-a .wlc-lane-title { color: var(--wlc-stage-a); border-color: var(--wlc-stage-a); }
-.wlc-lane.lane-upfront .wlc-lane-title { color: var(--wlc-stage-trans); border-color: var(--wlc-stage-trans); }
-.wlc-lane.lane-b .wlc-lane-title { color: var(--wlc-stage-b); border-color: var(--wlc-stage-b); }
-.wlc-lane.lane-c .wlc-lane-title { color: var(--wlc-stage-c); border-color: var(--wlc-stage-c); }
-.wlc-lane.lane-d .wlc-lane-title { color: var(--wlc-stage-d); border-color: var(--wlc-stage-d); }
+.wlc-lane-pill {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.18rem 0.55rem;
+  border-radius: var(--wlc-radius-pill);
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  color: var(--wlc-muted);
+}
+
+.wlc-lane.lane-a .wlc-lane-header { border-color: var(--wlc-stage-a); }
+.wlc-lane.lane-a .wlc-lane-title { color: var(--wlc-stage-a); }
+.wlc-lane.lane-upfront .wlc-lane-header { border-color: var(--wlc-stage-trans); }
+.wlc-lane.lane-upfront .wlc-lane-title { color: var(--wlc-stage-trans); }
+.wlc-lane.lane-b .wlc-lane-header { border-color: var(--wlc-stage-b); }
+.wlc-lane.lane-b .wlc-lane-title { color: var(--wlc-stage-b); }
+.wlc-lane.lane-c .wlc-lane-header { border-color: var(--wlc-stage-c); }
+.wlc-lane.lane-c .wlc-lane-title { color: var(--wlc-stage-c); }
+.wlc-lane.lane-d .wlc-lane-header { border-color: var(--wlc-stage-d); }
+.wlc-lane.lane-d .wlc-lane-title { color: var(--wlc-stage-d); }
 
 .wlc-lane.lane-d {
-  grid-column: 1 / -1;
   border-style: dashed;
   border-color: var(--wlc-stage-d-border);
   background: var(--wlc-stage-d-bg);
@@ -491,6 +512,126 @@
 
 .wlc-lane.lane-d.highlighted {
   box-shadow: 0 0 0 2px var(--wlc-stage-d);
+}
+
+/* Vertical Chronological Milestone Dividers */
+.wlc-milestone-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 0.25rem 0;
+  color: var(--wlc-muted);
+  user-select: none;
+  transition: var(--wlc-transition);
+  width: 100%;
+}
+
+.wlc-milestone-marker.dimmed {
+  opacity: 0.25;
+}
+
+.wlc-milestone-line {
+  flex: 1;
+  height: 1px;
+  background: var(--wlc-border);
+}
+
+.wlc-milestone-pill {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.28rem 0.85rem;
+  border-radius: var(--wlc-radius-pill);
+  background: var(--wlc-card-bg);
+  border: 1px solid var(--wlc-border);
+  color: var(--wlc-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.wlc-milestone-marker.upfront-cutoff .wlc-milestone-pill {
+  border-color: var(--wlc-stage-trans);
+  color: var(--wlc-stage-trans);
+  background: var(--wlc-stage-trans-bg);
+}
+
+.wlc-milestone-marker.threshold-cutoff .wlc-milestone-pill {
+  border-color: var(--wlc-stage-d);
+  color: var(--wlc-stage-d);
+  background: var(--wlc-stage-d-bg);
+  border-style: dashed;
+}
+
+/* Vertical Node Sequence inside Lanes */
+.wlc-lane-seq {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  width: 100%;
+}
+
+.wlc-v-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wlc-muted);
+  opacity: 0.55;
+  height: 14px;
+}
+
+.wlc-node.v-node {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.wlc-node-main {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.wlc-node-details {
+  min-width: 0;
+  flex: 1;
+}
+
+.wlc-node.v-node .wlc-node-title {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.wlc-node.v-node .wlc-node-sub {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+}
+
+.wlc-node.v-node .wlc-node-badge {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .wlc-node.v-node {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .wlc-node.v-node .wlc-node-badge {
+    align-self: flex-start;
+  }
+  .wlc-milestone-pill {
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 /* ==========================================================================
