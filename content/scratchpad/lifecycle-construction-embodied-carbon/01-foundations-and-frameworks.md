@@ -264,34 +264,6 @@ The diagram below outlines the modular stages defined by EN 15978 [S01] and ISO 
 </div>
 </div>
 </div>
-<details class="wlc-mermaid-toggle">
-<summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Schematic Flowchart (Mermaid)</summary>
-<div class="wlc-mermaid-wrapper">
-<div class="mermaid">flowchart LR
-    subgraph CradleToGate["Cradle-to-Gate (A1–A3)"]
-        A1["A1: Raw Materials"] --> A2["A2: Transport"] --> A3["A3: Manufacturing"]
-    end
-    subgraph Upfront["Upfront Boundary (A4–A5)"]
-        A3 --> A4["A4: Logistics to Site"] --> A5["A5: Site Works &amp; Waste"]
-    end
-    subgraph InUse["Use Stage (B1–B7)"]
-        A5 --> B["B1–B5: Maintenance &amp; Replacements"]
-        B -.-> BOp["B6–B7: Operational Carbon"]
-    end
-    subgraph EndOfLife["End-of-Life (C1–C4)"]
-        B --> C["C1–C4: Demolition &amp; Waste"]
-    end
-    subgraph Beyond["Beyond Boundary"]
-        C -. "End-of-Waste" .-> D["Module D: Circularity &amp; Avoided Burdens"]
-    end
-    style CradleToGate fill:#fef2f2,stroke:#de634d,stroke-width:2px
-    style Upfront fill:#fefce8,stroke:#e1a102,stroke-width:2px
-    style InUse fill:#f0fdf4,stroke:#3b827e,stroke-width:2px
-    style EndOfLife fill:#fff7ed,stroke:#ab613c,stroke-width:2px
-    style Beyond fill:#ecfdf5,stroke:#10b981,stroke-width:2px,stroke-dasharray: 5 5
-</div>
-</div>
-</details>
 
 ### Reading the Diagram
 
