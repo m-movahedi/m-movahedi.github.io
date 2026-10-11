@@ -173,7 +173,6 @@ The diagram below outlines the modular stages defined by EN 15978 [S01] and ISO 
 <h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg> Modular Lifecycle Stages &amp; System Boundaries</h4>
 <p>Interactive EN 15978 / ISO 21930 / RICS stage matrix. Select a boundary filter or click any module to inspect its accounting rules.</p>
 </div>
-<span class="wlc-tag live">Interactive Matrix</span>
 </div>
 <div class="wlc-toolbar">
 <button class="wlc-filter-btn active" data-boundary="all">All Modules</button>
@@ -263,39 +262,6 @@ The diagram below outlines the modular stages defined by EN 15978 [S01] and ISO 
 <span class="wlc-ins-bench"><strong>Benchmark:</strong> <span>Dominates embodied baseline (~40–60% of total A1–A3)</span></span>
 </div>
 </div>
-<details class="wlc-mermaid-toggle">
-<summary><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg> View Standard Schematic (Mermaid Code)</summary>
-<div class="wlc-mermaid-wrapper">
-<div class="mermaid">flowchart LR
-subgraph CradleToGate["Cradle-to-Gate (EPD Boundary)"]
-    A1["A1: Raw Materials"] --> A2["A2: Transport to Mill"]
-    A2 --> A3["A3: Manufacturing"]
-end
-subgraph Upfront["Upfront Boundary (A1–A5)"]
-    CradleToGate --> A4["A4: Transport to Site"]
-    A4 --> A5["A5: Site Installation"]
-end
-subgraph InUse["Use Stage (B1–B7)"]
-    Upfront --> B1_B5["B1–B5: Maintenance &amp; Replacements"]
-    B1_B5 --> B6_B7["B6–B7: Operational Energy &amp; Water"]
-end
-subgraph EndOfLife["End-of-Life Stage (C1–C4)"]
-    InUse --> C1_C2["C1–C2: Demolition &amp; Haulage"]
-    C1_C2 --> C3_C4["C3–C4: Processing &amp; Disposal"]
-end
-subgraph Beyond["Beyond System Boundary"]
-    EndOfLife -. "Clean Secondary Scrap" .-> D["Module D: Avoided Burden Credit"]
-end
-classDef stageA fill:#fdfbf7,stroke:#de634d,stroke-width:2px;
-classDef stageB fill:#fdfbf7,stroke:#3b827e,stroke-width:2px;
-classDef stageC fill:#fdfbf7,stroke:#ab613c,stroke-width:2px;
-classDef stageD fill:#fdfbf7,stroke:#10b981,stroke-width:2px,stroke-dasharray: 4 4;
-class A1,A2,A3,A4,A5 stageA;
-class B1_B5,B6_B7 stageB;
-class C1_C2,C3_C4 stageC;
-class D stageD;</div>
-</div>
-</details>
 </div>
 
 ### Reading the Diagram
