@@ -219,6 +219,8 @@ The diagram below tracks how raw materials are extracted, transported, and compo
 <button class="wlc-filter-btn" data-stream="steel">Steel Stream</button>
 <button class="wlc-filter-btn" data-stream="site">Site Erection &amp; Wastage (A5)</button>
 </div>
+<div class="wlc-split-layout">
+<div class="wlc-timeline-col">
 <div class="wlc-dual-stream-wrapper">
 <div class="wlc-streams-grid">
 <div class="wlc-stream-col stream-concrete">
@@ -285,6 +287,10 @@ Reinforcing Steel Chain (A1–A4)
 </div>
 </div>
 <div class="wlc-convergence-gate">
+<div class="wlc-stream-col-title" style="margin-bottom:0.75rem;">
+<span class="wlc-step-pill" style="background:var(--wlc-stage-flow-bg);color:var(--wlc-stage-flow);">Gate 3</span>
+Construction Site Convergence &amp; Handover (A5)
+</div>
 <div class="wlc-node stage-a" data-code="A5" data-title="Material Handling &amp; On-Site Wastage" data-desc="Off-cuts, bent bar trimming, concrete pump pipeline residue, and formwork leakage (compounded wastage rate Wi = 3%–5%)." data-formula="Q_{purchased} = Q_{installed} \times (1 + W_i)" data-standard="RICS WLCPS 2023 &sect;3.4.3" data-benchmark="Adds ~3%–5% extra A1–A4 carbon directly to site tally">
 <div class="wlc-node-header"><span class="wlc-node-code">A5 Waste</span></div>
 <div class="wlc-node-title">Compounded Site Wastage</div>
@@ -302,13 +308,30 @@ Reinforcing Steel Chain (A1–A4)
 </div>
 </div>
 </div>
+</div>
+<div class="wlc-inspector-col">
 <div class="wlc-inspector">
+<div class="wlc-ins-header">
+<span class="wlc-ins-pill"><span class="wlc-live-dot"></span> Module Inspector</span>
+<button class="wlc-ins-close-btn" aria-label="Close inspector">&times;</button>
+</div>
 <h5 class="wlc-ins-title"><strong>[A1]</strong> Quarrying &amp; SCM Feedstocks</h5>
 <p class="wlc-ins-desc">Limestone quarrying, clay extraction, and secondary cementitious sourcing (GGBS from blast furnace slag, PFA from pulverized fuel ash).</p>
 <div class="wlc-inspector-meta">
-<span class="wlc-ins-formula"><strong>Formula:</strong> <span>Mass (t) &times; Quarrying Extraction EF</span></span>
-<span class="wlc-ins-standard"><strong>Standard:</strong> <span>EN 15804+A2 / MPA Generic</span></span>
-<span class="wlc-ins-bench"><strong>Benchmark:</strong> <span>Crushed aggregates ~0.008 kgCO2e/kg</span></span>
+<div class="wlc-ins-meta-item">
+<span class="wlc-meta-label">Formula</span>
+<span class="wlc-ins-formula"><span>Mass (t) &times; Quarrying Extraction EF</span></span>
+</div>
+<div class="wlc-ins-meta-item">
+<span class="wlc-meta-label">Standard</span>
+<span class="wlc-ins-standard"><span>EN 15804+A2 / MPA Generic</span></span>
+</div>
+<div class="wlc-ins-meta-item">
+<span class="wlc-meta-label">Benchmark</span>
+<span class="wlc-ins-bench"><span>Crushed aggregates ~0.008 kgCO2e/kg</span></span>
+</div>
+</div>
+</div>
 </div>
 </div>
 <details class="wlc-mermaid-toggle">

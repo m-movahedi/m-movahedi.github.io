@@ -181,6 +181,8 @@ The diagram below outlines the modular stages defined by EN 15978 [S01] and ISO 
 <button class="wlc-filter-btn" data-boundary="cradle-to-grave">Cradle-to-Grave (A1–C4)</button>
 <button class="wlc-filter-btn" data-boundary="wlc-module-d">WLC + Module D Circularity</button>
 </div>
+<div class="wlc-split-layout">
+<div class="wlc-timeline-col">
 <div class="wlc-stage-lanes">
 <div class="wlc-lane lane-a" data-lane-type="a1-a3">
 <div class="wlc-lane-header">
@@ -371,13 +373,30 @@ End-of-Waste State Boundary • Cradle-to-Grave Limit (A1–C4)
 </div>
 </div>
 </div>
+</div>
+<div class="wlc-inspector-col">
 <div class="wlc-inspector">
-<h5 class="wlc-ins-title"><strong>[A1]</strong> Raw Material Extraction &amp; Processing</h5>
+<div class="wlc-ins-header">
+<span class="wlc-ins-pill"><span class="wlc-live-dot"></span> Module Inspector</span>
+<button class="wlc-ins-close-btn" aria-label="Close inspector">&times;</button>
+</div>
+<h5 class="wlc-ins-title"><strong>[A1]</strong> Raw Material Extraction</h5>
 <p class="wlc-ins-desc">Quarrying limestone, mining iron ore, felling timber, harvesting crude petroleum feedstocks. Includes resource depletion burdens.</p>
 <div class="wlc-inspector-meta">
-<span class="wlc-ins-formula"><strong>Formula:</strong> <span>Mass (kg) &times; Raw Material Extraction EF</span></span>
-<span class="wlc-ins-standard"><strong>Standard:</strong> <span>EN 15804+A2 &sect;6.2.2 / ISO 21930</span></span>
-<span class="wlc-ins-bench"><strong>Benchmark:</strong> <span>Dominates embodied baseline (~40–60% of total A1–A3)</span></span>
+<div class="wlc-ins-meta-item">
+<span class="wlc-meta-label">Formula</span>
+<span class="wlc-ins-formula"><span>Mass (kg) &times; Raw Material Extraction EF</span></span>
+</div>
+<div class="wlc-ins-meta-item">
+<span class="wlc-meta-label">Standard</span>
+<span class="wlc-ins-standard"><span>EN 15804+A2 &sect;6.2.2 / ISO 21930</span></span>
+</div>
+<div class="wlc-ins-meta-item">
+<span class="wlc-meta-label">Benchmark</span>
+<span class="wlc-ins-bench"><span>Dominates embodied baseline (~40–60% of total A1–A3)</span></span>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

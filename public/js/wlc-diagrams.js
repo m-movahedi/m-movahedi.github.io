@@ -103,10 +103,34 @@ function initGenericNodeInspectors() {
     const inspector = box.querySelector('.wlc-inspector');
     if (!inspector || nodes.length === 0) return;
 
+    const inspectorCol = box.querySelector('.wlc-inspector-col');
+    const closeBtn = inspector.querySelector('.wlc-ins-close-btn');
+
+    if (closeBtn && inspectorCol) {
+      closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        inspectorCol.classList.remove('mobile-visible');
+      });
+    }
+
     nodes.forEach(node => {
       node.addEventListener('click', () => {
         nodes.forEach(n => n.classList.remove('active'));
         node.classList.add('active');
+
+        // Reveal mobile drawer if applicable
+        if (inspectorCol) {
+          inspectorCol.classList.add('mobile-visible');
+        }
+
+        // Color coding border-left based on stage class
+        let borderColor = 'var(--wlc-stage-a)';
+        if (node.classList.contains('stage-trans')) borderColor = 'var(--wlc-stage-trans)';
+        else if (node.classList.contains('stage-b')) borderColor = 'var(--wlc-stage-b)';
+        else if (node.classList.contains('stage-c')) borderColor = 'var(--wlc-stage-c)';
+        else if (node.classList.contains('stage-d')) borderColor = 'var(--wlc-stage-d)';
+        else if (node.classList.contains('stage-flow')) borderColor = 'var(--wlc-stage-flow)';
+        inspector.style.borderLeftColor = borderColor;
 
         const title = node.getAttribute('data-title');
         const code = node.getAttribute('data-code') || '';
@@ -123,27 +147,38 @@ function initGenericNodeInspectors() {
 
         if (titleEl) titleEl.innerHTML = `${code ? `<strong>[${code}]</strong> ` : ''}${title}`;
         if (descEl) descEl.textContent = desc;
-        if (formulaEl) {
-          formulaEl.style.display = formula ? 'inline' : 'none';
-          const span = formulaEl.querySelector('span');
-          if (span) span.textContent = formula;
-        }
-        if (standardEl) {
-          standardEl.style.display = standard ? 'inline' : 'none';
-          const span = standardEl.querySelector('span');
-          if (span) span.textContent = standard;
-        }
-        if (benchEl) {
-          benchEl.style.display = benchmark ? 'inline' : 'none';
-          const span = benchEl.querySelector('span');
-          if (span) span.textContent = benchmark;
-        }
+
+        const updateMeta = (el, val) => {
+          if (!el) return;
+          const card = el.closest('.wlc-ins-meta-item') || el;
+          if (val) {
+            card.style.display = '';
+            const span = el.querySelector('span');
+            if (span) span.innerHTML = val;
+            else el.innerHTML = val;
+          } else {
+            card.style.display = 'none';
+          }
+        };
+
+        updateMeta(formulaEl, formula);
+        updateMeta(standardEl, standard);
+        updateMeta(benchEl, benchmark);
 
         // Retrigger subtle animation
         inspector.style.animation = 'none';
         inspector.offsetHeight; /* trigger reflow */
         inspector.style.animation = 'wlcFadeIn 0.25s ease';
       });
+    });
+  });
+
+  // Global dismiss for mobile drawer on outside tap
+  document.addEventListener('click', (e) => {
+    document.querySelectorAll('.wlc-inspector-col.mobile-visible').forEach(col => {
+      if (!col.contains(e.target) && !e.target.closest('.wlc-node')) {
+        col.classList.remove('mobile-visible');
+      }
     });
   });
 }
