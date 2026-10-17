@@ -6,16 +6,15 @@ type : "post"
 tags:
   - "Weekend Projects"
 ---
+# Privacy Policy — Continue reading
 
-### Privacy Policy — Continue reading
-
-_Effective: October 4, 2026_
+_Effective: October 17, 2026_
 
 Continue reading ("Continue", "the app") is an e-book reader developed by Mohammad Movahedi.
 This policy explains what information the app handles and where it goes.
 
-**In short: the app does not collect any personal information. There are no accounts with us, no
-analytics, no advertising and no tracking. Your books and reading data stay on your device and
+**In short: the app does not collect any personal information. There are no accounts with us, no analytics of our own, no
+advertising and no tracking (the only diagnostics are Google's, from the QR scanner on Android; see Camera). Your books and reading data stay on your device and
 on the servers you choose to connect to.**
 
 ## Information stored on your device
@@ -60,6 +59,12 @@ system's speech service, under your device maker's terms.
 On phones and tablets, the app can use the camera to scan a setup QR code from another of your
 devices. The camera is only used while the scanner is open. Images are not saved or sent anywhere.
 
+On Android, the scanner uses Google's ML Kit, which reads the code on your device. ML Kit sends Google
+basic diagnostics: device model and OS version, the app's name and version, performance and error
+information, and a random per-installation identifier. Google uses these for diagnostics and analytics
+of ML Kit itself; the data is encrypted in transit, isn't used to identify you, and is never sent to
+us. See https://developers.google.com/ml-kit/android-data-disclosure
+
 ## Setup codes
 
 The app can show a QR code that contains your Calibre server address, username and password, and
@@ -83,4 +88,4 @@ date.
 
 ## Contact
 
-Questions about this policy: Mohammad Movahedi — https://www.m-movahedi.com and apps@m-movahedi.com
+Questions about this policy: Mohammad Movahedi — https://www.m-movahedi.com
