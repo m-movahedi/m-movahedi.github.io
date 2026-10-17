@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BYOK on Mohammad Movahedi</title>
-    <link>https://m-movahedi.com/tags/byok/</link>
+    <link>http://localhost:1313/tags/byok/</link>
     <description>Recent content in BYOK on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://m-movahedi.com/tags/byok/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/byok/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Local LLMs 205: Hosted Routers and BYOK: OpenRouter.ai in the Local LLM World</title>
-      <link>https://m-movahedi.com/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/</link>
+      <link>http://localhost:1313/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/</link>
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/</guid>
+      <guid>http://localhost:1313/scratchpad/local-llms/local-llms-205-openrouter-byok-local-llm-world/</guid>
       <description>&lt;p&gt;Local LLMs are about control. Hosted routers are about reach. At first those sound opposite, but many practical workflows use both.&lt;/p&gt;&#xA;&lt;p&gt;OpenRouter is a hosted service that provides access to many models through one API. That makes it useful when you want to compare models, keep one client interface, or fall back to a stronger hosted model when your local machine is not enough.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mental-model-local-first-hosted-fallback&#34;&gt;Mental model: local-first, hosted fallback&lt;/h2&gt;&#xA;&lt;p&gt;A simple hybrid workflow looks like this:&lt;/p&gt;</description>
     </item>
   </channel>

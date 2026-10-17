@@ -2,25 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Weekend Projects on Mohammad Movahedi</title>
-    <link>https://m-movahedi.com/tags/weekend-projects/</link>
+    <link>http://localhost:1313/tags/weekend-projects/</link>
     <description>Recent content in Weekend Projects on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://m-movahedi.com/tags/weekend-projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/weekend-projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Continue Reading: Privacy Policy</title>
+      <link>http://localhost:1313/blog/apps/continue-reading/privacy-policy/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/apps/continue-reading/privacy-policy/</guid>
+      <description>&lt;h3 id=&#34;privacy-policy--continue-reading&#34;&gt;Privacy Policy — Continue reading&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Effective: October 4, 2026&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Continue reading (&amp;ldquo;Continue&amp;rdquo;, &amp;ldquo;the app&amp;rdquo;) is an e-book reader developed by Mohammad Movahedi.&#xA;This policy explains what information the app handles and where it goes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;In short: the app does not collect any personal information. There are no accounts with us, no&#xA;analytics, no advertising and no tracking. Your books and reading data stay on your device and&#xA;on the servers you choose to connect to.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Piano-ish: a free, open-source piano trainer</title>
-      <link>https://m-movahedi.com/blog/piano-ish/</link>
+      <link>http://localhost:1313/blog/piano-ish/</link>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/blog/piano-ish/</guid>
+      <guid>http://localhost:1313/blog/piano-ish/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Piano-ish&lt;/strong&gt; is a free and open-source piano learning app for anyone who wants a more focused way to practice with a digital piano.&lt;/p&gt;&#xA;&lt;p&gt;Piano-ish turns Standard MIDI files into interactive practice sessions. Import a piece, connect a MIDI keyboard if you have one, and work through the music with falling notes, traditional staff notation, or a combination of both. Instead of supplying a fixed catalog, Piano-ish is built around your own music library.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wallpaper Manager</title>
-      <link>https://m-movahedi.com/blog/wallpaper-manager/</link>
+      <link>http://localhost:1313/blog/wallpaper-manager/</link>
       <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/blog/wallpaper-manager/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m excited to introduce Wallpaper Manager, a local-first desktop app for organizing and automatically rotating your wallpapers.&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;https://m-movahedi.com/images/blog/wallpaper-manager-release01.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;figcaption&gt; Wallpaper Manager Release 0.1 &lt;/figcaption&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Instead of limiting you to one wallpaper provider, Wallpaper Manager lets you create collections from local folders, RSS and Atom feeds, and other sources. You can combine collections into custom pools, mark images as favorites, choose their playback order, and control how frequently your background changes.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/blog/wallpaper-manager/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m excited to introduce Wallpaper Manager, a local-first desktop app for organizing and automatically rotating your wallpapers.&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/images/blog/wallpaper-manager-release01.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;figcaption&gt; Wallpaper Manager Release 0.1 &lt;/figcaption&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Instead of limiting you to one wallpaper provider, Wallpaper Manager lets you create collections from local folders, RSS and Atom feeds, and other sources. You can combine collections into custom pools, mark images as favorites, choose their playback order, and control how frequently your background changes.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

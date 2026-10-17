@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Agent Architecture on Mohammad Movahedi</title>
-    <link>https://m-movahedi.com/tags/agent-architecture/</link>
+    <link>http://localhost:1313/tags/agent-architecture/</link>
     <description>Recent content in Agent Architecture on Mohammad Movahedi</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 07 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://m-movahedi.com/tags/agent-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/agent-architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Designing Your Research Team: Agent Roles and Coordination</title>
-      <link>https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/</link>
+      <link>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</link>
       <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://m-movahedi.com/scratchpad/research-agents/02-designing-research-team/</guid>
+      <guid>http://localhost:1313/scratchpad/research-agents/02-designing-research-team/</guid>
       <description>&lt;p&gt;Once you decide to use agents for research, the next question is immediate: what should each agent do?&lt;/p&gt;&#xA;&lt;p&gt;The temptation is to build one big &amp;ldquo;research agent&amp;rdquo; that does everything. That is a mistake. A research team is useful precisely because it is specialized. Each agent does one thing well. They coordinate through shared knowledge.&lt;/p&gt;&#xA;&lt;p&gt;This post is about designing that team: what roles make sense, how they specialize, how they coordinate, and when to merge or split roles.&lt;/p&gt;</description>
     </item>
   </channel>
