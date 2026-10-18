@@ -116,11 +116,16 @@ gtag('config', 'G-1WZSE8DHZ9');
     weight = 5
 
   [[menu.main]]
+    name = "Fun Projects"
+    url = "/apps/"
+    weight = 6
+
+  [[menu.main]]
     name = "Scratchpad"
     url = "/scratchpad/"
-    weight = 6
+    weight = 7
 
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 7
+    weight = 8
