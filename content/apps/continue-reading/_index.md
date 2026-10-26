@@ -115,7 +115,7 @@ Continue reading is built with Flutter, from one codebase for every platform.
      ">
      Google Play Store   
   </a>
-  <a href="https://www.m-movahedi.com/static/images/apps/continue-reading/start_reading_columns.zip"
+  <a href="https://github.com/m-movahedi/m-movahedi.github.io/raw/refs/heads/main/static/images/apps/continue-reading/start_reading_columns.zip"
      style="
       padding:10px 18px;
       border-radius:36px;

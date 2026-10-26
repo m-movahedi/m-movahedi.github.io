@@ -1,7 +1,7 @@
 ---
 title: "Calibre-Goodreads auto sync plugin"
 date: 2026-09-25
-draft : false
+draft : true
 type : "post"
 featured_image: "/images/blog/calibre-goodreads-icon.png"
 tags:
