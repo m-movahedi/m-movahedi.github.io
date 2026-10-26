@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --font-size: 1.1rem;
+        }
+    </style>
+
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    
+    <title>Continue reading: a calm e-book reader for the library you already have | Mohammad Movahedi</title>
+    <meta name="description" content="Continue reading is a cross-platform e-book reader for Calibre and Zotero libraries, with two-way sync, highlights, an on-device natural voice and reading …">
+    
+    <meta name="keywords" content='Continue reading, e-books, Calibre, Zotero, Flutter, Weekend Projects'>
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Mohammad Movahedi">
+
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/apps/continue-reading/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mohammad Movahedi">
+    <meta property="og:title" content="Continue reading: a calm e-book reader for the library you already have | Mohammad Movahedi">
+    <meta property="og:description" content="Continue reading is a cross-platform e-book reader for Calibre and Zotero libraries, with two-way sync, highlights, an on-device natural voice and reading …">
+    <meta property="og:image" content="http://localhost:1313/images/apps/continue-reading/continue-reading-icon.png">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/apps/continue-reading/continue-reading-icon.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Continue reading: a calm e-book reader for the library you already have">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@m_movahedi_">
+    <meta name="twitter:creator" content="@m_movahedi_">
+    <meta name="twitter:title" content="Continue reading: a calm e-book reader for the library you already have | Mohammad Movahedi">
+    <meta name="twitter:description" content="Continue reading is a cross-platform e-book reader for Calibre and Zotero libraries, with two-way sync, highlights, an on-device natural voice and reading …">
+    <meta property="twitter:domain" content="m-movahedi.com">
+    <meta property="twitter:url" content="http://localhost:1313/apps/continue-reading/">
+    <meta name="twitter:image" content="http://localhost:1313/images/apps/continue-reading/continue-reading-icon.png">
+
+    
+    <link rel="canonical" href="http://localhost:1313/apps/continue-reading/">
+
+    
+    
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://m-movahedi.com/#website",
+  "url": "https://m-movahedi.com/",
+  "name": "Mohammad Movahedi",
+  "description": "Construction \u0026 Infrastructure Management Researcher",
+  "publisher": {
+    "@id": "https://m-movahedi.com/#person"
+  }
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://m-movahedi.com/#person",
+  "name": "Mohammad Movahedi",
+  "givenName": "Mohammad",
+  "familyName": "Movahedi",
+  "jobTitle": "Ph.D. Candidate & Graduate Research Assistant",
+  "url": "https:\/\/m-movahedi.com\/",
+  "image": "https:\/\/m-movahedi.com\/images\/profile.png",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "FAMU-FSU College of Engineering, Florida State University",
+    "url": "https://eng.famu.fsu.edu/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Florida State University",
+      "url": "https://www.fsu.edu/"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=BXiu1y0AAAAJ&hl=en",
+    "https://www.linkedin.com/in/m-movahedi",
+    "https://github.com/m-movahedi",
+    "https://www.researchgate.net/profile/Mohammad-Movahedi-3",
+    "https://x.com/m_movahedi_",
+    "https://www.goodreads.com/m_movahedi",
+    "https://www.youtube.com/channel/UCEYpMTO20lSZoYd8zP52bRA"
+  ],
+  "knowsAbout": [
+    "Transportation Planning",
+    "Traffic Engineering",
+    "Infrastructure Asset Management",
+    "Intelligent Transportation Systems",
+    "Digital Twins",
+    "Disaster Resilience",
+    "Artificial Intelligence",
+    "Construction and Infrastructure Management"
+  ]
+}
+</script>
+
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <script src="/js/bundle.min.d3547df4aafab8ca9e9490410b4a3f5cc515f00096fb2cab7875f5253c42ff8f.js" integrity="sha256-01R99Kr6uMqelJBBC0o/XMUV8ACW&#43;yyreHX1JTxC/48="></script>
+
+    
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/apps/continue-reading/index.xml" title="Mohammad Movahedi">
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="/css/llm-series.css">
+<link rel="stylesheet" href="/css/hbm-series.css">
+<link rel="stylesheet" href="/css/llm-diagrams.css">
+<link rel="stylesheet" href="/css/tm-series.css">
+<link rel="stylesheet" href="/css/mc-series.css">
+<link rel="stylesheet" href="/css/wlc-diagrams.css">
+
+<script defer src="/js/hbm-widgets.js"></script>
+<script defer src="/js/llm-diagrams.js"></script>
+<script defer src="/js/tm-series.js"></script>
+<script defer src="/js/mc-scrollytelling.js"></script>
+<script defer src="/js/wlc-diagrams.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1WZSE8DHZ9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1WZSE8DHZ9');
+</script>
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });">
+</script>
+
+
+    
+
+    
+    <link rel="stylesheet" href="/css/custom.min.213a5a99cd60572f09df5c8d163108fa0e2d6e927d6af2e5ede43628749ab8e4.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.433ef8b502dee2a6501981b1d3ad834b49bbbbde5299de64639645e38bbb4be7.css">
+</head>
+<body>
+        <script>
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="http://localhost:1313/">
+                <img src='/images/profile.png' alt="Mohammad Movahedi">
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">Mohammad Movahedi</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/" aria-label="" > Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/background/" aria-label="" > Background </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/webinars/" aria-label="" > Webinars </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/research/" aria-label="" > Research </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/blog/" aria-label="" > Blog </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/apps/" aria-label="" > Fun Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/scratchpad/" aria-label="" > Scratchpad </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/about/" aria-label="" > About </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                <a aria-hidden="true" role="switch">
+                    <span class="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <button type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Toggle navigation" id="hamburger-menu-toggle-target">
+                    <span data-feather="menu"></span>
+                </button>
+            </div>
+
+            
+            <ul id="mobile-navigation" class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/" > Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/background/" > Background </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/webinars/" > Webinars </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/research/" > Research </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/blog/" > Blog </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/apps/" > Fun Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/scratchpad/" > Scratchpad </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/about/" > About </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>
+                    <a role="switch">
+                        <span class="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+        
+
+<h1>Continue reading: a calm e-book reader for the library you already have</h1>
+
+
+<div class="section-content">
+  <figure>
+<center>
+<img src="/images/apps/continue-reading/continue-reading-cover-2.png" alt="Cover" />
+</center>
+</figure>
+<p>For years my books have lived in <a href="https://calibre-ebook.com">Calibre</a>. It is the best tool there is for <em>keeping</em> a library: metadata, covers, formats, tags, series, all in one place. But reading from it has always been awkward. I&rsquo;d send a book to one device, read a few chapters, pick up another device, and start hunting for my page. Highlights stayed wherever I made them. My reading history was scattered across apps that each wanted their own account and their own copy of my books. So I built the reader I wanted. It&rsquo;s called <strong>Continue reading</strong>, and the name is the whole idea: open it on any device and carry on exactly where you left off.</p>
+<h2 id="your-library-not-another-store">Your library, not another store</h2>
+<p>Continue reading doesn&rsquo;t sell books and doesn&rsquo;t ask you to upload them anywhere. It connects to the library you already have:</p>
+<ul>
+<li><strong>Calibre</strong>: point it at your Calibre content server (it&rsquo;s built into the Calibre desktop app) and your whole library appears, with covers, series, tags and the virtual libraries you&rsquo;ve defined.</li>
+<li><strong>Zotero</strong>: add an API key and your papers and books show up too, with files from Zotero Storage or your own WebDAV server.</li>
+</ul>
+<p>Books download for offline reading, and everything you do syncs back.</p>
+<figure>
+<center>
+<img src="/images/apps/continue-reading/screenshots/continue-reading-book-cover.png" alt="The book info page." style="width:240px;" />
+<figcaption>The book info page.</figcaption>
+</center>
+</figure>
+<h2 id="two-way-sync-that-actually-goes-both-ways">Two-way sync that actually goes both ways</h2>
+<p>This is the part I care about most. Your progress, ratings, start and finish dates, reading time, highlights and notes are written back to <strong>Calibre itself</strong>: into custom columns you can sort and filter by, and into Calibre&rsquo;s own annotations and last-read positions. Open the book in Calibre&rsquo;s web viewer and you&rsquo;re on the same page, with your highlights. With Zotero, highlights, notes and the last page read sync with Zotero&rsquo;s annotations, so you can switch between Continue reading and Zotero&rsquo;s own reader freely.</p>
+<p>It&rsquo;s offline-first: changes queue up and sync as soon as your server is reachable again. If something changed in both places, you choose which version to keep.</p>
+<p>A few things I added because my own household needed them:</p>
+<ul>
+<li><strong>Several readers, one library.</strong> Each person can keep their own progress, ratings and dates in personal columns, while sharing the same books.</li>
+<li><strong>A small Calibre plugin</strong> creates all the columns for you, for everyone in the household, in one go. It also keeps a <em>Currently reading</em> column up to date: books at least 10% read and opened in the last 30 days.</li>
+<li><strong>Set up a new device in seconds.</strong> Show a QR code on one device and scan it on another, and the new device is connected to the same Calibre server and Zotero account.</li>
+</ul>
+<h2 id="reading-the-way-you-like-it">Reading, the way you like it</h2>
+<p>The reader handles EPUB and PDF. For EPUBs you get paged or continuous scrolling and a set of themes: white, sepia, gray, night, black or your own colours. You can change fonts (including fonts you import), size, weight, line and paragraph spacing, margins, justification and hyphenation. Settings apply to every book or to just one.</p>
+<p>Highlights come in five colours, with notes. If you&rsquo;ve been reading elsewhere, you can bring your highlights with you: Continue reading imports from <strong>Kindle</strong>, <strong>Kobo</strong> and <strong>KOReader</strong>. On PDFs you can draw with a stylus or your finger and export a copy with standard PDF annotations.</p>
+<h2 id="listening-without-the-cloud">Listening, without the cloud</h2>
+<p>Any EPUB or PDF can be read aloud. The current sentence is highlighted and pages turn on their own, with speed control and a sleep timer. On Android and iPhone it keeps going with the screen off, with controls on the lock screen.</p>
+<figure>
+<center>
+<img src="/images/apps/continue-reading/screenshots/continue-reading-book-readaloud.png" alt="The offline read aloud feature."  style="width:240px;"/>
+<figcaption>The offline read aloud feature.</figcaption>
+</center>
+</figure>
+<p>You can use your device&rsquo;s built-in voices, or download an optional <strong>natural voice</strong>: <a href="https://huggingface.co/supertone-oss-archive/supertonic-3">Supertonic 3</a> by Supertone. It&rsquo;s a one-time download of about 400 MB, and after that it runs <strong>entirely on your device</strong>. No text is sent to a speech service, and it works on a plane.</p>
+<h2 id="built-for-e-ink-too">Built for e-ink, too</h2>
+<p>I read a lot on an e-ink tablet, so there&rsquo;s a dedicated E-ink theme: pure black and white with no animations. It has a high-contrast option for bolder text and a black-and-white mode that also turns covers and pictures to greyscale.</p>
+<h2 id="small-things-that-keep-me-reading">Small things that keep me reading</h2>
+<ul>
+<li>A daily reading goal, streaks and a goal calendar</li>
+<li>Statistics: time read, pages per hour, your favourite time of day and per-book numbers</li>
+<li>A <em>Continue reading</em> shelf with the books you&rsquo;re in the middle of</li>
+<li>Home screen widgets on Android for <em>continue reading</em>, <em>continue listening</em> and your streak</li>
+<li>Four app icons to choose from</li>
+</ul>
+<h2 id="private-by-design">Private by design</h2>
+<p>There are no accounts with me, no ads and no tracking. Your books and reading data stay on your devices and on the servers <em>you</em> choose. Your Calibre password and Zotero key are kept in your system&rsquo;s secure storage. The full details are in the <a href="/apps/continue-reading/privacy-policy/">privacy policy</a>.</p>
+<h2 id="where-to-get-it">Where to get it</h2>
+<p>Continue reading is built with Flutter, from one codebase for every platform.</p>
+<div style="margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+  <a href="https://apps.microsoft.com/detail/9N7L6RXGP3M9?hl=en-us&gl=US&ocid=pdpshare"
+     style="
+      padding:10px 18px;
+      border-radius:36px;
+      text-decoration:none;
+      background:#DE634D;
+      color:#F0DED3;
+      font-weight:600;
+      display:inline-block;
+     ">
+     Microsoft Store  
+  </a>
+  <a href="https://play.google.com/apps/testing/com.mmovahedi.continuereading"
+     style="
+      padding:10px 18px;
+      border-radius:36px;
+      text-decoration:none;
+      background:#3C4423;
+      color:#F0DED3;
+      font-weight:600;
+      display:inline-block;
+     ">
+     Google Play Store   
+  </a>
+  <a href="https://www.m-movahedi.com/static/images/apps/continue-reading/start_reading_columns.zip"
+     style="
+      padding:10px 18px;
+      border-radius:36px;
+      text-decoration:none;
+      background:#d14900;
+      color:#F0DED3;
+      font-weight:600;
+      display:inline-block;
+     ">
+     Companion Calibre Plugin  
+  </a>
+</div>
+<p>You&rsquo;ll need a Calibre content server (free, part of Calibre) or a Zotero account to bring in your books. Calibre&rsquo;s server lives under <strong>Preferences → Sharing over the net</strong>. Add a user that&rsquo;s allowed to make changes, and enter its address in the app under <strong>Settings → Calibre</strong>.</p>
+<h2 id="thanks">Thanks</h2>
+<p>Continue reading stands on a lot of open-source work: <a href="https://github.com/johnfactotum/foliate-js">foliate-js</a>
+renders the EPUBs, PDFium and <a href="https://pub.dev/packages/pdfrx">pdfrx</a> handle PDFs,
+<a href="https://onnxruntime.ai">ONNX Runtime</a> runs the natural voice, and of course there&rsquo;s Calibre by Kovid Goyal,
+the library this whole app is built around. The full list, with every licence, is in the app under
+<strong>Settings → Acknowledgements</strong>.</p>
+<p><em>Continue reading is not affiliated with or endorsed by Calibre or Zotero.</em></p>
+<p>If you try it, I&rsquo;d love to hear how you read with it.</p>
+
+</div>
+
+
+
+
+<div class="container list-posts">
+  
+</div>
+
+
+
+
+        </main><footer class="footer">
+    
+    
+
+    
+
+    
+
+    
+
+    <span>
+       &copy; 2017-2026 Mohammad Movahedi. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>

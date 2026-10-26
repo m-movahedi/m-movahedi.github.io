@@ -856,6 +856,13 @@
       <description>&lt;h1 id=&#34;lesson-05-practical-calculation-methodology-benchmarking-and-case-study&#34;&gt;Lesson 05: Practical Calculation Methodology, Benchmarking, and Case Study&lt;/h1&gt;&#xA;&lt;h2 id=&#34;learning-objectives&#34;&gt;Learning objectives&lt;/h2&gt;&#xA;&lt;p&gt;By the end of this lesson, you will be able to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Execute a step-by-step &lt;strong&gt;Whole Life Carbon (WLC) calculation workflow&lt;/strong&gt; from building information models (BIM) and cost plans to final compliance reporting.&lt;/li&gt;&#xA;&lt;li&gt;Apply the &lt;strong&gt;five-tier carbon data hierarchy&lt;/strong&gt; (from manufacturer-specific Type III EPDs to generic LCI datasets) to minimize data uncertainty.&lt;/li&gt;&#xA;&lt;li&gt;Integrate design-stage &lt;strong&gt;contingency allowances&lt;/strong&gt; and quantify methodological uncertainty ($\pm 15\%–30\%$) per RICS 2023 guidelines.&lt;/li&gt;&#xA;&lt;li&gt;Benchmark building carbon intensity against &lt;strong&gt;LETI 2020/2030&lt;/strong&gt; and &lt;strong&gt;RIBA 2030 Climate Challenge&lt;/strong&gt; targets.&lt;/li&gt;&#xA;&lt;li&gt;Conduct a complete comparative whole life carbon assessment between a conventional structural frame and an optimized low-carbon hybrid mass timber alternative across Modules A1–C4 and Module D.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;key-concepts&#34;&gt;Key concepts&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-the-whole-life-carbon-calculation-pipeline&#34;&gt;1. The Whole Life Carbon Calculation Pipeline&lt;/h3&gt;&#xA;&lt;p&gt;Translating design drawings into a certified Whole Life Carbon assessment requires a disciplined five-step workflow [S04, S05, S10]:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Calibre-Goodreads auto sync plugin</title>
+      <link>http://localhost:1313/apps/calibre-goodreads/</link>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/apps/calibre-goodreads/</guid>
+      <description>&lt;h1 id=&#34;automatically-sync-calibre-reading-progress-to-goodreads&#34;&gt;Automatically Sync Calibre Reading Progress to Goodreads&lt;/h1&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/images/blog/calibre-goodreads-banner.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;If you read books using Calibre’s built-in E-book Viewer and track your reading on Goodreads, there is one annoying gap: Calibre knows exactly how far you have read, but Goodreads does not automatically receive that progress. I built a small Calibre plugin to bridge that gap.&lt;/p&gt;&#xA;&lt;div style=&#34;margin-top:40px; display:flex; justify-content:center; gap:12px; flex-wrap:wrap;&#34;&gt;&#xD;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/files/goodreads_progress_auto_sync_v0.4.zip&#34;&#xD;&#xA;style=&#34;&#xD;&#xA;padding:10px 18px;&#xD;&#xA;border-radius:36px;&#xD;&#xA;text-decoration:none;&#xD;&#xA;background:#bf6832;&#xD;&#xA;color:#fff7f2;&#xD;&#xA;font-weight:600;&#xD;&#xA;display:inline-block;&#xD;&#xA;&#34;&gt;&#xA;Goodreads Progress Auto Sync v 0.4&lt;br&gt;&#xA;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Uncovering Community Debris Disposal Behaviors During Post-Disaster Recovery</title>
       <link>http://localhost:1313/research/post-disaster-debris-disposal-behavior/</link>
       <pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
@@ -871,9 +878,9 @@
     </item>
     <item>
       <title>Piano-ish: a free, open-source piano trainer</title>
-      <link>http://localhost:1313/blog/piano-ish/</link>
+      <link>http://localhost:1313/apps/piano-ish/</link>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/piano-ish/</guid>
+      <guid>http://localhost:1313/apps/piano-ish/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Piano-ish&lt;/strong&gt; is a free and open-source piano learning app for anyone who wants a more focused way to practice with a digital piano.&lt;/p&gt;&#xA;&lt;p&gt;Piano-ish turns Standard MIDI files into interactive practice sessions. Import a piece, connect a MIDI keyboard if you have one, and work through the music with falling notes, traditional staff notation, or a combination of both. Instead of supplying a fixed catalog, Piano-ish is built around your own music library.&lt;/p&gt;</description>
     </item>
     <item>
@@ -892,9 +899,9 @@
     </item>
     <item>
       <title>Wallpaper Manager</title>
-      <link>http://localhost:1313/blog/wallpaper-manager/</link>
+      <link>http://localhost:1313/apps/wallpaper-manager/</link>
       <pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/wallpaper-manager/</guid>
+      <guid>http://localhost:1313/apps/wallpaper-manager/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m excited to introduce Wallpaper Manager, a local-first desktop app for organizing and automatically rotating your wallpapers.&lt;/p&gt;&#xA;&lt;figure&gt;&#xD;&#xA;&lt;center&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/images/blog/wallpaper-manager-release01.png&#34; alt=&#34;The proposed framework&#34; /&gt;&#xD;&#xA;&lt;figcaption&gt; Wallpaper Manager Release 0.1 &lt;/figcaption&gt;&#xD;&#xA;&lt;/center&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;p&gt;Instead of limiting you to one wallpaper provider, Wallpaper Manager lets you create collections from local folders, RSS and Atom feeds, and other sources. You can combine collections into custom pools, mark images as favorites, choose their playback order, and control how frequently your background changes.&lt;/p&gt;</description>
     </item>
     <item>

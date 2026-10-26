@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flutter on Mohammad Movahedi</title>
+    <link>http://localhost:1313/tags/flutter/</link>
+    <description>Recent content in Flutter on Mohammad Movahedi</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Continue reading: a calm e-book reader for the library you already have</title>
+      <link>http://localhost:1313/apps/continue-reading/</link>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/apps/continue-reading/</guid>
+      <description>&lt;p&gt;For years my books have lived in &lt;a href=&#34;https://calibre-ebook.com&#34;&gt;Calibre&lt;/a&gt;. It is the best tool there is for&#xA;&lt;em&gt;keeping&lt;/em&gt; a library: metadata, covers, formats, tags, series, all in one place. But reading from it has&#xA;always been awkward. I&amp;rsquo;d send a book to one device, read a few chapters, pick up another device, and start&#xA;hunting for my page. Highlights stayed wherever I made them. My reading history was scattered across apps&#xA;that each wanted their own account and their own copy of my books.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

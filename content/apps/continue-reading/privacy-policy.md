@@ -1,7 +1,9 @@
 ---
 title: "Continue Reading: Privacy Policy"
 date: 2026-09-25
-draft : true 
+draft: false
+build:
+  list: never
 type : "post"
 tags:
   - "Weekend Projects"
