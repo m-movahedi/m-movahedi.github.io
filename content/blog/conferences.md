@@ -24,6 +24,13 @@ Welcome to the conference countdown page! Here are the upcoming events I am look
     location="Seattle, Washington"
     url="https://www.asce.org/" >}}
     {{< countdown
+    title="ASCE i3CE 2027"
+    subtitle="Abstract submission"
+    date="2026-12-01T23:59:00Z"
+    tag="General Civil Engineering"
+    location="Seattle, Washington"
+    url=" https://i3ce2027.org/" >}}
+    {{< countdown
     title="World Building Congress 2028"
     subtitle="Expected call opening"
     date="2027-05-01T23:59:00Z"
